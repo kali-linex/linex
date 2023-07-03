@@ -2,7 +2,7 @@
 /* Copyright (c) 2021 Facebook */
 
 #include <errno.h>
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <stdbool.h>
 #include <bpf/bpf_helpers.h>
 #include "bpf_misc.h"

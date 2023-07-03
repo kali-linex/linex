@@ -25,8 +25,8 @@
  *
  **************************************************************************/
 
-#include <linux/pci.h>
-#include <linux/sched/signal.h>
+#include <linex/pci.h>
+#include <linex/sched/signal.h>
 
 #include "vmwgfx_drv.h"
 

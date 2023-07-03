@@ -8,19 +8,19 @@
  * TODO: enable pulse length controls via device tree properties
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/irq.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/kfifo_buf.h>
 
 #define MAX30100_REGMAP_NAME	"max30100_regmap"
 #define MAX30100_DRV_NAME	"max30100"

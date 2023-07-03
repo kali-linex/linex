@@ -8,15 +8,15 @@
 #define KMSG_COMPONENT "sclp_sd"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/async.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
+#include <linex/completion.h>
+#include <linex/kobject.h>
+#include <linex/list.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/async.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
 
 #include <asm/pgalloc.h>
 

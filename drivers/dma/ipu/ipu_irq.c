@@ -4,15 +4,15 @@
  * Guennadi Liakhovetski, DENX Software Engineering, <lg@denx.de>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma/ipu-dma.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/dma/ipu-dma.h>
 
 #include "ipu_intern.h"
 

@@ -1,22 +1,22 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  * Licensed under the GPL
  *
  * Ported the filesystem routines to 2.5.
  * 2003-02-10 Petr Baudis <pasky@ucw.cz>
  */
 
-#include <linux/fs.h>
-#include <linux/magic.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/statfs.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/writeback.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
+#include <linex/fs.h>
+#include <linex/magic.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/statfs.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/writeback.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
 #include "hostfs.h"
 #include <init.h>
 #include <kern.h>
@@ -186,7 +186,7 @@ static char *follow_link(char *link)
 static int hostfs_statfs(struct dentry *dentry, struct kstatfs *sf)
 {
 	/*
-	 * do_statfs uses struct statfs64 internally, but the linux kernel
+	 * do_statfs uses struct statfs64 internally, but the linex kernel
 	 * struct statfs still has 32-bit versions for most of these fields,
 	 * so we convert them here
 	 */

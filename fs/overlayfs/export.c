@@ -7,13 +7,13 @@
  * Copyright (C) 2017-2018 CTERA Networks. All Rights Reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/cred.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/ratelimit.h>
+#include <linex/fs.h>
+#include <linex/cred.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/xattr.h>
+#include <linex/exportfs.h>
+#include <linex/ratelimit.h>
 #include "overlayfs.h"
 
 static int ovl_encode_maybe_copy_up(struct dentry *dentry)

@@ -8,10 +8,10 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/kdb.h>
-#include <linux/keyboard.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
+#include <linex/kdb.h>
+#include <linex/keyboard.h>
+#include <linex/ctype.h>
+#include <linex/io.h>
 
 /* Keyboard Controller Registers on normal PCs. */
 

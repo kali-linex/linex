@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux foundation. All rights reserved.
+ * Copyright (c) 2014, The Linex foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
 #include <dt-bindings/soc/qcom,gsbi.h>
 
 #define GSBI_CTRL_REG		0x0000

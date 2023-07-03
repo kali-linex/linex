@@ -6,18 +6,18 @@
 // Freescale DSPI driver
 // This file contains a driver for the Freescale DSPI
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-fsl-dspi.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-fsl-dspi.h>
 
 #define DRIVER_NAME			"fsl-dspi"
 

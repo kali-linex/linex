@@ -11,7 +11,7 @@
  *
  *	Thanks to Intel for making available several different Pentium,
  *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Linux SMP code supported by Caldera.
+ *	Original development of Linex SMP code supported by Caldera.
  *
  *	Fixes
  *		Felix Koop	:	NR_CPUS used properly
@@ -39,27 +39,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/nmi.h>
-#include <linux/tboot.h>
-#include <linux/gfp.h>
-#include <linux/cpuidle.h>
-#include <linux/kexec.h>
-#include <linux/numa.h>
-#include <linux/pgtable.h>
-#include <linux/overflow.h>
-#include <linux/stackprotector.h>
-#include <linux/cpuhotplug.h>
-#include <linux/mc146818rtc.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/topology.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/percpu.h>
+#include <linex/memblock.h>
+#include <linex/err.h>
+#include <linex/nmi.h>
+#include <linex/tboot.h>
+#include <linex/gfp.h>
+#include <linex/cpuidle.h>
+#include <linex/kexec.h>
+#include <linex/numa.h>
+#include <linex/pgtable.h>
+#include <linex/overflow.h>
+#include <linex/stackprotector.h>
+#include <linex/cpuhotplug.h>
+#include <linex/mc146818rtc.h>
 
 #include <asm/acpi.h>
 #include <asm/cacheinfo.h>

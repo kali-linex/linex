@@ -7,19 +7,19 @@
  * Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/gpio.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 #include <sound/tpa6130a2-plat.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/regmap.h>
 
 #include "tpa6130a2.h"
 

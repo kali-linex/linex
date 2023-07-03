@@ -6,7 +6,7 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  *          Michael Thayer <michael.thayer@oracle.com>
  */
-#include <linux/pci.h>
+#include <linex/pci.h>
 #include <drm/drm_file.h>
 #include "vbox_drv.h"
 

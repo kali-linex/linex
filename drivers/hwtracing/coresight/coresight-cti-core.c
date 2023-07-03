@@ -4,20 +4,20 @@
  * Author: Mike Leach <mike.leach@linaro.org>
  */
 
-#include <linux/amba/bus.h>
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/coresight.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpuhotplug.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/spinlock.h>
+#include <linex/amba/bus.h>
+#include <linex/atomic.h>
+#include <linex/bits.h>
+#include <linex/coresight.h>
+#include <linex/cpu_pm.h>
+#include <linex/cpuhotplug.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
+#include <linex/spinlock.h>
 
 #include "coresight-priv.h"
 #include "coresight-cti.h"

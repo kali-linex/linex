@@ -7,25 +7,25 @@
  *	   Honghui Zhang <honghui.zhang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/msi.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/msi.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/of_platform.h>
+#include <linex/pci.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 #include "../pci.h"
 

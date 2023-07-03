@@ -3,8 +3,8 @@
  * Copyright (c) 2021, NVIDIA Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/of.h>
+#include <linex/device.h>
+#include <linex/of.h>
 
 struct bus_type host1x_context_device_bus_type = {
 	.name = "host1x-context",

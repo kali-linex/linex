@@ -3,8 +3,8 @@
  * Copyright (C) 2020-2021 Intel Corporation.
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/wwan.h>
+#include <linex/pm_runtime.h>
+#include <linex/wwan.h>
 
 #include "iosm_ipc_trace.h"
 

@@ -5,23 +5,23 @@
  * Copyright (C) 2020 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/types.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include "meson-mx-sdhc.h"
 

@@ -7,16 +7,16 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
-#include <linux/spi/spi.h>
+#include <linex/spi/spi.h>
 
 #define SUN4I_FIFO_DEPTH		64
 

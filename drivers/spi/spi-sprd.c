@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Spreadtrum Communications Inc.
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/sprd-dma.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/dma/sprd-dma.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/spi/spi.h>
 
 #define SPRD_SPI_TXD			0x0
 #define SPRD_SPI_CLKD			0x4

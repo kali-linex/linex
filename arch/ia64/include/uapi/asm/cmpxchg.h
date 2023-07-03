@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 #ifndef _UAPI_ASM_IA64_CMPXCHG_H
 #define _UAPI_ASM_IA64_CMPXCHG_H
 
@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linex/types.h>
 /* include compiler specific intrinsics */
 #include <asm/ia64regs.h>
 #include <asm/gcc_intrin.h>

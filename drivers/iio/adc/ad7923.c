@@ -6,23 +6,23 @@
  * Copyright 2012 CS Systemes d'Information
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/spi/spi.h>
+#include <linex/regulator/consumer.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
 #define AD7923_WRITE_CR		BIT(11)		/* write control register */
 #define AD7923_RANGE		BIT(1)		/* range to REFin */

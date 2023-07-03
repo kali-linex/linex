@@ -8,15 +8,15 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

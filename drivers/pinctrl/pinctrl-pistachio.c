@@ -6,20 +6,20 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "pinctrl-utils.h"
 

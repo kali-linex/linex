@@ -4,37 +4,37 @@
  *
  * Copyright (C) 2004-2008 Atmel Corporation
  */
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/types.h>
+#include <linex/blkdev.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/types.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio.h>
 
-#include <linux/atmel-mci.h>
-#include <linux/atmel_pdc.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <linex/atmel-mci.h>
+#include <linex/atmel_pdc.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/pinctrl/consumer.h>
 
 #include <asm/cacheflush.h>
 #include <asm/io.h>

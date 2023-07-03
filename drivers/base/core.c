@@ -8,29 +8,29 @@
  * Copyright (c) 2006 Novell, Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fwnode.h>
-#include <linux/init.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/netdevice.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/swiotlb.h>
-#include <linux/sysfs.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <linex/acpi.h>
+#include <linex/cpufreq.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/fwnode.h>
+#include <linex/init.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/kdev_t.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/blkdev.h>
+#include <linex/mutex.h>
+#include <linex/pm_runtime.h>
+#include <linex/netdevice.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/swiotlb.h>
+#include <linex/sysfs.h>
+#include <linex/dma-map-ops.h> /* for dma_default_coherent */
 
 #include "base.h"
 #include "physical_location.h"

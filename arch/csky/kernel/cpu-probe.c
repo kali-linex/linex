@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
+#include <linex/of.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/memblock.h>
 
 #include <abi/reg_ops.h>
 

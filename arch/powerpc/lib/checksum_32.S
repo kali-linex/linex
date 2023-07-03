@@ -3,12 +3,12 @@
  * This file contains assembly-language implementations
  * of IP-style 1's complement checksum routines.
  *	
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  * Severely hacked about by Paul Mackerras (paulus@cs.anu.edu.au).
  */
 
-#include <linux/sys.h>
+#include <linex/sys.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/errno.h>

@@ -36,15 +36,15 @@
  ****************************************************************************/
 
 #include "common.h"
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/mii.h>
-#include <linux/sockios.h>
-#include <linux/dma-mapping.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/mii.h>
+#include <linex/sockios.h>
+#include <linex/dma-mapping.h>
+#include <linex/uaccess.h>
 
 #include "cpl5_cmd.h"
 #include "regs.h"
@@ -55,7 +55,7 @@
 #include "espi.h"
 #include "elmer0.h"
 
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 
 static inline void schedule_mac_stats_update(struct adapter *ap, int secs)
 {

@@ -4,7 +4,7 @@
  * Copyright (c) 2022 Ventana Micro Systems Inc.
  */
 
-#include <linux/ftrace.h>
+#include <linex/ftrace.h>
 #include <asm/csr.h>
 #include <asm/suspend.h>
 

@@ -7,11 +7,11 @@
  * Authors: Michael Weiß <michael.weiss@aisec.fraunhofer.de>
  */
 
-#include <linux/audit.h>
-#include <linux/module.h>
-#include <linux/device-mapper.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
+#include <linex/audit.h>
+#include <linex/module.h>
+#include <linex/device-mapper.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
 
 #include "dm-audit.h"
 #include "dm-core.h"

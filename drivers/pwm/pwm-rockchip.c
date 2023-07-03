@@ -6,14 +6,14 @@
  * Copyright (C) 2014 ROCKCHIP, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/time.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/time.h>
 
 #define PWM_CTRL_TIMER_EN	(1 << 0)
 #define PWM_CTRL_OUTPUT_EN	(1 << 3)

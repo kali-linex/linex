@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/arch_timer.c
+ *  linex/arch/arm/kernel/arch_timer.c
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 
 #include <asm/delay.h>
 #include <asm/arch_timer.h>

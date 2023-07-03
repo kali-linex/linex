@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2016 Christoph Hellwig.
  */
-#include <linux/device.h>
-#include <linux/blk-mq-virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/blk-mq-virtio.h>
+#include <linex/virtio_config.h>
+#include <linex/module.h>
 #include "blk-mq.h"
 
 /**

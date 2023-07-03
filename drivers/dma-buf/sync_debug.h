@@ -10,16 +10,16 @@
  *
  */
 
-#ifndef _LINUX_SYNC_H
-#define _LINUX_SYNC_H
+#ifndef _LINEX_SYNC_H
+#define _LINEX_SYNC_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/dma-fence.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/spinlock.h>
+#include <linex/dma-fence.h>
 
-#include <linux/sync_file.h>
-#include <uapi/linux/sync_file.h>
+#include <linex/sync_file.h>
+#include <uapi/linex/sync_file.h>
 
 /**
  * struct sync_timeline - sync object
@@ -69,4 +69,4 @@ void sync_timeline_debug_remove(struct sync_timeline *obj);
 void sync_file_debug_add(struct sync_file *fence);
 void sync_file_debug_remove(struct sync_file *fence);
 
-#endif /* _LINUX_SYNC_H */
+#endif /* _LINEX_SYNC_H */

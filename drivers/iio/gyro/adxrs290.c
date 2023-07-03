@@ -6,20 +6,20 @@
  * Copyright (C) 2020 Analog Devices, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
 
 #define ADXRS290_ADI_ID		0xAD
 #define ADXRS290_MEMS_ID	0x1D

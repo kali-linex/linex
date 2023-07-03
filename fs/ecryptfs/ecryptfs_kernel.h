@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Linex filesystem encryption layer
  * Kernel declarations.
  *
  * Copyright (C) 1997-2003 Erez Zadok
@@ -17,15 +17,15 @@
 #include <crypto/skcipher.h>
 #include <keys/user-type.h>
 #include <keys/encrypted-type.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/fs_stack.h>
-#include <linux/namei.h>
-#include <linux/scatterlist.h>
-#include <linux/hash.h>
-#include <linux/nsproxy.h>
-#include <linux/backing-dev.h>
-#include <linux/ecryptfs.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/fs_stack.h>
+#include <linex/namei.h>
+#include <linex/scatterlist.h>
+#include <linex/hash.h>
+#include <linex/nsproxy.h>
+#include <linex/backing-dev.h>
+#include <linex/ecryptfs.h>
 
 #define ECRYPTFS_DEFAULT_IV_BYTES 16
 #define ECRYPTFS_DEFAULT_EXTENT_SIZE 4096

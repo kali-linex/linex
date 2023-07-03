@@ -14,16 +14,16 @@
  * the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/freezer.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -1327,6 +1327,6 @@ void vb2_request_queue(struct media_request *req)
 }
 EXPORT_SYMBOL_GPL(vb2_request_queue);
 
-MODULE_DESCRIPTION("Driver helper framework for Video for Linux 2");
+MODULE_DESCRIPTION("Driver helper framework for Video for Linex 2");
 MODULE_AUTHOR("Pawel Osciak <pawel@osciak.com>, Marek Szyprowski");
 MODULE_LICENSE("GPL");

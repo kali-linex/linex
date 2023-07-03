@@ -7,8 +7,8 @@
  */
 
 #include "emux_voice.h"
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 /* Prototypes for static functions */
 static void free_port(void *private);

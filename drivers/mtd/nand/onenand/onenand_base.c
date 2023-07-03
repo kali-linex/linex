@@ -15,17 +15,17 @@
  *	OTP support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/onenand.h>
+#include <linex/mtd/partitions.h>
 
 #include <asm/io.h>
 

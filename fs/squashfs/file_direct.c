@@ -4,13 +4,13 @@
  * Phillip Lougher <phillip@squashfs.org.uk>
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mutex.h>
+#include <linex/fs.h>
+#include <linex/vfs.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/mutex.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

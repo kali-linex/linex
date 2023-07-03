@@ -3,15 +3,15 @@
  * Copyright (c) 2016 MediaTek Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/display/drm_dp_aux_bus.h>
 #include <drm/display/drm_dp_helper.h>

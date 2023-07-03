@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/bug.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include <soc/qcom/rpmh.h>
 

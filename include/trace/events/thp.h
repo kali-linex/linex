@@ -5,8 +5,8 @@
 #if !defined(_TRACE_THP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_THP_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
 
 TRACE_EVENT(hugepage_set_pmd,
 

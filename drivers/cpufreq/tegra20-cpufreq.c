@@ -7,15 +7,15 @@
  *	Based on arch/arm/plat-omap/cpu-omap.c, (C) 2005 Nokia Corporation
  */
 
-#include <linux/bits.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/types.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

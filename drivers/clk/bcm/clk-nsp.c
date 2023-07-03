@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2015 Broadcom Corporation
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <dt-bindings/clock/bcm-nsp.h>
 #include "clk-iproc.h"

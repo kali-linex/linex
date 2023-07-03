@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/media-bus-format.h>
+#include <linex/regmap.h>
 
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_atomic_helper.h>

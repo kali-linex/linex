@@ -4,7 +4,7 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/export.h>
+#include <linex/export.h>
 #include <asm/bootinfo.h>
 #include <asm/setup.h>
 

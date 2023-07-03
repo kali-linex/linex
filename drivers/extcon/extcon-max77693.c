@@ -5,21 +5,21 @@
 // Copyright (C) 2012 Samsung Electrnoics
 // Chanwoo Choi <cw00.choi@samsung.com>
 
-#include <linux/devm-helpers.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/extcon-provider.h>
-#include <linux/regmap.h>
-#include <linux/irqdomain.h>
+#include <linex/devm-helpers.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/max77693.h>
+#include <linex/mfd/max77693-common.h>
+#include <linex/mfd/max77693-private.h>
+#include <linex/extcon-provider.h>
+#include <linex/regmap.h>
+#include <linex/irqdomain.h>
 
 #define	DEV_NAME			"max77693-muic"
 #define	DELAY_MS_DEFAULT		20000		/* unit: millisecond */

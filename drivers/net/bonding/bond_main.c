@@ -11,7 +11,7 @@
  *	Cisco 5500
  *	Sun Trunking (Solaris)
  *	Alteon AceDirector Trunks
- *	Linux Bonding
+ *	Linex Bonding
  *	and probably many L2 switches ...
  *
  * How it works:
@@ -32,55 +32,55 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/filter.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/filter.h>
+#include <linex/interrupt.h>
+#include <linex/ptrace.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
 #include <net/ip.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/socket.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linex/ip.h>
+#include <linex/icmp.h>
+#include <linex/icmpv6.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/timer.h>
+#include <linex/socket.h>
+#include <linex/ctype.h>
+#include <linex/inet.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linex/uaccess.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
-#include <linux/rtnetlink.h>
-#include <linux/smp.h>
-#include <linux/if_ether.h>
+#include <linex/rtnetlink.h>
+#include <linex/smp.h>
+#include <linex/if_ether.h>
 #include <net/arp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bonding.h>
-#include <linux/phy.h>
-#include <linux/jiffies.h>
-#include <linux/preempt.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/if_bonding.h>
+#include <linex/phy.h>
+#include <linex/jiffies.h>
+#include <linex/preempt.h>
 #include <net/route.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/pkt_sched.h>
-#include <linux/rculist.h>
+#include <linex/rculist.h>
 #include <net/flow_dissector.h>
 #include <net/xfrm.h>
 #include <net/bonding.h>

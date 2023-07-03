@@ -5,12 +5,12 @@
  * Copyright (c) 2021 AngeloGioacchino Del Regno
  *                    <angelogioacchino.delregno@somainline.org>
  */
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

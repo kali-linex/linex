@@ -6,8 +6,8 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/slab.h>
-#include "linux/delay.h"
+#include <linex/slab.h>
+#include "linex/delay.h"
 #include "internals.h"
 
 #define MACRONIX_READ_RETRY_BIT BIT(0)

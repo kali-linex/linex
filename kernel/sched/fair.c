@@ -12,7 +12,7 @@
  *
  *  Group scheduling enhancements by Srivatsa Vaddagiri
  *  Copyright IBM Corporation, 2007
- *  Author: Srivatsa Vaddagiri <vatsa@linux.vnet.ibm.com>
+ *  Author: Srivatsa Vaddagiri <vatsa@linex.vnet.ibm.com>
  *
  *  Scaled math optimizations by Thomas Gleixner
  *  Copyright (C) 2007, Thomas Gleixner <tglx@linutronix.de>
@@ -20,37 +20,37 @@
  *  Adaptive scheduling granularity, math enhancements by Peter Zijlstra
  *  Copyright (C) 2007 Red Hat, Inc., Peter Zijlstra
  */
-#include <linux/energy_model.h>
-#include <linux/mmap_lock.h>
-#include <linux/hugetlb_inline.h>
-#include <linux/jiffies.h>
-#include <linux/mm_api.h>
-#include <linux/highmem.h>
-#include <linux/spinlock_api.h>
-#include <linux/cpumask_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/softirq.h>
-#include <linux/refcount_api.h>
-#include <linux/topology.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cond_resched.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/nohz.h>
+#include <linex/energy_model.h>
+#include <linex/mmap_lock.h>
+#include <linex/hugetlb_inline.h>
+#include <linex/jiffies.h>
+#include <linex/mm_api.h>
+#include <linex/highmem.h>
+#include <linex/spinlock_api.h>
+#include <linex/cpumask_api.h>
+#include <linex/lockdep_api.h>
+#include <linex/softirq.h>
+#include <linex/refcount_api.h>
+#include <linex/topology.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/cond_resched.h>
+#include <linex/sched/cputime.h>
+#include <linex/sched/isolation.h>
+#include <linex/sched/nohz.h>
 
-#include <linux/cpuidle.h>
-#include <linux/interrupt.h>
-#include <linux/memory-tiers.h>
-#include <linux/mempolicy.h>
-#include <linux/mutex_api.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/ratelimit.h>
-#include <linux/task_work.h>
+#include <linex/cpuidle.h>
+#include <linex/interrupt.h>
+#include <linex/memory-tiers.h>
+#include <linex/mempolicy.h>
+#include <linex/mutex_api.h>
+#include <linex/profile.h>
+#include <linex/psi.h>
+#include <linex/ratelimit.h>
+#include <linex/task_work.h>
 
 #include <asm/switch_to.h>
 
-#include <linux/sched/cond_resched.h>
+#include <linex/sched/cond_resched.h>
 
 #include "sched.h"
 #include "stats.h"

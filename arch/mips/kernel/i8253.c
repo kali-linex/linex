@@ -3,11 +3,11 @@
  * i8253.c  8253/PIT functions
  *
  */
-#include <linux/clockchips.h>
-#include <linux/i8253.h>
-#include <linux/export.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <linex/clockchips.h>
+#include <linex/i8253.h>
+#include <linex/export.h>
+#include <linex/smp.h>
+#include <linex/irq.h>
 
 #include <asm/time.h>
 

@@ -14,15 +14,15 @@
 
 #include <clocksource/arm_arch_timer.h>
 
-#include <linux/acpi.h>
-#include <linux/clocksource.h>
-#include <linux/of.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/perf/arm_pmuv3.h>
-#include <linux/platform_device.h>
-#include <linux/sched_clock.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
+#include <linex/acpi.h>
+#include <linex/clocksource.h>
+#include <linex/of.h>
+#include <linex/perf/arm_pmu.h>
+#include <linex/perf/arm_pmuv3.h>
+#include <linex/platform_device.h>
+#include <linex/sched_clock.h>
+#include <linex/smp.h>
+#include <linex/nmi.h>
 
 #include <asm/arm_pmuv3.h>
 

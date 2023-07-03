@@ -11,11 +11,11 @@
 
 #define pr_fmt(fmt)	"OF: fdt: " fmt
 
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/sizes.h>
+#include <linex/kernel.h>
+#include <linex/libfdt.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/sizes.h>
 
 /* Max address size we deal with */
 #define OF_MAX_ADDR_CELLS	4

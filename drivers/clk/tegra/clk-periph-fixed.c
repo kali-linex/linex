@@ -3,8 +3,8 @@
  * Copyright (c) 2015, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
 
 #include "clk.h"
 

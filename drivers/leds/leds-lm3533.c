@@ -7,14 +7,14 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/leds.h>
+#include <linex/mfd/core.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
-#include <linux/mfd/lm3533.h>
+#include <linex/mfd/lm3533.h>
 
 
 #define LM3533_LVCTRLBANK_MIN		2

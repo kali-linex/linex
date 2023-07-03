@@ -9,18 +9,18 @@
  * tracefs is the file system that is used by the tracing infrastructure.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kobject.h>
-#include <linux/namei.h>
-#include <linux/tracefs.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/kobject.h>
+#include <linex/namei.h>
+#include <linex/tracefs.h>
+#include <linex/fsnotify.h>
+#include <linex/security.h>
+#include <linex/seq_file.h>
+#include <linex/parser.h>
+#include <linex/magic.h>
+#include <linex/slab.h>
 
 #define TRACEFS_DEFAULT_MODE	0700
 

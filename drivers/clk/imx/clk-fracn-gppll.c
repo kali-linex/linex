@@ -3,13 +3,13 @@
  * Copyright 2021 NXP
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/slab.h>
 #include <asm/div64.h>
 
 #include "clk.h"

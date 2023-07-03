@@ -4,15 +4,15 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/hwspinlock.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "hwspinlock_internal.h"
 

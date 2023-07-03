@@ -8,20 +8,20 @@
  * Copyright:	MontaVista Software Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
+#include <linex/of_gpio.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include <sound/pxa2xx-lib.h>
 
-#include <linux/platform_data/asoc-pxa.h>
+#include <linex/platform_data/asoc-pxa.h>
 
 #include "pxa2xx-ac97-regs.h"
 

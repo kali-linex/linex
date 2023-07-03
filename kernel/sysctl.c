@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General linex system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  * Added /proc support, Dec 1995
@@ -19,54 +19,54 @@
  *  Removed it and replaced it with older style, 03/23/00, Bill Wendling
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/bitmap.h>
-#include <linux/signal.h>
-#include <linux/panic.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/ctype.h>
-#include <linux/kmemleak.h>
-#include <linux/filter.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/net.h>
-#include <linux/sysrq.h>
-#include <linux/highuid.h>
-#include <linux/writeback.h>
-#include <linux/ratelimit.h>
-#include <linux/hugetlb.h>
-#include <linux/initrd.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/limits.h>
-#include <linux/dcache.h>
-#include <linux/syscalls.h>
-#include <linux/vmstat.h>
-#include <linux/nfs_fs.h>
-#include <linux/acpi.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/perf_event.h>
-#include <linux/oom.h>
-#include <linux/kmod.h>
-#include <linux/capability.h>
-#include <linux/binfmts.h>
-#include <linux/sched/sysctl.h>
-#include <linux/mount.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/pid.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
+#include <linex/sysctl.h>
+#include <linex/bitmap.h>
+#include <linex/signal.h>
+#include <linex/panic.h>
+#include <linex/printk.h>
+#include <linex/proc_fs.h>
+#include <linex/security.h>
+#include <linex/ctype.h>
+#include <linex/kmemleak.h>
+#include <linex/filter.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kobject.h>
+#include <linex/net.h>
+#include <linex/sysrq.h>
+#include <linex/highuid.h>
+#include <linex/writeback.h>
+#include <linex/ratelimit.h>
+#include <linex/hugetlb.h>
+#include <linex/initrd.h>
+#include <linex/key.h>
+#include <linex/times.h>
+#include <linex/limits.h>
+#include <linex/dcache.h>
+#include <linex/syscalls.h>
+#include <linex/vmstat.h>
+#include <linex/nfs_fs.h>
+#include <linex/acpi.h>
+#include <linex/reboot.h>
+#include <linex/ftrace.h>
+#include <linex/perf_event.h>
+#include <linex/oom.h>
+#include <linex/kmod.h>
+#include <linex/capability.h>
+#include <linex/binfmts.h>
+#include <linex/sched/sysctl.h>
+#include <linex/mount.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/pid.h>
 
 #include "../lib/kstrtox.h"
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
 
 #ifdef CONFIG_X86
@@ -78,7 +78,7 @@
 #include <asm/setup.h>
 #endif
 #ifdef CONFIG_RT_MUTEXES
-#include <linux/rtmutex.h>
+#include <linex/rtmutex.h>
 #endif
 
 /* shared constants to be used in various sysctls */

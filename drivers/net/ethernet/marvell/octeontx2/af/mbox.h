@@ -8,8 +8,8 @@
 #ifndef MBOX_H
 #define MBOX_H
 
-#include <linux/etherdevice.h>
-#include <linux/sizes.h>
+#include <linex/etherdevice.h>
+#include <linex/sizes.h>
 
 #include "rvu_struct.h"
 #include "common.h"

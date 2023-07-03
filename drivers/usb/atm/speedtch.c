@@ -10,18 +10,18 @@
  ******************************************************************************/
 
 #include <asm/page.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/timer.h>
+#include <linex/types.h>
+#include <linex/usb/ch9.h>
+#include <linex/workqueue.h>
 
 #include "usbatm.h"
 

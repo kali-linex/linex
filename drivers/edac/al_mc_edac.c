@@ -2,12 +2,12 @@
 /*
  * Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  */
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/edac.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/edac.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 #include "edac_module.h"
 
 /* Registers Offset */

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Limited
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include <dt-bindings/clock/qcom,sm6350-camcc.h>
 

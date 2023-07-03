@@ -2,14 +2,14 @@
 /* The industrial I/O callback buffer
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer_impl.h>
-#include <linux/iio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/buffer_impl.h>
+#include <linex/iio/consumer.h>
 
 struct iio_cb_buffer {
 	struct iio_buffer buffer;

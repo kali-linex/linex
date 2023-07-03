@@ -4,28 +4,28 @@
  *   Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/uaccess.h>
+#include <linex/in.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/phy.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/skbuff.h>
+#include <linex/mm.h>
+#include <linex/platform_device.h>
+#include <linex/ethtool.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/property.h>
 
 #include <asm/checksum.h>
 

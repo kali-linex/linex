@@ -13,12 +13,12 @@
 //      amixer sset 'Left Output Mixer PCM' on
 //      amixer sset 'Right Output Mixer PCM' on
 
-#include <linux/module.h>
-#include <linux/fsl/guts.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/fsl/guts.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 #include <sound/soc.h>
 
 #include "fsl_dma.h"

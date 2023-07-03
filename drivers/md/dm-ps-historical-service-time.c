@@ -24,9 +24,9 @@
 #include "dm.h"
 #include "dm-path-selector.h"
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 
 #define DM_MSG_PREFIX	"multipath historical-service-time"

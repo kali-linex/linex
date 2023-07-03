@@ -16,8 +16,8 @@
  * .../0000:00:19.0/driver -> ../../../bus/pci/drivers/pci-stub
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 static char ids[1024] __initdata;
 

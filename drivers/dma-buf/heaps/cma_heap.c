@@ -9,19 +9,19 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - http://www.ti.com/
  *	Andrew F. Davis <afd@ti.com>
  */
-#include <linux/cma.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-heap.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-resv.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/cma.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-heap.h>
+#include <linex/dma-map-ops.h>
+#include <linex/dma-resv.h>
+#include <linex/err.h>
+#include <linex/highmem.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 
 struct cma_heap {

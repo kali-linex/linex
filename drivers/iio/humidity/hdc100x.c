@@ -13,19 +13,19 @@
  * https://www.ti.com/product/HDC1080/datasheet
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
-#include <linux/time.h>
+#include <linex/time.h>
 
 #define HDC100X_REG_TEMP			0x00
 #define HDC100X_REG_HUMIDITY			0x01

@@ -9,43 +9,43 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 
   Documentation available at:
-	http://www.stlinux.com
+	http://www.stlinex.com
   Support available at:
-	https://bugzilla.stlinux.com/
+	https://bugzilla.stlinex.com/
 *******************************************************************************/
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/prefetch.h>
-#include <linux/pinctrl/consumer.h>
+#include <linex/clk.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/if_ether.h>
+#include <linex/crc32.h>
+#include <linex/mii.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/prefetch.h>
+#include <linex/pinctrl/consumer.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 #endif /* CONFIG_DEBUG_FS */
-#include <linux/net_tstamp.h>
-#include <linux/phylink.h>
-#include <linux/udp.h>
-#include <linux/bpf_trace.h>
+#include <linex/net_tstamp.h>
+#include <linex/phylink.h>
+#include <linex/udp.h>
+#include <linex/bpf_trace.h>
 #include <net/pkt_cls.h>
 #include <net/xdp_sock_drv.h>
 #include "stmmac_ptp.h"
 #include "stmmac.h"
 #include "stmmac_xdp.h"
-#include <linux/reset.h>
-#include <linux/of_mdio.h>
+#include <linex/reset.h>
+#include <linex/of_mdio.h>
 #include "dwmac1000.h"
 #include "dwxgmac2.h"
 #include "hwif.h"

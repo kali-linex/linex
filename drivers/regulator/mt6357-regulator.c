@@ -9,16 +9,16 @@
 // Based on mt6397-regulator.c
 //
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6357/registers.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6357-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/mfd/mt6357/registers.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/mt6357-regulator.h>
+#include <linex/regulator/of_regulator.h>
 
 /*
  * MT6357 regulators' information

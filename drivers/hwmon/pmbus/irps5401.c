@@ -8,11 +8,11 @@
  * this driver does not currently support them.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 #include "pmbus.h"
 
 #define IRPS5401_SW_FUNC (PMBUS_HAVE_VIN | PMBUS_HAVE_IIN | \

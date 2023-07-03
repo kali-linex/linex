@@ -7,10 +7,10 @@
  * Author: Marcelo Henrique Cerri <mhcerri@br.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/crypto.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/err.h>
+#include <linex/crypto.h>
+#include <linex/delay.h>
 #include <asm/simd.h>
 #include <asm/switch_to.h>
 #include <crypto/aes.h>

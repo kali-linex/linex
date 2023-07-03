@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -23,19 +23,19 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/jiffies.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/jiffies.h>
+#include <linex/skbuff.h>
+#include <linex/list.h>
+#include <linex/ip.h>
+#include <linex/icmp.h>
+#include <linex/netdevice.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 #include <net/route.h>
 #include <net/dst.h>
 #include <net/sock.h>
@@ -44,10 +44,10 @@
 #include <net/checksum.h>
 #include <net/inetpeer.h>
 #include <net/inet_frag.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/inet.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/inet.h>
+#include <linex/netfilter_ipv4.h>
 #include <net/inet_ecn.h>
 #include <net/l3mdev.h>
 

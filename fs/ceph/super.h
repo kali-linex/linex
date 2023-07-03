@@ -2,26 +2,26 @@
 #ifndef _FS_CEPH_SUPER_H
 #define _FS_CEPH_SUPER_H
 
-#include <linux/ceph/ceph_debug.h>
+#include <linex/ceph/ceph_debug.h>
 
 #include <asm/unaligned.h>
-#include <linux/backing-dev.h>
-#include <linux/completion.h>
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/posix_acl.h>
-#include <linux/refcount.h>
-#include <linux/security.h>
-#include <linux/netfs.h>
-#include <linux/fscache.h>
-#include <linux/hashtable.h>
+#include <linex/backing-dev.h>
+#include <linex/completion.h>
+#include <linex/exportfs.h>
+#include <linex/fs.h>
+#include <linex/mempool.h>
+#include <linex/pagemap.h>
+#include <linex/wait.h>
+#include <linex/writeback.h>
+#include <linex/slab.h>
+#include <linex/posix_acl.h>
+#include <linex/refcount.h>
+#include <linex/security.h>
+#include <linex/netfs.h>
+#include <linex/fscache.h>
+#include <linex/hashtable.h>
 
-#include <linux/ceph/libceph.h>
+#include <linex/ceph/libceph.h>
 
 /* large granularity for statfs utilization stats to facilitate
  * large volume sizes on 32-bit machines. */

@@ -16,7 +16,7 @@
  *           .bcr = 0x40,
  *   };
  *
- * Please see include/linux/can/platform/cc770.h for description of
+ * Please see include/linex/can/platform/cc770.h for description of
  * above fields.
  *
  * If the device tree is used, you need a CAN node definition in your
@@ -34,16 +34,16 @@
  * information.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/cc770.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/platform/cc770.h>
 
 #include "cc770.h"
 

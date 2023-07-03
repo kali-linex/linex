@@ -7,12 +7,12 @@
 #
 # sh checklitmushist.sh
 #
-# Run from the Linux kernel tools/memory-model directory.
+# Run from the Linex kernel tools/memory-model directory.
 # See scripts/parseargs.sh for list of arguments.
 #
 # Copyright IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.ibm.com>
+# Author: Paul E. McKenney <paulmck@linex.ibm.com>
 
 . scripts/parseargs.sh
 

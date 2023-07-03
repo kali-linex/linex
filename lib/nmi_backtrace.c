@@ -13,12 +13,12 @@
  *
  *  Bits copied from original nmi.c file
  */
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/kprobes.h>
-#include <linux/nmi.h>
-#include <linux/cpu.h>
-#include <linux/sched/debug.h>
+#include <linex/cpumask.h>
+#include <linex/delay.h>
+#include <linex/kprobes.h>
+#include <linex/nmi.h>
+#include <linex/cpu.h>
+#include <linex/sched/debug.h>
 
 #ifdef arch_trigger_cpumask_backtrace
 /* For reliability, we're prepared to waste bits here. */

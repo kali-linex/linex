@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2009 Texas Instruments Incorporated - https://www.ti.com/
  *
- * Based on linux/arch/arm/plat-omap/cpu-omap.c. Original Copyright follows:
+ * Based on linex/arch/arm/plat-omap/cpu-omap.c. Original Copyright follows:
  *
  *  Copyright (C) 2005 Nokia Corporation
  *  Written by Tony Lindgren <tony@atomide.com>
@@ -15,14 +15,14 @@
  * Updated to support OMAP3
  * Rajendra Nayak <rnayak@ti.com>
  */
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/platform_data/davinci-cpufreq.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/cpufreq.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/platform_data/davinci-cpufreq.h>
+#include <linex/platform_device.h>
+#include <linex/export.h>
 
 struct davinci_cpufreq {
 	struct device *dev;

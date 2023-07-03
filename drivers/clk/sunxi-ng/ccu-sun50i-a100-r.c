@@ -3,9 +3,9 @@
  * Copyright (c) 2020 Yangtao Li <frank@allwinnertech.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include "ccu_common.h"
 #include "ccu_reset.h"

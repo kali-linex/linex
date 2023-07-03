@@ -6,24 +6,24 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/dmapool.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

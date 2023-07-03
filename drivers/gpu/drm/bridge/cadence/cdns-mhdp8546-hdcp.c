@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include <asm/unaligned.h>
 

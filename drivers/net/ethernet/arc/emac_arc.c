@@ -7,10 +7,10 @@
  * Romain Perier  <romain.perier@gmail.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
+#include <linex/etherdevice.h>
+#include <linex/module.h>
+#include <linex/of_net.h>
+#include <linex/platform_device.h>
 
 #include "emac.h"
 

@@ -15,15 +15,15 @@
  *                   - G, Manjunath Kondaiah <manjugk@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/omap-dma.h>
 #include "tc.h"
 
 #include "soc.h"

@@ -4,9 +4,9 @@
  *
  * Drives the local APIC in "clustered mode".
  */
-#include <linux/cpumask.h>
-#include <linux/dmi.h>
-#include <linux/smp.h>
+#include <linex/cpumask.h>
+#include <linex/dmi.h>
+#include <linex/smp.h>
 
 #include <asm/apic.h>
 #include <asm/io_apic.h>

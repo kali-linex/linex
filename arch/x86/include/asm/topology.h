@@ -30,8 +30,8 @@
  * moved to there from here.  May be used independent of
  * CONFIG_NUMA.
  */
-#include <linux/numa.h>
-#include <linux/cpumask.h>
+#include <linex/numa.h>
+#include <linex/cpumask.h>
 
 #ifdef CONFIG_NUMA
 

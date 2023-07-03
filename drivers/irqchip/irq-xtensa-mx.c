@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/of.h>
 
 #include <asm/mxregs.h>
 

@@ -25,12 +25,12 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/usb.h>
+#include <linex/usb/quirks.h>
+#include <linex/usb/hcd.h>
 
 #include "usb.h"
 

@@ -4,11 +4,11 @@
  * Copyright 2012 Benjamin Herrenschmidt, IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/kernel_stat.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/kvm_host.h>
+#include <linex/err.h>
+#include <linex/kernel_stat.h>
+#include <linex/pgtable.h>
 
 #include <asm/kvm_book3s.h>
 #include <asm/kvm_ppc.h>

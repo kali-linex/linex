@@ -9,8 +9,8 @@
 #ifndef _DW_EDMA_CORE_H
 #define _DW_EDMA_CORE_H
 
-#include <linux/msi.h>
-#include <linux/dma/edma.h>
+#include <linex/msi.h>
+#include <linex/dma/edma.h>
 
 #include "../virt-dma.h"
 

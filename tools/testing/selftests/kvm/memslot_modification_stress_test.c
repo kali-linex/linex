@@ -17,9 +17,9 @@
 #include <time.h>
 #include <poll.h>
 #include <pthread.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/userfaultfd.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/userfaultfd.h>
 
 #include "memstress.h"
 #include "processor.h"

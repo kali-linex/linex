@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright Axis Communications AB
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/driver.h>
 
 #include <dt-bindings/regulator/ti,tps62864.h>
 

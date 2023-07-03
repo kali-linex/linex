@@ -5,25 +5,25 @@
  * Copyright (c) 2022, Google LLC
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/sysfs.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/onboard_hub.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/suspend.h>
+#include <linex/sysfs.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/onboard_hub.h>
+#include <linex/workqueue.h>
 
 #include "onboard_usb_hub.h"
 

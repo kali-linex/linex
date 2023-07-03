@@ -6,9 +6,9 @@
  * Copyright (C) 2010 Simon Guinot <sguinot@lacie.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/suspend.h>
+#include <linex/io.h>
 #include "kirkwood.h"
 #include "kirkwood-pm.h"
 

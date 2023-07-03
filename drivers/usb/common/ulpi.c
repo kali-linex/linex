@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2015 Intel Corporation
  *
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/ulpi/interface.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk/clk-conf.h>
+#include <linex/ulpi/interface.h>
+#include <linex/ulpi/driver.h>
+#include <linex/ulpi/regs.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/debugfs.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/clk/clk-conf.h>
 
 /* -------------------------------------------------------------------------- */
 

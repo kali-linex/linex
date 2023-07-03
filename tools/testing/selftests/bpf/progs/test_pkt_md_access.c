@@ -3,8 +3,8 @@
  */
 #include <stddef.h>
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/pkt_cls.h>
+#include <linex/bpf.h>
+#include <linex/pkt_cls.h>
 #include <bpf/bpf_helpers.h>
 
 #if  __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__

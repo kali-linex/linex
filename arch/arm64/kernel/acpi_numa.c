@@ -16,14 +16,14 @@
 
 #define pr_fmt(fmt) "ACPI: NUMA: " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/topology.h>
+#include <linex/acpi.h>
+#include <linex/bitmap.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/mmzone.h>
+#include <linex/module.h>
+#include <linex/topology.h>
 
 #include <asm/numa.h>
 

@@ -7,24 +7,24 @@
  * Copyright (C) 2007 David Brownell (simplification, cleanup)
  */
 
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
+#include <linex/init.h>
+#include <linex/ioctl.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spidev.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spidev.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 
 /*
@@ -720,7 +720,7 @@ MODULE_DEVICE_TABLE(spi, spidev_spi_ids);
 
 /*
  * spidev should never be referenced in DT without a specific compatible string,
- * it is a Linux implementation thing rather than a description of the hardware.
+ * it is a Linex implementation thing rather than a description of the hardware.
  */
 static int spidev_of_check(struct device *dev)
 {

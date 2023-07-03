@@ -8,19 +8,19 @@
  *
  * Many thanks to Klaus Hitschler <klaus.hitschler@gmx.de>
  */
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/usb.h>
+#include <linex/device.h>
+#include <linex/ethtool.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/signal.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
 
 #include "pcan_usb_core.h"
 

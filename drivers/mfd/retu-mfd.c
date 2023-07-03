@@ -16,17 +16,17 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/retu.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/retu.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
 
 /* Registers */
 #define RETU_REG_ASICR		0x00		/* ASIC ID and revision */

@@ -6,30 +6,30 @@
  * Copyright Red Hat, Inc. 2011
  *
  * Authors:
- *  Stefan Hajnoczi   <stefanha@linux.vnet.ibm.com>
+ *  Stefan Hajnoczi   <stefanha@linex.vnet.ibm.com>
  *  Paolo Bonzini   <pbonzini@redhat.com>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_scsi.h>
-#include <linux/cpu.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/mempool.h>
+#include <linex/interrupt.h>
+#include <linex/virtio.h>
+#include <linex/virtio_ids.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_scsi.h>
+#include <linex/cpu.h>
+#include <linex/blkdev.h>
+#include <linex/blk-integrity.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_devinfo.h>
-#include <linux/seqlock.h>
-#include <linux/blk-mq-virtio.h>
+#include <linex/seqlock.h>
+#include <linex/blk-mq-virtio.h>
 
 #include "sd.h"
 

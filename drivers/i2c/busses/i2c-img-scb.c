@@ -67,21 +67,21 @@
  * detected (with a slight delay).
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
 
 /* Register offsets */
 
@@ -1077,7 +1077,7 @@ static int img_i2c_xfer(struct i2c_adapter *adap, struct i2c_msg *msgs,
 		/*
 		 * After the last message we must have waited for a stop bit.
 		 * Not waiting can cause problems when the clock is disabled
-		 * before the stop bit is sent, and the linux I2C interface
+		 * before the stop bit is sent, and the linex I2C interface
 		 * requires separate transfers not to joined with repeated
 		 * start.
 		 */

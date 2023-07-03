@@ -5,14 +5,14 @@
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_framebuffer.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/soc/mediatek/mtk-cmdq.h>
+#include <linex/soc/mediatek/mtk-mmsys.h>
 
 #include "mtk_drm_crtc.h"
 #include "mtk_drm_ddp_comp.h"

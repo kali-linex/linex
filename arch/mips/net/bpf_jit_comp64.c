@@ -12,9 +12,9 @@
  * Copyright (c) 2011 Mircea Gherzan <mgherzan@gmail.com>
  */
 
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
+#include <linex/errno.h>
+#include <linex/filter.h>
+#include <linex/bpf.h>
 #include <asm/cpu-features.h>
 #include <asm/isa-rev.h>
 #include <asm/uasm.h>

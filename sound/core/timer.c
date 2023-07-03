@@ -4,22 +4,22 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/sched/signal.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 #include <sound/control.h>
 #include <sound/info.h>
 #include <sound/minors.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
+#include <linex/kmod.h>
 
 /* internal flags */
 #define SNDRV_TIMER_IFLG_PAUSED		0x00010000

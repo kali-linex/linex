@@ -7,8 +7,8 @@
 #ifndef __ASM_ARM_CPU_H
 #define __ASM_ARM_CPU_H
 
-#include <linux/percpu.h>
-#include <linux/cpu.h>
+#include <linex/percpu.h>
+#include <linex/cpu.h>
 
 struct cpuinfo_arm {
 	struct cpu	cpu;

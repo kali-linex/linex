@@ -1,12 +1,12 @@
-/* linux/drivers/cdrom/cdrom.c
+/* linex/drivers/cdrom/cdrom.c
    Copyright (c) 1996, 1997 David A. van Leeuwen.
    Copyright (c) 1997, 1998 Erik Andersen <andersee@debian.org>
    Copyright (c) 1998, 1999 Jens Axboe <axboe@image.dk>
 
    May be copied or modified under the terms of the GNU General Public
-   License.  See linux/COPYING for more information.
+   License.  See linex/COPYING for more information.
 
-   Uniform CD-ROM driver for Linux.
+   Uniform CD-ROM driver for Linex.
    See Documentation/cdrom/cdrom-standard.rst for usage information.
 
    The routines in the file provide a uniform interface between the
@@ -256,25 +256,25 @@
 /* #define ERRLOGMASK (CD_WARNING|CD_OPEN|CD_COUNT_TRACKS|CD_CLOSE) */
 /* #define ERRLOGMASK (CD_WARNING|CD_REG_UNREG|CD_DO_IOCTL|CD_OPEN|CD_CLOSE|CD_COUNT_TRACKS) */
 
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/slab.h> 
-#include <linux/cdrom.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/blkpg.h>
-#include <linux/init.h>
-#include <linux/fcntl.h>
-#include <linux/blkdev.h>
-#include <linux/times.h>
-#include <linux/uaccess.h>
+#include <linex/atomic.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/major.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/nospec.h>
+#include <linex/slab.h> 
+#include <linex/cdrom.h>
+#include <linex/sysctl.h>
+#include <linex/proc_fs.h>
+#include <linex/blkpg.h>
+#include <linex/init.h>
+#include <linex/fcntl.h>
+#include <linex/blkdev.h>
+#include <linex/times.h>
+#include <linex/uaccess.h>
 #include <scsi/scsi_common.h>
 
 /* used to tell the module to turn on full debugging messages */

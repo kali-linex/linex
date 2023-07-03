@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_BUG_H
 #define _ASM_S390_BUG_H
 
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 #ifdef CONFIG_BUG
 

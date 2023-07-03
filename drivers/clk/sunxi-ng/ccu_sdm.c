@@ -3,9 +3,9 @@
  * Copyright (C) 2017 Chen-Yu Tsai <wens@csie.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
 
 #include "ccu_sdm.h"
 

@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2007 Atmel Corporation
  */
-#include <linux/delay.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/hardirq.h>
+#include <linex/delay.h>
+#include <linex/kdebug.h>
+#include <linex/notifier.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/hardirq.h>
 
 enum nmi_action {
 	NMI_SHOW_STATE	= 1 << 0,

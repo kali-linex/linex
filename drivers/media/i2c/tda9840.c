@@ -14,10 +14,10 @@
   */
 
 
-#include <linux/module.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <linex/module.h>
+#include <linex/ioctl.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
 #include <media/v4l2-device.h>
 
 MODULE_AUTHOR("Michael Hunold <michael@mihu.de>");

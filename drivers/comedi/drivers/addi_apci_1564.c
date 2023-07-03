@@ -66,9 +66,9 @@
  * datasheet I have. The (*insn_config) needs more work.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedi_pci.h>
 
 #include "addi_tcw.h"
 #include "addi_watchdog.h"

@@ -2,38 +2,38 @@
 /*
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  * Copyright 2003 PathScale, Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seq_file.h>
-#include <linux/tick.h>
-#include <linux/threads.h>
-#include <linux/resume_user_mode.h>
+#include <linex/stddef.h>
+#include <linex/err.h>
+#include <linex/hardirq.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/personality.h>
+#include <linex/proc_fs.h>
+#include <linex/ptrace.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/seq_file.h>
+#include <linex/tick.h>
+#include <linex/threads.h>
+#include <linex/resume_user_mode.h>
 #include <asm/current.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>
 #include <skas.h>
 #include <registers.h>
-#include <linux/time-internal.h>
-#include <linux/elfcore.h>
+#include <linex/time-internal.h>
+#include <linex/elfcore.h>
 
 /*
  * This is a per-cpu array.  A processor only modifies its entry and it only

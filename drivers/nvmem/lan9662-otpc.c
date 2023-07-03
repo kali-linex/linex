@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #define OTP_OTP_PWR_DN(t)			(t + 0x00)
 #define OTP_OTP_PWR_DN_OTP_PWRDN_N		BIT(0)

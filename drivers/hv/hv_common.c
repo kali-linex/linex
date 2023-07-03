@@ -12,18 +12,18 @@
  * Author : Michael Kelley <mikelley@microsoft.com>
  */
 
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/bitfield.h>
-#include <linux/cpumask.h>
-#include <linux/sched/task_stack.h>
-#include <linux/panic_notifier.h>
-#include <linux/ptrace.h>
-#include <linux/kdebug.h>
-#include <linux/kmsg_dump.h>
-#include <linux/slab.h>
-#include <linux/dma-map-ops.h>
+#include <linex/types.h>
+#include <linex/acpi.h>
+#include <linex/export.h>
+#include <linex/bitfield.h>
+#include <linex/cpumask.h>
+#include <linex/sched/task_stack.h>
+#include <linex/panic_notifier.h>
+#include <linex/ptrace.h>
+#include <linex/kdebug.h>
+#include <linex/kmsg_dump.h>
+#include <linex/slab.h>
+#include <linex/dma-map-ops.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>
 

@@ -5,18 +5,18 @@
  *	Copyright © 2006-2010  David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/olpc-ec.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/types.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/jiffies.h>
+#include <linex/sched.h>
+#include <linex/olpc-ec.h>
 
 
 #define EC_BAT_VOLTAGE	0x10	/* uint16_t,	*9.76/32,    mV   */

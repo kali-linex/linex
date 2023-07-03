@@ -3,19 +3,19 @@
 // bd71828-regulator.c ROHM BD71828GW-DS1 regulator driver
 //
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rohm-bd71828.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/rohm-bd71828.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
 
 struct reg_init {
 	unsigned int reg;

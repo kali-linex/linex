@@ -7,17 +7,17 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
+#include <linex/of_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

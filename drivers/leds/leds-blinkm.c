@@ -4,17 +4,17 @@
  *  (c) Jan-Simon Möller (dl9pf@gmx.de)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/printk.h>
-#include <linux/pm_runtime.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
+#include <linex/printk.h>
+#include <linex/pm_runtime.h>
+#include <linex/leds.h>
+#include <linex/delay.h>
 
 /* Addresses to scan - BlinkM is on 0x09 by default*/
 static const unsigned short normal_i2c[] = { 0x09, I2C_CLIENT_END };

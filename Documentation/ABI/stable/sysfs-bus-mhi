@@ -23,7 +23,7 @@ Users:		Any userspace application or clients interested in device info.
 What:           /sys/bus/mhi/devices/.../soc_reset
 Date:           April 2022
 KernelVersion:  5.19
-Contact:        mhi@lists.linux.dev
+Contact:        mhi@lists.linex.dev
 Description:	Initiates a SoC reset on the MHI controller.  A SoC reset is
                 a reset of last resort, and will require a complete re-init.
                 This can be useful as a method of recovery if the device is

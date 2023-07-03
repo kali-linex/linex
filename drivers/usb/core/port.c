@@ -7,10 +7,10 @@
  * Author: Lan Tianyu <tianyu.lan@intel.com>
  */
 
-#include <linux/kstrtox.h>
-#include <linux/slab.h>
-#include <linux/pm_qos.h>
-#include <linux/component.h>
+#include <linex/kstrtox.h>
+#include <linex/slab.h>
+#include <linex/pm_qos.h>
+#include <linex/component.h>
 
 #include "hub.h"
 

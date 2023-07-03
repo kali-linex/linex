@@ -9,19 +9,19 @@
  *  April, 2002
  *
  */
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/if_arp.h>
+#include <linex/spinlock.h>
 #include <net/netfilter/nf_log.h>
-#include <linux/ipv6.h>
+#include <linex/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_log.h>
-#include <linux/netfilter.h>
+#include <linex/in6.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_bridge/ebtables.h>
+#include <linex/netfilter_bridge/ebt_log.h>
+#include <linex/netfilter.h>
 
 static DEFINE_SPINLOCK(ebt_log_lock);
 

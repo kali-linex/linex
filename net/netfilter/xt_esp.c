@@ -4,16 +4,16 @@
 /* (C) 1999-2000 Yon Uriarte <yon@astaro.de>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/in.h>
+#include <linex/ip.h>
 
-#include <linux/netfilter/xt_esp.h>
-#include <linux/netfilter/x_tables.h>
+#include <linex/netfilter/xt_esp.h>
+#include <linex/netfilter/x_tables.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yon Uriarte <yon@astaro.de>");

@@ -3,8 +3,8 @@
 #ifndef _FUNETH_TXRX_H
 #define _FUNETH_TXRX_H
 
-#include <linux/netdevice.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/netdevice.h>
+#include <linex/u64_stats_sync.h>
 
 /* Tx descriptor size */
 #define FUNETH_SQE_SIZE 64U
@@ -218,7 +218,7 @@ struct fun_irq {
 	struct funeth_rxq *rxq;
 	u8 state;
 	u16 irq_idx;              /* index of MSI-X interrupt */
-	int irq;                  /* Linux IRQ vector */
+	int irq;                  /* Linex IRQ vector */
 	cpumask_t affinity_mask;  /* IRQ affinity */
 	struct irq_affinity_notify aff_notify;
 	char name[FUN_INT_NAME_LEN];

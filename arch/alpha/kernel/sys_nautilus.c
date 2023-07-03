@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_nautilus.c
+ *	linex/arch/alpha/kernel/sys_nautilus.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1998 Richard Henderson
@@ -25,15 +25,15 @@
  *     2 USB ports
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/memblock.h>
-#include <linux/bitops.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/reboot.h>
+#include <linex/memblock.h>
+#include <linex/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>
@@ -86,7 +86,7 @@ nautilus_kill_arch(int mode)
 	int off;
 
 	switch (mode) {
-	case LINUX_REBOOT_CMD_RESTART:
+	case LINEX_REBOOT_CMD_RESTART:
 		if (! alpha_using_srm) {
 			u8 t8;
 			pci_bus_read_config_byte(bus, 0x38, 0x43, &t8);
@@ -97,7 +97,7 @@ nautilus_kill_arch(int mode)
 		}
 		break;
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
+	case LINEX_REBOOT_CMD_POWER_OFF:
 		/* Assume M1543C */
 		off = 0x2000;		/* SLP_TYPE = 0, SLP_EN = 1 */
 		pci_bus_read_config_dword(bus, 0x88, 0x10, &pmuport);

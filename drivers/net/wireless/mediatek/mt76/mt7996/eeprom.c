@@ -3,7 +3,7 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include "mt7996.h"
 #include "eeprom.h"
 

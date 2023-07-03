@@ -8,20 +8,20 @@
  *  Copyright (C) 2004-2006  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <asm/unaligned.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/poll.h>
 
-#include <linux/skbuff.h>
-#include <linux/miscdevice.h>
-#include <linux/debugfs.h>
+#include <linex/skbuff.h>
+#include <linex/miscdevice.h>
+#include <linex/debugfs.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

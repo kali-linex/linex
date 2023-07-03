@@ -25,22 +25,22 @@
  * See Documentation/devicetree/bindings/timer/marvell,armada-370-xp-timer.txt
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/timer.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/sched_clock.h>
-#include <linux/percpu.h>
-#include <linux/syscore_ops.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
+#include <linex/timer.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/sched_clock.h>
+#include <linex/percpu.h>
+#include <linex/syscore_ops.h>
 
 #include <asm/delay.h>
 

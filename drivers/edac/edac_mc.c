@@ -1,34 +1,34 @@
 /*
  * edac_mc kernel module
- * (C) 2005, 2006 Linux Networx (http://lnxi.com)
+ * (C) 2005, 2006 Linex Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/linex-ecc/
  *
  * Modified by Dave Peterson and Doug Thompson
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/smp.h>
+#include <linex/init.h>
+#include <linex/sysctl.h>
+#include <linex/highmem.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
+#include <linex/ctype.h>
+#include <linex/edac.h>
+#include <linex/bitops.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include "edac_mc.h"
 #include "edac_module.h"

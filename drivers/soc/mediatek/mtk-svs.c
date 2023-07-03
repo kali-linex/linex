@@ -3,34 +3,34 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/thermal.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/cpu.h>
+#include <linex/cpuidle.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/thermal.h>
 
 /* svs bank 1-line software id */
 #define SVSB_CPU_LITTLE			BIT(0)

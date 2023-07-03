@@ -2,7 +2,7 @@
 /*
  * OpenRISC traps.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,20 +15,20 @@
  *  things.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/extable.h>
-#include <linux/kmod.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/extable.h>
+#include <linex/kmod.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/timer.h>
+#include <linex/mm.h>
+#include <linex/kallsyms.h>
+#include <linex/uaccess.h>
 
 #include <asm/io.h>
 #include <asm/unwinder.h>

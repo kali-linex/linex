@@ -10,8 +10,8 @@
  * It is based on the tpm_tis_spi device driver.
  */
 
-#include <linux/i2c.h>
-#include <linux/crc-ccitt.h>
+#include <linex/i2c.h>
+#include <linex/crc-ccitt.h>
 #include "tpm_tis_core.h"
 
 /* TPM registers */

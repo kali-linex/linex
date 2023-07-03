@@ -4,9 +4,9 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/part_stat.h>
+#include <linex/module.h>
+#include <linex/rculist.h>
+#include <linex/part_stat.h>
 
 #include <generated/utsrelease.h>
 #include <asm/unaligned.h>

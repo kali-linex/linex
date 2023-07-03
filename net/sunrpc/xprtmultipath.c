@@ -7,17 +7,17 @@
  * Trond Myklebust <trond.myklebust@primarydata.com>
  *
  */
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/xprtmultipath.h>
+#include <linex/atomic.h>
+#include <linex/types.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/rcupdate.h>
+#include <linex/rculist.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/sunrpc/xprt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/xprtmultipath.h>
 
 #include "sysfs.h"
 

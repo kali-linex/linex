@@ -8,15 +8,15 @@
  *	    Basavaraj Natikar <Basavaraj.Natikar@amd.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmi.h>
+#include <linex/interrupt.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include "amd_sfh_pcie.h"
 #include "sfh1_1/amd_sfh_init.h"

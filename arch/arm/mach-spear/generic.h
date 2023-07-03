@@ -10,10 +10,10 @@
 #ifndef __MACH_GENERIC_H
 #define __MACH_GENERIC_H
 
-#include <linux/dmaengine.h>
-#include <linux/amba/pl08x.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
+#include <linex/dmaengine.h>
+#include <linex/amba/pl08x.h>
+#include <linex/init.h>
+#include <linex/reboot.h>
 
 #include <asm/mach/time.h>
 

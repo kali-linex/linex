@@ -8,10 +8,10 @@
  * based on arch/arm/common/rtctime.c
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 
 #include "rtc-core.h"
 

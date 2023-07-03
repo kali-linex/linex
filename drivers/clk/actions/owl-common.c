@@ -8,10 +8,10 @@
 // Copyright (c) 2018 Linaro Ltd.
 // Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "owl-common.h"
 

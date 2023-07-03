@@ -6,9 +6,9 @@
  *
  * based on of_videomode.c by Sascha Hauer <s.hauer@pengutronix.de>
  */
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>
 

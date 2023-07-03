@@ -23,15 +23,15 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linex/delay.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/types.h>
 
 #include "psb_drv.h"
 #include "psb_intel_reg.h"

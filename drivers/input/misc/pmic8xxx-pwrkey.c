@@ -2,17 +2,17 @@
 /* Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/log2.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #define PON_CNTL_1 0x1C
 #define PON_CNTL_PULL_UP BIT(7)

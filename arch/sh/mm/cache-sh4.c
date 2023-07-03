@@ -10,13 +10,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/io.h>
+#include <linex/mutex.h>
+#include <linex/fs.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
 #include <asm/mmu_context.h>
 #include <asm/cache_insns.h>
 #include <asm/cacheflush.h>

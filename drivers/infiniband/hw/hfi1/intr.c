@@ -3,9 +3,9 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/bitmap.h>
 
 #include "hfi.h"
 #include "common.h"

@@ -2,7 +2,7 @@
 /*
  * OpenRISC time.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -10,17 +10,17 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
-#include <linux/ftrace.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/interrupt.h>
+#include <linex/ftrace.h>
 
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of_clk.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/of_clk.h>
 
 #include <asm/cpuinfo.h>
 #include <asm/time.h>
@@ -167,7 +167,7 @@ void __init time_init(void)
 
 	upr = mfspr(SPR_UPR);
 	if (!(upr & SPR_UPR_TTP))
-		panic("Linux not supported on devices without tick timer");
+		panic("Linex not supported on devices without tick timer");
 
 	openrisc_timer_init();
 	openrisc_clockevent_init();

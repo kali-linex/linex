@@ -3,14 +3,14 @@
  * Copyright (C) STMicroelectronics 2020
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 /* FMC2 Controller Registers */
 #define FMC2_BCR1			0x0

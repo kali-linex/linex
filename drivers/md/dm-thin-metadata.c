@@ -11,9 +11,9 @@
 #include "persistent-data/dm-space-map-disk.h"
 #include "persistent-data/dm-transaction-manager.h"
 
-#include <linux/list.h>
-#include <linux/device-mapper.h>
-#include <linux/workqueue.h>
+#include <linex/list.h>
+#include <linex/device-mapper.h>
+#include <linex/workqueue.h>
 
 /*
  *--------------------------------------------------------------------------

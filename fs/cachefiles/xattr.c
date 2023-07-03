@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/fsnotify.h>
+#include <linex/quotaops.h>
+#include <linex/xattr.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 #define CACHEFILES_COOKIE_TYPE_DATA 1

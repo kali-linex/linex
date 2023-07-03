@@ -5,9 +5,9 @@
  *  Copyright (c) 2018 Daniel M. Lambea <dmlambea@gmail.com>
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <linex/hid.h>
+#include <linex/module.h>
+#include <linex/printk.h>
 
 #include "hid-ids.h"
 

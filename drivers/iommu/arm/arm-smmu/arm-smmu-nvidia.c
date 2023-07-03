@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2019-2020 NVIDIA CORPORATION.  All rights reserved.
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <soc/tegra/mc.h>
 

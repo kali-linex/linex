@@ -7,8 +7,8 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/nls.h>
+#include <linex/fs.h>
+#include <linex/nls.h>
 
 #include "debug.h"
 #include "ntfs.h"

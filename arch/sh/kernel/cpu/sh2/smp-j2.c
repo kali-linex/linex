@@ -5,11 +5,11 @@
  * Copyright (C) 2015-2016 Smart Energy Instruments, Inc.
  */
 
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 #include <asm/cmpxchg.h>
 
 DEFINE_PER_CPU(unsigned, j2_ipi_messages);

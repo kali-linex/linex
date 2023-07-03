@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Linex Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2022 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -21,10 +21,10 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <linex/mempool.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

@@ -2,13 +2,13 @@
 #ifndef _NF_NAT_H
 #define _NF_NAT_H
 
-#include <linux/list.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <linex/list.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter/nf_conntrack_pptp.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
-#include <uapi/linux/netfilter/nf_nat.h>
+#include <uapi/linex/netfilter/nf_nat.h>
 
 enum nf_nat_manip_type {
 	NF_NAT_MANIP_SRC,

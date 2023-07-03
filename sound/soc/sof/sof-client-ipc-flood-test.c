@@ -2,19 +2,19 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Authors: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
-//	    Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+// Authors: Ranjani Sridharan <ranjani.sridharan@linex.intel.com>
+//	    Peter Ujfalusi <peter.ujfalusi@linex.intel.com>
 //
 
-#include <linux/auxiliary_bus.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/ktime.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/ktime.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include <sound/sof/header.h>
 
 #include "sof-client.h"

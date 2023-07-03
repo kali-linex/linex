@@ -2,16 +2,16 @@
 /*
  * Character device interface driver for Remoteproc framework.
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/remoteproc.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/remoteproc_cdev.h>
+#include <linex/cdev.h>
+#include <linex/compat.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/remoteproc.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/remoteproc_cdev.h>
 
 #include "remoteproc_internal.h"
 

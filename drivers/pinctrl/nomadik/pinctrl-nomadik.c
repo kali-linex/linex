@@ -7,28 +7,28 @@
  *   Rewritten based on work by Prafulla WADASKAR <prafulla.wadaskar@st.com>
  * Copyright (C) 2011-2013 Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 /* Since we request GPIOs from ourself */
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

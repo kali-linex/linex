@@ -11,9 +11,9 @@
  * Note: SDO pin cannot be left floating otherwise I2C address
  *	 will be undefined.
  */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #include "bme680.h"
 

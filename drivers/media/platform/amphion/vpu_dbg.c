@@ -3,16 +3,16 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/ioctl.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/pm_runtime.h>
 #include <media/v4l2-device.h>
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 #include "vpu.h"
 #include "vpu_defs.h"
 #include "vpu_core.h"

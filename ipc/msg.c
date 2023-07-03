@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/msg.c
+ * linex/ipc/msg.c
  * Copyright (C) 1992 Krishna Balasubramanian
  *
  * Removed all the remaining kerneld mess
@@ -23,26 +23,26 @@
  * Pavel Emelianov <xemul@openvz.org>
  */
 
-#include <linux/capability.h>
-#include <linux/msg.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/list.h>
-#include <linux/security.h>
-#include <linux/sched/wake_q.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rhashtable.h>
-#include <linux/percpu_counter.h>
+#include <linex/capability.h>
+#include <linex/msg.h>
+#include <linex/spinlock.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/proc_fs.h>
+#include <linex/list.h>
+#include <linex/security.h>
+#include <linex/sched/wake_q.h>
+#include <linex/syscalls.h>
+#include <linex/audit.h>
+#include <linex/seq_file.h>
+#include <linex/rwsem.h>
+#include <linex/nsproxy.h>
+#include <linex/ipc_namespace.h>
+#include <linex/rhashtable.h>
+#include <linex/percpu_counter.h>
 
 #include <asm/current.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "util.h"
 
 /* one msq_queue structure for each present queue on the system */
@@ -582,7 +582,7 @@ static int msgctl_stat(struct ipc_namespace *ns, int msqid,
 		err = 0;
 	} else {
 		/*
-		 * MSG_STAT and MSG_STAT_ANY (both Linux specific)
+		 * MSG_STAT and MSG_STAT_ANY (both Linex specific)
 		 * Return the full id, including the sequence number
 		 */
 		err = msq->q_perm.id;

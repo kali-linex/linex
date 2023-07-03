@@ -6,7 +6,7 @@
 #ifndef __INTEL_RUNTIME_PM_H__
 #define __INTEL_RUNTIME_PM_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "intel_wakeref.h"
 

@@ -3,23 +3,23 @@
  * Copyright (c) 2014-2015 Imagination Technologies Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
 /* Registers */
 #define CC10001_ADC_CONFIG		0x00

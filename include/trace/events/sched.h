@@ -5,10 +5,10 @@
 #if !defined(_TRACE_SCHED_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SCHED_H
 
-#include <linux/kthread.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/tracepoint.h>
-#include <linux/binfmts.h>
+#include <linex/kthread.h>
+#include <linex/sched/numa_balancing.h>
+#include <linex/tracepoint.h>
+#include <linex/binfmts.h>
 
 /*
  * Tracepoint for calling kthread_stop, performed to end a kthread:
@@ -400,7 +400,7 @@ TRACE_EVENT(sched_process_fork,
 TRACE_EVENT(sched_process_exec,
 
 	TP_PROTO(struct task_struct *p, pid_t old_pid,
-		 struct linux_binprm *bprm),
+		 struct linex_binprm *bprm),
 
 	TP_ARGS(p, old_pid, bprm),
 

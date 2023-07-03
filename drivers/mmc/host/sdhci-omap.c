@@ -6,20 +6,20 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sys_soc.h>
-#include <linux/thermal.h>
+#include <linex/delay.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/sys_soc.h>
+#include <linex/thermal.h>
 
 #include "sdhci-pltfm.h"
 

@@ -6,23 +6,23 @@
  * Copyright (C) 2009 - 2015 Xilinx, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi-mem.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/firmware/xlnx-zynqmp.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/spi/spi.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/spi/spi-mem.h>
 
 /* Generic QSPI register offsets */
 #define GQSPI_CONFIG_OFST		0x00000100

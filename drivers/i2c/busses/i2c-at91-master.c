@@ -13,20 +13,20 @@
  *  Copyright (C) 2000 Philip Edelbrock <phil@stimpy.netroedge.com>
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "i2c-at91.h"
 

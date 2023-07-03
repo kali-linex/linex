@@ -17,9 +17,9 @@
 #include "../util/mutex.h"
 #include "../util/stat.h"
 #include <subcmd/parse-options.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/time64.h>
 #include <errno.h>
 #include <perf/cpumap.h>
 #include "bench.h"

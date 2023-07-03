@@ -2,11 +2,11 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <linex/uaccess.h>
+#include <linex/string.h>
+#include <linex/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <linex/buffer_head.h>
 
 /*
  * copy copy_count entries from source directory item to dest buffer

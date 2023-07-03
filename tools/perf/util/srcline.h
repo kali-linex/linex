@@ -2,9 +2,9 @@
 #ifndef PERF_SRCLINE_H
 #define PERF_SRCLINE_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/types.h>
 
 struct dso;
 struct symbol;

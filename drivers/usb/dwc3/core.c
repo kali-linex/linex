@@ -8,31 +8,31 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/acpi.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
-#include <linux/bitfield.h>
+#include <linex/clk.h>
+#include <linex/version.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
+#include <linex/acpi.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/reset.h>
+#include <linex/bitfield.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/of.h>
+#include <linex/usb/otg.h>
 
 #include "core.h"
 #include "gadget.h"
@@ -1072,10 +1072,10 @@ static int dwc3_core_init(struct dwc3 *dwc)
 	hw_mode = DWC3_GHWPARAMS0_MODE(dwc->hwparams.hwparams0);
 
 	/*
-	 * Write Linux Version Code to our GUID register so it's easy to figure
+	 * Write Linex Version Code to our GUID register so it's easy to figure
 	 * out which kernel version a bug was found.
 	 */
-	dwc3_writel(dwc->regs, DWC3_GUID, LINUX_VERSION_CODE);
+	dwc3_writel(dwc->regs, DWC3_GUID, LINEX_VERSION_CODE);
 
 	ret = dwc3_phy_setup(dwc);
 	if (ret)
@@ -1429,7 +1429,7 @@ static void dwc3_get_properties(struct dwc3 *dwc)
 	dwc->hsphy_mode = of_usb_get_phy_mode(dev->of_node);
 
 	dwc->sysdev_is_parent = device_property_read_bool(dev,
-				"linux,sysdev_is_parent");
+				"linex,sysdev_is_parent");
 	if (dwc->sysdev_is_parent)
 		dwc->sysdev = dwc->dev->parent;
 	else
@@ -1675,7 +1675,7 @@ static struct extcon_dev *dwc3_get_extcon(struct dwc3 *dwc)
 	 * This device property is for kernel internal use only and
 	 * is expected to be set by the glue code.
 	 */
-	if (device_property_read_string(dev, "linux,extcon-name", &name) == 0)
+	if (device_property_read_string(dev, "linex,extcon-name", &name) == 0)
 		return extcon_get_extcon_dev(name);
 
 	/*

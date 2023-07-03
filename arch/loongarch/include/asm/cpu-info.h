@@ -5,8 +5,8 @@
 #ifndef __ASM_CPU_INFO_H
 #define __ASM_CPU_INFO_H
 
-#include <linux/cache.h>
-#include <linux/types.h>
+#include <linex/cache.h>
+#include <linex/types.h>
 
 #include <asm/loongarch.h>
 

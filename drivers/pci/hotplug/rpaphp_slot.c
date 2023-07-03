@@ -8,13 +8,13 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sysfs.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 
 #include <asm/rtas.h>
 #include "rpaphp.h"

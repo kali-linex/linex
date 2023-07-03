@@ -14,16 +14,16 @@
  *	Copyright (c) Tomasz Duszynski <tduszyns@gmail.com>
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/serdev.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/regmap.h>
+#include <linex/serdev.h>
 
 #include "bno055_ser_trace.h"
 #include "bno055.h"

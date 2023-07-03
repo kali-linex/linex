@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_ALTERNATIVE_H
 #define _ASM_X86_ALTERNATIVE_H
 
-#include <linux/types.h>
-#include <linux/stringify.h>
+#include <linex/types.h>
+#include <linex/stringify.h>
 #include <asm/asm.h>
 
 #define ALT_FLAGS_SHIFT		16
@@ -13,7 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stddef.h>
+#include <linex/stddef.h>
 
 /*
  * Alternative inline assembly for SMP.

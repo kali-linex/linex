@@ -7,15 +7,15 @@
  *
  *  Copyright IBM Corp. 2016, 2018
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  */
 
-#include <linux/in.h>
-#include <linux/inetdevice.h>
-#include <linux/if_ether.h>
-#include <linux/sched/signal.h>
-#include <linux/utsname.h>
-#include <linux/ctype.h>
+#include <linex/in.h>
+#include <linex/inetdevice.h>
+#include <linex/if_ether.h>
+#include <linex/sched/signal.h>
+#include <linex/utsname.h>
+#include <linex/ctype.h>
 
 #include <net/addrconf.h>
 #include <net/sock.h>
@@ -423,7 +423,7 @@ smc_clc_msg_decl_valid(struct smc_clc_msg_decline *dclc)
 static void smc_clc_fill_fce(struct smc_clc_first_contact_ext *fce, int *len)
 {
 	memset(fce, 0, sizeof(*fce));
-	fce->os_type = SMC_CLC_OS_LINUX;
+	fce->os_type = SMC_CLC_OS_LINEX;
 	fce->release = SMC_RELEASE;
 	memcpy(fce->hostname, smc_hostname, sizeof(smc_hostname));
 	(*len) += sizeof(*fce);
@@ -773,7 +773,7 @@ int smc_clc_send_decline(struct smc_sock *smc, u32 peer_diag_info, u8 version)
 	memcpy(dclc.hdr.eyecatcher, SMC_EYECATCHER, sizeof(SMC_EYECATCHER));
 	dclc.hdr.type = SMC_CLC_DECLINE;
 	dclc.hdr.version = version;
-	dclc.os_type = version == SMC_V1 ? 0 : SMC_CLC_OS_LINUX;
+	dclc.os_type = version == SMC_V1 ? 0 : SMC_CLC_OS_LINEX;
 	dclc.hdr.typev2 = (peer_diag_info == SMC_CLC_DECL_SYNCERR) ?
 						SMC_FIRST_CONTACT_MASK : 0;
 	if ((!smc_conn_lgr_valid(&smc->conn) || !smc->conn.lgr->is_smcd) &&

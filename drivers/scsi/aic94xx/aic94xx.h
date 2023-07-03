@@ -11,8 +11,8 @@
 #ifndef _AIC94XX_H_
 #define _AIC94XX_H_
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
 #include <scsi/libsas.h>
 
 #define ASD_DRIVER_NAME		"aic94xx"

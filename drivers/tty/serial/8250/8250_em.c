@@ -5,14 +5,14 @@
  *  Copyright (C) 2012 Magnus Damm
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/serial_8250.h>
+#include <linex/serial_reg.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
 
 #include "8250.h"
 

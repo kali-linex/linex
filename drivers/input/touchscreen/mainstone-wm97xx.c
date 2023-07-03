@@ -17,16 +17,16 @@
  *       - processors supported:- Intel XScale PXA25x, PXA26x, PXA27x
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/wm97xx.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/soc/pxa/cpu.h>
+#include <linex/wm97xx.h>
 
 #include <sound/pxa2xx-lib.h>
 

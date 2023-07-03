@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/device.h>
+#include <linex/device.h>
 
 #include <drm/drm_drv.h>
 

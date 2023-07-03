@@ -26,8 +26,8 @@
   *
   */
 
-#include <linux/fs.h>
-#include <linux/exportfs.h>
+#include <linex/fs.h>
+#include <linex/exportfs.h>
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "cifsfs.h"

@@ -10,16 +10,16 @@
  * - ABC/target calibration
  */
 
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/time64.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/regmap.h>
+#include <linex/time64.h>
 
-#include <linux/iio/iio.h>
+#include <linex/iio/iio.h>
 
 #define DRIVER_NAME "sunrise_co2"
 

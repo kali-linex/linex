@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux BPFILTER layer.
+# Makefile for the Linex BPFILTER layer.
 #
 
 userprogs := bpfilter_umh

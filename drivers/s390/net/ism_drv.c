@@ -7,13 +7,13 @@
 #define KMSG_COMPONENT "ism"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
-#include <linux/processor.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/ctype.h>
+#include <linex/processor.h>
 
 #include "ism.h"
 

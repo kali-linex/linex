@@ -6,30 +6,30 @@
 // Copyright Intel Corporation (C) 2019-2020. All rights reserved.
 // Copyright (C) 2020 Texas Instruments Incorporated - http://www.ti.com
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sched.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/timer.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/firmware/xlnx-zynqmp.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/sched.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-mem.h>
+#include <linex/timer.h>
 
 #define CQSPI_NAME			"cadence-qspi"
 #define CQSPI_MAX_CHIPSELECT		16

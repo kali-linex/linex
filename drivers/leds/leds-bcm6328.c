@@ -5,12 +5,12 @@
  * Copyright 2015 Álvaro Fernández Rojas <noltari@gmail.com>
  * Copyright 2015 Jonas Gorski <jogo@openwrt.org>
  */
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/io.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 
 #define BCM6328_REG_INIT		0x00
 #define BCM6328_REG_MODE_HI		0x04

@@ -4,17 +4,17 @@
  * Copyright (C) 2008, 2011 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/preempt.h>
-#include <linux/hw_random.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/preempt.h>
+#include <linex/hw_random.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include <asm/hypervisor.h>
 

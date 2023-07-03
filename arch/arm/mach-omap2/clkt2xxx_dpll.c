@@ -6,10 +6,10 @@
  * Paul Walmsley
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/clk.h>
+#include <linex/io.h>
 
 #include "clock.h"
 #include "cm2xxx.h"

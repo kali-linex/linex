@@ -18,8 +18,8 @@
  * Module for common driver code between ath9k and ath9k_htc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 #include "common.h"
 

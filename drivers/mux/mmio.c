@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Pengutronix, Philipp Zabel <kernel@pengutronix.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mux/driver.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/mux/driver.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 static int mux_mmio_set(struct mux_control *mux, int state)
 {

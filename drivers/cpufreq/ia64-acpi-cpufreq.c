@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/cpufreq.h>
+#include <linex/proc_fs.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/pal.h>
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 #include <acpi/processor.h>
 
 MODULE_AUTHOR("Venkatesh Pallipadi");

@@ -34,19 +34,19 @@
     
 ======================================================================*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/ioport.h>
+#include <linex/major.h>
+#include <linex/interrupt.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
+#include <linex/parport.h>
+#include <linex/parport_pc.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

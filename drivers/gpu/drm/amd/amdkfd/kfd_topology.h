@@ -24,9 +24,9 @@
 #ifndef __KFD_TOPOLOGY_H__
 #define __KFD_TOPOLOGY_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kfd_sysfs.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/kfd_sysfs.h>
 #include "kfd_crat.h"
 
 #define KFD_TOPOLOGY_PUBLIC_NAME_SIZE 32

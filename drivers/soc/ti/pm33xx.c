@@ -6,27 +6,27 @@
  *	Vaibhav Bedia, Dave Gerlach
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_data/pm33xx.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtc.h>
-#include <linux/rtc/rtc-omap.h>
-#include <linux/sizes.h>
-#include <linux/sram.h>
-#include <linux/suspend.h>
-#include <linux/ti-emif-sram.h>
-#include <linux/wkup_m3_ipc.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/genalloc.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_data/pm33xx.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/rtc.h>
+#include <linex/rtc/rtc-omap.h>
+#include <linex/sizes.h>
+#include <linex/sram.h>
+#include <linex/suspend.h>
+#include <linex/ti-emif-sram.h>
+#include <linex/wkup_m3_ipc.h>
 
 #include <asm/proc-fns.h>
 #include <asm/suspend.h>

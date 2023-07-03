@@ -8,20 +8,20 @@
  * Datasheet: https://www.ti.com/lit/ds/symlink/ads131e08.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/module.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <asm/unaligned.h>
 

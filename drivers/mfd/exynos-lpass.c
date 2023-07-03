@@ -11,17 +11,17 @@
  * devices for IP blocks like DMAC, I2S, UART.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/soc/samsung/exynos-regs-pmu.h>
+#include <linex/types.h>
 
 /* LPASS Top register definitions */
 #define SFR_LPASS_CORE_SW_RESET		0x08

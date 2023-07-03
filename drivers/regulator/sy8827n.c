@@ -6,13 +6,13 @@
 //
 // Author: Jisheng Zhang <jszhang@kernel.org>
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
 
 #define SY8827N_VSEL0		0
 #define   SY8827N_BUCK_EN	(1 << 7)

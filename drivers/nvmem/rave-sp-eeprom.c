@@ -6,13 +6,13 @@
  * Copyright (C) 2018 Zodiac Inflight Innovations
  *
  */
-#include <linux/kernel.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
+#include <linex/kernel.h>
+#include <linex/mfd/rave-sp.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/sizes.h>
 
 /**
  * enum rave_sp_eeprom_access_type - Supported types of EEPROM access

@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/stddef.h>
-#include <linux/debugfs.h>
+#include <linex/bitfield.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/firmware.h>
+#include <linex/stddef.h>
+#include <linex/debugfs.h>
 
 #include "rvu_struct.h"
 #include "rvu_reg.h"

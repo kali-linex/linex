@@ -7,24 +7,24 @@
  */
 
 /*
-#include <linux/module.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
-#include <linux/security.h>
+#include <linex/module.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/magic.h>
+#include <linex/security.h>
 #include <net/net_namespace.h>
 #ifdef CONFIG_CIFS_DFS_UPCALL
 #include "dfs_cache.h"
 #endif
 */
 
-#include <linux/ctype.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/parser.h>
-#include <linux/utsname.h>
+#include <linex/ctype.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/parser.h>
+#include <linex/utsname.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -87,7 +87,7 @@ const struct fs_parameter_spec smb3_fs_parameters[] = {
 	fsparam_flag("nodfs", Opt_nodfs),
 	fsparam_flag_no("posixpaths", Opt_posixpaths),
 	fsparam_flag_no("unix", Opt_unix),
-	fsparam_flag_no("linux", Opt_unix),
+	fsparam_flag_no("linex", Opt_unix),
 	fsparam_flag_no("posix", Opt_unix),
 	fsparam_flag("nocase", Opt_nocase),
 	fsparam_flag("ignorecase", Opt_nocase),
@@ -1018,7 +1018,7 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		uid = make_kuid(current_user_ns(), result.uint_32);
 		if (!uid_valid(uid))
 			goto cifs_parse_mount_err;
-		ctx->linux_uid = uid;
+		ctx->linex_uid = uid;
 		ctx->uid_specified = true;
 		break;
 	case Opt_cruid:
@@ -1046,7 +1046,7 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		gid = make_kgid(current_user_ns(), result.uint_32);
 		if (!gid_valid(gid))
 			goto cifs_parse_mount_err;
-		ctx->linux_gid = gid;
+		ctx->linex_gid = gid;
 		ctx->gid_specified = true;
 		break;
 	case Opt_port:
@@ -1378,15 +1378,15 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		break;
 	case Opt_unix:
 		if (result.negated) {
-			if (ctx->linux_ext == 1)
+			if (ctx->linex_ext == 1)
 				pr_warn_once("conflicting posix mount options specified\n");
-			ctx->linux_ext = 0;
-			ctx->no_linux_ext = 1;
+			ctx->linex_ext = 0;
+			ctx->no_linex_ext = 1;
 		} else {
-			if (ctx->no_linux_ext == 1)
+			if (ctx->no_linex_ext == 1)
 				pr_warn_once("conflicting posix mount options specified\n");
-			ctx->linux_ext = 1;
-			ctx->no_linux_ext = 0;
+			ctx->linex_ext = 1;
+			ctx->no_linex_ext = 0;
 		}
 		break;
 	case Opt_nocase:
@@ -1559,8 +1559,8 @@ int smb3_init_fs_context(struct fs_context *fc)
 	 */
 	ctx->target_rfc1001_name[0] = 0;
 	ctx->cred_uid = current_uid();
-	ctx->linux_uid = current_uid();
-	ctx->linux_gid = current_gid();
+	ctx->linex_uid = current_uid();
+	ctx->linex_gid = current_gid();
 	/* By default 4MB read ahead size, 1MB block size */
 	ctx->bsize = CIFS_DEFAULT_IOSIZE; /* can improve cp performance significantly */
 	ctx->rasize = 0; /* 0 = use default (ie negotiated rsize) for read ahead pages */

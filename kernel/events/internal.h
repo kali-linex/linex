@@ -2,9 +2,9 @@
 #ifndef _KERNEL_EVENTS_INTERNAL_H
 #define _KERNEL_EVENTS_INTERNAL_H
 
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/refcount.h>
+#include <linex/hardirq.h>
+#include <linex/uaccess.h>
+#include <linex/refcount.h>
 
 /* Buffer handling */
 

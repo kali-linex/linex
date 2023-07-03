@@ -10,13 +10,13 @@
  * HP Jornada 710/720/729 Touchscreen Driver
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
 
 #include <mach/jornada720.h>
 

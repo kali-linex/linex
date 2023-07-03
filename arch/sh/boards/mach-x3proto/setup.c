@@ -6,18 +6,18 @@
  *
  * Copyright (C) 2007 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/smc91x.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/m66592.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio_keys.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/smc91x.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/usb/r8a66597.h>
+#include <linex/usb/m66592.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio_keys.h>
 #include <mach/ilsel.h>
 #include <mach/hardware.h>
 #include <asm/smp-ops.h>

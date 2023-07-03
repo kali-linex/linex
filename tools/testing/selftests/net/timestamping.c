@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * This program demonstrates how the various time stamping features in
- * the Linux kernel work. It emulates the behavior of a PTP
+ * the Linex kernel work. It emulates the behavior of a PTP
  * implementation in stand-alone master mode by sending PTPv1 Sync
  * multicasts once every second. It looks for similar packets, but
  * beyond that doesn't actually implement PTP.
@@ -30,9 +30,9 @@
 #include <net/if.h>
 
 #include <asm/types.h>
-#include <linux/net_tstamp.h>
-#include <linux/errqueue.h>
-#include <linux/sockios.h>
+#include <linex/net_tstamp.h>
+#include <linex/errqueue.h>
+#include <linex/sockios.h>
 
 #ifndef SO_TIMESTAMPING
 # define SO_TIMESTAMPING         37

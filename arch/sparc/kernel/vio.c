@@ -10,11 +10,11 @@
  * Adapted to sparc64 by David S. Miller davem@davemloft.net
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
+#include <linex/export.h>
+#include <linex/init.h>
 
 #include <asm/mdesc.h>
 #include <asm/vio.h>

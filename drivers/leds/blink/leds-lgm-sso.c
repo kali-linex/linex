@@ -5,20 +5,20 @@
  * Copyright (c) 2020 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/sizes.h>
+#include <linex/uaccess.h>
 
 #define SSO_DEV_NAME			"lgm-sso"
 
@@ -643,7 +643,7 @@ __sso_led_dt_parse(struct sso_led_priv *priv, struct fwnode_handle *fw_ssoled)
 		}
 
 		fwnode_property_read_string(fwnode_child,
-					    "linux,default-trigger",
+					    "linex,default-trigger",
 					    &desc->default_trigger);
 
 		if (fwnode_property_present(fwnode_child,

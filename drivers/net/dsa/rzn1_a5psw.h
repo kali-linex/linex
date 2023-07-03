@@ -5,14 +5,14 @@
  * Clément Léger <clement.leger@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/pcs-rzn1-miic.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/platform_device.h>
+#include <linex/pcs-rzn1-miic.h>
 #include <net/dsa.h>
 
 #define A5PSW_REVISION			0x0

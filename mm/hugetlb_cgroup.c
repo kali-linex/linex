@@ -1,7 +1,7 @@
 /*
  *
  * Copyright IBM Corporation, 2012
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linex.vnet.ibm.com>
  *
  * Cgroup v2
  * Copyright (C) 2019 Red Hat, Inc.
@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/cgroup.h>
-#include <linux/page_counter.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
+#include <linex/cgroup.h>
+#include <linex/page_counter.h>
+#include <linex/slab.h>
+#include <linex/hugetlb.h>
+#include <linex/hugetlb_cgroup.h>
 
 #define MEMFILE_PRIVATE(x, val)	(((x) << 16) | (val))
 #define MEMFILE_IDX(val)	(((val) >> 16) & 0xffff)

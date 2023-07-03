@@ -13,18 +13,18 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bug.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/printk.h>
-#include <linux/proc_ns.h>
-#include <linux/rhashtable.h>
-#include <linux/rtnetlink.h>
-#include <linux/rwsem.h>
+#include <linex/bpf.h>
+#include <linex/bpf_verifier.h>
+#include <linex/bug.h>
+#include <linex/kdev_t.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/netdevice.h>
+#include <linex/printk.h>
+#include <linex/proc_ns.h>
+#include <linex/rhashtable.h>
+#include <linex/rtnetlink.h>
+#include <linex/rwsem.h>
 
 /* Protects offdevs, members of bpf_offload_netdev and offload members
  * of all progs.

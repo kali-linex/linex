@@ -5,9 +5,9 @@
  * Copyright (c) 2017 Eva Rachel Retuya <eraretuya@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
 
 #include "adxl345.h"
 

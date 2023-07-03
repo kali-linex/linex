@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General linex system control interface
  */
 
-#include <linux/sysctl.h>
-#include <linux/printk.h>
-#include <linux/capability.h>
-#include <linux/ratelimit.h>
+#include <linex/sysctl.h>
+#include <linex/printk.h>
+#include <linex/capability.h>
+#include <linex/ratelimit.h>
 #include "internal.h"
 
 static const int ten_thousand = 10000;

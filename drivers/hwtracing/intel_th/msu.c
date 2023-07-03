@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/sizes.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/workqueue.h>
-#include <linux/dma-mapping.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/uaccess.h>
+#include <linex/sizes.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/workqueue.h>
+#include <linex/dma-mapping.h>
 
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>
 #endif
 
-#include <linux/intel_th.h>
+#include <linex/intel_th.h>
 #include "intel_th.h"
 #include "msu.h"
 
@@ -2203,4 +2203,4 @@ module_driver(intel_th_msc_driver,
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Intel(R) Trace Hub Memory Storage Unit driver");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linex.intel.com>");

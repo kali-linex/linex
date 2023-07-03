@@ -13,16 +13,16 @@
  * turn sends messages between the IA and the PMC.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_pmc_bxt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/itco_wdt.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/intel_pmc_bxt.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/itco_wdt.h>
 
 #include <asm/intel_scu_ipc.h>
 
@@ -462,7 +462,7 @@ static struct platform_driver intel_pmc_driver = {
 };
 module_platform_driver(intel_pmc_driver);
 
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linex.intel.com>");
 MODULE_AUTHOR("Zha Qipeng <qipeng.zha@intel.com>");
 MODULE_DESCRIPTION("Intel Broxton PMC driver");
 MODULE_LICENSE("GPL v2");

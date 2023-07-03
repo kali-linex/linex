@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /* Copyright (c) 2021, Microsoft Corporation. */
 
-#include <uapi/linux/bpf.h>
+#include <uapi/linex/bpf.h>
 
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/filter.h>
-#include <linux/mm.h>
+#include <linex/inetdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/filter.h>
+#include <linex/mm.h>
 
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>

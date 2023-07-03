@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/if_bridge.h>
-#include <linux/in.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/rhashtable.h>
-#include <linux/rhashtable-types.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/if_bridge.h>
+#include <linex/in.h>
+#include <linex/list.h>
+#include <linex/netdevice.h>
+#include <linex/netlink.h>
+#include <linex/rhashtable.h>
+#include <linex/rhashtable-types.h>
+#include <linex/rtnetlink.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include <net/netlink.h>
 #include <net/vxlan.h>
 

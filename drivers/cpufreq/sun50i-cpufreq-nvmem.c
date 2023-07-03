@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
+#include <linex/cpu.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/slab.h>
 
 #define MAX_NAME_LEN	7
 

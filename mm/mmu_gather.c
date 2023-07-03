@@ -1,14 +1,14 @@
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mmdebug.h>
-#include <linux/mm_types.h>
-#include <linux/mm_inline.h>
-#include <linux/pagemap.h>
-#include <linux/rcupdate.h>
-#include <linux/smp.h>
-#include <linux/swap.h>
-#include <linux/rmap.h>
+#include <linex/gfp.h>
+#include <linex/highmem.h>
+#include <linex/kernel.h>
+#include <linex/mmdebug.h>
+#include <linex/mm_types.h>
+#include <linex/mm_inline.h>
+#include <linex/pagemap.h>
+#include <linex/rcupdate.h>
+#include <linex/smp.h>
+#include <linex/swap.h>
+#include <linex/rmap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>

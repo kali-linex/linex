@@ -6,32 +6,32 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/cache.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
-#include <linux/panic_notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/efi.h>
-#include <linux/psci.h>
-#include <linux/sched/task.h>
-#include <linux/scs.h>
-#include <linux/mm.h>
+#include <linex/acpi.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/initrd.h>
+#include <linex/console.h>
+#include <linex/cache.h>
+#include <linex/screen_info.h>
+#include <linex/init.h>
+#include <linex/kexec.h>
+#include <linex/root_dev.h>
+#include <linex/cpu.h>
+#include <linex/interrupt.h>
+#include <linex/smp.h>
+#include <linex/fs.h>
+#include <linex/panic_notifier.h>
+#include <linex/proc_fs.h>
+#include <linex/memblock.h>
+#include <linex/of_fdt.h>
+#include <linex/efi.h>
+#include <linex/psci.h>
+#include <linex/sched/task.h>
+#include <linex/scs.h>
+#include <linex/mm.h>
 
 #include <asm/acpi.h>
 #include <asm/fixmap.h>
@@ -91,7 +91,7 @@ void __init smp_setup_processor_id(void)
 	u64 mpidr = read_cpuid_mpidr() & MPIDR_HWID_BITMASK;
 	set_cpu_logical_map(0, mpidr);
 
-	pr_info("Booting Linux on physical CPU 0x%010lx [0x%08x]\n",
+	pr_info("Booting Linex on physical CPU 0x%010lx [0x%08x]\n",
 		(unsigned long)mpidr, read_cpuid_id());
 }
 

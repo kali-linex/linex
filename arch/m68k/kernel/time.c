@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/m68k/kernel/time.c
+ *  linex/arch/m68k/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *
@@ -11,25 +11,25 @@
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/loadavg.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>
 #include <asm/irq_regs.h>
 
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/profile.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/profile.h>
 
 
 unsigned long (*mach_random_get_entropy)(void);

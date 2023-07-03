@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/mailbox_controller.h>
 #include <soc/microchip/mpfs.h>
 
 #define SERVICES_CR_OFFSET		0x50u

@@ -8,16 +8,16 @@
  *		Vitaly Andrianov
  *		Tero Kristo
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/dmapool.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include <crypto/aes.h>
 #include <crypto/authenc.h>
@@ -152,7 +152,7 @@ struct algo_data {
  * @registered: Flag indicating if the crypto algorithm is already registered
  */
 struct sa_alg_tmpl {
-	u32 type;		/* CRYPTO_ALG_TYPE from <linux/crypto.h> */
+	u32 type;		/* CRYPTO_ALG_TYPE from <linex/crypto.h> */
 	union {
 		struct skcipher_alg skcipher;
 		struct ahash_alg ahash;

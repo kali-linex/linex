@@ -5,16 +5,16 @@
  *    Copyright (C) 2016 Jeremy Kerr <jk@ozlabs.org>, IBM Corp.
  *    Copyright (C) 2006 Arnd Bergmann <arnd@arndb.de>, IBM Corp.
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/clk.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/clk.h>
 
 #include "8250.h"
 

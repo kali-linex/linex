@@ -7,24 +7,24 @@
  * Copyright (c) 2019, 2020 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/compiler.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinconf.h"
@@ -4181,7 +4181,7 @@ static int __init ingenic_gpio_probe(struct ingenic_pinctrl *jzpc,
 
 	/* DO NOT EXPAND THIS: FOR BACKWARD GPIO NUMBERSPACE COMPATIBIBILITY
 	 * ONLY: WORK TO TRANSITION CONSUMERS TO USE THE GPIO DESCRIPTOR API IN
-	 * <linux/gpio/consumer.h> INSTEAD.
+	 * <linex/gpio/consumer.h> INSTEAD.
 	 */
 	jzgc->gc.base = bank * 32;
 

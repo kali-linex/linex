@@ -10,14 +10,14 @@
  * Author: Dan Magenheimer
  */
 
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/frontswap.h>
-#include <linux/swapfile.h>
+#include <linex/mman.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/security.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/frontswap.h>
+#include <linex/swapfile.h>
 
 DEFINE_STATIC_KEY_FALSE(frontswap_enabled_key);
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/inode.c
+ *  linex/fs/ext4/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linex/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,28 +19,28 @@
  *  Assorted race fixes, rewrite of ext4_get_block() by Al Viro, 2000
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/dax.h>
-#include <linux/quotaops.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
-#include <linux/workqueue.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/iomap.h>
-#include <linux/iversion.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/time.h>
+#include <linex/highuid.h>
+#include <linex/pagemap.h>
+#include <linex/dax.h>
+#include <linex/quotaops.h>
+#include <linex/string.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/pagevec.h>
+#include <linex/mpage.h>
+#include <linex/namei.h>
+#include <linex/uio.h>
+#include <linex/bio.h>
+#include <linex/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/iomap.h>
+#include <linex/iversion.h>
 
 #include "ext4_jbd2.h"
 #include "xattr.h"
@@ -87,7 +87,7 @@ static int ext4_inode_csum_verify(struct inode *inode, struct ext4_inode *raw,
 	__u32 provided, calculated;
 
 	if (EXT4_SB(inode->i_sb)->s_es->s_creator_os !=
-	    cpu_to_le32(EXT4_OS_LINUX) ||
+	    cpu_to_le32(EXT4_OS_LINEX) ||
 	    !ext4_has_metadata_csum(inode->i_sb))
 		return 1;
 
@@ -108,7 +108,7 @@ void ext4_inode_csum_set(struct inode *inode, struct ext4_inode *raw,
 	__u32 csum;
 
 	if (EXT4_SB(inode->i_sb)->s_es->s_creator_os !=
-	    cpu_to_le32(EXT4_OS_LINUX) ||
+	    cpu_to_le32(EXT4_OS_LINEX) ||
 	    !ext4_has_metadata_csum(inode->i_sb))
 		return;
 
@@ -2444,7 +2444,7 @@ static int mpage_prepare_extent_to_map(struct mpage_da_data *mpd)
 			 * the file system first.  See [1] for more
 			 * information.
 			 *
-			 * [1] https://lore.kernel.org/linux-mm/20180103100430.GE4911@quack2.suse.cz
+			 * [1] https://lore.kernel.org/linex-mm/20180103100430.GE4911@quack2.suse.cz
 			 */
 			if (!folio_buffers(folio)) {
 				ext4_warning_inode(mpd->inode, "page %lu does not have buffers attached", folio->index);

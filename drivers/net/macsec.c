@@ -5,25 +5,25 @@
  * Copyright (c) 2015 Sabrina Dubroca <sd@queasysnail.net>
  */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/socket.h>
+#include <linex/module.h>
 #include <crypto/aead.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/refcount.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 #include <net/gro_cells.h>
 #include <net/macsec.h>
 #include <net/dst_metadata.h>
-#include <linux/phy.h>
-#include <linux/byteorder/generic.h>
-#include <linux/if_arp.h>
+#include <linex/phy.h>
+#include <linex/byteorder/generic.h>
+#include <linex/if_arp.h>
 
-#include <uapi/linux/if_macsec.h>
+#include <uapi/linex/if_macsec.h>
 
 /* SecTAG length = macsec_eth_header without the optional SCI */
 #define MACSEC_TAG_LEN 6

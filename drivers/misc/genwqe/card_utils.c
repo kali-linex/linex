@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linex.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -14,20 +14,20 @@
  * Miscelanous functionality used in the other GenWQE driver parts.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/page-flags.h>
-#include <linux/scatterlist.h>
-#include <linux/hugetlb.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/vmalloc.h>
+#include <linex/page-flags.h>
+#include <linex/scatterlist.h>
+#include <linex/hugetlb.h>
+#include <linex/iommu.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/ctype.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/pgtable.h>
 
 #include "genwqe_driver.h"
 #include "card_base.h"

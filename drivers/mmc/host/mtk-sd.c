@@ -4,36 +4,36 @@
  * Author: Chaotian.Jing <chaotian.jing@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/irq.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_gpio.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/reset.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include "cqhci.h"
 

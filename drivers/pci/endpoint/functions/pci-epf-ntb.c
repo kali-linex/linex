@@ -34,13 +34,13 @@
  * +---------------------------------------------------------------------+
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
 
 static struct workqueue_struct *kpcintb_workqueue;
 

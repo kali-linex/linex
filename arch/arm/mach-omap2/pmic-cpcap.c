@@ -2,19 +2,19 @@
 /*
  * pmic-cpcap.c - CPCAP-specific functions for the OPP code
  *
- * Adapted from Motorola Mapphone Android Linux kernel
+ * Adapted from Motorola Mapphone Android Linex kernel
  * Copyright (C) 2011 Motorola, Inc.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
 
 #include "soc.h"
 #include "pm.h"
 #include "voltage.h"
 
-#include <linux/init.h>
+#include <linex/init.h>
 #include "vc.h"
 
 /**

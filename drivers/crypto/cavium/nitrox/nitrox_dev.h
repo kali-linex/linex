@@ -2,10 +2,10 @@
 #ifndef __NITROX_DEV_H
 #define __NITROX_DEV_H
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/if.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/if.h>
 
 #define VERSION_LEN 32
 /* Maximum queues in PF mode */

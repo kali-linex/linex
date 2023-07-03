@@ -6,11 +6,11 @@
  * Author: Andreas Werner <andreas.werner@men.de>
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/mcb.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/dmi.h>
+#include <linex/mcb.h>
+#include <linex/io.h>
 #include "mcb-internal.h"
 
 struct priv {

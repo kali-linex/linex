@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/mm.h> /* for handle_mm_fault() */
-#include <linux/ftrace.h>
+#include <linex/mm.h> /* for handle_mm_fault() */
+#include <linex/ftrace.h>
 #include <asm/asm-offsets.h>
 
 extern void my_direct_func(struct vm_area_struct *vma,

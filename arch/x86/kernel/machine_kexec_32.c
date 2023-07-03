@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of Linex booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/suspend.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
+#include <linex/mm.h>
+#include <linex/kexec.h>
+#include <linex/delay.h>
+#include <linex/numa.h>
+#include <linex/ftrace.h>
+#include <linex/suspend.h>
+#include <linex/gfp.h>
+#include <linex/io.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

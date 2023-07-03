@@ -10,7 +10,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -20,28 +20,28 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/stddef.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/highmem.h>
+#include <linex/memblock.h>
+#include <linex/of_fdt.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/smp.h>
 #include <asm/machdep.h>
 #include <asm/setup.h>

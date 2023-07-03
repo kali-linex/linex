@@ -2,7 +2,7 @@
 /*
  *  arch/arm/mach-vt8500/irq.c
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <linex@prisktech.co.nz>
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  */
 
@@ -11,17 +11,17 @@
  * Alexey Charkov. Minor changes have been made for Device Tree Support.
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
 
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
 
 #include <asm/irq.h>
 #include <asm/exception.h>

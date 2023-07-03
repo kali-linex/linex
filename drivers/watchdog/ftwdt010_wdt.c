@@ -8,16 +8,16 @@
  * Copyright (C) 2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/watchdog.h>
 
 #define FTWDT010_WDCOUNTER	0x0
 #define FTWDT010_WDLOAD		0x4

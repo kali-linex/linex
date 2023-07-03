@@ -8,26 +8,26 @@
  *
  * Copyright (c) 2004 Freescale Semiconductor, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/phy.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define MII_DM9161_SCR		0x10
 #define MII_DM9161_SCR_INIT	0x0610

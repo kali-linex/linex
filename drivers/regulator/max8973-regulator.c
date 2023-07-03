@@ -9,26 +9,26 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8973-regulator.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_gpio.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/max8973-regulator.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_gpio.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
+#include <linex/thermal.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
 
 /* Register definitions */
 #define MAX8973_VOUT					0x0

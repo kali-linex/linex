@@ -7,8 +7,8 @@
  * Author: Smita Koralahalli <Smita.KoralahalliChannabasappa@amd.com>
  */
 
-#ifndef LINUX_CPER_CXL_H
-#define LINUX_CPER_CXL_H
+#ifndef LINEX_CPER_CXL_H
+#define LINEX_CPER_CXL_H
 
 /* CXL Protocol Error Section */
 #define CPER_SEC_CXL_PROT_ERR						\

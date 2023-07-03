@@ -3,16 +3,16 @@
  *  Copyright (C) 2013 Boris BREZILLON <b.brezillon@overkiz.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/syscore_ops.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/clk/at91_pmc.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/mfd/syscon.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/syscore_ops.h>
 
 #include <asm/proc-fns.h>
 

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2020 Intel Corporation */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
 
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
-#include <linux/platform_device.h>
+#include <linex/platform_device.h>
 
 #include "core.h"
 #include "pinmux.h"

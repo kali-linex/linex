@@ -13,13 +13,13 @@
 //
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
 
 #include "mcp251xfd.h"
 

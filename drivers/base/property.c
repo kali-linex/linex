@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2014, Intel Corporation
  * Authors: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/phy.h>
+#include <linex/acpi.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_graph.h>
+#include <linex/of_irq.h>
+#include <linex/property.h>
+#include <linex/phy.h>
 
 struct fwnode_handle *__dev_fwnode(struct device *dev)
 {
@@ -987,7 +987,7 @@ EXPORT_SYMBOL(fwnode_iomap);
  * @fwnode:	Pointer to the firmware node
  * @index:	Zero-based index of the IRQ
  *
- * Return: Linux IRQ number on success. Other values are determined
+ * Return: Linex IRQ number on success. Other values are determined
  * according to acpi_irq_get() or of_irq_get() operation.
  */
 int fwnode_irq_get(const struct fwnode_handle *fwnode, unsigned int index)
@@ -1003,11 +1003,11 @@ EXPORT_SYMBOL(fwnode_irq_get);
  *
  * Description:
  * Find a match to the string @name in the 'interrupt-names' string array
- * in _DSD for ACPI, or of_node for Device Tree. Then get the Linux IRQ
+ * in _DSD for ACPI, or of_node for Device Tree. Then get the Linex IRQ
  * number of the IRQ resource corresponding to the index of the matched
  * string.
  *
- * Return: Linux IRQ number on success, or negative errno otherwise.
+ * Return: Linex IRQ number on success, or negative errno otherwise.
  */
 int fwnode_irq_get_byname(const struct fwnode_handle *fwnode, const char *name)
 {

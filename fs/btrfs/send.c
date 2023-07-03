@@ -3,19 +3,19 @@
  * Copyright (C) 2012 Alexander Block.  All rights reserved.
  */
 
-#include <linux/bsearch.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sort.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/radix-tree.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/compat.h>
-#include <linux/crc32c.h>
-#include <linux/fsverity.h>
+#include <linex/bsearch.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/sort.h>
+#include <linex/mount.h>
+#include <linex/xattr.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/radix-tree.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
+#include <linex/compat.h>
+#include <linex/crc32c.h>
+#include <linex/fsverity.h>
 
 #include "send.h"
 #include "ctree.h"

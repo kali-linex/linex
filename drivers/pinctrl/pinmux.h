@@ -10,7 +10,7 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct dentry;
 struct seq_file;

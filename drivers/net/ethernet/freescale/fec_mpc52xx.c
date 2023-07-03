@@ -16,37 +16,37 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/crc32.h>
+#include <linex/hardirq.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/mpc52xx.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/fec.h>
+#include <linex/fsl/bestcomm/bestcomm.h>
+#include <linex/fsl/bestcomm/fec.h>
 
 #include "fec_mpc52xx.h"
 

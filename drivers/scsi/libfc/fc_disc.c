@@ -20,11 +20,11 @@
  * details.
  */
 
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/list.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/list.h>
 
 #include <asm/unaligned.h>
 

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /* sysfs entries for device PM */
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeup.h>
-#include <linux/atomic.h>
-#include <linux/jiffies.h>
+#include <linex/device.h>
+#include <linex/kobject.h>
+#include <linex/string.h>
+#include <linex/export.h>
+#include <linex/pm_qos.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeup.h>
+#include <linex/atomic.h>
+#include <linex/jiffies.h>
 #include "power.h"
 
 /*

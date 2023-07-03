@@ -4,21 +4,21 @@
  * Copyright (C) 2014-2017 Mentor Graphics Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

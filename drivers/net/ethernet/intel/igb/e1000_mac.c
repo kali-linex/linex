@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2007 - 2018 Intel Corporation. */
 
-#include <linux/if_ether.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 
 #include "e1000_mac.h"
 

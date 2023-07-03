@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : Linex
 **   FILE NAME  : arcmsr_attr.c
 **        BY    : Nick Cheng
 **   Description: attributes exported to sysfs and device host
@@ -44,13 +44,13 @@
 **     Firmware Specification, see Documentation/scsi/arcmsr_spec.rst
 *******************************************************************************
 */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/circ_buf.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/circ_buf.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

@@ -3,17 +3,17 @@
  * Copyright (C) 2020 Intel Corporation
  * Author: Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/logic_iomem.h>
-#include <linux/of_platform.h>
-#include <linux/irqdomain.h>
-#include <linux/virtio_pcidev.h>
-#include <linux/virtio-uml.h>
-#include <linux/delay.h>
-#include <linux/msi.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/virtio.h>
+#include <linex/virtio_config.h>
+#include <linex/logic_iomem.h>
+#include <linex/of_platform.h>
+#include <linex/irqdomain.h>
+#include <linex/virtio_pcidev.h>
+#include <linex/virtio-uml.h>
+#include <linex/delay.h>
+#include <linex/msi.h>
 #include <asm/unaligned.h>
 #include <irq_kern.h>
 

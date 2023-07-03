@@ -13,22 +13,22 @@
  *	Copyright (C) 2013 Sergey Lapin <slapin@ossfans.org>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/reset.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/reset.h>
 
 #define NFC_REG_CTL		0x0000
 #define NFC_REG_ST		0x0004

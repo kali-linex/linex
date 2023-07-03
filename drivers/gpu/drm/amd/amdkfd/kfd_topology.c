@@ -21,16 +21,16 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/hash.h>
-#include <linux/cpufreq.h>
-#include <linux/log2.h>
-#include <linux/dmi.h>
-#include <linux/atomic.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/errno.h>
+#include <linex/acpi.h>
+#include <linex/hash.h>
+#include <linex/cpufreq.h>
+#include <linex/log2.h>
+#include <linex/dmi.h>
+#include <linex/atomic.h>
 
 #include "kfd_priv.h"
 #include "kfd_crat.h"

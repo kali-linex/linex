@@ -3,7 +3,7 @@
  * Copyright © 2016 Intel Corporation
  */
 
-#include <linux/kthread.h>
+#include <linex/kthread.h>
 
 #include "gem/i915_gem_context.h"
 #include "gem/i915_gem_internal.h"

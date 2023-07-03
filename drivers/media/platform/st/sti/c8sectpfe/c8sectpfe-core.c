@@ -8,29 +8,29 @@
  *	    Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dvb/dmx.h>
+#include <linex/dvb/frontend.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_gpio.h>
+#include <linex/of_platform.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/usb.h>
+#include <linex/wait.h>
 
 #include "c8sectpfe-common.h"
 #include "c8sectpfe-core.h"

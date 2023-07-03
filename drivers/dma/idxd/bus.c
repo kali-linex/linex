@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2021 Intel Corporation. All rights rsvd. */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
 #include "idxd.h"
 
 

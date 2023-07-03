@@ -2,15 +2,15 @@
 /* Structure dynamic extension infrastructure
  * Copyright (C) 2004 Rusty Russell IBM Corporation
  * Copyright (C) 2007 Netfilter Core Team <coreteam@netfilter.org>
- * Copyright (C) 2007 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * Copyright (C) 2007 USAGI/WIDE Project <http://www.linex-ipv6.org>
  */
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <linex/kernel.h>
+#include <linex/kmemleak.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 
 #include <net/netfilter/nf_conntrack_helper.h>

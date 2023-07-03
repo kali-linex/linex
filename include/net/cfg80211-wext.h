@@ -7,8 +7,8 @@
  * Copyright 2006-2010	Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <linex/netdevice.h>
+#include <linex/wireless.h>
 #include <net/iw_handler.h>
 
 /*

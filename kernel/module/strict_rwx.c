@@ -5,10 +5,10 @@
  * Copyright (C) 2015 Rusty Russell
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/set_memory.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/set_memory.h>
 #include "internal.h"
 
 static void module_set_memory(const struct module *mod, enum mod_mem_type type,

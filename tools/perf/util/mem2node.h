@@ -1,8 +1,8 @@
 #ifndef __MEM2NODE_H
 #define __MEM2NODE_H
 
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <linex/rbtree.h>
+#include <linex/types.h>
 
 struct perf_env;
 struct phys_entry;

@@ -7,9 +7,9 @@
  * Author: Conor Dooley <conor.dooley@microchip.com>
  */
 
-#include <linux/module.h>
-#include <linux/hw_random.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/hw_random.h>
+#include <linex/platform_device.h>
 #include <soc/microchip/mpfs.h>
 
 #define CMD_OPCODE	0x21

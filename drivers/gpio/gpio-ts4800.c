@@ -2,14 +2,14 @@
 /*
  * GPIO driver for the TS-4800 board
  *
- * Copyright (c) 2016 - Savoir-faire Linux
+ * Copyright (c) 2016 - Savoir-faire Linex
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #define DEFAULT_PIN_NUMBER      16
 #define INPUT_REG_OFFSET        0x00
@@ -73,6 +73,6 @@ static struct platform_driver ts4800_gpio_driver = {
 
 module_platform_driver_probe(ts4800_gpio_driver, ts4800_gpio_probe);
 
-MODULE_AUTHOR("Julien Grossholtz <julien.grossholtz@savoirfairelinux.com>");
+MODULE_AUTHOR("Julien Grossholtz <julien.grossholtz@savoirfairelinex.com>");
 MODULE_DESCRIPTION("TS4800 FPGA GPIO driver");
 MODULE_LICENSE("GPL v2");

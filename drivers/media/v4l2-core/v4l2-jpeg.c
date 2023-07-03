@@ -10,10 +10,10 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <media/v4l2-jpeg.h>
 
 MODULE_DESCRIPTION("V4L2 JPEG header parser helpers");

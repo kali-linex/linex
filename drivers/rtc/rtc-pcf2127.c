@@ -13,16 +13,16 @@
  * Datasheet: https://www.nxp.com/docs/en/data-sheet/PCF2127.pdf
  */
 
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linex/i2c.h>
+#include <linex/spi/spi.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/regmap.h>
+#include <linex/watchdog.h>
 
 /* Control register 1 */
 #define PCF2127_REG_CTRL1		0x00
@@ -923,7 +923,7 @@ static struct i2c_driver pcf2127_i2c_driver = {
 		.name	= "rtc-pcf2127-i2c",
 		.of_match_table = of_match_ptr(pcf2127_of_match),
 	},
-	.probe		= pcf2127_i2c_probe,
+	.probe_new	= pcf2127_i2c_probe,
 	.id_table	= pcf2127_i2c_id,
 };
 

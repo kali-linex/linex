@@ -7,15 +7,15 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/i2c.h>
+#include <linex/property.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include <sound/da7219.h>

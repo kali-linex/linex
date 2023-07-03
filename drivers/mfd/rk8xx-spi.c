@@ -9,12 +9,12 @@
  * Author: Sebastian Reichel <sebastian.reichel@collabora.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rk808.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/rk808.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
 
 #define RK806_ADDR_SIZE 2
 #define RK806_CMD_WITH_SIZE(CMD, VALUE_BYTES) \

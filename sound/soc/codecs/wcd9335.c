@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+// Copyright (c) 2015-2016, The Linex Foundation. All rights reserved.
 // Copyright (c) 2017-2018, Linaro Limited
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slimbus.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/device.h>
+#include <linex/wait.h>
+#include <linex/bitops.h>
+#include <linex/regulator/consumer.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/slimbus.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linex/of_gpio.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
 #include <sound/tlv.h>
 #include <sound/info.h>
 #include "wcd9335.h"

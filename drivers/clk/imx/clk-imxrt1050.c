@@ -5,10 +5,10 @@
  * Jesse Taube <Mr.Bossman075@gmail.com>
  * Giulio Benetti <giulio.benetti@benettiengineering.com>
  */
-#include <linux/clk.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/clock/imxrt1050-clock.h>
 
 #include "clk.h"

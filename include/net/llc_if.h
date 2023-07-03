@@ -13,10 +13,10 @@
  */
 /* Defines LLC interface to network layer */
 /* Available primitives */
-#include <linux/if.h>
-#include <linux/if_arp.h>
-#include <linux/llc.h>
-#include <linux/etherdevice.h>
+#include <linex/if.h>
+#include <linex/if_arp.h>
+#include <linex/llc.h>
+#include <linex/etherdevice.h>
 #include <net/llc.h>
 
 #define LLC_DATAUNIT_PRIM	1

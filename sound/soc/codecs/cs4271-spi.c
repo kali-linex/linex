@@ -5,9 +5,9 @@
  * Copyright (c) 2010 Alexander Sverdlin <subaparts@yandex.ru>
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include "cs4271.h"
 

@@ -9,7 +9,7 @@
  *	any of this software. This material is provided "AS-IS" in
  *	the hope that it may be useful for others.
  *
- *	(c) Copyright 2001    Scott Jennings <linuxdrivers@oro.net>
+ *	(c) Copyright 2001    Scott Jennings <linexdrivers@oro.net>
  *           9/27 - 2001      [Initial release]
  *
  *	Additional fixes Alan Cox
@@ -39,7 +39,7 @@
  *	-	CBAR does not need to be read
  *	-	removed debugging printks
  *
- *  This WDT driver is different from most other Linux WDT
+ *  This WDT driver is different from most other Linex WDT
  *  drivers in that the driver will ping the watchdog by itself,
  *  because this particular WDT has a very short timeout (1.6
  *  seconds) and it would be insane to count on any userspace
@@ -50,20 +50,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/timer.h>
+#include <linex/miscdevice.h>
+#include <linex/watchdog.h>
+#include <linex/fs.h>
+#include <linex/ioport.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 
 /*

@@ -8,16 +8,16 @@
  * Author: Charles Keepax <ckeepax@opensource.cirrus.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/lochnagar1_regs.h>
-#include <linux/mfd/lochnagar2_regs.h>
+#include <linex/mfd/lochnagar1_regs.h>
+#include <linex/mfd/lochnagar2_regs.h>
 
 #include <dt-bindings/clock/lochnagar.h>
 

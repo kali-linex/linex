@@ -37,21 +37,21 @@
  * supported at the moment by the driver.
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
+#include <linex/device.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/seq_file.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

@@ -14,16 +14,16 @@
  * keyword - value pairs that specify the configuration of the partition.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
 #include <asm/papr-sysparm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/hugetlb.h>
 #include <asm/lppaca.h>
 #include <asm/hvcall.h>
 #include <asm/firmware.h>

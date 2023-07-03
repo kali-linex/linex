@@ -2,7 +2,7 @@
 #ifndef __FIRMWARE_SYSFS_H
 #define __FIRMWARE_SYSFS_H
 
-#include <linux/device.h>
+#include <linex/device.h>
 
 #include "firmware.h"
 

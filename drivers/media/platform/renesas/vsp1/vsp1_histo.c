@@ -8,8 +8,8 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <linex/device.h>
+#include <linex/gfp.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-subdev.h>

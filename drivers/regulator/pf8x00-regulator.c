@@ -5,14 +5,14 @@
  * Copyright (C) 2020 Amarula Solutions(India)
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
 
 /* registers */
 #define PF8X00_DEVICEID			0x00

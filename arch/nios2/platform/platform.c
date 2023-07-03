@@ -8,14 +8,14 @@
  * archive for more details.
  */
 
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
+#include <linex/init.h>
+#include <linex/of_address.h>
+#include <linex/of_fdt.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
+#include <linex/io.h>
+#include <linex/clk-provider.h>
 
 static const struct of_device_id clk_match[] __initconst = {
 	{ .compatible = "fixed-clock", .data = of_fixed_clk_setup, },

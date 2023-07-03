@@ -12,9 +12,9 @@
  *	directory of this archive for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/tc.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/tc.h>
 
 /**
  * tc_register_driver - register a new TC driver

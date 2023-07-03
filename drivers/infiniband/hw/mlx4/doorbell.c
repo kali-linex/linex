@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include <rdma/uverbs_ioctl.h>
 
 #include "mlx4_ib.h"

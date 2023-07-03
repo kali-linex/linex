@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2012 Intel Corporation. All rights reserved.
  *
- * Author: Jacob Pan <jacob.jun.pan@linux.intel.com>
+ * Author: Jacob Pan <jacob.jun.pan@linex.intel.com>
  */
 
 #include <getopt.h>

@@ -2,15 +2,15 @@
 //
 // Copyright (c) 2020 MediaTek Inc.
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/soc/mediatek/mtk_dvfsrc.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/soc/mediatek/mtk_dvfsrc.h>
 
 #define DVFSRC_ID_VCORE		0
 #define DVFSRC_ID_VSCP		1

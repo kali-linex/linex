@@ -2,12 +2,12 @@
 
 // Copyright (c) 2019 MediaTek Inc.
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/pm_runtime.h>
+#include <linex/delay.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 #include <sound/pcm_params.h>

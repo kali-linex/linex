@@ -7,10 +7,10 @@
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  *
- * Linux/m68k support by Hamish Macdonald
+ * Linex/m68k support by Hamish Macdonald
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>
 #include <asm/errno.h>

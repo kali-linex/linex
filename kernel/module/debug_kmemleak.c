@@ -5,8 +5,8 @@
  * Copyright (C) 2009 Catalin Marinas
  */
 
-#include <linux/module.h>
-#include <linux/kmemleak.h>
+#include <linex/module.h>
+#include <linex/kmemleak.h>
 #include "internal.h"
 
 void kmemleak_load_module(const struct module *mod,

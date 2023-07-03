@@ -3,12 +3,12 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/workqueue.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/pid.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
+#include <linex/workqueue.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/pid.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
 
 #undef MODULE_PARAM_PREFIX
 #define MODULE_PARAM_PREFIX "cxl" "."

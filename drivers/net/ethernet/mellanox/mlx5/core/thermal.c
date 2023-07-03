@@ -1,12 +1,12 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 // Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES.
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/thermal.h>
-#include <linux/err.h>
-#include <linux/mlx5/driver.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/thermal.h>
+#include <linex/err.h>
+#include <linex/mlx5/driver.h>
 #include "mlx5_core.h"
 #include "thermal.h"
 

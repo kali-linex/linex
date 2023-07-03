@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt)	"AT91: PIT: " fmt
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/slab.h>
 
 #define AT91_PIT_MR		0x00			/* Mode Register */
 #define AT91_PIT_PITIEN			BIT(25)			/* Timer Interrupt Enable */

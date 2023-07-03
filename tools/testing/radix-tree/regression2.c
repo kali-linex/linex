@@ -43,10 +43,10 @@
  * Upstream commit:
  * Not yet
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/radix-tree.h>
 #include <stdlib.h>
 #include <stdio.h>
 

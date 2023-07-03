@@ -14,7 +14,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/refcount.h>
+#include <linex/refcount.h>
 #include <asm/cpufeature.h>
 
 typedef struct {

@@ -21,8 +21,8 @@
  * are read-only anyway, so the bulk of the simulation is just table lookup.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linex/pci.h>
+#include <linex/init.h>
 #include <asm/olpc.h>
 #include <asm/geode.h>
 #include <asm/pci_x86.h>

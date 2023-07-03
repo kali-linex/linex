@@ -6,7 +6,7 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/csr.h>

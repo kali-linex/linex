@@ -8,15 +8,15 @@
  * Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/bitops.h>
 
 /* register offset */
 #define GPIO_DIR	0x00

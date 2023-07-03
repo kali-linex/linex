@@ -7,19 +7,19 @@
  * Author: Martin Kurbanov <mmkurbanov@sberdevices.ru>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-mem.h>
+#include <linex/types.h>
 
 #define SPIFC_A1_AHB_CTRL_REG		0x0
 #define SPIFC_A1_AHB_BUS_EN		BIT(31)

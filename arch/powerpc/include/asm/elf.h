@@ -5,7 +5,7 @@
 #ifndef _ASM_POWERPC_ELF_H
 #define _ASM_POWERPC_ELF_H
 
-#include <linux/sched.h>	/* for task_struct */
+#include <linex/sched.h>	/* for task_struct */
 #include <asm/page.h>
 #include <asm/string.h>
 #include <uapi/asm/elf.h>
@@ -96,8 +96,8 @@ do {								\
 		set_thread_flag(TIF_32BIT);			\
 	else							\
 		clear_thread_flag(TIF_32BIT);			\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |			\
+	if (personality(current->personality) != PER_LINEX32)	\
+		set_personality(PER_LINEX |			\
 			(current->personality & (~PER_MASK)));	\
 } while (0)
 /*
@@ -119,8 +119,8 @@ extern int ucache_bsize;
 
 /* vDSO has arch_setup_additional_pages */
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linex_binprm;
+extern int arch_setup_additional_pages(struct linex_binprm *bprm,
 				       int uses_interp);
 #define VDSO_AUX_ENT(a,b) NEW_AUX_ENT(a,b)
 

@@ -3,8 +3,8 @@
 #ifndef ADF_DRV_H
 #define ADF_DRV_H
 
-#include <linux/list.h>
-#include <linux/pci.h>
+#include <linex/list.h>
+#include <linex/pci.h>
 #include "adf_accel_devices.h"
 #include "icp_qat_fw_loader_handle.h"
 #include "icp_qat_hal.h"

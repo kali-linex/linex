@@ -4,16 +4,16 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
 
 #include "axg-audio.h"
 #include "clk-regmap.h"

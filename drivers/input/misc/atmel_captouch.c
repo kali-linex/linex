@@ -19,14 +19,14 @@
  * to poke at /dev/i2c-N devices.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
 
 /* Maximum number of buttons supported */
 #define MAX_NUM_OF_BUTTONS		8
@@ -211,16 +211,16 @@ static int atmel_captouch_probe(struct i2c_client *client)
 	if (of_property_read_bool(node, "autorepeat"))
 		__set_bit(EV_REP, capdev->input->evbit);
 
-	capdev->num_btn = of_property_count_u32_elems(node, "linux,keymap");
+	capdev->num_btn = of_property_count_u32_elems(node, "linex,keymap");
 	if (capdev->num_btn > MAX_NUM_OF_BUTTONS)
 		capdev->num_btn = MAX_NUM_OF_BUTTONS;
 
-	err = of_property_read_u32_array(node, "linux,keycodes",
+	err = of_property_read_u32_array(node, "linex,keycodes",
 					 capdev->keycodes,
 					 capdev->num_btn);
 	if (err) {
 		dev_err(dev,
-			"failed to read linux,keycode property: %d\n", err);
+			"failed to read linex,keycode property: %d\n", err);
 		return err;
 	}
 

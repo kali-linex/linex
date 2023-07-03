@@ -6,12 +6,12 @@
  *
  * Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/sh_clk.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/sh_clk.h>
 #include <asm/clock.h>
 #include <cpu/sh7724.h>
 

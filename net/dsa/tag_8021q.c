@@ -4,8 +4,8 @@
  * This module is not a complete tagger implementation. It only provides
  * primitives for taggers that rely on 802.1Q VLAN tags to use.
  */
-#include <linux/if_vlan.h>
-#include <linux/dsa/8021q.h>
+#include <linex/if_vlan.h>
+#include <linex/dsa/8021q.h>
 
 #include "port.h"
 #include "switch.h"

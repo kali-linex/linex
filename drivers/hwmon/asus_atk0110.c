@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/hwmon.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/acpi.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/hwmon.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/dmi.h>
+#include <linex/jiffies.h>
+#include <linex/err.h>
+#include <linex/acpi.h>
 
 #define ATK_HID "ATK0110"
 

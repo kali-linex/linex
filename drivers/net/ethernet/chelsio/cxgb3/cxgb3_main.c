@@ -32,25 +32,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/mdio.h>
-#include <linux/sockios.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/rtnetlink.h>
-#include <linux/firmware.h>
-#include <linux/log2.h>
-#include <linux/stringify.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/mdio.h>
+#include <linex/sockios.h>
+#include <linex/workqueue.h>
+#include <linex/proc_fs.h>
+#include <linex/rtnetlink.h>
+#include <linex/firmware.h>
+#include <linex/log2.h>
+#include <linex/stringify.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/nospec.h>
 
 #include "common.h"
 #include "cxgb3_ioctl.h"

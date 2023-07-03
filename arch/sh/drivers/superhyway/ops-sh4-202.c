@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2005  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/superhyway.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/superhyway.h>
+#include <linex/string.h>
 #include <asm/addrspace.h>
 #include <asm/io.h>
 

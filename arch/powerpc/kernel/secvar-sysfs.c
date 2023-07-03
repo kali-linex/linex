@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (C) 2019 IBM Corporation <nayna@linux.ibm.com>
+ * Copyright (C) 2019 IBM Corporation <nayna@linex.ibm.com>
  *
  * This code exposes secure variables to user via sysfs
  */
 
 #define pr_fmt(fmt) "secvar-sysfs: "fmt
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/string.h>
-#include <linux/of.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/string.h>
+#include <linex/of.h>
 #include <asm/secvar.h>
 
 #define NAME_MAX_SIZE	   1024

@@ -11,11 +11,11 @@
  *    --
  */
 
-#include <linux/time.h>
+#include <linex/time.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linex/delay.h>
+#include <linex/export.h>
 #include "p17v.h"
 
 static inline bool check_ptr_reg(struct snd_emu10k1 *emu, unsigned int reg)

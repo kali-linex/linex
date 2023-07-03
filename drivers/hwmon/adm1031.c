@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * adm1031.c - Part of lm_sensors, Linux kernel modules for hardware
+ * adm1031.c - Part of lm_sensors, Linex kernel modules for hardware
  *	       monitoring
  * Based on lm75.c and lm85.c
  * Supports adm1030 / adm1031
@@ -8,15 +8,15 @@
  * Reworked by Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
 
 /* Following macros takes channel parameter starting from 0 to 2 */
 #define ADM1031_REG_FAN_SPEED(nr)	(0x08 + (nr))

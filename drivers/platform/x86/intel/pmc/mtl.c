@@ -8,7 +8,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <linex/pci.h>
 #include "core.h"
 
 /*

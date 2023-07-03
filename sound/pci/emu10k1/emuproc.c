@@ -14,8 +14,8 @@
  *    --
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <linex/slab.h>
+#include <linex/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 #include "p16v.h"

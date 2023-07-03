@@ -8,9 +8,9 @@
 #ifndef _LBS_DECL_H_
 #define _LBS_DECL_H_
 
-#include <linux/netdevice.h>
-#include <linux/firmware.h>
-#include <linux/nl80211.h>
+#include <linex/netdevice.h>
+#include <linex/firmware.h>
+#include <linex/nl80211.h>
 
 /* Should be terminated by a NULL entry */
 struct lbs_fw_table {

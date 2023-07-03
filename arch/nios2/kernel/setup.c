@@ -10,16 +10,16 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/screen_info.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/console.h>
+#include <linex/memblock.h>
+#include <linex/initrd.h>
+#include <linex/of_fdt.h>
+#include <linex/screen_info.h>
 
 #include <asm/mmu_context.h>
 #include <asm/sections.h>

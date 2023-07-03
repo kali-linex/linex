@@ -1,6 +1,6 @@
 #ifndef __NV50_KMS_H__
 #define __NV50_KMS_H__
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 #include <nvif/mem.h>
 #include <nvif/push.h>
 

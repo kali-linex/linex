@@ -5,9 +5,9 @@
  * Copyright IBM Corp. 2008
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/kprobes.h>
+#include <linex/random.h>
 #include <kunit/test.h>
 
 #define div_factor 3

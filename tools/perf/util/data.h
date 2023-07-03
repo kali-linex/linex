@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
 enum perf_data_mode {
 	PERF_DATA_MODE_WRITE,

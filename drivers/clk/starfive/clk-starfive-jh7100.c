@@ -7,11 +7,11 @@
  * Copyright (C) 2021 Emil Renner Berthing <kernel@esmil.dk>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
 
 #include <dt-bindings/clock/starfive-jh7100.h>
 

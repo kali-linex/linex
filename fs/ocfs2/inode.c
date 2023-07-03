@@ -7,12 +7,12 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/iversion.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/quotaops.h>
+#include <linex/iversion.h>
 
 #include <asm/byteorder.h>
 

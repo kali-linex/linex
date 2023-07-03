@@ -3,27 +3,27 @@
  * Based on omap-keypad driver
  *
  * Copyright (C) 2010 ST Microelectronics
- * Rajeev Kumar <rajeevkumar.linux@gmail.com>
+ * Rajeev Kumar <rajeevkumar.linex@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeup.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/platform_data/keyboard-spear.h>
+#include <linex/clk.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeup.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/platform_data/keyboard-spear.h>
 
 /* Keyboard Registers */
 #define MODE_CTL_REG	0x00

@@ -5,19 +5,19 @@
 /* mangled further by Bob Manson (manson@santafe.edu) */
 /* more mutilation by David Mosberger (davidm@azstarnet.com) */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/audit.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/security.h>
+#include <linex/signal.h>
+#include <linex/audit.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/fpu.h>
 
 #include "proto.h"

@@ -4,8 +4,8 @@
  * Author: George Sun <george.sun@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-vp9.h>
 

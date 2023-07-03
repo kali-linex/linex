@@ -2,7 +2,7 @@
 /*******************************************************************************
  * Filename:  target_core_iblock.c
  *
- * This file contains the Storage Engine  <-> Linux BlockIO transport
+ * This file contains the Storage Engine  <-> Linex BlockIO transport
  * specific functions.
  *
  * (c) Copyright 2003-2013 Datera, Inc.
@@ -11,19 +11,19 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/bio.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/pr.h>
+#include <linex/string.h>
+#include <linex/parser.h>
+#include <linex/timer.h>
+#include <linex/fs.h>
+#include <linex/blkdev.h>
+#include <linex/blk-integrity.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/bio.h>
+#include <linex/file.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/pr.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/scsi_common.h>
 #include <asm/unaligned.h>
@@ -441,8 +441,8 @@ iblock_execute_unmap(struct se_cmd *cmd, sector_t lba, sector_t nolb)
 	int ret;
 
 	ret = blkdev_issue_discard(bdev,
-				   target_to_linux_sector(dev, lba),
-				   target_to_linux_sector(dev,  nolb),
+				   target_to_linex_sector(dev, lba),
+				   target_to_linex_sector(dev,  nolb),
 				   GFP_KERNEL);
 	if (ret < 0) {
 		pr_err("blkdev_issue_discard() failed: %d\n", ret);
@@ -474,8 +474,8 @@ iblock_execute_zero_out(struct block_device *bdev, struct se_cmd *cmd)
 		return TCM_LOGICAL_UNIT_COMMUNICATION_FAILURE;
 
 	ret = blkdev_issue_zeroout(bdev,
-				target_to_linux_sector(dev, cmd->t_task_lba),
-				target_to_linux_sector(dev,
+				target_to_linex_sector(dev, cmd->t_task_lba),
+				target_to_linex_sector(dev,
 					sbc_get_write_same_sectors(cmd)),
 				GFP_KERNEL, BLKDEV_ZERO_NOUNMAP);
 	if (ret)
@@ -494,8 +494,8 @@ iblock_execute_write_same(struct se_cmd *cmd)
 	struct bio *bio;
 	struct bio_list list;
 	struct se_device *dev = cmd->se_dev;
-	sector_t block_lba = target_to_linux_sector(dev, cmd->t_task_lba);
-	sector_t sectors = target_to_linux_sector(dev,
+	sector_t block_lba = target_to_linex_sector(dev, cmd->t_task_lba);
+	sector_t sectors = target_to_linex_sector(dev,
 					sbc_get_write_same_sectors(cmd));
 
 	if (cmd->prot_op) {
@@ -548,7 +548,7 @@ iblock_execute_write_same(struct se_cmd *cmd)
 			bio_list_add(&list, bio);
 		}
 
-		/* Always in 512 byte units for Linux/Block */
+		/* Always in 512 byte units for Linex/Block */
 		block_lba += sg->length >> SECTOR_SHIFT;
 		sectors -= sg->length >> SECTOR_SHIFT;
 	}
@@ -726,7 +726,7 @@ iblock_execute_rw(struct se_cmd *cmd, struct scatterlist *sgl, u32 sgl_nents,
 		  enum dma_data_direction data_direction)
 {
 	struct se_device *dev = cmd->se_dev;
-	sector_t block_lba = target_to_linux_sector(dev, cmd->t_task_lba);
+	sector_t block_lba = target_to_linex_sector(dev, cmd->t_task_lba);
 	struct iblock_req *ibr;
 	struct bio *bio;
 	struct bio_list list;
@@ -810,7 +810,7 @@ iblock_execute_rw(struct se_cmd *cmd, struct scatterlist *sgl, u32 sgl_nents,
 			bio_cnt++;
 		}
 
-		/* Always in 512 byte units for Linux/Block */
+		/* Always in 512 byte units for Linex/Block */
 		block_lba += sg->length >> SECTOR_SHIFT;
 		sg_num--;
 	}
@@ -1185,7 +1185,7 @@ static void __exit iblock_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM IBLOCK subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@Linex-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(iblock_module_init);

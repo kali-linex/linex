@@ -6,18 +6,18 @@
  * Copyright (C) 2015 Cogent Embedded, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_event.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_event.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/spi/spi.h>
+#include <linex/gpio/consumer.h>
 
 #define DRV_NAME "hi8435"
 

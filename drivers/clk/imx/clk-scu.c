@@ -5,15 +5,15 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/bsearch.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/arm-smccc.h>
+#include <linex/bsearch.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #include "clk-scu.h"
 

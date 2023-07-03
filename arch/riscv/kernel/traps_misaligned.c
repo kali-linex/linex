@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/stringify.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/stringify.h>
 
 #include <asm/processor.h>
 #include <asm/ptrace.h>

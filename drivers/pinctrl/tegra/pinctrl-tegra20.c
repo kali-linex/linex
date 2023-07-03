@@ -11,12 +11,12 @@
  * Copyright (C) 2010 NVIDIA Corporation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/clk-provider.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "pinctrl-tegra.h"
 

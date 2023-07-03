@@ -3,7 +3,7 @@
  *  Copyright 2005 Red Hat Inc, all rights reserved.
  *
  *  Elements from ide/pci/generic.c
- *	    Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ *	    Copyright (C) 2001-2002	Andre Hedrick <andre@linex-ide.org>
  *	    Portions (C) Copyright 2002  Red Hat Inc <alan@redhat.com>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -16,13 +16,13 @@
  *  work.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME "ata_generic"
 #define DRV_VERSION "0.2.15"

@@ -2,8 +2,8 @@
 #define _GNU_SOURCE
 #include <sched.h>
 
-#include <linux/unistd.h>
-#include <linux/futex.h>
+#include <linex/unistd.h>
+#include <linex/futex.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/syscall.h>

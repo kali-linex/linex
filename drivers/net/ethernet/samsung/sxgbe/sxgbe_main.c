@@ -9,29 +9,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/sxgbe_platform.h>
+#include <linex/clk.h>
+#include <linex/crc32.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/kernel.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/net_tstamp.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/prefetch.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/tcp.h>
+#include <linex/sxgbe_platform.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_desc.h"
@@ -1769,7 +1769,7 @@ static void sxgbe_get_stats64(struct net_device *dev,
  *  @dev : device pointer.
  *  @features : features which are required to be set.
  *  Description:
- *  This function is a driver entry point and called by Linux kernel whenever
+ *  This function is a driver entry point and called by Linex kernel whenever
  *  any device features are set or reset by user.
  *  Return value:
  *  This function returns 0 after setting or resetting device features.

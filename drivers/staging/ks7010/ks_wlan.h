@@ -9,13 +9,13 @@
 #ifndef _KS_WLAN_H
 #define _KS_WLAN_H
 
-#include <linux/atomic.h>
-#include <linux/circ_buf.h>
-#include <linux/completion.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/wireless.h>
+#include <linex/atomic.h>
+#include <linex/circ_buf.h>
+#include <linex/completion.h>
+#include <linex/netdevice.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/wireless.h>
 
 struct ks_wlan_parameter {
 	u8 operation_mode;
@@ -349,7 +349,7 @@ struct wpa_status {
 	struct mic_failure mic_failure;
 };
 
-#include <linux/list.h>
+#include <linex/list.h>
 #define PMK_LIST_MAX 8
 struct pmk_list {
 	u16 size;

@@ -10,9 +10,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/watchdog.h>
+#include <linex/module.h>
+#include <linex/smp.h>
+#include <linex/watchdog.h>
 
 #include <asm/reg_booke.h>
 #include <asm/time.h>

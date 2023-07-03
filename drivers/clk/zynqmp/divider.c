@@ -7,9 +7,9 @@
  * Adjustable divider clock implementation
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/slab.h>
 #include "clk-zynqmp.h"
 
 /*

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * corsair-psu.c - Linux driver for Corsair power supplies with HID sensors interface
+ * corsair-psu.c - Linex driver for Corsair power supplies with HID sensors interface
  * Copyright (C) 2020 Wilken Gottwalt <wilken.gottwalt@posteo.net>
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/hid.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/errno.h>
+#include <linex/hid.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 /*
  * Corsair protocol for PSUs
@@ -903,4 +903,4 @@ module_hid_driver(corsairpsu_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Wilken Gottwalt <wilken.gottwalt@posteo.net>");
-MODULE_DESCRIPTION("Linux driver for Corsair power supplies with HID sensors interface");
+MODULE_DESCRIPTION("Linex driver for Corsair power supplies with HID sensors interface");

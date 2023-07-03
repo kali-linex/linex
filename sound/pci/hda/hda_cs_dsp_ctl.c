@@ -6,10 +6,10 @@
 //
 // Author: Stefan Binding <sbinding@opensource.cirrus.com>
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/soc.h>
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <linex/firmware/cirrus/cs_dsp.h>
+#include <linex/firmware/cirrus/wmfw.h>
 #include "hda_cs_dsp_ctl.h"
 
 #define ADSP_MAX_STD_CTRL_SIZE               512

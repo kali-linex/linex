@@ -5,10 +5,10 @@
  * Copyright (c) 2022 9elements GmbH
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/regulator/driver.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/pmbus.h>
+#include <linex/regulator/driver.h>
 #include "pmbus.h"
 
 /*

@@ -3,12 +3,12 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_link.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtnetlink.h>
-#include <linux/wwan.h>
+#include <linex/etherdevice.h>
+#include <linex/if_arp.h>
+#include <linex/if_link.h>
+#include <linex/pm_runtime.h>
+#include <linex/rtnetlink.h>
+#include <linex/wwan.h>
 #include <net/pkt_sched.h>
 
 #include "iosm_ipc_chnl_cfg.h"

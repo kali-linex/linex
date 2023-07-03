@@ -12,11 +12,11 @@
  *    --
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/init.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

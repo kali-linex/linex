@@ -3,25 +3,25 @@
 // Copyright 2008 Simtec Electronics
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinex.simtec.co.uk/
 
 /*
  * NOTE: Code in this file is not used when booting with Device Tree support.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/serial_core.h>
+#include <linex/serial_s3c.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -29,7 +29,7 @@
 
 #include <asm/irq.h>
 
-#include <linux/soc/samsung/s3c-pm.h>
+#include <linex/soc/samsung/s3c-pm.h>
 #include "regs-clock.h"
 
 #include "cpu.h"

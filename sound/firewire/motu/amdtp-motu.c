@@ -5,7 +5,7 @@
  * Copyright (c) 2015-2017 Takashi Sakamoto <o-takashi@sakamocchi.jp>
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include <sound/pcm.h>
 #include "motu.h"
 

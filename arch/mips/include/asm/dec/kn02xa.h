@@ -72,7 +72,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 
 struct pt_regs;
 

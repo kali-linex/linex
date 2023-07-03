@@ -6,13 +6,13 @@
  *  Generic memory allocators
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-map-ops.h>
-#include <linux/genalloc.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
+#include <linex/dma-map-ops.h>
+#include <linex/genalloc.h>
+#include <linex/highmem.h>
+#include <linex/vmalloc.h>
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>
 #endif

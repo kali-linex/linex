@@ -3,10 +3,10 @@
  * poll_state.c - Polling idle state
  */
 
-#include <linux/cpuidle.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/idle.h>
+#include <linex/cpuidle.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/idle.h>
 
 #define POLL_IDLE_RELAX_COUNT	200
 

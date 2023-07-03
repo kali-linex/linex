@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_seqnum.c
+ *  linex/net/sunrpc/gss_krb5_seqnum.c
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/gssapi/krb5/util_seqnum.c
  *
@@ -32,8 +32,8 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/types.h>
-#include <linux/sunrpc/gss_krb5.h>
+#include <linex/types.h>
+#include <linex/sunrpc/gss_krb5.h>
 
 #include "gss_krb5_internal.h"
 

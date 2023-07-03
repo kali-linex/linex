@@ -6,15 +6,15 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/videodev2.h>
+#include <linex/vmalloc.h>
+#include <linex/wait.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
 

@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #include "dma_port.h"
 #include "tb_regs.h"

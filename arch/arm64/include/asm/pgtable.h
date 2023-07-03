@@ -30,10 +30,10 @@
 
 #include <asm/cmpxchg.h>
 #include <asm/fixmap.h>
-#include <linux/mmdebug.h>
-#include <linux/mm_types.h>
-#include <linux/sched.h>
-#include <linux/page_table_check.h>
+#include <linex/mmdebug.h>
+#include <linex/mm_types.h>
+#include <linex/sched.h>
+#include <linex/page_table_check.h>
 
 #ifdef CONFIG_TRANSPARENT_HUGEPAGE
 #define __HAVE_ARCH_FLUSH_PMD_TLB_RANGE
@@ -448,7 +448,7 @@ static inline pgprot_t pte_pgprot(pte_t pte)
 
 #ifdef CONFIG_NUMA_BALANCING
 /*
- * See the comment in include/linux/pgtable.h
+ * See the comment in include/linex/pgtable.h
  */
 static inline int pte_protnone(pte_t pte)
 {

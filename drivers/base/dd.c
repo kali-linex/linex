@@ -16,18 +16,18 @@
  * Copyright (c) 2007-2009 Novell Inc.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/dma-map-ops.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/async.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/slab.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/dma-map-ops.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/wait.h>
+#include <linex/async.h>
+#include <linex/pm_runtime.h>
+#include <linex/pinctrl/devinfo.h>
+#include <linex/slab.h>
 
 #include "base.h"
 #include "power/power.h"

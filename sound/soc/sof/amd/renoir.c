@@ -11,8 +11,8 @@
  * Hardware interface for Audio DSP on Renoir platform
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
 
 #include "../ops.h"
 #include "../sof-audio.h"

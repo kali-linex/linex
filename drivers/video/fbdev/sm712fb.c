@@ -18,18 +18,18 @@
  * Framebuffer driver for Silicon Motion SM710, SM712, SM721 and SM722 chips
  */
 
-#include <linux/aperture.h>
-#include <linux/io.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
+#include <linex/aperture.h>
+#include <linex/io.h>
+#include <linex/fb.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/screen_info.h>
 
-#include <linux/pm.h>
+#include <linex/pm.h>
 
 #include "sm712.h"
 

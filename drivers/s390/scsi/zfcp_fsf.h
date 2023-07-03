@@ -10,8 +10,8 @@
 #ifndef FSF_H
 #define FSF_H
 
-#include <linux/pfn.h>
-#include <linux/scatterlist.h>
+#include <linex/pfn.h>
+#include <linex/scatterlist.h>
 #include <scsi/libfc.h>
 
 #define FSF_QTCB_CURRENT_VERSION		0x00000001

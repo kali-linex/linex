@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The Linex Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/soc/qcom/apr.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/uaccess.h>
+#include <linex/wait.h>
+#include <linex/jiffies.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/kref.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/soc/qcom/apr.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
 #include <sound/pcm.h>

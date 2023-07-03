@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Front panel driver for Linux
+ * Front panel driver for Linex
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  *
@@ -33,27 +33,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/parport.h>
-#include <linux/list.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/miscdevice.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/fcntl.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/ctype.h>
+#include <linex/parport.h>
+#include <linex/list.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 #include "charlcd.h"
 #include "hd44780_common.h"

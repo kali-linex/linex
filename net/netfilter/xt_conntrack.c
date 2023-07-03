@@ -8,11 +8,11 @@
  *	Copyright © CC Computer Consultants GmbH, 2007 - 2008
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include <net/ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_conntrack.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_conntrack.h>
 #include <net/netfilter/nf_conntrack.h>
 
 MODULE_LICENSE("GPL");

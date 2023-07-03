@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mach-sa1100/clock.c
+ *  linex/arch/arm/mach-sa1100/clock.c
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
 
 #include <mach/hardware.h>
 #include <mach/generic.h>

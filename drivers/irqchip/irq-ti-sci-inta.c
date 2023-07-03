@@ -6,21 +6,21 @@
  *	Lokesh Vutla <lokeshvutla@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/soc/ti/ti_sci_inta_msi.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/interrupt.h>
+#include <linex/msi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/soc/ti/ti_sci_inta_msi.h>
+#include <linex/soc/ti/ti_sci_protocol.h>
 #include <asm-generic/msi.h>
 
 #define TI_SCI_DEV_ID_MASK	0xffff
@@ -62,7 +62,7 @@ struct ti_sci_inta_event_desc {
  * @list:		List entry for the vint list
  * @event_map:		Bitmap to manage the allocation of events to vint.
  * @events:		Array of event descriptors assigned to this vint.
- * @parent_virq:	Linux IRQ number that gets attached to parent
+ * @parent_virq:	Linex IRQ number that gets attached to parent
  * @vint_id:		TISCI vint ID
  */
 struct ti_sci_inta_vint_desc {
@@ -545,7 +545,7 @@ static struct irq_chip ti_sci_inta_irq_chip = {
 /**
  * ti_sci_inta_irq_domain_free() - Free an IRQ from the IRQ domain
  * @domain:	Domain to which the irqs belong
- * @virq:	base linux virtual IRQ to be freed.
+ * @virq:	base linex virtual IRQ to be freed.
  * @nr_irqs:	Number of continuous irqs to be freed
  */
 static void ti_sci_inta_irq_domain_free(struct irq_domain *domain,
@@ -559,7 +559,7 @@ static void ti_sci_inta_irq_domain_free(struct irq_domain *domain,
 /**
  * ti_sci_inta_irq_domain_alloc() - Allocate Interrupt aggregator IRQs
  * @domain:	Point to the interrupt aggregator IRQ domain
- * @virq:	Corresponding Linux virtual IRQ number
+ * @virq:	Corresponding Linex virtual IRQ number
  * @nr_irqs:	Continuous irqs to be allocated
  * @data:	Pointer to firmware specifier
  *

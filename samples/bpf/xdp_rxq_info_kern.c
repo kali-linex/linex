@@ -3,9 +3,9 @@
  *
  *  Example howto extract XDP RX-queue info
  */
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/in.h>
+#include <uapi/linex/bpf.h>
+#include <uapi/linex/if_ether.h>
+#include <uapi/linex/in.h>
 #include <bpf/bpf_helpers.h>
 
 /* Config setup from with userspace

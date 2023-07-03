@@ -7,8 +7,8 @@
  * https://www.hamilton.ie/net/htcp3.pdf
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linex/mm.h>
+#include <linex/module.h>
 #include <net/tcp.h>
 
 #define ALPHA_BASE	(1<<7)	/* 1.0 with shift << 7 */

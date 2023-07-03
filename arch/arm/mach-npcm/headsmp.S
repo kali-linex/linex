@@ -2,8 +2,8 @@
 // Copyright (c) 2018 Nuvoton Technology corporation.
 // Copyright 2018 Google, Inc.
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
 #include <asm/assembler.h>
 
 .arch armv7-a

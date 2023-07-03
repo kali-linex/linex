@@ -11,14 +11,14 @@
  *   are Copyright (C) 1999 David A. Hinds.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <linex/ata.h>
+#include <linex/libata.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

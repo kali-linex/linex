@@ -1,39 +1,39 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/open.c
+ *  linex/fs/open.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/securebits.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
-#include <linux/audit.h>
-#include <linux/falloc.h>
-#include <linux/fs_struct.h>
-#include <linux/ima.h>
-#include <linux/dnotify.h>
-#include <linux/compat.h>
-#include <linux/mnt_idmapping.h>
-#include <linux/filelock.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/fsnotify.h>
+#include <linex/module.h>
+#include <linex/tty.h>
+#include <linex/namei.h>
+#include <linex/backing-dev.h>
+#include <linex/capability.h>
+#include <linex/securebits.h>
+#include <linex/security.h>
+#include <linex/mount.h>
+#include <linex/fcntl.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/fs.h>
+#include <linex/personality.h>
+#include <linex/pagemap.h>
+#include <linex/syscalls.h>
+#include <linex/rcupdate.h>
+#include <linex/audit.h>
+#include <linex/falloc.h>
+#include <linex/fs_struct.h>
+#include <linex/ima.h>
+#include <linex/dnotify.h>
+#include <linex/compat.h>
+#include <linex/mnt_idmapping.h>
+#include <linex/filelock.h>
 
 #include "internal.h"
 

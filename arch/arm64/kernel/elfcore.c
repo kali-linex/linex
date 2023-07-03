@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/coredump.h>
-#include <linux/elfcore.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linex/coredump.h>
+#include <linex/elfcore.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
 
 #include <asm/cpufeature.h>
 #include <asm/mte.h>

@@ -10,28 +10,28 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/export.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_clk.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include <dt-bindings/pinctrl/sun4i-a10.h>
 

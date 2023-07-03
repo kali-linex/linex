@@ -8,30 +8,30 @@
 
 /*
  * The Watchdog Timer Mode Register can be only written to once. If the
- * timeout need to be set from Linux, be sure that the bootstrap or the
+ * timeout need to be set from Linex, be sure that the bootstrap or the
  * bootloader doesn't write to this register.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linex/clk.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/types.h>
+#include <linex/watchdog.h>
+#include <linex/jiffies.h>
+#include <linex/timer.h>
+#include <linex/bitops.h>
+#include <linex/uaccess.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
 
 #include "at91sam9_wdt.h"
 

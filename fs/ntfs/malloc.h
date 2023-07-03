@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * malloc.h - NTFS kernel memory handling. Part of the Linux-NTFS project.
+ * malloc.h - NTFS kernel memory handling. Part of the Linex-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_MALLOC_H
-#define _LINUX_NTFS_MALLOC_H
+#ifndef _LINEX_NTFS_MALLOC_H
+#define _LINEX_NTFS_MALLOC_H
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
 
 /**
  * __ntfs_malloc - allocate memory in multiples of pages
@@ -74,4 +74,4 @@ static inline void ntfs_free(void *addr)
 	kvfree(addr);
 }
 
-#endif /* _LINUX_NTFS_MALLOC_H */
+#endif /* _LINEX_NTFS_MALLOC_H */

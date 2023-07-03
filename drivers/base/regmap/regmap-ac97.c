@@ -4,13 +4,13 @@
 //
 // Copyright 2013 Linaro Ltd.  All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include <sound/ac97_codec.h>
 

@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcm47xx_wdt.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
+#include <linex/bcm47xx_wdt.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
+#include <linex/watchdog.h>
+#include <linex/timer.h>
+#include <linex/jiffies.h>
 
 #define DRV_NAME		"bcm47xx_wdt"
 

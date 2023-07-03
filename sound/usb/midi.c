@@ -35,20 +35,20 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/usb.h>
+#include <linex/wait.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/midi.h>
+#include <linex/module.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

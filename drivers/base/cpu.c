@@ -3,23 +3,23 @@
  * CPU subsystem support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/device.h>
-#include <linux/node.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/cpufeature.h>
-#include <linux/tick.h>
-#include <linux/pm_qos.h>
-#include <linux/sched/isolation.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/cpu.h>
+#include <linex/topology.h>
+#include <linex/device.h>
+#include <linex/node.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/percpu.h>
+#include <linex/acpi.h>
+#include <linex/of.h>
+#include <linex/cpufeature.h>
+#include <linex/tick.h>
+#include <linex/pm_qos.h>
+#include <linex/sched/isolation.h>
 
 #include "base.h"
 
@@ -126,7 +126,7 @@ static DEVICE_ATTR(release, S_IWUSR, NULL, cpu_release_store);
 #endif /* CONFIG_HOTPLUG_CPU */
 
 #ifdef CONFIG_KEXEC
-#include <linux/kexec.h>
+#include <linex/kexec.h>
 
 static ssize_t crash_notes_show(struct device *dev,
 				struct device_attribute *attr,
@@ -297,7 +297,7 @@ static void cpu_device_release(struct device *dev)
 	 * by the cpu device.
 	 *
 	 * Never copy this way of doing things, or you too will be made fun of
-	 * on the linux-kernel list, you have been warned.
+	 * on the linex-kernel list, you have been warned.
 	 */
 }
 

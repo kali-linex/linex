@@ -2,11 +2,11 @@
 /*
  * module.c - module sysfs fun for drivers
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include "base.h"
 
 static char *make_driver_name(struct device_driver *drv)

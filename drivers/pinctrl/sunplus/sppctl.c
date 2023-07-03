@@ -4,22 +4,22 @@
  * Copyright (C) Sunplus Tech / Tibbo Tech.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/overflow.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include <dt-bindings/pinctrl/sppctl-sp7021.h>
 

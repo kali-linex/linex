@@ -5,14 +5,14 @@
  * Author: Mark Nutter <mnutter@us.ibm.com>
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/poll.h>
+#include <linex/smp.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
 
 #include <asm/io.h>
 #include <asm/spu.h>

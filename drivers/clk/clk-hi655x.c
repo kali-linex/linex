@@ -6,13 +6,13 @@
  *
  * Author: Daniel Lezcano <daniel.lezcano@linaro.org>
  */
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/hi655x-pmic.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/hi655x-pmic.h>
 
 #define HI655X_CLK_BASE	HI655X_BUS_ADDR(0x1c)
 #define HI655X_CLK_SET	BIT(6)

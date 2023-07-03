@@ -9,14 +9,14 @@
 #ifndef _HISI_PTT_H
 #define _HISI_PTT_H
 
-#include <linux/bits.h>
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/perf_event.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/cpumask.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/perf_event.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #define DRV_NAME "hisi_ptt"
 

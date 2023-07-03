@@ -8,12 +8,12 @@
  *          Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

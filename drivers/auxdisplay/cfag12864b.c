@@ -9,21 +9,21 @@
  *        Date: 2006-10-31
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/ks0108.h>
-#include <linux/cfag12864b.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/cdev.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/jiffies.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/ks0108.h>
+#include <linex/cfag12864b.h>
 
 
 #define CFAG12864B_NAME "cfag12864b"

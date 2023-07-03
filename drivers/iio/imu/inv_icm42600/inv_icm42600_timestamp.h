@@ -6,7 +6,7 @@
 #ifndef INV_ICM42600_TIMESTAMP_H_
 #define INV_ICM42600_TIMESTAMP_H_
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 struct inv_icm42600_state;
 

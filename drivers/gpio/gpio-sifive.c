@@ -3,16 +3,16 @@
  * Copyright (C) 2019 SiFive
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/of_irq.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/regmap.h>
 
 #define SIFIVE_GPIO_INPUT_VAL	0x00
 #define SIFIVE_GPIO_INPUT_EN	0x04

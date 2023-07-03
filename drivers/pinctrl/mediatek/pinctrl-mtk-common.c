@@ -5,26 +5,26 @@
  * Author: Hongzhou.Yang <hongzhou.yang@mediatek.com>
  */
 
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linex/io.h>
+#include <linex/gpio/driver.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
 #include <dt-bindings/pinctrl/mt65xx.h>
 
 #include "../core.h"

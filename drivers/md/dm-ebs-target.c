@@ -11,9 +11,9 @@
  */
 
 #include "dm.h"
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/dm-bufio.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
+#include <linex/dm-bufio.h>
 
 #define DM_MSG_PREFIX "ebs"
 

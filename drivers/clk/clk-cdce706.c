@@ -7,17 +7,17 @@
  * Reference: https://www.ti.com/lit/ds/symlink/cdce706.pdf
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rational.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/rational.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #define CDCE706_CLKIN_CLOCK		10
 #define CDCE706_CLKIN_SOURCE		11

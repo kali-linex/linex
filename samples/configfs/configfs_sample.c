@@ -10,11 +10,11 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/configfs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/configfs.h>
 
 /*
  * 01-childless

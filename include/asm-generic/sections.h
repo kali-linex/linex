@@ -4,8 +4,8 @@
 
 /* References to section boundaries */
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 
 /*
  * Usage guidelines:

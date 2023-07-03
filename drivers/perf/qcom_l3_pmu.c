@@ -10,17 +10,17 @@
  *
  * See Documentation/admin-guide/perf/qcom_l3_pmu.rst for more details.
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
 
 /*
  * General constants

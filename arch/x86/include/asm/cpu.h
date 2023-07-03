@@ -2,11 +2,11 @@
 #ifndef _ASM_X86_CPU_H
 #define _ASM_X86_CPU_H
 
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
-#include <linux/percpu.h>
+#include <linex/device.h>
+#include <linex/cpu.h>
+#include <linex/topology.h>
+#include <linex/nodemask.h>
+#include <linex/percpu.h>
 #include <asm/ibt.h>
 
 #ifdef CONFIG_SMP

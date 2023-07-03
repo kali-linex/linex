@@ -11,13 +11,13 @@
 	Based on the sh version, and on code from the sh64-specific parts of
 	modutils, originally written by Richard Curnow and Ben Gaster.
 */
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/bug.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linex/moduleloader.h>
+#include <linex/elf.h>
+#include <linex/vmalloc.h>
+#include <linex/bug.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
 #include <asm/unaligned.h>
 #include <asm/dwarf.h>
 

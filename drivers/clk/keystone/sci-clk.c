@@ -5,17 +5,17 @@
  * Copyright (C) 2015-2016 Texas Instruments Incorporated - https://www.ti.com/
  *	Tero Kristo <t-kristo@ti.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
-#include <linux/bsearch.h>
-#include <linux/list_sort.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/soc/ti/ti_sci_protocol.h>
+#include <linex/bsearch.h>
+#include <linex/list_sort.h>
 
 #define SCI_CLK_SSC_ENABLE		BIT(0)
 #define SCI_CLK_ALLOW_FREQ_CHANGE	BIT(1)
@@ -568,7 +568,7 @@ static int ti_sci_scan_clocks_from_dt(struct sci_clk_provider *provider)
 					num_parents = 0;
 
 				/*
-				 * Linux kernel has inherent limitation
+				 * Linex kernel has inherent limitation
 				 * of 255 clock parents at the moment.
 				 * Right now, it is not expected that
 				 * any mux clock from sci-clk driver

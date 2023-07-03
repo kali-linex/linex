@@ -9,8 +9,8 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <linux/icmpv6.h>
-#include <linux/in6.h>
+#include <linex/icmpv6.h>
+#include <linex/in6.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>

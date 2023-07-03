@@ -6,10 +6,10 @@
 
 #include <hyp/adjust_pc.h>
 
-#include <linux/compiler.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/kvm_host.h>
-#include <linux/swab.h>
+#include <linex/compiler.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/kvm_host.h>
+#include <linex/swab.h>
 
 #include <asm/kvm_emulate.h>
 #include <asm/kvm_hyp.h>

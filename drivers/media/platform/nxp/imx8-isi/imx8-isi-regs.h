@@ -6,7 +6,7 @@
 #ifndef __IMX8_ISI_REGS_H__
 #define __IMX8_ISI_REGS_H__
 
-#include <linux/bits.h>
+#include <linex/bits.h>
 
 /* ISI Registers Define  */
 /* Channel Control Register */

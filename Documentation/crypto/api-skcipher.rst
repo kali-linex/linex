@@ -1,10 +1,10 @@
 Block Cipher Algorithm Definitions
 ----------------------------------
 
-.. kernel-doc:: include/linux/crypto.h
+.. kernel-doc:: include/linex/crypto.h
    :doc: Block Cipher Algorithm Definitions
 
-.. kernel-doc:: include/linux/crypto.h
+.. kernel-doc:: include/linex/crypto.h
    :functions: crypto_alg cipher_alg compress_alg
 
 Symmetric Key Cipher API

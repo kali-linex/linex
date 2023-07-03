@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -12,22 +12,22 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/init.h>
+#include <linex/highmem.h>
+#include <linex/initrd.h>
+#include <linex/pagemap.h>
+#include <linex/memblock.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/hugetlb.h>
 
 #include <asm/io.h>
 #include <asm/mmu.h>

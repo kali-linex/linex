@@ -10,21 +10,21 @@
  * based on work by Grant Guenther <grant@torque.net>
  *              and Philip Blundell
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <linex@arm.uk.linex.org>
  */
 
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/device.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/parport.h>
+#include <linex/ctype.h>
+#include <linex/sysctl.h>
+#include <linex/device.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #if defined(CONFIG_SYSCTL) && defined(CONFIG_PROC_FS)
 

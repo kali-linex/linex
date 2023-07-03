@@ -4,8 +4,8 @@
 //
 // Copyright (C) 2010 Samsung Electronics Co., Ltd.
 
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linex/clk.h>
+#include <linex/module.h>
 
 #include <sound/soc.h>
 

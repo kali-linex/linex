@@ -14,15 +14,15 @@
  *	     tighter packing. Prefetchable range support.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/cache.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
 #include "pci.h"
 
 unsigned int pci_flags;

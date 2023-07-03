@@ -13,7 +13,7 @@
 #ifndef RT2X00USB_H
 #define RT2X00USB_H
 
-#include <linux/usb.h>
+#include <linex/usb.h>
 
 #define to_usb_device_intf(d) \
 ({ \

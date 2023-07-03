@@ -5,10 +5,10 @@
  * Copyright (C) 1996, 1997, 1998 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/fs.h>
-#include <linux/ext2_fs.h>
-#include <linux/magic.h>
-#include <linux/namei.h>
+#include <linex/fs.h>
+#include <linex/ext2_fs.h>
+#include <linex/magic.h>
+#include <linex/namei.h>
 
 #include "cache.h"
 #include "xdr3.h"

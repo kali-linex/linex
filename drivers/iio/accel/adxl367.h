@@ -7,7 +7,7 @@
 #ifndef _ADXL367_H_
 #define _ADXL367_H_
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct device;
 struct regmap;

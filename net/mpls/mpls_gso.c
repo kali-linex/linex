@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/netdev_features.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
 #include <net/gso.h>
 #include <net/mpls.h>
 

@@ -7,10 +7,10 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of_platform.h>
-#include <linux/reboot.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/of_platform.h>
+#include <linex/reboot.h>
 
 void machine_shutdown(void)
 {

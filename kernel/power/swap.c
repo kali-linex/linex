@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/swap.c
+ * linex/kernel/power/swap.c
  *
  * This file provides functions for reading the suspend image from
  * and writing it to a swap partition.
@@ -12,24 +12,24 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/lzo.h>
-#include <linux/vmalloc.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/ktime.h>
+#include <linex/module.h>
+#include <linex/file.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/pm.h>
+#include <linex/slab.h>
+#include <linex/lzo.h>
+#include <linex/vmalloc.h>
+#include <linex/cpumask.h>
+#include <linex/atomic.h>
+#include <linex/kthread.h>
+#include <linex/crc32.h>
+#include <linex/ktime.h>
 
 #include "power.h"
 

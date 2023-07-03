@@ -5,13 +5,13 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/netfs.h>
+#include <linex/backing-dev.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/writeback.h>
+#include <linex/pagevec.h>
+#include <linex/netfs.h>
 #include "internal.h"
 
 static int afs_writepages_region(struct address_space *mapping,

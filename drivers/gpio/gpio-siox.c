@@ -3,10 +3,10 @@
  * Copyright (C) 2015-2018 Pengutronix, Uwe Kleine-König <kernel@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/siox.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/siox.h>
+#include <linex/gpio/driver.h>
+#include <linex/of.h>
 
 struct gpio_siox_ddata {
 	struct gpio_chip gchip;

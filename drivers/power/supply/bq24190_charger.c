@@ -5,18 +5,18 @@
  * Author: Mark A. Greer <mgreer@animalcreek.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/power/bq24190_charger.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/extcon-provider.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
+#include <linex/power_supply.h>
+#include <linex/power/bq24190_charger.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/workqueue.h>
+#include <linex/i2c.h>
+#include <linex/extcon-provider.h>
 
 #define	BQ24190_MANUFACTURER	"Texas Instruments"
 

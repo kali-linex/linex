@@ -6,17 +6,17 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/bug.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linex/bug.h>
+#include <linex/workqueue.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
 #include <asm/chpid.h>
 #include <asm/sclp.h>
 #include <asm/crw.h>

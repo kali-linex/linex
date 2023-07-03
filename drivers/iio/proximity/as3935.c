@@ -6,23 +6,23 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/devm-helpers.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/devm-helpers.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/irq.h>
+#include <linex/spi/spi.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/triggered_buffer.h>
 
 #define AS3935_AFE_GAIN		0x00
 #define AS3935_AFE_MASK		0x3F

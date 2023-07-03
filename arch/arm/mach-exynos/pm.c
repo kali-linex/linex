@@ -9,13 +9,13 @@
 // Copyright (c) 2006 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/cpu_pm.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/soc/samsung/exynos-pmu.h>
+#include <linex/init.h>
+#include <linex/suspend.h>
+#include <linex/cpu_pm.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/soc/samsung/exynos-regs-pmu.h>
+#include <linex/soc/samsung/exynos-pmu.h>
 
 #include <asm/firmware.h>
 #include <asm/smp_scu.h>

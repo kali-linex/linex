@@ -24,7 +24,7 @@
  *          Alex Deucher
  */
 
-#include <linux/pci.h>
+#include <linex/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/radeon_drm.h>

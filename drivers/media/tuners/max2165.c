@@ -5,13 +5,13 @@
  *  Copyright (c) 2009 David T. L. Wong <davidtlwong@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/videodev2.h>
+#include <linex/delay.h>
+#include <linex/dvb/frontend.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 

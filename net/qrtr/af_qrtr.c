@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The Linex Foundation. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/qrtr.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/module.h>
+#include <linex/netlink.h>
+#include <linex/qrtr.h>
+#include <linex/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
 #include <net/sock.h>
 

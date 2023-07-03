@@ -14,12 +14,12 @@
  * software.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/parport.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>

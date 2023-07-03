@@ -7,15 +7,15 @@
  * Author: Daire McNamara <daire.mcnamara@microchip.com>
  */
 
-#include <linux/clk.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/pci-ecam.h>
+#include <linex/platform_device.h>
 
 #include "../pci.h"
 

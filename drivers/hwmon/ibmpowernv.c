@@ -7,17 +7,17 @@
 #define DRVNAME		"ibmpowernv"
 #define pr_fmt(fmt)	DRVNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
-#include <linux/platform_device.h>
+#include <linex/platform_device.h>
 #include <asm/opal.h>
-#include <linux/err.h>
+#include <linex/err.h>
 #include <asm/cputhreads.h>
 #include <asm/smp.h>
 
@@ -714,6 +714,6 @@ static struct platform_driver ibmpowernv_driver = {
 
 module_platform_driver(ibmpowernv_driver);
 
-MODULE_AUTHOR("Neelesh Gupta <neelegup@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Neelesh Gupta <neelegup@linex.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM POWERNV platform sensors");
 MODULE_LICENSE("GPL");

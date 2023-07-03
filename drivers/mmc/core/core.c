@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/core.c
+ *  linex/drivers/mmc/core/core.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  SD support Copyright (C) 2004 Ian Molton, All Rights Reserved.
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *  MMCv4 support Copyright (C) 2006 Philip Langdale, All Rights Reserved.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/leds.h>
-#include <linux/scatterlist.h>
-#include <linux/log2.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeup.h>
-#include <linux/suspend.h>
-#include <linux/fault-inject.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/pagemap.h>
+#include <linex/err.h>
+#include <linex/leds.h>
+#include <linex/scatterlist.h>
+#include <linex/log2.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeup.h>
+#include <linex/suspend.h>
+#include <linex/fault-inject.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
+#include <linex/mmc/slot-gpio.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/mmc.h>

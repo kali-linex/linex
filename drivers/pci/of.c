@@ -6,13 +6,13 @@
  */
 #define pr_fmt(fmt)	"PCI: OF: " fmt
 
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
 #include "pci.h"
 
 #ifdef CONFIG_PCI
@@ -214,13 +214,13 @@ EXPORT_SYMBOL_GPL(of_pci_parse_bus_range);
  * @node: Device tree node with the domain information.
  *
  * This function will try to obtain the host bridge domain number by finding
- * a property called "linux,pci-domain" of the given device node.
+ * a property called "linex,pci-domain" of the given device node.
  *
  * Return:
  * * > 0	- On success, an associated domain number.
- * * -EINVAL	- The property "linux,pci-domain" does not exist.
- * * -ENODATA	- The linux,pci-domain" property does not have value.
- * * -EOVERFLOW	- Invalid "linux,pci-domain" property value.
+ * * -EINVAL	- The property "linex,pci-domain" does not exist.
+ * * -ENODATA	- The linex,pci-domain" property does not have value.
+ * * -EOVERFLOW	- Invalid "linex,pci-domain" property value.
  *
  * Returns the associated domain number from DT in the range [0-0xffff], or
  * a negative value if the required property is not found.
@@ -230,7 +230,7 @@ int of_get_pci_domain_nr(struct device_node *node)
 	u32 domain;
 	int error;
 
-	error = of_property_read_u32(node, "linux,pci-domain", &domain);
+	error = of_property_read_u32(node, "linex,pci-domain", &domain);
 	if (error)
 		return error;
 
@@ -239,7 +239,7 @@ int of_get_pci_domain_nr(struct device_node *node)
 EXPORT_SYMBOL_GPL(of_get_pci_domain_nr);
 
 /**
- * of_pci_check_probe_only - Setup probe only mode if linux,pci-probe-only
+ * of_pci_check_probe_only - Setup probe only mode if linex,pci-probe-only
  *                           is present and valid
  */
 void of_pci_check_probe_only(void)
@@ -247,10 +247,10 @@ void of_pci_check_probe_only(void)
 	u32 val;
 	int ret;
 
-	ret = of_property_read_u32(of_chosen, "linux,pci-probe-only", &val);
+	ret = of_property_read_u32(of_chosen, "linex,pci-probe-only", &val);
 	if (ret) {
 		if (ret == -ENODATA || ret == -EOVERFLOW)
-			pr_warn("linux,pci-probe-only without valid value, ignoring\n");
+			pr_warn("linex,pci-probe-only without valid value, ignoring\n");
 		return;
 	}
 
@@ -486,8 +486,8 @@ static int of_irq_parse_pci(const struct pci_dev *pdev, struct of_phandle_args *
 		/*
 		 * Ok, we have found a parent with a device-node, hand over to
 		 * the OF parsing code.
-		 * We build a unit address from the linux device to be used for
-		 * resolution. Note that we use the linux bus number which may
+		 * We build a unit address from the linex device to be used for
+		 * resolution. Note that we use the linex bus number which may
 		 * not match your firmware bus numbering.
 		 * Fortunately, in most cases, interrupt-map-mask doesn't
 		 * include the bus number as part of the matching.

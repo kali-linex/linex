@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_SIGHANDLING_H
 #define _ASM_X86_SIGHANDLING_H
 
-#include <linux/compiler.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
+#include <linex/compiler.h>
+#include <linex/ptrace.h>
+#include <linex/signal.h>
 
 #include <asm/processor-flags.h>
 

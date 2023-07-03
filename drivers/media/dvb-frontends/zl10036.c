@@ -15,10 +15,10 @@
  * A driver for zl10038 should be very similar.
  */
 
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/module.h>
+#include <linex/dvb/frontend.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "zl10036.h"
 

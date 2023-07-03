@@ -9,18 +9,18 @@
  *  See Documentation/filesystems/ for more details.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/poll.h>
-#include <linux/security.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/pagemap.h>
+#include <linex/debugfs.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/atomic.h>
+#include <linex/device.h>
+#include <linex/pm_runtime.h>
+#include <linex/poll.h>
+#include <linex/security.h>
 
 #include "internal.h"
 

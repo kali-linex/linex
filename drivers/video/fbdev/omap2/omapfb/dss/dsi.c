@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dsi.c
+ * linex/drivers/video/omap2/dss/dsi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -8,28 +8,28 @@
 
 #define DSS_SUBSYS_NAME "DSI"
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/semaphore.h>
+#include <linex/seq_file.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/component.h>
 
 #include <video/omapfb_dss.h>
 #include <video/mipi_display.h>

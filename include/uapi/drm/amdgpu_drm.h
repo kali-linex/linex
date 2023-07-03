@@ -1,7 +1,7 @@
-/* amdgpu_drm.h -- Public header for the amdgpu driver -*- linux-c -*-
+/* amdgpu_drm.h -- Public header for the amdgpu driver -*- linex-c -*-
  *
  * Copyright 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA Linex Systems, Inc., Fremont, California.
  * Copyright 2002 Tungsten Graphics, Inc., Cedar Park, Texas.
  * Copyright 2014 Advanced Micro Devices, Inc.
  *
@@ -24,8 +24,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Kevin E. Martin <martin@valinex.com>
+ *    Gareth Hughes <gareth@valinex.com>
  *    Keith Whitwell <keith@tungstengraphics.com>
  */
 

@@ -7,13 +7,13 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/serial_core.h>
+#include <linex/init.h>
+#include <linex/acpi.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/memblock.h>
+#include <linex/of_fdt.h>
+#include <linex/serial_core.h>
 #include <asm/io.h>
 #include <asm/numa.h>
 #include <asm/loongson.h>

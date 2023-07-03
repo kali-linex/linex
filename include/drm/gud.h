@@ -3,10 +3,10 @@
  * Copyright 2020 Noralf Trønnes
  */
 
-#ifndef __LINUX_GUD_H
-#define __LINUX_GUD_H
+#ifndef __LINEX_GUD_H
+#define __LINEX_GUD_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /*
  * struct gud_display_descriptor_req - Display descriptor
@@ -14,7 +14,7 @@
  * @version: Protocol version
  * @flags: Flags
  *         - STATUS_ON_SET: Always do a status request after a SET request.
- *                          This is used by the Linux gadget driver since it has
+ *                          This is used by the Linex gadget driver since it has
  *                          no way to control the status stage of a control OUT
  *                          request that has a payload.
  *         - FULL_UPDATE:   Always send the entire framebuffer when flushing changes.

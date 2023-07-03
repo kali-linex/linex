@@ -32,9 +32,9 @@
 
 #include <rdma/ib_mad.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/rbtree.h>
-#include <linux/idr.h>
+#include <linex/mlx4/cmd.h>
+#include <linex/rbtree.h>
+#include <linex/idr.h>
 #include <rdma/ib_cm.h>
 
 #include "mlx4_ib.h"

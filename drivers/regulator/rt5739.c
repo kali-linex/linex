@@ -7,15 +7,15 @@
  * Author: ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/bits.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
 
 #define RT5739_AUTO_MODE	0
 #define RT5739_FPWM_MODE	1

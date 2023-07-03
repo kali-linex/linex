@@ -14,16 +14,16 @@
  * Copyright (C) 2010-2013 Freescale Semiconductor, Inc
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 
 #define IMX_OCOTP_OFFSET_B0W0		0x400 /* Offset from base address of the
 					       * OTP Bank0 Word0

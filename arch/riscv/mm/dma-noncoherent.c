@@ -5,9 +5,9 @@
  * Copyright (c) 2021 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/mm.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/mm.h>
 #include <asm/cacheflush.h>
 
 static bool noncoherent_supported;

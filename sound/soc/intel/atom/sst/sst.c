@@ -11,16 +11,16 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/async.h>
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/firmware.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_qos.h>
+#include <linex/async.h>
+#include <linex/acpi.h>
+#include <linex/sysfs.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <asm/platform_sst_audio.h>

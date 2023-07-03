@@ -6,14 +6,14 @@
  * Copyright (C) 2014 Wolfram Sang, Sang Engineering <wsa@sang-engineering.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/clk/renesas.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
 
 #define CPG_FRQCR	0x10
 #define CPG_FRQCR2	0x14

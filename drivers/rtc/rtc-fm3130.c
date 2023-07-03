@@ -6,11 +6,11 @@
  *  Based on ds1307 driver by James Chapman and David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/slab.h>
 
 #define FM3130_RTC_CONTROL	(0x0)
 #define FM3130_CAL_CONTROL	(0x1)
@@ -517,7 +517,7 @@ static struct i2c_driver fm3130_driver = {
 	.driver = {
 		.name	= "rtc-fm3130",
 	},
-	.probe		= fm3130_probe,
+	.probe_new	= fm3130_probe,
 	.id_table	= fm3130_id,
 };
 

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/resume_user_mode.h>
-#include <linux/highmem.h>
-#include <linux/jump_label.h>
-#include <linux/kmsan.h>
-#include <linux/livepatch.h>
-#include <linux/audit.h>
-#include <linux/tick.h>
+#include <linex/context_tracking.h>
+#include <linex/entry-common.h>
+#include <linex/resume_user_mode.h>
+#include <linex/highmem.h>
+#include <linex/jump_label.h>
+#include <linex/kmsan.h>
+#include <linex/livepatch.h>
+#include <linex/audit.h>
+#include <linex/tick.h>
 
 #include "common.h"
 

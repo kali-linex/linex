@@ -7,8 +7,8 @@
  * are located to set and get variables to and from the firmware.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>
 #include "core.h"

@@ -2,7 +2,7 @@
 /*
  * Device tree based initialization code for reserved memory.
  *
- * Copyright (c) 2013, 2015 The Linux Foundation. All Rights Reserved.
+ * Copyright (c) 2013, 2015 The Linex Foundation. All Rights Reserved.
  * Copyright (c) 2013,2014 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  * Author: Marek Szyprowski <m.szyprowski@samsung.com>
@@ -11,18 +11,18 @@
 
 #define pr_fmt(fmt)	"OF: reserved mem: " fmt
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/mm.h>
-#include <linux/sizes.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/kmemleak.h>
-#include <linux/cma.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/of_platform.h>
+#include <linex/mm.h>
+#include <linex/sizes.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/sort.h>
+#include <linex/slab.h>
+#include <linex/memblock.h>
+#include <linex/kmemleak.h>
+#include <linex/cma.h>
 
 #include "of_private.h"
 
@@ -324,7 +324,7 @@ void __init fdt_init_reserved_mem(void)
 		nomap = of_get_flat_dt_prop(node, "no-map", NULL) != NULL;
 		prop = of_get_flat_dt_prop(node, "phandle", &len);
 		if (!prop)
-			prop = of_get_flat_dt_prop(node, "linux,phandle", &len);
+			prop = of_get_flat_dt_prop(node, "linex,phandle", &len);
 		if (prop)
 			rmem->phandle = of_read_number(prop, len/4);
 

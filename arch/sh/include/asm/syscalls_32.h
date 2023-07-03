@@ -2,9 +2,9 @@
 #ifndef __ASM_SH_SYSCALLS_32_H
 #define __ASM_SH_SYSCALLS_32_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
 
 struct pt_regs;
 

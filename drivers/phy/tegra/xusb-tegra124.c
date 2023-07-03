@@ -3,16 +3,16 @@
  * Copyright (c) 2014, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/mailbox_client.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
 
 #include <soc/tegra/fuse.h>
 

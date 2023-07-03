@@ -6,13 +6,13 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi_host.h>
 

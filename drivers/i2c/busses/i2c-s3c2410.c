@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* linux/drivers/i2c/busses/i2c-s3c2410.c
+/* linex/drivers/i2c/busses/i2c-s3c2410.c
  *
  * Copyright (C) 2004,2005,2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -7,32 +7,32 @@
  * S3C2410 I2C Controller
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/time.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/cpufreq.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 #include <asm/irq.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linex/platform_data/i2c-s3c2410.h>
 
 /* see s3c2410x user guide, v1.1, section 9 (p447) for more info */
 

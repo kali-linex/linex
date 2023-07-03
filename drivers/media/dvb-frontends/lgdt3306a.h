@@ -9,7 +9,7 @@
 #ifndef _LGDT3306A_H_
 #define _LGDT3306A_H_
 
-#include <linux/i2c.h>
+#include <linex/i2c.h>
 #include <media/dvb_frontend.h>
 
 

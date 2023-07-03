@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/minmax.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
@@ -24,7 +24,7 @@
 #include <media/v4l2-mem2mem.h>
 #include <media/videobuf2-dma-contig.h>
 
-#include <uapi/linux/dw100.h>
+#include <uapi/linex/dw100.h>
 
 #include "dw100_regs.h"
 

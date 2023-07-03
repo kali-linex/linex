@@ -6,16 +6,16 @@
  * Copyright 1994-1998 Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/string.h>
 
-#include <linux/ppp_defs.h>
-#include <linux/ppp-comp.h>
+#include <linex/ppp_defs.h>
+#include <linex/ppp-comp.h>
 
-#include <linux/zlib.h>
+#include <linex/zlib.h>
 #include <asm/unaligned.h>
 
 /*

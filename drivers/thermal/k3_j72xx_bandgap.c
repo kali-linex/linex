@@ -5,20 +5,20 @@
  * Copyright (C) 2021 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/math.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/thermal.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/math.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/pm_runtime.h>
+#include <linex/err.h>
+#include <linex/types.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
+#include <linex/thermal.h>
+#include <linex/of.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #define K3_VTM_DEVINFO_PWR0_OFFSET		0x4
 #define K3_VTM_DEVINFO_PWR0_TEMPSENS_CT_MASK	0xf0

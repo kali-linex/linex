@@ -10,27 +10,27 @@
  *	Safe accesses to vmalloc/direct-mapped discontiguous areas, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/crash_core.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kcore.h>
-#include <linux/user.h>
-#include <linux/capability.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
+#include <linex/crash_core.h>
+#include <linex/mm.h>
+#include <linex/proc_fs.h>
+#include <linex/kcore.h>
+#include <linex/user.h>
+#include <linex/capability.h>
+#include <linex/elf.h>
+#include <linex/elfcore.h>
+#include <linex/vmalloc.h>
+#include <linex/highmem.h>
+#include <linex/printk.h>
+#include <linex/memblock.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/uio.h>
 #include <asm/io.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/memory.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
+#include <linex/list.h>
+#include <linex/ioport.h>
+#include <linex/memory.h>
+#include <linex/sched/task.h>
+#include <linex/security.h>
 #include <asm/sections.h>
 #include "internal.h"
 
@@ -414,7 +414,7 @@ static ssize_t read_kcore_iter(struct kiocb *iocb, struct iov_iter *iter)
 		struct elf_prstatus prstatus = {};
 		struct elf_prpsinfo prpsinfo = {
 			.pr_sname = 'R',
-			.pr_fname = "vmlinux",
+			.pr_fname = "vmlinex",
 		};
 		char *notes;
 		size_t i = 0;

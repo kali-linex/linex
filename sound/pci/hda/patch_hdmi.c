@@ -10,18 +10,18 @@
  *  Copyright (c) 2013 Anssi Hannula <anssi.hannula@iki.fi>
  *
  *  Authors:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@linex.intel.com>
  *
  *  Maintained by:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@linex.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/asoundef.h>

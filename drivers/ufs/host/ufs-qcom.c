@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013-2016, Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, Linex Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/time.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/gpio/consumer.h>
-#include <linux/reset-controller.h>
-#include <linux/devfreq.h>
+#include <linex/acpi.h>
+#include <linex/time.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
+#include <linex/gpio/consumer.h>
+#include <linex/reset-controller.h>
+#include <linex/devfreq.h>
 
 #include <soc/qcom/ice.h>
 

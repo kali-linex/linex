@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/hw_breakpoint.h>
-#include <linux/err.h>
-#include <linux/list_sort.h>
-#include <linux/zalloc.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/err.h>
+#include <linex/list_sort.h>
+#include <linex/zalloc.h>
 #include <dirent.h>
 #include <errno.h>
 #include <sys/ioctl.h>

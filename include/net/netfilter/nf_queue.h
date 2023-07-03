@@ -2,11 +2,11 @@
 #ifndef _NF_QUEUE_H
 #define _NF_QUEUE_H
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jhash.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/jhash.h>
+#include <linex/netfilter.h>
+#include <linex/skbuff.h>
 
 /* Each queued (to userspace) skbuff has one of these. */
 struct nf_queue_entry {

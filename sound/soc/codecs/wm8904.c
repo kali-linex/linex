@@ -7,15 +7,15 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

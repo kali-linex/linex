@@ -15,14 +15,14 @@
 #include <asm/signal.h>  /* for SIGCHLD */
 #include <asm/ioctls.h>
 #include <asm/mman.h>
-#include <linux/fs.h>
-#include <linux/loop.h>
-#include <linux/time.h>
-#include <linux/auxvec.h>
-#include <linux/fcntl.h> /* for O_* and AT_* */
-#include <linux/stat.h>  /* for statx() */
-#include <linux/reboot.h> /* for LINUX_REBOOT_* */
-#include <linux/prctl.h>
+#include <linex/fs.h>
+#include <linex/loop.h>
+#include <linex/time.h>
+#include <linex/auxvec.h>
+#include <linex/fcntl.h> /* for O_* and AT_* */
+#include <linex/stat.h>  /* for statx() */
+#include <linex/reboot.h> /* for LINEX_REBOOT_* */
+#include <linex/prctl.h>
 
 #include "arch.h"
 #include "errno.h"
@@ -393,17 +393,17 @@ int fsync(int fd)
 
 
 /*
- * int getdents64(int fd, struct linux_dirent64 *dirp, int count);
+ * int getdents64(int fd, struct linex_dirent64 *dirp, int count);
  */
 
 static __attribute__((unused))
-int sys_getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int sys_getdents64(int fd, struct linex_dirent64 *dirp, int count)
 {
 	return my_syscall3(__NR_getdents64, fd, dirp, count);
 }
 
 static __attribute__((unused))
-int getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int getdents64(int fd, struct linex_dirent64 *dirp, int count)
 {
 	int ret = sys_getdents64(fd, dirp, count);
 
@@ -985,7 +985,7 @@ ssize_t read(int fd, void *buf, size_t count)
 
 /*
  * int reboot(int cmd);
- * <cmd> is among LINUX_REBOOT_CMD_*
+ * <cmd> is among LINEX_REBOOT_CMD_*
  */
 
 static __attribute__((unused))
@@ -997,7 +997,7 @@ ssize_t sys_reboot(int magic1, int magic2, int cmd, void *arg)
 static __attribute__((unused))
 int reboot(int cmd)
 {
-	int ret = sys_reboot(LINUX_REBOOT_MAGIC1, LINUX_REBOOT_MAGIC2, cmd, 0);
+	int ret = sys_reboot(LINEX_REBOOT_MAGIC1, LINEX_REBOOT_MAGIC2, cmd, 0);
 
 	if (ret < 0) {
 		SET_ERRNO(-ret);

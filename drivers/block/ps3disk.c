@@ -6,10 +6,10 @@
  * Copyright 2007 Sony Corp.
  */
 
-#include <linux/ata.h>
-#include <linux/blk-mq.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/ata.h>
+#include <linex/blk-mq.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3stor.h>

@@ -3,30 +3,30 @@
  *  Copyright (c) 2014 Realtek Semiconductor Corp. All rights reserved.
  */
 
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linex/signal.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/usb.h>
+#include <linex/crc32.h>
+#include <linex/if_vlan.h>
+#include <linex/uaccess.h>
+#include <linex/list.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <uapi/linux/mdio.h>
-#include <linux/mdio.h>
-#include <linux/usb/cdc.h>
-#include <linux/suspend.h>
-#include <linux/atomic.h>
-#include <linux/acpi.h>
-#include <linux/firmware.h>
+#include <uapi/linex/mdio.h>
+#include <linex/mdio.h>
+#include <linex/usb/cdc.h>
+#include <linex/suspend.h>
+#include <linex/atomic.h>
+#include <linex/acpi.h>
+#include <linex/firmware.h>
 #include <crypto/hash.h>
-#include <linux/usb/r8152.h>
+#include <linex/usb/r8152.h>
 #include <net/gso.h>
 
 /* Information for net-next */
@@ -36,7 +36,7 @@
 #define NET_VERSION		"13"
 
 #define DRIVER_VERSION		"v1." NETNEXT_VERSION "." NET_VERSION
-#define DRIVER_AUTHOR "Realtek linux nic maintainers <nic_swsd@realtek.com>"
+#define DRIVER_AUTHOR "Realtek linex nic maintainers <nic_swsd@realtek.com>"
 #define DRIVER_DESC "Realtek RTL8152/RTL8153 Based USB Ethernet Adapters"
 #define MODULENAME "r8152"
 

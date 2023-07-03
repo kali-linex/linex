@@ -3,15 +3,15 @@
  * Static Memory Controller
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/syscore_ops.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include "smemc.h"
-#include <linux/soc/pxa/smemc.h>
+#include <linex/soc/pxa/smemc.h>
 
 #ifdef CONFIG_PM
 static unsigned long msc[2];

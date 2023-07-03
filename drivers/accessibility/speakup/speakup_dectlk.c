@@ -9,13 +9,13 @@
  * specifically written as a driver for the speakup screenreview
  * s not a general device driver.
  */
-#include <linux/unistd.h>
-#include <linux/proc_fs.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <linex/unistd.h>
+#include <linex/proc_fs.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/kthread.h>
 #include "speakup.h"
 #include "spk_priv.h"
 

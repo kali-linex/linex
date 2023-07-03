@@ -4,9 +4,9 @@
 #ifndef _IXGBE_TYPE_H_
 #define _IXGBE_TYPE_H_
 
-#include <linux/types.h>
-#include <linux/mdio.h>
-#include <linux/netdevice.h>
+#include <linex/types.h>
+#include <linex/mdio.h>
+#include <linex/netdevice.h>
 
 /* Device IDs */
 #define IXGBE_DEV_ID_82598               0x10B6

@@ -5,11 +5,11 @@
  * Copyright (C) 2020 ARM Ltd.
  */
 
-#include <linux/iommu.h>
-#include <linux/list.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/iommu.h>
+#include <linex/list.h>
+#include <linex/sched/mm.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "iommu-sva.h"
 

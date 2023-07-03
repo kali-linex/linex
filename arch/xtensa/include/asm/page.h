@@ -11,7 +11,7 @@
 #ifndef _XTENSA_PAGE_H
 #define _XTENSA_PAGE_H
 
-#include <linux/const.h>
+#include <linex/const.h>
 
 #include <asm/processor.h>
 #include <asm/types.h>

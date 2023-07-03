@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/cpufreq.h>
-#include <linux/types.h>
+#include <linex/cpufreq.h>
+#include <linex/types.h>
 
 int cbe_cpufreq_set_pmode(int cpu, unsigned int pmode);
 int cbe_cpufreq_get_pmode(int cpu);

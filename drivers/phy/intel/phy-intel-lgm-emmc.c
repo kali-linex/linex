@@ -4,16 +4,16 @@
  * Copyright (C) 2019 Intel, Corp.
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /* eMMC phy register definitions */
 #define EMMC_PHYCTRL0_REG	0xa8

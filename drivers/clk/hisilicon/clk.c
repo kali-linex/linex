@@ -9,15 +9,15 @@
  *	   Xin Li <li.xin@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 
 #include "clk.h"
 

@@ -3,11 +3,11 @@
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/xarray.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/xarray.h>
 #include <net/addrconf.h>
 
 #include <rdma/iw_cm.h>

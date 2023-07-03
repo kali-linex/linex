@@ -6,9 +6,9 @@
 #ifndef __INTEL_CX0_PHY_H__
 #define __INTEL_CX0_PHY_H__
 
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
+#include <linex/types.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
 
 #include "i915_drv.h"
 #include "intel_display_types.h"

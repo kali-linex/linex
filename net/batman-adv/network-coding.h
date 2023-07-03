@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <uapi/linex/batadv_packet.h>
 
 #ifdef CONFIG_BATMAN_ADV_NC
 

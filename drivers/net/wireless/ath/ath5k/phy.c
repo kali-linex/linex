@@ -24,8 +24,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 #include "ath5k.h"

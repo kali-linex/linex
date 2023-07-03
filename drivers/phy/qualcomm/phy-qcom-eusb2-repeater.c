@@ -3,13 +3,13 @@
  * Copyright (c) 2023, Linaro Limited
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
 
 /* eUSB2 status registers */
 #define EUSB2_RPTR_STATUS		0x08

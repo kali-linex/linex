@@ -8,14 +8,14 @@
  * Copyright (C) 1997, 1998, 1999, 2000, 06 by Ralf Baechle
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/smp.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/pm.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/smp.h>
+#include <linex/mmzone.h>
+#include <linex/nodemask.h>
+#include <linex/pm.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

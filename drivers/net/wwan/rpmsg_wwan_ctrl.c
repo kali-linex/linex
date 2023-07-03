@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021, Stephan Gerhold <stephan@gerhold.net> */
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rpmsg.h>
-#include <linux/wwan.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/rpmsg.h>
+#include <linex/wwan.h>
 
 struct rpmsg_wwan_dev {
 	/* Lower level is a rpmsg dev, upper level is a wwan port */

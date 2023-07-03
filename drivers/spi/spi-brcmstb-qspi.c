@@ -3,10 +3,10 @@
  * Copyright 2016 Broadcom
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
 #include "spi-bcm-qspi.h"
 
 static const struct of_device_id brcmstb_qspi_of_match[] = {

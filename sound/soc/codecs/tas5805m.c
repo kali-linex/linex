@@ -8,23 +8,23 @@
 // This is based on a driver originally written by Andy Liu at TI and
 // posted here:
 //
-//    https://e2e.ti.com/support/audio-group/audio/f/audio-forum/722027/linux-tas5825m-linux-drivers
+//    https://e2e.ti.com/support/audio-group/audio/f/audio-forum/722027/linex-tas5825m-linex-drivers
 //
 // It has been simplified a little and reworked for the 5.x ALSA SoC API.
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/atomic.h>
+#include <linex/workqueue.h>
 
 #include <sound/soc.h>
 #include <sound/pcm.h>

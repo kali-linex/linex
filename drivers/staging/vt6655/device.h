@@ -14,13 +14,13 @@
 #ifndef __DEVICE_H__
 #define __DEVICE_H__
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/interrupt.h>
+#include <linex/crc32.h>
 #include <net/mac80211.h>
 
 /* device specific */

@@ -7,11 +7,11 @@
 #ifndef __DRV_CLK_MTK_H
 #define __DRV_CLK_MTK_H
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "reset.h"
 

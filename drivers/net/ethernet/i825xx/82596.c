@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-1.0+
-/* 82596.c: A generic 82596 ethernet driver for linux. */
+/* 82596.c: A generic 82596 ethernet driver for linex. */
 /*
    Based on Apricot.c
    Written 1994 by Mark Evans.
@@ -39,20 +39,20 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/gfp.h>
+#include <linex/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

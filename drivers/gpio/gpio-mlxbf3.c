@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only or BSD-3-Clause
 /* Copyright (C) 2022 NVIDIA CORPORATION & AFFILIATES */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 /*
  * There are 2 YU GPIO blocks:

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/console.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/console.h>
+#include <linex/platform_device.h>
+#include <linex/screen_info.h>
 
 #include "sm750.h"
 #include "sm750_accel.h"

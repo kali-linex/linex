@@ -32,10 +32,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/mm.h>
+#include <linex/scatterlist.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include <asm/page.h>
 

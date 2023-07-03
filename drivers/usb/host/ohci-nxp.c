@@ -16,16 +16,16 @@
  *
  * 2005-2006 (c) MontaVista Software, Inc.
  */
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/usb/isp1301.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/usb/isp1301.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 #include "ohci.h"
 

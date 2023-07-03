@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -35,40 +35,40 @@
 #ifndef _SOCK_H
 #define _SOCK_H
 
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/timer.h>
-#include <linux/cache.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>	/* struct sk_buff */
-#include <linux/mm.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/static_key.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/cgroup-defs.h>
-#include <linux/rbtree.h>
-#include <linux/rculist_nulls.h>
-#include <linux/poll.h>
-#include <linux/sockptr.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/llist.h>
+#include <linex/hardirq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/list_nulls.h>
+#include <linex/timer.h>
+#include <linex/cache.h>
+#include <linex/bitops.h>
+#include <linex/lockdep.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>	/* struct sk_buff */
+#include <linex/mm.h>
+#include <linex/security.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/page_counter.h>
+#include <linex/memcontrol.h>
+#include <linex/static_key.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/cgroup-defs.h>
+#include <linex/rbtree.h>
+#include <linex/rculist_nulls.h>
+#include <linex/poll.h>
+#include <linex/sockptr.h>
+#include <linex/indirect_call_wrapper.h>
+#include <linex/atomic.h>
+#include <linex/refcount.h>
+#include <linex/llist.h>
 #include <net/dst.h>
 #include <net/checksum.h>
 #include <net/tcp_states.h>
-#include <linux/net_tstamp.h>
+#include <linex/net_tstamp.h>
 #include <net/l3mdev.h>
-#include <uapi/linux/socket.h>
+#include <uapi/linex/socket.h>
 
 /*
  * This structure really needs to be cleaned up.

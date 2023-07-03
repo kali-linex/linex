@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 #include <asm/processor.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <linex/sched.h>
+#include <linex/threads.h>
 
 /*
  * This file contains the functions and defines necessary to modify and use

@@ -8,21 +8,21 @@
 
 #define pr_fmt(fmt) "CPUidle PSCI: " fmt
 
-#include <linux/cpuhotplug.h>
-#include <linux/cpu_cooling.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/psci.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/syscore_ops.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpu_cooling.h>
+#include <linex/cpuidle.h>
+#include <linex/cpumask.h>
+#include <linex/cpu_pm.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/psci.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/syscore_ops.h>
 
 #include <asm/cpuidle.h>
 

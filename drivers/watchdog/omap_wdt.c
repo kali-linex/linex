@@ -12,7 +12,7 @@
  * History:
  *
  * 20030527: George G. Davis <gdavis@mvista.com>
- *	Initially based on linux-2.4.19-rmk7-pxa1/drivers/char/sa1100_wdt.c
+ *	Initially based on linex-2.4.19-rmk7-pxa1/drivers/char/sa1100_wdt.c
  *	(c) Copyright 2000 Oleg Drokin <green@crimea.edu>
  *	Based on SoftDog driver by Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
@@ -26,20 +26,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/omap-wd-timer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/watchdog.h>
+#include <linex/reboot.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/moduleparam.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_data/omap-wd-timer.h>
 
 #include "omap_wdt.h"
 

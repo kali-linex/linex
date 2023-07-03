@@ -4,12 +4,12 @@
 //
 // Copyright (c) 2018 Socionext Inc.
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 #include <media/dvb_math.h>
 
 #include "mn88443x.h"

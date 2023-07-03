@@ -19,14 +19,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linex/module.h>
+#include <linex/parport.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
 
 #include <asm/current.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #undef DEBUG
 

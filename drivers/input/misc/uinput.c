@@ -18,16 +18,16 @@
  *	0.1	20/06/2002
  *		- first public version
  */
-#include <uapi/linux/uinput.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/overflow.h>
-#include <linux/input/mt.h>
+#include <uapi/linex/uinput.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/overflow.h>
+#include <linex/input/mt.h>
 #include "../input-compat.h"
 
 #define UINPUT_NAME		"uinput"

@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/srmcons.c
+ *	linex/arch/alpha/kernel/srmcons.c
  *
  * Callback based driver for SRM Console console device.
  * (TTY driver and console driver)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
 
 #include <asm/console.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 
 static DEFINE_SPINLOCK(srmcons_callback_lock);

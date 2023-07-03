@@ -6,9 +6,9 @@
  * Author: Marc Zyngier <maz@kernel.org>
  */
 
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
+#include <linex/ctype.h>
+#include <linex/kernel.h>
+#include <linex/libfdt.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>

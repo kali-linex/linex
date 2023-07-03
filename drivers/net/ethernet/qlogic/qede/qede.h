@@ -6,24 +6,24 @@
 
 #ifndef _QEDE_H_
 #define _QEDE_H_
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/bpf.h>
+#include <linex/workqueue.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/bitmap.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/bpf.h>
 #include <net/xdp.h>
-#include <linux/qed/qede_rdma.h>
-#include <linux/io.h>
+#include <linex/qed/qede_rdma.h>
+#include <linex/io.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linex/cpu_rmap.h>
 #endif
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/eth_common.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_eth_if.h>
+#include <linex/qed/common_hsi.h>
+#include <linex/qed/eth_common.h>
+#include <linex/qed/qed_if.h>
+#include <linex/qed/qed_chain.h>
+#include <linex/qed/qed_eth_if.h>
 
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

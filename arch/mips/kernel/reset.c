@@ -3,15 +3,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2001, 06 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2001, 06 by Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/pm.h>
+#include <linex/types.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
 
 #include <asm/compiler.h>
 #include <asm/idle.h>

@@ -6,9 +6,9 @@
  * Author: Koro Chen <koro.chen@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <linex/module.h>
+#include <linex/gpio.h>
+#include <linex/of_gpio.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include "../../codecs/rt5645.h"

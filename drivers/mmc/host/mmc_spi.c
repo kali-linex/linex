@@ -10,22 +10,22 @@
  * (C) Copyright 2007, ATRON electronic GmbH,
  *		Jan Nikitenko <jan.nikitenko@gmail.com>
  */
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc7.h>
-#include <linux/crc-itu-t.h>
-#include <linux/scatterlist.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/bio.h>
+#include <linex/dma-mapping.h>
+#include <linex/crc7.h>
+#include <linex/crc-itu-t.h>
+#include <linex/scatterlist.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>		/* for R1_SPI_* bit values */
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>		/* for R1_SPI_* bit values */
+#include <linex/mmc/slot-gpio.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/mmc_spi.h>
 
 #include <asm/unaligned.h>
 
@@ -538,7 +538,7 @@ mmc_spi_command_send(struct mmc_spi_host *host,
  * a status transfer.
  *
  * We always provide TX data for data and CRC.  The MMC/SD protocol
- * requires us to write ones; but Linux defaults to writing zeroes;
+ * requires us to write ones; but Linex defaults to writing zeroes;
  * so we explicitly initialize it to all ones on RX paths.
  *
  * We also handle DMA mapping, so the underlying SPI controller does
@@ -955,7 +955,7 @@ mmc_spi_data_do(struct mmc_spi_host *host, struct mmc_command *cmd,
 	 * can be issued before multiblock writes.  Unlike its more widely
 	 * documented analogue for SD cards (SET_WR_BLK_ERASE_COUNT, ACMD23),
 	 * that can affect the STOP_TRAN logic.   Complete (and current)
-	 * MMC specs should sort that out before Linux starts using CMD23.
+	 * MMC specs should sort that out before Linex starts using CMD23.
 	 */
 	if (direction == DMA_TO_DEVICE && multiple) {
 		struct scratch	*scratch = host->data;

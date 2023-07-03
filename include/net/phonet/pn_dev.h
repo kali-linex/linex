@@ -10,8 +10,8 @@
 #ifndef PN_DEV_H
 #define PN_DEV_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
 
 struct net;
 

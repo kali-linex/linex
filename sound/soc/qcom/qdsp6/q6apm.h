@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __Q6APM_H__
 #define __Q6APM_H__
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/of.h>
+#include <linex/delay.h>
 #include <sound/soc.h>
-#include <linux/of_platform.h>
-#include <linux/jiffies.h>
-#include <linux/soc/qcom/apr.h>
+#include <linex/of_platform.h>
+#include <linex/jiffies.h>
+#include <linex/soc/qcom/apr.h>
 #include <dt-bindings/sound/qcom,q6dsp-lpass-ports.h>
 #include "audioreach.h"
 

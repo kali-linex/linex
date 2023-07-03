@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2013 Broadcom Corporation
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/highmem.h>
+#include <linex/platform_device.h>
+#include <linex/mmc/host.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/regulator/consumer.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include "sdhci-pltfm.h"
 #include "sdhci.h"

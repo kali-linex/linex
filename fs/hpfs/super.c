@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/hpfs/super.c
+ *  linex/fs/hpfs/super.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
@@ -8,15 +8,15 @@
  */
 
 #include "hpfs_fn.h"
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/init.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
-#include <linux/sched.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linex/module.h>
+#include <linex/parser.h>
+#include <linex/init.h>
+#include <linex/statfs.h>
+#include <linex/magic.h>
+#include <linex/sched.h>
+#include <linex/bitmap.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
 
 /* Mark the filesystem dirty, so that chkdsk checks it when os/2 booted */
 

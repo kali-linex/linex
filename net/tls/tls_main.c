@@ -31,15 +31,15 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
 #include <net/tcp.h>
 #include <net/inet_common.h>
-#include <linux/highmem.h>
-#include <linux/netdevice.h>
-#include <linux/sched/signal.h>
-#include <linux/inetdevice.h>
-#include <linux/inet_diag.h>
+#include <linex/highmem.h>
+#include <linex/netdevice.h>
+#include <linex/sched/signal.h>
+#include <linex/inetdevice.h>
+#include <linex/inet_diag.h>
 
 #include <net/snmp.h>
 #include <net/tls.h>
@@ -307,18 +307,18 @@ static void tls_sk_proto_cleanup(struct sock *sk,
 		kfree(ctx->tx.rec_seq);
 		kfree(ctx->tx.iv);
 		tls_sw_release_resources_tx(sk);
-		TLS_DEC_STATS(sock_net(sk), LINUX_MIB_TLSCURRTXSW);
+		TLS_DEC_STATS(sock_net(sk), LINEX_MIB_TLSCURRTXSW);
 	} else if (ctx->tx_conf == TLS_HW) {
 		tls_device_free_resources_tx(sk);
-		TLS_DEC_STATS(sock_net(sk), LINUX_MIB_TLSCURRTXDEVICE);
+		TLS_DEC_STATS(sock_net(sk), LINEX_MIB_TLSCURRTXDEVICE);
 	}
 
 	if (ctx->rx_conf == TLS_SW) {
 		tls_sw_release_resources_rx(sk);
-		TLS_DEC_STATS(sock_net(sk), LINUX_MIB_TLSCURRRXSW);
+		TLS_DEC_STATS(sock_net(sk), LINEX_MIB_TLSCURRRXSW);
 	} else if (ctx->rx_conf == TLS_HW) {
 		tls_device_offload_cleanup_rx(sk);
-		TLS_DEC_STATS(sock_net(sk), LINUX_MIB_TLSCURRRXDEVICE);
+		TLS_DEC_STATS(sock_net(sk), LINEX_MIB_TLSCURRRXDEVICE);
 	}
 }
 
@@ -796,28 +796,28 @@ static int do_tls_setsockopt_conf(struct sock *sk, sockptr_t optval,
 		rc = tls_set_device_offload(sk, ctx);
 		conf = TLS_HW;
 		if (!rc) {
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSTXDEVICE);
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSCURRTXDEVICE);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSTXDEVICE);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSCURRTXDEVICE);
 		} else {
 			rc = tls_set_sw_offload(sk, ctx, 1);
 			if (rc)
 				goto err_crypto_info;
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSTXSW);
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSCURRTXSW);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSTXSW);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSCURRTXSW);
 			conf = TLS_SW;
 		}
 	} else {
 		rc = tls_set_device_offload_rx(sk, ctx);
 		conf = TLS_HW;
 		if (!rc) {
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSRXDEVICE);
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSCURRRXDEVICE);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSRXDEVICE);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSCURRRXDEVICE);
 		} else {
 			rc = tls_set_sw_offload(sk, ctx, 0);
 			if (rc)
 				goto err_crypto_info;
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSRXSW);
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSCURRRXSW);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSRXSW);
+			TLS_INC_STATS(sock_net(sk), LINEX_MIB_TLSCURRRXSW);
 			conf = TLS_SW;
 		}
 		tls_sw_strparser_arm(sk, ctx);
@@ -1208,7 +1208,7 @@ static int __net_init tls_init_net(struct net *net)
 {
 	int err;
 
-	net->mib.tls_statistics = alloc_percpu(struct linux_tls_mib);
+	net->mib.tls_statistics = alloc_percpu(struct linex_tls_mib);
 	if (!net->mib.tls_statistics)
 		return -ENOMEM;
 

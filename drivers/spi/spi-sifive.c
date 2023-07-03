@@ -7,14 +7,14 @@
 // Author: SiFive, Inc.
 // sifive@sifive.com
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/io.h>
-#include <linux/log2.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
+#include <linex/io.h>
+#include <linex/log2.h>
 
 #define SIFIVE_SPI_DRIVER_NAME           "sifive_spi"
 

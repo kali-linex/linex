@@ -5,14 +5,14 @@
  *
  *   Modified by Steve French (sfrench@us.ibm.com)
  */
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/ethtool.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/ethtool.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -478,7 +478,7 @@ skip_rdma:
 				seq_puts(m, " signed");
 
 			seq_printf(m, "\n\tUser: %d Cred User: %d",
-				   from_kuid(&init_user_ns, ses->linux_uid),
+				   from_kuid(&init_user_ns, ses->linex_uid),
 				   from_kuid(&init_user_ns, ses->cred_uid));
 
 			if (ses->dfs_root_ses) {
@@ -766,7 +766,7 @@ static const struct proc_ops cifsFYI_proc_ops;
 static const struct proc_ops cifs_lookup_cache_proc_ops;
 static const struct proc_ops traceSMB_proc_ops;
 static const struct proc_ops cifs_security_flags_proc_ops;
-static const struct proc_ops cifs_linux_ext_proc_ops;
+static const struct proc_ops cifs_linex_ext_proc_ops;
 static const struct proc_ops cifs_mount_params_proc_ops;
 
 void
@@ -785,8 +785,8 @@ cifs_proc_init(void)
 	proc_create("Stats", 0644, proc_fs_cifs, &cifs_stats_proc_ops);
 	proc_create("cifsFYI", 0644, proc_fs_cifs, &cifsFYI_proc_ops);
 	proc_create("traceSMB", 0644, proc_fs_cifs, &traceSMB_proc_ops);
-	proc_create("LinuxExtensionsEnabled", 0644, proc_fs_cifs,
-		    &cifs_linux_ext_proc_ops);
+	proc_create("LinexExtensionsEnabled", 0644, proc_fs_cifs,
+		    &cifs_linex_ext_proc_ops);
 	proc_create("SecurityFlags", 0644, proc_fs_cifs,
 		    &cifs_security_flags_proc_ops);
 	proc_create("LookupCacheEnabled", 0644, proc_fs_cifs,
@@ -830,7 +830,7 @@ cifs_proc_clean(void)
 	remove_proc_entry("traceSMB", proc_fs_cifs);
 	remove_proc_entry("Stats", proc_fs_cifs);
 	remove_proc_entry("SecurityFlags", proc_fs_cifs);
-	remove_proc_entry("LinuxExtensionsEnabled", proc_fs_cifs);
+	remove_proc_entry("LinexExtensionsEnabled", proc_fs_cifs);
 	remove_proc_entry("LookupCacheEnabled", proc_fs_cifs);
 	remove_proc_entry("mount_params", proc_fs_cifs);
 
@@ -889,35 +889,35 @@ static const struct proc_ops cifsFYI_proc_ops = {
 	.proc_write	= cifsFYI_proc_write,
 };
 
-static int cifs_linux_ext_proc_show(struct seq_file *m, void *v)
+static int cifs_linex_ext_proc_show(struct seq_file *m, void *v)
 {
-	seq_printf(m, "%d\n", linuxExtEnabled);
+	seq_printf(m, "%d\n", linexExtEnabled);
 	return 0;
 }
 
-static int cifs_linux_ext_proc_open(struct inode *inode, struct file *file)
+static int cifs_linex_ext_proc_open(struct inode *inode, struct file *file)
 {
-	return single_open(file, cifs_linux_ext_proc_show, NULL);
+	return single_open(file, cifs_linex_ext_proc_show, NULL);
 }
 
-static ssize_t cifs_linux_ext_proc_write(struct file *file,
+static ssize_t cifs_linex_ext_proc_write(struct file *file,
 		const char __user *buffer, size_t count, loff_t *ppos)
 {
 	int rc;
 
-	rc = kstrtobool_from_user(buffer, count, &linuxExtEnabled);
+	rc = kstrtobool_from_user(buffer, count, &linexExtEnabled);
 	if (rc)
 		return rc;
 
 	return count;
 }
 
-static const struct proc_ops cifs_linux_ext_proc_ops = {
-	.proc_open	= cifs_linux_ext_proc_open,
+static const struct proc_ops cifs_linex_ext_proc_ops = {
+	.proc_open	= cifs_linex_ext_proc_open,
 	.proc_read	= seq_read,
 	.proc_lseek	= seq_lseek,
 	.proc_release	= single_release,
-	.proc_write	= cifs_linux_ext_proc_write,
+	.proc_write	= cifs_linex_ext_proc_write,
 };
 
 static int cifs_lookup_cache_proc_show(struct seq_file *m, void *v)

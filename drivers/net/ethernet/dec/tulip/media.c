@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/media.c
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The Linex Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -10,10 +10,10 @@
 	Please submit bugs to http://bugzilla.kernel.org/ .
 */
 
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/mii.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
 #include "tulip.h"
 
 

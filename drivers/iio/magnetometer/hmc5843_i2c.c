@@ -6,11 +6,11 @@
  * Copyright (C) Josef Gajdusek <atx@atx.name>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/triggered_buffer.h>
 
 #include "hmc5843.h"
 

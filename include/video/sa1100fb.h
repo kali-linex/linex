@@ -11,8 +11,8 @@
 #ifndef _VIDEO_SA1100FB_H
 #define _VIDEO_SA1100FB_H
 
-#include <linux/fb.h>
-#include <linux/types.h>
+#include <linex/fb.h>
+#include <linex/types.h>
 
 #define RGB_4	0
 #define RGB_8	1

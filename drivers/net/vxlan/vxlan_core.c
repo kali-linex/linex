@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/igmp.h>
-#include <linux/if_ether.h>
-#include <linux/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/udp.h>
+#include <linex/igmp.h>
+#include <linex/if_ether.h>
+#include <linex/ethtool.h>
 #include <net/arp.h>
 #include <net/ndisc.h>
 #include <net/gro.h>
@@ -42,7 +42,7 @@
 #define FDB_AGE_INTERVAL (10 * HZ)	/* rescan interval */
 
 /* UDP port for VXLAN traffic.
- * The IANA assigned port is 4789, but the Linux default is 8472
+ * The IANA assigned port is 4789, but the Linex default is 8472
  * for compatibility with early adopters.
  */
 static unsigned short vxlan_port __read_mostly = 8472;

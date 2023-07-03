@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/reset.h>
 
 #define PD_STATE_ON			1
 #define PD_STATE_OFF			2

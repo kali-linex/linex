@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mach-footbridge/isa-timer.c
+ *  linex/arch/arm/mach-footbridge/isa-timer.c
  *
  *  Copyright (C) 1998 Russell King.
  *  Copyright (C) 1998 Phil Blundell
  */
-#include <linux/clockchips.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
+#include <linex/clockchips.h>
+#include <linex/i8253.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/spinlock.h>
+#include <linex/timex.h>
 
 #include <asm/irq.h>
 #include <asm/mach/time.h>

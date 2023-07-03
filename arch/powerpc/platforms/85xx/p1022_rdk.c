@@ -12,10 +12,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/fsl/guts.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/fsl/guts.h>
+#include <linex/pci.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 #include <asm/div64.h>
 #include <asm/mpic.h>
 #include <asm/swiotlb.h>

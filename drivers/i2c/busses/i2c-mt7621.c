@@ -10,14 +10,14 @@
  * (C) 2014 Sittisak <sittisaks@hotmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/reset.h>
 
 #define REG_SM0CFG2_REG		0x28
 #define REG_SM0CTL0_REG		0x40

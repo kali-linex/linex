@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
 
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linex/acpi.h>
+#include <linex/timer.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
+#include <linex/power_supply.h>
+#include <linex/platform_data/x86/apple.h>
 #include <acpi/battery.h>
 
 #include "sbshc.h"

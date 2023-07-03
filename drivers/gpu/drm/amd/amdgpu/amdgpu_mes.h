@@ -27,7 +27,7 @@
 #include "amdgpu_irq.h"
 #include "kgd_kfd_interface.h"
 #include "amdgpu_gfx.h"
-#include <linux/sched/mm.h>
+#include <linex/sched/mm.h>
 
 #define AMDGPU_MES_MAX_COMPUTE_PIPES        8
 #define AMDGPU_MES_MAX_GFX_PIPES            2
@@ -402,7 +402,7 @@ int amdgpu_mes_doorbell_process_slice(struct amdgpu_device *adev);
  * A bit more detail about why to set no-FS reclaim with MES lock:
  *
  * The purpose of the MMU notifier is to stop GPU access to memory so
- * that the Linux VM subsystem can move pages around safely. This is
+ * that the Linex VM subsystem can move pages around safely. This is
  * done by preempting user mode queues for the affected process. When
  * MES is used, MES lock needs to be taken to preempt the queues.
  *

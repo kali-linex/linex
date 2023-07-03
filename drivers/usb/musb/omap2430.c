@@ -6,24 +6,24 @@
  * Copyright (C) 2006 Nokia Corporation
  * Tony Lindgren <tony@atomide.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for Linex.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/usb/musb.h>
-#include <linux/phy/omap_control_phy.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/usb/musb.h>
+#include <linex/phy/omap_control_phy.h>
+#include <linex/of_platform.h>
 
 #include "musb_core.h"
 #include "omap2430.h"

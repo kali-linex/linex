@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "cgroup-internal.h"
 
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/nsproxy.h>
-#include <linux/proc_ns.h>
+#include <linex/sched/task.h>
+#include <linex/slab.h>
+#include <linex/nsproxy.h>
+#include <linex/proc_ns.h>
 
 
 /* cgroup namespaces */

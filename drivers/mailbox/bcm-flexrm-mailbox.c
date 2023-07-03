@@ -15,25 +15,25 @@
 
 #include <asm/barrier.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox/brcm-message.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/atomic.h>
+#include <linex/bitmap.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_controller.h>
+#include <linex/mailbox_client.h>
+#include <linex/mailbox/brcm-message.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 
 /* ====== FlexRM register defines ===== */
 

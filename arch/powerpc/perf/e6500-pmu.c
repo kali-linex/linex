@@ -8,8 +8,8 @@
  * Copyright 2008-2009 Paul Mackerras, IBM Corporation.
  */
 
-#include <linux/string.h>
-#include <linux/perf_event.h>
+#include <linex/string.h>
+#include <linex/perf_event.h>
 #include <asm/reg.h>
 #include <asm/cputable.h>
 

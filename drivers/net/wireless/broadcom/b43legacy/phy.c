@@ -16,11 +16,11 @@
 
 */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "b43legacy.h"
 #include "phy.h"

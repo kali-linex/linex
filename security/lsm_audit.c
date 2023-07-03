@@ -2,32 +2,32 @@
 /*
  * common LSM auditing functions
  *
- * Based on code written for SELinux by :
+ * Based on code written for SELinex by :
  *			Stephen Smalley, <sds@tycho.nsa.gov>
  * 			James Morris <jmorris@redhat.com>
  * Author : Etienne Basset, <etienne.basset@ensta.org>
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <linex/types.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/fs.h>
+#include <linex/init.h>
 #include <net/sock.h>
-#include <linux/un.h>
+#include <linex/un.h>
 #include <net/af_unix.h>
-#include <linux/audit.h>
-#include <linux/ipv6.h>
-#include <linux/ip.h>
+#include <linex/audit.h>
+#include <linex/ipv6.h>
+#include <linex/ip.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/dccp.h>
-#include <linux/sctp.h>
-#include <linux/lsm_audit.h>
-#include <linux/security.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/dccp.h>
+#include <linex/sctp.h>
+#include <linex/lsm_audit.h>
+#include <linex/security.h>
 
 /**
  * ipv4_skb_to_auditdata : fill auditdata from skb

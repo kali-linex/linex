@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Code for tracing calls in Linux kernel.
+ * Code for tracing calls in Linex kernel.
  * Copyright (C) 2009-2016 Helge Deller <deller@gmx.de>
  *
  * based on code for x86 which is:
@@ -10,12 +10,12 @@
  *	- add CONFIG_STACK_TRACER
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/jump_label.h>
+#include <linex/init.h>
+#include <linex/ftrace.h>
+#include <linex/uaccess.h>
+#include <linex/kprobes.h>
+#include <linex/ptrace.h>
+#include <linex/jump_label.h>
 
 #include <asm/assembly.h>
 #include <asm/sections.h>

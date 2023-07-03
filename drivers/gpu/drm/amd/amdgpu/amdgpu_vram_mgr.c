@@ -22,7 +22,7 @@
  * Authors: Christian König
  */
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 #include <drm/ttm/ttm_range_manager.h>
 
 #include "amdgpu.h"

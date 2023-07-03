@@ -5,19 +5,19 @@
  * 2) platform_data being correctly configured
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/err.h>
+#include <linex/pwm.h>
+#include <linex/pwm_backlight.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
 struct pwm_bl_data {
 	struct pwm_device	*pwm;

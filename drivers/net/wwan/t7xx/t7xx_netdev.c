@@ -6,31 +6,31 @@
  * Authors:
  *  Chandrashekar Devegowda <chandrashekar.devegowda@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wwan.h>
+#include <linex/atomic.h>
+#include <linex/device.h>
+#include <linex/gfp.h>
+#include <linex/if_arp.h>
+#include <linex/if_ether.h>
+#include <linex/ip.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/netdev_features.h>
+#include <linex/netdevice.h>
+#include <linex/pm_runtime.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/wwan.h>
 #include <net/ipv6.h>
 #include <net/pkt_sched.h>
 

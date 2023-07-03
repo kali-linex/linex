@@ -3,8 +3,8 @@
  * Copyright (C) 2015-2017 Intel Deutschland GmbH
  * Copyright (C) 2018-2022 Intel Corporation
  */
-#include <linux/etherdevice.h>
-#include <linux/math64.h>
+#include <linex/etherdevice.h>
+#include <linex/math64.h>
 #include <net/cfg80211.h>
 #include "mvm.h"
 #include "iwl-io.h"

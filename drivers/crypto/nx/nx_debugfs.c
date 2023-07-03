@@ -7,13 +7,13 @@
  * Author: Kent Yoder <yoder1@us.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
+#include <linex/device.h>
+#include <linex/kobject.h>
+#include <linex/string.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/crypto.h>
 #include <crypto/hash.h>
 #include <asm/vio.h>
 

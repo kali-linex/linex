@@ -3,13 +3,13 @@
  * Hypervisor Maintenance Interrupt (HMI) handling.
  *
  * Copyright 2015 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linex.vnet.ibm.com>
  */
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
 #include <asm/paca.h>
 #include <asm/hmi.h>
 #include <asm/processor.h>

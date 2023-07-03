@@ -3,43 +3,43 @@
  *    PARISC Architecture-dependent parts of process handling
  *    based on the work for i386
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linex.org>
  *    Copyright (C) 2000 Martin K Petersen <mkp at mkp.net>
- *    Copyright (C) 2000 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm at parisc-linex.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linex.org>
  *    Copyright (C) 2000 Philipp Rumpf <prumpf with tux.org>
- *    Copyright (C) 2000 David Kennedy <dkennedy with linuxcare.com>
- *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linux.org>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Alan Modra <amodra at parisc-linux.org>
- *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linux.org>
+ *    Copyright (C) 2000 David Kennedy <dkennedy with linexcare.com>
+ *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linex.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linex.org>
+ *    Copyright (C) 2001 Alan Modra <amodra at parisc-linex.org>
+ *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linex.org>
  *    Copyright (C) 2001-2014 Helge Deller <deller@gmx.de>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linex.org>
  */
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/nmi.h>
-#include <linux/sched/hotplug.h>
+#include <linex/elf.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/cpu.h>
+#include <linex/module.h>
+#include <linex/personality.h>
+#include <linex/ptrace.h>
+#include <linex/reboot.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/slab.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/kallsyms.h>
+#include <linex/uaccess.h>
+#include <linex/rcupdate.h>
+#include <linex/random.h>
+#include <linex/nmi.h>
+#include <linex/sched/hotplug.h>
 
 #include <asm/io.h>
 #include <asm/asm-offsets.h>

@@ -5,18 +5,18 @@
  * Copyright (c) 2002 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/pm.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/auxio.h>
 #include <asm/processor.h>
 

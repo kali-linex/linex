@@ -6,14 +6,14 @@
  * based on exynos_drm_drv.c
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
-#include <linux/console.h>
-#include <linux/iommu.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
+#include <linex/component.h>
+#include <linex/console.h>
+#include <linex/iommu.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

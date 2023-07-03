@@ -5,7 +5,7 @@
  * Viresh Kumar <vireshk@kernel.org>
  *
  * Copyright (C) 2012 ST Microelectronics
- * Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim <shiraz.linex.kernel@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -13,17 +13,17 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/spinlock.h>
 
 /*
  * struct spear_shirq: shared irq structure

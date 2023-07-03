@@ -2,10 +2,10 @@
 #ifndef __ASM_S390_PCI_H
 #define __ASM_S390_PCI_H
 
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/iommu.h>
-#include <linux/pci_hotplug.h>
+#include <linex/pci.h>
+#include <linex/mutex.h>
+#include <linex/iommu.h>
+#include <linex/pci_hotplug.h>
 #include <asm/pci_clp.h>
 #include <asm/pci_debug.h>
 #include <asm/pci_insn.h>

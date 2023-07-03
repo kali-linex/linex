@@ -8,15 +8,15 @@
  * Appnote-84367: https://www.vishay.com/docs/84367/designingveml6030.pdf
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/regmap.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/events.h>
 
 /* Device registers */
 #define VEML6030_REG_ALS_CONF   0x00

@@ -5,16 +5,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/openvswitch.h>
-#include <linux/sctp.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/in6.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
+#include <linex/skbuff.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/openvswitch.h>
+#include <linex/sctp.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/in6.h>
+#include <linex/if_arp.h>
+#include <linex/if_vlan.h>
 
 #include <net/dst.h>
 #include <net/gso.h>

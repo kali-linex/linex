@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2021, Michael Srba
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_clock.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 /* AXI Halt Register Offsets */
 #define AXI_HALTREQ_REG			0x0

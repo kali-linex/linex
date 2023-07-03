@@ -7,19 +7,19 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/firmware.h>
-#include <linux/gcd.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/fixed.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/firmware.h>
+#include <linex/gcd.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regulator/fixed.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  *  S390 version
  *
@@ -8,8 +8,8 @@
 #ifndef _UAPI_ASMS390_SIGNAL_H
 #define _UAPI_ASMS390_SIGNAL_H
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <linex/types.h>
+#include <linex/time.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;

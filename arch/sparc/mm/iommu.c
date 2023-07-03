@@ -8,13 +8,13 @@
  * Copyright (C) 1997,1998 Jakub Jelinek    (jj@sunsite.mff.cuni.cz)
  */
  
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/dma-map-ops.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/dma-map-ops.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include <asm/io.h>
 #include <asm/mxcc.h>

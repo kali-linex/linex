@@ -4,21 +4,21 @@
  *
  * Copyright (C) Josef Gajdusek <atx@atx.name>
  *
- * based on other Linux RTC drivers
+ * based on other Linex RTC drivers
  *
  * Device datasheet:
  * https://ww1.microchip.com/downloads/en/DeviceDoc/22280A.pdf
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/printk.h>
-#include <linux/spi/spi.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/printk.h>
+#include <linex/spi/spi.h>
+#include <linex/rtc.h>
+#include <linex/of.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
 
 /* MCP795 Instructions, see datasheet table 3-1 */
 #define MCP795_EEREAD	0x03

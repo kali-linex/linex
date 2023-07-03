@@ -38,9 +38,9 @@
  * Copyright (C) 2018 Bootlin
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

@@ -1,4 +1,4 @@
-/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linux-c -*-
+/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linex-c -*-
  */
 /*
  *
@@ -27,17 +27,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/oom.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/vt.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/oom.h>
+#include <linex/pci.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/vt.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

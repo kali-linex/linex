@@ -10,12 +10,12 @@
  * Copyright (C) 2010 Cisco Systems Inc. <dediao@cisco.com>
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/io.h>
 
 #include <asm/sections.h>
 

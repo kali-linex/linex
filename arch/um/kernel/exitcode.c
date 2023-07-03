@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 /*
  * If read and write race, the read will still atomically read a valid

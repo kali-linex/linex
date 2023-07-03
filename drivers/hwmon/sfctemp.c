@@ -4,16 +4,16 @@
  * Copyright (C) 2021 Samin Guo <samin.guo@starfivetech.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/hwmon.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 /*
  * TempSensor reset. The RSTN can be de-asserted once the analog core has

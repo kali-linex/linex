@@ -13,12 +13,12 @@
  *  Copyright (C) 2000 Philip Edelbrock <phil@stimpy.netroedge.com>
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
 
 #define AT91_I2C_TIMEOUT	msecs_to_jiffies(100)	/* transfer timeout */
 #define AT91_I2C_DMA_THRESHOLD	8			/* enable DMA if transfer size is bigger than this threshold */

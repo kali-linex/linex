@@ -9,15 +9,15 @@
  * Derived from Ralink RT288x watchdog timer.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/watchdog.h>
 
 #define DEFAULT_TIMEOUT		60
 

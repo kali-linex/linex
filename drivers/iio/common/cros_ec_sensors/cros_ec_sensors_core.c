@@ -5,23 +5,23 @@
  * Copyright (C) 2016 Google, Inc
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/common/cros_ec_sensors_core.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_ec_sensorhub.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/common/cros_ec_sensors_core.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/kfifo_buf.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/platform_data/cros_ec_sensorhub.h>
+#include <linex/platform_device.h>
 
 /*
  * Hard coded to the first device to support sensor fifo.  The EC has a 2048

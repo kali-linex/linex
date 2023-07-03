@@ -2,19 +2,19 @@
 /*
  * bpf_jit_comp64.c: eBPF JIT compiler
  *
- * Copyright 2016 Naveen N. Rao <naveen.n.rao@linux.vnet.ibm.com>
+ * Copyright 2016 Naveen N. Rao <naveen.n.rao@linex.vnet.ibm.com>
  *		  IBM Corporation
  *
  * Based on the powerpc classic BPF JIT compiler by Matt Evans
  */
-#include <linux/moduleloader.h>
+#include <linex/moduleloader.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-compat.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <linex/netdevice.h>
+#include <linex/filter.h>
+#include <linex/if_vlan.h>
 #include <asm/kprobes.h>
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <asm/security_features.h>
 
 #include "bpf_jit.h"

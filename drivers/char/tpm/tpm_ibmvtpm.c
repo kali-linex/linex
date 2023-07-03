@@ -10,16 +10,16 @@
  * Specifications at www.trustedcomputinggroup.org
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/slab.h>
 #include <asm/vio.h>
 #include <asm/irq.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/wait.h>
 #include <asm/prom.h>
 
 #include "tpm.h"

@@ -6,22 +6,22 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/lockdep.h>
-#include <linux/export.h>
-#include <linux/panic_notifier.h>
-#include <linux/sysctl.h>
-#include <linux/suspend.h>
-#include <linux/utsname.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/sysctl.h>
+#include <linex/mm.h>
+#include <linex/cpu.h>
+#include <linex/nmi.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/freezer.h>
+#include <linex/kthread.h>
+#include <linex/lockdep.h>
+#include <linex/export.h>
+#include <linex/panic_notifier.h>
+#include <linex/sysctl.h>
+#include <linex/suspend.h>
+#include <linex/utsname.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/sysctl.h>
 
 #include <trace/events/sched.h>
 

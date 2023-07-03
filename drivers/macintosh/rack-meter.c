@@ -14,17 +14,17 @@
  */
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel_stat.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel_stat.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

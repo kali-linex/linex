@@ -10,25 +10,25 @@
  * card.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <uapi/linux/serial_reg.h>
-#include <linux/eventfd.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/cdev.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/vfio.h>
+#include <linex/iommu.h>
+#include <linex/sysfs.h>
+#include <linex/ctype.h>
+#include <linex/file.h>
+#include <linex/mdev.h>
+#include <linex/pci.h>
+#include <linex/serial.h>
+#include <uapi/linex/serial_reg.h>
+#include <linex/eventfd.h>
 /*
  * #defines
  */

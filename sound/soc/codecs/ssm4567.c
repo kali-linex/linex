@@ -9,12 +9,12 @@
  *   Copyright 2013 Analog Devices Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -7,19 +7,19 @@
  */
 
 #include <dt-bindings/iio/adc/ingenic,adc.h>
-#include <linux/clk.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/clk.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 #define JZ_ADC_REG_ENABLE		0x00
 #define JZ_ADC_REG_CFG			0x04

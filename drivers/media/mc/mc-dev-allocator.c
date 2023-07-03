@@ -15,10 +15,10 @@
  *
  */
 
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/kref.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
 #include <media/media-device.h>
 #include <media/media-dev-allocator.h>

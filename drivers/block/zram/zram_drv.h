@@ -15,9 +15,9 @@
 #ifndef _ZRAM_DRV_H_
 #define _ZRAM_DRV_H_
 
-#include <linux/rwsem.h>
-#include <linux/zsmalloc.h>
-#include <linux/crypto.h>
+#include <linex/rwsem.h>
+#include <linex/zsmalloc.h>
+#include <linex/crypto.h>
 
 #include "zcomp.h"
 

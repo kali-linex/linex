@@ -7,12 +7,12 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/ccp.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/compiler.h>
+#include <linex/ccp.h>
 
 #include "ccp-dev.h"
 

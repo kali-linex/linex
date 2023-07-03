@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2016 ARM Limited
  */
-#include <linux/errno.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/perf_event.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/errno.h>
+#include <linex/hrtimer.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/perf_event.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include <asm/hardware/cache-l2x0.h>
 

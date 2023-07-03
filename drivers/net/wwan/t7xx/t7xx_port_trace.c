@@ -3,10 +3,10 @@
  * Copyright (C) 2022 Intel Corporation.
  */
 
-#include <linux/debugfs.h>
-#include <linux/relay.h>
-#include <linux/skbuff.h>
-#include <linux/wwan.h>
+#include <linex/debugfs.h>
+#include <linex/relay.h>
+#include <linex/skbuff.h>
+#include <linex/wwan.h>
 
 #include "t7xx_port.h"
 #include "t7xx_port_proxy.h"

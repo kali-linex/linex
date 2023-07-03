@@ -5,19 +5,19 @@
  * Copyright (C) 2013 STMicroelectronics (R&D) Limited.
  *		http://www.st.com
  *
- * Cloned from linux/arch/arm/mach-vexpress/platsmp.c
+ * Cloned from linex/arch/arm/mach-vexpress/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/memblock.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/memblock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

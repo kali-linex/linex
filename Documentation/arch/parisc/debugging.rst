@@ -3,7 +3,7 @@ PA-RISC Debugging
 =================
 
 okay, here are some hints for debugging the lower-level parts of
-linux/parisc.
+linex/parisc.
 
 
 1. Absolute addresses

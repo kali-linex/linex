@@ -6,36 +6,36 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/if_vlan.h>
-#include <linux/kmemleak.h>
-#include <linux/sys_soc.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/timer.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/irqreturn.h>
+#include <linex/interrupt.h>
+#include <linex/if_ether.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/phy.h>
+#include <linex/phy/phy.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/if_vlan.h>
+#include <linex/kmemleak.h>
+#include <linex/sys_soc.h>
 #include <net/page_pool.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
 
-#include <linux/pinctrl/consumer.h>
+#include <linex/pinctrl/consumer.h>
 #include <net/pkt_cls.h>
 
 #include "cpsw.h"

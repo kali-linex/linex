@@ -6,9 +6,9 @@
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/stddef.h>
+#include <linex/efi.h>
+#include <linex/pci.h>
+#include <linex/stddef.h>
 
 #include <asm/efi.h>
 #include <asm/e820/types.h>
@@ -815,7 +815,7 @@ asmlinkage unsigned long efi_main(efi_handle_t handle,
 	unsigned long bzimage_addr = (unsigned long)startup_32;
 	unsigned long buffer_start, buffer_end;
 	struct setup_header *hdr = &boot_params->hdr;
-	const struct linux_efi_initrd *initrd = NULL;
+	const struct linex_efi_initrd *initrd = NULL;
 	efi_status_t status;
 
 	efi_system_table = sys_table_arg;
@@ -904,7 +904,7 @@ asmlinkage unsigned long efi_main(efi_handle_t handle,
 	/*
 	 * At this point, an initrd may already have been loaded by the
 	 * bootloader and passed via bootparams. We permit an initrd loaded
-	 * from the LINUX_EFI_INITRD_MEDIA_GUID device path to supersede it.
+	 * from the LINEX_EFI_INITRD_MEDIA_GUID device path to supersede it.
 	 *
 	 * If the device path is not present, any command-line initrd=
 	 * arguments will be processed only if image is not NULL, which will be

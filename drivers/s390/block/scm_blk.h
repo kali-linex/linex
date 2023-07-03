@@ -2,11 +2,11 @@
 #ifndef SCM_BLK_H
 #define SCM_BLK_H
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/list.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/list.h>
 
 #include <asm/debug.h>
 #include <asm/eadm.h>

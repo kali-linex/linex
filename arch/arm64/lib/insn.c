@@ -5,11 +5,11 @@
  *
  * Copyright (C) 2014-2016 Zi Shen Lim <zlim.lnx@gmail.com>
  */
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/printk.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/printk.h>
+#include <linex/sizes.h>
+#include <linex/types.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/errno.h>

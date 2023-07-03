@@ -4,28 +4,28 @@
  * Copyright (C) 2002-2007 Kristian Høgsberg
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time64.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/atomic.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/poll.h>
+#include <linex/sched.h> /* required for linex/wait.h */
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/time64.h>
+#include <linex/timex.h>
+#include <linex/uaccess.h>
+#include <linex/wait.h>
+#include <linex/dma-mapping.h>
+#include <linex/atomic.h>
 #include <asm/byteorder.h>
 
 #include "nosy.h"

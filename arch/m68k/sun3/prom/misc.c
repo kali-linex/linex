@@ -6,9 +6,9 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
 #include <asm/sun3-head.h>
 #include <asm/idprom.h>
 #include <asm/openprom.h>

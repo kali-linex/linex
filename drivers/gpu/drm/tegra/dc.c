@@ -4,18 +4,18 @@
  * Copyright (C) 2012 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/interconnect.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/iommu.h>
+#include <linex/interconnect.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/pmc.h>

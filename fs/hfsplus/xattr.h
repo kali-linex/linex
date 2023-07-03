@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/hfsplus/xattr.h
+ * linex/fs/hfsplus/xattr.h
  *
  * Vyacheslav Dubeyko <slava@dubeyko.com>
  *
  * Logic of processing extended attributes
  */
 
-#ifndef _LINUX_HFSPLUS_XATTR_H
-#define _LINUX_HFSPLUS_XATTR_H
+#ifndef _LINEX_HFSPLUS_XATTR_H
+#define _LINEX_HFSPLUS_XATTR_H
 
-#include <linux/xattr.h>
+#include <linex/xattr.h>
 
 extern const struct xattr_handler hfsplus_xattr_osx_handler;
 extern const struct xattr_handler hfsplus_xattr_user_handler;

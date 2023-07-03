@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt)	"kexec_file(Image): " fmt
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/pe.h>
-#include <linux/string.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/kexec.h>
+#include <linex/pe.h>
+#include <linex/string.h>
 #include <asm/byteorder.h>
 #include <asm/cpufeature.h>
 #include <asm/image.h>

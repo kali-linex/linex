@@ -7,27 +7,27 @@
  * as portions of the ieee80211 subsystem header files.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Linex Wireless <ilw@linex.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/units.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/firmware.h>
+#include <linex/etherdevice.h>
+#include <linex/if_arp.h>
+#include <linex/units.h>
 
 #include <net/mac80211.h>
 
@@ -47,7 +47,7 @@
 /*
  * module name, copyright, version, etc.
  */
-#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi 4965 driver for Linux"
+#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi 4965 driver for Linex"
 
 #ifdef CONFIG_IWLEGACY_DEBUG
 #define VD "d"
@@ -4811,7 +4811,7 @@ il4965_ucode_callback(const struct firmware *ucode_raw, void *context)
 	if (api_ver != api_max)
 		IL_ERR("Firmware has old API version. Expected v%u, "
 		       "got v%u. New firmware can be obtained "
-		       "from http://www.intellinuxwireless.org.\n", api_max,
+		       "from http://www.intellinexwireless.org.\n", api_max,
 		       api_ver);
 
 	IL_INFO("loaded firmware version %u.%u.%u.%u\n",

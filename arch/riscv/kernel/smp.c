@@ -8,19 +8,19 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/cpu.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/irq_work.h>
+#include <linex/cpu.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kexec.h>
+#include <linex/percpu.h>
+#include <linex/profile.h>
+#include <linex/smp.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/irq_work.h>
 
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>

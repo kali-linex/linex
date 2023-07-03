@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_MSHYPER_H
 #define _ASM_X86_MSHYPER_H
 
-#include <linux/types.h>
-#include <linux/nmi.h>
-#include <linux/msi.h>
+#include <linex/types.h>
+#include <linex/nmi.h>
+#include <linex/msi.h>
 #include <asm/io.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/nospec-branch.h>

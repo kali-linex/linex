@@ -14,13 +14,13 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006, 2008
  */
 
-#include <linux/types.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/rculist.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/audit.h>
+#include <linex/slab.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
 #include <net/calipso.h>
@@ -109,7 +109,7 @@ static u32 netlbl_domhsh_hash(const char *key)
 	u32 len;
 
 	/* This is taken (with slight modification) from
-	 * security/selinux/ss/symtab.c:symhash() */
+	 * security/selinex/ss/symtab.c:symhash() */
 
 	for (iter = 0, val = 0, len = strlen(key); iter < len; iter++)
 		val = (val << 4 | (val >> (8 * sizeof(u32) - 4))) ^ key[iter];

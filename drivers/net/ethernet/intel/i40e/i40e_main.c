@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2021 Intel Corporation. */
 
-#include <linux/etherdevice.h>
-#include <linux/of_net.h>
-#include <linux/pci.h>
-#include <linux/bpf.h>
+#include <linex/etherdevice.h>
+#include <linex/of_net.h>
+#include <linex/pci.h>
+#include <linex/bpf.h>
 #include <generated/utsrelease.h>
-#include <linux/crash_dump.h>
+#include <linex/crash_dump.h>
 
 /* Local includes */
 #include "i40e.h"

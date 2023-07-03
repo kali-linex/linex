@@ -11,9 +11,9 @@
 #include "cookie.h"
 #include "socket.h"
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/udp.h>
 #include <net/ip_tunnels.h>
 
 /* Must be called with bh disabled. */

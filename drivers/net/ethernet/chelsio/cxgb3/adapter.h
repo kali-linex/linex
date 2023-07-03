@@ -35,13 +35,13 @@
 #ifndef __T3_ADAPTER_H__
 #define __T3_ADAPTER_H__
 
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/cache.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/cache.h>
+#include <linex/mutex.h>
+#include <linex/bitops.h>
 #include "t3cdev.h"
 #include <asm/io.h>
 

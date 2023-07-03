@@ -4,8 +4,8 @@
  */
 
 #include <drm/drm_prime.h>
-#include <linux/dma-buf.h>
-#include <linux/module.h>
+#include <linex/dma-buf.h>
+#include <linex/module.h>
 
 #include "etnaviv_drv.h"
 #include "etnaviv_gem.h"

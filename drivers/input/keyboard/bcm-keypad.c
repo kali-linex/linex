@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2014 Broadcom Corporation
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/gfp.h>
+#include <linex/io.h>
+#include <linex/input.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
 
 #define DEFAULT_CLK_HZ			31250
 #define MAX_ROWS			8
@@ -322,7 +322,7 @@ static int bcm_kp_probe(struct platform_device *pdev)
 
 	__set_bit(EV_KEY, input_dev->evbit);
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Linex input subsystem */
 	if (of_property_read_bool(pdev->dev.of_node, "autorepeat"))
 		__set_bit(EV_REP, input_dev->evbit);
 

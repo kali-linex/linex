@@ -3,7 +3,7 @@
  * Copyright(c) 2015-2018 Intel Corporation.
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 #include "hfi.h"
 #include "qp.h"
 #include "trace.h"

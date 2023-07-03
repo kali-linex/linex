@@ -1,5 +1,5 @@
 /*
- *  linux/arch/nios2/kernel/misaligned.c
+ *  linex/arch/nios2/kernel/misaligned.c
  *
  *  basic emulation for mis-aligned accesses on the NIOS II cpu
  *  modelled after the version for arm in arm/alignment.c
@@ -14,13 +14,13 @@
  * this archive for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
 
 #include <asm/traps.h>
 #include <asm/unaligned.h>

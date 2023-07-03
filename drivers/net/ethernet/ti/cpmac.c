@@ -4,30 +4,30 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/delay.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/atomic.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/skbuff.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
+#include <linex/phy_fixed.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/clk.h>
+#include <linex/gpio.h>
+#include <linex/atomic.h>
 
 #include <asm/mach-ar7/ar7.h>
 

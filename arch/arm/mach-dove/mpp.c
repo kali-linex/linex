@@ -5,9 +5,9 @@
  * MPP functions for Marvell Dove SoCs
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/gpio.h>
+#include <linex/io.h>
 #include <plat/mpp.h>
 #include <plat/orion-gpio.h>
 #include "dove.h"

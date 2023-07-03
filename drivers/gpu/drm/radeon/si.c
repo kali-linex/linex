@@ -22,10 +22,10 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
 #include <drm/drm_vblank.h>
 #include <drm/radeon_drm.h>

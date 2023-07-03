@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Linex
    Copyright (c) 2000-2001, 2010, Code Aurora Forum. All rights reserved.
    Copyright 2023 NXP
 
@@ -26,9 +26,9 @@
 #ifndef __HCI_CORE_H
 #define __HCI_CORE_H
 
-#include <linux/idr.h>
-#include <linux/leds.h>
-#include <linux/rculist.h>
+#include <linex/idr.h>
+#include <linex/leds.h>
+#include <linex/rculist.h>
 
 #include <net/bluetooth/hci.h>
 #include <net/bluetooth/hci_sync.h>

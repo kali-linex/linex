@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_jensen.c
+ *	linex/arch/alpha/kernel/sys_jensen.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *	Copyright (C) 1998, 1999 Richard Henderson
@@ -12,13 +12,13 @@
 #include <asm/jensen.h>
 #undef  __EXTERN_INLINE
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/pci.h>
+#include <linex/init.h>
 
 #include <asm/ptrace.h>
 

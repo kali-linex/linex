@@ -5,7 +5,7 @@
  */
 
 #include <asm/dma.h>
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 

@@ -5,18 +5,18 @@
  * Copyright (C) 2004-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/bug.h>
+#include <linex/errno.h>
+#include <linex/firewire.h>
+#include <linex/firewire-constants.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

@@ -2,8 +2,8 @@
 
 #include <string.h>
 
-#include <linux/stddef.h>
-#include <linux/bpf.h>
+#include <linex/stddef.h>
+#include <linex/bpf.h>
 
 #include <sys/socket.h>
 

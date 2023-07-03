@@ -15,28 +15,28 @@
 
 #undef VERBOSE
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/dmapool.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/fsl_devices.h>
+#include <linex/dmapool.h>
+#include <linex/of_device.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -2011,7 +2011,7 @@ static int fsl_udc_stop(struct usb_gadget *g)
 -------------------------------------------------------------------------*/
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 
 static const char proc_filename[] = "driver/fsl_usb2_udc";
 

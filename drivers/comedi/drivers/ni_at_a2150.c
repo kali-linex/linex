@@ -3,7 +3,7 @@
  * Comedi driver for National Instruments AT-A2150 boards
  * Copyright (C) 2001, 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -34,14 +34,14 @@
  * - TRIG_WAKE_EOS
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8254.h>
+#include <linex/comedi/comedi_isadma.h>
 
 #define A2150_DMA_BUFFER_SIZE	0xff00	/*  size in bytes of dma buffer */
 

@@ -7,17 +7,17 @@
 //
 // This code is based on spi-dw-core.c.
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
 
 /* Register offsets */
 #define HISI_SPI_CSCR		0x00	/* cs control register */

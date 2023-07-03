@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * HD44780 Character LCD driver for Linux
+ * HD44780 Character LCD driver for Linex
  *
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
 #include "charlcd.h"
 #include "hd44780_common.h"
@@ -349,5 +349,5 @@ static struct platform_driver hd44780_driver = {
 
 module_platform_driver(hd44780_driver);
 MODULE_DESCRIPTION("HD44780 Character LCD driver");
-MODULE_AUTHOR("Geert Uytterhoeven <geert@linux-m68k.org>");
+MODULE_AUTHOR("Geert Uytterhoeven <geert@linex-m68k.org>");
 MODULE_LICENSE("GPL");

@@ -9,12 +9,12 @@
 
 # This script locates the start of the .data section in xipImage and
 # substitutes it with a compressed version. The needed offsets are obtained
-# from symbol addresses in vmlinux. It is expected that .data extends to
+# from symbol addresses in vmlinex. It is expected that .data extends to
 # the end of xipImage.
 
 set -e
 
-VMLINUX="$1"
+VMLINEX="$1"
 XIPIMAGE="$2"
 
 DD="dd status=none"
@@ -28,8 +28,8 @@ esac
 
 sym_val() {
 	# extract hex value for symbol in $1
-	local val=$($NM "$VMLINUX" 2>/dev/null | sed -n "/ $1\$/{s/ .*$//p;q}")
-	[ "$val" ] || { echo "can't find $1 in $VMLINUX" 1>&2; exit 1; }
+	local val=$($NM "$VMLINEX" 2>/dev/null | sed -n "/ $1\$/{s/ .*$//p;q}")
+	[ "$val" ] || { echo "can't find $1 in $VMLINEX" 1>&2; exit 1; }
 	# convert from hex to decimal
 	echo $((0x$val))
 }

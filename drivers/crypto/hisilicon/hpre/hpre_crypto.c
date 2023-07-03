@@ -11,10 +11,10 @@
 #include <crypto/internal/rsa.h>
 #include <crypto/kpp.h>
 #include <crypto/scatterwalk.h>
-#include <linux/dma-mapping.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/time.h>
+#include <linex/dma-mapping.h>
+#include <linex/fips.h>
+#include <linex/module.h>
+#include <linex/time.h>
 #include "hpre.h"
 
 struct hpre_ctx;

@@ -24,7 +24,7 @@
 #include <sys/wait.h>
 #include <sys/mman.h>
 
-#include <linux/ptrace.h>
+#include <linex/ptrace.h>
 
 /* Common system call numbers */
 #define SYS_READ	  0

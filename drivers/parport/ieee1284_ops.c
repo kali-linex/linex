@@ -15,11 +15,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/parport.h>
+#include <linex/delay.h>
+#include <linex/sched/signal.h>
+#include <linex/uaccess.h>
 
 #undef DEBUG /* undef me for production */
 

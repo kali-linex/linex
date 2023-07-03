@@ -5,25 +5,25 @@
  * Copyright IBM 2015
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include <asm/opal.h>
 
 
 /*
- * This driver creates the a Linux MTD abstraction for platform PNOR flash
+ * This driver creates the a Linex MTD abstraction for platform PNOR flash
  * backed by OPAL calls
  */
 

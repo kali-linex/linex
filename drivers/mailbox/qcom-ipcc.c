@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/mailbox_controller.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <dt-bindings/mailbox/qcom-ipcc.h>
 

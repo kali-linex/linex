@@ -5,13 +5,13 @@
  */
 
 #include <dt-bindings/soc/bcm-pmb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/reset/bcm63xx_pmb.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/reset/bcm63xx_pmb.h>
 
 #define BPCM_ID_REG					0x00
 #define BPCM_CAPABILITIES				0x04

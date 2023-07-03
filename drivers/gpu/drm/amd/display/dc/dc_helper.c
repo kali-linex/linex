@@ -27,8 +27,8 @@
  *      Author: agrodzov
  */
 
-#include <linux/delay.h>
-#include <linux/stdarg.h>
+#include <linex/delay.h>
+#include <linex/stdarg.h>
 
 #include "dm_services.h"
 

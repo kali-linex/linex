@@ -7,13 +7,13 @@
  *   Portions from AMD's original 2.4 driver:
  *     Copyright (C) 2004 Advanced Micro Devices, Inc.
  */
-#include <linux/spinlock.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
+#include <linex/spinlock.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <asm/delay.h>
-#include <linux/cs5535.h>
+#include <linex/cs5535.h>
 
 #include "gxfb.h"
 

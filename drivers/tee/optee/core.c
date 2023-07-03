@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crash_dump.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/crash_dump.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/tee_drv.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include "optee_private.h"
 
 int optee_pool_op_alloc_helper(struct tee_shm_pool *pool, struct tee_shm *shm,

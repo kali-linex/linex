@@ -9,22 +9,22 @@
  * firmware with the help of the Platform Firmware Runtime Telemetry
  * interface.
  */
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
-#include <linux/uuid.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/platform_device.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
+#include <linex/uio.h>
+#include <linex/uuid.h>
 
-#include <uapi/linux/pfrut.h>
+#include <uapi/linex/pfrut.h>
 
 #define PFRT_LOG_EXEC_IDX	0
 #define PFRT_LOG_HISTORY_IDX	1

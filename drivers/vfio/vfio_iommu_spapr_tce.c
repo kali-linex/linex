@@ -11,16 +11,16 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/err.h>
-#include <linux/vfio.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/err.h>
+#include <linex/vfio.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/mm.h>
 #include "vfio.h"
 
 #include <asm/iommu.h>

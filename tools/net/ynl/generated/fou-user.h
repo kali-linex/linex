@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/fou.yaml */
 /* YNL-GEN user header */
 
-#ifndef _LINUX_FOU_GEN_H
-#define _LINUX_FOU_GEN_H
+#ifndef _LINEX_FOU_GEN_H
+#define _LINEX_FOU_GEN_H
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/types.h>
-#include <linux/fou.h>
+#include <linex/types.h>
+#include <linex/fou.h>
 
 struct ynl_sock;
 
@@ -334,4 +334,4 @@ void fou_get_list_free(struct fou_get_list *rsp);
 
 struct fou_get_list *fou_get_dump(struct ynl_sock *ys);
 
-#endif /* _LINUX_FOU_GEN_H */
+#endif /* _LINEX_FOU_GEN_H */

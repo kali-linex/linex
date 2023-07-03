@@ -9,15 +9,15 @@
  *	Orex Computed Radiography
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 /* OCOTP Register Offsets */
 #define OCOTP_CTRL_REG				0x00

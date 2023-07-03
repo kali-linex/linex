@@ -9,32 +9,32 @@
  * 2005-10-07 Keith Owens <kaos@sgi.com>
  *	      Add notify_die() hooks.
  */
-#include <linux/cpu.h>
-#include <linux/pm.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/personality.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/unistd.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kdebug.h>
-#include <linux/utsname.h>
-#include <linux/resume_user_mode.h>
-#include <linux/rcupdate.h>
+#include <linex/cpu.h>
+#include <linex/pm.h>
+#include <linex/elf.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/personality.h>
+#include <linex/reboot.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/stddef.h>
+#include <linex/thread_info.h>
+#include <linex/unistd.h>
+#include <linex/efi.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/kdebug.h>
+#include <linex/utsname.h>
+#include <linex/resume_user_mode.h>
+#include <linex/rcupdate.h>
 
 #include <asm/cpu.h>
 #include <asm/delay.h>
@@ -45,7 +45,7 @@
 #include <asm/sal.h>
 #include <asm/switch_to.h>
 #include <asm/tlbflush.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unwind.h>
 #include <asm/user.h>
 #include <asm/xtp.h>
@@ -331,7 +331,7 @@ copy_thread(struct task_struct *p, const struct kernel_clone_args *args)
 	 * XXX We could push this optimization a bit further by
 	 * clearing IA64_THREAD_FPH_VALID on ANY system call.
 	 * However, it's not clear this is worth doing.  Also, it
-	 * would be a slight deviation from the normal Linux system
+	 * would be a slight deviation from the normal Linex system
 	 * call behavior where scratch registers are preserved across
 	 * system calls (unless used by the system call itself).
 	 */

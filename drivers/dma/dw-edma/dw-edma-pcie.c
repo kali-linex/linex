@@ -6,14 +6,14 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/dma/edma.h>
-#include <linux/pci-epf.h>
-#include <linux/msi.h>
-#include <linux/bitfield.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/device.h>
+#include <linex/dma/edma.h>
+#include <linex/pci-epf.h>
+#include <linex/msi.h>
+#include <linex/bitfield.h>
 
 #include "dw-edma-core.h"
 

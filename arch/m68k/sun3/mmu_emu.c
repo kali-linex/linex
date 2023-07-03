@@ -7,20 +7,20 @@
 ** Started 1/16/98 @ 2:22 am
 */
 
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
+#include <linex/init.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/ptrace.h>
+#include <linex/delay.h>
+#include <linex/memblock.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/sched/mm.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/sun3mmu.h>
 #include <asm/oplib.h>

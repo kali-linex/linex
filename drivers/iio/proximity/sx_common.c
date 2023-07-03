@@ -5,27 +5,27 @@
  * Common part of most Semtech SAR sensor.
  */
 
-#include <linux/bitops.h>
-#include <linux/byteorder/generic.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/bitops.h>
+#include <linex/byteorder/generic.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/irqreturn.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 #include <vdso/bits.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
 
 #include "sx_common.h"
 

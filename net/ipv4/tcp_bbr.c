@@ -56,14 +56,14 @@
  * otherwise TCP stack falls back to an internal pacing using one high
  * resolution timer per TCP socket and may use more resources.
  */
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/module.h>
+#include <linex/btf.h>
+#include <linex/btf_ids.h>
+#include <linex/module.h>
 #include <net/tcp.h>
-#include <linux/inet_diag.h>
-#include <linux/inet.h>
-#include <linux/random.h>
-#include <linux/win_minmax.h>
+#include <linex/inet_diag.h>
+#include <linex/inet.h>
+#include <linex/random.h>
+#include <linex/win_minmax.h>
 
 /* Scale factor for rate in pkt/uSec unit to avoid truncation in bandwidth
  * estimation. The rate unit ~= (1500 bytes / 1 usec / 2^24) ~= 715 bps.

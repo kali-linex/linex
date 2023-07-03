@@ -23,7 +23,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include <drm/drm_debugfs.h>
 #include <drm/drm_file.h>

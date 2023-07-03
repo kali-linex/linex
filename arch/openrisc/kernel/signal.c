@@ -2,7 +2,7 @@
 /*
  * OpenRISC signal.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,22 +11,22 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/resume_user_mode.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/resume_user_mode.h>
 
 #include <asm/processor.h>
 #include <asm/syscall.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 struct rt_sigframe {
 	struct siginfo info;

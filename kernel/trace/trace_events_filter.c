@@ -5,12 +5,12 @@
  * Copyright (C) 2009 Tom Zanussi <tzanussi@gmail.com>
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/mutex.h>
+#include <linex/perf_event.h>
+#include <linex/slab.h>
 
 #include "trace.h"
 #include "trace_output.h"
@@ -2383,8 +2383,8 @@ out_unlock:
 
 #ifdef CONFIG_FTRACE_STARTUP_TEST
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
 
 #define CREATE_TRACE_POINTS
 #include "trace_events_filter_test.h"

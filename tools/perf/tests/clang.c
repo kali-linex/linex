@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "tests.h"
 #include "c++/clang-c.h"
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #ifndef HAVE_LIBCLANGLLVM_SUPPORT
 static int test__clang_to_IR(struct test_suite *test __maybe_unused,

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Roccat Arvo driver for Linux
+ * Roccat Arvo driver for Linex
  *
  * Copyright (c) 2011 Stefan Achatz <erazor_de@users.sourceforge.net>
  */
@@ -13,12 +13,12 @@
  * 5 profiles.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hid-roccat.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/hid.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/hid-roccat.h>
 #include "hid-ids.h"
 #include "hid-roccat-common.h"
 #include "hid-roccat-arvo.h"

@@ -5,9 +5,9 @@
  *
  **************************************************************************/
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
 
 #include <drm/drm.h>
 

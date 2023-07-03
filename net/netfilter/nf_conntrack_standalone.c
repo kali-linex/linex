@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/percpu.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
+#include <linex/types.h>
+#include <linex/netfilter.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/percpu.h>
+#include <linex/netdevice.h>
+#include <linex/security.h>
 #include <net/net_namespace.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
 #include <net/netfilter/nf_conntrack.h>
@@ -25,7 +25,7 @@
 #ifdef CONFIG_LWTUNNEL
 #include <net/netfilter/nf_hooks_lwtunnel.h>
 #endif
-#include <linux/rculist_nulls.h>
+#include <linex/rculist_nulls.h>
 
 static bool enable_hooks __read_mostly;
 MODULE_PARM_DESC(enable_hooks, "Always enable conntrack hooks");

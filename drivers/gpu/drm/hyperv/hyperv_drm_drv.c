@@ -3,10 +3,10 @@
  * Copyright 2021 Microsoft
  */
 
-#include <linux/efi.h>
-#include <linux/hyperv.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/efi.h>
+#include <linex/hyperv.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>
@@ -87,7 +87,7 @@ static int hyperv_setup_vram(struct hyperv_drm_device *hv,
 
 	/*
 	 * Map the VRAM cacheable for performance. This is also required for VM
-	 * connect to display properly for ARM64 Linux VM, as the host also maps
+	 * connect to display properly for ARM64 Linex VM, as the host also maps
 	 * the VRAM cacheable.
 	 */
 	hv->vram = ioremap_cache(hv->mem->start, hv->fb_size);

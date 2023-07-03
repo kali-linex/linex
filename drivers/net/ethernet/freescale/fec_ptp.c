@@ -7,32 +7,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/fec.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_net.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/ptrace.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/phy.h>
+#include <linex/fec.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/of_net.h>
 
 #include "fec.h"
 

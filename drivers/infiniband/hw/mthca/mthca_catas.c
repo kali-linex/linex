@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/timer.h>
+#include <linex/workqueue.h>
 
 #include "mthca_dev.h"
 

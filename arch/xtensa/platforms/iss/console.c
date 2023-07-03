@@ -9,24 +9,24 @@
  *   Authors	Christian Zankel, Joe Taylor
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/param.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/console.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/major.h>
+#include <linex/param.h>
+#include <linex/seq_file.h>
+#include <linex/serial.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/irq.h>
 
 #include <platform/simcall.h>
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
 #define SERIAL_MAX_NUM_LINES 1
 #define SERIAL_TIMER_VALUE (HZ / 10)

@@ -4,11 +4,11 @@
  * Copyright (C) 2014 Fujitsu.  All rights reserved.
  */
 
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/freezer.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/freezer.h>
 #include "async-thread.h"
 #include "ctree.h"
 

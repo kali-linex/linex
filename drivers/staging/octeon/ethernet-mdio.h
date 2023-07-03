@@ -5,18 +5,18 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/ethtool.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/string.h>
+#include <linex/ethtool.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <linex/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 

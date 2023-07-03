@@ -1,5 +1,5 @@
 =============================================
-Linux voltage and current regulator framework
+Linex voltage and current regulator framework
 =============================================
 
 About

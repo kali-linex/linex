@@ -8,13 +8,13 @@
  * The kernel part of the (on-line) reiserfs resizer.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
+#include <linex/errno.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <linex/buffer_head.h>
 
 int reiserfs_resize(struct super_block *s, unsigned long block_count_new)
 {

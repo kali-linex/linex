@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/traps.c
+ *  linex/arch/arm/kernel/traps.c
  *
  *  Copyright (C) 1995-2009 Russell King
- *  Fragments that appear the same as linux/arch/i386/kernel/traps.c (C) Linus Torvalds
+ *  Fragments that appear the same as linex/arch/i386/kernel/traps.c (C) Linus Torvalds
  *
  *  'traps.c' handles hardware exceptions after we have saved some state in
- *  'linux/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
+ *  'linex/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
  *  kill the offending process.
  */
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/irq.h>
+#include <linex/signal.h>
+#include <linex/personality.h>
+#include <linex/kallsyms.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/hardirq.h>
+#include <linex/kdebug.h>
+#include <linex/kprobes.h>
+#include <linex/module.h>
+#include <linex/kexec.h>
+#include <linex/bug.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/irq.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/exception.h>
 #include <asm/spectre.h>
@@ -545,7 +545,7 @@ asmlinkage void bad_mode(struct pt_regs *regs, int reason)
 
 static int bad_syscall(int n, struct pt_regs *regs)
 {
-	if ((current->personality & PER_MASK) != PER_LINUX) {
+	if ((current->personality & PER_MASK) != PER_LINEX) {
 		send_sig(SIGSEGV, current, 1);
 		return regs->ARM_r0;
 	}

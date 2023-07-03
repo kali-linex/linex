@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
 #include "stmmac_platform.h"
 

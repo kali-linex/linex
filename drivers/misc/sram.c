@@ -5,17 +5,17 @@
  * Copyright (C) 2012 Philipp Zabel, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/list_sort.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/genalloc.h>
+#include <linex/io.h>
+#include <linex/list_sort.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/mfd/syscon.h>
 #include <soc/at91/atmel-secumod.h>
 
 #include "sram.h"

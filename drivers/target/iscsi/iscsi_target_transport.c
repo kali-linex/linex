@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
+#include <linex/module.h>
 #include <target/iscsi/iscsi_transport.h>
 
 static LIST_HEAD(g_transport_list);

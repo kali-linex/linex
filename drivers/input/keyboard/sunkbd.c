@@ -4,17 +4,17 @@
  */
 
 /*
- * Sun keyboard driver for Linux
+ * Sun keyboard driver for Linex
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/serio.h>
+#include <linex/workqueue.h>
 
 #define DRIVER_DESC	"Sun keyboard driver"
 

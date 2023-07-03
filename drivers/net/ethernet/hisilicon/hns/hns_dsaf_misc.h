@@ -6,9 +6,9 @@
 #ifndef _HNS_DSAF_MISC_H
 #define _HNS_DSAF_MISC_H
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
 
 #include "hns_dsaf_mac.h"
 

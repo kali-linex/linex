@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Implementation of various system calls for Linux/PowerPC
+ *  Implementation of various system calls for Linex/PowerPC
  *
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  * Derived from "arch/i386/kernel/sys_i386.c"
  * Adapted from the i386 version by Gary Thomas
@@ -10,28 +10,28 @@
  * and Paul Mackerras (paulus@cs.anu.edu.au).
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/PPC
+ * have a non-standard calling sequence on the Linex/PPC
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/utsname.h>
-#include <linux/file.h>
-#include <linux/personality.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/syscalls.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/smp.h>
+#include <linex/sem.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/stat.h>
+#include <linex/mman.h>
+#include <linex/sys.h>
+#include <linex/ipc.h>
+#include <linex/utsname.h>
+#include <linex/file.h>
+#include <linex/personality.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/syscalls.h>
 #include <asm/time.h>
 #include <asm/unistd.h>
@@ -78,12 +78,12 @@ static long do_ppc64_personality(unsigned long personality)
 {
 	long ret;
 
-	if (personality(current->personality) == PER_LINUX32
-	    && personality(personality) == PER_LINUX)
-		personality = (personality & ~PER_MASK) | PER_LINUX32;
+	if (personality(current->personality) == PER_LINEX32
+	    && personality(personality) == PER_LINEX)
+		personality = (personality & ~PER_MASK) | PER_LINEX32;
 	ret = ksys_personality(personality);
-	if (personality(ret) == PER_LINUX32)
-		ret = (ret & ~PER_MASK) | PER_LINUX;
+	if (personality(ret) == PER_LINEX32)
+		ret = (ret & ~PER_MASK) | PER_LINEX;
 	return ret;
 }
 

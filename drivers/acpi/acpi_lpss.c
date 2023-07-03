@@ -3,27 +3,27 @@
  * ACPI support for Intel Lynxpoint LPSS.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linex.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/x86/clk-lpss.h>
-#include <linux/platform_data/x86/pmc_atom.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
+#include <linex/acpi.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/dmi.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/x86/clk-lpss.h>
+#include <linex/platform_data/x86/pmc_atom.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/pwm.h>
+#include <linex/pxa2xx_ssp.h>
+#include <linex/suspend.h>
+#include <linex/delay.h>
 
 #include "internal.h"
 

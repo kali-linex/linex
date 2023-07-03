@@ -3,11 +3,11 @@
  * Copyright 2006-2007, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/bitmap.h>
-#include <linux/msi.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/of_irq.h>
+#include <linex/bitmap.h>
+#include <linex/msi.h>
 #include <asm/mpic.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>

@@ -12,9 +12,9 @@
 #include "debug.h"
 #include "writeback.h"
 
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/sched/clock.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/sched/clock.h>
 #include <trace/events/bcache.h>
 
 static void update_gc_after_writeback(struct cache_set *c)

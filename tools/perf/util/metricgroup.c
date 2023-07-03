@@ -20,10 +20,10 @@
 #include <errno.h>
 #include "strlist.h"
 #include <assert.h>
-#include <linux/ctype.h>
-#include <linux/list_sort.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/ctype.h>
+#include <linex/list_sort.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 #include <perf/cpumap.h>
 #include <subcmd/parse-options.h>
 #include <api/fs/fs.h>

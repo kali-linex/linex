@@ -3,13 +3,13 @@
  * Copyright (c) 2021 Aspeed Technology Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "aspeed-hace.h"
 

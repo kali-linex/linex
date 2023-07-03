@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2018-19, Linaro Limited
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/property.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/phy.h>
+#include <linex/phy/phy.h>
+#include <linex/property.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

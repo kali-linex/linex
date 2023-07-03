@@ -2,9 +2,9 @@
 /*
  * Kunit test for clk gate basic type
  */
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 
 #include <kunit/test.h>
 

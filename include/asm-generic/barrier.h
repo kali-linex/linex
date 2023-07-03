@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/kcsan-checks.h>
+#include <linex/compiler.h>
+#include <linex/kcsan-checks.h>
 #include <asm/rwonce.h>
 
 #ifndef nop

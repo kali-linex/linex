@@ -9,9 +9,9 @@
  * Copyright (c) 2015 Axis Communications AB
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

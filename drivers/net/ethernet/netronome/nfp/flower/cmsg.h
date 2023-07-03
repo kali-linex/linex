@@ -4,9 +4,9 @@
 #ifndef NFP_FLOWER_CMSG_H
 #define NFP_FLOWER_CMSG_H
 
-#include <linux/bitfield.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include <net/geneve.h>
 #include <net/gre.h>
 #include <net/vxlan.h>

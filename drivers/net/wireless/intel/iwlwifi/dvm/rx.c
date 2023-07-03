@@ -9,9 +9,9 @@
  * as portionhelp of the ieee80211 subsystem header files.
  *****************************************************************************/
 
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 

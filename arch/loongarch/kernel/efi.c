@@ -8,17 +8,17 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/kobject.h>
-#include <linux/memblock.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/efi-bgrt.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/kobject.h>
+#include <linex/memblock.h>
+#include <linex/reboot.h>
+#include <linex/uaccess.h>
 
 #include <asm/early_ioremap.h>
 #include <asm/efi.h>
@@ -32,7 +32,7 @@ static unsigned long __initdata fdt_pointer = EFI_INVALID_TABLE_ADDR;
 
 static efi_system_table_t *efi_systab;
 static efi_config_table_type_t arch_tables[] __initdata = {
-	{LINUX_EFI_BOOT_MEMMAP_GUID,	&boot_memmap,	"MEMMAP" },
+	{LINEX_EFI_BOOT_MEMMAP_GUID,	&boot_memmap,	"MEMMAP" },
 	{DEVICE_TREE_GUID,		&fdt_pointer,	"FDTPTR" },
 	{},
 };

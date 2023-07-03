@@ -7,21 +7,21 @@
  * Author: Ramakrishna Pallala <ramakrishna.pallala@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/usb/otg.h>
-#include <linux/notifier.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/extcon.h>
-#include <linux/dmi.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/regmap.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/usb/otg.h>
+#include <linex/notifier.h>
+#include <linex/power_supply.h>
+#include <linex/property.h>
+#include <linex/mfd/axp20x.h>
+#include <linex/extcon.h>
+#include <linex/dmi.h>
 #include <asm/iosf_mbi.h>
 
 #define PS_STAT_VBUS_TRIGGER		BIT(0)

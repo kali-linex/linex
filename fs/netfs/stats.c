@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/seq_file.h>
+#include <linex/export.h>
+#include <linex/seq_file.h>
 #include "internal.h"
 
 atomic_t netfs_n_rh_readahead;

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/bitfield.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
 
 #define MAX20411_UV_STEP		6250
 #define MAX20411_BASE_UV		243750

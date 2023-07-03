@@ -6,16 +6,16 @@
  * Copyright (C) 2010-2019 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/i2c.h>
+#include <linex/i2c-smbus.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 struct i2c_smbus_alert {
 	struct work_struct	alert;

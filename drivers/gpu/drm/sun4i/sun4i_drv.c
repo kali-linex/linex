@@ -6,13 +6,13 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
+#include <linex/component.h>
+#include <linex/dma-mapping.h>
+#include <linex/kfifo.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/read_write.c
+ *  linex/fs/read_write.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/sched/xacct.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
-#include <linux/splice.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/sched/xacct.h>
+#include <linex/fcntl.h>
+#include <linex/file.h>
+#include <linex/uio.h>
+#include <linex/fsnotify.h>
+#include <linex/security.h>
+#include <linex/export.h>
+#include <linex/syscalls.h>
+#include <linex/pagemap.h>
+#include <linex/splice.h>
+#include <linex/compat.h>
+#include <linex/mount.h>
+#include <linex/fs.h>
 #include "internal.h"
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 
 const struct file_operations generic_ro_fops = {

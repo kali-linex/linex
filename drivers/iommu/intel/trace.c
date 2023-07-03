@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2019 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linex.intel.com>
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #define CREATE_TRACE_POINTS
 #include "trace.h"

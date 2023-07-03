@@ -5,16 +5,16 @@
  * Copyright (C) 2001, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 #include <asm/bbc.h>
 #include <asm/io.h>
 

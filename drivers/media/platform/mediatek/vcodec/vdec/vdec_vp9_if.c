@@ -6,11 +6,11 @@
  *	Tiffany Lin <tiffany.lin@mediatek.com>
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/delay.h>
+#include <linex/time.h>
 
 #include "../mtk_vcodec_intr.h"
 #include "../vdec_drv_base.h"

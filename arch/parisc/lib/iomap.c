@@ -4,9 +4,9 @@
  * Copyright (c) 2004 Matthew Wilcox
  */
 
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/export.h>
 #include <asm/io.h>
 
 /*

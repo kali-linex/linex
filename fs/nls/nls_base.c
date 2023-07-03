@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_base.c
+ * linex/fs/nls/nls_base.c
  *
  * Native language support--charsets and unicode translations.
  * By Gordon Chaffee 1996, 1997
@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/kmod.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/nls.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/kmod.h>
+#include <linex/spinlock.h>
 #include <asm/byteorder.h>
 
 static struct nls_table default_table;

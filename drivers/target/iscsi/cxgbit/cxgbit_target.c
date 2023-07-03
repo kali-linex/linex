@@ -3,9 +3,9 @@
  * Copyright (c) 2016 Chelsio Communications, Inc.
  */
 
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
+#include <linex/workqueue.h>
+#include <linex/kthread.h>
+#include <linex/sched/signal.h>
 
 #include <asm/unaligned.h>
 #include <net/tcp.h>

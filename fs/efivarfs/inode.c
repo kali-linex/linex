@@ -4,13 +4,13 @@
  * Copyright (C) 2012 Jeremy Kerr <jeremy.kerr@canonical.com>
  */
 
-#include <linux/efi.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/kmemleak.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/fileattr.h>
+#include <linex/efi.h>
+#include <linex/fs.h>
+#include <linex/ctype.h>
+#include <linex/kmemleak.h>
+#include <linex/slab.h>
+#include <linex/uuid.h>
+#include <linex/fileattr.h>
 
 #include "internal.h"
 
@@ -91,7 +91,7 @@ static int efivarfs_create(struct mnt_idmap *idmap, struct inode *dir,
 	err = guid_parse(dentry->d_name.name + namelen + 1, &var->var.VendorGuid);
 	if (err)
 		goto out;
-	if (guid_equal(&var->var.VendorGuid, &LINUX_EFI_RANDOM_SEED_TABLE_GUID)) {
+	if (guid_equal(&var->var.VendorGuid, &LINEX_EFI_RANDOM_SEED_TABLE_GUID)) {
 		err = -EPERM;
 		goto out;
 	}

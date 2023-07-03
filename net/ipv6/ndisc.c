@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Neighbour Discovery for IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -25,28 +25,28 @@
 
 #define pr_fmt(fmt) "ICMPv6: " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/sched.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/sched.h>
+#include <linex/net.h>
+#include <linex/in6.h>
+#include <linex/route.h>
+#include <linex/init.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
-#include <linux/if_addr.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/jhash.h>
+#include <linex/if_addr.h>
+#include <linex/if_ether.h>
+#include <linex/if_arp.h>
+#include <linex/ipv6.h>
+#include <linex/icmpv6.h>
+#include <linex/jhash.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -59,15 +59,15 @@
 #include <net/icmp.h>
 
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linex/rtnetlink.h>
 
 #include <net/flow.h>
 #include <net/ip6_checksum.h>
 #include <net/inet_common.h>
-#include <linux/proc_fs.h>
+#include <linex/proc_fs.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
 
 static u32 ndisc_hash(const void *pkey,
 		      const struct net_device *dev,

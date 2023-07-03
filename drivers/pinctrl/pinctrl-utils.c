@@ -6,12 +6,12 @@
  *
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 #include "core.h"
 #include "pinctrl-utils.h"
 

@@ -10,23 +10,23 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/ipv6.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/slab.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/skbuff.h>
 
 #include <net/ip.h>
 #include <net/arp.h>
@@ -34,7 +34,7 @@
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #include <net/iucv/af_iucv.h>
-#include <linux/hashtable.h>
+#include <linex/hashtable.h>
 
 #include "qeth_l3.h"
 

@@ -3,9 +3,9 @@
  * Copyright (c) 2022-2023 Linaro Ltd.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include "pinctrl-lpass-lpi.h"
 

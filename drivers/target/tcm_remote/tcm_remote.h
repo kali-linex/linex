@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linex/types.h>
+#include <linex/device.h>
 
 #define TCM_REMOTE_VERSION		"v0.1"
 #define TL_WWN_ADDR_LEN			256

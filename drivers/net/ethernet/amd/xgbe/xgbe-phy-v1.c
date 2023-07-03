@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/property.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/device.h>
+#include <linex/property.h>
+#include <linex/mdio.h>
+#include <linex/phy.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

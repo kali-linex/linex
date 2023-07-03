@@ -12,12 +12,12 @@
  *  http://www.sata-io.org/
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/highmem.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/libata.h>
+#include <linex/highmem.h>
 #include <trace/events/libata.h>
 #include "libata.h"
 

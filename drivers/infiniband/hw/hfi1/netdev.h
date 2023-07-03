@@ -9,8 +9,8 @@
 
 #include "hfi.h"
 
-#include <linux/netdevice.h>
-#include <linux/xarray.h>
+#include <linex/netdevice.h>
+#include <linex/xarray.h>
 
 /**
  * struct hfi1_netdev_rxq - Receive Queue for HFI

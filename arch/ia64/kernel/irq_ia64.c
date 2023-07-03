@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/ia64/kernel/irq_ia64.c
+ * linex/arch/ia64/kernel/irq_ia64.c
  *
  * Copyright (C) 1998-2001 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
@@ -15,24 +15,24 @@
  *						Added CPU Hotplug handling for IPF.
  */
 
-#include <linux/module.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/pgtable.h>
 
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/acpi.h>
-#include <linux/sched.h>
+#include <linex/jiffies.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/kernel_stat.h>
+#include <linex/ptrace.h>
+#include <linex/signal.h>
+#include <linex/smp.h>
+#include <linex/threads.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/ratelimit.h>
+#include <linex/acpi.h>
+#include <linex/sched.h>
 
 #include <asm/delay.h>
 #include <asm/intrinsics.h>

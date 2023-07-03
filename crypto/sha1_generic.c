@@ -9,13 +9,13 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@linexbe.org>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
 #include <asm/byteorder.h>

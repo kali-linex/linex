@@ -5,23 +5,23 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeup.h>
-#include <linux/reboot.h>
-#include <linux/rtc.h>
-#include <linux/stat.h>
-#include <linux/suspend.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irqreturn.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_wakeup.h>
+#include <linex/reboot.h>
+#include <linex/rtc.h>
+#include <linex/stat.h>
+#include <linex/suspend.h>
 
 struct brcmstb_waketmr {
 	struct rtc_device *rtc;

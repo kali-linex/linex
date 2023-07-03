@@ -7,9 +7,9 @@
  * Init sequence taken from ITDB02_Graph16.cpp - (C)2010-2011 Henning Karlsen
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
 #include "fbtft.h"
 

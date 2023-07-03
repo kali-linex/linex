@@ -9,13 +9,13 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Contact Information:
- * James P. Ketrenos <ipw2100-admin@linux.intel.com>
+ * James P. Ketrenos <ipw2100-admin@linex.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  */
-#include <linux/wireless.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <linex/wireless.h>
+#include <linex/kmod.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
 #include "rtllib.h"
 
 static const char * const rtllib_modes[] = {

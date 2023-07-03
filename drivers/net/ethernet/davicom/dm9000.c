@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *      Davicom DM9000 Fast Ethernet driver for Linux.
+ *      Davicom DM9000 Fast Ethernet driver for Linex.
  * 	Copyright (C) 1997  Sten Wang
  *
  * (C) Copyright 1997-1998 DAVICOM Semiconductor,Inc. All Rights Reserved.
@@ -10,25 +10,25 @@
  *	Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/ethtool.h>
-#include <linux/dm9000.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/crc32.h>
+#include <linex/mii.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/ethtool.h>
+#include <linex/dm9000.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
 
 #include <asm/delay.h>
 #include <asm/irq.h>

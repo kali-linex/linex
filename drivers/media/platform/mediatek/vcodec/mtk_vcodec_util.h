@@ -8,8 +8,8 @@
 #ifndef _MTK_VCODEC_UTIL_H_
 #define _MTK_VCODEC_UTIL_H_
 
-#include <linux/types.h>
-#include <linux/dma-direction.h>
+#include <linex/types.h>
+#include <linex/dma-direction.h>
 
 struct mtk_vcodec_mem {
 	size_t size;

@@ -8,12 +8,12 @@
  *  Portions of this work were sponsored by ONELAN Limited.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
 
 #include <media/v4l2-device.h>
 

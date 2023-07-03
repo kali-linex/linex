@@ -5,8 +5,8 @@
  * Copyright 2020 Google LLC
  */
 
-#include <linux/blk-crypto.h>
-#include <linux/mmc/host.h>
+#include <linex/blk-crypto.h>
+#include <linex/mmc/host.h>
 
 #include "core.h"
 #include "crypto.h"

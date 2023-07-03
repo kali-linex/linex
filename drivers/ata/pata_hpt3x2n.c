@@ -4,9 +4,9 @@
  *
  * This driver is heavily based upon:
  *
- * linux/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
+ * linex/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
  *
- * Copyright (C) 1999-2003		Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2003		Andre Hedrick <andre@linex-ide.org>
  * Portions Copyright (C) 2001	        Sun Microsystems, Inc.
  * Portions Copyright (C) 2003		Red Hat Inc
  * Portions Copyright (C) 2005-2010	MontaVista Software, Inc.
@@ -15,13 +15,13 @@
  * TODO
  *	Work out best PLL policy
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME	"pata_hpt3x2n"
 #define DRV_VERSION	"0.3.19"

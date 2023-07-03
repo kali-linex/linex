@@ -5,14 +5,14 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <linex/device.h>
+#include <linex/firewire.h>
+#include <linex/firewire-constants.h>
+#include <linex/export.h>
+#include <linex/jiffies.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
 #include "iso-resources.h"
 
 /**

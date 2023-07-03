@@ -3,20 +3,20 @@
  * Driver for TI TPS6598x USB Power Delivery controller family
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/role.h>
-#include <linux/workqueue.h>
+#include <linex/i2c.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/power_supply.h>
+#include <linex/regmap.h>
+#include <linex/interrupt.h>
+#include <linex/usb/typec.h>
+#include <linex/usb/typec_altmode.h>
+#include <linex/usb/role.h>
+#include <linex/workqueue.h>
 
 #include "tps6598x.h"
 #include "trace.h"
@@ -956,6 +956,6 @@ static struct i2c_driver tps6598x_i2c_driver = {
 };
 module_i2c_driver(tps6598x_i2c_driver);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linex.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("TI TPS6598x USB Power Delivery Controller Driver");

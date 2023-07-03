@@ -7,16 +7,16 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
-#include <linux/mfd/arizona/core.h>
+#include <linex/mfd/arizona/core.h>
 
 #include "arizona.h"
 

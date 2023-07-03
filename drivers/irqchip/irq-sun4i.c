@@ -14,12 +14,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include <asm/exception.h>
 

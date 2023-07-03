@@ -6,8 +6,8 @@
  *   (c) 2006 Keith Bennett <keith@mcs.st-and.ac.uk>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

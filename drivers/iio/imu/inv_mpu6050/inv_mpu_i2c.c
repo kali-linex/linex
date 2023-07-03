@@ -3,13 +3,13 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/property.h>
 
 #include "inv_mpu_iio.h"
 

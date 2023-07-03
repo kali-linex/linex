@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for Linex
  *
  * Copyright (C) 1993-1997  Michael Beck
  * Copyright (C) 1997-2001  David Woodhouse
  * Copyright (C) 2001-2008  Stas Sergeev
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/gfp.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
 #include <sound/pcm.h>
 #include "pcsp.h"
 

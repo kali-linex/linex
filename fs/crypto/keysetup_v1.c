@@ -23,8 +23,8 @@
 #include <crypto/algapi.h>
 #include <crypto/skcipher.h>
 #include <keys/user-type.h>
-#include <linux/hashtable.h>
-#include <linux/scatterlist.h>
+#include <linex/hashtable.h>
+#include <linex/scatterlist.h>
 
 #include "fscrypt_private.h"
 

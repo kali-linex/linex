@@ -9,24 +9,24 @@
  * Copyright (c) 2004-2005, Intel Corporation
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/if_arp.h>
+#include <linex/in6.h>
+#include <linex/gfp.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/proc_fs.h>
+#include <linex/skbuff.h>
+#include <linex/tcp.h>
+#include <linex/types.h>
+#include <linex/wireless.h>
+#include <linex/etherdevice.h>
+#include <linex/uaccess.h>
+#include <linex/ctype.h>
 
 #include <net/lib80211.h>
 

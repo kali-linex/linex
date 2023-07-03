@@ -4,14 +4,14 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/err.h>
 #include "clk.h"
 
 #define PLL_NUM_OFFSET		0x10

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/setup.c
+ *  linex/arch/alpha/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -11,41 +11,41 @@
  * Bootup setup stuff.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/panic_notifier.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/eisa.h>
-#include <linux/pfn.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/user.h>
+#include <linex/screen_info.h>
+#include <linex/delay.h>
+#include <linex/mc146818rtc.h>
+#include <linex/console.h>
+#include <linex/cpu.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
+#include <linex/panic_notifier.h>
+#include <linex/platform_device.h>
+#include <linex/memblock.h>
+#include <linex/pci.h>
+#include <linex/seq_file.h>
+#include <linex/root_dev.h>
+#include <linex/initrd.h>
+#include <linex/eisa.h>
+#include <linex/pfn.h>
 #ifdef CONFIG_MAGIC_SYSRQ
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
+#include <linex/sysrq.h>
+#include <linex/reboot.h>
 #endif
-#include <linux/notifier.h>
+#include <linex/notifier.h>
 #include <asm/setup.h>
 #include <asm/io.h>
-#include <linux/log2.h>
-#include <linux/export.h>
+#include <linex/log2.h>
+#include <linex/export.h>
 
 static int alpha_panic_event(struct notifier_block *, unsigned long, void *);
 static struct notifier_block alpha_panic_block = {
@@ -54,7 +54,7 @@ static struct notifier_block alpha_panic_block = {
         INT_MAX /* try to do it first */
 };
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/hwrpb.h>
 #include <asm/dma.h>
 #include <asm/mmu_context.h>

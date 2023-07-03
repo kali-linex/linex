@@ -13,15 +13,15 @@
 
 #undef DEBUG
 
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/lockdep.h>
-#include <linux/slab.h>
+#include <linex/pagemap.h>
+#include <linex/namei.h>
+#include <linex/backing-dev.h>
+#include <linex/capability.h>
+#include <linex/sched.h>
+#include <linex/lockdep.h>
+#include <linex/slab.h>
 
-#include <linux/configfs.h>
+#include <linex/configfs.h>
 #include "configfs_internal.h"
 
 #ifdef CONFIG_LOCKDEP

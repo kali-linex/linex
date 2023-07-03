@@ -2,11 +2,11 @@
 /* Copyright(c) 2014 - 2020 Intel Corporation */
 #ifndef ADF_ACCEL_DEVICES_H_
 #define ADF_ACCEL_DEVICES_H_
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/ratelimit.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/io.h>
+#include <linex/ratelimit.h>
 #include "adf_cfg_common.h"
 #include "adf_pfvf_msg.h"
 

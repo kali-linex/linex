@@ -7,21 +7,21 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/irq.h>
+#include <linex/mfd/core.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <linex/mfd/wm8994/core.h>
+#include <linex/mfd/wm8994/pdata.h>
+#include <linex/mfd/wm8994/registers.h>
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 static const struct regmap_irq wm8994_irqs[] = {
 	[WM8994_IRQ_TEMP_SHUT] = {

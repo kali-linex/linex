@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Cache operations for Coda.
- * For Linux 2.1: (C) 1997 Carnegie Mellon University
- * For Linux 2.3: (C) 2000 Carnegie Mellon University
+ * For Linex 2.1: (C) 1997 Carnegie Mellon University
+ * For Linex 2.3: (C) 2000 Carnegie Mellon University
  *
  * Carnegie Mellon encourages users of this code to contribute improvements
  * to the Coda project http://www.coda.cs.cmu.edu/ <coda@cs.cmu.edu>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/uaccess.h>
+#include <linex/string.h>
+#include <linex/list.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
 
-#include <linux/coda.h>
+#include <linex/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 #include "coda_cache.h"
 
 static atomic_t permission_epoch = ATOMIC_INIT(0);

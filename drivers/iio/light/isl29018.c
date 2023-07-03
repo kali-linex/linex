@@ -8,17 +8,17 @@
  * Copyright (c) 2010, NVIDIA Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/acpi.h>
 
 #define ISL29018_CONV_TIME_MS		100
 

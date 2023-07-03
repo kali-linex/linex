@@ -3,11 +3,11 @@
  * Copyright (C) 2018 Oracle.  All Rights Reserved.
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/swap.h>
+#include <linex/module.h>
+#include <linex/compiler.h>
+#include <linex/fs.h>
+#include <linex/iomap.h>
+#include <linex/swap.h>
 
 /* Swapfile activation */
 

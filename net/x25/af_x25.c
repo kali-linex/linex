@@ -32,27 +32,27 @@
 
 #define pr_fmt(fmt) "X25: " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/ctype.h>
+#include <linex/uaccess.h>
+#include <linex/fcntl.h>
+#include <linex/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linex/notifier.h>
+#include <linex/init.h>
+#include <linex/compat.h>
+#include <linex/ctype.h>
 
 #include <net/x25.h>
 #include <net/compat.h>
@@ -1815,7 +1815,7 @@ static int __init x25_init(void)
 	if (rc)
 		goto out_sysctl;
 
-	pr_info("Linux Version 0.2\n");
+	pr_info("Linex Version 0.2\n");
 
 out:
 	return rc;

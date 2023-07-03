@@ -3,11 +3,11 @@
 // Copyright (c) 2013-2014 Freescale Semiconductor, Inc
 // Copyright (c) 2017 Sysam, Angelo Dureghello  <angelo@sysam.it>
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dma-mcf-edma.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/dmaengine.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/dma-mcf-edma.h>
 
 #include "fsl-edma-common.h"
 

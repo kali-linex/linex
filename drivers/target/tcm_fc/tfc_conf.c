@@ -7,24 +7,24 @@
  *
  * Copyright (c) 2010 Cisco Systems, Inc.
  * Copyright (c) 2009,2010 Rising Tide, Inc.
- * Copyright (c) 2009,2010 Linux-iSCSI.org
+ * Copyright (c) 2009,2010 Linex-iSCSI.org
  *
- * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linex-iscsi.org>
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
+#include <linex/utsname.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/configfs.h>
+#include <linex/kernel.h>
+#include <linex/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/libfc.h>
 

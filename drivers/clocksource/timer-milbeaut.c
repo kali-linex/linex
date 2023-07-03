@@ -3,11 +3,11 @@
  * Copyright (C) 2018 Socionext Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/sched_clock.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqreturn.h>
+#include <linex/sched_clock.h>
 #include "timer-of.h"
 
 #define MLB_TMR_TMCSR_OFS	0x0

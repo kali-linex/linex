@@ -7,30 +7,30 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/iopoll.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include "t7xx_hif_cldma.h"
 #include "t7xx_mhccif.h"
@@ -325,7 +325,7 @@ static void fsm_routine_start(struct t7xx_fsm_ctl *ctl, struct t7xx_fsm_command 
 	t7xx_md_event_notify(md, FSM_PRE_START);
 
 	ret = read_poll_timeout(ioread32, dev_status,
-				(dev_status & MISC_STAGE_MASK) == LINUX_STAGE, 20000, 2000000,
+				(dev_status & MISC_STAGE_MASK) == LINEX_STAGE, 20000, 2000000,
 				false, IREG_BASE(md->t7xx_dev) + T7XX_PCIE_MISC_DEV_STATUS);
 	if (ret) {
 		struct device *dev = &md->t7xx_dev->pdev->dev;

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0+
 
 #include <dt-bindings/regulator/richtek,rt5190a-regulator.h>
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/bits.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
 
 #define RT5190A_REG_MANUFACTURE		0x00
 #define RT5190A_REG_BUCK2VSEL		0x04

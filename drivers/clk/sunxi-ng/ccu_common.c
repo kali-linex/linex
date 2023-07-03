@@ -5,12 +5,12 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include "ccu_common.h"
 #include "ccu_gate.h"

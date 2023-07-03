@@ -3,7 +3,7 @@
  *	IP multicast routing support for mrouted 3.6/3.8
  *
  *		(c) 1995 Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *	  Linux Consultancy and Custom Driver Development
+ *	  Linex Consultancy and Custom Driver Development
  *
  *	Fixes:
  *	Michael Chastain	:	Incorrect size of copying.
@@ -21,49 +21,49 @@
  *					Relax this requirement to work with older peers.
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <linex/uaccess.h>
+#include <linex/types.h>
+#include <linex/cache.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/fcntl.h>
+#include <linex/stat.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/mroute.h>
+#include <linex/init.h>
+#include <linex/if_ether.h>
+#include <linex/slab.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/route.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/rhashtable.h>
+#include <linex/notifier.h>
+#include <linex/if_arp.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/compat.h>
+#include <linex/export.h>
+#include <linex/rhashtable.h>
 #include <net/ip_tunnels.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
-#include <linux/netconf.h>
+#include <linex/netconf.h>
 #include <net/rtnh.h>
 
-#include <linux/nospec.h>
+#include <linex/nospec.h>
 
 struct ipmr_rule {
 	struct fib_rule		common;

@@ -6,7 +6,7 @@
  *                    Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/component.h>
+#include <linex/component.h>
 
 #define HDA_MAX_COMPONENTS	4
 #define HDA_MAX_NAME_SIZE	50

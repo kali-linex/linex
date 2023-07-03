@@ -5,18 +5,18 @@
  * Copyright (C) 2012 Paul Parsons <lost.distance@yahoo.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/input/navpoint.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/input.h>
+#include <linex/input/navpoint.h>
+#include <linex/interrupt.h>
+#include <linex/mutex.h>
+#include <linex/pxa2xx_ssp.h>
+#include <linex/slab.h>
 
 /*
  * Synaptics Modular Embedded Protocol: Module Packet Format.
@@ -229,7 +229,7 @@ static int navpoint_probe(struct platform_device *pdev)
 		goto err_free_gpio;
 	}
 
-	/* HaRET does not disable devices before jumping into Linux */
+	/* HaRET does not disable devices before jumping into Linex */
 	if (pxa_ssp_read_reg(ssp, SSCR0) & SSCR0_SSE) {
 		pxa_ssp_write_reg(ssp, SSCR0, 0);
 		dev_warn(&pdev->dev, "ssp%d already enabled\n", pdata->port);

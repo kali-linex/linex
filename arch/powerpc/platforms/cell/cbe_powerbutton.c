@@ -7,10 +7,10 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 #include <asm/pmi.h>
 
 static struct input_dev *button_dev;

@@ -2,8 +2,8 @@
 #ifndef __MMU_H
 #define __MMU_H
 
-#include <linux/cpumask.h>
-#include <linux/errno.h>
+#include <linex/cpumask.h>
+#include <linex/errno.h>
 #include <asm/asm-extable.h>
 
 typedef struct {

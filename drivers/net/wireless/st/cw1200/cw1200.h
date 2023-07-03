@@ -15,9 +15,9 @@
 #ifndef CW1200_H
 #define CW1200_H
 
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
 #include <net/mac80211.h>
 
 #include "queue.h"

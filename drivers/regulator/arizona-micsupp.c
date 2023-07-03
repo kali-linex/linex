@@ -6,29 +6,29 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 #include <sound/soc.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <linex/mfd/arizona/core.h>
+#include <linex/mfd/arizona/pdata.h>
+#include <linex/mfd/arizona/registers.h>
 
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/pdata.h>
-#include <linux/mfd/madera/registers.h>
+#include <linex/mfd/madera/core.h>
+#include <linex/mfd/madera/pdata.h>
+#include <linex/mfd/madera/registers.h>
 
-#include <linux/regulator/arizona-micsupp.h>
+#include <linex/regulator/arizona-micsupp.h>
 
 struct arizona_micsupp {
 	struct regulator_dev *regulator;

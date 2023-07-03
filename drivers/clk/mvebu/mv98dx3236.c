@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of.h>
 #include "common.h"
 
 

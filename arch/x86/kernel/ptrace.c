@@ -2,31 +2,31 @@
 /* By Ross Biro 1/23/92 */
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinex.com>, May 2000
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/context_tracking.h>
-#include <linux/nospec.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/elf.h>
+#include <linex/security.h>
+#include <linex/audit.h>
+#include <linex/seccomp.h>
+#include <linex/signal.h>
+#include <linex/perf_event.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/rcupdate.h>
+#include <linex/export.h>
+#include <linex/context_tracking.h>
+#include <linex/nospec.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
 #include <asm/fpu/signal.h>
 #include <asm/fpu/regset.h>
@@ -853,8 +853,8 @@ long arch_ptrace(struct task_struct *child, long request,
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
+#include <linex/compat.h>
+#include <linex/syscalls.h>
 #include <asm/ia32.h>
 #include <asm/user32.h>
 

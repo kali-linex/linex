@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-/* Advanced  Micro Devices Inc. AMD8111E Linux Network Driver
+/* Advanced  Micro Devices Inc. AMD8111E Linex Network Driver
  * Copyright (C) 2004 Advanced Micro Devices
  *
  * Copyright 2001,2002 Jeff Garzik <jgarzik@mandrakesoft.com> [ 8139cp.c,tg3.c ]
@@ -54,27 +54,27 @@ Revision History:
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/ctype.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/if_vlan.h>
+#include <linex/ctype.h>
+#include <linex/crc32.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #if IS_ENABLED(CONFIG_VLAN_8021Q)
 #define AMD8111E_VLAN_TAG_USED 1

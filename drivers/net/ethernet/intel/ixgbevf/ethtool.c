@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/if_vlan.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
+#include <linex/vmalloc.h>
+#include <linex/if_vlan.h>
+#include <linex/uaccess.h>
 
 #include "ixgbevf.h"
 

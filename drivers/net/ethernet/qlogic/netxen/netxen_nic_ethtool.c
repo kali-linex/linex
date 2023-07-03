@@ -5,12 +5,12 @@
  * All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
 #include <asm/io.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
 
 #include "netxen_nic.h"
 #include "netxen_nic_hw.h"
@@ -67,7 +67,7 @@ netxen_nic_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *drvinfo)
 
 	strscpy(drvinfo->driver, netxen_nic_driver_name,
 		sizeof(drvinfo->driver));
-	strscpy(drvinfo->version, NETXEN_NIC_LINUX_VERSIONID,
+	strscpy(drvinfo->version, NETXEN_NIC_LINEX_VERSIONID,
 		sizeof(drvinfo->version));
 	fw_major = NXRD32(adapter, NETXEN_FW_VERSION_MAJOR);
 	fw_minor = NXRD32(adapter, NETXEN_FW_VERSION_MINOR);

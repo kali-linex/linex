@@ -13,15 +13,15 @@
 #ifndef PWC_H
 #define PWC_H
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
 #include <asm/errno.h>
-#include <linux/videodev2.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
@@ -31,7 +31,7 @@
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
 #ifdef CONFIG_USB_PWC_INPUT_EVDEV
-#include <linux/input.h>
+#include <linex/input.h>
 #endif
 #include "pwc-dec1.h"
 #include "pwc-dec23.h"

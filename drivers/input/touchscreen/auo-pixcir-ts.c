@@ -10,19 +10,19 @@
  * Copyright (c) 2008 QUALCOMM USA, INC.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/property.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/property.h>
 
 /*
  * Coordinate calculation:

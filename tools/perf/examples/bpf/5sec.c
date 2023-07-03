@@ -39,7 +39,7 @@
    Copyright (C) 2018 Red Hat, Inc., Arnaldo Carvalho de Melo <acme@redhat.com>
 */
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 #define NSEC_PER_SEC	1000000000L

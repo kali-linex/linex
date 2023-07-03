@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020 The Linex Foundation. All rights reserved.
  * Copyright (c) 2021-2022, Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
+#include <linex/msi.h>
+#include <linex/pci.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/ioport.h>
 
 #include "core.h"
 #include "debug.h"

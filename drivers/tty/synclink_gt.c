@@ -43,40 +43,40 @@
 /*#define DBGRBUF(info) dump_rbufs(info)*/
 
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioctl.h>
-#include <linux/termios.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/hdlc.h>
-#include <linux/synclink.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/ptrace.h>
+#include <linex/ioport.h>
+#include <linex/mm.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/ioctl.h>
+#include <linex/termios.h>
+#include <linex/bitops.h>
+#include <linex/workqueue.h>
+#include <linex/hdlc.h>
+#include <linex/synclink.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #if defined(CONFIG_HDLC) || (defined(CONFIG_HDLC_MODULE) && defined(CONFIG_SYNCLINK_GT_MODULE))
 #define SYNCLINK_GENERIC_HDLC 1

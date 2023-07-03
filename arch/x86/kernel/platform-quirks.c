@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pnp.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/pnp.h>
 
 #include <asm/setup.h>
 #include <asm/bios_ebda.h>

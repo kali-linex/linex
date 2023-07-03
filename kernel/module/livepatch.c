@@ -5,9 +5,9 @@
  * Copyright (C) 2016 Jessica Yu <jeyu@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 /*

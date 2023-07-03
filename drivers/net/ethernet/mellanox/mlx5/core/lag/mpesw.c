@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 #include <net/nexthop.h>
 #include "lag/lag.h"
 #include "eswitch.h"

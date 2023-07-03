@@ -2,16 +2,16 @@
 //
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinex.simtec.co.uk/
 //
 // S3C64XX - Helper functions for setting up SDHCI device(s) GPIO (HSMMC)
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
 
 #include "gpio-cfg.h"
 #include "sdhci.h"

@@ -4,9 +4,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <uapi/linux/time.h>
-#include <uapi/linux/types.h>
+#include <linex/compiler.h>
+#include <uapi/linex/time.h>
+#include <uapi/linex/types.h>
 #include <uapi/asm-generic/errno-base.h>
 
 #include <vdso/bits.h>

@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2001-5, B2C2 inc.
  *
- *  GPL/Linux driver written by Patrick Boettcher <patrick.boettcher@posteo.de>
+ *  GPL/Linex driver written by Patrick Boettcher <patrick.boettcher@posteo.de>
  */
 #ifndef BCM3510_H
 #define BCM3510_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linex/dvb/frontend.h>
+#include <linex/firmware.h>
 
 struct bcm3510_config
 {

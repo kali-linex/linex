@@ -5,8 +5,8 @@
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
-#include <linux/module.h>
+#include <linex/font.h>
+#include <linex/module.h>
 
 #define FONTDATAMAX 4096
 

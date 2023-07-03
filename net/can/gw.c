@@ -39,22 +39,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/gw.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/rcupdate.h>
+#include <linex/rculist.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
+#include <linex/can.h>
+#include <linex/can/core.h>
+#include <linex/can/skb.h>
+#include <linex/can/gw.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

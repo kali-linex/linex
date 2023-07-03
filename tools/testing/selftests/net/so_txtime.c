@@ -16,11 +16,11 @@
 #include <error.h>
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/net_tstamp.h>
-#include <linux/errqueue.h>
-#include <linux/if_ether.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <linex/net_tstamp.h>
+#include <linex/errqueue.h>
+#include <linex/if_ether.h>
+#include <linex/ipv6.h>
+#include <linex/udp.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>

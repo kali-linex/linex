@@ -24,8 +24,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
 
 #include "j1939-priv.h"
 

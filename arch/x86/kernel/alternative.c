@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "SMP alternatives: " fmt
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/memory.h>
-#include <linux/stop_machine.h>
-#include <linux/slab.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/mmu_context.h>
-#include <linux/bsearch.h>
-#include <linux/sync_core.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/perf_event.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/stringify.h>
+#include <linex/highmem.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/memory.h>
+#include <linex/stop_machine.h>
+#include <linex/slab.h>
+#include <linex/kdebug.h>
+#include <linex/kprobes.h>
+#include <linex/mmu_context.h>
+#include <linex/bsearch.h>
+#include <linex/sync_core.h>
 #include <asm/text-patching.h>
 #include <asm/alternative.h>
 #include <asm/sections.h>

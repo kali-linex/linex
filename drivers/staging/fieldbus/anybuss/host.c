@@ -139,23 +139,23 @@
  *	manuals-design-guides/hms-hmsi-27-275.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/random.h>
-#include <linux/kref.h>
-#include <linux/of_address.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/atomic.h>
+#include <linex/kthread.h>
+#include <linex/kfifo.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/random.h>
+#include <linex/kref.h>
+#include <linex/of_address.h>
 
-/* move to <linux/anybuss-*.h> when taking this out of staging */
+/* move to <linex/anybuss-*.h> when taking this out of staging */
 #include "anybuss-client.h"
 #include "anybuss-controller.h"
 

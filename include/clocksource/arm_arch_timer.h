@@ -5,9 +5,9 @@
 #ifndef __CLKSOURCE_ARM_ARCH_TIMER_H
 #define __CLKSOURCE_ARM_ARCH_TIMER_H
 
-#include <linux/bitops.h>
-#include <linux/timecounter.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/timecounter.h>
+#include <linex/types.h>
 
 #define ARCH_TIMER_TYPE_CP15		BIT(0)
 #define ARCH_TIMER_TYPE_MEM		BIT(1)

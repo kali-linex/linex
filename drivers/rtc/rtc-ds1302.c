@@ -6,14 +6,14 @@
  *  Copyright (C) 2003 - 2007 Paul Mundt
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
+#include <linex/bcd.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/rtc.h>
+#include <linex/spi/spi.h>
 
 #define	RTC_CMD_READ	0x81		/* Read command */
 #define	RTC_CMD_WRITE	0x80		/* Write command */

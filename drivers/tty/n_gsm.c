@@ -30,37 +30,37 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/bitfield.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/math.h>
-#include <linux/nospec.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/tty_driver.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/skbuff.h>
+#include <linex/types.h>
+#include <linex/major.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/fcntl.h>
+#include <linex/sched/signal.h>
+#include <linex/interrupt.h>
+#include <linex/tty.h>
+#include <linex/bitfield.h>
+#include <linex/ctype.h>
+#include <linex/mm.h>
+#include <linex/math.h>
+#include <linex/nospec.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/bitops.h>
+#include <linex/file.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/timer.h>
+#include <linex/tty_flip.h>
+#include <linex/tty_driver.h>
+#include <linex/serial.h>
+#include <linex/kfifo.h>
+#include <linex/skbuff.h>
 #include <net/arp.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/gsmmux.h>
+#include <linex/ip.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/gsmmux.h>
 #include "tty.h"
 
 static int debug;
@@ -1667,7 +1667,7 @@ static int gsm_process_negotiation(struct gsm_mux *gsm, unsigned int addr,
  *
  *	We have received a modem status control message. This is used by
  *	the GSM mux protocol to pass virtual modem line status and optionally
- *	to indicate break signals. Unpack it, convert to Linux representation
+ *	to indicate break signals. Unpack it, convert to Linex representation
  *	and if need be stuff a break message down the tty.
  */
 
@@ -2258,7 +2258,7 @@ static void gsm_dlci_t1(struct timer_list *t)
  *	gsm_dlci_begin_open	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence opening a DLCI from the Linux side. We issue SABM messages
+ *	Commence opening a DLCI from the Linex side. We issue SABM messages
  *	to the modem which should then reply with a UA or ADM, at which point
  *	we will move into open state. Opening is done asynchronously with retry
  *	running off timers and the responses.
@@ -2347,7 +2347,7 @@ static void gsm_dlci_set_wait_config(struct gsm_dlci *dlci)
  *	gsm_dlci_begin_close	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence closing a DLCI from the Linux side. We issue DISC messages
+ *	Commence closing a DLCI from the Linex side. We issue DISC messages
  *	to the modem which should then reply with a UA, at which point we
  *	will move into closed state. Closing is done asynchronously with retry
  *	off timers. We may also receive a DM reply from the other end which

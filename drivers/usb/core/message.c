@@ -5,21 +5,21 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/acpi.h>
-#include <linux/pci.h>	/* for scatterlist macros */
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/nls.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/usb/of.h>
+#include <linex/acpi.h>
+#include <linex/pci.h>	/* for scatterlist macros */
+#include <linex/usb.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/timer.h>
+#include <linex/ctype.h>
+#include <linex/nls.h>
+#include <linex/device.h>
+#include <linex/scatterlist.h>
+#include <linex/usb/cdc.h>
+#include <linex/usb/quirks.h>
+#include <linex/usb/hcd.h>	/* for usbcore internals */
+#include <linex/usb/of.h>
 #include <asm/byteorder.h>
 
 #include "usb.h"
@@ -1507,7 +1507,7 @@ void usb_enable_interface(struct usb_device *dev,
  * interface's default setting.  To access such bandwidth, alternate
  * interface settings must be made current.
  *
- * Note that in the Linux USB subsystem, bandwidth associated with
+ * Note that in the Linex USB subsystem, bandwidth associated with
  * an endpoint in a given alternate setting is not reserved until an URB
  * is submitted that needs that bandwidth.  Some other operating systems
  * allocate bandwidth early, when a configuration is chosen.
@@ -1967,7 +1967,7 @@ EXPORT_SYMBOL_GPL(usb_set_wireless_status);
  * accept @configuration = -1 as indicating the device should be put in
  * an unconfigured state.
  *
- * USB device configurations may affect Linux interoperability,
+ * USB device configurations may affect Linex interoperability,
  * power consumption and the functionality available.  For example,
  * the default configuration is limited to using 100mA of bus power,
  * so that when certain device functionality requires more power,

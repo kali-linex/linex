@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * types.h - Defines for NTFS Linux kernel driver specific types.
- *	     Part of the Linux-NTFS project.
+ * types.h - Defines for NTFS Linex kernel driver specific types.
+ *	     Part of the Linex-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_TYPES_H
-#define _LINUX_NTFS_TYPES_H
+#ifndef _LINEX_NTFS_TYPES_H
+#define _LINEX_NTFS_TYPES_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 typedef __le16 le16;
 typedef __le32 le32;
@@ -52,4 +52,4 @@ typedef enum {
 	IGNORE_CASE = 1,
 } IGNORE_CASE_BOOL;
 
-#endif /* _LINUX_NTFS_TYPES_H */
+#endif /* _LINEX_NTFS_TYPES_H */

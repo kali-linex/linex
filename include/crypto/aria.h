@@ -19,10 +19,10 @@
 #define _CRYPTO_ARIA_H
 
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 #include <asm/byteorder.h>
 
 #define ARIA_MIN_KEY_SIZE	16

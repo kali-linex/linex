@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include <kunit/test.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
 
 static const struct net_device_ops dummy_netdev_ops = {
 };

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC Linex
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,9 +15,9 @@
 #ifndef __ASM_OPENRISC_SYSCALL_H__
 #define __ASM_OPENRISC_SYSCALL_H__
 
-#include <uapi/linux/audit.h>
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <uapi/linex/audit.h>
+#include <linex/err.h>
+#include <linex/sched.h>
 
 static inline int
 syscall_get_nr(struct task_struct *task, struct pt_regs *regs)

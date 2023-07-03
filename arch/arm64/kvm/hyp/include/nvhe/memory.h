@@ -5,7 +5,7 @@
 #include <asm/kvm_mmu.h>
 #include <asm/page.h>
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct hyp_page {
 	unsigned short refcount;

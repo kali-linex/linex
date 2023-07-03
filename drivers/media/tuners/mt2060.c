@@ -7,11 +7,11 @@
 
 /* In that file, frequencies are expressed in kiloHertz to avoid 32 bits overflows */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/dvb/frontend.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 

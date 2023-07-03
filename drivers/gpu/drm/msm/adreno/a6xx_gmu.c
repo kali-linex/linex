@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2017-2019 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017-2019 The Linex Foundation. All rights reserved. */
 
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
+#include <linex/clk.h>
+#include <linex/interconnect.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_opp.h>
 #include <soc/qcom/cmd-db.h>
 #include <drm/drm_gem.h>
 

@@ -3,14 +3,14 @@
  * Copyright (c) 2023, Linaro Limited
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
 
 #define USB_PHY_UTMI_CTRL0		(0x3c)
 #define SLEEPM				BIT(0)

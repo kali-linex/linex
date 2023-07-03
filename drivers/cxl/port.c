@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include "cxlmem.h"
 #include "cxlpci.h"

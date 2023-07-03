@@ -2,12 +2,12 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/nd.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/sort.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/nd.h>
 #include "nd-core.h"
 #include "pmem.h"
 #include "pfn.h"

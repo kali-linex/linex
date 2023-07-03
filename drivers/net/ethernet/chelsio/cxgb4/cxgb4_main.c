@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Linex.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -34,35 +34,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/sockios.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <linex/bitmap.h>
+#include <linex/crc32.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/err.h>
+#include <linex/etherdevice.h>
+#include <linex/firmware.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/log2.h>
+#include <linex/mdio.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mutex.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/rtnetlink.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/sockios.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
 #include <net/neighbour.h>
 #include <net/netevent.h>
 #include <net/addrconf.h>
 #include <net/bonding.h>
-#include <linux/uaccess.h>
-#include <linux/crash_dump.h>
+#include <linex/uaccess.h>
+#include <linex/crash_dump.h>
 #include <net/udp_tunnel.h>
 #include <net/xfrm.h>
 #if IS_ENABLED(CONFIG_CHELSIO_TLS_DEVICE)
@@ -3801,7 +3801,7 @@ static int cxgb_udp_tunnel_set_port(struct net_device *netdev,
 	}
 
 	/* Create a 'match all' mac filter entry for inner mac,
-	 * if raw mac interface is supported. Once the linux kernel provides
+	 * if raw mac interface is supported. Once the linex kernel provides
 	 * driver entry points for adding/deleting the inner mac addresses,
 	 * we will remove this 'match all' entry and fallback to adding
 	 * exact match filters.
@@ -4303,7 +4303,7 @@ static int adap_init0_tweaks(struct adapter *adapter)
 			 PKTSHIFT_V(rx_dma_offset));
 
 	/*
-	 * Don't include the "IP Pseudo Header" in CPL_RX_PKT checksums: Linux
+	 * Don't include the "IP Pseudo Header" in CPL_RX_PKT checksums: Linex
 	 * adds the pseudo header itself.
 	 */
 	t4_tp_wr_bits_indirect(adapter, TP_INGRESS_CONFIG_A,

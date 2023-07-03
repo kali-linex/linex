@@ -8,10 +8,10 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 static int crypto_ecb_crypt(struct skcipher_request *req,
 			    struct crypto_cipher *cipher,

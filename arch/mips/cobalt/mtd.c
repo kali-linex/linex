@@ -2,12 +2,12 @@
 /*
  *  Registration of Cobalt MTD device.
  *
- *  Copyright (C) 2006  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2006  Yoichi Yuasa <yuasa@linex-mips.org>
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
 
 static struct mtd_partition cobalt_mtd_partitions[] = {
 	{

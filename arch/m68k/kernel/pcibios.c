@@ -2,14 +2,14 @@
 /*
  * pci.c -- basic PCI support code
  *
- * (C) Copyright 2011, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2011, Greg Ungerer <gerg@uclinex.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/pci.h>
 
 /*
  * From arch/i386/kernel/pci-i386.c:

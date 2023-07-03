@@ -11,15 +11,15 @@
  */
 
 #include "bcm-phy-lib.h"
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/pm_wakeup.h>
-#include <linux/brcmphy.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/pm_wakeup.h>
+#include <linex/brcmphy.h>
+#include <linex/of.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/gpio/consumer.h>
 
 #define BRCM_PHY_MODEL(phydev) \
 	((phydev)->drv->phy_id & (phydev)->drv->phy_id_mask)

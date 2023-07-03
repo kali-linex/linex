@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/swap_cgroup.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linex/swap_cgroup.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
 
-#include <linux/swapops.h> /* depends on mm.h include */
+#include <linex/swapops.h> /* depends on mm.h include */
 
 static DEFINE_MUTEX(swap_cgroup_mutex);
 struct swap_cgroup_ctrl {

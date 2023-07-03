@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <linex/list.h>
+#include <linex/zalloc.h>
 #include <subcmd/pager.h>
 #include <sys/types.h>
 #include <dirent.h>

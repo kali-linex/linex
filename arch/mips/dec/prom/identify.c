@@ -5,12 +5,12 @@
  * Copyright (C) 1998 Harald Koerfgen and Paul M. Antoine
  * Copyright (C) 2002, 2003, 2004, 2005  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mc146818rtc.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include <asm/bootinfo.h>
 

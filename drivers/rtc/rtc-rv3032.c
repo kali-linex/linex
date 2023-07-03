@@ -8,20 +8,20 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/bcd.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
 
 #define RV3032_SEC			0x01
 #define RV3032_MIN			0x02
@@ -842,7 +842,7 @@ static int rv3032_hwmon_read(struct device *dev, enum hwmon_sensor_types type,
 	return err;
 }
 
-static const struct hwmon_channel_info * const rv3032_hwmon_info[] = {
+static const struct hwmon_channel_info *rv3032_hwmon_info[] = {
 	HWMON_CHANNEL_INFO(chip, HWMON_C_REGISTER_TZ),
 	HWMON_CHANNEL_INFO(temp, HWMON_T_INPUT | HWMON_T_MAX | HWMON_T_MAX_HYST),
 	NULL
@@ -998,7 +998,7 @@ static struct i2c_driver rv3032_driver = {
 		.acpi_match_table = rv3032_i2c_acpi_match,
 		.of_match_table = of_match_ptr(rv3032_of_match),
 	},
-	.probe		= rv3032_probe,
+	.probe_new	= rv3032_probe,
 };
 module_i2c_driver(rv3032_driver);
 

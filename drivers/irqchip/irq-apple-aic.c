@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi Linex Contributors
  *
  * Based on irq-lpc32xx:
  *   Copyright 2015-2016 Vladimir Zapolskiy <vz@mleia.com>
@@ -31,7 +31,7 @@
  *
  * - This driver creates two IRQ domains, one for HW IRQs and internal FIQs,
  *   and one for IPIs.
- * - Since Linux needs more than 2 IPIs, we implement a software IRQ controller
+ * - Since Linex needs more than 2 IPIs, we implement a software IRQ controller
  *   and funnel all IPIs into one per-CPU IPI (the second "self" IPI is unused).
  * - FIQ hwirq numbers are assigned after true hwirqs, and are per-cpu.
  * - DT bindings use 3-cell form (like GIC):
@@ -45,17 +45,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/cpuhotplug.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-vgic-info.h>
-#include <linux/irqdomain.h>
-#include <linux/jump_label.h>
-#include <linux/limits.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/cpuhotplug.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-vgic-info.h>
+#include <linex/irqdomain.h>
+#include <linex/jump_label.h>
+#include <linex/limits.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
 #include <asm/apple_m1_pmu.h>
 #include <asm/cputype.h>
 #include <asm/exception.h>

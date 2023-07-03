@@ -8,24 +8,24 @@
  *  Hotplug & misc device support: Jochen Roehrig (roehrig@de.ibm.com)
  *  Major cleanup & driver split: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *				  Ralph Wuerthner <rwuerthn@de.ibm.com>
- *  MSGTYPE restruct:		  Holger Dengler <hd@linux.vnet.ibm.com>
- *  Multiple device nodes: Harald Freudenberger <freude@linux.ibm.com>
+ *  MSGTYPE restruct:		  Holger Dengler <hd@linex.vnet.ibm.com>
+ *  Multiple device nodes: Harald Freudenberger <freude@linex.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/hw_random.h>
-#include <linux/debugfs.h>
-#include <linux/cdev.h>
-#include <linux/ctype.h>
-#include <linux/capability.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/miscdevice.h>
+#include <linex/fs.h>
+#include <linex/compat.h>
+#include <linex/slab.h>
+#include <linex/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/hw_random.h>
+#include <linex/debugfs.h>
+#include <linex/cdev.h>
+#include <linex/ctype.h>
+#include <linex/capability.h>
 #include <asm/debug.h>
 
 #define CREATE_TRACE_POINTS

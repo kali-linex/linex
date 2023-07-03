@@ -20,11 +20,11 @@
 */
 
 #include <asm/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/i2c.h>
-#include <linux/etherdevice.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/i2c.h>
+#include <linex/etherdevice.h>
 
 #include "ttpci-eeprom.h"
 

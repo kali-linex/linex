@@ -7,12 +7,12 @@
  *  by Intel Corporation (http://developer.intel.com).
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/tlv.h>

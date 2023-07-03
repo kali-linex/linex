@@ -3,20 +3,20 @@
  * Copyright (C) 2020 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/host1x.h>
-#include <linux/lcm.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/bitmap.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/host1x.h>
+#include <linex/lcm.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-dv-timings.h>
 #include <media/v4l2-event.h>

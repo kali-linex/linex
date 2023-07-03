@@ -6,17 +6,17 @@
  * corresponding mfio pin group is selected as gpio.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

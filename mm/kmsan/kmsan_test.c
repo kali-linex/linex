@@ -13,16 +13,16 @@
 #include <kunit/test.h>
 #include "kmsan.h"
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kmsan.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tracepoint.h>
-#include <linux/vmalloc.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/kmsan.h>
+#include <linex/mm.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/tracepoint.h>
+#include <linex/vmalloc.h>
 #include <trace/events/printk.h>
 
 static DEFINE_PER_CPU(int, per_cpu_var);
@@ -411,7 +411,7 @@ static void test_printk(struct kunit *test)
  * Prevent the compiler from optimizing @var away. Without this, Clang may
  * notice that @var is uninitialized and drop memcpy() calls that use it.
  *
- * There is OPTIMIZER_HIDE_VAR() in linux/compier.h that we cannot use here,
+ * There is OPTIMIZER_HIDE_VAR() in linex/compier.h that we cannot use here,
  * because it is implemented as inline assembly receiving @var as a parameter
  * and will enforce a KMSAN check. Same is true for e.g. barrier_data(var).
  */

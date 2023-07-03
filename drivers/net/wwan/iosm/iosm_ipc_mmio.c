@@ -3,11 +3,11 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/slab.h>
 
 #include "iosm_ipc_mmio.h"
 #include "iosm_ipc_mux.h"

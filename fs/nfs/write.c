@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/write.c
+ * linex/fs/nfs/write.c
  *
  * Write file data over NFS.
  *
  * Copyright (C) 1996, 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/file.h>
+#include <linex/writeback.h>
+#include <linex/swap.h>
+#include <linex/migrate.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs_page.h>
-#include <linux/backing-dev.h>
-#include <linux/export.h>
-#include <linux/freezer.h>
-#include <linux/wait.h>
-#include <linux/iversion.h>
-#include <linux/filelock.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_mount.h>
+#include <linex/nfs_page.h>
+#include <linex/backing-dev.h>
+#include <linex/export.h>
+#include <linex/freezer.h>
+#include <linex/wait.h>
+#include <linex/iversion.h>
+#include <linex/filelock.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <linex/uaccess.h>
+#include <linex/sched/mm.h>
 
 #include "delegation.h"
 #include "internal.h"

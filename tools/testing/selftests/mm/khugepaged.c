@@ -11,7 +11,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#include <linux/mman.h>
+#include <linex/mman.h>
 #include <sys/mman.h>
 #include <sys/wait.h>
 #include <sys/types.h>
@@ -19,7 +19,7 @@
 #include <sys/sysmacros.h>
 #include <sys/vfs.h>
 
-#include "linux/magic.h"
+#include "linex/magic.h"
 
 #include "vm_util.h"
 

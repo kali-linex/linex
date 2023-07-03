@@ -7,23 +7,23 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinex.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/acpi.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/wmi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/acpi.h>
+#include <linex/string.h>
+#include <linex/dmi.h>
+#include <linex/wmi.h>
 #include <acpi/video.h>
 #include "dell-smbios.h"
 #include "dell-wmi-descriptor.h"
@@ -198,7 +198,7 @@ struct dell_dmi_results {
 };
 
 /* Uninitialized entries here are KEY_RESERVED == 0. */
-static const u16 bios_to_linux_keycode[256] = {
+static const u16 bios_to_linex_keycode[256] = {
 	[0]	= KEY_MEDIA,
 	[1]	= KEY_NEXTSONG,
 	[2]	= KEY_PLAYPAUSE,
@@ -571,14 +571,14 @@ static void handle_dmi_entry(const struct dmi_header *dm, void *opaque)
 
 		/* Uninitialized entries are 0 aka KEY_RESERVED. */
 		u16 keycode = (bios_entry->keycode <
-			       ARRAY_SIZE(bios_to_linux_keycode)) ?
-			bios_to_linux_keycode[bios_entry->keycode] :
+			       ARRAY_SIZE(bios_to_linex_keycode)) ?
+			bios_to_linex_keycode[bios_entry->keycode] :
 			(bios_entry->keycode == 0xffff ? KEY_UNKNOWN : KEY_RESERVED);
 
 		/*
 		 * Log if we find an entry in the DMI table that we don't
 		 * understand.  If this happens, we should figure out what
-		 * the entry means and add it to bios_to_linux_keycode.
+		 * the entry means and add it to bios_to_linex_keycode.
 		 */
 		if (keycode == KEY_RESERVED) {
 			pr_info("firmware scancode 0x%x maps to unrecognized keycode 0x%x\n",

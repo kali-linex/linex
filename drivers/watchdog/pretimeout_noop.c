@@ -3,9 +3,9 @@
  * Copyright (C) 2015-2016 Mentor Graphics
  */
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/watchdog.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/watchdog.h>
 
 #include "watchdog_pretimeout.h"
 

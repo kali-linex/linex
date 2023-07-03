@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "cgs_common.h"
 #include "smu/smu_8_0_d.h"

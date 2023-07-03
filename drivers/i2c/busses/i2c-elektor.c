@@ -14,19 +14,19 @@
 /* Partially rewriten by Oleg I. Vdovikin for mmapped support of
    for Alpha Processor Inc. UP-2000(+) boards */
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/wait.h>
 
-#include <linux/isa.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pcf.h>
-#include <linux/io.h>
+#include <linex/isa.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-pcf.h>
+#include <linex/io.h>
 
 #include <asm/irq.h>
 

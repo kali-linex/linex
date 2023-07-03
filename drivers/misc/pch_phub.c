@@ -3,20 +3,20 @@
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/if_ether.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
+#include <linex/string.h>
+#include <linex/pci.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/if_ether.h>
+#include <linex/ctype.h>
+#include <linex/dmi.h>
+#include <linex/of.h>
 
 #define PHUB_STATUS 0x00		/* Status Register offset */
 #define PHUB_CONTROL 0x04		/* Control Register offset */

@@ -10,49 +10,49 @@
  * History:
  * 0-5 A number of folks worked on this driver in bits and pieces but the major
  *     contribution came from Suraj Iyer and Anant Gole
- * 6.0 Anant Gole - rewrote the driver as per Linux conventions
+ * 6.0 Anant Gole - rewrote the driver as per Linex conventions
  * 6.1 Chaithrika U S - added support for Gigabit and RMII features,
  *     PHY layer usage
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/semaphore.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/in.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/highmem.h>
+#include <linex/proc_fs.h>
+#include <linex/ctype.h>
+#include <linex/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/semaphore.h>
+#include <linex/phy.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
+#include <linex/pm_runtime.h>
+#include <linex/davinci_emac.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/of_irq.h>
+#include <linex/of_net.h>
+#include <linex/mfd/syscon.h>
 
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -86,7 +86,7 @@ MODULE_PARM_DESC(debug_level, "DaVinci EMAC debug level (NETIF_MSG bits)");
 #define EMAC_MINOR_VERSION	1
 #define EMAC_MODULE_VERSION	"6.1"
 MODULE_VERSION(EMAC_MODULE_VERSION);
-static const char emac_version_string[] = "TI DaVinci EMAC Linux v6.1";
+static const char emac_version_string[] = "TI DaVinci EMAC Linex v6.1";
 
 /* Configuration items */
 #define EMAC_DEF_PASS_CRC		(0) /* Do not pass CRC up to frames */
@@ -1365,7 +1365,7 @@ static void emac_adjust_link(struct net_device *ndev)
 }
 
 /*************************************************************************
- *  Linux Driver Model
+ *  Linex Driver Model
  *************************************************************************/
 
 /**

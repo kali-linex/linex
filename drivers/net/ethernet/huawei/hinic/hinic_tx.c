@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Huawei HiNIC PCI Express Linux driver
+ * Huawei HiNIC PCI Express Linex driver
  * Copyright(c) 2017 Huawei Technologies Co., Ltd
  */
 
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/smp.h>
+#include <linex/if_vlan.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/u64_stats_sync.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/skbuff.h>
+#include <linex/smp.h>
 #include <asm/byteorder.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/sctp.h>
+#include <linex/ipv6.h>
 #include <net/ipv6.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>

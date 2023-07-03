@@ -4,15 +4,15 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  * Copyright (C) 2014 Amlogic, Inc.
  */
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/clk.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
+#include <linex/hw_random.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/of.h>
+#include <linex/clk.h>
 
 #define RNG_DATA 0x00
 

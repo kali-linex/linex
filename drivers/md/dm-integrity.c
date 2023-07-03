@@ -9,20 +9,20 @@
 
 #include "dm-bio-record.h"
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
-#include <linux/rbtree.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/device-mapper.h>
+#include <linex/dm-io.h>
+#include <linex/vmalloc.h>
+#include <linex/sort.h>
+#include <linex/rbtree.h>
+#include <linex/delay.h>
+#include <linex/random.h>
+#include <linex/reboot.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/async_tx.h>
-#include <linux/dm-bufio.h>
+#include <linex/async_tx.h>
+#include <linex/dm-bufio.h>
 
 #include "dm-audit.h"
 

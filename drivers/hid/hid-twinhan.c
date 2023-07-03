@@ -4,16 +4,16 @@
  *
  * Based on hid-gyration.c
  *
- * Copyright (c) 2009 Bruno Prémont <bonbons@linux-vserver.org>
+ * Copyright (c) 2009 Bruno Prémont <bonbons@linex-vserver.org>
  */
 
 /*
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 
 #include "hid-ids.h"
 

@@ -12,12 +12,12 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/errno.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/errno.h>
+#include <linex/seq_file.h>
+#include <linex/export.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/llc.h>

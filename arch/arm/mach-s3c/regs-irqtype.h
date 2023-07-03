@@ -2,7 +2,7 @@
 /*
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinex.simtec.co.uk/
  *
  * S3C - IRQ detection types.
  */

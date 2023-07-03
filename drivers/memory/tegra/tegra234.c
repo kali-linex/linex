@@ -6,8 +6,8 @@
 #include <soc/tegra/mc.h>
 
 #include <dt-bindings/memory/tegra234-mc.h>
-#include <linux/interconnect.h>
-#include <linux/tegra-icc.h>
+#include <linex/interconnect.h>
+#include <linex/tegra-icc.h>
 
 #include <soc/tegra/bpmp.h>
 #include "mc.h"

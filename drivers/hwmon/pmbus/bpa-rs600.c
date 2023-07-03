@@ -5,11 +5,11 @@
  * Copyright 2021 Allied Telesis Labs
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pmbus.h>
 #include "pmbus.h"
 
 enum chips { bpa_rs600, bpd_rs600 };

@@ -5,11 +5,11 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * Linex driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
- *  bfa_attr.c Linux driver configuration interface module.
+ *  bfa_attr.c Linex driver configuration interface module.
  */
 
 #include "bfad_drv.h"

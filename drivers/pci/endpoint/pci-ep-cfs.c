@@ -6,13 +6,13 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
-#include <linux/pci-ep-cfs.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
+#include <linex/pci-ep-cfs.h>
 
 static DEFINE_IDR(functions_idr);
 static DEFINE_MUTEX(functions_mutex);

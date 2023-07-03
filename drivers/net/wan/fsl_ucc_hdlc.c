@@ -4,27 +4,27 @@
  * Copyright 2016 Freescale Semiconductor Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/hdlc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/hdlc.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/stddef.h>
 #include <soc/fsl/qe/qe_tdm.h>
-#include <uapi/linux/if_arp.h>
+#include <uapi/linex/if_arp.h>
 
 #include "fsl_ucc_hdlc.h"
 

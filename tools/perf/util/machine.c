@@ -30,18 +30,18 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include "unwind.h"
-#include "linux/hash.h"
+#include "linex/hash.h"
 #include "asm/bug.h"
 #include "bpf-event.h"
 #include <internal/lib.h> // page_size
 #include "cgroup.h"
 #include "arm64-frame-pointer-unwind-support.h"
 
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 #include <symbol/kallsyms.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/mman.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 
 static void __machine__remove_thread(struct machine *machine, struct thread_rb_node *nd,
 				     struct thread *th, bool lock);
@@ -49,7 +49,7 @@ static int append_inlines(struct callchain_cursor *cursor, struct map_symbol *ms
 
 static struct dso *machine__kernel_dso(struct machine *machine)
 {
-	return map__dso(machine->vmlinux_map);
+	return map__dso(machine->vmlinex_map);
 }
 
 static void dsos__init(struct dsos *dsos)
@@ -133,7 +133,7 @@ int machine__init(struct machine *machine, const char *root_dir, pid_t pid)
 	machine->kptr_restrict_warned = false;
 	machine->comm_exec = false;
 	machine->kernel_start = 0;
-	machine->vmlinux_map = NULL;
+	machine->vmlinex_map = NULL;
 
 	machine->root_dir = strdup(root_dir);
 	if (machine->root_dir == NULL)
@@ -970,7 +970,7 @@ static int machine__process_ksymbol_unregister(struct machine *machine,
 	if (!map)
 		return 0;
 
-	if (RC_CHK_ACCESS(map) != RC_CHK_ACCESS(machine->vmlinux_map))
+	if (RC_CHK_ACCESS(map) != RC_CHK_ACCESS(machine->vmlinex_map))
 		maps__remove(machine__kernel_maps(machine), map);
 	else {
 		struct dso *dso = map__dso(map);
@@ -1102,7 +1102,7 @@ size_t machines__fprintf_dsos_buildid(struct machines *machines, FILE *fp,
 	return ret;
 }
 
-size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp)
+size_t machine__fprintf_vmlinex_path(struct machine *machine, FILE *fp)
 {
 	int i;
 	size_t printed = 0;
@@ -1115,9 +1115,9 @@ size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp)
 			printed += fprintf(fp, "[0] %s\n", filename);
 	}
 
-	for (i = 0; i < vmlinux_path__nr_entries; ++i)
+	for (i = 0; i < vmlinex_path__nr_entries; ++i)
 		printed += fprintf(fp, "[%d] %s\n",
-				   i + kdso->has_build_id, vmlinux_path[i]);
+				   i + kdso->has_build_id, vmlinex_path[i]);
 
 	return printed;
 }
@@ -1149,20 +1149,20 @@ size_t machine__fprintf(struct machine *machine, FILE *fp)
 
 static struct dso *machine__get_kernel(struct machine *machine)
 {
-	const char *vmlinux_name = machine->mmap_name;
+	const char *vmlinex_name = machine->mmap_name;
 	struct dso *kernel;
 
 	if (machine__is_host(machine)) {
-		if (symbol_conf.vmlinux_name)
-			vmlinux_name = symbol_conf.vmlinux_name;
+		if (symbol_conf.vmlinex_name)
+			vmlinex_name = symbol_conf.vmlinex_name;
 
-		kernel = machine__findnew_kernel(machine, vmlinux_name,
+		kernel = machine__findnew_kernel(machine, vmlinex_name,
 						 "[kernel]", DSO_SPACE__KERNEL);
 	} else {
-		if (symbol_conf.default_guest_vmlinux_name)
-			vmlinux_name = symbol_conf.default_guest_vmlinux_name;
+		if (symbol_conf.default_guest_vmlinex_name)
+			vmlinex_name = symbol_conf.default_guest_vmlinex_name;
 
-		kernel = machine__findnew_kernel(machine, vmlinux_name,
+		kernel = machine__findnew_kernel(machine, vmlinex_name,
 						 "[guest.kernel]",
 						 DSO_SPACE__KERNEL_GUEST);
 	}
@@ -1296,8 +1296,8 @@ int machine__map_x86_64_entry_trampolines(struct machine *machine,
 	u64 pgoff;
 
 	/*
-	 * In the vmlinux case, pgoff is a virtual address which must now be
-	 * mapped to a vmlinux offset.
+	 * In the vmlinex case, pgoff is a virtual address which must now be
+	 * mapped to a vmlinex offset.
 	 */
 	maps__for_each_entry(kmaps, rb_node) {
 		struct map *dest_map, *map = rb_node->map;
@@ -1354,14 +1354,14 @@ __machine__create_kernel_maps(struct machine *machine, struct dso *kernel)
 	/* In case of renewal the kernel map, destroy previous one */
 	machine__destroy_kernel_maps(machine);
 
-	map__put(machine->vmlinux_map);
-	machine->vmlinux_map = map__new2(0, kernel);
-	if (machine->vmlinux_map == NULL)
+	map__put(machine->vmlinex_map);
+	machine->vmlinex_map = map__new2(0, kernel);
+	if (machine->vmlinex_map == NULL)
 		return -ENOMEM;
 
-	map__set_map_ip(machine->vmlinux_map, identity__map_ip);
-	map__set_unmap_ip(machine->vmlinux_map, identity__map_ip);
-	return maps__insert(machine__kernel_maps(machine), machine->vmlinux_map);
+	map__set_map_ip(machine->vmlinex_map, identity__map_ip);
+	map__set_unmap_ip(machine->vmlinex_map, identity__map_ip);
+	return maps__insert(machine__kernel_maps(machine), machine->vmlinex_map);
 }
 
 void machine__destroy_kernel_maps(struct machine *machine)
@@ -1379,7 +1379,7 @@ void machine__destroy_kernel_maps(struct machine *machine)
 		zfree(&kmap->ref_reloc_sym);
 	}
 
-	map__zput(machine->vmlinux_map);
+	map__zput(machine->vmlinex_map);
 }
 
 int machines__create_guest_kernel_maps(struct machines *machines)
@@ -1391,7 +1391,7 @@ int machines__create_guest_kernel_maps(struct machines *machines)
 	pid_t pid;
 	char *endp;
 
-	if (symbol_conf.default_guest_vmlinux_name ||
+	if (symbol_conf.default_guest_vmlinex_name ||
 	    symbol_conf.default_guest_modules ||
 	    symbol_conf.default_guest_kallsyms) {
 		machines__create_kernel_maps(machines, DEFAULT_GUEST_KERNEL_ID);
@@ -1475,11 +1475,11 @@ int machine__load_kallsyms(struct machine *machine, const char *filename)
 	return ret;
 }
 
-int machine__load_vmlinux_path(struct machine *machine)
+int machine__load_vmlinex_path(struct machine *machine)
 {
 	struct map *map = machine__kernel_map(machine);
 	struct dso *dso = map__dso(map);
-	int ret = dso__load_vmlinux_path(dso, map);
+	int ret = dso__load_vmlinex_path(dso, map);
 
 	if (ret > 0)
 		dso__set_loaded(dso);
@@ -1492,7 +1492,7 @@ static char *get_kernel_version(const char *root_dir)
 	char version[PATH_MAX];
 	FILE *file;
 	char *name, *tmp;
-	const char *prefix = "Linux version ";
+	const char *prefix = "Linex version ";
 
 	sprintf(version, "%s/proc/version", root_dir);
 	file = fopen(version, "r");
@@ -1677,14 +1677,14 @@ static int machine__create_modules(struct machine *machine)
 static void machine__set_kernel_mmap(struct machine *machine,
 				     u64 start, u64 end)
 {
-	map__set_start(machine->vmlinux_map, start);
-	map__set_end(machine->vmlinux_map, end);
+	map__set_start(machine->vmlinex_map, start);
+	map__set_end(machine->vmlinex_map, end);
 	/*
 	 * Be a bit paranoid here, some perf.data file came with
 	 * a zero sized synthesized MMAP event for the kernel.
 	 */
 	if (start == 0 && end == 0)
-		map__set_end(machine->vmlinux_map, ~0ULL);
+		map__set_end(machine->vmlinex_map, ~0ULL);
 }
 
 static int machine__update_kernel_mmap(struct machine *machine,
@@ -1693,10 +1693,10 @@ static int machine__update_kernel_mmap(struct machine *machine,
 	struct map *orig, *updated;
 	int err;
 
-	orig = machine->vmlinux_map;
+	orig = machine->vmlinex_map;
 	updated = map__get(orig);
 
-	machine->vmlinux_map = updated;
+	machine->vmlinex_map = updated;
 	machine__set_kernel_mmap(machine, start, end);
 	maps__remove(machine__kernel_maps(machine), orig);
 	err = maps__insert(machine__kernel_maps(machine), updated);
@@ -1730,7 +1730,7 @@ int machine__create_kernel_maps(struct machine *machine)
 
 	if (!machine__get_running_kernel_start(machine, &name, &start, &end)) {
 		if (name &&
-		    map__set_kallsyms_ref_reloc_sym(machine->vmlinux_map, name, start)) {
+		    map__set_kallsyms_ref_reloc_sym(machine->vmlinex_map, name, start)) {
 			machine__destroy_kernel_maps(machine);
 			ret = -1;
 			goto out_put;
@@ -1885,8 +1885,8 @@ static int machine__process_kernel_mmap_event(struct machine *machine,
 			goto out_problem;
 		}
 
-		if (strstr(kernel->long_name, "vmlinux"))
-			dso__set_short_name(kernel, "[kernel.vmlinux]", false);
+		if (strstr(kernel->long_name, "vmlinex"))
+			dso__set_short_name(kernel, "[kernel.vmlinex]", false);
 
 		if (machine__update_kernel_mmap(machine, xm->start, xm->end) < 0) {
 			dso__put(kernel);
@@ -1902,7 +1902,7 @@ static int machine__process_kernel_mmap_event(struct machine *machine,
 		 * time /proc/sys/kernel/kptr_restrict was non zero.
 		 */
 		if (xm->pgoff != 0) {
-			map__set_kallsyms_ref_reloc_sym(machine->vmlinux_map,
+			map__set_kallsyms_ref_reloc_sym(machine->vmlinex_map,
 							symbol_name,
 							xm->pgoff);
 		}

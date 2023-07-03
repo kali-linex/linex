@@ -5,16 +5,16 @@
  * Copyright (c) 2020, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: "Alexander Duyck" <alexander.h.duyck@linux.intel.com>
+ * Author: "Alexander Duyck" <alexander.h.duyck@linex.intel.com>
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/overflow.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/overflow.h>
 
 #include "../vsec.h"
 #include "class.h"
@@ -325,7 +325,7 @@ static void __exit pmt_crashlog_exit(void)
 module_init(pmt_crashlog_init);
 module_exit(pmt_crashlog_exit);
 
-MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@linux.intel.com>");
+MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@linex.intel.com>");
 MODULE_DESCRIPTION("Intel PMT Crashlog driver");
 MODULE_LICENSE("GPL v2");
 MODULE_IMPORT_NS(INTEL_PMT);

@@ -7,15 +7,15 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/phy/phy.h>
 
 #define PHY_R0							0x00

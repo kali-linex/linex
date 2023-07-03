@@ -6,12 +6,12 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/component.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_print.h>

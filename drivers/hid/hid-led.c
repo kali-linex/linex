@@ -7,11 +7,11 @@
  * drivers/usb/misc/usbled.c
  */
 
-#include <linux/hid.h>
-#include <linux/hidraw.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linex/hid.h>
+#include <linex/hidraw.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
 
 #include "hid-ids.h"
 

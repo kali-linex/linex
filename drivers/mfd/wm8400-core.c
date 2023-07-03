@@ -7,16 +7,16 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/wm8400-private.h>
-#include <linux/mfd/wm8400-audio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/bug.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/wm8400-private.h>
+#include <linex/mfd/wm8400-audio.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 static bool wm8400_volatile(struct device *dev, unsigned int reg)
 {

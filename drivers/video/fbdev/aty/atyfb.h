@@ -3,9 +3,9 @@
  *  ATI Frame Buffer Device Driver Core Definitions
  */
 
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
     /*
      *  Elements of the hardware specific atyfb_par structure

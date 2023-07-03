@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2014, 2016-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, 2016-2021 The Linex Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spmi.h>
-#include <linux/types.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spmi.h>
+#include <linex/types.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 

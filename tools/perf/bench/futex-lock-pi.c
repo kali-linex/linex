@@ -11,9 +11,9 @@
 #include "../util/mutex.h"
 #include "../util/stat.h"
 #include <subcmd/parse-options.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/zalloc.h>
 #include <errno.h>
 #include <perf/cpumap.h>
 #include "bench.h"

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/sh/mm/init.c
+ * linex/arch/sh/mm/init.c
  *
  *  Copyright (C) 1999  Niibe Yutaka
  *  Copyright (C) 2002 - 2011  Paul Mundt
  *
- *  Based on linux/arch/i386/mm/init.c:
+ *  Based on linex/arch/i386/mm/init.c:
  *   Copyright (C) 1995  Linus Torvalds
  */
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/pagemap.h>
-#include <linux/percpu.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/init.h>
+#include <linex/gfp.h>
+#include <linex/memblock.h>
+#include <linex/proc_fs.h>
+#include <linex/pagemap.h>
+#include <linex/percpu.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/export.h>
 #include <asm/mmu_context.h>
 #include <asm/mmzone.h>
 #include <asm/kexec.h>
@@ -28,7 +28,7 @@
 #include <asm/setup.h>
 #include <asm/cache.h>
 #include <asm/pgalloc.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 #include "ioremap.h"
 
 pgd_t swapper_pg_dir[PTRS_PER_PGD];

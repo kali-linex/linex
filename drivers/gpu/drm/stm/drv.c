@@ -8,11 +8,11 @@
  *          Mickael Reulier <mickael.reulier@st.com>
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/component.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic.h>

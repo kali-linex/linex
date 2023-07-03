@@ -3,17 +3,17 @@
  *
  * Copyright (c) 2017 Jesper Dangaard Brouer, Red Hat Inc.
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/rhashtable.h>
-#include <linux/bug.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/btf_ids.h>
+#include <linex/filter.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/rhashtable.h>
+#include <linex/bug.h>
 #include <net/page_pool.h>
 
 #include <net/xdp.h>
@@ -698,7 +698,7 @@ struct xdp_frame *xdpf_clone(struct xdp_frame *xdpf)
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmlinex BTF");
 
 /**
  * bpf_xdp_metadata_rx_timestamp - Read XDP frame RX timestamp.

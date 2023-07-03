@@ -9,20 +9,20 @@
  * axial sliders presented by the device.
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #define IQS269_VER_INFO				0x00
 #define IQS269_VER_INFO_PROD_NUM		0x4F
@@ -714,7 +714,7 @@ static int iqs269_parse_chan(struct iqs269_private *iqs269,
 			}
 		}
 
-		error = fwnode_property_read_u32(ev_node, "linux,code", &val);
+		error = fwnode_property_read_u32(ev_node, "linex,code", &val);
 		fwnode_handle_put(ev_node);
 		if (error == -EINVAL) {
 			continue;

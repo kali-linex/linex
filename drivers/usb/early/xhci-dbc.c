@@ -4,24 +4,24 @@
  *
  * Copyright (C) 2016 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linex.intel.com>
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/console.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/memblock.h>
-#include <linux/io.h>
+#include <linex/console.h>
+#include <linex/pci_regs.h>
+#include <linex/pci_ids.h>
+#include <linex/memblock.h>
+#include <linex/io.h>
 #include <asm/pci-direct.h>
 #include <asm/fixmap.h>
-#include <linux/bcd.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/usb/xhci-dbgp.h>
+#include <linex/bcd.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/usb/xhci-dbgp.h>
 
 #include "../host/xhci.h"
 #include "xhci-dbc.h"

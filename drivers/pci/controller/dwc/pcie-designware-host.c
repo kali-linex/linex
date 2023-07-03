@@ -8,13 +8,13 @@
  * Author: Jingoo Han <jg1.han@samsung.com>
  */
 
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci_regs.h>
-#include <linux/platform_device.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/pci_regs.h>
+#include <linex/platform_device.h>
 
 #include "pcie-designware.h"
 

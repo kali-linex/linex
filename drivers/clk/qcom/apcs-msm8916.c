@@ -6,13 +6,13 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "clk-regmap.h"
 #include "clk-regmap-mux-div.h"

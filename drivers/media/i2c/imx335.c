@@ -6,11 +6,11 @@
  */
 #include <asm/unaligned.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fwnode.h>

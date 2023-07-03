@@ -5,22 +5,22 @@
  * Copyright Benjamin Herrenschmidt & Gavin Shan, IBM Corporation 2013.
  */
 
-#include <linux/atomic.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
+#include <linex/atomic.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/list.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/proc_fs.h>
+#include <linex/rbtree.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
 
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>

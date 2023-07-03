@@ -5,12 +5,12 @@
  * Copyright (c) 2021 Flextronics International Sweden AB.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/pmbus.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/pmbus.h>
 #include "pmbus.h"
 
 #define STPDDC60_MFR_READ_VOUT		0xd2

@@ -4,9 +4,9 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include <net/ip.h>
-#include <linux/bitops.h>
+#include <linex/bitops.h>
 
 #include "qlcnic.h"
 #include "qlcnic_hdr.h"

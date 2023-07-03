@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Parse RedBoot-style Flash Image System (FIS) tables and
- * produce a Linux partition array to match.
+ * produce a Linex partition array to match.
  *
  * Copyright © 2001      Red Hat UK Limited
  * Copyright © 2001-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/of.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/module.h>
 
 struct fis_image_desc {
 	unsigned char name[16];      // Null terminated name

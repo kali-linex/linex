@@ -1,6 +1,6 @@
 /**************************************************************************
 
- Copyright 2006 Dave Airlie <airlied@linux.ie>
+ Copyright 2006 Dave Airlie <airlied@linex.ie>
 
 All Rights Reserved.
 
@@ -25,14 +25,14 @@ USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 **************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/fb.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
 
 #include <asm/io.h>
 

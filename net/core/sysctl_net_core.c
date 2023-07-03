@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-/* -*- linux-c -*-
+/* -*- linex-c -*-
  * sysctl_net_core.c: sysctl interface to net core subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
  * Added /proc/sys/net/core directory entry (empty =) ). [MS]
  */
 
-#include <linux/filter.h>
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched/isolation.h>
+#include <linex/filter.h>
+#include <linex/mm.h>
+#include <linex/sysctl.h>
+#include <linex/module.h>
+#include <linex/socket.h>
+#include <linex/netdevice.h>
+#include <linex/ratelimit.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/sched/isolation.h>
 
 #include <net/ip.h>
 #include <net/sock.h>

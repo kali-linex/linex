@@ -37,14 +37,14 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/prefetch.h>
-#include <linux/delay.h>
+#include <linex/interrupt.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/prefetch.h>
+#include <linex/delay.h>
 
 #include <rdma/ib_addr.h>
 

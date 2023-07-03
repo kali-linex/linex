@@ -11,13 +11,13 @@
  * (c) 2007 Mauro Carvalho Chehab, <mchehab@kernel.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/dma-mapping.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 #include <media/videobuf-dma-contig.h>
 
 struct videobuf_dma_contig_memory {
@@ -397,6 +397,6 @@ void videobuf_dma_contig_free(struct videobuf_queue *q,
 }
 EXPORT_SYMBOL_GPL(videobuf_dma_contig_free);
 
-MODULE_DESCRIPTION("helper module to manage video4linux dma contig buffers");
+MODULE_DESCRIPTION("helper module to manage video4linex dma contig buffers");
 MODULE_AUTHOR("Magnus Damm");
 MODULE_LICENSE("GPL");

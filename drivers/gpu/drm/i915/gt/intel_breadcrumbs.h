@@ -6,8 +6,8 @@
 #ifndef __INTEL_BREADCRUMBS__
 #define __INTEL_BREADCRUMBS__
 
-#include <linux/atomic.h>
-#include <linux/irq_work.h>
+#include <linex/atomic.h>
+#include <linex/irq_work.h>
 
 #include "intel_breadcrumbs_types.h"
 

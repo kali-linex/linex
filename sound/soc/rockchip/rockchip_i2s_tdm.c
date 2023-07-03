@@ -5,18 +5,18 @@
 // Author: Sugar Zhang <sugar.zhang@rock-chips.com>
 // Author: Nicolas Frattaroli <frattaroli.nicolas@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

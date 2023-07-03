@@ -4,13 +4,13 @@
  *
  * This device driver implements MMIO TPM on SynQuacer Platform.
  */
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/kernel.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/kernel.h>
 #include "tpm.h"
 #include "tpm_tis_core.h"
 

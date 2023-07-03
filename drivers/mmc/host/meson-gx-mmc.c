@@ -5,28 +5,28 @@
  * Copyright (c) 2016 BayLibre, SAS.
  * Author: Kevin Hilman <khilman@baylibre.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
-#include <linux/bitfield.h>
-#include <linux/pinctrl/consumer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/ioport.h>
+#include <linex/dma-mapping.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/interrupt.h>
+#include <linex/bitfield.h>
+#include <linex/pinctrl/consumer.h>
 
 #define DRIVER_NAME "meson-gx-mmc"
 

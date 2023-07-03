@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#include <linux/iommu.h>
+#include <linex/iommu.h>
 
 #include "iommufd_private.h"
 

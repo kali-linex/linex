@@ -11,13 +11,13 @@
  * Copyright 2001 - 2005 Tensilica Inc.
  * Copyright 2017 Cadence Design Systems Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/notifier.h>
+#include <linex/panic_notifier.h>
+#include <linex/printk.h>
+#include <linex/reboot.h>
+#include <linex/string.h>
 
 #include <asm/platform.h>
 #include <asm/setup.h>

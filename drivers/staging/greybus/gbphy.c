@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/greybus.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/greybus.h>
 
 #include "gbphy.h"
 

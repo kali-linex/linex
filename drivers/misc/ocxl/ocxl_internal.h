@@ -3,9 +3,9 @@
 #ifndef _OCXL_INTERNAL_H_
 #define _OCXL_INTERNAL_H_
 
-#include <linux/pci.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
+#include <linex/pci.h>
+#include <linex/cdev.h>
+#include <linex/list.h>
 #include <misc/ocxl.h>
 
 #define MAX_IRQ_PER_LINK	2000

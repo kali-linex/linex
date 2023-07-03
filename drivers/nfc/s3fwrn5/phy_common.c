@@ -8,9 +8,9 @@
  * Bongsu Jeon <bongsu.jeon@samsung.com>
  */
 
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linex/gpio.h>
+#include <linex/delay.h>
+#include <linex/module.h>
 
 #include "phy_common.h"
 

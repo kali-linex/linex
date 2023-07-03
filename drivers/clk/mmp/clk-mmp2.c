@@ -6,14 +6,14 @@
  * Chao Xie <xiechao.mail@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk/mmp.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/clk/mmp.h>
 
 #include "clk.h"
 

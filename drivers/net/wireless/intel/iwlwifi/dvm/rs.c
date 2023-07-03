@@ -4,16 +4,16 @@
  * Copyright(c) 2005 - 2014 Intel Corporation. All rights reserved.
  * Copyright (C) 2019 - 2020, 2022 - 2023 Intel Corporation
  *****************************************************************************/
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/mac80211.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/delay.h>
 
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 
 #include "dev.h"
 #include "agn.h"

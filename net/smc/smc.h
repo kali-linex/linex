@@ -6,14 +6,14 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  */
 #ifndef __SMC_H
 #define __SMC_H
 
-#include <linux/socket.h>
-#include <linux/types.h>
-#include <linux/compiler.h> /* __aligned */
+#include <linex/socket.h>
+#include <linex/types.h>
+#include <linex/compiler.h> /* __aligned */
 #include <net/genetlink.h>
 #include <net/sock.h>
 

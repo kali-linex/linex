@@ -8,15 +8,15 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2016, Imagination Technologies Ltd.
  */
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
+#include <linex/compat.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/syscalls.h>
 
 #include <asm/compat-signal.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 
 #include "signal-common.h"

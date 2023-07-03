@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) "opal core: " fmt
 
-#include <linux/memblock.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/crash_core.h>
-#include <linux/of.h>
+#include <linex/memblock.h>
+#include <linex/uaccess.h>
+#include <linex/proc_fs.h>
+#include <linex/elf.h>
+#include <linex/elfcore.h>
+#include <linex/kobject.h>
+#include <linex/sysfs.h>
+#include <linex/slab.h>
+#include <linex/crash_core.h>
+#include <linex/of.h>
 
 #include <asm/page.h>
 #include <asm/opal.h>

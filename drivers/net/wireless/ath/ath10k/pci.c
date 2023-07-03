@@ -4,11 +4,11 @@
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/bitops.h>
 
 #include "core.h"
 #include "debug.h"

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * This file contains the table of syscall-handling functions.
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  * Largely rewritten by Cort Dougan (cort@cs.nmt.edu)
  * and Paul Mackerras.
@@ -10,8 +10,8 @@
  * PPC64 updates by Dave Engebretsen (engebret@us.ibm.com) 
  */
 
-#include <linux/syscalls.h>
-#include <linux/compat.h>
+#include <linex/syscalls.h>
+#include <linex/compat.h>
 #include <asm/unistd.h>
 #include <asm/syscalls.h>
 

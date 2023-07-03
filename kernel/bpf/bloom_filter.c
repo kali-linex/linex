@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2021 Facebook */
 
-#include <linux/bitmap.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/err.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/btf_ids.h>
+#include <linex/bitmap.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/err.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
+#include <linex/btf_ids.h>
 
 #define BLOOM_CREATE_FLAG_MASK \
 	(BPF_F_NUMA_NODE | BPF_F_ZERO_SEED | BPF_F_ACCESS_MASK)

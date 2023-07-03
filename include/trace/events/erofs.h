@@ -5,8 +5,8 @@
 #if !defined(_TRACE_EROFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_EROFS_H
 
-#include <linux/tracepoint.h>
-#include <linux/fs.h>
+#include <linex/tracepoint.h>
+#include <linex/fs.h>
 
 struct erofs_map_blocks;
 

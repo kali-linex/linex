@@ -6,26 +6,26 @@
  *  Copyright (C) 2008 WonderMedia Technologies, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/ioport.h>
+#include <linex/errno.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_device.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
 
 #include <asm/byteorder.h>
 

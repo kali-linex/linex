@@ -8,18 +8,18 @@
 /*
  * This file contains the common interrupt handlers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/ch11.h>
 
 #include "core.h"
 #include "hcd.h"
@@ -164,7 +164,7 @@ static void dwc2_handle_otg_intr(struct dwc2_hsotg *hsotg)
 				 * if host mode is already set. The HCD
 				 * interrupt handler won't get called if the
 				 * HCD state is HALT. This means that the
-				 * interrupt does not get handled and Linux
+				 * interrupt does not get handled and Linex
 				 * complains loudly.
 				 */
 				gintmsk = dwc2_readl(hsotg, GINTMSK);

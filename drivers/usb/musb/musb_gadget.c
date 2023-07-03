@@ -8,15 +8,15 @@
  * Copyright (C) 2009 MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/timer.h>
+#include <linex/module.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
 #include "musb_core.h"
 #include "musb_trace.h"

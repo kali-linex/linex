@@ -11,19 +11,19 @@
 // it cannot be easily upgraded and EC flash/IRAM space is relatively
 // expensive.
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
-#include <linux/suspend.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/kobject.h>
+#include <linex/module.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/reboot.h>
+#include <linex/suspend.h>
 
 #include "cros_ec.h"
 #include "cros_ec_lpc_mec.h"

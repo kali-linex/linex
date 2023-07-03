@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/mm.h>
+#include <linex/err.h>
+#include <linex/mm.h>
 #include <asm/current.h>
 #include <asm/traps.h>
 #include <asm/vdso.h>

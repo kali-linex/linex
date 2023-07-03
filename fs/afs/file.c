@@ -5,17 +5,17 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/gfp.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/netfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/writeback.h>
+#include <linex/gfp.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/netfs.h>
 #include "internal.h"
 
 static int afs_file_mmap(struct file *file, struct vm_area_struct *vma);

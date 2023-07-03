@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  Cloned from linux/arch/arm/mach-realview/headsmp.S
+ *  Cloned from linex/arch/arm/mach-realview/headsmp.S
  *
  *  Copyright (c) 2003 ARM Limited
  *  All Rights Reserved
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
 
 #include <asm/assembler.h>
 

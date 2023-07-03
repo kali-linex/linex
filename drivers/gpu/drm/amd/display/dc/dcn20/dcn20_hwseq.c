@@ -22,7 +22,7 @@
  * Authors: AMD
  *
  */
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "dm_services.h"
 #include "basics/dc_common.h"

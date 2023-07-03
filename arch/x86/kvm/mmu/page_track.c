@@ -8,12 +8,12 @@
  * Copyright(C) 2015 Intel Corporation.
  *
  * Author:
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linex.intel.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
-#include <linux/rculist.h>
+#include <linex/kvm_host.h>
+#include <linex/rculist.h>
 
 #include <asm/kvm_page_track.h>
 

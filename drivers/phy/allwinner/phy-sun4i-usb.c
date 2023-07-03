@@ -12,29 +12,29 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-sun4i-usb.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/usb/of.h>
-#include <linux/workqueue.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/extcon-provider.h>
+#include <linex/gpio/consumer.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/phy/phy.h>
+#include <linex/phy/phy-sun4i-usb.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
+#include <linex/usb/of.h>
+#include <linex/workqueue.h>
 
 #define REG_ISCR			0x00
 #define REG_PHYCTL_A10			0x04

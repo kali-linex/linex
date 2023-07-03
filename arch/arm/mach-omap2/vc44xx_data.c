@@ -11,9 +11,9 @@
  * Kalle Jokiniemi
  * Paul Walmsley
  */
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/init.h>
 
 #include "common.h"
 

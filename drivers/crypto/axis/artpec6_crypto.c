@@ -6,21 +6,21 @@
  */
 #define pr_fmt(fmt)     KBUILD_MODNAME ": " fmt
 
-#include <linux/bitfield.h>
-#include <linux/crypto.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fault-inject.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/crypto.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/fault-inject.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
 
 #include <crypto/aes.h>
 #include <crypto/gcm.h>

@@ -4,9 +4,9 @@
  * (C) 2019 Linus Walleij
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/of_device.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_print.h>

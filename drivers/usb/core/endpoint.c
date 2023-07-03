@@ -11,10 +11,10 @@
  * Endpoint sysfs stuff
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 #include "usb.h"
 
 struct ep_device {

@@ -2,16 +2,16 @@
 
 #define pr_fmt(fmt)	"rtas-work-area: " fmt
 
-#include <linux/genalloc.h>
-#include <linux/log2.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mempool.h>
-#include <linux/minmax.h>
-#include <linux/mutex.h>
-#include <linux/numa.h>
-#include <linux/sizes.h>
-#include <linux/wait.h>
+#include <linex/genalloc.h>
+#include <linex/log2.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/mempool.h>
+#include <linex/minmax.h>
+#include <linex/mutex.h>
+#include <linex/numa.h>
+#include <linex/sizes.h>
+#include <linex/wait.h>
 
 #include <asm/machdep.h>
 #include <asm/rtas-work-area.h>

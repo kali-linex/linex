@@ -5,7 +5,7 @@
 #ifndef _ASM_PAGE_H
 #define _ASM_PAGE_H
 
-#include <linux/const.h>
+#include <linex/const.h>
 #include <asm/addrspace.h>
 
 /*
@@ -30,8 +30,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/kernel.h>
-#include <linux/pfn.h>
+#include <linex/kernel.h>
+#include <linex/pfn.h>
 
 /*
  * It's normally defined only for FLATMEM config but it's

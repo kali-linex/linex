@@ -6,38 +6,38 @@
 // Copyright 2011 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/input-event-codes.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
-#include <linux/mmc/host.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/dm9000.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/driver.h>
-#include <linux/spi/spi.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/serial_core.h>
+#include <linex/serial_s3c.h>
+#include <linex/platform_device.h>
+#include <linex/fb.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/input-event-codes.h>
+#include <linex/gpio.h>
+#include <linex/gpio/machine.h>
+#include <linex/leds.h>
+#include <linex/delay.h>
+#include <linex/mmc/host.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/fixed.h>
+#include <linex/pwm.h>
+#include <linex/pwm_backlight.h>
+#include <linex/dm9000.h>
+#include <linex/gpio_keys.h>
+#include <linex/gpio/driver.h>
+#include <linex/spi/spi.h>
 
-#include <linux/platform_data/pca953x.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <linex/platform_data/pca953x.h>
+#include <linex/platform_data/s3c-hsotg.h>
 
 #include <video/platform_lcd.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/gpio.h>
+#include <linex/mfd/wm831x/core.h>
+#include <linex/mfd/wm831x/pdata.h>
+#include <linex/mfd/wm831x/irq.h>
+#include <linex/mfd/wm831x/gpio.h>
 
 #include <sound/wm1250-ev1.h>
 
@@ -53,12 +53,12 @@
 #include "fb.h"
 #include "sdhci.h"
 #include "gpio-cfg.h"
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <linex/platform_data/spi-s3c64xx.h>
 
 #include "keypad.h"
 #include "devs.h"
 #include "cpu.h"
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linex/platform_data/i2c-s3c2410.h>
 #include "pm.h"
 
 #include "s3c64xx.h"

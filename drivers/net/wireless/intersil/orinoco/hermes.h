@@ -9,11 +9,11 @@
  * This is not a complete driver, just low-level access routines for
  * the MAC controller itself.
  *
- * Based on the prism2 driver from Absolute Value Systems' linux-wlan
- * project, the Linux wvlan_cs driver, Lucent's HCF-Light
+ * Based on the prism2 driver from Absolute Value Systems' linex-wlan
+ * project, the Linex wvlan_cs driver, Lucent's HCF-Light
  * (wvlan_hcf.c) library, and the NetBSD wireless driver.
  *
- * Copyright (C) 2000, David Gibson, Linuxcare Australia.
+ * Copyright (C) 2000, David Gibson, Linexcare Australia.
  * (C) Copyright David Gibson, IBM Corp. 2001-2003.
  *
  * Portions taken from hfa384x.h.
@@ -30,8 +30,8 @@
  * access to the hermes structure, and to the hardware
 */
 
-#include <linux/if_ether.h>
-#include <linux/io.h>
+#include <linex/if_ether.h>
+#include <linex/io.h>
 
 /*
  * Limits and constants

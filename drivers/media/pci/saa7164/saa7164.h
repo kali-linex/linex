@@ -10,7 +10,7 @@
 	*******************
 
 	saa7164_core.c/buffer.c/cards.c/i2c.c/dvb.c
-		|	: Standard Linux driver framework for creating
+		|	: Standard Linex driver framework for creating
 		|	: exposing and managing interfaces to the rest
 		|	: of the kernel or userland. Also uses _fw.c to load
 		|	: firmware direct into the PCIe bus, bypassing layers.
@@ -30,13 +30,13 @@
 	<- ----------------- PCIe address space -------------------- ->
 */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/mutex.h>
-#include <linux/crc32.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linex/pci.h>
+#include <linex/i2c.h>
+#include <linex/kdev_t.h>
+#include <linex/mutex.h>
+#include <linex/crc32.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
 
 #include <media/tuner.h>
 #include <media/tveeprom.h>

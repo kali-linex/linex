@@ -3,10 +3,10 @@
  * Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/bio.h>
-#include <linux/buffer_head.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/bio.h>
+#include <linex/buffer_head.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"

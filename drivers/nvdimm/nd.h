@@ -4,14 +4,14 @@
  */
 #ifndef __ND_H__
 #define __ND_H__
-#include <linux/libnvdimm.h>
-#include <linux/badblocks.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/ndctl.h>
-#include <linux/types.h>
-#include <linux/nd.h>
+#include <linex/libnvdimm.h>
+#include <linex/badblocks.h>
+#include <linex/blkdev.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/ndctl.h>
+#include <linex/types.h>
+#include <linex/nd.h>
 #include "label.h"
 
 enum {

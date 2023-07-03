@@ -29,14 +29,14 @@
 
 #include "smscoreapi.h"
 
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/module.h>
 
 #include "sms-cards.h"
 #include "smsendian.h"

@@ -4,13 +4,13 @@
  */
 
 /*
- * XT keyboard driver for Linux
+ * XT keyboard driver for Linex
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/serio.h>
 
 #define DRIVER_DESC	"XT keyboard driver"
 

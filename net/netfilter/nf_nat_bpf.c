@@ -6,8 +6,8 @@
  * are exposed through to BPF programs is explicitly unstable.
  */
 
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
+#include <linex/bpf.h>
+#include <linex/btf_ids.h>
 #include <net/netfilter/nf_conntrack_bpf.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_nat.h>

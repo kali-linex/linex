@@ -6,16 +6,16 @@
  * Copyright (C) 2010  Matt Fleming
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/smsc911x.h>
+#include <linex/irq.h>
+#include <linex/clk.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 /* Dummy supplies, where voltage doesn't matter */
 static struct regulator_consumer_supply dummy_supplies[] = {

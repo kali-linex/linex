@@ -7,22 +7,22 @@
  *		Philip Rakity <prakity@marvell.com>
  *		Mark Brown <markb@marvell.com>
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/pxa_sdhci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/mbus.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/platform_data/pxa_sdhci.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/mbus.h>
 
 #include "sdhci.h"
 #include "sdhci-pltfm.h"

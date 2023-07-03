@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
+#include <linex/atomic.h>
 #include <asm/smp.h>
 #include <asm/time.h>
 

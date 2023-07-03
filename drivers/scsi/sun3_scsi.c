@@ -23,13 +23,13 @@
  * Copyright 1995, Russell King
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/platform_device.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/dvma.h>

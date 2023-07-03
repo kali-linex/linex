@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	UDP over IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/udp.c
+ *	Based on linex/ipv4/udp.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -17,23 +17,23 @@
  *      YOSHIFUJI Hideaki @USAGI:	convert /proc/net/udp6 to seq_file.
  */
 
-#include <linux/bpf-cgroup.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/ipv6.h>
+#include <linex/icmpv6.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/indirect_call_wrapper.h>
 
 #include <net/addrconf.h>
 #include <net/ndisc.h>
@@ -51,8 +51,8 @@
 #include <net/busy_poll.h>
 #include <net/sock_reuseport.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 

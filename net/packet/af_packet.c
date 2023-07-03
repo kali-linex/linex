@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,7 +16,7 @@
  *		Alan Cox	:	tidied skbuff lists.
  *		Alan Cox	:	Now uses generic datagram routines I
  *					added. Also fixed the peek/read crash
- *					from all old Linux datagram code.
+ *					from all old Linex datagram code.
  *		Alan Cox	:	Uses the improved datagram code.
  *		Alan Cox	:	Added NULL's for socket options.
  *		Alan Cox	:	Re-commented the code.
@@ -48,51 +48,51 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ethtool.h>
-#include <linux/filter.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/wireless.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/ethtool.h>
+#include <linex/filter.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/capability.h>
+#include <linex/fcntl.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/if_packet.h>
+#include <linex/wireless.h>
+#include <linex/kernel.h>
+#include <linex/kmod.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/uaccess.h>
 #include <asm/ioctls.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/if_vlan.h>
-#include <linux/virtio_net.h>
-#include <linux/errqueue.h>
-#include <linux/net_tstamp.h>
-#include <linux/percpu.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/poll.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/if_vlan.h>
+#include <linex/virtio_net.h>
+#include <linex/errqueue.h>
+#include <linex/net_tstamp.h>
+#include <linex/percpu.h>
 #ifdef CONFIG_INET
 #include <net/inet_common.h>
 #endif
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <net/compat.h>
-#include <linux/netfilter_netdev.h>
+#include <linex/netfilter_netdev.h>
 
 #include "internal.h"
 

@@ -5,12 +5,12 @@
  * Copyright (C) 2008-2010 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_SPI */
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/input.h>	/* BUS_SPI */
+#include <linex/pm.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
 #include "ad7879.h"
 

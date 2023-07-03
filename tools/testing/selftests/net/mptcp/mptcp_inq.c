@@ -25,8 +25,8 @@
 #include <netdb.h>
 #include <netinet/in.h>
 
-#include <linux/tcp.h>
-#include <linux/sockios.h>
+#include <linex/tcp.h>
+#include <linex/sockios.h>
 
 #ifndef IPPROTO_MPTCP
 #define IPPROTO_MPTCP 262

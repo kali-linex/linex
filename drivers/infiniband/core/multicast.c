@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/random.h>
 
 #include <rdma/ib_cache.h>
 #include "sa.h"

@@ -2,13 +2,13 @@
 /*
  * Handling of a master device, switching frames via its switch fabric CPU port
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire Linex Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinex.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
+#include <linex/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/netlink.h>
 #include <net/dsa.h>
 
 #include "dsa.h"

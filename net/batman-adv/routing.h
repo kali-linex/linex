@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 
 bool batadv_check_management_packet(struct sk_buff *skb,
 				    struct batadv_hard_iface *hard_iface,

@@ -4,16 +4,16 @@
  *  Copyright (C) 2017, Topic Embedded Products
  */
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
 struct lt3651_charger {
 	struct power_supply *charger;

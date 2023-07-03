@@ -4,18 +4,18 @@
  *
  * Copyright 2013 Philipp Zabel, Pengutronix
  */
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/reset.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <linex/atomic.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/acpi.h>
+#include <linex/reset.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
 
 static DEFINE_MUTEX(reset_list_mutex);
 static LIST_HEAD(reset_controller_list);

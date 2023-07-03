@@ -8,17 +8,17 @@
  * - The hardware cannot generate a 0% duty cycle.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/log2.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/pwm.h>
+#include <linex/slab.h>
 
 #define RCAR_PWM_MAX_DIVISION	24
 #define RCAR_PWM_MAX_CYCLE	1023

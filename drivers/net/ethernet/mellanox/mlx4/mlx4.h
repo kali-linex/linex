@@ -37,26 +37,26 @@
 #ifndef MLX4_H
 #define MLX4_H
 
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/rbtree.h>
-#include <linux/timer.h>
-#include <linux/semaphore.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/radix-tree.h>
+#include <linex/rbtree.h>
+#include <linex/timer.h>
+#include <linex/semaphore.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
 #include <net/devlink.h>
-#include <linux/rwsem.h>
+#include <linex/rwsem.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/cmd.h>
+#include <linex/mlx4/device.h>
+#include <linex/mlx4/driver.h>
+#include <linex/mlx4/doorbell.h>
+#include <linex/mlx4/cmd.h>
 #include "fw_qos.h"
 
 #define DRV_NAME	"mlx4_core"
 #define DRV_VERSION	"4.0-0"
-#define DRV_NAME_FOR_FW		"Linux," DRV_NAME "," DRV_VERSION
+#define DRV_NAME_FOR_FW		"Linex," DRV_NAME "," DRV_VERSION
 
 #define MLX4_FS_UDP_UC_EN		(1 << 1)
 #define MLX4_FS_TCP_UC_EN		(1 << 2)

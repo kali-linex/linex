@@ -8,7 +8,7 @@
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h>
 
-#include <linux/kmsan-checks.h>
+#include <linex/kmsan-checks.h>
 
 /* duplicated to the one in bootmem.h */
 extern unsigned long max_pfn;

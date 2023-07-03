@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2013, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2013, The Linex Foundation. All rights reserved. */
 
 #ifndef __QCOM_CLK_BRANCH_H__
 #define __QCOM_CLK_BRANCH_H__
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
+#include <linex/bitfield.h>
+#include <linex/clk-provider.h>
 
 #include "clk-regmap.h"
 

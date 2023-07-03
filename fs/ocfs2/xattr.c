@@ -5,27 +5,27 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  *
  * CREDITS:
- * Lots of code in this file is copy from linux/fs/ext3/xattr.c.
+ * Lots of code in this file is copy from linex/fs/ext3/xattr.c.
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/sort.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/security.h>
+#include <linex/capability.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/uio.h>
+#include <linex/sched.h>
+#include <linex/splice.h>
+#include <linex/mount.h>
+#include <linex/writeback.h>
+#include <linex/falloc.h>
+#include <linex/sort.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/security.h>
 
 #include <cluster/masklog.h>
 

@@ -6,11 +6,11 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/mhi_ep.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <linex/mhi_ep.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
 
 #define MHI_VERSION_1_0 0x01000000
 

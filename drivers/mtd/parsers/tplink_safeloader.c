@@ -3,12 +3,12 @@
  * Copyright © 2022 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #define TPLINK_SAFELOADER_DATA_OFFSET		4
 #define TPLINK_SAFELOADER_MAX_PARTS		32

@@ -5,7 +5,7 @@
  *	      eeproms.
  */
 
-#include <uapi/linux/if_ether.h>
+#include <uapi/linex/if_ether.h>
 
 /**
  * enum tveeprom_audio_processor - Specifies the type of audio processor

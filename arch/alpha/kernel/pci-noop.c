@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/pci-noop.c
+ *	linex/arch/alpha/kernel/pci-noop.c
  *
  * Stub PCI interfaces for Jensen-specific kernels.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/syscalls.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/gfp.h>
+#include <linex/capability.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/dma-mapping.h>
+#include <linex/scatterlist.h>
+#include <linex/syscalls.h>
 
 #include "proto.h"
 

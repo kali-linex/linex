@@ -5,14 +5,14 @@
  * Copyright (C) 2011 Sascha Hauer, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <video/imx-ipu-v3.h>
 

@@ -9,22 +9,22 @@
  * and an early endavour into mobile light and proximity sensors.
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/consumer.h> /* To get our ADC channel */
-#include <linux/iio/types.h> /* To deal with our ADC channel */
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/math64.h>
-#include <linux/pm.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/events.h>
+#include <linex/iio/consumer.h> /* To get our ADC channel */
+#include <linex/iio/types.h> /* To deal with our ADC channel */
+#include <linex/init.h>
+#include <linex/leds.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/math64.h>
+#include <linex/pm.h>
 
 #define CM3605_PROX_CHANNEL 0
 #define CM3605_ALS_CHANNEL 1

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  * Modified 1998-2001, 2003
  *	David Mosberger-Tang <davidm@hpl.hp.com>, Hewlett-Packard Co
@@ -82,7 +82,7 @@
 
 # ifndef __ASSEMBLY__
 
-#  include <linux/types.h>
+#  include <linex/types.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;

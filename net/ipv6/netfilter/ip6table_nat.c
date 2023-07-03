@@ -6,11 +6,11 @@
  * funded by Astaro.
  */
 
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/ipv6.h>
+#include <linex/module.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
+#include <linex/ipv6.h>
 #include <net/ipv6.h>
 
 #include <net/netfilter/nf_nat.h>

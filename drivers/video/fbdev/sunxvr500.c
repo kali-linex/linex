@@ -5,12 +5,12 @@
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/aperture.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <linex/aperture.h>
+#include <linex/kernel.h>
+#include <linex/fb.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
 
 #include <asm/io.h>
 

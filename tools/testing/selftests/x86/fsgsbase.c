@@ -19,7 +19,7 @@
 #include <limits.h>
 #include <sys/ucontext.h>
 #include <sched.h>
-#include <linux/futex.h>
+#include <linex/futex.h>
 #include <pthread.h>
 #include <asm/ldt.h>
 #include <sys/mman.h>

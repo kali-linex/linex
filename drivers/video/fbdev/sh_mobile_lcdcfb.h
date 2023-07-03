@@ -2,10 +2,10 @@
 #ifndef SH_MOBILE_LCDCFB_H
 #define SH_MOBILE_LCDCFB_H
 
-#include <linux/completion.h>
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
+#include <linex/completion.h>
+#include <linex/fb.h>
+#include <linex/mutex.h>
+#include <linex/wait.h>
 
 /* per-channel registers */
 enum { LDDCKPAT1R, LDDCKPAT2R, LDMT1R, LDMT2R, LDMT3R, LDDFR, LDSM1R,

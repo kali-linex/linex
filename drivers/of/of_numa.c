@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt) "OF: NUMA: " fmt
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/nodemask.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/nodemask.h>
 
 #include <asm/numa.h>
 

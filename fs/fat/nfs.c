@@ -2,7 +2,7 @@
 /* fs/fat/nfs.c
  */
 
-#include <linux/exportfs.h>
+#include <linex/exportfs.h>
 #include "fat.h"
 
 struct fat_fid {

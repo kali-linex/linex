@@ -7,14 +7,14 @@ use Getopt::Long;
 
 # Copyright 2008, Intel Corporation
 #
-# This file is part of the Linux kernel
+# This file is part of the Linex kernel
 #
 # Authors:
-# 	Arjan van de Ven <arjan@linux.intel.com>
+# 	Arjan van de Ven <arjan@linex.intel.com>
 
 
 my $cross_compile = "";
-my $vmlinux_name = "";
+my $vmlinex_name = "";
 my $modulefile = "";
 
 # Get options
@@ -23,14 +23,14 @@ Getopt::Long::GetOptions(
 	'module|m=s'		=> \$modulefile,
 	'help|h'		=> \&usage,
 ) || usage ();
-my $vmlinux_name = $ARGV[0];
-if (!defined($vmlinux_name)) {
+my $vmlinex_name = $ARGV[0];
+if (!defined($vmlinex_name)) {
 	my $kerver = `uname -r`;
 	chomp($kerver);
-	$vmlinux_name = "/lib/modules/$kerver/build/vmlinux";
-	print "No vmlinux specified, assuming $vmlinux_name\n";
+	$vmlinex_name = "/lib/modules/$kerver/build/vmlinex";
+	print "No vmlinex specified, assuming $vmlinex_name\n";
 }
-my $filename = $vmlinux_name;
+my $filename = $vmlinex_name;
 
 # Parse the oops to find the EIP value
 
@@ -355,7 +355,7 @@ while ($i < $finish) {
 sub usage {
 	print <<EOT;
 Usage:
-  dmesg | perl $0 [OPTION] [VMLINUX]
+  dmesg | perl $0 [OPTION] [VMLINEX]
 
 OPTION:
   -c, --cross-compile CROSS_COMPILE	Specify the prefix used for toolchain.

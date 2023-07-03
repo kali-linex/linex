@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/ext2/super.c
+ *  linex/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linex/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,24 +17,24 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/log2.h>
-#include <linux/quotaops.h>
-#include <linux/uaccess.h>
-#include <linux/dax.h>
-#include <linux/iversion.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/parser.h>
+#include <linex/random.h>
+#include <linex/buffer_head.h>
+#include <linex/exportfs.h>
+#include <linex/vfs.h>
+#include <linex/seq_file.h>
+#include <linex/mount.h>
+#include <linex/log2.h>
+#include <linex/quotaops.h>
+#include <linex/uaccess.h>
+#include <linex/dax.h>
+#include <linex/iversion.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

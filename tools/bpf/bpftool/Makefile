@@ -189,28 +189,28 @@ $(BOOTSTRAP_OBJS): $(LIBBPF_BOOTSTRAP)
 OBJS = $(patsubst %.c,$(OUTPUT)%.o,$(SRCS)) $(OUTPUT)disasm.o
 $(OBJS): $(LIBBPF) $(LIBBPF_INTERNAL_HDRS)
 
-VMLINUX_BTF_PATHS ?= $(if $(O),$(O)/vmlinux)				\
-		     $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmlinux)	\
-		     ../../../vmlinux					\
-		     /sys/kernel/btf/vmlinux				\
-		     /boot/vmlinux-$(shell uname -r)
-VMLINUX_BTF ?= $(abspath $(firstword $(wildcard $(VMLINUX_BTF_PATHS))))
+VMLINEX_BTF_PATHS ?= $(if $(O),$(O)/vmlinex)				\
+		     $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmlinex)	\
+		     ../../../vmlinex					\
+		     /sys/kernel/btf/vmlinex				\
+		     /boot/vmlinex-$(shell uname -r)
+VMLINEX_BTF ?= $(abspath $(firstword $(wildcard $(VMLINEX_BTF_PATHS))))
 
 bootstrap: $(BPFTOOL_BOOTSTRAP)
 
-ifneq ($(VMLINUX_BTF)$(VMLINUX_H),)
+ifneq ($(VMLINEX_BTF)$(VMLINEX_H),)
 ifeq ($(feature-clang-bpf-co-re),1)
 
 BUILD_BPF_SKELS := 1
 
-$(OUTPUT)vmlinux.h: $(VMLINUX_BTF) $(BPFTOOL_BOOTSTRAP)
-ifeq ($(VMLINUX_H),)
+$(OUTPUT)vmlinex.h: $(VMLINEX_BTF) $(BPFTOOL_BOOTSTRAP)
+ifeq ($(VMLINEX_H),)
 	$(QUIET_GEN)$(BPFTOOL_BOOTSTRAP) btf dump file $< format c > $@
 else
-	$(Q)cp "$(VMLINUX_H)" $@
+	$(Q)cp "$(VMLINEX_H)" $@
 endif
 
-$(OUTPUT)%.bpf.o: skeleton/%.bpf.c $(OUTPUT)vmlinux.h $(LIBBPF_BOOTSTRAP)
+$(OUTPUT)%.bpf.o: skeleton/%.bpf.c $(OUTPUT)vmlinex.h $(LIBBPF_BOOTSTRAP)
 	$(QUIET_CLANG)$(CLANG) \
 		-I$(or $(OUTPUT),.) \
 		-I$(srctree)/tools/include/uapi/ \
@@ -256,7 +256,7 @@ feature-detect-clean:
 clean: $(LIBBPF)-clean $(LIBBPF_BOOTSTRAP)-clean feature-detect-clean
 	$(call QUIET_CLEAN, bpftool)
 	$(Q)$(RM) -- $(OUTPUT)bpftool $(OUTPUT)*.o $(OUTPUT)*.d
-	$(Q)$(RM) -- $(OUTPUT)*.skel.h $(OUTPUT)vmlinux.h
+	$(Q)$(RM) -- $(OUTPUT)*.skel.h $(OUTPUT)vmlinex.h
 	$(Q)$(RM) -r -- $(LIBBPF_OUTPUT) $(BOOTSTRAP_OUTPUT)
 	$(call QUIET_CLEAN, core-gen)
 	$(Q)$(RM) -- $(OUTPUT)FEATURE-DUMP.bpftool

@@ -3,15 +3,15 @@
  * typec_wcove.c - WhiskeyCove PMIC USB Type-C PHY driver
  *
  * Copyright (C) 2017 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/usb/tcpm.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/intel_soc_pmic.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/usb/tcpm.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/intel_soc_pmic.h>
 
 /* Register offsets */
 #define WCOVE_CHGRIRQ0		0x4e09

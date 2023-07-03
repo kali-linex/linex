@@ -4,9 +4,9 @@
  * Copyright © 2016 Intel Corporation
  */
 
-#include <linux/dma-fence-array.h>
-#include <linux/dma-fence-chain.h>
-#include <linux/jiffies.h>
+#include <linex/dma-fence-array.h>
+#include <linex/dma-fence-chain.h>
+#include <linex/jiffies.h>
 
 #include "gt/intel_engine.h"
 #include "gt/intel_rps.h"

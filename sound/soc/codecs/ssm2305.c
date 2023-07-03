@@ -5,8 +5,8 @@
 // Copyright (C) 2018 Pengutronix, Marco Felsch <kernel@pengutronix.de>
 //
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
 #include <sound/soc.h>
 
 #define DRV_NAME "ssm2305"

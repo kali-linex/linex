@@ -2,8 +2,8 @@
 //
 // Copyright (C) 2013 Freescale Semiconductor, Inc.
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 #include <sound/soc.h>
 
 struct imx_spdif_data {

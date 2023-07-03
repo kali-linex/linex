@@ -9,14 +9,14 @@
  *   Copyright (c) 2003 - 2006 Zultys Technologies
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>

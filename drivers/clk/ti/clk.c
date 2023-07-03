@@ -7,17 +7,17 @@
  * Tero Kristo <t-kristo@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/ti.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/list.h>
-#include <linux/regmap.h>
-#include <linux/memblock.h>
-#include <linux/device.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/clk/ti.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/list.h>
+#include <linex/regmap.h>
+#include <linex/memblock.h>
+#include <linex/device.h>
 
 #include "clock.h"
 

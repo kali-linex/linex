@@ -26,27 +26,27 @@
 #undef DEBUG
 #undef USE_CTRL_O_SYSRQ
 
-#include <linux/module.h>
-#include <linux/tty.h>
+#include <linex/module.h>
+#include <linex/tty.h>
 
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/bitops.h>
-#include <linux/sysrq.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/tty_flip.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
+#include <linex/bitops.h>
+#include <linex/sysrq.h>
+#include <linex/mutex.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 #include <asm/sections.h>
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/irq.h>
 
 #ifdef CONFIG_PPC_PMAC
@@ -54,12 +54,12 @@
 #include <asm/pmac_feature.h>
 #include <asm/macio.h>
 #else
-#include <linux/platform_device.h>
+#include <linex/platform_device.h>
 #define of_machine_is_compatible(x) (0)
 #endif
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
 
 #include "pmac_zilog.h"
 

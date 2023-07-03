@@ -15,33 +15,33 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/seq_file.h>
-#include <linux/sizes.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/platform_data/hsmmc-omap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/debugfs.h>
+#include <linex/dmaengine.h>
+#include <linex/seq_file.h>
+#include <linex/sizes.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/timer.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_device.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/platform_data/hsmmc-omap.h>
 
 /* OMAP HSMMC Host Controller Registers */
 #define OMAP_HSMMC_SYSSTATUS	0x0014

@@ -28,11 +28,11 @@
 #include "amdgpu_pm.h"
 #include "amdgpu_dpm.h"
 #include "atom.h"
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/nospec.h>
-#include <linux/pm_runtime.h>
+#include <linex/pci.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/nospec.h>
+#include <linex/pm_runtime.h>
 #include <asm/processor.h>
 
 static const struct cg_flag_name clocks[] = {

@@ -15,35 +15,35 @@
  * Kevin Chea
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/init.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/module.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/elf.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/init.h>
+#include <linex/prctl.h>
+#include <linex/init_task.h>
+#include <linex/module.h>
+#include <linex/mqueue.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/rcupdate.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/platform.h>
 #include <asm/mmu.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/asm-offsets.h>
 #include <asm/regs.h>
 #include <asm/hw_breakpoint.h>
@@ -57,7 +57,7 @@ EXPORT_SYMBOL(pm_power_off);
 
 
 #ifdef CONFIG_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <linex/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

@@ -10,8 +10,8 @@
 #include "kmsan.h"
 
 #include <asm/sections.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
 
 #include "../internal.h"
 

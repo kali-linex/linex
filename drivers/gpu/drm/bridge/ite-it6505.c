@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The Linex Foundation. All rights reserved.
  */
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/extcon.h>
-#include <linux/fs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/extcon.h>
+#include <linex/fs.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include <crypto/hash.h>
 

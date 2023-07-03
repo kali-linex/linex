@@ -4,18 +4,18 @@
 #include "libslang.h"
 #include "ui.h"
 #include "util.h"
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/string.h>
+#include <linex/compiler.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/string.h>
 #include <stdlib.h>
 #include <sys/ttydefaults.h>
 #include "browser.h"
 #include "helpline.h"
 #include "keysyms.h"
 #include "../util/color.h"
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <linex/ctype.h>
+#include <linex/zalloc.h>
 
 static int ui_browser__percent_color(struct ui_browser *browser,
 				     double percent, bool current)

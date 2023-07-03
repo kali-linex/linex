@@ -9,17 +9,17 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/err.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <linex/mfd/pcf50633/core.h>
 
 #define PCF50633_REG_RTCSC	0x59 /* Second */
 #define PCF50633_REG_RTCMN	0x5a /* Minute */

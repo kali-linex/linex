@@ -5,11 +5,11 @@
  * Copyright (C) 1998 Harald Koerfgen, Frieder Streffer and Paul M. Antoine
  * Copyright (C) 2000, 2002  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/dec/machtype.h>

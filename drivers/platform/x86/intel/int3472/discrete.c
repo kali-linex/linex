@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Dan Scally <djrscally@gmail.com> */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/uuid.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/overflow.h>
+#include <linex/platform_device.h>
+#include <linex/uuid.h>
 
 #include "common.h"
 

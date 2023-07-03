@@ -3,7 +3,7 @@
  * dmm32at.c
  * Diamond Systems Diamond-MM-32-AT Comedi driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,11 +26,11 @@
  * yet supported.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8255.h>
 
 /* Board register addresses */
 #define DMM32AT_AI_START_CONV_REG	0x00

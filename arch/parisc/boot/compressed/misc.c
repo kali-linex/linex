@@ -4,8 +4,8 @@
  *   (C) 2017 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/uaccess.h>
-#include <linux/elf.h>
+#include <linex/uaccess.h>
+#include <linex/elf.h>
 #include <asm/unaligned.h>
 #include <asm/page.h>
 #include "sizes.h"
@@ -284,7 +284,7 @@ unsigned long decompress_kernel(unsigned int started_wide,
 		const unsigned int rd_end)
 {
 	char *output;
-	unsigned long vmlinux_addr, vmlinux_len;
+	unsigned long vmlinex_addr, vmlinex_len;
 	unsigned long kernel_addr, kernel_len;
 
 #ifdef CONFIG_64BIT
@@ -295,7 +295,7 @@ unsigned long decompress_kernel(unsigned int started_wide,
 
 	putchar('D');	/* if you get this D and no more, string storage */
 			/* in $GLOBAL$ is wrong or %dp is wrong */
-	puts("ecompressing Linux... ");
+	puts("ecompressing Linex... ");
 
 	/* where the final bits are stored */
 	kernel_addr = KERNEL_BINARY_TEXT_START;
@@ -304,18 +304,18 @@ unsigned long decompress_kernel(unsigned int started_wide,
 		error("Bootcode overlaps kernel code");
 
 	/*
-	 * Calculate addr to where the vmlinux ELF file shall be decompressed.
+	 * Calculate addr to where the vmlinex ELF file shall be decompressed.
 	 * Assembly code in head.S positioned the stack directly behind bss, so
 	 * leave 2 MB for the stack.
 	 */
-	vmlinux_addr = (unsigned long) &_ebss + 2*1024*1024;
-	vmlinux_len = get_unaligned_le32(&output_len);
-	output = (char *) vmlinux_addr;
+	vmlinex_addr = (unsigned long) &_ebss + 2*1024*1024;
+	vmlinex_len = get_unaligned_le32(&output_len);
+	output = (char *) vmlinex_addr;
 
 	/*
 	 * Initialize free_mem_ptr and free_mem_end_ptr.
 	 */
-	free_mem_ptr = vmlinux_addr + vmlinux_len;
+	free_mem_ptr = vmlinex_addr + vmlinex_len;
 
 	/* Limit memory for bootoader to 1GB */
 	#define ARTIFICIAL_LIMIT (1*1024*1024*1024)
@@ -352,7 +352,7 @@ unsigned long decompress_kernel(unsigned int started_wide,
 	printf("input_data    = %x\n", input_data);
 	printf("input_len     = %x\n", input_len);
 	printf("output        = %x\n", output);
-	printf("output_len    = %x\n", vmlinux_len);
+	printf("output_len    = %x\n", vmlinex_len);
 	printf("kernel_addr   = %x\n", kernel_addr);
 	printf("kernel_len    = %x\n", kernel_len);
 #endif

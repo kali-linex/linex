@@ -12,11 +12,11 @@
 #include <asm/hwcap.h>
 #include <asm/sysreg.h>
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/smp.h>
-#include <linux/types.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/jump_label.h>
+#include <linex/smp.h>
+#include <linex/types.h>
 
 #include <clocksource/arm_arch_timer.h>
 

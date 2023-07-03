@@ -8,7 +8,7 @@
  * Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
  * Copyright (C) 2001 David A. Schleef <ds@schleef.org>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -24,8 +24,8 @@
  *	[0] - I/O port base
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
 
 /*
  * The output range is selected by jumpering pins on the I/O connector.

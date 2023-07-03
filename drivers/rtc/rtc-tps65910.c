@@ -10,18 +10,18 @@
  *   Author: Alexandre Rusev <source@mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/math64.h>
-#include <linux/property.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/tps65910.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/math64.h>
+#include <linex/property.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/tps65910.h>
 
 struct tps65910_rtc {
 	struct rtc_device	*rtc;
@@ -60,10 +60,10 @@ static int tps65910_rtc_alarm_irq_enable(struct device *dev,
  * Gets current tps65910 RTC time and date parameters.
  *
  * The RTC's time/alarm representation is not what gmtime(3) requires
- * Linux to use:
+ * Linex to use:
  *
- *  - Months are 1..12 vs Linux 0-11
- *  - Years are 0..99 vs Linux 1900..N (we assume 21st century)
+ *  - Months are 1..12 vs Linex 0-11
+ *  - Years are 0..99 vs Linex 1900..N (we assume 21st century)
  */
 static int tps65910_rtc_read_time(struct device *dev, struct rtc_time *tm)
 {

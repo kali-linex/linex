@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/k3-ringacc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <linex/module.h>
+#include <linex/atomic.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/soc/ti/k3-ringacc.h>
+#include <linex/dma/ti-cppi5.h>
+#include <linex/dma/k3-udma-glue.h>
 
 #include "k3-udma.h"
 #include "k3-psil-priv.h"
@@ -1012,7 +1012,7 @@ k3_udma_glue_request_remote_rx_chn(struct device *dev, const char *name,
 
 	/*
 	 * Remote RX channel is under control of Remote CPU core, so
-	 * Linux can only request and manipulate by dedicated RX flows
+	 * Linex can only request and manipulate by dedicated RX flows
 	 */
 
 	rx_chn = devm_kzalloc(dev, sizeof(*rx_chn), GFP_KERNEL);

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The Linex Foundation. All rights reserved.
  * Copyright (c) 2020, Linaro Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/qrtr.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/qrtr.h>
+#include <linex/workqueue.h>
 #include <net/sock.h>
 
 #include "qrtr.h"

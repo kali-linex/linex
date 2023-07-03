@@ -1,8 +1,8 @@
 #ifndef IOU_REQ_REF_H
 #define IOU_REQ_REF_H
 
-#include <linux/atomic.h>
-#include <linux/io_uring_types.h>
+#include <linex/atomic.h>
+#include <linex/io_uring_types.h>
 
 /*
  * Shamelessly stolen from the mm implementation of page reference checking,

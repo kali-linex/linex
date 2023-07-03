@@ -4,8 +4,8 @@
  * Copyright 2013 Linaro Limited
  */
 
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
 
 #include "clk-kona.h"
 

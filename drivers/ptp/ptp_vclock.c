@@ -4,8 +4,8 @@
  *
  * Copyright 2021 NXP
  */
-#include <linux/slab.h>
-#include <linux/hashtable.h>
+#include <linex/slab.h>
+#include <linex/hashtable.h>
 #include "ptp_private.h"
 
 #define PTP_VCLOCK_CC_SHIFT		31

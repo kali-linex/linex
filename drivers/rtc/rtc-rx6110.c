@@ -6,16 +6,16 @@
  * Copyright(C) SEIKO EPSON CORPORATION 2013. All rights reserved.
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
+#include <linex/bcd.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/spi/spi.h>
+#include <linex/i2c.h>
 
 /* RX-6110 Register definitions */
 #define RX6110_REG_SEC		0x10
@@ -462,7 +462,7 @@ static struct i2c_driver rx6110_i2c_driver = {
 		.name = RX6110_DRIVER_NAME,
 		.acpi_match_table = rx6110_i2c_acpi_match,
 	},
-	.probe		= rx6110_i2c_probe,
+	.probe_new	= rx6110_i2c_probe,
 	.id_table	= rx6110_i2c_id,
 };
 

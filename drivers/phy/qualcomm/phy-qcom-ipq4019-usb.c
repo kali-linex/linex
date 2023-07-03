@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_platform.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 struct ipq4019_usb_phy {
 	struct device		*dev;

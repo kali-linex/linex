@@ -25,13 +25,13 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/timekeeping.h>
-#include <linux/types.h>
+#include <linex/export.h>
+#include <linex/i2c.h>
+#include <linex/notifier.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
+#include <linex/timekeeping.h>
+#include <linex/types.h>
 
 #include <asm/byteorder.h>
 

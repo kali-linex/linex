@@ -10,21 +10,21 @@
  * Copyright (C) 2003-2005 Benjamin Herrenschmidt.
  *
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/interrupt.h>
-#include <linux/hardirq.h>
-#include <linux/rtc.h>
-#include <linux/of_address.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/time.h>
+#include <linex/adb.h>
+#include <linex/cuda.h>
+#include <linex/pmu.h>
+#include <linex/interrupt.h>
+#include <linex/hardirq.h>
+#include <linex/rtc.h>
+#include <linex/of_address.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>

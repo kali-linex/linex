@@ -2,8 +2,8 @@
 #ifndef __MM_CMA_H__
 #define __MM_CMA_H__
 
-#include <linux/debugfs.h>
-#include <linux/kobject.h>
+#include <linex/debugfs.h>
+#include <linex/kobject.h>
 
 struct cma_kobject {
 	struct kobject kobj;

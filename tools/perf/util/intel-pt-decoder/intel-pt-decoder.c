@@ -13,9 +13,9 @@
 #include <errno.h>
 #include <stdint.h>
 #include <inttypes.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 
 #include "../auxtrace.h"
 

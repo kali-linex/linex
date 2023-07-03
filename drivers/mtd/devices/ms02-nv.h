@@ -7,8 +7,8 @@
  *	systems.
  */
 
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
+#include <linex/ioport.h>
+#include <linex/mtd/mtd.h>
 
 /*
  * Addresses are decoded as follows:

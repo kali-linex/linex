@@ -3,18 +3,18 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/sched.h>
-#include <linux/pid.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_context.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/bitmap.h>
+#include <linex/sched.h>
+#include <linex/pid.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/sched/mm.h>
+#include <linex/mmu_context.h>
 #include <asm/cputable.h>
 #include <asm/current.h>
 #include <asm/copro.h>
@@ -52,7 +52,7 @@ int cxl_context_init(struct cxl_context *ctx, struct cxl_afu *afu, bool master)
 		 * can always access it when dereferenced from IDR. For the same
 		 * reason, the segment table is only destroyed after the context is
 		 * removed from the IDR.  Access to this in the IOCTL is protected by
-		 * Linux filesystem semantics (can't IOCTL until open is complete).
+		 * Linex filesystem semantics (can't IOCTL until open is complete).
 		 */
 		i = cxl_alloc_sst(ctx);
 		if (i)

@@ -16,7 +16,7 @@
  * all copies or substantial portions of the Software.
  */
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_blend.h>
 #include <drm/drm_file.h>

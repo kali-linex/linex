@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, 2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/iio/adc/qcom-vadc-common.h>
+#include <linex/iio/iio.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include <dt-bindings/iio/qcom,spmi-vadc.h>
 

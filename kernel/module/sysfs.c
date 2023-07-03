@@ -5,13 +5,13 @@
  * Copyright (C) 2008 Rusty Russell
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/kallsyms.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/sysfs.h>
+#include <linex/slab.h>
+#include <linex/kallsyms.h>
+#include <linex/mutex.h>
 #include "internal.h"
 
 /*

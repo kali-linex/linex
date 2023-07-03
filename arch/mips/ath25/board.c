@@ -9,8 +9,8 @@
  * Copyright (C) 2006-2009 Felix Fietkau <nbd@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
 #include <asm/irq_cpu.h>
 #include <asm/reboot.h>
 #include <asm/bootinfo.h>

@@ -8,12 +8,12 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
 #include <asm/io.h>
 
 #include <scsi/scsi_host.h>

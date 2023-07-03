@@ -21,7 +21,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include "kfd_priv.h"
 #include "amdgpu_ids.h"
 

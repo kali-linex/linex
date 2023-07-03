@@ -4,10 +4,10 @@
  * Copyright (c) 2020, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 struct pch_fivr_resp {
 	u64 status;
@@ -168,6 +168,6 @@ static struct platform_driver pch_fivr_driver = {
 
 module_platform_driver(pch_fivr_driver);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("ACPI DPTF PCH FIVR driver");

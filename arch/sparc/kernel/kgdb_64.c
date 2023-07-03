@@ -4,10 +4,10 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/ftrace.h>
-#include <linux/context_tracking.h>
+#include <linex/kgdb.h>
+#include <linex/kdebug.h>
+#include <linex/ftrace.h>
+#include <linex/context_tracking.h>
 
 #include <asm/cacheflush.h>
 #include <asm/kdebug.h>
@@ -135,7 +135,7 @@ void __irq_entry smp_kgdb_capture_client(int irq, struct pt_regs *regs)
 
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *linex_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -145,16 +145,16 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr)) {
-			linux_regs->tpc = addr;
-			linux_regs->tnpc = addr + 4;
+			linex_regs->tpc = addr;
+			linex_regs->tnpc = addr + 4;
 		}
 		fallthrough;
 
 	case 'D':
 	case 'k':
-		if (linux_regs->tpc == (unsigned long) arch_kgdb_breakpoint) {
-			linux_regs->tpc = linux_regs->tnpc;
-			linux_regs->tnpc += 4;
+		if (linex_regs->tpc == (unsigned long) arch_kgdb_breakpoint) {
+			linex_regs->tpc = linex_regs->tnpc;
+			linex_regs->tnpc += 4;
 		}
 		return 0;
 	}

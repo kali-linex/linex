@@ -3,18 +3,18 @@
 // Copyright (C) 2013-2018 Arm Ltd.
 // Author: Punit Agrawal <punit.agrawal@arm.com>, Suzuki Poulose <suzuki.poulose@arm.com>
 
-#include <linux/arm-cci.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/arm-cci.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #define DRIVER_NAME		"ARM-CCI PMU"
 

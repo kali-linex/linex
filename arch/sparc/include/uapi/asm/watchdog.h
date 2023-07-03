@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  *
  * watchdog - Driver interface for the hardware watchdog timers
@@ -11,10 +11,10 @@
 #ifndef _SPARC64_WATCHDOG_H
 #define _SPARC64_WATCHDOG_H
 
-#include <linux/watchdog.h>
+#include <linex/watchdog.h>
 
 /* Solaris compatibility ioctls--
- * Ref. <linux/watchdog.h> for standard linux watchdog ioctls
+ * Ref. <linex/watchdog.h> for standard linex watchdog ioctls
  */
 #define WIOCSTART _IO (WATCHDOG_IOCTL_BASE, 10)		/* Start Timer		*/
 #define WIOCSTOP  _IO (WATCHDOG_IOCTL_BASE, 11)		/* Stop Timer		*/

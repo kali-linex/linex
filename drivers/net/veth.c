@@ -9,23 +9,23 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/u64_stats_sync.h>
 
 #include <net/rtnetlink.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/xdp.h>
-#include <linux/veth.h>
-#include <linux/module.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/ptr_ring.h>
-#include <linux/bpf_trace.h>
-#include <linux/net_tstamp.h>
+#include <linex/veth.h>
+#include <linex/module.h>
+#include <linex/bpf.h>
+#include <linex/filter.h>
+#include <linex/ptr_ring.h>
+#include <linex/bpf_trace.h>
+#include <linex/net_tstamp.h>
 #include <net/page_pool.h>
 
 #define DRV_NAME	"veth"

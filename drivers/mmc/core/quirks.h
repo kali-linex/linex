@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/of.h>
-#include <linux/mmc/sdio_ids.h>
+#include <linex/of.h>
+#include <linex/mmc/sdio_ids.h>
 
 #include "card.h"
 

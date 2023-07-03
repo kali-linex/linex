@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2016, Intel Corporation
  *
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linex/init.h>
+#include <linex/pci.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

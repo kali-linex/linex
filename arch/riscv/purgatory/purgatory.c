@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/purgatory.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/purgatory.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 #include <asm/string.h>
 
 u8 purgatory_sha256_digest[SHA256_DIGEST_SIZE] __section(".kexec-purgatory");

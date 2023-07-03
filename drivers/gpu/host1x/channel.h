@@ -8,8 +8,8 @@
 #ifndef __HOST1X_CHANNEL_H
 #define __HOST1X_CHANNEL_H
 
-#include <linux/io.h>
-#include <linux/kref.h>
+#include <linex/io.h>
+#include <linex/kref.h>
 
 #include "cdma.h"
 

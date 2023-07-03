@@ -156,8 +156,8 @@
 
 #endif
 
-#if defined(_LINUX) || defined(__linux__)
-#include <acpi/platform/aclinux.h>
+#if defined(_LINEX) || defined(__linex__)
+#include <acpi/platform/aclinex.h>
 
 #elif defined(_APPLE) || defined(__APPLE__)
 #include "acmacosx.h"

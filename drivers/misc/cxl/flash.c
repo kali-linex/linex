@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/semaphore.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/of.h>
 #include <asm/rtas.h>
 
 #include "cxl.h"

@@ -5,15 +5,15 @@
  * Copyright 2014 Freescale Semiconductor Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
 
 enum ccf_version {
 	CCF1,

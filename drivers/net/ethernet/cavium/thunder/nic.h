@@ -6,9 +6,9 @@
 #ifndef NIC_H
 #define	NIC_H
 
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
 #include "thunder_bgx.h"
 
 /* PCI device IDs */

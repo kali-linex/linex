@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Interface to Linux block layer for MTD 'translation layers'.
+ * Interface to Linex block layer for MTD 'translation layers'.
  *
  * Copyright © 2003-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mtd/mtd.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/spinlock.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/fs.h>
+#include <linex/mtd/blktrans.h>
+#include <linex/mtd/mtd.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/blkpg.h>
+#include <linex/spinlock.h>
+#include <linex/hdreg.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
 
 #include "mtdcore.h"
 

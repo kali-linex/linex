@@ -8,29 +8,29 @@
  * Copyright (C) 2004 Pengutronix
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/rational.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/sysrq.h>
+#include <linex/platform_device.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial_core.h>
+#include <linex/serial.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/ktime.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/rational.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/irq.h>
-#include <linux/dma/imx-dma.h>
+#include <linex/dma/imx-dma.h>
 
 #include "serial_mctrl_gpio.h"
 

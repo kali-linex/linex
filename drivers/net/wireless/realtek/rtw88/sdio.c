@@ -6,9 +6,9 @@
  *   Copyright(c) 2018-2019  Realtek Corporation
  */
 
-#include <linux/module.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
+#include <linex/module.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio_func.h>
 #include "main.h"
 #include "debug.h"
 #include "fw.h"

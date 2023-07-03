@@ -22,8 +22,8 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ucode.h"

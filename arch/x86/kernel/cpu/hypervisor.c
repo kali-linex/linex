@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linex/init.h>
+#include <linex/export.h>
 #include <asm/processor.h>
 #include <asm/hypervisor.h>
 

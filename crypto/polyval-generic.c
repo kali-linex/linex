@@ -49,10 +49,10 @@
 #include <crypto/gf128mul.h>
 #include <crypto/polyval.h>
 #include <crypto/internal/hash.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 struct polyval_tfm_ctx {
 	struct gf128mul_4k *gf128;

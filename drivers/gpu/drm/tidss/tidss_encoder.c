@@ -4,7 +4,7 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/export.h>
+#include <linex/export.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_modeset_helper_vtables.h>

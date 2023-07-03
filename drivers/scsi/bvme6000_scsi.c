@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Detection routine for the NCR53c710 based BVME6000 SCSI Controllers for Linux.
+ * Detection routine for the NCR53c710 based BVME6000 SCSI Controllers for Linex.
  *
  * Based on work by Alan Hourihane and Kars de Jong
  *
  * Rewritten to use 53c700.c by Richard Hirst <richard@sleepie.demon.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
 #include <asm/bvme6000hw.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>

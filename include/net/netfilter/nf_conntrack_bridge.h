@@ -1,9 +1,9 @@
 #ifndef NF_CONNTRACK_BRIDGE_
 #define NF_CONNTRACK_BRIDGE_
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <uapi/linux/if_ether.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <uapi/linex/if_ether.h>
 
 struct nf_hook_ops;
 

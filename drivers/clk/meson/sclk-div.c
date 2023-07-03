@@ -16,8 +16,8 @@
  * duty_cycle = (1 + hi) / (1 + val)
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
 
 #include "clk-regmap.h"
 #include "sclk-div.h"

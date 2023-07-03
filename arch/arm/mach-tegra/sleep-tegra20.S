@@ -7,7 +7,7 @@
  *         Gary King <gking@nvidia.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 #include <soc/tegra/flowctrl.h>
 

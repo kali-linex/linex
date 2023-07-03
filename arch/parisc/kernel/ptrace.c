@@ -2,29 +2,29 @@
 /*
  * Kernel support for the ptrace() and syscall tracing interfaces.
  *
- * Copyright (C) 2000 Hewlett-Packard Co, Linuxcare Inc.
+ * Copyright (C) 2000 Hewlett-Packard Co, Linexcare Inc.
  * Copyright (C) 2000 Matthew Wilcox <matthew@wil.cx>
  * Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
  * Copyright (C) 2008-2016 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/personality.h>
-#include <linux/regset.h>
-#include <linux/security.h>
-#include <linux/seccomp.h>
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/audit.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/elf.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/personality.h>
+#include <linex/regset.h>
+#include <linex/security.h>
+#include <linex/seccomp.h>
+#include <linex/compat.h>
+#include <linex/signal.h>
+#include <linex/audit.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
 #include <asm/asm-offsets.h>
 
@@ -574,7 +574,7 @@ static const struct user_regset native_regsets[] = {
 };
 
 static const struct user_regset_view user_parisc_native_view = {
-	.name = "parisc", .e_machine = ELF_ARCH, .ei_osabi = ELFOSABI_LINUX,
+	.name = "parisc", .e_machine = ELF_ARCH, .ei_osabi = ELFOSABI_LINEX,
 	.regsets = native_regsets, .n = ARRAY_SIZE(native_regsets)
 };
 
@@ -641,7 +641,7 @@ static const struct user_regset compat_regsets[] = {
 };
 
 static const struct user_regset_view user_parisc_compat_view = {
-	.name = "parisc", .e_machine = EM_PARISC, .ei_osabi = ELFOSABI_LINUX,
+	.name = "parisc", .e_machine = EM_PARISC, .ei_osabi = ELFOSABI_LINEX,
 	.regsets = compat_regsets, .n = ARRAY_SIZE(compat_regsets)
 };
 #endif	/* CONFIG_64BIT */

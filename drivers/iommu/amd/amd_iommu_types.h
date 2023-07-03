@@ -8,14 +8,14 @@
 #ifndef _ASM_X86_AMD_IOMMU_TYPES_H
 #define _ASM_X86_AMD_IOMMU_TYPES_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/msi.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/irqreturn.h>
-#include <linux/io-pgtable.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/msi.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/pci.h>
+#include <linex/irqreturn.h>
+#include <linex/io-pgtable.h>
 
 /*
  * Maximum number of IOMMUs supported

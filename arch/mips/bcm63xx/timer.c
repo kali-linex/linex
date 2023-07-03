@@ -6,13 +6,13 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_timer.h>

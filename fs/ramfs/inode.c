@@ -1,10 +1,10 @@
 /*
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for Linex.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  *
- * Usage limits added by David Gibson, Linuxcare Australia.
+ * Usage limits added by David Gibson, Linexcare Australia.
  * This file is released under the GPL.
  */
 
@@ -23,22 +23,22 @@
  * caches is sufficient.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/seq_file.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/highmem.h>
+#include <linex/time.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/backing-dev.h>
+#include <linex/ramfs.h>
+#include <linex/sched.h>
+#include <linex/parser.h>
+#include <linex/magic.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/seq_file.h>
 #include "internal.h"
 
 struct ramfs_mount_opts {

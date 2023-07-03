@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/bitfield.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "rvu_struct.h"
 #include "rvu_reg.h"

@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/spinlock.h>
 
 #define PWM_CTRL		0x00
 #define  CTRL_START		BIT(0)

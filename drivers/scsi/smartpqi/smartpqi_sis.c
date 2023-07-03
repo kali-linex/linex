@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
 #include <scsi/scsi_device.h>
 #include <asm/unaligned.h>
 #include "smartpqi.h"

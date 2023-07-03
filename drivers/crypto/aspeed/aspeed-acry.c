@@ -8,19 +8,19 @@
 #include <crypto/internal/akcipher.h>
 #include <crypto/internal/rsa.h>
 #include <crypto/scatterwalk.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/interrupt.h>
-#include <linux/count_zeros.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mfd/syscon.h>
+#include <linex/interrupt.h>
+#include <linex/count_zeros.h>
+#include <linex/err.h>
+#include <linex/dma-mapping.h>
+#include <linex/regmap.h>
 
 #ifdef CONFIG_CRYPTO_DEV_ASPEED_DEBUG
 #define ACRY_DBG(d, fmt, ...)	\

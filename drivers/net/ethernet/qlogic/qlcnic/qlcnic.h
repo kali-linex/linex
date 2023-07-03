@@ -7,40 +7,40 @@
 #ifndef _QLCNIC_H_
 #define _QLCNIC_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/tcp.h>
+#include <linex/skbuff.h>
+#include <linex/firmware.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/timer.h>
+#include <linex/irq.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <linex/bitops.h>
+#include <linex/if_vlan.h>
 
 #include "qlcnic_hdr.h"
 #include "qlcnic_hw.h"
 #include "qlcnic_83xx_hw.h"
 #include "qlcnic_dcb.h"
 
-#define _QLCNIC_LINUX_MAJOR 5
-#define _QLCNIC_LINUX_MINOR 3
-#define _QLCNIC_LINUX_SUBVERSION 66
-#define QLCNIC_LINUX_VERSIONID  "5.3.66"
+#define _QLCNIC_LINEX_MAJOR 5
+#define _QLCNIC_LINEX_MINOR 3
+#define _QLCNIC_LINEX_SUBVERSION 66
+#define QLCNIC_LINEX_VERSIONID  "5.3.66"
 #define QLCNIC_DRV_IDC_VER  0x01
-#define QLCNIC_DRIVER_VERSION  ((_QLCNIC_LINUX_MAJOR << 16) |\
-		 (_QLCNIC_LINUX_MINOR << 8) | (_QLCNIC_LINUX_SUBVERSION))
+#define QLCNIC_DRIVER_VERSION  ((_QLCNIC_LINEX_MAJOR << 16) |\
+		 (_QLCNIC_LINEX_MINOR << 8) | (_QLCNIC_LINEX_SUBVERSION))
 
 #define QLCNIC_VERSION_CODE(a, b, c)	(((a) << 24) + ((b) << 16) + (c))
 #define _major(v)	(((v) >> 24) & 0xff)

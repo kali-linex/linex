@@ -4,9 +4,9 @@
  * Copyright (c) 2016 Cavium Inc.
  */
 
-#include <linux/blkdev.h>
+#include <linex/blkdev.h>
 #include <scsi/scsi_tcq.h>
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "qedi.h"
 #include "qedi_iscsi.h"

@@ -7,9 +7,9 @@
 #ifndef _QED_CXT_H
 #define _QED_CXT_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/qed/qed_if.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/qed/qed_if.h>
 #include "qed_hsi.h"
 #include "qed.h"
 

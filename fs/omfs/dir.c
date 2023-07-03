@@ -4,9 +4,9 @@
  * Copyright (C) 2005 Bob Copeland <me@bobcopeland.com>
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/buffer_head.h>
+#include <linex/fs.h>
+#include <linex/ctype.h>
+#include <linex/buffer_head.h>
 #include "omfs.h"
 
 static int omfs_hash(const char *name, int namelen, int mod)

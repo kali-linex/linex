@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/qp.h>
+#include <linex/kernel.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/qp.h>
 #include "mlx5_core.h"
 
 int mlx5_core_create_mkey(struct mlx5_core_dev *dev, u32 *mkey, u32 *in,

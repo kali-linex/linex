@@ -26,11 +26,11 @@
  *
  */
 
-#include <linux/circ_buf.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
+#include <linex/circ_buf.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/poll.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_debugfs_crc.h>

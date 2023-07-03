@@ -3,10 +3,10 @@
 #ifndef _DRM_CLIENT_H_
 #define _DRM_CLIENT_H_
 
-#include <linux/iosys-map.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linex/iosys-map.h>
+#include <linex/lockdep.h>
+#include <linex/mutex.h>
+#include <linex/types.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

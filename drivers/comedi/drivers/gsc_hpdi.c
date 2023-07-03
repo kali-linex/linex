@@ -7,7 +7,7 @@
  * Author:  Frank Mori Hess <fmhess@users.sourceforge.net>
  * Copyright (C) 2003 Coherent Imaging Systems
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
@@ -31,10 +31,10 @@
  * support could be added to this driver.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedi_pci.h>
 
 #include "plx9080.h"
 

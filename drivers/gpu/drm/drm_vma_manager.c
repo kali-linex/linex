@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /*
  * Copyright (c) 2006-2009 VMware, Inc., Palo Alto, CA., USA
- * Copyright (c) 2012 David Airlie <airlied@linux.ie>
+ * Copyright (c) 2012 David Airlie <airlied@linex.ie>
  * Copyright (c) 2013 David Herrmann <dh.herrmann@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -23,12 +23,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/rbtree.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include <drm/drm_mm.h>
 #include <drm/drm_vma_manager.h>

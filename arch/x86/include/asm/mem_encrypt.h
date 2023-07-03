@@ -12,8 +12,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/init.h>
-#include <linux/cc_platform.h>
+#include <linex/init.h>
+#include <linex/cc_platform.h>
 
 #include <asm/bootparam.h>
 

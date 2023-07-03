@@ -6,18 +6,18 @@
  * Copyright (C) 2017 Martin Kaiser <martin@kaiser.cx>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/bitfield.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/hw_random.h>
+#include <linex/completion.h>
+#include <linex/io.h>
+#include <linex/bitfield.h>
 
 #define RNGC_VER_ID			0x0000
 #define RNGC_COMMAND			0x0004

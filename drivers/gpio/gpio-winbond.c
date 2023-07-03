@@ -8,10 +8,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/gpio/driver.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/module.h>
+#include <linex/gpio/driver.h>
+#include <linex/ioport.h>
+#include <linex/isa.h>
+#include <linex/module.h>
 
 #define WB_GPIO_DRIVER_NAME		KBUILD_MODNAME
 

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the RISC-V Linux kernel
+# Makefile for the RISC-V Linex kernel
 #
 
 ifdef CONFIG_FTRACE
@@ -33,7 +33,7 @@ KASAN_SANITIZE_cpufeature.o := n
 endif
 endif
 
-extra-y += vmlinux.lds
+extra-y += vmlinex.lds
 
 obj-y	+= head.o
 obj-y	+= soc.o

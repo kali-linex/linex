@@ -43,8 +43,8 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
 #include "pvrdma.h"
 

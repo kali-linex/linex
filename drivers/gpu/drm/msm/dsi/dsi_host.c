@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/of_irq.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_opp.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spinlock.h>
 
 #include <video/mipi_display.h>
 

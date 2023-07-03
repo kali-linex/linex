@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2014 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/debugfs.h>
 
 #include "snic.h"
 

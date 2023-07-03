@@ -17,9 +17,9 @@
  * Configuration Options: not applicable, uses PCI auto config
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/comedi/comedi_pci.h>
 
 #define PCI8164_AXIS(x)		((x) * 0x08)
 #define PCI8164_CMD_MSTS_REG	0x00

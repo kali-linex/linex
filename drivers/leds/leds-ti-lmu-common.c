@@ -5,11 +5,11 @@
 // TI LMU LED common framework, based on previous work from
 // Milo Kim <milo.kim@ti.com>
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/of_device.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/of_device.h>
 
-#include <linux/leds-ti-lmu-common.h>
+#include <linex/leds-ti-lmu-common.h>
 
 static const unsigned int ramp_table[16] = {2048, 262000, 524000, 1049000,
 				2090000, 4194000, 8389000, 16780000, 33550000,

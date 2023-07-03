@@ -9,10 +9,10 @@
 
 #include "acx.h"
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
 
 #include "wlcore.h"
 #include "debug.h"

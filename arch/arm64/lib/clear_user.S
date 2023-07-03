@@ -3,7 +3,7 @@
  * Copyright (C) 2021 Arm Ltd.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm-uaccess.h>
 
 	.text

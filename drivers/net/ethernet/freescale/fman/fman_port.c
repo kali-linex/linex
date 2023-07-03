@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/libfdt_env.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/delay.h>
+#include <linex/libfdt_env.h>
 
 #include "fman.h"
 #include "fman_port.h"

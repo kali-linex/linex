@@ -4,8 +4,8 @@
  * Author: Jyri Sarha <jsarha@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
 
 #include "tidss_scale_coefs.h"
 

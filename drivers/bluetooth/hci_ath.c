@@ -12,15 +12,15 @@
  *  by Maxim Krasnyansky and Marcel Holtmann.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/ioctl.h>
-#include <linux/skbuff.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/errno.h>
+#include <linex/ioctl.h>
+#include <linex/skbuff.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

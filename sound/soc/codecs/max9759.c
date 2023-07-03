@@ -6,8 +6,8 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/tlv.h>

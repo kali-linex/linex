@@ -6,8 +6,8 @@
  * Vaibhav Hiremath <hvaibhav@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
 
 #include "clockdomain.h"
 #include "cm.h"

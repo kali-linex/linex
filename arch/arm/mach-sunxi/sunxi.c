@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/of_clk.h>
-#include <linux/platform_device.h>
-#include <linux/reset/sunxi.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/of_clk.h>
+#include <linex/platform_device.h>
+#include <linex/reset/sunxi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/secure_cntvoff.h>

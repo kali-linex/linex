@@ -3,9 +3,9 @@
 #ifndef __SOC_SOF_CLIENT_H
 #define __SOC_SOF_CLIENT_H
 
-#include <linux/auxiliary_bus.h>
-#include <linux/device.h>
-#include <linux/list.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/device.h>
+#include <linex/list.h>
 #include <sound/sof.h>
 
 struct sof_ipc_fw_version;

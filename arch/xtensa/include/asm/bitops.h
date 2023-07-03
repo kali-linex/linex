@@ -13,8 +13,8 @@
 #ifndef _XTENSA_BITOPS_H
 #define _XTENSA_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _LINEX_BITOPS_H
+#error only <linex/bitops.h> can be included directly
 #endif
 
 #include <asm/processor.h>

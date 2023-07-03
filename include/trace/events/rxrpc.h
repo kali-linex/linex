@@ -10,8 +10,8 @@
 #if !defined(_TRACE_RXRPC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RXRPC_H
 
-#include <linux/tracepoint.h>
-#include <linux/errqueue.h>
+#include <linex/tracepoint.h>
+#include <linex/errqueue.h>
 
 /*
  * Declare tracing information enums and their string mappings for display.

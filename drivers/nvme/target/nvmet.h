@@ -6,27 +6,27 @@
 #ifndef _NVMET_H
 #define _NVMET_H
 
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/percpu-refcount.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/uuid.h>
-#include <linux/nvme.h>
-#include <linux/configfs.h>
-#include <linux/rcupdate.h>
-#include <linux/blkdev.h>
-#include <linux/radix-tree.h>
-#include <linux/t10-pi.h>
+#include <linex/dma-mapping.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/kref.h>
+#include <linex/percpu-refcount.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/uuid.h>
+#include <linex/nvme.h>
+#include <linex/configfs.h>
+#include <linex/rcupdate.h>
+#include <linex/blkdev.h>
+#include <linex/radix-tree.h>
+#include <linex/t10-pi.h>
 
 #define NVMET_DEFAULT_VS		NVME_VS(1, 3, 0)
 
 #define NVMET_ASYNC_EVENTS		4
 #define NVMET_ERROR_LOG_SLOTS		128
 #define NVMET_NO_ERROR_LOC		((u16)-1)
-#define NVMET_DEFAULT_CTRL_MODEL	"Linux"
+#define NVMET_DEFAULT_CTRL_MODEL	"Linex"
 #define NVMET_MN_MAX_SIZE		40
 #define NVMET_SN_MAX_SIZE		20
 #define NVMET_FR_MAX_SIZE		8

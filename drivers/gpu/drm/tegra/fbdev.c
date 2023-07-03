@@ -7,9 +7,9 @@
  *   Copyright (C) 2012 Analog Devices Inc.
  */
 
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
+#include <linex/console.h>
+#include <linex/fb.h>
+#include <linex/vmalloc.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_crtc_helper.h>

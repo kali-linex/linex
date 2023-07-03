@@ -3,11 +3,11 @@
  * Copyright (c) 2016 Chen-Yu Tsai. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

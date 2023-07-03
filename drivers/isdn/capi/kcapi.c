@@ -11,26 +11,26 @@
  */
 
 #include "kcapi.h"
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/proc_fs.h>
+#include <linex/sched/signal.h>
+#include <linex/seq_file.h>
+#include <linex/skbuff.h>
+#include <linex/workqueue.h>
+#include <linex/capi.h>
+#include <linex/kernelcapi.h>
+#include <linex/init.h>
+#include <linex/moduleparam.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/isdn/capicmd.h>
+#include <linex/isdn/capiutil.h>
+#include <linex/mutex.h>
+#include <linex/rcupdate.h>
 
 static int showcapimsgs;
 static struct workqueue_struct *kcapi_wq;

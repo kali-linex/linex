@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2018 Intel Corporation. */
 
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/net/intel/i40e_client.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/net/intel/i40e_client.h>
 
 #include "i40e.h"
 #include "i40e_prototype.h"

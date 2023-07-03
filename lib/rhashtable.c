@@ -11,20 +11,20 @@
  * pointer as suggested by Josh Triplett
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/rhashtable.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/log2.h>
+#include <linex/sched.h>
+#include <linex/rculist.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
+#include <linex/rhashtable.h>
+#include <linex/err.h>
+#include <linex/export.h>
 
 #define HASH_DEFAULT_SIZE	64UL
 #define HASH_MIN_SIZE		4U

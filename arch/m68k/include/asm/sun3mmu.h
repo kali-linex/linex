@@ -5,7 +5,7 @@
 #ifndef __SUN3_MMU_H__
 #define __SUN3_MMU_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/movs.h>
 #include <asm/sun3-head.h>
 

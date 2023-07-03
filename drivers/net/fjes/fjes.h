@@ -7,7 +7,7 @@
 #ifndef FJES_H_
 #define FJES_H_
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 
 #include "fjes_hw.h"
 

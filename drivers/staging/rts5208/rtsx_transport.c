@@ -9,9 +9,9 @@
  *   Micky Ching (micky_ching@realsil.com.cn)
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
+#include <linex/blkdev.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
 
 #include "rtsx.h"
 

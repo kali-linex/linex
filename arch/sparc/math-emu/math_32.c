@@ -3,7 +3,7 @@
  * arch/sparc/math-emu/math.c
  *
  * Copyright (C) 1998 Peter Maydell (pmaydell@chiark.greenend.org.uk)
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linex.cz)
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  *
  * This is a good place to start if you're trying to understand the
@@ -65,11 +65,11 @@
  * emulate it if it did. This is going to be a pain.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/perf_event.h>
+#include <linex/uaccess.h>
 
 #include "sfp-util_32.h"
 #include <math-emu/soft-fp.h>

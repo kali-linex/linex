@@ -8,18 +8,18 @@
  *	   Jon Lin <Jon.lin@rock-chips.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi-mem.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/iopoll.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/spi/spi-mem.h>
 
 /* System control */
 #define SFC_CTRL			0x0

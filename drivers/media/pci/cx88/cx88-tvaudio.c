@@ -12,7 +12,7 @@
  * understand what is going on here, the documentation for the audio
  * part of the cx2388x chip is *very* bad.
  *
- * Some of this comes from party done linux driver sources I got from
+ * Some of this comes from party done linex driver sources I got from
  * [undocumented].
  *
  * Some comes from the dscaler sources, one of the dscaler driver guy works
@@ -23,20 +23,20 @@
 
 #include "cx88.h"
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/freezer.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/poll.h>
+#include <linex/signal.h>
+#include <linex/ioport.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
 
 static unsigned int audio_debug;
 module_param(audio_debug, int, 0644);

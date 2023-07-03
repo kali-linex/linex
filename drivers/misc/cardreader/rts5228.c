@@ -9,9 +9,9 @@
  *   Wei WANG <wei_wang@realsil.com.cn>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/rtsx_pci.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/rtsx_pci.h>
 
 #include "rts5228.h"
 #include "rtsx_pcr.h"

@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * Linex driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2022, VMware, Inc. All Rights Reserved.
  *
@@ -27,35 +27,35 @@
 #ifndef _VMXNET3_INT_H
 #define _VMXNET3_INT_H
 
-#include <linux/bitops.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/ethtool.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/compiler.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/ioport.h>
+#include <linex/highmem.h>
+#include <linex/timer.h>
+#include <linex/skbuff.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/uaccess.h>
 #include <asm/dma.h>
 #include <asm/page.h>
 
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/in.h>
+#include <linex/etherdevice.h>
 #include <asm/checksum.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/log2.h>
+#include <linex/if_vlan.h>
+#include <linex/if_arp.h>
+#include <linex/inetdevice.h>
+#include <linex/log2.h>
 
 #include "vmxnet3_defs.h"
 
@@ -318,9 +318,9 @@ struct vmxnet3_rx_queue {
 /* Should be less than UPT1_RSS_MAX_IND_TABLE_SIZE */
 #define VMXNET3_RSS_IND_TABLE_SIZE (VMXNET3_DEVICE_MAX_RX_QUEUES * 4)
 
-#define VMXNET3_LINUX_MAX_MSIX_VECT     (VMXNET3_DEVICE_MAX_TX_QUEUES + \
+#define VMXNET3_LINEX_MAX_MSIX_VECT     (VMXNET3_DEVICE_MAX_TX_QUEUES + \
 					 VMXNET3_DEVICE_MAX_RX_QUEUES + 1)
-#define VMXNET3_LINUX_MIN_MSIX_VECT     3 /* 1 for tx, 1 for rx pair and 1 for event */
+#define VMXNET3_LINEX_MIN_MSIX_VECT     3 /* 1 for tx, 1 for rx pair and 1 for event */
 
 
 struct vmxnet3_intr {
@@ -328,10 +328,10 @@ struct vmxnet3_intr {
 	enum vmxnet3_intr_type       type;	/* MSI-X, MSI, or INTx? */
 	u8  num_intrs;			/* # of intr vectors */
 	u8  event_intr_idx;		/* idx of the intr vector for event */
-	u8  mod_levels[VMXNET3_LINUX_MAX_MSIX_VECT]; /* moderation level */
+	u8  mod_levels[VMXNET3_LINEX_MAX_MSIX_VECT]; /* moderation level */
 	char	event_msi_vector_name[IFNAMSIZ+17];
 #ifdef CONFIG_PCI_MSI
-	struct msix_entry msix_entries[VMXNET3_LINUX_MAX_MSIX_VECT];
+	struct msix_entry msix_entries[VMXNET3_LINEX_MAX_MSIX_VECT];
 #endif
 };
 

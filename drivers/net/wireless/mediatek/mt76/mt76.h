@@ -6,14 +6,14 @@
 #ifndef __MT76_H
 #define __MT76_H
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/leds.h>
-#include <linux/usb.h>
-#include <linux/average.h>
-#include <linux/soc/mediatek/mtk_wed.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/leds.h>
+#include <linex/usb.h>
+#include <linex/average.h>
+#include <linex/soc/mediatek/mtk_wed.h>
 #include <net/mac80211.h>
 #include "util.h"
 #include "testmode.h"

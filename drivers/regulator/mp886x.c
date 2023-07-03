@@ -6,13 +6,13 @@
 //
 // Author: Jisheng Zhang <jszhang@kernel.org>
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
 
 #define MP886X_VSEL		0x00
 #define  MP886X_V_BOOT		(1 << 7)

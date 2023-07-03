@@ -5,15 +5,15 @@
  * Copyright (C) 2018 Arcx Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <linex/fieldbus_dev.h> when taking this out of staging */
 #include "../fieldbus_dev.h"
 
-/* move to <linux/anybuss-client.h> when taking this out of staging */
+/* move to <linex/anybuss-client.h> when taking this out of staging */
 #include "anybuss-client.h"
 
 #define PROFI_DPRAM_SIZE	512

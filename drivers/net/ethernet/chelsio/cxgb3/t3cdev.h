@@ -32,11 +32,11 @@
 #ifndef _T3CDEV_H_
 #define _T3CDEV_H_
 
-#include <linux/list.h>
-#include <linux/atomic.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
+#include <linex/list.h>
+#include <linex/atomic.h>
+#include <linex/netdevice.h>
+#include <linex/proc_fs.h>
+#include <linex/skbuff.h>
 #include <net/neighbour.h>
 
 #define T3CNAMSIZ 16

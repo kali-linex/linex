@@ -5,13 +5,13 @@
 #if !defined(_TRACE_FILEMAP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FILEMAP_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/device.h>
-#include <linux/kdev_t.h>
-#include <linux/errseq.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
+#include <linex/mm.h>
+#include <linex/memcontrol.h>
+#include <linex/device.h>
+#include <linex/kdev_t.h>
+#include <linex/errseq.h>
 
 DECLARE_EVENT_CLASS(mm_filemap_op_page_cache,
 

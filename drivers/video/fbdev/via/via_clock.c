@@ -8,8 +8,8 @@
  * clock and PLL management functions
  */
 
-#include <linux/kernel.h>
-#include <linux/via-core.h>
+#include <linex/kernel.h>
+#include <linex/via-core.h>
 
 #include "via_clock.h"
 #include "global.h"

@@ -14,23 +14,23 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/uaccess.h>
 #include <net/sock.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
 
 #include <net/netlink.h>
 #include <net/netns/generic.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nfnetlink.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

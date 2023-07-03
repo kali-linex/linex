@@ -3,8 +3,8 @@
  * Copyright(c) 2020 Intel Corporation.
  */
 
-#ifndef _LINUX_XDP_SOCK_DRV_H
-#define _LINUX_XDP_SOCK_DRV_H
+#ifndef _LINEX_XDP_SOCK_DRV_H
+#define _LINEX_XDP_SOCK_DRV_H
 
 #include <net/xdp_sock.h>
 #include <net/xsk_buff_pool.h>
@@ -282,4 +282,4 @@ static inline void xsk_buff_raw_dma_sync_for_device(struct xsk_buff_pool *pool,
 
 #endif /* CONFIG_XDP_SOCKETS */
 
-#endif /* _LINUX_XDP_SOCK_DRV_H */
+#endif /* _LINEX_XDP_SOCK_DRV_H */

@@ -4,14 +4,14 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
+#include <linex/pnp.h>
+#include <linex/module.h>
+#include <linex/io.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/mpu401.h>

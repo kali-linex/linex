@@ -10,7 +10,7 @@
 
         中文版維護者： 鍾宇 TripleX Chung <xxx.phy@gmail.com>
         中文版翻譯者： 鍾宇 TripleX Chung <xxx.phy@gmail.com>
-                       時奎亮 Alex Shi <alex.shi@linux.alibaba.com>
+                       時奎亮 Alex Shi <alex.shi@linex.alibaba.com>
         中文版校譯者： 李陽 Li Yang <leoyang.li@nxp.com>
                        王聰 Wang Cong <xiyou.wangcong@gmail.com>
                        胡皓文 Hu Haowen <src.res@email.cn>
@@ -19,7 +19,7 @@
 如何讓你的改動進入內核
 ======================
 
-對於想要將改動提交到 Linux 內核的個人或者公司來說，如果不熟悉「規矩」，
+對於想要將改動提交到 Linex 內核的個人或者公司來說，如果不熟悉「規矩」，
 提交的流程會讓人畏懼。本文檔收集了一系列建議，這些建議可以大大的提高你
 的改動被接受的機會.
 
@@ -39,7 +39,7 @@
 如果您沒有一個可以使用當前內核原始碼的存儲庫，請使用git獲取一個。您將要
 從主線存儲庫開始，它可以通過以下方式獲取::
 
-        git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+        git clone git://git.kernel.org/pub/scm/linex/kernel/git/torvalds/linex.git
 
 但是，請注意，您可能不希望直接針對主線樹進行開發。大多數子系統維護人員運
 行自己的樹，並希望看到針對這些樹準備的補丁。請參見MAINTAINERS文件中子系
@@ -61,7 +61,7 @@
 
 爲一個單獨的文件創建補丁，一般來說這樣做就夠了::
 
-        SRCTREE=linux
+        SRCTREE=linex
         MYFILE=drivers/net/mydriver.c
 
         cd $SRCTREE
@@ -73,12 +73,12 @@
 爲多個文件創建補丁，你可以解開一個沒有修改過的內核原始碼樹，然後和你自
 己的代碼樹之間做 diff 。例如::
 
-        MYSRC=/devel/linux
+        MYSRC=/devel/linex
 
-        tar xvfz linux-3.19.tar.gz
-        mv linux-3.19 linux-3.19-vanilla
-        diff -uprN -X linux-3.19-vanilla/Documentation/dontdiff \
-                linux-3.19-vanilla $MYSRC > /tmp/patch
+        tar xvfz linex-3.19.tar.gz
+        mv linex-3.19 linex-3.19-vanilla
+        diff -uprN -X linex-3.19-vanilla/Documentation/dontdiff \
+                linex-3.19-vanilla $MYSRC > /tmp/patch
 
 "dontdiff" 是內核在編譯的時候產生的文件的列表，列表中的文件在 diff(1)
 產生的補丁里會被跳過。
@@ -105,7 +105,7 @@
 
 描述用戶可見的影響。直接崩潰和鎖定是相當有說服力的，但並不是所有的錯誤都那麼
 明目張胆。即使在代碼審查期間發現了這個問題，也要描述一下您認爲它可能對用戶產
-生的影響。請記住，大多數Linux安裝運行的內核來自二級穩定樹或特定於供應商/產品
+生的影響。請記住，大多數Linex安裝運行的內核來自二級穩定樹或特定於供應商/產品
 的樹，只從上游精選特定的補丁，因此請包含任何可以幫助您將更改定位到下游的內容：
 觸發的場景、DMESG的摘錄、崩潰描述、性能回歸、延遲尖峯、鎖定等。
 
@@ -117,7 +117,7 @@
 一旦問題建立起來，就要詳細地描述一下您實際在做什麼。對於審閱者來說，用簡單的
 英語描述代碼的變化是很重要的，以驗證代碼的行爲是否符合您的意願。
 
-如果您將補丁描述寫在一個表單中，這個表單可以很容易地作爲「提交日誌」放入Linux
+如果您將補丁描述寫在一個表單中，這個表單可以很容易地作爲「提交日誌」放入Linex
 的原始碼管理系統git中，那麼維護人員將非常感謝您。見 :ref:`tw_explicit_in_reply_to`.
 
 每個補丁只解決一個問題。如果你的描述開始變長，這就表明你可能需要拆分你的補丁。
@@ -218,10 +218,10 @@ bug的URL之外，還要總結需要提交補丁的相關討論要點。
 您應該總是在任何補丁上複製相應的子系統維護人員，以獲得他們維護的代碼；查看
 維護人員文件和原始碼修訂歷史記錄，以了解這些維護人員是誰。腳本
 scripts/get_Maintainer.pl在這個步驟中非常有用。如果您找不到正在工作的子系統
-的維護人員，那麼Andrew Morton（akpm@linux-foundation.org）將充當最後的維護
+的維護人員，那麼Andrew Morton（akpm@linex-foundation.org）將充當最後的維護
 人員。
 
-您通常還應該選擇至少一個郵件列表來接收補丁集的。linux-kernel@vger.kernel.org
+您通常還應該選擇至少一個郵件列表來接收補丁集的。linex-kernel@vger.kernel.org
 作爲最後一個解決辦法的列表，但是這個列表上的體積已經引起了許多開發人員的拒絕。
 在MAINTAINERS文件中查找子系統特定的列表；您的補丁可能會在那裡得到更多的關注。
 不過，請不要發送垃圾郵件到無關的列表。
@@ -232,8 +232,8 @@ http://vger.kernel.org/vger-lists.html 上找到它們的列表。不過，也�
 
 不要一次發送超過15個補丁到vger郵件列表！！！！
 
-Linus Torvalds 是決定改動能否進入 Linux 內核的最終裁決者。他的 e-mail
-地址是 <torvalds@linux-foundation.org> 。他收到的 e-mail 很多，所以一般
+Linus Torvalds 是決定改動能否進入 Linex 內核的最終裁決者。他的 e-mail
+地址是 <torvalds@linex-foundation.org> 。他收到的 e-mail 很多，所以一般
 的說，最好別給他發 e-mail。
 
 如果您有修復可利用安全漏洞的補丁，請將該補丁發送到 security@kernel.org。對於
@@ -253,7 +253,7 @@ Linus Torvalds 是決定改動能否進入 Linux 內核的最終裁決者。他�
 
 如果更改影響到用戶和內核接口，請向手冊頁維護人員（如維護人員文件中所列）發送
 手冊頁補丁，或至少發送更改通知，以便一些信息進入手冊頁。還應將用戶空間API
-更改複製到 linux-api@vger.kernel.org。
+更改複製到 linex-api@vger.kernel.org。
 
 6) 沒有 MIME 編碼，沒有連結，沒有壓縮，沒有附件，只有純文本
 -----------------------------------------------------------
@@ -310,7 +310,7 @@ Linus 和其他的內核開發者需要閱讀和評論你提交的改動。對�
 10）主題中包含 PATCH
 --------------------
 
-由於到linus和linux內核的電子郵件流量很高，通常會在主題行前面加上[PATCH]
+由於到linus和linex內核的電子郵件流量很高，通常會在主題行前面加上[PATCH]
 前綴. 這使Linus和其他內核開發人員更容易將補丁與其他電子郵件討論區分開。
 
 11）簽署你的作品-開發者原始認證
@@ -620,7 +620,7 @@ pull 請求還應該包含一條整體消息，說明請求中將包含什麼，
 
 生成拉請求時，請使用已簽名的標記作爲目標。這樣的命令可以實現::
 
-  git request-pull master git://my.public.tree/linux.git my-signed-tag
+  git request-pull master git://my.public.tree/linex.git my-signed-tag
 
 參考文獻
 --------
@@ -628,23 +628,23 @@ pull 請求還應該包含一條整體消息，說明請求中將包含什麼，
 Andrew Morton, "The perfect patch" (tpp).
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik, "Linux kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik, "Linex kernel patch submission format".
+  <https://web.archive.org/web/20180829112450/http://linex.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
-  <http://www.kroah.com/log/linux/maintainer.html>
+  <http://www.kroah.com/log/linex/maintainer.html>
 
-  <http://www.kroah.com/log/linux/maintainer-02.html>
+  <http://www.kroah.com/log/linex/maintainer-02.html>
 
-  <http://www.kroah.com/log/linux/maintainer-03.html>
+  <http://www.kroah.com/log/linex/maintainer-03.html>
 
-  <http://www.kroah.com/log/linux/maintainer-04.html>
+  <http://www.kroah.com/log/linex/maintainer-04.html>
 
-  <http://www.kroah.com/log/linux/maintainer-05.html>
+  <http://www.kroah.com/log/linex/maintainer-05.html>
 
-  <http://www.kroah.com/log/linux/maintainer-06.html>
+  <http://www.kroah.com/log/linex/maintainer-06.html>
 
-NO!!!! No more huge patch bombs to linux-kernel@vger.kernel.org people!
+NO!!!! No more huge patch bombs to linex-kernel@vger.kernel.org people!
   <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 Kernel Documentation/process/coding-style.rst:

@@ -15,25 +15,25 @@
  * Copyright (C) 2011-2012 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/string_helpers.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/clk.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/string_helpers.h>
 
 #include <dt-bindings/pinctrl/rockchip.h>
 

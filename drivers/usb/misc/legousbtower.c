@@ -73,15 +73,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
+#include <linex/poll.h>
 
 
 #define DRIVER_AUTHOR "Juergen Stuber <starblue@sourceforge.net>"

@@ -5,9 +5,9 @@
  * Based on sound/soc/imx/imx-pcm-dma-mx2.c
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

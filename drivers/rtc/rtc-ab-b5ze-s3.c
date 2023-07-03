@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/interrupt.h>
 
 #define DRV_NAME "rtc-ab-b5ze-s3"
 
@@ -944,7 +944,7 @@ static struct i2c_driver abb5zes3_driver = {
 		.pm = &abb5zes3_rtc_pm_ops,
 		.of_match_table = of_match_ptr(abb5zes3_dt_match),
 	},
-	.probe = abb5zes3_probe,
+	.probe_new = abb5zes3_probe,
 	.id_table = abb5zes3_id,
 };
 module_i2c_driver(abb5zes3_driver);

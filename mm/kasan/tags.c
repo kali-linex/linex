@@ -6,16 +6,16 @@
  * Copyright (c) 2020 Google, Inc.
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/static_key.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/atomic.h>
+#include <linex/init.h>
+#include <linex/kasan.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/memory.h>
+#include <linex/mm.h>
+#include <linex/static_key.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include "kasan.h"
 #include "../slab.h"

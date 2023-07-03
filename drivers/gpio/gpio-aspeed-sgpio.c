@@ -5,18 +5,18 @@
  * Author: Karthikeyan Mani <karthikeyanm@amiindia.co.in>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/gpio/driver.h>
+#include <linex/hashtable.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
 
 #define ASPEED_SGPIO_CTRL		0x54
 

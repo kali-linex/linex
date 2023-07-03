@@ -7,13 +7,13 @@
  * Author: David Lopo
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/chipidea.h>
+#include <linex/usb/usb_phy_generic.h>
 
 /* driver name */
 #define UDC_DRIVER_NAME   "ci_hdrc_pci"

@@ -12,8 +12,8 @@
 #include <time.h>
 #include <sys/stat.h>
 #include <sys/syscall.h>
-#include <linux/mman.h>
-#include "linux/kernel.h"
+#include <linex/mman.h>
+#include "linex/kernel.h"
 
 #include "test_util.h"
 

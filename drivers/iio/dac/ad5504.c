@@ -5,21 +5,21 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/dac/ad5504.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/events.h>
+#include <linex/iio/dac/ad5504.h>
 
 #define AD5504_RES_MASK			GENMASK(11, 0)
 #define AD5504_CMD_READ			BIT(15)

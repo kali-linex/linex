@@ -3,7 +3,7 @@
  * Signal handling for 32bit PPC and 32bit tasks on 64bit PPC
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  * Copyright (C) 2001 IBM
  * Copyright (C) 1997,1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  * Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
@@ -13,28 +13,28 @@
  *    1997-11-28  Modified for POSIX.1b signals by Richard Henderson
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/elf.h>
-#include <linux/ptrace.h>
-#include <linux/pagemap.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/elf.h>
+#include <linex/ptrace.h>
+#include <linex/pagemap.h>
+#include <linex/ratelimit.h>
+#include <linex/syscalls.h>
 #ifdef CONFIG_PPC64
-#include <linux/compat.h>
+#include <linex/compat.h>
 #else
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
+#include <linex/wait.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/tty.h>
+#include <linex/binfmts.h>
 #endif
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 #include <asm/sigcontext.h>

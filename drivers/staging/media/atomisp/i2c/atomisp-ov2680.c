@@ -16,19 +16,19 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/types.h>
 
 #include <media/ov_16bit_addr_reg_helpers.h>
 #include <media/v4l2-device.h>
 
-#include "../include/linux/atomisp_gmin_platform.h"
+#include "../include/linex/atomisp_gmin_platform.h"
 
 #include "ov2680.h"
 

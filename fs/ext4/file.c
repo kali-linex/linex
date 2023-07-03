@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/file.c
+ *  linex/fs/ext4/file.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/file.c
+ *  linex/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,17 +19,17 @@
  *	(jj@sunsite.ms.mff.cuni.cz)
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/mount.h>
-#include <linux/path.h>
-#include <linux/dax.h>
-#include <linux/quotaops.h>
-#include <linux/pagevec.h>
-#include <linux/uio.h>
-#include <linux/mman.h>
-#include <linux/backing-dev.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/iomap.h>
+#include <linex/mount.h>
+#include <linex/path.h>
+#include <linex/dax.h>
+#include <linex/quotaops.h>
+#include <linex/pagevec.h>
+#include <linex/uio.h>
+#include <linex/mman.h>
+#include <linex/backing-dev.h>
 #include "ext4.h"
 #include "ext4_jbd2.h"
 #include "xattr.h"

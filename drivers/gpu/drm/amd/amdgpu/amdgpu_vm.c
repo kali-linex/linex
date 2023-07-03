@@ -26,10 +26,10 @@
  *          Jerome Glisse
  */
 
-#include <linux/dma-fence-array.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/idr.h>
-#include <linux/dma-buf.h>
+#include <linex/dma-fence-array.h>
+#include <linex/interval_tree_generic.h>
+#include <linex/idr.h>
+#include <linex/dma-buf.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_drv.h>

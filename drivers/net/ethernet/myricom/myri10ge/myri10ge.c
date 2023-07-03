@@ -40,31 +40,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/tcp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/dca.h>
-#include <linux/ip.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <linex/tcp.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/dca.h>
+#include <linex/ip.h>
+#include <linex/inet.h>
+#include <linex/in.h>
+#include <linex/ethtool.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/vmalloc.h>
+#include <linex/crc32.h>
+#include <linex/moduleparam.h>
+#include <linex/io.h>
+#include <linex/log2.h>
+#include <linex/slab.h>
+#include <linex/prefetch.h>
 #include <net/checksum.h>
 #include <net/gso.h>
 #include <net/ip.h>
@@ -2427,8 +2427,8 @@ static int myri10ge_open(struct net_device *dev)
 	}
 
 	/*
-	 * Set Linux style TSO mode; this is needed only on newer
-	 *  firmware versions.  Older versions default to Linux
+	 * Set Linex style TSO mode; this is needed only on newer
+	 *  firmware versions.  Older versions default to Linex
 	 *  style TSO
 	 */
 	cmd.data0 = 0;

@@ -6,10 +6,10 @@
  * Author: Stefano Stabellini <stefano.stabellini@eu.citrix.com>
  */
 
-#include <linux/export.h>
-#include <linux/jump_label.h>
-#include <linux/types.h>
-#include <linux/static_call.h>
+#include <linex/export.h>
+#include <linex/jump_label.h>
+#include <linex/types.h>
+#include <linex/static_call.h>
 #include <asm/paravirt.h>
 
 struct static_key paravirt_steal_enabled;

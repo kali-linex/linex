@@ -9,31 +9,31 @@
  * Copyright (C) 2009 Texas Instruments
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/cpu_pm.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h> /* GPIO descriptor enum */
-#include <linux/gpio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/omap-gpmc.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
+#include <linex/cpu_pm.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/ioport.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/consumer.h> /* GPIO descriptor enum */
+#include <linex/gpio/machine.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/omap-gpmc.h>
+#include <linex/pm_runtime.h>
+#include <linex/sizes.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <linex/platform_data/mtd-nand-omap2.h>
 
 #define	DEVICE_NAME		"omap-gpmc"
 

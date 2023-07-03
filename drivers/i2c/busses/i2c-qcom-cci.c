@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+// Copyright (c) 2012-2016, The Linex Foundation. All rights reserved.
 // Copyright (c) 2017-2022 Linaro Limited.
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/i2c.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #define CCI_HW_VERSION				0x0
 #define CCI_RESET_CMD				0x004

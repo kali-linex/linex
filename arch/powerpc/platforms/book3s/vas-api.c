@@ -4,16 +4,16 @@
  * Copyright (C) 2019 Haren Myneni, IBM Corp
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/mmu_context.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/cdev.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/kthread.h>
+#include <linex/sched/signal.h>
+#include <linex/mmu_context.h>
+#include <linex/io.h>
 #include <asm/vas.h>
 #include <uapi/asm/vas-api.h>
 

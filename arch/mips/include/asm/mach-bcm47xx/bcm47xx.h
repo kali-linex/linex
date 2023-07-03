@@ -6,11 +6,11 @@
 #ifndef __ASM_BCM47XX_H
 #define __ASM_BCM47XX_H
 
-#include <linux/ssb/ssb.h>
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_soc.h>
-#include <linux/bcm47xx_nvram.h>
-#include <linux/bcm47xx_sprom.h>
+#include <linex/ssb/ssb.h>
+#include <linex/bcma/bcma.h>
+#include <linex/bcma/bcma_soc.h>
+#include <linex/bcm47xx_nvram.h>
+#include <linex/bcm47xx_sprom.h>
 
 enum bcm47xx_bus_type {
 #ifdef CONFIG_BCM47XX_SSB

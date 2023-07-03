@@ -6,15 +6,15 @@
  * Author: Lucy Liu <lucy.liu@intel.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/slab.h>
+#include <linex/netdevice.h>
+#include <linex/netlink.h>
+#include <linex/slab.h>
 #include <net/netlink.h>
 #include <net/rtnetlink.h>
-#include <linux/dcbnl.h>
+#include <linex/dcbnl.h>
 #include <net/dcbevent.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
+#include <linex/rtnetlink.h>
+#include <linex/init.h>
 #include <net/sock.h>
 
 /* Data Center Bridging (DCB) is a collection of Ethernet enhancements

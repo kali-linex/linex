@@ -6,18 +6,18 @@
  *		Cyril Chemparathy <cyril@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/dma-direction.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_dma.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/knav_dma.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/io.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/dma-direction.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
+#include <linex/of_dma.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/soc/ti/knav_dma.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #define REG_MASK		0xffffffff
 

@@ -8,32 +8,32 @@
  *    Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swiotlb.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/initrd.h>
-#include <linux/export.h>
-#include <linux/cma.h>
-#include <linux/gfp.h>
-#include <linux/dma-direct.h>
-#include <linux/percpu.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/swiotlb.h>
+#include <linex/smp.h>
+#include <linex/init.h>
+#include <linex/pagemap.h>
+#include <linex/memblock.h>
+#include <linex/memory.h>
+#include <linex/pfn.h>
+#include <linex/poison.h>
+#include <linex/initrd.h>
+#include <linex/export.h>
+#include <linex/cma.h>
+#include <linex/gfp.h>
+#include <linex/dma-direct.h>
+#include <linex/percpu.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/kfence.h>
 #include <asm/ptdump.h>
@@ -48,8 +48,8 @@
 #include <asm/kasan.h>
 #include <asm/dma-mapping.h>
 #include <asm/uv.h>
-#include <linux/virtio_anchor.h>
-#include <linux/virtio_config.h>
+#include <linex/virtio_anchor.h>
+#include <linex/virtio_config.h>
 
 pgd_t swapper_pg_dir[PTRS_PER_PGD] __section(".bss..swapper_pg_dir");
 pgd_t invalid_pg_dir[PTRS_PER_PGD] __section(".bss..invalid_pg_dir");

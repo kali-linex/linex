@@ -1,5 +1,5 @@
 /*
-** asm-m68k/pcmcia.c -- Amiga Linux PCMCIA support
+** asm-m68k/pcmcia.c -- Amiga Linex PCMCIA support
 **                      most information was found by disassembling card.resource
 **                      I'm still looking for an official doc !
 **
@@ -12,10 +12,10 @@
 ** Created: 12/10/97 by Alain Malek
 */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/jiffies.h>
+#include <linex/timer.h>
+#include <linex/module.h>
 
 #include <asm/amigayle.h>
 #include <asm/amipcmcia.h>

@@ -9,21 +9,21 @@
  * pool of pages per node.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/efi.h>
-#include <linux/nmi.h>
-#include <linux/genalloc.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/efi.h>
+#include <linex/nmi.h>
+#include <linex/genalloc.h>
+#include <linex/gfp.h>
+#include <linex/pgtable.h>
 #include <asm/efi.h>
 #include <asm/page.h>
 #include <asm/pal.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/tlbflush.h>
 
 struct uncached_pool {

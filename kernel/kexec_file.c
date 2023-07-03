@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/kexec.h>
-#include <linux/memblock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/ima.h>
+#include <linex/capability.h>
+#include <linex/mm.h>
+#include <linex/file.h>
+#include <linex/slab.h>
+#include <linex/kexec.h>
+#include <linex/memblock.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/fs.h>
+#include <linex/ima.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/kernel.h>
-#include <linux/kernel_read_file.h>
-#include <linux/syscalls.h>
-#include <linux/vmalloc.h>
+#include <linex/elf.h>
+#include <linex/elfcore.h>
+#include <linex/kernel.h>
+#include <linex/kernel_read_file.h>
+#include <linex/syscalls.h>
+#include <linex/vmalloc.h>
 #include "kexec_internal.h"
 
 #ifdef CONFIG_KEXEC_SIG

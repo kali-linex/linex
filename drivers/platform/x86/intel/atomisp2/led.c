@@ -6,14 +6,14 @@
  * Copyright (C) 2020 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linex/dmi.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
 
 /* This must be leds-gpio as the leds-gpio driver binds to the name */
 #define DEV_NAME		"leds-gpio"

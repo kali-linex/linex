@@ -10,27 +10,27 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/if_phonet.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/ssi_protocol.h>
+#include <linex/atomic.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/if_ether.h>
+#include <linex/if_arp.h>
+#include <linex/if_phonet.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/notifier.h>
+#include <linex/scatterlist.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
+#include <linex/hsi/hsi.h>
+#include <linex/hsi/ssi_protocol.h>
 
 void ssi_waketest(struct hsi_client *cl, unsigned int enable);
 

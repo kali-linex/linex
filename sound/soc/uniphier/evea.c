@@ -4,11 +4,11 @@
 //
 // Copyright (c) 2016-2017 Socionext Inc.
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 

@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 struct afs_vlserver *afs_alloc_vlserver(const char *name, size_t name_len,

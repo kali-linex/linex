@@ -3,30 +3,30 @@
  *  PA-RISC architecture-specific signal handling support.
  *
  *  Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
- *  Copyright (C) 2000 Linuxcare, Inc.
+ *  Copyright (C) 2000 Linexcare, Inc.
  *  Copyright (C) 2000-2022 Helge Deller <deller@gmx.de>
  *  Copyright (C) 2022 John David Anglin <dave.anglin@bell.net>
  *
  *  Based on the ia64, i386, and alpha versions.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/resume_user_mode.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/resume_user_mode.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/compat.h>
+#include <linex/elf.h>
 #include <asm/ucontext.h>
 #include <asm/rt_sigframe.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-offsets.h>
 #include <asm/vdso.h>

@@ -5,23 +5,23 @@
  * Copyright (C) 2016-2017 Oracle. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
-#include <linux/highmem.h>
-#include <linux/if_vlan.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/mutex.h>
+#include <linex/highmem.h>
+#include <linex/if_vlan.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/sunvnet.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/icmpv6.h>
+#include <linex/icmpv6.h>
 #endif
 
 #include <net/ip.h>

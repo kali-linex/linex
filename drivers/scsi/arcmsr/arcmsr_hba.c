@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : Linex
 **   FILE NAME  : arcmsr_hba.c
 **        BY    : Nick Cheng, C.L. Huang
 **   Description: SCSI RAID Device Driver for Areca RAID Controller
@@ -44,23 +44,23 @@
 **     Firmware Specification, see Documentation/scsi/arcmsr_spec.rst
 *******************************************************************************
 */
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/pci_ids.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/circ_buf.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/spinlock.h>
+#include <linex/pci_ids.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/circ_buf.h>
 #include <asm/dma.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

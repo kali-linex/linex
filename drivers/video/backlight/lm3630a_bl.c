@@ -3,18 +3,18 @@
 * Simple driver for Texas Instruments LM3630A Backlight driver chip
 * Copyright (C) 2012 Texas Instruments
 */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pwm.h>
-#include <linux/platform_data/lm3630a_bl.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/backlight.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
+#include <linex/interrupt.h>
+#include <linex/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pwm.h>
+#include <linex/platform_data/lm3630a_bl.h>
 
 #define REG_CTRL	0x00
 #define REG_BOOST	0x02

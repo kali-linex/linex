@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2014-2016 Christoph Hellwig.
  */
-#include <linux/sunrpc/svc.h>
-#include <linux/blkdev.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_xdr.h>
-#include <linux/pr.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/blkdev.h>
+#include <linex/nfs4.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_xdr.h>
+#include <linex/pr.h>
 
 #include "blocklayout.h"
 

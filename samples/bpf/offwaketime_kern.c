@@ -4,11 +4,11 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/ptrace.h>
-#include <uapi/linux/perf_event.h>
-#include <linux/version.h>
-#include <linux/sched.h>
+#include <uapi/linex/bpf.h>
+#include <uapi/linex/ptrace.h>
+#include <uapi/linex/perf_event.h>
+#include <linex/version.h>
+#include <linex/sched.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 
@@ -155,4 +155,4 @@ int oncpu(struct pt_regs *ctx)
 	return update_counts(ctx, pid, delta);
 }
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = LINEX_VERSION_CODE;

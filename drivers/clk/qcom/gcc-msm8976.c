@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
 #include <dt-bindings/clock/qcom,gcc-msm8976.h>
 

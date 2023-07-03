@@ -4,13 +4,13 @@
  * Copyright (c) 2008-2009 Marvell Semiconductor
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <linex/delay.h>
+#include <linex/etherdevice.h>
+#include <linex/jiffies.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
 #include <net/dsa.h>
 #include "mv88e6060.h"
 

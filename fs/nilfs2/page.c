@@ -7,15 +7,15 @@
  * Written by Ryusuke Konishi and Seiji Kihara.
  */
 
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/page-flags.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/gfp.h>
+#include <linex/pagemap.h>
+#include <linex/writeback.h>
+#include <linex/swap.h>
+#include <linex/bitops.h>
+#include <linex/page-flags.h>
+#include <linex/list.h>
+#include <linex/highmem.h>
+#include <linex/pagevec.h>
+#include <linex/gfp.h>
 #include "nilfs.h"
 #include "page.h"
 #include "mdt.h"

@@ -4,7 +4,7 @@
  * Driver for Keitley das800 series boards and compatibles
  * Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -43,11 +43,11 @@
  *	stop_src:       TRIG_NONE | TRIG_COUNT
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8254.h>
 
 #define N_CHAN_AI             8	/*  number of analog input channels */
 

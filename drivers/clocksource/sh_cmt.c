@@ -5,26 +5,26 @@
  *  Copyright (C) 2008 Magnus Damm
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/sh_timer.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #ifdef CONFIG_SUPERH
 #include <asm/platform_early.h>

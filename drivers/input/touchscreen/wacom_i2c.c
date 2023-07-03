@@ -6,13 +6,13 @@
  * <tobita.tatsunosuke@wacom.co.jp>
  */
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linex/bits.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
 #include <asm/unaligned.h>
 
 /* Bitmasks (for data[3]) */

@@ -5,12 +5,12 @@
  * Copyright (C) 2006 Greg Kroah-Hartman <greg@kroah.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
 
 #define USB_DEBUG_MAX_PACKET_SIZE	8
 #define USB_DEBUG_BRK_SIZE		8

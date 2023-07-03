@@ -6,16 +6,16 @@
  * Copyright (C) 2008 Google Inc
  * Copyright (C) 2009 Bob Copeland (me@bobcopeland.com)
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
 
 #include "wl1251.h"
 

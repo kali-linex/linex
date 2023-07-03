@@ -3,11 +3,11 @@
  * Copyright (c) 2017, Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

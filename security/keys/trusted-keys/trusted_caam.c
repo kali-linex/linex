@@ -5,8 +5,8 @@
 
 #include <keys/trusted_caam.h>
 #include <keys/trusted-type.h>
-#include <linux/build_bug.h>
-#include <linux/key-type.h>
+#include <linex/build_bug.h>
+#include <linex/key-type.h>
 #include <soc/fsl/caam-blob.h>
 
 static struct caam_blob_priv *blobifier;

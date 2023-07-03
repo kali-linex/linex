@@ -13,9 +13,9 @@
  * at some point.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/nmi.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/nmi.h>
 
 #include "internals.h"
 

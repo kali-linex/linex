@@ -7,16 +7,16 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/irq.h>
+#include <linex/mutex.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/pdata.h>
-#include <linux/mfd/da9055/reg.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/da9055/core.h>
+#include <linex/mfd/da9055/pdata.h>
+#include <linex/mfd/da9055/reg.h>
 
 #define DA9055_IRQ_NONKEY_MASK		0x01
 #define DA9055_IRQ_ALM_MASK		0x02

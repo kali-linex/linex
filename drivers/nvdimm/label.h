@@ -5,10 +5,10 @@
 #ifndef __LABEL_H__
 #define __LABEL_H__
 
-#include <linux/ndctl.h>
-#include <linux/sizes.h>
-#include <linux/uuid.h>
-#include <linux/io.h>
+#include <linex/ndctl.h>
+#include <linex/sizes.h>
+#include <linex/uuid.h>
+#include <linex/io.h>
 
 enum {
 	NSINDEX_SIG_LEN = 16,

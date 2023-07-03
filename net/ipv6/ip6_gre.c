@@ -7,28 +7,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/in6.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/hash.h>
-#include <linux/if_tunnel.h>
-#include <linux/ip6_tunnel.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/in.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/if_arp.h>
+#include <linex/init.h>
+#include <linex/in6.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/hash.h>
+#include <linex/if_tunnel.h>
+#include <linex/ip6_tunnel.h>
 
 #include <net/sock.h>
 #include <net/ip.h>

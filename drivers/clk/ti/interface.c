@@ -7,11 +7,11 @@
  * Tero Kristo <t-kristo@ti.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/ti.h>
+#include <linex/clk-provider.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/clk/ti.h>
 #include "clock.h"
 
 #undef pr_fmt

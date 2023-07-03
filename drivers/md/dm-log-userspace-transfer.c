@@ -5,14 +5,14 @@
  * This file is released under the LGPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <net/sock.h>
-#include <linux/workqueue.h>
-#include <linux/connector.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-log-userspace.h>
+#include <linex/workqueue.h>
+#include <linex/connector.h>
+#include <linex/device-mapper.h>
+#include <linex/dm-log-userspace.h>
 
 #include "dm-log-userspace-transfer.h"
 
@@ -152,7 +152,7 @@ static void cn_ulog_callback(struct cn_msg *msg, struct netlink_skb_parms *nsp)
  * dm_consult_userspace
  * @uuid: log's universal unique identifier (must be DM_UUID_LEN in size)
  * @luid: log's local unique identifier
- * @request_type:  found in include/linux/dm-log-userspace.h
+ * @request_type:  found in include/linex/dm-log-userspace.h
  * @data: data to tx to the server
  * @data_size: size of data in bytes
  * @rdata: place to put return data from server

@@ -6,12 +6,12 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/videodev2.h>
 
 #include <media/tuner.h>
 #include <media/drv-intf/cx2341x.h>

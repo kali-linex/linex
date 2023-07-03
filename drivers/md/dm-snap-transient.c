@@ -8,12 +8,12 @@
 
 #include "dm-exception-store.h"
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/dm-io.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/dm-io.h>
 
 #define DM_MSG_PREFIX "transient snapshot"
 

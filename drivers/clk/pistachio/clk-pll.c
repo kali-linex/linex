@@ -5,11 +5,11 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
 
 #include "clk.h"
 

@@ -18,31 +18,31 @@
  *       by Max Krasnyansky
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the Linex
  *  distribution for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/cpuset.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mempolicy.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/export.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/oom.h>
-#include <linux/sched/isolation.h>
-#include <linux/cgroup.h>
-#include <linux/wait.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/cpuset.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mempolicy.h>
+#include <linex/mm.h>
+#include <linex/memory.h>
+#include <linex/export.h>
+#include <linex/rcupdate.h>
+#include <linex/sched.h>
+#include <linex/sched/deadline.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
+#include <linex/security.h>
+#include <linex/spinlock.h>
+#include <linex/oom.h>
+#include <linex/sched/isolation.h>
+#include <linex/cgroup.h>
+#include <linex/wait.h>
 
 DEFINE_STATIC_KEY_FALSE(cpusets_pre_enable_key);
 DEFINE_STATIC_KEY_FALSE(cpusets_enabled_key);

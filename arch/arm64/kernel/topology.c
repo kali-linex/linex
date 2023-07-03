@@ -11,12 +11,12 @@
  * for more details.
  */
 
-#include <linux/acpi.h>
-#include <linux/arch_topology.h>
-#include <linux/cacheinfo.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
+#include <linex/acpi.h>
+#include <linex/arch_topology.h>
+#include <linex/cacheinfo.h>
+#include <linex/cpufreq.h>
+#include <linex/init.h>
+#include <linex/percpu.h>
 
 #include <asm/cpu.h>
 #include <asm/cputype.h>

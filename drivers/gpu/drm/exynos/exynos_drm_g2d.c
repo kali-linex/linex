@@ -4,21 +4,21 @@
  * Authors: Joonyoung Shim <jy0922.shim@samsung.com>
  */
 
-#include <linux/refcount.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linex/refcount.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
 
 #include <drm/drm_file.h>
 #include <drm/exynos_drm.h>

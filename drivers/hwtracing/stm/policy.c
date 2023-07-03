@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/configfs.h>
-#include <linux/slab.h>
-#include <linux/stm.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/configfs.h>
+#include <linex/slab.h>
+#include <linex/stm.h>
 #include "stm.h"
 
 /*

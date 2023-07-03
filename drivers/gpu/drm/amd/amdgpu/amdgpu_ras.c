@@ -21,13 +21,13 @@
  *
  *
  */
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/reboot.h>
-#include <linux/syscalls.h>
-#include <linux/pm_runtime.h>
+#include <linex/debugfs.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/reboot.h>
+#include <linex/syscalls.h>
+#include <linex/pm_runtime.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ras.h"

@@ -12,25 +12,25 @@
  * Common pmac/prep/chrp pci routines. -- Cort
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/numa.h>
-#include <linux/msi.h>
-#include <linux/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/mm.h>
+#include <linex/shmem_fs.h>
+#include <linex/list.h>
+#include <linex/syscalls.h>
+#include <linex/irq.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/vgaarb.h>
+#include <linex/numa.h>
+#include <linex/msi.h>
+#include <linex/irqdomain.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -76,7 +76,7 @@ static int get_phb_number(struct device_node *dn)
 	/*
 	 * Try fixed PHB numbering first, by checking archs and reading
 	 * the respective device-tree properties. Firstly, try reading
-	 * standard "linux,pci-domain", then try reading "ibm,opal-phbid"
+	 * standard "linex,pci-domain", then try reading "ibm,opal-phbid"
 	 * (only present in powernv OPAL environment), then try device-tree
 	 * alias and as the last try to use lower bits of "reg" property.
 	 */
@@ -471,7 +471,7 @@ static int pci_read_irq_line(struct pci_dev *pci_dev)
 		goto error_exit;
 	}
 
-	pr_debug(" Mapped to linux irq %d\n", virq);
+	pr_debug(" Mapped to linex irq %d\n", virq);
 
 	pci_dev->irq = virq;
 

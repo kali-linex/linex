@@ -5,11 +5,11 @@
  * Author: Wenzhen Yu <wenzhen.yu@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include "clk-gate.h"
 #include "clk-mtk.h"
@@ -17,7 +17,7 @@
 #include "clk-pll.h"
 
 #include <dt-bindings/clock/mt7986-clk.h>
-#include <linux/clk.h>
+#include <linex/clk.h>
 
 #define MT7986_PLL_FMAX (2500UL * MHZ)
 #define CON0_MT7986_RST_BAR BIT(27)

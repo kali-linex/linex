@@ -6,20 +6,20 @@
  * Copyright (C) 1996 Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
-#include <linux/spinlock.h>
-#include <linux/bitrev.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/crc32.h>
+#include <linex/spinlock.h>
+#include <linex/bitrev.h>
+#include <linex/slab.h>
+#include <linex/pgtable.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/macio.h>

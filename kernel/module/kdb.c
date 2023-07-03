@@ -5,8 +5,8 @@
  * Copyright (C) 2010 Jason Wessel
  */
 
-#include <linux/module.h>
-#include <linux/kdb.h>
+#include <linex/module.h>
+#include <linex/kdb.h>
 #include "internal.h"
 
 /*

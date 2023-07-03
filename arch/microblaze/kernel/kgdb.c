@@ -6,10 +6,10 @@
  * for more details.
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/kgdb.h>
+#include <linex/kdebug.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-offsets.h>
 #include <asm/kgdb.h>

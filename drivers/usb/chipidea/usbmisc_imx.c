@@ -3,12 +3,12 @@
  * Copyright 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/usb/otg.h>
 
 #include "ci_hdrc_imx.h"
 

@@ -1,5 +1,5 @@
 /*
-   CMTP implementation for Linux Bluetooth stack (BlueZ).
+   CMTP implementation for Linex Bluetooth stack (BlueZ).
    Copyright (C) 2002-2003 Marcel Holtmann <marcel@holtmann.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -20,27 +20,27 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/fcntl.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/ioctl.h>
-#include <linux/file.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
+#include <linex/export.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/fcntl.h>
+#include <linex/skbuff.h>
+#include <linex/socket.h>
+#include <linex/ioctl.h>
+#include <linex/file.h>
+#include <linex/wait.h>
+#include <linex/kthread.h>
 #include <net/sock.h>
 
-#include <linux/isdn/capilli.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
+#include <linex/isdn/capilli.h>
+#include <linex/isdn/capicmd.h>
+#include <linex/isdn/capiutil.h>
 
 #include "cmtp.h"
 

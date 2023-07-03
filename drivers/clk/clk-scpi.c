@@ -5,14 +5,14 @@
  * Copyright (C) 2015 ARM Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/scpi_protocol.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/scpi_protocol.h>
 
 struct scpi_clk {
 	u32 id;

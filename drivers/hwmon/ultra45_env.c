@@ -5,15 +5,15 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/io.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
 
 #define DRV_MODULE_VERSION	"0.1"
 

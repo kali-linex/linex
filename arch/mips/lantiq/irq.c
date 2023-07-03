@@ -5,14 +5,14 @@
  * Copyright (C) 2010 Thomas Langer <thomas.langer@lantiq.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include <asm/bootinfo.h>
 #include <asm/irq_cpu.h>

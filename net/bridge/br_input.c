@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle incoming frames
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netfilter_bridge.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/netfilter_bridge.h>
 #ifdef CONFIG_NETFILTER_FAMILY_BRIDGE
 #include <net/netfilter/nf_queue.h>
 #endif
-#include <linux/neighbour.h>
+#include <linex/neighbour.h>
 #include <net/arp.h>
 #include <net/dsa.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <linex/export.h>
+#include <linex/rculist.h>
 #include "br_private.h"
 #include "br_private_tunnel.h"
 

@@ -6,10 +6,10 @@
  * Authors: Zhang Rui <rui.zhang@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/thermal.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/thermal.h>
 #include "acpi_thermal_rel.h"
 
 #define INT3400_THERMAL_TABLE_CHANGED 0x83

@@ -3,7 +3,7 @@
  * comedi/comedi_fops.c
  * comedi kernel module
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1997-2007 David A. Schleef <ds@schleef.org>
  * compat ioctls:
  * Author: Ian Abbott, MEV Ltd. <abbotti@mev.co.uk>
@@ -12,23 +12,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/cdev.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/fcntl.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/cdev.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
+#include <linex/compat.h>
 
 #include "comedi_internal.h"
 

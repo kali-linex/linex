@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The Linex Foundation. All rights reserved.
  * Debug helper to dump the current kernel pagetables of the system
  * so that we can see what the various memory ranges are set to.
  *
  * Derived from x86 and arm implementation:
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linex.intel.com>
  */
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/ptdump.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/ptdump.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
 
 #include <asm/fixmap.h>
 #include <asm/kasan.h>

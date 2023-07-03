@@ -8,19 +8,19 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/bits.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/nospec.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
+#include <linex/bits.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/nospec.h>
+#include <linex/kvm_host.h>
+#include <linex/module.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
 #include <kvm/arm_hypercalls.h>
 #include <asm/cputype.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/fpsimd.h>
 #include <asm/kvm.h>
 #include <asm/kvm_emulate.h>

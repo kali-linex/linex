@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/net/wireless/libertas/if_sdio.c
+ *  linex/drivers/net/wireless/libertas/if_sdio.c
  *
  *  Copyright 2007-2008 Pierre Ossman
  *
@@ -24,18 +24,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/host.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/firmware.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/host.h>
+#include <linex/pm_runtime.h>
 
 #include "host.h"
 #include "decl.h"

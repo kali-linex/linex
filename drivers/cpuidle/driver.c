@@ -8,14 +8,14 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/tick.h>
-#include <linux/cpu.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/idle.h>
+#include <linex/cpuidle.h>
+#include <linex/cpumask.h>
+#include <linex/tick.h>
+#include <linex/cpu.h>
 
 #include "cpuidle.h"
 

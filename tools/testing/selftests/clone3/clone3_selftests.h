@@ -5,8 +5,8 @@
 
 #define _GNU_SOURCE
 #include <sched.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linex/sched.h>
+#include <linex/types.h>
 #include <stdint.h>
 #include <syscall.h>
 #include <sys/wait.h>

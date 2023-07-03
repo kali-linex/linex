@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/spi/pxa2xx_spi.h>
+#include <linex/platform_data/i2c-pxa.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include "udc.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linex/platform_data/video-pxafb.h>
+#include <linex/platform_data/mmc-pxamci.h>
 #include "irqs.h"
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmp_dma.h>
+#include <linex/platform_data/usb-ohci-pxa27x.h>
+#include <linex/platform_data/mmp_dma.h>
 
 #include "regs-ost.h"
 #include "reset.h"

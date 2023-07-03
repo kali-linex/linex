@@ -7,14 +7,14 @@
 // Authors: Lars Ivar Miljeteig <lars.ivar.miljeteig@remarkable.com>
 //          Alistair Francis <alistair@alistair23.me>
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/mfd/sy7636a.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/mfd/sy7636a.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regmap.h>
 
 struct sy7636a_data {
 	struct regmap *regmap;

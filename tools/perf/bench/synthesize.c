@@ -16,9 +16,9 @@
 #include "../util/thread_map.h"
 #include "../util/tool.h"
 #include "../util/util.h"
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/time64.h>
+#include <linex/atomic.h>
+#include <linex/err.h>
+#include <linex/time64.h>
 #include <subcmd/parse-options.h>
 
 static unsigned int min_threads = 1;

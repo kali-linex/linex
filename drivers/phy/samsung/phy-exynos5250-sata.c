@@ -7,19 +7,19 @@
  *         Yuvaraj Kumar C D <yuvaraj.cd@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/mfd/syscon.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/spinlock.h>
+#include <linex/mfd/syscon.h>
 
 #define SATAPHY_CONTROL_OFFSET		0x0724
 #define EXYNOS5_SATAPHY_PMU_ENABLE	BIT(0)

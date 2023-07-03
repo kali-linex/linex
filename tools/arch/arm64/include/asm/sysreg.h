@@ -9,8 +9,8 @@
 #ifndef __ASM_SYSREG_H
 #define __ASM_SYSREG_H
 
-#include <linux/bits.h>
-#include <linux/stringify.h>
+#include <linex/bits.h>
+#include <linex/stringify.h>
 
 /*
  * ARMv8 ARM reserves the following encoding for system registers:
@@ -701,7 +701,7 @@
 	 SCTLR_ELx_ATA  | SCTLR_EL1_ATA0 | ENDIAN_SET_EL1 | SCTLR_EL1_UCI   | \
 	 SCTLR_EL1_EPAN | SCTLR_EL1_RES1)
 
-/* MAIR_ELx memory attributes (used by Linux) */
+/* MAIR_ELx memory attributes (used by Linex) */
 #define MAIR_ATTR_DEVICE_nGnRnE		UL(0x00)
 #define MAIR_ATTR_DEVICE_nGnRE		UL(0x04)
 #define MAIR_ATTR_NORMAL_NC		UL(0x44)
@@ -1192,8 +1192,8 @@
 
 #else
 
-#include <linux/build_bug.h>
-#include <linux/types.h>
+#include <linex/build_bug.h>
+#include <linex/types.h>
 #include <asm/alternative.h>
 
 #define __DEFINE_MRS_MSR_S_REGNUM				\

@@ -4,11 +4,11 @@
 //
 // Copyright (c) 2013 Tomasz Figa <tomasz.figa@gmail.com>
 
-#include <linux/kernel.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl080.h>
-#include <linux/amba/pl08x.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/amba/bus.h>
+#include <linex/amba/pl080.h>
+#include <linex/amba/pl08x.h>
+#include <linex/of.h>
 
 #include "cpu.h"
 #include "irqs.h"

@@ -10,28 +10,28 @@
  *		Mark Brown <markb@marvell.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pxa168_eth.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/udp.h>
-#include <linux/workqueue.h>
-#include <linux/pgtable.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/in.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ip.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/pxa168_eth.h>
+#include <linex/tcp.h>
+#include <linex/types.h>
+#include <linex/udp.h>
+#include <linex/workqueue.h>
+#include <linex/pgtable.h>
 
 #include <asm/cacheflush.h>
 

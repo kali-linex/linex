@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt)	"kexec-bzImage64: " fmt
 
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/kexec.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/efi.h>
-#include <linux/random.h>
+#include <linex/string.h>
+#include <linex/printk.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/kexec.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/efi.h>
+#include <linex/random.h>
 
 #include <asm/bootparam.h>
 #include <asm/setup.h>

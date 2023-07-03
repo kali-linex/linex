@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/fdtable.h>
-#include <linux/anon_inodes.h>
-#include <linux/uio.h>
+#include <linex/fdtable.h>
+#include <linex/anon_inodes.h>
+#include <linex/uio.h>
 #include "internal.h"
 
 static int cachefiles_ondemand_fd_release(struct inode *inode,

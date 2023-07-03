@@ -7,20 +7,20 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/list.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/power_supply.h>
+#include <linex/list.h>
 #include <asm/div64.h>
-#include <linux/mfd/da9150/core.h>
-#include <linux/mfd/da9150/registers.h>
-#include <linux/devm-helpers.h>
+#include <linex/mfd/da9150/core.h>
+#include <linex/mfd/da9150/registers.h>
+#include <linex/devm-helpers.h>
 
 /* Core2Wire */
 #define DA9150_QIF_READ		(0x0 << 7)

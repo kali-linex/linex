@@ -3,11 +3,11 @@
  * Copyright 2012-2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
 
-#include <linux/irqchip.h>
+#include <linex/irqchip.h>
 #include <asm/mach/arch.h>
 #include <asm/hardware/cache-l2x0.h>
 

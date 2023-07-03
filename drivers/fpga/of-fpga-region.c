@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * FPGA Region - Device Tree support for FPGA programming under Linux
+ * FPGA Region - Device Tree support for FPGA programming under Linex
  *
  *  Copyright (C) 2013-2016 Altera Corporation
  *  Copyright (C) 2017 Intel Corporation
  */
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/fpga/fpga-region.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/fpga/fpga-bridge.h>
+#include <linex/fpga/fpga-mgr.h>
+#include <linex/fpga/fpga-region.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 static const struct of_device_id fpga_region_of_match[] = {
 	{ .compatible = "fpga-region", },

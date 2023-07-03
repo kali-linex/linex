@@ -7,19 +7,19 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/power_supply.h>
-#include <linux/notifier.h>
-#include <linux/usb/phy.h>
-#include <linux/iio/consumer.h>
-#include <linux/mfd/da9150/core.h>
-#include <linux/mfd/da9150/registers.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/interrupt.h>
+#include <linex/power_supply.h>
+#include <linex/notifier.h>
+#include <linex/usb/phy.h>
+#include <linex/iio/consumer.h>
+#include <linex/mfd/da9150/core.h>
+#include <linex/mfd/da9150/registers.h>
 
 /* Private data */
 struct da9150_charger {

@@ -11,36 +11,36 @@
  * or riemer@riemer-nt.de: fixed the link beat detection with
  * ioctls (SIOCGMIIPHY)
  * Copyright 2006 Herbert Valerio Riedel <hvr@gnu.org>
- *  converted to use linux-2.6.x's PHY framework
+ *  converted to use linex-2.6.x's PHY framework
  *
  * Author: MontaVista Software, Inc.
  *		ppopov@mvista.com or source@mvista.com
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <linex/capability.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/in.h>
+#include <linex/ioport.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/skbuff.h>
+#include <linex/delay.h>
+#include <linex/crc32.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/cpu.h>
+#include <linex/io.h>
 
 #include <asm/mipsregs.h>
 #include <asm/irq.h>

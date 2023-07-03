@@ -5,9 +5,9 @@
  * Authors: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
  *	    Mark Salter <msalter@redhat.com>
  */
-#include <linux/acpi.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 
 #include <asm/cpu_ops.h>
 

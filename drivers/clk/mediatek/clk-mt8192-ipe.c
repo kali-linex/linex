@@ -3,9 +3,9 @@
 // Copyright (c) 2021 MediaTek Inc.
 // Author: Chun-Jie Chen <chun-jie.chen@mediatek.com>
 
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

@@ -5,18 +5,18 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/siphash.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/jiffies.h>
+#include <linex/string.h>
+#include <linex/in.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/siphash.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

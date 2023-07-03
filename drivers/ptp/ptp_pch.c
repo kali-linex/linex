@@ -8,19 +8,19 @@
  * This code was derived from the IXP46X driver.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_pch.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/ptp_pch.h>
+#include <linex/slab.h>
 
 #define STATION_ADDR_LEN	20
 #define PCI_DEVICE_ID_PCH_1588	0x8819

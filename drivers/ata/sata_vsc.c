@@ -3,7 +3,7 @@
  *  sata_vsc.c - Vitesse VSC7174 4 port DPA SATA
  *
  *  Maintained by:  Jeremy Higdon @ SGI
- * 		    Please ALWAYS copy linux-ide@vger.kernel.org
+ * 		    Please ALWAYS copy linex-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004 SGI
@@ -18,16 +18,16 @@
  *  available from http://developer.intel.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME	"sata_vsc"
 #define DRV_VERSION	"2.3"

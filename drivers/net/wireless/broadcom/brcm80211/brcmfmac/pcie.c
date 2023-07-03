@@ -3,19 +3,19 @@
  * Copyright (c) 2014 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/bcma/bcma.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/bcma/bcma.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/kthread.h>
+#include <linex/io.h>
+#include <linex/random.h>
 #include <asm/unaligned.h>
 
 #include <soc.h>

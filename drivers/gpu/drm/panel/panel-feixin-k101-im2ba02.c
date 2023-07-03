@@ -3,12 +3,12 @@
  * Copyright (C) 2019-2020 Icenowy Zheng <icenowy@aosc.io>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_modes.h>

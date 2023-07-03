@@ -7,13 +7,13 @@
  * Chen-Yu Tsai  <wens@csie.org>
  */
 
-#include <linux/stmmac.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/of_net.h>
-#include <linux/regulator/consumer.h>
+#include <linex/stmmac.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/of_net.h>
+#include <linex/regulator/consumer.h>
 
 #include "stmmac_platform.h"
 

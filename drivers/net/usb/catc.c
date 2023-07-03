@@ -20,22 +20,22 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/ethtool.h>
+#include <linex/crc32.h>
+#include <linex/bitops.h>
+#include <linex/gfp.h>
+#include <linex/uaccess.h>
 
 #undef DEBUG
 
-#include <linux/usb.h>
+#include <linex/usb.h>
 
 /*
  * Version information.

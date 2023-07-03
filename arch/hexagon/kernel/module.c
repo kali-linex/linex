@@ -2,14 +2,14 @@
 /*
  * Kernel module loader for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Linex Foundation. All rights reserved.
  */
 
 #include <asm/module.h>
-#include <linux/elf.h>
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
+#include <linex/elf.h>
+#include <linex/module.h>
+#include <linex/moduleloader.h>
+#include <linex/vmalloc.h>
 
 #if 0
 #define DEBUGP printk

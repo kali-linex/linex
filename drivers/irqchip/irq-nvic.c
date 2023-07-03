@@ -10,16 +10,16 @@
  */
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
 
 #include <asm/v7m.h>
 #include <asm/exception.h>

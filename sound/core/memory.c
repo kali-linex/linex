@@ -5,9 +5,9 @@
  *  Misc memory accessors
  */
 
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 #include <sound/core.h>
 
 /**

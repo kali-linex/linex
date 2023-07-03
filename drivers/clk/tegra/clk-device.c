@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #include <soc/tegra/common.h>
 

@@ -2,11 +2,11 @@
 
 #define pr_fmt(fmt) "smccc: KVM: " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/bitmap.h>
-#include <linux/cache.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/arm-smccc.h>
+#include <linex/bitmap.h>
+#include <linex/cache.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 
 #include <asm/hypervisor.h>
 

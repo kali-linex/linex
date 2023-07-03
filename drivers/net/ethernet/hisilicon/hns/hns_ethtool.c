@@ -3,10 +3,10 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include "hns_enet.h"
 
 #define HNS_PHY_PAGE_MDIX	0

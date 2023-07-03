@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2004, 2005 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2004, 2005 Dominik Brodowski <linex@brodo.de>
  *  Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  *  			- Added processor hotplug support
  *  Copyright (C) 2005  Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
@@ -12,22 +12,22 @@
  */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/sched.h>       /* need_resched() */
-#include <linux/sort.h>
-#include <linux/tick.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/minmax.h>
-#include <linux/perf_event.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/sched.h>       /* need_resched() */
+#include <linex/sort.h>
+#include <linex/tick.h>
+#include <linex/cpuidle.h>
+#include <linex/cpu.h>
+#include <linex/minmax.h>
+#include <linex/perf_event.h>
 #include <acpi/processor.h>
-#include <linux/context_tracking.h>
+#include <linex/context_tracking.h>
 
 /*
  * Include the apic definitions for x86 to have the APIC timer related defines
- * available also for UP (on SMP it gets magically included via linux/smp.h).
+ * available also for UP (on SMP it gets magically included via linex/smp.h).
  * asm/acpi.h is not an option, as it would require more include magic. Also
  * creating an empty asm-ia64/apic.h would just trade pest vs. cholera.
  */

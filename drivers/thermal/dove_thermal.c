@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2013 Andrew Lunn <andrew@lunn.ch>
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/thermal.h>
 
 #define DOVE_THERMAL_TEMP_OFFSET	1
 #define DOVE_THERMAL_TEMP_MASK		0x1FF

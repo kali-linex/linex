@@ -8,18 +8,18 @@
  * Author: Jan Nikitenko <jan.nikitenko@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/dma-mapping.h>
-#include <linux/completion.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/resource.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi_bitbang.h>
+#include <linex/dma-mapping.h>
+#include <linex/completion.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_psc.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>

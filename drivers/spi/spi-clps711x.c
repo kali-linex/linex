@@ -5,17 +5,17 @@
  *  Copyright (C) 2012-2016 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
-#include <linux/spi/spi.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/clps711x.h>
+#include <linex/spi/spi.h>
 
 #define DRIVER_NAME		"clps711x-spi"
 

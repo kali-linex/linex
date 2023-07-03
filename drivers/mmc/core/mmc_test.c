@@ -3,19 +3,19 @@
  *  Copyright 2007-2008 Pierre Ossman
  */
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/slab.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/slab.h>
 
-#include <linux/scatterlist.h>
-#include <linux/list.h>
+#include <linex/scatterlist.h>
+#include <linex/list.h>
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
+#include <linex/module.h>
 
 #include "core.h"
 #include "card.h"

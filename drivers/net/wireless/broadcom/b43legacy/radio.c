@@ -16,7 +16,7 @@
 
 */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "b43legacy.h"
 #include "main.h"

@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_BCACHE_H
-#define _LINUX_BCACHE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
+#ifndef _LINEX_BCACHE_H
+#define _LINEX_BCACHE_H
 
 /*
  * Bcache on disk data structures
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #define BITMASK(name, type, field, offset, size)		\
 static inline __u64 name(const type *k)				\
@@ -443,4 +443,4 @@ struct uuid_entry_v0 {
 	__u32		pad;
 };
 
-#endif /* _LINUX_BCACHE_H */
+#endif /* _LINEX_BCACHE_H */

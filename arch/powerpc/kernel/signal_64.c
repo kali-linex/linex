@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version 
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Derived from "arch/i386/kernel/signal.c"
  *    Copyright (C) 1991, 1992 Linus Torvalds
  *    1997-11-28  Modified for POSIX.1b signals by Richard Henderson
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/elf.h>
-#include <linux/ptrace.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/elf.h>
+#include <linex/ptrace.h>
+#include <linex/ratelimit.h>
+#include <linex/syscalls.h>
+#include <linex/pagemap.h>
 
 #include <asm/sigcontext.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>

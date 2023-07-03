@@ -6,16 +6,16 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  */
 
 #ifndef SMC_CDC_H
 #define SMC_CDC_H
 
-#include <linux/kernel.h> /* max_t */
-#include <linux/atomic.h>
-#include <linux/in.h>
-#include <linux/compiler.h>
+#include <linex/kernel.h> /* max_t */
+#include <linex/atomic.h>
+#include <linex/in.h>
+#include <linex/compiler.h>
 
 #include "smc.h"
 #include "smc_core.h"

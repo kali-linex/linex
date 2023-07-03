@@ -10,14 +10,14 @@
  * Richard Woodruff <r-woodruff2@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
 
 #include "soc.h"
 #include "iomap.h"

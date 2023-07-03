@@ -11,10 +11,10 @@
  * Based largely on io_se.c.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 
 enum {

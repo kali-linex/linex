@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mmtimer.h>
-#include <linux/miscdevice.h>
-#include <linux/posix-timers.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/math64.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/ioctl.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/mmtimer.h>
+#include <linex/miscdevice.h>
+#include <linex/posix-timers.h>
+#include <linex/interrupt.h>
+#include <linex/time.h>
+#include <linex/math64.h>
 
 #include <asm/genapic.h>
 #include <asm/uv/uv_hub.h>

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/cache_lib.c
+ * linex/fs/nfs/cache_lib.c
  *
  * Helper routines for the NFS client caches
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  */
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <linex/kmod.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/sunrpc/cache.h>
+#include <linex/sunrpc/rpc_pipe_fs.h>
 #include <net/net_namespace.h>
 
 #include "cache_lib.h"
@@ -35,7 +35,7 @@ MODULE_PARM_DESC(cache_getent_timeout, "Timeout (in seconds) after which "
 int nfs_cache_upcall(struct cache_detail *cd, char *entry_name)
 {
 	static char *envp[] = { "HOME=/",
-		"TERM=linux",
+		"TERM=linex",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

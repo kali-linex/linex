@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 #include <net/tso.h>
 
 #include "cn10k.h"

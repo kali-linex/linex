@@ -4,27 +4,27 @@
 //
 // Refer to drivers/dma/imx-sdma.c
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/list.h>
-#include <linux/dma/mxs-dma.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/dmaengine.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/stmp_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/list.h>
+#include <linex/dma/mxs-dma.h>
 
 #include <asm/irq.h>
 

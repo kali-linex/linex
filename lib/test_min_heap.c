@@ -5,11 +5,11 @@
  * Test cases for the min max heap.
  */
 
-#include <linux/log2.h>
-#include <linux/min_heap.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
+#include <linex/log2.h>
+#include <linex/min_heap.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/random.h>
 
 static __init bool less_than(const void *lhs, const void *rhs)
 {

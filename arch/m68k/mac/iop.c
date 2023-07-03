@@ -108,12 +108,12 @@
  * should execute quickly.)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>

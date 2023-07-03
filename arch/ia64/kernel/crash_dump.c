@@ -7,10 +7,10 @@
  *	Original code comment copied from the i386 version of this file
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/crash_dump.h>
-#include <linux/uio.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/crash_dump.h>
+#include <linex/uio.h>
 #include <asm/page.h>
 
 ssize_t copy_oldmem_page(struct iov_iter *iter, unsigned long pfn,

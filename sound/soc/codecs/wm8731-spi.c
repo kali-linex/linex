@@ -10,9 +10,9 @@
  * Based on wm8753.c by Liam Girdwood
  */
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 #include "wm8731.h"
 

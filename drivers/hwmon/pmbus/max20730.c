@@ -7,17 +7,17 @@
  * Copyright 2020 Maxim Integrated
  */
 
-#include <linux/bits.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pmbus.h>
-#include <linux/util_macros.h>
+#include <linex/bits.h>
+#include <linex/debugfs.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/pmbus.h>
+#include <linex/util_macros.h>
 #include "pmbus.h"
 
 enum chips {
@@ -782,7 +782,7 @@ static struct i2c_driver max20730_driver = {
 
 module_i2c_driver(max20730_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linex@roeck-us.net>");
 MODULE_DESCRIPTION("PMBus driver for Maxim MAX20710 / MAX20730 / MAX20734 / MAX20743");
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(PMBUS);

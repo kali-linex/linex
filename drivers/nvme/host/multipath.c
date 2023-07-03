@@ -3,9 +3,9 @@
  * Copyright (c) 2017-2018 Christoph Hellwig.
  */
 
-#include <linux/backing-dev.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
+#include <linex/backing-dev.h>
+#include <linex/moduleparam.h>
+#include <linex/vmalloc.h>
 #include <trace/events/block.h>
 #include "nvme.h"
 

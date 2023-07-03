@@ -11,16 +11,16 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/completion.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/pmi.h>

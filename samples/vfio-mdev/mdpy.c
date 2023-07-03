@@ -15,17 +15,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/cdev.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/cdev.h>
+#include <linex/vfio.h>
+#include <linex/iommu.h>
+#include <linex/sysfs.h>
+#include <linex/mdev.h>
+#include <linex/pci.h>
 #include <drm/drm_fourcc.h>
 #include "mdpy-defs.h"
 

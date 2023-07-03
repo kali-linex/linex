@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2016, 2021, 2023 Intel Corporation.
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *          Pandith N <pandith.n@intel.com>
  *          Raag Jadav <raag.jadav@intel.com>
  */
@@ -12,9 +12,9 @@
 #ifndef _GPIO_TANGIER_H_
 #define _GPIO_TANGIER_H_
 
-#include <linux/gpio/driver.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <linex/gpio/driver.h>
+#include <linex/spinlock_types.h>
+#include <linex/types.h>
 
 struct device;
 

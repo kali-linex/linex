@@ -4,10 +4,10 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Philipp Rudo <prudo@linux.vnet.ibm.com>
+ * Author(s): Philipp Rudo <prudo@linex.vnet.ibm.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>
 #include <asm/sigp.h>

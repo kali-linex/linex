@@ -5,8 +5,8 @@
  * Author: Sebastian Reichel <sebastian.reichel@collabora.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/of.h>
 #include <dt-bindings/reset/rockchip,rk3588-cru.h>
 #include "clk.h"
 

@@ -6,18 +6,18 @@
  * Copyright (C) 2014 Google, Inc
  */
 
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/devfreq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/reset.h>
-#include <linux/workqueue.h>
+#include <linex/clk.h>
+#include <linex/cpufreq.h>
+#include <linex/devfreq.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/reset.h>
+#include <linex/workqueue.h>
 
 #include <soc/tegra/fuse.h>
 

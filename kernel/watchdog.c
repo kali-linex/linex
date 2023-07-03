@@ -12,20 +12,20 @@
 
 #define pr_fmt(fmt) "watchdog: " fmt
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/tick.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/isolation.h>
-#include <linux/stop_machine.h>
+#include <linex/mm.h>
+#include <linex/cpu.h>
+#include <linex/nmi.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/sysctl.h>
+#include <linex/tick.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/isolation.h>
+#include <linex/stop_machine.h>
 
 #include <asm/irq_regs.h>
-#include <linux/kvm_para.h>
+#include <linex/kvm_para.h>
 
 static DEFINE_MUTEX(watchdog_mutex);
 

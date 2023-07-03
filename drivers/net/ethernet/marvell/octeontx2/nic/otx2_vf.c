@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/net_tstamp.h>
+#include <linex/etherdevice.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/net_tstamp.h>
 
 #include "otx2_common.h"
 #include "otx2_reg.h"

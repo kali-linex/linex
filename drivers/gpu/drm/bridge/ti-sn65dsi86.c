@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The Linex Foundation. All rights reserved.
  * datasheet: https://www.ti.com/lit/ds/symlink/sn65dsi86.pdf
  */
 
-#include <linux/atomic.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/atomic.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
+#include <linex/i2c.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/pm_runtime.h>
+#include <linex/pwm.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 

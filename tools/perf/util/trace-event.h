@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <sys/types.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct evlist;
 struct machine;
@@ -148,7 +148,7 @@ static inline bool tep_field_is_relative(unsigned long flags)
 	return (flags & TEP_FIELD_IS_RELATIVE) != 0;
 }
 #else
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 static inline bool tep_field_is_relative(unsigned long flags __maybe_unused)
 {

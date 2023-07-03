@@ -4,14 +4,14 @@
  *
  * Copyright (c) 2017-present, Facebook, Inc.
  */
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/vmalloc.h>
-#include <linux/zstd.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/vmalloc.h>
+#include <linex/zstd.h>
 #include <crypto/internal/scompress.h>
 
 

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017-2020 NXP
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/i2c.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/i2c.h>
+#include <linex/of_gpio.h>
+#include <linex/slab.h>
+#include <linex/gpio.h>
+#include <linex/clk.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include <sound/control.h>

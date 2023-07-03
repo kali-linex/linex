@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/hfsplus/super.c
+ *  linex/fs/hfsplus/super.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,15 +8,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/nls.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pagemap.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/vfs.h>
+#include <linex/nls.h>
 
 static struct inode *hfsplus_alloc_inode(struct super_block *sb);
 static void hfsplus_free_inode(struct inode *inode);

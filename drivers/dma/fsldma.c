@@ -19,19 +19,19 @@
  * on some platforms.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/fsldma.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/dmaengine.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/fsldma.h>
 #include "dmaengine.h"
 #include "fsldma.h"
 

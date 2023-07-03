@@ -4,21 +4,21 @@
  */
 
 /*
- * Analog joystick and gamepad driver for Linux
+ * Analog joystick and gamepad driver for Linex
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
-#include <linux/seq_buf.h>
-#include <linux/timex.h>
-#include <linux/timekeeping.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/gameport.h>
+#include <linex/jiffies.h>
+#include <linex/seq_buf.h>
+#include <linex/timex.h>
+#include <linex/timekeeping.h>
 
 #define DRIVER_DESC	"Analog joystick and gamepad driver"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/base.c
+ *  linex/fs/proc/base.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -22,7 +22,7 @@
  *  Ilias Biris <ilias.biris@indt.org.br>
  *  Mauricio Lin <mauricio.lin@indt.org.br>
  *
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded Linex Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *
  *  A new process specific entry (smaps) included in /proc. It shows the
  *  size of rss for each memory area. The maps entry lacks information
@@ -33,7 +33,7 @@
  *
  *  Changelog:
  *  21-Feb-2005
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded Linex Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *  Pud inclusion in the page table walking.
  *
  *  ChangeLog:
@@ -48,55 +48,55 @@
  *  Overall revision about smaps.
  */
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/namei.h>
-#include <linux/mnt_namespace.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/rcupdate.h>
-#include <linux/kallsyms.h>
-#include <linux/stacktrace.h>
-#include <linux/resource.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/printk.h>
-#include <linux/cache.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/audit.h>
-#include <linux/poll.h>
-#include <linux/nsproxy.h>
-#include <linux/oom.h>
-#include <linux/elf.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/stat.h>
-#include <linux/posix-timers.h>
-#include <linux/time_namespace.h>
-#include <linux/resctrl.h>
-#include <linux/cn_proc.h>
-#include <linux/ksm.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/init.h>
+#include <linex/capability.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/generic-radix-tree.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
+#include <linex/namei.h>
+#include <linex/mnt_namespace.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/rcupdate.h>
+#include <linex/kallsyms.h>
+#include <linex/stacktrace.h>
+#include <linex/resource.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/security.h>
+#include <linex/ptrace.h>
+#include <linex/printk.h>
+#include <linex/cache.h>
+#include <linex/cgroup.h>
+#include <linex/cpuset.h>
+#include <linex/audit.h>
+#include <linex/poll.h>
+#include <linex/nsproxy.h>
+#include <linex/oom.h>
+#include <linex/elf.h>
+#include <linex/pid_namespace.h>
+#include <linex/user_namespace.h>
+#include <linex/fs_struct.h>
+#include <linex/slab.h>
+#include <linex/sched/autogroup.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/stat.h>
+#include <linex/posix-timers.h>
+#include <linex/time_namespace.h>
+#include <linex/resctrl.h>
+#include <linex/cn_proc.h>
+#include <linex/ksm.h>
 #include <trace/events/oom.h>
 #include "internal.h"
 #include "fd.h"

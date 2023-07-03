@@ -6,32 +6,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/log2.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/mii.h>
+#include <linex/if.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/ipv6.h>
+#include <linex/log2.h>
+#include <linex/jiffies.h>
+#include <linex/crc32.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
-#include <linux/io.h>
-#include <linux/of_device.h>
+#include <linex/io.h>
+#include <linex/of_device.h>
 
 #include "niu.h"
 

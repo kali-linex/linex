@@ -5,11 +5,11 @@
  * Copyright (c) 2009 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
-#include <linux/pci.h>
+#include <linex/pci.h>
 #include <sound/tlv.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

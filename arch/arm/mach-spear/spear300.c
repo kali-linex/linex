@@ -10,8 +10,8 @@
 
 #define pr_fmt(fmt) "SPEAr300: " fmt
 
-#include <linux/amba/pl08x.h>
-#include <linux/of_platform.h>
+#include <linex/amba/pl08x.h>
+#include <linex/of_platform.h>
 #include <asm/mach/arch.h>
 #include "generic.h"
 #include "spear.h"

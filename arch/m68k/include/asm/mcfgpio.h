@@ -9,7 +9,7 @@
 #define mcfgpio_h
 
 #ifdef CONFIG_GPIOLIB
-#include <linux/gpio.h>
+#include <linex/gpio.h>
 #else
 
 int __mcfgpio_get_value(unsigned gpio);

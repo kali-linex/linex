@@ -70,7 +70,7 @@
 	};
 
 	usb3_id: usb3-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&tlmm 25 GPIO_ACTIVE_LOW>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb_detect>;
@@ -473,7 +473,7 @@
 };
 
 &pm8994_resin {
-	linux,code = <KEY_VOLUMEUP>;
+	linex,code = <KEY_VOLUMEUP>;
 	status = "okay";
 };
 

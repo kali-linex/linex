@@ -73,13 +73,13 @@
  * manual attachment.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8254.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/comedi/comedi_pci.h>
+#include <linex/comedi/comedi_8254.h>
 
 #include "amcc_s5933.h"
 

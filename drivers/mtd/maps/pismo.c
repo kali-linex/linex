@@ -4,16 +4,16 @@
  *
  * For ARM Realview and Versatile platforms
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/pismo.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/mtd/physmap.h>
+#include <linex/mtd/plat-ram.h>
+#include <linex/mtd/pismo.h>
 
 #define PISMO_NUM_CS	5
 
@@ -279,6 +279,6 @@ static void __exit pismo_exit(void)
 }
 module_exit(pismo_exit);
 
-MODULE_AUTHOR("Russell King <linux@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <linex@arm.linex.org.uk>");
 MODULE_DESCRIPTION("PISMO memory driver");
 MODULE_LICENSE("GPL");

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  Copyright (C) 1999 VA Linux Systems
- *  Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ *  Copyright (C) 1999 VA Linex Systems
+ *  Copyright (C) 1999 Walt Drummond <drummond@valinex.com>
  *  Copyright (C) 2000,2001 J.I. Lee <jung-ik.lee@intel.com>
  *  Copyright (C) 2001,2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  */
@@ -13,8 +13,8 @@
 
 #include <acpi/pdc_intel.h>
 
-#include <linux/init.h>
-#include <linux/numa.h>
+#include <linex/init.h>
+#include <linex/numa.h>
 #include <asm/numa.h>
 
 

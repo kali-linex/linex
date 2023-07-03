@@ -10,26 +10,26 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997 Miguel de Icaza (miguel@nuclecu.unam.mx)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/kd.h>
-#include <linux/selection.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/kd.h>
+#include <linex/selection.h>
+#include <linex/console.h>
+#include <linex/vt_kern.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/gio_device.h>
 
 #include <video/newport.h>
 
-#include <linux/linux_logo.h>
-#include <linux/font.h>
+#include <linex/linex_logo.h>
+#include <linex/font.h>
 
 #define NEWPORT_LEN	0x10000
 
@@ -93,10 +93,10 @@ static inline void newport_init_cmap(void)
 	}
 }
 
-static const struct linux_logo *newport_show_logo(void)
+static const struct linex_logo *newport_show_logo(void)
 {
 #ifdef CONFIG_LOGO_SGI_CLUT224
-	const struct linux_logo *logo = fb_find_logo(8);
+	const struct linex_logo *logo = fb_find_logo(8);
 	const unsigned char *clut;
 	const unsigned char *data;
 	unsigned long i;

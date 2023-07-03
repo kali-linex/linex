@@ -7,8 +7,8 @@
  *          Jason McMullan <jason.mcmullan@netronome.com>
  *          Espen Skoglund <espen.skoglund@netronome.com>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 
 #include "nfp.h"
 #include "nfp_cpp.h"

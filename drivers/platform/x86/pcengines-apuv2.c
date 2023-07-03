@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
-#include <linux/platform_data/gpio/gpio-amd-fch.h>
+#include <linex/dmi.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/gpio_keys.h>
+#include <linex/gpio/machine.h>
+#include <linex/input.h>
+#include <linex/platform_data/gpio/gpio-amd-fch.h>
 
 /*
  * NOTE: this driver only supports APUv2/3 - not APUv1, as this one

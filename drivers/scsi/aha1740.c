@@ -1,6 +1,6 @@
 /*  $Id$
  *  1993/03/31
- *  linux/kernel/aha1740.c
+ *  linex/kernel/aha1740.c
  *
  *  Based loosely on aha1542.c which is
  *  Copyright (C) 1992  Tommy Thorn and
@@ -37,20 +37,20 @@
  * are deemed to be part of the source code.
  */
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <linex/blkdev.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/eisa.h>
+#include <linex/dma-mapping.h>
+#include <linex/gfp.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

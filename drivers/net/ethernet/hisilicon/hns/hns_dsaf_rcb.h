@@ -6,8 +6,8 @@
 #ifndef _HNS_DSAF_RCB_H
 #define _HNS_DSAF_RCB_H
 
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
 
 #include "hnae.h"
 #include "hns_dsaf_main.h"

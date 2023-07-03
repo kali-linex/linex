@@ -5,18 +5,18 @@
  * Author: ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/bits.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeup.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
+#include <linex/bits.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeup.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/usb/tcpci.h>
+#include <linex/usb/tcpm.h>
 
 #define MT6370_REG_SYSCTRL8	0x9B
 

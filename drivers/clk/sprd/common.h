@@ -8,9 +8,9 @@
 #ifndef _SPRD_CLK_COMMON_H_
 #define _SPRD_CLK_COMMON_H_
 
-#include <linux/clk-provider.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
 
 struct device_node;
 

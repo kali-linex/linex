@@ -9,14 +9,14 @@
  * Copyright (C) 2009 Provigent Ltd.
  */
 
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/completion.h>
-#include <linux/dev_printk.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/compiler_types.h>
+#include <linex/completion.h>
+#include <linex/dev_printk.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
 
 #define DW_IC_DEFAULT_FUNCTIONALITY		(I2C_FUNC_I2C | \
 						 I2C_FUNC_SMBUS_BYTE | \

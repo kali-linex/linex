@@ -1,5 +1,5 @@
 /*
- * Compressed rom filesystem for Linux.
+ * Compressed rom filesystem for Linex.
  *
  * Copyright (C) 1999 Linus Torvalds.
  *
@@ -13,23 +13,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/pfn_t.h>
-#include <linux/ramfs.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/super.h>
-#include <linux/fs_context.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/mutex.h>
-#include <uapi/linux/cramfs_fs.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/pagemap.h>
+#include <linex/pfn_t.h>
+#include <linex/ramfs.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/blkdev.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/super.h>
+#include <linex/fs_context.h>
+#include <linex/slab.h>
+#include <linex/vfs.h>
+#include <linex/mutex.h>
+#include <uapi/linex/cramfs_fs.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 

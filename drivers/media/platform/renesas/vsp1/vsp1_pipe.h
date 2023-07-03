@@ -9,10 +9,10 @@
 #ifndef __VSP1_PIPE_H__
 #define __VSP1_PIPE_H__
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
 #include <media/media-entity.h>
 

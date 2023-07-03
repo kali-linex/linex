@@ -9,17 +9,17 @@
  * Andrii Tseglytskyi <andrii.tseglytskyi@ti.com>
  * Nishanth Menon <nm@ti.com>
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
 
 /*
  * ABB LDO operating states:
@@ -336,7 +336,7 @@ static int ti_abb_set_voltage_sel(struct regulator_dev *rdev, unsigned int sel)
 
 	info = &abb->info[sel];
 	/*
-	 * When Linux kernel is starting up, we aren't sure of the
+	 * When Linex kernel is starting up, we aren't sure of the
 	 * Bias configuration that bootloader has configured.
 	 * So, we get to know the actual setting the first time
 	 * we are asked to transition.

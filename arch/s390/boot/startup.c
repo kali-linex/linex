@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/elf.h>
+#include <linex/string.h>
+#include <linex/elf.h>
 #include <asm/boot_data.h>
 #include <asm/sections.h>
 #include <asm/maccess.h>
@@ -69,7 +69,7 @@ static void setup_lpp(void)
 #ifdef CONFIG_KERNEL_UNCOMPRESSED
 unsigned long mem_safe_offset(void)
 {
-	return vmlinux.default_lma + vmlinux.image_size + vmlinux.bss_size;
+	return vmlinex.default_lma + vmlinex.image_size + vmlinex.bss_size;
 }
 #endif
 
@@ -91,12 +91,12 @@ static void rescue_initrd(unsigned long min, unsigned long max)
 
 static void copy_bootdata(void)
 {
-	if (__boot_data_end - __boot_data_start != vmlinux.bootdata_size)
+	if (__boot_data_end - __boot_data_start != vmlinex.bootdata_size)
 		error(".boot.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_off, __boot_data_start, vmlinux.bootdata_size);
-	if (__boot_data_preserved_end - __boot_data_preserved_start != vmlinux.bootdata_preserved_size)
+	memcpy((void *)vmlinex.bootdata_off, __boot_data_start, vmlinex.bootdata_size);
+	if (__boot_data_preserved_end - __boot_data_preserved_start != vmlinex.bootdata_preserved_size)
 		error(".boot.preserved.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_preserved_off, __boot_data_preserved_start, vmlinux.bootdata_preserved_size);
+	memcpy((void *)vmlinex.bootdata_preserved_off, __boot_data_preserved_start, vmlinex.bootdata_preserved_size);
 }
 
 static void handle_relocs(unsigned long offset)
@@ -106,9 +106,9 @@ static void handle_relocs(unsigned long offset)
 	Elf64_Addr loc, val;
 	Elf64_Sym *dynsym;
 
-	rela_start = (Elf64_Rela *) vmlinux.rela_dyn_start;
-	rela_end = (Elf64_Rela *) vmlinux.rela_dyn_end;
-	dynsym = (Elf64_Sym *) vmlinux.dynsym_start;
+	rela_start = (Elf64_Rela *) vmlinex.rela_dyn_start;
+	rela_end = (Elf64_Rela *) vmlinex.rela_dyn_end;
+	dynsym = (Elf64_Sym *) vmlinex.dynsym_start;
 	for (rela = rela_start; rela < rela_end; rela++) {
 		loc = rela->r_offset + offset;
 		val = rela->r_addend;
@@ -233,11 +233,11 @@ static unsigned long setup_kernel_memory_layout(void)
 }
 
 /*
- * This function clears the BSS section of the decompressed Linux kernel and NOT the decompressor's.
+ * This function clears the BSS section of the decompressed Linex kernel and NOT the decompressor's.
  */
-static void clear_bss_section(unsigned long vmlinux_lma)
+static void clear_bss_section(unsigned long vmlinex_lma)
 {
-	memset((void *)vmlinux_lma + vmlinux.image_size, 0, vmlinux.bss_size);
+	memset((void *)vmlinex_lma + vmlinex.image_size, 0, vmlinex.bss_size);
 }
 
 /*
@@ -254,30 +254,30 @@ static void setup_vmalloc_size(void)
 	vmalloc_size = max(size, vmalloc_size);
 }
 
-static void offset_vmlinux_info(unsigned long offset)
+static void offset_vmlinex_info(unsigned long offset)
 {
-	*(unsigned long *)(&vmlinux.entry) += offset;
-	vmlinux.bootdata_off += offset;
-	vmlinux.bootdata_preserved_off += offset;
-	vmlinux.rela_dyn_start += offset;
-	vmlinux.rela_dyn_end += offset;
-	vmlinux.dynsym_start += offset;
-	vmlinux.init_mm_off += offset;
-	vmlinux.swapper_pg_dir_off += offset;
-	vmlinux.invalid_pg_dir_off += offset;
+	*(unsigned long *)(&vmlinex.entry) += offset;
+	vmlinex.bootdata_off += offset;
+	vmlinex.bootdata_preserved_off += offset;
+	vmlinex.rela_dyn_start += offset;
+	vmlinex.rela_dyn_end += offset;
+	vmlinex.dynsym_start += offset;
+	vmlinex.init_mm_off += offset;
+	vmlinex.swapper_pg_dir_off += offset;
+	vmlinex.invalid_pg_dir_off += offset;
 #ifdef CONFIG_KASAN
-	vmlinux.kasan_early_shadow_page_off += offset;
-	vmlinux.kasan_early_shadow_pte_off += offset;
-	vmlinux.kasan_early_shadow_pmd_off += offset;
-	vmlinux.kasan_early_shadow_pud_off += offset;
-	vmlinux.kasan_early_shadow_p4d_off += offset;
+	vmlinex.kasan_early_shadow_page_off += offset;
+	vmlinex.kasan_early_shadow_pte_off += offset;
+	vmlinex.kasan_early_shadow_pmd_off += offset;
+	vmlinex.kasan_early_shadow_pud_off += offset;
+	vmlinex.kasan_early_shadow_p4d_off += offset;
 #endif
 }
 
 void startup_kernel(void)
 {
 	unsigned long max_physmem_end;
-	unsigned long vmlinux_lma = 0;
+	unsigned long vmlinex_lma = 0;
 	unsigned long amode31_lma = 0;
 	unsigned long asce_limit;
 	unsigned long safe_addr;
@@ -316,32 +316,32 @@ void startup_kernel(void)
 	rescue_initrd(safe_addr, ident_map_size);
 
 	if (kaslr_enabled()) {
-		vmlinux_lma = randomize_within_range(vmlinux.image_size + vmlinux.bss_size,
-						     THREAD_SIZE, vmlinux.default_lma,
+		vmlinex_lma = randomize_within_range(vmlinex.image_size + vmlinex.bss_size,
+						     THREAD_SIZE, vmlinex.default_lma,
 						     ident_map_size);
-		if (vmlinux_lma) {
-			__kaslr_offset = vmlinux_lma - vmlinux.default_lma;
-			offset_vmlinux_info(__kaslr_offset);
+		if (vmlinex_lma) {
+			__kaslr_offset = vmlinex_lma - vmlinex.default_lma;
+			offset_vmlinex_info(__kaslr_offset);
 		}
 	}
-	vmlinux_lma = vmlinux_lma ?: vmlinux.default_lma;
-	physmem_reserve(RR_VMLINUX, vmlinux_lma, vmlinux.image_size + vmlinux.bss_size);
+	vmlinex_lma = vmlinex_lma ?: vmlinex.default_lma;
+	physmem_reserve(RR_VMLINEX, vmlinex_lma, vmlinex.image_size + vmlinex.bss_size);
 
 	if (!IS_ENABLED(CONFIG_KERNEL_UNCOMPRESSED)) {
 		img = decompress_kernel();
-		memmove((void *)vmlinux_lma, img, vmlinux.image_size);
+		memmove((void *)vmlinex_lma, img, vmlinex.image_size);
 	} else if (__kaslr_offset) {
-		img = (void *)vmlinux.default_lma;
-		memmove((void *)vmlinux_lma, img, vmlinux.image_size);
-		memset(img, 0, vmlinux.image_size);
+		img = (void *)vmlinex.default_lma;
+		memmove((void *)vmlinex_lma, img, vmlinex.image_size);
+		memset(img, 0, vmlinex.image_size);
 	}
 
-	/* vmlinux decompression is done, shrink reserved low memory */
+	/* vmlinex decompression is done, shrink reserved low memory */
 	physmem_reserve(RR_DECOMPRESSOR, 0, (unsigned long)_decompressor_end);
 	if (kaslr_enabled())
-		amode31_lma = randomize_within_range(vmlinux.amode31_size, PAGE_SIZE, 0, SZ_2G);
-	amode31_lma = amode31_lma ?: vmlinux.default_lma - vmlinux.amode31_size;
-	physmem_reserve(RR_AMODE31, amode31_lma, vmlinux.amode31_size);
+		amode31_lma = randomize_within_range(vmlinex.amode31_size, PAGE_SIZE, 0, SZ_2G);
+	amode31_lma = amode31_lma ?: vmlinex.default_lma - vmlinex.amode31_size;
+	physmem_reserve(RR_AMODE31, amode31_lma, vmlinex.amode31_size);
 
 	/*
 	 * The order of the following operations is important:
@@ -356,7 +356,7 @@ void startup_kernel(void)
 	 * - copy_bootdata() must follow setup_vmem() to propagate changes to
 	 *   bootdata made by setup_vmem()
 	 */
-	clear_bss_section(vmlinux_lma);
+	clear_bss_section(vmlinex_lma);
 	handle_relocs(__kaslr_offset);
 	setup_vmem(asce_limit);
 	copy_bootdata();
@@ -370,7 +370,7 @@ void startup_kernel(void)
 	/*
 	 * Jump to the decompressed kernel entry point and switch DAT mode on.
 	 */
-	psw.addr = vmlinux.entry;
+	psw.addr = vmlinex.entry;
 	psw.mask = PSW_KERNEL_BITS;
 	__load_psw(psw);
 }

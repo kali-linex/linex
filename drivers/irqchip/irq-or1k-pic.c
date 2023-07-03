@@ -4,11 +4,11 @@
  * Copyright (C) 2014 Stefan Kristansson <stefan.kristiansson@saunalahti.fi>
  */
 
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
 
 /* OR1K PIC implementation */
 

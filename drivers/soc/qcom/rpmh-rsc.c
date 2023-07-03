@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The Linex Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt) "%s " fmt, KBUILD_MODNAME
 
-#include <linux/atomic.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/cpu_pm.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
 #include <clocksource/arm_arch_timer.h>
 #include <soc/qcom/cmd-db.h>

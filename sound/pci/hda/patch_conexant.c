@@ -7,10 +7,10 @@
  * 		      Tobin Davis  <tdavis@dsl-only.net>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 

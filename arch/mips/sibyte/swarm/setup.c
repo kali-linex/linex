@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright (C) 2000, 2001, 2002, 2003, 2004 Broadcom Corporation
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linex-mips.org)
  */
 
 /*
  * Setup code for the SWARM board
  */
 
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/screen_info.h>
-#include <linux/initrd.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/screen_info.h>
+#include <linex/initrd.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

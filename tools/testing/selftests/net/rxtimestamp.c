@@ -15,8 +15,8 @@
 #include <net/if.h>
 
 #include <asm/types.h>
-#include <linux/net_tstamp.h>
-#include <linux/errqueue.h>
+#include <linex/net_tstamp.h>
+#include <linex/errqueue.h>
 
 #include "../kselftest.h"
 

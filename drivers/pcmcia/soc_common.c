@@ -31,22 +31,22 @@
 ======================================================================*/
 
 
-#include <linux/cpufreq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
+#include <linex/cpufreq.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mutex.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
+#include <linex/pci.h>
 
 #include "soc_common.h"
 
@@ -889,5 +889,5 @@ int soc_pcmcia_add_one(struct soc_pcmcia_socket *skt)
 EXPORT_SYMBOL(soc_pcmcia_add_one);
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: Common SoC support");
+MODULE_DESCRIPTION("Linex PCMCIA Card Services: Common SoC support");
 MODULE_LICENSE("Dual MPL/GPL");

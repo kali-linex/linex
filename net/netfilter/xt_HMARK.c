@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/icmp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_HMARK.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_HMARK.h>
 
 #include <net/ip.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
@@ -21,7 +21,7 @@
 #endif
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
 #include <net/ipv6.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 #endif
 
 MODULE_LICENSE("GPL");

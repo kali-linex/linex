@@ -3,15 +3,15 @@
  * Intel Sunrisepoint PCH pinctrl/GPIO driver
  *
  * Copyright (C) 2015, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@linex.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinctrl.h>
 
 #include "pinctrl-intel.h"
 
@@ -602,7 +602,7 @@ static void __exit spt_pinctrl_exit(void)
 }
 module_exit(spt_pinctrl_exit);
 
-MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linex.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linex.intel.com>");
 MODULE_DESCRIPTION("Intel Sunrisepoint PCH pinctrl/GPIO driver");
 MODULE_LICENSE("GPL v2");

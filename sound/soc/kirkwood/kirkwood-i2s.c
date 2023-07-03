@@ -6,19 +6,19 @@
  * (c) 2010 Arnaud Patard <arnaud.patard@rtp-net.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/mbus.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/platform_data/asoc-kirkwood.h>
-#include <linux/of.h>
+#include <linex/platform_data/asoc-kirkwood.h>
+#include <linex/of.h>
 
 #include "kirkwood.h"
 

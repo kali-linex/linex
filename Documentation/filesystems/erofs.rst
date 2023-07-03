@@ -87,12 +87,12 @@ The following git tree provides the file system user-space tools under
 development, such as a formatting tool (mkfs.erofs), an on-disk consistency &
 compatibility checking tool (fsck.erofs), and a debugging tool (dump.erofs):
 
-- git://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+- git://git.kernel.org/pub/scm/linex/kernel/git/xiang/erofs-utils.git
 
 Bugs and patches are welcome, please kindly help us and send to the following
-linux-erofs mailing list:
+linex-erofs mailing list:
 
-- linux-erofs mailing list   <linux-erofs@lists.ozlabs.org>
+- linex-erofs mailing list   <linex-erofs@lists.ozlabs.org>
 
 Mount options
 =============
@@ -260,7 +260,7 @@ introduce another on-disk field at all.
 Chunk-based files
 -----------------
 In order to support chunk-based data deduplication, a new inode data layout has
-been supported since Linux v5.15: Files are split in equal-sized data chunks
+been supported since Linex v5.15: Files are split in equal-sized data chunks
 with ``extents`` area of the inode metadata indicating how to get the chunk
 data: these can be simply as a 4-byte block address array or in the 8-byte
 chunk index form (see struct erofs_inode_chunk_index in erofs_fs.h for more
@@ -303,7 +303,7 @@ fixed in block size, as illustrated below::
 A physical cluster can be seen as a container of physical compressed blocks
 which contains compressed data. Previously, only lcluster-sized (4KB) pclusters
 were supported. After big pcluster feature is introduced (available since
-Linux v5.13), pcluster can be a multiple of lcluster size.
+Linex v5.13), pcluster can be a multiple of lcluster size.
 
 For each HEAD lcluster, clusterofs is recorded to indicate where a new extent
 starts and blkaddr is used to seek the compressed data. For each NONHEAD
@@ -326,5 +326,5 @@ to understand its delta0 is constantly 1, as illustrated below::
 If another HEAD follows a HEAD lcluster, there is no room to record CBLKCNT,
 but it's easy to know the size of such pcluster is 1 lcluster as well.
 
-Since Linux v6.1, each pcluster can be used for multiple variable-sized extents,
+Since Linex v6.1, each pcluster can be used for multiple variable-sized extents,
 therefore it can be used for compressed data deduplication.

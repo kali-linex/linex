@@ -8,17 +8,17 @@
  * To test without hardware use the sysfs trigger.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitmap.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/bitmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
 #include "iio_simple_dummy.h"
 

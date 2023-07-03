@@ -10,14 +10,14 @@
  * the Free Software Foundation.
  */
 
-#include <linux/dma-resv.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/refcount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/dma-resv.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/refcount.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>

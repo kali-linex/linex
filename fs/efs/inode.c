@@ -8,11 +8,11 @@
  *              and from work (c) 1998 Mike Shaver.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <linex/buffer_head.h>
+#include <linex/module.h>
+#include <linex/fs.h>
 #include "efs.h"
-#include <linux/efs_fs_sb.h>
+#include <linex/efs_fs_sb.h>
 
 static int efs_read_folio(struct file *file, struct folio *folio)
 {

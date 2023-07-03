@@ -4,23 +4,23 @@
 //
 // Copyright 2012-2015 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_qos.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/time.h>
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
 
 #include "fsl_sai.h"
 #include "fsl_utils.h"

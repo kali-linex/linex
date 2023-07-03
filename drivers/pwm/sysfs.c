@@ -7,12 +7,12 @@
  * Based on previous work by Lars Poeschel <poeschel@lemonage.de>
  */
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/pwm.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/kdev_t.h>
+#include <linex/pwm.h>
 
 struct pwm_export {
 	struct device child;

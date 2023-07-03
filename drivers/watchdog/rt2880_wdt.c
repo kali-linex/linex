@@ -8,14 +8,14 @@
  * This driver was based on: drivers/watchdog/softdog.c
  */
 
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
+#include <linex/clk.h>
+#include <linex/reset.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/watchdog.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/mod_devicetable.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

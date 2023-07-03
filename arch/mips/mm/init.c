@@ -8,29 +8,29 @@
  * Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
-#include <linux/kcore.h>
-#include <linux/initrd.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/pagemap.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/highmem.h>
+#include <linex/swap.h>
+#include <linex/proc_fs.h>
+#include <linex/pfn.h>
+#include <linex/hardirq.h>
+#include <linex/gfp.h>
+#include <linex/kcore.h>
+#include <linex/initrd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cachectl.h>

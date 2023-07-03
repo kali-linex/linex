@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/if_vlan.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/clk.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/ethtool.h>
+#include <linex/crc32.h>
+#include <linex/err.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/if_vlan.h>
 
 #include <bcm63xx_dev_enet.h>
 #include "bcm63xx_enet.h"

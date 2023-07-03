@@ -5,9 +5,9 @@
  *  Copyright (c) 2021 Benjamin Moody
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 
 #include "hid-ids.h"
 

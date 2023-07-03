@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IOMMU_COMMON_H
-#define _LINUX_IOMMU_COMMON_H
+#ifndef _LINEX_IOMMU_COMMON_H
+#define _LINEX_IOMMU_COMMON_H
 
-#include <linux/spinlock_types.h>
-#include <linux/device.h>
+#include <linex/spinlock_types.h>
+#include <linex/device.h>
 #include <asm/page.h>
 
 #define IOMMU_POOL_HASHBITS     4

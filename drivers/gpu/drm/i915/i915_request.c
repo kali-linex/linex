@@ -22,14 +22,14 @@
  *
  */
 
-#include <linux/dma-fence-array.h>
-#include <linux/dma-fence-chain.h>
-#include <linux/irq_work.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
+#include <linex/dma-fence-array.h>
+#include <linex/dma-fence-chain.h>
+#include <linex/irq_work.h>
+#include <linex/prefetch.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
 
 #include "gem/i915_gem_context.h"
 #include "gt/intel_breadcrumbs.h"

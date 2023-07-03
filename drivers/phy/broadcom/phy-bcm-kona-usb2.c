@@ -6,14 +6,14 @@
  * Matt Porter <mporter@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
 
 #define OTGCTL			(0)
 #define OTGCTL_OTGSTAT2		BIT(31)

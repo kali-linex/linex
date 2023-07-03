@@ -5,10 +5,10 @@
 #if !defined(_TRACE_LOCKD_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_LOCKD_H
 
-#include <linux/tracepoint.h>
-#include <linux/crc32.h>
-#include <linux/nfs.h>
-#include <linux/lockd/lockd.h>
+#include <linex/tracepoint.h>
+#include <linex/crc32.h>
+#include <linex/nfs.h>
+#include <linex/lockd/lockd.h>
 
 #ifdef CONFIG_LOCKD_V4
 #define NLM_STATUS_LIST					\

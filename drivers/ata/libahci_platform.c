@@ -8,20 +8,20 @@
  *   Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/ahci_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/libata.h>
+#include <linex/ahci_platform.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_runtime.h>
+#include <linex/of_platform.h>
+#include <linex/reset.h>
 #include "ahci.h"
 
 static void ahci_host_stop(struct ata_host *host);

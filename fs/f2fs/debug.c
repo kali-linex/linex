@@ -4,16 +4,16 @@
  *
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
- * Copyright (c) 2012 Linux Foundation
- * Copyright (c) 2012 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2012 Linex Foundation
+ * Copyright (c) 2012 Greg Kroah-Hartman <gregkh@linexfoundation.org>
  */
 
-#include <linux/fs.h>
-#include <linux/backing-dev.h>
-#include <linux/f2fs_fs.h>
-#include <linux/blkdev.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/fs.h>
+#include <linex/backing-dev.h>
+#include <linex/f2fs_fs.h>
+#include <linex/blkdev.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include "f2fs.h"
 #include "node.h"

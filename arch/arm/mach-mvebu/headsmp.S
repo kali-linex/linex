@@ -15,8 +15,8 @@
  * problems.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
 
 #include <asm/assembler.h>
 

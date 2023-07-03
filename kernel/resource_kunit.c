@@ -4,9 +4,9 @@
  */
 
 #include <kunit/test.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 
 #define R0_START	0x0000
 #define R0_END		0xffff

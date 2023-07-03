@@ -12,21 +12,21 @@
  * Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6586x.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/tps6586x.h>
 
 #define TPS6586X_SUPPLYENE	0x14
 #define EXITSLREQ_BIT		BIT(1)

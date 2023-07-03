@@ -7,28 +7,28 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-linex.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/atomic.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/of.h>
+#include <linex/list.h>
+#include <linex/mfd/core.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
 
 #include "nvec.h"
 

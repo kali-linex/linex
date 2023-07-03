@@ -1,12 +1,12 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /*
  * Copyright 2018-2023 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-resv.h>
+#include <linex/vmalloc.h>
+#include <linex/log2.h>
 
 #include <rdma/ib_addr.h>
 #include <rdma/ib_umem.h>

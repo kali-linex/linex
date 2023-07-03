@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/bitfield.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/of_graph.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/bitfield.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/of_graph.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

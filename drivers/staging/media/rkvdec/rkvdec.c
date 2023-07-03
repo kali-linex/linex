@@ -9,16 +9,16 @@
  * Copyright (C) 2011 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
+#include <linex/workqueue.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/videobuf2-core.h>

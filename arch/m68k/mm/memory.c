@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/memory.c
+ *  linex/arch/m68k/mm/memory.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/pagemap.h>
+#include <linex/gfp.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

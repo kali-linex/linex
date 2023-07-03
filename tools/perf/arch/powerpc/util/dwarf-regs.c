@@ -9,9 +9,9 @@
 #include <errno.h>
 #include <string.h>
 #include <dwarf-regs.h>
-#include <linux/ptrace.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
+#include <linex/ptrace.h>
+#include <linex/kernel.h>
+#include <linex/stringify.h>
 
 struct pt_regs_dwarfnum {
 	const char *name;
@@ -29,7 +29,7 @@ struct pt_regs_dwarfnum {
 
 /*
  * Reference:
- * http://refspecs.linuxfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
+ * http://refspecs.linexfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
  */
 static const struct pt_regs_dwarfnum regdwarfnum_table[] = {
 	GPR_DWARFNUM_NAME(0),

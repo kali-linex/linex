@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * IBM Real-Time Linux driver
+ * IBM Real-Time Linex driver
  *
  * Copyright (C) IBM Corporation, 2010
  *
@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/dmi.h>
+#include <linex/efi.h>
+#include <linex/mutex.h>
 #include <asm/bios_ebda.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
 
 static bool force;
 module_param(force, bool, 0);

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Taken from:
- *  linux/lib/string.c
+ *  linex/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linex/ctype.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/string.h>
 
 #ifndef EFI_HAVE_STRLEN
 /**

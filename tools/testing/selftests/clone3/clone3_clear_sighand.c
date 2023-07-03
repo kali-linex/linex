@@ -8,8 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linex/sched.h>
+#include <linex/types.h>
 #include <sys/syscall.h>
 #include <sys/wait.h>
 

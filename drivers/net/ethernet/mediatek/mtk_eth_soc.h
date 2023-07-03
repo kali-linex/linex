@@ -9,17 +9,17 @@
 #ifndef MTK_ETH_H
 #define MTK_ETH_H
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/of_net.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/refcount.h>
-#include <linux/phylink.h>
-#include <linux/rhashtable.h>
-#include <linux/dim.h>
-#include <linux/bitfield.h>
+#include <linex/dma-mapping.h>
+#include <linex/netdevice.h>
+#include <linex/of_net.h>
+#include <linex/u64_stats_sync.h>
+#include <linex/refcount.h>
+#include <linex/phylink.h>
+#include <linex/rhashtable.h>
+#include <linex/dim.h>
+#include <linex/bitfield.h>
 #include <net/page_pool.h>
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 #include "mtk_ppe.h"
 
 #define MTK_MAX_DSA_PORTS	7

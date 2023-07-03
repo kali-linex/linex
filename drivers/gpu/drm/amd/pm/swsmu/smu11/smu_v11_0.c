@@ -20,10 +20,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/reboot.h>
 
 #define SMU_11_0_PARTIAL_PPTABLE
 #define SWSMU_CODE_LAYER_L3

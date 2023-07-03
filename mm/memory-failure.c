@@ -36,33 +36,33 @@
 
 #define pr_fmt(fmt) "Memory failure: " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/kernel-page-flags.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/dax.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/backing-dev.h>
-#include <linux/migrate.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memory_hotplug.h>
-#include <linux/mm_inline.h>
-#include <linux/memremap.h>
-#include <linux/kfifo.h>
-#include <linux/ratelimit.h>
-#include <linux/page-isolation.h>
-#include <linux/pagewalk.h>
-#include <linux/shmem_fs.h>
-#include <linux/sysctl.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/page-flags.h>
+#include <linex/kernel-page-flags.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/dax.h>
+#include <linex/ksm.h>
+#include <linex/rmap.h>
+#include <linex/export.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/backing-dev.h>
+#include <linex/migrate.h>
+#include <linex/suspend.h>
+#include <linex/slab.h>
+#include <linex/swapops.h>
+#include <linex/hugetlb.h>
+#include <linex/memory_hotplug.h>
+#include <linex/mm_inline.h>
+#include <linex/memremap.h>
+#include <linex/kfifo.h>
+#include <linex/ratelimit.h>
+#include <linex/page-isolation.h>
+#include <linex/pagewalk.h>
+#include <linex/shmem_fs.h>
+#include <linex/sysctl.h>
 #include "swap.h"
 #include "internal.h"
 #include "ras/ras_event.h"
@@ -1093,7 +1093,7 @@ static int me_pagecache_dirty(struct page_state *ps, struct page *p)
 		 *
 		 * The EIO will be only reported on the next IO
 		 * operation and then cleared through the IO map.
-		 * Normally Linux has two mechanisms to pass IO error
+		 * Normally Linex has two mechanisms to pass IO error
 		 * first through the AS_EIO flag in the address space
 		 * and then through the PageError flag in the page.
 		 * Since we drop pages on memory failure handling the
@@ -2458,7 +2458,7 @@ core_initcall(memory_failure_init);
  * memory_failure() earlier.
  *
  * This is only done on the software-level, so it only works
- * for linux injected failures, not real hardware failures
+ * for linex injected failures, not real hardware failures
  *
  * Returns 0 for success, otherwise -errno.
  */

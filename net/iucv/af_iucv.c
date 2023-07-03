@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  IUCV protocol stack for Linux on zSeries
+ *  IUCV protocol stack for Linex on zSeries
  *
  *  Copyright IBM Corp. 2006, 2009
  *
  *  Author(s):	Jennifer Hunt <jenhunt@us.ibm.com>
- *		Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *		Hendrik Brueckner <brueckner@linex.vnet.ibm.com>
  *  PM functions:
  *		Ursula Braun <ursula.braun@de.ibm.com>
  */
@@ -13,24 +13,24 @@
 #define KMSG_COMPONENT "af_iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/filter.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/security.h>
+#include <linex/filter.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/types.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/security.h>
 #include <net/sock.h>
 #include <asm/ebcdic.h>
 #include <asm/cpcmd.h>
-#include <linux/kmod.h>
+#include <linex/kmod.h>
 
 #include <net/iucv/af_iucv.h>
 

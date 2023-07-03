@@ -8,15 +8,15 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <video/mipi_display.h>
 

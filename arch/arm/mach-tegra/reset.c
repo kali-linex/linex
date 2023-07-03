@@ -5,12 +5,12 @@
  * Copyright (C) 2011,2012 NVIDIA Corporation.
  */
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linex/bitops.h>
+#include <linex/cpumask.h>
+#include <linex/init.h>
+#include <linex/io.h>
 
-#include <linux/firmware/trusted_foundations.h>
+#include <linex/firmware/trusted_foundations.h>
 
 #include <soc/tegra/fuse.h>
 

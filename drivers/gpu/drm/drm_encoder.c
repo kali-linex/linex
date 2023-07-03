@@ -20,7 +20,7 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/export.h>
+#include <linex/export.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_device.h>

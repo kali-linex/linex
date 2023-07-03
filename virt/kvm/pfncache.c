@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * This module enables kernel and guest-mode vCPU access to guest physical
  * memory with suitable invalidation mechanisms.
@@ -11,11 +11,11 @@
  *   David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <linex/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/highmem.h>
+#include <linex/module.h>
+#include <linex/errno.h>
 
 #include "kvm_mm.h"
 

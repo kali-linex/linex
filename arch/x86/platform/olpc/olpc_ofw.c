@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock_types.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/spinlock_types.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 #include <asm/io.h>

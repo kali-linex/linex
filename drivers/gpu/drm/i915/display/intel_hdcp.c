@@ -8,9 +8,9 @@
  * Ramalingam C <ramalingam.c@intel.com>
  */
 
-#include <linux/component.h>
-#include <linux/i2c.h>
-#include <linux/random.h>
+#include <linex/component.h>
+#include <linex/i2c.h>
+#include <linex/random.h>
 
 #include <drm/display/drm_hdcp_helper.h>
 #include <drm/i915_component.h>

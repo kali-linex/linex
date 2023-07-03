@@ -4,17 +4,17 @@
  * Author: Florian Westphal <fw@strlen.de>
  */
 
-#include <linux/module.h>
-#include <linux/static_key.h>
-#include <linux/hash.h>
-#include <linux/siphash.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linex/module.h>
+#include <linex/static_key.h>
+#include <linex/hash.h>
+#include <linex/siphash.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/netlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
 

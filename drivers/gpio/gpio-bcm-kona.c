@@ -6,14 +6,14 @@
  * Copyright (C) 2012-2014 Broadcom Corporation
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_device.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/gpio/driver.h>
+#include <linex/of_device.h>
+#include <linex/init.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip/chained_irq.h>
 
 #define BCM_GPIO_PASSWD				0x00a5a501
 #define GPIO_PER_BANK				32

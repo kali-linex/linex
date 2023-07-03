@@ -11,38 +11,38 @@
  * Copyright (C) 2006 Craig W. Nadler
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/cdev.h>
-#include <linux/kref.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/idr.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/moduleparam.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/types.h>
+#include <linex/ctype.h>
+#include <linex/cdev.h>
+#include <linex/kref.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/g_printer.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/g_printer.h>
 
 #include "u_printer.h"
 

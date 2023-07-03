@@ -30,24 +30,24 @@
  * This driver is based on i2c-sun6i-p2wi.c, the P2WI bus driver.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/sunxi-rsb.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/clk/clk-conf.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/sunxi-rsb.h>
+#include <linex/types.h>
 
 /* RSB registers */
 #define RSB_CTRL	0x0	/* Global control */

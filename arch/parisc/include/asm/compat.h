@@ -4,9 +4,9 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/thread_info.h>
 
 #define compat_mode_t compat_mode_t
 typedef u16	compat_mode_t;

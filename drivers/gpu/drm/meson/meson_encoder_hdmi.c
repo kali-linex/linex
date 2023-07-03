@@ -5,14 +5,14 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
 
 #include <media/cec-notifier.h>
 
@@ -24,8 +24,8 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
 
-#include <linux/media-bus-format.h>
-#include <linux/videodev2.h>
+#include <linex/media-bus-format.h>
+#include <linex/videodev2.h>
 
 #include "meson_drv.h"
 #include "meson_registers.h"

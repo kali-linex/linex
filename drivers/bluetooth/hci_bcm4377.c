@@ -2,20 +2,20 @@
 /*
  * Bluetooth HCI driver for Broadcom 4377/4378/4387 devices attached via PCIe
  *
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi Linex Contributors
  */
 
-#include <linux/async.h>
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
+#include <linex/async.h>
+#include <linex/bitfield.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmi.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/printk.h>
 
 #include <asm/unaligned.h>
 

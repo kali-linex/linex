@@ -26,15 +26,15 @@
  * 		or a LUN is seen that cannot have a device attached to it.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/spinlock.h>
-#include <linux/async.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/spinlock.h>
+#include <linex/async.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

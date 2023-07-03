@@ -11,13 +11,13 @@
 */
 
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/delay.h>
+#include <linex/pnp.h>
+#include <linex/module.h>
+#include <linex/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/tlv.h>

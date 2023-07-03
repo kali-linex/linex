@@ -64,34 +64,34 @@
 		key-home {
 			label = "Home";
 			gpios = <&gpio5 10 0>;
-			linux,code = <KEY_HOME>;
+			linex,code = <KEY_HOME>;
 			wakeup-source;
 		};
 
 		key-back {
 			label = "Back";
 			gpios = <&gpio5 11 0>;
-			linux,code = <KEY_BACK>;
+			linex,code = <KEY_BACK>;
 			wakeup-source;
 		};
 
 		key-program {
 			label = "Program";
 			gpios = <&gpio5 12 0>;
-			linux,code = <KEY_PROGRAM >;
+			linex,code = <KEY_PROGRAM >;
 			wakeup-source;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio5 13 0>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio4 0 0>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 };

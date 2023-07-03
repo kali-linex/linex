@@ -6,8 +6,8 @@
  * Author: Matthew Wilcox <willy@infradead.org>
  */
 
-#include <linux/xarray.h>
-#include <linux/module.h>
+#include <linex/xarray.h>
+#include <linex/module.h>
 
 static unsigned int tests_run;
 static unsigned int tests_passed;

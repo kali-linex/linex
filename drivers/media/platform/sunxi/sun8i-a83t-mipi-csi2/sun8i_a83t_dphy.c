@@ -4,8 +4,8 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
 
 #include "sun8i_a83t_dphy.h"
 #include "sun8i_a83t_mipi_csi2.h"

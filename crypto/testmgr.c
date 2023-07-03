@@ -3,7 +3,7 @@
  * Algorithm testing framework and tests.
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@linexbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  * Copyright (c) 2008 Herbert Xu <herbert@gondor.apana.org.au>
  * Copyright (c) 2019 Google LLC
@@ -19,15 +19,15 @@
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/once.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uio.h>
+#include <linex/err.h>
+#include <linex/fips.h>
+#include <linex/module.h>
+#include <linex/once.h>
+#include <linex/random.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/uio.h>
 #include <crypto/rng.h>
 #include <crypto/drbg.h>
 #include <crypto/akcipher.h>
@@ -861,9 +861,9 @@ static int prepare_keybuf(const u8 *key, unsigned int ksize,
 #ifdef CONFIG_CRYPTO_MANAGER_EXTRA_TESTS
 
 /*
- * The fuzz tests use prandom instead of the normal Linux RNG since they don't
+ * The fuzz tests use prandom instead of the normal Linex RNG since they don't
  * need cryptographically secure random numbers.  This greatly improves the
- * performance of these tests, especially if they are run before the Linux RNG
+ * performance of these tests, especially if they are run before the Linex RNG
  * has been initialized or if they are run on a lockdep-enabled kernel.
  */
 

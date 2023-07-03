@@ -6,14 +6,14 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
-#include <linux/pci-ep-cfs.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
+#include <linex/pci-ep-cfs.h>
 
 static DEFINE_MUTEX(pci_epf_mutex);
 

@@ -6,13 +6,13 @@
  * Author: Lad Prabhakar <prabhakar.mahadev-lad.rj@bp.renesas.com>
  */
 
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-epc.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pci.h>
+#include <linex/pci-epc.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "pcie-rcar.h"
 

@@ -10,14 +10,14 @@
 #ifndef __TAPE_CLASS_H__
 #define __TAPE_CLASS_H__
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/cdev.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/major.h>
+#include <linex/cdev.h>
 
-#include <linux/device.h>
-#include <linux/kdev_t.h>
+#include <linex/device.h>
+#include <linex/kdev_t.h>
 
 #define TAPECLASS_NAME_LEN	32
 

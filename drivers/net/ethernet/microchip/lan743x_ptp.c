@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /* Copyright (C) 2018 Microchip Technology Inc. */
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/net_tstamp.h>
 #include "lan743x_main.h"
 
 #include "lan743x_ptp.h"

@@ -14,9 +14,9 @@
  * Copyright (c) 2018, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/adxl.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/adxl.h>
 #include <acpi/nfit.h>
 #include <asm/mce.h>
 #include "edac_module.h"

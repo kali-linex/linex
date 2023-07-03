@@ -5,14 +5,14 @@
  *  Copyright (C) 2009  Matt Fleming
  *  Copyright (C) 2002 - 2012  Paul Mundt
  */
-#include <linux/kallsyms.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <linex/kallsyms.h>
+#include <linex/ftrace.h>
+#include <linex/debug_locks.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kdebug.h>
+#include <linex/export.h>
+#include <linex/uaccess.h>
 #include <asm/unwinder.h>
 #include <asm/stacktrace.h>
 

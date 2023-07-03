@@ -5,17 +5,17 @@
  * Copyright 2013 Free Electrons
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/wait.h>
-#include <linux/log2.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/wait.h>
+#include <linex/log2.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define NAU7802_REG_PUCTRL	0x00
 #define NAU7802_PUCTRL_RR(x)		(x << 0)

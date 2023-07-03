@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/usb/uvc.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/usb/uvc.h>
+#include <linex/videodev2.h>
 
 /* ------------------------------------------------------------------------
  * Video formats

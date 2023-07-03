@@ -16,12 +16,12 @@
  */
 
 #include "au88x0.h"
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
 #include <sound/initval.h>
 
 // module parameters (see "Module Parameters")

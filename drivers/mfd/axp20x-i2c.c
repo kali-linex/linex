@@ -13,14 +13,14 @@
  * Author: Carlo Caione <carlo@caione.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mfd/axp20x.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 static int axp20x_i2c_probe(struct i2c_client *i2c)
 {

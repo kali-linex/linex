@@ -11,11 +11,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/time.h>
+#include <linex/ipv6.h>
+#include <linex/icmpv6.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
 #include <net/ip6_checksum.h>

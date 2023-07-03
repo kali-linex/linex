@@ -7,27 +7,27 @@
  * Copyright (c) 2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/dma/qcom_adm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/wait.h>
+#include <linex/kernel.h>
+#include <linex/atomic.h>
+#include <linex/dma/qcom_adm.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/wait.h>
 
 #define MSM_UART_MR1			0x0000
 

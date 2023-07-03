@@ -11,21 +11,21 @@
 // it cannot be easily upgraded and EC flash/IRAM space is relatively
 // expensive.
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/vivaldi-fmap.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/input/vivaldi-fmap.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/notifier.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/sysrq.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
 
 #include <asm/unaligned.h>
 
@@ -66,11 +66,11 @@ struct cros_ec_keyb {
 };
 
 /**
- * struct cros_ec_bs_map - Mapping between Linux keycodes and EC button/switch
+ * struct cros_ec_bs_map - Mapping between Linex keycodes and EC button/switch
  *	bitmap #defines
  *
  * @ev_type: The type of the input event to generate (e.g., EV_KEY).
- * @code: A linux keycode
+ * @code: A linex keycode
  * @bit: A #define like EC_MKBP_POWER_BUTTON or EC_MKBP_LID_OPEN
  * @inverted: If the #define and EV_SW have opposite meanings, this is true.
  *            Only applicable to switches.

@@ -9,7 +9,7 @@
  * #define DEBUG
  *
  * you can also add below in
- * ${LINUX}/drivers/base/regmap/regmap.c
+ * ${LINEX}/drivers/base/regmap/regmap.c
  * for regmap debug
  *
  * #define LOG_DEVICE "xxxx.rcar_sound"

@@ -12,22 +12,22 @@
  * Pete Delaney <piet@tensilica.com
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/reboot.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/thread_info.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/irq.h>
+#include <linex/kdebug.h>
+#include <linex/module.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/reboot.h>
+#include <linex/seq_file.h>
+#include <linex/smp.h>
+#include <linex/thread_info.h>
 
 #include <asm/cacheflush.h>
 #include <asm/coprocessor.h>

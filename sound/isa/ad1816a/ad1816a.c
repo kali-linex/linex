@@ -6,11 +6,11 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/pnp.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/ad1816a.h>

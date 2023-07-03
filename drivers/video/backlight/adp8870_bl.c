@@ -5,19 +5,19 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/pm.h>
+#include <linex/platform_device.h>
+#include <linex/i2c.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/leds.h>
+#include <linex/workqueue.h>
+#include <linex/slab.h>
 
-#include <linux/platform_data/adp8870.h>
+#include <linex/platform_data/adp8870.h>
 #define ADP8870_EXT_FEATURES
 #define ADP8870_USE_LEDS
 

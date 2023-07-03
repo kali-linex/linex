@@ -5,15 +5,15 @@
  * Copyright 2020 Google LLC.
  */
 
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/stringify.h>
+#include <linex/types.h>
 #include <asm/unaligned.h>
 
 #define DRV_NAME		"cros-ec-pchg"

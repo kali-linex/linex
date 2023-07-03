@@ -8,7 +8,7 @@
  *
  * it821x.c
  *
- * linux/drivers/ide/pci/it821x.c		Version 0.09	December 2004
+ * linex/drivers/ide/pci/it821x.c		Version 0.09	December 2004
  *
  * Copyright (C) 2004		Red Hat
  *
@@ -49,7 +49,7 @@
  *  block on the disk. The hardware extra commands are get/set chip status,
  *  rebuild, get rebuild status.
  *
- *  In Linux the driver supports pass through mode as if the device was
+ *  In Linex the driver supports pass through mode as if the device was
  *  just another IDE controller. If the smart mode is running then
  *  volumes are managed by the controller firmware and each IDE "disk"
  *  is a raid volume. Even more cute - the controller can do automated
@@ -69,14 +69,14 @@
  *	-	RAID configuration ioctls
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 
 #define DRV_NAME "pata_it821x"

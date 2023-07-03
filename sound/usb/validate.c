@@ -3,12 +3,12 @@
 // Validation of USB-audio class descriptors
 //
 
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
-#include <linux/usb/midi.h>
+#include <linex/init.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/audio-v2.h>
+#include <linex/usb/audio-v3.h>
+#include <linex/usb/midi.h>
 #include "usbaudio.h"
 #include "helper.h"
 

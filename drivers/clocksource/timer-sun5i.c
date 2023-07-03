@@ -7,18 +7,18 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqreturn.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #define TIMER_IRQ_EN_REG		0x00
 #define TIMER_IRQ_EN(val)			BIT(val)

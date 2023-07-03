@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021, Linaro Ltd <loic.poulain@linaro.org> */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/wwan.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/debugfs.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/poll.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/termios.h>
+#include <linex/wwan.h>
 #include <net/rtnetlink.h>
-#include <uapi/linux/wwan.h>
+#include <uapi/linex/wwan.h>
 
 /* Maximum number of minors in use */
 #define WWAN_MAX_MINORS		(1 << MINORBITS)

@@ -7,12 +7,12 @@
  * Decoupler IP Core.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/fpga/fpga-bridge.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
+#include <linex/fpga/fpga-bridge.h>
 
 #define CTRL_CMD_DECOUPLE	BIT(0)
 #define CTRL_CMD_COUPLE		0

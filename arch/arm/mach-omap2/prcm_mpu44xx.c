@@ -6,11 +6,11 @@
  * Paul Walmsley
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/io.h>
 
 #include "iomap.h"
 #include "common.h"

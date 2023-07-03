@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/parisc/traps.c
+ *  linex/arch/parisc/traps.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1999, 2000  Philipp Rumpf <prumpf@tux.org>
@@ -11,41 +11,41 @@
  * state in 'asm.s'.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/bug.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kfence.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/timer.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/console.h>
+#include <linex/bug.h>
+#include <linex/ratelimit.h>
+#include <linex/uaccess.h>
+#include <linex/kdebug.h>
+#include <linex/kfence.h>
 
 #include <asm/assembly.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/traps.h>
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/smp.h>
 #include <asm/pdc.h>
 #include <asm/pdc_chassis.h>
 #include <asm/unwind.h>
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>
-#include <linux/kgdb.h>
-#include <linux/kprobes.h>
+#include <linex/kgdb.h>
+#include <linex/kprobes.h>
 
 #if defined(CONFIG_LIGHTWEIGHT_SPINLOCK_CHECK)
 #include <asm/spinlock.h>

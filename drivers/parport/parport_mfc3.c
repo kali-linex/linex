@@ -54,13 +54,13 @@
  */
 
 #include "multiface.h"
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/mc6821.h>
-#include <linux/zorro.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/parport.h>
+#include <linex/delay.h>
+#include <linex/mc6821.h>
+#include <linex/zorro.h>
+#include <linex/interrupt.h>
 #include <asm/setup.h>
 #include <asm/amigahw.h>
 #include <asm/irq.h>

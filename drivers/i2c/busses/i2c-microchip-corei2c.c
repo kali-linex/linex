@@ -7,15 +7,15 @@
  * Author: Daire McNamara <daire.mcnamara@microchip.com>
  * Author: Conor Dooley <conor.dooley@microchip.com>
  */
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #define CORE_I2C_CTRL	(0x00)
 #define  CTRL_CR0	BIT(0)

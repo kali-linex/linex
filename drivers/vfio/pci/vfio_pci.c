@@ -12,18 +12,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/device.h>
+#include <linex/eventfd.h>
+#include <linex/file.h>
+#include <linex/interrupt.h>
+#include <linex/iommu.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #include "vfio_pci_priv.h"
 
@@ -37,7 +37,7 @@ MODULE_PARM_DESC(ids, "Initial PCI IDs to add to the vfio driver, format is \"ve
 static bool nointxmask;
 module_param_named(nointxmask, nointxmask, bool, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(nointxmask,
-		  "Disable support for PCI 2.3 style INTx masking.  If this resolves problems for specific devices, report lspci -vvvxxx to linux-pci@vger.kernel.org so the device can be fixed automatically via the broken_intx_masking flag.");
+		  "Disable support for PCI 2.3 style INTx masking.  If this resolves problems for specific devices, report lspci -vvvxxx to linex-pci@vger.kernel.org so the device can be fixed automatically via the broken_intx_masking flag.");
 
 #ifdef CONFIG_VFIO_PCI_VGA
 static bool disable_vga;

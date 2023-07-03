@@ -3,16 +3,16 @@
  * Copyright IBM Corp. 2005, 2011
  *
  * Author(s): Rolf Adelsberger,
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@linex.vnet.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
+#include <linex/device.h>
+#include <linex/mm.h>
+#include <linex/kexec.h>
+#include <linex/delay.h>
+#include <linex/reboot.h>
+#include <linex/ftrace.h>
+#include <linex/debug_locks.h>
 #include <asm/cio.h>
 #include <asm/setup.h>
 #include <asm/smp.h>

@@ -2,12 +2,12 @@
 // Copyright (c) 2018 Crane Merchandising Systems. All rights reserved.
 // Copyright (C) 2018 Oleh Kravchenko <oleg@kaa.org.ua>
 
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/spi/spi.h>
+#include <linex/workqueue.h>
 
 /*
  *  CR0014114 SPI protocol descrtiption:

@@ -20,7 +20,7 @@
  *
  * +----+ 0xffffffff
  * |    |							\
- * |    | |-> Static kernel image (vmlinux) BSS and page table
+ * |    | |-> Static kernel image (vmlinex) BSS and page table
  * |    |/
  * +----+ PAGE_OFFSET
  * |    |							\

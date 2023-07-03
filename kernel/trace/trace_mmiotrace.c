@@ -5,13 +5,13 @@
  * Copyright (C) 2008 Pekka Paalanen <pq@iki.fi>
  */
 
-#include <linux/kernel.h>
-#include <linux/mmiotrace.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linex/kernel.h>
+#include <linex/mmiotrace.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/time.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include "trace.h"
 #include "trace_output.h"

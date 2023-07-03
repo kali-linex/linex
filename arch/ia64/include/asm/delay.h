@@ -7,15 +7,15 @@
  *
  * Copyright (C) 1998, 1999 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Linex Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinex.com>
  * Copyright (C) 1999 Asit Mallick <asit.k.mallick@intel.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/compiler.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/compiler.h>
 
 #include <asm/intrinsics.h>
 #include <asm/processor.h>

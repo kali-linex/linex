@@ -6,23 +6,23 @@
  * The Sparx5 Chip Register Model can be browsed at this location:
  * https://github.com/microchip-ung/sparx-5_reginfo
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
 #include <net/switchdev.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/printk.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/reset.h>
+#include <linex/etherdevice.h>
+#include <linex/io.h>
+#include <linex/printk.h>
+#include <linex/iopoll.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
+#include <linex/reset.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

@@ -7,16 +7,16 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/platform_device.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/platform_device.h>
+#include <linex/serio.h>
+#include <linex/libps2.h>
 #include <asm/unaligned.h>
 #include "psmouse.h"
 #include "elantech.h"

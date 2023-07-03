@@ -4,12 +4,12 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/delay.h>
+#include <linex/time.h>
+#include <linex/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/gus.h>

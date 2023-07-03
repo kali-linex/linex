@@ -5,16 +5,16 @@
  * Copyright (C) 2021 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 /*
  * Unfortunately there is no detailed documentation available for the

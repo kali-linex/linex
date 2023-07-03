@@ -2,9 +2,9 @@
 /* Copyright (C) 2020 Facebook */
 
 #include <errno.h>
-#include <linux/err.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_arp.h>
+#include <linex/err.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_arp.h>
 #include <net/if.h>
 #include <stdio.h>
 #include <unistd.h>

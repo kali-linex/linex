@@ -19,11 +19,11 @@
  * if syslogd is configured to eliminate duplicate messages.)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/kprobes.h>
+#include <linex/ktime.h>
+#include <linex/sched.h>
 
 static char func_name[KSYM_NAME_LEN] = "kernel_clone";
 module_param_string(func, func_name, KSYM_NAME_LEN, 0644);

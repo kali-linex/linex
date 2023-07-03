@@ -10,18 +10,18 @@
  *	Copyright (C) 2007 Google, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pm_qos.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #define ST1232_TS_NAME	"st1232-ts"
 #define ST1633_TS_NAME	"st1633-ts"

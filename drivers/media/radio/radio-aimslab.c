@@ -27,13 +27,13 @@
  * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
  */
 
-#include <linux/module.h>	/* Modules			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* msleep			*/
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/slab.h>
+#include <linex/module.h>	/* Modules			*/
+#include <linex/init.h>		/* Initdata			*/
+#include <linex/ioport.h>	/* request_region		*/
+#include <linex/delay.h>	/* msleep			*/
+#include <linex/videodev2.h>	/* kernel radio structs		*/
+#include <linex/io.h>		/* outb, outb_p			*/
+#include <linex/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

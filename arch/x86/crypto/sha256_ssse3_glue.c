@@ -9,7 +9,7 @@
  * Copyright (C) 2013 Intel Corporation.
  *
  * Author:
- *     Tim Chen <tim.c.chen@linux.intel.com>
+ *     Tim Chen <tim.c.chen@linex.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -31,13 +31,13 @@
 
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
-#include <linux/string.h>
+#include <linex/string.h>
 #include <asm/simd.h>
 
 asmlinkage void sha256_transform_ssse3(struct sha256_state *state,

@@ -13,13 +13,13 @@
  *
  *
  */
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include "../include/linux/libmsrlisthelper.h"
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/firmware.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include "../include/linex/libmsrlisthelper.h"
+#include <linex/module.h>
+#include <linex/slab.h>
 
 /* Tagged binary data container structure definitions. */
 struct tbd_header {

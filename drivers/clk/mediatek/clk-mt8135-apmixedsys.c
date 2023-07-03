@@ -7,9 +7,9 @@
  */
 
 #include <dt-bindings/clock/mt8135-clk.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-pll.h"

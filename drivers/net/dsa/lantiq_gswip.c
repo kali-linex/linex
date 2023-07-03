@@ -25,23 +25,23 @@
  * between all LAN ports by default.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/etherdevice.h>
+#include <linex/firmware.h>
+#include <linex/if_bridge.h>
+#include <linex/if_vlan.h>
+#include <linex/iopoll.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/phylink.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 #include <net/dsa.h>
 #include <dt-bindings/mips/lantiq_rcu_gphy.h>
 

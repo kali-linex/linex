@@ -10,7 +10,7 @@
  */
 
 #include <errno.h>
-#include <linux/arm-smccc.h>
+#include <linex/arm-smccc.h>
 #include <asm/kvm.h>
 #include <kvm_util.h>
 

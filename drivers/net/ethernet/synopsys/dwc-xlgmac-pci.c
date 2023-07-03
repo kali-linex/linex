@@ -15,9 +15,9 @@
  * in the SOFTWARE may be the trademarks of their respective owners.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "dwc-xlgmac.h"
 #include "dwc-xlgmac-reg.h"

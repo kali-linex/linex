@@ -13,14 +13,14 @@
  * along with other APIs.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <asm/intel_scu_ipc.h>
 

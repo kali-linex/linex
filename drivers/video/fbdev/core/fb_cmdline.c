@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_cmdline.c
+ *  linex/drivers/video/fb_cmdline.c
  *
  *  Copyright (C) 2014 Intel Corp
  *  Copyright (C) 1994 Martin Schaller
@@ -15,9 +15,9 @@
  *    Daniel Vetter <daniel.vetter@ffwll.ch>
  */
 
-#include <linux/export.h>
-#include <linux/fb.h>
-#include <linux/string.h>
+#include <linex/export.h>
+#include <linex/fb.h>
+#include <linex/string.h>
 
 #include <video/cmdline.h>
 

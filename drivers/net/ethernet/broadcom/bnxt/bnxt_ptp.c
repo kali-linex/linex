@@ -6,15 +6,15 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/timekeeping.h>
-#include <linux/ptp_classify.h>
-#include <linux/clocksource.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/timekeeping.h>
+#include <linex/ptp_classify.h>
+#include <linex/clocksource.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"
 #include "bnxt_hwrm.h"

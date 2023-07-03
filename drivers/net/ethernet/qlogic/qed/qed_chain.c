@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 /* Copyright (c) 2020 Marvell International Ltd. */
 
-#include <linux/dma-mapping.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/vmalloc.h>
+#include <linex/dma-mapping.h>
+#include <linex/qed/qed_chain.h>
+#include <linex/vmalloc.h>
 
 #include "qed_dev_api.h"
 

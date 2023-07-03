@@ -5,7 +5,7 @@
  * Copyright (C) 2010 Devin Heitmueller <dheitmueller@kernellabs.com>
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include "as102_drv.h"
 #include "as10x_cmd.h"
 

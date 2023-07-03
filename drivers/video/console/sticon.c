@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/video/console/sticon.c - console driver using HP's STI firmware
+ *  linex/drivers/video/console/sticon.c - console driver using HP's STI firmware
  *
  *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
  *	Copyright (C) 2002-2020 Helge Deller <deller@gmx.de>
  *
- *  Based on linux/drivers/video/vgacon.c and linux/drivers/video/fbcon.c,
+ *  Based on linex/drivers/video/vgacon.c and linex/drivers/video/fbcon.c,
  *  which were
  *
  *	Created 28 Sep 1997 by Geert Uytterhoeven
@@ -26,7 +26,7 @@
  *			   Martin Schaller
  *			   Andreas Schwab
  *			   Emmanuel Marty (core@ggi-project.org)
- *			   Jakub Jelinek (jj@ultra.linux.cz)
+ *			   Jakub Jelinek (jj@ultra.linex.cz)
  *			   Martin Mares <mj@ucw.cz>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
@@ -35,18 +35,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/vt_kern.h>
-#include <linux/kd.h>
-#include <linux/selection.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/font.h>
-#include <linux/crc32.h>
-#include <linux/fb.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/errno.h>
+#include <linex/vt_kern.h>
+#include <linex/kd.h>
+#include <linex/selection.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/font.h>
+#include <linex/crc32.h>
+#include <linex/fb.h>
 
 #include <asm/io.h>
 

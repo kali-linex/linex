@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/input/serio/sa1111ps2.c
+ *  linex/drivers/input/serio/sa1111ps2.c
  *
  *  Copyright (C) 2002 Russell King
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/serio.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include <asm/io.h>
 
@@ -381,6 +381,6 @@ static void __exit ps2_exit(void)
 module_init(ps2_init);
 module_exit(ps2_exit);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linex.org.uk>");
 MODULE_DESCRIPTION("SA1111 PS2 controller driver");
 MODULE_LICENSE("GPL");

@@ -12,11 +12,11 @@
  */
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/stringify.h>
+#include <linex/zalloc.h>
 #include <asm/bug.h>
 #include <sys/param.h>
 #include "debug.h"
@@ -3019,8 +3019,8 @@ static int perf_c2c__report(int argc, const char **argv)
 	const char *coalesce = NULL;
 	bool no_source = false;
 	const struct option options[] = {
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmlinex", &symbol_conf.vmlinex_name,
+		   "file", "vmlinex pathname"),
 	OPT_STRING('i', "input", &input_name, "file",
 		   "the input file to process"),
 	OPT_INCR('N', "node-info", &c2c.node_info,

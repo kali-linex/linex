@@ -4,7 +4,7 @@
  * Copyright (C) 2006 Thomas Maier <balagi@justmail.de>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linex/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-RW, DVD+RW, DVD-RW and
  * DVD-RAM devices.
@@ -46,26 +46,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nospec.h>
-#include <linux/pktcdvd.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/backing-dev.h>
+#include <linex/compat.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/file.h>
+#include <linex/freezer.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nospec.h>
+#include <linex/pktcdvd.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -6,11 +6,11 @@
  *  Copyright 2007 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/sched/signal.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
+#include <linex/reboot.h>
+#include <linex/sched/signal.h>
 
 #include <asm/firmware.h>
 #include <asm/lv1call.h>

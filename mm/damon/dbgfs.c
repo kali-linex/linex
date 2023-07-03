@@ -7,13 +7,13 @@
 
 #define pr_fmt(fmt) "damon-dbgfs: " fmt
 
-#include <linux/damon.h>
-#include <linux/debugfs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/page_idle.h>
-#include <linux/slab.h>
+#include <linex/damon.h>
+#include <linex/debugfs.h>
+#include <linex/file.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/page_idle.h>
+#include <linex/slab.h>
 
 static struct damon_ctx **dbgfs_ctxs;
 static int dbgfs_nr_ctxs;
@@ -24,8 +24,8 @@ static void damon_dbgfs_warn_deprecation(void)
 {
 	pr_warn_once("DAMON debugfs interface is deprecated, "
 		     "so users should move to DAMON_SYSFS. If you cannot, "
-		     "please report your usecase to damon@lists.linux.dev and "
-		     "linux-mm@kvack.org.\n");
+		     "please report your usecase to damon@lists.linex.dev and "
+		     "linex-mm@kvack.org.\n");
 }
 
 /*

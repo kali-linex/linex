@@ -5,17 +5,17 @@
  * Author: ChiaEn Wu <chiaen_wu@richtek.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/backlight.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/minmax.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 #define MT6370_REG_DEV_INFO		0x100
 #define MT6370_REG_BL_EN		0x1A0

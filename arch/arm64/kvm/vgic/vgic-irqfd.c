@@ -3,8 +3,8 @@
  * Copyright (C) 2015, 2016 ARM Ltd.
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
 #include <trace/events/kvm.h>
 #include <kvm/arm_vgic.h>
 #include "vgic.h"

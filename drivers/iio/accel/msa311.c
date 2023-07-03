@@ -27,21 +27,21 @@
  * Author: Dmitry Rokosov <ddrokosov@sberdevices.ru>
  */
 
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/string_helpers.h>
-#include <linux/units.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/string_helpers.h>
+#include <linex/units.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
 #define MSA311_SOFT_RESET_REG     0x00
 #define MSA311_PARTID_REG         0x01

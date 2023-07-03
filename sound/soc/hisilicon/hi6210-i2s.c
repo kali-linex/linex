@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/soc/m8m/hi6210_i2s.c - I2S IP driver
+ * linex/sound/soc/m8m/hi6210_i2s.c - I2S IP driver
  *
  * Copyright (C) 2015 Linaro, Ltd
  * Author: Andy Green <andy.green@linaro.org>
@@ -8,26 +8,26 @@
  * This driver only deals with S2 interface (BT)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/jiffies.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/initval.h>
 #include <sound/soc.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reset-controller.h>
+#include <linex/interrupt.h>
+#include <linex/reset.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/mfd/syscon.h>
+#include <linex/reset-controller.h>
 
 #include "hi6210-i2s.h"
 

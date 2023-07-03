@@ -3,9 +3,9 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: Weiyi Lu <weiyi.lu@mediatek.com>
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

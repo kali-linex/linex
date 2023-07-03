@@ -6,14 +6,14 @@
  *
  * Author : Yuan-hsin Chen <yhchen@faraday-tech.com>
  */
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 #include "fusb300_udc.h"
 

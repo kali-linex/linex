@@ -1,43 +1,43 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
+ *  linex/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *  Copyright (C) 2010 ST-Ericsson SA
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/mmci.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
-#include <linux/gpio/consumer.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/highmem.h>
+#include <linex/log2.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/pm.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sd.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/amba/bus.h>
+#include <linex/clk.h>
+#include <linex/scatterlist.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/amba/mmci.h>
+#include <linex/pm_runtime.h>
+#include <linex/types.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/reset.h>
+#include <linex/gpio/consumer.h>
+#include <linex/workqueue.h>
 
 #include <asm/div64.h>
 #include <asm/io.h>

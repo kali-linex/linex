@@ -7,9 +7,9 @@
 #include <net/ip6_fib.h>
 #include <net/sock.h>
 #include <net/lwtunnel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/route.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/route.h>
 #include <net/nexthop.h>
 
 struct route_info {

@@ -9,15 +9,15 @@
  * io_apic.c.)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/sched/task_stack.h>
+#include <linex/kernel_stat.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/seq_file.h>
+#include <linex/delay.h>
+#include <linex/ftrace.h>
+#include <linex/uaccess.h>
+#include <linex/smp.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/softirq_stack.h>

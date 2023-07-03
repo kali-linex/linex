@@ -8,14 +8,14 @@
  * Copyright (C) 2019,2021 Advanced Micro Devices, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/psp.h>
-#include <linux/psp-tee.h>
+#include <linex/bitfield.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/gfp.h>
+#include <linex/psp.h>
+#include <linex/psp-tee.h>
 
 #include "psp-dev.h"
 #include "tee-dev.h"

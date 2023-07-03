@@ -3,10 +3,10 @@
  * Exceptions for specific devices. Usually work-arounds for fatal design flaws.
  */
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/pci.h>
+#include <linex/vgaarb.h>
 #include <asm/amd_nb.h>
 #include <asm/hpet.h>
 #include <asm/pci_x86.h>

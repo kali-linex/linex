@@ -7,11 +7,11 @@
  * Author: Baolin Wang <baolin.wang@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/device.h>
 #include <crypto/engine.h>
-#include <uapi/linux/sched/types.h>
+#include <uapi/linex/sched/types.h>
 #include "internal.h"
 
 #define CRYPTO_ENGINE_MAX_QLEN 10

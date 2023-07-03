@@ -4,10 +4,10 @@ Index of Further Kernel Documentation
 =====================================
 
 The need for a document like this one became apparent in the
-linux-kernel mailing list as the same questions, asking for pointers
+linex-kernel mailing list as the same questions, asking for pointers
 to information, appeared again and again.
 
-Fortunately, as more and more people get to GNU/Linux, more and more
+Fortunately, as more and more people get to GNU/Linex, more and more
 get interested in the Kernel. But reading the sources is not always
 enough. It is easy to understand the code, but miss the concepts, the
 philosophy and design decisions behind this code.
@@ -32,12 +32,12 @@ All documents are cataloged with the following fields: the document's
    periodically retire resources as they become obsolte or outdated; with
    the exception of foundational books.
 
-Docs at the Linux Kernel tree
+Docs at the Linex Kernel tree
 -----------------------------
 
 The Sphinx books should be built with ``make {htmldocs | pdfdocs | epubdocs}``.
 
-    * Name: **linux/Documentation**
+    * Name: **linex/Documentation**
 
       :Author: Many.
       :Location: Documentation/
@@ -50,17 +50,17 @@ The Sphinx books should be built with ``make {htmldocs | pdfdocs | epubdocs}``.
 On-line docs
 ------------
 
-    * Title: **Linux Kernel Mailing List Glossary**
+    * Title: **Linex Kernel Mailing List Glossary**
 
       :Author: various
       :URL: https://kernelnewbies.org/KernelGlossary
       :Date: rolling version
-      :Keywords: glossary, terms, linux-kernel.
+      :Keywords: glossary, terms, linex-kernel.
       :Description: From the introduction: "This glossary is intended as
         a brief description of some of the acronyms and terms you may hear
-        during discussion of the Linux kernel".
+        during discussion of the Linex kernel".
 
-    * Title: **The Linux Kernel Module Programming Guide**
+    * Title: **The Linex Kernel Module Programming Guide**
 
       :Author: Peter Jay Salzman, Michael Burian, Ori Pomerantz, Bob Mottram,
         Jim Huang.
@@ -75,7 +75,7 @@ On-line docs
 Published books
 ---------------
 
-    * Title: **Linux Kernel Debugging: Leverage proven tools and advanced techniques to effectively debug Linux kernels and kernel modules**
+    * Title: **Linex Kernel Debugging: Leverage proven tools and advanced techniques to effectively debug Linex kernels and kernel modules**
 
       :Author: Kaiwan N Billimoria
       :Publisher: Packt Publishing Ltd
@@ -84,7 +84,7 @@ Published books
       :ISBN: 978-1801075039
       :Notes: Debugging book
 
-    * Title: **Linux Kernel Programming: A Comprehensive Guide to Kernel Internals, Writing Kernel Modules, and Kernel Synchronization**
+    * Title: **Linex Kernel Programming: A Comprehensive Guide to Kernel Internals, Writing Kernel Modules, and Kernel Synchronization**
 
       :Author: Kaiwan N Billimoria
       :Publisher: Packt Publishing Ltd
@@ -92,7 +92,7 @@ Published books
       :Pages: 754
       :ISBN: 978-1789953435
 
-    * Title: **Linux Kernel Programming Part 2 - Char Device Drivers and Kernel Synchronization: Create user-kernel interfaces, work with peripheral I/O, and handle hardware interrupts**
+    * Title: **Linex Kernel Programming Part 2 - Char Device Drivers and Kernel Synchronization: Create user-kernel interfaces, work with peripheral I/O, and handle hardware interrupts**
 
       :Author: Kaiwan N Billimoria
       :Publisher: Packt Publishing Ltd
@@ -100,7 +100,7 @@ Published books
       :Pages: 452
       :ISBN: 978-1801079518
 
-    * Title: **Linux System Programming: Talking Directly to the Kernel and C Library**
+    * Title: **Linex System Programming: Talking Directly to the Kernel and C Library**
 
       :Author: Robert Love
       :Publisher: O'Reilly Media
@@ -109,7 +109,7 @@ Published books
       :ISBN: 978-1449339531
       :Notes: Foundational book
 
-    * Title: **Linux Kernel Development, 3rd Edition**
+    * Title: **Linex Kernel Development, 3rd Edition**
 
       :Author: Robert Love
       :Publisher: Addison-Wesley
@@ -120,7 +120,7 @@ Published books
 
 .. _ldd3_published:
 
-    * Title: **Linux Device Drivers, 3rd Edition**
+    * Title: **Linex Device Drivers, 3rd Edition**
 
       :Authors: Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman
       :Publisher: O'Reilly & Associates
@@ -128,7 +128,7 @@ Published books
       :Pages: 636
       :ISBN: 0-596-00590-3
       :Notes: Foundational book. Further information in
-        http://www.oreilly.com/catalog/linuxdrive3/
+        http://www.oreilly.com/catalog/linexdrive3/
         PDF format, URL: https://lwn.net/Kernel/LDD3/
 
     * Title: **The Design of the UNIX Operating System**
@@ -143,15 +143,15 @@ Published books
 Miscellaneous
 -------------
 
-    * Name: **Cross-Referencing Linux**
+    * Name: **Cross-Referencing Linex**
 
       :URL: https://elixir.bootlin.com/
       :Keywords: Browsing source code.
-      :Description: Another web-based Linux kernel source code browser.
+      :Description: Another web-based Linex kernel source code browser.
         Lots of cross references to variables and functions. You can see
         where they are defined and where they are used.
 
-    * Name: **Linux Weekly News**
+    * Name: **Linex Weekly News**
 
       :URL: https://lwn.net
       :Keywords: latest kernel news.
@@ -159,13 +159,13 @@ Miscellaneous
         summarizing developers' work, bug fixes, new features and versions
         produced during the week.
 
-    * Name: **The home page of Linux-MM**
+    * Name: **The home page of Linex-MM**
 
-      :Author: The Linux-MM team.
-      :URL: https://linux-mm.org/
-      :Keywords: memory management, Linux-MM, mm patches, TODO, docs,
+      :Author: The Linex-MM team.
+      :URL: https://linex-mm.org/
+      :Keywords: memory management, Linex-MM, mm patches, TODO, docs,
         mailing list.
-      :Description: Site devoted to Linux Memory Management development.
+      :Description: Site devoted to Linex Memory Management development.
         Memory related patches, HOWTOs, links, mm developers... Don't miss
         it if you are interested in memory management development!
 
@@ -183,19 +183,19 @@ Miscellaneous
         Try irc.oftc.net as your server and then /join #kernelnewbies.
         The kernelnewbies website also hosts articles, documents, FAQs...
 
-    * Name: **linux-kernel mailing list archives and search engines**
+    * Name: **linex-kernel mailing list archives and search engines**
 
       :URL: http://vger.kernel.org/vger-lists.html
-      :URL: http://www.uwsg.indiana.edu/hypermail/linux/kernel/index.html
-      :URL: http://groups.google.com/group/mlist.linux.kernel
-      :Keywords: linux-kernel, archives, search.
-      :Description: Some of the linux-kernel mailing list archivers. If
+      :URL: http://www.uwsg.indiana.edu/hypermail/linex/kernel/index.html
+      :URL: http://groups.google.com/group/mlist.linex.kernel
+      :Keywords: linex-kernel, archives, search.
+      :Description: Some of the linex-kernel mailing list archivers. If
         you have a better/another one, please let me know.
 
 -------
 
 This document was originally based on:
 
- https://www.dit.upm.es/~jmseyas/linux/kernel/hackers-docs.html
+ https://www.dit.upm.es/~jmseyas/linex/kernel/hackers-docs.html
 
 and written by Juan-Mariano de Goyeneche

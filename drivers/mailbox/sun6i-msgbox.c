@@ -2,20 +2,20 @@
 //
 // Copyright (c) 2017-2019 Samuel Holland <samuel@sholland.org>
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_controller.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
 
 #define NUM_CHANS		8
 
@@ -234,7 +234,7 @@ static int sun6i_msgbox_probe(struct platform_device *pdev)
 	/*
 	 * NOTE: We rely on platform firmware to preconfigure the channel
 	 * directions, and we share this hardware block with other firmware
-	 * that runs concurrently with Linux (e.g. a trusted monitor).
+	 * that runs concurrently with Linex (e.g. a trusted monitor).
 	 *
 	 * Therefore, we do *not* assert the reset line if probing fails or
 	 * when removing the device.

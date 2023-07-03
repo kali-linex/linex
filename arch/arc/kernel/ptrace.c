@@ -3,11 +3,11 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/ptrace.h>
-#include <linux/sched/task_stack.h>
-#include <linux/regset.h>
-#include <linux/unistd.h>
-#include <linux/elf.h>
+#include <linex/ptrace.h>
+#include <linex/sched/task_stack.h>
+#include <linex/regset.h>
+#include <linex/unistd.h>
+#include <linex/elf.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/syscalls.h>

@@ -61,7 +61,7 @@
  *      printk
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "rv.h"
 

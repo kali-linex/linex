@@ -5,24 +5,24 @@
  * Copyright (C) 2010 Intel Corporation <tony.luck@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/ramfs.h>
-#include <linux/parser.h>
-#include <linux/sched.h>
-#include <linux/magic.h>
-#include <linux/pstore.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/fsnotify.h>
+#include <linex/pagemap.h>
+#include <linex/highmem.h>
+#include <linex/time.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/string.h>
+#include <linex/mount.h>
+#include <linex/seq_file.h>
+#include <linex/ramfs.h>
+#include <linex/parser.h>
+#include <linex/sched.h>
+#include <linex/magic.h>
+#include <linex/pstore.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 

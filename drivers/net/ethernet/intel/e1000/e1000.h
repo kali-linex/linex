@@ -1,47 +1,47 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright(c) 1999 - 2006 Intel Corporation. */
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* Linex PRO/1000 Ethernet Driver main header file */
 
 #ifndef _E1000_H_
 #define _E1000_H_
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/stddef.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/dma-mapping.h>
+#include <linex/bitops.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/capability.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <linex/capability.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
 #include <net/pkt_sched.h>
-#include <linux/list.h>
-#include <linux/reboot.h>
+#include <linex/list.h>
+#include <linex/reboot.h>
 #include <net/checksum.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
 
 #define BAR_0		0
 #define BAR_1		1

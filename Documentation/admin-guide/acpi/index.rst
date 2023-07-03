@@ -3,7 +3,7 @@ ACPI Support
 ============
 
 Here we document in detail how to interact with various mechanisms in
-the Linux ACPI support.
+the Linex ACPI support.
 
 .. toctree::
    :maxdepth: 1

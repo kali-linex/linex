@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/smp.c
+ *  linex/arch/arm/kernel/smp.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/interrupt.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/seq_file.h>
-#include <linux/irq.h>
-#include <linux/nmi.h>
-#include <linux/percpu.h>
-#include <linux/clockchips.h>
-#include <linux/completion.h>
-#include <linux/cpufreq.h>
-#include <linux/irq_work.h>
-#include <linux/kernel_stat.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/interrupt.h>
+#include <linex/cache.h>
+#include <linex/profile.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/cpu.h>
+#include <linex/seq_file.h>
+#include <linex/irq.h>
+#include <linex/nmi.h>
+#include <linex/percpu.h>
+#include <linex/clockchips.h>
+#include <linex/completion.h>
+#include <linex/cpufreq.h>
+#include <linex/irq_work.h>
+#include <linex/kernel_stat.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/bugs.h>
 #include <asm/smp.h>
 #include <asm/cacheflush.h>

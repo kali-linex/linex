@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/fork.c
+ *  linex/kernel/fork.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -12,96 +12,96 @@
  * management can be a bitch. See 'mm/memory.c': 'copy_page_range()'
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/user.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/seq_file.h>
-#include <linux/rtmutex.h>
-#include <linux/init.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/mempolicy.h>
-#include <linux/sem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/kmsan.h>
-#include <linux/binfmts.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/cgroup.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/seccomp.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/jiffies.h>
-#include <linux/futex.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/rcupdate.h>
-#include <linux/ptrace.h>
-#include <linux/mount.h>
-#include <linux/audit.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/rmap.h>
-#include <linux/ksm.h>
-#include <linux/acct.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/freezer.h>
-#include <linux/delayacct.h>
-#include <linux/taskstats_kern.h>
-#include <linux/tty.h>
-#include <linux/fs_struct.h>
-#include <linux/magic.h>
-#include <linux/perf_event.h>
-#include <linux/posix-timers.h>
-#include <linux/user-return-notifier.h>
-#include <linux/oom.h>
-#include <linux/khugepaged.h>
-#include <linux/signalfd.h>
-#include <linux/uprobes.h>
-#include <linux/aio.h>
-#include <linux/compiler.h>
-#include <linux/sysctl.h>
-#include <linux/kcov.h>
-#include <linux/livepatch.h>
-#include <linux/thread_info.h>
-#include <linux/stackleak.h>
-#include <linux/kasan.h>
-#include <linux/scs.h>
-#include <linux/io_uring.h>
-#include <linux/bpf.h>
-#include <linux/stackprotector.h>
-#include <linux/user_events.h>
-#include <linux/iommu.h>
+#include <linex/anon_inodes.h>
+#include <linex/slab.h>
+#include <linex/sched/autogroup.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/user.h>
+#include <linex/sched/numa_balancing.h>
+#include <linex/sched/stat.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/cputime.h>
+#include <linex/seq_file.h>
+#include <linex/rtmutex.h>
+#include <linex/init.h>
+#include <linex/unistd.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/completion.h>
+#include <linex/personality.h>
+#include <linex/mempolicy.h>
+#include <linex/sem.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/iocontext.h>
+#include <linex/key.h>
+#include <linex/kmsan.h>
+#include <linex/binfmts.h>
+#include <linex/mman.h>
+#include <linex/mmu_notifier.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/nsproxy.h>
+#include <linex/capability.h>
+#include <linex/cpu.h>
+#include <linex/cgroup.h>
+#include <linex/security.h>
+#include <linex/hugetlb.h>
+#include <linex/seccomp.h>
+#include <linex/swap.h>
+#include <linex/syscalls.h>
+#include <linex/jiffies.h>
+#include <linex/futex.h>
+#include <linex/compat.h>
+#include <linex/kthread.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/rcupdate.h>
+#include <linex/ptrace.h>
+#include <linex/mount.h>
+#include <linex/audit.h>
+#include <linex/memcontrol.h>
+#include <linex/ftrace.h>
+#include <linex/proc_fs.h>
+#include <linex/profile.h>
+#include <linex/rmap.h>
+#include <linex/ksm.h>
+#include <linex/acct.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/tsacct_kern.h>
+#include <linex/cn_proc.h>
+#include <linex/freezer.h>
+#include <linex/delayacct.h>
+#include <linex/taskstats_kern.h>
+#include <linex/tty.h>
+#include <linex/fs_struct.h>
+#include <linex/magic.h>
+#include <linex/perf_event.h>
+#include <linex/posix-timers.h>
+#include <linex/user-return-notifier.h>
+#include <linex/oom.h>
+#include <linex/khugepaged.h>
+#include <linex/signalfd.h>
+#include <linex/uprobes.h>
+#include <linex/aio.h>
+#include <linex/compiler.h>
+#include <linex/sysctl.h>
+#include <linex/kcov.h>
+#include <linex/livepatch.h>
+#include <linex/thread_info.h>
+#include <linex/stackleak.h>
+#include <linex/kasan.h>
+#include <linex/scs.h>
+#include <linex/io_uring.h>
+#include <linex/bpf.h>
+#include <linex/stackprotector.h>
+#include <linex/user_events.h>
+#include <linex/iommu.h>
 
 #include <asm/pgalloc.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
@@ -124,7 +124,7 @@
 /*
  * Protected counters by write_lock_irq(&tasklist_lock)
  */
-unsigned long total_forks;	/* Handle normal Linux uptimes. */
+unsigned long total_forks;	/* Handle normal Linex uptimes. */
 int nr_threads;			/* The idle threads do not count.. */
 
 static int max_threads;		/* tunable limit on nr_threads */
@@ -1215,7 +1215,7 @@ static int __init coredump_filter_setup(char *s)
 
 __setup("coredump_filter=", coredump_filter_setup);
 
-#include <linux/init_task.h>
+#include <linex/init_task.h>
 
 static void mm_init_aio(struct mm_struct *mm)
 {

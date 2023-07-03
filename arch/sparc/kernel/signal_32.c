@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/*  linux/arch/sparc/kernel/signal.c
+/*  linex/arch/sparc/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
@@ -7,21 +7,21 @@
  *  Copyright (C) 1997 Eddie C. Dost   (ecd@skynet.be)
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/smp.h>
-#include <linux/binfmts.h>	/* do_coredum */
-#include <linux/bitops.h>
-#include <linux/resume_user_mode.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/unistd.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/smp.h>
+#include <linex/binfmts.h>	/* do_coredum */
+#include <linex/bitops.h>
+#include <linex/resume_user_mode.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/cacheflush.h>	/* flush_sig_insns */
 #include <asm/switch_to.h>

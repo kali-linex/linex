@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/mm.h> /* for handle_mm_fault() */
-#include <linux/ftrace.h>
-#include <linux/sched/stat.h>
+#include <linex/mm.h> /* for handle_mm_fault() */
+#include <linex/ftrace.h>
+#include <linex/sched/stat.h>
 #include <asm/asm-offsets.h>
 
 extern void my_direct_func(unsigned long ip);

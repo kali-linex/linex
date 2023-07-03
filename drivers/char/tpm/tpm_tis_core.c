@@ -15,15 +15,15 @@
  * This device driver implements the TPM interface as defined in
  * the TCG TPM Interface Spec version 1.2, revision 1.0.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/acpi.h>
-#include <linux/freezer.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/pnp.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/wait.h>
+#include <linex/acpi.h>
+#include <linex/freezer.h>
 #include "tpm.h"
 #include "tpm_tis_core.h"
 

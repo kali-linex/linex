@@ -11,21 +11,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/un.h>
-#include <linux/uaccess.h>
-#include <linux/inet.h>
-#include <linux/file.h>
-#include <linux/parser.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linex/in.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/ipv6.h>
+#include <linex/kthread.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/un.h>
+#include <linex/uaccess.h>
+#include <linex/inet.h>
+#include <linex/file.h>
+#include <linex/parser.h>
+#include <linex/semaphore.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>

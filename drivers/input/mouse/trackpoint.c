@@ -5,14 +5,14 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/serio.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/libps2.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/serio.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/libps2.h>
+#include <linex/proc_fs.h>
+#include <linex/uaccess.h>
 #include "psmouse.h"
 #include "trackpoint.h"
 

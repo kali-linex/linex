@@ -7,13 +7,13 @@
 #ifndef _I915_ACTIVE_TYPES_H_
 #define _I915_ACTIVE_TYPES_H_
 
-#include <linux/atomic.h>
-#include <linux/dma-fence.h>
-#include <linux/llist.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/dma-fence.h>
+#include <linex/llist.h>
+#include <linex/mutex.h>
+#include <linex/rbtree.h>
+#include <linex/rcupdate.h>
+#include <linex/workqueue.h>
 
 struct i915_active_fence {
 	struct dma_fence __rcu *fence;

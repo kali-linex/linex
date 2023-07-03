@@ -9,22 +9,22 @@
 #define KMSG_COMPONENT "prng"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/fs.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/cpufeature.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linex/fs.h>
+#include <linex/fips.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mutex.h>
+#include <linex/cpufeature.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
 
 #include <asm/debug.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/timex.h>
 #include <asm/cpacf.h>
 

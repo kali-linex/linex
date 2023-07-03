@@ -5,28 +5,28 @@
  * Copyright (C) 2007-2015 Imagination Technologies Ltd
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/kgdb.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/uaccess.h>
 
 #include <asm/cdmm.h>
 #include <asm/irq.h>

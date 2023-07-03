@@ -5,14 +5,14 @@
 #include "e1000_82575.h"
 #include "e1000_hw.h"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/hwmon.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/sysfs.h>
+#include <linex/kobject.h>
+#include <linex/device.h>
+#include <linex/netdevice.h>
+#include <linex/hwmon.h>
+#include <linex/pci.h>
 
 #ifdef CONFIG_IGB_HWMON
 static struct i2c_board_info i350_sensor_info = {

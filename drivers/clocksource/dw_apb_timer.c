@@ -7,13 +7,13 @@
  *
  * Support for the Synopsys DesignWare APB Timers.
  */
-#include <linux/dw_apb_timer.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/dw_apb_timer.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
 #define APBT_MIN_PERIOD			4
 #define APBT_MIN_DELTA_USEC		200

@@ -3,8 +3,8 @@
 #ifndef _ETHTOOL_COMMON_H
 #define _ETHTOOL_COMMON_H
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
 
 #define ETHTOOL_DEV_FEATURE_WORDS	DIV_ROUND_UP(NETDEV_FEATURE_COUNT, 32)
 

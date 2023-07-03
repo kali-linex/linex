@@ -25,11 +25,11 @@
 #ifndef _TTM_RESOURCE_H_
 #define _TTM_RESOURCE_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/iosys-map.h>
-#include <linux/dma-fence.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/iosys-map.h>
+#include <linex/dma-fence.h>
 
 #include <drm/drm_print.h>
 #include <drm/ttm/ttm_caching.h>

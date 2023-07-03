@@ -7,18 +7,18 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/icmp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
+#include <linex/icmp.h>
 #include <net/icmp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv4/ipt_REJECT.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv4/ipt_REJECT.h>
 #if IS_ENABLED(CONFIG_BRIDGE_NETFILTER)
-#include <linux/netfilter_bridge.h>
+#include <linex/netfilter_bridge.h>
 #endif
 
 #include <net/netfilter/ipv4/nf_reject.h>

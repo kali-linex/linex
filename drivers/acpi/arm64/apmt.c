@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt)	"ACPI: APMT: " fmt
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
 #include "init.h"
 
 #define DEV_NAME "arm-cs-arch-pmu"

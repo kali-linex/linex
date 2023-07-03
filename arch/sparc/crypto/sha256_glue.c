@@ -12,10 +12,10 @@
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
 

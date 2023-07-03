@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/affs/inode.c
+ *  linex/fs/affs/inode.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -11,18 +11,18 @@
  *  (C) 1991  Linus Torvalds - minix filesystem
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/slab.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/seq_file.h>
-#include <linux/iversion.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/statfs.h>
+#include <linex/parser.h>
+#include <linex/magic.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/slab.h>
+#include <linex/writeback.h>
+#include <linex/blkdev.h>
+#include <linex/seq_file.h>
+#include <linex/iversion.h>
 #include "affs.h"
 
 static int affs_statfs(struct dentry *dentry, struct kstatfs *buf);
@@ -674,7 +674,7 @@ static void __exit exit_affs_fs(void)
 	destroy_inodecache();
 }
 
-MODULE_DESCRIPTION("Amiga filesystem support for Linux");
+MODULE_DESCRIPTION("Amiga filesystem support for Linex");
 MODULE_LICENSE("GPL");
 
 module_init(init_affs_fs)

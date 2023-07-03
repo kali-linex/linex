@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-footbridge/common.c
+ *  linex/arch/arm/mach-footbridge/common.c
  *
  *  Copyright (C) 1998-2000 Russell King, Dave Gilbert.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/dma-direct.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/ioport.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/dma-direct.h>
 #include <video/vga.h>
 
 #include <asm/page.h>

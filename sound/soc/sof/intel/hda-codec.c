@@ -2,10 +2,10 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Authors: Keyon Jie <yang.jie@linux.intel.com>
+// Authors: Keyon Jie <yang.jie@linex.intel.com>
 //
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/hdaudio_ext.h>
 #include <sound/hda_register.h>
 #include <sound/hda_codec.h>

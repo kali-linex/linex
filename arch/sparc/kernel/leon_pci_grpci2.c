@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/of_device.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linex/of_device.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/export.h>
 #include <asm/io.h>
 #include <asm/leon.h>
 #include <asm/vaddrs.h>

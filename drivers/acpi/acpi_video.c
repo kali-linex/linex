@@ -4,29 +4,29 @@
  *
  *  Copyright (C) 2004 Luming Yu <luming.yu@intel.com>
  *  Copyright (C) 2004 Bruno Ducrot <ducrot@poupinou.org>
- *  Copyright (C) 2006 Thomas Tuttle <linux-kernel@ttuttle.net>
+ *  Copyright (C) 2006 Thomas Tuttle <linex-kernel@ttuttle.net>
  */
 
 #define pr_fmt(fmt) "ACPI: video: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/input.h>
-#include <linux/backlight.h>
-#include <linux/thermal.h>
-#include <linux/sort.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/suspend.h>
-#include <linux/acpi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/input.h>
+#include <linex/backlight.h>
+#include <linex/thermal.h>
+#include <linex/sort.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/slab.h>
+#include <linex/dmi.h>
+#include <linex/suspend.h>
+#include <linex/acpi.h>
 #include <acpi/video.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define ACPI_VIDEO_BUS_NAME		"Video Bus"
 #define ACPI_VIDEO_DEVICE_NAME		"Video Device"

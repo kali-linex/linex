@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Include in trace.c */
 
-#include <uapi/linux/sched/types.h>
-#include <linux/stringify.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/stringify.h>
+#include <linex/kthread.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 static inline int trace_valid_entry(struct trace_entry *entry)
 {

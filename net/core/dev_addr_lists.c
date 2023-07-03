@@ -7,10 +7,10 @@
  * addresses lists.
  */
 
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/export.h>
-#include <linux/list.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/export.h>
+#include <linex/list.h>
 
 #include "dev.h"
 

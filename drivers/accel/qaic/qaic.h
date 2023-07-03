@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0-only
  *
- * Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef _QAIC_H_
 #define _QAIC_H_
 
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/mhi.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/kref.h>
+#include <linex/mhi.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/srcu.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 #include <drm/drm_device.h>
 #include <drm/drm_gem.h>
 

@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/icmp.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/socket.h>
-#include <linux/l2tp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linex/icmp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/random.h>
+#include <linex/socket.h>
+#include <linex/l2tp.h>
+#include <linex/in.h>
+#include <linex/in6.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>

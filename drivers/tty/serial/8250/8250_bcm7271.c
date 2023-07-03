@@ -10,18 +10,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/tty.h>
+#include <linex/errno.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/dma-mapping.h>
+#include <linex/tty_flip.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
 
 #include "8250.h"
 

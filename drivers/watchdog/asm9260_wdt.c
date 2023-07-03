@@ -2,19 +2,19 @@
 /*
  * Watchdog driver for Alphascale ASM9260.
  *
- * Copyright (c) 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (c) 2014 Oleksij Rempel <linex@rempel-privat.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/watchdog.h>
 
 #define CLOCK_FREQ	1000000
 
@@ -372,5 +372,5 @@ static struct platform_driver asm9260_wdt_driver = {
 module_platform_driver(asm9260_wdt_driver);
 
 MODULE_DESCRIPTION("asm9260 WatchDog Timer Driver");
-MODULE_AUTHOR("Oleksij Rempel <linux@rempel-privat.de>");
+MODULE_AUTHOR("Oleksij Rempel <linex@rempel-privat.de>");
 MODULE_LICENSE("GPL");

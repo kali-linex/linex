@@ -13,14 +13,14 @@
 
 
 /* kernel includes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/videodev2.h>
+#include <linex/mutex.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/netlink.h>
 #include <net/net_namespace.h>
-#include <linux/if_arp.h>
+#include <linex/if_arp.h>
 #include <net/rtnetlink.h>
 
 static netdev_tx_t nlmon_xmit(struct sk_buff *skb, struct net_device *dev)

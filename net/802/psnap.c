@@ -7,17 +7,17 @@
  *		Merged in additions from Greg Page's psnap.c.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/datalink.h>
 #include <net/llc.h>
 #include <net/psnap.h>
-#include <linux/mm.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
+#include <linex/mm.h>
+#include <linex/in.h>
+#include <linex/init.h>
+#include <linex/rculist.h>
 
 static LIST_HEAD(snap_list);
 static DEFINE_SPINLOCK(snap_lock);

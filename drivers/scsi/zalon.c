@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Zalon 53c7xx device driver.
- * By Richard Hirst (rhirst@linuxcare.com)
+ * By Richard Hirst (rhirst@linexcare.com)
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 

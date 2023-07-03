@@ -1,4 +1,4 @@
-/* This version ported to the Linux-MTD system by dwmw2@infradead.org
+/* This version ported to the Linex-MTD system by dwmw2@infradead.org
  *
  * Fixes: Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  * - fixes some leaks on failure in build_maps and ftl_notify_add, cleanups
@@ -54,25 +54,25 @@
     contact M-Systems directly. M-Systems since acquired by Sandisk. 
 
 ======================================================================*/
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
+#include <linex/mtd/blktrans.h>
+#include <linex/module.h>
+#include <linex/mtd/mtd.h>
 /*#define PSYCHO_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/vmalloc.h>
-#include <linux/blkpg.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/major.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/hdreg.h>
+#include <linex/vmalloc.h>
+#include <linex/blkpg.h>
+#include <linex/uaccess.h>
 
-#include <linux/mtd/ftl.h>
+#include <linex/mtd/ftl.h>
 
 /*====================================================================*/
 

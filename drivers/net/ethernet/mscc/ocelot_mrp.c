@@ -5,10 +5,10 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/if_bridge.h>
-#include <linux/mrp_bridge.h>
+#include <linex/if_bridge.h>
+#include <linex/mrp_bridge.h>
 #include <soc/mscc/ocelot_vcap.h>
-#include <uapi/linux/mrp_bridge.h>
+#include <uapi/linex/mrp_bridge.h>
 #include "ocelot.h"
 #include "ocelot_vcap.h"
 

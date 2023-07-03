@@ -18,13 +18,13 @@
 #include "aq_ptp.h"
 #include "aq_filters.h"
 
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/timer.h>
-#include <linux/cpu.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linex/moduleparam.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/timer.h>
+#include <linex/cpu.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
 #include <net/ip.h>
 #include <net/pkt_cls.h>
 

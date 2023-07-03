@@ -5,13 +5,13 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997, 1998 Ralf Baechle (ralf@gnu.org)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/console.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kdev_t.h>
+#include <linex/types.h>
+#include <linex/console.h>
+#include <linex/sched.h>
+#include <linex/tty.h>
 
 #include <asm/addrspace.h>
 #include <asm/bcache.h>

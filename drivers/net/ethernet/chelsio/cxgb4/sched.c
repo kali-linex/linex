@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Linex.
  *
  * Copyright (c) 2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,8 +32,8 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
 
 #include "cxgb4.h"
 #include "sched.h"

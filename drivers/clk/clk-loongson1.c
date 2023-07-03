@@ -5,14 +5,14 @@
  * Copyright (C) 2012-2023 Keguang Zhang <keguang.zhang@gmail.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk-provider.h>
-#include <linux/container_of.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/printk.h>
+#include <linex/bits.h>
+#include <linex/clk-provider.h>
+#include <linex/container_of.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/printk.h>
 
 #include <dt-bindings/clock/loongson,ls1x-clk.h>
 

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * PPC32 code to handle Linux booting another kernel.
+ * PPC32 code to handle Linex booting another kernel.
  *
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
  * Copyright (C) 2005 IBM Corporation.
  */
 
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linex/kexec.h>
+#include <linex/mm.h>
+#include <linex/string.h>
 #include <asm/cacheflush.h>
 #include <asm/hw_irq.h>
 #include <asm/io.h>

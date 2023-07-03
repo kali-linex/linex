@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc.h -- ALSA SoC Layer
+ * linex/sound/soc.h -- ALSA SoC Layer
  *
  * Author:	Liam Girdwood
  * Created:	Aug 11th 2005
  * Copyright:	Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_SOC_H
-#define __LINUX_SND_SOC_H
+#ifndef __LINEX_SND_SOC_H
+#define __LINEX_SND_SOC_H
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
+#include <linex/notifier.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/regmap.h>
+#include <linex/log2.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/compress_driver.h>

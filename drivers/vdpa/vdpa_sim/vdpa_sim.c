@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/dma-map-ops.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <linux/vhost_iotlb.h>
-#include <uapi/linux/vdpa.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
+#include <linex/dma-map-ops.h>
+#include <linex/vringh.h>
+#include <linex/vdpa.h>
+#include <linex/vhost_iotlb.h>
+#include <uapi/linex/vdpa.h>
 
 #include "vdpa_sim.h"
 

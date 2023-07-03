@@ -9,13 +9,13 @@
  *                         2002/08/07 Erich Focht <efocht@ess.nec.de>
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/node.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/module.h>
+#include <linex/cpu.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/node.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/module.h>
 #include <asm/mmzone.h>
 #include <asm/numa.h>
 

@@ -5,12 +5,12 @@
  * Copyright (C) 2022 Marek Vasut <marex@denx.de>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include <dt-bindings/clock/imx8mp-clock.h>
 

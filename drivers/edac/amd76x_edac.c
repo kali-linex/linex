@@ -1,22 +1,22 @@
 /*
  * AMD 76x Memory Controller kernel module
- * (C) 2003 Linux Networx (http://lnxi.com)
+ * (C) 2003 Linex Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/linex-ecc/
  *
  * $Id: edac_amd76x.c,v 1.4.2.5 2005/10/05 00:43:44 dsp_llnl Exp $
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR	"amd76x_edac"
@@ -368,7 +368,7 @@ module_init(amd76x_init);
 module_exit(amd76x_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Linux Networx (http://lnxi.com) Thayne Harbaugh");
+MODULE_AUTHOR("Linex Networx (http://lnxi.com) Thayne Harbaugh");
 MODULE_DESCRIPTION("MC support for AMD 76x memory controllers");
 
 module_param(edac_op_state, int, 0444);

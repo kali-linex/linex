@@ -35,9 +35,9 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 
 static int use_pager = -1;
 

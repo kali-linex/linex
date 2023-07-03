@@ -5,7 +5,7 @@
  * Copyright (c) 2021, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: David E. Box <david.e.box@linux.intel.com>
+ * Author: David E. Box <david.e.box@linex.intel.com>
  *
  * This driver discovers and creates auxiliary devices for Intel defined PCIe
  * "Vendor Specific" and "Designated Vendor Specific" Extended Capabilities,
@@ -13,14 +13,14 @@
  * endpoints that exist primarily to expose them.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/idr.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/types.h>
 
 #include "vsec.h"
 
@@ -508,6 +508,6 @@ static struct pci_driver intel_vsec_pci_driver = {
 };
 module_pci_driver(intel_vsec_pci_driver);
 
-MODULE_AUTHOR("David E. Box <david.e.box@linux.intel.com>");
+MODULE_AUTHOR("David E. Box <david.e.box@linex.intel.com>");
 MODULE_DESCRIPTION("Intel Extended Capabilities auxiliary bus driver");
 MODULE_LICENSE("GPL v2");

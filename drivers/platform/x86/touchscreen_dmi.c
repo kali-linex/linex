@@ -8,14 +8,14 @@
  * Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/efi_embedded_fw.h>
-#include <linux/i2c.h>
-#include <linux/notifier.h>
-#include <linux/property.h>
-#include <linux/string.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/efi_embedded_fw.h>
+#include <linex/i2c.h>
+#include <linex/notifier.h>
+#include <linex/property.h>
+#include <linex/string.h>
 
 struct ts_dmi_data {
 	/* The EFI embedded-fw code expects this to be the first member! */

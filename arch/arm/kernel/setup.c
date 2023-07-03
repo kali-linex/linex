@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/setup.c
+ *  linex/arch/arm/kernel/setup.c
  *
  *  Copyright (C) 1995-2001 Russell King
  */
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/sort.h>
-#include <linux/psci.h>
+#include <linex/efi.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/utsname.h>
+#include <linex/initrd.h>
+#include <linex/console.h>
+#include <linex/seq_file.h>
+#include <linex/screen_info.h>
+#include <linex/of_platform.h>
+#include <linex/init.h>
+#include <linex/kexec.h>
+#include <linex/libfdt.h>
+#include <linex/of_fdt.h>
+#include <linex/cpu.h>
+#include <linex/interrupt.h>
+#include <linex/smp.h>
+#include <linex/proc_fs.h>
+#include <linex/memblock.h>
+#include <linex/bug.h>
+#include <linex/compiler.h>
+#include <linex/sort.h>
+#include <linex/psci.h>
 
 #include <asm/unified.h>
 #include <asm/cp15.h>
@@ -610,7 +610,7 @@ void __init smp_setup_processor_id(void)
 	 */
 	set_my_cpu_offset(0);
 
-	pr_info("Booting Linux on physical CPU 0x%x\n", mpidr);
+	pr_info("Booting Linex on physical CPU 0x%x\n", mpidr);
 }
 
 struct mpidr_hash mpidr_hash;

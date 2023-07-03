@@ -6,14 +6,14 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#include <linux/bug.h>
-#include <linux/compiler_types.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/bug.h>
+#include <linex/compiler_types.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/rcupdate.h>
+#include <linex/refcount.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "object.h"
 

@@ -7,18 +7,18 @@
 #define KMSG_COMPONENT "setup"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/lockdep.h>
-#include <linux/extable.h>
-#include <linux/pfn.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linex/compiler.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/lockdep.h>
+#include <linex/extable.h>
+#include <linex/pfn.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
 #include <asm/asm-extable.h>
-#include <linux/memblock.h>
+#include <linex/memblock.h>
 #include <asm/diag.h>
 #include <asm/ebcdic.h>
 #include <asm/ipl.h>

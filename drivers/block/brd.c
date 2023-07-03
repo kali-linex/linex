@@ -9,23 +9,23 @@
  * of their respective owners.
  */
 
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/xarray.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/debugfs.h>
+#include <linex/init.h>
+#include <linex/initrd.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/major.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/highmem.h>
+#include <linex/mutex.h>
+#include <linex/pagemap.h>
+#include <linex/xarray.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/backing-dev.h>
+#include <linex/debugfs.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*
  * Each block ramdisk device has a xarray brd_pages of pages that stores

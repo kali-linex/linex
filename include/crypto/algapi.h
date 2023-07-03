@@ -8,10 +8,10 @@
 #define _CRYPTO_ALGAPI_H
 
 #include <crypto/utils.h>
-#include <linux/align.h>
-#include <linux/cache.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linex/align.h>
+#include <linex/cache.h>
+#include <linex/crypto.h>
+#include <linex/types.h>
 
 /*
  * Maximum values for blocksize and alignmask, used to allocate

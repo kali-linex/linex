@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2011,2013-2015 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011,2013-2015 The Linex Foundation. All rights reserved.
  *
  * lpass-platform.c -- ALSA SoC platform driver for QTi LPASS
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include "lpass-lpaif-reg.h"
 #include "lpass.h"

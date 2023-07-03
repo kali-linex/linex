@@ -2,20 +2,20 @@
 /*
  * Qualcomm Technologies HIDMA DMA engine low level code
  *
- * Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2016, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/iopoll.h>
-#include <linux/kfifo.h>
-#include <linux/bitops.h>
+#include <linex/dmaengine.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/atomic.h>
+#include <linex/iopoll.h>
+#include <linex/kfifo.h>
+#include <linex/bitops.h>
 
 #include "hidma.h"
 

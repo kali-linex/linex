@@ -1,7 +1,7 @@
 /*
  * Author       Andreas Eversberg (jolly@eversberg.eu)
  * Based on source code structure by
- *		Karsten Keil (keil@isdn4linux.de)
+ *		Karsten Keil (keil@isdn4linex.de)
  *
  *		This file is (c) under GNU PUBLIC LICENSE
  *
@@ -151,12 +151,12 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
+#include <linex/mISDNif.h>
+#include <linex/mISDNdsp.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
 #include "core.h"
 #include "dsp.h"
 

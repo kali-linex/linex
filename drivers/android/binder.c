@@ -42,34 +42,34 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/poll.h>
-#include <linux/debugfs.h>
-#include <linux/rbtree.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/pid_namespace.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/task_work.h>
-#include <linux/sizes.h>
+#include <linex/fdtable.h>
+#include <linex/file.h>
+#include <linex/freezer.h>
+#include <linex/fs.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nsproxy.h>
+#include <linex/poll.h>
+#include <linex/debugfs.h>
+#include <linex/rbtree.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
+#include <linex/pid_namespace.h>
+#include <linex/security.h>
+#include <linex/spinlock.h>
+#include <linex/ratelimit.h>
+#include <linex/syscalls.h>
+#include <linex/task_work.h>
+#include <linex/sizes.h>
 
-#include <uapi/linux/android/binder.h>
+#include <uapi/linex/android/binder.h>
 
-#include <linux/cacheflush.h>
+#include <linex/cacheflush.h>
 
 #include "binder_internal.h"
 #include "binder_trace.h"

@@ -3,13 +3,13 @@
  * Intel 8255 Programmable Peripheral Interface
  * Copyright (C) 2022 William Breathitt Gray
  */
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/regmap.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/gpio/regmap.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #include "gpio-i8255.h"
 

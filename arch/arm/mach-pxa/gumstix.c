@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/gumstix.c
+ *  linex/arch/arm/mach-pxa/gumstix.c
  *
  *  Support for the Gumstix motherboards.
  *
@@ -12,24 +12,24 @@
  *  Hughes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio.h>
+#include <linex/err.h>
+#include <linex/clk.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
 #include <asm/mach-types.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -37,7 +37,7 @@
 #include <asm/mach/flash.h>
 
 #include "pxa25x.h"
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linex/platform_data/mmc-pxamci.h>
 #include "udc.h"
 #include "gumstix.h"
 

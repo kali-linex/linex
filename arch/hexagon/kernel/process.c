@@ -2,19 +2,19 @@
 /*
  * Process creation support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/resume_user_mode.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/tick.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
+#include <linex/resume_user_mode.h>
 
 /*
  * Program thread launch.  Often defined as a macro in processor.h,

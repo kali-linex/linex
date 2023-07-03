@@ -9,20 +9,20 @@
  * Copyright (C) 2009 Provigent Ltd.
  * Copyright (C) 2011, 2015, 2016 Intel Corporation.
  */
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/power_supply.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include "i2c-designware-core.h"
 #include "i2c-ccgx-ucsi.h"

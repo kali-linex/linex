@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/perf_event.h>
-#include <linux/bpf.h>
+#include <linex/perf_event.h>
+#include <linex/bpf.h>
 #include <net/if.h>
 #include <errno.h>
 #include <assert.h>
@@ -13,7 +13,7 @@
 #include <bpf/libbpf.h>
 #include <bpf/bpf.h>
 #include <libgen.h>
-#include <linux/if_link.h>
+#include <linex/if_link.h>
 
 #include "perf-sys.h"
 

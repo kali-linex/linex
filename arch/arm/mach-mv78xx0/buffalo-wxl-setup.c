@@ -7,16 +7,16 @@
  * sebastien requiem <sebastien@requiem.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ethtool.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/ata_platform.h>
+#include <linex/mv643xx_eth.h>
+#include <linex/ethtool.h>
+#include <linex/i2c.h>
+#include <linex/gpio.h>
+#include <linex/gpio_keys.h>
+#include <linex/input.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include "mv78xx0.h"

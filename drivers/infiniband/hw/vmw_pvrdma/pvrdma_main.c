@@ -43,11 +43,11 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/errno.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/inetdevice.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_user_verbs.h>
@@ -859,7 +859,7 @@ static int pvrdma_pci_probe(struct pci_dev *pdev,
 	dev->dsr->gos_info.gos_bits = sizeof(void *) == 4 ?
 		PVRDMA_GOS_BITS_32 :
 		PVRDMA_GOS_BITS_64;
-	dev->dsr->gos_info.gos_type = PVRDMA_GOS_TYPE_LINUX;
+	dev->dsr->gos_info.gos_type = PVRDMA_GOS_TYPE_LINEX;
 	dev->dsr->gos_info.gos_ver = 1;
 
 	if (dev->dsr_version < PVRDMA_PPN64_VERSION)

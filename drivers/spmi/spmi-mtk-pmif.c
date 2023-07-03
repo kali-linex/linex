@@ -2,13 +2,13 @@
 //
 // Copyright (c) 2021 MediaTek Inc.
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/spmi.h>
+#include <linex/clk.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/spmi.h>
 
 #define SWINF_IDLE	0x00
 #define SWINF_WFVLDCLR	0x06

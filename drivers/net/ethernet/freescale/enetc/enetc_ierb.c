@@ -17,11 +17,11 @@
  * port, or the TX of a single port.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 #include "enetc.h"
 #include "enetc_ierb.h"
 

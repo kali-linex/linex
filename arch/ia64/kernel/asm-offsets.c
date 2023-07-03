@@ -7,10 +7,10 @@
 
 #define ASM_OFFSETS_C 1
 
-#include <linux/sched/signal.h>
-#include <linux/pid.h>
-#include <linux/clocksource.h>
-#include <linux/kbuild.h>
+#include <linex/sched/signal.h>
+#include <linex/pid.h>
+#include <linex/clocksource.h>
+#include <linex/kbuild.h>
 #include <asm/processor.h>
 #include <asm/ptrace.h>
 #include <asm/siginfo.h>

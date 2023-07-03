@@ -4,9 +4,9 @@
  */
 
 #include "ratelimiter.h"
-#include <linux/siphash.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linex/siphash.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
 #include <net/ip.h>
 
 static struct kmem_cache *entry_cache;

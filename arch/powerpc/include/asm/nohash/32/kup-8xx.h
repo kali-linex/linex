@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/jump_label.h>
+#include <linex/jump_label.h>
 
 #include <asm/reg.h>
 

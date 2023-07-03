@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <kunit/test.h>
 #include <kunit/test-bug.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
 #include "../mm/slab.h"
 
 static struct kunit_resource resource;

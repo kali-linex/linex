@@ -6,19 +6,19 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
 #include <asm/unaligned.h>
 
 #include "sigmadsp.h"

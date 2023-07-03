@@ -4,19 +4,19 @@
  * Copyright (C) 2017 Spreadtrum - http://www.spreadtrum.com
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
 
 #define SPRD_WDT_LOAD_LOW		0x0
 #define SPRD_WDT_LOAD_HIGH		0x4

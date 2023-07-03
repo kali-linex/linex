@@ -1,6 +1,6 @@
 /*
- *	ipddp.c: IP to Appletalk-IP Encapsulation driver for Linux
- *		 Appletalk-IP to IP Decapsulation driver for Linux
+ *	ipddp.c: IP to Appletalk-IP Encapsulation driver for Linex
+ *		 Appletalk-IP to IP Decapsulation driver for Linex
  *
  *	Authors:
  *      - DDP-IP Encap by: Bradford W. Johnson <johns393@maroon.tc.umn.edu>
@@ -10,11 +10,11 @@
  *	- Almost all code already existed in net/appletalk/ddp.c I just
  *	  moved/reorginized it into a driver file. Original IP-over-DDP code
  *	  was done by Bradford W. Johnson <johns393@maroon.tc.umn.edu>
- *      - skeleton.c: A network driver outline for linux.
+ *      - skeleton.c: A network driver outline for linex.
  *        Written 1993-94 by Donald Becker.
  *	- dummy.c: A dummy net driver. By Nick Holloway.
  *	- MacGate: A user space Daemon for Appletalk-IP Decap for
- *	  Linux by Jay Schulist <jschlst@samba.org>
+ *	  Linex by Jay Schulist <jschlst@samba.org>
  *
  *      Copyright 1993 United States Government as represented by the
  *      Director, National Security Agency.
@@ -23,18 +23,18 @@
  *      of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/atalk.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/atalk.h>
+#include <linex/if_arp.h>
+#include <linex/slab.h>
 #include <net/route.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "ipddp.h"		/* Our stuff */
 

@@ -4,8 +4,8 @@
 #ifndef _MLXSW_SPECTRUM_NVE_H
 #define _MLXSW_SPECTRUM_NVE_H
 
-#include <linux/netlink.h>
-#include <linux/rhashtable.h>
+#include <linex/netlink.h>
+#include <linex/rhashtable.h>
 
 #include "spectrum.h"
 

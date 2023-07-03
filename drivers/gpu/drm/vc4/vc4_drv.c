@@ -20,15 +20,15 @@
  * driver.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

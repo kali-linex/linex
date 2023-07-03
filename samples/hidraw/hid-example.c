@@ -10,10 +10,10 @@
  * applications using hidraw.
  */
 
-/* Linux */
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/hidraw.h>
+/* Linex */
+#include <linex/types.h>
+#include <linex/input.h>
+#include <linex/hidraw.h>
 
 /*
  * Ugly hack to work around failing compilation on systems that don't

@@ -15,9 +15,9 @@
  */
 
 /*
- * This driver exists to allow userspace programs in Linux to allocate kernel
+ * This driver exists to allow userspace programs in Linex to allocate kernel
  * memory that will later be shared with another domain.  Without this device,
- * Linux userspace programs cannot create grant references.
+ * Linex userspace programs cannot create grant references.
  *
  * How this stuff works:
  *   X -> granting a page to Y
@@ -50,19 +50,19 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
+#include <linex/atomic.h>
+#include <linex/module.h>
+#include <linex/miscdevice.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/mm.h>
+#include <linex/uaccess.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/highmem.h>
 
 #include <xen/xen.h>
 #include <xen/page.h>

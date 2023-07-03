@@ -5,11 +5,11 @@
  *
  * ATPX support for both Intel/ATI
  */
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include "amdgpu.h"
 #include "amd_acpi.h"

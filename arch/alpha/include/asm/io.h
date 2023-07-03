@@ -4,8 +4,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
 #include <asm/compiler.h>
 #include <asm/machvec.h>
 #include <asm/hwrpb.h>

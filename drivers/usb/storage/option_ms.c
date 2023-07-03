@@ -7,9 +7,9 @@
  * Inspiration taken from sierra_ms.c by Kevin Lloyd <klloyd@sierrawireless.com>
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/usb.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include "usb.h"
 #include "transport.h"

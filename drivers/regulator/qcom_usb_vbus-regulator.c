@@ -2,17 +2,17 @@
 //
 // Qualcomm PMIC VBUS output regulator driver
 //
-// Copyright (c) 2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020, The Linex Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regmap.h>
 
 #define CMD_OTG				0x40
 #define OTG_EN				BIT(0)

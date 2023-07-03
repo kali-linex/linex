@@ -3,7 +3,7 @@
  * Common place for both 32- and 64-bit entry routines.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/export.h>
 #include <asm/msr-index.h>
 

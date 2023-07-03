@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/fs.h>
-#include <linux/mtd/super.h>
-#include <linux/buffer_head.h>
+#include <linex/fs.h>
+#include <linex/mtd/super.h>
+#include <linex/buffer_head.h>
 #include "internal.h"
 
 #if !defined(CONFIG_ROMFS_ON_MTD) && !defined(CONFIG_ROMFS_ON_BLOCK)

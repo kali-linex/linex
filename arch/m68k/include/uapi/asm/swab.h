@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 #ifndef _M68K_SWAB_H
 #define _M68K_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
 
 #define __SWAB_64_THRU_32__
 

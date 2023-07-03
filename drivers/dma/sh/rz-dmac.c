@@ -9,20 +9,20 @@
  * Copyright 2012 Javier Martin, Vista Silicon <javier.martin@vista-silicon.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_dma.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"

@@ -7,13 +7,13 @@
  * interface.
  **/
 
-#ifndef _LINUX_VIRTIO_PMEM_H
-#define _LINUX_VIRTIO_PMEM_H
+#ifndef _LINEX_VIRTIO_PMEM_H
+#define _LINEX_VIRTIO_PMEM_H
 
-#include <linux/module.h>
-#include <uapi/linux/virtio_pmem.h>
-#include <linux/libnvdimm.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <uapi/linex/virtio_pmem.h>
+#include <linex/libnvdimm.h>
+#include <linex/spinlock.h>
 
 struct virtio_pmem_request {
 	struct virtio_pmem_req req;

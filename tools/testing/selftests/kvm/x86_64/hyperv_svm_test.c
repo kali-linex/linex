@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
-#include <linux/bitmap.h>
+#include <linex/bitmap.h>
 
 #include "test_util.h"
 
@@ -78,7 +78,7 @@ static void __attribute__((__flatten__)) guest_code(struct svm_test_data *svm,
 
 	GUEST_SYNC(1);
 
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINEX_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, pgs_gpa);
 	enable_vp_assist(hv_pages->vp_assist_gpa, hv_pages->vp_assist);
 

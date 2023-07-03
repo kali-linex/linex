@@ -45,7 +45,7 @@
  * current job can make progress.
  */
 
-#include <linux/platform_device.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_drv.h>
 

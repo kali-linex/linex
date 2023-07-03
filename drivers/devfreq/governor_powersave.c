@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/devfreq/governor_powersave.c
+ *  linex/drivers/devfreq/governor_powersave.c
  *
  *  Copyright (C) 2011 Samsung Electronics
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/devfreq.h>
-#include <linux/module.h>
+#include <linex/devfreq.h>
+#include <linex/module.h>
 #include "governor.h"
 
 static int devfreq_powersave_func(struct devfreq *df,

@@ -5,19 +5,19 @@
  * Copyright (c) 2017 Jack Andersen
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/dln2.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/dln2.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/kfifo_buf.h>
 
 #define DLN2_ADC_MOD_NAME "dln2-adc"
 

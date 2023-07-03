@@ -4,7 +4,7 @@ Device drivers infrastructure
 The Basic Device Driver-Model Structures
 ----------------------------------------
 
-.. kernel-doc:: include/linux/device.h
+.. kernel-doc:: include/linex/device.h
    :internal:
    :no-identifiers: device_link_state
 
@@ -35,7 +35,7 @@ Device Drivers Base
 .. kernel-doc:: drivers/base/dd.c
    :export:
 
-.. kernel-doc:: include/linux/platform_device.h
+.. kernel-doc:: include/linex/platform_device.h
    :internal:
 
 .. kernel-doc:: drivers/base/platform.c
@@ -74,6 +74,6 @@ Userspace IO devices
 .. kernel-doc:: drivers/uio/uio.c
    :export:
 
-.. kernel-doc:: include/linux/uio_driver.h
+.. kernel-doc:: include/linex/uio_driver.h
    :internal:
 

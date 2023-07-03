@@ -5,19 +5,19 @@
 // Copyright (C) 2017, STMicroelectronics - All Rights Reserved
 // Author(s): Amelie Delaunay <amelie.delaunay@st.com> for STMicroelectronics.
 
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/debugfs.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/spi/spi.h>
 
 #define DRIVER_NAME "spi_stm32"
 

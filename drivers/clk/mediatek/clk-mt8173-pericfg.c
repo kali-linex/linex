@@ -5,8 +5,8 @@
  */
 
 #include <dt-bindings/clock/mt8173-clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include "clk-gate.h"
 #include "clk-mtk.h"
 #include "reset.h"

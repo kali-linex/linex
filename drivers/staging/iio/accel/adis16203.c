@@ -5,14 +5,14 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
+#include <linex/device.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/imu/adis.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
 
 #define ADIS16203_STARTUP_DELAY 220 /* ms */
 

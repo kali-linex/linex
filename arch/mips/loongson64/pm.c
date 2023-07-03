@@ -5,9 +5,9 @@
  *  Copyright (C) 2009 Lemote Inc.
  *  Author: Wu Zhangjin <wuzhangjin@gmail.com>
  */
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linex/suspend.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
 
 #include <asm/i8259.h>
 #include <asm/mipsregs.h>

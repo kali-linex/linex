@@ -6,16 +6,16 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sock_diag.h>
-#include <linux/inet_diag.h>
-#include <linux/smc_diag.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/sock_diag.h>
+#include <linex/inet_diag.h>
+#include <linex/smc_diag.h>
 #include <net/netlink.h>
 #include <net/smc.h>
 

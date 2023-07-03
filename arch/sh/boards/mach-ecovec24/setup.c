@@ -8,35 +8,35 @@
 #include <asm/heartbeat.h>
 #include <asm/suspend.h>
 #include <cpu/sh7724.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/sh_mmcif.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/gpio_backlight.h>
-#include <linux/platform_data/tsc2007.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/spi/sh_msiof.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/renesas_usbhs.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/input/sh_keysc.h>
+#include <linex/interrupt.h>
+#include <linex/memblock.h>
+#include <linex/mfd/tmio.h>
+#include <linex/mmc/host.h>
+#include <linex/platform_data/sh_mmcif.h>
+#include <linex/mtd/physmap.h>
+#include <linex/gpio.h>
+#include <linex/gpio/machine.h>
+#include <linex/platform_data/gpio_backlight.h>
+#include <linex/platform_data/tsc2007.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/sh_eth.h>
+#include <linex/sh_intc.h>
+#include <linex/spi/mmc_spi.h>
+#include <linex/spi/sh_msiof.h>
+#include <linex/spi/spi.h>
+#include <linex/usb/r8a66597.h>
+#include <linex/usb/renesas_usbhs.h>
+#include <linex/videodev2.h>
+#include <linex/dma-map-ops.h>
 
 #include <media/drv-intf/renesas-ceu.h>
 #include <media/i2c/mt9t112.h>
@@ -51,8 +51,8 @@
  *  Address      Interface        BusWidth
  *-----------------------------------------
  *  0x0000_0000  uboot            16bit
- *  0x0004_0000  Linux romImage   16bit
- *  0x0014_0000  MTD for Linux    16bit
+ *  0x0004_0000  Linex romImage   16bit
+ *  0x0014_0000  MTD for Linex    16bit
  *  0x0400_0000  Internal I/O     16/32bit
  *  0x0800_0000  DRAM             32bit
  *  0x1800_0000  MFI              16bit

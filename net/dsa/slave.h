@@ -3,11 +3,11 @@
 #ifndef __DSA_SLAVE_H
 #define __DSA_SLAVE_H
 
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/list.h>
-#include <linux/netpoll.h>
-#include <linux/types.h>
+#include <linex/if_bridge.h>
+#include <linex/if_vlan.h>
+#include <linex/list.h>
+#include <linex/netpoll.h>
+#include <linex/types.h>
 #include <net/dsa.h>
 #include <net/gro_cells.h>
 

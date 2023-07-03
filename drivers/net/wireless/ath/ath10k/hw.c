@@ -3,9 +3,9 @@
  * Copyright (c) 2014-2017 Qualcomm Atheros, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/bitfield.h>
 #include "core.h"
 #include "hw.h"
 #include "hif.h"

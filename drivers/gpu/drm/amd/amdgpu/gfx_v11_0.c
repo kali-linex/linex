@@ -20,11 +20,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 #include "amdgpu.h"
 #include "amdgpu_gfx.h"
 #include "amdgpu_psp.h"

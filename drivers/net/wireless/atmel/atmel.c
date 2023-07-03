@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- linex-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,8 +7,8 @@
 
     This code was developed from version 2.1.1 of the Atmel drivers,
     released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Linux aironet drivers (C) Benjamin Reed,
-    and the Linux PCMCIA package, (C) David Hinds and the Linux wireless
+    includes code from the Linex aironet drivers (C) Benjamin Reed,
+    and the Linex PCMCIA package, (C) David Hinds and the Linex wireless
     extensions, (C) Jean Tourrilhes.
 
     The firmware module for reading the MAC address of the card comes from
@@ -39,33 +39,33 @@
 
 ******************************************************************************/
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
+#include <linex/kernel.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/timer.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/ioport.h>
+#include <linex/fcntl.h>
+#include <linex/delay.h>
+#include <linex/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/crc32.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
+#include <linex/crc32.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/device.h>
+#include <linex/moduleparam.h>
+#include <linex/firmware.h>
+#include <linex/jiffies.h>
 #include <net/cfg80211.h>
 #include "atmel.h"
 

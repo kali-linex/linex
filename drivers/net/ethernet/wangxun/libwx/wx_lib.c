@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 - 2022 Beijing WangXun Technology Co., Ltd. */
 
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 #include <net/ip6_checksum.h>
 #include <net/page_pool.h>
 #include <net/inet_ecn.h>
-#include <linux/iopoll.h>
-#include <linux/sctp.h>
-#include <linux/pci.h>
+#include <linex/iopoll.h>
+#include <linex/sctp.h>
+#include <linex/pci.h>
 #include <net/tcp.h>
 #include <net/ip.h>
 

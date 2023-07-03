@@ -7,8 +7,8 @@
  *  Derived from arch/powerpc/mm/40x_mmu.c:
  */
 
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
+#include <linex/memblock.h>
+#include <linex/hugetlb.h>
 
 #include <mm/mmu_decl.h>
 

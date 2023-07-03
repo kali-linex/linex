@@ -9,12 +9,12 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
+#include <linex/kvm_host.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/miscdevice.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>

@@ -4,15 +4,15 @@
 //
 // Copyright (c) 2016-2018 Socionext Inc.
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

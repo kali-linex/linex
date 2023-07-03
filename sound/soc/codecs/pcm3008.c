@@ -11,12 +11,12 @@
  * Generic PCM3008 support.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/gpio.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

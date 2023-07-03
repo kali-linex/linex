@@ -11,14 +11,14 @@
 #ifndef __DRIVER_OPP_H__
 #define __DRIVER_OPP_H__
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/limits.h>
-#include <linux/pm_opp.h>
-#include <linux/notifier.h>
+#include <linex/device.h>
+#include <linex/interconnect.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/limits.h>
+#include <linex/pm_opp.h>
+#include <linex/notifier.h>
 
 struct clk;
 struct regulator;

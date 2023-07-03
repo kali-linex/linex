@@ -8,9 +8,9 @@
  * Derived from mach-omap2/powerdomain.c written by Paul Walmsley
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/bug.h>
 #include "pm.h"
 #include "cm.h"
 #include "cm-regbits-34xx.h"

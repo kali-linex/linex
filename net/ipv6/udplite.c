@@ -10,8 +10,8 @@
  */
 #define pr_fmt(fmt) "UDPLite6: " fmt
 
-#include <linux/export.h>
-#include <linux/proc_fs.h>
+#include <linex/export.h>
+#include <linex/proc_fs.h>
 #include "udp_impl.h"
 
 static int udplitev6_sk_init(struct sock *sk)

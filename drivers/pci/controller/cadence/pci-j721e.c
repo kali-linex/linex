@@ -6,18 +6,18 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/io.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 
 #include "../../pci.h"
 #include "pcie-cadence.h"

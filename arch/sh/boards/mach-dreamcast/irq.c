@@ -6,12 +6,12 @@
  *
  * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@0xd6.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the LinexDC project (www.linexdc.org)
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/err.h>
 #include <mach/sysasic.h>
 
 /*

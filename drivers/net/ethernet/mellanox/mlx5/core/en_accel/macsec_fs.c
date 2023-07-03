@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #include <net/macsec.h>
-#include <linux/netdevice.h>
-#include <linux/mlx5/qp.h>
-#include <linux/if_vlan.h>
+#include <linex/netdevice.h>
+#include <linex/mlx5/qp.h>
+#include <linex/if_vlan.h>
 #include "fs_core.h"
 #include "en/fs.h"
 #include "en_accel/macsec_fs.h"

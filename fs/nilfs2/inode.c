@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/mpage.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/fiemap.h>
+#include <linex/buffer_head.h>
+#include <linex/gfp.h>
+#include <linex/mpage.h>
+#include <linex/pagemap.h>
+#include <linex/writeback.h>
+#include <linex/uio.h>
+#include <linex/fiemap.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

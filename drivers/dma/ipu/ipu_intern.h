@@ -9,9 +9,9 @@
 #ifndef _IPU_INTERN_H_
 #define _IPU_INTERN_H_
 
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
+#include <linex/dmaengine.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
 
 /* IPU Common registers */
 #define IPU_CONF		0x00

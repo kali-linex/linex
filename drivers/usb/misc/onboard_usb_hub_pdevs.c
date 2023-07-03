@@ -5,17 +5,17 @@
  * Copyright (c) 2022, Google LLC
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/of.h>
-#include <linux/usb/onboard_hub.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/of.h>
+#include <linex/usb/onboard_hub.h>
 
 #include "onboard_usb_hub.h"
 

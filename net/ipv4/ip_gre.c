@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux NET3:	GRE over IP protocol decoder.
+ *	Linex NET3:	GRE over IP protocol decoder.
  *
  *	Authors: Alexey Kuznetsov (kuznet@ms2.inr.ac.ru)
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/in6.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/in.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/if_arp.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/in6.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
 
 #include <net/sock.h>
 #include <net/ip.h>
@@ -75,7 +75,7 @@
    - traceroute does not work. I planned to relay ICMP from tunnel,
      so that this problem would be solved and traceroute output
      would even more informative. This idea appeared to be wrong:
-     only Linux complies to rfc1812 now (yes, guys, Linux is the only
+     only Linex complies to rfc1812 now (yes, guys, Linex is the only
      true router now :-)), all routers (at least, in neighbourhood of mine)
      return only 8 bytes of payload. It is the end.
 
@@ -122,7 +122,7 @@ static int ipgre_err(struct sk_buff *skb, u32 info,
 		     const struct tnl_ptk_info *tpi)
 {
 
-	/* All the routers (except for Linux) return only
+	/* All the routers (except for Linex) return only
 	   8 bytes of packet payload. It means, that precise relaying of
 	   ICMP in the real Internet is absolutely infeasible.
 
@@ -213,7 +213,7 @@ static int ipgre_err(struct sk_buff *skb, u32 info,
 
 static void gre_err(struct sk_buff *skb, u32 info)
 {
-	/* All the routers (except for Linux) return only
+	/* All the routers (except for Linex) return only
 	 * 8 bytes of packet payload. It means, that precise relaying of
 	 * ICMP in the real Internet is absolutely infeasible.
 	 *

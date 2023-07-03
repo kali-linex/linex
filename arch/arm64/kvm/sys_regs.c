@@ -9,13 +9,13 @@
  *          Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bsearch.h>
-#include <linux/cacheinfo.h>
-#include <linux/kvm_host.h>
-#include <linux/mm.h>
-#include <linux/printk.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/bsearch.h>
+#include <linex/cacheinfo.h>
+#include <linex/kvm_host.h>
+#include <linex/mm.h>
+#include <linex/printk.h>
+#include <linex/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cputype.h>

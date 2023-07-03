@@ -8,8 +8,8 @@
 #include <string.h>
 #include <dirent.h>
 #include <subcmd/exec-cmd.h>
-#include <linux/zalloc.h>
-#include <linux/build_bug.h>
+#include <linex/zalloc.h>
+#include <linex/build_bug.h>
 
 #include "debug.h"
 #include "event.h"

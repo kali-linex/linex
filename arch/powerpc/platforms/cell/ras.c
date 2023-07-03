@@ -5,14 +5,14 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/of.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/reboot.h>
+#include <linex/kexec.h>
+#include <linex/crash_dump.h>
+#include <linex/of.h>
 
 #include <asm/kexec.h>
 #include <asm/reg.h>

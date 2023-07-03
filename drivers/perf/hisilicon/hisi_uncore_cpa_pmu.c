@@ -9,13 +9,13 @@
  */
 
 #define pr_fmt(fmt) "cpa pmu: " fmt
-#include <linux/acpi.h>
-#include <linux/bug.h>
-#include <linux/cpuhotplug.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/smp.h>
+#include <linex/acpi.h>
+#include <linex/bug.h>
+#include <linex/cpuhotplug.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/list.h>
+#include <linex/smp.h>
 
 #include "hisi_uncore_pmu.h"
 

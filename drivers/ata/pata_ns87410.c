@@ -4,13 +4,13 @@
  *			  (C) 2006 Red Hat Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME "pata_ns87410"
 #define DRV_VERSION "0.4.6"

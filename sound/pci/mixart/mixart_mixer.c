@@ -7,10 +7,10 @@
  * Copyright (c) 2003 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <linex/time.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
 
 #include <sound/core.h>
 #include "mixart.h"

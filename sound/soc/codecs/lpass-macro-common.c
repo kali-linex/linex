@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2022, The Linux Foundation. All rights reserved.
+// Copyright (c) 2022, The Linex Foundation. All rights reserved.
 
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
 
 #include "lpass-macro-common.h"
 

@@ -12,18 +12,18 @@
 #define KMSG_COMPONENT "zdump"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/uio.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/panic_notifier.h>
+#include <linex/reboot.h>
+#include <linex/uio.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/ipl.h>
 #include <asm/sclp.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/debug.h>
 #include <asm/processor.h>
 #include <asm/irqflags.h>

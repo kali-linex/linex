@@ -3,9 +3,9 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/preempt.h>
-#include <linux/bottom_half.h>
-#include <linux/irqflags.h>
+#include <linex/preempt.h>
+#include <linex/bottom_half.h>
+#include <linex/irqflags.h>
 
 #include "igt_atomic.h"
 

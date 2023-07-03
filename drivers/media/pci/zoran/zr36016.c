@@ -5,9 +5,9 @@
  * Copyright (C) 2001 Wolfgang Scherr <scherr@net4you.at>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 
 /* headerfile of this module */
 #include "zr36016.h"

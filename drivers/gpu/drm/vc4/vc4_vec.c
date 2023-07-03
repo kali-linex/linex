@@ -19,11 +19,11 @@
 #include <drm/drm_panel.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 #include "vc4_drv.h"
 #include "vc4_regs.h"

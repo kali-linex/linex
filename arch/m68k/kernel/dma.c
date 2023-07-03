@@ -6,14 +6,14 @@
 
 #undef DEBUG
 
-#include <linux/dma-map-ops.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linex/dma-map-ops.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
 
 #include <asm/cacheflush.h>
 

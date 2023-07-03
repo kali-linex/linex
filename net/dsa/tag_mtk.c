@@ -5,8 +5,8 @@
  *		      Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
 
 #include "tag.h"
 

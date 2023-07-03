@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/device.h>
+#include <linex/device.h>
 #include "xpc.h"
 
 /*

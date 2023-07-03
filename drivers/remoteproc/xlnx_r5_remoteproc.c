@@ -5,17 +5,17 @@
  */
 
 #include <dt-bindings/power/xlnx-zynqmp-power.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox/zynqmp-ipi-message.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware/xlnx-zynqmp.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_client.h>
+#include <linex/mailbox/zynqmp-ipi-message.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
+#include <linex/remoteproc.h>
 
 #include "remoteproc_internal.h"
 
@@ -73,7 +73,7 @@ struct mbox_info {
 
 /*
  * Hardcoded TCM bank values. This will be removed once TCM bindings are
- * accepted for system-dt specifications and upstreamed in linux kernel
+ * accepted for system-dt specifications and upstreamed in linex kernel
  */
 static const struct mem_bank_data zynqmp_tcm_banks[] = {
 	{0xffe00000UL, 0x10000UL, PD_R5_0_ATCM, "atcm0"}, /* TCM 64KB each */
@@ -528,7 +528,7 @@ static int tcm_mem_map(struct rproc *rproc,
 
 	/*
 	 * The R5s expect their TCM banks to be at address 0x0 and 0x2000,
-	 * while on the Linux side they are at 0xffexxxxx.
+	 * while on the Linex side they are at 0xffexxxxx.
 	 *
 	 * Zero out the high 12 bits of the address. This will give
 	 * expected values for TCM Banks 0A and 0B (0x0 and 0x20000).

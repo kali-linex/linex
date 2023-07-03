@@ -3,7 +3,7 @@
  * OnePlus 5(T) (cheeseburger / dumpling) common device tree source based on msm8998-mtp.dtsi
  *
  * Copyright (c) 2021, Jami Kettunen <jamipkettunen@gmail.com>
- * Copyright (c) 2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016, The Linex Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -93,7 +93,7 @@
 		button-vol-down {
 			label = "Volume down";
 			gpios = <&pm8998_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <15>;
 			wakeup-source;
 		};
@@ -101,7 +101,7 @@
 		button-vol-up {
 			label = "Volume up";
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
 			wakeup-source;
 		};
@@ -117,9 +117,9 @@
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 124 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			linex,input-type = <EV_SW>;
+			linex,code = <SW_LID>;
+			linex,can-disable;
 			wakeup-source;
 		};
 	};

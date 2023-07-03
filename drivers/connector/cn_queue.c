@@ -6,16 +6,16 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/suspend.h>
-#include <linux/connector.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/workqueue.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/suspend.h>
+#include <linex/connector.h>
+#include <linex/delay.h>
 
 static struct cn_callback_entry *
 cn_queue_alloc_callback_entry(struct cn_queue_dev *dev, const char *name,

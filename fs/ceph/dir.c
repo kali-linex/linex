@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linex/ceph/ceph_debug.h>
 
-#include <linux/spinlock.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/xattr.h>
+#include <linex/spinlock.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/xattr.h>
 
 #include "super.h"
 #include "mds_client.h"
@@ -2004,7 +2004,7 @@ unsigned ceph_dentry_hash(struct inode *dir, struct dentry *dn)
 
 	switch (dci->i_dir_layout.dl_dir_hash) {
 	case 0:	/* for backward compat */
-	case CEPH_STR_HASH_LINUX:
+	case CEPH_STR_HASH_LINEX:
 		return dn->d_name.hash;
 
 	default:

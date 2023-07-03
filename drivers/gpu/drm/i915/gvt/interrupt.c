@@ -29,7 +29,7 @@
  *
  */
 
-#include <linux/eventfd.h>
+#include <linex/eventfd.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

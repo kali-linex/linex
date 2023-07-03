@@ -7,20 +7,20 @@
  * Andrzej Hajda <a.hajda@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/videodev2.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/media.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/regulator/consumer.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/videodev2.h>
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

@@ -9,14 +9,14 @@
  * Copyright 2005-06 Tower Technologies
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/log2.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
+#include <linex/log2.h>
 
 #define RX8581_REG_SC		0x00 /* Second in BCD */
 #define RX8581_REG_MN		0x01 /* Minute in BCD */
@@ -325,7 +325,7 @@ static struct i2c_driver rx8581_driver = {
 		.name	= "rtc-rx8581",
 		.of_match_table = of_match_ptr(rx8581_of_match),
 	},
-	.probe		= rx8581_probe,
+	.probe_new	= rx8581_probe,
 	.id_table	= rx8581_id,
 };
 

@@ -2,8 +2,8 @@
 /*
  * Technologic Systems TS-5500 Single Board Computer support
  *
- * Copyright (C) 2013-2014 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (C) 2013-2014 Savoir-faire Linex Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinex.com>
  *
  * This driver registers the Technologic Systems TS-5500 Single Board Computer
  * (SBC) and its devices, and exposes information to userspace such as jumpers'
@@ -14,14 +14,14 @@
  * Actually, the TS-5500 and TS-5400 are supported.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/init.h>
-#include <linux/platform_data/max197.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/init.h>
+#include <linex/platform_data/max197.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 /* Product code register */
 #define TS5500_PRODUCT_CODE_ADDR	0x74

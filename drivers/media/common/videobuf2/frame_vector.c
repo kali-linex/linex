@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/sched.h>
 
 #include <media/frame_vector.h>
 

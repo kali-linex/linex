@@ -7,12 +7,12 @@
  * Based on Sharp's 2.4 kernel patches and pxa2xx_mainstone.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/irq.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_main.c
+ *  linex/drivers/net/ethernet/ibm/ehea/ehea_main.c
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -14,23 +14,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/memory.h>
+#include <linex/device.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/if.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/if_ether.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/memory.h>
 #include <asm/kexec.h>
-#include <linux/mutex.h>
-#include <linux/prefetch.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/mutex.h>
+#include <linex/prefetch.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include <net/ip.h>
 

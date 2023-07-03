@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/delegation.c
+ * linex/fs/nfs/delegation.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFS file delegation management
  *
  */
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/iversion.h>
+#include <linex/completion.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/iversion.h>
 
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_xdr.h>
+#include <linex/nfs4.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_xdr.h>
 
 #include "nfs4_fs.h"
 #include "nfs4session.h"

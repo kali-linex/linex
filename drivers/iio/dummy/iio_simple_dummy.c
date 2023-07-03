@@ -11,16 +11,16 @@
  * understand all of this driver except those bits specifically marked
  * as being present to allow us to 'fake' the presence of hardware.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/string.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/sw_device.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/events.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/sw_device.h>
 #include "iio_simple_dummy.h"
 
 static const struct config_item_type iio_dummy_type = {

@@ -7,11 +7,11 @@
 #ifndef _QED_MCP_H
 #define _QED_MCP_H
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/qed/qed_fcoe_if.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/qed/qed_fcoe_if.h>
 #include "qed_hsi.h"
 #include "qed_dev_api.h"
 

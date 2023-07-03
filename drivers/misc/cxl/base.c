@@ -3,11 +3,11 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/module.h>
-#include <linux/rcupdate.h>
+#include <linex/module.h>
+#include <linex/rcupdate.h>
 #include <asm/errno.h>
 #include <misc/cxl-base.h>
-#include <linux/of_platform.h>
+#include <linex/of_platform.h>
 #include "cxl.h"
 
 /* protected by rcu */

@@ -7,9 +7,9 @@
  * Based on socfpga-a10.c Copyright (C) 2015-2016 Altera Corporation
  *  by Alan Tull <atull@opensource.altera.com>
  */
-#include <linux/fpga/altera-pr-ip-core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/fpga/altera-pr-ip-core.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 static int alt_pr_platform_probe(struct platform_device *pdev)
 {
@@ -44,6 +44,6 @@ static struct platform_driver alt_pr_platform_driver = {
 };
 
 module_platform_driver(alt_pr_platform_driver);
-MODULE_AUTHOR("Matthew Gerlach <matthew.gerlach@linux.intel.com>");
+MODULE_AUTHOR("Matthew Gerlach <matthew.gerlach@linex.intel.com>");
 MODULE_DESCRIPTION("Altera Partial Reconfiguration IP Platform Driver");
 MODULE_LICENSE("GPL v2");

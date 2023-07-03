@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 #include <os.h>
 #include <skas.h>

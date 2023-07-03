@@ -9,9 +9,9 @@
 #include "data.h"
 #include "ordered-events.h"
 #include "util/compress.h"
-#include <linux/kernel.h>
-#include <linux/rbtree.h>
-#include <linux/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/rbtree.h>
+#include <linex/perf_event.h>
 
 struct ip_callchain;
 struct symbol;

@@ -2,8 +2,8 @@
 /*
  * Ceph fs string constants
  */
-#include <linux/module.h>
-#include <linux/ceph/types.h>
+#include <linex/module.h>
+#include <linex/ceph/types.h>
 
 
 const char *ceph_mds_state_name(int s)

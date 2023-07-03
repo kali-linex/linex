@@ -6,15 +6,15 @@
  * Parts of this file were based on sources as follows:
  *
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linex.ie>
  * Copyright (C) 2011 Texas Instruments
  */
 
 #ifndef _PL111_DRM_H_
 #define _PL111_DRM_H_
 
-#include <linux/clk-provider.h>
-#include <linux/interrupt.h>
+#include <linex/clk-provider.h>
+#include <linex/interrupt.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_connector.h>

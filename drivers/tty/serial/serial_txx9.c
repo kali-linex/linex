@@ -2,7 +2,7 @@
 /*
  * Derived from many drivers using generic_serial interface,
  * especially serial_tx3912.c by Steven J. Hill and r39xx_serial.c
- * (was in Linux/VR tree) by Jim Pick.
+ * (was in Linex/VR tree) by Jim Pick.
  *
  *  Copyright (C) 1999 Harald Koerfgen
  *  Copyright (C) 2000 Jim Pick <jim@jimpick.com>
@@ -12,19 +12,19 @@
  *  Serial driver for TX3927/TX4927/TX4925/TX4938 internal SIO controller
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/pci.h>
+#include <linex/serial_core.h>
+#include <linex/serial.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 
 #define PASS_LIMIT	256
 

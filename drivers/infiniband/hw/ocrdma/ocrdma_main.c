@@ -33,21 +33,21 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linex-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/module.h>
-#include <linux/idr.h>
+#include <linex/module.h>
+#include <linex/idr.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_mad.h>
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 #include <net/addrconf.h>
 
 #include "ocrdma.h"

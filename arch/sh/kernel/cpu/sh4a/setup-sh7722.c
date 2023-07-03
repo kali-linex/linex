@@ -4,16 +4,16 @@
  *
  *  Copyright (C) 2006 - 2008  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/uio_driver.h>
-#include <linux/usb/m66592.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/platform_device.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/sh_dma.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_intc.h>
+#include <linex/uio_driver.h>
+#include <linex/usb/m66592.h>
 
 #include <asm/clock.h>
 #include <asm/mmzone.h>

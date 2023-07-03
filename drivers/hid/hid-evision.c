@@ -7,10 +7,10 @@
  *  Copyright (c) 2022 Philippe Valembois
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 
 #include "hid-ids.h"
 

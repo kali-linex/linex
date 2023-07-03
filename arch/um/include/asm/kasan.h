@@ -2,8 +2,8 @@
 #ifndef __ASM_UM_KASAN_H
 #define __ASM_UM_KASAN_H
 
-#include <linux/init.h>
-#include <linux/const.h>
+#include <linex/init.h>
+#include <linex/const.h>
 
 #define KASAN_SHADOW_OFFSET _AC(CONFIG_KASAN_SHADOW_OFFSET, UL)
 

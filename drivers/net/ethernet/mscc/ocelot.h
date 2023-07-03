@@ -8,13 +8,13 @@
 #ifndef _MSCC_OCELOT_H_
 #define _MSCC_OCELOT_H_
 
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/net_tstamp.h>
-#include <linux/phylink.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/net_tstamp.h>
+#include <linex/phylink.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include <soc/mscc/ocelot_qsys.h>
 #include <soc/mscc/ocelot_sys.h>

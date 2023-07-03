@@ -23,8 +23,8 @@
  *          Alon Levy
  */
 
-#include <linux/gfp.h>
-#include <linux/slab.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
 
 #include "qxl_drv.h"
 #include "qxl_object.h"

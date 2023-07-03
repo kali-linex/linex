@@ -4,34 +4,34 @@
  *
  * Copyright (C) IBM Corporation, 2014
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linex.ibm.com>
  *          Davidlohr Bueso <dave@stgolabs.net>
  *	Based on kernel/rcu/torture.c.
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/sched/rt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/rtmutex.h>
-#include <linux/atomic.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/torture.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/sched/rt.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/rwsem.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/rtmutex.h>
+#include <linex/atomic.h>
+#include <linex/moduleparam.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/torture.h>
+#include <linex/reboot.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linex.ibm.com>");
 
 torture_param(int, nwriters_stress, -1, "Number of write-locking stress-test threads");
 torture_param(int, nreaders_stress, -1, "Number of read-locking stress-test threads");
@@ -492,7 +492,7 @@ static struct lock_torture_ops mutex_lock_ops = {
 	.name		= "mutex_lock"
 };
 
-#include <linux/ww_mutex.h>
+#include <linex/ww_mutex.h>
 /*
  * The torture ww_mutexes should belong to the same lock class as
  * torture_ww_class to avoid lockdep problem. The ww_mutex_init()
@@ -744,7 +744,7 @@ static struct lock_torture_ops rwsem_lock_ops = {
 	.name		= "rwsem_lock"
 };
 
-#include <linux/percpu-rwsem.h>
+#include <linex/percpu-rwsem.h>
 static struct percpu_rw_semaphore pcpu_rwsem;
 
 static void torture_percpu_rwsem_init(void)

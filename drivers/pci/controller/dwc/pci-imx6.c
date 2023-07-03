@@ -8,30 +8,30 @@
  * Author: Sean Cross <xobs@kosagi.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/mfd/syscon/imx7-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/resource.h>
-#include <linux/signal.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/mfd/syscon/imx7-iomuxc-gpr.h>
+#include <linex/module.h>
+#include <linex/of_gpio.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/resource.h>
+#include <linex/signal.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/reset.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
 
 #include "pcie-designware.h"
 

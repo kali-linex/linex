@@ -4,43 +4,43 @@
  *
  * Copyright (C) IBM Corporation, 2014
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linex.ibm.com>
  *	Based on kernel/rcu/torture.c.
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
-#include <linux/ktime.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/moduleparam.h>
+#include <linex/percpu.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/freezer.h>
+#include <linex/cpu.h>
+#include <linex/delay.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
+#include <linex/trace_clock.h>
+#include <linex/ktime.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
+#include <linex/torture.h>
 #include "rcu/rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linex.ibm.com>");
 
 static bool disable_onoff_at_boot;
 module_param(disable_onoff_at_boot, bool, 0444);

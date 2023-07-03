@@ -11,7 +11,7 @@
 #ifndef __IMMAP_CPM2__
 #define __IMMAP_CPM2__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* System configuration registers.
 */

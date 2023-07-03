@@ -36,10 +36,10 @@
  */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mem_encrypt.h>
-#include <linux/cc_platform.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/mem_encrypt.h>
+#include <linex/cc_platform.h>
 
 #include <asm/setup.h>
 #include <asm/sections.h>
@@ -91,7 +91,7 @@ struct sme_populate_pgd_data {
  * avoids any possibility of boot parameters or initramfs images being
  * placed such that the in-place encryption logic overwrites them.  This
  * section is 2MB aligned to allow for simple pagetable setup using only
- * PMD entries (see vmlinux.lds.S).
+ * PMD entries (see vmlinex.lds.S).
  */
 static char sme_workarea[2 * PMD_SIZE] __section(".init.scratch");
 

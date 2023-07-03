@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017, 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017, 2020-2021, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/nvmem-provider.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/nvmem-provider.h>
+#include <linex/regmap.h>
 
 #define SDAM_MEM_START			0x40
 #define REGISTER_MAP_ID			0x40

@@ -5,15 +5,15 @@
  *  Copyright (C) 2007 - 2010  Paul Mundt
  *  Copyright (C) 2007  Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/cpumask.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/cpu.h>
 #include <asm/sections.h>
 
 #define STBCR_REG(phys_id) (0xfe400004 | (phys_id << 12))

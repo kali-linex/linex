@@ -13,16 +13,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/motorola-cpcap.h>
 
 #define CPCAP_IRQ_ON 23
 #define CPCAP_IRQ_ON_BITMASK (1 << (CPCAP_IRQ_ON % 16))

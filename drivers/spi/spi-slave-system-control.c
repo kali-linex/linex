@@ -20,11 +20,11 @@
  *   # spidev_test -D /dev/spidev2.0 -p $suspend # or $reboot, $poweroff, $halt
  */
 
-#include <linux/completion.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/suspend.h>
-#include <linux/spi/spi.h>
+#include <linex/completion.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/suspend.h>
+#include <linex/spi/spi.h>
 
 /*
  * The numbers are chosen to display something human-readable on two 7-segment

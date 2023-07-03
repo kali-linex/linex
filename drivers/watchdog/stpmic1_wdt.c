@@ -2,14 +2,14 @@
 // Copyright (C) STMicroelectronics 2018
 // Author: Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
 
-#include <linux/kernel.h>
-#include <linux/mfd/stpmic1.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linex/kernel.h>
+#include <linex/mfd/stpmic1.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/watchdog.h>
 
 /* WATCHDOG CONTROL REGISTER bit */
 #define WDT_START		BIT(0)

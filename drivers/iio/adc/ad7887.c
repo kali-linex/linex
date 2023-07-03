@@ -5,25 +5,25 @@
  * Copyright 2010-2011 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/spi/spi.h>
+#include <linex/regulator/consumer.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/buffer.h>
 
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
-#include <linux/platform_data/ad7887.h>
+#include <linex/platform_data/ad7887.h>
 
 #define AD7887_REF_DIS		BIT(5)	/* on-chip reference disable */
 #define AD7887_DUAL		BIT(4)	/* dual-channel mode */

@@ -6,16 +6,16 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/workqueue.h>
+#include <linex/fs.h>
+#include <linex/syscalls.h>
+#include <linex/export.h>
+#include <linex/ctype.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #include "platform.h"
 
@@ -147,7 +147,7 @@ enum os_area_db_owner {
 	OS_AREA_DB_OWNER_ANY = -1,
 	OS_AREA_DB_OWNER_NONE = 0,
 	OS_AREA_DB_OWNER_PROTOTYPE = 1,
-	OS_AREA_DB_OWNER_LINUX = 2,
+	OS_AREA_DB_OWNER_LINEX = 2,
 	OS_AREA_DB_OWNER_PETITBOOT = 3,
 	OS_AREA_DB_OWNER_MAX = 32,
 };
@@ -176,7 +176,7 @@ static const struct os_area_db_id os_area_db_id_any = {
 };
 
 static const struct os_area_db_id os_area_db_id_rtc_diff = {
-	.owner = OS_AREA_DB_OWNER_LINUX,
+	.owner = OS_AREA_DB_OWNER_LINEX,
 	.key = OS_AREA_DB_KEY_RTC_DIFF
 };
 
@@ -198,13 +198,13 @@ static struct saved_params {
 } saved_params;
 
 static struct property property_rtc_diff = {
-	.name = "linux,rtc_diff",
+	.name = "linex,rtc_diff",
 	.length = sizeof(saved_params.rtc_diff),
 	.value = &saved_params.rtc_diff,
 };
 
 static struct property property_av_multi_out = {
-	.name = "linux,av_multi_out",
+	.name = "linex,av_multi_out",
 	.length = sizeof(saved_params.av_multi_out),
 	.value = &saved_params.av_multi_out,
 };

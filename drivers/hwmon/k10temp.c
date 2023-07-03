@@ -4,7 +4,7 @@
  *		processor hardware monitoring
  *
  * Copyright (c) 2009 Clemens Ladisch <clemens@ladisch.de>
- * Copyright (c) 2020 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (c) 2020 Guenter Roeck <linex@roeck-us.net>
  *
  * Implementation notes:
  * - CCD register address information as well as the calculation to
@@ -13,13 +13,13 @@
  *   suggest that it provides reasonable temperature values.
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
 #include <asm/amd_nb.h>
 #include <asm/processor.h>
 

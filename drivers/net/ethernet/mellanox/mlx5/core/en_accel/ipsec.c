@@ -33,8 +33,8 @@
 
 #include <crypto/internal/geniv.h>
 #include <crypto/aead.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
 #include <net/netevent.h>
 
 #include "en.h"

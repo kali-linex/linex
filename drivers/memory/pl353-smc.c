@@ -7,12 +7,12 @@
  * Author: Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
+#include <linex/clk.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/amba/bus.h>
 
 /**
  * struct pl353_smc_data - Private smc driver structure

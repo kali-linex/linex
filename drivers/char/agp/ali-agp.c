@@ -2,11 +2,11 @@
  * ALi AGPGART routines.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/agp_backend.h>
 #include <asm/page.h>		/* PAGE_SIZE */
 #include "agp.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  Linex MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2009-2013  LSI Corporation
  *  Copyright (c) 2013-2016  Avago Technologies
@@ -14,35 +14,35 @@
  *           Kashyap Desai <kashyap.desai@broadcom.com>
  *           Sumit Saxena <sumit.saxena@broadcom.com>
  *
- *  Send feedback to: megaraidlinux.pdl@broadcom.com
+ *  Send feedback to: megaraidlinex.pdl@broadcom.com
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/irq_poll.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/list.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
+#include <linex/fs.h>
+#include <linex/compat.h>
+#include <linex/blkdev.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/irq_poll.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_dbg.h>
-#include <linux/dmi.h>
+#include <linex/dmi.h>
 
 #include "megaraid_sas_fusion.h"
 #include "megaraid_sas.h"

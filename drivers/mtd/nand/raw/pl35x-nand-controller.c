@@ -10,25 +10,25 @@
  *   Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/amba/bus.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <linex/amba/bus.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
 
 #define PL35X_NANDC_DRIVER_NAME "pl35x-nand-controller"
 

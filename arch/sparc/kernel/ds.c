@@ -4,18 +4,18 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/reboot.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/kthread.h>
+#include <linex/reboot.h>
+#include <linex/cpu.h>
 
 #include <asm/hypervisor.h>
 #include <asm/ldc.h>

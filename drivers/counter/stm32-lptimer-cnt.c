@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/counter.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/counter.h>
+#include <linex/mfd/stm32-lptimer.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
 struct stm32_lptim_cnt {
 	struct device *dev;

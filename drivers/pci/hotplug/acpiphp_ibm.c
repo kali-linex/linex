@@ -13,15 +13,15 @@
 
 #define pr_fmt(fmt) "acpiphp_ibm: " fmt
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sysfs.h>
+#include <linex/kobject.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
+#include <linex/uaccess.h>
 
 #include "acpiphp.h"
 #include "../pci.h"
@@ -110,10 +110,10 @@ static struct acpiphp_attention_info ibm_attention_info =
 
 /**
  * ibm_slot_from_id - workaround for bad ibm hardware
- * @id: the slot number that linux refers to the slot by
+ * @id: the slot number that linex refers to the slot by
  *
  * Description: This method returns the aCPI slot descriptor
- * corresponding to the Linux slot number.  This descriptor
+ * corresponding to the Linex slot number.  This descriptor
  * has info about the aPCI slot id and attention status.
  * This descriptor must be freed using kfree when done.
  */

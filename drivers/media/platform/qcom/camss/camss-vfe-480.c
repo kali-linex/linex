@@ -8,10 +8,10 @@
  * Copyright (C) 2021 Jonathan Marek
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include "camss.h"
 #include "camss-vfe.h"

@@ -11,12 +11,12 @@
  * are converted to use it a sysfsification will open OOPSable races.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/console.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/fb.h>
+#include <linex/fbcon.h>
+#include <linex/console.h>
+#include <linex/module.h>
 
 #define FB_SYSFS_FLAG_ATTR 1
 

@@ -29,11 +29,11 @@
  * down in order to keep the output clock rate within the previous OPP limits.
 */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
 #include "clk-cpu.h"
 
 #define E4210_SRC_CPU		0x0

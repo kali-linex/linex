@@ -8,20 +8,20 @@
  * Based on the Allwinner SDK driver, released under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/regmap.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/regmap.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
 #include <sound/asoundef.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

@@ -13,22 +13,22 @@
  * 	Tony Li <tony.li@freescale.com>
  * 	Anton Vorontsov <avorontsov@ru.mvista.com>
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/fsl/edac.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/log2.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/fsl/edac.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/memblock.h>
+#include <linex/log2.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/suspend.h>
+#include <linex/syscore_ops.h>
+#include <linex/uaccess.h>
 
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
@@ -189,7 +189,7 @@ static bool is_kdump(void)
 		return false;
 	}
 
-	ret = of_property_read_bool(node, "linux,usable-memory");
+	ret = of_property_read_bool(node, "linex,usable-memory");
 	of_node_put(node);
 
 	return ret;

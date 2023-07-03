@@ -3,14 +3,14 @@
  * Copyright (C) 2013 Intel Corporation; author Matt Fleming
  */
 
-#include <linux/console.h>
-#include <linux/efi.h>
-#include <linux/font.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/serial_core.h>
-#include <linux/screen_info.h>
-#include <linux/string.h>
+#include <linex/console.h>
+#include <linex/efi.h>
+#include <linex/font.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/serial_core.h>
+#include <linex/screen_info.h>
+#include <linex/string.h>
 
 #include <asm/early_ioremap.h>
 

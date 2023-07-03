@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 #include "pp_psm.h"
 
 int psm_init_power_state_table(struct pp_hwmgr *hwmgr)

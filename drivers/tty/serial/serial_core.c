@@ -7,29 +7,29 @@
  *  Copyright 1999 ARM Limited
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd.
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/serial.h> /* for serial_state and serial_icounter_struct */
-#include <linux/serial_core.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/math64.h>
-#include <linux/security.h>
+#include <linex/module.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/device.h>
+#include <linex/serial.h> /* for serial_state and serial_icounter_struct */
+#include <linex/serial_core.h>
+#include <linex/sysrq.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/math64.h>
+#include <linex/security.h>
 
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <linex/irq.h>
+#include <linex/uaccess.h>
 
 /*
  * This is used to lock changes in serial line configuration.
@@ -3443,7 +3443,7 @@ int uart_get_rs485_mode(struct uart_port *port)
 	if (device_property_read_bool(dev, "rs485-rx-during-tx"))
 		rs485conf->flags |= SER_RS485_RX_DURING_TX;
 
-	if (device_property_read_bool(dev, "linux,rs485-enabled-at-boot-time"))
+	if (device_property_read_bool(dev, "linex,rs485-enabled-at-boot-time"))
 		rs485conf->flags |= SER_RS485_ENABLED;
 
 	if (device_property_read_bool(dev, "rs485-rts-active-low")) {

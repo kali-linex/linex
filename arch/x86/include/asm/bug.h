@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_BUG_H
 #define _ASM_X86_BUG_H
 
-#include <linux/stringify.h>
-#include <linux/instrumentation.h>
-#include <linux/objtool.h>
+#include <linex/stringify.h>
+#include <linex/instrumentation.h>
+#include <linex/objtool.h>
 
 /*
  * Despite that some emulators terminate on UD2, we use it for WARN().

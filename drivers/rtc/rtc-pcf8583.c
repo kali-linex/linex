@@ -9,14 +9,14 @@
  *
  *  Converted to the generic RTC susbsystem by G. Liakhovetski (2006)
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/rtc.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/bcd.h>
 
 struct rtc_mem {
 	unsigned int	loc;
@@ -306,7 +306,7 @@ static struct i2c_driver pcf8583_driver = {
 	.driver = {
 		.name	= "pcf8583",
 	},
-	.probe		= pcf8583_probe,
+	.probe_new	= pcf8583_probe,
 	.id_table	= pcf8583_id,
 };
 

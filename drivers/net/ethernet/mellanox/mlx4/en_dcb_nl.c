@@ -31,8 +31,8 @@
  *
  */
 
-#include <linux/dcbnl.h>
-#include <linux/math64.h>
+#include <linex/dcbnl.h>
+#include <linex/math64.h>
 
 #include "mlx4_en.h"
 #include "fw_qos.h"

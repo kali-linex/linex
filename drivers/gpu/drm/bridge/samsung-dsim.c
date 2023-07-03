@@ -12,12 +12,12 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/media-bus-format.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/media-bus-format.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
 
 #include <video/mipi_display.h>
 

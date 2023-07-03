@@ -6,12 +6,12 @@
  *
  * Adapted from the x86 port by Ananth N Mavinakayanahalli <ananth@in.ibm.com>
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/ptrace.h>
+#include <linex/uprobes.h>
+#include <linex/uaccess.h>
+#include <linex/kdebug.h>
 
 #include <asm/sstep.h>
 #include <asm/inst.h>

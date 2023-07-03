@@ -3,10 +3,10 @@
  * Copyright (c) 2016 Yang Ling <gnaygnil@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
 
 /* Loongson 1 Watchdog Register Definitions */
 #define WDT_EN			0x0

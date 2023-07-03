@@ -15,8 +15,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <net/rsi_91x.h>
 #include "rsi_usb.h"
 #include "rsi_hal.h"

@@ -6,18 +6,18 @@
 //
 // Hardware interface for audio DSP on i.MX8M
 
-#include <linux/bits.h>
-#include <linux/firmware.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/firmware.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/regmap.h>
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/sof.h>
 #include <sound/sof/xtensa.h>
-#include <linux/firmware/imx/dsp.h>
+#include <linex/firmware/imx/dsp.h>
 
 #include "../ops.h"
 #include "../sof-of-dev.h"

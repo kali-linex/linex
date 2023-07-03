@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <uapi/linux/swab.h>
+#include <linex/export.h>
+#include <linex/compiler.h>
+#include <uapi/linex/swab.h>
 
 /* To silence -Wmissing-prototypes. */
 unsigned long long __bswapdi2(unsigned long long u);

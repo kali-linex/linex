@@ -3,9 +3,9 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
 
 #include "hfi.h"
 

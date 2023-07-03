@@ -7,14 +7,14 @@
  *
  * This file is based on arm realview platform
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

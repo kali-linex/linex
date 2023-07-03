@@ -10,22 +10,22 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/suspend.h>
-#include <linux/kthread.h>
-#include <linux/moduleparam.h>
-#include <linux/freezer.h>
-#include <linux/of_platform.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
+#include <linex/suspend.h>
+#include <linex/kthread.h>
+#include <linex/moduleparam.h>
+#include <linex/freezer.h>
+#include <linex/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

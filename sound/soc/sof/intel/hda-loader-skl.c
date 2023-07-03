@@ -6,16 +6,16 @@
 // Copyright(c) 2018-2022 Intel Corporation. All rights reserved.
 //
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 #include <sound/hdaudio_ext.h>
 #include <sound/sof.h>
 #include <sound/pcm_params.h>

@@ -31,16 +31,16 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/inetdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_vlan.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
 
 #include <net/ipv6.h>
 #include <net/addrconf.h>
@@ -53,9 +53,9 @@
 
 #include <net/bonding.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
+#include <linex/mlx4/driver.h>
+#include <linex/mlx4/cmd.h>
+#include <linex/mlx4/qp.h>
 
 #include "mlx4_ib.h"
 #include <rdma/mlx4-abi.h>

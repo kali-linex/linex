@@ -7,16 +7,16 @@
   * Copyright 2022 Bytedance CO., LTD.
   */
 
-#include <linux/mpi.h>
-#include <linux/scatterlist.h>
+#include <linex/mpi.h>
+#include <linex/scatterlist.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/internal/rsa.h>
-#include <linux/err.h>
+#include <linex/err.h>
 #include <crypto/scatterwalk.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
-#include <uapi/linux/virtio_crypto.h>
+#include <uapi/linex/virtio_crypto.h>
 #include "virtio_crypto_common.h"
 
 struct virtio_crypto_rsa_ctx {

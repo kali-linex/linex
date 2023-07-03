@@ -2,17 +2,17 @@
 /*
  * NETJet mISDN driver
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4linex.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linex.de>
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/mISDNhw.h>
+#include <linex/slab.h>
 #include "ipac.h"
 #include "iohelper.h"
 #include "netjet.h"

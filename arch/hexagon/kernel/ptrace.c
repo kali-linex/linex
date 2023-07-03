@@ -2,19 +2,19 @@
 /*
  * Ptrace support for Hexagon
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/user.h>
-#include <linux/elf.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/regset.h>
+#include <linex/user.h>
+#include <linex/elf.h>
 
 #include <asm/user.h>
 

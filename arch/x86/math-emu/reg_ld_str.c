@@ -20,7 +20,7 @@
 
 #include "fpu_emu.h"
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "fpu_system.h"
 #include "exception.h"

@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/usb/usb_phy_generic.h>
 #include "musb_core.h"
 #include "musb_dma.h"
 

@@ -9,18 +9,18 @@
 #ifndef _SCMI_PROTOCOLS_H
 #define _SCMI_PROTOCOLS_H
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scmi_protocol.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/hashtable.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/refcount.h>
+#include <linex/scmi_protocol.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include <asm/unaligned.h>
 

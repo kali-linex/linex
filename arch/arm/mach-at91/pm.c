@@ -6,18 +6,18 @@
  * Copyright (C) 2005 David Brownell
  */
 
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/parser.h>
-#include <linux/suspend.h>
+#include <linex/genalloc.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/of_platform.h>
+#include <linex/parser.h>
+#include <linex/suspend.h>
 
-#include <linux/clk.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/platform_data/atmel.h>
+#include <linex/clk.h>
+#include <linex/clk/at91_pmc.h>
+#include <linex/platform_data/atmel.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fncpy.h>

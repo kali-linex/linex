@@ -7,13 +7,13 @@
  *
  */
 
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/acpi_iort.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/msi.h>
+#include <linex/acpi_iort.h>
 
 #include "fsl-mc-private.h"
 

@@ -56,12 +56,12 @@
 #endif
 
 static const char *versions[6] = {
-	"LINUX_2.6",
-	"LINUX_2.6.15",
-	"LINUX_2.6.29",
-	"LINUX_2.6.39",
-	"LINUX_4",
-	"LINUX_4.15",
+	"LINEX_2.6",
+	"LINEX_2.6.15",
+	"LINEX_2.6.29",
+	"LINEX_2.6.39",
+	"LINEX_4",
+	"LINEX_4.15",
 };
 
 static const char *names[2][6] = {

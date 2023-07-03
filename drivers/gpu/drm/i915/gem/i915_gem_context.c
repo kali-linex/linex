@@ -64,9 +64,9 @@
  *
  */
 
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/nospec.h>
+#include <linex/highmem.h>
+#include <linex/log2.h>
+#include <linex/nospec.h>
 
 #include <drm/drm_cache.h>
 #include <drm/drm_syncobj.h>

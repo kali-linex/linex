@@ -107,7 +107,7 @@
 	status = "okay";
 };
 
-/* Verdin UART_3, used as the Linux Console */
+/* Verdin UART_3, used as the Linex Console */
 &uart3 {
 	status = "okay";
 };

@@ -6,10 +6,10 @@
  * Copyright (C) 2019, Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/ktime.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/ktime.h>
 
 #include "tunnel.h"
 #include "tb.h"

@@ -6,8 +6,8 @@
  * Author: Garlic Tseng <garlic.tseng@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
 #include <sound/soc.h>
 
 #include "mtk-afe-platform-driver.h"

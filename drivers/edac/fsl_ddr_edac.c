@@ -12,19 +12,19 @@
  *
  * 2006-2007 (c) MontaVista Software, Inc.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/edac.h>
-#include <linux/smp.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ctype.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/edac.h>
+#include <linex/smp.h>
+#include <linex/gfp.h>
 
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
 #include "edac_module.h"
 #include "fsl_ddr_edac.h"
 

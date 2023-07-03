@@ -10,12 +10,12 @@
  * ad5274	1	256		20, 100			01011xx
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
 
 #define  AD5272_RDAC_WR  1
 #define  AD5272_RDAC_RD  2

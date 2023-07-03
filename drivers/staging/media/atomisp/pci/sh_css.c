@@ -14,9 +14,9 @@
  */
 
 /*! \file */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #include "hmm.h"
 

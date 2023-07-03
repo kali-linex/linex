@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This is the linux wireless configuration interface.
+ * This is the linex wireless configuration interface.
  *
  * Copyright 2006-2010		Johannes Berg <johannes@sipsolutions.net>
  * Copyright 2013-2014  Intel Mobile Communications GmbH
@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/nl80211.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
+#include <linex/if.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/nl80211.h>
+#include <linex/debugfs.h>
+#include <linex/notifier.h>
+#include <linex/device.h>
+#include <linex/etherdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/sched.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"

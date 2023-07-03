@@ -3,8 +3,8 @@
  * Generic return hook for LoongArch.
  */
 
-#include <linux/kprobes.h>
-#include <linux/rethook.h>
+#include <linex/kprobes.h>
+#include <linex/rethook.h>
 #include "rethook.h"
 
 /* This is called from arch_rethook_trampoline() */

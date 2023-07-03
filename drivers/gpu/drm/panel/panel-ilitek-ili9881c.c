@@ -3,16 +3,16 @@
  * Copyright (C) 2017-2018, Bootlin
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_modes.h>

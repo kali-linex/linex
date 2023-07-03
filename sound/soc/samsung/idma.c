@@ -5,11 +5,11 @@
 // Copyright (c) 2011 Samsung Electronics Co., Ltd.
 //		http://www.samsung.com
 
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

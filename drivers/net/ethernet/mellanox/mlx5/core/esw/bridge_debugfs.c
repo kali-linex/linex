@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 #include "bridge.h"
 #include "bridge_priv.h"
 

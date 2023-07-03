@@ -3,9 +3,9 @@
  * Author: Mario Kicherer <dev@kicherer.org>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mtd/spinand.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/mtd/spinand.h>
 
 #define SPINAND_MFR_ALLIANCEMEMORY	0x52
 

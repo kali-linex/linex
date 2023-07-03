@@ -1,7 +1,7 @@
 #ifndef __SOCKMAP_HELPERS__
 #define __SOCKMAP_HELPERS__
 
-#include <linux/vm_sockets.h>
+#include <linex/vm_sockets.h>
 
 #define IO_TIMEOUT_SEC 30
 #define MAX_STRERR_LEN 256

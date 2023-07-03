@@ -7,14 +7,14 @@
  * Copyright (C) 2020 Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/pm.h>
-#include <linux/sizes.h>
-#include <linux/suspend.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_fdt.h>
+#include <linex/pm.h>
+#include <linex/sizes.h>
+#include <linex/suspend.h>
+#include <linex/types.h>
 
 #include <asm/bootinfo.h>
 #include <asm/io.h>

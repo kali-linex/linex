@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/bcd.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
+#include <linex/bcd.h>
+#include <linex/acpi.h>
+#include <linex/uaccess.h>
 
 #include "sleep.h"
 #include "internal.h"

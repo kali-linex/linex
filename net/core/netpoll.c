@@ -12,23 +12,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/string.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/inet.h>
-#include <linux/interrupt.h>
-#include <linux/netpoll.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/if_vlan.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/string.h>
+#include <linex/if_arp.h>
+#include <linex/inetdevice.h>
+#include <linex/inet.h>
+#include <linex/interrupt.h>
+#include <linex/netpoll.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/rcupdate.h>
+#include <linex/workqueue.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/if_vlan.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/addrconf.h>
@@ -36,7 +36,7 @@
 #include <net/ip6_checksum.h>
 #include <asm/unaligned.h>
 #include <trace/events/napi.h>
-#include <linux/kconfig.h>
+#include <linex/kconfig.h>
 
 /*
  * We maintain a small pool of fully-sized skbs, to make sure the

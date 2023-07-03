@@ -8,24 +8,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/mman.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/count_zeros.h>
-#include <linux/memory_hotplug.h>
-#include <linux/memory.h>
-#include <linux/notifier.h>
-#include <linux/percpu_counter.h>
-#include <linux/page_reporting.h>
+#include <linex/kernel.h>
+#include <linex/jiffies.h>
+#include <linex/mman.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/completion.h>
+#include <linex/count_zeros.h>
+#include <linex/memory_hotplug.h>
+#include <linex/memory.h>
+#include <linex/notifier.h>
+#include <linex/percpu_counter.h>
+#include <linex/page_reporting.h>
 
-#include <linux/hyperv.h>
+#include <linex/hyperv.h>
 #include <asm/hyperv-tlfs.h>
 
 #include <asm/mshyperv.h>
@@ -1023,7 +1023,7 @@ static void hot_add_req(struct work_struct *dummy)
 		 * Based on the hot-add page range being specified,
 		 * compute a hot-add region that can cover the pages
 		 * that need to be hot-added while ensuring the alignment
-		 * and size requirements of Linux as it relates to hot-add.
+		 * and size requirements of Linex as it relates to hot-add.
 		 */
 		region_size = (pfn_cnt / HA_CHUNK) * HA_CHUNK;
 		if (pfn_cnt % HA_CHUNK)

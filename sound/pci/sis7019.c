@@ -9,13 +9,13 @@
  *  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/time.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <sound/initval.h>

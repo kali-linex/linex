@@ -18,26 +18,26 @@
 // Based on spi-stmp.c, which is:
 // Author: Dmitry Pervushin <dimka@embeddedalley.com>
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mxs-spi.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/highmem.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/completion.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/stmp_device.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/mxs-spi.h>
 #include <trace/events/spi.h>
 
 #define DRIVER_NAME		"mxs-spi"

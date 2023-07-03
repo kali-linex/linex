@@ -14,9 +14,9 @@
  *  arch/arm/boot/compressed/string.c
  */
 
-#include <linux/export.h>
+#include <linex/export.h>
 
-#include <linux/string.h>
+#include <linex/string.h>
 
 #ifdef CONFIG_OR1K_1200
 /*

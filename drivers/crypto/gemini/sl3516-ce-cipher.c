@@ -8,11 +8,11 @@
  * ECB mode.
  */
 
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <linex/crypto.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/pm_runtime.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/skcipher.h>
 #include "sl3516-ce.h"

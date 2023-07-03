@@ -6,9 +6,9 @@
  * Author: Chun-Chia Chiu <chun-chia.chiu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
 #include "mt8188-afe-common.h"
 #include "mt8188-audsys-clk.h"
 #include "mt8188-audsys-clkid.h"

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 - 2022 Beijing WangXun Technology Co., Ltd. */
 
-#include <linux/ethtool.h>
-#include <linux/iopoll.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
+#include <linex/ethtool.h>
+#include <linex/iopoll.h>
+#include <linex/pci.h>
+#include <linex/phy.h>
 
 #include "../libwx/wx_type.h"
 #include "../libwx/wx_hw.h"

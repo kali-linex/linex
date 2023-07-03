@@ -13,17 +13,17 @@
  * Author: Colin Foster <colin.foster@in-advantage.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/ioport.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/types.h>
+#include <linex/units.h>
 
 #include "ocelot.h"
 

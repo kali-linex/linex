@@ -19,15 +19,15 @@
  * Copyright (C) 2015 Glider bvba
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/mfd/da9063/registers.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/mfd/da9063/registers.h>
 
 #define IRQC_BASE		0xe61c0000
 #define IRQC_MONITOR		0x104	/* IRQn Signal Level Monitor Register */

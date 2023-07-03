@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/rbtree_augmented.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/rbtree_augmented.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 #include <asm/timex.h>
 
 #define __param(type, name, init, msg)		\

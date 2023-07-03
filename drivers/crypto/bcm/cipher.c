@@ -3,22 +3,22 @@
  * Copyright 2016 Broadcom
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/kthread.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/crypto.h>
+#include <linex/kthread.h>
+#include <linex/rtnetlink.h>
+#include <linex/sched.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/io.h>
+#include <linex/bitops.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aead.h>

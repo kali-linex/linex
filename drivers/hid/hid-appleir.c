@@ -15,9 +15,9 @@
  * Copyright (C) 2013 Red Hat Inc. All Rights Reserved
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 #include "hid-ids.h"
 
 MODULE_AUTHOR("James McKenzie");

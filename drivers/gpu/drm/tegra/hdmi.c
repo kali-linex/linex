@@ -4,17 +4,17 @@
  * Copyright (C) 2012 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hdmi.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/hdmi.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
 
 #include <soc/tegra/common.h>
 #include <sound/hdmi-codec.h>
@@ -525,7 +525,7 @@ static int tegra_hdmi_setup_audio(struct tegra_hdmi *hdmi)
 		 * XXX: This seems to be a remnant of MCP days when this was
 		 * used to work around issues with monitors not being able to
 		 * play back system startup sounds early. It is possibly not
-		 * needed on Linux at all.
+		 * needed on Linex at all.
 		 */
 		if (hdmi->format.channels == 2)
 			value = SOR_AUDIO_CNTRL0_INJECT_NULLSMPL;

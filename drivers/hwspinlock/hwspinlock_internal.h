@@ -10,8 +10,8 @@
 #ifndef __HWSPINLOCK_HWSPINLOCK_H
 #define __HWSPINLOCK_HWSPINLOCK_H
 
-#include <linux/spinlock.h>
-#include <linux/device.h>
+#include <linex/spinlock.h>
+#include <linex/device.h>
 
 struct hwspinlock_device;
 

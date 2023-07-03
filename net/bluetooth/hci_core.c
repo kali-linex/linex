@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Linex
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2011 ProFUSION Embedded Systems
 
@@ -25,14 +25,14 @@
 
 /* Bluetooth HCI core. */
 
-#include <linux/export.h>
-#include <linux/rfkill.h>
-#include <linux/debugfs.h>
-#include <linux/crypto.h>
-#include <linux/kcov.h>
-#include <linux/property.h>
-#include <linux/suspend.h>
-#include <linux/wait.h>
+#include <linex/export.h>
+#include <linex/rfkill.h>
+#include <linex/debugfs.h>
+#include <linex/crypto.h>
+#include <linex/kcov.h>
+#include <linex/property.h>
+#include <linex/suspend.h>
+#include <linex/wait.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

@@ -17,16 +17,16 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <linex/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/smp.h>
+#include <linex/hrtimer.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/math64.h>
+#include <linex/slab.h>
 #include <asm/processor.h>
 #include <asm/mce.h>
 #include <asm/msr.h>
@@ -34,8 +34,8 @@
 #include <asm/current.h>
 #include <asm/apicdef.h>
 #include <asm/delay.h>
-#include <linux/atomic.h>
-#include <linux/jump_label.h>
+#include <linex/atomic.h>
+#include <linex/jump_label.h>
 #include "kvm_cache_regs.h"
 #include "irq.h"
 #include "ioapic.h"

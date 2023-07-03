@@ -21,28 +21,28 @@
  *
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/ioport.h>
+#include <linex/spinlock.h>
+#include <linex/moduleparam.h>
 
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/bitops.h>
+#include <linex/skbuff.h>
+#include <linex/string.h>
+#include <linex/serial.h>
+#include <linex/serial_reg.h>
+#include <linex/bitops.h>
 #include <asm/io.h>
 
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

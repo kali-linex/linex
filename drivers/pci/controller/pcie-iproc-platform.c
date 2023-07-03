@@ -3,17 +3,17 @@
  * Copyright (C) 2015 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/of_platform.h>
+#include <linex/phy/phy.h>
 
 #include "../pci.h"
 #include "pcie-iproc.h"

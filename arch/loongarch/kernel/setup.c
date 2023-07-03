@@ -10,30 +10,30 @@
  * Copyright (C) 1999 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2002, 2007	 Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/screen_info.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/pfn.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/suspend.h>
-#include <linux/swiotlb.h>
+#include <linex/init.h>
+#include <linex/acpi.h>
+#include <linex/cpu.h>
+#include <linex/dmi.h>
+#include <linex/efi.h>
+#include <linex/export.h>
+#include <linex/screen_info.h>
+#include <linex/memblock.h>
+#include <linex/initrd.h>
+#include <linex/ioport.h>
+#include <linex/kexec.h>
+#include <linex/crash_dump.h>
+#include <linex/root_dev.h>
+#include <linex/console.h>
+#include <linex/pfn.h>
+#include <linex/platform_device.h>
+#include <linex/sizes.h>
+#include <linex/device.h>
+#include <linex/dma-map-ops.h>
+#include <linex/libfdt.h>
+#include <linex/of_fdt.h>
+#include <linex/of_address.h>
+#include <linex/suspend.h>
+#include <linex/swiotlb.h>
 
 #include <asm/addrspace.h>
 #include <asm/alternative.h>

@@ -7,15 +7,15 @@
  * Author: Yang, Bin <bin.yang@intel.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
 
 #define CRYSTALCOVE_GPIO_NUM	16
 #define CRYSTALCOVE_VGPIO_NUM	95

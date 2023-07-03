@@ -26,19 +26,19 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pci.h>
-#include <linux/miscdevice.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mman.h>
+#include <linex/pci.h>
+#include <linex/miscdevice.h>
+#include <linex/agp_backend.h>
+#include <linex/agpgart.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/sched.h>
+#include <linex/uaccess.h>
 
 #include "agp.h"
 #include "compat_ioctl.h"

@@ -11,8 +11,8 @@
 #define __OV_16BIT_ADDR_REG_HELPERS_H
 
 #include <asm/unaligned.h>
-#include <linux/dev_printk.h>
-#include <linux/i2c.h>
+#include <linex/dev_printk.h>
+#include <linex/i2c.h>
 
 static inline int ov_read_reg(struct i2c_client *client, u16 reg,
 				  unsigned int len, u32 *val)

@@ -9,8 +9,8 @@
  * 	Rohit Seth <rohit.seth@intel.com>
  * 	Suresh Siddha <suresh.b.siddha@intel.com>
  * 	Gordon Jin <gordon.jin@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Linex Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinex.com>
  *
  * 12/26/04 S.Siddha, G.Jin, R.Seth
  *			Add multi-threading and multi-core detection
@@ -23,35 +23,35 @@
  * 06/24/99 W.Drummond	added boot_cpu_data.
  * 05/28/05 Z. Menyhart	Dynamic stride size for "flush_icache_range()"
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
 
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/reboot.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/screen_info.h>
-#include <linux/dmi.h>
-#include <linux/root_dev.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/efi.h>
-#include <linux/initrd.h>
-#include <linux/pm.h>
-#include <linux/cpufreq.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
+#include <linex/acpi.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/cpu.h>
+#include <linex/kdev_t.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/reboot.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/task_stack.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/threads.h>
+#include <linex/screen_info.h>
+#include <linex/dmi.h>
+#include <linex/root_dev.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/efi.h>
+#include <linex/initrd.h>
+#include <linex/pm.h>
+#include <linex/cpufreq.h>
+#include <linex/kexec.h>
+#include <linex/crash_dump.h>
 
 #include <asm/mca.h>
 #include <asm/meminit.h>
@@ -624,7 +624,7 @@ setup_arch (char **cmdline_p)
 
 	/*
 	 * Default to /dev/sda2.  This assumes that the EFI partition
-	 * is physical disk 1 partition 1 and the Linux root disk is
+	 * is physical disk 1 partition 1 and the Linex root disk is
 	 * physical disk 1 partition 2.
 	 */
 	ROOT_DEV = MKDEV(SCSI_DISK0_MAJOR, 2);

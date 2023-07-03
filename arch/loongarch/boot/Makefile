@@ -6,20 +6,20 @@
 
 drop-sections := .comment .note .options .note.gnu.build-id
 strip-flags   := $(addprefix --remove-section=,$(drop-sections)) -S
-OBJCOPYFLAGS_vmlinux.efi := -O binary $(strip-flags)
+OBJCOPYFLAGS_vmlinex.efi := -O binary $(strip-flags)
 
 quiet_cmd_strip = STRIP	  $@
       cmd_strip = $(STRIP) -s -o $@ $<
 
-targets := vmlinux.elf
-$(obj)/vmlinux.elf: vmlinux FORCE
+targets := vmlinex.elf
+$(obj)/vmlinex.elf: vmlinex FORCE
 	$(call if_changed,strip)
 
-targets += vmlinux.efi
-$(obj)/vmlinux.efi: vmlinux FORCE
+targets += vmlinex.efi
+$(obj)/vmlinex.efi: vmlinex FORCE
 	$(call if_changed,objcopy)
 
-EFI_ZBOOT_PAYLOAD      := vmlinux.efi
+EFI_ZBOOT_PAYLOAD      := vmlinex.efi
 EFI_ZBOOT_BFD_TARGET   := elf64-loongarch
 EFI_ZBOOT_MACH_TYPE    := LOONGARCH64
 

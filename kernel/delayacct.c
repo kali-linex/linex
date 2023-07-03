@@ -4,15 +4,15 @@
  * Copyright (C) Shailabh Nagar, IBM Corp. 2006
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/clock.h>
-#include <linux/slab.h>
-#include <linux/taskstats.h>
-#include <linux/sysctl.h>
-#include <linux/delayacct.h>
-#include <linux/module.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/sched/cputime.h>
+#include <linex/sched/clock.h>
+#include <linex/slab.h>
+#include <linex/taskstats.h>
+#include <linex/sysctl.h>
+#include <linex/delayacct.h>
+#include <linex/module.h>
 
 DEFINE_STATIC_KEY_FALSE(delayacct_key);
 int delayacct_on __read_mostly;	/* Delay accounting turned on/off */

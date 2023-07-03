@@ -3,8 +3,8 @@
 #ifndef _IDIO_16_H_
 #define _IDIO_16_H_
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 /**
  * struct idio_16 - IDIO-16 registers structure

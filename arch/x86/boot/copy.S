@@ -6,7 +6,7 @@
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 /*
  * Memory copy routines

@@ -8,15 +8,15 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/smp.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
 #include <asm/firmware.h>
 #include <asm/eeh.h>       /* for eeh_add_device() */
 #include <asm/rtas.h>		/* rtas_call */

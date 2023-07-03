@@ -5,41 +5,41 @@
  *
  * 		Author: 	Alan Cox <alan@lxorguk.ukuu.org.uk>
  * 
- *              Adapted to become the Linux 2.0 Coda pseudo device
+ *              Adapted to become the Linex 2.0 Coda pseudo device
  *              Peter  Braam  <braam@maths.ox.ac.uk> 
  *              Michael Callahan <mjc@emmy.smith.edu>           
  *
- *              Changes for Linux 2.1
+ *              Changes for Linex 2.1
  *              Copyright (c) 1997 Carnegie-Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/pid_namespace.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/major.h>
+#include <linex/time.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/fcntl.h>
+#include <linex/delay.h>
+#include <linex/skbuff.h>
+#include <linex/proc_fs.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/poll.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/device.h>
+#include <linex/pid_namespace.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/coda.h>
+#include <linex/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 
 #include "coda_int.h"
 

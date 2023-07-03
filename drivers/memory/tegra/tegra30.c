@@ -3,9 +3,9 @@
  * Copyright (C) 2014 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 
 #include <dt-bindings/memory/tegra30-mc.h>
 

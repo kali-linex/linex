@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/misc/xillybus_pcie.c
+ * linex/drivers/misc/xillybus_pcie.c
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
  * Driver for the Xillybus FPGA/host framework using PCI Express.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 #include "xillybus.h"
 
 MODULE_DESCRIPTION("Xillybus driver for PCIe");

@@ -10,19 +10,19 @@
  * or implied.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/timer.h>
+#include <linex/completion.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
 #define I2C_PNX_TIMEOUT_DEFAULT		10 /* msec */
 #define I2C_PNX_SPEED_KHZ_DEFAULT	100

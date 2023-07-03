@@ -4,9 +4,9 @@
 #undef pr_fmt
 #define pr_fmt(fmt)     "tdx: " fmt
 
-#include <linux/cpufeature.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <linex/cpufeature.h>
+#include <linex/export.h>
+#include <linex/io.h>
 #include <asm/coco.h>
 #include <asm/tdx.h>
 #include <asm/vmx.h>

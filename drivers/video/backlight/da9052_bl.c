@@ -7,14 +7,14 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linex/mfd/da9052/da9052.h>
+#include <linex/mfd/da9052/reg.h>
 
 #define DA9052_MAX_BRIGHTNESS		0xFF
 

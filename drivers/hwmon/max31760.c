@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/util_macros.h>
 
 #define REG_CR1		0x00
 #define CR1_HYST	BIT(5)

@@ -9,14 +9,14 @@
  * Mylène Josserand <mylene.josserand@free-electrons.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/log2.h>
 
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

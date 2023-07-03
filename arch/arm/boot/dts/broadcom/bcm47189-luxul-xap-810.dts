@@ -26,13 +26,13 @@
 		led-5ghz {
 			label = "bcm53xx:blue:5ghz";
 			gpios = <&chipcommon 11 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-off";
+			linex,default-trigger = "default-off";
 		};
 
 		led-system {
 			label = "bcm53xx:green:system";
 			gpios = <&chipcommon 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			linex,default-trigger = "timer";
 		};
 	};
 
@@ -42,7 +42,7 @@
 		led-2ghz {
 			label = "bcm53xx:blue:2ghz";
 			gpios = <&pcie0_chipcommon 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-off";
+			linex,default-trigger = "default-off";
 		};
 	};
 
@@ -51,7 +51,7 @@
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linex,code = <KEY_RESTART>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 	};

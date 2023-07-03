@@ -11,15 +11,15 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/notifier.h>
+#include <linex/of_address.h>
+#include <linex/vmalloc.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

@@ -3,14 +3,14 @@
 
 /* Written 1995-2000 by Werner Almesberger, EPFL ICA */
 
-#include <linux/module.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/skbuff.h>
-#include <linux/sonet.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/atomic.h>
+#include <linex/module.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/skbuff.h>
+#include <linex/sonet.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/atomic.h>
 
 int atm_charge(struct atm_vcc *vcc, int truesize)
 {

@@ -7,13 +7,13 @@
  * Copyright(C) 2005-2007, Red Hat, Inc., Ingo Molnar
  * Copyright(C) 2006-2007, Timesys Corp., Thomas Gleixner
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/hrtimer.h>
+#include <linex/interrupt.h>
+#include <linex/percpu.h>
+#include <linex/profile.h>
+#include <linex/sched.h>
 
 #include "tick-internal.h"
 

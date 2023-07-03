@@ -12,17 +12,17 @@
  * Author: Colin Foster <colin.foster@in-advantage.com>
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ocelot.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/ocelot.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
 
 #include <soc/mscc/ocelot.h>
 

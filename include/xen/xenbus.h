@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,15 +34,15 @@
 #ifndef _XEN_XENBUS_H
 #define _XEN_XENBUS_H
 
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/semaphore.h>
+#include <linex/device.h>
+#include <linex/notifier.h>
+#include <linex/mutex.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/completion.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/semaphore.h>
 #include <xen/interface/xen.h>
 #include <xen/interface/grant_table.h>
 #include <xen/interface/io/xenbus.h>

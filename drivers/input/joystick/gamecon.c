@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * NES, SNES, N64, MultiSystem, PSX gamepad driver for Linux
+ * NES, SNES, N64, MultiSystem, PSX gamepad driver for Linex
  *
  *  Copyright (c) 1999-2004	Vojtech Pavlik <vojtech@suse.cz>
  *  Copyright (c) 2004		Peter Nelson <rufus-kernel@hackish.org>
@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/parport.h>
+#include <linex/input.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("NES, SNES, N64, MultiSystem, PSX gamepad driver");

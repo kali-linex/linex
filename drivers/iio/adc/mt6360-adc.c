@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
 
 #include <asm/unaligned.h>
 

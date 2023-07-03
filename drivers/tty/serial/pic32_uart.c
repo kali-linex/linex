@@ -8,21 +8,21 @@
  *   Sorin-Andrei Pistirica <andrei.pistirica@microchip.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/clk.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_gpio.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/console.h>
+#include <linex/clk.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial_core.h>
+#include <linex/delay.h>
 
 #include <asm/mach-pic32/pic32.h>
 

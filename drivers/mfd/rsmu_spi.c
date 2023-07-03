@@ -5,15 +5,15 @@
  * Copyright (C) 2021 Integrated Device Technology, Inc., a Renesas Company.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rsmu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/rsmu.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
 
 #include "rsmu.h"
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2021 MediaTek Inc. */
 
-#include <linux/kernel.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/module.h>
+#include <linex/iopoll.h>
 
 #include "mt7921.h"
 #include "../sdio.h"

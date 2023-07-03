@@ -12,9 +12,9 @@
 #include <sys/utsname.h>
 #include <sys/param.h>
 #include <sys/stat.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/btf.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/btf.h>
 #include <gelf.h>
 #include "btf.h"
 #include "bpf.h"
@@ -4761,22 +4761,22 @@ static int btf_dedup_remap_types(struct btf_dedup *d)
 }
 
 /*
- * Probe few well-known locations for vmlinux kernel image and try to load BTF
+ * Probe few well-known locations for vmlinex kernel image and try to load BTF
  * data out of it to use for target BTF.
  */
-struct btf *btf__load_vmlinux_btf(void)
+struct btf *btf__load_vmlinex_btf(void)
 {
 	const char *locations[] = {
-		/* try canonical vmlinux BTF through sysfs first */
-		"/sys/kernel/btf/vmlinux",
-		/* fall back to trying to find vmlinux on disk otherwise */
-		"/boot/vmlinux-%1$s",
-		"/lib/modules/%1$s/vmlinux-%1$s",
-		"/lib/modules/%1$s/build/vmlinux",
-		"/usr/lib/modules/%1$s/kernel/vmlinux",
-		"/usr/lib/debug/boot/vmlinux-%1$s",
-		"/usr/lib/debug/boot/vmlinux-%1$s.debug",
-		"/usr/lib/debug/lib/modules/%1$s/vmlinux",
+		/* try canonical vmlinex BTF through sysfs first */
+		"/sys/kernel/btf/vmlinex",
+		/* fall back to trying to find vmlinex on disk otherwise */
+		"/boot/vmlinex-%1$s",
+		"/lib/modules/%1$s/vmlinex-%1$s",
+		"/lib/modules/%1$s/build/vmlinex",
+		"/usr/lib/modules/%1$s/kernel/vmlinex",
+		"/usr/lib/debug/boot/vmlinex-%1$s",
+		"/usr/lib/debug/boot/vmlinex-%1$s.debug",
+		"/usr/lib/debug/lib/modules/%1$s/vmlinex",
 	};
 	char path[PATH_MAX + 1];
 	struct utsname buf;
@@ -4804,14 +4804,14 @@ struct btf *btf__load_vmlinux_btf(void)
 	return libbpf_err_ptr(-ESRCH);
 }
 
-struct btf *libbpf_find_kernel_btf(void) __attribute__((alias("btf__load_vmlinux_btf")));
+struct btf *libbpf_find_kernel_btf(void) __attribute__((alias("btf__load_vmlinex_btf")));
 
-struct btf *btf__load_module_btf(const char *module_name, struct btf *vmlinux_btf)
+struct btf *btf__load_module_btf(const char *module_name, struct btf *vmlinex_btf)
 {
 	char path[80];
 
 	snprintf(path, sizeof(path), "/sys/kernel/btf/%s", module_name);
-	return btf__parse_split(path, vmlinux_btf);
+	return btf__parse_split(path, vmlinex_btf);
 }
 
 int btf_type_visit_type_ids(struct btf_type *t, type_id_visit_fn visit, void *ctx)

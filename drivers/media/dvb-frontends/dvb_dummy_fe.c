@@ -5,10 +5,10 @@
  *  Written by Emard <emard@softhome.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "dvb_dummy_fe.h"

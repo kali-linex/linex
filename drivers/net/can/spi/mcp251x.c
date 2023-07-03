@@ -19,29 +19,29 @@
  * Copyright 2007
  */
 
-#include <linux/bitfield.h>
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/freezer.h>
-#include <linux/gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/can/core.h>
+#include <linex/can/dev.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/ethtool.h>
+#include <linex/freezer.h>
+#include <linex/gpio.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/uaccess.h>
 
 /* SPI interface instruction set */
 #define INSTRUCTION_WRITE	0x02

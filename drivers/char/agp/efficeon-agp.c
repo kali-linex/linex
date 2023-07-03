@@ -3,7 +3,7 @@
  *
  * Based upon a diff by Linus around November '02.
  *
- * Ported to the 2.6 kernel by Carlos Puchol <cpglinux@puchol.com>
+ * Ported to the 2.6 kernel by Carlos Puchol <cpglinex@puchol.com>
  * and H. Peter Anvin <hpa@transmeta.com>.
  */
 
@@ -20,13 +20,13 @@
  *   - tested with c3/c4 enabled (with the mobility m9 card)
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/gfp.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/agp_backend.h>
+#include <linex/gfp.h>
+#include <linex/page-flags.h>
+#include <linex/mm.h>
 #include "agp.h"
 #include "intel-agp.h"
 
@@ -464,5 +464,5 @@ static void __exit agp_efficeon_cleanup(void)
 module_init(agp_efficeon_init);
 module_exit(agp_efficeon_cleanup);
 
-MODULE_AUTHOR("Carlos Puchol <cpglinux@puchol.com>");
+MODULE_AUTHOR("Carlos Puchol <cpglinex@puchol.com>");
 MODULE_LICENSE("GPL and additional rights");

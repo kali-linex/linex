@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle (ralf@linux-mips.org)
+ *   written by Ralf Baechle (ralf@linex-mips.org)
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/of_address.h>
 
 #include <asm/cpu-info.h>
 

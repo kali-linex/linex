@@ -31,14 +31,14 @@
  * SOFTWARE.
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/cpu_rmap.h>
+#include <linex/mlx4/cmd.h>
+#include <linex/cpu_rmap.h>
 
 #include "mlx4.h"
 #include "fw.h"

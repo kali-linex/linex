@@ -17,30 +17,30 @@
  * - move bus probe to a kernel thread
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/notifier.h>
-#include <linux/wait.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/adb.h>
+#include <linex/cuda.h>
+#include <linex/pmu.h>
+#include <linex/notifier.h>
+#include <linex/wait.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/kthread.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>
 #endif

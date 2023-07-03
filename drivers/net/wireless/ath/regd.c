@@ -16,8 +16,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 #include "regd.h"

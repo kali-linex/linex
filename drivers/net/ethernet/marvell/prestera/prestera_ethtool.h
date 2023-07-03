@@ -4,7 +4,7 @@
 #ifndef __PRESTERA_ETHTOOL_H_
 #define __PRESTERA_ETHTOOL_H_
 
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 
 struct prestera_port_event;
 struct prestera_port;

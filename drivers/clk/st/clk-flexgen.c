@@ -6,15 +6,15 @@
  * Author:  Maxime Coquelin <maxime.coquelin@st.com> for ST-Microelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 struct clkgen_clk_out {
 	const char *name;

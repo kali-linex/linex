@@ -3,8 +3,8 @@
  * Copyright (C) 2007 Lemote Inc. & Institute of Computing Technology
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
-#include <linux/export.h>
-#include <linux/init.h>
+#include <linex/export.h>
+#include <linex/init.h>
 
 #include <asm/wbflush.h>
 #include <asm/bootinfo.h>

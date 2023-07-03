@@ -7,9 +7,9 @@
 
 #include <asm/vdso/vdso.h>
 
-#include <linux/elfnote.h>
-#include <linux/version.h>
+#include <linex/elfnote.h>
+#include <linex/version.h>
 
-ELFNOTE_START(Linux, 0, "a")
-	.long LINUX_VERSION_CODE
+ELFNOTE_START(Linex, 0, "a")
+	.long LINEX_VERSION_CODE
 ELFNOTE_END

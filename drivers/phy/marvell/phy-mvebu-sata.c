@@ -5,12 +5,12 @@
  *	Copyright (C) 2013 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/phy/phy.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/phy/phy.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
 
 struct priv {
 	struct clk	*clk;

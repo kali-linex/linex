@@ -7,9 +7,9 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 
 #include "aic94xx.h"
 #include "aic94xx_reg.h"

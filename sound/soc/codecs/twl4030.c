@@ -5,18 +5,18 @@
  * Author:      Steve Sakoman, <steve@sakoman.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/mfd/twl.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/mfd/twl.h>
+#include <linex/slab.h>
+#include <linex/gpio.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -25,7 +25,7 @@
 #include <sound/tlv.h>
 
 /* Register descriptions are here */
-#include <linux/mfd/twl4030-audio.h>
+#include <linex/mfd/twl4030-audio.h>
 
 /* TWL4030 PMBR1 Register */
 #define TWL4030_PMBR1_REG		0x0D

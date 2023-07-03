@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/errqueue.h>
-#include <linux/phy.h>
-#include <linux/ptp_classify.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <linex/errqueue.h>
+#include <linex/phy.h>
+#include <linex/ptp_classify.h>
+#include <linex/skbuff.h>
+#include <linex/export.h>
 
 static unsigned int classify(const struct sk_buff *skb)
 {

@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2006  Paul Mundt
  */
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
 #include <mach/highlander.h>
 #include <asm/push-switch.h>
 

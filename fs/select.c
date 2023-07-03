@@ -2,7 +2,7 @@
 /*
  * This file contains the procedures for the handling of select and poll
  *
- * Created for Linux based loosely upon Mathius Lattner's minix
+ * Created for Linex based loosely upon Mathius Lattner's minix
  * patches by Peter MacDonald. Heavily edited by Linus.
  *
  *  4 February 1994
@@ -15,25 +15,25 @@
  *     of fds to overcome nfds < 16390 descriptors limit (Tigran Aivazian).
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/personality.h> /* for STICKY_TIMEOUTS */
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/rcupdate.h>
-#include <linux/hrtimer.h>
-#include <linux/freezer.h>
+#include <linex/compat.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/rt.h>
+#include <linex/syscalls.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/personality.h> /* for STICKY_TIMEOUTS */
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/fs.h>
+#include <linex/rcupdate.h>
+#include <linex/hrtimer.h>
+#include <linex/freezer.h>
 #include <net/busy_poll.h>
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 
 /*
@@ -108,11 +108,11 @@ struct poll_table_page {
  * Ok, Peter made a complicated, but straightforward multiple_wait() function.
  * I have rewritten this, taking some shortcuts: This code may not be easy to
  * follow, but it should be free of race-conditions, and it's practical. If you
- * understand what I'm doing here, then you understand how the linux
+ * understand what I'm doing here, then you understand how the linex
  * sleep/wakeup mechanism works.
  *
  * Two very simple procedures, poll_wait() and poll_freewait() make all the
- * work.  poll_wait() is an inline-function defined in <linux/poll.h>,
+ * work.  poll_wait() is an inline-function defined in <linex/poll.h>,
  * as all select/poll functions have to call it to add an entry to the
  * poll table.
  */
@@ -355,7 +355,7 @@ static int poll_select_finish(struct timespec64 *end_time,
 	}
 	/*
 	 * If an application puts its timeval in read-only memory, we
-	 * don't want the Linux-specific update to the timeval to
+	 * don't want the Linex-specific update to the timeval to
 	 * cause a fault after the select has completed
 	 * successfully. However, because we're not updating the
 	 * timeval, we can't restart the system call.

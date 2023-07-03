@@ -7,14 +7,14 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/AD5110_5112_5114.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 /* AD5110 commands */
 #define AD5110_EEPROM_WR	1

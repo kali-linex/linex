@@ -15,23 +15,23 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rculist.h>
-#include <linux/rculist_nulls.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/siphash.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/rculist.h>
+#include <linex/rculist_nulls.h>
+#include <linex/types.h>
+#include <linex/timer.h>
+#include <linex/security.h>
+#include <linex/skbuff.h>
+#include <linex/errno.h>
+#include <linex/netlink.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/siphash.h>
 
-#include <linux/netfilter.h>
+#include <linex/netfilter.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_conntrack.h>
@@ -51,8 +51,8 @@
 #include <net/netfilter/nf_nat_helper.h>
 #endif
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_conntrack.h>
 
 #include "nf_internals.h"
 

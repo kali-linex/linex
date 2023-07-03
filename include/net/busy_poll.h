@@ -9,12 +9,12 @@
  * e1000-devel Mailing List <e1000-devel@lists.sourceforge.net>
  */
 
-#ifndef _LINUX_NET_BUSY_POLL_H
-#define _LINUX_NET_BUSY_POLL_H
+#ifndef _LINEX_NET_BUSY_POLL_H
+#define _LINEX_NET_BUSY_POLL_H
 
-#include <linux/netdevice.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/signal.h>
+#include <linex/netdevice.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/signal.h>
 #include <net/ip.h>
 
 /*		0 - Reserved to indicate value not set
@@ -174,4 +174,4 @@ static inline void sk_mark_napi_id_once_xdp(struct sock *sk,
 #endif
 }
 
-#endif /* _LINUX_NET_BUSY_POLL_H */
+#endif /* _LINEX_NET_BUSY_POLL_H */

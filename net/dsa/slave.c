@@ -4,23 +4,23 @@
  * Copyright (c) 2008-2009 Marvell Semiconductor
  */
 
-#include <linux/list.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/mdio.h>
+#include <linex/list.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
+#include <linex/phy_fixed.h>
+#include <linex/phylink.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/mdio.h>
 #include <net/rtnetlink.h>
 #include <net/pkt_cls.h>
 #include <net/selftests.h>
 #include <net/tc_act/tc_mirred.h>
-#include <linux/if_bridge.h>
-#include <linux/if_hsr.h>
+#include <linex/if_bridge.h>
+#include <linex/if_hsr.h>
 #include <net/dcbnl.h>
-#include <linux/netpoll.h>
+#include <linex/netpoll.h>
 
 #include "dsa.h"
 #include "port.h"

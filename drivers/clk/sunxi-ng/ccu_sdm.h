@@ -6,7 +6,7 @@
 #ifndef _CCU_SDM_H
 #define _CCU_SDM_H
 
-#include <linux/clk-provider.h>
+#include <linex/clk-provider.h>
 
 #include "ccu_common.h"
 

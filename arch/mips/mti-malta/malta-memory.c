@@ -11,9 +11,9 @@
  * Authors: Carsten Langgaard <carstenl@mips.com>
  *          Steven J. Hill <sjhill@mips.com>
  */
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cdmm.h>

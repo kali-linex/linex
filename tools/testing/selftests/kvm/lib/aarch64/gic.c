@@ -4,8 +4,8 @@
  */
 
 #include <errno.h>
-#include <linux/bits.h>
-#include <linux/sizes.h>
+#include <linex/bits.h>
+#include <linex/sizes.h>
 
 #include "kvm_util.h"
 

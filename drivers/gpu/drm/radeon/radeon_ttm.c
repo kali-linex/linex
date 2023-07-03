@@ -30,12 +30,12 @@
  *    Dave Airlie
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <linex/dma-mapping.h>
+#include <linex/pagemap.h>
+#include <linex/pci.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/swap.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

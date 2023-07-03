@@ -54,24 +54,24 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/minmax.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/minmax.h>
+#include <linex/pm.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/bitfield.h>
 
-#include <linux/platform_data/st_sensors_pdata.h>
+#include <linex/platform_data/st_sensors_pdata.h>
 
 #include "st_lsm6dsx.h"
 

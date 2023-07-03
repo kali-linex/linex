@@ -10,8 +10,8 @@
 #ifndef TDA1004X_H
 #define TDA1004X_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linex/dvb/frontend.h>
+#include <linex/firmware.h>
 
 enum tda10046_xtal {
 	TDA10046_XTAL_4M,

@@ -7,11 +7,11 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL313.pdf
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/property.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/property.h>
 
 #include "adxl313.h"
 

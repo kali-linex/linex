@@ -12,13 +12,13 @@
  * because on some machines like SGI IP27 the ARC memory configuration data
  * completely bogus and alternate easier to use mechanisms are available.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/swap.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/swap.h>
 
 #include <asm/sgialib.h>
 #include <asm/page.h>
@@ -37,9 +37,9 @@ static unsigned int nr_prom_mem __initdata;
  */
 #define ARC_PAGE_SHIFT	12
 
-struct linux_mdesc * __init ArcGetMemoryDescriptor(struct linux_mdesc *Current)
+struct linex_mdesc * __init ArcGetMemoryDescriptor(struct linex_mdesc *Current)
 {
-	return (struct linux_mdesc *) ARC_CALL1(get_mdesc, Current);
+	return (struct linex_mdesc *) ARC_CALL1(get_mdesc, Current);
 }
 
 #ifdef DEBUG /* convenient for debugging */
@@ -72,7 +72,7 @@ enum {
 	mem_free, mem_prom_used, mem_reserved
 };
 
-static inline int memtype_classify_arcs(union linux_memtypes type)
+static inline int memtype_classify_arcs(union linex_memtypes type)
 {
 	switch (type.arcs) {
 	case arcs_fcontig:
@@ -92,7 +92,7 @@ static inline int memtype_classify_arcs(union linux_memtypes type)
 	while(1);				/* Nuke warning.  */
 }
 
-static inline int memtype_classify_arc(union linux_memtypes type)
+static inline int memtype_classify_arc(union linex_memtypes type)
 {
 	switch (type.arc) {
 	case arc_free:
@@ -112,7 +112,7 @@ static inline int memtype_classify_arc(union linux_memtypes type)
 	while(1);				/* Nuke warning.  */
 }
 
-static int __init prom_memtype_classify(union linux_memtypes type)
+static int __init prom_memtype_classify(union linex_memtypes type)
 {
 	if (prom_flags & PROM_FLAG_ARCS)	/* SGI is ``different'' ... */
 		return memtype_classify_arcs(type);
@@ -122,7 +122,7 @@ static int __init prom_memtype_classify(union linux_memtypes type)
 
 void __weak __init prom_meminit(void)
 {
-	struct linux_mdesc *p;
+	struct linex_mdesc *p;
 
 #ifdef DEBUG
 	int i = 0;

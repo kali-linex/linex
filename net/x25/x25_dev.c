@@ -14,12 +14,12 @@
 
 #define pr_fmt(fmt) "X25: " fmt
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/sock.h>
-#include <linux/if_arp.h>
+#include <linex/if_arp.h>
 #include <net/x25.h>
 #include <net/x25device.h>
 

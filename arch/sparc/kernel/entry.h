@@ -2,9 +2,9 @@
 #ifndef _ENTRY_H
 #define _ENTRY_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/init.h>
 
 /* irq */
 void handler_irq(int irq, struct pt_regs *regs);

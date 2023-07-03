@@ -2,13 +2,13 @@
 /*
  * Copyright (c) 2015-2021, Linaro Limited
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
+#include <linex/types.h>
 #include "optee_private.h"
 
 #define MAX_ARG_PARAM_COUNT	6

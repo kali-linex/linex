@@ -32,9 +32,9 @@
 #ifndef _CHELSIO_L2T_H
 #define _CHELSIO_L2T_H
 
-#include <linux/spinlock.h>
+#include <linex/spinlock.h>
 #include "t3cdev.h"
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 enum {
 	L2T_STATE_VALID,	/* entry is up to date */

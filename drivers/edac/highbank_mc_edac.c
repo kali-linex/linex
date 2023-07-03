@@ -2,14 +2,14 @@
 /*
  * Copyright 2011-2012 Calxeda, Inc.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/ctype.h>
+#include <linex/edac.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/of_platform.h>
+#include <linex/uaccess.h>
 
 #include "edac_module.h"
 

@@ -3,17 +3,17 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinex.simtec.co.uk/
 //
 // Base S3C64XX I2C bus 1 gpio configuration
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gpio.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/gpio.h>
 
 struct platform_device; /* don't need the contents */
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linex/platform_data/i2c-s3c2410.h>
 #include "gpio-cfg.h"
 #include "gpio-samsung.h"
 

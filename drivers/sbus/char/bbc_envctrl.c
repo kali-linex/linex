@@ -4,13 +4,13 @@
  * Copyright (C) 2001, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
+#include <linex/kthread.h>
+#include <linex/delay.h>
+#include <linex/kmod.h>
+#include <linex/reboot.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/of_device.h>
 #include <asm/oplib.h>
 
 #include "bbc_i2c.h"

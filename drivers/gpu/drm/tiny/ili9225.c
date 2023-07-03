@@ -8,12 +8,12 @@
  * Copyright 2016 Noralf Trønnes
  */
 
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/dma-buf.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
 #include <video/mipi_display.h>
 
 #include <drm/drm_atomic_helper.h>

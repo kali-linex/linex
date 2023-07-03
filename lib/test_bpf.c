@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/filter.h>
+#include <linex/bpf.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/random.h>
+#include <linex/highmem.h>
+#include <linex/sched.h>
 
 /* General test specific settings */
 #define MAX_SUBTESTS	3

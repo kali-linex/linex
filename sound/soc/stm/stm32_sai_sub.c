@@ -6,14 +6,14 @@
  * Author(s): Olivier Moysan <olivier.moysan@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 
 #include <sound/asoundef.h>
 #include <sound/core.h>

@@ -12,9 +12,9 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/zalloc.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/zalloc.h>
 
 #include "../auxtrace.h"
 #include "../debug.h"

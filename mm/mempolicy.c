@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Simple NUMA memory policy for the Linux kernel.
+ * Simple NUMA memory policy for the Linex kernel.
  *
  * Copyright 2003,2004 Andi Kleen, SuSE Labs.
  * (C) Copyright 2005 Christoph Lameter, Silicon Graphics, Inc.
@@ -35,7 +35,7 @@
  *                similar to preferred without the special case.
  *
  * default        Allocate on the local node first, or when on a VMA
- *                use the process policy. This is what Linux always did
+ *                use the process policy. This is what Linex always did
  *		  in a NUMA aware kernel and still does by, ahem, default.
  *
  * The process policy is applied for most non interrupt memory allocations
@@ -70,42 +70,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mempolicy.h>
-#include <linux/pagewalk.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/nodemask.h>
-#include <linux/cpuset.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/ptrace.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/migrate.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ctype.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/printk.h>
-#include <linux/swapops.h>
+#include <linex/mempolicy.h>
+#include <linex/pagewalk.h>
+#include <linex/highmem.h>
+#include <linex/hugetlb.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/numa_balancing.h>
+#include <linex/sched/task.h>
+#include <linex/nodemask.h>
+#include <linex/cpuset.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/export.h>
+#include <linex/nsproxy.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/compat.h>
+#include <linex/ptrace.h>
+#include <linex/swap.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/migrate.h>
+#include <linex/ksm.h>
+#include <linex/rmap.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/ctype.h>
+#include <linex/mm_inline.h>
+#include <linex/mmu_notifier.h>
+#include <linex/printk.h>
+#include <linex/swapops.h>
 
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 

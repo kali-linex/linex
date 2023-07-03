@@ -5,21 +5,21 @@
  *	Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/device.h>
 
 #include <net/page_pool.h>
 #include <net/xdp.h>
 
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h> /* for put_page() */
-#include <linux/poison.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/page-flags.h>
+#include <linex/mm.h> /* for put_page() */
+#include <linex/poison.h>
+#include <linex/ethtool.h>
+#include <linex/netdevice.h>
 
 #include <trace/events/page_pool.h>
 

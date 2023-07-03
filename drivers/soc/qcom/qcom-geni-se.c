@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2017-2018, The Linex Foundation. All rights reserved.
 
 /* Disable MMIO tracing to prevent excessive logging of unwanted MMIO traces */
 #define __DISABLE_TRACE_MMIO__
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/soc/qcom/geni-se.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/soc/qcom/geni-se.h>
 
 /**
  * DOC: Overview
@@ -496,7 +496,7 @@ static void geni_se_clks_off(struct geni_se *se)
  *                           engine
  * @se:	Pointer to the concerned serial engine.
  *
- * Return: 0 on success, standard Linux error codes on failure/error.
+ * Return: 0 on success, standard Linex error codes on failure/error.
  */
 int geni_se_resources_off(struct geni_se *se)
 {
@@ -534,7 +534,7 @@ static int geni_se_clks_on(struct geni_se *se)
  *                          engine
  * @se:	Pointer to the concerned serial engine.
  *
- * Return: 0 on success, standard Linux error codes on failure/error.
+ * Return: 0 on success, standard Linex error codes on failure/error.
  */
 int geni_se_resources_on(struct geni_se *se)
 {
@@ -566,7 +566,7 @@ EXPORT_SYMBOL(geni_se_resources_on);
  * programmed into DFS.
  *
  * Return: number of valid performance levels in the table on success,
- *	   standard Linux error codes on failure.
+ *	   standard Linex error codes on failure.
  */
 int geni_se_clk_tbl_get(struct geni_se *se, unsigned long **tbl)
 {
@@ -613,7 +613,7 @@ EXPORT_SYMBOL(geni_se_clk_tbl_get);
  * - if @exact is true  then @res_freq / <an_integer> == @req_freq
  * - if @exact is false then @res_freq / <an_integer> <= @req_freq
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard Linex error codes on failure.
  */
 int geni_se_clk_freq_match(struct geni_se *se, unsigned long req_freq,
 			   unsigned int *index, unsigned long *res_freq,
@@ -695,7 +695,7 @@ EXPORT_SYMBOL(geni_se_tx_init_dma);
  *
  * This function is used to prepare the buffers for DMA TX.
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard Linex error codes on failure.
  */
 int geni_se_tx_dma_prep(struct geni_se *se, void *buf, size_t len,
 			dma_addr_t *iova)
@@ -747,7 +747,7 @@ EXPORT_SYMBOL(geni_se_rx_init_dma);
  *
  * This function is used to prepare the buffers for DMA RX.
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard Linex error codes on failure.
  */
 int geni_se_rx_dma_prep(struct geni_se *se, void *buf, size_t len,
 			dma_addr_t *iova)

@@ -5,19 +5,19 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/user_namespace.h>
-#include <linux/nsproxy.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/security.h>
+#include <linex/seq_file.h>
+#include <linex/err.h>
+#include <linex/user_namespace.h>
+#include <linex/nsproxy.h>
 #include <keys/keyring-type.h>
 #include <keys/user-type.h>
-#include <linux/assoc_array_priv.h>
-#include <linux/uaccess.h>
+#include <linex/assoc_array_priv.h>
+#include <linex/uaccess.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

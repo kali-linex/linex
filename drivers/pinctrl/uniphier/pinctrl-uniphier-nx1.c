@@ -3,11 +3,11 @@
 // Copyright (C) 2019 Socionext Inc.
 //   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
 
 #include "pinctrl-uniphier.h"
 

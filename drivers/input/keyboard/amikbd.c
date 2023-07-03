@@ -7,16 +7,16 @@
  */
 
 /*
- * Amiga keyboard driver for Linux/m68k
+ * Amiga keyboard driver for Linex/m68k
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/keyboard.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/keyboard.h>
+#include <linex/platform_device.h>
 
 #include <asm/amigaints.h>
 #include <asm/amigahw.h>

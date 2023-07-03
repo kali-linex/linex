@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-#ifndef _LINUX_DROPREASON_CORE_H
-#define _LINUX_DROPREASON_CORE_H
+#ifndef _LINEX_DROPREASON_CORE_H
+#define _LINEX_DROPREASON_CORE_H
 
 #define DEFINE_DROP_REASON(FN, FNe)	\
 	FN(NOT_SPECIFIED)		\
@@ -141,35 +141,35 @@ enum skb_drop_reason {
 	SKB_DROP_REASON_PROTO_MEM,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5NOTFOUND: no MD5 hash and one expected,
-	 * corresponding to LINUX_MIB_TCPMD5NOTFOUND
+	 * corresponding to LINEX_MIB_TCPMD5NOTFOUND
 	 */
 	SKB_DROP_REASON_TCP_MD5NOTFOUND,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5UNEXPECTED: MD5 hash and we're not expecting
-	 * one, corresponding to LINUX_MIB_TCPMD5UNEXPECTED
+	 * one, corresponding to LINEX_MIB_TCPMD5UNEXPECTED
 	 */
 	SKB_DROP_REASON_TCP_MD5UNEXPECTED,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5FAILURE: MD5 hash and its wrong, corresponding
-	 * to LINUX_MIB_TCPMD5FAILURE
+	 * to LINEX_MIB_TCPMD5FAILURE
 	 */
 	SKB_DROP_REASON_TCP_MD5FAILURE,
 	/**
 	 * @SKB_DROP_REASON_SOCKET_BACKLOG: failed to add skb to socket backlog (
-	 * see LINUX_MIB_TCPBACKLOGDROP)
+	 * see LINEX_MIB_TCPBACKLOGDROP)
 	 */
 	SKB_DROP_REASON_SOCKET_BACKLOG,
 	/** @SKB_DROP_REASON_TCP_FLAGS: TCP flags invalid */
 	SKB_DROP_REASON_TCP_FLAGS,
 	/**
 	 * @SKB_DROP_REASON_TCP_ZEROWINDOW: TCP receive window size is zero,
-	 * see LINUX_MIB_TCPZEROWINDOWDROP
+	 * see LINEX_MIB_TCPZEROWINDOWDROP
 	 */
 	SKB_DROP_REASON_TCP_ZEROWINDOW,
 	/**
 	 * @SKB_DROP_REASON_TCP_OLD_DATA: the TCP data reveived is already
 	 * received before (spurious retrans may happened), see
-	 * LINUX_MIB_DELAYEDACKLOST
+	 * LINEX_MIB_DELAYEDACKLOST
 	 */
 	SKB_DROP_REASON_TCP_OLD_DATA,
 	/**
@@ -180,12 +180,12 @@ enum skb_drop_reason {
 	SKB_DROP_REASON_TCP_OVERWINDOW,
 	/**
 	 * @SKB_DROP_REASON_TCP_OFOMERGE: the data of skb is already in the ofo
-	 * queue, corresponding to LINUX_MIB_TCPOFOMERGE
+	 * queue, corresponding to LINEX_MIB_TCPOFOMERGE
 	 */
 	SKB_DROP_REASON_TCP_OFOMERGE,
 	/**
 	 * @SKB_DROP_REASON_TCP_RFC7323_PAWS: PAWS check, corresponding to
-	 * LINUX_MIB_PAWSESTABREJECTED
+	 * LINEX_MIB_PAWSESTABREJECTED
 	 */
 	SKB_DROP_REASON_TCP_RFC7323_PAWS,
 	/** @SKB_DROP_REASON_TCP_INVALID_SEQUENCE: Not acceptable SEQ field */

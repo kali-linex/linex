@@ -7,16 +7,16 @@
  *	Nishanth Menon
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/palmas.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #define PALMAS_LPK_TIME_MASK		0x0c
 #define PALMAS_PWRON_DEBOUNCE_MASK	0x03

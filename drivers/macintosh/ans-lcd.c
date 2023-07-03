@@ -3,17 +3,17 @@
  * /dev/lcd driver for Apple Network Servers.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/of.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/miscdevice.h>
+#include <linex/fcntl.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/of.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 
@@ -149,7 +149,7 @@ static struct miscdevice anslcd_dev = {
 
 static const char anslcd_logo[] __initconst =
 				"********************"  /* Line #1 */
-				"*      LINUX!      *"  /* Line #3 */
+				"*      LINEX!      *"  /* Line #3 */
 				"*    Welcome to    *"  /* Line #2 */
 				"********************"; /* Line #4 */
 

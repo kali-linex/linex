@@ -2,16 +2,16 @@
 /*
  *  Copyright (C) 2003 Deep Blue Solutions Ltd
  */
-#include <linux/kernel.h>
-#include <linux/amba/mmci.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/sched_clock.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linex/kernel.h>
+#include <linex/amba/mmci.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/sched_clock.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

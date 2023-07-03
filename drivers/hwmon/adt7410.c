@@ -6,10 +6,10 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
 
 #include "adt7x10.h"
 

@@ -7,18 +7,18 @@
  * Copyright (C) 2008 Wind River Systems
  */
 
-#include <linux/etherdevice.h>
-#include <linux/of_platform.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
+#include <linex/etherdevice.h>
+#include <linex/of_platform.h>
+#include <linex/of_fdt.h>
+#include <linex/libfdt.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-helper-board.h>
 
 #ifdef CONFIG_USB
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linex/usb/ehci_def.h>
+#include <linex/usb/ehci_pdriver.h>
+#include <linex/usb/ohci_pdriver.h>
 #include <asm/octeon/cvmx-uctlx-defs.h>
 
 #define CVMX_UAHCX_EHCI_USBCMD	(CVMX_ADD_IO_SEG(0x00016F0000000010ull))

@@ -5,16 +5,16 @@
  * Copyright 2021 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <asm/unaligned.h>
 

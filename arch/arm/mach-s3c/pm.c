@@ -3,17 +3,17 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2004-2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinex.simtec.co.uk/
 //
 // S3C common power management (suspend to ram) support.
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/serial_s3c.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/suspend.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/serial_s3c.h>
+#include <linex/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/suspend.h>

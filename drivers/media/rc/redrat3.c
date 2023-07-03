@@ -32,12 +32,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/device.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <linex/device.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/input.h>
 #include <media/rc-core.h>
 
 /* Driver Information */

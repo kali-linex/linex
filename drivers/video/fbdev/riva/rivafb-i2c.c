@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/riva/fbdev-i2c.c - nVidia i2c
+ * linex/drivers/video/riva/fbdev-i2c.c - nVidia i2c
  *
  * Maintained by Ani Joshi <ajoshi@shell.unixbox.com>
  *
@@ -12,12 +12,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/fb.h>
+#include <linex/jiffies.h>
 
 #include <asm/io.h>
 

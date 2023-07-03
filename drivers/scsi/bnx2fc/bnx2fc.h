@@ -1,4 +1,4 @@
-/* bnx2fc.h: QLogic Linux FCoE offload driver.
+/* bnx2fc.h: QLogic Linex FCoE offload driver.
  *
  * Copyright (c) 2008-2013 Broadcom Corporation
  * Copyright (c) 2014-2016 QLogic Corporation
@@ -15,33 +15,33 @@
 #define _BNX2FC_H_
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/kthread.h>
+#include <linex/crc32.h>
+#include <linex/cpu.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/dma-mapping.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/log2.h>
+#include <linex/interrupt.h>
+#include <linex/sched/signal.h>
+#include <linex/io.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

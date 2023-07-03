@@ -8,7 +8,7 @@
  * Based on tag_ksz.c.
  */
 
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/dsa.h>
 
 #include "tag.h"

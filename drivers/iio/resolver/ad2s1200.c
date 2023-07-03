@@ -7,19 +7,19 @@
  * Copyright (c) 2010-2010 Analog Devices Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/spi/spi.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define DRV_NAME "ad2s1200"
 

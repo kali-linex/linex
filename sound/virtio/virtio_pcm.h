@@ -6,8 +6,8 @@
 #ifndef VIRTIO_SND_PCM_H
 #define VIRTIO_SND_PCM_H
 
-#include <linux/atomic.h>
-#include <linux/virtio_config.h>
+#include <linex/atomic.h>
+#include <linex/virtio_config.h>
 #include <sound/pcm.h>
 
 struct virtio_pcm;

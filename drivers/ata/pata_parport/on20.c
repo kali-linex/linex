@@ -6,12 +6,12 @@
  * Onspec 90c20 parallel to IDE adapter.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 #include <asm/io.h>
 #include "pata_parport.h"
 

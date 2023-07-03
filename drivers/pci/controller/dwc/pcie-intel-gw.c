@@ -5,14 +5,14 @@
  * Copyright (c) 2019 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
-#include <linux/pci_regs.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iopoll.h>
+#include <linex/pci_regs.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

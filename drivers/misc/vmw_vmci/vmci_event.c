@@ -5,13 +5,13 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linex/vmw_vmci_defs.h>
+#include <linex/vmw_vmci_api.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/rculist.h>
 
 #include "vmci_driver.h"
 #include "vmci_event.h"

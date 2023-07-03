@@ -3,10 +3,10 @@
 #include <inttypes.h>
 #include <string.h>
 
-#include <linux/compiler.h>
-#include <linux/perf_event.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/perf_event.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
 
 #include <asm/barrier.h>
 

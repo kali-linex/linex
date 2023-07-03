@@ -14,12 +14,12 @@
  *    written by Anton Blanchard and Paul Mackerras
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
 
 #include <asm/irq.h>
 #include <asm/rtas.h>

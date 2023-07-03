@@ -25,7 +25,7 @@ static void test_libbpf_bpf_attach_type_str(void)
 	const struct btf_enum *e;
 	int i, n, id;
 
-	btf = btf__parse("/sys/kernel/btf/vmlinux", NULL);
+	btf = btf__parse("/sys/kernel/btf/vmlinex", NULL);
 	if (!ASSERT_OK_PTR(btf, "btf_parse"))
 		return;
 
@@ -70,7 +70,7 @@ static void test_libbpf_bpf_link_type_str(void)
 	const struct btf_enum *e;
 	int i, n, id;
 
-	btf = btf__parse("/sys/kernel/btf/vmlinux", NULL);
+	btf = btf__parse("/sys/kernel/btf/vmlinex", NULL);
 	if (!ASSERT_OK_PTR(btf, "btf_parse"))
 		return;
 
@@ -115,7 +115,7 @@ static void test_libbpf_bpf_map_type_str(void)
 	const struct btf_enum *e;
 	int i, n, id;
 
-	btf = btf__parse("/sys/kernel/btf/vmlinux", NULL);
+	btf = btf__parse("/sys/kernel/btf/vmlinex", NULL);
 	if (!ASSERT_OK_PTR(btf, "btf_parse"))
 		return;
 
@@ -165,7 +165,7 @@ static void test_libbpf_bpf_prog_type_str(void)
 	const struct btf_enum *e;
 	int i, n, id;
 
-	btf = btf__parse("/sys/kernel/btf/vmlinux", NULL);
+	btf = btf__parse("/sys/kernel/btf/vmlinex", NULL);
 	if (!ASSERT_OK_PTR(btf, "btf_parse"))
 		return;
 

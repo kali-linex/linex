@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * BlueZ - Bluetooth protocol stack for Linux
+ * BlueZ - Bluetooth protocol stack for Linex
  *
  * Copyright (C) 2021 Intel Corporation
  */
 
-#include <linux/property.h>
+#include <linex/property.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

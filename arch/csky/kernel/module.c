@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
+#include <linex/moduleloader.h>
+#include <linex/elf.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
 
 #ifdef CONFIG_CPU_CK810
 #define IS_BSR32(hi16, lo16)		(((hi16) & 0xFC00) == 0xE000)

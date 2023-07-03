@@ -36,8 +36,8 @@
 #define _TLS_INT_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/skmsg.h>
+#include <linex/types.h>
+#include <linex/skmsg.h>
 #include <net/tls.h>
 
 #define TLS_PAGE_ORDER	(min_t(unsigned int, PAGE_ALLOC_COSTLY_ORDER,	\

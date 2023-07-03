@@ -8,21 +8,21 @@
  * Derived from i386 and Alpha versions.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/ptrace.h>
+#include <linex/sched.h>
+#include <linex/signal.h>
+#include <linex/smp.h>
+#include <linex/stddef.h>
+#include <linex/tty.h>
+#include <linex/binfmts.h>
+#include <linex/unistd.h>
+#include <linex/wait.h>
 
 #include <asm/intrinsics.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/rse.h>
 #include <asm/sigcontext.h>
 

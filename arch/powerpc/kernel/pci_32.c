@@ -3,21 +3,21 @@
  * Common pmac/prep/chrp pci routines. -- Cort
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/capability.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
+#include <linex/memblock.h>
+#include <linex/syscalls.h>
+#include <linex/irq.h>
+#include <linex/list.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -25,7 +25,7 @@
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/machdep.h>
 
 #undef DEBUG

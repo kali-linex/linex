@@ -50,15 +50,15 @@
  * TODO: ifdef out some instruction decoding based on architecture.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
+#include <linex/kernel.h>
+#include <linex/kprobes.h>
+#include <linex/ptrace.h>
 
 #include "../decode-arm.h"
 #include "core.h"
 #include "checkers.h"
 
-#if  __LINUX_ARM_ARCH__ >= 6
+#if  __LINEX_ARM_ARCH__ >= 6
 #define BLX(reg)	"blx	"reg"		\n\t"
 #else
 #define BLX(reg)	"mov	lr, pc		\n\t"	\

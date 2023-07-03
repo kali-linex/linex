@@ -11,13 +11,13 @@
 
 #include <asm/amd_hsmp.h>
 #include <asm/amd_nb.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/semaphore.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/semaphore.h>
 
 #define DRIVER_NAME		"amd_hsmp"
 #define DRIVER_VERSION		"1.0"

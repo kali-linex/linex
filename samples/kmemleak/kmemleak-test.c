@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) "kmemleak: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/fdtable.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/list.h>
+#include <linex/percpu.h>
+#include <linex/fdtable.h>
 
-#include <linux/kmemleak.h>
+#include <linex/kmemleak.h>
 
 struct test_node {
 	long header[25];

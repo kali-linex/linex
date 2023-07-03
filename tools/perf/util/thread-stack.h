@@ -9,7 +9,7 @@
 
 #include <sys/types.h>
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct thread;
 struct comm;

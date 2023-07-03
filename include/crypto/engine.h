@@ -7,11 +7,11 @@
 #ifndef _CRYPTO_ENGINE_H
 #define _CRYPTO_ENGINE_H
 
-#include <linux/crypto.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/crypto.h>
+#include <linex/list.h>
+#include <linex/kthread.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aead.h>

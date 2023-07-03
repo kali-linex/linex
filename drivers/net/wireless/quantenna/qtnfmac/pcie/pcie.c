@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2018 Quantenna Communications, Inc. All rights reserved. */
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/seq_file.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/netdevice.h>
+#include <linex/seq_file.h>
+#include <linex/workqueue.h>
+#include <linex/completion.h>
 
 #include "pcie_priv.h"
 #include "bus.h"

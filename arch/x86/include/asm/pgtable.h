@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_PGTABLE_H
 #define _ASM_X86_PGTABLE_H
 
-#include <linux/mem_encrypt.h>
+#include <linex/mem_encrypt.h>
 #include <asm/page.h>
 #include <asm/pgtable_types.h>
 
@@ -16,13 +16,13 @@
 	 : (prot))
 
 #ifndef __ASSEMBLY__
-#include <linux/spinlock.h>
+#include <linex/spinlock.h>
 #include <asm/x86_init.h>
 #include <asm/pkru.h>
 #include <asm/fpu/api.h>
 #include <asm/coco.h>
 #include <asm-generic/pgtable_uffd.h>
-#include <linux/page_table_check.h>
+#include <linex/page_table_check.h>
 
 extern pgd_t early_top_pgt[PTRS_PER_PGD];
 bool __init __early_make_pgtable(unsigned long address, pmdval_t pmd);
@@ -733,9 +733,9 @@ static inline pgd_t pti_set_user_pgtbl(pgd_t *pgdp, pgd_t pgd)
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/log2.h>
+#include <linex/mm_types.h>
+#include <linex/mmdebug.h>
+#include <linex/log2.h>
 #include <asm/fixmap.h>
 
 static inline int pte_none(pte_t pte)
@@ -788,7 +788,7 @@ static inline int pmd_present(pmd_t pmd)
 #ifdef CONFIG_NUMA_BALANCING
 /*
  * These work without NUMA balancing but the kernel does not care. See the
- * comment in include/linux/pgtable.h
+ * comment in include/linex/pgtable.h
  */
 static inline int pte_protnone(pte_t pte)
 {
@@ -818,7 +818,7 @@ static inline unsigned long pmd_page_vaddr(pmd_t pmd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linex/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pmd_page(pmd)	pfn_to_page(pmd_pfn(pmd))
 
@@ -827,7 +827,7 @@ static inline unsigned long pmd_page_vaddr(pmd_t pmd)
  * and a page entry and page directory to the page they refer to.
  *
  * (Currently stuck as a macro because of indirect forward reference
- * to linux/mm.h:page_to_nid())
+ * to linex/mm.h:page_to_nid())
  */
 #define mk_pte(page, pgprot)   pfn_pte(page_to_pfn(page), (pgprot))
 
@@ -860,7 +860,7 @@ static inline pmd_t *pud_pgtable(pud_t pud)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linex/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pud_page(pud)	pfn_to_page(pud_pfn(pud))
 
@@ -901,7 +901,7 @@ static inline pud_t *p4d_pgtable(p4d_t p4d)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linex/mmzone.h's __section_mem_map_addr() definition:
  */
 #define p4d_page(p4d)	pfn_to_page(p4d_pfn(p4d))
 
@@ -936,7 +936,7 @@ static inline unsigned long pgd_page_vaddr(pgd_t pgd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linex/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pgd_page(pgd)	pfn_to_page(pgd_pfn(pgd))
 

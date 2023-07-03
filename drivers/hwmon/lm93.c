@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * lm93.c - Part of lm_sensors, Linux kernel modules for hardware monitoring
+ * lm93.c - Part of lm_sensors, Linex kernel modules for hardware monitoring
  *
  * Author/Maintainer: Mark M. Hoffman <mhoffman@lightlink.com>
  *	Copyright (c) 2004 Utilitek Systems, Inc.
@@ -15,7 +15,7 @@
  * derived in part from w83l785ts.c:
  *	Copyright (c) 2003-2004 Jean Delvare <jdelvare@suse.de>
  *
- * Ported to Linux 2.6 by Eric J. Bowersox <ericb@aspsys.com>
+ * Ported to Linex 2.6 by Eric J. Bowersox <ericb@aspsys.com>
  *	Copyright (c) 2005 Aspen Systems, Inc.
  *
  * Adapted to 2.6.20 by Carsten Emde <cbe@osadl.org>
@@ -25,16 +25,16 @@
  *	Copyright (c) 2007 Hans J. Koch, Linutronix GmbH
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/hwmon-vid.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/jiffies.h>
 
 /* LM93 REGISTER ADDRESSES */
 

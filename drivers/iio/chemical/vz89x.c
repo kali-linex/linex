@@ -6,14 +6,14 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define VZ89X_REG_MEASUREMENT		0x09
 #define VZ89X_REG_MEASUREMENT_RD_SIZE	6

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/netdevice.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/wext.h>
 
 #include "dev.h"

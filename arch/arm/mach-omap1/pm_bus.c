@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2010 Texas Instruments, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_clock.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/clk.h>
+#include <linex/err.h>
 
 #include "soc.h"
 

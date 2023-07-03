@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * generic helper functions for handling video4linux capture buffers
+ * generic helper functions for handling video4linex capture buffers
  *
  * (c) 2007 Mauro Carvalho Chehab, <mchehab@kernel.org>
  *
@@ -10,13 +10,13 @@
  * (c) 2006 Ted Walther and John Sokol
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
 
 #include <media/videobuf-core.h>
 #include <media/v4l2-common.h>
@@ -35,7 +35,7 @@
 static int debug;
 module_param(debug, int, 0644);
 
-MODULE_DESCRIPTION("helper module to manage video4linux buffers");
+MODULE_DESCRIPTION("helper module to manage video4linex buffers");
 MODULE_AUTHOR("Mauro Carvalho Chehab <mchehab@kernel.org>");
 MODULE_LICENSE("GPL");
 

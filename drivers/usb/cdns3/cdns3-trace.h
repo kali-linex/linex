@@ -11,13 +11,13 @@
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM cdns3
 
-#if !defined(__LINUX_CDNS3_TRACE) || defined(TRACE_HEADER_MULTI_READ)
-#define __LINUX_CDNS3_TRACE
+#if !defined(__LINEX_CDNS3_TRACE) || defined(TRACE_HEADER_MULTI_READ)
+#define __LINEX_CDNS3_TRACE
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
 #include <asm/byteorder.h>
-#include <linux/usb/ch9.h>
+#include <linex/usb/ch9.h>
 #include "core.h"
 #include "cdns3-gadget.h"
 #include "cdns3-debug.h"
@@ -544,7 +544,7 @@ DEFINE_EVENT(cdns3_log_request_handled, cdns3_request_handled,
 		 int handled),
 	TP_ARGS(priv_req, current_index, handled)
 );
-#endif /* __LINUX_CDNS3_TRACE */
+#endif /* __LINEX_CDNS3_TRACE */
 
 /* this part must be outside header guard */
 

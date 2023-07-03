@@ -2,16 +2,16 @@
 /*
  * bsg.c - block layer implementation of the sg v4 interface
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/cdev.h>
-#include <linux/jiffies.h>
-#include <linux/percpu.h>
-#include <linux/idr.h>
-#include <linux/bsg.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/file.h>
+#include <linex/blkdev.h>
+#include <linex/cdev.h>
+#include <linex/jiffies.h>
+#include <linex/percpu.h>
+#include <linex/idr.h>
+#include <linex/bsg.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_ioctl.h>

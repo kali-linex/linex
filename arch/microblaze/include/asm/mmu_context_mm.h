@@ -8,9 +8,9 @@
 #ifndef _ASM_MICROBLAZE_MMU_CONTEXT_H
 #define _ASM_MICROBLAZE_MMU_CONTEXT_H
 
-#include <linux/atomic.h>
-#include <linux/mm_types.h>
-#include <linux/sched.h>
+#include <linex/atomic.h>
+#include <linex/mm_types.h>
+#include <linex/sched.h>
 
 #include <asm/bitops.h>
 #include <asm/mmu.h>

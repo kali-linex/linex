@@ -7,19 +7,19 @@
  * Author:Zhao Qiang<qiang.zhao@nxp.com>
  */
 
-#include <linux/bitrev.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/spi/spi.h>
-#include <linux/wait.h>
-#include <linux/param.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <linex/bitrev.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/kthread.h>
+#include <linex/spi/spi.h>
+#include <linex/wait.h>
+#include <linex/param.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/io.h>
 #include "slic_ds26522.h"
 
 #define SLIC_TRANS_LEN 1

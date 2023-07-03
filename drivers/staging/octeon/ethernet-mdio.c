@@ -5,11 +5,11 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/ratelimit.h>
-#include <linux/of_mdio.h>
+#include <linex/kernel.h>
+#include <linex/ethtool.h>
+#include <linex/phy.h>
+#include <linex/ratelimit.h>
+#include <linex/of_mdio.h>
 #include <generated/utsrelease.h>
 #include <net/dst.h>
 

@@ -11,14 +11,14 @@
  * Split to multiple files by Josef Gajdusek <atx@atx.name> - 2014
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/delay.h>
 
 #include "hmc5843.h"
 

@@ -3,19 +3,19 @@
 * Copyright (c) 2016 MediaTek Inc.
 * Author: Andrew-CT Chen <andrew-ct.chen@mediatek.com>
 */
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/dma-mapping.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/iommu.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/sched.h>
+#include <linex/sizes.h>
+#include <linex/dma-mapping.h>
 
 #include "mtk_vpu.h"
 

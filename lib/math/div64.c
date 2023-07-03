@@ -18,11 +18,11 @@
  * or by defining a preprocessor macro in arch/include/asm/div64.h.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/math.h>
-#include <linux/math64.h>
-#include <linux/log2.h>
+#include <linex/bitops.h>
+#include <linex/export.h>
+#include <linex/math.h>
+#include <linex/math64.h>
+#include <linex/log2.h>
 
 /* Not needed on 64bit architectures */
 #if BITS_PER_LONG == 32

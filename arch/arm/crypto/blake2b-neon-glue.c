@@ -9,8 +9,8 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <linex/module.h>
+#include <linex/sizes.h>
 
 #include <asm/neon.h>
 #include <asm/simd.h>

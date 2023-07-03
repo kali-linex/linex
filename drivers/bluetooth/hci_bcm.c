@@ -6,26 +6,26 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/tty.h>
-#include <linux/interrupt.h>
-#include <linux/dmi.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/property.h>
+#include <linex/platform_data/x86/apple.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/clk.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/tty.h>
+#include <linex/interrupt.h>
+#include <linex/dmi.h>
+#include <linex/pm_runtime.h>
+#include <linex/serdev.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

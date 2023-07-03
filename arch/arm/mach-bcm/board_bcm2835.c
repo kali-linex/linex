@@ -3,9 +3,9 @@
  * Copyright (C) 2010 Broadcom
  */
 
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
+#include <linex/init.h>
+#include <linex/irqchip.h>
+#include <linex/of_address.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

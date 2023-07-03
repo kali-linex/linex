@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/list.h>
+#include <linex/spinlock.h>
+#include <linex/hardirq.h>
+#include <linex/ftrace.h>
+#include <linex/percpu.h>
+#include <linex/init.h>
+#include <linex/list.h>
 #include <trace/syscall.h>
 
 #include <asm/ftrace.h>

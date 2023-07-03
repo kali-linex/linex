@@ -16,8 +16,8 @@
 #include <drm/drm_gem_dma_helper.h>
 #include <drm/drm_gem_framebuffer_helper.h>
 #include <drm/drm_plane.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
 
 /**
  * DOC: framebuffer dma helper functions

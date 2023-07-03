@@ -1,15 +1,15 @@
 /*
- * linux/fs/nls/nls_koi8-ru.c
+ * linex/fs/nls/nls_koi8-ru.c
  *
  * Charset koi8-ru translation based on charset koi8-u.
  * The Unicode to charset table has only exact mappings.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/nls.h>
+#include <linex/errno.h>
 
 static struct nls_table *p_nls;
 

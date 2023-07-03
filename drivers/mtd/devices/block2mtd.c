@@ -16,20 +16,20 @@
  */
 #define MTD_DEFAULT_TIMEOUT	3
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mutex.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/major.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/bio.h>
+#include <linex/pagemap.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mutex.h>
+#include <linex/mount.h>
+#include <linex/slab.h>
+#include <linex/major.h>
 
 /* Maximum number of comma-separated items in the 'block2mtd=' parameter */
 #define BLOCK2MTD_PARAM_MAX_COUNT 3

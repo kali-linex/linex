@@ -2,7 +2,7 @@
 /*
  * usblp.c
  *
- * Copyright (c) 1999 Michael Gee	<michael@linuxspecific.com>
+ * Copyright (c) 1999 Michael Gee	<michael@linexspecific.com>
  * Copyright (c) 1999 Pavel Machek	<pavel@ucw.cz>
  * Copyright (c) 2000 Randy Dunlap	<rdunlap@xenotime.net>
  * Copyright (c) 2000 Vojtech Pavlik	<vojtech@suse.cz>
@@ -29,21 +29,21 @@
  *	v0.12 - add hpoj.sourceforge.net ioctls (David Paschal)
  *	v0.13 - alloc space for statusbuf (<status> not on stack);
  *		use usb_alloc_coherent() for read buf & write buf;
- *      none  - Maintained in Linux kernel after v0.13
+ *      none  - Maintained in Linex kernel after v0.13
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/lp.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/lp.h>
+#include <linex/mutex.h>
 #undef DEBUG
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/ratelimit.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/ratelimit.h>
 
 /*
  * Version Information

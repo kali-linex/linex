@@ -3,7 +3,7 @@
  * ni_at_ao.c
  * Driver for NI AT-AO-6/10 boards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000,2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -24,9 +24,9 @@
  *         1 for 0V to 10V unipolar
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8254.h>
 
 /*
  * Register map

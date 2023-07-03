@@ -10,19 +10,19 @@
 
   */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/i2c.h>
+#include <linex/types.h>
+#include <linex/videodev2.h>
+#include <linex/init.h>
+#include <linex/crc32.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-common.h>

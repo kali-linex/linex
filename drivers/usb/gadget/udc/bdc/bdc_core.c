@@ -6,25 +6,25 @@
  *
  * Author: Ashwini Pahuja
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/moduleparam.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/moduleparam.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/clk.h>
 
 #include "bdc.h"
 #include "bdc_dbg.h"
@@ -652,6 +652,6 @@ static struct platform_driver bdc_driver = {
 };
 
 module_platform_driver(bdc_driver);
-MODULE_AUTHOR("Ashwini Pahuja <ashwini.linux@gmail.com>");
+MODULE_AUTHOR("Ashwini Pahuja <ashwini.linex@gmail.com>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION(BRCM_BDC_DESC);

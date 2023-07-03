@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2018, The Linex Foundation. All rights reserved.
  * Copyright (c) 2021, 2023, Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/clk-provider.h>
+#include <linex/regmap.h>
+#include <linex/delay.h>
 
 #include "clk-alpha-pll.h"
 #include "common.h"

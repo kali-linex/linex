@@ -12,11 +12,11 @@
  * Based on work by John Stultz, and Ted Phelps (in a 2.6.12-rc6 patch)
  */
 
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/scx200.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/scx200.h>
 
 #define NAME "scx200_hrt"
 

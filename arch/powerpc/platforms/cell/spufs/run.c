@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #define DEBUG
 
-#include <linux/wait.h>
-#include <linux/ptrace.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

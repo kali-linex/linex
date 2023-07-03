@@ -4,14 +4,14 @@
  * Copyright (C) 2015 Microchip Technology Inc.  All rights reserved.
  */
 #include <dt-bindings/clock/microchip,pic32-clock.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
 #include <asm/traps.h>
 
 #include "clk-core.h"

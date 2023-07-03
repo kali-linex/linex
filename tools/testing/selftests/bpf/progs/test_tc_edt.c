@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stdint.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/stddef.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/pkt_cls.h>
-#include <linux/tcp.h>
+#include <linex/bpf.h>
+#include <linex/if_ether.h>
+#include <linex/stddef.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/pkt_cls.h>
+#include <linex/tcp.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

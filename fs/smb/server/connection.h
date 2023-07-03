@@ -6,15 +6,15 @@
 #ifndef __KSMBD_CONNECTION_H__
 #define __KSMBD_CONNECTION_H__
 
-#include <linux/list.h>
-#include <linux/ip.h>
+#include <linex/list.h>
+#include <linex/ip.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <net/inet_connection_sock.h>
 #include <net/request_sock.h>
-#include <linux/kthread.h>
-#include <linux/nls.h>
-#include <linux/unicode.h>
+#include <linex/kthread.h>
+#include <linex/nls.h>
+#include <linex/unicode.h>
 
 #include "smb_common.h"
 #include "ksmbd_work.h"

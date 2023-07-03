@@ -5,17 +5,17 @@
  *		      Md.Jamal Mohiuddin <mjmohiuddin@cdac.in>
  *		      P Sowjanya <sowjanyap@cdac.in>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/property.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/ieee802154.h>
-#include <linux/crc-ccitt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/spi/spi.h>
+#include <linex/property.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/skbuff.h>
+#include <linex/ieee802154.h>
+#include <linex/crc-ccitt.h>
 #include <asm/unaligned.h>
 
 #include <net/mac802154.h>

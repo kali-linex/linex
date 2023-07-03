@@ -3,7 +3,7 @@
 #ifndef QAT_ALGS_SEND_H
 #define QAT_ALGS_SEND_H
 
-#include <linux/list.h>
+#include <linex/list.h>
 #include "adf_transport_internal.h"
 
 struct qat_instance_backlog {

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/phy/phy.h>
 
 #include "dsi_phy.h"

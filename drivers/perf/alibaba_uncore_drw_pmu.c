@@ -9,25 +9,25 @@
 #define ALI_DRW_DRVNAME		ALI_DRW_PMUNAME "_pmu"
 #define pr_fmt(fmt)		ALI_DRW_DRVNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/rculist.h>
-#include <linux/refcount.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpumask.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/rculist.h>
+#include <linex/refcount.h>
 
 
 #define ALI_DRW_PMU_COMMON_MAX_COUNTERS			16
@@ -802,8 +802,8 @@ static void __exit ali_drw_pmu_exit(void)
 module_init(ali_drw_pmu_init);
 module_exit(ali_drw_pmu_exit);
 
-MODULE_AUTHOR("Hongbo Yao <yaohongbo@linux.alibaba.com>");
-MODULE_AUTHOR("Neng Chen <nengchen@linux.alibaba.com>");
-MODULE_AUTHOR("Shuai Xue <xueshuai@linux.alibaba.com>");
+MODULE_AUTHOR("Hongbo Yao <yaohongbo@linex.alibaba.com>");
+MODULE_AUTHOR("Neng Chen <nengchen@linex.alibaba.com>");
+MODULE_AUTHOR("Shuai Xue <xueshuai@linex.alibaba.com>");
 MODULE_DESCRIPTION("Alibaba DDR Sub-System Driveway PMU driver");
 MODULE_LICENSE("GPL v2");

@@ -3,13 +3,13 @@
  * Copyright (c) 2016 Pablo Neira Ayuso <pablo@netfilter.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/atomic.h>
+#include <linex/netlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables.h>
 
 struct nft_quota {

@@ -22,7 +22,7 @@
  *          |    Application CPUs (APU)            |
  *          |                                      |
  *          |                    CDX device drivers|
- *          |     Linux OS                |        |
+ *          |     Linex OS                |        |
  *          |                        CDX bus       |
  *          |                             |        |
  *          |                     CDX controller   |
@@ -55,13 +55,13 @@
  * done using memory mapped interface provided by the RPU to APU.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/xarray.h>
-#include <linux/cdx/cdx_bus.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/xarray.h>
+#include <linex/cdx/cdx_bus.h>
 #include "cdx.h"
 
 /* Default DMA mask for devices on a CDX bus */

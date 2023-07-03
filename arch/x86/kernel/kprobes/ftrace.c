@@ -4,11 +4,11 @@
  *
  * Copyright (C) Hitachi Ltd., 2012
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/preempt.h>
-#include <linux/ftrace.h>
+#include <linex/kprobes.h>
+#include <linex/ptrace.h>
+#include <linex/hardirq.h>
+#include <linex/preempt.h>
+#include <linex/ftrace.h>
 
 #include "common.h"
 

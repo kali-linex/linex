@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/pm_runtime.h>
 
 #include <dt-bindings/clock/qcom,sm8550-dispcc.h>
 

@@ -7,13 +7,13 @@
 #ifndef _IOMMU_COMMON_H
 #define _IOMMU_COMMON_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/iommu-helper.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/scatterlist.h>
+#include <linex/device.h>
+#include <linex/iommu-helper.h>
 
 #include <asm/iommu.h>
 

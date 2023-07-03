@@ -6,10 +6,10 @@
  * Copyright (C) 2012  Phil Edworthy
  */
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
 #include <cpu/pfc.h>
 
 static struct resource sh7269_pfc_resources[] = {

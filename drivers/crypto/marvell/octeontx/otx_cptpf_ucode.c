@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/ctype.h>
-#include <linux/firmware.h>
+#include <linex/ctype.h>
+#include <linex/firmware.h>
 #include "otx_cpt_common.h"
 #include "otx_cptpf_ucode.h"
 #include "otx_cptpf.h"

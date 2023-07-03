@@ -10,12 +10,12 @@
 
 #include "ssb_private.h"
 
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/export.h>
-#include <linux/ssb/ssb.h>
+#include <linex/gpio/driver.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/export.h>
+#include <linex/ssb/ssb.h>
 
 
 /**************************************************

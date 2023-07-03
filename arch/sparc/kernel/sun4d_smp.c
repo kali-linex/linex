@@ -7,12 +7,12 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/cpu.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/profile.h>
+#include <linex/delay.h>
+#include <linex/sched/mm.h>
+#include <linex/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/switch_to.h>
@@ -404,7 +404,7 @@ void __init sun4d_init_smp(void)
 	int i;
 
 	/* Patch ipi15 trap table */
-	t_nmi[1] = t_nmi[1] + (linux_trap_ipi15_sun4d - linux_trap_ipi15_sun4m);
+	t_nmi[1] = t_nmi[1] + (linex_trap_ipi15_sun4d - linex_trap_ipi15_sun4m);
 
 	sparc32_ipi_ops = &sun4d_ipi_ops;
 

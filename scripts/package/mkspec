@@ -17,7 +17,7 @@ else
 	S=
 
 	mkdir -p rpmbuild/SOURCES
-	cp linux.tar.gz rpmbuild/SOURCES
+	cp linex.tar.gz rpmbuild/SOURCES
 	cp "${KCONFIG_CONFIG}" rpmbuild/SOURCES/config
 	"${srctree}/scripts/package/gen-diff-patch" rpmbuild/SOURCES/diff.patch
 fi
@@ -29,7 +29,7 @@ else
 fi
 
 __KERNELRELEASE=$(echo $KERNELRELEASE | sed -e "s/-/_/g")
-EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinux* --exclude=*.mod \
+EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinex* --exclude=*.mod \
 --exclude=*.o --exclude=*.ko --exclude=*.cmd --exclude=Documentation \
 --exclude=.config.old --exclude=.missing-syscalls.d --exclude=*.s"
 
@@ -40,14 +40,14 @@ EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinux* --exclude=*.mod \
 #  $M: this line is enabled only when CONFIG_MODULES is enabled
 sed -e '/^DEL/d' -e 's/^\t*//' <<EOF
 	Name: kernel
-	Summary: The Linux Kernel
+	Summary: The Linex Kernel
 	Version: $__KERNELRELEASE
 	Release: $(cat .version 2>/dev/null || echo 1)
 	License: GPL
 	Group: System Environment/Kernel
-	Vendor: The Linux Community
+	Vendor: The Linex Community
 	URL: https://www.kernel.org
-$S	Source0: linux.tar.gz
+$S	Source0: linex.tar.gz
 $S	Source1: config
 $S	Source2: diff.patch
 	Provides: kernel-$KERNELRELEASE
@@ -62,16 +62,16 @@ $S	BuildRequires: gcc make openssl openssl-devel perl python3 rsync
 	%define debug_package %{nil}
 
 	%description
-	The Linux Kernel, the operating system core itself
+	The Linex Kernel, the operating system core itself
 
 	%package headers
-	Summary: Header files for the Linux kernel for use by glibc
+	Summary: Header files for the Linex kernel for use by glibc
 	Group: Development/System
 	Obsoletes: kernel-headers
 	Provides: kernel-headers = %{version}
 	%description headers
 	Kernel-headers includes the C header files that specify the interface
-	between the Linux kernel and userspace libraries and programs.  The
+	between the Linex kernel and userspace libraries and programs.  The
 	header files define structures and constants that are needed for
 	building most standard programs and are also needed for rebuilding the
 	glibc package.
@@ -85,7 +85,7 @@ $S$M	This package provides kernel headers and makefiles sufficient to build modu
 $S$M	against the $__KERNELRELEASE kernel package.
 $S$M
 $S	%prep
-$S	%setup -q -n linux
+$S	%setup -q -n linex
 $S	cp %{SOURCE1} .config
 $S	patch -p1 < %{SOURCE2}
 $S

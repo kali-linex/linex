@@ -5,9 +5,9 @@
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
+#include <linex/ftrace.h>
+#include <linex/kprobes.h>
+#include <linex/uaccess.h>
 
 #include <asm/inst.h>
 #include <asm/module.h>

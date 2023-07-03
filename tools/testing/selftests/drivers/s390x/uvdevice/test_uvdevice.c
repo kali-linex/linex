@@ -3,7 +3,7 @@
  *  selftest for the Ultravisor UAPI device
  *
  *  Copyright IBM Corp. 2022
- *  Author(s): Steffen Eiden <seiden@linux.ibm.com>
+ *  Author(s): Steffen Eiden <seiden@linex.ibm.com>
  */
 
 #include <stdint.h>

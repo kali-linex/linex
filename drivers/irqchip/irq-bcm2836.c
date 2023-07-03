@@ -5,13 +5,13 @@
  * Copyright 2015 Broadcom
  */
 
-#include <linux/cpu.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqchip/irq-bcm2836.h>
+#include <linex/cpu.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqchip/irq-bcm2836.h>
 
 #include <asm/exception.h>
 

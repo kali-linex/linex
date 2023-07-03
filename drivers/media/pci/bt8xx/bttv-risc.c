@@ -14,13 +14,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/pgtable.h>
 #include <asm/page.h>
 #include <media/v4l2-ioctl.h>
 

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CLOSURE_H
-#define _LINUX_CLOSURE_H
+#ifndef _LINEX_CLOSURE_H
+#define _LINEX_CLOSURE_H
 
-#include <linux/llist.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/workqueue.h>
+#include <linex/llist.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/workqueue.h>
 
 /*
  * Closure is perhaps the most overused and abused term in computer science, but
@@ -375,4 +375,4 @@ static inline void closure_call(struct closure *cl, closure_fn fn,
 	continue_at_nobarrier(cl, fn, wq);
 }
 
-#endif /* _LINUX_CLOSURE_H */
+#endif /* _LINEX_CLOSURE_H */

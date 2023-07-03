@@ -2,21 +2,21 @@
 /*
  * kernel API
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linex.it>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/spinlock.h>
+#include <linex/fs.h>
+#include <linex/pps_kernel.h>
+#include <linex/slab.h>
 
 #include "kc.h"
 

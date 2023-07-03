@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/module.h>
 
 #include "bmg160.h"
 

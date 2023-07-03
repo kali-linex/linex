@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx HSS (synchronous serial port) driver for Linux
+ * Intel IXP4xx HSS (synchronous serial port) driver for Linex
  *
  * Copyright (C) 2007-2008 Krzysztof Hałasa <khc@pm.waw.pl>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/fs.h>
-#include <linux/hdlc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
-#include <linux/soc/ixp4xx/cpu.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/cdev.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/fs.h>
+#include <linex/hdlc.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/soc/ixp4xx/npe.h>
+#include <linex/soc/ixp4xx/qmgr.h>
+#include <linex/soc/ixp4xx/cpu.h>
 
 /* This is what all IXP4xx platforms we know uses, if more frequencies
  * are needed, we need to migrate to the clock framework.

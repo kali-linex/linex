@@ -7,13 +7,13 @@
 #define KMSG_COMPONENT "sclp_cmd"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <linex/completion.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/err.h>
 
 #include <asm/sclp.h>
 

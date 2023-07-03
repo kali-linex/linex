@@ -32,14 +32,14 @@
  * s1 > 1, s2 > 7, s3 > 15, s4 > 127.
  */
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/percpu.h>
+#include <linex/export.h>
+#include <linex/jiffies.h>
+#include <linex/random.h>
+#include <linex/sched.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 /**

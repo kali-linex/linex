@@ -3,21 +3,21 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/root_dev.h>
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/cpu.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
-#include <linux/cache.h>
-#include <uapi/linux/mount.h>
+#include <linex/seq_file.h>
+#include <linex/fs.h>
+#include <linex/delay.h>
+#include <linex/root_dev.h>
+#include <linex/clk.h>
+#include <linex/clocksource.h>
+#include <linex/console.h>
+#include <linex/module.h>
+#include <linex/sizes.h>
+#include <linex/cpu.h>
+#include <linex/of_clk.h>
+#include <linex/of_fdt.h>
+#include <linex/of.h>
+#include <linex/cache.h>
+#include <uapi/linex/mount.h>
 #include <asm/sections.h>
 #include <asm/arcregs.h>
 #include <asm/asserts.h>
@@ -415,18 +415,18 @@ static void arc_chk_core_config(void)
 #ifdef CONFIG_ARC_HAS_DCCM
 	/*
 	 * DCCM can be arbit placed in hardware.
-	 * Make sure it's placement/sz matches what Linux is built with
+	 * Make sure it's placement/sz matches what Linex is built with
 	 */
 	if ((unsigned int)__arc_dccm_base != cpu->dccm.base_addr)
-		panic("Linux built with incorrect DCCM Base address\n");
+		panic("Linex built with incorrect DCCM Base address\n");
 
 	if (CONFIG_ARC_DCCM_SZ * SZ_1K != cpu->dccm.sz)
-		panic("Linux built with incorrect DCCM Size\n");
+		panic("Linex built with incorrect DCCM Size\n");
 #endif
 
 #ifdef CONFIG_ARC_HAS_ICCM
 	if (CONFIG_ARC_ICCM_SZ * SZ_1K != cpu->iccm.sz)
-		panic("Linux built with incorrect ICCM Size\n");
+		panic("Linex built with incorrect ICCM Size\n");
 #endif
 
 	/*

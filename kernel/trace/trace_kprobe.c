@@ -7,12 +7,12 @@
  */
 #define pr_fmt(fmt)	"trace_kprobe: " fmt
 
-#include <linux/bpf-cgroup.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/rculist.h>
-#include <linux/error-injection.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/security.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/rculist.h>
+#include <linex/error-injection.h>
 
 #include <asm/setup.h>  /* for COMMAND_LINE_SIZE */
 

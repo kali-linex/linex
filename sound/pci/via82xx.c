@@ -32,14 +32,14 @@
  *	- Optimize position calculation for the 823x chips. 
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

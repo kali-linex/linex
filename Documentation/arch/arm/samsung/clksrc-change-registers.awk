@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 #
-# Copyright 2010 Ben Dooks <ben-linux@fluff.org>
+# Copyright 2010 Ben Dooks <ben-linex@fluff.org>
 #
 # Released under GPLv2
 

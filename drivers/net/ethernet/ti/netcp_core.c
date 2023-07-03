@@ -11,15 +11,15 @@
  *		Wingman Kwok <w-kwok2@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/if_vlan.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/knav_qmss.h>
-#include <linux/soc/ti/knav_dma.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_net.h>
+#include <linex/of_address.h>
+#include <linex/if_vlan.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/soc/ti/knav_qmss.h>
+#include <linex/soc/ti/knav_dma.h>
 
 #include "netcp.h"
 

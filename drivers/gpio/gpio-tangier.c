@@ -4,26 +4,26 @@
  *
  * Copyright (c) 2016, 2021, 2023 Intel Corporation.
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *          Pandith N <pandith.n@intel.com>
  *          Raag Jadav <raag.jadav@intel.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/spinlock.h>
-#include <linux/string_helpers.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/math.h>
+#include <linex/module.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/spinlock.h>
+#include <linex/string_helpers.h>
+#include <linex/types.h>
 
-#include <linux/gpio/driver.h>
+#include <linex/gpio/driver.h>
 
 #include "gpio-tangier.h"
 
@@ -531,7 +531,7 @@ int tng_gpio_resume(struct device *dev)
 }
 EXPORT_SYMBOL_NS_GPL(tng_gpio_resume, GPIO_TANGIER);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linex.intel.com>");
 MODULE_AUTHOR("Pandith N <pandith.n@intel.com>");
 MODULE_AUTHOR("Raag Jadav <raag.jadav@intel.com>");
 MODULE_DESCRIPTION("Intel Tangier GPIO driver");

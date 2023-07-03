@@ -5,8 +5,8 @@
  * Copyright (C) 2009, Marvell International Ltd.
  **/
 
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

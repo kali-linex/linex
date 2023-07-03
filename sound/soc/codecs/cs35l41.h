@@ -10,9 +10,9 @@
 #ifndef __CS35L41_H__
 #define __CS35L41_H__
 
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/firmware.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/firmware.h>
 #include <sound/core.h>
 #include <sound/cs35l41.h>
 

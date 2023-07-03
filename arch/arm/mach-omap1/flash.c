@@ -3,10 +3,10 @@
  * Flash support for OMAP1
  */
 
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/io.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/soc/ti/omap1-io.h>
 
 #include "tc.h"
 

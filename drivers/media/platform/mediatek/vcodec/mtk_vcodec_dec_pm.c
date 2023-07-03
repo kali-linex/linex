@@ -4,11 +4,11 @@
  * Author: Tiffany Lin <tiffany.lin@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 #include "mtk_vcodec_dec_hw.h"
 #include "mtk_vcodec_dec_pm.h"

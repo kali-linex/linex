@@ -2,13 +2,13 @@
 #ifndef __NET_PKT_SCHED_H
 #define __NET_PKT_SCHED_H
 
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
-#include <linux/if_vlan.h>
-#include <linux/netdevice.h>
+#include <linex/jiffies.h>
+#include <linex/ktime.h>
+#include <linex/if_vlan.h>
+#include <linex/netdevice.h>
 #include <net/sch_generic.h>
 #include <net/net_namespace.h>
-#include <uapi/linux/pkt_sched.h>
+#include <uapi/linex/pkt_sched.h>
 
 #define DEFAULT_TX_QUEUE_LEN	1000
 #define STAB_SIZE_LOG_MAX	30

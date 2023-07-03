@@ -54,17 +54,17 @@
  * 	      only available if that subsystem is enabled in the kernel.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/if_vlan.h>
-#include <linux/tc_ematch/tc_em_meta.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/loadavg.h>
+#include <linex/string.h>
+#include <linex/skbuff.h>
+#include <linex/random.h>
+#include <linex/if_vlan.h>
+#include <linex/tc_ematch/tc_em_meta.h>
 #include <net/dst.h>
 #include <net/route.h>
 #include <net/pkt_cls.h>

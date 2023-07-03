@@ -56,14 +56,14 @@ suffix-bzip2 := .bz2
 suffix-lzma  := .lzma
 suffix-xz    := .xz
 
-# Linux source tarball
+# Linex source tarball
 # ---------------------------------------------------------------------------
 
-linux-tarballs := $(addprefix linux, .tar.gz .tar.bz2 .tar.lzma .tar.xz)
+linex-tarballs := $(addprefix linex, .tar.gz .tar.bz2 .tar.lzma .tar.xz)
 
-targets += $(linux-tarballs)
-$(linux-tarballs): archive-args = --prefix=linux/ $$(cat $<)
-$(linux-tarballs): .tmp_HEAD FORCE
+targets += $(linex-tarballs)
+$(linex-tarballs): archive-args = --prefix=linex/ $$(cat $<)
+$(linex-tarballs): .tmp_HEAD FORCE
 	$(call if_changed,archive)
 
 # rpm-pkg
@@ -71,15 +71,15 @@ $(linux-tarballs): .tmp_HEAD FORCE
 PHONY += rpm-pkg
 rpm-pkg: srpm = $(shell rpmspec --srpm --query --queryformat='%{name}-%{VERSION}-%{RELEASE}.src.rpm' kernel.spec)
 rpm-pkg: srcrpm-pkg
-	+rpmbuild $(RPMOPTS) --target $(UTS_MACHINE)-linux -rb $(srpm) \
+	+rpmbuild $(RPMOPTS) --target $(UTS_MACHINE)-linex -rb $(srpm) \
 	--define='_smp_mflags %{nil}'
 
 # srcrpm-pkg
 # ---------------------------------------------------------------------------
 PHONY += srcrpm-pkg
-srcrpm-pkg: linux.tar.gz
+srcrpm-pkg: linex.tar.gz
 	$(CONFIG_SHELL) $(MKSPEC) >$(objtree)/kernel.spec
-	+rpmbuild $(RPMOPTS) --target $(UTS_MACHINE)-linux -bs kernel.spec \
+	+rpmbuild $(RPMOPTS) --target $(UTS_MACHINE)-linex -bs kernel.spec \
 	--define='_smp_mflags %{nil}' --define='_sourcedir rpmbuild/SOURCES' --define='_srcrpmdir .'
 
 # binrpm-pkg
@@ -89,7 +89,7 @@ binrpm-pkg:
 	$(MAKE) -f $(srctree)/Makefile
 	$(CONFIG_SHELL) $(MKSPEC) prebuilt > $(objtree)/binkernel.spec
 	+rpmbuild $(RPMOPTS) --define "_builddir $(objtree)" --target \
-		$(UTS_MACHINE)-linux -bb $(objtree)/binkernel.spec
+		$(UTS_MACHINE)-linex -bb $(objtree)/binkernel.spec
 
 # deb-pkg srcdeb-pkg bindeb-pkg
 # ---------------------------------------------------------------------------
@@ -98,8 +98,8 @@ KDEB_SOURCE_COMPRESS ?= gzip
 
 supported-deb-source-compress := gzip bzip2 lzma xz
 
-PHONY += linux.tar.unsupported-deb-src-compress
-linux.tar.unsupported-deb-src-compress:
+PHONY += linex.tar.unsupported-deb-src-compress
+linex.tar.unsupported-deb-src-compress:
 	@echo "error: KDEB_SOURCE_COMPRESS=$(KDEB_SOURCE_COMPRESS) is not supported. The supported values are: $(supported-deb-source-compress)" >&2
 	@false
 
@@ -118,7 +118,7 @@ debian-orig: private source = $(shell dpkg-parsechangelog -S Source)
 debian-orig: private version = $(shell dpkg-parsechangelog -S Version | sed 's/-[^-]*$$//')
 debian-orig: private orig-name = $(source)_$(version).orig.tar$(debian-orig-suffix)
 debian-orig: mkdebian-opts = --need-source
-debian-orig: linux.tar$(debian-orig-suffix) debian
+debian-orig: linex.tar$(debian-orig-suffix) debian
 	$(Q)if [ "$(df  --output=target .. 2>/dev/null)" = "$(df --output=target $< 2>/dev/null)" ]; then \
 		ln -f $< ../$(orig-name); \
 	else \
@@ -179,7 +179,7 @@ compress-tar.zst = -I "$(ZSTD)"
 quiet_cmd_tar = TAR     $@
       cmd_tar = cd $<; tar cf ../$@ $(compress-tar$(suffix $@)) --owner=root --group=root --sort=name *
 
-dir-tarballs := $(addprefix linux-$(KERNELRELEASE)-$(ARCH), .tar .tar.gz .tar.bz2 .tar.xz .tar.zst)
+dir-tarballs := $(addprefix linex-$(KERNELRELEASE)-$(ARCH), .tar .tar.gz .tar.bz2 .tar.xz .tar.zst)
 
 $(dir-tarballs): tar-install
 	$(call cmd,tar)
@@ -189,10 +189,10 @@ dir-pkg: tar-install
 	@echo "Kernel tree successfully created in $<"
 
 PHONY += tar-pkg
-tar-pkg: linux-$(KERNELRELEASE)-$(ARCH).tar
+tar-pkg: linex-$(KERNELRELEASE)-$(ARCH).tar
 	@:
 
-tar%-pkg: linux-$(KERNELRELEASE)-$(ARCH).tar.% FORCE
+tar%-pkg: linex-$(KERNELRELEASE)-$(ARCH).tar.% FORCE
 	@:
 
 # perf-tar*-src-pkg - generate a source tarball with perf source

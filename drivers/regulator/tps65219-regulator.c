@@ -10,18 +10,18 @@
 // "J Keerthy <j-keerthy@ti.com>"
 //
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/tps65219.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/mfd/tps65219.h>
 
 struct tps65219_regulator_irq_type {
 	const char *irq_name;

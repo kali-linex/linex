@@ -4,10 +4,10 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/reset-controller.h>
+#include <linex/spinlock.h>
 #include "clk.h"
 
 struct rockchip_softrst {

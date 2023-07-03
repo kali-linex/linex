@@ -7,15 +7,15 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/spinlock.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/err.h>
+#include <linex/prefetch.h>
 #include <asm/uv/uv_hub.h>
 #include "gru.h"
 #include "grutables.h"

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/pagemap.h>
-#include <linux/xarray.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
+#include <linex/pagemap.h>
+#include <linex/xarray.h>
+#include <linex/slab.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
 #include <asm/mte.h>
 
 static DEFINE_XARRAY(mte_pages);

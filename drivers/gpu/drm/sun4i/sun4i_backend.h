@@ -9,11 +9,11 @@
 #ifndef _SUN4I_BACKEND_H_
 #define _SUN4I_BACKEND_H_
 
-#include <linux/clk.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/list.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 #include "sunxi_engine.h"
 

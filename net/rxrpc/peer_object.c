@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
-#include <linux/hashtable.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/udp.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/slab.h>
+#include <linex/hashtable.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <net/ip.h>
@@ -69,7 +69,7 @@ static unsigned long rxrpc_peer_hash_key(struct rxrpc_local *local,
  * Compare a peer to a key.  Return -ve, 0 or +ve to indicate less than, same
  * or greater than.
  *
- * Unfortunately, the primitives in linux/hashtable.h don't allow for sorted
+ * Unfortunately, the primitives in linex/hashtable.h don't allow for sorted
  * buckets and mid-bucket insertion, so we don't make full use of this
  * information at this point.
  */

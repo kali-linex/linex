@@ -3,20 +3,20 @@
  * Copyright (C) 2012-2017 Hideep, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/acpi.h>
+#include <linex/interrupt.h>
+#include <linex/regmap.h>
+#include <linex/sysfs.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/regulator/consumer.h>
 #include <asm/unaligned.h>
 
 #define HIDEEP_TS_NAME			"HiDeep Touchscreen"
@@ -824,7 +824,7 @@ static int hideep_init_input(struct hideep_ts *ts)
 	if (error)
 		return error;
 
-	ts->key_num = device_property_count_u32(dev, "linux,keycodes");
+	ts->key_num = device_property_count_u32(dev, "linex,keycodes");
 	if (ts->key_num > HIDEEP_KEY_MAX) {
 		dev_err(dev, "too many keys defined: %d\n",
 			ts->key_num);
@@ -833,9 +833,9 @@ static int hideep_init_input(struct hideep_ts *ts)
 
 	if (ts->key_num <= 0) {
 		dev_dbg(dev,
-			"missing or malformed 'linux,keycodes' property\n");
+			"missing or malformed 'linex,keycodes' property\n");
 	} else {
-		error = device_property_read_u32_array(dev, "linux,keycodes",
+		error = device_property_read_u32_array(dev, "linex,keycodes",
 						       ts->key_codes,
 						       ts->key_num);
 		if (error) {

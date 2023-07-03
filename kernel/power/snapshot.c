@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/snapshot.c
+ * linex/kernel/power/snapshot.c
  *
  * This file provides system snapshot/restore functionality for swsusp.
  *
@@ -10,29 +10,29 @@
 
 #define pr_fmt(fmt) "PM: hibernation: " fmt
 
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/nmi.h>
-#include <linux/syscalls.h>
-#include <linux/console.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/ktime.h>
-#include <linux/set_memory.h>
+#include <linex/version.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/suspend.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/pm.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/nmi.h>
+#include <linex/syscalls.h>
+#include <linex/console.h>
+#include <linex/highmem.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/compiler.h>
+#include <linex/ktime.h>
+#include <linex/set_memory.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 #include <asm/io.h>
@@ -2110,13 +2110,13 @@ asmlinkage __visible int swsusp_save(void)
 static int init_header_complete(struct swsusp_info *info)
 {
 	memcpy(&info->uts, init_utsname(), sizeof(struct new_utsname));
-	info->version_code = LINUX_VERSION_CODE;
+	info->version_code = LINEX_VERSION_CODE;
 	return 0;
 }
 
 static const char *check_image_kernel(struct swsusp_info *info)
 {
-	if (info->version_code != LINUX_VERSION_CODE)
+	if (info->version_code != LINEX_VERSION_CODE)
 		return "kernel version";
 	if (strcmp(info->uts.sysname,init_utsname()->sysname))
 		return "system type";

@@ -3,19 +3,19 @@
  * Copyright (C) 2012-2014 Mentor Graphics Inc.
  * Copyright (C) 2005-2009 Freescale Semiconductor, Inc.
  */
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <uapi/linux/v4l2-mediabus.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/videodev2.h>
+#include <uapi/linex/v4l2-mediabus.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
 
 #include "ipu-prv.h"
 

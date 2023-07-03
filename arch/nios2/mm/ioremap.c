@@ -9,12 +9,12 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

@@ -22,15 +22,15 @@
  *
  * Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/led-class-flash.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/led-class-flash.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
 
 #include <media/v4l2-flash-led-class.h>
 

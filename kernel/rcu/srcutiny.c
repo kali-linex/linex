@@ -5,18 +5,18 @@
  *
  * Copyright (C) IBM Corporation, 2017
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@linex.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/srcu.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/preempt.h>
+#include <linex/rcupdate_wait.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/srcu.h>
 
-#include <linux/rcu_node_tree.h>
+#include <linex/rcu_node_tree.h>
 #include "rcu_segcblist.h"
 #include "rcu.h"
 

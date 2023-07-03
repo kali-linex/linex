@@ -5,10 +5,10 @@
  *  Copyright (c) 2010-2015 Steven Toth <stoth@kernellabs.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include "saa7164.h"
 

@@ -4,12 +4,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/fpga/fpga-mgr.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/spi/spi.h>
 
 #define	MPF_SPI_ISC_ENABLE	0x0B
 #define	MPF_SPI_ISC_DISABLE	0x0C

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <linex/crypto.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/printk.h>
 
 #include <crypto/aes.h>
 #include <crypto/skcipher.h>

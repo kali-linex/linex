@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinctrl.h>
 
 #include "pinctrl-nomadik.h"
 

@@ -6,8 +6,8 @@
 #ifndef _CCU_RESET_H_
 #define _CCU_RESET_H_
 
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <linex/reset-controller.h>
+#include <linex/spinlock.h>
 
 struct ccu_reset_map {
 	u16	reg;

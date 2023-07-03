@@ -5,16 +5,16 @@
  * Core functions for Marvell Dove 88AP510 System On Chip
  */
 
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/dma-mv_xor.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/platform_device.h>
-#include <linux/soc/dove/pmu.h>
+#include <linex/clk-provider.h>
+#include <linex/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_data/dma-mv_xor.h>
+#include <linex/platform_data/usb-ehci-orion.h>
+#include <linex/platform_device.h>
+#include <linex/soc/dove/pmu.h>
 #include <asm/hardware/cache-tauros2.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

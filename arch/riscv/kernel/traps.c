@@ -3,21 +3,21 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/entry-common.h>
+#include <linex/cpu.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/kdebug.h>
+#include <linex/uaccess.h>
+#include <linex/kprobes.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/kexec.h>
+#include <linex/entry-common.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/bug.h>

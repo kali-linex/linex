@@ -5,21 +5,21 @@
  * Copyright (c) 2003-2010 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/ratelimit.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <linex/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <net/sch_generic.h>
 
 #include "octeon-ethernet.h"
@@ -285,7 +285,7 @@ netdev_tx_t cvm_oct_xmit(struct sk_buff *skb, struct net_device *dev)
 
 	/*
 	 * See if we can put this skb in the FPA pool. Any strange
-	 * behavior from the Linux networking stack will most likely
+	 * behavior from the Linex networking stack will most likely
 	 * be caused by a bug in the following code. If some field is
 	 * in use by the network stack and gets carried over when a
 	 * buffer is reused, bad things may happen.  If in doubt and
@@ -597,7 +597,7 @@ netdev_tx_t cvm_oct_xmit_pow(struct sk_buff *skb, struct net_device *dev)
 					  (ip_hdr(skb)->frag_off ==
 					      cpu_to_be16(1 << 14)));
 #if 0
-		/* Assume Linux is sending a good packet */
+		/* Assume Linex is sending a good packet */
 		work->word2.s.IP_exc = 0;
 #endif
 		work->word2.s.is_bcast = (skb->pkt_type == PACKET_BROADCAST);

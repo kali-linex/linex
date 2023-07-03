@@ -41,14 +41,14 @@
  * to expose the needed lib/bch.c helpers/functions and re-use them here.
  */
 
-#include <linux/genalloc.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/genalloc.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "pmecc.h"
 

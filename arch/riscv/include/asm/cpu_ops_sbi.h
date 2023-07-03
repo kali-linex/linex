@@ -6,9 +6,9 @@
 #define __ASM_CPU_OPS_SBI_H
 
 #ifndef __ASSEMBLY__
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/threads.h>
 
 extern const struct cpu_operations cpu_ops_sbi;
 

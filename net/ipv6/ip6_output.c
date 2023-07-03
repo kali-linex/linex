@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 output functions
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/net/ipv4/ip_output.c
+ *	Based on linex/net/ipv4/ip_output.c
  *
  *	Changes:
  *	A.N.Kuznetsov	:	airthmetics in fragmentation.
@@ -15,29 +15,29 @@
  *				ip6_forward does not confuse sniffers.
  *				etc.
  *
- *      H. von Brand    :       Added missing #include <linux/string.h>
+ *      H. von Brand    :       Added missing #include <linex/string.h>
  *	Imran Patel	:	frag id should be in NBO
  *      Kazunori MIYAZAWA @USAGI
  *			:       add ip6_append_data and related functions
  *				for datagram xmit
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/route.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/in6.h>
+#include <linex/tcp.h>
+#include <linex/route.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
-#include <linux/bpf-cgroup.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -52,7 +52,7 @@
 #include <net/icmp.h>
 #include <net/xfrm.h>
 #include <net/checksum.h>
-#include <linux/mroute6.h>
+#include <linex/mroute6.h>
 #include <net/l3mdev.h>
 #include <net/lwtunnel.h>
 #include <net/ip_tunnels.h>

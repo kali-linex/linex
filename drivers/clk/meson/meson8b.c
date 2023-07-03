@@ -7,14 +7,14 @@
  * Michael Turquette <mturquette@baylibre.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/init.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_address.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
 
 #include "meson8b.h"
 #include "clk-regmap.h"

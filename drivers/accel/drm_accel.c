@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/idr.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/idr.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_debugfs.h>

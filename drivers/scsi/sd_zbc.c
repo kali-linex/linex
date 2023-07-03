@@ -2,16 +2,16 @@
 /*
  * SCSI Zoned Block commands
  *
- * Copyright (C) 2014-2015 SUSE Linux GmbH
+ * Copyright (C) 2014-2015 SUSE Linex GmbH
  * Written by: Hannes Reinecke <hare@suse.de>
  * Modified by: Damien Le Moal <damien.lemoal@hgst.com>
  * Modified by: Shaun Tancheff <shaun.tancheff@seagate.com>
  */
 
-#include <linux/blkdev.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
-#include <linux/mutex.h>
+#include <linex/blkdev.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/mm.h>
+#include <linex/mutex.h>
 
 #include <asm/unaligned.h>
 

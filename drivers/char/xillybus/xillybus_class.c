@@ -5,14 +5,14 @@
  * Driver for the Xillybus class
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/cdev.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
 
 #include "xillybus_class.h"
 

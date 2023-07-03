@@ -6,10 +6,10 @@
  * Copyright 2012 Google, Inc.
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/sched/debug.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/sched/debug.h>
 
 #include "closure.h"
 

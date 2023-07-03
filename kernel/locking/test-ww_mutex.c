@@ -3,15 +3,15 @@
  * Module-based API test facility for ww_mutexes
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/ww_mutex.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/ww_mutex.h>
 
 static DEFINE_WD_CLASS(ww_class);
 struct workqueue_struct *wq;

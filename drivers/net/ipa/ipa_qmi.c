@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/qrtr.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/qrtr.h>
+#include <linex/soc/qcom/qmi.h>
 
 #include "ipa.h"
 #include "ipa_endpoint.h"

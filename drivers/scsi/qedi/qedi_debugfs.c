@@ -7,9 +7,9 @@
 #include "qedi.h"
 #include "qedi_dbg.h"
 
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
+#include <linex/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
 
 int qedi_do_not_recover;
 static struct dentry *qedi_dbg_root;

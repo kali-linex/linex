@@ -7,16 +7,16 @@
  * Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk/ti.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/clk/ti.h>
 
 #include "clock.h"
 

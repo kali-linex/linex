@@ -5,31 +5,31 @@
  * Copyright (C) IBM Corporation, 2003, 2010
  *
  * Authors: Dave Larson <larson1@us.ibm.com>
- *	    Santiago Leon <santil@linux.vnet.ibm.com>
- *	    Brian King <brking@linux.vnet.ibm.com>
- *	    Robert Jennings <rcj@linux.vnet.ibm.com>
+ *	    Santiago Leon <santil@linex.vnet.ibm.com>
+ *	    Brian King <brking@linex.vnet.ibm.com>
+ *	    Robert Jennings <rcj@linex.vnet.ibm.com>
  *	    Anton Blanchard <anton@au.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/ethtool.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/pm.h>
+#include <linex/ethtool.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <asm/hvcall.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/vio.h>
 #include <asm/iommu.h>
 #include <asm/firmware.h>
@@ -49,7 +49,7 @@ static const char ibmveth_driver_name[] = "ibmveth";
 static const char ibmveth_driver_string[] = "IBM Power Virtual Ethernet Driver";
 #define ibmveth_driver_version "1.06"
 
-MODULE_AUTHOR("Santiago Leon <santil@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Santiago Leon <santil@linex.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM Power Virtual Ethernet Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(ibmveth_driver_version);

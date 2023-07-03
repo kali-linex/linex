@@ -1,6 +1,6 @@
 /* $Id: g364fb.c,v 1.3 1998/08/28 22:43:00 tsbogend Exp $
  *
- * linux/drivers/video/g364fb.c -- Mips Magnum frame buffer device
+ * linex/drivers/video/g364fb.c -- Mips Magnum frame buffer device
  *
  * (C) 1998 Thomas Bogendoerfer
  *
@@ -14,17 +14,17 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/init.h>
 #include <asm/io.h>
 #include <asm/jazz.h>
 

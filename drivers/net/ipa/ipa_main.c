@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/bug.h>
+#include <linex/io.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/pm_runtime.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/soc/qcom/mdt_loader.h>
 
 #include "ipa.h"
 #include "ipa_power.h"

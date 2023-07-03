@@ -7,12 +7,12 @@
  * Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/pm.h>
+#include <linex/suspend.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 #include <asm/system_misc.h>
 
 #include "soc.h"

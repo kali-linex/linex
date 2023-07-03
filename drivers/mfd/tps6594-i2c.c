@@ -5,14 +5,14 @@
  * Copyright (C) 2023 BayLibre Incorporated - https://www.baylibre.com/
  */
 
-#include <linux/crc8.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/crc8.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/tps6594.h>
+#include <linex/mfd/tps6594.h>
 
 static bool enable_crc;
 module_param(enable_crc, bool, 0444);

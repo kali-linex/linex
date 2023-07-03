@@ -4,21 +4,21 @@
  *
  * Qualcomm MSM Camera Subsystem - Core
  *
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  * Copyright (C) 2015-2018 Linaro Ltd.
  */
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/media-bus-format.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linex/clk.h>
+#include <linex/interconnect.h>
+#include <linex/media-bus-format.h>
+#include <linex/media.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_domain.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

@@ -5,10 +5,10 @@
  * Copyright 2015-16 Maxim Integrated Products
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

@@ -5,9 +5,9 @@
  * Author: Weidong Han <weidong.han@intel.com>
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/pci-acpi.h>
 #include <xen/pci.h>
 #include <xen/xen.h>
 #include <xen/interface/physdev.h>

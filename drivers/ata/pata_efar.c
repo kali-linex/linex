@@ -12,15 +12,15 @@
  *    and doesn't require the funky clock selection.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <linex/libata.h>
+#include <linex/ata.h>
 
 #define DRV_NAME	"pata_efar"
 #define DRV_VERSION	"0.4.5"

@@ -16,8 +16,8 @@
  * Copyright (C) 2022 Google LLC
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
 
 #include <asm/stacktrace/nvhe.h>
 

@@ -5,10 +5,10 @@
  * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/io.h>
 
 #include <asm/prom.h>
 #include <asm/macio.h>

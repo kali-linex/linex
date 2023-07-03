@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/reset-controller.h>
-#include <linux/of.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/reset-controller.h>
+#include <linex/of.h>
 
 #include "common.h"
 #include "clk-rcg.h"

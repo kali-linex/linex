@@ -5,12 +5,12 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2002, 2004  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/smp.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>

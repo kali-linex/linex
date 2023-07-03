@@ -3,12 +3,12 @@
  * Copyright (C) 2012 Russell King
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>
@@ -275,7 +275,7 @@ static void __exit armada_drm_exit(void)
 }
 module_exit(armada_drm_exit);
 
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armlinex.org.uk>");
 MODULE_DESCRIPTION("Armada DRM Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:armada-drm");

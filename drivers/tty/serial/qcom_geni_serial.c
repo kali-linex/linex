@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The Linex foundation. All rights reserved.
 
 /* Disable MMIO tracing to prevent excessive logging of unwanted MMIO traces */
 #define __DISABLE_TRACE_MMIO__
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_opp.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/soc/qcom/geni-se.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/clk.h>
+#include <linex/console.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm_opp.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/soc/qcom/geni-se.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 #include <dt-bindings/interconnect/qcom,icc.h>
 
 /* UART specific GENI registers */

@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob@ti.com>
  */
 
-#include <linux/fb.h>
+#include <linex/fb.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_crtc_helper.h>

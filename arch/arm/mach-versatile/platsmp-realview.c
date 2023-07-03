@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2015 Linus Walleij
  */
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

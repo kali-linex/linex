@@ -5,8 +5,8 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/etherdevice.h>
 
 #include "hif_rx.h"
 #include "wfx.h"

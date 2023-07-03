@@ -34,7 +34,7 @@
 extern bool disable_kuep;
 extern bool disable_kuap;
 
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 
 void setup_kup(void);
 void setup_kuep(bool disabled);

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
+#include <linex/efi.h>
+#include <linex/memblock.h>
+#include <linex/spinlock.h>
 #include <asm/unaccepted_memory.h>
 
 /* Protects unaccepted memory bitmap */

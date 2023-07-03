@@ -5,17 +5,17 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/i2c.h>
+#include <linex/media-bus-format.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/regmap.h>
+#include <linex/videodev2.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

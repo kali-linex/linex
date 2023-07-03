@@ -3,16 +3,16 @@
  * Copyright (c) 2021, HiSilicon Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/hisi_acc_qm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vfio.h>
-#include <linux/vfio_pci_core.h>
-#include <linux/anon_inodes.h>
+#include <linex/device.h>
+#include <linex/eventfd.h>
+#include <linex/file.h>
+#include <linex/hisi_acc_qm.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/vfio.h>
+#include <linex/vfio_pci_core.h>
+#include <linex/anon_inodes.h>
 
 #include "hisi_acc_vfio_pci.h"
 

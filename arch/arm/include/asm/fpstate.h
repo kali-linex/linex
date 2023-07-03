@@ -26,7 +26,7 @@ struct vfp_hard_struct {
 #else
 	__u64 fpregs[16];
 #endif
-#if __LINUX_ARM_ARCH__ < 6
+#if __LINEX_ARM_ARCH__ < 6
 	__u32 fpmx_state;
 #endif
 	__u32 fpexc;

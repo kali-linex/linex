@@ -25,11 +25,11 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/dma-buf.h>
+#include <linex/ktime.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/pci.h>
+#include <linex/dma-buf.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_drv.h>

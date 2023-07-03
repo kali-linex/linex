@@ -72,15 +72,15 @@
  * parameter are unused.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/usb/input.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/usb/input.h>
+#include <linex/wait.h>
+#include <linex/jiffies.h>
 #include <media/rc-core.h>
 
 /*

@@ -6,16 +6,16 @@
  * Author: Guennadi Liakhovetski, <g.liakhovetski@gmx.de>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mfd/as3711.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/mfd/as3711.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/slab.h>
 
 /*
  * The regulator API supports 4 modes of operataion: FAST, NORMAL, IDLE and

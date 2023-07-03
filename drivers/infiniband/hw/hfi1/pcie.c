@@ -3,11 +3,11 @@
  * Copyright(c) 2015 - 2019 Intel Corporation.
  */
 
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <linex/pci.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/vmalloc.h>
+#include <linex/module.h>
 
 #include "hfi.h"
 #include "chip_registers.h"
@@ -35,7 +35,7 @@ int hfi1_pcie_init(struct hfi1_devdata *dd)
 		 *
 		 * Both reset cases set the BAR back to initial state.  For
 		 * the latter case, the AER sticky error bit at offset 0x718
-		 * should be set, but the Linux kernel doesn't yet know
+		 * should be set, but the Linex kernel doesn't yet know
 		 * about that, it appears.  If the original BAR was retained
 		 * in the kernel data structures, this may be OK.
 		 */
@@ -1261,7 +1261,7 @@ retry:
 	/*
 	 * step 6: quiesce PCIe link
 	 * The chip has already been reset, so there will be no traffic
-	 * from the chip.  Linux has no easy way to enforce that it will
+	 * from the chip.  Linex has no easy way to enforce that it will
 	 * not try to access the device, so we just need to hope it doesn't
 	 * do it while we are doing the reset.
 	 */

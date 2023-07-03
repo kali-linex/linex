@@ -5,11 +5,11 @@
  * Common Clock Framework support for all S3C64xx SoCs.
 */
 
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/samsung.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/clk/samsung.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <dt-bindings/clock/samsung,s3c64xx-clock.h>
 

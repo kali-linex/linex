@@ -9,19 +9,19 @@
  * Copyright (C) 1999,2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/memblock.h>
+#include <linex/pagemap.h>
+#include <linex/vmalloc.h>
+#include <linex/kdebug.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/log2.h>
+#include <linex/gfp.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
 
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
@@ -932,7 +932,7 @@ void __init srmmu_paging_init(void)
 
 	srmmu_nocache_calcsize();
 	srmmu_nocache_init();
-	srmmu_inherit_prom_mappings(0xfe400000, (LINUX_OPPROM_ENDVM - PAGE_SIZE));
+	srmmu_inherit_prom_mappings(0xfe400000, (LINEX_OPPROM_ENDVM - PAGE_SIZE));
 	map_kernel();
 
 	/* ctx table has to be physically aligned to its size */
@@ -1186,7 +1186,7 @@ static void __init init_swift(void)
 		 * Gee george, I wonder why Sun is so hush hush about
 		 * this hardware bug... really braindamage stuff going
 		 * on here.  However I think we can find a way to avoid
-		 * all of the workaround overhead under Linux.  Basically,
+		 * all of the workaround overhead under Linex.  Basically,
 		 * any page fault can cause kernel pages to become user
 		 * accessible (the mmu gets confused and clears some of
 		 * the ACC bits in kernel ptes).  Aha, sounds pretty
@@ -1576,7 +1576,7 @@ static void __init get_srmmu_type(void)
 		case 14:
 		case 15:
 		default:
-			prom_printf("Sparc-Linux Cypress support does not longer exit.\n");
+			prom_printf("Sparc-Linex Cypress support does not longer exit.\n");
 			prom_halt();
 			break;
 		}

@@ -10,12 +10,12 @@
  * due to lack of documentation.
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include <media/mipi-csi2.h>
 #include <media/v4l2-subdev.h>

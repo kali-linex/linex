@@ -5,19 +5,19 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/mmzone.h>
+#include <linex/export.h>
+#include <linex/nodemask.h>
+#include <linex/swap.h>
+#include <linex/memblock.h>
+#include <linex/pfn.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/irq.h>
+#include <linex/pci.h>
 #include <asm/bootinfo.h>
 #include <asm/loongson.h>
 #include <asm/numa.h>

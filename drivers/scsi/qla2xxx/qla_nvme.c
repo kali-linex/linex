@@ -4,12 +4,12 @@
  * Copyright (c)  2003-2017 QLogic Corporation
  */
 #include "qla_nvme.h"
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/nvme.h>
-#include <linux/nvme-fc.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/blk-mq.h>
+#include <linex/scatterlist.h>
+#include <linex/delay.h>
+#include <linex/nvme.h>
+#include <linex/nvme-fc.h>
+#include <linex/blk-mq-pci.h>
+#include <linex/blk-mq.h>
 
 static struct nvme_fc_port_template qla_nvme_fc_transport;
 

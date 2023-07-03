@@ -8,14 +8,14 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -24,10 +24,10 @@
 
 #include "raw3270.h"
 
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <linex/major.h>
+#include <linex/kdev_t.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
 
 struct class *class3270;
 EXPORT_SYMBOL(class3270);

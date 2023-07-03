@@ -6,18 +6,18 @@
  * Author: Yicong Yang <yangyicong@hisilicon.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/cpuhotplug.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/vmalloc.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/cpuhotplug.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iommu.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/sysfs.h>
+#include <linex/vmalloc.h>
 
 #include "hisi_ptt.h"
 

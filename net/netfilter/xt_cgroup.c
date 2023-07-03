@@ -11,10 +11,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_cgroup.h>
+#include <linex/skbuff.h>
+#include <linex/module.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_cgroup.h>
 #include <net/sock.h>
 
 MODULE_LICENSE("GPL");

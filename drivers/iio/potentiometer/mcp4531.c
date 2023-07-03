@@ -25,13 +25,13 @@
  * mcp4662	2	257		5, 10, 50, 100          01011xx
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/mod_devicetable.h>
+#include <linex/property.h>
 
-#include <linux/iio/iio.h>
+#include <linex/iio/iio.h>
 
 struct mcp4531_cfg {
 	int wipers;

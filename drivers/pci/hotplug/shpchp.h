@@ -15,13 +15,13 @@
 #ifndef _SHPCHP_H
 #define _SHPCHP_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>	/* signal_pending(), struct timer_list */
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/delay.h>
+#include <linex/sched/signal.h>	/* signal_pending(), struct timer_list */
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
 
 #if !defined(MODULE)
 	#define MY_NAME	"shpchp"

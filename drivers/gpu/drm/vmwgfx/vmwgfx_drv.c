@@ -48,13 +48,13 @@
 #ifdef CONFIG_X86
 #include <asm/hypervisor.h>
 #endif
-#include <linux/cc_platform.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/version.h>
+#include <linex/cc_platform.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/version.h>
 
-#define VMWGFX_DRIVER_DESC "Linux drm driver for VMware graphics devices"
+#define VMWGFX_DRIVER_DESC "Linex drm driver for VMware graphics devices"
 
 /*
  * Fully encoded drm commands. Might move to vmw_drm.h
@@ -816,12 +816,12 @@ static void vmw_write_driver_id(struct vmw_private *dev)
 {
 	if ((dev->capabilities2 & SVGA_CAP2_DX2) != 0) {
 		vmw_write(dev,  SVGA_REG_GUEST_DRIVER_ID,
-			  SVGA_REG_GUEST_DRIVER_ID_LINUX);
+			  SVGA_REG_GUEST_DRIVER_ID_LINEX);
 
 		vmw_write(dev, SVGA_REG_GUEST_DRIVER_VERSION1,
-			  LINUX_VERSION_MAJOR << 24 |
-			  LINUX_VERSION_PATCHLEVEL << 16 |
-			  LINUX_VERSION_SUBLEVEL);
+			  LINEX_VERSION_MAJOR << 24 |
+			  LINEX_VERSION_PATCHLEVEL << 16 |
+			  LINEX_VERSION_SUBLEVEL);
 		vmw_write(dev, SVGA_REG_GUEST_DRIVER_VERSION2,
 			  VMWGFX_DRIVER_MAJOR << 24 |
 			  VMWGFX_DRIVER_MINOR << 16 |

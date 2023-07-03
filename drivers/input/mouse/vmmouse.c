@@ -10,11 +10,11 @@
  *   Thomas Hellstrom <thellstrom@vmware.com>
  */
 
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/input.h>
+#include <linex/serio.h>
+#include <linex/libps2.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <asm/hypervisor.h>
 #include <asm/vmware.h>
 

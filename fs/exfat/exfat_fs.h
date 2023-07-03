@@ -6,10 +6,10 @@
 #ifndef _EXFAT_FS_H
 #define _EXFAT_FS_H
 
-#include <linux/fs.h>
-#include <linux/ratelimit.h>
-#include <linux/nls.h>
-#include <linux/blkdev.h>
+#include <linex/fs.h>
+#include <linex/ratelimit.h>
+#include <linex/nls.h>
+#include <linex/blkdev.h>
 
 #define EXFAT_ROOT_INO		1
 

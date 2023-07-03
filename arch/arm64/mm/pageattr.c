@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The Linex Foundation. All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/set_memory.h>

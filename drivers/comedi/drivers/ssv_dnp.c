@@ -4,7 +4,7 @@
  * generic comedi driver for SSV Embedded Systems' DIL/Net-PCs
  * Copyright (C) 2001 Robert Schwebel <robert@schwebel.de>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -18,8 +18,8 @@
 
 /* include files ----------------------------------------------------------- */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
 
 /* Some global definitions: the registers of the DNP ----------------------- */
 /*                                                                           */

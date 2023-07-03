@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2022 NVIDIA Corporation and Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/idr.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/types.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/idr.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
 #include <net/devlink.h>
 #include "core.h"
 

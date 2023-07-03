@@ -10,16 +10,16 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/component.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/gfp.h>
+#include <linex/i2c.h>
+#include <linex/kdev_t.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_connector.h>

@@ -4,7 +4,7 @@
  *
  * Copyright (C) IBM Corporation, 2005, 2006
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linex.ibm.com>
  *	  Josh Triplett <josh@joshtriplett.org>
  *
  * See also:  Documentation/RCU/torture.rst
@@ -12,46 +12,46 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/rcupdate_wait.h>
+#include <linex/interrupt.h>
+#include <linex/sched/signal.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/moduleparam.h>
+#include <linex/percpu.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/freezer.h>
+#include <linex/cpu.h>
+#include <linex/delay.h>
+#include <linex/stat.h>
+#include <linex/srcu.h>
+#include <linex/slab.h>
+#include <linex/trace_clock.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/sysctl.h>
-#include <linux/oom.h>
-#include <linux/tick.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/nmi.h>
+#include <linex/torture.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/sysctl.h>
+#include <linex/oom.h>
+#include <linex/tick.h>
+#include <linex/rcupdate_trace.h>
+#include <linex/nmi.h>
 
 #include "rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linex.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
 
 /* Bits for ->extendables field, extendables param, and related definitions. */
 #define RCUTORTURE_RDR_SHIFT_1	 8	/* Put SRCU index in upper bits. */

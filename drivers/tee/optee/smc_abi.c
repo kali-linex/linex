@@ -6,30 +6,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/cpuhotplug.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/arm-smccc.h>
+#include <linex/cpuhotplug.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/tee_drv.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include "optee_private.h"
 #include "optee_smc.h"
 #include "optee_rpc_cmd.h"
-#include <linux/kmemleak.h>
+#include <linex/kmemleak.h>
 #define CREATE_TRACE_POINTS
 #include "optee_trace.h"
 
@@ -422,7 +422,7 @@ static void optee_fill_pages_list(u64 *dst, struct page **pages, int num_pages,
 
 	pages_data = (void *)dst;
 	/*
-	 * If linux page is bigger than 4k, and user buffer offset is
+	 * If linex page is bigger than 4k, and user buffer offset is
 	 * larger than 4k/8k/12k/etc this will skip first 4k pages,
 	 * because they bear no value data for OP-TEE.
 	 */
@@ -844,8 +844,8 @@ static void optee_handle_rpc(struct tee_context *ctx,
 	case OPTEE_SMC_RPC_FUNC_FOREIGN_INTR:
 		/*
 		 * A foreign interrupt was raised while secure world was
-		 * executing, since they are handled in Linux a dummy RPC is
-		 * performed to let Linux take the interrupt through the normal
+		 * executing, since they are handled in Linex a dummy RPC is
+		 * performed to let Linex take the interrupt through the normal
 		 * vector.
 		 */
 		break;

@@ -6,19 +6,19 @@
 //  Kyungmin Park <kyungmin.park@samsung.com>
 //  Marek Szyprowski <m.szyprowski@samsung.com>
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/mutex.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/max8998.h>
+#include <linex/mfd/max8998-private.h>
 
 #define RTC_I2C_ADDR		(0x0c >> 1)
 
@@ -146,7 +146,7 @@ static struct max8998_platform_data *max8998_i2c_parse_dt_pdata(
 	pd->ono = irq_of_parse_and_map(dev->of_node, 1);
 
 	/*
-	 * ToDo: the 'wakeup' member in the platform data is more of a linux
+	 * ToDo: the 'wakeup' member in the platform data is more of a linex
 	 * specfic information. Hence, there is no binding for that yet and
 	 * not parsed here.
 	 */

@@ -45,9 +45,9 @@
  * damaged.
  */
 
-#include <linux/crc32.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/crc32.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 #include <asm/div64.h>
 #include "ubi.h"
 

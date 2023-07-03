@@ -23,9 +23,9 @@
  *   kernel-based SPI device.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/spi/spi.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/spi/spi.h>
 
 #include "qca_7k.h"
 

@@ -6,10 +6,10 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/libnvdimm.h>
-#include <linux/pagemap.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/libnvdimm.h>
+#include <linex/pagemap.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cache.h>

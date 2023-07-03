@@ -3,7 +3,7 @@
  * comedi/drivers/dt2817.c
  * Hardware driver for Data Translation DT2817
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -24,8 +24,8 @@
  * [0] - I/O port base base address
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
 
 #define DT2817_CR 0
 #define DT2817_DATA 1

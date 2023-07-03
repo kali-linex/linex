@@ -5,7 +5,7 @@
 
 struct sock;
 
-#include <linux/compat.h>
+#include <linex/compat.h>
 
 struct compat_msghdr {
 	compat_uptr_t	msg_name;	/* void * */

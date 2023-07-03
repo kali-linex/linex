@@ -45,17 +45,17 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
+#include <linex/hdlcdrv.h>
+#include <linex/baycom.h>
+#include <linex/jiffies.h>
 
 /* --------------------------------------------------------------------- */
 

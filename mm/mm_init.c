@@ -6,26 +6,26 @@
  * Author Mel Gorman <mel@csn.ul.ie>
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/export.h>
-#include <linux/memory.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/mman.h>
-#include <linux/memblock.h>
-#include <linux/page-isolation.h>
-#include <linux/padata.h>
-#include <linux/nmi.h>
-#include <linux/buffer_head.h>
-#include <linux/kmemleak.h>
-#include <linux/kfence.h>
-#include <linux/page_ext.h>
-#include <linux/pti.h>
-#include <linux/pgtable.h>
-#include <linux/swap.h>
-#include <linux/cma.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/kobject.h>
+#include <linex/export.h>
+#include <linex/memory.h>
+#include <linex/notifier.h>
+#include <linex/sched.h>
+#include <linex/mman.h>
+#include <linex/memblock.h>
+#include <linex/page-isolation.h>
+#include <linex/padata.h>
+#include <linex/nmi.h>
+#include <linex/buffer_head.h>
+#include <linex/kmemleak.h>
+#include <linex/kfence.h>
+#include <linex/page_ext.h>
+#include <linex/pti.h>
+#include <linex/pgtable.h>
+#include <linex/swap.h>
+#include <linex/cma.h>
 #include "internal.h"
 #include "slab.h"
 #include "shuffle.h"
@@ -1474,7 +1474,7 @@ void __init set_pageblock_order(void)
 /*
  * When CONFIG_HUGETLB_PAGE_SIZE_VARIABLE is not set, set_pageblock_order()
  * is unused as pageblock_order is set at compile-time. See
- * include/linux/pageblock-flags.h for the values of pageblock_order based on
+ * include/linex/pageblock-flags.h for the values of pageblock_order based on
  * the kernel config
  */
 void __init set_pageblock_order(void)
@@ -2729,7 +2729,7 @@ static void __init mem_init_print_info(void)
 	 * Detect special cases and adjust section sizes accordingly:
 	 * 1) .init.* may be embedded into .data sections
 	 * 2) .init.text.* may be out of [__init_begin, __init_end],
-	 *    please refer to arch/tile/kernel/vmlinux.lds.S.
+	 *    please refer to arch/tile/kernel/vmlinex.lds.S.
 	 * 3) .rodata.* may be embedded into .text or .data sections.
 	 */
 #define adj_init_size(start, end, size, pos, adj) \

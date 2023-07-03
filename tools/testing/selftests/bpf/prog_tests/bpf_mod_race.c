@@ -5,8 +5,8 @@
 #include <stdatomic.h>
 #include <test_progs.h>
 #include <sys/syscall.h>
-#include <linux/module.h>
-#include <linux/userfaultfd.h>
+#include <linex/module.h>
+#include <linex/userfaultfd.h>
 
 #include "ksym_race.skel.h"
 #include "bpf_mod_race.skel.h"

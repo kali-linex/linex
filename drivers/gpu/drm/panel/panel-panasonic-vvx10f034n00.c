@@ -7,10 +7,10 @@
  * Based on AUO panel driver by Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

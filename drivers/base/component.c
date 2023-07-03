@@ -2,13 +2,13 @@
 /*
  * Componentized device handling.
  */
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
+#include <linex/component.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
 
 /**
  * DOC: overview

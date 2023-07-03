@@ -3,11 +3,11 @@
  * Copyright (c) 2010 Werner Fink, Jiri Slaby
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/tty_driver.h>
+#include <linex/console.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/tty_driver.h>
 
 /*
  * This is handler for /proc/consoles

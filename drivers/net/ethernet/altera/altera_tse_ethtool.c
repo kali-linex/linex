@@ -16,10 +16,10 @@
  * Major updates contributed by GlobalLogic
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
 
 #include "altera_tse.h"
 

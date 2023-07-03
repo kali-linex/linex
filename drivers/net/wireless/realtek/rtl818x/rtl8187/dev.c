@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux device driver for RTL8187
+ * Linex device driver for RTL8187
  *
  * Copyright 2007 Michael Wu <flamingice@sourmilk.net>
  * Copyright 2007 Andrea Merello <andrea.merello@gmail.com>
@@ -17,12 +17,12 @@
  * r8187 driver sources.  Thanks to Realtek for their support!
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/module.h>
+#include <linex/usb.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/etherdevice.h>
+#include <linex/eeprom_93cx6.h>
+#include <linex/module.h>
 #include <net/mac80211.h>
 
 #include "rtl8187.h"

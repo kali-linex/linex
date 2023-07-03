@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 
 void batadv_tp_meter_init(void);
 void batadv_tp_start(struct batadv_priv *bat_priv, const u8 *dst,

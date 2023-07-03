@@ -4,20 +4,20 @@
  * Copyright (c) 2008 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/idr.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
-#include <linux/iio/trigger.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/iio-opaque.h>
+#include <linex/iio/trigger.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/trigger_consumer.h>
+#include <linex/iio/trigger_consumer.h>
 
 /* RFC - Question of approach
  * Make the common case (single sensor single trigger)

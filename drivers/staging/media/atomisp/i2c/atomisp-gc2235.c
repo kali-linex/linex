@@ -15,23 +15,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/kmod.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/moduleparam.h>
 #include <media/v4l2-device.h>
-#include "../include/linux/atomisp_gmin_platform.h"
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include "../include/linex/atomisp_gmin_platform.h"
+#include <linex/acpi.h>
+#include <linex/io.h>
 
 #include "gc2235.h"
 

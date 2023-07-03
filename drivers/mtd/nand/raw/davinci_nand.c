@@ -10,19 +10,19 @@
  *   Dirk Behme <Dirk.Behme@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/iopoll.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/iopoll.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/slab.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
 
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
+#include <linex/platform_data/mtd-davinci.h>
+#include <linex/platform_data/mtd-davinci-aemif.h>
 
 /*
  * This is a device driver for the NAND flash controller found on the

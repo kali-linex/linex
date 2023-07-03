@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/madvise.c
+ *	linex/mm/madvise.c
  *
  * Copyright (C) 1999  Linus Torvalds
  * Copyright (C) 2002  Christoph Hellwig
  */
 
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/mempolicy.h>
-#include <linux/page-isolation.h>
-#include <linux/page_idle.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/hugetlb.h>
-#include <linux/falloc.h>
-#include <linux/fadvise.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/string.h>
-#include <linux/uio.h>
-#include <linux/ksm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
-#include <linux/mmu_notifier.h>
+#include <linex/mman.h>
+#include <linex/pagemap.h>
+#include <linex/syscalls.h>
+#include <linex/mempolicy.h>
+#include <linex/page-isolation.h>
+#include <linex/page_idle.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/hugetlb.h>
+#include <linex/falloc.h>
+#include <linex/fadvise.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/string.h>
+#include <linex/uio.h>
+#include <linex/ksm.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/pagewalk.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/shmem_fs.h>
+#include <linex/mmu_notifier.h>
 
 #include <asm/tlb.h>
 

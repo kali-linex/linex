@@ -34,11 +34,11 @@
  * SOFTWARE.
  */
 
-#include <linux/hardirq.h>
-#include <linux/export.h>
+#include <linex/hardirq.h>
+#include <linex/export.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <linex/mlx4/cmd.h>
+#include <linex/mlx4/cq.h>
 
 #include "mlx4.h"
 #include "icm.h"

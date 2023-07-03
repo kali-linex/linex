@@ -3,12 +3,12 @@
  * Cryptographic API.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/lzo.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/crypto.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/lzo.h>
 #include <crypto/internal/scompress.h>
 
 struct lzo_ctx {

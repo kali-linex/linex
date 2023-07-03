@@ -6,8 +6,8 @@
 #ifndef _ASM_POWERPC_EMULATED_OPS_H
 #define _ASM_POWERPC_EMULATED_OPS_H
 
-#include <linux/atomic.h>
-#include <linux/perf_event.h>
+#include <linex/atomic.h>
+#include <linex/perf_event.h>
 
 
 #ifdef CONFIG_PPC_EMULATED_STATS

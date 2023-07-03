@@ -36,9 +36,9 @@
  * in that routine.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

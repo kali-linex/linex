@@ -5,14 +5,14 @@
  * Copyright (c) 2010 John Fastabend <john.r.fastabend@intel.com>
  */
 
-#include <linux/ethtool_netlink.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/module.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/sch_generic.h>

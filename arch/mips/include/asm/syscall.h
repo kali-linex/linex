@@ -7,18 +7,18 @@
  *
  * See asm-generic/syscall.h for descriptions of what we must do here.
  *
- * Copyright (C) 2012 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2012 Ralf Baechle <ralf@linex-mips.org>
  */
 
 #ifndef __ASM_MIPS_SYSCALL_H
 #define __ASM_MIPS_SYSCALL_H
 
-#include <linux/compiler.h>
-#include <uapi/linux/audit.h>
-#include <linux/elf-em.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linex/compiler.h>
+#include <uapi/linex/audit.h>
+#include <linex/elf-em.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/unistd.h>
 

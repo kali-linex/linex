@@ -6,9 +6,9 @@
  * Author: Hemanth V <hemanthv@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input/cma3000.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/input/cma3000.h>
 #include "cma3000_d0x.h"
 
 static int cma3000_i2c_set(struct device *dev,

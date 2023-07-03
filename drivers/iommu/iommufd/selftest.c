@@ -3,13 +3,13 @@
  *
  * Kernel side components to support tools/testing/selftests/iommu
  */
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/xarray.h>
-#include <linux/file.h>
-#include <linux/anon_inodes.h>
-#include <linux/fault-inject.h>
-#include <uapi/linux/iommufd.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/xarray.h>
+#include <linex/file.h>
+#include <linex/anon_inodes.h>
+#include <linex/fault-inject.h>
+#include <uapi/linex/iommufd.h>
 
 #include "io_pagetable.h"
 #include "iommufd_private.h"

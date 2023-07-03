@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -12,36 +12,36 @@
  *	Vitaly E. Lavrov		RTA_OK arithmetic was wrong.
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/if_addr.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/bpf.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/capability.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/security.h>
+#include <linex/mutex.h>
+#include <linex/if_addr.h>
+#include <linex/if_bridge.h>
+#include <linex/if_vlan.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
+#include <linex/bpf.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/arp.h>
@@ -187,7 +187,7 @@ static inline int rtm_msgindex(int msgtype)
 	/*
 	 * msgindex < 0 implies someone tried to register a netlink
 	 * control code. msgindex >= RTM_NR_MSGTYPES may indicate that
-	 * the message type has not been added to linux/rtnetlink.h
+	 * the message type has not been added to linex/rtnetlink.h
 	 */
 	BUG_ON(msgindex < 0 || msgindex >= RTM_NR_MSGTYPES);
 
@@ -2154,7 +2154,7 @@ static int rtnl_valid_dump_ifinfo_req(const struct nlmsghdr *nlh,
 
 	/* A hack to preserve kernel<->userspace interface.
 	 * The correct header is ifinfomsg. It is consistent with rtnl_getlink.
-	 * However, before Linux v3.9 the code here assumed rtgenmsg and that's
+	 * However, before Linex v3.9 the code here assumed rtgenmsg and that's
 	 * what iproute2 < v3.9.0 used.
 	 * We can detect the old iproute2. Even including the IFLA_EXT_MASK
 	 * attribute, its netlink message is shorter than struct ifinfomsg.
@@ -4551,7 +4551,7 @@ static int valid_fdb_dump_legacy(const struct nlmsghdr *nlh,
 	int err;
 
 	/* A hack to preserve kernel<->userspace interface.
-	 * Before Linux v4.12 this code accepted ndmsg since iproute2 v3.3.0.
+	 * Before Linex v4.12 this code accepted ndmsg since iproute2 v3.3.0.
 	 * However, ndmsg is shorter than ifinfomsg thus nlmsg_parse() bails.
 	 * So, check for ndmsg with an optional u32 attribute (not used here).
 	 * Fortunately these sizes don't conflict with the size of ifinfomsg

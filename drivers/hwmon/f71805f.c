@@ -17,19 +17,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/platform_device.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
+#include <linex/ioport.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

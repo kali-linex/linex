@@ -4,13 +4,13 @@
  * Author: Yunfei Dong <yunfei.dong@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #include "mtk_vcodec_drv.h"
 #include "mtk_vcodec_dec.h"

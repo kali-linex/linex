@@ -14,11 +14,11 @@
 #include "seq_oss_readq.h"
 #include "seq_oss_timer.h"
 #include "seq_oss_event.h"
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 /*
  * common variables

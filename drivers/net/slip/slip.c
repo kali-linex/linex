@@ -55,40 +55,40 @@
  *					from multislip BSDI driver which was
  *					written by Igor Chechik, RELCOM Corp.
  *					Only algorithms have been ported to
- *					Linux SLIP driver.
+ *					Linex SLIP driver.
  *	Vitaly E. Lavrov	:	Sane behaviour on tty hangup.
  *	Alexey Kuznetsov	:	Cleanup interfaces to tty & netdevice
  *					modules.
  */
 
 #define SL_CHECK_TRANSMIT
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_slip.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/sched/signal.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/in.h>
+#include <linex/tty.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_arp.h>
+#include <linex/if_slip.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 #include "slip.h"
 #ifdef CONFIG_INET
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
 #include <net/slhc_vj.h>
 #endif
 

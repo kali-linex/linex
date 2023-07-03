@@ -4,8 +4,8 @@
  * Author: Fuad Tabba <tabba@google.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/mm.h>
+#include <linex/kvm_host.h>
+#include <linex/mm.h>
 #include <nvhe/fixed_config.h>
 #include <nvhe/mem_protect.h>
 #include <nvhe/memory.h>
@@ -35,7 +35,7 @@ static void pvm_init_traps_aa64pfr0(struct kvm_vcpu *vcpu)
 		PVM_ID_AA64PFR0_RESTRICT_UNSIGNED) != ID_AA64PFR0_EL1_ELx_64BIT_ONLY);
 
 	/*
-	 * Linux guests assume support for floating-point and Advanced SIMD. Do
+	 * Linex guests assume support for floating-point and Advanced SIMD. Do
 	 * not change the trapping behavior for these from the KVM default.
 	 */
 	BUILD_BUG_ON(!FIELD_GET(ARM64_FEATURE_MASK(ID_AA64PFR0_EL1_FP),

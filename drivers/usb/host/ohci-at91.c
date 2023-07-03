@@ -3,7 +3,7 @@
  * OHCI HCD (Host Controller Driver) for USB.
  *
  *  Copyright (C) 2004 SAN People (Pty) Ltd.
- *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linex.org>
  *
  * AT91 Bus Glue
  *
@@ -13,20 +13,20 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/arm-smccc.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/atmel.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 #include <soc/at91/atmel-sfr.h>
 
 #include "ohci.h"

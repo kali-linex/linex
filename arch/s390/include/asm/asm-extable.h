@@ -2,8 +2,8 @@
 #ifndef __ASM_EXTABLE_H
 #define __ASM_EXTABLE_H
 
-#include <linux/stringify.h>
-#include <linux/bits.h>
+#include <linex/stringify.h>
+#include <linex/bits.h>
 #include <asm/asm-const.h>
 
 #define EX_TYPE_NONE		0

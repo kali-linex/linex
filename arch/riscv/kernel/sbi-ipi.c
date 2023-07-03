@@ -6,11 +6,11 @@
  */
 
 #define pr_fmt(fmt) "riscv: " fmt
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
 #include <asm/sbi.h>
 
 static int sbi_ipi_virq;

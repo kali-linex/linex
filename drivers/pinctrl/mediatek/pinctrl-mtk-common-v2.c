@@ -7,13 +7,13 @@
  */
 
 #include <dt-bindings/pinctrl/mt65xx.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
 
 #include "mtk-eint.h"
 #include "pinctrl-mtk-common-v2.h"

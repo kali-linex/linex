@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/stifb.c -
+ * linex/drivers/video/stifb.c -
  * Low level Frame buffer driver for HP workstations with
  * STI (standard text interface) video firmware.
  *
@@ -7,7 +7,7 @@
  * Portions Copyright (C) 2001 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  *
  * Based on:
- * - linux/drivers/video/artistfb.c -- Artist frame buffer driver
+ * - linex/drivers/video/artistfb.c -- Artist frame buffer driver
  *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
  *   - based on skeletonfb, which was
  *	Created 28 Dec 1997 by Geert Uytterhoeven
@@ -54,20 +54,20 @@
 #undef DEBUG_STIFB_REGS		/* debug sti register accesses */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
 
 #include <asm/grfioctl.h>	/* for HP-UX compatibility */
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <video/sticore.h>
 

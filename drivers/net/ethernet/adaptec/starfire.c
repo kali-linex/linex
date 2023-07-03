@@ -1,4 +1,4 @@
-/* starfire.c: Linux device driver for the Adaptec Starfire network adapter. */
+/* starfire.c: Linex device driver for the Adaptec Starfire network adapter. */
 /*
 	Written 1998-2000 by Donald Becker.
 
@@ -28,22 +28,22 @@
 
 #define DRV_NAME	"starfire"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/mm.h>
-#include <linux/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/crc32.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/if_vlan.h>
+#include <linex/mm.h>
+#include <linex/firmware.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 
 /*

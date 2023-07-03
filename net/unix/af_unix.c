@@ -77,45 +77,45 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/filter.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/sched/signal.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/dcache.h>
+#include <linex/namei.h>
+#include <linex/socket.h>
+#include <linex/un.h>
+#include <linex/fcntl.h>
+#include <linex/filter.h>
+#include <linex/termios.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/in.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/af_unix.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/mount.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/rtnetlink.h>
+#include <linex/mount.h>
 #include <net/checksum.h>
-#include <linux/security.h>
-#include <linux/splice.h>
-#include <linux/freezer.h>
-#include <linux/file.h>
-#include <linux/btf_ids.h>
+#include <linex/security.h>
+#include <linex/splice.h>
+#include <linex/freezer.h>
+#include <linex/file.h>
+#include <linex/btf_ids.h>
 
 #include "scm.h"
 
@@ -659,7 +659,7 @@ static void unix_release_sock(struct sock *sk, int embrion)
 
 	/*
 	 * Fixme: BSD difference: In BSD all sockets connected to us get
-	 *	  ECONNRESET and we die on the spot. In Linux we behave
+	 *	  ECONNRESET and we die on the spot. In Linex we behave
 	 *	  like files and pipes do and wait for the last
 	 *	  dereference.
 	 *

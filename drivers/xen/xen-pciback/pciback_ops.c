@@ -8,11 +8,11 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #define dev_fmt pr_fmt
 
-#include <linux/moduleparam.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
+#include <linex/moduleparam.h>
+#include <linex/wait.h>
+#include <linex/bitops.h>
 #include <xen/events.h>
-#include <linux/sched.h>
+#include <linex/sched.h>
 #include "pciback.h"
 
 static irqreturn_t xen_pcibk_guest_interrupt(int irq, void *dev_id);

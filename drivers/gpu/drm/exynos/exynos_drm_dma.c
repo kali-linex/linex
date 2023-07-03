@@ -4,9 +4,9 @@
 // Author: Inki Dae <inki.dae@samsung.com>
 // Author: Andrzej Hajda <a.hajda@samsung.com>
 
-#include <linux/dma-map-ops.h>
-#include <linux/iommu.h>
-#include <linux/platform_device.h>
+#include <linex/dma-map-ops.h>
+#include <linex/iommu.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_print.h>
 #include <drm/exynos_drm.h>

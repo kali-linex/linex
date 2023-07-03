@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2017 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2017 The Linex Foundation. All rights reserved.
  */
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpumask.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/percpu.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
 
 #include <asm/barrier.h>
 #include <asm/local64.h>

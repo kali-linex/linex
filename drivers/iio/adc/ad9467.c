@@ -5,23 +5,23 @@
  * Copyright 2012-2020 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_device.h>
 
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
-#include <linux/clk.h>
+#include <linex/clk.h>
 
-#include <linux/iio/adc/adi-axi-adc.h>
+#include <linex/iio/adc/adi-axi-adc.h>
 
 /*
  * ADI High-Speed ADC common spi interface registers

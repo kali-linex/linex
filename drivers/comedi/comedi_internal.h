@@ -2,8 +2,8 @@
 #ifndef _COMEDI_INTERNAL_H
 #define _COMEDI_INTERNAL_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 
 /*
  * various internal comedi stuff

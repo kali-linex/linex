@@ -5,11 +5,11 @@
  * Copyright (C) 2016 Gwenhael Goavec-Merou
  */
 
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
+#include <linex/sysfs.h>
 
 #define AD8801_CFG_ADDR_OFFSET 8
 

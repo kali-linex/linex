@@ -8,18 +8,18 @@
 #ifndef __USBIP_COMMON_H
 #define __USBIP_COMMON_H
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/net.h>
-#include <linux/printk.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/sched/task.h>
-#include <linux/kcov.h>
-#include <uapi/linux/usbip.h>
+#include <linex/compiler.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/net.h>
+#include <linex/printk.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/usb.h>
+#include <linex/wait.h>
+#include <linex/sched/task.h>
+#include <linex/kcov.h>
+#include <uapi/linex/usbip.h>
 
 #undef pr_fmt
 

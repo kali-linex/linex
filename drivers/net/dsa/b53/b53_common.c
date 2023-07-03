@@ -17,16 +17,16 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/b53.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_data/b53.h>
+#include <linex/phy.h>
+#include <linex/phylink.h>
+#include <linex/etherdevice.h>
+#include <linex/if_bridge.h>
 #include <net/dsa.h>
 
 #include "b53_regs.h"

@@ -6,23 +6,23 @@
  * Author: Arnaud Pouliquen <arnaud.pouliquen@st.com>.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/iio/adc/stm32-dfsdm-adc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/hw-consumer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/timer/stm32-lptim-trigger.h>
-#include <linux/iio/timer/stm32-timer-trigger.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/iio/adc/stm32-dfsdm-adc.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/hw-consumer.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/timer/stm32-lptim-trigger.h>
+#include <linex/iio/timer/stm32-timer-trigger.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include "stm32-dfsdm.h"
 

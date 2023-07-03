@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
+#include <linex/types.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/io.h>
+#include <linex/bug.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/netdevice.h>
 
 #include "gsi.h"
 #include "reg.h"

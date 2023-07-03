@@ -22,9 +22,9 @@
  * Authors: Christian König
  */
 
-#include <linux/iosys-map.h>
-#include <linux/io-mapping.h>
-#include <linux/scatterlist.h>
+#include <linex/iosys-map.h>
+#include <linex/io-mapping.h>
+#include <linex/scatterlist.h>
 
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_placement.h>

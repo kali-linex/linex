@@ -34,7 +34,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

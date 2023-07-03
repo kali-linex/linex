@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/kobject.h>
-#include <linux/most.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/kobject.h>
+#include <linex/most.h>
 
 #define MEP_HDR_LEN 8
 #define MDP_HDR_LEN 16

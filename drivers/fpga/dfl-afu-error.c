@@ -5,8 +5,8 @@
  * Copyright 2019 Intel Corporation, Inc.
  *
  * Authors:
- *   Wu Hao <hao.wu@linux.intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Wu Hao <hao.wu@linex.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linex.intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
  *   Tim Whisonant <tim.whisonant@intel.com>
@@ -14,8 +14,8 @@
  *   Mitchel Henry <henry.mitchel@intel.com>
  */
 
-#include <linux/fpga-dfl.h>
-#include <linux/uaccess.h>
+#include <linex/fpga-dfl.h>
+#include <linex/uaccess.h>
 
 #include "dfl-afu.h"
 

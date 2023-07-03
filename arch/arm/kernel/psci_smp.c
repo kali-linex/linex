@@ -6,13 +6,13 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/psci.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/of.h>
+#include <linex/delay.h>
+#include <linex/psci.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/linex/psci.h>
 
 #include <asm/psci.h>
 #include <asm/smp_plat.h>

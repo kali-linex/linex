@@ -3,10 +3,10 @@
  * Copyright 2018-2022 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/utsname.h>
+#include <linex/version.h>
 
 #include <rdma/ib_user_verbs.h>
 
@@ -260,10 +260,10 @@ static void efa_set_host_info(struct efa_dev *dev)
 
 	strscpy(hinf->os_dist_str, utsname()->release,
 		sizeof(hinf->os_dist_str));
-	hinf->os_type = EFA_ADMIN_OS_LINUX;
+	hinf->os_type = EFA_ADMIN_OS_LINEX;
 	strscpy(hinf->kernel_ver_str, utsname()->version,
 		sizeof(hinf->kernel_ver_str));
-	hinf->kernel_ver = LINUX_VERSION_CODE;
+	hinf->kernel_ver = LINEX_VERSION_CODE;
 	EFA_SET(&hinf->driver_ver, EFA_ADMIN_HOST_INFO_DRIVER_MAJOR, 0);
 	EFA_SET(&hinf->driver_ver, EFA_ADMIN_HOST_INFO_DRIVER_MINOR, 0);
 	EFA_SET(&hinf->driver_ver, EFA_ADMIN_HOST_INFO_DRIVER_SUB_MINOR, 0);

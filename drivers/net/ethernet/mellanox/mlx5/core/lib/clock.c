@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/clocksource.h>
-#include <linux/highmem.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linex/clocksource.h>
+#include <linex/highmem.h>
+#include <linex/ptp_clock_kernel.h>
 #include <rdma/mlx5-abi.h>
 #include "lib/eq.h"
 #include "en.h"

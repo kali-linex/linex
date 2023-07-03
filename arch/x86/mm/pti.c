@@ -6,7 +6,7 @@
  *
  *	https://github.com/IAIK/KAISER
  *
- * The original work was written by and and signed off by for the Linux
+ * The original work was written by and and signed off by for the Linex
  * kernel by:
  *
  *   Signed-off-by: Richard Fellner <richard.fellner@student.tugraz.at>
@@ -18,16 +18,16 @@
  * Mostly rewritten by Thomas Gleixner <tglx@linutronix.de> and
  *		       Andy Lutomirsky <luto@amacapital.net>
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/uaccess.h>
+#include <linex/cpu.h>
 
 #include <asm/cpufeature.h>
 #include <asm/hypervisor.h>

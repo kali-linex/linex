@@ -31,7 +31,7 @@
 #ifndef H_QXL_DEV
 #define H_QXL_DEV
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /*
  * from spice-protocol

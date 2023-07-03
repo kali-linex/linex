@@ -9,18 +9,18 @@
  * Copyright (C) 2015 Glider bvba
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
 
 #define USB20_CLKSET0		0x00
 #define CLKSET0_INTCLK_EN	BIT(11)

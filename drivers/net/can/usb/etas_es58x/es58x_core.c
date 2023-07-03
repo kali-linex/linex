@@ -11,11 +11,11 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/crc16.h>
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linex/crc16.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/usb.h>
 #include <net/devlink.h>
 
 #include "es58x_core.h"

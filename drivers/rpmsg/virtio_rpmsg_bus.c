@@ -11,22 +11,22 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/byteorder.h>
-#include <linux/rpmsg/ns.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/wait.h>
+#include <linex/dma-mapping.h>
+#include <linex/idr.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/rpmsg.h>
+#include <linex/rpmsg/byteorder.h>
+#include <linex/rpmsg/ns.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/virtio.h>
+#include <linex/virtio_ids.h>
+#include <linex/virtio_config.h>
+#include <linex/wait.h>
 
 #include "rpmsg_internal.h"
 
@@ -545,7 +545,7 @@ static void rpmsg_downref_sleepers(struct virtproc_info *vrp)
  *
  * Normally drivers shouldn't use this function directly; instead, drivers
  * should use the appropriate rpmsg_{try}send{to, _offchannel} API
- * (see include/linux/rpmsg.h).
+ * (see include/linex/rpmsg.h).
  *
  * Return: 0 on success and an appropriate error value on failure.
  */

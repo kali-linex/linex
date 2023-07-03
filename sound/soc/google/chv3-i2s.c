@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include <sound/soc.h>
 

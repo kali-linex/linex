@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ptrace.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
+#include <linex/stddef.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/ptrace.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/slab.h>
 #include <asm/current.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <as-layout.h>
 #include <mem_user.h>
 #include <registers.h>

@@ -2,8 +2,8 @@
 /*
  *  acpi.c - Architecture-Specific Low-Level ACPI Support
  *
- *  Copyright (C) 1999 VA Linux Systems
- *  Copyright (C) 1999,2000 Walt Drummond <drummond@valinux.com>
+ *  Copyright (C) 1999 VA Linex Systems
+ *  Copyright (C) 1999,2000 Walt Drummond <drummond@valinex.com>
  *  Copyright (C) 2000, 2002-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *  Copyright (C) 2000 Intel Corp.
@@ -15,19 +15,19 @@
  *  Copyright (C) 2004 Ashok Raj <ashok.raj@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/irq.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/mmzone.h>
+#include <linex/nodemask.h>
+#include <linex/slab.h>
 #include <acpi/processor.h>
 #include <asm/io.h>
 #include <asm/iosapic.h>

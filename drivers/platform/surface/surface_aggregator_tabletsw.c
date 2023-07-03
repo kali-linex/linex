@@ -6,14 +6,14 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/device.h>
 
 
 /* -- SSAM generic tablet switch driver framework. -------------------------- */

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/string.c
+ *  linex/fs/hfs/string.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -14,7 +14,7 @@
  */
 
 #include "hfs_fs.h"
-#include <linux/dcache.h>
+#include <linex/dcache.h>
 
 /*================ File-local variables ================*/
 

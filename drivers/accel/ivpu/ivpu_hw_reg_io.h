@@ -6,9 +6,9 @@
 #ifndef __IVPU_HW_REG_IO_H__
 #define __IVPU_HW_REG_IO_H__
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/bitfield.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include "ivpu_drv.h"
 

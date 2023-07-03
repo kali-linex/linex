@@ -9,9 +9,9 @@
  */
 
 #include "armada_ap_cp_helper.h"
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 char *ap_cp_unique_name(struct device *dev, struct device_node *np,
 			const char *name)

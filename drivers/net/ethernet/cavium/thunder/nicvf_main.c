@@ -3,22 +3,22 @@
  * Copyright (C) 2015 Cavium, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/log2.h>
-#include <linux/prefetch.h>
-#include <linux/irq.h>
-#include <linux/iommu.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/filter.h>
-#include <linux/net_tstamp.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/log2.h>
+#include <linex/prefetch.h>
+#include <linex/irq.h>
+#include <linex/iommu.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
+#include <linex/filter.h>
+#include <linex/net_tstamp.h>
+#include <linex/workqueue.h>
 
 #include "nic_reg.h"
 #include "nic.h"

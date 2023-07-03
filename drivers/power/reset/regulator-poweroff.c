@@ -8,12 +8,12 @@
  *
  * Based on the gpio-poweroff driver.
  */
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/regulator/consumer.h>
 
 #define TIMEOUT_MS 3000
 

@@ -46,20 +46,20 @@
  *						use seq_file
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/termios.h>	/* For TIOCOUTQ/INQ */
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/if_arp.h>
+#include <linex/termios.h>	/* For TIOCOUTQ/INQ */
+#include <linex/compat.h>
+#include <linex/slab.h>
 #include <net/datalink.h>
 #include <net/psnap.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/route.h>
 #include <net/compat.h>
-#include <linux/atalk.h>
-#include <linux/highmem.h>
+#include <linex/atalk.h>
+#include <linex/highmem.h>
 
 struct datalink_proto *ddp_dl, *aarp_dl;
 static const struct proto_ops atalk_dgram_ops;

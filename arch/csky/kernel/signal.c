@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/resume_user_mode.h>
+#include <linex/signal.h>
+#include <linex/uaccess.h>
+#include <linex/syscalls.h>
+#include <linex/resume_user_mode.h>
 
 #include <asm/traps.h>
 #include <asm/ucontext.h>
@@ -41,7 +41,7 @@ static int save_fpu_state(struct sigcontext __user *sc)
 struct rt_sigframe {
 	/*
 	 * pad[3] is compatible with the same struct defined in
-	 * gcc/libgcc/config/csky/linux-unwind.h
+	 * gcc/libgcc/config/csky/linex-unwind.h
 	 */
 	int pad[3];
 	struct siginfo info;

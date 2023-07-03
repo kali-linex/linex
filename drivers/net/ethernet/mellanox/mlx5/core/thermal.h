@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
  * Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES.
  */
 #ifndef __MLX5_THERMAL_DRIVER_H

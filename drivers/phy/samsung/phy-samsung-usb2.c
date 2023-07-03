@@ -6,15 +6,15 @@
  * Author: Kamil Debski <k.debski@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 #include "phy-samsung-usb2.h"
 
 static int samsung_usb2_phy_power_on(struct phy *phy)

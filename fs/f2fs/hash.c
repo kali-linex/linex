@@ -5,15 +5,15 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext3/hash.c
+ * Portions of this code from linex/fs/ext3/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  */
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/pagemap.h>
-#include <linux/unicode.h>
+#include <linex/types.h>
+#include <linex/fs.h>
+#include <linex/f2fs_fs.h>
+#include <linex/pagemap.h>
+#include <linex/unicode.h>
 
 #include "f2fs.h"
 

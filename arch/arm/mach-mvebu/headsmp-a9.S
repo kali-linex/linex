@@ -9,7 +9,7 @@
  * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 #include <asm/assembler.h>
 

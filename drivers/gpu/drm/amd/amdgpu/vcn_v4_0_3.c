@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include <drm/drm_drv.h>
 
 #include "amdgpu.h"

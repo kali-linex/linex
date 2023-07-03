@@ -6,11 +6,11 @@
  * Copyright (C) 2003 Keith M Wesolowski
  * Copyright (C) 2005 Ilya A. Volynets (Total Knowledge)
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
 
 #include <asm/ip32/crime.h>
 #include <asm/bootinfo.h>

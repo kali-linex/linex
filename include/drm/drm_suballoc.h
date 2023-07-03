@@ -8,8 +8,8 @@
 
 #include <drm/drm_mm.h>
 
-#include <linux/dma-fence.h>
-#include <linux/types.h>
+#include <linex/dma-fence.h>
+#include <linex/types.h>
 
 #define DRM_SUBALLOC_MAX_QUEUES 32
 /**

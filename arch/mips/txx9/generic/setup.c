@@ -1,5 +1,5 @@
 /*
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on linex/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -9,25 +9,25 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/txx9/ndfmc.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/string.h>
+#include <linex/export.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/txx9/ndfmc.h>
+#include <linex/serial_core.h>
+#include <linex/mtd/physmap.h>
+#include <linex/leds.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/time.h>

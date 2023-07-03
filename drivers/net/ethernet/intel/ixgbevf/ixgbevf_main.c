@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/sctp.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
+#include <linex/ethtool.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/prefetch.h>
 #include <net/mpls.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/atomic.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
+#include <linex/atomic.h>
 #include <net/xfrm.h>
 
 #include "ixgbevf.h"
@@ -76,7 +76,7 @@ static const struct pci_device_id ixgbevf_pci_tbl[] = {
 };
 MODULE_DEVICE_TABLE(pci, ixgbevf_pci_tbl);
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linex.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) 10 Gigabit Virtual Function Network Driver");
 MODULE_LICENSE("GPL v2");
 

@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linex.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -16,15 +16,15 @@
  * debugging, please also see the debugfs interfaces of this driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/sysfs.h>
+#include <linex/ctype.h>
+#include <linex/device.h>
 
 #include "card_base.h"
 #include "card_ddcb.h"

@@ -7,19 +7,19 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-bufio.h>
+#include <linex/dm-bufio.h>
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/jiffies.h>
-#include <linux/vmalloc.h>
-#include <linux/shrinker.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/stacktrace.h>
-#include <linux/jump_label.h>
+#include <linex/device-mapper.h>
+#include <linex/dm-io.h>
+#include <linex/slab.h>
+#include <linex/sched/mm.h>
+#include <linex/jiffies.h>
+#include <linex/vmalloc.h>
+#include <linex/shrinker.h>
+#include <linex/module.h>
+#include <linex/rbtree.h>
+#include <linex/stacktrace.h>
+#include <linex/jump_label.h>
 
 #include "dm.h"
 

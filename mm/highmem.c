@@ -17,18 +17,18 @@
  * Copyright (C) 1999 Ingo Molnar <mingo@redhat.com>
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/highmem.h>
-#include <linux/kgdb.h>
+#include <linex/mm.h>
+#include <linex/export.h>
+#include <linex/swap.h>
+#include <linex/bio.h>
+#include <linex/pagemap.h>
+#include <linex/mempool.h>
+#include <linex/init.h>
+#include <linex/hash.h>
+#include <linex/highmem.h>
+#include <linex/kgdb.h>
 #include <asm/tlbflush.h>
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
 #ifdef CONFIG_KMAP_LOCAL
 static inline int kmap_local_calc_idx(int idx)

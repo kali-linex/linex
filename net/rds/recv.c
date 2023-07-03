@@ -30,14 +30,14 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/export.h>
-#include <linux/sched/clock.h>
-#include <linux/time.h>
-#include <linux/rds.h>
+#include <linex/in.h>
+#include <linex/export.h>
+#include <linex/sched/clock.h>
+#include <linex/time.h>
+#include <linex/rds.h>
 
 #include "rds.h"
 

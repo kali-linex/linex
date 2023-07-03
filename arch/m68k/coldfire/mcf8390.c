@@ -1,18 +1,18 @@
 /*
  * mcf8390.c  -- platform support for 8390 ethernet on many boards
  *
- * (C) Copyright 2012, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2012, Greg Ungerer <gerg@uclinex.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/resource.h>
+#include <linex/platform_device.h>
 #include <asm/mcf8390.h>
 
 static struct resource mcf8390_resources[] = {

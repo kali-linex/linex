@@ -20,13 +20,13 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
 
 #include "fsl_rio.h"
 
@@ -196,7 +196,7 @@ struct rio_dbell_msg {
 
 /**
  * fsl_rio_tx_handler - MPC85xx outbound message interrupt handler
- * @irq: Linux interrupt number
+ * @irq: Linex interrupt number
  * @dev_instance: Pointer to interrupt-specific data
  *
  * Handles outbound message interrupts. Executes a register outbound
@@ -241,7 +241,7 @@ out:
 
 /**
  * fsl_rio_rx_handler - MPC85xx inbound message interrupt handler
- * @irq: Linux interrupt number
+ * @irq: Linex interrupt number
  * @dev_instance: Pointer to interrupt-specific data
  *
  * Handles inbound message interrupts. Executes a registered inbound
@@ -284,7 +284,7 @@ out:
 
 /**
  * fsl_rio_dbell_handler - MPC85xx doorbell interrupt handler
- * @irq: Linux interrupt number
+ * @irq: Linex interrupt number
  * @dev_instance: Pointer to interrupt-specific data
  *
  * Handles doorbell interrupts. Parses a list of registered
@@ -379,7 +379,7 @@ void msg_unit_error_handler(void)
 
 /**
  * fsl_rio_port_write_handler - MPC85xx port write interrupt handler
- * @irq: Linux interrupt number
+ * @irq: Linex interrupt number
  * @dev_instance: Pointer to interrupt-specific data
  *
  * Handles port write interrupts. Parses a list of registered

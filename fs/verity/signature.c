@@ -15,10 +15,10 @@
 
 #include "fsverity_private.h"
 
-#include <linux/cred.h>
-#include <linux/key.h>
-#include <linux/slab.h>
-#include <linux/verification.h>
+#include <linex/cred.h>
+#include <linex/key.h>
+#include <linex/slab.h>
+#include <linex/verification.h>
 
 /*
  * /proc/sys/fs/verity/require_signatures

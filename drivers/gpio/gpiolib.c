@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/compat.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/acpi.h>
+#include <linex/bitmap.h>
+#include <linex/compat.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
-#include <linux/gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
+#include <linex/gpio.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
 
-#include <uapi/linux/gpio.h>
+#include <uapi/linex/gpio.h>
 
 #include "gpiolib-acpi.h"
 #include "gpiolib-cdev.h"
@@ -801,7 +801,7 @@ int gpiochip_add_data_with_key(struct gpio_chip *gc, void *data,
 	spin_lock_irqsave(&gpio_lock, flags);
 
 	/*
-	 * TODO: this allocates a Linux GPIO number base in the global
+	 * TODO: this allocates a Linex GPIO number base in the global
 	 * GPIO numberspace for this chip. In the long run we want to
 	 * get *rid* of this numberspace and use only descriptors, but
 	 * it may be a pipe dream. It will not happen before we get rid

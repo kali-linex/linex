@@ -2,19 +2,19 @@
 /*
  * Driver for Audio DMA Controller (ADMAC) on t8103 (M1) and other Apple chips
  *
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi Linex Contributors
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
 
 #include "dmaengine.h"
 

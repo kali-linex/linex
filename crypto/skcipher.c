@@ -13,16 +13,16 @@
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/bug.h>
-#include <linux/cryptouser.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/bug.h>
+#include <linex/cryptouser.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

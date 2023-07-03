@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The Linex Foundation. All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/regmap.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/clk-provider.h>
+#include <linex/spinlock.h>
 
 #include "clk-regmap.h"
 #include "clk-hfpll.h"

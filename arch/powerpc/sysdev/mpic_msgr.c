@@ -6,14 +6,14 @@
  * Mingkai Hu from Freescale Semiconductor, Inc.
  */
 
-#include <linux/list.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/list.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>
 #include <asm/mpic_msgr.h>

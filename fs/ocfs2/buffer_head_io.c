@@ -7,10 +7,10 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/bio.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/highmem.h>
+#include <linex/bio.h>
 
 #include <cluster/masklog.h>
 

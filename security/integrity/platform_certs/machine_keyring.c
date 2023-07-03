@@ -5,7 +5,7 @@
  * Copyright (c) 2021, Oracle and/or its affiliates.
  */
 
-#include <linux/efi.h>
+#include <linex/efi.h>
 #include "../integrity.h"
 
 static bool trust_mok;

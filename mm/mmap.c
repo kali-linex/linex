@@ -9,46 +9,46 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/shm.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/shmem_fs.h>
-#include <linux/profile.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/mempolicy.h>
-#include <linux/rmap.h>
-#include <linux/mmu_notifier.h>
-#include <linux/mmdebug.h>
-#include <linux/perf_event.h>
-#include <linux/audit.h>
-#include <linux/khugepaged.h>
-#include <linux/uprobes.h>
-#include <linux/notifier.h>
-#include <linux/memory.h>
-#include <linux/printk.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/moduleparam.h>
-#include <linux/pkeys.h>
-#include <linux/oom.h>
-#include <linux/sched/mm.h>
-#include <linux/ksm.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/backing-dev.h>
+#include <linex/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/shm.h>
+#include <linex/mman.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/syscalls.h>
+#include <linex/capability.h>
+#include <linex/init.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/personality.h>
+#include <linex/security.h>
+#include <linex/hugetlb.h>
+#include <linex/shmem_fs.h>
+#include <linex/profile.h>
+#include <linex/export.h>
+#include <linex/mount.h>
+#include <linex/mempolicy.h>
+#include <linex/rmap.h>
+#include <linex/mmu_notifier.h>
+#include <linex/mmdebug.h>
+#include <linex/perf_event.h>
+#include <linex/audit.h>
+#include <linex/khugepaged.h>
+#include <linex/uprobes.h>
+#include <linex/notifier.h>
+#include <linex/memory.h>
+#include <linex/printk.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/moduleparam.h>
+#include <linex/pkeys.h>
+#include <linex/oom.h>
+#include <linex/sched/mm.h>
+#include <linex/ksm.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>
@@ -2554,10 +2554,11 @@ do_vmi_align_munmap(struct vma_iterator *vmi, struct vm_area_struct *vma,
 	mas_set(&mas_detach, start);
 	remove_mt(mm, &mas_detach);
 	__mt_destroy(&mt_detach);
-	validate_mm(mm);
 	if (unlock)
 		mmap_read_unlock(mm);
 
+
+	validate_mm(mm);
 	return 0;
 
 clear_tree_failed:

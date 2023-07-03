@@ -5,8 +5,8 @@
  * Copyright (C) 2015-2017 Helen Koike <helen.fornazier@gmail.com>
  */
 
-#include <linux/v4l2-mediabus.h>
-#include <linux/vmalloc.h>
+#include <linex/v4l2-mediabus.h>
+#include <linex/vmalloc.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-subdev.h>

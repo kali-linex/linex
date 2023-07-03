@@ -6,14 +6,14 @@
 
 #include "tsnep_hw.h"
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/miscdevice.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/phy.h>
+#include <linex/ethtool.h>
+#include <linex/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/miscdevice.h>
 
 #define TSNEP "tsnep"
 

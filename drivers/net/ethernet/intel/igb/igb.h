@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright(c) 2007 - 2018 Intel Corporation. */
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* Linex PRO/1000 Ethernet Driver main header file */
 
 #ifndef _IGB_H_
 #define _IGB_H_
@@ -9,15 +9,15 @@
 #include "e1000_mac.h"
 #include "e1000_82575.h"
 
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/pci.h>
-#include <linux/mdio.h>
+#include <linex/timecounter.h>
+#include <linex/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/bitops.h>
+#include <linex/if_vlan.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/pci.h>
+#include <linex/mdio.h>
 
 #include <net/xdp.h>
 

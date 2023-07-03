@@ -6,29 +6,29 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bug.h>
-#include <linux/context_tracking.h>
-#include <linux/signal.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sizes.h>
-#include <linux/syscalls.h>
-#include <linux/mm_types.h>
-#include <linux/kasan.h>
-#include <linux/ubsan.h>
-#include <linux/cfi.h>
+#include <linex/bug.h>
+#include <linex/context_tracking.h>
+#include <linex/signal.h>
+#include <linex/kallsyms.h>
+#include <linex/kprobes.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/hardirq.h>
+#include <linex/kdebug.h>
+#include <linex/module.h>
+#include <linex/kexec.h>
+#include <linex/delay.h>
+#include <linex/efi.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sizes.h>
+#include <linex/syscalls.h>
+#include <linex/mm_types.h>
+#include <linex/kasan.h>
+#include <linex/ubsan.h>
+#include <linex/cfi.h>
 
 #include <asm/atomic.h>
 #include <asm/bug.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/file.c
+ *  linex/fs/ufs/file.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/file.c
+ *  linex/fs/ext2/file.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -17,14 +17,14 @@
  *
  *  from
  *
- *  linux/fs/minix/file.c
+ *  linex/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext2 fs regular file handling primitives
  */
 
-#include <linux/fs.h>
+#include <linex/fs.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

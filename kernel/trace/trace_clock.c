@@ -13,15 +13,15 @@
  *
  * Tracer plugins will chose a default from these clocks.
  */
-#include <linux/spinlock.h>
-#include <linux/irqflags.h>
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/ktime.h>
-#include <linux/trace_clock.h>
+#include <linex/spinlock.h>
+#include <linex/irqflags.h>
+#include <linex/hardirq.h>
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/ktime.h>
+#include <linex/trace_clock.h>
 
 /*
  * trace_clock_local(): the simplest and least coherent tracing clock.

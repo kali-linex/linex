@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for Linex
  *
  * Copyright (C) 1999 - 2008 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -21,19 +21,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/hdlc.h>
+#include <linex/if_arp.h>
+#include <linex/inetdevice.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/pkt_sched.h>
+#include <linex/poll.h>
+#include <linex/rtnetlink.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/net_namespace.h>
 
 static const char *version = "HDLC support module revision 1.22";

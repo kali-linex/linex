@@ -2,19 +2,19 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *                  Volker Sameske <sameske@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Linex390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2012
  */
 
-#include <linux/buffer_head.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <linex/buffer_head.h>
+#include <linex/hdreg.h>
+#include <linex/slab.h>
 #include <asm/dasd.h>
 #include <asm/ebcdic.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/vtoc.h>
-#include <linux/module.h>
-#include <linux/dasd_mod.h>
+#include <linex/module.h>
+#include <linex/dasd_mod.h>
 
 #include "check.h"
 

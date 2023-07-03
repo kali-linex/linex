@@ -18,7 +18,7 @@
  * semaphores to interlock between them.
  */
 
-#include <linux/kthread.h>
+#include <linex/kthread.h>
 
 #include "v3d_drv.h"
 #include "v3d_regs.h"

@@ -12,7 +12,7 @@
  *
  * Made to use alloc_percpu by Christoph Lameter.
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Linex Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This is the generic async execution mechanism.  Work items as are
@@ -25,33 +25,33 @@
  * Please read Documentation/core-api/workqueue.rst for details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/hardirq.h>
-#include <linux/mempolicy.h>
-#include <linux/freezer.h>
-#include <linux/debug_locks.h>
-#include <linux/lockdep.h>
-#include <linux/idr.h>
-#include <linux/jhash.h>
-#include <linux/hashtable.h>
-#include <linux/rculist.h>
-#include <linux/nodemask.h>
-#include <linux/moduleparam.h>
-#include <linux/uaccess.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/kvm_para.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/signal.h>
+#include <linex/completion.h>
+#include <linex/workqueue.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/notifier.h>
+#include <linex/kthread.h>
+#include <linex/hardirq.h>
+#include <linex/mempolicy.h>
+#include <linex/freezer.h>
+#include <linex/debug_locks.h>
+#include <linex/lockdep.h>
+#include <linex/idr.h>
+#include <linex/jhash.h>
+#include <linex/hashtable.h>
+#include <linex/rculist.h>
+#include <linex/nodemask.h>
+#include <linex/moduleparam.h>
+#include <linex/uaccess.h>
+#include <linex/sched/isolation.h>
+#include <linex/sched/debug.h>
+#include <linex/nmi.h>
+#include <linex/kvm_para.h>
 
 #include "workqueue_internal.h"
 

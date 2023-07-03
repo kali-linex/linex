@@ -2,9 +2,9 @@
 /* Copyright(c) Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/module.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/module.h>
 #include "main.h"
 #include "rtw8723d.h"
 #include "sdio.h"

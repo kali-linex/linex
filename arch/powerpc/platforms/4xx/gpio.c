@@ -9,15 +9,15 @@
  * Author: Steve Falco <sfalco@harris.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
-#include <linux/gpio/driver.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/gpio/legacy-of-mm-gpiochip.h>
+#include <linex/gpio/driver.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 
 #define GPIO_MASK(gpio)		(0x80000000 >> (gpio))
 #define GPIO_MASK2(gpio)	(0xc0000000 >> ((gpio) * 2))

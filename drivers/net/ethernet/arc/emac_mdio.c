@@ -5,10 +5,10 @@
  * MDIO implementation for ARC EMAC
  */
 
-#include <linux/delay.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/of_mdio.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
 
 #include "emac.h"
 

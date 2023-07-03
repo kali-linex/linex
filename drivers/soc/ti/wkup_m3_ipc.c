@@ -7,20 +7,20 @@
  * Dave Gerlach <d-gerlach@ti.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/omap-mailbox.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/suspend.h>
-#include <linux/wkup_m3_ipc.h>
+#include <linex/debugfs.h>
+#include <linex/err.h>
+#include <linex/firmware.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/omap-mailbox.h>
+#include <linex/platform_device.h>
+#include <linex/remoteproc.h>
+#include <linex/suspend.h>
+#include <linex/wkup_m3_ipc.h>
 
 #define AM33XX_CTRL_IPC_REG_COUNT	0x8
 #define AM33XX_CTRL_IPC_REG_OFFSET(m)	(0x4 + 4 * (m))

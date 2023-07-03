@@ -4,21 +4,21 @@
  * Copyright(c) 2008 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Linex Wireless <ilw@linex.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/lockdep.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/skbuff.h>
 #include <net/mac80211.h>
 
 #include "common.h"

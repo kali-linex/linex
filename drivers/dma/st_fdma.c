@@ -8,14 +8,14 @@
  *	   Peter Griffin <peter.griffin@linaro.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/remoteproc.h>
+#include <linex/slab.h>
 
 #include "st_fdma.h"
 

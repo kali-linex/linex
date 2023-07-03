@@ -12,16 +12,16 @@
  * Default I2C address: 0x4a
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/util_macros.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/bits.h>
+#include <linex/i2c.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/util_macros.h>
 
 #define MAX44009_DRV_NAME "max44009"
 

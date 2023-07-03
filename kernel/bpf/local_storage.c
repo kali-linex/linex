@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bpf-cgroup.h>
-#include <linux/bpf.h>
-#include <linux/bpf_local_storage.h>
-#include <linux/btf.h>
-#include <linux/bug.h>
-#include <linux/filter.h>
-#include <linux/mm.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <uapi/linux/btf.h>
-#include <linux/btf_ids.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/bpf.h>
+#include <linex/bpf_local_storage.h>
+#include <linex/btf.h>
+#include <linex/bug.h>
+#include <linex/filter.h>
+#include <linex/mm.h>
+#include <linex/rbtree.h>
+#include <linex/slab.h>
+#include <uapi/linex/btf.h>
+#include <linex/btf_ids.h>
 
 #ifdef CONFIG_CGROUP_BPF
 

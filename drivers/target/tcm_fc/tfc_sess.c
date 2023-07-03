@@ -5,20 +5,20 @@
 
 /* XXX TBD some includes may be extraneous */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kref.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/utsname.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/configfs.h>
+#include <linex/ctype.h>
+#include <linex/hash.h>
+#include <linex/rcupdate.h>
+#include <linex/rculist.h>
+#include <linex/kref.h>
 #include <asm/unaligned.h>
 #include <scsi/libfc.h>
 

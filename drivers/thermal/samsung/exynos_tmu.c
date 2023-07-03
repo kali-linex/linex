@@ -11,16 +11,16 @@
  *  Amit Daniel Kachhap <amit.kachhap@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/thermal.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/thermal.h>
 
 #include <dt-bindings/thermal/thermal_exynos.h>
 

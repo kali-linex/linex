@@ -6,15 +6,15 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of_clk.h>
-#include <linux/of_platform.h>
-#include <linux/irqchip.h>
-#include <linux/clocksource.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of_clk.h>
+#include <linex/of_platform.h>
+#include <linex/irqchip.h>
+#include <linex/clocksource.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/hardware/cache-l2x0.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/bitops.h>
+#include <linex/export.h>
+#include <linex/bitops.h>
 #include <asm/types.h>
 
 /**

@@ -21,10 +21,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/anon_inodes.h>
-#include <uapi/linux/kfd_ioctl.h>
+#include <linex/poll.h>
+#include <linex/wait.h>
+#include <linex/anon_inodes.h>
+#include <uapi/linex/kfd_ioctl.h>
 #include "amdgpu.h"
 #include "amdgpu_vm.h"
 #include "kfd_priv.h"

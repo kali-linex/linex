@@ -10,34 +10,34 @@
  * Development of this code was funded by Astaro AG, http://www.astaro.com/
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/random.h>
+#include <linex/jhash.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/list.h>
+#include <linex/skbuff.h>
+#include <linex/mm.h>
+#include <linex/in.h>
+#include <linex/ip.h>
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
-#include <linux/ipv6.h>
+#include <linex/ipv6.h>
 #include <net/ipv6.h>
 #endif
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/refcount.h>
-#include <uapi/linux/netfilter/xt_hashlimit.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
+#include <linex/mutex.h>
+#include <linex/kernel.h>
+#include <linex/refcount.h>
+#include <uapi/linex/netfilter/xt_hashlimit.h>
 
 #define XT_HASHLIMIT_ALL (XT_HASHLIMIT_HASH_DIP | XT_HASHLIMIT_HASH_DPT | \
 			  XT_HASHLIMIT_HASH_SIP | XT_HASHLIMIT_HASH_SPT | \
@@ -434,7 +434,7 @@ static void htable_put(struct xt_hashlimit_htable *hinfo)
 }
 
 /* The algorithm used is the Simple Token Bucket Filter (TBF)
- * see net/sched/sch_tbf.c in the linux source tree
+ * see net/sched/sch_tbf.c in the linex source tree
  */
 
 /* Rusty: This is my (non-mathematically-inclined) understanding of

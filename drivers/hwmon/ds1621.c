@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * ds1621.c - Part of lm_sensors, Linux kernel modules for hardware
+ * ds1621.c - Part of lm_sensors, Linex kernel modules for hardware
  *	      monitoring
  * Christian W. Zuckschwerdt  <zany@triq.net>  2000-11-23
  * based on lm75.c by Frodo Looijaard <frodol@dds.nl>
- * Ported to Linux 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
+ * Ported to Linex 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
  * the help of Jean Delvare <jdelvare@suse.de>
  *
  * The DS1621 device is a digital temperature/thermometer with 9-bit
@@ -21,17 +21,17 @@
  * and concern all supported chipsets, unless mentioned otherwise.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
+#include <linex/kernel.h>
 
 /* Supported devices */
 enum chips { ds1621, ds1625, ds1631, ds1721, ds1731 };

@@ -17,7 +17,7 @@
 #ifndef __RADIOTAP_H
 #define __RADIOTAP_H
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <asm/unaligned.h>
 
 /**

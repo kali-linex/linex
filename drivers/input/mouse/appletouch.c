@@ -7,18 +7,18 @@
  * Copyright (C) 2005-2008 Stelian Pop (stelian@popies.net)
  * Copyright (C) 2005      Frank Arnold (frank@scirocco-5v-turbo.de)
  * Copyright (C) 2005      Peter Osterlund (petero2@telia.com)
- * Copyright (C) 2005      Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2005      Michael Hanselmann (linex-kernel@hansmi.ch)
  * Copyright (C) 2006      Nicolas Boichat (nicolas@boichat.ch)
  * Copyright (C) 2007-2008 Sven Anders (anders@anduras.de)
  *
  * Thanks to Alex Harper <basilisk@foobox.net> for his inputs.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/usb/input.h>
 
 /*
  * Note: We try to keep the touchpad aspect ratio while still doing only

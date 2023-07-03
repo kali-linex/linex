@@ -2,7 +2,7 @@
 #ifndef _NF_CONNTRACK_EXTEND_H
 #define _NF_CONNTRACK_EXTEND_H
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include <net/netfilter/nf_conntrack.h>
 

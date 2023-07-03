@@ -4,15 +4,15 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
 
 #define LOGICVC_CTRL_REG		0x40
 #define LOGICVC_CTRL_GPIO_SHIFT		11

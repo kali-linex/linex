@@ -4,18 +4,18 @@
 #ifndef _IXGBE_H_
 #define _IXGBE_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/cpumask.h>
-#include <linux/if_vlan.h>
-#include <linux/jiffies.h>
-#include <linux/phy.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/cpumask.h>
+#include <linex/if_vlan.h>
+#include <linex/jiffies.h>
+#include <linex/phy.h>
 
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linex/timecounter.h>
+#include <linex/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
 
 #include "ixgbe_type.h"
 #include "ixgbe_common.h"
@@ -25,7 +25,7 @@
 #include "ixgbe_fcoe.h"
 #endif /* IS_ENABLED(CONFIG_FCOE) */
 #ifdef CONFIG_IXGBE_DCA
-#include <linux/dca.h>
+#include <linex/dca.h>
 #endif
 #include "ixgbe_ipsec.h"
 

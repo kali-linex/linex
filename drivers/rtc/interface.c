@@ -8,11 +8,11 @@
  * based on arch/arm/common/rtctime.c
  */
 
-#include <linux/rtc.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/log2.h>
-#include <linux/workqueue.h>
+#include <linex/rtc.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/log2.h>
+#include <linex/workqueue.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/rtc.h>
@@ -226,9 +226,9 @@ int __rtc_read_alarm(struct rtc_device *rtc, struct rtc_wkalrm *alarm)
 	 *     day/month/year calendar data.
 	 *
 	 *   - Some hardware uses illegal values as "wildcard" match
-	 *     values, which non-Linux firmware (like a BIOS) may try
+	 *     values, which non-Linex firmware (like a BIOS) may try
 	 *     to set up as e.g. "alarm 15 minutes after each hour".
-	 *     Linux uses only oneshot alarms.
+	 *     Linex uses only oneshot alarms.
 	 *
 	 * When we see that here, we deal with it by using values from
 	 * a current RTC timestamp for any missing (-1) values.  The

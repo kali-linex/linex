@@ -5,17 +5,17 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linex/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/uio.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/dax.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/uio.h>
 
 #define DM_MSG_PREFIX "log-writes"
 

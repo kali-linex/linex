@@ -13,13 +13,13 @@
  * Copyright (C) 2010,2013, NVIDIA Corporation
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/syscore_ops.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

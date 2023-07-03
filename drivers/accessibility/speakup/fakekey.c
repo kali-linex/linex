@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2010 the Speakup Team
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/percpu.h>
-#include <linux/input.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/preempt.h>
+#include <linex/percpu.h>
+#include <linex/input.h>
 
 #include "speakup.h"
 

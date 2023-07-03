@@ -10,9 +10,9 @@
 #include <util/util.h>
 #include <util/bpf-loader.h>
 #include <util/evlist.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/filter.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 #include <api/fs/fs.h>
 #include <perf/mmap.h>
 #include "tests.h"
@@ -24,7 +24,7 @@
 #define PERF_TEST_BPF_PATH "/sys/fs/bpf/perf_test"
 
 #if defined(HAVE_LIBBPF_SUPPORT) && defined(HAVE_LIBTRACEEVENT)
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf.h>
 
 static int epoll_pwait_loop(void)
@@ -81,7 +81,7 @@ static struct {
 		.prog_id	  = LLVM_TESTCASE_BASE,
 		.name		  = "[bpf_pinning]",
 		.msg_compile_fail = "fix kbuild first",
-		.msg_load_fail	  = "check your vmlinux setting?",
+		.msg_load_fail	  = "check your vmlinex setting?",
 		.target_func	  = &epoll_pwait_loop,
 		.expect_result	  = (NR_ITERS + 1) / 2,
 		.pin		  = true,
@@ -91,7 +91,7 @@ static struct {
 		.prog_id	  = LLVM_TESTCASE_BPF_PROLOGUE,
 		.name		  = "[bpf_prologue_test]",
 		.msg_compile_fail = "fix kbuild first",
-		.msg_load_fail	  = "check your vmlinux setting?",
+		.msg_load_fail	  = "check your vmlinex setting?",
 		.target_func	  = &llseek_loop,
 		.expect_result	  = (NR_ITERS + 1) / 4,
 	},

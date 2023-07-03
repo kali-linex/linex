@@ -7,9 +7,9 @@
  * the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"
 #include "bnxt_hwrm.h"

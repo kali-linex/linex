@@ -11,15 +11,15 @@
  */
 
 /*
- * Logitech Bus Mouse Driver for Linux
+ * Logitech Bus Mouse Driver for Linex
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

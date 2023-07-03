@@ -6,25 +6,25 @@
  *
  * Driver for the Melexis MLX90632 I2C 16-bit IR thermopile sensor
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/iopoll.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/limits.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/math64.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 /* Memory sections addresses */
 #define MLX90632_ADDR_RAM	0x4000 /* Start address of ram */

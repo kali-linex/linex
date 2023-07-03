@@ -7,8 +7,8 @@
 #include "clk-mtk.h"
 
 #include <dt-bindings/clock/mt8195-clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 
 static const struct mtk_gate_regs peri_ao_cg_regs = {
 	.set_ofs = 0x10,

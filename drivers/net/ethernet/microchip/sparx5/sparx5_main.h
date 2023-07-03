@@ -7,17 +7,17 @@
 #ifndef __SPARX5_MAIN_H__
 #define __SPARX5_MAIN_H__
 
-#include <linux/types.h>
-#include <linux/phy/phy.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/bitmap.h>
-#include <linux/phylink.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/hrtimer.h>
-#include <linux/debugfs.h>
+#include <linex/types.h>
+#include <linex/phy/phy.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
+#include <linex/if_vlan.h>
+#include <linex/bitmap.h>
+#include <linex/phylink.h>
+#include <linex/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/hrtimer.h>
+#include <linex/debugfs.h>
 
 #include "sparx5_main_regs.h"
 

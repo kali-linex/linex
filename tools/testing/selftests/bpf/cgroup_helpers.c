@@ -4,10 +4,10 @@
 #include <sys/mount.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <linux/limits.h>
+#include <linex/limits.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/sched.h>
+#include <linex/sched.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <ftw.h>

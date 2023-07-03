@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt)	"pseries-hotplug-mem: " fmt
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/memblock.h>
+#include <linex/memory.h>
+#include <linex/memory_hotplug.h>
+#include <linex/slab.h>
 
 #include <asm/firmware.h>
 #include <asm/machdep.h>

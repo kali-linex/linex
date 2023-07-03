@@ -20,10 +20,10 @@
  */
 
 #include <crypto/md5.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/string.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

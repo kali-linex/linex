@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/init/main.c
+ *  linex/init/main.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -12,93 +12,93 @@
 
 #define DEBUG		/* Enable initcall_debug */
 
-#include <linux/types.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/binfmts.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/stackprotector.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/bootconfig.h>
-#include <linux/console.h>
-#include <linux/nmi.h>
-#include <linux/percpu.h>
-#include <linux/kmod.h>
-#include <linux/kprobes.h>
-#include <linux/kmsan.h>
-#include <linux/vmalloc.h>
-#include <linux/kernel_stat.h>
-#include <linux/start_kernel.h>
-#include <linux/security.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/kfence.h>
-#include <linux/rcupdate.h>
-#include <linux/srcu.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/buildid.h>
-#include <linux/writeback.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/cgroup.h>
-#include <linux/efi.h>
-#include <linux/tick.h>
-#include <linux/sched/isolation.h>
-#include <linux/interrupt.h>
-#include <linux/taskstats_kern.h>
-#include <linux/delayacct.h>
-#include <linux/unistd.h>
-#include <linux/utsname.h>
-#include <linux/rmap.h>
-#include <linux/mempolicy.h>
-#include <linux/key.h>
-#include <linux/debug_locks.h>
-#include <linux/debugobjects.h>
-#include <linux/lockdep.h>
-#include <linux/kmemleak.h>
-#include <linux/padata.h>
-#include <linux/pid_namespace.h>
-#include <linux/device/driver.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/sched/init.h>
-#include <linux/signal.h>
-#include <linux/idr.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
-#include <linux/async.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/pti.h>
-#include <linux/blkdev.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/context_tracking.h>
-#include <linux/random.h>
-#include <linux/list.h>
-#include <linux/integrity.h>
-#include <linux/proc_ns.h>
-#include <linux/io.h>
-#include <linux/cache.h>
-#include <linux/rodata_test.h>
-#include <linux/jump_label.h>
-#include <linux/kcsan.h>
-#include <linux/init_syscalls.h>
-#include <linux/stackdepot.h>
-#include <linux/randomize_kstack.h>
+#include <linex/types.h>
+#include <linex/extable.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/binfmts.h>
+#include <linex/kernel.h>
+#include <linex/syscalls.h>
+#include <linex/stackprotector.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/initrd.h>
+#include <linex/memblock.h>
+#include <linex/acpi.h>
+#include <linex/bootconfig.h>
+#include <linex/console.h>
+#include <linex/nmi.h>
+#include <linex/percpu.h>
+#include <linex/kmod.h>
+#include <linex/kprobes.h>
+#include <linex/kmsan.h>
+#include <linex/vmalloc.h>
+#include <linex/kernel_stat.h>
+#include <linex/start_kernel.h>
+#include <linex/security.h>
+#include <linex/smp.h>
+#include <linex/profile.h>
+#include <linex/kfence.h>
+#include <linex/rcupdate.h>
+#include <linex/srcu.h>
+#include <linex/moduleparam.h>
+#include <linex/kallsyms.h>
+#include <linex/buildid.h>
+#include <linex/writeback.h>
+#include <linex/cpu.h>
+#include <linex/cpuset.h>
+#include <linex/cgroup.h>
+#include <linex/efi.h>
+#include <linex/tick.h>
+#include <linex/sched/isolation.h>
+#include <linex/interrupt.h>
+#include <linex/taskstats_kern.h>
+#include <linex/delayacct.h>
+#include <linex/unistd.h>
+#include <linex/utsname.h>
+#include <linex/rmap.h>
+#include <linex/mempolicy.h>
+#include <linex/key.h>
+#include <linex/debug_locks.h>
+#include <linex/debugobjects.h>
+#include <linex/lockdep.h>
+#include <linex/kmemleak.h>
+#include <linex/padata.h>
+#include <linex/pid_namespace.h>
+#include <linex/device/driver.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/sched/init.h>
+#include <linex/signal.h>
+#include <linex/idr.h>
+#include <linex/kgdb.h>
+#include <linex/ftrace.h>
+#include <linex/async.h>
+#include <linex/shmem_fs.h>
+#include <linex/slab.h>
+#include <linex/perf_event.h>
+#include <linex/ptrace.h>
+#include <linex/pti.h>
+#include <linex/blkdev.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/context_tracking.h>
+#include <linex/random.h>
+#include <linex/list.h>
+#include <linex/integrity.h>
+#include <linex/proc_ns.h>
+#include <linex/io.h>
+#include <linex/cache.h>
+#include <linex/rodata_test.h>
+#include <linex/jump_label.h>
+#include <linex/kcsan.h>
+#include <linex/init_syscalls.h>
+#include <linex/stackdepot.h>
+#include <linex/randomize_kstack.h>
 #include <net/net_namespace.h>
 
 #include <asm/io.h>
@@ -186,7 +186,7 @@ static int __init set_reset_devices(char *str)
 __setup("reset_devices", set_reset_devices);
 
 static const char *argv_init[MAX_INIT_ARGS+2] = { "init", NULL, };
-const char *envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=linux", NULL, };
+const char *envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=linex", NULL, };
 static const char *panic_later, *panic_param;
 
 static bool __init obsolete_checksetup(char *line)
@@ -875,7 +875,7 @@ void start_kernel(void)
 	set_task_stack_end_magic(&init_task);
 	smp_setup_processor_id();
 	debug_objects_early_init();
-	init_vmlinux_build_id();
+	init_vmlinex_build_id();
 
 	cgroup_init_early();
 
@@ -888,7 +888,7 @@ void start_kernel(void)
 	 */
 	boot_cpu_init();
 	page_address_init();
-	pr_notice("%s", linux_banner);
+	pr_notice("%s", linex_banner);
 	early_security_init();
 	setup_arch(&command_line);
 	setup_boot_config();
@@ -1261,7 +1261,7 @@ static initcall_entry_t *initcall_levels[] __initdata = {
 	__initcall_end,
 };
 
-/* Keep these in sync with initcalls in include/linux/init.h */
+/* Keep these in sync with initcalls in include/linex/init.h */
 static const char *initcall_level_names[] __initdata = {
 	"pure",
 	"core",
@@ -1497,7 +1497,7 @@ static int __ref kernel_init(void *unused)
 		return 0;
 
 	panic("No working init found.  Try passing init= option to kernel. "
-	      "See Linux Documentation/admin-guide/init.rst for guidance.");
+	      "See Linex Documentation/admin-guide/init.rst for guidance.");
 }
 
 /* Open /dev/console, for stdin/stdout/stderr, this should never fail */

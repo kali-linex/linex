@@ -4,18 +4,18 @@
  * Copyright (C) 2004-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/delay.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/buffer_head.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/writeback.h>
+#include <linex/swap.h>
+#include <linex/delay.h>
+#include <linex/bio.h>
+#include <linex/gfs2_ondisk.h>
 
 #include "gfs2.h"
 #include "incore.h"

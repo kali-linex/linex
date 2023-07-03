@@ -10,15 +10,15 @@
  */
 
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 #include "ehci.h"
 

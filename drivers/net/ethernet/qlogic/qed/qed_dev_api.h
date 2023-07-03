@@ -7,11 +7,11 @@
 #ifndef _QED_DEV_API_H
 #define _QED_DEV_API_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_if.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/qed/qed_chain.h>
+#include <linex/qed/qed_if.h>
 #include "qed_int.h"
 
 /**

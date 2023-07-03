@@ -9,18 +9,18 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/sysfs.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <linex/mfd/pcf50633/core.h>
+#include <linex/mfd/pcf50633/mbc.h>
 
 struct pcf50633_mbc {
 	struct pcf50633 *pcf;

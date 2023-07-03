@@ -6,8 +6,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 #define fscache_volume_hash_shift 10

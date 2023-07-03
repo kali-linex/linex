@@ -2,9 +2,9 @@
 #ifndef _ASM_FB_H_
 #define _ASM_FB_H_
 
-#include <linux/compiler.h>
-#include <linux/efi.h>
-#include <linux/string.h>
+#include <linex/compiler.h>
+#include <linex/efi.h>
+#include <linex/string.h>
 
 #include <asm/page.h>
 

@@ -7,15 +7,15 @@
  *               2009 Johannes Dickgreber <tanzy@gmx.de>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/rtc/ds1685.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/notifier.h>
+#include <linex/delay.h>
+#include <linex/rtc/ds1685.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
 
 #include <asm/reboot.h>
 #include <asm/sgi/heart.h>

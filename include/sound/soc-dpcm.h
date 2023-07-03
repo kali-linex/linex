@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc-dpcm.h -- ALSA SoC Dynamic PCM Support
+ * linex/sound/soc-dpcm.h -- ALSA SoC Dynamic PCM Support
  *
  * Author:		Liam Girdwood <lrg@ti.com>
  */
 
-#ifndef __LINUX_SND_SOC_DPCM_H
-#define __LINUX_SND_SOC_DPCM_H
+#ifndef __LINEX_SND_SOC_DPCM_H
+#define __LINEX_SND_SOC_DPCM_H
 
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linex/slab.h>
+#include <linex/list.h>
 #include <sound/pcm.h>
 
 struct snd_soc_pcm_runtime;

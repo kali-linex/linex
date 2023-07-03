@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for Linex.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/compiler.h>
+#include <linex/slab.h>
 #include <asm/page.h>
-#include <linux/cache.h>
+#include <linex/cache.h>
 
 #include "t4_values.h"
 #include "csio_hw.h"

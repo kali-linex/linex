@@ -3,7 +3,7 @@
  *  Derived from arch/i386/kernel/irq.c
  *    Copyright (C) 1992 Linus Torvalds
  *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
  *    Copyright (C) 1996-2001 Cort Dougan
  *  Adapted for Power Macintosh by Paul Mackerras
@@ -26,35 +26,35 @@
 
 #undef DEBUG
 
-#include <linux/export.h>
-#include <linux/threads.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
-#include <linux/static_call.h>
+#include <linex/export.h>
+#include <linex/threads.h>
+#include <linex/kernel_stat.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/ptrace.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/timex.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/seq_file.h>
+#include <linex/cpumask.h>
+#include <linex/profile.h>
+#include <linex/bitops.h>
+#include <linex/list.h>
+#include <linex/radix-tree.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/debugfs.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/vmalloc.h>
+#include <linex/pgtable.h>
+#include <linex/static_call.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/irq.h>

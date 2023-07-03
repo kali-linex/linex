@@ -1,12 +1,12 @@
-#include <linux/gfp.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/swapfile.h>
-#include <linux/swapops.h>
-#include <linux/kmemleak.h>
-#include <linux/sched/task.h>
+#include <linex/gfp.h>
+#include <linex/initrd.h>
+#include <linex/ioport.h>
+#include <linex/swap.h>
+#include <linex/memblock.h>
+#include <linex/swapfile.h>
+#include <linex/swapops.h>
+#include <linex/kmemleak.h>
+#include <linex/sched/task.h>
 
 #include <asm/set_memory.h>
 #include <asm/cpu_device_id.h>

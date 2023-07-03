@@ -1,7 +1,7 @@
 /*
  * intelfb
  *
- * Linux framebuffer driver for Intel(R) 830M/845G/852GM/855GM/865G/915G/915GM/
+ * Linex framebuffer driver for Intel(R) 830M/845G/852GM/855GM/865G/915G/915GM/
  * 945G/945GM/945GME/965G/965GM integrated graphics chips.
  *
  * Copyright © 2002, 2003 David Dawes <dawes@xfree86.org>
@@ -86,7 +86,7 @@
  *		Fix mis-placed #endif (2.4.21 kernel).
  *
  *    09/2004 - Version 0.9.0 - by Sylvain Meyer
- *              Port to linux 2.6 kernel fbdev
+ *              Port to linex 2.6 kernel fbdev
  *              Fix HW accel and HW cursor on i845G
  *              Use of agpgart for fb memory reservation
  *              Add mtrr support
@@ -107,21 +107,21 @@
  *              Add support for 945GME. (Phil Endecott <spam_from_intelfb@chezphil.org>)
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/screen_info.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/screen_info.h>
 
 #include <asm/io.h>
 

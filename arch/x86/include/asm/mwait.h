@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_MWAIT_H
 #define _ASM_X86_MWAIT_H
 
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
+#include <linex/sched.h>
+#include <linex/sched/idle.h>
 
 #include <asm/cpufeature.h>
 #include <asm/nospec-branch.h>

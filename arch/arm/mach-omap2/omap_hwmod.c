@@ -34,7 +34,7 @@
  * This description can be automatically generated from the TI
  * hardware database.  OMAP hwmod provides a standard, consistent API
  * to reset, enable, idle, and disable these hardware blocks.  And
- * hwmod provides a way for other core code, such as the Linux device
+ * hwmod provides a way for other core code, such as the Linex device
  * code or the OMAP power management and address space mapping code,
  * to query the hardware database.
  *
@@ -45,7 +45,7 @@
  * in arch/arm/ *omap*.  The omap_device code includes functions to
  * build a struct platform_device using omap_hwmod data, and that is
  * currently how hwmod data is communicated to drivers and to the
- * Linux driver model.  Most drivers will call omap_hwmod functions only
+ * Linex driver model.  Most drivers will call omap_hwmod functions only
  * indirectly, via pm_runtime*() functions.
  *
  * From a layering perspective, here is where the OMAP hwmod code
@@ -55,7 +55,7 @@
  *            |      Device driver code       |
  *            |      (e.g., drivers/)         |
  *            +-------------------------------+
- *            |      Linux driver model       |
+ *            |      Linex driver model       |
  *            |     (platform_device /        |
  *            |  platform_driver data/code)   |
  *            +-------------------------------+
@@ -124,23 +124,23 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/memblock.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/memblock.h>
 
-#include <linux/platform_data/ti-sysc.h>
+#include <linex/platform_data/ti-sysc.h>
 
 #include <dt-bindings/bus/ti-sysc.h>
 

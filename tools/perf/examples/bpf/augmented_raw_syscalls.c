@@ -14,9 +14,9 @@
  * code that will combine entry/exit in a strace like way.
  */
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/limits.h>
+#include <linex/limits.h>
 
 // FIXME: These should come from system headers
 typedef char bool;

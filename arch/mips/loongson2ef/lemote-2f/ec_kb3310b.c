@@ -6,10 +6,10 @@
  *  Author: liujl <liujl@lemote.com>, 2008-04-20
  */
 
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
 
 #include "ec_kb3310b.h"
 

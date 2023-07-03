@@ -6,18 +6,18 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_data/x86/apple.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "ctl.h"
 #include "nhi_regs.h"

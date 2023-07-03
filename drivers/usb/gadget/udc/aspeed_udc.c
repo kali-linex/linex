@@ -3,18 +3,18 @@
  * Copyright (c) 2021 Aspeed Technology Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/prefetch.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/slab.h>
 
 #define AST_UDC_NUM_ENDPOINTS		(1 + 4)
 #define AST_UDC_EP0_MAX_PACKET		64	/* EP0's max packet size */

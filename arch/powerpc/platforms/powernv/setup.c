@@ -7,25 +7,25 @@
 
 #undef DEBUG
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_buf.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/interrupt.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/cpufreq.h>
-#include <linux/memblock.h>
+#include <linex/cpu.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/seq_buf.h>
+#include <linex/seq_file.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/interrupt.h>
+#include <linex/bug.h>
+#include <linex/pci.h>
+#include <linex/cpufreq.h>
+#include <linex/memblock.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

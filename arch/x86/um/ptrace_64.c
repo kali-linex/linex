@@ -1,16 +1,16 @@
 /*
  * Copyright 2003 PathScale, Inc.
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  *
  * Licensed under the GPL
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
 #define __FRAME_OFFSETS
 #include <asm/ptrace.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <registers.h>
 #include <asm/ptrace-abi.h>
 

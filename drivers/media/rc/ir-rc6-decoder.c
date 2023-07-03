@@ -5,7 +5,7 @@
  */
 
 #include "rc-core-priv.h"
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * This decoder currently supports:

@@ -13,23 +13,23 @@
  */
 
 /* Headers: */
-#include <linux/sched/clock.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/posix-timers.h>
-#include <linux/sched/rt.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/cputime.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/posix-timers.h>
+#include <linex/sched/rt.h>
 
-#include <linux/cpuidle.h>
-#include <linux/jiffies.h>
-#include <linux/livepatch.h>
-#include <linux/psi.h>
-#include <linux/seqlock_api.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/tsacct_kern.h>
-#include <linux/vtime.h>
+#include <linex/cpuidle.h>
+#include <linex/jiffies.h>
+#include <linex/livepatch.h>
+#include <linex/psi.h>
+#include <linex/seqlock_api.h>
+#include <linex/slab.h>
+#include <linex/suspend.h>
+#include <linex/tsacct_kern.h>
+#include <linex/vtime.h>
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/linex/sched/types.h>
 
 #include "sched.h"
 #include "smp.h"

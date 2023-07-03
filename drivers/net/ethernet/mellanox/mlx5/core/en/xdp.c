@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 #include <net/xdp_sock_drv.h>
 #include "en/xdp.h"
 #include "en/params.h"
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 
 int mlx5e_xdp_max_mtu(struct mlx5e_params *params, struct mlx5e_xsk_param *xsk)
 {

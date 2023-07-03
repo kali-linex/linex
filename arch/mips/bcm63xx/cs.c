@@ -6,11 +6,11 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/log2.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
+#include <linex/log2.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_regs.h>

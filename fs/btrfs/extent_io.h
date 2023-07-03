@@ -3,10 +3,10 @@
 #ifndef BTRFS_EXTENT_IO_H
 #define BTRFS_EXTENT_IO_H
 
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/fiemap.h>
-#include <linux/btrfs_tree.h>
+#include <linex/rbtree.h>
+#include <linex/refcount.h>
+#include <linex/fiemap.h>
+#include <linex/btrfs_tree.h>
 #include "compression.h"
 #include "ulist.h"
 #include "misc.h"

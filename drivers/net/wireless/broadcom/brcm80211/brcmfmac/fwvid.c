@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2022 Broadcom Corporation
  */
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/printk.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/list.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
+#include <linex/printk.h>
+#include <linex/jiffies.h>
+#include <linex/workqueue.h>
 
 #include "core.h"
 #include "bus.h"

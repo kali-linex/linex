@@ -34,9 +34,9 @@
  * SOFTWARE.
  */
 
-#include <linux/gfp.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
+#include <linex/gfp.h>
+#include <linex/hardirq.h>
+#include <linex/sched.h>
 
 #include <asm/io.h>
 

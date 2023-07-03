@@ -5,14 +5,14 @@
  * Copyright (c) 2022 StarFive Technology
  */
 
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
+#include <linex/crypto.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-direct.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
 #include <crypto/akcipher.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/akcipher.h>

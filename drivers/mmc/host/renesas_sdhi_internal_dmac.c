@@ -7,18 +7,18 @@
  * Copyright (C) 2018-19 Sang Engineering, Wolfram Sang
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/sys_soc.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/mfd/tmio.h>
+#include <linex/mmc/host.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pagemap.h>
+#include <linex/scatterlist.h>
+#include <linex/sys_soc.h>
 
 #include "renesas_sdhi.h"
 #include "tmio_mmc.h"

@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/watchdog.h>
 
 #define DRV_NAME	"exar_wdt"
 

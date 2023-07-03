@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_link.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <linex/if.h>
+#include <linex/if_ether.h>
+#include <linex/if_link.h>
+#include <linex/netdevice.h>
+#include <linex/in.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
 #include <net/flow_dissector.h>
 #include "enic_res.h"
 #include "enic_clsf.h"

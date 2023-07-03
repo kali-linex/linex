@@ -12,14 +12,14 @@
  * shader dispatch).
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_managed.h>

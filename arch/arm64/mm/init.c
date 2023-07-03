@@ -6,31 +6,31 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/cache.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/efi.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/hugetlb.h>
-#include <linux/acpi_iort.h>
-#include <linux/kmemleak.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/errno.h>
+#include <linex/swap.h>
+#include <linex/init.h>
+#include <linex/cache.h>
+#include <linex/mman.h>
+#include <linex/nodemask.h>
+#include <linex/initrd.h>
+#include <linex/gfp.h>
+#include <linex/memblock.h>
+#include <linex/sort.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/efi.h>
+#include <linex/swiotlb.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/kexec.h>
+#include <linex/crash_dump.h>
+#include <linex/hugetlb.h>
+#include <linex/acpi_iort.h>
+#include <linex/kmemleak.h>
 
 #include <asm/boot.h>
 #include <asm/fixmap.h>
@@ -41,7 +41,7 @@
 #include <asm/numa.h>
 #include <asm/sections.h>
 #include <asm/setup.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 #include <asm/tlb.h>
 #include <asm/alternative.h>
 #include <asm/xen/swiotlb-xen.h>

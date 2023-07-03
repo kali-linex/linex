@@ -7,7 +7,7 @@
  *   Copyright (C) 2012 Analog Devices Inc.
  */
 
-#include <linux/console.h>
+#include <linex/console.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_framebuffer.h>

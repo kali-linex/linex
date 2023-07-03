@@ -4,11 +4,11 @@
 #ifndef __IPU3_CIO2_H
 #define __IPU3_CIO2_H
 
-#include <linux/bits.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/types.h>
 
 #include <asm/page.h>
 

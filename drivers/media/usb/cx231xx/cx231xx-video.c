@@ -11,15 +11,15 @@
  */
 
 #include "cx231xx.h"
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/i2c.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/bitmap.h>
+#include <linex/i2c.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

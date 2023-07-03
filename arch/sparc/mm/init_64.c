@@ -6,28 +6,28 @@
  *  Copyright (C) 1997-1999 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
  
-#include <linux/extable.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/initrd.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/poison.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/kprobes.h>
-#include <linux/cache.h>
-#include <linux/sort.h>
-#include <linux/ioport.h>
-#include <linux/percpu.h>
-#include <linux/mmzone.h>
-#include <linux/gfp.h>
-#include <linux/bootmem_info.h>
+#include <linex/extable.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/initrd.h>
+#include <linex/swap.h>
+#include <linex/pagemap.h>
+#include <linex/poison.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/kprobes.h>
+#include <linex/cache.h>
+#include <linex/sort.h>
+#include <linex/ioport.h>
+#include <linex/percpu.h>
+#include <linex/mmzone.h>
+#include <linex/gfp.h>
+#include <linex/bootmem_info.h>
 
 #include <asm/head.h>
 #include <asm/page.h>
@@ -35,7 +35,7 @@
 #include <asm/oplib.h>
 #include <asm/iommu.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 #include <asm/dma.h>
@@ -90,14 +90,14 @@ static unsigned long cpu_pgsz_mask;
 
 #define MAX_BANKS	1024
 
-static struct linux_prom64_registers pavail[MAX_BANKS];
+static struct linex_prom64_registers pavail[MAX_BANKS];
 static int pavail_ents;
 
 u64 numa_latency[MAX_NUMNODES][MAX_NUMNODES];
 
 static int cmp_p64(const void *a, const void *b)
 {
-	const struct linux_prom64_registers *x = a, *y = b;
+	const struct linex_prom64_registers *x = a, *y = b;
 
 	if (x->phys_addr > y->phys_addr)
 		return 1;
@@ -107,14 +107,14 @@ static int cmp_p64(const void *a, const void *b)
 }
 
 static void __init read_obp_memory(const char *property,
-				   struct linux_prom64_registers *regs,
+				   struct linex_prom64_registers *regs,
 				   int *num_ents)
 {
 	phandle node = prom_finddevice("/memory");
 	int prop_size = prom_getproplen(node, property);
 	int ents, ret, i;
 
-	ents = prop_size / sizeof(struct linux_prom64_registers);
+	ents = prop_size / sizeof(struct linex_prom64_registers);
 	if (ents > MAX_BANKS) {
 		prom_printf("The machine has more %s property entries than "
 			    "this kernel can support (%d).\n",
@@ -164,7 +164,7 @@ static void __init read_obp_memory(const char *property,
 
 	*num_ents = ents;
 
-	sort(regs, ents, sizeof(struct linux_prom64_registers),
+	sort(regs, ents, sizeof(struct linex_prom64_registers),
 	     cmp_p64, NULL);
 }
 
@@ -554,7 +554,7 @@ void mmu_info(struct seq_file *m)
 #endif /* CONFIG_DEBUG_DCFLUSH */
 }
 
-struct linux_prom_translation prom_trans[512] __read_mostly;
+struct linex_prom_translation prom_trans[512] __read_mostly;
 unsigned int prom_trans_ents __read_mostly;
 
 unsigned long kern_locked_tte_data;
@@ -571,7 +571,7 @@ static inline int in_obp_range(unsigned long vaddr)
 
 static int cmp_ptrans(const void *a, const void *b)
 {
-	const struct linux_prom_translation *x = a, *y = b;
+	const struct linex_prom_translation *x = a, *y = b;
 
 	if (x->virt > y->virt)
 		return 1;
@@ -603,11 +603,11 @@ static void __init read_obp_translations(void)
 		prom_halt();
 	}
 
-	n = n / sizeof(struct linux_prom_translation);
+	n = n / sizeof(struct linex_prom_translation);
 
 	ents = n;
 
-	sort(prom_trans, ents, sizeof(struct linux_prom_translation),
+	sort(prom_trans, ents, sizeof(struct linex_prom_translation),
 	     cmp_ptrans, NULL);
 
 	/* Now kick out all the non-OBP entries.  */
@@ -623,13 +623,13 @@ static void __init read_obp_translations(void)
 	last = i;
 
 	for (i = 0; i < (last - first); i++) {
-		struct linux_prom_translation *src = &prom_trans[i + first];
-		struct linux_prom_translation *dest = &prom_trans[i];
+		struct linex_prom_translation *src = &prom_trans[i + first];
+		struct linex_prom_translation *dest = &prom_trans[i];
 
 		*dest = *src;
 	}
 	for (; i < ents; i++) {
-		struct linux_prom_translation *dest = &prom_trans[i];
+		struct linex_prom_translation *dest = &prom_trans[i];
 		dest->virt = dest->size = dest->data = 0x0UL;
 	}
 
@@ -1156,7 +1156,7 @@ static int scan_arcs_for_cfg_handle(struct mdesc_handle *md, u64 grp,
 
 int of_node_to_nid(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct linex_prom64_registers *regs;
 	struct mdesc_handle *md;
 	u32 cfg_handle;
 	int count, nid;
@@ -1613,7 +1613,7 @@ static unsigned long __init bootmem_init(unsigned long phys_base)
 	return end_pfn;
 }
 
-static struct linux_prom64_registers pall[MAX_BANKS] __initdata;
+static struct linex_prom64_registers pall[MAX_BANKS] __initdata;
 static int pall_ents __initdata;
 
 static unsigned long max_phys_bits = 40;
@@ -2263,7 +2263,7 @@ static void sun4v_pgprot_init(void);
 #define __ACCESS_BITS_4V (_PAGE_ACCESSED_4V | _PAGE_READ_4V | _PAGE_R)
 
 /* We need to exclude reserved regions. This exclusion will include
- * vmlinux and initrd. To be more precise the initrd size could be used to
+ * vmlinex and initrd. To be more precise the initrd size could be used to
  * compute a new lower limit because it is freed later during initialization.
  */
 static void __init reduce_memory(phys_addr_t limit_ram)
@@ -2457,7 +2457,7 @@ void __init paging_init(void)
 		free_area_init(max_zone_pfns);
 	}
 
-	printk("Booting Linux...\n");
+	printk("Booting Linex...\n");
 }
 
 int page_in_phys_avail(unsigned long paddr)
@@ -2540,7 +2540,7 @@ void free_initmem(void)
 		do_free = 0;
 
 	/*
-	 * The init section is aligned to 8k in vmlinux.lds. Page align for >8k pagesizes.
+	 * The init section is aligned to 8k in vmlinex.lds. Page align for >8k pagesizes.
 	 */
 	addr = PAGE_ALIGN((unsigned long)(__init_begin));
 	initend = (unsigned long)(__init_end) & PAGE_MASK;

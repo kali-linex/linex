@@ -19,20 +19,20 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/nvram.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
 
 #include "macmodes.h"
 #include "platinumfb.h"

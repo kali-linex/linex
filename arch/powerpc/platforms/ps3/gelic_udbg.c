@@ -8,11 +8,11 @@
  * Copyright (C) 2011 Andre Heider <a.heider@gmail.com>
  */
 
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <linex/if_ether.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
 
 #include <asm/io.h>
 #include <asm/udbg.h>

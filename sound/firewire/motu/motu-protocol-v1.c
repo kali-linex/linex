@@ -5,7 +5,7 @@
 
 #include "motu.h"
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 // Status register for MOTU 828 (0x'ffff'f000'0b00).
 //

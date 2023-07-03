@@ -121,6 +121,6 @@ the channel in the scan_elements directory.
 
 More details
 ============
-.. kernel-doc:: include/linux/iio/buffer.h
+.. kernel-doc:: include/linex/iio/buffer.h
 .. kernel-doc:: drivers/iio/industrialio-buffer.c
    :export:

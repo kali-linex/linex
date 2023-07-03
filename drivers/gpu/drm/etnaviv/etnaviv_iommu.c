@@ -3,11 +3,11 @@
  * Copyright (C) 2014-2018 Etnaviv Project
  */
 
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
 
 #include "etnaviv_gpu.h"
 #include "etnaviv_mmu.h"

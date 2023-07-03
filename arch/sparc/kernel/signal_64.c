@@ -9,21 +9,21 @@
  *  Copyright (C) 1997,1998 Jakub Jelinek   (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/resume_user_mode.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/bitops.h>
-#include <linux/context_tracking.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/resume_user_mode.h>
+#include <linex/unistd.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/binfmts.h>
+#include <linex/bitops.h>
+#include <linex/context_tracking.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/fpumacro.h>
 #include <asm/uctx.h>
@@ -37,7 +37,7 @@
 #include "kernel.h"
 #include "entry.h"
 
-/* {set, get}context() needed for 64-bit SparcLinux userland. */
+/* {set, get}context() needed for 64-bit SparcLinex userland. */
 asmlinkage void sparc64_set_context(struct pt_regs *regs)
 {
 	struct ucontext __user *ucp = (struct ucontext __user *)

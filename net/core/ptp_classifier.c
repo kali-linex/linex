@@ -95,9 +95,9 @@
  *   drop_ieee1588: ret #0x0       ; PTP_CLASS_NONE
  */
 
-#include <linux/skbuff.h>
-#include <linux/filter.h>
-#include <linux/ptp_classify.h>
+#include <linex/skbuff.h>
+#include <linex/filter.h>
+#include <linex/ptp_classify.h>
 
 static struct bpf_prog *ptp_insns __read_mostly;
 

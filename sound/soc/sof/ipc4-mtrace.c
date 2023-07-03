@@ -2,8 +2,8 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 
-#include <linux/debugfs.h>
-#include <linux/sched/signal.h>
+#include <linex/debugfs.h>
+#include <linex/sched/signal.h>
 #include <sound/sof/ipc4/header.h>
 #include "sof-priv.h"
 #include "ipc4-priv.h"

@@ -14,10 +14,10 @@
 #include <arpa/inet.h>
 #include <net/if.h>
 
-#include <linux/rtnetlink.h>
-#include <linux/genetlink.h>
+#include <linex/rtnetlink.h>
+#include <linex/genetlink.h>
 
-#include "linux/mptcp.h"
+#include "linex/mptcp.h"
 
 #ifndef MPTCP_PM_NAME
 #define MPTCP_PM_NAME		"mptcp_pm"

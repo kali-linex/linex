@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/processor.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/sched/clock.h>
+#include <linex/bug.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
+#include <linex/percpu.h>
+#include <linex/processor.h>
+#include <linex/smp.h>
+#include <linex/topology.h>
+#include <linex/sched/clock.h>
 #include <asm/qspinlock.h>
 #include <asm/paravirt.h>
 
@@ -744,7 +744,7 @@ void pv_spinlocks_init(void)
 }
 #endif
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 static int steal_spins_set(void *data, u64 val)
 {
 #if _Q_SPIN_TRY_LOCK_STEAL == 1

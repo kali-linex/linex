@@ -22,27 +22,27 @@
  *	et. al.
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/hrtimer.h>
-#include <linux/notifier.h>
-#include <linux/syscalls.h>
-#include <linux/interrupt.h>
-#include <linux/tick.h>
-#include <linux/err.h>
-#include <linux/debugobjects.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/debug.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
-#include <linux/compat.h>
+#include <linex/cpu.h>
+#include <linex/export.h>
+#include <linex/percpu.h>
+#include <linex/hrtimer.h>
+#include <linex/notifier.h>
+#include <linex/syscalls.h>
+#include <linex/interrupt.h>
+#include <linex/tick.h>
+#include <linex/err.h>
+#include <linex/debugobjects.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/sysctl.h>
+#include <linex/sched/rt.h>
+#include <linex/sched/deadline.h>
+#include <linex/sched/nohz.h>
+#include <linex/sched/debug.h>
+#include <linex/timer.h>
+#include <linex/freezer.h>
+#include <linex/compat.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <trace/events/timer.h>
 

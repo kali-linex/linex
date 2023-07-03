@@ -7,27 +7,27 @@
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_opp.h>
-#include <linux/devfreq.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
-#include <linux/of.h>
-#include <linux/pm_qos.h>
-#include <linux/units.h>
+#include <linex/kernel.h>
+#include <linex/kmod.h>
+#include <linex/sched.h>
+#include <linex/debugfs.h>
+#include <linex/devfreq_cooling.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/pm_opp.h>
+#include <linex/devfreq.h>
+#include <linex/workqueue.h>
+#include <linex/platform_device.h>
+#include <linex/list.h>
+#include <linex/printk.h>
+#include <linex/hrtimer.h>
+#include <linex/of.h>
+#include <linex/pm_qos.h>
+#include <linex/units.h>
 #include "governor.h"
 
 #define CREATE_TRACE_POINTS

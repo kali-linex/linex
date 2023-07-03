@@ -4,17 +4,17 @@
  *             Cherrytrail-based platforms, with Dialog DA7213 codec
  *
  *  Copyright (C) 2017 Intel Corporation
- *  Author: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+ *  Author: Pierre-Louis Bossart <pierre-louis.bossart@linex.intel.com>
  *
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

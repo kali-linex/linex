@@ -16,18 +16,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/bitrev.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/crc32.h>
+#include <linex/bitrev.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/gfp.h>
+#include <linex/interrupt.h>
 #include <asm/io.h>
 #include <asm/macints.h>
 #include <asm/mac_psc.h>

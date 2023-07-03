@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/if_link.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/random.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/err.h>
+#include <linex/if_link.h>
+#include <linex/netdevice.h>
+#include <linex/completion.h>
+#include <linex/skbuff.h>
+#include <linex/etherdevice.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/gfp.h>
+#include <linex/random.h>
+#include <linex/jiffies.h>
+#include <linex/mutex.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/firmware.h>
 #include <asm/byteorder.h>
 #include <net/devlink.h>
 #include <trace/events/devlink.h>

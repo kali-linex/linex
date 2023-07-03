@@ -10,23 +10,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/magic.h>
-#include <linux/binfmts.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/string_helpers.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched/mm.h>
+#include <linex/magic.h>
+#include <linex/binfmts.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/string_helpers.h>
+#include <linex/file.h>
+#include <linex/pagemap.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/fs_context.h>
+#include <linex/syscalls.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 
@@ -87,7 +87,7 @@ static int entry_count;
  * if we do, return the node, else NULL
  * locking is done in load_misc_binary
  */
-static Node *check_file(struct linux_binprm *bprm)
+static Node *check_file(struct linex_binprm *bprm)
 {
 	char *p = strrchr(bprm->interp, '.');
 	struct list_head *l;
@@ -129,7 +129,7 @@ static Node *check_file(struct linux_binprm *bprm)
 /*
  * the loader itself
  */
-static int load_misc_binary(struct linux_binprm *bprm)
+static int load_misc_binary(struct linex_binprm *bprm)
 {
 	Node *fmt;
 	struct file *interp_file = NULL;
@@ -804,7 +804,7 @@ static int bm_init_fs_context(struct fs_context *fc)
 	return 0;
 }
 
-static struct linux_binfmt misc_format = {
+static struct linex_binfmt misc_format = {
 	.module = THIS_MODULE,
 	.load_binary = load_misc_binary,
 };

@@ -3,12 +3,12 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <linex/acpi.h>
+#include <linex/cpu.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/of.h>
 #include <asm/acpi.h>
 #include <asm/cpufeature.h>
 #include <asm/csr.h>

@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
+#include <linex/ctype.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/edac.h>
 
 #include "edac_device.h"
 #include "edac_module.h"

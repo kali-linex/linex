@@ -9,10 +9,10 @@
 
 #define DRIVER_VERSION "0.15"
 
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <linex/interrupt.h>
+#include <linex/suspend.h>
+#include <linex/netdevice.h>
+#include <linex/wireless.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 

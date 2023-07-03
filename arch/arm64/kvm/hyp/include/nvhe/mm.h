@@ -4,8 +4,8 @@
 
 #include <asm/kvm_pgtable.h>
 #include <asm/spectre.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
+#include <linex/memblock.h>
+#include <linex/types.h>
 
 #include <nvhe/memory.h>
 #include <nvhe/spinlock.h>

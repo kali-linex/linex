@@ -4,11 +4,11 @@
  * Copyright (c) 2002-3 Open Source Development Labs
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memory.h>
-#include <linux/of.h>
-#include <linux/backing-dev.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/memory.h>
+#include <linex/of.h>
+#include <linex/backing-dev.h>
 
 #include "base.h"
 

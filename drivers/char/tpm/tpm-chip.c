@@ -4,7 +4,7 @@
  * Copyright (C) 2014 Intel Corporation
  *
  * Authors:
- * Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+ * Jarkko Sakkinen <jarkko.sakkinen@linex.intel.com>
  * Leendert van Doorn <leendert@watson.ibm.com>
  * Dave Safford <safford@watson.ibm.com>
  * Reiner Sailer <sailer@watson.ibm.com>
@@ -15,14 +15,14 @@
  * TPM chip management routines.
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/freezer.h>
-#include <linux/major.h>
-#include <linux/tpm_eventlog.h>
-#include <linux/hw_random.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/freezer.h>
+#include <linex/major.h>
+#include <linex/tpm_eventlog.h>
+#include <linex/hw_random.h>
 #include "tpm.h"
 
 DEFINE_IDR(dev_nums_idr);

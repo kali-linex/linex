@@ -6,16 +6,16 @@
  *
  * Author: Sebastian Andrzej Siewior <bigeasy at linutronix dot de>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/storage.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/configfs.h>
+#include <linex/ctype.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/storage.h>
 #include <scsi/scsi_tcq.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

@@ -5,21 +5,21 @@
  * Author: Vitor Soares <vitor.soares@synopsys.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/i3c/master.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/iopoll.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
 
 #include "dw-i3c-master.h"
 

@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/ia64/kernel/time.c
+ * linex/arch/ia64/kernel/time.c
  *
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
  *	David Mosberger <davidm@hpl.hp.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
- * Copyright (C) 1999-2000 VA Linux Systems
- * Copyright (C) 1999-2000 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999-2000 VA Linex Systems
+ * Copyright (C) 1999-2000 Walt Drummond <drummond@valinex.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/nmi.h>
-#include <linux/interrupt.h>
-#include <linux/efi.h>
-#include <linux/timex.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/platform_device.h>
-#include <linux/sched/cputime.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/profile.h>
+#include <linex/sched.h>
+#include <linex/time.h>
+#include <linex/nmi.h>
+#include <linex/interrupt.h>
+#include <linex/efi.h>
+#include <linex/timex.h>
+#include <linex/timekeeper_internal.h>
+#include <linex/platform_device.h>
+#include <linex/sched/cputime.h>
 
 #include <asm/cputime.h>
 #include <asm/delay.h>
@@ -62,7 +62,7 @@ static struct clocksource *itc_clocksource;
 
 #ifdef CONFIG_VIRT_CPU_ACCOUNTING_NATIVE
 
-#include <linux/kernel_stat.h>
+#include <linex/kernel_stat.h>
 
 extern u64 cycle_to_nsec(u64 cyc);
 

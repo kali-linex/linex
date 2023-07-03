@@ -20,9 +20,9 @@
  *
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/debugfs.h>
+#include <linex/percpu.h>
+#include <linex/hardirq.h>
+#include <linex/debugfs.h>
 
 #include <asm/xen/hypercall.h>
 

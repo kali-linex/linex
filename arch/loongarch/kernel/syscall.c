@@ -5,12 +5,12 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/capability.h>
-#include <linux/entry-common.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
+#include <linex/capability.h>
+#include <linex/entry-common.h>
+#include <linex/errno.h>
+#include <linex/linkage.h>
+#include <linex/syscalls.h>
+#include <linex/unistd.h>
 
 #include <asm/asm.h>
 #include <asm/signal.h>

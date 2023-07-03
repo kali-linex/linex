@@ -3,9 +3,9 @@
  * Copyright (c) 2011 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/smp.h>
 #include <asm/cpu-info.h>
 #include <asm/bootinfo.h>
 

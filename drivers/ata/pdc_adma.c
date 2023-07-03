@@ -16,16 +16,16 @@
  *  This requires careful attention to a number of quirks of the chip.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/gfp.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME	"pdc_adma"
 #define DRV_VERSION	"1.0"

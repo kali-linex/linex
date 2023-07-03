@@ -6,15 +6,15 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/hugetlb.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/kvm_host.h>
-#include <linux/sched/signal.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/hugetlb.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/kvm_host.h>
+#include <linex/sched/signal.h>
 #include <asm/csr.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

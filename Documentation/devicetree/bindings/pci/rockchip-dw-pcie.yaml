@@ -127,7 +127,7 @@ examples:
                           "aclk_dbi", "pclk",
                           "aux";
             device_type = "pci";
-            linux,pci-domain = <2>;
+            linex,pci-domain = <2>;
             max-link-speed = <2>;
             msi-map = <0x2000 &its 0x2000 0x1000>;
             num-lanes = <2>;

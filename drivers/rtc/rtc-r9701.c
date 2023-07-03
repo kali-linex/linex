@@ -10,16 +10,16 @@
  * Copyright (C) 2004 Compulab Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/spi/spi.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
 
 #define RSECCNT	0x00	/* Second Counter */
 #define RMINCNT	0x01	/* Minute Counter */

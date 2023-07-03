@@ -6,20 +6,20 @@
  *
  * Authors:
  *   Ananda Ravuri <ananda.ravuri@intel.com>
- *   Matthew Gerlach <matthew.gerlach@linux.intel.com>
+ *   Matthew Gerlach <matthew.gerlach@linex.intel.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/dfl.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/types.h>
 
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
 
 #define DFHv1_PARAM_ID_CLK_FRQ    0x2
 #define DFHv1_PARAM_ID_FIFO_LEN   0x3

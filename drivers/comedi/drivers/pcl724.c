@@ -24,9 +24,9 @@
  *	   1,  96:  96 DIO configuration
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8255.h>
 
 struct pcl724_board {
 	const char *name;

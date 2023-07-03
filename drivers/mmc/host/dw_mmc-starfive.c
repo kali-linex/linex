@@ -5,14 +5,14 @@
  * Copyright (c) 2022 StarFive Technology Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mmc/host.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

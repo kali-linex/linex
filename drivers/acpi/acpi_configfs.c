@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "ACPI configfs: " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
-#include <linux/acpi.h>
-#include <linux/security.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/configfs.h>
+#include <linex/acpi.h>
+#include <linex/security.h>
 
 static struct config_group *acpi_table_group;
 

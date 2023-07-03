@@ -6,13 +6,13 @@
  */
 
 /* File aq_ptp.c:
- * Definition of functions for Linux PTP support.
+ * Definition of functions for Linex PTP support.
  */
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/ptp_classify.h>
+#include <linex/interrupt.h>
+#include <linex/clocksource.h>
 
 #include "aq_nic.h"
 #include "aq_ptp.h"

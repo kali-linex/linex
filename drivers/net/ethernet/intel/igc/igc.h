@@ -4,16 +4,16 @@
 #ifndef _IGC_H_
 #define _IGC_H_
 
-#include <linux/kobject.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/ethtool.h>
-#include <linux/sctp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/bitfield.h>
+#include <linex/kobject.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/ethtool.h>
+#include <linex/sctp.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/timecounter.h>
+#include <linex/net_tstamp.h>
+#include <linex/bitfield.h>
 
 #include "igc_hw.h"
 

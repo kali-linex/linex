@@ -6,10 +6,10 @@
  * Authors: Aaron Lu <aaron.lu@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/thermal.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/thermal.h>
 #include "int340x_thermal_zone.h"
 
 #define INT3402_PERF_CHANGED_EVENT	0x80

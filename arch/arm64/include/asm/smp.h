@@ -5,7 +5,7 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/const.h>
+#include <linex/const.h>
 
 /* Values for secondary_data.status */
 #define CPU_STUCK_REASON_SHIFT		(8)
@@ -27,9 +27,9 @@
 
 #include <asm/percpu.h>
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/thread_info.h>
+#include <linex/threads.h>
+#include <linex/cpumask.h>
+#include <linex/thread_info.h>
 
 DECLARE_PER_CPU_READ_MOSTLY(int, cpu_number);
 

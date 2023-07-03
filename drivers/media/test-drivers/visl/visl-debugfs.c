@@ -8,9 +8,9 @@
  * STREAMOFF unless the module parameter "keep_bitstream_buffers" is set.
  */
 
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linex/debugfs.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
 #include <media/v4l2-mem2mem.h>
 
 #include "visl-debugfs.h"

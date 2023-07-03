@@ -10,9 +10,9 @@
  *  for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/zorro.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/zorro.h>
 
 #include "zorro.h"
 

@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/gcd.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/gcd.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
 
 /* 0x000 - 0x00d System Functions */
 #define LMK04832_REG_RST3W		0x000

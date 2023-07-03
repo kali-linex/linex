@@ -6,9 +6,9 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  * Copyright (C) 2016 Christoph Hellwig.
  */
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/irq.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/irq.h>
 
 #include "../pci.h"
 #include "msi.h"

@@ -20,32 +20,32 @@
 
 #define pr_fmt(fmt) "software IO TLB: " fmt
 
-#include <linux/cache.h>
-#include <linux/cc_platform.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/iommu-helper.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/pfn.h>
-#include <linux/scatterlist.h>
-#include <linux/set_memory.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/swiotlb.h>
-#include <linux/types.h>
+#include <linex/cache.h>
+#include <linex/cc_platform.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/export.h>
+#include <linex/gfp.h>
+#include <linex/highmem.h>
+#include <linex/io.h>
+#include <linex/iommu-helper.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/pfn.h>
+#include <linex/scatterlist.h>
+#include <linex/set_memory.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/swiotlb.h>
+#include <linex/types.h>
 #ifdef CONFIG_DMA_RESTRICTED_POOL
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/slab.h>
 #endif
 
 #define CREATE_TRACE_POINTS
@@ -1104,8 +1104,8 @@ static int __init rmem_swiotlb_setup(struct reserved_mem *rmem)
 	unsigned long node = rmem->fdt_node;
 
 	if (of_get_flat_dt_prop(node, "reusable", NULL) ||
-	    of_get_flat_dt_prop(node, "linux,cma-default", NULL) ||
-	    of_get_flat_dt_prop(node, "linux,dma-default", NULL) ||
+	    of_get_flat_dt_prop(node, "linex,cma-default", NULL) ||
+	    of_get_flat_dt_prop(node, "linex,dma-default", NULL) ||
 	    of_get_flat_dt_prop(node, "no-map", NULL))
 		return -EINVAL;
 

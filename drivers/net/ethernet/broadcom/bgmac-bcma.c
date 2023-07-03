@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/bcma/bcma.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <linex/bcma/bcma.h>
+#include <linex/brcmphy.h>
+#include <linex/etherdevice.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
 #include "bgmac.h"
 
 static inline bool bgmac_is_bcm4707_family(struct bcma_device *core)

@@ -20,16 +20,16 @@ vgettime_t vdso_clock_gettime;
 
 static void fill_function_pointers(void)
 {
-	void *vdso = dlopen("linux-vdso.so.1",
+	void *vdso = dlopen("linex-vdso.so.1",
 			    RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso)
-		vdso = dlopen("linux-gate.so.1",
+		vdso = dlopen("linex-gate.so.1",
 			      RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso)
-		vdso = dlopen("linux-vdso32.so.1",
+		vdso = dlopen("linex-vdso32.so.1",
 			      RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso)
-		vdso = dlopen("linux-vdso64.so.1",
+		vdso = dlopen("linex-vdso64.so.1",
 			      RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso) {
 		pr_err("[WARN]\tfailed to find vDSO\n");

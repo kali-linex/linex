@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/kasan-checks.h>
+#include <linex/kasan-checks.h>
 
 #include <asm/alternative-macros.h>
 

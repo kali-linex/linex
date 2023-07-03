@@ -9,10 +9,10 @@
 #ifndef __DRIVERS_CLK_INGENIC_CGU_H__
 #define __DRIVERS_CLK_INGENIC_CGU_H__
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/clk-provider.h>
+#include <linex/of.h>
+#include <linex/spinlock.h>
 
 /**
  * struct ingenic_cgu_pll_info - information about a PLL

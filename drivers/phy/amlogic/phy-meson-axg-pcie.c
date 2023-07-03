@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2020 Remi Pommarel <repk@triplefau.lt>
  */
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/bitfield.h>
+#include <linex/module.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/platform_device.h>
+#include <linex/bitfield.h>
 #include <dt-bindings/phy/phy.h>
 
 #define MESON_PCIE_REG0 0x00

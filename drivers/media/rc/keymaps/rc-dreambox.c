@@ -4,7 +4,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * Keytable for Dreambox RC10/RC0 and RC20/RC-BT remote controls

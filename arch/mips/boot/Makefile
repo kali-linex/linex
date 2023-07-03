@@ -29,46 +29,46 @@ suffix-$(CONFIG_KERNEL_GZIP)	:= gz
 suffix-$(CONFIG_KERNEL_LZMA)	:= lzma
 suffix-$(CONFIG_KERNEL_LZO)	:= lzo
 
-targets := vmlinux.ecoff
+targets := vmlinex.ecoff
 quiet_cmd_ecoff = ECOFF	  $@
-      cmd_ecoff = $(obj)/elf2ecoff $(VMLINUX) $@ $(e2eflag)
-$(obj)/vmlinux.ecoff: $(obj)/elf2ecoff $(VMLINUX) FORCE
+      cmd_ecoff = $(obj)/elf2ecoff $(VMLINEX) $@ $(e2eflag)
+$(obj)/vmlinex.ecoff: $(obj)/elf2ecoff $(VMLINEX) FORCE
 	$(call if_changed,ecoff)
 
-targets += vmlinux.bin
+targets += vmlinex.bin
 quiet_cmd_bin = OBJCOPY $@
-      cmd_bin = $(OBJCOPY) -O binary $(strip-flags) $(VMLINUX) $@
-$(obj)/vmlinux.bin: $(VMLINUX) FORCE
+      cmd_bin = $(OBJCOPY) -O binary $(strip-flags) $(VMLINEX) $@
+$(obj)/vmlinex.bin: $(VMLINEX) FORCE
 	$(call if_changed,bin)
 
-targets += vmlinux.srec
+targets += vmlinex.srec
 quiet_cmd_srec = OBJCOPY $@
-      cmd_srec = $(OBJCOPY) -S -O srec $(strip-flags) $(VMLINUX) $@
-$(obj)/vmlinux.srec: $(VMLINUX) FORCE
+      cmd_srec = $(OBJCOPY) -S -O srec $(strip-flags) $(VMLINEX) $@
+$(obj)/vmlinex.srec: $(VMLINEX) FORCE
 	$(call if_changed,srec)
 
-UIMAGE_LOADADDR  = $(VMLINUX_LOAD_ADDRESS)
-UIMAGE_ENTRYADDR = $(VMLINUX_ENTRY_ADDRESS)
+UIMAGE_LOADADDR  = $(VMLINEX_LOAD_ADDRESS)
+UIMAGE_ENTRYADDR = $(VMLINEX_ENTRY_ADDRESS)
 
 #
-# Compressed vmlinux images
+# Compressed vmlinex images
 #
 
-extra-y += vmlinux.bin.bz2
-extra-y += vmlinux.bin.gz
-extra-y += vmlinux.bin.lzma
-extra-y += vmlinux.bin.lzo
+extra-y += vmlinex.bin.bz2
+extra-y += vmlinex.bin.gz
+extra-y += vmlinex.bin.lzma
+extra-y += vmlinex.bin.lzo
 
-$(obj)/vmlinux.bin.bz2: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.bz2: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,bzip2)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.gz: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin.lzma: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.lzma: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,lzma)
 
-$(obj)/vmlinux.bin.lzo: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.lzo: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,lzo)
 
 #
@@ -82,19 +82,19 @@ targets += uImage.gz
 targets += uImage.lzma
 targets += uImage.lzo
 
-$(obj)/uImage.bin: $(obj)/vmlinux.bin FORCE
+$(obj)/uImage.bin: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,uimage,none)
 
-$(obj)/uImage.bz2: $(obj)/vmlinux.bin.bz2 FORCE
+$(obj)/uImage.bz2: $(obj)/vmlinex.bin.bz2 FORCE
 	$(call if_changed,uimage,bzip2)
 
-$(obj)/uImage.gz: $(obj)/vmlinux.bin.gz FORCE
+$(obj)/uImage.gz: $(obj)/vmlinex.bin.gz FORCE
 	$(call if_changed,uimage,gzip)
 
-$(obj)/uImage.lzma: $(obj)/vmlinux.bin.lzma FORCE
+$(obj)/uImage.lzma: $(obj)/vmlinex.bin.lzma FORCE
 	$(call if_changed,uimage,lzma)
 
-$(obj)/uImage.lzo: $(obj)/vmlinux.bin.lzo FORCE
+$(obj)/uImage.lzo: $(obj)/vmlinex.bin.lzo FORCE
 	$(call if_changed,uimage,lzo)
 
 $(obj)/uImage: $(obj)/uImage.$(suffix-y)
@@ -112,50 +112,50 @@ ifeq ($(ADDR_BITS),64)
 itb_addr_cells = 2
 endif
 
-targets += vmlinux.its.S
+targets += vmlinex.its.S
 
 quiet_cmd_its_cat = CAT     $@
       cmd_its_cat = cat $(real-prereqs) >$@
 
-$(obj)/vmlinux.its.S: $(addprefix $(srctree)/arch/mips/$(PLATFORM)/,$(ITS_INPUTS)) FORCE
+$(obj)/vmlinex.its.S: $(addprefix $(srctree)/arch/mips/$(PLATFORM)/,$(ITS_INPUTS)) FORCE
 	$(call if_changed,its_cat)
 
-targets += vmlinux.its
-targets += vmlinux.gz.its
-targets += vmlinux.bz2.its
-targets += vmlinux.lzma.its
-targets += vmlinux.lzo.its
+targets += vmlinex.its
+targets += vmlinex.gz.its
+targets += vmlinex.bz2.its
+targets += vmlinex.lzma.its
+targets += vmlinex.lzo.its
 
 quiet_cmd_cpp_its_S = ITS     $@
       cmd_cpp_its_S = $(CPP) -P -C -o $@ $< \
-		        -DKERNEL_NAME="\"Linux $(KERNELRELEASE)\"" \
-			-DVMLINUX_BINARY="\"$(3)\"" \
-			-DVMLINUX_COMPRESSION="\"$(2)\"" \
-			-DVMLINUX_LOAD_ADDRESS=$(VMLINUX_LOAD_ADDRESS) \
-			-DVMLINUX_ENTRY_ADDRESS=$(VMLINUX_ENTRY_ADDRESS) \
+		        -DKERNEL_NAME="\"Linex $(KERNELRELEASE)\"" \
+			-DVMLINEX_BINARY="\"$(3)\"" \
+			-DVMLINEX_COMPRESSION="\"$(2)\"" \
+			-DVMLINEX_LOAD_ADDRESS=$(VMLINEX_LOAD_ADDRESS) \
+			-DVMLINEX_ENTRY_ADDRESS=$(VMLINEX_ENTRY_ADDRESS) \
 			-DADDR_BITS=$(ADDR_BITS) \
 			-DADDR_CELLS=$(itb_addr_cells)
 
-$(obj)/vmlinux.its: $(obj)/vmlinux.its.S $(VMLINUX) FORCE
-	$(call if_changed,cpp_its_S,none,vmlinux.bin)
+$(obj)/vmlinex.its: $(obj)/vmlinex.its.S $(VMLINEX) FORCE
+	$(call if_changed,cpp_its_S,none,vmlinex.bin)
 
-$(obj)/vmlinux.gz.its: $(obj)/vmlinux.its.S $(VMLINUX) FORCE
-	$(call if_changed,cpp_its_S,gzip,vmlinux.bin.gz)
+$(obj)/vmlinex.gz.its: $(obj)/vmlinex.its.S $(VMLINEX) FORCE
+	$(call if_changed,cpp_its_S,gzip,vmlinex.bin.gz)
 
-$(obj)/vmlinux.bz2.its: $(obj)/vmlinux.its.S $(VMLINUX)  FORCE
-	$(call if_changed,cpp_its_S,bzip2,vmlinux.bin.bz2)
+$(obj)/vmlinex.bz2.its: $(obj)/vmlinex.its.S $(VMLINEX)  FORCE
+	$(call if_changed,cpp_its_S,bzip2,vmlinex.bin.bz2)
 
-$(obj)/vmlinux.lzma.its: $(obj)/vmlinux.its.S $(VMLINUX) FORCE
-	$(call if_changed,cpp_its_S,lzma,vmlinux.bin.lzma)
+$(obj)/vmlinex.lzma.its: $(obj)/vmlinex.its.S $(VMLINEX) FORCE
+	$(call if_changed,cpp_its_S,lzma,vmlinex.bin.lzma)
 
-$(obj)/vmlinux.lzo.its: $(obj)/vmlinux.its.S $(VMLINUX) FORCE
-	$(call if_changed,cpp_its_S,lzo,vmlinux.bin.lzo)
+$(obj)/vmlinex.lzo.its: $(obj)/vmlinex.its.S $(VMLINEX) FORCE
+	$(call if_changed,cpp_its_S,lzo,vmlinex.bin.lzo)
 
-targets += vmlinux.itb
-targets += vmlinux.gz.itb
-targets += vmlinux.bz2.itb
-targets += vmlinux.lzma.itb
-targets += vmlinux.lzo.itb
+targets += vmlinex.itb
+targets += vmlinex.gz.itb
+targets += vmlinex.bz2.itb
+targets += vmlinex.lzma.itb
+targets += vmlinex.lzo.itb
 
 quiet_cmd_itb-image = ITB     $@
       cmd_itb-image = \
@@ -166,10 +166,10 @@ quiet_cmd_itb-image = ITB     $@
 			--warning no-unit_address_vs_reg" \
 		-f $(2) $@
 
-$(obj)/vmlinux.itb: $(obj)/vmlinux.its $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.itb: $(obj)/vmlinex.its $(obj)/vmlinex.bin FORCE
 	$(call if_changed,itb-image,$<)
 
-$(obj)/vmlinux.%.itb: $(obj)/vmlinux.%.its $(obj)/vmlinux.bin.% FORCE
+$(obj)/vmlinex.%.itb: $(obj)/vmlinex.%.its $(obj)/vmlinex.bin.% FORCE
 	$(call if_changed,itb-image,$<)
 
 # for cleaning

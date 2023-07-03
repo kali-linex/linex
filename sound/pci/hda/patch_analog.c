@@ -6,9 +6,9 @@
  * Copyright (c) 2005-2007 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include <sound/core.h>
 #include <sound/hda_codec.h>

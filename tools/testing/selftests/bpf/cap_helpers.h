@@ -2,8 +2,8 @@
 #ifndef __CAP_HELPERS_H
 #define __CAP_HELPERS_H
 
-#include <linux/types.h>
-#include <linux/capability.h>
+#include <linex/types.h>
+#include <linex/capability.h>
 
 #ifndef CAP_PERFMON
 #define CAP_PERFMON		38

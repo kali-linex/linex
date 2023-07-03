@@ -28,9 +28,9 @@
 #ifndef _VMWGFX_DRV_H_
 #define _VMWGFX_DRV_H_
 
-#include <linux/suspend.h>
-#include <linux/sync_file.h>
-#include <linux/hashtable.h>
+#include <linex/suspend.h>
+#include <linex/sync_file.h>
+#include <linex/hashtable.h>
 
 #include <drm/drm_auth.h>
 #include <drm/drm_device.h>

@@ -8,11 +8,11 @@
  * Inspired by the first layout written by: Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
+#include <linex/crc32.h>
+#include <linex/etherdevice.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
 
 #define ONIE_TLV_MAX_LEN 2048
 #define ONIE_TLV_CRC_FIELD_SZ 6

@@ -6,11 +6,11 @@
  *  EMU10K1 memory page allocation (PTB area)
  */
 
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <linex/pci.h>
+#include <linex/gfp.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/export.h>
 
 #include <sound/core.h>
 #include <sound/emu10k1.h>

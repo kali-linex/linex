@@ -5,13 +5,13 @@
 
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/via-core.h>
+#include <linex/via_i2c.h>
 
 #define _MASTER_FILE
 #include "global.h"

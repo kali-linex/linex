@@ -7,13 +7,13 @@
  * Author: Ivan Khoronzhuk <ivan.khoronzhuk@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_platform.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_platform.h>
 
 #define RSTYPE_RG			0x0
 #define RSCTRL_RG			0x4

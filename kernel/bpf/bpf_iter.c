@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
 
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/rcupdate_trace.h>
+#include <linex/fs.h>
+#include <linex/anon_inodes.h>
+#include <linex/filter.h>
+#include <linex/bpf.h>
+#include <linex/rcupdate_trace.h>
 
 struct bpf_iter_target_info {
 	struct list_head list;
@@ -784,7 +784,7 @@ struct bpf_iter_num_kern {
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmlinex BTF");
 
 __bpf_kfunc int bpf_iter_num_new(struct bpf_iter_num *it, int start, int end)
 {

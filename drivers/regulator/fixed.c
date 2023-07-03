@@ -14,21 +14,21 @@
  * systems with no controllable regulators.
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/fixed.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/clk.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_opp.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/fixed.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/machine.h>
+#include <linex/clk.h>
 
 
 struct fixed_voltage_data {

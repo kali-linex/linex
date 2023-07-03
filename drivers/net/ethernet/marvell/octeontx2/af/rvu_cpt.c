@@ -5,8 +5,8 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/pci.h>
+#include <linex/bitfield.h>
+#include <linex/pci.h>
 #include "rvu_struct.h"
 #include "rvu_reg.h"
 #include "mbox.h"

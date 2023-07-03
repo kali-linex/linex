@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -86,54 +86,54 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/unaligned.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/user_namespace.h>
-#include <linux/static_key.h>
-#include <linux/memcontrol.h>
-#include <linux/prefetch.h>
-#include <linux/compat.h>
-#include <linux/mroute.h>
-#include <linux/mroute6.h>
-#include <linux/icmpv6.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/errqueue.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/poll.h>
+#include <linex/tcp.h>
+#include <linex/init.h>
+#include <linex/highmem.h>
+#include <linex/user_namespace.h>
+#include <linex/static_key.h>
+#include <linex/memcontrol.h>
+#include <linex/prefetch.h>
+#include <linex/compat.h>
+#include <linex/mroute.h>
+#include <linex/mroute6.h>
+#include <linex/icmpv6.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/request_sock.h>
 #include <net/sock.h>
-#include <linux/net_tstamp.h>
+#include <linex/net_tstamp.h>
 #include <net/xfrm.h>
-#include <linux/ipsec.h>
+#include <linex/ipsec.h>
 #include <net/cls_cgroup.h>
 #include <net/netprio_cgroup.h>
-#include <linux/sock_diag.h>
+#include <linex/sock_diag.h>
 
-#include <linux/filter.h>
+#include <linex/filter.h>
 #include <net/sock_reuseport.h>
 #include <net/bpf_sk_storage.h>
 
@@ -143,7 +143,7 @@
 #include <net/busy_poll.h>
 #include <net/phonet/phonet.h>
 
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 
 #include "dev.h"
 

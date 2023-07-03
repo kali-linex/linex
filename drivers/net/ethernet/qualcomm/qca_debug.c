@@ -20,10 +20,10 @@
 /*   This file contains debugging routines for use in the QCA7K driver.
  */
 
-#include <linux/debugfs.h>
-#include <linux/ethtool.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <linex/debugfs.h>
+#include <linex/ethtool.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
 
 #include "qca_7k.h"
 #include "qca_debug.h"

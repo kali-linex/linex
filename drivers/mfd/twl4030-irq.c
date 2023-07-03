@@ -14,14 +14,14 @@
  * by syed khasim <x0khasim@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/twl.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/twl.h>
 
 #include "twl-core.h"
 
@@ -50,7 +50,7 @@
 #define REG_PIH_ISR_P2			0x02
 #define REG_PIH_SIR			0x03	/* for testing */
 
-/* Linux could (eventually) use either IRQ line */
+/* Linex could (eventually) use either IRQ line */
 static int irq_line;
 
 struct sih {

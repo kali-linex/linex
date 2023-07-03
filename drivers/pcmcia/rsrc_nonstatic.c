@@ -9,19 +9,19 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/timer.h>
+#include <linex/pci.h>
+#include <linex/device.h>
+#include <linex/io.h>
 
 #include <asm/irq.h>
 
@@ -65,7 +65,7 @@ struct socket_data {
 
 /*======================================================================
 
-    Linux resource management extensions
+    Linex resource management extensions
 
 ======================================================================*/
 

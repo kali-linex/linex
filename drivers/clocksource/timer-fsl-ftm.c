@@ -5,17 +5,17 @@
  * Copyright 2014 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/fsl/ftm.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/sched_clock.h>
+#include <linex/slab.h>
+#include <linex/fsl/ftm.h>
 
 #define FTM_SC_CLK(c)	((c) << FTM_SC_CLK_MASK_SHIFT)
 

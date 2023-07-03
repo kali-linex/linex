@@ -11,12 +11,12 @@
  * critical information about using the config_item interface.
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
 
-#include <linux/configfs.h>
+#include <linex/configfs.h>
 
 
 static inline struct config_item *to_item(struct list_head *entry)

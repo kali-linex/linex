@@ -10,20 +10,20 @@
  * (C) 2003 - 2008	Dominik Brodowski
  */
 
-#ifndef _LINUX_DS_H
-#define _LINUX_DS_H
+#ifndef _LINEX_DS_H
+#define _LINEX_DS_H
 
 #ifdef __KERNEL__
-#include <linux/mod_devicetable.h>
+#include <linex/mod_devicetable.h>
 #endif
 
 #include <pcmcia/device_id.h>
 
 #ifdef __KERNEL__
-#include <linux/device.h>
-#include <linux/interrupt.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
 #include <pcmcia/ss.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 
 /*
@@ -271,4 +271,4 @@ void pcmcia_disable_device(struct pcmcia_device *p_dev);
 
 #endif /* __KERNEL__ */
 
-#endif /* _LINUX_DS_H */
+#endif /* _LINEX_DS_H */

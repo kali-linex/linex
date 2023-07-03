@@ -4,12 +4,12 @@
 #ifndef _ICE_COMMON_H_
 #define _ICE_COMMON_H_
 
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 
 #include "ice_type.h"
 #include "ice_nvm.h"
 #include "ice_flex_pipe.h"
-#include <linux/avf/virtchnl.h>
+#include <linex/avf/virtchnl.h>
 #include "ice_switch.h"
 #include "ice_fdir.h"
 

@@ -9,14 +9,14 @@
  * Hardware interface for audio DSP on mt8195
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/module.h>
 
 #include <sound/sof.h>
 #include <sound/sof/xtensa.h>

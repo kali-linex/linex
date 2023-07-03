@@ -5,12 +5,12 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/component.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <linex/component.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/videodev2.h>
 
 #include <video/of_display_timing.h>
 

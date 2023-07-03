@@ -1,10 +1,10 @@
 /*
- * Allwinner EMAC Fast Ethernet driver for Linux.
+ * Allwinner EMAC Fast Ethernet driver for Linex.
  *
  * Copyright 2012-2013 Stefan Roese <sr@denx.de>
  * Copyright 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  *
- * Based on the Linux driver provided by Allwinner:
+ * Based on the Linex driver provided by Allwinner:
  * Copyright (C) 1997  Sten Wang
  *
  * This file is licensed under the terms of the GNU General Public
@@ -12,24 +12,24 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/soc/sunxi/sunxi_sram.h>
-#include <linux/dmaengine.h>
+#include <linex/clk.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/gpio.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/phy.h>
+#include <linex/soc/sunxi/sunxi_sram.h>
+#include <linex/dmaengine.h>
 
 #include "sun4i-emac.h"
 

@@ -5,20 +5,20 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/font.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/random.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/font.h>
+#include <linex/mutex.h>
+#include <linex/videodev2.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/random.h>
+#include <linex/v4l2-dv-timings.h>
+#include <linex/jiffies.h>
 #include <asm/div64.h>
 #include <media/videobuf2-vmalloc.h>
 #include <media/v4l2-dv-timings.h>

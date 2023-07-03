@@ -8,18 +8,18 @@
  * Author: Valentine Barshak <valentine.barshak@cogentembedded.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
 
 #include "../pci.h"
 

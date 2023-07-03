@@ -9,11 +9,11 @@
  * TODO: end-of-conversion irq
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/delay.h>
 
 #define T5403_DATA 0xf5 /* data, LSB first, 16 bit */
 #define T5403_CALIB_DATA 0x8e /* 10 calibration coeff., LSB first, 16 bit */

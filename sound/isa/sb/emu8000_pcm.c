@@ -7,9 +7,9 @@
 
 #include "emu8000_local.h"
 
-#include <linux/sched/signal.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>
 

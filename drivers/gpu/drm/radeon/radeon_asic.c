@@ -26,9 +26,9 @@
  *          Jerome Glisse
  */
 
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linex/console.h>
+#include <linex/pci.h>
+#include <linex/vgaarb.h>
 
 #include <drm/radeon_drm.h>
 

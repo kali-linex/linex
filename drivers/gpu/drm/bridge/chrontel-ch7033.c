@@ -5,10 +5,10 @@
  * Copyright (C) 2019,2020 Lubomir Rintel
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

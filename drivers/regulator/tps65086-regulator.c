@@ -7,12 +7,12 @@
  * Based on the TPS65912 driver
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
 
-#include <linux/mfd/tps65086.h>
+#include <linex/mfd/tps65086.h>
 
 enum tps65086_regulators { BUCK1, BUCK2, BUCK3, BUCK4, BUCK5, BUCK6, LDOA1,
 	LDOA2, LDOA3, SWA1, SWB1, SWB2, VTT };

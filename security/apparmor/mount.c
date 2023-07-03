@@ -8,10 +8,10 @@
  * Copyright 2009-2017 Canonical Ltd.
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <uapi/linux/mount.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <uapi/linex/mount.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

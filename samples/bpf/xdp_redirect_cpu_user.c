@@ -25,9 +25,9 @@ static const char *__doc__ =
 #include <getopt.h>
 #include <net/if.h>
 #include <time.h>
-#include <linux/limits.h>
+#include <linex/limits.h>
 #include <arpa/inet.h>
-#include <linux/if_link.h>
+#include <linex/if_link.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include "bpf_util.h"

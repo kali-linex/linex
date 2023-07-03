@@ -30,23 +30,23 @@
  * SOFTWARE.
  */
 
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
-#include <linux/debugfs.h>
-#include <linux/kmod.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/vport.h>
-#include <linux/version.h>
+#include <linex/highmem.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/cq.h>
+#include <linex/mlx5/qp.h>
+#include <linex/debugfs.h>
+#include <linex/kmod.h>
+#include <linex/mlx5/mlx5_ifc.h>
+#include <linex/mlx5/vport.h>
+#include <linex/version.h>
 #include <net/devlink.h>
 #include "mlx5_core.h"
 #include "thermal.h"
@@ -226,7 +226,7 @@ static void mlx5_set_driver_version(struct mlx5_core_dev *dev)
 
 	string = MLX5_ADDR_OF(set_driver_version_in, in, driver_version);
 
-	strncpy(string, "Linux", remaining_size);
+	strncpy(string, "Linex", remaining_size);
 
 	remaining_size = max_t(int, 0, driver_ver_sz - strlen(string));
 	strncat(string, ",", remaining_size);
@@ -240,8 +240,8 @@ static void mlx5_set_driver_version(struct mlx5_core_dev *dev)
 	remaining_size = max_t(int, 0, driver_ver_sz - strlen(string));
 
 	snprintf(string + strlen(string), remaining_size, "%u.%u.%u",
-		LINUX_VERSION_MAJOR, LINUX_VERSION_PATCHLEVEL,
-		LINUX_VERSION_SUBLEVEL);
+		LINEX_VERSION_MAJOR, LINEX_VERSION_PATCHLEVEL,
+		LINEX_VERSION_SUBLEVEL);
 
 	/*Send the command*/
 	MLX5_SET(set_driver_version_in, in, opcode,

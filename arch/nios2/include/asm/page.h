@@ -15,8 +15,8 @@
 #ifndef _ASM_NIOS2_PAGE_H
 #define _ASM_NIOS2_PAGE_H
 
-#include <linux/pfn.h>
-#include <linux/const.h>
+#include <linex/pfn.h>
+#include <linex/const.h>
 
 /*
  * PAGE_SHIFT determines the page size

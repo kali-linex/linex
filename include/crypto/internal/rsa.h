@@ -7,7 +7,7 @@
  */
 #ifndef _RSA_HELPER_
 #define _RSA_HELPER_
-#include <linux/types.h>
+#include <linex/types.h>
 
 /**
  * rsa_key - RSA key structure

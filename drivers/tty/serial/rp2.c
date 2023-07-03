@@ -9,31 +9,31 @@
  *   ar933x_uart.c
  *     Copyright (C) 2011 Gabor Juhos <juhosg@openwrt.org>
  *
- *   rocketport_infinity_express-linux-1.20.tar.gz
+ *   rocketport_infinity_express-linex-1.20.tar.gz
  *     Copyright (C) 2004-2011 Comtrol, Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/completion.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/sysrq.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/types.h>
 
 #define DRV_NAME			"rp2"
 

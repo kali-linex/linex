@@ -6,23 +6,23 @@
  */
 
 /*
- * This file contains the core HCD code, and implements the Linux hc_driver
+ * This file contains the core HCD code, and implements the Linex hc_driver
  * API
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/of.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/ch11.h>
+#include <linex/usb/of.h>
 
 #include "core.h"
 #include "hcd.h"
@@ -4231,7 +4231,7 @@ static void dwc2_hcd_phy_reset_func(struct work_struct *work)
 
 /*
  * =========================================================================
- *  Linux HC Driver Functions
+ *  Linex HC Driver Functions
  * =========================================================================
  */
 

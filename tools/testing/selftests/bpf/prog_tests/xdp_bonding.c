@@ -12,13 +12,13 @@
 #define _GNU_SOURCE
 #include <sched.h>
 #include <net/if.h>
-#include <linux/if_link.h>
+#include <linex/if_link.h>
 #include "test_progs.h"
 #include "network_helpers.h"
-#include <linux/if_bonding.h>
-#include <linux/limits.h>
-#include <linux/udp.h>
-#include <uapi/linux/netdev.h>
+#include <linex/if_bonding.h>
+#include <linex/limits.h>
+#include <linex/udp.h>
+#include <uapi/linex/netdev.h>
 
 #include "xdp_dummy.skel.h"
 #include "xdp_redirect_multi_kern.skel.h"

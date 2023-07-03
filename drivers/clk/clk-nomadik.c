@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) "Nomadik SRC clocks: " fmt
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/reboot.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/clk-provider.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/reboot.h>
 
 /*
  * The Nomadik clock tree is described in the STN8815A12 DB V4.2

@@ -6,21 +6,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/filter.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/tcp.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/caif/caif_socket.h>
-#include <linux/pkt_sched.h>
+#include <linex/filter.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/tcp.h>
+#include <linex/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/caif/caif_socket.h>
+#include <linex/pkt_sched.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/caif/caif_layer.h>

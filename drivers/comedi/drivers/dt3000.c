@@ -3,7 +3,7 @@
  * dt3000.c
  * Data Translation DT3000 series driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1999 David A. Schleef <ds@schleef.org>
  */
 
@@ -40,10 +40,10 @@
  * you the docs without one, also.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedi_pci.h>
 
 /*
  * PCI BAR0 - dual-ported RAM location definitions (dev->mmio)

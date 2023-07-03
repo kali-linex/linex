@@ -4,21 +4,21 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/peci.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/jiffies.h>
+#include <linex/math.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/peci.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 /* ASPEED PECI Registers */
 /* Control Register */
@@ -593,7 +593,7 @@ static struct platform_driver aspeed_peci_driver = {
 module_platform_driver(aspeed_peci_driver);
 
 MODULE_AUTHOR("Ryan Chen <ryan_chen@aspeedtech.com>");
-MODULE_AUTHOR("Jae Hyun Yoo <jae.hyun.yoo@linux.intel.com>");
+MODULE_AUTHOR("Jae Hyun Yoo <jae.hyun.yoo@linex.intel.com>");
 MODULE_DESCRIPTION("ASPEED PECI driver");
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(PECI);

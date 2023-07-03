@@ -1,6 +1,6 @@
 /*
  * Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                VA Linux Systems Inc., Fremont, California.
+ *                VA Linex Systems Inc., Fremont, California.
  * Copyright 2008 Red Hat Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -37,9 +37,9 @@
 #include <drm/drm_fixed.h>
 #include <drm/drm_framebuffer.h>
 #include <drm/drm_probe_helper.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/hrtimer.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/hrtimer.h>
 #include "amdgpu_irq.h"
 
 #include <drm/display/drm_dp_mst_helper.h>

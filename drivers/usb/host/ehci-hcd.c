@@ -7,27 +7,27 @@
  * Copyright (c) 2000-2004 by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dmapool.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/vmalloc.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/hrtimer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/otg.h>
+#include <linex/moduleparam.h>
+#include <linex/dma-mapping.h>
+#include <linex/debugfs.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

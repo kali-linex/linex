@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2014-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
@@ -19,10 +19,10 @@
  * time only these three are supported.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
 
 #include "ipa.h"
 #include "ipa_reg.h"
@@ -34,7 +34,7 @@
 /**
  * struct ipa_interrupt - IPA interrupt information
  * @ipa:		IPA pointer
- * @irq:		Linux IRQ number used for IPA interrupts
+ * @irq:		Linex IRQ number used for IPA interrupts
  * @enabled:		Mask indicating which interrupts are enabled
  */
 struct ipa_interrupt {

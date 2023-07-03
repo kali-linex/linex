@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- *  linux/net/sunrpc/gss_mech_switch.c
+ *  linex/net/sunrpc/gss_mech_switch.c
  *
  *  Copyright (c) 2001 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -8,18 +8,18 @@
  *  J. Bruce Fields   <bfields@umich.edu>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/oid_registry.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/gss_asn1.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/clnt.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/oid_registry.h>
+#include <linex/sunrpc/msg_prot.h>
+#include <linex/sunrpc/gss_asn1.h>
+#include <linex/sunrpc/auth_gss.h>
+#include <linex/sunrpc/svcauth_gss.h>
+#include <linex/sunrpc/gss_err.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/sunrpc/gss_api.h>
+#include <linex/sunrpc/clnt.h>
 #include <trace/events/rpcgss.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)

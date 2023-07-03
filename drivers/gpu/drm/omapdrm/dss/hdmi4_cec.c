@@ -8,16 +8,16 @@
  * Authors: Yong Zhi
  *	Mythri pk <mythripk@ti.com>
  *
- * Heavily modified to use the linux CEC framework:
+ * Heavily modified to use the linex CEC framework:
  *
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "dss.h"
 #include "hdmi.h"

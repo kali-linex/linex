@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/refcount.h>
-#include <linux/rbtree.h>
-#include <linux/zalloc.h>
+#include <linex/refcount.h>
+#include <linex/rbtree.h>
+#include <linex/zalloc.h>
 #include "rwsem.h"
 
 struct comm_str {

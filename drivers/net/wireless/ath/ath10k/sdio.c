@@ -5,15 +5,15 @@
  * Copyright (c) 2016-2017 Erik Stromdahl <erik.stromdahl@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sd.h>
-#include <linux/bitfield.h>
+#include <linex/module.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sd.h>
+#include <linex/bitfield.h>
 #include "core.h"
 #include "bmi.h"
 #include "debug.h"

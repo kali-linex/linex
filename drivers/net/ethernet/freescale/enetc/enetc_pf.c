@@ -2,13 +2,13 @@
 /* Copyright 2017-2019 NXP */
 
 #include <asm/unaligned.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/fsl/enetc_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/pcs-lynx.h>
+#include <linex/mdio.h>
+#include <linex/module.h>
+#include <linex/fsl/enetc_mdio.h>
+#include <linex/of_platform.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/pcs-lynx.h>
 #include "enetc_ierb.h"
 #include "enetc_pf.h"
 

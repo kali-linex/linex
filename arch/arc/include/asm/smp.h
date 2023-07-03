@@ -8,9 +8,9 @@
 
 #ifdef CONFIG_SMP
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/threads.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/threads.h>
 
 #define raw_smp_processor_id() (current_thread_info()->cpu)
 
@@ -85,13 +85,13 @@ static inline const char *arc_platform_smp_cpuinfo(void)
  *
  * (2) In a SMP setup, the LLOCK/SCOND atomicity across CPUs needs to be
  *	gaurantted by the platform (not something which core handles).
- *	Assuming a platform won't, SMP Linux needs to use spinlocks + local IRQ
+ *	Assuming a platform won't, SMP Linex needs to use spinlocks + local IRQ
  *	disabling for atomicity.
  *
  *	However exported spinlock API is not usable due to cyclic hdr deps
  *	(even after system.h disintegration upstream)
- *	asm/bitops.h -> linux/spinlock.h -> linux/preempt.h
- *		-> linux/thread_info.h -> linux/bitops.h -> asm/bitops.h
+ *	asm/bitops.h -> linex/spinlock.h -> linex/preempt.h
+ *		-> linex/thread_info.h -> linex/bitops.h -> asm/bitops.h
  *
  *	So the workaround is to use the lowest level arch spinlock API.
  *	The exported spinlock API is smart enough to be NOP for !CONFIG_SMP,
@@ -99,7 +99,7 @@ static inline const char *arc_platform_smp_cpuinfo(void)
  */
 #ifndef CONFIG_ARC_HAS_LLSC
 
-#include <linux/irqflags.h>
+#include <linex/irqflags.h>
 #ifdef CONFIG_SMP
 
 #include <asm/spinlock.h>

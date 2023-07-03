@@ -6,13 +6,13 @@
  * Author: Scott Wood <scottwood@freescale.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/of_mdio.h>
-#include <linux/slab.h>
-#include <linux/of_platform.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/fsl_devices.h>
+#include <linex/mdio-bitbang.h>
+#include <linex/of_mdio.h>
+#include <linex/slab.h>
+#include <linex/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/cpm2.h>

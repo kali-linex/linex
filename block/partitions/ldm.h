@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
- * ldm - Part of the Linux-NTFS project.
+ * ldm - Part of the Linex-NTFS project.
  *
  * Copyright (C) 2001,2002 Richard Russon <ldm@flatcap.org>
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (C) 2001,2002 Jakob Kemi <jakob.kemi@telia.com>
  *
- * Documentation is available at http://www.linux-ntfs.org/doku.php?id=downloads 
+ * Documentation is available at http://www.linex-ntfs.org/doku.php?id=downloads 
  */
 
 #ifndef _FS_PT_LDM_H_
 #define _FS_PT_LDM_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/fs.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/fs.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 

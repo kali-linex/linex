@@ -14,12 +14,12 @@
  *	    Przemek Rudy (prudy1@o2.pl)
  */
 
-#include <linux/hid.h>
-#include <linux/init.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
+#include <linex/hid.h>
+#include <linex/init.h>
+#include <linex/math64.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
 
 #include <sound/asoundef.h>
 #include <sound/core.h>

@@ -6,7 +6,7 @@
  * Contributors (thanks, all!)
  *
  *	David Eger:
- *	Overhaul for Linux 2.6
+ *	Overhaul for Linex 2.6
  *
  *      Jeff Rugen:
  *      Major contributions;  Motorola PowerStack (PPC and PCI) support,
@@ -34,21 +34,21 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/init.h>
 
 #ifdef CONFIG_ZORRO
-#include <linux/zorro.h>
+#include <linex/zorro.h>
 #endif
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <linex/pci.h>
 #endif
 #ifdef CONFIG_AMIGA
 #include <asm/amigahw.h>
@@ -1251,7 +1251,7 @@ static int cirrusfb_set_par_foo(struct fb_info *info)
 	/* also, set "DotClock%2" bit where requested */
 	tmp = 0x01;
 
-/*** FB_VMODE_CLOCK_HALVE in linux/fb.h not defined anymore ?
+/*** FB_VMODE_CLOCK_HALVE in linex/fb.h not defined anymore ?
     if (var->vmode & FB_VMODE_CLOCK_HALVE)
 	tmp |= 0x08;
 */
@@ -1714,7 +1714,7 @@ static void switch_monitor(struct cirrusfb_info *cinfo, int on)
 }
 
 /******************************************/
-/* Linux 2.6-style  accelerated functions */
+/* Linex 2.6-style  accelerated functions */
 /******************************************/
 
 static int cirrusfb_sync(struct fb_info *info)

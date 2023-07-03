@@ -13,8 +13,8 @@
  * month =        {June},
  *}
  * Used by the iSCSI driver, possibly others, and derived from
- * the iscsi-crc.c module of the linux-iscsi driver at
- * http://linux-iscsi.sourceforge.net.
+ * the iscsi-crc.c module of the linex-iscsi driver at
+ * http://linex-iscsi.sourceforge.net.
  *
  * Following the example of lib/crc32, this function is intended to be
  * flexible and useful for all users.  Modules that currently have their
@@ -27,11 +27,11 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/crc32c.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/crc32c.h>
 
 static struct crypto_shash *tfm;
 

@@ -63,18 +63,18 @@
  *		wrt receive and holding up unrelated socket operations.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/net.h>
-#include <linux/fs.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/un.h>
+#include <linex/net.h>
+#include <linex/fs.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/file.h>
+#include <linex/proc_fs.h>
+#include <linex/mutex.h>
+#include <linex/wait.h>
 
 #include <net/sock.h>
 #include <net/af_unix.h>

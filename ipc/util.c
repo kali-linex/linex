@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/util.c
+ * linex/ipc/util.c
  * Copyright (C) 1992 Krishna Balasubramanian
  *
  * Sep 1997 - Call suser() last after "normal" permission checks so we
@@ -44,27 +44,27 @@
  *  see sem_lock().
  */
 
-#include <linux/mm.h>
-#include <linux/shm.h>
-#include <linux/init.h>
-#include <linux/msg.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/capability.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/audit.h>
-#include <linux/nsproxy.h>
-#include <linux/rwsem.h>
-#include <linux/memory.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rhashtable.h>
-#include <linux/log2.h>
+#include <linex/mm.h>
+#include <linex/shm.h>
+#include <linex/init.h>
+#include <linex/msg.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/notifier.h>
+#include <linex/capability.h>
+#include <linex/highuid.h>
+#include <linex/security.h>
+#include <linex/rcupdate.h>
+#include <linex/workqueue.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/audit.h>
+#include <linex/nsproxy.h>
+#include <linex/rwsem.h>
+#include <linex/memory.h>
+#include <linex/ipc_namespace.h>
+#include <linex/rhashtable.h>
+#include <linex/log2.h>
 
 #include <asm/unistd.h>
 
@@ -548,7 +548,7 @@ void ipc_rcu_putref(struct kern_ipc_perm *ptr,
  * Check user, group, other permissions for access
  * to ipc resources. return 0 if allowed
  *
- * @flag will most probably be 0 or ``S_...UGO`` from <linux/stat.h>
+ * @flag will most probably be 0 or ``S_...UGO`` from <linex/stat.h>
  */
 int ipcperms(struct ipc_namespace *ns, struct kern_ipc_perm *ipcp, short flag)
 {

@@ -6,8 +6,8 @@
  *
  * SHMIN Support.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linex/init.h>
+#include <linex/irq.h>
 #include <asm/machvec.h>
 #include <mach/shmin.h>
 #include <asm/clock.h>

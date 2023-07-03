@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/clk-provider.h>
+#include <linex/cpufreq.h>
+#include <linex/init.h>
+#include <linex/interconnect.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/units.h>
 
 #define LUT_MAX_ENTRIES			40U
 #define LUT_SRC				GENMASK(31, 30)

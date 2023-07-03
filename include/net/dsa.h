@@ -4,21 +4,21 @@
  * Copyright (c) 2008-2009 Marvell Semiconductor
  */
 
-#ifndef __LINUX_NET_DSA_H
-#define __LINUX_NET_DSA_H
+#ifndef __LINEX_NET_DSA_H
+#define __LINEX_NET_DSA_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/ethtool.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/platform_data/dsa.h>
-#include <linux/phylink.h>
+#include <linex/if.h>
+#include <linex/if_ether.h>
+#include <linex/list.h>
+#include <linex/notifier.h>
+#include <linex/timer.h>
+#include <linex/workqueue.h>
+#include <linex/of.h>
+#include <linex/ethtool.h>
+#include <linex/net_tstamp.h>
+#include <linex/phy.h>
+#include <linex/platform_data/dsa.h>
+#include <linex/phylink.h>
 #include <net/devlink.h>
 #include <net/switchdev.h>
 

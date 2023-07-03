@@ -21,33 +21,33 @@ static int sg_version_num = 30536;	/* 2 digits for each component */
  *        (otherwise the macros compile to empty statements).
  *
  */
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/ioctl.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/blktrace_api.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/ratelimit.h>
-#include <linux/uio.h>
-#include <linux/cred.h> /* for sg_check_file_access() */
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/mtio.h>
+#include <linex/ioctl.h>
+#include <linex/major.h>
+#include <linex/slab.h>
+#include <linex/fcntl.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/moduleparam.h>
+#include <linex/cdev.h>
+#include <linex/idr.h>
+#include <linex/seq_file.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/blktrace_api.h>
+#include <linex/mutex.h>
+#include <linex/atomic.h>
+#include <linex/ratelimit.h>
+#include <linex/uio.h>
+#include <linex/cred.h> /* for sg_check_file_access() */
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -63,7 +63,7 @@ static int sg_version_num = 30536;	/* 2 digits for each component */
 #include "scsi_logging.h"
 
 #ifdef CONFIG_SCSI_PROC_FS
-#include <linux/proc_fs.h>
+#include <linex/proc_fs.h>
 static char *sg_version_date = "20140603";
 
 static int sg_proc_init(void);
@@ -299,7 +299,7 @@ sg_open(struct inode *inode, struct file *filp)
 	SCSI_LOG_TIMEOUT(3, sg_printk(KERN_INFO, sdp,
 				      "sg_open: flags=0x%x\n", flags));
 
-	/* This driver's module count bumped by fops_get in <linux/fs.h> */
+	/* This driver's module count bumped by fops_get in <linex/fs.h> */
 	/* Prevent the device driver from vanishing while we sleep */
 	retval = scsi_device_get(sdp->device);
 	if (retval)
@@ -1639,7 +1639,7 @@ MODULE_PARM_DESC(def_reserved_size, "size of buffer reserved for each fd");
 MODULE_PARM_DESC(allow_dio, "allow direct I/O (default: 0 (disallow))");
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static struct ctl_table sg_sysctls[] = {
 	{

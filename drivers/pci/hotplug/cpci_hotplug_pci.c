@@ -9,11 +9,11 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/proc_fs.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/proc_fs.h>
 #include "../pci.h"
 #include "cpci_hotplug.h"
 

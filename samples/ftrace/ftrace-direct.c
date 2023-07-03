@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/sched.h> /* for wake_up_process() */
-#include <linux/ftrace.h>
+#include <linex/sched.h> /* for wake_up_process() */
+#include <linex/ftrace.h>
 #include <asm/asm-offsets.h>
 
 extern void my_direct_func(struct task_struct *p);

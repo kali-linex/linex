@@ -2,10 +2,10 @@
 /*
  * Helpers for IOMMU drivers implementing SVA
  */
-#include <linux/mmu_context.h>
-#include <linux/mutex.h>
-#include <linux/sched/mm.h>
-#include <linux/iommu.h>
+#include <linex/mmu_context.h>
+#include <linex/mutex.h>
+#include <linex/sched/mm.h>
+#include <linex/iommu.h>
 
 #include "iommu-sva.h"
 

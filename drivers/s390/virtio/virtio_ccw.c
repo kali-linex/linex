@@ -7,24 +7,24 @@
  *    Author(s): Cornelia Huck <cornelia.huck@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/virtio_ring.h>
-#include <linux/pfn.h>
-#include <linux/async.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/kvm_para.h>
-#include <linux/notifier.h>
+#include <linex/kernel_stat.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/err.h>
+#include <linex/virtio.h>
+#include <linex/virtio_config.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/virtio_ring.h>
+#include <linex/pfn.h>
+#include <linex/async.h>
+#include <linex/wait.h>
+#include <linex/list.h>
+#include <linex/bitops.h>
+#include <linex/moduleparam.h>
+#include <linex/io.h>
+#include <linex/kvm_para.h>
+#include <linex/notifier.h>
 #include <asm/diag.h>
 #include <asm/setup.h>
 #include <asm/irq.h>

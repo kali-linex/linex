@@ -10,14 +10,14 @@
  * (c) 2011-12 liran <jli11@intersil.com> [Intersil|Techwell China]
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kmod.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

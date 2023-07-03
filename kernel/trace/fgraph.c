@@ -7,10 +7,10 @@
  *
  * Highly modified by Steven Rostedt (VMware).
  */
-#include <linux/jump_label.h>
-#include <linux/suspend.h>
-#include <linux/ftrace.h>
-#include <linux/slab.h>
+#include <linex/jump_label.h>
+#include <linex/suspend.h>
+#include <linex/ftrace.h>
+#include <linex/slab.h>
 
 #include <trace/events/sched.h>
 
@@ -391,7 +391,7 @@ int ftrace_graph_entry_stub(struct ftrace_graph_ent *trace)
 
 /*
  * Simply points to ftrace_stub, but with the proper protocol.
- * Defined by the linker script in linux/vmlinux.lds.h
+ * Defined by the linker script in linex/vmlinex.lds.h
  */
 extern void ftrace_stub_graph(struct ftrace_graph_ret *);
 

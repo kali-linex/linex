@@ -8,8 +8,8 @@
 
 #include "fman_mac.h"
 
-#include <linux/netdevice.h>
-#include <linux/phy_fixed.h>
+#include <linex/netdevice.h>
+#include <linex/phy_fixed.h>
 
 struct mac_device;
 

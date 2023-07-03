@@ -3,10 +3,10 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
 #include <net/rtnetlink.h>
 
 #include "iosm_ipc_imem.h"

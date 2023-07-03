@@ -3,10 +3,10 @@
  * Copyright (c) 2016 Anders K. Pedersen <akp@cohaesio.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linex/kernel.h>
+#include <linex/netlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/dst.h>
 #include <net/ip6_route.h>
 #include <net/route.h>

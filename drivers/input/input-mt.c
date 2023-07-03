@@ -5,9 +5,9 @@
  * Copyright (c) 2008-2010 Henrik Rydberg
  */
 
-#include <linux/input/mt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/input/mt.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include "input-core-private.h"
 
 #define TRKID_SGN	((TRKID_MAX + 1) >> 1)

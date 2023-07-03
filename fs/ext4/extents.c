@@ -17,18 +17,18 @@
  *   - smart tree reduction
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/jbd2.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fiemap.h>
-#include <linux/iomap.h>
-#include <linux/sched/mm.h>
+#include <linex/fs.h>
+#include <linex/time.h>
+#include <linex/jbd2.h>
+#include <linex/highuid.h>
+#include <linex/pagemap.h>
+#include <linex/quotaops.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/fiemap.h>
+#include <linex/iomap.h>
+#include <linex/sched/mm.h>
 #include "ext4_jbd2.h"
 #include "ext4_extents.h"
 #include "xattr.h"

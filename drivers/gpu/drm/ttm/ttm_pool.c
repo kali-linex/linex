@@ -31,11 +31,11 @@
  * cause they are rather slow compared to alloc_pages+map.
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/sched/mm.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/debugfs.h>
+#include <linex/highmem.h>
+#include <linex/sched/mm.h>
 
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>

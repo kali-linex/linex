@@ -3,7 +3,7 @@
  * Copyright (c) 2022 Paulo Alcantara <palcantara@suse.de>
  */
 
-#include <linux/namei.h>
+#include <linex/namei.h>
 #include "cifsproto.h"
 #include "cifs_debug.h"
 #include "dns_resolve.h"

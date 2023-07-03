@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
+#include <linex/module.h>
 
 union ull_union {
 	unsigned long long ull;

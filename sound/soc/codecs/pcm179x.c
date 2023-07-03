@@ -7,10 +7,10 @@
  *     Michael Trimarchi <michael@amarulasolutions.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -18,7 +18,7 @@
 #include <sound/initval.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/of.h>
+#include <linex/of.h>
 
 #include "pcm179x.h"
 

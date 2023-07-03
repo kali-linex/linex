@@ -5,9 +5,9 @@
 
 #define pr_fmt(fmt) "hci: %s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 #include <net/nfc/hci.h>
 

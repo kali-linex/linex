@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SEGMENT_H
 #define _ASM_X86_SEGMENT_H
 
-#include <linux/const.h>
+#include <linex/const.h>
 #include <asm/alternative.h>
 #include <asm/ibt.h>
 
@@ -58,7 +58,7 @@
 
 #ifdef CONFIG_X86_32
 /*
- * The layout of the per-CPU GDT under Linux:
+ * The layout of the per-CPU GDT under Linex:
  *
  *   0 - null								<=== cacheline #1
  *   1 - reserved

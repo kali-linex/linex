@@ -11,10 +11,10 @@
  * Copyright 2012 Freescale Semiconductor Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/pgtable.h>
 #include <asm/machdep.h>
 #include <asm/time.h>
 #include <asm/udbg.h>

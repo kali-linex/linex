@@ -6,12 +6,12 @@
 //
 // Author: Lucas Tanure <tanureal@opensource.cirrus.com>
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 #include <sound/hda_codec.h>
 #include <sound/soc.h>
-#include <linux/pm_runtime.h>
+#include <linex/pm_runtime.h>
 #include "hda_local.h"
 #include "hda_auto_parser.h"
 #include "hda_jack.h"

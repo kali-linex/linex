@@ -3,15 +3,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/livepatch.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/livepatch.h>
 
 static int replace;
 module_param(replace, int, 0644);
 MODULE_PARM_DESC(replace, "replace (default=0)");
 
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 static int livepatch_meminfo_proc_show(struct seq_file *m, void *v)
 {
 	seq_printf(m, "%s: %s\n", THIS_MODULE->name,
@@ -28,7 +28,7 @@ static struct klp_func funcs[] = {
 
 static struct klp_object objs[] = {
 	{
-		/* name being NULL means vmlinux */
+		/* name being NULL means vmlinex */
 		.funcs = funcs,
 	}, {}
 };

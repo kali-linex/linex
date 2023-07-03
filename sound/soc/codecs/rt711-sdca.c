@@ -6,15 +6,15 @@
 //
 //
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

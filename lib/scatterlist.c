@@ -4,13 +4,13 @@
  *
  * Scatterlist handling helpers.
  */
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/kmemleak.h>
-#include <linux/bvec.h>
-#include <linux/uio.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/scatterlist.h>
+#include <linex/highmem.h>
+#include <linex/kmemleak.h>
+#include <linex/bvec.h>
+#include <linex/uio.h>
 
 /**
  * sg_next - return the next scatterlist entry in a list

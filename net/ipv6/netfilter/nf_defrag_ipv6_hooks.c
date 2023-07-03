@@ -3,18 +3,18 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/types.h>
-#include <linux/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <linex/types.h>
+#include <linex/ipv6.h>
+#include <linex/in6.h>
+#include <linex/netfilter.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/icmp.h>
+#include <linex/sysctl.h>
 #include <net/ipv6_frag.h>
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter_bridge.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>

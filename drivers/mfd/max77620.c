@@ -24,15 +24,15 @@
  * any of these FPS or no FPS.
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77620.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/max77620.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 static struct max77620_chip *max77620_scratch;
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+# SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause)
 
 import argparse
 import collections
@@ -801,7 +801,7 @@ class Family(SpecFamily):
         if 'uapi-header' in self.yaml:
             self.uapi_header = self.yaml['uapi-header']
         else:
-            self.uapi_header = f"linux/{self.name}.h"
+            self.uapi_header = f"linex/{self.name}.h"
 
     def resolve(self):
         self.resolve_up(super())
@@ -2082,7 +2082,7 @@ def uapi_enum_start(family, cw, obj, ckey='', enum_name='enum-name'):
 
 
 def render_uapi(family, cw):
-    hdr_prot = f"_UAPI_LINUX_{family.name.upper()}_H"
+    hdr_prot = f"_UAPI_LINEX_{family.name.upper()}_H"
     cw.p('#ifndef ' + hdr_prot)
     cw.p('#define ' + hdr_prot)
     cw.nl()
@@ -2298,9 +2298,9 @@ def main():
 
     try:
         parsed = Family(args.spec, exclude_ops)
-        if parsed.license != '((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)':
+        if parsed.license != '((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause)':
             print('Spec license:', parsed.license)
-            print('License must be: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)')
+            print('License must be: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause)')
             os.sys.exit(1)
     except yaml.YAMLError as exc:
         print(exc)
@@ -2335,7 +2335,7 @@ def main():
         render_uapi(parsed, cw)
         return
 
-    hdr_prot = f"_LINUX_{parsed.name.upper()}_GEN_H"
+    hdr_prot = f"_LINEX_{parsed.name.upper()}_GEN_H"
     if args.header:
         cw.p('#ifndef ' + hdr_prot)
         cw.p('#define ' + hdr_prot)
@@ -2354,7 +2354,7 @@ def main():
         cw.p('#include <stdlib.h>')
         cw.p('#include <string.h>')
         if args.header:
-            cw.p('#include <linux/types.h>')
+            cw.p('#include <linex/types.h>')
         else:
             cw.p(f'#include "{parsed.name}-user.h"')
             cw.p('#include "ynl.h"')
@@ -2369,7 +2369,7 @@ def main():
     if args.mode == "user":
         if not args.header:
             cw.p("#include <libmnl/libmnl.h>")
-            cw.p("#include <linux/genetlink.h>")
+            cw.p("#include <linex/genetlink.h>")
             cw.nl()
             for one in args.user_header:
                 cw.p(f'#include "{one}"')

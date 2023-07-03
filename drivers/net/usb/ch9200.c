@@ -7,19 +7,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/stddef.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/usb.h>
+#include <linex/crc32.h>
+#include <linex/usb/usbnet.h>
+#include <linex/slab.h>
 
 #define CH9200_VID		0x1A86
 #define CH9200_PID_E092		0xE092

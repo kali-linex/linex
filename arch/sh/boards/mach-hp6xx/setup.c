@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/hp6xx/setup.c
+ * linex/arch/sh/boards/hp6xx/setup.c
  *
  * Copyright (C) 2002 Andriy Skulysh
  * Copyright (C) 2007 Kristoffer Ericson <Kristoffer_e1@hotmail.com>
  *
  * Setup code for HP620/HP660/HP680/HP690 (internal peripherials only)
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/sh_intc.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/sh_intc.h>
 #include <sound/sh_dac_audio.h>
 #include <asm/hd64461.h>
 #include <asm/io.h>

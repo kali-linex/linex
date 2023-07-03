@@ -12,28 +12,28 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/preempt.h>
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/start_kernel.h>
-#include <linux/sched.h>
-#include <linux/kprobes.h>
-#include <linux/kstrtox.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/edd.h>
-#include <linux/reboot.h>
-#include <linux/virtio_anchor.h>
-#include <linux/stackprotector.h>
+#include <linex/cpu.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/preempt.h>
+#include <linex/hardirq.h>
+#include <linex/percpu.h>
+#include <linex/delay.h>
+#include <linex/start_kernel.h>
+#include <linex/sched.h>
+#include <linex/kprobes.h>
+#include <linex/kstrtox.h>
+#include <linex/memblock.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/page-flags.h>
+#include <linex/pci.h>
+#include <linex/gfp.h>
+#include <linex/edd.h>
+#include <linex/reboot.h>
+#include <linex/virtio_anchor.h>
+#include <linex/stackprotector.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>
@@ -77,7 +77,7 @@
 #endif
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 #include <asm/acpi.h>
 #include <acpi/pdc_intel.h>
 #include <acpi/processor.h>

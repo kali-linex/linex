@@ -7,22 +7,22 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
-#include <linux/iommu.h>
-#include <linux/rculist.h>
-#include <linux/sizes.h>
-#include <linux/debugfs.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/crash_dump.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/msi.h>
+#include <linex/iommu.h>
+#include <linex/rculist.h>
+#include <linex/sizes.h>
+#include <linex/debugfs.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -1597,7 +1597,7 @@ void pnv_pci_ioda2_setup_dma_pe(struct pnv_phb *phb,
 	pe_info(pe, "Setting up 32-bit TCE table at 0..%08x\n",
 		phb->ioda.m32_pci_base);
 
-	/* Setup linux iommu table */
+	/* Setup linex iommu table */
 	pe->table_group.tce32_start = 0;
 	pe->table_group.tce32_size = phb->ioda.m32_pci_base;
 	pe->table_group.max_dynamic_windows_supported =

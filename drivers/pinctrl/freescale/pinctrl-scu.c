@@ -5,12 +5,12 @@
  *	Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/err.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <linex/err.h>
+#include <linex/firmware/imx/sci.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
 
 #include "../core.h"
 #include "pinctrl-imx.h"

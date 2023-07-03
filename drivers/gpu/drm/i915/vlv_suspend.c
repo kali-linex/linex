@@ -3,8 +3,8 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
-#include <linux/kernel.h>
+#include <linex/string_helpers.h>
+#include <linex/kernel.h>
 
 #include <drm/drm_print.h>
 

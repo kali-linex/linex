@@ -8,9 +8,9 @@
 #ifndef _LEC_H_
 #define _LEC_H_
 
-#include <linux/atmdev.h>
-#include <linux/netdevice.h>
-#include <linux/atmlec.h>
+#include <linex/atmdev.h>
+#include <linex/netdevice.h>
+#include <linex/atmlec.h>
 
 #define LEC_HEADER_LEN 16
 

@@ -4,17 +4,17 @@
  *  Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/devm-helpers.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/devm-helpers.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/reboot.h>
+#include <linex/types.h>
 
 struct pwr_mlxbf {
 	struct work_struct send_work;

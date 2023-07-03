@@ -5,14 +5,14 @@
  *
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/delay.h>
 
-#include <linux/arm-smccc.h>
+#include <linex/arm-smccc.h>
 
 /* CSRs */
 #define RNM_CTL_STATUS		0x000

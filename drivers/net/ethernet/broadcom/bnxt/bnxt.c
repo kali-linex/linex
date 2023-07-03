@@ -8,35 +8,35 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <linex/stringify.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/dma-mapping.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/delay.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/time.h>
-#include <linux/mii.h>
-#include <linux/mdio.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/rtc.h>
-#include <linux/bpf.h>
+#include <linex/time.h>
+#include <linex/mii.h>
+#include <linex/mdio.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/if_bridge.h>
+#include <linex/rtc.h>
+#include <linex/bpf.h>
 #include <net/gro.h>
 #include <net/ip.h>
 #include <net/tcp.h>
@@ -44,18 +44,18 @@
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
 #include <net/udp_tunnel.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/cache.h>
-#include <linux/log2.h>
-#include <linux/bitmap.h>
-#include <linux/cpu_rmap.h>
-#include <linux/cpumask.h>
+#include <linex/workqueue.h>
+#include <linex/prefetch.h>
+#include <linex/cache.h>
+#include <linex/log2.h>
+#include <linex/bitmap.h>
+#include <linex/cpu_rmap.h>
+#include <linex/cpumask.h>
 #include <net/pkt_cls.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
 #include <net/page_pool.h>
-#include <linux/align.h>
+#include <linex/align.h>
 #include <net/netdev_queues.h>
 
 #include "bnxt_hsi.h"
@@ -4715,7 +4715,7 @@ int bnxt_hwrm_func_drv_rgtr(struct bnxt *bp, unsigned long *bmap, int bmap_size,
 				   FUNC_DRV_RGTR_REQ_ENABLES_VER |
 				   FUNC_DRV_RGTR_REQ_ENABLES_ASYNC_EVENT_FWD);
 
-	req->os_type = cpu_to_le16(FUNC_DRV_RGTR_REQ_OS_TYPE_LINUX);
+	req->os_type = cpu_to_le16(FUNC_DRV_RGTR_REQ_OS_TYPE_LINEX);
 	flags = FUNC_DRV_RGTR_REQ_FLAGS_16BIT_VER_MODE;
 	if (bp->fw_cap & BNXT_FW_CAP_HOT_RESET)
 		flags |= FUNC_DRV_RGTR_REQ_FLAGS_HOT_RESET_SUPPORT;

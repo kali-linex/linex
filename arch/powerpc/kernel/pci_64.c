@@ -9,17 +9,17 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/list.h>
+#include <linex/syscalls.h>
+#include <linex/irq.h>
+#include <linex/vmalloc.h>
+#include <linex/of.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

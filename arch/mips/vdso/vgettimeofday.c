@@ -7,8 +7,8 @@
  * Copyright (C) 2018 ARM Limited
  *
  */
-#include <linux/time.h>
-#include <linux/types.h>
+#include <linex/time.h>
+#include <linex/types.h>
 
 #if _MIPS_SIM != _MIPS_SIM_ABI64
 int __vdso_clock_gettime(clockid_t clock,

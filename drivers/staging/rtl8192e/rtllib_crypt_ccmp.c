@@ -4,22 +4,22 @@
  * Copyright (c) 2003-2004, Jouni Malinen <jkmaline@cc.hut.fi>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/wireless.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/if_ether.h>
+#include <linex/if_arp.h>
+#include <linex/string.h>
+#include <linex/wireless.h>
 #include "rtllib.h"
 
-#include <linux/crypto.h>
+#include <linex/crypto.h>
 #include <crypto/aead.h>
 
-#include <linux/scatterlist.h>
+#include <linex/scatterlist.h>
 
 #define AES_BLOCK_LEN 16
 #define CCMP_HDR_LEN 8

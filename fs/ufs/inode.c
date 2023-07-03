@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/inode.c
+ *  linex/fs/ufs/inode.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/inode.c
+ *  linex/fs/ext2/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -17,7 +17,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linex/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -26,17 +26,17 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/iversion.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/time.h>
+#include <linex/stat.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/iversion.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"
@@ -573,7 +573,7 @@ static int ufs1_read_inode(struct inode *inode, struct ufs_inode *ufs_inode)
 		return -ESTALE;
 
 	/*
-	 * Linux now has 32-bit uid and gid, so we can support EFT.
+	 * Linex now has 32-bit uid and gid, so we can support EFT.
 	 */
 	i_uid_write(inode, ufs_get_inode_uid(sb, ufs_inode));
 	i_gid_write(inode, ufs_get_inode_gid(sb, ufs_inode));
@@ -619,7 +619,7 @@ static int ufs2_read_inode(struct inode *inode, struct ufs2_inode *ufs2_inode)
 		return -ESTALE;
 
         /*
-         * Linux now has 32-bit uid and gid, so we can support EFT.
+         * Linex now has 32-bit uid and gid, so we can support EFT.
          */
 	i_uid_write(inode, fs32_to_cpu(sb, ufs2_inode->ui_uid));
 	i_gid_write(inode, fs32_to_cpu(sb, ufs2_inode->ui_gid));

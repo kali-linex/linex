@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <uapi/linux/virtio_blk.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/vringh.h>
+#include <linex/vdpa.h>
+#include <uapi/linex/virtio_blk.h>
 
 #include "vdpa_sim.h"
 

@@ -5,20 +5,20 @@
  * Copyright (C) 2012 Avionic Design GmbH
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include <soc/tegra/common.h>
 

@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2012 ARM Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/ftrace.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
+#include <linex/kernel.h>
+#include <linex/efi.h>
+#include <linex/export.h>
+#include <linex/ftrace.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/stacktrace.h>
 
 #include <asm/efi.h>
 #include <asm/irq.h>

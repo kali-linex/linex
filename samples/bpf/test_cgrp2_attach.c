@@ -27,7 +27,7 @@
 #include <errno.h>
 #include <fcntl.h>
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf.h>
 
 #include "bpf_insn.h"

@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/kernel.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/genalloc.h>
+#include <linex/kernel.h>
 
 #include "k3-cppi-desc-pool.h"
 

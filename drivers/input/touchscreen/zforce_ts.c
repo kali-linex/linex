@@ -9,20 +9,20 @@
  * Author: Pieter Truter<ptruter@intrinsyc.com>
  */
 
-#include <linux/module.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/input/mt.h>
-#include <linux/platform_data/zforce_ts.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/hrtimer.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/device.h>
+#include <linex/sysfs.h>
+#include <linex/input/mt.h>
+#include <linex/platform_data/zforce_ts.h>
+#include <linex/regulator/consumer.h>
+#include <linex/of.h>
 
 #define WAIT_TIMEOUT		msecs_to_jiffies(1000)
 

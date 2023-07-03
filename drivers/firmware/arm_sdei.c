@@ -3,34 +3,34 @@
 #define pr_fmt(fmt) "sdei: " fmt
 
 #include <acpi/ghes.h>
-#include <linux/acpi.h>
-#include <linux/arm_sdei.h>
-#include <linux/arm-smccc.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/kvm_host.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <linex/acpi.h>
+#include <linex/arm_sdei.h>
+#include <linex/arm-smccc.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/errno.h>
+#include <linex/hardirq.h>
+#include <linex/kernel.h>
+#include <linex/kprobes.h>
+#include <linex/kvm_host.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/percpu.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/ptrace.h>
+#include <linex/preempt.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
 
 /*
  * The call to use to reach the firmware.
@@ -115,7 +115,7 @@ sdei_cross_call_return(struct sdei_crosscall_args *arg, int err)
 		arg->first_error = err;
 }
 
-static int sdei_to_linux_errno(unsigned long sdei_err)
+static int sdei_to_linex_errno(unsigned long sdei_err)
 {
 	switch (sdei_err) {
 	case SDEI_NOT_SUPPORTED:
@@ -144,12 +144,12 @@ static int invoke_sdei_fn(unsigned long function_id, unsigned long arg0,
 	if (sdei_firmware_call) {
 		sdei_firmware_call(function_id, arg0, arg1, arg2, arg3, arg4,
 				   &res);
-		err = sdei_to_linux_errno(res.a0);
+		err = sdei_to_linex_errno(res.a0);
 	} else {
 		/*
 		 * !sdei_firmware_call means we failed to probe or called
 		 * sdei_mark_interface_broken(). -EIO is not an error returned
-		 * by sdei_to_linux_errno() and is used to suppress messages
+		 * by sdei_to_linex_errno() and is used to suppress messages
 		 * from this driver.
 		 */
 		err = -EIO;

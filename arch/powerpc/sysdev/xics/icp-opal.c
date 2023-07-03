@@ -2,14 +2,14 @@
 /*
  * Copyright 2016 IBM Corporation.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/irq.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/cpu.h>
+#include <linex/of.h>
 
 #include <asm/smp.h>
 #include <asm/irq.h>
@@ -76,7 +76,7 @@ static unsigned int icp_opal_get_irq(void)
 		return irq;
 	}
 
-	/* We don't have a linux mapping, so have rtas mask it. */
+	/* We don't have a linex mapping, so have rtas mask it. */
 	xics_mask_unknown_vec(vec);
 
 	/* We might learn about it later, so EOI it */

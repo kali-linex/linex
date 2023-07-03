@@ -30,7 +30,7 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "rds.h"
 #include "ib.h"

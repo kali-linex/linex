@@ -5,16 +5,16 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 /* USB Wrapper register offsets */
 #define USBSS_PID		0x0

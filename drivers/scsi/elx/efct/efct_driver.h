@@ -10,9 +10,9 @@
 /***************************************************************************
  * OS specific includes
  */
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/firmware.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/firmware.h>
 #include "../include/efc_common.h"
 #include "../libefc/efclib.h"
 #include "efct_hw.h"

@@ -11,9 +11,9 @@
  * should all have the ACPI device, which is the preferred way of enumeration.
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

@@ -2,14 +2,14 @@
 /*
  * Functions related to segment and merge handling
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
-#include <linux/blk-cgroup.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/blk-integrity.h>
+#include <linex/scatterlist.h>
+#include <linex/part_stat.h>
+#include <linex/blk-cgroup.h>
 
 #include <trace/events/block.h>
 

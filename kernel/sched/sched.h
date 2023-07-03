@@ -5,69 +5,69 @@
 #ifndef _KERNEL_SCHED_SCHED_H
 #define _KERNEL_SCHED_SCHED_H
 
-#include <linux/sched/affinity.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/rseq_api.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/smt.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/task_flags.h>
-#include <linux/sched/task.h>
-#include <linux/sched/topology.h>
+#include <linex/sched/affinity.h>
+#include <linex/sched/autogroup.h>
+#include <linex/sched/cpufreq.h>
+#include <linex/sched/deadline.h>
+#include <linex/sched.h>
+#include <linex/sched/loadavg.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/rseq_api.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/smt.h>
+#include <linex/sched/stat.h>
+#include <linex/sched/sysctl.h>
+#include <linex/sched/task_flags.h>
+#include <linex/sched/task.h>
+#include <linex/sched/topology.h>
 
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/capability.h>
-#include <linux/cgroup_api.h>
-#include <linux/cgroup.h>
-#include <linux/context_tracking.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask_api.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/fs_api.h>
-#include <linux/hrtimer_api.h>
-#include <linux/interrupt.h>
-#include <linux/irq_work.h>
-#include <linux/jiffies.h>
-#include <linux/kref_api.h>
-#include <linux/kthread.h>
-#include <linux/ktime_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/lockdep.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex_api.h>
-#include <linux/plist.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/rcupdate.h>
-#include <linux/seq_file.h>
-#include <linux/seqlock.h>
-#include <linux/softirq.h>
-#include <linux/spinlock_api.h>
-#include <linux/static_key.h>
-#include <linux/stop_machine.h>
-#include <linux/syscalls_api.h>
-#include <linux/syscalls.h>
-#include <linux/tick.h>
-#include <linux/topology.h>
-#include <linux/types.h>
-#include <linux/u64_stats_sync_api.h>
-#include <linux/uaccess.h>
-#include <linux/wait_api.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue_api.h>
+#include <linex/atomic.h>
+#include <linex/bitmap.h>
+#include <linex/bug.h>
+#include <linex/capability.h>
+#include <linex/cgroup_api.h>
+#include <linex/cgroup.h>
+#include <linex/context_tracking.h>
+#include <linex/cpufreq.h>
+#include <linex/cpumask_api.h>
+#include <linex/ctype.h>
+#include <linex/file.h>
+#include <linex/fs_api.h>
+#include <linex/hrtimer_api.h>
+#include <linex/interrupt.h>
+#include <linex/irq_work.h>
+#include <linex/jiffies.h>
+#include <linex/kref_api.h>
+#include <linex/kthread.h>
+#include <linex/ktime_api.h>
+#include <linex/lockdep_api.h>
+#include <linex/lockdep.h>
+#include <linex/minmax.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mutex_api.h>
+#include <linex/plist.h>
+#include <linex/poll.h>
+#include <linex/proc_fs.h>
+#include <linex/profile.h>
+#include <linex/psi.h>
+#include <linex/rcupdate.h>
+#include <linex/seq_file.h>
+#include <linex/seqlock.h>
+#include <linex/softirq.h>
+#include <linex/spinlock_api.h>
+#include <linex/static_key.h>
+#include <linex/stop_machine.h>
+#include <linex/syscalls_api.h>
+#include <linex/syscalls.h>
+#include <linex/tick.h>
+#include <linex/topology.h>
+#include <linex/types.h>
+#include <linex/u64_stats_sync_api.h>
+#include <linex/uaccess.h>
+#include <linex/wait_api.h>
+#include <linex/wait_bit.h>
+#include <linex/workqueue_api.h>
 
 #include <trace/events/power.h>
 #include <trace/events/sched.h>
@@ -75,12 +75,12 @@
 #include "../workqueue_internal.h"
 
 #ifdef CONFIG_CGROUP_SCHED
-#include <linux/cgroup.h>
-#include <linux/psi.h>
+#include <linex/cgroup.h>
+#include <linex/psi.h>
 #endif
 
 #ifdef CONFIG_SCHED_DEBUG
-# include <linux/static_key.h>
+# include <linex/static_key.h>
 #endif
 
 #ifdef CONFIG_PARAVIRT
@@ -1797,7 +1797,7 @@ queue_balance_callback(struct rq *rq,
 /* A mask of all the SD flags that have the SDF_SHARED_CHILD metaflag */
 #define SD_FLAG(name, mflags) (name * !!((mflags) & SDF_SHARED_CHILD)) |
 static const unsigned int SD_SHARED_CHILD_MASK =
-#include <linux/sched/sd_flags.h>
+#include <linex/sched/sd_flags.h>
 0;
 #undef SD_FLAG
 
@@ -2284,7 +2284,7 @@ static inline void set_next_task(struct rq *rq, struct task_struct *next)
  * Helper to define a sched_class instance; each one is placed in a separate
  * section which is ordered by the linker script:
  *
- *   include/asm-generic/vmlinux.lds.h
+ *   include/asm-generic/vmlinex.lds.h
  *
  * *CAREFUL* they are laid out in *REVERSE* order!!!
  *
@@ -2295,7 +2295,7 @@ const struct sched_class name##_sched_class \
 	__aligned(__alignof__(struct sched_class)) \
 	__section("__" #name "_sched_class")
 
-/* Defined in include/asm-generic/vmlinux.lds.h */
+/* Defined in include/asm-generic/vmlinex.lds.h */
 extern struct sched_class __sched_class_highest[];
 extern struct sched_class __sched_class_lowest[];
 

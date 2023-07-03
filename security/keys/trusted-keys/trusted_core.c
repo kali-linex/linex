@@ -11,18 +11,18 @@
 #include <keys/trusted_tee.h>
 #include <keys/trusted_caam.h>
 #include <keys/trusted_tpm.h>
-#include <linux/capability.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/key-type.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/static_call.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <linex/capability.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/key-type.h>
+#include <linex/module.h>
+#include <linex/parser.h>
+#include <linex/random.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
+#include <linex/static_call.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
 
 static char *trusted_rng = "default";
 module_param_named(rng, trusted_rng, charp, 0);

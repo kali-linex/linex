@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/uaccess.h>
+#include <linex/swap.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/seq_file.h>
+#include <linex/miscdevice.h>
+#include <linex/moduleparam.h>
 
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/hypercall.h>

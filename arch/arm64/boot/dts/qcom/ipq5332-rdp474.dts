@@ -30,9 +30,9 @@
 
 		button-wps {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			linex,code = <KEY_WPS_BUTTON>;
 			gpios = <&tlmm 35 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
+			linex,input-type = <1>;
 			debounce-interval = <60>;
 		};
 	};

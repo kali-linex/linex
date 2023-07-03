@@ -12,12 +12,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_data/x86/simatic-ipc.h>
-#include <linux/platform_device.h>
+#include <linex/dmi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_data/x86/simatic-ipc.h>
+#include <linex/platform_device.h>
 
 static struct platform_device *ipc_led_platform_device;
 static struct platform_device *ipc_wdt_platform_device;

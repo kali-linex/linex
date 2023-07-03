@@ -6,15 +6,15 @@
  * Copyright (C) 1992 Linus Torvalds
  * Copyright (C) 1994 - 2001, 2003, 07 Ralf Baechle
  */
-#include <linux/clockchips.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/pgtable.h>
+#include <linex/clockchips.h>
+#include <linex/i8253.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/irq.h>
+#include <linex/pgtable.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/i8259.h>

@@ -9,12 +9,12 @@
  * by Yu Liu <yu.liu@freescale.com>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
+#include <linex/kvm_host.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>

@@ -6,20 +6,20 @@
  * Copyright 2016 Alexey Kardashevskiy, IBM Corporation <aik@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/hugetlb.h>
-#include <linux/list.h>
-#include <linux/anon_inodes.h>
-#include <linux/iommu.h>
-#include <linux/file.h>
-#include <linux/mm.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
+#include <linex/highmem.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/hugetlb.h>
+#include <linex/list.h>
+#include <linex/anon_inodes.h>
+#include <linex/iommu.h>
+#include <linex/file.h>
+#include <linex/mm.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

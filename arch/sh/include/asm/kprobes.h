@@ -8,8 +8,8 @@
 
 #ifdef CONFIG_KPROBES
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
 
 typedef insn_size_t kprobe_opcode_t;
 

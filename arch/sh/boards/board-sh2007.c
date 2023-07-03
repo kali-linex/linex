@@ -5,14 +5,14 @@
  * Copyright (C) 2003, 2004  SUGIOKA Toshinobu
  * Copyright (C) 2010  Hitoshi Mitake <mitake@dcl.info.waseda.ac.jp>
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/smsc911x.h>
+#include <linex/platform_device.h>
+#include <linex/ata_platform.h>
+#include <linex/io.h>
 #include <asm/machvec.h>
 #include <mach/sh2007.h>
 

@@ -4,7 +4,7 @@
  *    Copyright (C) 2007 Xilinx, Inc.  All rights reserved.
  *
  *  Derived from "arch/ppc/mm/fault.c"
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -17,23 +17,23 @@
  *
  */
 
-#include <linux/extable.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/perf_event.h>
+#include <linex/extable.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/perf_event.h>
 
 #include <asm/page.h>
 #include <asm/mmu.h>
-#include <linux/mmu_context.h>
-#include <linux/uaccess.h>
+#include <linex/mmu_context.h>
+#include <linex/uaccess.h>
 #include <asm/exceptions.h>
 
 static unsigned long pte_misses;	/* updated by do_page_fault() */

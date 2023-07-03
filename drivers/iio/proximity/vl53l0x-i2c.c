@@ -14,14 +14,14 @@
  * TODO: FIFO buffer, continuous mode, range selection, sensor ID check.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
 
-#include <linux/iio/iio.h>
+#include <linex/iio/iio.h>
 
 #define VL_REG_SYSRANGE_START				0x00
 

@@ -4,10 +4,10 @@
  *
  *  Copyright (C) 2021 Western Digital Corporation or its Affiliates.
  */
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
+#include <linex/init.h>
 
 #include "blk.h"
 

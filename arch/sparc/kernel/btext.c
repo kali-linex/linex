@@ -4,10 +4,10 @@
  *
  * Benjamin Herrenschmidt <benh@kernel.crashing.org>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/console.h>
 
 #include <asm/btext.h>
 #include <asm/oplib.h>

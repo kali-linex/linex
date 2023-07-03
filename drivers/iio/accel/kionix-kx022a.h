@@ -8,8 +8,8 @@
 #ifndef _KX022A_H_
 #define _KX022A_H_
 
-#include <linux/bits.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/regmap.h>
 
 #define KX022A_REG_WHO		0x0f
 #define KX022A_ID		0xc8

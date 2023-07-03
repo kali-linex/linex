@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt)	"rtas: " fmt
 
-#include <linux/bsearch.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stdarg.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/xarray.h>
+#include <linex/bsearch.h>
+#include <linex/capability.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/kconfig.h>
+#include <linex/kernel.h>
+#include <linex/lockdep.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/reboot.h>
+#include <linex/sched.h>
+#include <linex/security.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/stdarg.h>
+#include <linex/syscalls.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/xarray.h>
 
 #include <asm/delay.h>
 #include <asm/firmware.h>
@@ -1068,7 +1068,7 @@ static bool token_is_restricted_errinjct(s32 token)
  * The @nargs and @nret arguments must match the number of input and
  * output parameters specified for the RTAS function.
  *
- * rtas_call() returns RTAS status codes, not conventional Linux errno
+ * rtas_call() returns RTAS status codes, not conventional Linex errno
  * values. Callers must translate any failure to an appropriate errno
  * in syscall context. Most callers of RTAS functions that can return
  * -2 or 990x should use rtas_busy_delay() to correctly handle those
@@ -1957,7 +1957,7 @@ void __init rtas_initialize(void)
 	if (!rtas.dev)
 		return;
 
-	no_base = of_property_read_u32(rtas.dev, "linux,rtas-base", &base);
+	no_base = of_property_read_u32(rtas.dev, "linex,rtas-base", &base);
 	no_size = of_property_read_u32(rtas.dev, "rtas-size", &size);
 	if (no_base || no_size) {
 		of_node_put(rtas.dev);
@@ -1967,7 +1967,7 @@ void __init rtas_initialize(void)
 
 	rtas.base = base;
 	rtas.size = size;
-	no_entry = of_property_read_u32(rtas.dev, "linux,rtas-entry", &entry);
+	no_entry = of_property_read_u32(rtas.dev, "linex,rtas-entry", &entry);
 	rtas.entry = no_entry ? rtas.base : entry;
 
 	init_error_log_max();
@@ -2005,8 +2005,8 @@ int __init early_init_dt_scan_rtas(unsigned long node,
 	if (depth != 1 || strcmp(uname, "rtas") != 0)
 		return 0;
 
-	basep  = of_get_flat_dt_prop(node, "linux,rtas-base", NULL);
-	entryp = of_get_flat_dt_prop(node, "linux,rtas-entry", NULL);
+	basep  = of_get_flat_dt_prop(node, "linex,rtas-base", NULL);
+	entryp = of_get_flat_dt_prop(node, "linex,rtas-entry", NULL);
 	sizep  = of_get_flat_dt_prop(node, "rtas-size", NULL);
 
 #ifdef CONFIG_PPC64

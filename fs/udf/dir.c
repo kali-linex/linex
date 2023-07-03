@@ -22,12 +22,12 @@
 
 #include "udfdecl.h"
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/bio.h>
-#include <linux/iversion.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/bio.h>
+#include <linex/iversion.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

@@ -52,44 +52,44 @@
  *	Based upon Swansea University Computer Society NET3.039
  */
 
-#include <linux/bpf-cgroup.h>
-#include <linux/ethtool.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/splice.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/thread_info.h>
-#include <linux/rcupdate.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/ptp_classify.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/kmod.h>
-#include <linux/audit.h>
-#include <linux/wireless.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/nospec.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/ethtool.h>
+#include <linex/mm.h>
+#include <linex/socket.h>
+#include <linex/file.h>
+#include <linex/splice.h>
+#include <linex/net.h>
+#include <linex/interrupt.h>
+#include <linex/thread_info.h>
+#include <linex/rcupdate.h>
+#include <linex/netdevice.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/mutex.h>
+#include <linex/if_bridge.h>
+#include <linex/if_vlan.h>
+#include <linex/ptp_classify.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/cache.h>
+#include <linex/module.h>
+#include <linex/highmem.h>
+#include <linex/mount.h>
+#include <linex/pseudo_fs.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/compat.h>
+#include <linex/kmod.h>
+#include <linex/audit.h>
+#include <linex/wireless.h>
+#include <linex/nsproxy.h>
+#include <linex/magic.h>
+#include <linex/slab.h>
+#include <linex/xattr.h>
+#include <linex/nospec.h>
+#include <linex/indirect_call_wrapper.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 
 #include <net/compat.h>
@@ -97,16 +97,16 @@
 #include <net/cls_cgroup.h>
 
 #include <net/sock.h>
-#include <linux/netfilter.h>
+#include <linex/netfilter.h>
 
-#include <linux/if_tun.h>
-#include <linux/ipv6_route.h>
-#include <linux/route.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
+#include <linex/if_tun.h>
+#include <linex/ipv6_route.h>
+#include <linex/route.h>
+#include <linex/termios.h>
+#include <linex/sockios.h>
 #include <net/busy_poll.h>
-#include <linux/errqueue.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linex/errqueue.h>
+#include <linex/ptp_clock_kernel.h>
 #include <trace/events/sock.h>
 
 #ifdef CONFIG_NET_RX_BUSY_POLL
@@ -2587,7 +2587,7 @@ SYSCALL_DEFINE3(sendmsg, int, fd, struct user_msghdr __user *, msg, unsigned int
 }
 
 /*
- *	Linux sendmmsg interface
+ *	Linex sendmmsg interface
  */
 
 int __sys_sendmmsg(int fd, struct mmsghdr __user *mmsg, unsigned int vlen,
@@ -2796,7 +2796,7 @@ SYSCALL_DEFINE3(recvmsg, int, fd, struct user_msghdr __user *, msg,
 }
 
 /*
- *     Linux recvmmsg interface
+ *     Linex recvmmsg interface
  */
 
 static int do_recvmmsg(int fd, struct mmsghdr __user *mmsg,

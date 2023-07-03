@@ -3,13 +3,13 @@
 #ifndef _SLIC_H
 #define _SLIC_H
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock_types.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/spinlock_types.h>
+#include <linex/dma-mapping.h>
+#include <linex/pci.h>
+#include <linex/list.h>
+#include <linex/u64_stats_sync.h>
 
 #define SLIC_VGBSTAT_XPERR		0x40000000
 #define SLIC_VGBSTAT_XERRSHFT		25

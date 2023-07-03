@@ -5,11 +5,11 @@
  * Copyright (C) 2019-2021 ARM Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/reset-controller.h>
-#include <linux/scmi_protocol.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/device.h>
+#include <linex/reset-controller.h>
+#include <linex/scmi_protocol.h>
 
 static const struct scmi_reset_proto_ops *reset_ops;
 

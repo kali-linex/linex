@@ -3,8 +3,8 @@
  * Copyright (c) 2021 pureLiFi
  */
 
-#include <linux/firmware.h>
-#include <linux/bitrev.h>
+#include <linex/firmware.h>
+#include <linex/bitrev.h>
 
 #include "mac.h"
 #include "usb.h"

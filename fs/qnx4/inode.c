@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, Linex implementation.
  *
  * Version : 0.2.1
  *
@@ -9,18 +9,18 @@
  * History :
  *
  * 01-06-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : Linux 2.1.99+ support, boot signature, misc.
+ * 20-06-1998 by Frank Denis : Linex 2.1.99+ support, boot signature, misc.
  * 30-06-1998 by Frank Denis : first step to write inodes.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/highuid.h>
+#include <linex/pagemap.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/statfs.h>
 #include "qnx4.h"
 
 #define QNX4_VERSION  4

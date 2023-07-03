@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) KBUILD_BASENAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/major.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/pm.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/kstrtox.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/idr.h>
+#include <linex/input/mt.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/major.h>
+#include <linex/proc_fs.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/pm.h>
+#include <linex/poll.h>
+#include <linex/device.h>
+#include <linex/kstrtox.h>
+#include <linex/mutex.h>
+#include <linex/rcupdate.h>
 #include "input-compat.h"
 #include "input-core-private.h"
 #include "input-poller.h"

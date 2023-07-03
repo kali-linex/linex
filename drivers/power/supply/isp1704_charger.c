@@ -6,23 +6,23 @@
  * Copyright (C) 2012 - 2013 Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/sysfs.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/delay.h>
+#include <linex/of.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/gpio/consumer.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/ulpi.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 /* Vendor specific Power Control register */
 #define ISP1704_PWR_CTRL		0x3d

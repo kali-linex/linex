@@ -7,8 +7,8 @@
 #ifndef _MTK_VCODEC_DEC_HW_H_
 #define _MTK_VCODEC_DEC_HW_H_
 
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
 
 #include "mtk_vcodec_drv.h"
 

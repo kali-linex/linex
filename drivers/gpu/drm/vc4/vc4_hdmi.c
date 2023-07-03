@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (C) 2015 Broadcom
- * Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014 The Linex Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
@@ -37,15 +37,15 @@
 #include <drm/drm_drv.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/rational.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/rational.h>
+#include <linex/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/hdmi-codec.h>
 #include <sound/pcm_drm_eld.h>

@@ -7,12 +7,12 @@
  * This source file contains Tegra210 supported video formats,
  * VI and CSI SoC specific data, operations and registers accessors.
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/delay.h>
-#include <linux/host1x.h>
-#include <linux/kthread.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/clk/tegra.h>
+#include <linex/delay.h>
+#include <linex/host1x.h>
+#include <linex/kthread.h>
 
 #include "csi.h"
 #include "vi.h"

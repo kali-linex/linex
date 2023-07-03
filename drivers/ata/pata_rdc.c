@@ -8,16 +8,16 @@
  *  Based on ata_piix.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/dmi.h>
+#include <linex/libata.h>
+#include <linex/dmi.h>
 
 #define DRV_NAME	"pata_rdc"
 #define DRV_VERSION	"0.01"

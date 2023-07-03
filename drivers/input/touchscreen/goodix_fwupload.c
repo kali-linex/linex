@@ -9,9 +9,9 @@
  * Author: andrew@goodix.com
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/i2c.h>
 #include "goodix.h"
 
 #define GOODIX_FW_HEADER_LENGTH		sizeof(struct goodix_fw_header)

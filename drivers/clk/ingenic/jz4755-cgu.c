@@ -7,9 +7,9 @@
  * Author: Siarhei Volkau <lis8215@gmail.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/of.h>
 
 #include <dt-bindings/clock/ingenic,jz4755-cgu.h>
 

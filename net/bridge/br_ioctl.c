@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Ioctl handler
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/times.h>
+#include <linex/capability.h>
+#include <linex/compat.h>
+#include <linex/kernel.h>
+#include <linex/if_bridge.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/times.h>
 #include <net/net_namespace.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "br_private.h"
 
 static int get_bridge_ifindices(struct net *net, int *indices, int num)

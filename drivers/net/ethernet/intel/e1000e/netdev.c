@@ -3,28 +3,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/tcp.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/prefetch.h>
-#include <linux/suspend.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
+#include <linex/pm_qos.h>
+#include <linex/pm_runtime.h>
+#include <linex/prefetch.h>
+#include <linex/suspend.h>
 
 #include "e1000.h"
 #define CREATE_TRACE_POINTS
@@ -7970,7 +7970,7 @@ static void __exit e1000_exit_module(void)
 }
 module_exit(e1000_exit_module);
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linex.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/1000 Network Driver");
 MODULE_LICENSE("GPL v2");
 

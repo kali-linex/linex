@@ -7,7 +7,7 @@
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
+#include <linex/jiffies.h>
 
 static struct _cmd_callback rtw_cmd_callback[] = {
 	{GEN_CMD_CODE(_Read_MACREG), NULL}, /*0*/

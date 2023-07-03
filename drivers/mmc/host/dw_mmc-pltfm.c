@@ -6,19 +6,19 @@
  * Copyright (C) 2009, 2010 Imagination Technologies Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/regmap.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/of.h>
+#include <linex/mfd/altera-sysmgr.h>
+#include <linex/regmap.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

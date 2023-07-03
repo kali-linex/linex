@@ -7,13 +7,13 @@
  * Based on arch/x86/mm/hugetlbpage.c.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/sysctl.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/pagemap.h>
+#include <linex/err.h>
+#include <linex/sysctl.h>
 #include <asm/mman.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

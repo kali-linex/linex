@@ -5,19 +5,19 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the Linex EHCI driver.
  */
 
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/dma-mapping.h>
+#include <linex/pci.h>
+#include <linex/iommu.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/dmi.h>
+#include <linex/dma-mapping.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

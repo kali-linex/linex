@@ -7,17 +7,17 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/property.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/i2c.h>
+#include <linex/gpio/driver.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/property.h>
+#include <linex/reboot.h>
 #include <asm/machdep.h>
 
 /*

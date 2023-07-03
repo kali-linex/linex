@@ -8,7 +8,7 @@
 #ifndef __AD193X_H__
 #define __AD193X_H__
 
-#include <linux/regmap.h>
+#include <linex/regmap.h>
 
 struct device;
 

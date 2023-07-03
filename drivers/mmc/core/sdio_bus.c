@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/core/sdio_bus.c
+ *  linex/drivers/mmc/core/sdio_bus.c
  *
  *  Copyright 2007 Pierre Ossman
  *
  * SDIO function driver model
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_domain.h>
+#include <linex/acpi.h>
+#include <linex/sysfs.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/of.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/of.h>
 
 #include "core.h"
 #include "card.h"

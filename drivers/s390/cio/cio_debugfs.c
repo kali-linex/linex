@@ -3,10 +3,10 @@
  *   S/390 common I/O debugfs interface
  *
  *    Copyright IBM Corp. 2021
- *    Author(s): Vineeth Vijayan <vneethv@linux.ibm.com>
+ *    Author(s): Vineeth Vijayan <vneethv@linex.ibm.com>
  */
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 #include "cio_debug.h"
 
 struct dentry *cio_debugfs_dir;

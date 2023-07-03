@@ -10,23 +10,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/syscore_ops.h>
+#include <linex/cpu.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/debugfs.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/vmalloc.h>
+#include <linex/pgtable.h>
 #include <asm/cacheflush.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <linex/sizes.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
 #include <asm/mmu_context.h>

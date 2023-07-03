@@ -8,15 +8,15 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mISDNif.h>
-#include <linux/mutex.h>
-#include <linux/sched/signal.h>
+#include <linex/poll.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mISDNif.h>
+#include <linex/mutex.h>
+#include <linex/sched/signal.h>
 
 #include "core.h"
 

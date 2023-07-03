@@ -4,20 +4,20 @@
  *
  * Maintainer: Byron Bradley <byron.bbradley@gmail.com>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/serial_reg.h>
-#include <linux/ata_platform.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/pci.h>
+#include <linex/irq.h>
+#include <linex/mtd/physmap.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mv643xx_eth.h>
+#include <linex/gpio_keys.h>
+#include <linex/input.h>
+#include <linex/i2c.h>
+#include <linex/serial_reg.h>
+#include <linex/ata_platform.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>

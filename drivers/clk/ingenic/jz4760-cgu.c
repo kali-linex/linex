@@ -4,13 +4,13 @@
  * Copyright 2018, Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/bitops.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/of.h>
 
-#include <linux/clk.h>
+#include <linex/clk.h>
 
 #include <dt-bindings/clock/ingenic,jz4760-cgu.h>
 

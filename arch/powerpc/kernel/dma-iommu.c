@@ -6,8 +6,8 @@
  * busses using the iommu infrastructure
  */
 
-#include <linux/dma-direct.h>
-#include <linux/pci.h>
+#include <linex/dma-direct.h>
+#include <linex/pci.h>
 #include <asm/iommu.h>
 
 #ifdef CONFIG_ARCH_HAS_DMA_MAP_DIRECT

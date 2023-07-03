@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/slab.h>
-#include <linux/sched/task.h>
+#include <linex/slab.h>
+#include <linex/sched/task.h>
 
 #include "futex.h"
 #include "../locking/rtmutex_common.h"

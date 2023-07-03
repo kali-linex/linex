@@ -38,7 +38,7 @@
  * forcibly disable it to allow proper screen updates.
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include <drm/drm_blend.h>
 #include <drm/drm_fourcc.h>

@@ -34,20 +34,20 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/file.h>
+#include <linex/cdev.h>
+#include <linex/anon_inodes.h>
+#include <linex/slab.h>
+#include <linex/sched/mm.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <rdma/ib.h>
 #include <rdma/uverbs_std_types.h>

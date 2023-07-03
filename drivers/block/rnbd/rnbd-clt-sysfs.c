@@ -10,14 +10,14 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/parser.h>
-#include <linux/module.h>
-#include <linux/in6.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
+#include <linex/types.h>
+#include <linex/ctype.h>
+#include <linex/parser.h>
+#include <linex/module.h>
+#include <linex/in6.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
+#include <linex/device.h>
 #include <rdma/ib.h>
 #include <rdma/rdma_cm.h>
 

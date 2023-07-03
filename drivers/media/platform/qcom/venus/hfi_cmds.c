@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The Linex Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/overflow.h>
-#include <linux/errno.h>
-#include <linux/hash.h>
+#include <linex/overflow.h>
+#include <linex/errno.h>
+#include <linex/hash.h>
 
 #include "hfi_cmds.h"
 

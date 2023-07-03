@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/memory.h>
-#include <linux/stop_machine.h>
+#include <linex/bitfield.h>
+#include <linex/bpf.h>
+#include <linex/filter.h>
+#include <linex/memory.h>
+#include <linex/stop_machine.h>
 #include <asm/patch.h>
 #include "bpf_jit.h"
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. */
 
-#include <linux/module.h>
-#include <linux/kdev_t.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kdev_t.h>
+#include <linex/semaphore.h>
+#include <linex/slab.h>
 
 #include <asm/cpu_device_id.h>
 

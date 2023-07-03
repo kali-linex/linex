@@ -7,17 +7,17 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/idr.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/idr.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
 
 static struct class *phy_class;
 static DEFINE_MUTEX(phy_provider_mutex);

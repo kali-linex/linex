@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
-#include <linux/libnvdimm.h>
+#include <linex/libnvdimm.h>
 #include <asm/unaligned.h>
-#include <linux/module.h>
-#include <linux/async.h>
-#include <linux/slab.h>
-#include <linux/memregion.h>
+#include <linex/module.h>
+#include <linex/async.h>
+#include <linex/slab.h>
+#include <linex/memregion.h>
 #include "cxlmem.h"
 #include "cxl.h"
 

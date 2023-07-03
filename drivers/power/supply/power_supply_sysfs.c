@@ -10,11 +10,11 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <linex/ctype.h>
+#include <linex/device.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
 
 #include "power_supply.h"
 

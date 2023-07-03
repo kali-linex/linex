@@ -10,27 +10,27 @@
  *  mm/ksm.c (mm hashing).
  */
 
-#include <linux/list.h>
-#include <linux/hashtable.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/file.h>
-#include <linux/bug.h>
-#include <linux/anon_inodes.h>
-#include <linux/syscalls.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/mempolicy.h>
-#include <linux/ioctl.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/swapops.h>
-#include <linux/miscdevice.h>
+#include <linex/list.h>
+#include <linex/hashtable.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/mmu_notifier.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/file.h>
+#include <linex/bug.h>
+#include <linex/anon_inodes.h>
+#include <linex/syscalls.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/mempolicy.h>
+#include <linex/ioctl.h>
+#include <linex/security.h>
+#include <linex/hugetlb.h>
+#include <linex/swapops.h>
+#include <linex/miscdevice.h>
 
 static int sysctl_unprivileged_userfaultfd __read_mostly;
 

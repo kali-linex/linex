@@ -7,16 +7,16 @@
  * Author: Dipen Dudhat <Dipen.Dudhat@freescale.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/fsl_ifc.h>
-#include <linux/iopoll.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/fsl_ifc.h>
+#include <linex/iopoll.h>
 
 #define ERR_BYTE		0xFF /* Value returned for read
 					bytes when read failed	*/

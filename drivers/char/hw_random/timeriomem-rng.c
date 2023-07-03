@@ -17,18 +17,18 @@
  * TODO: add support for reading sizes other than 32bits and masking
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/hrtimer.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/timeriomem-rng.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/hrtimer.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/ktime.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/timeriomem-rng.h>
 
 struct timeriomem_rng_private {
 	void __iomem		*io_base;

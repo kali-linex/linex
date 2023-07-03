@@ -3,8 +3,8 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/timekeeping.h>
+#include <linex/etherdevice.h>
+#include <linex/timekeeping.h>
 #include "coredump.h"
 #include "mt7996.h"
 #include "../dma.h"

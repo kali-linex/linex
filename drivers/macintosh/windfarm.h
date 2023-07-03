@@ -9,11 +9,11 @@
 #ifndef __WINDFARM_H__
 #define __WINDFARM_H__
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/device.h>
 
 /* Display a 16.16 fixed point value */
 #define FIX32TOPRINT(f)	(((s32)(f)) >> 16),(((((s32)(f)) & 0xffff) * 1000) >> 16)

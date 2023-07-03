@@ -7,12 +7,12 @@
  * Author: Milo Kim <milo.kim@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/mfd/lp3943.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/mfd/lp3943.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/slab.h>
 
 #define LP3943_MAX_DUTY			255
 #define LP3943_MIN_PERIOD		6250

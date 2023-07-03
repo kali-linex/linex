@@ -5,8 +5,8 @@
 #ifndef _ASM_FUTEX_H
 #define _ASM_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linex/futex.h>
+#include <linex/uaccess.h>
 #include <asm/asm-extable.h>
 #include <asm/barrier.h>
 #include <asm/errno.h>

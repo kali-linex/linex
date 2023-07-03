@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
 
 #include "nitrox_csr.h"
 #include "nitrox_debugfs.h"

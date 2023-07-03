@@ -3,11 +3,11 @@
  * Copyright (C) 2017 Free Electrons
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <video/mipi_display.h>
 

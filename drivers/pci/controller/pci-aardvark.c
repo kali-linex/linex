@@ -8,23 +8,23 @@
  * Author: Hezi Shahmoon <hezi.shahmoon@marvell.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/init.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pci-ecam.h>
+#include <linex/init.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/of_gpio.h>
+#include <linex/of_pci.h>
 
 #include "../pci.h"
 #include "../pci-bridge-emul.h"

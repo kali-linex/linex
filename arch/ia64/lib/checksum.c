@@ -11,8 +11,8 @@
  * in an architecture-specific manner due to speed..
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/string.h>
 
 #include <asm/byteorder.h>
 

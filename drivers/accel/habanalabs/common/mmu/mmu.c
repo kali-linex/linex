@@ -5,7 +5,7 @@
  * All Rights Reserved.
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "../habanalabs.h"
 

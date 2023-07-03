@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/mmc/core/sdio_irq.c
+ * linex/drivers/mmc/core/sdio_irq.c
  *
  * Author:      Nicolas Pitre
  * Created:     June 18, 2007
@@ -9,19 +9,19 @@
  * Copyright 2008 Pierre Ossman
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/kthread.h>
+#include <linex/export.h>
+#include <linex/wait.h>
+#include <linex/delay.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 #include "core.h"

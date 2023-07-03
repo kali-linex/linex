@@ -5,22 +5,22 @@
 // Copyright (C) 2020 Intel Corporation, Inc.
 //
 // Authors:
-//   Matthew Gerlach <matthew.gerlach@linux.intel.com>
+//   Matthew Gerlach <matthew.gerlach@linex.intel.com>
 //
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitfield.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/altera.h>
-#include <linux/dfl.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/stddef.h>
+#include <linex/errno.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/bitfield.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/altera.h>
+#include <linex/dfl.h>
 
 #define FME_FEATURE_ID_MAX10_SPI	0xe
 #define FME_FEATURE_REV_MAX10_SPI_N5010	0x1

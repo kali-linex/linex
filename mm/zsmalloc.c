@@ -37,31 +37,31 @@
  *	zspage->lock
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/highmem.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/pgtable.h>
 #include <asm/tlbflush.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/vmalloc.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/shrinker.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/zsmalloc.h>
-#include <linux/zpool.h>
-#include <linux/migrate.h>
-#include <linux/wait.h>
-#include <linux/pagemap.h>
-#include <linux/fs.h>
-#include <linux/local_lock.h>
+#include <linex/cpumask.h>
+#include <linex/cpu.h>
+#include <linex/vmalloc.h>
+#include <linex/preempt.h>
+#include <linex/spinlock.h>
+#include <linex/shrinker.h>
+#include <linex/types.h>
+#include <linex/debugfs.h>
+#include <linex/zsmalloc.h>
+#include <linex/zpool.h>
+#include <linex/migrate.h>
+#include <linex/wait.h>
+#include <linex/pagemap.h>
+#include <linex/fs.h>
+#include <linex/local_lock.h>
 
 #define ZSPAGE_MAGIC	0x58
 

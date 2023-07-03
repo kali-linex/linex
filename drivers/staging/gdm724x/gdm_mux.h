@@ -4,9 +4,9 @@
 #ifndef _GDM_MUX_H_
 #define _GDM_MUX_H_
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/list.h>
+#include <linex/types.h>
+#include <linex/usb.h>
+#include <linex/list.h>
 
 #include "gdm_tty.h"
 

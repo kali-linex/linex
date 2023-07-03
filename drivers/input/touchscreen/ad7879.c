@@ -20,18 +20,18 @@
  *	Copyright (C) 2006-2008 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/gpio/driver.h>
 
-#include <linux/input/touchscreen.h>
-#include <linux/module.h>
+#include <linex/input/touchscreen.h>
+#include <linex/module.h>
 #include "ad7879.h"
 
 #define AD7879_REG_ZEROS		0
@@ -182,7 +182,7 @@ static int ad7879_report(struct ad7879 *ts)
 	 * filter.  The combination of these two techniques provides a robust
 	 * solution, discarding the spurious noise in the signal and keeping
 	 * only the data of interest.  The size of both filters is
-	 * programmable. (dev.platform_data, see linux/platform_data/ad7879.h)
+	 * programmable. (dev.platform_data, see linex/platform_data/ad7879.h)
 	 * Other user-programmable conversion controls include variable
 	 * acquisition time, and first conversion delay. Up to 16 averages can
 	 * be taken per conversion.

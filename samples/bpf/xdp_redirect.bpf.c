@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
  */
-#include "vmlinux.h"
+#include "vmlinex.h"
 #include "xdp_sample.bpf.h"
 #include "xdp_sample_shared.h"
 

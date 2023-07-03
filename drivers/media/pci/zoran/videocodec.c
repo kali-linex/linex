@@ -8,11 +8,11 @@
  * (c) 2002 Wolfgang Scherr <scherr@net4you.at>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 
 #include "videocodec.h"
 

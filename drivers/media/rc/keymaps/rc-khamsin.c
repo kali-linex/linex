@@ -2,7 +2,7 @@
 // Copyright (c) 2020 Christian Hewitt
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * KHAMSIN is an IR/Bluetooth RCU supplied with the SmartLabs

@@ -59,28 +59,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/net_tstamp.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/if_vlan.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_platform.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/in.h>
+#include <linex/net_tstamp.h>
 
 #include <asm/io.h>
 #ifdef CONFIG_PPC
@@ -88,15 +88,15 @@
 #include <asm/mpc85xx.h>
 #endif
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/crc32.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
+#include <linex/phy_fixed.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
 
 #include "gianfar.h"
 

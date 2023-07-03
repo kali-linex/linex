@@ -11,12 +11,12 @@
  * RFC 8033: https://tools.ietf.org/html/rfc8033
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
 #include <net/pkt_sched.h>
 #include <net/inet_ecn.h>
 #include <net/pie.h>

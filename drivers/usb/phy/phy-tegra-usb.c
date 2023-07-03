@@ -9,25 +9,25 @@
  *	Venu Byravarasu <vbyravarasu@nvidia.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/resource.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
-#include <linux/regulator/consumer.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/of.h>
-#include <linux/usb/tegra_usb_phy.h>
-#include <linux/usb/ulpi.h>
+#include <linex/usb/ehci_def.h>
+#include <linex/usb/of.h>
+#include <linex/usb/tegra_usb_phy.h>
+#include <linex/usb/ulpi.h>
 
 #define ULPI_VIEWPORT				0x170
 

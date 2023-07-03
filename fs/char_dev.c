@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/char_dev.c
+ *  linex/fs/char_dev.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/kdev_t.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <linex/major.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
 
-#include <linux/kobject.h>
-#include <linux/kobj_map.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/tty.h>
+#include <linex/kobject.h>
+#include <linex/kobj_map.h>
+#include <linex/cdev.h>
+#include <linex/mutex.h>
+#include <linex/backing-dev.h>
+#include <linex/tty.h>
 
 #include "internal.h"
 

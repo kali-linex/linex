@@ -5,11 +5,11 @@
  * Copyright (c) 2019, Intel Corporation.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/intel-ish-client-if.h>
-#include <linux/property.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/intel-ish-client-if.h>
+#include <linex/property.h>
 #include <asm/cacheflush.h>
 
 /* Number of times we attempt to load the firmware before giving up */

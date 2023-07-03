@@ -3,19 +3,19 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/clk.h>
-#include <linux/cpumask.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <linex/clk.h>
+#include <linex/cpumask.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/skbuff.h>
 
 #include "hnae.h"
 #include "hns_enet.h"

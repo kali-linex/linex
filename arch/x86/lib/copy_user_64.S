@@ -6,7 +6,7 @@
  * Functions to copy from and to user space.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h>
 #include <asm/asm.h>

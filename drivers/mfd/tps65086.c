@@ -6,12 +6,12 @@
  * Based on the TPS65912 driver
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
 
-#include <linux/mfd/tps65086.h>
+#include <linex/mfd/tps65086.h>
 
 static const struct mfd_cell tps65086_cells[] = {
 	{ .name = "tps65086-regulator", },

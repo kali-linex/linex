@@ -6,13 +6,13 @@
  * Copyright (C) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/atc260x/core.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/atc260x/core.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
 #define ATC260X_CHIP_REV_MAX	31
 

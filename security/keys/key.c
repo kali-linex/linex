@@ -5,16 +5,16 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/workqueue.h>
-#include <linux/random.h>
-#include <linux/ima.h>
-#include <linux/err.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/poison.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/security.h>
+#include <linex/workqueue.h>
+#include <linex/random.h>
+#include <linex/ima.h>
+#include <linex/err.h>
 #include "internal.h"
 
 struct kmem_cache *key_jar;

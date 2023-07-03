@@ -9,7 +9,7 @@
 #ifndef _XTENSA_CACHEFLUSH_H
 #define _XTENSA_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

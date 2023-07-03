@@ -3,28 +3,28 @@
 /*
  * Directory operations for Coda filesystem
  * Original version: (C) 1996 P. Braam and M. Callahan
- * Rewritten for Linux 2.1. (C) 1997 Carnegie Mellon University
+ * Rewritten for Linex 2.1. (C) 1997 Carnegie Mellon University
  * 
  * Carnegie Mellon encourages users to contribute improvements to
  * the Coda project. Contact Peter Braam (coda@cs.cmu.edu).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/namei.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/namei.h>
+#include <linex/uaccess.h>
 
-#include <linux/coda.h>
+#include <linex/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

@@ -6,18 +6,18 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/dccp.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/in.h>
+#include <linex/if_arp.h>
+#include <linex/init.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 #include <net/checksum.h>
 
 #include <net/inet_sock.h>
@@ -26,10 +26,10 @@
 #include <net/xfrm.h>
 
 #include <asm/ioctls.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
+#include <linex/delay.h>
+#include <linex/poll.h>
 
 #include "ccid.h"
 #include "dccp.h"

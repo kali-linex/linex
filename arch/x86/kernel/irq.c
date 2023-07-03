@@ -2,16 +2,16 @@
 /*
  * Common interrupt code for 32 and 64 bit
  */
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/irq.h>
+#include <linex/cpu.h>
+#include <linex/interrupt.h>
+#include <linex/kernel_stat.h>
+#include <linex/of.h>
+#include <linex/seq_file.h>
+#include <linex/smp.h>
+#include <linex/ftrace.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/irq.h>
 
 #include <asm/irq_stack.h>
 #include <asm/apic.h>

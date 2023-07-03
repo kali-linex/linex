@@ -12,15 +12,15 @@
  *   where 0-3 reflects the chip select for NAND.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/iopoll.h>
 
 #include <asm/msr.h>
 

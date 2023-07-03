@@ -295,7 +295,7 @@
 
 &pon_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 };
 
 &qupv3_id_0 {

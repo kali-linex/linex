@@ -6,11 +6,11 @@
 /* rpcrdma.ko module initialization
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sunrpc/svc_rdma.h>
 
 #include <asm/swab.h>
 

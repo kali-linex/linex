@@ -10,36 +10,36 @@
 //
 // Copyright 2004-2009 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/workqueue.h>
+#include <linex/init.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/spinlock.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/dmaengine.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/workqueue.h>
 
 #include <asm/irq.h>
-#include <linux/dma/imx-dma.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/dma/imx-dma.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

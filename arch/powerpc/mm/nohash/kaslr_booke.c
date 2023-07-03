@@ -2,20 +2,20 @@
 //
 // Copyright (C) 2019 Jason Yan <yanaijie@huawei.com>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/libfdt.h>
-#include <linux/crash_core.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/stddef.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/memblock.h>
+#include <linex/libfdt.h>
+#include <linex/crash_core.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
 #include <asm/cacheflush.h>
 #include <asm/kdump.h>
 #include <mm/mmu_decl.h>
@@ -66,7 +66,7 @@ static unsigned long __init get_boot_seed(void *fdt)
 	unsigned long hash = 0;
 
 	/* build-specific string for starting entropy. */
-	hash = rotate_xor(hash, linux_banner, strlen(linux_banner));
+	hash = rotate_xor(hash, linex_banner, strlen(linex_banner));
 	hash = rotate_xor(hash, fdt, fdt_totalsize(fdt));
 
 	return hash;
@@ -201,12 +201,12 @@ static void __init get_initrd_range(void *fdt)
 	if (node < 0)
 		return;
 
-	prop = fdt_getprop(fdt, node, "linux,initrd-start", &len);
+	prop = fdt_getprop(fdt, node, "linex,initrd-start", &len);
 	if (!prop)
 		return;
 	start = of_read_number(prop, len / 4);
 
-	prop = fdt_getprop(fdt, node, "linux,initrd-end", &len);
+	prop = fdt_getprop(fdt, node, "linex,initrd-end", &len);
 	if (!prop)
 		return;
 	end = of_read_number(prop, len / 4);

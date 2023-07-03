@@ -3,10 +3,10 @@
  *
  * Copyright(c) 2008 - 2014, 2022 Intel Corporation. All rights reserved.
  *****************************************************************************/
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
 #include <net/mac80211.h>
 
 #include "iwl-io.h"

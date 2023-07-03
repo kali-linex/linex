@@ -4,22 +4,22 @@
  * Stack trace utility functions etc.
  *
  * Copyright 2008 Christoph Hellwig, IBM Corp.
- * Copyright 2018 SUSE Linux GmbH
+ * Copyright 2018 SUSE Linex GmbH
  * Copyright 2018 Nick Piggin, Michael Ellerman, IBM Corp.
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/kallsyms.h>
+#include <linex/module.h>
+#include <linex/nmi.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/stacktrace.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/ftrace.h>
+#include <linex/ftrace.h>
 #include <asm/kprobes.h>
 
 #include <asm/paca.h>

@@ -6,18 +6,18 @@
  * Copyright IBM Corporation, 2008
  *
  * Author: Ingo Molnar <mingo@elte.hu>
- *	   Paul E. McKenney <paulmck@linux.ibm.com>
+ *	   Paul E. McKenney <paulmck@linex.ibm.com>
  */
 
-#include <linux/cache.h>
-#include <linux/kthread.h>
-#include <linux/spinlock.h>
-#include <linux/rtmutex.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/seqlock.h>
-#include <linux/swait.h>
-#include <linux/rcu_node_tree.h>
+#include <linex/cache.h>
+#include <linex/kthread.h>
+#include <linex/spinlock.h>
+#include <linex/rtmutex.h>
+#include <linex/threads.h>
+#include <linex/cpumask.h>
+#include <linex/seqlock.h>
+#include <linex/swait.h>
+#include <linex/rcu_node_tree.h>
 
 #include "rcu_segcblist.h"
 

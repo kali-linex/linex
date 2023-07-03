@@ -3,9 +3,9 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/context_tracking.h>
-#include <linux/cpuidle.h>
-#include <linux/module.h>
+#include <linex/context_tracking.h>
+#include <linex/cpuidle.h>
+#include <linex/module.h>
 #include <asm/cpuidle.h>
 
 #include <soc/imx/cpuidle.h>

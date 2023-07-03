@@ -6,8 +6,8 @@
 #ifndef IOSM_IPC_TRACE_H
 #define IOSM_IPC_TRACE_H
 
-#include <linux/debugfs.h>
-#include <linux/relay.h>
+#include <linex/debugfs.h>
+#include <linex/relay.h>
 
 #include "iosm_ipc_chnl_cfg.h"
 #include "iosm_ipc_imem_ops.h"

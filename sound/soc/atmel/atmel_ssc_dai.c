@@ -14,15 +14,15 @@
  * Liam Girdwood <lrg@slimlogic.co.uk>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/atmel_pdc.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/atmel_pdc.h>
 
-#include <linux/atmel-ssc.h>
+#include <linex/atmel-ssc.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

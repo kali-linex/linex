@@ -7,17 +7,17 @@
  * Author: Milo Kim <milo.kim@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/mfd/ti-lmu.h>
-#include <linux/mfd/ti-lmu-register.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/mfd/ti-lmu.h>
+#include <linex/mfd/ti-lmu-register.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/slab.h>
 
 /* LM3631 */
 #define LM3631_BOOST_VSEL_MAX		0x25

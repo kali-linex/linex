@@ -5,13 +5,13 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libps2.h>
-#include <linux/i2c.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/libps2.h>
+#include <linex/i2c.h>
+#include <linex/serio.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 #include "psmouse.h"
 
 struct psmouse_smbus_dev {

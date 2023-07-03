@@ -9,15 +9,15 @@
  * Author: Brijesh Singh <brijesh.singh@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/ccp.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/spinlock_types.h>
+#include <linex/types.h>
+#include <linex/ccp.h>
 
 #include "ccp-dev.h"
 #include "sp-dev.h"

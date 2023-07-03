@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2022-2023 Loongson Technology Corporation Limited
  */
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
+#include <linex/kernel.h>
+#include <linex/ftrace.h>
 
 #include <asm/unwind.h>
 

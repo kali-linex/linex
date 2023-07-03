@@ -1,5 +1,5 @@
- /*-*- linux-c -*-
- *  linux/drivers/video/i810_main.c -- Intel 810 frame buffer device
+ /*-*- linex-c -*-
+ *  linex/drivers/video/i810_main.c -- Intel 810 frame buffer device
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved
@@ -10,7 +10,7 @@
  *                                        external VGA connectors for
  *                                        secondary displays
  *
- *         Fredrik Andersson <krueger@shell.linux.se> - alpha testing of
+ *         Fredrik Andersson <krueger@shell.linex.se> - alpha testing of
  *                                        the VESA GTF
  *
  *         Brad Corrion <bcorrion@web-co.com> - alpha testing of customized
@@ -28,21 +28,21 @@
  *  more details.
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/resource.h>
-#include <linux/unistd.h>
-#include <linux/console.h>
-#include <linux/io.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/resource.h>
+#include <linex/unistd.h>
+#include <linex/console.h>
+#include <linex/io.h>
 
 #include <asm/io.h>
 #include <asm/div64.h>

@@ -4,12 +4,12 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/shmem_fs.h>
-#include <linux/dma-buf.h>
-#include <linux/pfn_t.h>
+#include <linex/dma-map-ops.h>
+#include <linex/vmalloc.h>
+#include <linex/spinlock.h>
+#include <linex/shmem_fs.h>
+#include <linex/dma-buf.h>
+#include <linex/pfn_t.h>
 
 #include <drm/drm_prime.h>
 

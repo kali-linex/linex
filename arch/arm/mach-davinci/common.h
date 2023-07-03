@@ -10,10 +10,10 @@
 #ifndef __ARCH_ARM_MACH_DAVINCI_COMMON_H
 #define __ARCH_ARM_MACH_DAVINCI_COMMON_H
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
+#include <linex/clk.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/reboot.h>
 
 #include <asm/irq.h>
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/compat.h>
-#include <linux/ptrace.h>
+#include <linex/compat.h>
+#include <linex/ptrace.h>
 #include <asm/cio.h>
 #include <asm/asm-offsets.h>
 #include "boot.h"

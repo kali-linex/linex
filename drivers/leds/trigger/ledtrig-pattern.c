@@ -7,12 +7,12 @@
  * the first version, Baolin Wang simplified and improved the approach.
  */
 
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
 
 #define MAX_PATTERNS		1024
 /*

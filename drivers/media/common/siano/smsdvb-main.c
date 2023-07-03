@@ -10,9 +10,9 @@ Copyright (C) 2006-2008, Uri Shkolnik
 
 #include "smscoreapi.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
 #include <asm/div64.h>
 
 #include <media/dmxdev.h>

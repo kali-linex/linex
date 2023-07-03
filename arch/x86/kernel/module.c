@@ -6,19 +6,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/jump_label.h>
-#include <linux/random.h>
-#include <linux/memory.h>
+#include <linex/moduleloader.h>
+#include <linex/elf.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/kasan.h>
+#include <linex/bug.h>
+#include <linex/mm.h>
+#include <linex/gfp.h>
+#include <linex/jump_label.h>
+#include <linex/random.h>
+#include <linex/memory.h>
 
 #include <asm/text-patching.h>
 #include <asm/page.h>

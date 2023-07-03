@@ -7,8 +7,8 @@
  */
 
 #include "it913x.h"
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 struct it913x_dev {
 	struct platform_device *pdev;

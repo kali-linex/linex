@@ -5,26 +5,26 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/iio/iio.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/iio/machine.h>
+#include <linex/iio/driver.h>
+#include <linex/iopoll.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <linex/mfd/ti_am335x_tscadc.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/kfifo_buf.h>
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
 
 #define DMA_BUFFER_SIZE		SZ_2K
 

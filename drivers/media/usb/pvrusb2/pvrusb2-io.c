@@ -6,10 +6,10 @@
 
 #include "pvrusb2-io.h"
 #include "pvrusb2-debug.h"
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
 
 static const char *pvr2_buffer_state_decode(enum pvr2_buffer_state);
 

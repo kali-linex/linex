@@ -8,8 +8,8 @@
 #ifndef CPUCP_IF_H
 #define CPUCP_IF_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
 
 #include "hl_boot_if.h"
 
@@ -574,7 +574,7 @@ enum pq_init_status {
  *       number of retries done by PCIe.
  *
  * CPUCP_PACKET_TOTAL_ENERGY_GET -
- *       Total Energy is measurement of energy from the time FW Linux
+ *       Total Energy is measurement of energy from the time FW Linex
  *       is loaded. It is calculated by multiplying the average power
  *       by time (passed from armcp start). The units are in MilliJouls.
  *
@@ -894,7 +894,7 @@ enum cpucp_packet_rc {
 
 /*
  * cpucp_temp_type should adhere to hwmon_temp_attributes
- * defined in Linux kernel hwmon.h file
+ * defined in Linex kernel hwmon.h file
  */
 enum cpucp_temp_type {
 	cpucp_temp_input,
@@ -966,7 +966,7 @@ enum cpucp_pll_type_attributes {
 
 /*
  * cpucp_power_type aligns with hwmon_power_attributes
- * defined in Linux kernel hwmon.h file
+ * defined in Linex kernel hwmon.h file
  */
 enum cpucp_power_type {
 	CPUCP_POWER_INPUT = 8,
@@ -1098,7 +1098,7 @@ struct cpucp_security_info {
 /**
  * struct cpucp_info - Info from CpuCP that is necessary to the host's driver
  * @sensors: available sensors description.
- * @kernel_version: CpuCP linux kernel version.
+ * @kernel_version: CpuCP linex kernel version.
  * @reserved: reserved field.
  * @card_type: card configuration type.
  * @card_location: in a server, each card has different connections topology

@@ -10,19 +10,19 @@
  * Alex Bounine <alexandre.bounine@idt.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/rio_regs.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/rio.h>
+#include <linex/rio_drv.h>
+#include <linex/rio_ids.h>
+#include <linex/rio_regs.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
 
 #include "rio.h"
 

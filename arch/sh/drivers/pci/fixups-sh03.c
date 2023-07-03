@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sh_intc.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/sh_intc.h>
 
 int pcibios_map_platform_irq(const struct pci_dev *dev, u8 slot, u8 pin)
 {

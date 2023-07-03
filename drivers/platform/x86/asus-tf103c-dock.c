@@ -11,21 +11,21 @@
  * Copyright (C) 2021 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/hid.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mod_devicetable.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/hid.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/mod_devicetable.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/workqueue.h>
 #include <asm/unaligned.h>
 
 static bool fnlock;

@@ -4,10 +4,10 @@
  * Author: Kevin Chen <kevin-cw.chen@mediatek.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include "clk-gate.h"
 #include "clk-mtk.h"

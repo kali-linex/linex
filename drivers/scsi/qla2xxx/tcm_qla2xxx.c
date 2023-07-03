@@ -15,15 +15,15 @@
  ****************************************************************************/
 
 
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
+#include <linex/module.h>
+#include <linex/utsname.h>
+#include <linex/vmalloc.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/configfs.h>
+#include <linex/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_host.h>
 #include <target/target_core_base.h>

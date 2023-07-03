@@ -7,21 +7,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/fips.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/crypto.h>
+#include <linex/delay.h>
+#include <linex/fips.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include <crypto/ecc_curve.h>
 #include <crypto/ecdh.h>

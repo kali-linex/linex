@@ -9,14 +9,14 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/mfd/da903x.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #define DA9030_WLED_CONTROL	0x25
 #define DA9030_WLED_CP_EN	(1 << 6)

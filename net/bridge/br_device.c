@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Device handling code
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/list.h>
-#include <linux/netfilter_bridge.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/netpoll.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/list.h>
+#include <linex/netfilter_bridge.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "br_private.h"
 
 #define COMMON_FEATURES (NETIF_F_SG | NETIF_F_FRAGLIST | NETIF_F_HIGHDMA | \

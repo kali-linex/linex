@@ -7,21 +7,21 @@
  * Copyright (c) 2010 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <crypto/if_alg.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/security.h>
-#include <linux/string.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/key.h>
+#include <linex/key-type.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/rwsem.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/security.h>
+#include <linex/string.h>
 #include <keys/user-type.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>

@@ -6,14 +6,14 @@
 // based on previous work and know-how from:
 // Deepak Saxena <dsaxena@plexity.net>
 
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/bitops.h>
 
 #define IXP4XX_REG_GPOUT	0x00
 #define IXP4XX_REG_GPOE		0x04

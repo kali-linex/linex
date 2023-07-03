@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2013-2014 Stephane Grosjean <s.grosjean@peak-system.com>
  */
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/dev/peak_canfd.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
+#include <linex/can/dev/peak_canfd.h>
 
 #include "pcan_usb_core.h"
 #include "pcan_usb_pro.h"

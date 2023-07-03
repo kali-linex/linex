@@ -9,9 +9,9 @@
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"
 
-#include <linux/parser.h>
-#include <linux/hashtable.h>
-#include <linux/seq_file.h>
+#include <linex/parser.h>
+#include <linex/hashtable.h>
+#include <linex/seq_file.h>
 
 /* a cache for orangefs-inode objects (i.e. orangefs inode private data) */
 static struct kmem_cache *orangefs_inode_cache;

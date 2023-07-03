@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/firmware/memmap.c
- *  Copyright (C) 2008 SUSE LINUX Products GmbH
+ * linex/drivers/firmware/memmap.c
+ *  Copyright (C) 2008 SUSE LINEX Products GmbH
  *  by Bernhard Walle <bernhard.walle@gmx.de>
  */
 
-#include <linux/string.h>
-#include <linux/firmware-map.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linex/string.h>
+#include <linex/firmware-map.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
 
 /*
  * Data types ------------------------------------------------------------------

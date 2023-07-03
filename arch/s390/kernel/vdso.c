@@ -6,17 +6,17 @@
  *  Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/binfmts.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/time_namespace.h>
-#include <linux/random.h>
+#include <linex/binfmts.h>
+#include <linex/compat.h>
+#include <linex/elf.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/time_namespace.h>
+#include <linex/random.h>
 #include <vdso/datapage.h>
 #include <asm/vdso.h>
 
@@ -224,7 +224,7 @@ unsigned long vdso_size(void)
 	return PAGE_ALIGN(size);
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linex_binprm *bprm, int uses_interp)
 {
 	unsigned long addr = VDSO_BASE;
 	unsigned long size = vdso_size();

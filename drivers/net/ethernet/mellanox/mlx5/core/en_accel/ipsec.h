@@ -34,9 +34,9 @@
 #ifndef __MLX5E_IPSEC_H__
 #define __MLX5E_IPSEC_H__
 
-#include <linux/mlx5/device.h>
+#include <linex/mlx5/device.h>
 #include <net/xfrm.h>
-#include <linux/idr.h>
+#include <linex/idr.h>
 #include "lib/aso.h"
 
 #define MLX5E_IPSEC_SADB_RX_BITS 10

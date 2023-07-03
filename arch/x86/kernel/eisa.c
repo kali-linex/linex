@@ -2,9 +2,9 @@
 /*
  * EISA specific code
  */
-#include <linux/ioport.h>
-#include <linux/eisa.h>
-#include <linux/io.h>
+#include <linex/ioport.h>
+#include <linex/eisa.h>
+#include <linex/io.h>
 
 #include <xen/xen.h>
 

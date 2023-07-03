@@ -4,11 +4,11 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/perf_event.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/version.h>
+#include <uapi/linex/bpf.h>
+#include <uapi/linex/perf_event.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 
@@ -66,4 +66,4 @@ SEC("kprobe/__htab_percpu_map_update_elem")PROG(p16)
 SEC("kprobe/htab_map_alloc")PROG(p17)
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = LINEX_VERSION_CODE;

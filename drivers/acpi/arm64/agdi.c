@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt) "ACPI: AGDI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/arm_sdei.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/arm_sdei.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
 #include "init.h"
 
 struct agdi_data {

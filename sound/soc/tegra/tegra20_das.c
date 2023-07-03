@@ -6,12 +6,12 @@
  * Copyright (C) 2010 - NVIDIA, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 #include <sound/soc.h>
 
 #define DRV_NAME "tegra20-das"

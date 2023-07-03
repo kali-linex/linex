@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
 
 #include "ast_drv.h"
 

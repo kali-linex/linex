@@ -9,9 +9,9 @@
 #ifndef _SUN4I_DRV_H_
 #define _SUN4I_DRV_H_
 
-#include <linux/clk.h>
-#include <linux/list.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/list.h>
+#include <linex/regmap.h>
 
 struct sun4i_drv {
 	struct list_head	engine_list;

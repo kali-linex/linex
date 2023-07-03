@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,20 +6,20 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linex/cpu_rmap.h>
 #endif /* CONFIG_RFS_ACCEL */
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/numa.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/numa.h>
+#include <linex/pci.h>
+#include <linex/utsname.h>
+#include <linex/version.h>
+#include <linex/vmalloc.h>
 #include <net/ip.h>
 
 #include "ena_netdev.h"
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 #include "ena_pci_id_tbl.h"
 
 MODULE_AUTHOR("Amazon.com, Inc. or its affiliates");
@@ -3268,8 +3268,8 @@ static void ena_config_host_info(struct ena_com_dev *ena_dev, struct pci_dev *pd
 	host_info = ena_dev->host_attr.host_info;
 
 	host_info->bdf = (pdev->bus->number << 8) | pdev->devfn;
-	host_info->os_type = ENA_ADMIN_OS_LINUX;
-	host_info->kernel_ver = LINUX_VERSION_CODE;
+	host_info->os_type = ENA_ADMIN_OS_LINEX;
+	host_info->kernel_ver = LINEX_VERSION_CODE;
 	strscpy(host_info->kernel_ver_str, utsname()->version,
 		sizeof(host_info->kernel_ver_str) - 1);
 	host_info->os_dist = 0;

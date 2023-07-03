@@ -8,16 +8,16 @@
  *    for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/zorro.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/setup.h>

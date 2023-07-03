@@ -5,9 +5,9 @@
  * Copyright (c) 2017 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pci.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/pci.h>
 #include "xhci.h"
 
 #define USB_SW_DRV_NAME		"intel_xhci_usb_sw"

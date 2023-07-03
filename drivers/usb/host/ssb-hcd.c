@@ -17,13 +17,13 @@
  * Derived from the USBcore related parts of Broadcom-SB
  * Copyright 2005-2011 Broadcom Corporation
  */
-#include <linux/ssb/ssb.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linex/ssb/ssb.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/usb/ehci_pdriver.h>
+#include <linex/usb/ohci_pdriver.h>
 
 MODULE_AUTHOR("Hauke Mehrtens");
 MODULE_DESCRIPTION("Common USB driver for SSB Bus");

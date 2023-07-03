@@ -159,7 +159,7 @@ config CLANG_SUPPORTS_DYNAMIC_FTRACE
 	def_bool CC_IS_CLANG
 	# https://github.com/llvm/llvm-project/commit/6ab8927931851bb42b2c93a00801dc499d7d9b1e
 	depends on CLANG_VERSION >= 130000
-	# https://github.com/ClangBuiltLinux/linux/issues/1817
+	# https://github.com/ClangBuiltLinex/linex/issues/1817
 	depends on AS_IS_GNU || (AS_IS_LLVM && (LD_IS_LLD || LD_VERSION >= 23600))
 
 config GCC_SUPPORTS_DYNAMIC_FTRACE
@@ -427,12 +427,12 @@ config RISCV_ALTERNATIVE_EARLY
 	  Allows early patching of the kernel for special errata
 
 config RISCV_ISA_C
-	bool "Emit compressed instructions when building Linux"
+	bool "Emit compressed instructions when building Linex"
 	default y
 	help
 	  Adds "C" to the ISA subsets that the toolchain is allowed to emit
-	  when building Linux, which results in compressed instructions in the
-	  Linux binary.
+	  when building Linex, which results in compressed instructions in the
+	  Linex binary.
 
 	  If you don't know what to do here, say Y.
 
@@ -632,18 +632,18 @@ config RISCV_BOOT_SPINWAIT
 	depends on SMP
 	default y if RISCV_SBI_V01 || RISCV_M_MODE
 	help
-	  This enables support for booting Linux via spinwait method. In the
-	  spinwait method, all cores randomly jump to Linux. One of the cores
+	  This enables support for booting Linex via spinwait method. In the
+	  spinwait method, all cores randomly jump to Linex. One of the cores
 	  gets chosen via lottery and all other keep spinning on a percpu
 	  variable. This method cannot support CPU hotplug and sparse hartid
-	  scheme. It should be only enabled for M-mode Linux or platforms relying
+	  scheme. It should be only enabled for M-mode Linex or platforms relying
 	  on older firmware without SBI HSM extension. All other platforms should
 	  rely on ordered booting via SBI HSM extension which gets chosen
 	  dynamically at runtime if the firmware supports it.
 
 	  Since spinwait is incompatible with sparse hart IDs, it requires
 	  NR_CPUS be large enough to contain the physical hart ID of the first
-	  hart to enter Linux.
+	  hart to enter Linex.
 
 	  If unsure what to do here, say N.
 
@@ -656,7 +656,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel. It is like a reboot
 	  but it is independent of the system firmware. And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Linex.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -865,7 +865,7 @@ source "kernel/power/Kconfig"
 
 # Hibernation is only possible on systems where the SBI implementation has
 # marked its reserved memory as not accessible from, or does not run
-# from the same memory as, Linux
+# from the same memory as, Linex
 config ARCH_HIBERNATION_POSSIBLE
 	def_bool NONPORTABLE
 

@@ -4,10 +4,10 @@
  * Copyright (C) 2022 Advanced Micro Devices, Inc.
  */
 
-#include <linux/dma-fence.h>
-#include <linux/dma-fence-array.h>
-#include <linux/dma-fence-chain.h>
-#include <linux/dma-fence-unwrap.h>
+#include <linex/dma-fence.h>
+#include <linex/dma-fence-array.h>
+#include <linex/dma-fence-chain.h>
+#include <linex/dma-fence-unwrap.h>
 
 #include "selftest.h"
 

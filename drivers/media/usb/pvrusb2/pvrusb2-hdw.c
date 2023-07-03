@@ -4,12 +4,12 @@
  *  Copyright (C) 2005 Mike Isely <isely@pobox.com>
  */
 
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/videodev2.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 #include "pvrusb2.h"

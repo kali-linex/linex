@@ -3,11 +3,11 @@
  *  Copyright (c) 2016 Masaki Ota <masaki.ota@jp.alps.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/hid.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/module.h>
 #include <asm/unaligned.h>
 #include "hid-ids.h"
 

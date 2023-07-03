@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/err.h>
+#include <linex/err.h>
 #include <string.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
-#include <linux/btf.h>
-#include <linux/kernel.h>
+#include <linex/btf.h>
+#include <linex/kernel.h>
 #define CONFIG_DEBUG_INFO_BTF
-#include <linux/btf_ids.h>
+#include <linex/btf_ids.h>
 #include "test_progs.h"
 
 static int duration;

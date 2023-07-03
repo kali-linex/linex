@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for WMI sensor information on Dell notebooks.
+ * Linex driver for WMI sensor information on Dell notebooks.
  *
  * Copyright (C) 2022 Armin Wolf <W_Armin@gmx.de>
  */
 
 #define pr_format(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/device/driver.h>
-#include <linux/dev_printk.h>
-#include <linux/errno.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/hwmon.h>
-#include <linux/kstrtox.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/limits.h>
-#include <linux/pm.h>
-#include <linux/power_supply.h>
-#include <linux/printk.h>
-#include <linux/seq_file.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/wmi.h>
+#include <linex/acpi.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/device/driver.h>
+#include <linex/dev_printk.h>
+#include <linex/errno.h>
+#include <linex/kconfig.h>
+#include <linex/kernel.h>
+#include <linex/hwmon.h>
+#include <linex/kstrtox.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/limits.h>
+#include <linex/pm.h>
+#include <linex/power_supply.h>
+#include <linex/printk.h>
+#include <linex/seq_file.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
+#include <linex/wmi.h>
 
 #include <acpi/battery.h>
 

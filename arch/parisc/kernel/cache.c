@@ -11,15 +11,15 @@
  *
  */
  
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/syscalls.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/pagemap.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/syscalls.h>
 #include <asm/pdc.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>
@@ -252,8 +252,8 @@ parisc_cache_init(void)
 	/* "New and Improved" version from Jim Hull 
 	 *	(1 << (cc_block-1)) * (cc_line << (4 + cnf.cc_shift))
 	 * The following CAFL_STRIDE is an optimized version, see
-	 * http://lists.parisc-linux.org/pipermail/parisc-linux/2004-June/023625.html
-	 * http://lists.parisc-linux.org/pipermail/parisc-linux/2004-June/023671.html
+	 * http://lists.parisc-linex.org/pipermail/parisc-linex/2004-June/023625.html
+	 * http://lists.parisc-linex.org/pipermail/parisc-linex/2004-June/023671.html
 	 */
 #define CAFL_STRIDE(cnf) (cnf.cc_line << (3 + cnf.cc_block + cnf.cc_shift))
 	dcache_stride = CAFL_STRIDE(cache_info.dc_conf);

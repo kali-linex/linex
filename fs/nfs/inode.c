@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/inode.c
+ *  linex/fs/nfs/inode.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -14,33 +14,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/nfs_xdr.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/time.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/sunrpc/metrics.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_mount.h>
+#include <linex/nfs4_mount.h>
+#include <linex/lockd/bind.h>
+#include <linex/seq_file.h>
+#include <linex/mount.h>
+#include <linex/vfs.h>
+#include <linex/inet.h>
+#include <linex/nfs_xdr.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/freezer.h>
+#include <linex/uaccess.h>
+#include <linex/iversion.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

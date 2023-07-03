@@ -7,14 +7,14 @@
  * Copyright: (C) 2014 Texas Instruments, Inc.
  */
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/regulator/consumer.h>
 
 /* Contol registers */
 #define DRV2667_STATUS	0x00

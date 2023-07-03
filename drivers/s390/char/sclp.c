@@ -8,17 +8,17 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/panic_notifier.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linex/kernel_stat.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/panic_notifier.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/reboot.h>
+#include <linex/jiffies.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
 #include <asm/types.h>
 #include <asm/irq.h>
 #include <asm/debug.h>

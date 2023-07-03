@@ -16,27 +16,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/kfifo.h>
-#include <linux/idr.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/uaccess.h>
+#include <linex/serial.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
+#include <linex/kfifo.h>
+#include <linex/idr.h>
 
-#define DRIVER_AUTHOR "Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
+#define DRIVER_AUTHOR "Greg Kroah-Hartman <gregkh@linexfoundation.org>"
 #define DRIVER_DESC "USB Serial Driver core"
 
 #define USB_SERIAL_TTY_MAJOR	188

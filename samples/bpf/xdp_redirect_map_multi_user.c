@@ -3,8 +3,8 @@ static const char *__doc__ =
 "XDP multi redirect tool, using BPF_MAP_TYPE_DEVMAP and BPF_F_BROADCAST flag for bpf_redirect_map\n"
 "Usage: xdp_redirect_map_multi <IFINDEX|IFNAME> <IFINDEX|IFNAME> ... <IFINDEX|IFNAME>\n";
 
-#include <linux/bpf.h>
-#include <linux/if_link.h>
+#include <linex/bpf.h>
+#include <linex/if_link.h>
 #include <assert.h>
 #include <getopt.h>
 #include <errno.h>
@@ -19,7 +19,7 @@ static const char *__doc__ =
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <linux/if_ether.h>
+#include <linex/if_ether.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include "bpf_util.h"

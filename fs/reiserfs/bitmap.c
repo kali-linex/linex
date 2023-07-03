@@ -3,15 +3,15 @@
  */
 /* Reiserfs block (de)allocator, bitmap-based. */
 
-#include <linux/time.h>
+#include <linex/time.h>
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
+#include <linex/errno.h>
+#include <linex/buffer_head.h>
+#include <linex/kernel.h>
+#include <linex/pagemap.h>
+#include <linex/vmalloc.h>
+#include <linex/quotaops.h>
+#include <linex/seq_file.h>
 
 #define PREALLOCATION_SIZE 9
 

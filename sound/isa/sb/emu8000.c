@@ -7,18 +7,18 @@
  *  Routines for control of EMU8000 chip
  */
 
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linex/wait.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/io.h>
 #include <sound/core.h>
 #include <sound/emu8000.h>
 #include <sound/emu8000_reg.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
+#include <linex/uaccess.h>
+#include <linex/init.h>
 #include <sound/control.h>
 #include <sound/initval.h>
 

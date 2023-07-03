@@ -5,13 +5,13 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/key.h>
-#include <linux/ctype.h>
-#include <linux/dns_resolver.h>
-#include <linux/sched.h>
-#include <linux/inet.h>
-#include <linux/namei.h>
+#include <linex/slab.h>
+#include <linex/key.h>
+#include <linex/ctype.h>
+#include <linex/dns_resolver.h>
+#include <linex/sched.h>
+#include <linex/inet.h>
+#include <linex/namei.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

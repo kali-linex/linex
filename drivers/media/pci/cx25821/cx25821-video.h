@@ -4,22 +4,22 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *  Based on Steven Toth <stoth@linextv.org> cx23885 driver
  */
 
 #ifndef CX25821_VIDEO_H_
 #define CX25821_VIDEO_H_
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kmod.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
 #include <asm/div64.h>
 
 #include "cx25821.h"

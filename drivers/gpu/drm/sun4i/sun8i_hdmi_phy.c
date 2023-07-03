@@ -3,9 +3,9 @@
  * Copyright (c) 2018 Jernej Skrabec <jernej.skrabec@siol.net>
  */
 
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #include "sun8i_dw_hdmi.h"
 

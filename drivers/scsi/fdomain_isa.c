@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/isa.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/isa.h>
 #include <scsi/scsi_host.h>
 #include "fdomain.h"
 

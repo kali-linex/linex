@@ -3,17 +3,17 @@
  * arch/powerpc/platforms/embedded6xx/hlwd-pic.c
  *
  * Nintendo Wii "Hollywood" interrupt controller support.
- * Copyright (C) 2009 The GameCube Linux Team
+ * Copyright (C) 2009 The GameCube Linex Team
  * Copyright (C) 2009 Albert Herranz
  */
 #define DRV_MODULE_NAME "hlwd-pic"
 #define pr_fmt(fmt) DRV_MODULE_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/kernel.h>
+#include <linex/irq.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 #include <asm/io.h>
 
 #include "hlwd-pic.h"

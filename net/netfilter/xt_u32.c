@@ -6,13 +6,13 @@
  *	(C) CC Computer Consultants GmbH, 2007
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_u32.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_u32.h>
 
 static bool u32_match_it(const struct xt_u32 *data,
 			 const struct sk_buff *skb)

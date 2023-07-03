@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #define NL802154_GENL_NAME "nl802154"
 

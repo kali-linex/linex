@@ -6,13 +6,13 @@
  * Chao Xie <xiechao.mail@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/of_address.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/of_address.h>
 
 #include <dt-bindings/clock/marvell,pxa910.h>
 

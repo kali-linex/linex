@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_GENERIC_ARCH_TOPOLOGY
 
-#include <linux/cpumask.h>
-#include <linux/arch_topology.h>
+#include <linex/cpumask.h>
+#include <linex/arch_topology.h>
 
 #else
 

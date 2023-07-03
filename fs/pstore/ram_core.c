@@ -5,18 +5,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/rslib.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/memblock.h>
+#include <linex/rslib.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
 #include <asm/page.h>
 
 #include "ram_internal.h"

@@ -12,21 +12,21 @@
  * Copyright:   (C) 2009  Texas Instruments, India
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/math64.h>
-#include <linux/bitmap.h>
-#include <linux/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/of_device.h>
+#include <linex/platform_data/davinci_asp.h>
+#include <linex/math64.h>
+#include <linex/bitmap.h>
+#include <linex/gpio/driver.h>
 
 #include <sound/asoundef.h>
 #include <sound/core.h>

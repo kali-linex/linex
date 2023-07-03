@@ -6,11 +6,11 @@
 //
 //
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pm_runtime.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

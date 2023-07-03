@@ -13,24 +13,24 @@
  * inotify was largely rewriten to make use of the fsnotify infrastructure
  */
 
-#include <linux/file.h>
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/idr.h>
-#include <linux/init.h> /* fs_initcall */
-#include <linux/inotify.h>
-#include <linux/kernel.h> /* roundup() */
-#include <linux/namei.h> /* LOOKUP_FOLLOW */
-#include <linux/sched/signal.h>
-#include <linux/slab.h> /* struct kmem_cache */
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/anon_inodes.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/memcontrol.h>
-#include <linux/security.h>
+#include <linex/file.h>
+#include <linex/fs.h> /* struct inode */
+#include <linex/fsnotify_backend.h>
+#include <linex/idr.h>
+#include <linex/init.h> /* fs_initcall */
+#include <linex/inotify.h>
+#include <linex/kernel.h> /* roundup() */
+#include <linex/namei.h> /* LOOKUP_FOLLOW */
+#include <linex/sched/signal.h>
+#include <linex/slab.h> /* struct kmem_cache */
+#include <linex/syscalls.h>
+#include <linex/types.h>
+#include <linex/anon_inodes.h>
+#include <linex/uaccess.h>
+#include <linex/poll.h>
+#include <linex/wait.h>
+#include <linex/memcontrol.h>
+#include <linex/security.h>
 
 #include "inotify.h"
 #include "../fdinfo.h"
@@ -53,7 +53,7 @@ struct kmem_cache *inotify_inode_mark_cachep __read_mostly;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static long it_zero = 0;
 static long it_int_max = INT_MAX;

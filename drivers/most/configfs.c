@@ -6,11 +6,11 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/configfs.h>
-#include <linux/most.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/configfs.h>
+#include <linex/most.h>
 
 #define MAX_STRING_SIZE 80
 

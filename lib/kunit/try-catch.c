@@ -8,9 +8,9 @@
  */
 
 #include <kunit/test.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
+#include <linex/completion.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
 
 #include "try-catch-impl.h"
 

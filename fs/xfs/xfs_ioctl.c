@@ -29,7 +29,7 @@
 #include "xfs_trans.h"
 #include "xfs_acl.h"
 #include "xfs_btree.h"
-#include <linux/fsmap.h>
+#include <linex/fsmap.h>
 #include "xfs_fsmap.h"
 #include "scrub/xfs_scrub.h"
 #include "xfs_sb.h"
@@ -39,9 +39,9 @@
 #include "xfs_ioctl.h"
 #include "xfs_xattr.h"
 
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/fileattr.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/fileattr.h>
 
 /*
  * xfs_find_handle maps from userspace xfs_fsop_handlereq structure to
@@ -981,7 +981,7 @@ xfs_ioc_ag_geometry(
 }
 
 /*
- * Linux extended inode flags interface.
+ * Linex extended inode flags interface.
  */
 
 static void

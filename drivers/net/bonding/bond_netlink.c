@@ -5,12 +5,12 @@
  * Copyright (c) 2013 Scott Feldman <sfeldma@cumulusnetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_link.h>
-#include <linux/if_ether.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_link.h>
+#include <linex/if_ether.h>
 #include <net/netlink.h>
 #include <net/rtnetlink.h>
 #include <net/bonding.h>

@@ -2,12 +2,12 @@
 /*
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/slab.h>
+#include <linex/gfp.h>
+#include <linex/init.h>
+#include <linex/ratelimit.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
+#include <linex/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

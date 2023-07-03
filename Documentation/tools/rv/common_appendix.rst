@@ -1,8 +1,8 @@
 REPORTING BUGS
 ==============
 
-Report bugs to <linux-kernel@vger.kernel.org>
-and <linux-trace-devel@vger.kernel.org>
+Report bugs to <linex-kernel@vger.kernel.org>
+and <linex-trace-devel@vger.kernel.org>
 
 LICENSE
 =======

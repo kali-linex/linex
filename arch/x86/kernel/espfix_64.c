@@ -23,13 +23,13 @@
  * actual ministack invocation is in entry_64.S.
  */
 
-#include <linux/init.h>
-#include <linux/init_task.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/gfp.h>
-#include <linux/random.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/init_task.h>
+#include <linex/kernel.h>
+#include <linex/percpu.h>
+#include <linex/gfp.h>
+#include <linex/random.h>
+#include <linex/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/setup.h>
 #include <asm/espfix.h>

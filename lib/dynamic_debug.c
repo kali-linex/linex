@@ -13,29 +13,29 @@
 
 #define pr_fmt(fmt) "dyndbg: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
-#include <linux/dynamic_debug.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/jump_label.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kallsyms.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/list.h>
+#include <linex/sysctl.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/parser.h>
+#include <linex/string_helpers.h>
+#include <linex/uaccess.h>
+#include <linex/dynamic_debug.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
+#include <linex/jump_label.h>
+#include <linex/hardirq.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/netdevice.h>
 
 #include <rdma/ib_verbs.h>
 

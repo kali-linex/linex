@@ -3,7 +3,7 @@
  *      sd.c Copyright (C) 1992 Drew Eckhardt
  *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
  *
- *      Linux scsi disk driver
+ *      Linex scsi disk driver
  *              Initial versions: Drew Eckhardt
  *              Subsequent revisions: Eric Youngdale
  *	Modification history:
@@ -33,29 +33,29 @@
  *	than the level indicated above to trigger output.	
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/blk-pm.h>
-#include <linux/delay.h>
-#include <linux/major.h>
-#include <linux/mutex.h>
-#include <linux/string_helpers.h>
-#include <linux/slab.h>
-#include <linux/sed-opal.h>
-#include <linux/pm_runtime.h>
-#include <linux/pr.h>
-#include <linux/t10-pi.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/bio.h>
+#include <linex/hdreg.h>
+#include <linex/errno.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/blkpg.h>
+#include <linex/blk-pm.h>
+#include <linex/delay.h>
+#include <linex/major.h>
+#include <linex/mutex.h>
+#include <linex/string_helpers.h>
+#include <linex/slab.h>
+#include <linex/sed-opal.h>
+#include <linex/pm_runtime.h>
+#include <linex/pr.h>
+#include <linex/t10-pi.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

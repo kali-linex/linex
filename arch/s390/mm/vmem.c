@@ -3,16 +3,16 @@
  *    Copyright IBM Corp. 2006
  */
 
-#include <linux/memory_hotplug.h>
-#include <linux/memblock.h>
-#include <linux/kasan.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linex/memory_hotplug.h>
+#include <linex/memblock.h>
+#include <linex/kasan.h>
+#include <linex/pfn.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/hugetlb.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
 #include <asm/cacheflush.h>
 #include <asm/nospec-branch.h>
 #include <asm/pgalloc.h>

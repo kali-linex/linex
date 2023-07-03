@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memremap.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memremap.h>
+#include <linex/slab.h>
 
 #include <asm/page.h>
 

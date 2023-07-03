@@ -6,21 +6,21 @@
  * variables, etc - things needed even when quota support disabled.
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
 #include <asm/current.h>
-#include <linux/blkdev.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/types.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/nospec.h>
+#include <linex/blkdev.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/capability.h>
+#include <linex/quotaops.h>
+#include <linex/types.h>
+#include <linex/mount.h>
+#include <linex/writeback.h>
+#include <linex/nospec.h>
 #include "compat.h"
 #include "../internal.h"
 

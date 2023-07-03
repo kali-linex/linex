@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/time.c
+ *  linex/arch/alpha/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995, 1999, 2000  Linus Torvalds
  *
@@ -19,31 +19,31 @@
  * 2003-06-03	R. Scott Bailey <scott.bailey@eds.com>
  *	Tighten sanity in time_init from 1% (10,000 PPM) to 250 PPM
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/profile.h>
-#include <linux/irq_work.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/bcd.h>
+#include <linex/profile.h>
+#include <linex/irq_work.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/hwrpb.h>
 
-#include <linux/mc146818rtc.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <linex/mc146818rtc.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
 
 #include "proto.h"
 #include "irq_impl.h"
@@ -372,7 +372,7 @@ calibrate_cc_with_pit(void)
 	return ((long)cc * PIT_TICK_RATE) / (CALIBRATE_LATCH + 1);
 }
 
-/* The Linux interpretation of the CMOS clock register contents:
+/* The Linex interpretation of the CMOS clock register contents:
    When the Update-In-Progress (UIP) flag goes from 1 to 0, the
    RTC registers show the second which has precisely just started.
    Let's hope other operating systems interpret the RTC the same way.  */

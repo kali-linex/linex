@@ -9,21 +9,21 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/completion.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
 #include <net/mac80211.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
+#include <linex/moduleparam.h>
+#include <linex/firmware.h>
+#include <linex/workqueue.h>
 
 #define MWL8K_DESC	"Marvell TOPDOG(R) 802.11 Wireless Network Driver"
 #define MWL8K_NAME	KBUILD_MODNAME

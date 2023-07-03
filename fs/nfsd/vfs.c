@@ -11,27 +11,27 @@
  * dentry, don't worry--they have been taken care of.
  *
  * Copyright (C) 1995-1999 Olaf Kirch <okir@monad.swb.de>
- * Zerocpy NFS support (C) 2002 Hirokazu Takahashi <taka@valinux.co.jp>
+ * Zerocpy NFS support (C) 2002 Hirokazu Takahashi <taka@valinex.co.jp>
  */
 
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/splice.h>
-#include <linux/falloc.h>
-#include <linux/fcntl.h>
-#include <linux/namei.h>
-#include <linux/delay.h>
-#include <linux/fsnotify.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/jhash.h>
-#include <linux/ima.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/exportfs.h>
-#include <linux/writeback.h>
-#include <linux/security.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/splice.h>
+#include <linex/falloc.h>
+#include <linex/fcntl.h>
+#include <linex/namei.h>
+#include <linex/delay.h>
+#include <linex/fsnotify.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/xattr.h>
+#include <linex/jhash.h>
+#include <linex/ima.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/exportfs.h>
+#include <linex/writeback.h>
+#include <linex/security.h>
 
 #include "xdr3.h"
 
@@ -50,7 +50,7 @@
 #define NFSDDBG_FACILITY		NFSDDBG_FILEOP
 
 /**
- * nfserrno - Map Linux errnos to NFS errnos
+ * nfserrno - Map Linex errnos to NFS errnos
  * @errno: POSIX(-ish) error code to be mapped
  *
  * Returns the appropriate (net-endian) nfserr_* (or nfs_ok if errno is 0). If
@@ -362,7 +362,7 @@ commit_metadata(struct svc_fh *fhp)
 
 /*
  * Go over the attributes and take care of the small differences between
- * NFS semantics and what Linux expects.
+ * NFS semantics and what Linex expects.
  */
 static void
 nfsd_sanitize_attrs(struct inode *inode, struct iattr *iap)

@@ -7,16 +7,16 @@
  * Author: Christian Ruppert <christian.ruppert@abilis.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
 
 #define AB_IRQCTL_INT_ENABLE   0x00
 #define AB_IRQCTL_INT_STATUS   0x04

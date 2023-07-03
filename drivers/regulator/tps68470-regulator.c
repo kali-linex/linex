@@ -13,17 +13,17 @@
 //	Yuning Pu <yuning.pu@intel.com>
 //	Rajmohan Mani <rajmohan.mani@intel.com>
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tps68470.h>
-#include <linux/module.h>
-#include <linux/platform_data/tps68470.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mfd/tps68470.h>
+#include <linex/module.h>
+#include <linex/platform_data/tps68470.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
 
 struct tps68470_regulator_data {
 	struct clk *clk;

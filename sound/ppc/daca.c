@@ -6,10 +6,10 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/kmod.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include "pmac.h"
 

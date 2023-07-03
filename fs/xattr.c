@@ -5,26 +5,26 @@
   Extended attribute handling.
 
   Copyright (C) 2001 by Andreas Gruenbacher <a.gruenbacher@computer.org>
-  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linux-xfs@oss.sgi.com>
+  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linex-xfs@oss.sgi.com>
   Copyright (c) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fsnotify.h>
-#include <linux/audit.h>
-#include <linux/vmalloc.h>
-#include <linux/posix_acl_xattr.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/xattr.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/security.h>
+#include <linex/evm.h>
+#include <linex/syscalls.h>
+#include <linex/export.h>
+#include <linex/fsnotify.h>
+#include <linex/audit.h>
+#include <linex/vmalloc.h>
+#include <linex/posix_acl_xattr.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 

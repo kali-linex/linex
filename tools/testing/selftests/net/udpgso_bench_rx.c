@@ -6,10 +6,10 @@
 #include <error.h>
 #include <errno.h>
 #include <limits.h>
-#include <linux/errqueue.h>
-#include <linux/if_packet.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
+#include <linex/errqueue.h>
+#include <linex/if_packet.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
 #include <net/ethernet.h>
 #include <net/if.h>
 #include <netinet/ip.h>

@@ -21,19 +21,19 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/mmu_context.h>
-#include <linux/slab.h>
-#include <linux/amd-iommu.h>
-#include <linux/notifier.h>
-#include <linux/compat.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/pm_runtime.h>
+#include <linex/mutex.h>
+#include <linex/log2.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
+#include <linex/mmu_context.h>
+#include <linex/slab.h>
+#include <linex/amd-iommu.h>
+#include <linex/notifier.h>
+#include <linex/compat.h>
+#include <linex/mman.h>
+#include <linex/file.h>
+#include <linex/pm_runtime.h>
 #include "amdgpu_amdkfd.h"
 #include "amdgpu.h"
 

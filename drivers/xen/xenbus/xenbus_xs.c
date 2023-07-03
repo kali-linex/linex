@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,19 +33,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/unistd.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/kthread.h>
-#include <linux/reboot.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
+#include <linex/unistd.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/uio.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/fcntl.h>
+#include <linex/kthread.h>
+#include <linex/reboot.h>
+#include <linex/rwsem.h>
+#include <linex/mutex.h>
 #include <asm/xen/hypervisor.h>
 #include <xen/xenbus.h>
 #include <xen/xen.h>

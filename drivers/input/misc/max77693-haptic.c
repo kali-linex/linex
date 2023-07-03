@@ -9,21 +9,21 @@
  * This program is not provided / owned by Maxim Integrated Products.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/mfd/max77843-private.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/regulator/consumer.h>
+#include <linex/mfd/max77693.h>
+#include <linex/mfd/max77693-common.h>
+#include <linex/mfd/max77693-private.h>
+#include <linex/mfd/max77843-private.h>
 
 #define MAX_MAGNITUDE_SHIFT	16
 

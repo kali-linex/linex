@@ -7,14 +7,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/perf_event.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 

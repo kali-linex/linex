@@ -8,9 +8,9 @@
 
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/zalloc.h>
 #include <babeltrace/ctf-writer/writer.h>
 #include <babeltrace/ctf-writer/clock.h>
 #include <babeltrace/ctf-writer/stream.h>
@@ -28,9 +28,9 @@
 #include "evsel.h"
 #include "machine.h"
 #include "config.h"
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/time64.h>
+#include <linex/ctype.h>
+#include <linex/err.h>
+#include <linex/time64.h>
 #include "util.h"
 #include "clockid.h"
 #include "util/sample.h"
@@ -1379,7 +1379,7 @@ do {									\
 } while (0)
 
 	ADD("host",    header->env.hostname);
-	ADD("sysname", "Linux");
+	ADD("sysname", "Linex");
 	ADD("release", header->env.os_release);
 	ADD("version", header->env.version);
 	ADD("machine", header->env.arch);

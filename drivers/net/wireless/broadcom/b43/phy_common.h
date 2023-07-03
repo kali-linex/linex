@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_B43_PHY_COMMON_H_
-#define LINUX_B43_PHY_COMMON_H_
+#ifndef LINEX_B43_PHY_COMMON_H_
+#define LINEX_B43_PHY_COMMON_H_
 
-#include <linux/types.h>
-#include <linux/nl80211.h>
+#include <linex/types.h>
+#include <linex/nl80211.h>
 
 struct b43_wldev;
 
@@ -443,4 +443,4 @@ bool b43_is_40mhz(struct b43_wldev *dev);
 
 void b43_phy_force_clock(struct b43_wldev *dev, bool force);
 
-#endif /* LINUX_B43_PHY_COMMON_H_ */
+#endif /* LINEX_B43_PHY_COMMON_H_ */

@@ -6,12 +6,12 @@
  *          Yannick Fertre <yannick.fertre@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/clk.h>
+#include <linex/iopoll.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

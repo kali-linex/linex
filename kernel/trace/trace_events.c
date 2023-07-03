@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/tracefs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/workqueue.h>
+#include <linex/security.h>
+#include <linex/spinlock.h>
+#include <linex/kthread.h>
+#include <linex/tracefs.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/sort.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 
 #include <trace/events/sched.h>
 #include <trace/syscall.h>

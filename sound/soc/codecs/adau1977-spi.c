@@ -6,12 +6,12 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/spi/spi.h>
 #include <sound/soc.h>
 
 #include "adau1977.h"

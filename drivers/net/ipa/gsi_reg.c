@@ -2,8 +2,8 @@
 
 /* Copyright (C) 2023 Linaro Ltd. */
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
 
 #include "gsi.h"
 #include "reg.h"

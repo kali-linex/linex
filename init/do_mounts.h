@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/init_syscalls.h>
+#include <linex/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/init.h>
+#include <linex/syscalls.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
+#include <linex/mount.h>
+#include <linex/major.h>
+#include <linex/root_dev.h>
+#include <linex/init_syscalls.h>
 
 void  mount_root_generic(char *name, char *pretty_name, int flags);
 void  mount_root(char *root_device_name);

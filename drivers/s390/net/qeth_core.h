@@ -10,24 +10,24 @@
 #ifndef __QETH_CORE_H__
 #define __QETH_CORE_H__
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/if.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ctype.h>
-#include <linux/in6.h>
-#include <linux/bitops.h>
-#include <linux/seq_file.h>
-#include <linux/hashtable.h>
-#include <linux/ip.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/if.h>
+#include <linex/if_arp.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/ctype.h>
+#include <linex/in6.h>
+#include <linex/bitops.h>
+#include <linex/seq_file.h>
+#include <linex/hashtable.h>
+#include <linex/ip.h>
+#include <linex/rcupdate.h>
+#include <linex/refcount.h>
+#include <linex/timer.h>
+#include <linex/types.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 
 #include <net/dst.h>
 #include <net/ip6_fib.h>
@@ -44,7 +44,7 @@
 #include <asm/ccwgroup.h>
 #include <asm/sysinfo.h>
 
-#include <uapi/linux/if_link.h>
+#include <uapi/linex/if_link.h>
 
 #include "qeth_core_mpc.h"
 

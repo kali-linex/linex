@@ -4,16 +4,16 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linex.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@linex.vnet.ibm.com>
  */
 
-#include <linux/ratelimit.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/vfio.h>
+#include <linex/ratelimit.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/iommu.h>
+#include <linex/vfio.h>
 #include <asm/idals.h>
 
 #include "vfio_ccw_cp.h"

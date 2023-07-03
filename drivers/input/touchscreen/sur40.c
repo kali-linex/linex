@@ -17,20 +17,20 @@
  * Copyright (c) Copyright 2014 Cisco Systems, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/printk.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/usb/input.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/completion.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
+#include <linex/printk.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/usb/input.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

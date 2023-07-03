@@ -7,18 +7,18 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/mfd/da9150/core.h>
-#include <linux/mfd/da9150/registers.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/machine.h>
+#include <linex/iio/driver.h>
+#include <linex/mfd/da9150/core.h>
+#include <linex/mfd/da9150/registers.h>
 
 /* Channels */
 enum da9150_gpadc_hw_channel {

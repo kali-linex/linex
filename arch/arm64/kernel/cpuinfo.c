@@ -11,19 +11,19 @@
 #include <asm/cpufeature.h>
 #include <asm/fpsimd.h>
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/personality.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/compat.h>
+#include <linex/elf.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/personality.h>
+#include <linex/preempt.h>
+#include <linex/printk.h>
+#include <linex/seq_file.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/delay.h>
 
 /*
  * In case the boot CPU is hotpluggable, we record its initial state and
@@ -176,7 +176,7 @@ static const char *const compat_hwcap2_str[] = {
 static int c_show(struct seq_file *m, void *v)
 {
 	int i, j;
-	bool compat = personality(current->personality) == PER_LINUX32;
+	bool compat = personality(current->personality) == PER_LINEX32;
 
 	for_each_online_cpu(i) {
 		struct cpuinfo_arm64 *cpuinfo = &per_cpu(cpu_data, i);

@@ -8,16 +8,16 @@
  * originally based on code by:
  * Copyright (C) 1998,1999 Christian Theiss <mistert@rz.fh-augsburg.de>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linextv.org
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
-#include <linux/gfp.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/timer.h>
+#include <linex/poll.h>
+#include <linex/gfp.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

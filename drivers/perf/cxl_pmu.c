@@ -11,14 +11,14 @@
  * Details in CXL rev 3.0 section 8.2.7 CPMU Register Interface
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/perf_event.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/bits.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/perf_event.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/bits.h>
+#include <linex/list.h>
+#include <linex/bug.h>
+#include <linex/pci.h>
 
 #include "../cxl/cxlpci.h"
 #include "../cxl/cxl.h"

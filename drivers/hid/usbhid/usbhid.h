@@ -11,14 +11,14 @@
 /*
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/timer.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/input.h>
 
 /*  API provided by hid-core.c for USB HID drivers */
 void usbhid_init_reports(struct hid_device *hid);

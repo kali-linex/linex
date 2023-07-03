@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/static_call.h>
-#include <linux/bug.h>
-#include <linux/smp.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/processor.h>
+#include <linex/init.h>
+#include <linex/static_call.h>
+#include <linex/bug.h>
+#include <linex/smp.h>
+#include <linex/sort.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/cpu.h>
+#include <linex/processor.h>
 #include <asm/sections.h>
 
 extern struct static_call_site __start_static_call_sites[],
@@ -242,7 +242,7 @@ static int __static_call_init(struct module *mod,
 			prev_key = key;
 
 			/*
-			 * For vmlinux (!mod) avoid the allocation by storing
+			 * For vmlinex (!mod) avoid the allocation by storing
 			 * the sites pointer in the key itself. Also see
 			 * __static_call_update()'s @first.
 			 *

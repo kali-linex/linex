@@ -14,9 +14,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
 #include <asm/unaligned.h>
 
 #include "ath9k.h"

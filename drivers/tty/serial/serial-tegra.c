@@ -9,30 +9,30 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pagemap.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
+#include <linex/serial_core.h>
+#include <linex/serial_reg.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/termios.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
 #define TEGRA_UART_TYPE				"TEGRA_UART"
 #define TX_EMPTY_STATUS				(UART_LSR_TEMT | UART_LSR_THRE)
@@ -178,9 +178,9 @@ static unsigned int tegra_uart_get_mctrl(struct uart_port *u)
 	/*
 	 * RI - Ring detector is active
 	 * CD/DCD/CAR - Carrier detect is always active. For some reason
-	 *	linux has different names for carrier detect.
+	 *	linex has different names for carrier detect.
 	 * DSR - Data Set ready is active as the hardware doesn't support it.
-	 *	Don't know if the linux support this yet?
+	 *	Don't know if the linex support this yet?
 	 * CTS - Clear to send. Always set to active, as the hardware handles
 	 *	CTS automatically.
 	 */

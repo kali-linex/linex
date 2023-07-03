@@ -2,15 +2,15 @@
 /*
  * cgroups support for the BFQ I/O scheduler.
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/cgroup.h>
-#include <linux/ktime.h>
-#include <linux/rbtree.h>
-#include <linux/ioprio.h>
-#include <linux/sbitmap.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/blkdev.h>
+#include <linex/cgroup.h>
+#include <linex/ktime.h>
+#include <linex/rbtree.h>
+#include <linex/ioprio.h>
+#include <linex/sbitmap.h>
+#include <linex/delay.h>
 
 #include "elevator.h"
 #include "bfq-iosched.h"

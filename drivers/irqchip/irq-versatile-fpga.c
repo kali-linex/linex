@@ -2,17 +2,17 @@
 /*
  *  Support for Versatile FPGA-based IRQ controllers
  */
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/seq_file.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/seq_file.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

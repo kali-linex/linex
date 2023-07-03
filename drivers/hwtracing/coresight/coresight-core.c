@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/stringhash.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/coresight.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/idr.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/stringhash.h>
+#include <linex/mutex.h>
+#include <linex/clk.h>
+#include <linex/coresight.h>
+#include <linex/of_platform.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
 
 #include "coresight-etm-perf.h"
 #include "coresight-priv.h"

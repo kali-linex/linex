@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <linex/percpu.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/export.h>
 
 #include "rds.h"
 

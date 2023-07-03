@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2020 Gateworks Corporation
  */
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mfd/gsc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/mfd/gsc.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
-#include <linux/platform_data/gsc_hwmon.h>
+#include <linex/platform_data/gsc_hwmon.h>
 
 #define GSC_HWMON_MAX_TEMP_CH	16
 #define GSC_HWMON_MAX_IN_CH	16

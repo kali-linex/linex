@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/mm/sun3kmap.c
+ * linex/arch/m68k/mm/sun3kmap.c
  *
  * Copyright (C) 2002 Sam Creasey <sammy@sammy.net>
  *
@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
 
 #include <asm/page.h>
 #include <asm/io.h>

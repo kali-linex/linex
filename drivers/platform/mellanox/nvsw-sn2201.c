@@ -5,16 +5,16 @@
  * Copyright (C) 2022 Nvidia Technologies Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxcpld.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/platform_data/mlxcpld.h>
+#include <linex/platform_data/mlxreg.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /* SN2201 CPLD register offset. */
 #define NVSW_SN2201_CPLD_LPC_I2C_BASE_ADRR          0x2000

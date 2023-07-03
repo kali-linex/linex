@@ -13,14 +13,14 @@
  *   currently running period will be completed first.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/regmap.h>
 
 #define KMB_TOTAL_PWM_CHANNELS		6
 #define KMB_PWM_COUNT_MAX		U16_MAX

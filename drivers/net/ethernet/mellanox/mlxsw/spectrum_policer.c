@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2020 Mellanox Technologies. All rights reserved */
 
-#include <linux/idr.h>
-#include <linux/log2.h>
-#include <linux/mutex.h>
-#include <linux/netlink.h>
+#include <linex/idr.h>
+#include <linex/log2.h>
+#include <linex/mutex.h>
+#include <linex/netlink.h>
 #include <net/devlink.h>
 
 #include "spectrum.h"

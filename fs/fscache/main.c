@@ -6,8 +6,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/init.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"
 

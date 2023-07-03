@@ -7,15 +7,15 @@
  * Copyright (C) 2005 IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/notifier.h>
+#include <linex/proc_fs.h>
+#include <linex/security.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu.h>
 
 #include "of_helpers.h"

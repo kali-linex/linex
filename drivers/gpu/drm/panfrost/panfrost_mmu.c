@@ -3,19 +3,19 @@
 
 #include <drm/panfrost_drm.h>
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/shmem_fs.h>
-#include <linux/sizes.h>
+#include <linex/atomic.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/io-pgtable.h>
+#include <linex/iommu.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/shmem_fs.h>
+#include <linex/sizes.h>
 
 #include "panfrost_device.h"
 #include "panfrost_mmu.h"

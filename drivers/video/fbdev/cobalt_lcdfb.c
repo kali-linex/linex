@@ -2,18 +2,18 @@
 /*
  *  Cobalt/SEAD3 LCD frame buffer driver.
  *
- *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linex-mips.org>
  *  Copyright (C) 2012  MIPS Technologies, Inc.
  */
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/uaccess.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
 
 /*
  * Cursor position address

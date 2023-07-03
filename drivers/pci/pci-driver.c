@@ -4,23 +4,23 @@
  * (C) Copyright 2007 Novell Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mempolicy.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/isolation.h>
-#include <linux/cpu.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/kexec.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/iommu.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/mempolicy.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/isolation.h>
+#include <linex/cpu.h>
+#include <linex/pm_runtime.h>
+#include <linex/suspend.h>
+#include <linex/kexec.h>
+#include <linex/of_device.h>
+#include <linex/acpi.h>
+#include <linex/dma-map-ops.h>
+#include <linex/iommu.h>
 #include "pci.h"
 #include "pcie/portdrv.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/mm/filemap.c
+ *	linex/mm/filemap.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -10,41 +10,41 @@
  * most "normal" filesystems (but you don't /have/ to use this:
  * the NFS filesystem used to do this differently, for example)
  */
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/kernel_stat.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/error-injection.h>
-#include <linux/hash.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/security.h>
-#include <linux/cpuset.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/shmem_fs.h>
-#include <linux/rmap.h>
-#include <linux/delayacct.h>
-#include <linux/psi.h>
-#include <linux/ramfs.h>
-#include <linux/page_idle.h>
-#include <linux/migrate.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/splice.h>
+#include <linex/export.h>
+#include <linex/compiler.h>
+#include <linex/dax.h>
+#include <linex/fs.h>
+#include <linex/sched/signal.h>
+#include <linex/uaccess.h>
+#include <linex/capability.h>
+#include <linex/kernel_stat.h>
+#include <linex/gfp.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/syscalls.h>
+#include <linex/mman.h>
+#include <linex/pagemap.h>
+#include <linex/file.h>
+#include <linex/uio.h>
+#include <linex/error-injection.h>
+#include <linex/hash.h>
+#include <linex/writeback.h>
+#include <linex/backing-dev.h>
+#include <linex/pagevec.h>
+#include <linex/security.h>
+#include <linex/cpuset.h>
+#include <linex/hugetlb.h>
+#include <linex/memcontrol.h>
+#include <linex/shmem_fs.h>
+#include <linex/rmap.h>
+#include <linex/delayacct.h>
+#include <linex/psi.h>
+#include <linex/ramfs.h>
+#include <linex/page_idle.h>
+#include <linex/migrate.h>
+#include <linex/pipe_fs_i.h>
+#include <linex/splice.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include "internal.h"
@@ -55,7 +55,7 @@
 /*
  * FIXME: remove all knowledge of the buffer layer from the core VM
  */
-#include <linux/buffer_head.h> /* for try_to_free_buffers */
+#include <linex/buffer_head.h> /* for try_to_free_buffers */
 
 #include <asm/mman.h>
 

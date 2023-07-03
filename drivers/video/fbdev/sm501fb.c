@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/video/sm501fb.c
+/* linex/drivers/video/sm501fb.c
  *
  * Copyright (c) 2006 Simtec Electronics
  *	Vincent Sanders <vince@simtec.co.uk>
@@ -8,35 +8,35 @@
  * Framebuffer driver for the Silicon Motion SM501
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/wait.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/console.h>
+#include <linex/io.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/div64.h>
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <linex/pm.h>
 #endif
 
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <linex/sm501.h>
+#include <linex/sm501-regs.h>
 
 #include "edid.h"
 

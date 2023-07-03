@@ -4,21 +4,21 @@
  * Author:	Sjur Brendeland
  */
 
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/if_arp.h>
+#include <linex/hardirq.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/tty.h>
+#include <linex/file.h>
+#include <linex/if_arp.h>
 #include <net/caif/caif_device.h>
 #include <net/caif/cfcnfg.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
+#include <linex/err.h>
+#include <linex/debugfs.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Sjur Brendeland");

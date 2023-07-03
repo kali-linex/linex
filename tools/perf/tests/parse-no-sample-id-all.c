@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 #include <stddef.h>
 
 #include "tests.h"

@@ -3,16 +3,16 @@
  * USB Type-C Connector System Software Interface driver
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/completion.h>
-#include <linux/property.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/usb/typec_dp.h>
+#include <linex/completion.h>
+#include <linex/property.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/usb/typec_dp.h>
 
 #include "ucsi.h"
 #include "trace.h"
@@ -1594,6 +1594,6 @@ void ucsi_unregister(struct ucsi *ucsi)
 }
 EXPORT_SYMBOL_GPL(ucsi_unregister);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linex.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("USB Type-C Connector System Software Interface driver");

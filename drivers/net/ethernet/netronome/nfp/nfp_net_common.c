@@ -11,29 +11,29 @@
  *          Chris Telfer <chris.telfer@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/mm.h>
-#include <linux/overflow.h>
-#include <linux/page_ref.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/ethtool.h>
-#include <linux/log2.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/ktime.h>
+#include <linex/bitfield.h>
+#include <linex/bpf.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/mm.h>
+#include <linex/overflow.h>
+#include <linex/page_ref.h>
+#include <linex/pci.h>
+#include <linex/pci_regs.h>
+#include <linex/ethtool.h>
+#include <linex/log2.h>
+#include <linex/if_vlan.h>
+#include <linex/if_bridge.h>
+#include <linex/random.h>
+#include <linex/vmalloc.h>
+#include <linex/ktime.h>
 
 #include <net/tls.h>
 #include <net/vxlan.h>
@@ -1078,7 +1078,7 @@ static int nfp_net_netdev_close(struct net_device *netdev)
 {
 	struct nfp_net *nn = netdev_priv(netdev);
 
-	/* Step 1: Disable RX and TX rings from the Linux kernel perspective
+	/* Step 1: Disable RX and TX rings from the Linex kernel perspective
 	 */
 	nfp_net_close_stack(nn);
 

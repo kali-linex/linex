@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright 2023 Linus Torvalds <torvalds@linux-foundation.org>
+ * Copyright 2023 Linus Torvalds <torvalds@linex-foundation.org>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm.h>
 #include <asm/export.h>
 

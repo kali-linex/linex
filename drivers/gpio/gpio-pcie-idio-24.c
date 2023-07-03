@@ -6,18 +6,18 @@
  * This driver supports the following ACCES devices: PCIe-IDIO-24,
  * PCIe-IDI-24, PCIe-IDO-24, and PCIe-IDIO-12.
  */
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irqdesc.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/irqdesc.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 /*
  * PLX PEX8311 PCI LCS_INTCSR Interrupt Control/Status

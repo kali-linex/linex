@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/n411.c -- Platform device for N411 EPD kit
+ * linex/drivers/video/n411.c -- Platform device for N411 EPD kit
  *
  * Copyright (C) 2008, Jaya Kumar
  *
@@ -23,18 +23,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/list.h>
+#include <linex/uaccess.h>
+#include <linex/irq.h>
 
 #include <video/hecubafb.h>
 

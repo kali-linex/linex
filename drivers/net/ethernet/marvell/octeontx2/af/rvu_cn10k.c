@@ -4,8 +4,8 @@
  * Copyright (C) 2020 Marvell.
  */
 
-#include <linux/bitfield.h>
-#include <linux/pci.h>
+#include <linex/bitfield.h>
+#include <linex/pci.h>
 #include "rvu.h"
 #include "cgx.h"
 #include "rvu_reg.h"

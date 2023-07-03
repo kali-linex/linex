@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The Linex Foundation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slimbus.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/idr.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slimbus.h>
 #include "slimbus.h"
 
 static DEFINE_IDA(ctrl_ida);

@@ -12,20 +12,20 @@
  * as RZ/A1H (r7s721000), RZ/A1M (r7s721010) and RZ/A1L (r7s721020).
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
 #include "../core.h"
 #include "../devicetree.h"

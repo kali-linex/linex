@@ -4,12 +4,12 @@
 //
 // Copyright (C) 2022 BayLibre Incorporated - https://www.baylibre.com/
 
-#include <linux/i2c.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65219.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/tps65219.h>
 
 static int tps65219_warm_reset(struct tps65219 *tps)
 {

@@ -33,22 +33,22 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/io-mapping.h>
-#include <linux/delay.h>
-#include <linux/kmod.h>
-#include <linux/etherdevice.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/io-mapping.h>
+#include <linex/delay.h>
+#include <linex/kmod.h>
+#include <linex/etherdevice.h>
 #include <net/devlink.h>
 
 #include <uapi/rdma/mlx4-abi.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
+#include <linex/mlx4/device.h>
+#include <linex/mlx4/doorbell.h>
 
 #include "mlx4.h"
 #include "fw.h"

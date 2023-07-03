@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "dm_services.h"
 #include "dc.h"

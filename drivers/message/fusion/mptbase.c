@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/message/fusion/mptbase.c
+ *  linex/drivers/message/fusion/mptbase.c
  *      This is the Fusion MPT base driver which supports multiple
  *      (SCSI + LAN) specialized protocol drivers.
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinex@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -46,20 +46,20 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/kthread.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/kdev_t.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/kthread.h>
 #include <scsi/scsi_host.h>
 
 #include "mptbase.h"
@@ -67,7 +67,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT base driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_LINEX_VERSION_COMMON
 #define MYNAM		"mptbase"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -6661,7 +6661,7 @@ static int mpt_version_proc_show(struct seq_file *m, void *v)
 	int	 scsi, fc, sas, lan, ctl, targ;
 	char	*drvname;
 
-	seq_printf(m, "%s-%s\n", "mptlinux", MPT_LINUX_VERSION_COMMON);
+	seq_printf(m, "%s-%s\n", "mptlinex", MPT_LINEX_VERSION_COMMON);
 	seq_printf(m, "  Fusion MPT base driver\n");
 
 	scsi = fc = sas = lan = ctl = targ = 0;

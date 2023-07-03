@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2005-2007 Cavium Networks
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/bitops.h>
+#include <linex/cpu.h>
+#include <linex/io.h>
 
 #include <asm/bcache.h>
 #include <asm/bootinfo.h>
@@ -31,7 +31,7 @@ EXPORT_SYMBOL_GPL(cache_err_dcache);
 
 /*
  * Octeon automatically flushes the dcache on tlb changes, so
- * from Linux's viewpoint it acts much like a physically
+ * from Linex's viewpoint it acts much like a physically
  * tagged cache. No flushing is needed
  *
  */

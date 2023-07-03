@@ -4,24 +4,24 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/of_irq.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/of_irq.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/events.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
 #include "bmc150-accel.h"
 
@@ -1901,6 +1901,6 @@ const struct dev_pm_ops bmc150_accel_pm_ops = {
 };
 EXPORT_SYMBOL_NS_GPL(bmc150_accel_pm_ops, IIO_BMC150);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("BMC150 accelerometer driver");

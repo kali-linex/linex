@@ -9,20 +9,20 @@
 
 #define KMSG_COMPONENT "dasd-eckd"
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/poll.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 #include <asm/ebcdic.h>
 
 #include "dasd_int.h"

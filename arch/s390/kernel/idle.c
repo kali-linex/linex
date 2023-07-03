@@ -7,11 +7,11 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/notifier.h>
+#include <linex/init.h>
+#include <linex/cpu.h>
 #include <trace/events/power.h>
 #include <asm/cpu_mf.h>
 #include <asm/cputime.h>

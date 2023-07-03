@@ -8,11 +8,11 @@
  *	Copyright (c) 2003, 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

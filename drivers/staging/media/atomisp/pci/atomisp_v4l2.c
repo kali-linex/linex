@@ -17,20 +17,20 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
-#include <linux/bits.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_qos.h>
+#include <linex/timer.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/interrupt.h>
+#include <linex/bits.h>
 
 #include <asm/iosf_mbi.h>
 
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include "../../include/linex/atomisp_gmin_platform.h"
 
 #include "atomisp_cmd.h"
 #include "atomisp_common.h"

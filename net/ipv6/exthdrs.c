@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Extension Header handling for IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -17,16 +17,16 @@
  *				  handlers as inet6_protocol{}.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/in6.h>
+#include <linex/icmpv6.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 
 #include <net/dst.h>
 #include <net/sock.h>
@@ -43,17 +43,17 @@
 #if IS_ENABLED(CONFIG_IPV6_MIP6)
 #include <net/xfrm.h>
 #endif
-#include <linux/seg6.h>
+#include <linex/seg6.h>
 #include <net/seg6.h>
 #ifdef CONFIG_IPV6_SEG6_HMAC
 #include <net/seg6_hmac.h>
 #endif
 #include <net/rpl.h>
-#include <linux/ioam6.h>
+#include <linex/ioam6.h>
 #include <net/ioam6.h>
 #include <net/dst_metadata.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*********************
   Generic functions

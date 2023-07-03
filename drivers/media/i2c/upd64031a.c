@@ -8,11 +8,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
+#include <linex/slab.h>
 #include <media/v4l2-device.h>
 #include <media/i2c/upd64031a.h>
 

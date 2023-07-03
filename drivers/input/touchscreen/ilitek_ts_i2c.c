@@ -7,19 +7,19 @@
  * Copyright (C) 2021 Joe Hung <joe_hung@ilitek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/input/touchscreen.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/errno.h>
+#include <linex/acpi.h>
+#include <linex/input/touchscreen.h>
 #include <asm/unaligned.h>
 
 

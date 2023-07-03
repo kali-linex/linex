@@ -48,31 +48,31 @@
 
 ******************************************************************************/
 
-#include <linux/aperture.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/backlight.h>
-#include <linux/reboot.h>
-#include <linux/dmi.h>
+#include <linex/aperture.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/compiler.h>
+#include <linex/console.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
+#include <linex/backlight.h>
+#include <linex/reboot.h>
+#include <linex/dmi.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <video/mach64.h>
 #include "atyfb.h"
@@ -89,8 +89,8 @@
 #endif
 
 #ifdef CONFIG_ADB_PMU
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
 #endif
 #ifdef CONFIG_BOOTX_TEXT
 #include <asm/btext.h>

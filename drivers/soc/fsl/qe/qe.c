@@ -10,22 +10,22 @@
  * General Purpose functions for the global management of the
  * QUICC Engine (QE).
  */
-#include <linux/bitmap.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/crc32.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_platform.h>
+#include <linex/bitmap.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/iopoll.h>
+#include <linex/crc32.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of_platform.h>
 #include <soc/fsl/qe/immap_qe.h>
 #include <soc/fsl/qe/qe.h>
 

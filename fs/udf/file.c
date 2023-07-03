@@ -22,14 +22,14 @@
  */
 
 #include "udfdecl.h"
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memset */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/string.h> /* memset */
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/pagemap.h>
+#include <linex/uio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

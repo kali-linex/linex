@@ -6,9 +6,9 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
 #include <sys/mount.h>
 
 static size_t mount__scnprintf_flags(unsigned long flags, char *bf, size_t size, bool show_prefix)

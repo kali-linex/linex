@@ -11,14 +11,14 @@
 #ifndef __HISI_UNCORE_PMU_H__
 #define __HISI_UNCORE_PMU_H__
 
-#include <linux/bitfield.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/cpumask.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
 #undef pr_fmt
 #define pr_fmt(fmt)     "hisi_pmu: " fmt

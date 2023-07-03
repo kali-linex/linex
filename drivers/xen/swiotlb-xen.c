@@ -12,9 +12,9 @@
  * mechanism to have contiguous pages for device drivers operations (say DMA
  * operations).
  *
- * Specifically, under Xen the Linux idea of pages is an illusion. It
+ * Specifically, under Xen the Linex idea of pages is an illusion. It
  * assumes that pages start at zero and go up to the available memory. To
- * help with that, the Linux Xen MMU provides a lookup mechanism to
+ * help with that, the Linex Xen MMU provides a lookup mechanism to
  * translate the page frame numbers (PFN) to machine frame numbers (MFN)
  * and vice-versa. The MFN are the "real" frame numbers. Furthermore
  * memory is not contiguous. Xen hypervisor stitches memory for guests
@@ -26,10 +26,10 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/memblock.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/export.h>
+#include <linex/memblock.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/export.h>
 #include <xen/swiotlb-xen.h>
 #include <xen/page.h>
 #include <xen/xen-ops.h>

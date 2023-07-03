@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/export.h>
 #include <asm/cpu.h>
 
 unsigned int x86_family(unsigned int sig)

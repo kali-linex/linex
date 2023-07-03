@@ -23,27 +23,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/pm.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/bitops.h>
-#include <linux/dmi.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/debugfs.h>
+#include <linex/pm.h>
+#include <linex/dmapool.h>
+#include <linex/dma-mapping.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/bitops.h>
+#include <linex/dmi.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 

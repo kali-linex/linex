@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Linex.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,11 +35,11 @@
 #ifndef __CXGB4_ULD_H
 #define __CXGB4_ULD_H
 
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
-#include <linux/atomic.h>
+#include <linex/cache.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/inetdevice.h>
+#include <linex/atomic.h>
 #include <net/tls.h>
 #include "cxgb4.h"
 

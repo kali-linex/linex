@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: ISC */
 /*
  * Copyright (c) 2012-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The Linex Foundation. All rights reserved.
  */
 
 #ifndef __WIL6210_H__
 #define __WIL6210_H__
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/wireless.h>
 #include <net/cfg80211.h>
-#include <linux/timex.h>
-#include <linux/types.h>
-#include <linux/irqreturn.h>
+#include <linex/timex.h>
+#include <linex/types.h>
+#include <linex/irqreturn.h>
 #include "wmi.h"
 #include "wil_platform.h"
 #include "fw.h"

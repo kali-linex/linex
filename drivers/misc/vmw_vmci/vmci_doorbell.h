@@ -8,8 +8,8 @@
 #ifndef VMCI_DOORBELL_H
 #define VMCI_DOORBELL_H
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/types.h>
+#include <linex/vmw_vmci_defs.h>
+#include <linex/types.h>
 
 #include "vmci_driver.h"
 

@@ -8,7 +8,7 @@
  * Benjamin Herrenschmidt <benh@kernel.crashing.org>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 #include <asm/page.h>
 #include <asm/processor.h>

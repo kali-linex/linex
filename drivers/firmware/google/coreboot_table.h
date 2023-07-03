@@ -12,7 +12,7 @@
 #ifndef __COREBOOT_TABLE_H
 #define __COREBOOT_TABLE_H
 
-#include <linux/device.h>
+#include <linex/device.h>
 
 /* Coreboot table header structure */
 struct coreboot_table_header {

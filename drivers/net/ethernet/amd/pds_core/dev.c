@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2023 Advanced Micro Devices, Inc */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/utsname.h>
 
 #include "core.h"
 
@@ -258,7 +258,7 @@ static int pdsc_identify(struct pdsc *pdsc)
 	size_t sz;
 	int err;
 
-	drv.drv_type = cpu_to_le32(PDS_DRIVER_LINUX);
+	drv.drv_type = cpu_to_le32(PDS_DRIVER_LINEX);
 	snprintf(drv.driver_ver_str, sizeof(drv.driver_ver_str),
 		 "%s %s", PDS_CORE_DRV_NAME, utsname()->release);
 

@@ -4,14 +4,14 @@
  * Author: Chris Zhong <zyw@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/extcon.h>
-#include <linux/firmware.h>
-#include <linux/mfd/syscon.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/extcon.h>
+#include <linex/firmware.h>
+#include <linex/mfd/syscon.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 #include <sound/hdmi-codec.h>
 

@@ -2,8 +2,8 @@
 #ifndef ISCSI_TARGET_H
 #define ISCSI_TARGET_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
 
 struct iscsit_cmd;
 struct iscsit_conn;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/arch/powerpc/platforms/cell/cell_setup.c
+ *  linex/arch/powerpc/platforms/cell/cell_setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Adapted from 'alpha' version by Gary Thomas
@@ -10,23 +10,23 @@
  */
 #undef DEBUG
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/mutex.h>
-#include <linux/memory_hotplug.h>
-#include <linux/of_platform.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/export.h>
+#include <linex/unistd.h>
+#include <linex/user.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/seq_file.h>
+#include <linex/root_dev.h>
+#include <linex/console.h>
+#include <linex/mutex.h>
+#include <linex/memory_hotplug.h>
+#include <linex/of_platform.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>

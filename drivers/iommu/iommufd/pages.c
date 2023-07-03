@@ -45,13 +45,13 @@
  * last_iova + 1 can overflow. An iopt_pages index will always be much less than
  * ULONG_MAX so last_index + 1 cannot overflow.
  */
-#include <linux/overflow.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/sched/mm.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/iommufd.h>
+#include <linex/overflow.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/sched/mm.h>
+#include <linex/highmem.h>
+#include <linex/kthread.h>
+#include <linex/iommufd.h>
 
 #include "io_pagetable.h"
 #include "double_span.h"

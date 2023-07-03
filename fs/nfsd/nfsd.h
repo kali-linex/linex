@@ -6,22 +6,22 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_NFSD_H
-#define LINUX_NFSD_NFSD_H
+#ifndef LINEX_NFSD_NFSD_H
+#define LINEX_NFSD_NFSD_H
 
-#include <linux/types.h>
-#include <linux/mount.h>
+#include <linex/types.h>
+#include <linex/mount.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/addr.h>
+#include <linex/nfs.h>
+#include <linex/nfs2.h>
+#include <linex/nfs3.h>
+#include <linex/nfs4.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/sunrpc/svc_xprt.h>
+#include <linex/sunrpc/msg_prot.h>
+#include <linex/sunrpc/addr.h>
 
-#include <uapi/linux/nfsd/debug.h>
+#include <uapi/linex/nfsd/debug.h>
 
 #include "netns.h"
 #include "export.h"
@@ -519,4 +519,4 @@ static inline void nfsd4_init_leases_net(struct nfsd_net *nn) { };
 
 #endif /* CONFIG_NFSD_V4 */
 
-#endif /* LINUX_NFSD_NFSD_H */
+#endif /* LINEX_NFSD_NFSD_H */

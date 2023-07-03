@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * coretemp.c - Linux kernel module for hardware monitoring
+ * coretemp.c - Linex kernel module for hardware monitoring
  *
  * Copyright (C) 2007 Rudolf Marek <r.marek@assembler.cz>
  *
@@ -9,25 +9,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/hwmon.h>
+#include <linex/sysfs.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/platform_device.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
 #include <asm/msr.h>
 #include <asm/processor.h>
 #include <asm/cpu_device_id.h>
-#include <linux/sched/isolation.h>
+#include <linex/sched/isolation.h>
 
 #define DRVNAME	"coretemp"
 

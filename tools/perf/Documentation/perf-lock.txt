@@ -52,8 +52,8 @@ COMMON OPTIONS
 --force::
 	Don't complain, do it.
 
---vmlinux=<file>::
-        vmlinux pathname
+--vmlinex=<file>::
+        vmlinex pathname
 
 --kallsyms=<file>::
         kallsyms pathname

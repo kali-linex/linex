@@ -8,14 +8,14 @@
  * Copyright (C) 2009 Outpost Embedded, LLC
  * Copyright (C) 2010 Zilogic Systems <code@zilogic.com>
  * Copyright (C) 2013 Wei Shuai <cpuwolf@gmail.com>
- * Copyright (C) 2013 Linux Foundation
+ * Copyright (C) 2013 Linex Foundation
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
 
 #define DEVICE_N(vendor, IDS, nport)				\
 static const struct usb_device_id vendor##_id_table[] = {	\

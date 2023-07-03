@@ -7,13 +7,13 @@
  * Copyright (C) 2005 Pete Zaitcev (zaitcev@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/slab.h>
+#include <linex/notifier.h>
+#include <linex/mutex.h>
 
 #include "usb_mon.h"
 

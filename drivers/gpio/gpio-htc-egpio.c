@@ -8,17 +8,17 @@
  * This file may be distributed under the terms of the GNU GPL license.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/gpio/driver.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/platform_data/gpio-htc-egpio.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/gpio/driver.h>
 
 struct egpio_chip {
 	int              reg_start;

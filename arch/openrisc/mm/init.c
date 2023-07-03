@@ -2,7 +2,7 @@
 /*
  * OpenRISC idle.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,21 +11,21 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/smp.h>
+#include <linex/memblock.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pagemap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/dma.h>
@@ -70,7 +70,7 @@ static void __init map_ram(void)
 	pte_t *pte;
 	u64 i;
 	/* These mark extents of read-only kernel pages...
-	 * ...from vmlinux.lds.S
+	 * ...from vmlinex.lds.S
 	 */
 
 	v = PAGE_OFFSET;

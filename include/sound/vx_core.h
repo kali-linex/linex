@@ -12,7 +12,7 @@
 
 #include <sound/pcm.h>
 #include <sound/hwdep.h>
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 
 struct firmware;
 struct device;

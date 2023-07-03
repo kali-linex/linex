@@ -7,12 +7,12 @@
 /*
  * Veritas filesystem driver - inode routines.
  */
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
+#include <linex/fs.h>
+#include <linex/buffer_head.h>
+#include <linex/pagemap.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/namei.h>
 
 #include "vxfs.h"
 #include "vxfs_inode.h"
@@ -47,7 +47,7 @@ vxfs_dumpi(struct vxfs_inode_info *vip, ino_t ino)
  * @vip:	VxFS inode
  *
  * Description:
- *  vxfs_transmod returns a Linux mode_t for a given
+ *  vxfs_transmod returns a Linex mode_t for a given
  *  VxFS inode structure.
  */
 static __inline__ umode_t

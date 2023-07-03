@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2017 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2017 The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/pm_opp.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/cpumask.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/pm_opp.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/slab.h>
 #include "msm_gem.h"
 #include "msm_mmu.h"
 #include "a5xx_gpu.h"

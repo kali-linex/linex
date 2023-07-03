@@ -5,7 +5,7 @@
  * All Rights Reserved.
  */
 
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 #include <uapi/drm/habanalabs_accel.h>
 #include "habanalabs.h"
 

@@ -7,16 +7,16 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/panic_notifier.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/termios.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
+#include <linex/kmod.h>
+#include <linex/console.h>
+#include <linex/init.h>
+#include <linex/panic_notifier.h>
+#include <linex/timer.h>
+#include <linex/jiffies.h>
+#include <linex/termios.h>
+#include <linex/err.h>
+#include <linex/reboot.h>
+#include <linex/gfp.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

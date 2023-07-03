@@ -3,12 +3,12 @@
  * Helper functions for MMC regulators.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/regulator/consumer.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/log2.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/mmc/host.h>
+#include <linex/mmc/host.h>
 
 #include "core.h"
 #include "host.h"

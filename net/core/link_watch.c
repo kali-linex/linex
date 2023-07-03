@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux network device link state notification
+ * Linex network device link state notification
  *
  * Author:
  *     Stefan Rompf <sux@loplof.de>
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/if.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linex/rtnetlink.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
 
 #include "dev.h"
 

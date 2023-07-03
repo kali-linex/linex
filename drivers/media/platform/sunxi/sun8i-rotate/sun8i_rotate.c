@@ -5,15 +5,15 @@
  * Copyright (C) 2020 Jernej Skrabec <jernej.skrabec@siol.net>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

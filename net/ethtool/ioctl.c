@@ -7,30 +7,30 @@
  * the information ethtool needs.
  */
 
-#include <linux/compat.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/sfp.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched/signal.h>
-#include <linux/net.h>
-#include <linux/pm_runtime.h>
+#include <linex/compat.h>
+#include <linex/etherdevice.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/phy.h>
+#include <linex/bitops.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/sfp.h>
+#include <linex/slab.h>
+#include <linex/rtnetlink.h>
+#include <linex/sched/signal.h>
+#include <linex/net.h>
+#include <linex/pm_runtime.h>
 #include <net/devlink.h>
 #include <net/ipv6.h>
 #include <net/xdp_sock_drv.h>
 #include <net/flow_offload.h>
-#include <linux/ethtool_netlink.h>
+#include <linex/ethtool_netlink.h>
 #include <generated/utsrelease.h>
 #include "common.h"
 

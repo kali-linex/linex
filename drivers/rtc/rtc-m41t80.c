@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
+#include <linex/bcd.h>
+#include <linex/clk-provider.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/string.h>
 #ifdef CONFIG_RTC_DRV_M41T80_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linex/fs.h>
+#include <linex/ioctl.h>
+#include <linex/miscdevice.h>
+#include <linex/reboot.h>
+#include <linex/watchdog.h>
 #endif
 
 #define M41T80_REG_SSEC		0x00
@@ -1013,7 +1013,7 @@ static struct i2c_driver m41t80_driver = {
 		.of_match_table = of_match_ptr(m41t80_of_match),
 		.pm = &m41t80_pm,
 	},
-	.probe = m41t80_probe,
+	.probe_new = m41t80_probe,
 	.remove = m41t80_remove,
 	.id_table = m41t80_id,
 };

@@ -10,19 +10,19 @@
  * 0x80 writes made by the BIOS during the boot process.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/kfifo.h>
-#include <linux/mfd/syscon.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/fs.h>
+#include <linex/kfifo.h>
+#include <linex/mfd/syscon.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/regmap.h>
 
 #define DEVICE_NAME	"aspeed-lpc-snoop"
 
@@ -377,4 +377,4 @@ module_platform_driver(aspeed_lpc_snoop_driver);
 MODULE_DEVICE_TABLE(of, aspeed_lpc_snoop_match);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Robert Lippert <rlippert@google.com>");
-MODULE_DESCRIPTION("Linux driver to control Aspeed LPC snoop functionality");
+MODULE_DESCRIPTION("Linex driver to control Aspeed LPC snoop functionality");

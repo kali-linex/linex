@@ -10,10 +10,10 @@
  *	- Get the key and enable EVM
  */
 
-#include <linux/audit.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <linex/audit.h>
+#include <linex/uaccess.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
 #include "evm.h"
 
 static struct dentry *evm_dir;

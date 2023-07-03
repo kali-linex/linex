@@ -4,15 +4,15 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include "line-display.h"
 

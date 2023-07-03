@@ -6,13 +6,13 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/delay.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_regs.h>
@@ -357,7 +357,7 @@ static struct clk clk_periph = {
 
 
 /*
- * Linux clock API implementation
+ * Linex clock API implementation
  */
 int clk_enable(struct clk *clk)
 {

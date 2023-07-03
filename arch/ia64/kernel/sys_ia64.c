@@ -6,22 +6,22 @@
  * Copyright (C) 1999-2000, 2002-2003, 2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task_stack.h>
-#include <linux/shm.h>
-#include <linux/file.h>		/* doh, must come after sched.h... */
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/highuid.h>
-#include <linux/hugetlb.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task_stack.h>
+#include <linex/shm.h>
+#include <linex/file.h>		/* doh, must come after sched.h... */
+#include <linex/smp.h>
+#include <linex/syscalls.h>
+#include <linex/highuid.h>
+#include <linex/hugetlb.h>
 
 #include <asm/shmparam.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 unsigned long
 arch_get_unmapped_area (struct file *filp, unsigned long addr, unsigned long len,

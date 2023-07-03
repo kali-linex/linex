@@ -22,8 +22,8 @@
  * Authors: Slava Grigorev <slava.grigorev@amd.com>
  */
 
-#include <linux/gcd.h>
-#include <linux/component.h>
+#include <linex/gcd.h>
+#include <linex/component.h>
 
 #include <drm/drm_crtc.h>
 #include "dce6_afmt.h"

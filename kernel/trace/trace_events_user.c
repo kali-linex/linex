@@ -3,25 +3,25 @@
  * Copyright (c) 2021, Microsoft Corporation.
  *
  * Authors:
- *   Beau Belgrave <beaub@linux.microsoft.com>
+ *   Beau Belgrave <beaub@linex.microsoft.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/cdev.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/ioctl.h>
-#include <linux/jhash.h>
-#include <linux/refcount.h>
-#include <linux/trace_events.h>
-#include <linux/tracefs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/user_events.h>
+#include <linex/bitmap.h>
+#include <linex/cdev.h>
+#include <linex/hashtable.h>
+#include <linex/list.h>
+#include <linex/io.h>
+#include <linex/uio.h>
+#include <linex/ioctl.h>
+#include <linex/jhash.h>
+#include <linex/refcount.h>
+#include <linex/trace_events.h>
+#include <linex/tracefs.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/highmem.h>
+#include <linex/init.h>
+#include <linex/user_events.h>
 #include "trace_dynevent.h"
 #include "trace_output.h"
 #include "trace.h"

@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Lubomir Rintel
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linex/device.h>
+#include <linex/gfp.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
 
 #define RESP_COUNTER(response)	(response.header & 0x3)
 #define RESP_SIZE(response)	((response.header >> 2) & 0x3)

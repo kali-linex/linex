@@ -5,17 +5,17 @@
  * Copyright (c) 2016 Daniel Mack
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/cgroup.h>
-#include <linux/filter.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/string.h>
-#include <linux/bpf.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/bpf_lsm.h>
-#include <linux/bpf_verifier.h>
+#include <linex/kernel.h>
+#include <linex/atomic.h>
+#include <linex/cgroup.h>
+#include <linex/filter.h>
+#include <linex/slab.h>
+#include <linex/sysctl.h>
+#include <linex/string.h>
+#include <linex/bpf.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/bpf_lsm.h>
+#include <linex/bpf_verifier.h>
 #include <net/sock.h>
 #include <net/bpf_sk_storage.h>
 

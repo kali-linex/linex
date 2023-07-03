@@ -5,10 +5,10 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/string.h>
+#include <linex/videodev2.h>
 
 #include "vivid-rds-gen.h"
 

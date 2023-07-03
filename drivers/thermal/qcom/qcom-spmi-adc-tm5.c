@@ -3,21 +3,21 @@
  * Copyright (c) 2020 Linaro Limited
  *
  * Based on original driver:
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The Linex Foundation. All rights reserved.
  *
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <linex/bitfield.h>
+#include <linex/iio/adc/qcom-vadc-common.h>
+#include <linex/iio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/thermal.h>
 
 #include <asm/unaligned.h>
 

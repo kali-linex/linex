@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR MIT) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR MIT) */
 /******************************************************************************
  * privcmd.h
  *
@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,11 +31,11 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __LINUX_PUBLIC_PRIVCMD_H__
-#define __LINUX_PUBLIC_PRIVCMD_H__
+#ifndef __LINEX_PUBLIC_PRIVCMD_H__
+#define __LINEX_PUBLIC_PRIVCMD_H__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
 #include <xen/interface/xen.h>
 
 struct privcmd_hypercall {
@@ -126,4 +126,4 @@ struct privcmd_mmap_resource {
 #define IOCTL_PRIVCMD_MMAP_RESOURCE				\
 	_IOC(_IOC_NONE, 'P', 7, sizeof(struct privcmd_mmap_resource))
 
-#endif /* __LINUX_PUBLIC_PRIVCMD_H__ */
+#endif /* __LINEX_PUBLIC_PRIVCMD_H__ */

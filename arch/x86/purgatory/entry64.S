@@ -8,7 +8,7 @@
  * This code has been taken from kexec-tools.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 	.text
 	.balign 16

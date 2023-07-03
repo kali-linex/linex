@@ -4,10 +4,10 @@
 #include "util/tool.h"
 #include "util/time-utils.h"
 
-#include <linux/bitmap.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <linex/bitmap.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/types.h>
 
 struct perf_sample;
 struct perf_session;

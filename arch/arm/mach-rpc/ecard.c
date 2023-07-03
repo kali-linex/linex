@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/ecard.c
+ *  linex/arch/arm/kernel/ecard.c
  *
  *  Copyright 1995-2001 Russell King
  *
@@ -15,7 +15,7 @@
  *			- cards can now register their own routine to control
  *			interrupts (recommended).
  *  29-Sep-1997	RMK	Expansion card interrupt hardware not being re-enabled
- *			on reset from Linux. (Caused cards not to respond
+ *			on reset from Linex. (Caused cards not to respond
  *			under RiscOS without hard reset).
  *  15-Feb-1998	RMK	Added DMA support
  *  12-Sep-1998	RMK	Added EASI support
@@ -24,24 +24,24 @@
  */
 #define ECARD_C
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/reboot.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/interrupt.h>
+#include <linex/completion.h>
+#include <linex/reboot.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/kthread.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>
@@ -111,7 +111,7 @@ static inline ecard_t *slot_to_ecard(unsigned int slot)
  * environment up, and pass requests to this task as and when we
  * need to.
  *
- * This should allow 99% of loaders to be called from Linux.
+ * This should allow 99% of loaders to be called from Linex.
  *
  * From a security standpoint, we trust the card vendors.  This
  * may be a misplaced trust.

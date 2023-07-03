@@ -8,10 +8,10 @@
  * Copyright (C) 2016 Cadence Design Systems Inc.
  */
 
-#include <linux/hw_breakpoint.h>
-#include <linux/log2.h>
-#include <linux/percpu.h>
-#include <linux/perf_event.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/log2.h>
+#include <linex/percpu.h>
+#include <linex/perf_event.h>
 #include <asm/core.h>
 
 /* Breakpoint currently in use for each IBREAKA. */

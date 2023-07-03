@@ -9,8 +9,8 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include "ptdma.h"
 

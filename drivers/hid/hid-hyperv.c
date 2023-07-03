@@ -4,14 +4,14 @@
  *  Copyright (c) 2010, Microsoft Corporation.
  *  Copyright (c) 2011, Novell Inc.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/completion.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hyperv.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/completion.h>
+#include <linex/input.h>
+#include <linex/hid.h>
+#include <linex/hiddev.h>
+#include <linex/hyperv.h>
 
 
 struct hv_input_dev_info {

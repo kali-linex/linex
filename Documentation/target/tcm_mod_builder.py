@@ -2,7 +2,7 @@
 # The TCM v4 multi-protocol fabric module generation script for drivers/target/$NEW_MOD
 #
 # Copyright (c) 2010 Rising Tide Systems
-# Copyright (c) 2010 Linux-iSCSI.org
+# Copyright (c) 2010 Linex-iSCSI.org
 #
 # Author: nab@kernel.org
 #
@@ -187,18 +187,18 @@ def tcm_mod_build_configfs(proto_ident, fabric_mod_dir_var, fabric_mod_name):
         if not p:
                 tcm_mod_err("Unable to open file: " + f)
 
-	buf = "#include <linux/module.h>\n"
-	buf += "#include <linux/moduleparam.h>\n"
-	buf += "#include <linux/version.h>\n"
+	buf = "#include <linex/module.h>\n"
+	buf += "#include <linex/moduleparam.h>\n"
+	buf += "#include <linex/version.h>\n"
 	buf += "#include <generated/utsrelease.h>\n"
-	buf += "#include <linux/utsname.h>\n"
-	buf += "#include <linux/init.h>\n"
-	buf += "#include <linux/slab.h>\n"
-	buf += "#include <linux/kthread.h>\n"
-	buf += "#include <linux/types.h>\n"
-	buf += "#include <linux/string.h>\n"
-	buf += "#include <linux/configfs.h>\n"
-	buf += "#include <linux/ctype.h>\n"
+	buf += "#include <linex/utsname.h>\n"
+	buf += "#include <linex/init.h>\n"
+	buf += "#include <linex/slab.h>\n"
+	buf += "#include <linex/kthread.h>\n"
+	buf += "#include <linex/types.h>\n"
+	buf += "#include <linex/string.h>\n"
+	buf += "#include <linex/configfs.h>\n"
+	buf += "#include <linex/ctype.h>\n"
 	buf += "#include <asm/unaligned.h>\n"
 	buf += "#include <scsi/scsi_proto.h>\n\n"
 	buf += "#include <target/target_core_base.h>\n"
@@ -388,13 +388,13 @@ def tcm_mod_dump_fabric_ops(proto_ident, fabric_mod_dir_var, fabric_mod_name):
 	if not pi:
 		tcm_mod_err("Unable to open file: " + fi)
 
-	buf = "#include <linux/slab.h>\n"
-	buf += "#include <linux/kthread.h>\n"
-	buf += "#include <linux/types.h>\n"
-	buf += "#include <linux/list.h>\n"
-	buf += "#include <linux/types.h>\n"
-	buf += "#include <linux/string.h>\n"
-	buf += "#include <linux/ctype.h>\n"
+	buf = "#include <linex/slab.h>\n"
+	buf += "#include <linex/kthread.h>\n"
+	buf += "#include <linex/types.h>\n"
+	buf += "#include <linex/list.h>\n"
+	buf += "#include <linex/types.h>\n"
+	buf += "#include <linex/string.h>\n"
+	buf += "#include <linex/ctype.h>\n"
 	buf += "#include <asm/unaligned.h>\n"
 	buf += "#include <scsi/scsi_common.h>\n"
 	buf += "#include <scsi/scsi_proto.h>\n"

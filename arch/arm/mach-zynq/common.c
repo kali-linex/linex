@@ -6,25 +6,25 @@
  *  Copyright (C) 2011 Xilinx
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk/zynq.h>
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of.h>
-#include <linux/memblock.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/cpumask.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/clk/zynq.h>
+#include <linex/clocksource.h>
+#include <linex/of_address.h>
+#include <linex/of_clk.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/of.h>
+#include <linex/memblock.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
+#include <linex/pgtable.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

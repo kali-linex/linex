@@ -6,28 +6,28 @@
  * Copyright 2010, 2011 David Jander <david@protonic.nl>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <linex/hrtimer.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/sched.h>
+#include <linex/pm.h>
+#include <linex/slab.h>
+#include <linex/sysctl.h>
+#include <linex/proc_fs.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/gpio_keys.h>
+#include <linex/workqueue.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/spinlock.h>
 #include <dt-bindings/input/gpio-keys.h>
 
 struct gpio_button_data {
@@ -757,7 +757,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 			button->irq =
 				irq_of_parse_and_map(to_of_node(child), 0);
 
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "linex,code",
 					     &button->code)) {
 			dev_err(dev, "Button without keycode\n");
 			fwnode_handle_put(child);
@@ -766,11 +766,11 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 
 		fwnode_property_read_string(child, "label", &button->desc);
 
-		if (fwnode_property_read_u32(child, "linux,input-type",
+		if (fwnode_property_read_u32(child, "linex,input-type",
 					     &button->type))
 			button->type = EV_KEY;
 
-		fwnode_property_read_u32(child, "linux,input-value",
+		fwnode_property_read_u32(child, "linex,input-value",
 					 (u32 *)&button->value);
 
 		button->wakeup =
@@ -782,7 +782,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 					 &button->wakeup_event_action);
 
 		button->can_disable =
-			fwnode_property_read_bool(child, "linux,can-disable");
+			fwnode_property_read_bool(child, "linex,can-disable");
 
 		if (fwnode_property_read_u32(child, "debounce-interval",
 					 &button->debounce_interval))
@@ -857,7 +857,7 @@ static int gpio_keys_probe(struct platform_device *pdev)
 	input->keycodesize = sizeof(ddata->keymap[0]);
 	input->keycodemax = pdata->nbuttons;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Linex input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

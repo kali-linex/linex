@@ -5,9 +5,9 @@
  * Copyright (C) 2022 Marcus Folkesson <marcus.folkesson@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 
 /*
  * VID/PID are probably "borrowed", so keep them locally and

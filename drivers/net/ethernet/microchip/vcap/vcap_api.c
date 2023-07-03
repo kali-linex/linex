@@ -4,7 +4,7 @@
  * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "vcap_api_private.h"
 

@@ -59,19 +59,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/fcntl.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
+#include <linex/string.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/slab.h>
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/route.h>
@@ -81,12 +81,12 @@
 #include <net/udp.h>
 #include <net/raw.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/uaccess.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
 #include <net/inet_common.h>

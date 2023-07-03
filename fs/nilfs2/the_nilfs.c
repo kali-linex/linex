@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/random.h>
-#include <linux/log2.h>
-#include <linux/crc32.h>
+#include <linex/buffer_head.h>
+#include <linex/slab.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/random.h>
+#include <linex/log2.h>
+#include <linex/crc32.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "alloc.h"

@@ -3,10 +3,10 @@
  * Copyright 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock.h>
 #include "clk.h"
 
 DEFINE_SPINLOCK(mxs_lock);

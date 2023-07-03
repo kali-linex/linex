@@ -5,11 +5,11 @@
  * based on SSD1306 driver by Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
 
 #include "fbtft.h"
 

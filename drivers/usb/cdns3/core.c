@@ -11,13 +11,13 @@
  *         Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/pm_runtime.h>
 
 #include "core.h"
 #include "host-export.h"

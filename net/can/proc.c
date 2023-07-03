@@ -40,13 +40,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/if_arp.h>
-#include <linux/can/can-ml.h>
-#include <linux/can/core.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/list.h>
+#include <linex/rcupdate.h>
+#include <linex/if_arp.h>
+#include <linex/can/can-ml.h>
+#include <linex/can/core.h>
 
 #include "af_can.h"
 

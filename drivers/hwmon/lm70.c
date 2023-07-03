@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/sysfs.h>
+#include <linex/hwmon.h>
+#include <linex/mutex.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
 
 #define DRVNAME		"lm70"
 
@@ -218,5 +218,5 @@ static struct spi_driver lm70_driver = {
 module_spi_driver(lm70_driver);
 
 MODULE_AUTHOR("Kaiwan N Billimoria");
-MODULE_DESCRIPTION("NS LM70 and compatibles Linux driver");
+MODULE_DESCRIPTION("NS LM70 and compatibles Linex driver");
 MODULE_LICENSE("GPL");

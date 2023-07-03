@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_PID_SYSCTL_H
-#define LINUX_PID_SYSCTL_H
+#ifndef LINEX_PID_SYSCTL_H
+#define LINEX_PID_SYSCTL_H
 
-#include <linux/pid_namespace.h>
+#include <linex/pid_namespace.h>
 
 #if defined(CONFIG_SYSCTL) && defined(CONFIG_MEMFD_CREATE)
 static inline void initialize_memfd_noexec_scope(struct pid_namespace *ns)
@@ -55,4 +55,4 @@ static inline void initialize_memfd_noexec_scope(struct pid_namespace *ns) {}
 static inline void register_pid_ns_sysctl_table_vm(void) {}
 #endif
 
-#endif /* LINUX_PID_SYSCTL_H */
+#endif /* LINEX_PID_SYSCTL_H */

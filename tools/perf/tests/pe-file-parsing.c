@@ -3,9 +3,9 @@
 #include <inttypes.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>

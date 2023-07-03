@@ -4,35 +4,35 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/cpu.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linex/acpi.h>
+#include <linex/acpi_iort.h>
+#include <linex/bitfield.h>
+#include <linex/bitmap.h>
+#include <linex/cpu.h>
+#include <linex/crash_dump.h>
+#include <linex/delay.h>
+#include <linex/efi.h>
+#include <linex/interrupt.h>
+#include <linex/iommu.h>
+#include <linex/iopoll.h>
+#include <linex/irqdomain.h>
+#include <linex/list.h>
+#include <linex/log2.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_pci.h>
+#include <linex/of_platform.h>
+#include <linex/percpu.h>
+#include <linex/slab.h>
+#include <linex/syscore_ops.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/arm-gic-v4.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic-v3.h>
+#include <linex/irqchip/arm-gic-v4.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>

@@ -7,15 +7,15 @@
  *  Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/elf.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/compat.h>
-#include <linux/nsproxy.h>
-#include <linux/time_namespace.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/elf.h>
+#include <linex/timekeeper_internal.h>
+#include <linex/compat.h>
+#include <linex/nsproxy.h>
+#include <linex/time_namespace.h>
+#include <linex/random.h>
 
 #include <asm/pgtable.h>
 #include <asm/page.h>
@@ -49,7 +49,7 @@ static struct vm_special_mapping vdso32_mapping = {
  * This is called from binfmt_elf, we create the special vma for the
  * vDSO and insert it into the mm struct tree
  */
-int arch_setup_additional_pages(struct linux_binprm *bprm,
+int arch_setup_additional_pages(struct linex_binprm *bprm,
 				int executable_stack)
 {
 

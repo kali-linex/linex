@@ -5,15 +5,15 @@
  * Copyright 2009,2012-2013 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
-#include <linux/fsl/guts.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/kdev_t.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/interrupt.h>
+#include <linex/of_platform.h>
+#include <linex/fsl/guts.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

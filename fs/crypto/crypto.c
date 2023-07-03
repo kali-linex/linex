@@ -20,11 +20,11 @@
  * Special Publication 800-38E and IEEE P1619/D16.
  */
 
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/ratelimit.h>
+#include <linex/pagemap.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/ratelimit.h>
 #include <crypto/skcipher.h>
 #include "fscrypt_private.h"
 

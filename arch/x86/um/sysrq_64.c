@@ -4,11 +4,11 @@
  * Licensed under the GPL
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/utsname.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/utsname.h>
 #include <asm/current.h>
 #include <asm/ptrace.h>
 #include <asm/sysrq.h>

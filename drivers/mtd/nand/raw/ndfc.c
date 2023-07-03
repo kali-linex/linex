@@ -16,14 +16,14 @@
  *  Copyright 2008 PIKA Technologies
  *    Sean MacLennan <smaclennan@pikatech.com>
  */
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/ndfc.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/ndfc.h>
+#include <linex/slab.h>
+#include <linex/mtd/mtd.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 #include <asm/io.h>
 
 #define NDFC_MAX_CS    4

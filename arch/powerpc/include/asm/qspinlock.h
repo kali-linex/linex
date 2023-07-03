@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_QSPINLOCK_H
 #define _ASM_POWERPC_QSPINLOCK_H
 
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 #include <asm/qspinlock_types.h>
 #include <asm/paravirt.h>
 

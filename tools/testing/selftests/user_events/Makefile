@@ -3,7 +3,7 @@ CFLAGS += -Wl,-no-as-needed -Wall $(KHDR_INCLUDES)
 LDLIBS += -lrt -lpthread -lm
 
 # Note:
-# This test depends on <linux/user_events.h> exported in uapi
+# This test depends on <linex/user_events.h> exported in uapi
 # The following commit removed user_events.h out of uapi:
 # commit 5cfff569cab8bf544bab62c911c5d6efd5af5e05
 # tracing: Move user_events.h temporarily out of include/uapi

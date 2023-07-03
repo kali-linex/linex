@@ -6,12 +6,12 @@
  *
  * Copyright (c) 2011 DENX Software Engineering GmbH
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
 
 #define PHY_ID_AM79C874		0x0022561b
 

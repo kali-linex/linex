@@ -27,34 +27,34 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>      /* needed for sizeof(tcphdr) */
-#include <linux/udp.h>      /* needed for sizeof(udphdr) */
-#include <linux/phy.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/dma-mapping.h>
-#include <linux/processor.h>
-#include <linux/platform_data/xilinx-ll-temac.h>
+#include <linex/delay.h>
+#include <linex/etherdevice.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/netdevice.h>
+#include <linex/if_ether.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/tcp.h>      /* needed for sizeof(tcphdr) */
+#include <linex/udp.h>      /* needed for sizeof(udphdr) */
+#include <linex/phy.h>
+#include <linex/in.h>
+#include <linex/io.h>
+#include <linex/ip.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/dma-mapping.h>
+#include <linex/processor.h>
+#include <linex/platform_data/xilinx-ll-temac.h>
 
 #include "ll_temac.h"
 

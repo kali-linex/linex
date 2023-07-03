@@ -17,26 +17,26 @@
 
 #define pr_fmt(fmt) "arm-smmu: " fmt
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/acpi_iort.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/ratelimit.h>
+#include <linex/slab.h>
 
-#include <linux/fsl/mc.h>
+#include <linex/fsl/mc.h>
 
 #include "arm-smmu.h"
 #include "../../dma-iommu.h"

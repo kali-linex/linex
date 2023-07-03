@@ -6,18 +6,18 @@
  * Author: John Garry <john.garry@huawei.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/logic_pio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/serial_8250.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/logic_pio.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pci.h>
+#include <linex/serial_8250.h>
+#include <linex/slab.h>
 
 #define DRV_NAME "hisi-lpc"
 

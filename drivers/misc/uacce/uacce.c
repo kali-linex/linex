@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/compat.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/uacce.h>
+#include <linex/compat.h>
+#include <linex/dma-mapping.h>
+#include <linex/iommu.h>
+#include <linex/module.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/uacce.h>
 
 static struct class *uacce_class;
 static dev_t uacce_devt;

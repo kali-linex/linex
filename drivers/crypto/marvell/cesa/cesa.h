@@ -5,8 +5,8 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>
 
-#include <linux/dma-direction.h>
-#include <linux/dmapool.h>
+#include <linex/dma-direction.h>
+#include <linex/dmapool.h>
 
 #define CESA_ENGINE_OFF(i)			(((i) * 0x2000))
 

@@ -5,22 +5,22 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/buffer_head.h>
-#include <linux/sched/mm.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/blk-crypto.h>
-#include <linux/swap.h>
-#include <linux/prefetch.h>
-#include <linux/uio.h>
-#include <linux/sched/signal.h>
-#include <linux/fiemap.h>
-#include <linux/iomap.h>
+#include <linex/fs.h>
+#include <linex/f2fs_fs.h>
+#include <linex/buffer_head.h>
+#include <linex/sched/mm.h>
+#include <linex/mpage.h>
+#include <linex/writeback.h>
+#include <linex/pagevec.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/blk-crypto.h>
+#include <linex/swap.h>
+#include <linex/prefetch.h>
+#include <linex/uio.h>
+#include <linex/sched/signal.h>
+#include <linex/fiemap.h>
+#include <linex/iomap.h>
 
 #include "f2fs.h"
 #include "node.h"

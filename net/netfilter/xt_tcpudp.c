@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/module.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/icmp.h>
+#include <linex/ipv6.h>
+#include <linex/icmp.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include <net/udp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_tcpudp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_tcpudp.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 
 MODULE_DESCRIPTION("Xtables: TCP, UDP and UDP-Lite match");
 MODULE_LICENSE("GPL");

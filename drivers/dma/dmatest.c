@@ -7,19 +7,19 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/freezer.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/sched/task.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/freezer.h>
+#include <linex/init.h>
+#include <linex/kthread.h>
+#include <linex/sched/task.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
 
 static unsigned int test_buf_size = 16384;
 module_param(test_buf_size, uint, 0644);

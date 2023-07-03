@@ -25,7 +25,7 @@
  *
  **************************************************************************/
 
-#include <linux/sched/signal.h>
+#include <linex/sched/signal.h>
 
 #include "vmwgfx_drv.h"
 

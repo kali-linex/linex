@@ -16,7 +16,7 @@
 
 #include "hw.h"
 #include "hw-ops.h"
-#include <linux/export.h>
+#include <linex/export.h>
 
 /* Common calibration code */
 

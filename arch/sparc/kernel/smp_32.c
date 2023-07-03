@@ -8,24 +8,24 @@
 
 #include <asm/head.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/threads.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/kernel_stat.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/cache.h>
+#include <linex/delay.h>
+#include <linex/profile.h>
+#include <linex/cpu.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -118,7 +118,7 @@ void cpu_panic(void)
 	panic("SMP bolixed\n");
 }
 
-struct linux_prom_registers smp_penguin_ctable = { 0 };
+struct linex_prom_registers smp_penguin_ctable = { 0 };
 
 void arch_smp_send_reschedule(int cpu)
 {

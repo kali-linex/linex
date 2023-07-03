@@ -8,19 +8,19 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/random.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/highmem.h>
+#include <linex/init.h>
+#include <linex/sysctl.h>
+#include <linex/random.h>
+#include <linex/blkdev.h>
+#include <linex/socket.h>
+#include <linex/inet.h>
+#include <linex/timer.h>
+#include <linex/kthread.h>
+#include <linex/delay.h>
 
 
 #include "../cluster/heartbeat.h"

@@ -6,10 +6,10 @@
  *
  *  Copyright (C) 2005  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/clkdev.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 #include <asm/io.h>

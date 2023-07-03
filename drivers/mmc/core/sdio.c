@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/sdio.c
+ *  linex/drivers/mmc/sdio.c
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
 
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/sysfs.h>
+#include <linex/err.h>
+#include <linex/pm_runtime.h>
+#include <linex/sysfs.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
 
 #include "core.h"
 #include "card.h"

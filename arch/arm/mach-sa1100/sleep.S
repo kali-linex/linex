@@ -16,7 +16,7 @@
  *				Storage is on the stack now.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 

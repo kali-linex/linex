@@ -10,7 +10,7 @@
  * Copyright (C) 2006 Lennart Poettering <mzxreary (at) 0pointer (dot) de>
  *
  * This driver does below things:
- * 1. registers itself in the Linux backlight control in
+ * 1. registers itself in the Linex backlight control in
  *    /sys/class/backlight/intel_oaktrail/
  *
  * 2. registers in the rfkill subsystem here: /sys/class/rfkill/rfkillX/
@@ -24,17 +24,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/dmi.h>
+#include <linex/err.h>
+#include <linex/fb.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/rfkill.h>
 
 #include <acpi/video.h>
 

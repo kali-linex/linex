@@ -5,9 +5,9 @@
  * Copyright (C) 1999 kaz Kojima
  * Copyright (C) 2008 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
 
 #include <asm/ptrace.h>
 

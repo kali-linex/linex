@@ -2,8 +2,8 @@
 #ifndef __NET_VXLAN_H
 #define __NET_VXLAN_H 1
 
-#include <linux/if_vlan.h>
-#include <linux/rhashtable-types.h>
+#include <linex/if_vlan.h>
+#include <linex/rhashtable-types.h>
 #include <net/udp_tunnel.h>
 #include <net/dst_metadata.h>
 #include <net/rtnetlink.h>

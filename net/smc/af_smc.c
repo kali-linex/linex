@@ -12,22 +12,22 @@
  *
  *  Copyright IBM Corp. 2016, 2018
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  *              based on prototype from Frank Blaschka
  */
 
 #define KMSG_COMPONENT "smc"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/workqueue.h>
-#include <linux/in.h>
-#include <linux/sched/signal.h>
-#include <linux/if_vlan.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/ctype.h>
-#include <linux/splice.h>
+#include <linex/module.h>
+#include <linex/socket.h>
+#include <linex/workqueue.h>
+#include <linex/in.h>
+#include <linex/sched/signal.h>
+#include <linex/if_vlan.h>
+#include <linex/rcupdate_wait.h>
+#include <linex/ctype.h>
+#include <linex/splice.h>
 
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -131,7 +131,7 @@ static struct sock *smc_tcp_syn_recv_sock(const struct sock *sk,
 		goto drop;
 
 	if (sk_acceptq_is_full(&smc->sk)) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+		NET_INC_STATS(sock_net(sk), LINEX_MIB_LISTENOVERFLOWS);
 		goto drop;
 	}
 
@@ -3522,7 +3522,7 @@ static void __exit smc_exit(void)
 module_init(smc_init);
 module_exit(smc_exit);
 
-MODULE_AUTHOR("Ursula Braun <ubraun@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Ursula Braun <ubraun@linex.vnet.ibm.com>");
 MODULE_DESCRIPTION("smc socket address family");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_NETPROTO(PF_SMC);

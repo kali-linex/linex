@@ -6,17 +6,17 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/platform_data/adau17x1.h>
+#include <linex/platform_data/adau17x1.h>
 
 #include "adau17x1.h"
 #include "adau1781.h"

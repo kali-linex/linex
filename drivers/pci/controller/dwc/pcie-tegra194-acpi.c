@@ -7,9 +7,9 @@
  * Author: Vidya Sagar <vidyas@nvidia.com>
  */
 
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
+#include <linex/pci.h>
+#include <linex/pci-acpi.h>
+#include <linex/pci-ecam.h>
 
 #include "pcie-designware.h"
 

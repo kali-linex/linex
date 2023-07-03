@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 #include "common.h"
 
 #define CORE_CLK_DIV_RATIO_MASK		0xff

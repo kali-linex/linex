@@ -14,17 +14,17 @@
 #ifndef ATLX_C
 #define ATLX_C
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/etherdevice.h>
+#include <linex/if.h>
+#include <linex/netdevice.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include "atlx.h"
 

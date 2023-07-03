@@ -4,14 +4,14 @@
 #ifndef _IAVF_OSDEP_H_
 #define _IAVF_OSDEP_H_
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/tcp.h>
-#include <linux/pci.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/tcp.h>
+#include <linex/pci.h>
 
 /* get readq/writeq support for 32 bit kernels, use the low-first version */
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
 
 #define wr32(a, reg, value)	writel((value), ((a)->hw_addr + (reg)))
 #define rd32(a, reg)		readl((a)->hw_addr + (reg))

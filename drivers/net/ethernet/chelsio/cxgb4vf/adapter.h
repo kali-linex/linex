@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for Linex.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -40,13 +40,13 @@
 #ifndef __CXGB4VF_ADAPTER_H__
 #define __CXGB4VF_ADAPTER_H__
 
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/if_ether.h>
+#include <linex/netdevice.h>
 
 #include "../cxgb4/t4_hw.h"
 
@@ -383,7 +383,7 @@ struct adapter {
 	} msix_info[MSIX_ENTRIES];
 	struct sge sge;
 
-	/* Linux network device resources */
+	/* Linex network device resources */
 	struct net_device *port[MAX_NPORTS];
 	const char *name;
 	unsigned int msg_enable;

@@ -6,30 +6,30 @@
  *
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire Linex Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinex.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dsa/mv88e6xxx.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_data/mv88e6xxx.h>
-#include <linux/netdevice.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phylink.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/dsa/mv88e6xxx.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_bridge.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/jiffies.h>
+#include <linex/list.h>
+#include <linex/mdio.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/platform_data/mv88e6xxx.h>
+#include <linex/netdevice.h>
+#include <linex/gpio/consumer.h>
+#include <linex/phylink.h>
 #include <net/dsa.h>
 
 #include "chip.h"

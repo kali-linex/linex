@@ -2,7 +2,7 @@
 /* Copyright (c) 2014 Mahesh Bandewar <maheshb@google.com>
  */
 
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 
 #include "ipvlan.h"
 

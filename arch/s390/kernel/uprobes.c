@@ -6,11 +6,11 @@
  *    Author(s): Jan Willeke,
  */
 
-#include <linux/uaccess.h>
-#include <linux/uprobes.h>
-#include <linux/compat.h>
-#include <linux/kdebug.h>
-#include <linux/sched/task_stack.h>
+#include <linex/uaccess.h>
+#include <linex/uprobes.h>
+#include <linex/compat.h>
+#include <linex/kdebug.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/switch_to.h>
 #include <asm/facility.h>

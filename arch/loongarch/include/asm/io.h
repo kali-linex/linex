@@ -7,8 +7,8 @@
 
 #define ARCH_HAS_IOREMAP_WC
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/cpu.h>

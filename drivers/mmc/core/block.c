@@ -18,36 +18,36 @@
  * Author:  Andrew Christian
  *          28 May 2002
  */
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
+#include <linex/init.h>
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kdev_t.h>
-#include <linux/kref.h>
-#include <linux/blkdev.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/delay.h>
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
-#include <linux/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/hdreg.h>
+#include <linex/kdev_t.h>
+#include <linex/kref.h>
+#include <linex/blkdev.h>
+#include <linex/cdev.h>
+#include <linex/mutex.h>
+#include <linex/scatterlist.h>
+#include <linex/string_helpers.h>
+#include <linex/delay.h>
+#include <linex/capability.h>
+#include <linex/compat.h>
+#include <linex/pm_runtime.h>
+#include <linex/idr.h>
+#include <linex/debugfs.h>
 
-#include <linux/mmc/ioctl.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <linex/mmc/ioctl.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "queue.h"
 #include "block.h"

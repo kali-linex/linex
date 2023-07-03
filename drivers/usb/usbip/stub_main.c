@@ -3,10 +3,10 @@
  * Copyright (C) 2003-2008 Takahiro Hirofuchi
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/scatterlist.h>
 
 #include "usbip_common.h"
 #include "stub.h"

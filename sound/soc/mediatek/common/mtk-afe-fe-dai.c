@@ -6,10 +6,10 @@
  * Author: Garlic Tseng <garlic.tseng@mediatek.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include "mtk-afe-platform-driver.h"
 #include <sound/pcm_params.h>

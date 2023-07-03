@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include "amdgpu.h"
 #include "amdgpu_sdma.h"
 #include "amdgpu_ras.h"

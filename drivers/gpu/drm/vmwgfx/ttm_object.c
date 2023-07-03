@@ -47,12 +47,12 @@
 #include "ttm_object.h"
 #include "vmwgfx_drv.h"
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/hashtable.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/atomic.h>
+#include <linex/module.h>
+#include <linex/hashtable.h>
 
 MODULE_IMPORT_NS(DMA_BUF);
 

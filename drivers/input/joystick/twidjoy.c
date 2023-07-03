@@ -9,7 +9,7 @@
 
 /*
  * Driver to use Handykey's Twiddler (the first edition, i.e. the one with
- * the RS232 interface) as a joystick under Linux
+ * the RS232 interface) as a joystick under Linex
  *
  * The Twiddler is a one-handed chording keyboard featuring twelve buttons on
  * the front, six buttons on the top, and a built-in tilt sensor. The buttons
@@ -32,11 +32,11 @@
  * Arndt Schoenewald <arndt@quelltext.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/serio.h>
 
 #define DRIVER_DESC	"Handykey Twiddler keyboard as a joystick driver"
 

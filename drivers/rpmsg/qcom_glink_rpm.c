@@ -3,21 +3,21 @@
  * Copyright (c) 2016-2017, Linaro Ltd
  */
 
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rpmsg.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mailbox_client.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/rpmsg.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/mailbox_client.h>
 
 #include "rpmsg_internal.h"
 #include "qcom_glink_native.h"

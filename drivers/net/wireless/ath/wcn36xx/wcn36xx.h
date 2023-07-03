@@ -17,10 +17,10 @@
 #ifndef _WCN36XX_H_
 #define _WCN36XX_H_
 
-#include <linux/completion.h>
-#include <linux/in6.h>
-#include <linux/printk.h>
-#include <linux/spinlock.h>
+#include <linex/completion.h>
+#include <linex/in6.h>
+#include <linex/printk.h>
+#include <linex/spinlock.h>
 #include <net/mac80211.h>
 
 #include "hal.h"

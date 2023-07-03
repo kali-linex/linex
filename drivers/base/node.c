@@ -3,24 +3,24 @@
  * Basic Node interface support
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/vmstat.h>
-#include <linux/notifier.h>
-#include <linux/node.h>
-#include <linux/hugetlb.h>
-#include <linux/compaction.h>
-#include <linux/cpumask.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/memory.h>
+#include <linex/vmstat.h>
+#include <linex/notifier.h>
+#include <linex/node.h>
+#include <linex/hugetlb.h>
+#include <linex/compaction.h>
+#include <linex/cpumask.h>
+#include <linex/topology.h>
+#include <linex/nodemask.h>
+#include <linex/cpu.h>
+#include <linex/device.h>
+#include <linex/pm_runtime.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
+#include <linex/hugetlb.h>
 
 static struct bus_type node_subsys = {
 	.name = "node",

@@ -5,27 +5,27 @@
  * Copyright (C) 2014, Broadcom Corporation
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/mii.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/phy.h>
+#include <linex/phy_fixed.h>
+#include <linex/phylink.h>
+#include <linex/mii.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
 #include <net/dsa.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_data/b53.h>
+#include <linex/ethtool.h>
+#include <linex/if_bridge.h>
+#include <linex/brcmphy.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_data/b53.h>
 
 #include "bcm_sf2.h"
 #include "bcm_sf2_regs.h"
@@ -659,7 +659,7 @@ static int bcm_sf2_mdio_register(struct dsa_switch *ds)
 	priv->slave_mii_bus->phy_mask = ~priv->indir_phy_mask;
 
 	/* We need to make sure that of_phy_connect() will not work by
-	 * removing the 'phandle' and 'linux,phandle' properties and
+	 * removing the 'phandle' and 'linex,phandle' properties and
 	 * unregister the existing PHY device that was already registered.
 	 */
 	for_each_available_child_of_node(dn, child) {
@@ -674,7 +674,7 @@ static int bcm_sf2_mdio_register(struct dsa_switch *ds)
 		if (prop)
 			of_remove_property(child, prop);
 
-		prop = of_find_property(child, "linux,phandle", NULL);
+		prop = of_find_property(child, "linex,phandle", NULL);
 		if (prop)
 			of_remove_property(child, prop);
 

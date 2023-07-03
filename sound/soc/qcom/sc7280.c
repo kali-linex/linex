@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //
-// Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020-2021, The Linex Foundation. All rights reserved.
 //
 // ALSA SoC Machine driver for sc7280
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/rt5682s.h>
-#include <linux/soundwire/sdw.h>
+#include <linex/soundwire/sdw.h>
 #include <sound/pcm_params.h>
 
 #include "../codecs/rt5682.h"

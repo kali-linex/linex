@@ -2,16 +2,16 @@
 /*
  *  Copyright (C) 2011 Freescale Semiconductor, Inc. All Rights Reserved.
  */
-#include <linux/suspend.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <linex/suspend.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/export.h>
 
-#include <linux/genalloc.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/genalloc.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fncpy.h>

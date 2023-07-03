@@ -23,7 +23,7 @@
 #ifndef __AMDGPU_CS_H__
 #define __AMDGPU_CS_H__
 
-#include <linux/ww_mutex.h>
+#include <linex/ww_mutex.h>
 
 #include "amdgpu_job.h"
 #include "amdgpu_bo_list.h"

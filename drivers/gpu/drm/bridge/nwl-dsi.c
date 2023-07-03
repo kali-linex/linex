@@ -6,22 +6,22 @@
  * Copyright (C) 2020 Purism SPC
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/math64.h>
-#include <linux/mfd/syscon.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/sys_soc.h>
-#include <linux/time64.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/irq.h>
+#include <linex/math64.h>
+#include <linex/mfd/syscon.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/mux/consumer.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/sys_soc.h>
+#include <linex/time64.h>
 
 #include <drm/drm_atomic_state_helper.h>
 #include <drm/drm_bridge.h>

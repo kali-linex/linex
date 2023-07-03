@@ -4,16 +4,16 @@
  */
 
 /*
- * Microsoft SideWinder joystick family driver for Linux
+ * Microsoft SideWinder joystick family driver for Linex
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/gameport.h>
+#include <linex/jiffies.h>
 
 #define DRIVER_DESC	"Microsoft SideWinder joystick family driver"
 

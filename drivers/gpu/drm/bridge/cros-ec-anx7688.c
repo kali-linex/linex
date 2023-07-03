@@ -7,10 +7,10 @@
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_print.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
 
 /* Register addresses */
 #define ANX7688_VENDOR_ID_REG		0x00

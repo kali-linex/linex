@@ -5,15 +5,15 @@
  * Copyright 2011-2012 Maxim Integrated Products
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pm.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

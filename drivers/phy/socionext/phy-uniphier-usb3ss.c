@@ -9,17 +9,17 @@
  *      Masami Hiramatsu <masami.hiramatsu@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
 
 #define SSPHY_TESTI		0x0
 #define TESTI_DAT_MASK		GENMASK(13, 6)

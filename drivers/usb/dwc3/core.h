@@ -11,27 +11,27 @@
 #ifndef __DRIVERS_USB_DWC3_CORE_H
 #define __DRIVERS_USB_DWC3_CORE_H
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/ioport.h>
+#include <linex/list.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/mm.h>
+#include <linex/debugfs.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
-#include <linux/ulpi/interface.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/role.h>
+#include <linex/ulpi/interface.h>
 
-#include <linux/phy/phy.h>
+#include <linex/phy/phy.h>
 
-#include <linux/power_supply.h>
+#include <linex/power_supply.h>
 
 #define DWC3_MSG_MAX	500
 

@@ -7,16 +7,16 @@
  * Author: Walker Chen <walker.chen@starfivetech.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dmaengine.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/types.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

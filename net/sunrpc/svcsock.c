@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svcsock.c
+ * linex/net/sunrpc/svcsock.c
  *
  * These are the RPC server socket internals.
  *
@@ -20,22 +20,22 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/fcntl.h>
+#include <linex/net.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/udp.h>
+#include <linex/tcp.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/file.h>
+#include <linex/freezer.h>
 #include <net/sock.h>
 #include <net/checksum.h>
 #include <net/ip.h>
@@ -45,18 +45,18 @@
 #include <net/tcp_states.h>
 #include <net/tls.h>
 #include <net/handshake.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
+#include <linex/uaccess.h>
+#include <linex/highmem.h>
 #include <asm/ioctls.h>
-#include <linux/key.h>
+#include <linex/key.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/xprt.h>
+#include <linex/sunrpc/types.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/sunrpc/msg_prot.h>
+#include <linex/sunrpc/svcsock.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/sunrpc/xprt.h>
 
 #include <trace/events/sock.h>
 #include <trace/events/sunrpc.h>

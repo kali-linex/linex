@@ -4,15 +4,15 @@
  *
  *      (c) 2011 Jiri Olsa <jolsa@redhat.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/in.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/in.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_snmp.h>
+#include <linex/netfilter/nf_conntrack_snmp.h>
 
 #define SNMP_PORT	161
 

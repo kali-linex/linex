@@ -5,9 +5,9 @@
  * Soundwire DMI quirks
  */
 
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/soundwire/sdw.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/soundwire/sdw.h>
 #include "bus.h"
 
 struct adr_remap {

@@ -6,27 +6,27 @@
  * Author: Fabrice Gasnier <fabrice.gasnier@st.com>.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/timer/stm32-lptim-trigger.h>
-#include <linux/iio/timer/stm32-timer-trigger.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <linex/clk.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/timer/stm32-lptim-trigger.h>
+#include <linex/iio/timer/stm32-timer-trigger.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
 
 #include "stm32-adc-core.h"
 

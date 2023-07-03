@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef _LINUX_METRONOMEFB_H_
-#define _LINUX_METRONOMEFB_H_
+#ifndef _LINEX_METRONOMEFB_H_
+#define _LINEX_METRONOMEFB_H_
 
 /* command structure used by metronome controller */
 struct metromem_cmd {

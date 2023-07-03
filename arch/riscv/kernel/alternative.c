@@ -6,10 +6,10 @@
  * Copyright (C) 2021 Sifive.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/uaccess.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/cpu.h>
+#include <linex/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/module.h>
 #include <asm/sections.h>

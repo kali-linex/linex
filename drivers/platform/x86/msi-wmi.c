@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <acpi/video.h>
 
 MODULE_AUTHOR("Thomas Renninger <trenn@suse.de>");

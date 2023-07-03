@@ -7,8 +7,8 @@
  *         Lorenzo Bianconi <lorenzo@kernel.org>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/timekeeping.h>
+#include <linex/etherdevice.h>
+#include <linex/timekeeping.h>
 
 #include "mt7615.h"
 #include "../dma.h"

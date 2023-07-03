@@ -3,15 +3,15 @@
  * Dynamic DMA mapping support.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/dmar.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/dmar.h>
 #include <asm/iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
 #include <asm/page.h>
 
 int no_iommu __read_mostly;

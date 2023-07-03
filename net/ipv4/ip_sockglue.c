@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,24 +16,24 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/icmp.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/tcp_states.h>
-#include <linux/udp.h>
-#include <linux/igmp.h>
-#include <linux/netfilter.h>
-#include <linux/route.h>
-#include <linux/mroute.h>
+#include <linex/udp.h>
+#include <linex/igmp.h>
+#include <linex/netfilter.h>
+#include <linex/route.h>
+#include <linex/mroute.h>
 #include <net/inet_ecn.h>
 #include <net/route.h>
 #include <net/xfrm.h>
@@ -44,10 +44,10 @@
 #endif
 #include <net/ip_fib.h>
 
-#include <linux/errqueue.h>
-#include <linux/uaccess.h>
+#include <linex/errqueue.h>
+#include <linex/uaccess.h>
 
-#include <linux/bpfilter.h>
+#include <linex/bpfilter.h>
 
 /*
  *	SOL_IP control messages.

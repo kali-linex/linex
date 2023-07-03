@@ -6,9 +6,9 @@
  */
 #define pr_fmt(fmt) "PCI: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
 #include <mach/fpga.h>
 
 /*

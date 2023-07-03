@@ -9,15 +9,15 @@
  * Harald Welte and Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/pmic.h>
+#include <linex/mfd/pcf50633/core.h>
+#include <linex/mfd/pcf50633/pmic.h>
 
 #define PCF50633_REGULATOR(_name, _id, _min_uV, _uV_step, _min_sel, _n) \
 	{							\

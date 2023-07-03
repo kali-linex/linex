@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdesc.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdesc.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/units.h>
 
 #include "stm32-adc-core.h"
 

@@ -26,27 +26,27 @@
  *	 - making it shorter - scr_readw are macros which expand in PRETTY long code
  */
 
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/tty.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/kbd_kern.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
+#include <linex/kernel.h>
+#include <linex/major.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/tty.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/vt_kern.h>
+#include <linex/selection.h>
+#include <linex/kbd_kern.h>
+#include <linex/console.h>
+#include <linex/device.h>
+#include <linex/sched.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/signal.h>
+#include <linex/slab.h>
+#include <linex/notifier.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

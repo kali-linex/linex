@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "dc_bios_types.h"
 #include "dcn20_stream_encoder.h"

@@ -6,11 +6,11 @@
  * Copyright (C) 2015 EMAC Inc.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/of.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
 #include "tsc200x-core.h"
 
 static const struct input_id tsc2004_input_id = {

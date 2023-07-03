@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/security.h>
+#include <linex/export.h>
+#include <linex/security.h>
 #include "internal.h"
 
 /**

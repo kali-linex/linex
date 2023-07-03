@@ -5,15 +5,15 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/module.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/irq.h>
-#include <linux/align.h>
+#include <linex/module.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/card.h>
+#include <linex/interrupt.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/irq.h>
+#include <linex/align.h>
 
 #include "bus.h"
 #include "wfx.h"

@@ -3,7 +3,7 @@
  * Copyright (C) 2017-2018 Etnaviv Project
  */
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 
 #include <drm/drm_mm.h>
 

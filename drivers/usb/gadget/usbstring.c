@@ -3,16 +3,16 @@
  * Copyright (C) 2003 David Brownell
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/nls.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/string.h>
+#include <linex/device.h>
+#include <linex/nls.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 
 /**

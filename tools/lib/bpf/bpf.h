@@ -23,7 +23,7 @@
 #ifndef __LIBBPF_BPF_H
 #define __LIBBPF_BPF_H
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -43,7 +43,7 @@ struct bpf_map_create_opts {
 	__u32 btf_fd;
 	__u32 btf_key_type_id;
 	__u32 btf_value_type_id;
-	__u32 btf_vmlinux_value_type_id;
+	__u32 btf_vmlinex_value_type_id;
 
 	__u32 inner_map_fd;
 	__u32 map_flags;
@@ -328,7 +328,7 @@ LIBBPF_API int bpf_prog_detach(int attachable_fd, enum bpf_attach_type type);
 LIBBPF_API int bpf_prog_detach2(int prog_fd, int attachable_fd,
 				enum bpf_attach_type type);
 
-union bpf_iter_link_info; /* defined in up-to-date linux/bpf.h */
+union bpf_iter_link_info; /* defined in up-to-date linex/bpf.h */
 struct bpf_link_create_opts {
 	size_t sz; /* size of this struct for forward/backward compatibility */
 	__u32 flags;
@@ -512,7 +512,7 @@ LIBBPF_API int bpf_task_fd_query(int pid, int fd, __u32 flags, char *buf,
  */
 LIBBPF_API int bpf_enable_stats(int type);
 #else
-enum bpf_stats_type; /* defined in up-to-date linux/bpf.h */
+enum bpf_stats_type; /* defined in up-to-date linex/bpf.h */
 LIBBPF_API int bpf_enable_stats(enum bpf_stats_type type);
 #endif
 

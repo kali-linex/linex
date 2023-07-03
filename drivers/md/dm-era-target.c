@@ -4,13 +4,13 @@
 #include "persistent-data/dm-bitset.h"
 #include "persistent-data/dm-space-map.h"
 
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/dm-io.h>
+#include <linex/dm-kcopyd.h>
+#include <linex/init.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #define DM_MSG_PREFIX "era"
 

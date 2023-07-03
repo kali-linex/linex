@@ -4,18 +4,18 @@
  * Copied from reset-sunxi.c
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/reset/reset-simple.h>
-#include <linux/reset/socfpga.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/reset-controller.h>
+#include <linex/reset/reset-simple.h>
+#include <linex/reset/socfpga.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #define SOCFPGA_NR_BANKS	8
 

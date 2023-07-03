@@ -6,22 +6,22 @@
  * Copyright (c) 2011 ST Microelectronics (Alessandro Rubini, Davide Ciminaghi)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/sta2x11-mfd.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
+#include <linex/errno.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/seq_file.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/sta2x11-mfd.h>
+#include <linex/regmap.h>
 
 #include <asm/sta2x11.h>
 

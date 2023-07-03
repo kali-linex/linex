@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
+#include <linex/kernel.h>
+#include <linex/irqflags.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/bug.h>
 #include "printk_ringbuffer.h"
 
 /**

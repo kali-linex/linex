@@ -5,8 +5,8 @@
  * Author: SeongJae Park <sj@kernel.org>
  */
 
-#include <linux/damon.h>
-#include <linux/kobject.h>
+#include <linex/damon.h>
+#include <linex/kobject.h>
 
 extern struct mutex damon_sysfs_lock;
 

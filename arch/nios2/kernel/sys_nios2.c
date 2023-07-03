@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <linex/export.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
 
 #include <asm/cacheflush.h>
 #include <asm/traps.h>

@@ -2,8 +2,8 @@
 // Copyright (c) 2021, ASPEED Technology Inc.
 // Authors: KuoHsiang Chou <kuohsiang_chou@aspeedtech.com>
 
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
 #include <drm/drm_print.h>
 #include "ast_drv.h"
 

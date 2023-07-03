@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/of_address.h>
+#include <linex/init.h>
+#include <linex/suspend.h>
+#include <linex/of_address.h>
 
 #include <asm/io.h>
 #include <asm/time.h>

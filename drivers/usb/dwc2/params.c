@@ -3,10 +3,10 @@
  * Copyright (C) 2004-2016 Synopsys, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/usb/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/usb/of.h>
 
 #include "core.h"
 

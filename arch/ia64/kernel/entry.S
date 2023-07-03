@@ -11,21 +11,21 @@
  * 	Don Dugger <Don.Dugger@intel.com>
  *	Suresh Siddha <suresh.b.siddha@intel.com>
  *	Fenghua Yu <fenghua.yu@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Linex Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinex.com>
  */
 /*
  * ia64_switch_to now places correct virtual mapping in in TR2 for
  * kernel stack. This allows us to handle interrupts without changing
  * to physical mode.
  *
- * Jonathan Nicklin	<nicklin@missioncriticallinux.com>
- * Patrick O'Rourke	<orourke@missioncriticallinux.com>
+ * Jonathan Nicklin	<nicklin@missioncriticallinex.com>
+ * Patrick O'Rourke	<orourke@missioncriticallinex.com>
  * 11/07/2000
  */
 /*
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at valinex co jp>
+ *                    VA Linex Systems Japan K.K.
  *                    pv_ops.
  */
 /*
@@ -38,7 +38,7 @@
  */
 
 
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 #include <asm/asmmacro.h>
 #include <asm/cache.h>
 #include <asm/errno.h>

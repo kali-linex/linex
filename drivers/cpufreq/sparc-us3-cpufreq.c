@@ -7,14 +7,14 @@
  * infrastructure in order to make this driver easier to implement.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/threads.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/cpufreq.h>
+#include <linex/threads.h>
+#include <linex/slab.h>
+#include <linex/init.h>
 
 #include <asm/head.h>
 #include <asm/timer.h>

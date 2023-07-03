@@ -9,11 +9,11 @@
  * Pankaj Dev <pankaj.dev@st.com>.
  */
 
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/iopoll.h>
+#include <linex/slab.h>
+#include <linex/of_address.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/iopoll.h>
 
 #include "clkgen.h"
 

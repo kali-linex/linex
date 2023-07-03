@@ -4,13 +4,13 @@
  *
  * Copyright (C) 1998 Paul Mackerras and Fabio Riccardi.
  * Copyright (C) 2001-2002 Benjamin Herrenschmidt
- * Copyright (C) 2006      Michael Hanselmann <linux-kernel@hansmi.ch>
+ * Copyright (C) 2006      Michael Hanselmann <linex-kernel@hansmi.ch>
  *
  */
 
 #include <asm/ptrace.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
 #include <asm/backlight.h>
 
 #define MAX_PMU_LEVEL 0xFF

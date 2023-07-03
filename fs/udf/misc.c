@@ -17,9 +17,9 @@
 
 #include "udfdecl.h"
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/crc-itu-t.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/crc-itu-t.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

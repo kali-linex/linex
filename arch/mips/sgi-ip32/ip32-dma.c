@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2006  Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006  Ralf Baechle <ralf@linex-mips.org>
  */
-#include <linux/dma-direct.h>
+#include <linex/dma-direct.h>
 #include <asm/ip32/crime.h>
 
 /*

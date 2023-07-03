@@ -5,23 +5,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/spi/spi.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phylink.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/of_device.h>
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/if_ether.h>
-#include <linux/dsa/8021q.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/spi/spi.h>
+#include <linex/errno.h>
+#include <linex/gpio/consumer.h>
+#include <linex/phylink.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/of_device.h>
+#include <linex/pcs/pcs-xpcs.h>
+#include <linex/netdev_features.h>
+#include <linex/netdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/if_ether.h>
+#include <linex/dsa/8021q.h>
 #include "sja1105.h"
 #include "sja1105_tas.h"
 

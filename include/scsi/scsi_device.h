@@ -2,13 +2,13 @@
 #ifndef _SCSI_SCSI_DEVICE_H
 #define _SCSI_SCSI_DEVICE_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/blk-mq.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/blk-mq.h>
 #include <scsi/scsi.h>
-#include <linux/atomic.h>
-#include <linux/sbitmap.h>
+#include <linex/atomic.h>
+#include <linex/sbitmap.h>
 
 struct bsg_device;
 struct device;

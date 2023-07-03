@@ -5,30 +5,30 @@
  * Userspace programs can register with the driver to mirror their own address
  * space and can use the device to read/write any valid virtual address.
  */
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/memremap.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
-#include <linux/hmm.h>
-#include <linux/vmalloc.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/sched/mm.h>
-#include <linux/platform_device.h>
-#include <linux/rmap.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/cdev.h>
+#include <linex/device.h>
+#include <linex/memremap.h>
+#include <linex/mutex.h>
+#include <linex/rwsem.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/delay.h>
+#include <linex/pagemap.h>
+#include <linex/hmm.h>
+#include <linex/vmalloc.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/sched/mm.h>
+#include <linex/platform_device.h>
+#include <linex/rmap.h>
+#include <linex/mmu_notifier.h>
+#include <linex/migrate.h>
 
 #include "test_hmm_uapi.h"
 

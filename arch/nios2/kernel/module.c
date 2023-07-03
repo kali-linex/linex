@@ -10,14 +10,14 @@
  * archive for more details.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linex/moduleloader.h>
+#include <linex/elf.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
 
 #include <asm/cacheflush.h>
 

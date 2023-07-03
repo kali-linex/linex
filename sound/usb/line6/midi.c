@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Line 6 Linux USB driver
+ * Line 6 Linex USB driver
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/export.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/export.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

@@ -3,9 +3,9 @@
 // Audio Mute LED trigger
 //
 
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
 #include "../leds.h"
 
 static enum led_brightness audio_state[NUM_AUDIO_LEDS];

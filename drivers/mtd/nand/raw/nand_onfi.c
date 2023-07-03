@@ -12,7 +12,7 @@
  * This file contains all ONFI helpers.
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "internals.h"
 

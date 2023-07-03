@@ -6,23 +6,23 @@
  * Copyright (c) 2007, MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
+#include <linex/gpio/driver.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/gpio-davinci.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/spinlock.h>
+#include <linex/pm_runtime.h>
 
 #define MAX_REGS_BANKS 5
 #define MAX_INT_PER_BANK 32

@@ -11,15 +11,15 @@
  * which was released under GPL V2
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
+#include <linex/vmalloc.h>
 #include <asm/div64.h>
 #include <asm/unaligned.h>
 

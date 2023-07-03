@@ -31,7 +31,7 @@
  * Revision History:
  */
 
-#include <linux/file.h>
+#include <linex/file.h>
 #include "device.h"
 #include "card.h"
 #include "channel.h"
@@ -41,9 +41,9 @@
 #include "rxtx.h"
 #include "dpc.h"
 #include "rf.h"
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
 
 /*---------------------  Static Definitions -------------------------*/
 /*

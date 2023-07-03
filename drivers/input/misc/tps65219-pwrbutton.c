@@ -4,16 +4,16 @@
 //
 // Copyright (C) 2022 BayLibre Incorporated - https://www.baylibre.com/
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tps65219.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/tps65219.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 struct tps65219_pwrbutton {
 	struct device *dev;

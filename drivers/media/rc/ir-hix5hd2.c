@@ -4,13 +4,13 @@
  * Copyright (c) 2014 HiSilicon Limited.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 #include <media/rc-core.h>
 
 #define IR_ENABLE		0x00
@@ -301,7 +301,7 @@ static int hix5hd2_ir_probe(struct platform_device *pdev)
 	rdev->open = hix5hd2_ir_open;
 	rdev->close = hix5hd2_ir_close;
 	rdev->driver_name = IR_HIX5HD2_NAME;
-	map_name = of_get_property(node, "linux,rc-map-name", NULL);
+	map_name = of_get_property(node, "linex,rc-map-name", NULL);
 	rdev->map_name = map_name ?: RC_MAP_EMPTY;
 	rdev->device_name = IR_HIX5HD2_NAME;
 	rdev->input_phys = IR_HIX5HD2_NAME "/input0";

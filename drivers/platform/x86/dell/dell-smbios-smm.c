@@ -9,12 +9,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linex/dmi.h>
+#include <linex/gfp.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
 #include "dcdbas.h"
 #include "dell-smbios.h"
 

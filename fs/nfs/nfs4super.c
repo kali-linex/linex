@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2012 Bryan Schumaker <bjschuma@netapp.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_ssc.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/nfs4_mount.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_ssc.h>
 #include "delegation.h"
 #include "internal.h"
 #include "nfs4_fs.h"

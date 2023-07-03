@@ -7,10 +7,10 @@
  * Author: jh1009.sung@samsung.com
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mm.h>
 
 #include <media/dvbdev.h>
 #include <media/dvb_vb2.h>

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
-  Some of this code is credited to Linux USB open source files that are
-  distributed with Linux.
+  Some of this code is credited to Linex USB open source files that are
+  distributed with Linex.
 
   Copyright:	2007 Metrologic Instruments. All rights reserved.
   Copyright:	2011 Azimut Ltd. <http://azimutrzn.ru/>
 */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb/serial.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/moduleparam.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/usb/serial.h>
 
 #define DRIVER_DESC "Metrologic Instruments Inc. - USB-POS driver"
 

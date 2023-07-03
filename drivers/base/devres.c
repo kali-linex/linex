@@ -2,14 +2,14 @@
 /*
  * drivers/base/devres.c - device resource management
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE Linex Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/percpu.h>
 
 #include <asm/sections.h>
 

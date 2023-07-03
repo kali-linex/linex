@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include <drm/amdgpu_drm.h>
 

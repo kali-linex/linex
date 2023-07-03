@@ -11,18 +11,18 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/drbd.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
+#include <linex/module.h>
+#include <linex/drbd.h>
+#include <linex/sched/signal.h>
+#include <linex/wait.h>
+#include <linex/mm.h>
+#include <linex/memcontrol.h>
+#include <linex/mm_inline.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/string.h>
+#include <linex/scatterlist.h>
+#include <linex/part_stat.h>
 
 #include "drbd_int.h"
 #include "drbd_protocol.h"

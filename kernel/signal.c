@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/signal.c
+ *  linex/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -11,47 +11,47 @@
  *		to allow signals to be sent reliably.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/user.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/coredump.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/signalfd.h>
-#include <linux/ratelimit.h>
-#include <linux/task_work.h>
-#include <linux/capability.h>
-#include <linux/freezer.h>
-#include <linux/pid_namespace.h>
-#include <linux/nsproxy.h>
-#include <linux/user_namespace.h>
-#include <linux/uprobes.h>
-#include <linux/compat.h>
-#include <linux/cn_proc.h>
-#include <linux/compiler.h>
-#include <linux/posix-timers.h>
-#include <linux/cgroup.h>
-#include <linux/audit.h>
-#include <linux/sysctl.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/user.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/cputime.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/proc_fs.h>
+#include <linex/tty.h>
+#include <linex/binfmts.h>
+#include <linex/coredump.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/ptrace.h>
+#include <linex/signal.h>
+#include <linex/signalfd.h>
+#include <linex/ratelimit.h>
+#include <linex/task_work.h>
+#include <linex/capability.h>
+#include <linex/freezer.h>
+#include <linex/pid_namespace.h>
+#include <linex/nsproxy.h>
+#include <linex/user_namespace.h>
+#include <linex/uprobes.h>
+#include <linex/compat.h>
+#include <linex/cn_proc.h>
+#include <linex/compiler.h>
+#include <linex/posix-timers.h>
+#include <linex/cgroup.h>
+#include <linex/audit.h>
+#include <linex/sysctl.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/signal.h>
 
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/siginfo.h>
 #include <asm/cacheflush.h>
@@ -4804,7 +4804,7 @@ void __init signals_init(void)
 }
 
 #ifdef CONFIG_KGDB_KDB
-#include <linux/kdb.h>
+#include <linex/kdb.h>
 /*
  * kdb_send_sig - Allows kdb to send signals without exposing
  * signal internals.  This function checks if the required locks are

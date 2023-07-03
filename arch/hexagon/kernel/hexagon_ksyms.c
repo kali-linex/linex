@@ -2,13 +2,13 @@
 /*
  * Export of symbols defined in assembly files and/or libgcc.
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 #include <asm/hexagon_vm.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /* Additional functions */
 EXPORT_SYMBOL(__clear_user_hexagon);

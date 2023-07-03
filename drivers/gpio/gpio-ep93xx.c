@@ -6,18 +6,18 @@
  * Copyright (c) 2011 H Hartley Sweeten <hsweeten@visionengravers.com>
  *
  * Based on code originally from:
- *  linux/arch/arm/mach-ep93xx/core.c
+ *  linex/arch/arm/mach-ep93xx/core.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/gpio/driver.h>
+#include <linex/bitops.h>
+#include <linex/seq_file.h>
 
 #define EP93XX_GPIO_F_INT_STATUS 0x5c
 #define EP93XX_GPIO_A_INT_STATUS 0xa0

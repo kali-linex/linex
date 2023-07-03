@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2015-2016 Quantenna Communications. All rights reserved. */
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/ieee80211.h>
+#include <linex/kernel.h>
+#include <linex/etherdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/ieee80211.h>
 #include <net/cfg80211.h>
 #include <net/netlink.h>
 

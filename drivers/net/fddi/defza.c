@@ -27,27 +27,27 @@
 /* End of FZA configurable parameters.  No need to change anything below.    */
 /* ------------------------------------------------------------------------- */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/fddidevice.h>
+#include <linex/sched.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/stat.h>
+#include <linex/tc.h>
+#include <linex/timer.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include <asm/barrier.h>
 

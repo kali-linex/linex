@@ -7,23 +7,23 @@
  * Copyright (c) 2015, RapidIO Trade Association
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/reboot.h>
-#include <linux/bitops.h>
-#include <linux/printk.h>
-#include <linux/rio_cm_cdev.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/rio.h>
+#include <linex/rio_drv.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/cdev.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/reboot.h>
+#include <linex/bitops.h>
+#include <linex/printk.h>
+#include <linex/rio_cm_cdev.h>
 
 #define DRV_NAME        "rio_cm"
 #define DRV_VERSION     "1.0.0"

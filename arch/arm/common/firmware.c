@@ -5,8 +5,8 @@
  * Tomasz Figa <t.figa@samsung.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
+#include <linex/kernel.h>
+#include <linex/suspend.h>
 
 #include <asm/firmware.h>
 

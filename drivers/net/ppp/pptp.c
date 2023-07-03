@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Point-to-Point Tunneling Protocol for Linux
+ *  Point-to-Point Tunneling Protocol for Linex
  *
  *	Authors: Dmitry Kozlov <xeb@mail.ru>
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/notifier.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/ppp_channel.h>
+#include <linex/ppp_defs.h>
+#include <linex/if_pppox.h>
+#include <linex/ppp-ioctl.h>
+#include <linex/notifier.h>
+#include <linex/file.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/rcupdate.h>
+#include <linex/spinlock.h>
 
 #include <net/sock.h>
 #include <net/protocol.h>
@@ -34,7 +34,7 @@
 #include <net/gre.h>
 #include <net/pptp.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define PPTP_DRIVER_VERSION "0.8.5"
 

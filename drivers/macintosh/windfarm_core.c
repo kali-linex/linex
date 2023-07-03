@@ -21,19 +21,19 @@
  * instead which is a bit of an overkill imho
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/kthread.h>
+#include <linex/jiffies.h>
+#include <linex/reboot.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/freezer.h>
 
 #include "windfarm.h"
 
@@ -74,7 +74,7 @@ static int wf_critical_overtemp(void)
 	static char const critical_overtemp_path[] = "/sbin/critical_overtemp";
 	char *argv[] = { (char *)critical_overtemp_path, NULL };
 	static char *envp[] = { "HOME=/",
-				"TERM=linux",
+				"TERM=linex",
 				"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 				NULL };
 

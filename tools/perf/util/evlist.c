@@ -47,13 +47,13 @@
 #include <sys/prctl.h>
 #include <sys/timerfd.h>
 
-#include <linux/bitops.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linex/bitops.h>
+#include <linex/hash.h>
+#include <linex/log2.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/time64.h>
+#include <linex/zalloc.h>
 #include <perf/evlist.h>
 #include <perf/evsel.h>
 #include <perf/cpumap.h>

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2016, The Linux Foundation. All rights reserved.
+// Copyright (c) 2016, The Linex Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/regulator/consumer.h>
+#include <linex/types.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

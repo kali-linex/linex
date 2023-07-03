@@ -24,7 +24,7 @@
 #include <sys/shm.h>
 #include <sys/stat.h>
 #include <sys/time.h>
-#include <linux/futex.h>
+#include <linex/futex.h>
 #include <unistd.h>
 #include <asm/unistd.h>
 #include <string.h>

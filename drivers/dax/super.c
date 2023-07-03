@@ -2,17 +2,17 @@
 /*
  * Copyright(c) 2017 Intel Corporation. All rights reserved.
  */
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/magic.h>
-#include <linux/pfn_t.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
+#include <linex/pagemap.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/pseudo_fs.h>
+#include <linex/magic.h>
+#include <linex/pfn_t.h>
+#include <linex/cdev.h>
+#include <linex/slab.h>
+#include <linex/uio.h>
+#include <linex/dax.h>
+#include <linex/fs.h>
 #include "dax-private.h"
 
 /**
@@ -55,7 +55,7 @@ void dax_read_unlock(int id)
 EXPORT_SYMBOL_GPL(dax_read_unlock);
 
 #if defined(CONFIG_BLOCK) && defined(CONFIG_FS_DAX)
-#include <linux/blkdev.h>
+#include <linex/blkdev.h>
 
 static DEFINE_XARRAY(dax_hosts);
 

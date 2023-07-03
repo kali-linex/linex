@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/delay.h>
-#include <linux/serial_core.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
+#include <linex/console.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/iopoll.h>
+#include <linex/pci_regs.h>
+#include <linex/pci_ids.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/ehci_def.h>
+#include <linex/delay.h>
+#include <linex/serial_core.h>
+#include <linex/kgdb.h>
+#include <linex/kthread.h>
 #include <asm/io.h>
 #include <asm/pci-direct.h>
 #include <asm/fixmap.h>

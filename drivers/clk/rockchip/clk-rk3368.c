@@ -3,11 +3,11 @@
  * Copyright (c) 2015 Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/clock/rk3368-cru.h>
 #include "clk.h"
 

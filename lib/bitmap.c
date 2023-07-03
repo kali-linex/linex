@@ -4,19 +4,19 @@
  * Helper functions for bitmap.h.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
-#include <linux/uaccess.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/ctype.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/thread_info.h>
+#include <linex/uaccess.h>
 
 #include <asm/page.h>
 

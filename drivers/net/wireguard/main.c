@@ -10,11 +10,11 @@
 #include "ratelimiter.h"
 #include "netlink.h"
 
-#include <uapi/linux/wireguard.h>
+#include <uapi/linex/wireguard.h>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/genetlink.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/genetlink.h>
 #include <net/rtnetlink.h>
 
 static int __init wg_mod_init(void)

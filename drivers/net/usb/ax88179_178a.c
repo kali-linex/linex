@@ -5,14 +5,14 @@
  * Copyright (C) 2011-2013 ASIX
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <uapi/linux/mdio.h>
-#include <linux/mdio.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <linex/mii.h>
+#include <linex/usb.h>
+#include <linex/crc32.h>
+#include <linex/usb/usbnet.h>
+#include <uapi/linex/mdio.h>
+#include <linex/mdio.h>
 
 #define AX88179_PHY_ID				0x03
 #define AX_EEPROM_LEN				0x100

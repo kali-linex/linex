@@ -10,7 +10,7 @@
  * cryptographic offload hardware. In some chips the PDC is referred to as MDE,
  * and in others the FA2/FA+ hardware is used with this PDC driver.
  *
- * The PDC driver registers with the Linux mailbox framework as a mailbox
+ * The PDC driver registers with the Linex mailbox framework as a mailbox
  * controller, once for each PDC instance. Ring 0 for each PDC is registered as
  * a mailbox channel. The PDC driver uses interrupts to determine when data
  * transfers to and from an offload engine are complete. The PDC driver uses
@@ -25,25 +25,25 @@
  * descriptors from the tx and rx ring, thus processing one response at a time.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox/brcm-message.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/interrupt.h>
+#include <linex/wait.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/mailbox_controller.h>
+#include <linex/mailbox/brcm-message.h>
+#include <linex/scatterlist.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
 
 #define PDC_SUCCESS  0
 

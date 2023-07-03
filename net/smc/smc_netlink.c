@@ -6,15 +6,15 @@
  *
  *  Copyright IBM Corp. 2020
  *
- *  Author(s):	Guvenc Gulce <guvenc@linux.ibm.com>
+ *  Author(s):	Guvenc Gulce <guvenc@linex.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/if.h>
-#include <linux/smc.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/ctype.h>
+#include <linex/mutex.h>
+#include <linex/if.h>
+#include <linex/smc.h>
 
 #include "smc_core.h"
 #include "smc_ism.h"

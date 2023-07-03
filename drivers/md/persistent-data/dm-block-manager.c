@@ -7,14 +7,14 @@
 #include "dm-block-manager.h"
 #include "dm-persistent-data-internal.h"
 
-#include <linux/dm-bufio.h>
-#include <linux/crc32c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/device-mapper.h>
-#include <linux/stacktrace.h>
-#include <linux/sched/task.h>
+#include <linex/dm-bufio.h>
+#include <linex/crc32c.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/rwsem.h>
+#include <linex/device-mapper.h>
+#include <linex/stacktrace.h>
+#include <linex/sched/task.h>
 
 #define DM_MSG_PREFIX "block manager"
 

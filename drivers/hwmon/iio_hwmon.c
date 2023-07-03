@@ -4,18 +4,18 @@
  * Copyright (c) 2011 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/iio/consumer.h>
+#include <linex/iio/types.h>
 
 /**
  * struct iio_hwmon_state - device instance state

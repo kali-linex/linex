@@ -5,16 +5,16 @@
  * Copyright 2011 Benjamin Herrenschmidt, IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
-#include <linux/iommu.h>
-#include <linux/sched/mm.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/msi.h>
+#include <linex/iommu.h>
+#include <linex/sched/mm.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>

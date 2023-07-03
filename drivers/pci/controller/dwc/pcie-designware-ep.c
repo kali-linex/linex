@@ -6,12 +6,12 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "pcie-designware.h"
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
 
 void dw_pcie_ep_linkup(struct dw_pcie_ep *ep)
 {

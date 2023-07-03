@@ -6,19 +6,19 @@
  * Copyright © 2000-2003 Nicolas Pitre <nico@fluxnic.net>
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/vmalloc.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mutex.h>
-#include <linux/major.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/blktrans.h>
+#include <linex/mutex.h>
+#include <linex/major.h>
 
 
 struct mtdblk_dev {
@@ -34,7 +34,7 @@ struct mtdblk_dev {
 /*
  * Cache stuff...
  *
- * Since typical flash erasable sectors are much larger than what Linux's
+ * Since typical flash erasable sectors are much larger than what Linex's
  * buffer cache can handle, we must implement read-modify-write on flash
  * sectors for each block write requests.  To avoid over-erasing flash sectors
  * and to speed things up, we locally cache a whole flash sector while it is

@@ -15,24 +15,24 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-omap1.h>
-#include <linux/soc/ti/omap1-usb.h>
-#include <linux/soc/ti/omap1-mux.h>
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/usb/otg.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/usb-omap1.h>
+#include <linex/soc/ti/omap1-usb.h>
+#include <linex/soc/ti/omap1-mux.h>
+#include <linex/soc/ti/omap1-soc.h>
+#include <linex/soc/ti/omap1-io.h>
+#include <linex/signal.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 #include "ohci.h"
 

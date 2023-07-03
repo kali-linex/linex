@@ -6,9 +6,9 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
 
 #include "internal.h"
 

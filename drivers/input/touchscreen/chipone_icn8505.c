@@ -9,16 +9,16 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/acpi.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/module.h>
+#include <linex/acpi.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/module.h>
 
 /* Normal operation mode defines */
 #define ICN8505_REG_ADDR_WIDTH		16

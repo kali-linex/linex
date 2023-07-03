@@ -5,19 +5,19 @@
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/spi/spidev.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/wait.h>
+#include <linex/spi/spi.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/spi/spidev.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
 
-#include <linux/dmaengine.h>
-#include <linux/pch_dma.h>
+#include <linex/dmaengine.h>
+#include <linex/pch_dma.h>
 
 /* Register offsets */
 #define PCH_SPCR		0x00	/* SPI control register */

@@ -4,14 +4,14 @@
  */
 
 #include <dt-bindings/clock/imx8mn-clock.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "clk.h"
 

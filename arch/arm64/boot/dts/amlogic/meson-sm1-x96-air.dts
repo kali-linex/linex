@@ -96,7 +96,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-beelink-gs1";
+	linex,rc-map-name = "rc-beelink-gs1";
 };
 
 &tdmif_b {

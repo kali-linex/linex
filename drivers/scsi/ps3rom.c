@@ -6,10 +6,10 @@
  * Copyright 2007 Sony Corp.
  */
 
-#include <linux/cdrom.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/cdrom.h>
+#include <linex/highmem.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

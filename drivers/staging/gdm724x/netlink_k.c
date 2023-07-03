@@ -3,10 +3,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/etherdevice.h>
-#include <linux/netlink.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/etherdevice.h>
+#include <linex/netlink.h>
 #include <asm/byteorder.h>
 #include <net/sock.h>
 

@@ -12,12 +12,12 @@
  * and "ohci-ppc-of.c" by Sylvain Munaut <tnt@246tNt.com>
  */
 
-#include <linux/err.h>
-#include <linux/signal.h>
+#include <linex/err.h>
+#include <linex/signal.h>
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #define GRUSBHC_HCIVERSION 0x0100 /* Known value of cap. reg. HCIVERSION */
 

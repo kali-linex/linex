@@ -4,10 +4,10 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/cache.h>
-#include <linux/dma-map-ops.h>
-#include <linux/iommu.h>
+#include <linex/gfp.h>
+#include <linex/cache.h>
+#include <linex/dma-map-ops.h>
+#include <linex/iommu.h>
 #include <xen/xen.h>
 
 #include <asm/cacheflush.h>

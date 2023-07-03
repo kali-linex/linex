@@ -6,11 +6,11 @@
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  * Copyright (c) 2003-2005  Matthew Wilcox <matthew@wil.cx>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the Linex sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to Linex-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -24,11 +24,11 @@
  *
  *-----------------------------------------------------------------------------
  */
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/spinlock.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_device.h>
@@ -40,7 +40,7 @@
 #define NAME53C		"sym53c"
 #define NAME53C8XX	"sym53c8xx"
 
-struct sym_driver_setup sym_driver_setup = SYM_LINUX_DRIVER_SETUP;
+struct sym_driver_setup sym_driver_setup = SYM_LINEX_DRIVER_SETUP;
 unsigned int sym_debug_flags = 0;
 
 static char *excl_string;
@@ -517,7 +517,7 @@ static int sym53c8xx_queue_command_lck(struct scsi_cmnd *cmd)
 static DEF_SCSI_QCMD(sym53c8xx_queue_command)
 
 /*
- *  Linux entry point of the interrupt handler.
+ *  Linex entry point of the interrupt handler.
  */
 static irqreturn_t sym53c8xx_intr(int irq, void *dev_id)
 {
@@ -541,7 +541,7 @@ static irqreturn_t sym53c8xx_intr(int irq, void *dev_id)
 }
 
 /*
- *  Linux entry point of the timer handler
+ *  Linex entry point of the timer handler
  */
 static void sym53c8xx_timer(struct timer_list *t)
 {
@@ -770,7 +770,7 @@ out:
 }
 
 /*
- * Linux entry point for device queue sizing.
+ * Linex entry point for device queue sizing.
  */
 static int sym53c8xx_slave_configure(struct scsi_device *sdev)
 {
@@ -846,7 +846,7 @@ static void sym53c8xx_slave_destroy(struct scsi_device *sdev)
 }
 
 /*
- *  Linux entry point for info() function
+ *  Linex entry point for info() function
  */
 static const char *sym53c8xx_info (struct Scsi_Host *host)
 {
@@ -854,7 +854,7 @@ static const char *sym53c8xx_info (struct Scsi_Host *host)
 }
 
 
-#ifdef SYM_LINUX_PROC_INFO_SUPPORT
+#ifdef SYM_LINEX_PROC_INFO_SUPPORT
 /*
  *  Proc file system stuff
  *
@@ -864,7 +864,7 @@ static const char *sym53c8xx_info (struct Scsi_Host *host)
  *  to the sym_usercmd() function.
  */
 
-#ifdef SYM_LINUX_USER_COMMAND_SUPPORT
+#ifdef SYM_LINEX_USER_COMMAND_SUPPORT
 
 struct	sym_usrcmd {
 	u_long	target;
@@ -890,7 +890,7 @@ static void sym_exec_user_command (struct sym_hcb *np, struct sym_usrcmd *uc)
 	switch (uc->cmd) {
 	case 0: return;
 
-#ifdef SYM_LINUX_DEBUG_CONTROL_SUPPORT
+#ifdef SYM_LINEX_DEBUG_CONTROL_SUPPORT
 	case UC_SETDEBUG:
 		sym_debug_flags = uc->data;
 		break;
@@ -1030,7 +1030,7 @@ static int sym_user_command(struct Scsi_Host *shost, char *buffer, int length)
 		uc->cmd = UC_SETVERBOSE;
 	else if	((arg_len = is_keyword(ptr, len, "setwide")) != 0)
 		uc->cmd = UC_SETWIDE;
-#ifdef SYM_LINUX_DEBUG_CONTROL_SUPPORT
+#ifdef SYM_LINEX_DEBUG_CONTROL_SUPPORT
 	else if	((arg_len = is_keyword(ptr, len, "setdebug")) != 0)
 		uc->cmd = UC_SETDEBUG;
 #endif
@@ -1083,7 +1083,7 @@ printk("sym_user_command: target=%ld\n", target);
 printk("sym_user_command: data=%ld\n", uc->data);
 #endif
 		break;
-#ifdef SYM_LINUX_DEBUG_CONTROL_SUPPORT
+#ifdef SYM_LINEX_DEBUG_CONTROL_SUPPORT
 	case UC_SETDEBUG:
 		while (len > 0) {
 			SKIP_SPACES(ptr, len);
@@ -1117,7 +1117,7 @@ printk("sym_user_command: data=%ld\n", uc->data);
 printk("sym_user_command: data=%ld\n", uc->data);
 #endif
 		break;
-#endif /* SYM_LINUX_DEBUG_CONTROL_SUPPORT */
+#endif /* SYM_LINEX_DEBUG_CONTROL_SUPPORT */
 	case UC_SETFLAG:
 		while (len > 0) {
 			SKIP_SPACES(ptr, len);
@@ -1144,7 +1144,7 @@ printk("sym_user_command: data=%ld\n", uc->data);
 	return length;
 }
 
-#endif	/* SYM_LINUX_USER_COMMAND_SUPPORT */
+#endif	/* SYM_LINEX_USER_COMMAND_SUPPORT */
 
 
 /*
@@ -1152,7 +1152,7 @@ printk("sym_user_command: data=%ld\n", uc->data);
  */
 static int sym_show_info(struct seq_file *m, struct Scsi_Host *shost)
 {
-#ifdef SYM_LINUX_USER_INFO_SUPPORT
+#ifdef SYM_LINEX_USER_INFO_SUPPORT
 	struct sym_data *sym_data = shost_priv(shost);
 	struct pci_dev *pdev = sym_data->pdev;
 	struct sym_hcb *np = sym_data->ncb;
@@ -1174,10 +1174,10 @@ static int sym_show_info(struct seq_file *m, struct Scsi_Host *shost)
 	return 0;
 #else
 	return -EINVAL;
-#endif /* SYM_LINUX_USER_INFO_SUPPORT */
+#endif /* SYM_LINEX_USER_INFO_SUPPORT */
 }
 
-#endif /* SYM_LINUX_PROC_INFO_SUPPORT */
+#endif /* SYM_LINEX_PROC_INFO_SUPPORT */
 
 /*
  * Free resources claimed by sym_iomap_device().  Note that
@@ -1334,7 +1334,7 @@ static struct Scsi_Host *sym_attach(const struct scsi_host_template *tpnt, int u
 	sym_timer (np);
 
 	/*
-	 *  Fill Linux host instance structure
+	 *  Fill Linex host instance structure
 	 *  and return success.
 	 */
 	shost->max_channel	= 0;
@@ -1552,7 +1552,7 @@ static int sym_iomap_device(struct sym_device *device)
  * if an 875 is part of a PQS/PDS or not since if it is, it will
  * be on the same bus as the memory controller.  In its usual
  * mode of operation, the 875s are slaved to the memory
- * controller for all transfers.  To operate with the Linux
+ * controller for all transfers.  To operate with the Linex
  * driver, the memory controller is disabled and the 875s
  * freed to function independently.  The only wrinkle is that
  * the preset SCSI ID (which may be zero) must be read in from
@@ -1640,9 +1640,9 @@ static const struct scsi_host_template sym2_template = {
 	.eh_host_reset_handler	= sym53c8xx_eh_host_reset_handler,
 	.this_id		= 7,
 	.max_sectors		= 0xFFFF,
-#ifdef SYM_LINUX_PROC_INFO_SUPPORT
+#ifdef SYM_LINEX_PROC_INFO_SUPPORT
 	.show_info		= sym_show_info,
-#ifdef	SYM_LINUX_USER_COMMAND_SUPPORT
+#ifdef	SYM_LINEX_USER_COMMAND_SUPPORT
 	.write_info		= sym_user_command,
 #endif
 	.proc_name		= NAME53C8XX,

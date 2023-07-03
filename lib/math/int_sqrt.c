@@ -6,10 +6,10 @@
  *  square root from Guy L. Steele.
  */
 
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/limits.h>
-#include <linux/math.h>
+#include <linex/export.h>
+#include <linex/bitops.h>
+#include <linex/limits.h>
+#include <linex/math.h>
 
 /**
  * int_sqrt - computes the integer square root

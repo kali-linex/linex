@@ -35,14 +35,14 @@
 #include <rdma/ib_sa.h>
 #include <rdma/ib_cache.h>
 
-#include <linux/random.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/gfp.h>
+#include <linex/random.h>
+#include <linex/mlx4/cmd.h>
+#include <linex/gfp.h>
 #include <rdma/ib_pma.h>
-#include <linux/ip.h>
+#include <linex/ip.h>
 #include <net/ipv6.h>
 
-#include <linux/mlx4/driver.h>
+#include <linex/mlx4/driver.h>
 #include "mlx4_ib.h"
 
 enum {

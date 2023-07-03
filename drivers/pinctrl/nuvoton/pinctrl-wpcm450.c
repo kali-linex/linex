@@ -9,21 +9,21 @@
 // - GPIO event (interrupt) registers, located centrally in the GPIO register
 //   block, shared between all GPIO banks
 
-#include <linux/device.h>
-#include <linux/fwnode.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/fwnode.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "../core.h"
 

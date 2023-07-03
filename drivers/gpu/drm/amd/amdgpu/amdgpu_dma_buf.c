@@ -38,10 +38,10 @@
 #include "amdgpu_xgmi.h"
 #include <drm/amdgpu_drm.h>
 #include <drm/ttm/ttm_tt.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-fence-array.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/pm_runtime.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-fence-array.h>
+#include <linex/pci-p2pdma.h>
+#include <linex/pm_runtime.h>
 
 /**
  * amdgpu_dma_buf_attach - &dma_buf_ops.attach implementation

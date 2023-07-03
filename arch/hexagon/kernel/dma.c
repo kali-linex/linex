@@ -2,11 +2,11 @@
 /*
  * DMA implementation for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/memblock.h>
+#include <linex/dma-map-ops.h>
+#include <linex/memblock.h>
 #include <asm/page.h>
 
 void arch_sync_dma_for_device(phys_addr_t paddr, size_t size,

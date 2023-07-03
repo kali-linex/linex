@@ -8,9 +8,9 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
+#include <linex/kvm_host.h>
+#include <linex/errno.h>
+#include <linex/pagemap.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/irq.h>

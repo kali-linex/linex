@@ -14,8 +14,8 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details. */
 
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
 
 #ifdef CONFIG_CPU_HAS_NO_MULDIV64
 

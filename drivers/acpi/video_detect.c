@@ -1,7 +1,7 @@
 /*
  *  Copyright (C) 2015       Red Hat Inc.
  *                           Hans de Goede <hdegoede@redhat.com>
- *  Copyright (C) 2008       SuSE Linux Products GmbH
+ *  Copyright (C) 2008       SuSE Linex Products GmbH
  *                           Thomas Renninger <trenn@suse.de>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -26,17 +26,17 @@
  * always return acpi_backlight_vendor.
  */
 
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/apple-gmux.h>
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_data/x86/nvidia-wmi-ec-backlight.h>
-#include <linux/pnp.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/export.h>
+#include <linex/acpi.h>
+#include <linex/apple-gmux.h>
+#include <linex/backlight.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_data/x86/nvidia-wmi-ec-backlight.h>
+#include <linex/pnp.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include <acpi/video.h>
 
 static enum acpi_backlight_type acpi_backlight_cmdline = acpi_backlight_undef;
@@ -755,7 +755,7 @@ static const struct dmi_system_id video_detect_dmi_table[] = {
 	/*
 	 * Models which have nvidia-ec-wmi support, but should not use it.
 	 * Note this indicates a likely firmware bug on these models and should
-	 * be revisited if/when Linux gets support for dynamic mux mode.
+	 * be revisited if/when Linex gets support for dynamic mux mode.
 	 */
 	{
 	 .callback = video_detect_force_native,

@@ -9,7 +9,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/zalloc.h>
+#include <linex/zalloc.h>
 
 static int test_ids_union(void)
 {

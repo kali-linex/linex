@@ -21,14 +21,14 @@
  * Copyright 2004 Motorola Inc.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "vme.h"
 #include "vme_bridge.h"

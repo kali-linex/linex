@@ -7,11 +7,11 @@
 
 #include "bcm47xxnflash.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/bcma/bcma.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/bcma/bcma.h>
 
 /* Broadcom uses 1'000'000 but it seems to be too many. Tests on WNDR4500 has
  * shown ~1000 retries as maximum. */

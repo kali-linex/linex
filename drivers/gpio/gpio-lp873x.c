@@ -6,12 +6,12 @@
  * Based on the TPS65218 driver
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/lp873x.h>
+#include <linex/mfd/lp873x.h>
 
 #define BITS_PER_GPO		0x4
 #define LP873X_GPO_CTRL_OD	0x2

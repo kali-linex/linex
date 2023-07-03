@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mdio/mdio-i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/mdio/mdio-i2c.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "sfp.h"
 #include "swphy.h"
@@ -216,7 +216,7 @@ static const enum gpiod_flags gpio_flags[] = {
 #define SFP_PHY_ADDR_ROLLBALL	17
 
 /* SFP_EEPROM_BLOCK_SIZE is the size of data chunk to read the EEPROM
- * at a time. Some SFP modules and also some Linux I2C drivers do not like
+ * at a time. Some SFP modules and also some Linex I2C drivers do not like
  * reads longer than 16 bytes.
  */
 #define SFP_EEPROM_BLOCK_SIZE	16

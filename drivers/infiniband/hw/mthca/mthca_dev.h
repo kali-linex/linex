@@ -37,14 +37,14 @@
 #ifndef MTHCA_DEV_H
 #define MTHCA_DEV_H
 
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/timer.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/semaphore.h>
+#include <linex/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/timer.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/semaphore.h>
 
 #include "mthca_provider.h"
 #include "mthca_doorbell.h"

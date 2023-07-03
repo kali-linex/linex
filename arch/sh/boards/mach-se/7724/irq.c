@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7724/irq.c
+ * linex/arch/sh/boards/se/7724/irq.c
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
  * Kuninori Morimoto <morimoto.kuninori@renesas.com>
  *
- * Based on  linux/arch/sh/boards/se/7722/irq.c
+ * Based on  linex/arch/sh/boards/se/7722/irq.c
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7724 Support.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/topology.h>
+#include <linex/io.h>
+#include <linex/err.h>
 #include <mach-se/mach/se7724.h>
 
 struct fpga_irq {

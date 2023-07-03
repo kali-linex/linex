@@ -6,9 +6,9 @@
 #ifndef _IRQ_GIC_COMMON_H
 #define _IRQ_GIC_COMMON_H
 
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/arm-gic-common.h>
+#include <linex/of.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip/arm-gic-common.h>
 
 struct gic_quirk {
 	const char *desc;

@@ -26,20 +26,20 @@
  *	and even Frodo Looijaard <frodol@dds.nl>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/sched/signal.h>
 
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/io.h>
+#include <linex/i2c.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 
 #include "i2c-ibm_iic.h"
 

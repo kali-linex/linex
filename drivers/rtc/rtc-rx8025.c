@@ -15,13 +15,13 @@
  * Converted to new style by Wolfgang Grandegger <wg@grandegger.com>
  * Alarm and periodic interrupt added by Dmitry Rakhchev <rda@emcraft.com>
  */
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
+#include <linex/bcd.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
 
 /* Register definitions */
 #define RX8025_REG_SEC		0x00
@@ -581,7 +581,7 @@ static struct i2c_driver rx8025_driver = {
 	.driver = {
 		.name = "rtc-rx8025",
 	},
-	.probe		= rx8025_probe,
+	.probe_new	= rx8025_probe,
 	.id_table	= rx8025_id,
 };
 

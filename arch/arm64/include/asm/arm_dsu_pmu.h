@@ -7,10 +7,10 @@
  * Author: Suzuki K Poulose <suzuki.poulose@arm.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/build_bug.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 #include <asm/barrier.h>
 #include <asm/sysreg.h>
 

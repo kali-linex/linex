@@ -24,10 +24,10 @@
 
 /* probe_roms - scan for oem parameters */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
-#include <linux/efi.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/uaccess.h>
+#include <linex/efi.h>
 #include <asm/probe_roms.h>
 
 #include "isci.h"

@@ -26,11 +26,11 @@
  *   [2] See finite automaton theory
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/textsearch.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/textsearch.h>
 
 struct ts_kmp
 {

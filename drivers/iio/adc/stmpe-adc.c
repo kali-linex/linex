@@ -7,16 +7,16 @@
  *  Copyright (C) 2013-2018 Toradex AG <stefan.agner@toradex.com>
  */
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
+#include <linex/completion.h>
+#include <linex/err.h>
+#include <linex/iio/iio.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/stmpe.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/device.h>
 
 #define STMPE_REG_INT_STA		0x0B
 #define STMPE_REG_ADC_INT_EN		0x0E

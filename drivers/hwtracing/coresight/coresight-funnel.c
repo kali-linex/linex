@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The Linex Foundation. All rights reserved.
  *
  * Description: CoreSight Funnel driver
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
+#include <linex/acpi.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/coresight.h>
+#include <linex/amba/bus.h>
+#include <linex/clk.h>
 
 #include "coresight-priv.h"
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2020 MediaTek Inc. */
 
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/pci.h>
+#include <linex/module.h>
 #include <net/ipv6.h>
 #include "mt7921.h"
 #include "mcu.h"

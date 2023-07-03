@@ -4,11 +4,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/device.h>
+#include <linex/interconnect.h>
+#include <linex/interconnect-provider.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 #include <dt-bindings/interconnect/qcom,qdu1000-rpmh.h>
 
 #include "bcm-voter.h"

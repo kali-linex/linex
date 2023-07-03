@@ -5,8 +5,8 @@
 #include <limits.h>
 #include <time.h>
 #include <stdlib.h>
-#include <linux/zalloc.h>
-#include <linux/err.h>
+#include <linex/zalloc.h>
+#include <linex/err.h>
 #include <perf/cpumap.h>
 #include <perf/evlist.h>
 #include <perf/mmap.h>

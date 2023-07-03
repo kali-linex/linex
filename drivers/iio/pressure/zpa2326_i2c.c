@@ -7,10 +7,10 @@
  * Author: Gregor Boirie <gregor.boirie@parrot.com>
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
 #include "zpa2326.h"
 
 /*

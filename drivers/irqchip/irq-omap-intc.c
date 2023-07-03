@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/irq.c
+ * linex/arch/arm/mach-omap2/irq.c
  *
  * Interrupt handler for OMAP2 boards.
  *
@@ -10,20 +10,20 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
 
 #include <asm/exception.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
-#include <linux/irqchip/irq-omap-intc.h>
+#include <linex/irqchip/irq-omap-intc.h>
 
 /* selected INTC register offsets */
 

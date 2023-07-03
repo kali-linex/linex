@@ -10,11 +10,11 @@
  *
  * Copyright (C) 1998-2000 Michel Aubry
  * Copyright (C) 1998-2000 Andrzej Krzysztofowicz
- * Copyright (C) 1998-2000 Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1998-2000 Andre Hedrick <andre@linex-ide.org>
  * Portions copyright (c) 2001 Sun Microsystems
  *
  *
- * RCC/ServerWorks IDE driver for Linux
+ * RCC/ServerWorks IDE driver for Linex
  *
  *   OSB4: `Open South Bridge' IDE Interface (fn 1)
  *         supports UDMA mode 2 (33 MB/s)
@@ -32,13 +32,13 @@
  *	Available under NDA only. Errata info very hard to get.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 
 #define DRV_NAME "pata_serverworks"
 #define DRV_VERSION "0.4.3"

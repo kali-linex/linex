@@ -10,16 +10,16 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
-#include <linux/crc-itu-t.h>
-#include <linux/pm_runtime.h>
+#include <linex/crc-itu-t.h>
+#include <linex/pm_runtime.h>
 #include "cyapa.h"
 
 

@@ -5,8 +5,8 @@
  * Copyright 2007	Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/sched.h>
-#include <linux/suspend.h>
+#include <linex/sched.h>
+#include <linex/suspend.h>
 #include <asm/current.h>
 #include <asm/mmu_context.h>
 #include <asm/switch_to.h>

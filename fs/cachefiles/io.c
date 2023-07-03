@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/falloc.h>
-#include <linux/sched/mm.h>
+#include <linex/mount.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/uio.h>
+#include <linex/falloc.h>
+#include <linex/sched/mm.h>
 #include <trace/events/fscache.h>
 #include "internal.h"
 

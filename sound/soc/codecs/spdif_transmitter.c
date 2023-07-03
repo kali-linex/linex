@@ -11,13 +11,13 @@
  * Copyright:   (C) 2009  Texas Instruments, India
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>
-#include <linux/of.h>
+#include <linex/of.h>
 
 #define DRV_NAME "spdif-dit"
 
@@ -65,7 +65,7 @@ static int spdif_dit_probe(struct platform_device *pdev)
 
 #ifdef CONFIG_OF
 static const struct of_device_id spdif_dit_dt_ids[] = {
-	{ .compatible = "linux,spdif-dit", },
+	{ .compatible = "linex,spdif-dit", },
 	{ }
 };
 MODULE_DEVICE_TABLE(of, spdif_dit_dt_ids);

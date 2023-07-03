@@ -10,11 +10,11 @@
 #ifndef __MLXBF_GIGE_H__
 #define __MLXBF_GIGE_H__
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/irqreturn.h>
-#include <linux/netdevice.h>
-#include <linux/irq.h>
-#include <linux/phy.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/irqreturn.h>
+#include <linex/netdevice.h>
+#include <linex/irq.h>
+#include <linex/phy.h>
 
 /* The silicon design supports a maximum RX ring size of
  * 32K entries. Based on current testing this maximum size

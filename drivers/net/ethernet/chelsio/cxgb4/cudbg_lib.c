@@ -3,8 +3,8 @@
  *  Copyright (C) 2017 Chelsio Communications.  All rights reserved.
  */
 
-#include <linux/sort.h>
-#include <linux/string.h>
+#include <linex/sort.h>
+#include <linex/string.h>
 
 #include "t4_regs.h"
 #include "cxgb4.h"

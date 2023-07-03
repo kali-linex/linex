@@ -3,13 +3,13 @@
  * Copyright (c) 2012-2013, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/iommu.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include <soc/tegra/common.h>
 

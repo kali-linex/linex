@@ -11,19 +11,19 @@
  *		https://www.kosagi.com
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/resource.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/reset.h>
 
 #include "pcie-designware.h"
 

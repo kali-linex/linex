@@ -74,13 +74,13 @@
  * code is detected.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/crc32.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/crc32.h>
 #include <asm/unaligned.h>
 
-#include <linux/sw842.h>
+#include <linex/sw842.h>
 
 /* special templates */
 #define OP_REPEAT	(0x1B)

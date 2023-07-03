@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2013 Broadcom Corporation
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
 /* Hardware register offsets and field defintions */
 #define CS_OFFSET				0x00000020

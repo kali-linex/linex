@@ -10,7 +10,7 @@
 
 #include <sound/sb.h>
 #include <sound/hwdep.h>
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include <uapi/sound/sb16_csp.h>
 
 struct snd_sb_csp;

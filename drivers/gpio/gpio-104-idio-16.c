@@ -6,20 +6,20 @@
  * This driver supports the following ACCES devices: 104-IDIO-16,
  * 104-IDIO-16E, 104-IDO-16, 104-IDIO-8, 104-IDIO-8E, and 104-IDO-8.
  */
-#include <linux/bitmap.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irqdesc.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitmap.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/irqdesc.h>
+#include <linex/isa.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "gpio-idio-16.h"
 

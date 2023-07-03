@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Yama Linux Security Module
+ * Yama Linex Security Module
  *
  * Author: Kees Cook <keescook@chromium.org>
  *
@@ -8,16 +8,16 @@
  * Copyright (C) 2011 The Chromium OS Authors.
  */
 
-#include <linux/lsm_hooks.h>
-#include <linux/sysctl.h>
-#include <linux/ptrace.h>
-#include <linux/prctl.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
-#include <linux/string_helpers.h>
-#include <linux/task_work.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <linex/lsm_hooks.h>
+#include <linex/sysctl.h>
+#include <linex/ptrace.h>
+#include <linex/prctl.h>
+#include <linex/ratelimit.h>
+#include <linex/workqueue.h>
+#include <linex/string_helpers.h>
+#include <linex/task_work.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
 
 #define YAMA_SCOPE_DISABLED	0
 #define YAMA_SCOPE_RELATIONAL	1

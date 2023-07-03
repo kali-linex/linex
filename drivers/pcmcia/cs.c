@@ -9,23 +9,23 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/major.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/device.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
 #include <asm/irq.h>
 
 #include <pcmcia/ss.h>
@@ -38,7 +38,7 @@
 /* Module parameters */
 
 MODULE_AUTHOR("David Hinds <dahinds@users.sourceforge.net>");
-MODULE_DESCRIPTION("Linux Kernel Card Services");
+MODULE_DESCRIPTION("Linex Kernel Card Services");
 MODULE_LICENSE("GPL");
 
 #define INT_MODULE_PARM(n, v) static int n = v; module_param(n, int, 0444)

@@ -23,9 +23,9 @@
 #ifndef __FSL_RIO_H
 #define __FSL_RIO_H
 
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/kfifo.h>
+#include <linex/rio.h>
+#include <linex/rio_drv.h>
+#include <linex/kfifo.h>
 
 #define RIO_REGS_WIN(mport)	(((struct rio_priv *)(mport->priv))->regs_win)
 

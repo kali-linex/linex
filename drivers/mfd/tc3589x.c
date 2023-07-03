@@ -6,17 +6,17 @@
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tc3589x.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/tc3589x.h>
+#include <linex/err.h>
 
 /*
  * enum tc3589x_version - indicates the TC3589x version

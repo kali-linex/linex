@@ -4,10 +4,10 @@
  */
 
 #include <asm/io.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/leds.h>
 
 #define IP30_LED_SYSTEM	0
 #define IP30_LED_FAULT	1

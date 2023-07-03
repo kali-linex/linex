@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/gpio_keys.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
+#include <linex/input.h>
 
 
 #define DRIVER_NAME		"barco-p50-gpio"

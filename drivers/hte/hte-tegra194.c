@@ -5,19 +5,19 @@
  * Author: Dipen Patel <dipenp@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/hte.h>
-#include <linux/uaccess.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/hte.h>
+#include <linex/uaccess.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/consumer.h>
 
 #define HTE_SUSPEND	0
 

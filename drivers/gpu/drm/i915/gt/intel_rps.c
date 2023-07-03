@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include <drm/i915_drm.h>
 

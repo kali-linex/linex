@@ -4,12 +4,12 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
+#include <linex/clk.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/irqchip.h>
+#include <linex/of_clk.h>
+#include <linex/of_fdt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/fw/fw.h>

@@ -1,77 +1,77 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/kernel/sys.c
+ *  linex/kernel/sys.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/utsname.h>
-#include <linux/mman.h>
-#include <linux/reboot.h>
-#include <linux/prctl.h>
-#include <linux/highuid.h>
-#include <linux/fs.h>
-#include <linux/kmod.h>
-#include <linux/ksm.h>
-#include <linux/perf_event.h>
-#include <linux/resource.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/posix-timers.h>
-#include <linux/security.h>
-#include <linux/random.h>
-#include <linux/suspend.h>
-#include <linux/tty.h>
-#include <linux/signal.h>
-#include <linux/cn_proc.h>
-#include <linux/getcpu.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/seccomp.h>
-#include <linux/cpu.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/fs_struct.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/version.h>
-#include <linux/ctype.h>
-#include <linux/syscall_user_dispatch.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/utsname.h>
+#include <linex/mman.h>
+#include <linex/reboot.h>
+#include <linex/prctl.h>
+#include <linex/highuid.h>
+#include <linex/fs.h>
+#include <linex/kmod.h>
+#include <linex/ksm.h>
+#include <linex/perf_event.h>
+#include <linex/resource.h>
+#include <linex/kernel.h>
+#include <linex/workqueue.h>
+#include <linex/capability.h>
+#include <linex/device.h>
+#include <linex/key.h>
+#include <linex/times.h>
+#include <linex/posix-timers.h>
+#include <linex/security.h>
+#include <linex/random.h>
+#include <linex/suspend.h>
+#include <linex/tty.h>
+#include <linex/signal.h>
+#include <linex/cn_proc.h>
+#include <linex/getcpu.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/seccomp.h>
+#include <linex/cpu.h>
+#include <linex/personality.h>
+#include <linex/ptrace.h>
+#include <linex/fs_struct.h>
+#include <linex/file.h>
+#include <linex/mount.h>
+#include <linex/gfp.h>
+#include <linex/syscore_ops.h>
+#include <linex/version.h>
+#include <linex/ctype.h>
+#include <linex/syscall_user_dispatch.h>
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
-#include <linux/kprobes.h>
-#include <linux/user_namespace.h>
-#include <linux/time_namespace.h>
-#include <linux/binfmts.h>
+#include <linex/compat.h>
+#include <linex/syscalls.h>
+#include <linex/kprobes.h>
+#include <linex/user_namespace.h>
+#include <linex/time_namespace.h>
+#include <linex/binfmts.h>
 
-#include <linux/sched.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/rcupdate.h>
-#include <linux/uidgid.h>
-#include <linux/cred.h>
+#include <linex/sched.h>
+#include <linex/sched/autogroup.h>
+#include <linex/sched/loadavg.h>
+#include <linex/sched/stat.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/task.h>
+#include <linex/sched/cputime.h>
+#include <linex/rcupdate.h>
+#include <linex/uidgid.h>
+#include <linex/cred.h>
 
-#include <linux/nospec.h>
+#include <linex/nospec.h>
 
-#include <linux/kmsg_dump.h>
+#include <linex/kmsg_dump.h>
 /* Move somewhere else to avoid recompiling? */
 #include <generated/utsrelease.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/unistd.h>
 
@@ -1264,7 +1264,7 @@ DECLARE_RWSEM(uts_sem);
 
 #ifdef COMPAT_UTS_MACHINE
 #define override_architecture(name) \
-	(personality(current->personality) == PER_LINUX32 && \
+	(personality(current->personality) == PER_LINEX32 && \
 	 copy_to_user(name->machine, COMPAT_UTS_MACHINE, \
 		      sizeof(COMPAT_UTS_MACHINE)))
 #else
@@ -1272,7 +1272,7 @@ DECLARE_RWSEM(uts_sem);
 #endif
 
 /*
- * Work around broken programs that cannot handle "Linux 3.0".
+ * Work around broken programs that cannot handle "Linex 3.0".
  * Instead we map 3.x to 2.6.40+x, so e.g. 3.0 would be 2.6.40
  * And we map 4.x and later versions to 2.6.60+x, so 4.0/5.0/6.0/... would be
  * 2.6.60.
@@ -1295,7 +1295,7 @@ static int override_release(char __user *release, size_t len)
 				break;
 			rest++;
 		}
-		v = LINUX_VERSION_PATCHLEVEL + 60;
+		v = LINEX_VERSION_PATCHLEVEL + 60;
 		copy = clamp_t(size_t, len, 1, sizeof(buf));
 		copy = scnprintf(buf, copy, "2.6.%u%s", v, rest);
 		ret = copy_to_user(release, buf, copy + 1);

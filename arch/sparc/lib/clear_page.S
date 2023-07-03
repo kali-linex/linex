@@ -5,7 +5,7 @@
  * Copyright (C) 1997 Jakub Jelinek (jakub@redhat.com)
  */
 
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 #include <asm/visasm.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>

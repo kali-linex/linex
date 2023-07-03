@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svcauth.c
+ * linex/net/sunrpc/svcauth.c
  *
  * The generic interface for RPC authentication on the server side.
  *
@@ -10,14 +10,14 @@
  * 19-Apr-2000 Chris Evans      - Security fix
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/err.h>
-#include <linux/hash.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/sunrpc/types.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/sunrpc/svcsock.h>
+#include <linex/sunrpc/svcauth.h>
+#include <linex/err.h>
+#include <linex/hash.h>
 
 #include <trace/events/sunrpc.h>
 

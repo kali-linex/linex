@@ -2,24 +2,24 @@
 /*
  *
  *  Copyright (C) 2001 Rusty Russell.
- *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linex-mips.org)
  *  Copyright (C) 2005 Thiemo Seufer
  */
 
 #undef DEBUG
 
-#include <linux/extable.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/numa.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/jump_label.h>
+#include <linex/extable.h>
+#include <linex/moduleloader.h>
+#include <linex/elf.h>
+#include <linex/mm.h>
+#include <linex/numa.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/jump_label.h>
 
 extern void jump_label_apply_nops(struct module *mod);
 

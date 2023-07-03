@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/iommu.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/iommu.h>
 
 #include <drm/drm_managed.h>
 

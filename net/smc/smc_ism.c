@@ -6,10 +6,10 @@
  * Copyright IBM Corp. 2018
  */
 
-#include <linux/if_vlan.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/if_vlan.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <asm/page.h>
 
 #include "smc.h"
@@ -17,7 +17,7 @@
 #include "smc_ism.h"
 #include "smc_pnet.h"
 #include "smc_netlink.h"
-#include "linux/ism.h"
+#include "linex/ism.h"
 
 struct smcd_dev_list smcd_dev_list = {
 	.list = LIST_HEAD_INIT(smcd_dev_list.list),

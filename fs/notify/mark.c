@@ -60,20 +60,20 @@
  * any (or all) other directions.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/ratelimit.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/srcu.h>
+#include <linex/ratelimit.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
-#include <linux/fsnotify_backend.h>
+#include <linex/fsnotify_backend.h>
 #include "fsnotify.h"
 
 #define FSNOTIFY_REAPER_DELAY	(1)	/* 1 jiffy */

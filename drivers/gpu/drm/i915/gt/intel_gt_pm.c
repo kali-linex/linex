@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
-#include <linux/suspend.h>
+#include <linex/string_helpers.h>
+#include <linex/suspend.h>
 
 #include "i915_drv.h"
 #include "i915_irq.h"

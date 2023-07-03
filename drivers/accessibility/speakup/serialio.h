@@ -2,9 +2,9 @@
 #ifndef _SPEAKUP_SERIAL_H
 #define _SPEAKUP_SERIAL_H
 
-#include <linux/serial.h>	/* for rs_table, serial constants */
-#include <linux/serial_reg.h>	/* for more serial constants */
-#include <linux/serial_core.h>
+#include <linex/serial.h>	/* for rs_table, serial constants */
+#include <linex/serial_reg.h>	/* for more serial constants */
+#include <linex/serial_core.h>
 
 #include "spk_priv.h"
 

@@ -12,25 +12,25 @@
  * Now that /dev/vcs exists, most of this can disappear again.
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/module.h>
+#include <linex/tty.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/consolemap.h>
-#include <linux/selection.h>
-#include <linux/tiocl.h>
-#include <linux/console.h>
-#include <linux/tty_flip.h>
+#include <linex/kbd_kern.h>
+#include <linex/vt_kern.h>
+#include <linex/consolemap.h>
+#include <linex/selection.h>
+#include <linex/tiocl.h>
+#include <linex/console.h>
+#include <linex/tty_flip.h>
 
-#include <linux/sched/signal.h>
+#include <linex/sched/signal.h>
 
 /* Don't take this from <ctype.h>: 011-015 on the screen aren't spaces */
 #define is_space_on_vt(c)	((c) == ' ')

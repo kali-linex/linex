@@ -4,9 +4,9 @@
 #ifndef _MLXSW_SPECTRUM_SPAN_H
 #define _MLXSW_SPECTRUM_SPAN_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/refcount.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
+#include <linex/refcount.h>
 
 #include "spectrum_router.h"
 

@@ -5,28 +5,28 @@
  * Copyright (C) 2005-2006  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <linex/bug.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/firewire.h>
+#include <linex/firewire-constants.h>
+#include <linex/idr.h>
+#include <linex/jiffies.h>
+#include <linex/kobject.h>
+#include <linex/list.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/random.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/workqueue.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

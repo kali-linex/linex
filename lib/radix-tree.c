@@ -9,23 +9,23 @@
  * Copyright (C) 2016 Intel, Ross Zwisler
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>		/* in_interrupt() */
-#include <linux/radix-tree.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/xarray.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/cpu.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kmemleak.h>
+#include <linex/percpu.h>
+#include <linex/preempt.h>		/* in_interrupt() */
+#include <linex/radix-tree.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/xarray.h>
 
 #include "radix-tree.h"
 

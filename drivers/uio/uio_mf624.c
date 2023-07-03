@@ -5,14 +5,14 @@
  *                    Czech Technical University in Prague
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/uio_driver.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/uio_driver.h>
 
 #define PCI_VENDOR_ID_HUMUSOFT		0x186c
 #define PCI_DEVICE_ID_MF624		0x0624

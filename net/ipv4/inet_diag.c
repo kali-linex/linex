@@ -5,15 +5,15 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/time.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/cache.h>
+#include <linex/init.h>
+#include <linex/time.h>
 
 #include <net/icmp.h>
 #include <net/tcp.h>
@@ -26,11 +26,11 @@
 #include <net/bpf_sk_storage.h>
 #include <net/netlink.h>
 
-#include <linux/inet.h>
-#include <linux/stddef.h>
+#include <linex/inet.h>
+#include <linex/stddef.h>
 
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <linex/inet_diag.h>
+#include <linex/sock_diag.h>
 
 static const struct inet_diag_handler **inet_diag_table;
 

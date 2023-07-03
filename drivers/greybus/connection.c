@@ -6,8 +6,8 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <linex/workqueue.h>
+#include <linex/greybus.h>
 
 #include "greybus_trace.h"
 

@@ -70,9 +70,9 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
-#include <linux/rbtree.h>
-#include <linux/zalloc.h>
-#include <linux/err.h>
+#include <linex/rbtree.h>
+#include <linex/zalloc.h>
+#include <linex/err.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
 #include <subcmd/parse-options.h>

@@ -4,19 +4,19 @@
  *
  * Copyright (c) 2022 Leonard Göhrs <kernel@pengutronix.de>, Pengutronix
  *
- * Based on linux/drivers/iio/adc/ti-tsc2046.c
+ * Based on linex/drivers/iio/adc/ti-tsc2046.c
  * Copyright (c) 2021 Oleksij Rempel <kernel@pengutronix.de>, Pengutronix
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/driver.h>
 
 #define TI_LMP92064_REG_CONFIG_A 0x0000
 #define TI_LMP92064_REG_CONFIG_B 0x0001

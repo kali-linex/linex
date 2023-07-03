@@ -23,10 +23,10 @@
 #ifndef NCR5380_H
 #define NCR5380_H
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/workqueue.h>
 #include <scsi/scsi_dbg.h>
 #include <scsi/scsi_eh.h>
 #include <scsi/scsi_transport_spi.h>

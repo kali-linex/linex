@@ -2,9 +2,9 @@
 #ifndef _TIMEKEEPING_INTERNAL_H
 #define _TIMEKEEPING_INTERNAL_H
 
-#include <linux/clocksource.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
+#include <linex/clocksource.h>
+#include <linex/spinlock.h>
+#include <linex/time.h>
 
 /*
  * timekeeping debug functions

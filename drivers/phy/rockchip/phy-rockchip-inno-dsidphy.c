@@ -5,23 +5,23 @@
  * Author: Wyon Bi <bivvy.bi@rock-chips.com>
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/time64.h>
+#include <linex/bits.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/iopoll.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/time64.h>
 
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <linex/phy/phy.h>
+#include <linex/phy/phy-mipi-dphy.h>
 
 #define UPDATE(x, h, l)	(((x) << (l)) & GENMASK((h), (l)))
 

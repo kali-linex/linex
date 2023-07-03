@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#include <linux/linkage.h>
-#include <linux/arm-smccc.h>
+#include <linex/linkage.h>
+#include <linex/arm-smccc.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/assembler.h>

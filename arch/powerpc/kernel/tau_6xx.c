@@ -12,15 +12,15 @@
  * life in portables, and add a 'performance/watt' metric somewhere in /proc
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
 
 #include <asm/interrupt.h>
 #include <asm/io.h>

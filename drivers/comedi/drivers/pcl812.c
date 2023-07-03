@@ -109,14 +109,14 @@
  *	   3= 20V unipolar inputs
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/gfp.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8254.h>
+#include <linex/comedi/comedi_isadma.h>
 
 /*
  * Register I/O map

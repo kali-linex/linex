@@ -3,13 +3,13 @@
  * bpf-script-test-prologue.c
  * Test BPF prologue
  */
-#ifndef LINUX_VERSION_CODE
-# error Need LINUX_VERSION_CODE
-# error Example: for 4.2 kernel, put 'clang-opt="-DLINUX_VERSION_CODE=0x40200" into llvm section of ~/.perfconfig'
+#ifndef LINEX_VERSION_CODE
+# error Need LINEX_VERSION_CODE
+# error Example: for 4.2 kernel, put 'clang-opt="-DLINEX_VERSION_CODE=0x40200" into llvm section of ~/.perfconfig'
 #endif
 #define SEC(NAME) __attribute__((section(NAME), used))
 
-#include <uapi/linux/fs.h>
+#include <uapi/linex/fs.h>
 
 /*
  * If CONFIG_PROFILE_ALL_BRANCHES is selected,
@@ -46,4 +46,4 @@ int bpf_func__null_lseek(void *ctx, int err, unsigned long _f_mode,
 }
 
 char _license[] SEC("license") = "GPL";
-int _version SEC("version") = LINUX_VERSION_CODE;
+int _version SEC("version") = LINEX_VERSION_CODE;

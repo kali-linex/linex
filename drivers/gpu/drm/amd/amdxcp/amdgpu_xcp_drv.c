@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_drv.h>
 
@@ -105,6 +105,6 @@ static void __exit amdgpu_xcp_drv_exit(void)
 
 module_exit(amdgpu_xcp_drv_exit);
 
-MODULE_AUTHOR("AMD linux driver team");
+MODULE_AUTHOR("AMD linex driver team");
 MODULE_DESCRIPTION("AMD XCP PLATFORM DEVICES");
 MODULE_LICENSE("GPL and additional rights");

@@ -4,11 +4,11 @@
  * Author: Ming Hsiu Tsai <minghsiu.tsai@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #include "mtk_mdp_comp.h"
 

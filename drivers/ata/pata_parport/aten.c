@@ -8,12 +8,12 @@
  * transfers.  The EH-132 is not yet supported.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/wait.h>
+#include <linex/types.h>
 #include <asm/io.h>
 #include "pata_parport.h"
 

@@ -14,9 +14,9 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
 #include <asm/io.h>
 
 #include "bttvp.h"

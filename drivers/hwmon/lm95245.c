@@ -8,14 +8,14 @@
  * This driver is based on lm95241.c
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 static const unsigned short normal_i2c[] = {
 	0x18, 0x19, 0x29, 0x4c, 0x4d, I2C_CLIENT_END };

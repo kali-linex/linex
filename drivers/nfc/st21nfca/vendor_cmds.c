@@ -6,8 +6,8 @@
  */
 
 #include <net/genetlink.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
+#include <linex/module.h>
+#include <linex/nfc.h>
 #include <net/nfc/hci.h>
 #include <net/nfc/llc.h>
 

@@ -21,7 +21,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include "i915_reg.h"
 #include "intel_de.h"

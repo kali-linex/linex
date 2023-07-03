@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2012 Netapp, Inc. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
+#include <linex/module.h>
+#include <linex/nfs_fs.h>
 #include "internal.h"
 #include "nfs.h"
 

@@ -10,15 +10,15 @@
  *      registered, the devfreq cooling won't react to it.
  */
 
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/energy_model.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_qos.h>
-#include <linux/thermal.h>
-#include <linux/units.h>
+#include <linex/devfreq.h>
+#include <linex/devfreq_cooling.h>
+#include <linex/energy_model.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_qos.h>
+#include <linex/thermal.h>
+#include <linex/units.h>
 
 #include "thermal_trace.h"
 

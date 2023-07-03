@@ -36,17 +36,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/console.h>
-#include <linux/kobject.h>
-#include <linux/dma-map-ops.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/of_platform.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/console.h>
+#include <linex/kobject.h>
+#include <linex/dma-map-ops.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/of_platform.h>
 #include <asm/ibmebus.h>
 #include <asm/machdep.h>
 

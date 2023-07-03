@@ -3,11 +3,11 @@
  * This file contains the routines for initializing kernel userspace protection
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/printk.h>
-#include <linux/smp.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/jump_label.h>
+#include <linex/printk.h>
+#include <linex/smp.h>
 
 #include <asm/kup.h>
 #include <asm/smp.h>

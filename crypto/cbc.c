@@ -8,11 +8,11 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
 
 static int crypto_cbc_encrypt_segment(struct skcipher_walk *walk,
 				      struct crypto_skcipher *skcipher)

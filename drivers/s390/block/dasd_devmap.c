@@ -4,7 +4,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Linex390@de.ibm.com>
  * Copyright IBM Corp. 1999,2001
  *
  * Device mapping and dasd= parameter parsing functions. All devmap
@@ -15,13 +15,13 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <asm/debug.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ipl.h>
 
 /* This is ugly... */

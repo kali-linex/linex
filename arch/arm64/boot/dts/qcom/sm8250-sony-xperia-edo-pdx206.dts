@@ -22,10 +22,10 @@
 &gpio_keys {
 	g-assist-key {
 		label = "Google Assistant Key";
-		linux,code = <KEY_LEFTMETA>;
+		linex,code = <KEY_LEFTMETA>;
 		gpios = <&pm8150_gpios 6 GPIO_ACTIVE_LOW>;
 		debounce-interval = <15>;
-		linux,can-disable;
+		linex,can-disable;
 		wakeup-source;
 	};
 };

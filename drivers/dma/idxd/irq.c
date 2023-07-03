@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2019 Intel Corporation. All rights rsvd. */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/iommu.h>
-#include <linux/sched/mm.h>
-#include <uapi/linux/idxd.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/dmaengine.h>
+#include <linex/delay.h>
+#include <linex/iommu.h>
+#include <linex/sched/mm.h>
+#include <uapi/linex/idxd.h>
 #include "../dmaengine.h"
 #include "idxd.h"
 #include "registers.h"
@@ -634,7 +634,7 @@ irqreturn_t idxd_wq_thread(int irq, void *data)
 	 * There are two lists we are processing. The pending_llist is where
 	 * submmiter adds all the submitted descriptor after sending it to
 	 * the workqueue. It's a lockless singly linked list. The work_list
-	 * is the common linux double linked list. We are in a scenario of
+	 * is the common linex double linked list. We are in a scenario of
 	 * multiple producers and a single consumer. The producers are all
 	 * the kernel submitters of descriptors, and the consumer is the
 	 * kernel irq handler thread for the msix vector when using threaded

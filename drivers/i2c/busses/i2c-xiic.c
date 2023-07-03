@@ -4,10 +4,10 @@
  * Copyright (c) 2002-2007 Xilinx Inc.
  * Copyright (c) 2009-2010 Intel Corporation
  *
- * This code was implemented by Mocean Laboratories AB when porting linux
+ * This code was implemented by Mocean Laboratories AB when porting linex
  * to the automotive development board Russellville. The copyright holder
  * as seen in the header is Intel corporation.
- * Mocean Laboratories forked off the GNU/Linux platform work into a
+ * Mocean Laboratories forked off the GNU/Linex platform work into a
  * separate company called Pelagicore AB, which committed the code to the
  * kernel.
  */
@@ -15,21 +15,21 @@
 /* Supports:
  * Xilinx IIC
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/platform_data/i2c-xiic.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/completion.h>
+#include <linex/platform_data/i2c-xiic.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/pm_runtime.h>
 
 #define DRIVER_NAME "xiic-i2c"
 #define DYNAMIC_MODE_READ_BROKEN_BIT	BIT(0)

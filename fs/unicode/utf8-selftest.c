@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/unicode.h>
-#include <linux/dcache.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/unicode.h>
+#include <linex/dcache.h>
 
 #include "utf8n.h"
 

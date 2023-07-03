@@ -18,23 +18,23 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl-state.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/mfd/tmio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/pinctrl-state.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/sh_dma.h>
+#include <linex/slab.h>
 
 #include "renesas_sdhi.h"
 #include "tmio_mmc.h"

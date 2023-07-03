@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/io.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

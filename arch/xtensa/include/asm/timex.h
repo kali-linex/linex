@@ -13,18 +13,18 @@
 
 #if XCHAL_NUM_TIMERS > 0 && \
 	XTENSA_INT_LEVEL(XCHAL_TIMER0_INTERRUPT) <= XCHAL_EXCM_LEVEL
-# define LINUX_TIMER     0
-# define LINUX_TIMER_INT XCHAL_TIMER0_INTERRUPT
+# define LINEX_TIMER     0
+# define LINEX_TIMER_INT XCHAL_TIMER0_INTERRUPT
 #elif XCHAL_NUM_TIMERS > 1 && \
 	XTENSA_INT_LEVEL(XCHAL_TIMER1_INTERRUPT) <= XCHAL_EXCM_LEVEL
-# define LINUX_TIMER     1
-# define LINUX_TIMER_INT XCHAL_TIMER1_INTERRUPT
+# define LINEX_TIMER     1
+# define LINEX_TIMER_INT XCHAL_TIMER1_INTERRUPT
 #elif XCHAL_NUM_TIMERS > 2 && \
 	XTENSA_INT_LEVEL(XCHAL_TIMER2_INTERRUPT) <= XCHAL_EXCM_LEVEL
-# define LINUX_TIMER     2
-# define LINUX_TIMER_INT XCHAL_TIMER2_INTERRUPT
+# define LINEX_TIMER     2
+# define LINEX_TIMER_INT XCHAL_TIMER2_INTERRUPT
 #else
-# error "Bad timer number for Linux configurations!"
+# error "Bad timer number for Linex configurations!"
 #endif
 
 extern unsigned long ccount_freq;
@@ -45,14 +45,14 @@ static inline void set_ccount (unsigned long ccount)
 	xtensa_set_sr(ccount, ccount);
 }
 
-static inline unsigned long get_linux_timer (void)
+static inline unsigned long get_linex_timer (void)
 {
-	return xtensa_get_sr(SREG_CCOMPARE + LINUX_TIMER);
+	return xtensa_get_sr(SREG_CCOMPARE + LINEX_TIMER);
 }
 
-static inline void set_linux_timer (unsigned long ccompare)
+static inline void set_linex_timer (unsigned long ccompare)
 {
-	xtensa_set_sr(ccompare, SREG_CCOMPARE + LINUX_TIMER);
+	xtensa_set_sr(ccompare, SREG_CCOMPARE + LINEX_TIMER);
 }
 
 #include <asm-generic/timex.h>

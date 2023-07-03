@@ -10,13 +10,13 @@
  * Author: Yixun Lan <yixun.lan@amlogic.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linex/platform_device.h>
+#include <linex/reset-controller.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include "meson-aoclk.h"
 
 static int meson_aoclk_do_reset(struct reset_controller_dev *rcdev,

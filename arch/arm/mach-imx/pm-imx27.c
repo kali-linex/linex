@@ -7,10 +7,10 @@
  * modify it under the terms of the GNU General Public License.
  */
 
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <linex/of_address.h>
+#include <linex/kernel.h>
+#include <linex/suspend.h>
+#include <linex/io.h>
 
 #include "common.h"
 #include "hardware.h"

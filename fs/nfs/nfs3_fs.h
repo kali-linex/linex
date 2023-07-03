@@ -4,8 +4,8 @@
  *
  * NFSv3-specific filesystem definitions and declarations
  */
-#ifndef __LINUX_FS_NFS_NFS3_FS_H
-#define __LINUX_FS_NFS_NFS3_FS_H
+#ifndef __LINEX_FS_NFS_NFS3_FS_H
+#define __LINEX_FS_NFS_NFS3_FS_H
 
 /*
  * nfs3acl.c
@@ -34,4 +34,4 @@ struct nfs_server *nfs3_clone_server(struct nfs_server *, struct nfs_fh *,
 /* nfs3super.c */
 extern struct nfs_subversion nfs_v3;
 
-#endif /* __LINUX_FS_NFS_NFS3_FS_H */
+#endif /* __LINEX_FS_NFS_NFS3_FS_H */

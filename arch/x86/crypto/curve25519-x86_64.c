@@ -7,11 +7,11 @@
 #include <crypto/curve25519.h>
 #include <crypto/internal/kpp.h>
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <linex/types.h>
+#include <linex/jump_label.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
 
 #include <asm/cpufeature.h>
 #include <asm/processor.h>

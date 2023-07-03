@@ -31,12 +31,12 @@
  * buffer_head_io.c and ocfs2_journal_access in journal.c
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/buffer_head.h>
-#include <linux/rbtree.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/buffer_head.h>
+#include <linex/rbtree.h>
 
 #include <cluster/masklog.h>
 

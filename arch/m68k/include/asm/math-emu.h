@@ -3,7 +3,7 @@
 #define _ASM_M68K_SETUP_H
 
 #include <asm/setup.h>
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 /* Status Register bits */
 
@@ -69,8 +69,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
 
 union fp_mant64 {
 	unsigned long long m64;

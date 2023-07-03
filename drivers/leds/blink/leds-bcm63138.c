@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2021 Rafał Miłecki <rafal@milecki.pl>
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 
 #define BCM63138_MAX_LEDS				32
 #define BCM63138_MAX_BRIGHTNESS				9

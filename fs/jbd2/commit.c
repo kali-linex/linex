@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/commit.c
+ * linex/fs/jbd2/commit.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
@@ -10,20 +10,20 @@
  * part of the ext2fs journaling system.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/bitops.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/jbd2.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/jiffies.h>
+#include <linex/crc32.h>
+#include <linex/writeback.h>
+#include <linex/backing-dev.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/bitops.h>
 #include <trace/events/jbd2.h>
 
 /*

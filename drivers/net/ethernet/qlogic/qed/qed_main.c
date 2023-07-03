@@ -4,26 +4,26 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/stddef.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/stddef.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/crc32.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <linex/dma-mapping.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/crash_dump.h>
+#include <linex/crc32.h>
+#include <linex/qed/qed_if.h>
+#include <linex/qed/qed_ll2_if.h>
 #include <net/devlink.h>
-#include <linux/phylink.h>
+#include <linex/phylink.h>
 
 #include "qed.h"
 #include "qed_sriov.h"
@@ -492,7 +492,7 @@ static struct qed_dev *qed_probe(struct pci_dev *pdev,
 	if (!cdev)
 		goto err0;
 
-	cdev->drv_type = DRV_ID_DRV_TYPE_LINUX;
+	cdev->drv_type = DRV_ID_DRV_TYPE_LINEX;
 	cdev->protocol = params->protocol;
 
 	if (params->is_vf)

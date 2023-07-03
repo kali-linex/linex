@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2015-2021, The Linux Foundation. All rights reserved.
+// Copyright (c) 2015-2021, The Linex Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/printk.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/pm_runtime.h>
+#include <linex/printk.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include "wcd-mbhc-v2.h"

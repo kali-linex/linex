@@ -4,12 +4,12 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/efi.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/efi.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
 #include <asm/io.h>
 #include <asm/meminit.h>
 

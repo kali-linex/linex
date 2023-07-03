@@ -10,12 +10,12 @@
 #include <uapi/drm/habanalabs_accel.h>
 #include "habanalabs.h"
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
 
 static u32 hl_debug_struct_size[HL_DEBUG_OP_TIMESTAMP + 1] = {
 	[HL_DEBUG_OP_ETR] = sizeof(struct hl_debug_params_etr),

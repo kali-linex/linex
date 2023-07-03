@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_NUMA_H
 #define _ASM_X86_NUMA_H
 
-#include <linux/nodemask.h>
-#include <linux/errno.h>
+#include <linex/nodemask.h>
+#include <linex/errno.h>
 
 #include <asm/topology.h>
 #include <asm/apicdef.h>

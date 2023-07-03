@@ -4,21 +4,21 @@
  * Copyright (C) 2004-2011 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/cred.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/iomap.h>
-#include <linux/security.h>
-#include <linux/fiemap.h>
-#include <linux/uaccess.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/buffer_head.h>
+#include <linex/namei.h>
+#include <linex/mm.h>
+#include <linex/cred.h>
+#include <linex/xattr.h>
+#include <linex/posix_acl.h>
+#include <linex/gfs2_ondisk.h>
+#include <linex/crc32.h>
+#include <linex/iomap.h>
+#include <linex/security.h>
+#include <linex/fiemap.h>
+#include <linex/uaccess.h>
 
 #include "gfs2.h"
 #include "incore.h"

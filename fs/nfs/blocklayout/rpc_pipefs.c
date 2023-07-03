@@ -26,8 +26,8 @@
  * possibility of such damages.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>
 
 #include "blocklayout.h"
 

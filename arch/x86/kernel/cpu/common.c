@@ -2,30 +2,30 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/memblock.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task.h>
-#include <linux/sched/smt.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/kgdb.h>
-#include <linux/mem_encrypt.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/pgtable.h>
-#include <linux/stackprotector.h>
-#include <linux/utsname.h>
+#include <linex/memblock.h>
+#include <linex/linkage.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/percpu.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/task.h>
+#include <linex/sched/smt.h>
+#include <linex/init.h>
+#include <linex/kprobes.h>
+#include <linex/kgdb.h>
+#include <linex/mem_encrypt.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/io.h>
+#include <linex/syscore_ops.h>
+#include <linex/pgtable.h>
+#include <linex/stackprotector.h>
+#include <linex/utsname.h>
 
 #include <asm/alternative.h>
 #include <asm/cmdline.h>
@@ -39,9 +39,9 @@
 #include <asm/debugreg.h>
 #include <asm/sections.h>
 #include <asm/vsyscall.h>
-#include <linux/topology.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
+#include <linex/topology.h>
+#include <linex/cpumask.h>
+#include <linex/atomic.h>
 #include <asm/proto.h>
 #include <asm/setup.h>
 #include <asm/apic.h>
@@ -49,7 +49,7 @@
 #include <asm/fpu/api.h>
 #include <asm/mtrr.h>
 #include <asm/hwcap2.h>
-#include <linux/numa.h>
+#include <linex/numa.h>
 #include <asm/numa.h>
 #include <asm/asm.h>
 #include <asm/bugs.h>
@@ -1736,7 +1736,7 @@ static void generic_identify(struct cpuinfo_x86 *c)
 
 	/*
 	 * ESPFIX is a strange bug.  All real CPUs have it.  Paravirt
-	 * systems that run Linux at CPL > 0 may or may not have the
+	 * systems that run Linex at CPL > 0 may or may not have the
 	 * issue, but, even if they have the issue, there's absolutely
 	 * nothing we can do about it because we can't use the real IRET
 	 * instruction.

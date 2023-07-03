@@ -5,21 +5,21 @@
  * Copyright 2012 Stefan Roese <sr@denx.de>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/completion.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 /* SPEAR registers definitions */
 #define SPEAR600_ADC_SCAN_RATE_LO(x)	((x) & 0xFFFF)

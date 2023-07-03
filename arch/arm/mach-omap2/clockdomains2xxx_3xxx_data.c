@@ -33,8 +33,8 @@
  *    from the Power domain framework
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
 
 #include "clockdomain.h"
 #include "prm2xxx_3xxx.h"

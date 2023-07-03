@@ -7,8 +7,8 @@
 
 #define pr_fmt(fmt) "SCMI Notifications SYSTEM - " fmt
 
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
+#include <linex/module.h>
+#include <linex/scmi_protocol.h>
 
 #include "protocols.h"
 #include "notify.h"

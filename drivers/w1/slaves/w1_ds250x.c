@@ -3,17 +3,17 @@
  * w1_ds250x.c - w1 family 09/0b/89/91 (DS250x) driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/crc16.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/crc16.h>
 
-#include <linux/w1.h>
-#include <linux/nvmem-provider.h>
+#include <linex/w1.h>
+#include <linex/nvmem-provider.h>
 
 #define W1_DS2501_UNW_FAMILY    0x91
 #define W1_DS2501_SIZE          64

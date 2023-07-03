@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <asm/pgalloc.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/pgtable.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/pgtable.h>
 
 #ifdef CONFIG_HAVE_ARCH_HUGE_VMAP
 int p4d_set_huge(p4d_t *p4d, phys_addr_t addr, pgprot_t prot)

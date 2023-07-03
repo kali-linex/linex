@@ -5,8 +5,8 @@
 #if !defined(_TRACE_WATCHDOG_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_WATCHDOG_H
 
-#include <linux/watchdog.h>
-#include <linux/tracepoint.h>
+#include <linex/watchdog.h>
+#include <linex/tracepoint.h>
 
 DECLARE_EVENT_CLASS(watchdog_template,
 

@@ -4,10 +4,10 @@
  */
 
 #include <drm/drm_device.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/printk.h>
-#include <linux/sysfs.h>
+#include <linex/device.h>
+#include <linex/kobject.h>
+#include <linex/printk.h>
+#include <linex/sysfs.h>
 
 #include "i915_drv.h"
 #include "i915_sysfs.h"

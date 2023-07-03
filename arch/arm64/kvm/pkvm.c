@@ -4,12 +4,12 @@
  * Author: Quentin Perret <qperret@google.com>
  */
 
-#include <linux/init.h>
-#include <linux/kmemleak.h>
-#include <linux/kvm_host.h>
-#include <linux/memblock.h>
-#include <linux/mutex.h>
-#include <linux/sort.h>
+#include <linex/init.h>
+#include <linex/kmemleak.h>
+#include <linex/kvm_host.h>
+#include <linex/memblock.h>
+#include <linex/mutex.h>
+#include <linex/sort.h>
 
 #include <asm/kvm_pkvm.h>
 

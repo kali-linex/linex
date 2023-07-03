@@ -14,13 +14,13 @@
  */
 #define SP8870_DEFAULT_FIRMWARE "dvb-fe-sp8870.fw"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "sp8870.h"

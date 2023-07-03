@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/nfs/callback.h
+ * linex/fs/nfs/callback.h
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback definitions
  */
-#ifndef __LINUX_FS_NFS_CALLBACK_H
-#define __LINUX_FS_NFS_CALLBACK_H
-#include <linux/sunrpc/svc.h>
+#ifndef __LINEX_FS_NFS_CALLBACK_H
+#define __LINEX_FS_NFS_CALLBACK_H
+#include <linex/sunrpc/svc.h>
 
 #define NFS4_CALLBACK 0x40000000
 #define NFS4_CALLBACK_XDRSIZE 2048
@@ -220,4 +220,4 @@ extern void nfs_callback_down(int minorversion, struct net *net);
 extern unsigned int nfs_callback_set_tcpport;
 extern unsigned short nfs_callback_nr_threads;
 
-#endif /* __LINUX_FS_NFS_CALLBACK_H */
+#endif /* __LINEX_FS_NFS_CALLBACK_H */

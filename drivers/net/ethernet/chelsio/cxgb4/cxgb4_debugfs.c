@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Linex.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,11 +32,11 @@
  * SOFTWARE.
  */
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/string_helpers.h>
-#include <linux/sort.h>
-#include <linux/ctype.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/string_helpers.h>
+#include <linex/sort.h>
+#include <linex/ctype.h>
 
 #include "cxgb4.h"
 #include "t4_regs.h"

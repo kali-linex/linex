@@ -7,11 +7,11 @@
 
 #define ASM_OFFSETS_C
 
-#include <linux/kbuild.h>
-#include <linux/kvm_host.h>
-#include <linux/sched.h>
-#include <linux/purgatory.h>
-#include <linux/pgtable.h>
+#include <linex/kbuild.h>
+#include <linex/kvm_host.h>
+#include <linex/sched.h>
+#include <linex/purgatory.h>
+#include <linex/pgtable.h>
 #include <asm/idle.h>
 #include <asm/gmap.h>
 #include <asm/stacktrace.h>

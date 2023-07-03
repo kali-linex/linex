@@ -7,9 +7,9 @@
  * Authors: Miloslav Trmac <mitr@redhat.com>
  */
 
-#include <linux/audit.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
+#include <linex/audit.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
 #include "tty.h"
 
 struct tty_audit_buf {

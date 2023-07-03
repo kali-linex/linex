@@ -11,9 +11,9 @@
 #ifndef __OTX_CPTPF_UCODE_H
 #define __OTX_CPTPF_UCODE_H
 
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linex/pci.h>
+#include <linex/types.h>
+#include <linex/module.h>
 #include "otx_cpt_hw_types.h"
 
 /* CPT ucode name maximum length */

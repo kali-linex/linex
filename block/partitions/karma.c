@@ -8,7 +8,7 @@
  */
 
 #include "check.h"
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 #define KARMA_LABEL_MAGIC		0xAB56
 

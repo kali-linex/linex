@@ -4,11 +4,11 @@
 #ifndef __IXGBE_VF_H__
 #define __IXGBE_VF_H__
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/if_ether.h>
+#include <linex/netdevice.h>
 
 #include "defines.h"
 #include "regs.h"

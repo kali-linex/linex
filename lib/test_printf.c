@@ -5,24 +5,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/random.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
-#include <linux/bitmap.h>
-#include <linux/dcache.h>
-#include <linux/socket.h>
-#include <linux/in.h>
+#include <linex/bitmap.h>
+#include <linex/dcache.h>
+#include <linex/socket.h>
+#include <linex/in.h>
 
-#include <linux/gfp.h>
-#include <linux/mm.h>
+#include <linex/gfp.h>
+#include <linex/mm.h>
 
-#include <linux/property.h>
+#include <linex/property.h>
 
 #include "../tools/testing/selftests/kselftest_module.h"
 
@@ -824,5 +824,5 @@ static void __init selftest(void)
 }
 
 KSTM_MODULE_LOADERS(test_printf);
-MODULE_AUTHOR("Rasmus Villemoes <linux@rasmusvillemoes.dk>");
+MODULE_AUTHOR("Rasmus Villemoes <linex@rasmusvillemoes.dk>");
 MODULE_LICENSE("GPL");

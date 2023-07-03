@@ -4,15 +4,15 @@
  *
  * Author: Suresh Siddha <suresh.b.siddha@intel.com>
  */
-#include <linux/bitops.h>
-#include <linux/compat.h>
-#include <linux/cpu.h>
-#include <linux/mman.h>
-#include <linux/nospec.h>
-#include <linux/pkeys.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
+#include <linex/bitops.h>
+#include <linex/compat.h>
+#include <linex/cpu.h>
+#include <linex/mman.h>
+#include <linex/nospec.h>
+#include <linex/pkeys.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/vmalloc.h>
 
 #include <asm/fpu/api.h>
 #include <asm/fpu/regset.h>
@@ -35,7 +35,7 @@
 /*
  * Although we spell it out in here, the Processor Trace
  * xfeature is completely unused.  We use other mechanisms
- * to save/restore PT state in Linux.
+ * to save/restore PT state in Linex.
  */
 static const char *xfeature_names[] =
 {

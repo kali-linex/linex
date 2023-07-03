@@ -12,17 +12,17 @@
  * Note: Above list of copyright holders is incomplete...
  */
 
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
+#include <linex/acpi.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/pci-acpi.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/memblock.h>
+#include <linex/export.h>
 
 #include <asm/page.h>
 #include <asm/io.h>

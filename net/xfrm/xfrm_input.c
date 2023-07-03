@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/bottom_half.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/percpu.h>
+#include <linex/bottom_half.h>
+#include <linex/cache.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/percpu.h>
 #include <net/dst.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
@@ -471,10 +471,10 @@ int xfrm_input(struct sk_buff *skb, int nexthdr, __be32 spi, int encap_type)
 
 		if (unlikely(x->km.state != XFRM_STATE_VALID)) {
 			if (x->km.state == XFRM_STATE_ACQ)
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMACQUIREERROR);
+				XFRM_INC_STATS(net, LINEX_MIB_XFRMACQUIREERROR);
 			else
 				XFRM_INC_STATS(net,
-					       LINUX_MIB_XFRMINSTATEINVALID);
+					       LINEX_MIB_XFRMINSTATEINVALID);
 
 			if (encap_type == -1)
 				dev_put(skb->dev);
@@ -508,21 +508,21 @@ int xfrm_input(struct sk_buff *skb, int nexthdr, __be32 spi, int encap_type)
 					xfrm_audit_state_icvfail(x, skb,
 								 x->type->proto);
 					x->stats.integrity_failed++;
-					XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEPROTOERROR);
+					XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEPROTOERROR);
 					goto drop;
 				}
 
 				if (xo->status & CRYPTO_INVALID_PROTOCOL) {
-					XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEPROTOERROR);
+					XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEPROTOERROR);
 					goto drop;
 				}
 
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+				XFRM_INC_STATS(net, LINEX_MIB_XFRMINBUFFERERROR);
 				goto drop;
 			}
 
 			if (xfrm_parse_spi(skb, nexthdr, &spi, &seq)) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINHDRERROR);
+				XFRM_INC_STATS(net, LINEX_MIB_XFRMINHDRERROR);
 				goto drop;
 			}
 		}
@@ -546,14 +546,14 @@ int xfrm_input(struct sk_buff *skb, int nexthdr, __be32 spi, int encap_type)
 
 	sp = secpath_set(skb);
 	if (!sp) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINERROR);
+		XFRM_INC_STATS(net, LINEX_MIB_XFRMINERROR);
 		goto drop;
 	}
 
 	seq = 0;
 	if (!spi && xfrm_parse_spi(skb, nexthdr, &spi, &seq)) {
 		secpath_reset(skb);
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINHDRERROR);
+		XFRM_INC_STATS(net, LINEX_MIB_XFRMINHDRERROR);
 		goto drop;
 	}
 
@@ -564,14 +564,14 @@ int xfrm_input(struct sk_buff *skb, int nexthdr, __be32 spi, int encap_type)
 
 		if (sp->len == XFRM_MAX_DEPTH) {
 			secpath_reset(skb);
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINBUFFERERROR);
 			goto drop;
 		}
 
 		x = xfrm_state_lookup(net, mark, daddr, spi, nexthdr, family);
 		if (x == NULL) {
 			secpath_reset(skb);
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOSTATES);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINNOSTATES);
 			xfrm_audit_state_notfound(skb, family, spi, seq);
 			goto drop;
 		}
@@ -582,7 +582,7 @@ int xfrm_input(struct sk_buff *skb, int nexthdr, __be32 spi, int encap_type)
 
 		skb_dst_force(skb);
 		if (!skb_dst(skb)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINERROR);
 			goto drop;
 		}
 
@@ -591,32 +591,32 @@ lock:
 
 		if (unlikely(x->km.state != XFRM_STATE_VALID)) {
 			if (x->km.state == XFRM_STATE_ACQ)
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMACQUIREERROR);
+				XFRM_INC_STATS(net, LINEX_MIB_XFRMACQUIREERROR);
 			else
 				XFRM_INC_STATS(net,
-					       LINUX_MIB_XFRMINSTATEINVALID);
+					       LINEX_MIB_XFRMINSTATEINVALID);
 			goto drop_unlock;
 		}
 
 		if ((x->encap ? x->encap->encap_type : 0) != encap_type) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEMISMATCH);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEMISMATCH);
 			goto drop_unlock;
 		}
 
 		if (xfrm_replay_check(x, skb, seq)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATESEQERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATESEQERROR);
 			goto drop_unlock;
 		}
 
 		if (xfrm_state_check_expire(x)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEEXPIRED);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEEXPIRED);
 			goto drop_unlock;
 		}
 
 		spin_unlock(&x->lock);
 
 		if (xfrm_tunnel_check(skb, x, family)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEMODEERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEMODEERROR);
 			goto drop;
 		}
 
@@ -644,7 +644,7 @@ resume:
 							 x->type->proto);
 				x->stats.integrity_failed++;
 			}
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEPROTOERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEPROTOERROR);
 			goto drop_unlock;
 		}
 
@@ -652,7 +652,7 @@ resume:
 		encap_type = 0;
 
 		if (xfrm_replay_recheck(x, skb, seq)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATESEQERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATESEQERROR);
 			goto drop_unlock;
 		}
 
@@ -667,7 +667,7 @@ resume:
 		XFRM_MODE_SKB_CB(skb)->protocol = nexthdr;
 
 		if (xfrm_inner_mode_input(x, skb)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEMODEERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINSTATEMODEERROR);
 			goto drop;
 		}
 
@@ -685,7 +685,7 @@ resume:
 
 		err = xfrm_parse_spi(skb, nexthdr, &spi, &seq);
 		if (err < 0) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINHDRERROR);
+			XFRM_INC_STATS(net, LINEX_MIB_XFRMINHDRERROR);
 			goto drop;
 		}
 		crypto_done = false;

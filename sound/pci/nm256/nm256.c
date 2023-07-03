@@ -3,21 +3,21 @@
  * Driver for NeoMagic 256AV and 256ZX chipsets.
  * Copyright (c) 2000 by Takashi Iwai <tiwai@suse.de>
  *
- * Based on nm256_audio.c OSS driver in linux kernel.
+ * Based on nm256_audio.c OSS driver in linex kernel.
  * The original author of OSS nm256 driver wishes to remain anonymous,
  * so I just put my acknoledgment to him/her here.
  * The original author's web page is found at
  *	http://www.uglx.org/sony.html
  */
   
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

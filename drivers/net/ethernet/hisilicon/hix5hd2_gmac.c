@@ -3,16 +3,16 @@
  * Copyright (c) 2014 Hisilicon Limited.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/circ_buf.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/of_device.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/reset.h>
+#include <linex/clk.h>
+#include <linex/circ_buf.h>
 
 #define STATION_ADDR_LOW		0x0000
 #define STATION_ADDR_HIGH		0x0004

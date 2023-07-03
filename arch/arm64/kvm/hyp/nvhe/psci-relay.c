@@ -7,9 +7,9 @@
 #include <asm/kvm_asm.h>
 #include <asm/kvm_hyp.h>
 #include <asm/kvm_mmu.h>
-#include <linux/arm-smccc.h>
-#include <linux/kvm_host.h>
-#include <uapi/linux/psci.h>
+#include <linex/arm-smccc.h>
+#include <linex/kvm_host.h>
+#include <uapi/linex/psci.h>
 
 #include <nvhe/memory.h>
 #include <nvhe/trap_handler.h>

@@ -42,11 +42,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma@80000000 {
+		linex,cma@80000000 {
 			compatible = "shared-dma-pool";
 			alloc-ranges = <0x80000000 0x30000000>;
 			size = <0x10000000>;
-			linux,cma-default;
+			linex,cma-default;
 			reusable;
 		};
 
@@ -687,9 +687,9 @@
 		switch-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&gpio TEGRA_GPIO(O, 5) GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			linex,input-type = <EV_SW>;
+			linex,code = <SW_LID>;
+			linex,can-disable;
 			wakeup-source;
 		};
 	};
@@ -705,7 +705,7 @@
 		button-power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(Q, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linex,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};
@@ -713,14 +713,14 @@
 		button-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio TEGRA_GPIO(R, 1) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <10>;
 		};
 
 		button-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio TEGRA_GPIO(R, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			debounce-interval = <10>;
 		};
 	};

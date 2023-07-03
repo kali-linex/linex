@@ -7,12 +7,12 @@
  * License: GPL as published by the FSF.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/leds.h>
+#include <linex/io.h>
+#include <linex/module.h>
 
 
 struct ot200_led {

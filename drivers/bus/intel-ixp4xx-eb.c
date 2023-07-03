@@ -6,17 +6,17 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/log2.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #define IXP4XX_EXP_NUM_CS		8
 

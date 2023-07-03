@@ -5,10 +5,10 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/mm.h>
-#include <linux/stop_machine.h>
+#include <linex/sched.h>
+#include <linex/mm_types.h>
+#include <linex/mm.h>
+#include <linex/stop_machine.h>
 
 #include <asm/sections.h>
 #include <asm/mmu.h>
@@ -169,7 +169,7 @@ int hash__map_kernel_page(unsigned long ea, unsigned long pa, pgprot_t prot)
 	} else {
 		/*
 		 * If the mm subsystem is not fully up, we cannot create a
-		 * linux page table entry for this mapping.  Simply bolt an
+		 * linex page table entry for this mapping.  Simply bolt an
 		 * entry in the hardware page table.
 		 *
 		 */
@@ -306,7 +306,7 @@ pgtable_t hash__pgtable_trans_huge_withdraw(struct mm_struct *mm, pmd_t *pmdp)
 }
 
 /*
- * A linux hugepage PMD was changed and the corresponding hash table entries
+ * A linex hugepage PMD was changed and the corresponding hash table entries
  * neesd to be flushed.
  */
 void hpte_do_hugepage_flush(struct mm_struct *mm, unsigned long addr,

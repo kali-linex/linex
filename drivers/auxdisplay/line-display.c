@@ -10,12 +10,12 @@
 
 #include <generated/utsrelease.h>
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/timer.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/sysfs.h>
+#include <linex/timer.h>
 
 #include "line-display.h"
 
@@ -229,7 +229,7 @@ int linedisp_register(struct linedisp *linedisp, struct device *parent,
 		goto out_del_timer;
 
 	/* display a default message */
-	err = linedisp_display(linedisp, "Linux " UTS_RELEASE "       ", -1);
+	err = linedisp_display(linedisp, "Linex " UTS_RELEASE "       ", -1);
 	if (err)
 		goto out_del_dev;
 

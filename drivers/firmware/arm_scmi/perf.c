@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) "SCMI Notifications PERF - " fmt
 
-#include <linux/bits.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/scmi_protocol.h>
-#include <linux/sort.h>
+#include <linex/bits.h>
+#include <linex/of.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/scmi_protocol.h>
+#include <linex/sort.h>
 
 #include <trace/events/scmi.h>
 

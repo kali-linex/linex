@@ -2,29 +2,29 @@
 // Copyright (C) 2016-2018, Allwinner Technology CO., LTD.
 // Copyright (C) 2019-2020, Cerno
 
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/bug.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/iommu.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #define IOMMU_RESET_REG			0x010
 #define IOMMU_RESET_RELEASE_ALL			0xffffffff

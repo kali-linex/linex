@@ -30,19 +30,19 @@
  *     (chunk size * maxburst)
  */
 
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_dma.h>
+#include <linex/of_platform.h>
 
-#include <linux/random.h>
+#include <linex/random.h>
 
 #include "dmaengine.h"
 

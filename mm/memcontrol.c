@@ -2,7 +2,7 @@
 /* memcontrol.c - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@linex.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
@@ -25,52 +25,52 @@
  * Copyright (C) 2020 Alibaba, Inc, Alex Shi
  */
 
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/cgroup.h>
-#include <linux/pagewalk.h>
-#include <linux/sched/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/vm_event_item.h>
-#include <linux/smp.h>
-#include <linux/page-flags.h>
-#include <linux/backing-dev.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/limits.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/poll.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/vmpressure.h>
-#include <linux/memremap.h>
-#include <linux/mm_inline.h>
-#include <linux/swap_cgroup.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
-#include <linux/lockdep.h>
-#include <linux/file.h>
-#include <linux/resume_user_mode.h>
-#include <linux/psi.h>
-#include <linux/seq_buf.h>
-#include <linux/sched/isolation.h>
+#include <linex/page_counter.h>
+#include <linex/memcontrol.h>
+#include <linex/cgroup.h>
+#include <linex/pagewalk.h>
+#include <linex/sched/mm.h>
+#include <linex/shmem_fs.h>
+#include <linex/hugetlb.h>
+#include <linex/pagemap.h>
+#include <linex/vm_event_item.h>
+#include <linex/smp.h>
+#include <linex/page-flags.h>
+#include <linex/backing-dev.h>
+#include <linex/bit_spinlock.h>
+#include <linex/rcupdate.h>
+#include <linex/limits.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/rbtree.h>
+#include <linex/slab.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/spinlock.h>
+#include <linex/eventfd.h>
+#include <linex/poll.h>
+#include <linex/sort.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/vmpressure.h>
+#include <linex/memremap.h>
+#include <linex/mm_inline.h>
+#include <linex/swap_cgroup.h>
+#include <linex/cpu.h>
+#include <linex/oom.h>
+#include <linex/lockdep.h>
+#include <linex/file.h>
+#include <linex/resume_user_mode.h>
+#include <linex/psi.h>
+#include <linex/seq_buf.h>
+#include <linex/sched/isolation.h>
 #include "internal.h"
 #include <net/sock.h>
 #include <net/ip.h>
 #include "slab.h"
 #include "swap.h"
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <trace/events/vmscan.h>
 
@@ -3659,7 +3659,7 @@ static int mem_cgroup_hierarchy_write(struct cgroup_subsys_state *css,
 		return 0;
 
 	pr_warn_once("Non-hierarchical mode is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to linex-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 
 	return -EINVAL;
@@ -3942,7 +3942,7 @@ static int mem_cgroup_move_charge_write(struct cgroup_subsys_state *css,
 	struct mem_cgroup *memcg = mem_cgroup_from_css(css);
 
 	pr_warn_once("Cgroup memory moving (move_charge_at_immigrate) is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to linex-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 
 	if (val & ~MOVE_MASK)
@@ -5866,7 +5866,7 @@ out:
  *     intent and purposes it is just special memory taking the place of a
  *     regular page.
  *
- *     See Documentations/vm/hmm.txt and include/linux/hmm.h
+ *     See Documentations/vm/hmm.txt and include/linex/hmm.h
  *
  * Called with pte lock held.
  */
@@ -7596,7 +7596,7 @@ bool mem_cgroup_swap_full(struct folio *folio)
 static int __init setup_swap_account(char *s)
 {
 	pr_warn_once("The swapaccount= commandline option is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to linex-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 	return 1;
 }

@@ -4,29 +4,29 @@
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/socket.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/rcupdate.h>
+#include <linex/errno.h>
+#include <linex/ctype.h>
+#include <linex/notifier.h>
+#include <linex/netdevice.h>
+#include <linex/netpoll.h>
+#include <linex/if_vlan.h>
+#include <linex/if_arp.h>
+#include <linex/socket.h>
+#include <linex/etherdevice.h>
+#include <linex/rtnetlink.h>
 #include <net/rtnetlink.h>
 #include <net/genetlink.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <generated/utsrelease.h>
-#include <linux/if_team.h>
+#include <linex/if_team.h>
 
 #define DRV_NAME "team"
 

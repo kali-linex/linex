@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/vfp/entry.S
+ *  linex/arch/arm/vfp/entry.S
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/vfpmacros.h>
 #include <asm/assembler.h>

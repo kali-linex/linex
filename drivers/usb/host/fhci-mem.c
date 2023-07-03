@@ -11,13 +11,13 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 #include "fhci.h"
 
 static void init_td(struct td *td)

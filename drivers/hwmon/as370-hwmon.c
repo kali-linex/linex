@@ -6,12 +6,12 @@
  * Author: Jisheng Zhang <jszhang@kernel.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/bitops.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 #define CTRL		0x0
 #define  PD		BIT(0)

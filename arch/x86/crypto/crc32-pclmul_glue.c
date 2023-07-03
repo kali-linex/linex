@@ -26,11 +26,11 @@
  *
  * Wrappers for kernel crypto shash api to pclmulqdq crc32 implementation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/crc32.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/crc32.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 

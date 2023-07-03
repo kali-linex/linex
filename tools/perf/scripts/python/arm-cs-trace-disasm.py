@@ -20,18 +20,18 @@ from perf_trace_context import perf_set_itrace_options, \
 #
 # Output disassembly with objdump:
 #  perf script -s scripts/python/arm-cs-trace-disasm.py \
-#		-- -d objdump -k path/to/vmlinux
+#		-- -d objdump -k path/to/vmlinex
 # Output disassembly with llvm-objdump:
 #  perf script -s scripts/python/arm-cs-trace-disasm.py \
-#		-- -d llvm-objdump-11 -k path/to/vmlinux
+#		-- -d llvm-objdump-11 -k path/to/vmlinex
 # Output only source line and symbols:
 #  perf script -s scripts/python/arm-cs-trace-disasm.py
 
 # Command line parsing.
 option_list = [
 	# formatting options for the bottom entry of the stack
-	make_option("-k", "--vmlinux", dest="vmlinux_name",
-		    help="Set path to vmlinux file"),
+	make_option("-k", "--vmlinex", dest="vmlinex_name",
+		    help="Set path to vmlinex file"),
 	make_option("-d", "--objdump", dest="objdump_name",
 		    help="Set path to objdump executable file"),
 	make_option("-v", "--verbose", dest="verbose",
@@ -64,9 +64,9 @@ def get_offset(perf_dict, field):
 	return ""
 
 def get_dso_file_path(dso_name, dso_build_id):
-	if (dso_name == "[kernel.kallsyms]" or dso_name == "vmlinux"):
-		if (options.vmlinux_name):
-			return options.vmlinux_name;
+	if (dso_name == "[kernel.kallsyms]" or dso_name == "vmlinex"):
+		if (options.vmlinex_name):
+			return options.vmlinex_name;
 		else:
 			return dso_name
 

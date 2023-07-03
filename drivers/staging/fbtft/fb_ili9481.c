@@ -6,10 +6,10 @@
  * Copyright (c) 2013 Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
 #include <video/mipi_display.h>
 
 #include "fbtft.h"

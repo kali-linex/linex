@@ -8,11 +8,11 @@
  * Based on rtc-ds1672.c by Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/i2c.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
 /* Registers */
 #define EM3027_REG_ON_OFF_CTRL	0x00
@@ -147,7 +147,7 @@ static struct i2c_driver em3027_driver = {
 		   .name = "rtc-em3027",
 		   .of_match_table = of_match_ptr(em3027_of_match),
 	},
-	.probe = em3027_probe,
+	.probe_new = em3027_probe,
 	.id_table = em3027_id,
 };
 

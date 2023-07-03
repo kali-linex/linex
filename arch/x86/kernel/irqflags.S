@@ -2,7 +2,7 @@
 
 #include <asm/asm.h>
 #include <asm/export.h>
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 /*
  * unsigned long native_save_fl(void)

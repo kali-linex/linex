@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/lib/string.c
+ *  linex/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -15,14 +15,14 @@
  */
 
 #define __NO_FORTIFY
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/bug.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
 
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>

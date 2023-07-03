@@ -5,13 +5,13 @@
  * Copyright (C) 2022 Aaron Tomlin
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/debugfs.h>
+#include <linex/rculist.h>
 #include "internal.h"
 
 static LIST_HEAD(unloaded_tainted_modules);

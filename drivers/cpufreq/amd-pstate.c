@@ -10,7 +10,7 @@
  * processors using the ACPI Collaborative Performance and Power Control (CPPC)
  * feature which works with the AMD SMU firmware providing a finer grained
  * frequency control range. It is to replace the legacy ACPI P-States control,
- * allows a flexible, low-latency interface for the Linux kernel to directly
+ * allows a flexible, low-latency interface for the Linex kernel to directly
  * communicate the performance hints to hardware.
  *
  * AMD P-State is supported on recent AMD Zen base CPU series include some of
@@ -22,21 +22,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/static_call.h>
-#include <linux/amd-pstate.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/sched.h>
+#include <linex/cpufreq.h>
+#include <linex/compiler.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
+#include <linex/static_call.h>
+#include <linex/amd-pstate.h>
 
 #include <acpi/processor.h>
 #include <acpi/cppc_acpi.h>

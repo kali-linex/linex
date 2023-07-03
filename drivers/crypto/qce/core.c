@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2014, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/interconnect.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/hash.h>
 
@@ -311,4 +311,4 @@ module_platform_driver(qce_crypto_driver);
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Qualcomm crypto engine driver");
 MODULE_ALIAS("platform:" KBUILD_MODNAME);
-MODULE_AUTHOR("The Linux Foundation");
+MODULE_AUTHOR("The Linex Foundation");

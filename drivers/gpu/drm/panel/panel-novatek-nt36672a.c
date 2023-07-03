@@ -12,15 +12,15 @@
  * use this driver.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_mipi_dsi.h>

@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ih.h"

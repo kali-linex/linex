@@ -20,10 +20,10 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 #include <crypto/polyval.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 #include <asm/cpu_device_id.h>
 #include <asm/simd.h>
 

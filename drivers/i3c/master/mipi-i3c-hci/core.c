@@ -7,15 +7,15 @@
  * Core driver code with main interface to the I3C subsystem.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/i3c/master.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include "hci.h"
 #include "ext_caps.h"

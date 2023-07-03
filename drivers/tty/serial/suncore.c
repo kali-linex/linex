@@ -11,14 +11,14 @@
  * Copyright (C) 2002 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/tty.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/serial_core.h>
+#include <linex/sunserialcore.h>
+#include <linex/init.h>
 
 #include <asm/prom.h>
 

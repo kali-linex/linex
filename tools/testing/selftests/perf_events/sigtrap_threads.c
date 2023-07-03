@@ -23,8 +23,8 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/perf_event.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/perf_event.h>
 #include <pthread.h>
 #include <signal.h>
 #include <sys/ioctl.h>

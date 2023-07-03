@@ -3,9 +3,9 @@
 #ifndef BTRFS_MESSAGES_H
 #define BTRFS_MESSAGES_H
 
-#include <linux/types.h>
-#include <linux/printk.h>
-#include <linux/bug.h>
+#include <linex/types.h>
+#include <linex/printk.h>
+#include <linex/bug.h>
 
 struct btrfs_fs_info;
 

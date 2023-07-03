@@ -34,34 +34,34 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/sctp.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/slab.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/sctp.h>
+#include <linex/netdevice.h>
 #ifdef CONFIG_NET_CLS_ACT
 #include <net/pkt_sched.h>
 #endif
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/splice.h>
-#include <linux/cache.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/errqueue.h>
-#include <linux/prefetch.h>
-#include <linux/bitfield.h>
-#include <linux/if_vlan.h>
-#include <linux/mpls.h>
-#include <linux/kcov.h>
+#include <linex/string.h>
+#include <linex/skbuff.h>
+#include <linex/splice.h>
+#include <linex/cache.h>
+#include <linex/rtnetlink.h>
+#include <linex/init.h>
+#include <linex/scatterlist.h>
+#include <linex/errqueue.h>
+#include <linex/prefetch.h>
+#include <linex/bitfield.h>
+#include <linex/if_vlan.h>
+#include <linex/mpls.h>
+#include <linex/kcov.h>
 
 #include <net/protocol.h>
 #include <net/dst.h>
@@ -76,13 +76,13 @@
 #include <net/page_pool.h>
 #include <net/dropreason.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <trace/events/skb.h>
-#include <linux/highmem.h>
-#include <linux/capability.h>
-#include <linux/user_namespace.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/textsearch.h>
+#include <linex/highmem.h>
+#include <linex/capability.h>
+#include <linex/user_namespace.h>
+#include <linex/indirect_call_wrapper.h>
+#include <linex/textsearch.h>
 
 #include "dev.h"
 #include "sock_destructor.h"
@@ -2129,7 +2129,7 @@ struct sk_buff *skb_realloc_headroom(struct sk_buff *skb, unsigned int headroom)
 }
 EXPORT_SYMBOL(skb_realloc_headroom);
 
-/* Note: We plan to rework this in linux-6.4 */
+/* Note: We plan to rework this in linex-6.4 */
 int __skb_unclone_keeptruesize(struct sk_buff *skb, gfp_t pri)
 {
 	unsigned int saved_end_offset, saved_truesize;

@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/bug.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/initrd.h>
+#include <linex/bug.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/pagemap.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/memblock.h>
+#include <linex/swap.h>
+#include <linex/proc_fs.h>
+#include <linex/pfn.h>
+#include <linex/initrd.h>
 
 #include <asm/setup.h>
 #include <asm/cachectl.h>

@@ -3,15 +3,15 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #include "hns_dsaf_ppe.h"
 

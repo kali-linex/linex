@@ -7,11 +7,11 @@
  * Author: Peter Rosin <peda@axentia.se>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mux/driver.h>
-#include <linux/property.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mux/driver.h>
+#include <linex/property.h>
 
 #define ADG792A_LDSW		BIT(0)
 #define ADG792A_RESETB		BIT(1)

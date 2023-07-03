@@ -23,14 +23,14 @@
  *
  */
 
-#include <linux/irqdomain.h>
-#include <linux/pci.h>
-#include <linux/pm_domain.h>
-#include <linux/platform_device.h>
+#include <linex/irqdomain.h>
+#include <linex/pci.h>
+#include <linex/pm_domain.h>
+#include <linex/platform_device.h>
 #include <sound/designware_i2s.h>
 #include <sound/pcm.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
 
 #include "amdgpu.h"
 #include "atom.h"

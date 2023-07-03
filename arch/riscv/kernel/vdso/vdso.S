@@ -3,8 +3,8 @@
  * Copyright (C) 2014 Regents of the University of California
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/page.h>
 
 #ifndef __VDSO_PATH

@@ -10,10 +10,10 @@
 #define __RT5682S_H__
 
 #include <sound/rt5682s.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <linex/regulator/consumer.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
 
 
 /* Info */

@@ -4,8 +4,8 @@
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/module.h>
-#include <linux/phy/phy.h>
+#include <linex/module.h>
+#include <linex/phy/phy.h>
 #include <net/dcbnl.h>
 
 #include "sparx5_main_regs.h"

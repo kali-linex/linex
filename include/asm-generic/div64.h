@@ -23,8 +23,8 @@
  *       beware of side effects!
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
 
 #if BITS_PER_LONG == 64
 
@@ -52,7 +52,7 @@
 
 #elif BITS_PER_LONG == 32
 
-#include <linux/log2.h>
+#include <linex/log2.h>
 
 /*
  * If the divisor happens to be constant, we determine the appropriate

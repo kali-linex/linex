@@ -8,33 +8,33 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/minmax.h>
-#include <linux/netdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/list.h>
+#include <linex/minmax.h>
+#include <linex/netdevice.h>
+#include <linex/pm_runtime.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 
 #include "t7xx_dpmaif.h"
 #include "t7xx_hif_dpmaif.h"

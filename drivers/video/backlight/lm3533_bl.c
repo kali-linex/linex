@@ -7,14 +7,14 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/backlight.h>
+#include <linex/fb.h>
+#include <linex/slab.h>
 
-#include <linux/mfd/lm3533.h>
+#include <linex/mfd/lm3533.h>
 
 
 #define LM3533_HVCTRLBANK_COUNT		2

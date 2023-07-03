@@ -13,13 +13,13 @@
 
 #ifndef _GEN_PV_LOCK_SLOWPATH
 
-#include <linux/smp.h>
-#include <linux/bug.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/mutex.h>
-#include <linux/prefetch.h>
+#include <linex/smp.h>
+#include <linex/bug.h>
+#include <linex/cpumask.h>
+#include <linex/percpu.h>
+#include <linex/hardirq.h>
+#include <linex/mutex.h>
+#include <linex/prefetch.h>
 #include <asm/byteorder.h>
 #include <asm/qspinlock.h>
 #include <trace/events/lock.h>

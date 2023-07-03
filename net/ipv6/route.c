@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *	FIB front-end.
  *
  *	Authors:
@@ -22,26 +22,26 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/times.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/jhash.h>
-#include <linux/siphash.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/times.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/route.h>
+#include <linex/netdevice.h>
+#include <linex/in6.h>
+#include <linex/mroute6.h>
+#include <linex/init.h>
+#include <linex/if_arp.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/jhash.h>
+#include <linex/siphash.h>
 #include <net/net_namespace.h>
 #include <net/snmp.h>
 #include <net/ipv6.h>
@@ -50,7 +50,7 @@
 #include <net/ndisc.h>
 #include <net/addrconf.h>
 #include <net/tcp.h>
-#include <linux/rtnetlink.h>
+#include <linex/rtnetlink.h>
 #include <net/dst.h>
 #include <net/dst_metadata.h>
 #include <net/xfrm.h>
@@ -61,11 +61,11 @@
 #include <net/ip_tunnels.h>
 #include <net/l3mdev.h>
 #include <net/ip.h>
-#include <linux/uaccess.h>
-#include <linux/btf_ids.h>
+#include <linex/uaccess.h>
+#include <linex/btf_ids.h>
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
 static int ip6_rt_type_to_error(u8 fib6_type);

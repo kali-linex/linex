@@ -2,14 +2,14 @@
 /*
  * Pinctrl data for Wondermedia WM8505 SoC
  *
- * Copyright (c) 2013 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (c) 2013 Tony Prisk <linex@prisktech.co.nz>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "pinctrl-wmt.h"
 

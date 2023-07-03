@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/efi.h>
-#include <linux/gpio/machine.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_data/lp855x.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/rmi.h>
-#include <linux/spi/spi.h>
+#include <linex/efi.h>
+#include <linex/gpio/machine.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/platform_data/lp855x.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/rmi.h>
+#include <linex/spi/spi.h>
 
 #include "shared-psy-info.h"
 #include "x86-android-tablets.h"
@@ -560,9 +560,9 @@ static const struct software_node fg_bq25890_1_supply_node = {
 /* bq25892 charger settings for the flat lipo battery behind the screen */
 static const struct property_entry lenovo_yt3_bq25892_0_props[] = {
 	PROPERTY_ENTRY_STRING_ARRAY("supplied-from", lenovo_yt3_bq25892_0_suppliers),
-	PROPERTY_ENTRY_STRING("linux,power-supply-name", "bq25892-second-chrg"),
-	PROPERTY_ENTRY_U32("linux,iinlim-percentage", 40),
-	PROPERTY_ENTRY_BOOL("linux,skip-reset"),
+	PROPERTY_ENTRY_STRING("linex,power-supply-name", "bq25892-second-chrg"),
+	PROPERTY_ENTRY_U32("linex,iinlim-percentage", 40),
+	PROPERTY_ENTRY_BOOL("linex,skip-reset"),
 	/* Values taken from Android Factory Image */
 	PROPERTY_ENTRY_U32("ti,charge-current", 2048000),
 	PROPERTY_ENTRY_U32("ti,battery-regulation-voltage", 4352000),

@@ -2,12 +2,12 @@
 #ifndef __PERF_SYMBOL
 #define __PERF_SYMBOL 1
 
-#include <linux/types.h>
-#include <linux/refcount.h>
+#include <linex/types.h>
+#include <linex/refcount.h>
 #include <stdbool.h>
 #include <stdint.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
 #include <stdio.h>
 #include "addr_location.h"
 #include "path.h"
@@ -107,8 +107,8 @@ static inline int __symbol__join_symfs(char *bf, size_t size, const char *path)
 
 #define symbol__join_symfs(bf, path) __symbol__join_symfs(bf, sizeof(bf), path)
 
-extern int vmlinux_path__nr_entries;
-extern char **vmlinux_path;
+extern int vmlinex_path__nr_entries;
+extern char **vmlinex_path;
 
 static inline void *symbol__priv(struct symbol *sym)
 {
@@ -122,9 +122,9 @@ struct ref_reloc_sym {
 };
 
 int dso__load(struct dso *dso, struct map *map);
-int dso__load_vmlinux(struct dso *dso, struct map *map,
-		      const char *vmlinux, bool vmlinux_allocated);
-int dso__load_vmlinux_path(struct dso *dso, struct map *map);
+int dso__load_vmlinex(struct dso *dso, struct map *map,
+		      const char *vmlinex, bool vmlinex_allocated);
+int dso__load_vmlinex_path(struct dso *dso, struct map *map);
 int __dso__load_kallsyms(struct dso *dso, const char *filename, struct map *map,
 			 bool no_kcore);
 int dso__load_kallsyms(struct dso *dso, const char *filename, struct map *map);

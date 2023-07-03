@@ -5,14 +5,14 @@
  *	   Sujuan Chen <sujuan.chen@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_irq.h>
-#include <linux/bitfield.h>
+#include <linex/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/of_platform.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_irq.h>
+#include <linex/bitfield.h>
 
 #include "mtk_wed.h"
 #include "mtk_wed_regs.h"

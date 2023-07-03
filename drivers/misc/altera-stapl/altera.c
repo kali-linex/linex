@@ -10,11 +10,11 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <misc/altera.h>
 #include "altera-exprt.h"
 #include "altera-jtag.h"

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/init_task.h>
-#include <linux/fs.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/init_task.h>
+#include <linex/fs.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
 #include <asm/desc.h>
 #include <asm/traps.h>

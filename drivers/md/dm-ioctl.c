@@ -8,21 +8,21 @@
 
 #include "dm-core.h"
 #include "dm-ima.h"
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
-#include <linux/sched/mm.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/dm-ioctl.h>
-#include <linux/hdreg.h>
-#include <linux/compat.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/miscdevice.h>
+#include <linex/sched/mm.h>
+#include <linex/init.h>
+#include <linex/wait.h>
+#include <linex/slab.h>
+#include <linex/rbtree.h>
+#include <linex/dm-ioctl.h>
+#include <linex/hdreg.h>
+#include <linex/compat.h>
+#include <linex/nospec.h>
 
-#include <linux/uaccess.h>
-#include <linux/ima.h>
+#include <linex/uaccess.h>
+#include <linex/ima.h>
 
 #define DM_MSG_PREFIX "ioctl"
 #define DM_DRIVER_EMAIL "dm-devel@redhat.com"

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/types.h>
-#include <linux/kconfig.h>
-#include <linux/list.h>
-#include <linux/security.h>
-#include <linux/umh.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/kconfig.h>
+#include <linex/list.h>
+#include <linex/security.h>
+#include <linex/umh.h>
+#include <linex/sysctl.h>
+#include <linex/module.h>
 
 #include "fallback.h"
 #include "firmware.h"

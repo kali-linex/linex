@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/efi.h>
-#include <linux/dmi.h>
-#include <linux/sched.h>
-#include <linux/tboot.h>
-#include <linux/delay.h>
-#include <linux/objtool.h>
-#include <linux/pgtable.h>
+#include <linex/export.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/pm.h>
+#include <linex/efi.h>
+#include <linex/dmi.h>
+#include <linex/sched.h>
+#include <linex/tboot.h>
+#include <linex/delay.h>
+#include <linex/objtool.h>
+#include <linex/pgtable.h>
 #include <acpi/reboot.h>
 #include <asm/io.h>
 #include <asm/apic.h>
@@ -27,8 +27,8 @@
 #include <asm/nmi.h>
 #include <asm/smp.h>
 
-#include <linux/ctype.h>
-#include <linux/mc146818rtc.h>
+#include <linex/ctype.h>
+#include <linex/mc146818rtc.h>
 #include <asm/realmode.h>
 #include <asm/x86_init.h>
 #include <asm/efi.h>

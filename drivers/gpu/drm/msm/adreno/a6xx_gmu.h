@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2017 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017 The Linex Foundation. All rights reserved. */
 
 #ifndef _A6XX_GMU_H_
 #define _A6XX_GMU_H_
 
-#include <linux/completion.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
+#include <linex/completion.h>
+#include <linex/iopoll.h>
+#include <linex/interrupt.h>
+#include <linex/notifier.h>
 #include "msm_drv.h"
 #include "a6xx_hfi.h"
 

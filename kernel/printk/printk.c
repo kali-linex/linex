@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/printk.c
+ *  linex/kernel/printk.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,36 +19,36 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/nmi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/crash_core.h>
-#include <linux/ratelimit.h>
-#include <linux/kmsg_dump.h>
-#include <linux/syslog.h>
-#include <linux/cpu.h>
-#include <linux/rculist.h>
-#include <linux/poll.h>
-#include <linux/irq_work.h>
-#include <linux/ctype.h>
-#include <linux/uio.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/console.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/nmi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/delay.h>
+#include <linex/smp.h>
+#include <linex/security.h>
+#include <linex/memblock.h>
+#include <linex/syscalls.h>
+#include <linex/crash_core.h>
+#include <linex/ratelimit.h>
+#include <linex/kmsg_dump.h>
+#include <linex/syslog.h>
+#include <linex/cpu.h>
+#include <linex/rculist.h>
+#include <linex/poll.h>
+#include <linex/irq_work.h>
+#include <linex/ctype.h>
+#include <linex/uio.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/sections.h>
 
 #include <trace/events/initcall.h>

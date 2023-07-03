@@ -25,14 +25,14 @@
  * start at offset 1 for this to work.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
-#include <linux/sysfb.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/platform_data/simplefb.h>
+#include <linex/platform_device.h>
+#include <linex/screen_info.h>
+#include <linex/sysfb.h>
 
 static struct platform_device *pd;
 static DEFINE_MUTEX(disable_lock);

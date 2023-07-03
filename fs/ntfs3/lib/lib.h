@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Adapted for linux kernel by Alexander Mamaev:
+ * Adapted for linex kernel by Alexander Mamaev:
  * - remove implementations of get_unaligned_
  * - assume GCC is always defined
  * - ISO C90
- * - linux kernel code style
+ * - linex kernel code style
  */
 
-#ifndef _LINUX_NTFS3_LIB_LIB_H
-#define _LINUX_NTFS3_LIB_LIB_H
+#ifndef _LINEX_NTFS3_LIB_LIB_H
+#define _LINEX_NTFS3_LIB_LIB_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* globals from xpress_decompress.c */
 struct xpress_decompressor *xpress_allocate_decompressor(void);
@@ -29,4 +29,4 @@ int lzx_decompress(struct lzx_decompressor *__restrict d,
 		   size_t compressed_size, void *__restrict uncompressed_data,
 		   size_t uncompressed_size);
 
-#endif /* _LINUX_NTFS3_LIB_LIB_H */
+#endif /* _LINEX_NTFS3_LIB_LIB_H */

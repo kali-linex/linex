@@ -6,10 +6,10 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <linex/mm.h>
+#include <linex/gfp.h>
+#include <linex/highmem.h>
+#include <linex/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>

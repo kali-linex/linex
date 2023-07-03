@@ -7,20 +7,20 @@
  * Copyright (C) 2005 Sylvain Munaut <tnt@246tNt.com>
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <asm/io.h>
 #include <asm/mmu.h>
 
-#include <linux/fsl/bestcomm/sram.h>
+#include <linex/fsl/bestcomm/sram.h>
 
 
 /* Struct keeping our 'state' */

@@ -5,11 +5,11 @@
  * Copyright (c) 2000-2004 by David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 #include "ehci.h"
 #include "pci-quirks.h"

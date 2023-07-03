@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * SCSI Media Changer device driver for Linux 2.6
+ * SCSI Media Changer device driver for Linex 2.6
  *
  *     (c) 1996-2003 Gerd Knorr <kraxel@bytesex.org>
  *
@@ -8,22 +8,22 @@
 
 #define VERSION "0.25"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/compat.h>
-#include <linux/chio.h>			/* here are all the ioctls */
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/blkdev.h>
+#include <linex/completion.h>
+#include <linex/compat.h>
+#include <linex/chio.h>			/* here are all the ioctls */
+#include <linex/mutex.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

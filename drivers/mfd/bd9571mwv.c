@@ -8,13 +8,13 @@
  * Based on the TPS65086 driver
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/rohm-generic.h>
+#include <linex/module.h>
 
-#include <linux/mfd/bd9571mwv.h>
+#include <linex/mfd/bd9571mwv.h>
 
 static const struct mfd_cell bd9571mwv_cells[] = {
 	{ .name = "bd9571mwv-regulator", },

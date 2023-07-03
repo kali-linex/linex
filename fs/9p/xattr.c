@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: LGPL-2.1
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linex.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/uio.h>
-#include <linux/posix_acl_xattr.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/sched.h>
+#include <linex/uio.h>
+#include <linex/posix_acl_xattr.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

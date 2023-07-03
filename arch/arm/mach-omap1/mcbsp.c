@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/mcbsp.c
+ * linex/arch/arm/mach-omap1/mcbsp.c
  *
  * Copyright (C) 2008 Instituto Nokia de Tecnologia
  * Contact: Eduardo Valentin <eduardo.valentin@indt.org.br>
  *
  * Multichannel mode not supported.
  */
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/omap-dma.h>
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/omap-dma.h>
+#include <linex/soc/ti/omap1-io.h>
+#include <linex/platform_data/asoc-ti-mcbsp.h>
 
 #include "mux.h"
 #include "soc.h"

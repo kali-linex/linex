@@ -9,26 +9,26 @@
  * the reader.
  */
 
-#include <linux/module.h> /* for EXPORT_SYMBOL */
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/netdevice.h>
-#include <linux/atmclip.h>
-#include <linux/init.h> /* for __init */
-#include <linux/slab.h>
+#include <linex/module.h> /* for EXPORT_SYMBOL */
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/stat.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/errno.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/netdevice.h>
+#include <linex/atmclip.h>
+#include <linex/init.h> /* for __init */
+#include <linex/slab.h>
 #include <net/net_namespace.h>
 #include <net/atmclip.h>
-#include <linux/uaccess.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/param.h> /* for HZ */
+#include <linex/atomic.h>
 #include "resources.h"
 #include "common.h" /* atm_proc_init prototype */
 #include "signaling.h" /* to get sigd - ugly too */

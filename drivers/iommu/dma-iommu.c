@@ -8,27 +8,27 @@
  * Copyright (C) 2000-2004 Russell King
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/atomic.h>
-#include <linux/crash_dump.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/gfp.h>
-#include <linux/huge_mm.h>
-#include <linux/iommu.h>
-#include <linux/iova.h>
-#include <linux/irq.h>
-#include <linux/list_sort.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/of_iommu.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
+#include <linex/acpi_iort.h>
+#include <linex/atomic.h>
+#include <linex/crash_dump.h>
+#include <linex/device.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/gfp.h>
+#include <linex/huge_mm.h>
+#include <linex/iommu.h>
+#include <linex/iova.h>
+#include <linex/irq.h>
+#include <linex/list_sort.h>
+#include <linex/memremap.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/of_iommu.h>
+#include <linex/pci.h>
+#include <linex/scatterlist.h>
+#include <linex/spinlock.h>
+#include <linex/swiotlb.h>
+#include <linex/vmalloc.h>
 
 #include "dma-iommu.h"
 

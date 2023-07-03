@@ -10,14 +10,14 @@
  * Transmit and frame generation functions.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/bitmap.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/if_vlan.h>
+#include <linex/etherdevice.h>
+#include <linex/bitmap.h>
+#include <linex/rcupdate.h>
+#include <linex/export.h>
 #include <net/net_namespace.h>
 #include <net/ieee80211_radiotap.h>
 #include <net/cfg80211.h>
@@ -304,7 +304,7 @@ ieee80211_tx_h_check_assoc(struct ieee80211_tx_data *tx)
 		 * off-channel. See the link below and
 		 * ieee80211_start_scan() for more.
 		 *
-		 * http://article.gmane.org/gmane.linux.kernel.wireless.general/30089
+		 * http://article.gmane.org/gmane.linex.kernel.wireless.general/30089
 		 */
 		return TX_DROP;
 

@@ -7,17 +7,17 @@
  *	   Grygorii Strashko <grygorii.strashko@ti.com>
  */
 
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/irq.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 /* The source ID bits start from 4 to 31 (total 28 bits)*/
 #define BIT_OFS			4

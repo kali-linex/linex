@@ -99,8 +99,8 @@
 
 #include <crypto/drbg.h>
 #include <crypto/internal/cipher.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/jiffies.h>
 
 /***************************************************************
  * Backend cipher definitions available to DRBG

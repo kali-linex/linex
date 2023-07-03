@@ -7,10 +7,10 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/mailbox_client.h>
-#include <linux/suspend.h>
+#include <linex/firmware/imx/ipc.h>
+#include <linex/firmware/imx/sci.h>
+#include <linex/mailbox_client.h>
+#include <linex/suspend.h>
 
 #define IMX_SC_IRQ_FUNC_ENABLE	1
 #define IMX_SC_IRQ_FUNC_STATUS	2

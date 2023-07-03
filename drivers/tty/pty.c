@@ -7,28 +7,28 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/devpts_fs.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/ioctl.h>
-#include <linux/compat.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/fcntl.h>
+#include <linex/sched/signal.h>
+#include <linex/string.h>
+#include <linex/major.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/devpts_fs.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/mount.h>
+#include <linex/file.h>
+#include <linex/ioctl.h>
+#include <linex/compat.h>
 #include "tty.h"
 
 #undef TTY_DEBUG_HANGUP

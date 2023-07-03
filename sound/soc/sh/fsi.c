@@ -6,19 +6,19 @@
 // Kuninori Morimoto <morimoto.kuninori@renesas.com>
 //
 // Based on ssi.c
-// Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homelinux.net>
+// Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homelinex.net>
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/scatterlist.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/scatterlist.h>
+#include <linex/sh_dma.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/sh_fsi.h>

@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <linex/pci.h>
 #include <asm/pci_x86.h>
 #include <asm/numachip/numachip.h>
 

@@ -4,11 +4,11 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_platform.h>
+#include <linex/dma-mapping.h>
 
 #include <lantiq_soc.h>
 

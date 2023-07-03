@@ -5,15 +5,15 @@
  * Copyright (C) 2022 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
 
-#include <uapi/linux/tdx-guest.h>
+#include <uapi/linex/tdx-guest.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/tdx.h>
@@ -97,6 +97,6 @@ static void __exit tdx_guest_exit(void)
 }
 module_exit(tdx_guest_exit);
 
-MODULE_AUTHOR("Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>");
+MODULE_AUTHOR("Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linex.intel.com>");
 MODULE_DESCRIPTION("TDX Guest Driver");
 MODULE_LICENSE("GPL");

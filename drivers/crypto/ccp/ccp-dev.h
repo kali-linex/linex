@@ -11,18 +11,18 @@
 #ifndef __CCP_DEV_H__
 #define __CCP_DEV_H__
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/dma-direction.h>
-#include <linux/dmapool.h>
-#include <linux/hw_random.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/dmaengine.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/dma-direction.h>
+#include <linex/dmapool.h>
+#include <linex/hw_random.h>
+#include <linex/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/irqreturn.h>
+#include <linex/dmaengine.h>
 
 #include "sp-dev.h"
 

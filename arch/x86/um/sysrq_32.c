@@ -3,15 +3,15 @@
  * Licensed under the GPL
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kallsyms.h>
+#include <linex/kernel.h>
+#include <linex/smp.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/kallsyms.h>
 #include <asm/ptrace.h>
 #include <asm/sysrq.h>
 
-/* This is declared by <linux/sched.h> */
+/* This is declared by <linex/sched.h> */
 void show_regs(struct pt_regs *regs)
 {
         printk("\n");

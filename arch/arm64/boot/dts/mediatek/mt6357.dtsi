@@ -268,12 +268,12 @@
 			compatible = "mediatek,mt6357-keys";
 
 			key-power {
-				linux,keycodes = <KEY_POWER>;
+				linex,keycodes = <KEY_POWER>;
 				wakeup-source;
 			};
 
 			key-home {
-				linux,keycodes = <KEY_HOME>;
+				linex,keycodes = <KEY_HOME>;
 				wakeup-source;
 			};
 

@@ -8,29 +8,29 @@
  * EFI SMI interface for Google platforms
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/panic_notifier.h>
-#include <linux/ioctl.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/dmi.h>
-#include <linux/kdebug.h>
-#include <linux/reboot.h>
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/ucs2_string.h>
-#include <linux/suspend.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/panic_notifier.h>
+#include <linex/ioctl.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
+#include <linex/dmi.h>
+#include <linex/kdebug.h>
+#include <linex/reboot.h>
+#include <linex/efi.h>
+#include <linex/module.h>
+#include <linex/ucs2_string.h>
+#include <linex/suspend.h>
 
 #define GSMI_SHUTDOWN_CLEAN	0	/* Clean Shutdown */
 /* TODO(mikew@google.com): Tie in HARDLOCKUP_DETECTOR with NMIWDT */
@@ -700,7 +700,7 @@ static struct notifier_block gsmi_panic_notifier = {
 };
 
 /*
- * This hash function was blatantly copied from include/linux/hash.h.
+ * This hash function was blatantly copied from include/linex/hash.h.
  * It is used by this driver to obfuscate a board name that requires a
  * quirk within this driver.
  *

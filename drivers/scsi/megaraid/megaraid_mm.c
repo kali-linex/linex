@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- *			Linux MegaRAID device driver
+ *			Linex MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -10,9 +10,9 @@
  *
  * Common management module
  */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
 #include "megaraid_mm.h"
 
 

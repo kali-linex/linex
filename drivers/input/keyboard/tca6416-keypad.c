@@ -7,17 +7,17 @@
  * Author : Sriramakrishnan.A.G. <srk@ti.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/tca6416_keypad.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/tca6416_keypad.h>
 
 #define TCA6416_INPUT          0
 #define TCA6416_OUTPUT         1
@@ -243,7 +243,7 @@ static int tca6416_keypad_probe(struct i2c_client *client)
 	input->id.product = 0x0001;
 	input->id.version = 0x0100;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Linex input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

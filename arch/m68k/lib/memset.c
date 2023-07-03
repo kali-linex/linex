@@ -4,8 +4,8 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/string.h>
 
 void *memset(void *s, int c, size_t count)
 {

@@ -7,12 +7,12 @@
  *
  * Copyright (c) 2004 Freescale Semiconductor, Inc.
  */
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <linex/bitops.h>
+#include <linex/of.h>
+#include <linex/phy.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
 
 #define RTL821x_PHYSR				0x11
 #define RTL821x_PHYSR_DUPLEX			BIT(13)

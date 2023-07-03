@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/netlink.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
 #include <net/inet_ecn.h>
 #include <net/ipv6.h>
 

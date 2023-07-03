@@ -6,11 +6,11 @@
  */
 
 #define pr_fmt(fmt) "X.509: "fmt
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/oid_registry.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/oid_registry.h>
 #include <crypto/public_key.h>
 #include "x509_parser.h"
 #include "x509.asn1.h"

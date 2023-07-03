@@ -16,29 +16,29 @@
  * This is the main header file to be included in each DLM source file.
  */
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/socket.h>
-#include <linux/kthread.h>
-#include <linux/kobject.h>
-#include <linux/kref.h>
-#include <linux/kernel.h>
-#include <linux/jhash.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/ctype.h>
+#include <linex/spinlock.h>
+#include <linex/vmalloc.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/random.h>
+#include <linex/delay.h>
+#include <linex/socket.h>
+#include <linex/kthread.h>
+#include <linex/kobject.h>
+#include <linex/kref.h>
+#include <linex/kernel.h>
+#include <linex/jhash.h>
+#include <linex/miscdevice.h>
+#include <linex/mutex.h>
+#include <linex/idr.h>
+#include <linex/ratelimit.h>
+#include <linex/uaccess.h>
 
-#include <linux/dlm.h>
+#include <linex/dlm.h>
 #include "config.h"
 
 struct dlm_ls;

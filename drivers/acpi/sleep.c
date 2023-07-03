@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) "ACPI: PM: " fmt
 
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/syscore_ops.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/dmi.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/suspend.h>
+#include <linex/reboot.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/syscore_ops.h>
 #include <asm/io.h>
 #include <trace/events/power.h>
 

@@ -25,21 +25,21 @@
  *
  */
 
-#include <linux/dma-buf.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/iosys-map.h>
-#include <linux/mem_encrypt.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/dma-buf.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/iosys-map.h>
+#include <linex/mem_encrypt.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/pagevec.h>
+#include <linex/shmem_fs.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

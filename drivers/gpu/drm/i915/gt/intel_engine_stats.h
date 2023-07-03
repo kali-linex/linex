@@ -6,9 +6,9 @@
 #ifndef __INTEL_ENGINE_STATS_H__
 #define __INTEL_ENGINE_STATS_H__
 
-#include <linux/atomic.h>
-#include <linux/ktime.h>
-#include <linux/seqlock.h>
+#include <linex/atomic.h>
+#include <linex/ktime.h>
+#include <linex/seqlock.h>
 
 #include "i915_gem.h" /* GEM_BUG_ON */
 #include "intel_engine.h"

@@ -8,23 +8,23 @@
  * Original author: Peter Ujfalusi <peter.ujfalusi@nokia.com>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/pm_qos.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/ssi_protocol.h>
-#include <linux/hsi/cs-protocol.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/sched/signal.h>
+#include <linex/ioctl.h>
+#include <linex/uaccess.h>
+#include <linex/pm_qos.h>
+#include <linex/hsi/hsi.h>
+#include <linex/hsi/ssi_protocol.h>
+#include <linex/hsi/cs-protocol.h>
 
 #define CS_MMAP_SIZE	PAGE_SIZE
 

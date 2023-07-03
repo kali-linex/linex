@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kmsg_dump.h>
-#include <linux/spinlock.h>
-#include <linux/console.h>
-#include <linux/string.h>
+#include <linex/kmsg_dump.h>
+#include <linex/spinlock.h>
+#include <linex/console.h>
+#include <linex/string.h>
 #include <shared/init.h>
 #include <shared/kern.h>
 #include <os.h>

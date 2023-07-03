@@ -22,50 +22,50 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/brcmphy.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/crc32poly.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/stringify.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/in.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/mdio.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
+#include <linex/brcmphy.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/workqueue.h>
+#include <linex/prefetch.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/ssb/ssb_driver_gige.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/crc32poly.h>
 
 #include <net/checksum.h>
 #include <net/gso.h>
 #include <net/ip.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <uapi/linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <uapi/linex/net_tstamp.h>
+#include <linex/ptp_clock_kernel.h>
 
 #define BAR_0	0
 #define BAR_2	2
@@ -10047,7 +10047,7 @@ static int tg3_reset_hw(struct tg3 *tp, bool reset_phy)
 	 * the offload processers, so make the chip do the pseudo-
 	 * header checksums on receive.  For transmit it is more
 	 * convenient to do the pseudo-header checksum in software
-	 * as Linux does that on transmit for us in all cases.
+	 * as Linex does that on transmit for us in all cases.
 	 */
 	tp->grc_mode |= GRC_MODE_NO_TX_PHDR_CSUM;
 

@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 struct file_operations;
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <linex/debugfs.h>
+#include <linex/export.h>
 
 #include "ipoib.h"
 

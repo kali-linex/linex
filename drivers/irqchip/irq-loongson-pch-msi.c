@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) "pch-msi: " fmt
 
-#include <linux/irqchip.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/irqchip.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
 static int nr_pics;
 

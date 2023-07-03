@@ -8,8 +8,8 @@
  * Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 
 #include <dt-bindings/clock/toshiba,tmpv770x.h>
 #include <dt-bindings/reset/toshiba,tmpv770x.h>

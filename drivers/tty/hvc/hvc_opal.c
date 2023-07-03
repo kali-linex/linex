@@ -7,16 +7,16 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/console.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
 
 #include <asm/hvconsole.h>
 #include <asm/firmware.h>

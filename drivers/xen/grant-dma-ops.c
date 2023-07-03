@@ -7,14 +7,14 @@
  * Copyright (c) 2021, Juergen Gross <jgross@suse.com>
  */
 
-#include <linux/module.h>
-#include <linux/dma-map-ops.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/xarray.h>
-#include <linux/virtio_anchor.h>
-#include <linux/virtio.h>
+#include <linex/module.h>
+#include <linex/dma-map-ops.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/pfn.h>
+#include <linex/xarray.h>
+#include <linex/virtio_anchor.h>
+#include <linex/virtio.h>
 #include <xen/xen.h>
 #include <xen/xen-ops.h>
 #include <xen/grant_table.h>

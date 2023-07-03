@@ -5,22 +5,22 @@
  * Copyright 2009 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/capability.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/workqueue.h>
+#include <linex/capability.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/rfkill.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
 
 #include "rfkill.h"
 

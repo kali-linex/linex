@@ -22,8 +22,8 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
+#include <linex/memblock.h>
+#include <linex/init.h>
 
 #include "numa_internal.h"
 

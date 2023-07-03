@@ -5,14 +5,14 @@
  * Copyright (C) 2004 Texas Instruments, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/dma-map-ops.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/soc/ti/omap1-io.h>
 
 #include <asm/irq.h>
 

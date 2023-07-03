@@ -6,15 +6,15 @@
  * Copyright © CC Computer Consultants GmbH, 2007
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/tcp.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_TCPOPTSTRIP.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_TCPOPTSTRIP.h>
 
 static inline unsigned int optlen(const u_int8_t *opt, unsigned int offset)
 {

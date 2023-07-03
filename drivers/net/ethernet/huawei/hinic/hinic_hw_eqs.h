@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Huawei HiNIC PCI Express Linux driver
+ * Huawei HiNIC PCI Express Linex driver
  * Copyright(c) 2017 Huawei Technologies Co., Ltd
  */
 
 #ifndef HINIC_HW_EQS_H
 #define HINIC_HW_EQS_H
 
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/sizes.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
+#include <linex/pci.h>
+#include <linex/sizes.h>
+#include <linex/bitops.h>
+#include <linex/interrupt.h>
 
 #include "hinic_hw_if.h"
 

@@ -24,7 +24,7 @@
 // in it's original order shown in the first table. ECC can't be turned on when
 // auto-format is off.
 //
-// However, Linux SPI-NAND driver expects the data returned as:
+// However, Linex SPI-NAND driver expects the data returned as:
 // +------+-----+
 // | Page | OOB |
 // +------+-----+
@@ -45,7 +45,7 @@
 //
 // Write requests operates in a similar manner.
 // As a limitation of this strategy, we won't be able to access any ECC parity
-// data at all in Linux.
+// data at all in Linex.
 //
 // Here's the bad block mark situation on MTK chips:
 // In older chips like mt7622, MTK uses the first FDM byte in the first sector
@@ -67,20 +67,20 @@
 //    [page_size - (nsectors - 1) * spare_size]
 // Similarly, when writing, we need to perform swaps in the other direction.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/of_platform.h>
-#include <linux/mtd/nand-ecc-mtk.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/mtd/nand.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/iopoll.h>
+#include <linex/of_platform.h>
+#include <linex/mtd/nand-ecc-mtk.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-mem.h>
+#include <linex/mtd/nand.h>
 
 // NFI registers
 #define NFI_CNFG 0x000

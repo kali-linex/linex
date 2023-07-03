@@ -4,19 +4,19 @@
  * Author: Lin Huang <hl@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/devfreq-event.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/of.h>
+#include <linex/clk.h>
+#include <linex/devfreq-event.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/of.h>
 
 #include <soc/rockchip/rk3399_grf.h>
 

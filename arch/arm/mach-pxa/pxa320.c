@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa320.c
+ * linex/arch/arm/mach-pxa/pxa320.c
  *
  * Code specific to PXA320
  *
@@ -10,11 +10,11 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include "pxa320.h"
 

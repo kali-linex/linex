@@ -6,15 +6,15 @@
  * Copyright (C) 2023 EMS Dr. Thomas Wuensche
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/can/dev.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/can/dev.h>
+#include <linex/io.h>
 
 #include "sja1000.h"
 

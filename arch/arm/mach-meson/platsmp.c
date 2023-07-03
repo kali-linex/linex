@@ -4,15 +4,15 @@
  * Copyright (C) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/smp.h>
-#include <linux/mfd/syscon.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/smp.h>
+#include <linex/mfd/syscon.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

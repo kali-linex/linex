@@ -6,11 +6,11 @@
 
 #ifndef CFSRVL_H_
 #define CFSRVL_H_
-#include <linux/list.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/rculist.h>
+#include <linex/list.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
+#include <linex/kref.h>
+#include <linex/rculist.h>
 
 struct cfsrvl {
 	struct cflayer layer;

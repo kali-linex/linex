@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Converted from tools/testing/selftests/bpf/verifier/unpriv.c */
 
-#include "vmlinux.h"
+#include "vmlinex.h"
 #include <bpf/bpf_helpers.h>
 #include "bpf_misc.h"
 

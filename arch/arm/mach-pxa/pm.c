@@ -10,11 +10,11 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/suspend.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
 
 #include "pm.h"
 

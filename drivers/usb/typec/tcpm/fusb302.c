@@ -5,31 +5,31 @@
  * Fairchild FUSB302 Type-C Chip Driver
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/extcon.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/proc_fs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/pd.h>
-#include <linux/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/extcon.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/proc_fs.h>
+#include <linex/regulator/consumer.h>
+#include <linex/sched/clock.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/usb.h>
+#include <linex/usb/typec.h>
+#include <linex/usb/tcpm.h>
+#include <linex/usb/pd.h>
+#include <linex/workqueue.h>
 
 #include "fusb302_reg.h"
 
@@ -1705,7 +1705,7 @@ static int fusb302_probe(struct i2c_client *client)
 	 * to be set by the platform code which also registers the i2c client
 	 * for the fusb302.
 	 */
-	if (device_property_read_string(dev, "linux,extcon-name", &name) == 0) {
+	if (device_property_read_string(dev, "linex,extcon-name", &name) == 0) {
 		chip->extcon = extcon_get_extcon_dev(name);
 		if (IS_ERR(chip->extcon))
 			return PTR_ERR(chip->extcon);

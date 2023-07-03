@@ -7,21 +7,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/mii.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/mii.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
-#include <linux/platform_data/eth-ep93xx.h>
+#include <linex/platform_data/eth-ep93xx.h>
 
 #define DRV_MODULE_NAME		"ep93xx-eth"
 

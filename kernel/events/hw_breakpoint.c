@@ -7,7 +7,7 @@
  * Thanks to Ingo Molnar for his many suggestions.
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@linex.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -17,23 +17,23 @@
  * This file contains the arch-independent routines.
  */
 
-#include <linux/hw_breakpoint.h>
+#include <linex/hw_breakpoint.h>
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/percpu.h>
-#include <linux/rhashtable.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/atomic.h>
+#include <linex/bug.h>
+#include <linex/cpu.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/irqflags.h>
+#include <linex/kdebug.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/percpu-rwsem.h>
+#include <linex/percpu.h>
+#include <linex/rhashtable.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 /*
  * Datastructure to track the total uses of N slots across tasks or CPUs;

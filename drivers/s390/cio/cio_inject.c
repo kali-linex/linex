@@ -3,16 +3,16 @@
  *   CIO inject interface
  *
  *    Copyright IBM Corp. 2021
- *    Author(s): Vineeth Vijayan <vneethv@linux.ibm.com>
+ *    Author(s): Vineeth Vijayan <vneethv@linex.ibm.com>
  */
 
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/debugfs.h>
 #include <asm/chpid.h>
 
 #include "cio_inject.h"

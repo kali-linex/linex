@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>
 #include <asm/ptrace.h>

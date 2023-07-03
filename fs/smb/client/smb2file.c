@@ -6,11 +6,11 @@
  *              Pavel Shilovsky ((pshilovsky@samba.org) 2012
  *
  */
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"

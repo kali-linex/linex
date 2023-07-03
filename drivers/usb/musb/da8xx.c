@@ -10,18 +10,18 @@
  * DT support
  * Copyright (c) 2016 Petr Kulhavy <petr@barix.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for Linex.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linex/module.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of_platform.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

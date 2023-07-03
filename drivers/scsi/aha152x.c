@@ -224,25 +224,25 @@
 
  **************************************************************************/
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/isapnp.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/io.h>
+#include <linex/blkdev.h>
+#include <linex/completion.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/wait.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/proc_fs.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/isapnp.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

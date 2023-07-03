@@ -7,9 +7,9 @@
  * This is a driver for the toonie codec chip. This chip is present
  * on the Mac Mini and is nothing but a DAC.
  */
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("toonie codec driver for snd-aoa");

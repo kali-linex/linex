@@ -3,7 +3,7 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/pm_runtime.h>
+#include <linex/pm_runtime.h>
 
 #include "iosm_ipc_chnl_cfg.h"
 #include "iosm_ipc_imem_ops.h"

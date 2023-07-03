@@ -7,12 +7,12 @@
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <linex/io.h>
+#include <linex/dmi.h>
+#include <linex/acpi.h>
 
 #include "acp6x.h"
 

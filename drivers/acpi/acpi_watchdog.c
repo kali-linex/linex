@@ -3,23 +3,23 @@
  * ACPI watchdog table parsing support.
  *
  * Copyright (C) 2016, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
 #define pr_fmt(fmt) "ACPI: watchdog: " fmt
 
-#include <linux/acpi.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
 
 #include "internal.h"
 
 #ifdef CONFIG_RTC_MC146818_LIB
-#include <linux/mc146818rtc.h>
+#include <linex/mc146818rtc.h>
 
 /*
  * There are several systems where the WDAT table is accessing RTC SRAM to
- * store persistent information. This does not work well with the Linux RTC
+ * store persistent information. This does not work well with the Linex RTC
  * driver so on those systems we skip WDAT driver and prefer iTCO_wdt
  * instead.
  *

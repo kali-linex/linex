@@ -5,26 +5,26 @@
  * Authors: Jérôme Glisse <jglisse@redhat.com>
  */
 /*
- * Refer to include/linux/hmm.h for information about heterogeneous memory
+ * Refer to include/linex/hmm.h for information about heterogeneous memory
  * management or HMM for short.
  */
-#include <linux/pagewalk.h>
-#include <linux/hmm.h>
-#include <linux/init.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memremap.h>
-#include <linux/sched/mm.h>
-#include <linux/jump_label.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmu_notifier.h>
-#include <linux/memory_hotplug.h>
+#include <linex/pagewalk.h>
+#include <linex/hmm.h>
+#include <linex/init.h>
+#include <linex/rmap.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/mmzone.h>
+#include <linex/pagemap.h>
+#include <linex/swapops.h>
+#include <linex/hugetlb.h>
+#include <linex/memremap.h>
+#include <linex/sched/mm.h>
+#include <linex/jump_label.h>
+#include <linex/dma-mapping.h>
+#include <linex/mmu_notifier.h>
+#include <linex/memory_hotplug.h>
 
 #include "internal.h"
 

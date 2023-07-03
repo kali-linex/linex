@@ -10,11 +10,11 @@
 
 #define pr_fmt(fmt)	"perf/amd_iommu: " fmt
 
-#include <linux/perf_event.h>
-#include <linux/init.h>
-#include <linux/cpumask.h>
-#include <linux/slab.h>
-#include <linux/amd-iommu.h>
+#include <linex/perf_event.h>
+#include <linex/init.h>
+#include <linex/cpumask.h>
+#include <linex/slab.h>
+#include <linex/amd-iommu.h>
 
 #include "../perf_event.h"
 #include "iommu.h"

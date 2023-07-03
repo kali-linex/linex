@@ -21,7 +21,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/time.h>
+#include <linex/time.h>
 
 #include "hsw_ips.h"
 #include "i915_reg.h"

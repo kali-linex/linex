@@ -6,9 +6,9 @@
 #include "qla_def.h"
 #include "qla_edif.h"
 
-#include <linux/kthread.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <linex/kthread.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
 #include <scsi/scsi_tcq.h>
 
 static struct edif_sa_index_entry *qla_edif_sadb_find_sa_index_entry(uint16_t nport_handle,

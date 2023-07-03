@@ -54,41 +54,41 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/compiler.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/vmalloc.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/list.h>
+#include <linex/dma-mapping.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/mii.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/crc32.h>
+#include <linex/random.h>
+#include <linex/mii.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/mutex.h>
+#include <linex/firmware.h>
 
 #include <net/checksum.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
+#include <linex/uaccess.h>
+#include <linex/jiffies.h>
 
 #define CAS_NCPUS            num_online_cpus()
 
@@ -201,7 +201,7 @@ MODULE_PARM_DESC(linkdown_timeout,
 /*
  * value in 'ticks' (units used by jiffies). Set when we init the
  * module because 'HZ' in actually a function call on some flavors of
- * Linux.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
+ * Linex.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
  */
 static int link_transition_timeout;
 

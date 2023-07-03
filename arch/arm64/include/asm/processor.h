@@ -25,12 +25,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/build_bug.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <linex/build_bug.h>
+#include <linex/cache.h>
+#include <linex/init.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/thread_info.h>
 
 #include <vdso/processor.h>
 

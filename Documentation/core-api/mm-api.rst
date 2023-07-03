@@ -19,22 +19,22 @@ User Space Memory Access
 Memory Allocation Controls
 ==========================
 
-.. kernel-doc:: include/linux/gfp_types.h
+.. kernel-doc:: include/linex/gfp_types.h
    :doc: Page mobility and placement hints
 
-.. kernel-doc:: include/linux/gfp_types.h
+.. kernel-doc:: include/linex/gfp_types.h
    :doc: Watermark modifiers
 
-.. kernel-doc:: include/linux/gfp_types.h
+.. kernel-doc:: include/linex/gfp_types.h
    :doc: Reclaim modifiers
 
-.. kernel-doc:: include/linux/gfp_types.h
+.. kernel-doc:: include/linex/gfp_types.h
    :doc: Useful GFP flag combinations
 
 The Slab Cache
 ==============
 
-.. kernel-doc:: include/linux/slab.h
+.. kernel-doc:: include/linex/slab.h
    :internal:
 
 .. kernel-doc:: mm/slab.c
@@ -82,7 +82,7 @@ Truncate
 .. kernel-doc:: mm/truncate.c
    :export:
 
-.. kernel-doc:: include/linux/pagemap.h
+.. kernel-doc:: include/linex/pagemap.h
    :internal:
 
 Memory pools
@@ -105,13 +105,13 @@ More Memory Management Functions
 
 .. kernel-doc:: mm/page_alloc.c
 .. kernel-doc:: mm/mempolicy.c
-.. kernel-doc:: include/linux/mm_types.h
+.. kernel-doc:: include/linex/mm_types.h
    :internal:
-.. kernel-doc:: include/linux/mm_inline.h
-.. kernel-doc:: include/linux/page-flags.h
-.. kernel-doc:: include/linux/mm.h
+.. kernel-doc:: include/linex/mm_inline.h
+.. kernel-doc:: include/linex/page-flags.h
+.. kernel-doc:: include/linex/mm.h
    :internal:
-.. kernel-doc:: include/linux/page_ref.h
-.. kernel-doc:: include/linux/mmzone.h
+.. kernel-doc:: include/linex/page_ref.h
+.. kernel-doc:: include/linex/mmzone.h
 .. kernel-doc:: mm/util.c
    :functions: folio_mapping

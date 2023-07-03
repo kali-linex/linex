@@ -5,9 +5,9 @@
  * Copyright (c) 2019-2020, NXP
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interconnect-provider.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interconnect-provider.h>
 #include <dt-bindings/interconnect/imx8mq.h>
 
 #include "imx.h"

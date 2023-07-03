@@ -7,13 +7,13 @@
  *   Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/moduleloader.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/kprobes.h>
+#include <linex/moduleloader.h>
+#include <linex/hardirq.h>
+#include <linex/uaccess.h>
+#include <linex/ftrace.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/kprobes.h>
 #include <trace/syscall.h>
 #include <asm/asm-offsets.h>
 #include <asm/text-patching.h>
@@ -77,7 +77,7 @@ bool ftrace_need_init_nop(void)
 
 int ftrace_init_nop(struct module *mod, struct dyn_ftrace *rec)
 {
-	static struct ftrace_hotpatch_trampoline *next_vmlinux_trampoline =
+	static struct ftrace_hotpatch_trampoline *next_vmlinex_trampoline =
 		__ftrace_hotpatch_trampolines_start;
 	static const char orig[6] = { 0xc0, 0x04, 0x00, 0x00, 0x00, 0x00 };
 	static struct ftrace_hotpatch_trampoline *trampoline;
@@ -91,7 +91,7 @@ int ftrace_init_nop(struct module *mod, struct dyn_ftrace *rec)
 	BUILD_BUG_ON(sizeof(struct ftrace_hotpatch_trampoline) !=
 		     SIZEOF_FTRACE_HOTPATCH_TRAMPOLINE);
 
-	next_trampoline = &next_vmlinux_trampoline;
+	next_trampoline = &next_vmlinex_trampoline;
 	trampolines_end = __ftrace_hotpatch_trampolines_end;
 	shared = ftrace_shared_hotpatch_trampoline(NULL);
 #ifdef CONFIG_MODULES

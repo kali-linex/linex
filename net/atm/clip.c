@@ -5,40 +5,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h> /* for UINT_MAX */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/if_arp.h> /* for some manifest constants */
-#include <linux/notifier.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/atmarp.h>
-#include <linux/capability.h>
-#include <linux/ip.h> /* for net/route.h */
-#include <linux/in.h> /* for struct sockaddr_in */
-#include <linux/if.h> /* for IFF_UP */
-#include <linux/inetdevice.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/kernel.h> /* for UINT_MAX */
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/wait.h>
+#include <linex/timer.h>
+#include <linex/if_arp.h> /* for some manifest constants */
+#include <linex/notifier.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/atmclip.h>
+#include <linex/atmarp.h>
+#include <linex/capability.h>
+#include <linex/ip.h> /* for net/route.h */
+#include <linex/in.h> /* for struct sockaddr_in */
+#include <linex/if.h> /* for IFF_UP */
+#include <linex/inetdevice.h>
+#include <linex/bitops.h>
+#include <linex/poison.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/rcupdate.h>
+#include <linex/jhash.h>
+#include <linex/slab.h>
 #include <net/route.h> /* for struct rtable and routing */
 #include <net/icmp.h> /* icmp_send */
 #include <net/arp.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/uaccess.h>
+#include <linex/param.h> /* for HZ */
+#include <linex/uaccess.h>
 #include <asm/byteorder.h> /* for htons etc. */
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include "common.h"
 #include "resources.h"

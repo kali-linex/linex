@@ -39,12 +39,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/xxhash.h>
+#include <linex/errno.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/xxhash.h>
 
 /*-*************************************
  * Macros

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The Linex Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/math64.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/math64.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
+#include <linex/scatterlist.h>
+#include <linex/spinlock.h>
+#include <linex/srcu.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/wait.h>
 #include <drm/drm_file.h>
 #include <drm/drm_gem.h>
 #include <drm/drm_prime.h>

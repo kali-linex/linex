@@ -10,8 +10,8 @@
 #ifndef _OMAP_IOMMU_H
 #define _OMAP_IOMMU_H
 
-#include <linux/bitops.h>
-#include <linux/iommu.h>
+#include <linex/bitops.h>
+#include <linex/iommu.h>
 
 #define for_each_iotlb_cr(obj, n, __i, cr)				\
 	for (__i = 0;							\

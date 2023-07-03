@@ -8,12 +8,12 @@
  *     Jasper St. Pierre <jstpierre@mecheye.net>
  */
 
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/soc/amlogic/meson-canvas.h>
+#include <linex/component.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/sys_soc.h>
+#include <linex/platform_device.h>
+#include <linex/soc/amlogic/meson-canvas.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

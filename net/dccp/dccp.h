@@ -9,8 +9,8 @@
  *  Copyright (c) 2005-6 Ian McDonald <ian.mcdonald@jandi.co.nz>
  */
 
-#include <linux/dccp.h>
-#include <linux/ktime.h>
+#include <linex/dccp.h>
+#include <linex/ktime.h>
 #include <net/snmp.h>
 #include <net/sock.h>
 #include <net/tcp.h>

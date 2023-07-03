@@ -5,10 +5,10 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#ifndef LINUX_CEC_PIN_H
-#define LINUX_CEC_PIN_H
+#ifndef LINEX_CEC_PIN_H
+#define LINEX_CEC_PIN_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <media/cec.h>
 
 /**

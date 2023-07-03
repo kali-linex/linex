@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/socklib.c
+ * linex/net/sunrpc/socklib.c
  *
  * Common socket helper routines for RPC client and server
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/udp.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/export.h>
+#include <linex/compiler.h>
+#include <linex/netdevice.h>
+#include <linex/gfp.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/pagemap.h>
+#include <linex/udp.h>
+#include <linex/sunrpc/msg_prot.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/export.h>
 
 #include "socklib.h"
 

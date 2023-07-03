@@ -2,8 +2,8 @@
 //
 // Copyright 2017-2019 NXP
 
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/clockchips.h>
 
 #include "timer-of.h"
 

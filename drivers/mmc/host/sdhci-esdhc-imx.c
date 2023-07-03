@@ -8,23 +8,23 @@
  *   Author: Wolfram Sang <kernel@pengutronix.de>
  */
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm_qos.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/pm_qos.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
 #include "sdhci-cqhci.h"
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
@@ -1510,12 +1510,12 @@ static void sdhci_esdhc_imx_hwinit(struct sdhci_host *host)
 		}
 
 		/*
-		 * On i.MX8MM, we are running Dual Linux OS, with 1st Linux using SD Card
-		 * as rootfs storage, 2nd Linux using eMMC as rootfs storage. We let
-		 * the 1st linux configure power/clock for the 2nd Linux.
+		 * On i.MX8MM, we are running Dual Linex OS, with 1st Linex using SD Card
+		 * as rootfs storage, 2nd Linex using eMMC as rootfs storage. We let
+		 * the 1st linex configure power/clock for the 2nd Linex.
 		 *
-		 * When the 2nd Linux is booting into rootfs stage, we let the 1st Linux
-		 * to destroy the 2nd linux, then restart the 2nd linux, we met SDHCI dump.
+		 * When the 2nd Linex is booting into rootfs stage, we let the 1st Linex
+		 * to destroy the 2nd linex, then restart the 2nd linex, we met SDHCI dump.
 		 * After we clear the pending interrupt and halt CQCTL, issue gone.
 		 */
 		if (cq_host) {

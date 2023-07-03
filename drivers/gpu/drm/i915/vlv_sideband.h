@@ -6,8 +6,8 @@
 #ifndef _VLV_SIDEBAND_H_
 #define _VLV_SIDEBAND_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
 
 #include "vlv_sideband_reg.h"
 

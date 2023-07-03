@@ -8,13 +8,13 @@
  *  Copyright 2008 Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/stop_machine.h>
+#include <linex/types.h>
+#include <linex/jump_label.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/sched/mm.h>
+#include <linex/stop_machine.h>
 #include <asm/cputable.h>
 #include <asm/code-patching.h>
 #include <asm/interrupt.h>
@@ -683,7 +683,7 @@ late_initcall(check_features);
 #define check(x)	\
 	if (!(x)) printk("feature-fixups: test failed at line %d\n", __LINE__);
 
-/* This must be after the text it fixes up, vmlinux.lds.S enforces that atm */
+/* This must be after the text it fixes up, vmlinex.lds.S enforces that atm */
 static struct fixup_entry fixup;
 
 static long __init calc_offset(struct fixup_entry *entry, unsigned int *p)

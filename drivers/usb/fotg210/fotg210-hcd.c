@@ -7,32 +7,32 @@
  *	   Feng-Hsin Chiang <john453@faraday-tech.com>
  *	   Po-Yu Chuang <ratbert.chuang@gmail.com>
  *
- * Most of code borrowed from the Linux-3.7 EHCI driver
+ * Most of code borrowed from the Linex-3.7 EHCI driver
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/device.h>
+#include <linex/dmapool.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/vmalloc.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/hrtimer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/moduleparam.h>
+#include <linex/dma-mapping.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
@@ -2848,7 +2848,7 @@ static struct fotg210_qh *qh_make(struct fotg210_hcd *fotg210, struct urb *urb,
 			 * always use 512 byte maxpacket.  But some device
 			 * vendors decided to ignore that, and MSFT is happy
 			 * to help them do so.  So now people expect to use
-			 * such nonconformant devices with Linux too; sigh.
+			 * such nonconformant devices with Linex too; sigh.
 			 */
 			info1 |= maxp << 16;
 			info2 |= (FOTG210_TUNE_MULT_HS << 30);

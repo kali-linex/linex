@@ -7,20 +7,20 @@
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/of_address.h>
-#include <linux/reboot.h>
-#include <linux/genalloc.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/platform_device.h>
+#include <linex/memblock.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/export.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/of_address.h>
+#include <linex/reboot.h>
+#include <linex/genalloc.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/map.h>

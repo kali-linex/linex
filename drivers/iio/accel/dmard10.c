@@ -6,11 +6,11 @@
  * Copyright (c) 2012 Domintech Technology Co., Ltd
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/byteorder/generic.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/byteorder/generic.h>
 
 #define DMARD10_REG_ACTR			0x00
 #define DMARD10_REG_AFEM			0x0c

@@ -3,7 +3,7 @@
  * drivers/acpi/device_sysfs.c - ACPI device sysfs attributes and modalias.
  *
  * Copyright (C) 2015, Intel Corp.
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linex.intel.com>
  * Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -11,10 +11,10 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/nls.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/nls.h>
 
 #include "internal.h"
 

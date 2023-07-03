@@ -8,8 +8,8 @@
 #ifndef WEP_H
 #define WEP_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include "ieee80211_i.h"
 #include "key.h"
 

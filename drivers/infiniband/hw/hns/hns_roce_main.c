@@ -30,9 +30,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_user_verbs.h>

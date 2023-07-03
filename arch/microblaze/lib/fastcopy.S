@@ -29,7 +29,7 @@
  *	between mem locations with size of xfer spec'd in bytes
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 	.text
 	.globl	memcpy
 	.type  memcpy, @function

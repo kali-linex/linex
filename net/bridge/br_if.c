@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Userspace interface
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netpoll.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/netpoll.h>
+#include <linex/ethtool.h>
+#include <linex/if_arp.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_ether.h>
+#include <linex/slab.h>
 #include <net/dsa.h>
 #include <net/sock.h>
-#include <linux/if_vlan.h>
+#include <linex/if_vlan.h>
 #include <net/switchdev.h>
 #include <net/net_namespace.h>
 

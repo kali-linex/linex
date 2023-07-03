@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/kgdb.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
+#include <linex/kgdb.h>
+#include <linex/string.h>
+#include <linex/sched.h>
+#include <linex/notifier.h>
+#include <linex/kdebug.h>
+#include <linex/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/traps.h>
 #include <asm/processor.h>

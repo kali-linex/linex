@@ -3,15 +3,15 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#ifndef _LINUX_XDP_SOCK_H
-#define _LINUX_XDP_SOCK_H
+#ifndef _LINEX_XDP_SOCK_H
+#define _LINEX_XDP_SOCK_H
 
-#include <linux/bpf.h>
-#include <linux/workqueue.h>
-#include <linux/if_xdp.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <linex/bpf.h>
+#include <linex/workqueue.h>
+#include <linex/if_xdp.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
 #include <net/sock.h>
 
 struct net_device;
@@ -100,4 +100,4 @@ static inline void __xsk_map_flush(void)
 
 #endif /* CONFIG_XDP_SOCKETS */
 
-#endif /* _LINUX_XDP_SOCK_H */
+#endif /* _LINEX_XDP_SOCK_H */

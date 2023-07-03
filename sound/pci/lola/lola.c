@@ -5,14 +5,14 @@
  *  Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

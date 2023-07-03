@@ -7,9 +7,9 @@
 #ifndef _CIPHER_H
 #define _CIPHER_H
 
-#include <linux/atomic.h>
-#include <linux/mailbox/brcm-message.h>
-#include <linux/mailbox_client.h>
+#include <linex/atomic.h>
+#include <linex/mailbox/brcm-message.h>
+#include <linex/mailbox_client.h>
 #include <crypto/aes.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>

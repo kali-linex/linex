@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/sched/debug.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/hardirq.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/sched/debug.h>
 #include <asm/current.h>
 #include <asm/tlbflush.h>
 #include <arch.h>

@@ -10,10 +10,10 @@
  *	David Mosberger-Tang, Martin Mares
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/zorro.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/zorro.h>
 
 
 struct zorro_prod_info {

@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/kmod.h>
+#include <linex/delay.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

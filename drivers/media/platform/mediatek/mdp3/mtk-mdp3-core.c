@@ -4,13 +4,13 @@
  * Author: Ping-Hsun Wu <ping-hsun.wu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/remoteproc.h>
-#include <linux/remoteproc/mtk_scp.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/remoteproc.h>
+#include <linex/remoteproc/mtk_scp.h>
 #include <media/videobuf2-dma-contig.h>
 
 #include "mtk-mdp3-core.h"

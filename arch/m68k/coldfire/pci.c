@@ -1,22 +1,22 @@
 /*
  * pci.c -- PCI bus support for ColdFire processors
  *
- * (C) Copyright 2012, Greg Ungerer <gerg@uclinux.com>
+ * (C) Copyright 2012, Greg Ungerer <gerg@uclinex.com>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/m54xxpci.h>

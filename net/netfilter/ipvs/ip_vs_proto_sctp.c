@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/sctp.h>
+#include <linex/kernel.h>
+#include <linex/ip.h>
+#include <linex/sctp.h>
 #include <net/ip.h>
 #include <net/ip6_checksum.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv4.h>
 #include <net/sctp/checksum.h>
 #include <net/ip_vs.h>
 

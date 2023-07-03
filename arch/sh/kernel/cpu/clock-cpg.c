@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <linex/clk.h>
+#include <linex/compiler.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/clkdev.h>
 #include <asm/clock.h>
 
 static struct clk master_clk = {

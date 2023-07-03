@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2016-2018 Netronome Systems, Inc. */
 
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_cls.h>
+#include <linex/bpf.h>
+#include <linex/bpf_verifier.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/pkt_cls.h>
 
 #include "../nfp_app.h"
 #include "../nfp_main.h"

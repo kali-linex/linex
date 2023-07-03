@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/moduleloader.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/cache.h>
-#include <linux/if_vlan.h>
+#include <linex/moduleloader.h>
+#include <linex/workqueue.h>
+#include <linex/netdevice.h>
+#include <linex/filter.h>
+#include <linex/bpf.h>
+#include <linex/cache.h>
+#include <linex/if_vlan.h>
 
 #include <asm/cacheflush.h>
 #include <asm/ptrace.h>

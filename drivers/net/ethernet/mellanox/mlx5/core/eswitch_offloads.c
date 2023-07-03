@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/idr.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
+#include <linex/etherdevice.h>
+#include <linex/idr.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/mlx5_ifc.h>
+#include <linex/mlx5/vport.h>
+#include <linex/mlx5/fs.h>
 #include "mlx5_core.h"
 #include "eswitch.h"
 #include "esw/indir_table.h"

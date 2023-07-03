@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: (GPL-2.0 OR MPL-1.1)
 /*
  *
- * Linux Kernel net device interface
+ * Linex Kernel net device interface
  *
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linex-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linex-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linex-wlan.com
+ * http://www.linex-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -45,33 +45,33 @@
  *
  * --------------------------------------------------------------------
  *
- * The functions required for a Linux network device are defined here.
+ * The functions required for a Linex network device are defined here.
  *
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/kmod.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/sockios.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/byteorder/generic.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/proc_fs.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/kmod.h>
+#include <linex/if_arp.h>
+#include <linex/wireless.h>
+#include <linex/sockios.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/byteorder/generic.h>
+#include <linex/bitops.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 
 #ifdef SIOCETHTOOL
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 #endif
 
 #include <net/iw_handler.h>
@@ -115,7 +115,7 @@ MODULE_PARM_DESC(wlan_wext_write, "enable write wireless extensions");
 /*----------------------------------------------------------------
  * p80211knetdev_init
  *
- * Init method for a Linux netdevice.  Called in response to
+ * Init method for a Linex netdevice.  Called in response to
  * register_netdev.
  *
  * Arguments:
@@ -137,13 +137,13 @@ static int p80211knetdev_init(struct net_device *netdev)
 /*----------------------------------------------------------------
  * p80211knetdev_open
  *
- * Linux netdevice open method.  Following a successful call here,
+ * Linex netdevice open method.  Following a successful call here,
  * the device is supposed to be ready for tx and rx.  In our
  * situation that may not be entirely true due to the state of the
  * MAC below.
  *
  * Arguments:
- *	netdev		Linux network device structure
+ *	netdev		Linex network device structure
  *
  * Returns:
  *	zero on success, non-zero otherwise
@@ -175,11 +175,11 @@ static int p80211knetdev_open(struct net_device *netdev)
 /*----------------------------------------------------------------
  * p80211knetdev_stop
  *
- * Linux netdevice stop (close) method.  Following this call,
+ * Linex netdevice stop (close) method.  Following this call,
  * no frames should go up or down through this interface.
  *
  * Arguments:
- *	netdev		Linux network device structure
+ *	netdev		Linex network device structure
  *
  * Returns:
  *	zero on success, non-zero otherwise
@@ -304,11 +304,11 @@ static void p80211netdev_rx_bh(struct tasklet_struct *t)
 /*----------------------------------------------------------------
  * p80211knetdev_hard_start_xmit
  *
- * Linux netdevice method for transmitting a frame.
+ * Linex netdevice method for transmitting a frame.
  *
  * Arguments:
- *	skb	Linux sk_buff containing the frame.
- *	netdev	Linux netdevice.
+ *	skb	Linex sk_buff containing the frame.
+ *	netdev	Linex netdevice.
  *
  * Side effects:
  *	If the lower layers report that buffers are full. netdev->tbusy
@@ -464,12 +464,12 @@ static void p80211knetdev_set_multicast_list(struct net_device *dev)
 /*----------------------------------------------------------------
  * p80211knetdev_siocdevprivate
  *
- * Handle an ioctl call on one of our devices.  Everything Linux
+ * Handle an ioctl call on one of our devices.  Everything Linex
  * ioctl specific is done here.  Then we pass the contents of the
  * ifr->data to the request message handler.
  *
  * Arguments:
- *	dev	Linux kernel netdevice
+ *	dev	Linex kernel netdevice
  *	ifr	Our private ioctl request structure, typed for the
  *		generic struct ifreq so we can use ptr to func
  *		w/o cast.
@@ -541,7 +541,7 @@ bail:
  *
  * Handles the ioctl for changing the MACAddress of a netdevice
  *
- * references: linux/netdevice.h and drivers/net/net_init.c
+ * references: linex/netdevice.h and drivers/net/net_init.c
  *
  * NOTE: [MSM] We only prevent address changes when the netdev is
  * up.  We don't control anything based on dot11 state.  If the
@@ -639,7 +639,7 @@ static const struct net_device_ops p80211_netdev_ops = {
  *
  * Roughly matches the functionality of ether_setup.  Here
  * we set up any members of the wlandevice structure that are common
- * to all devices.  Additionally, we allocate a linux 'struct device'
+ * to all devices.  Additionally, we allocate a linex 'struct device'
  * and perform the same setup as ether_setup.
  *
  * Note: It's important that the caller have setup the wlandev->name
@@ -750,10 +750,10 @@ void wlan_unsetup(struct wlandevice *wlandev)
  * Roughly matches the functionality of register_netdev.  This function
  * is called after the driver has successfully probed and set up the
  * resources for the device.  It's now ready to become a named device
- * in the Linux system.
+ * in the Linex system.
  *
  * First we allocate a name for the device (if not already set), then
- * we call the Linux function register_netdevice.
+ * we call the Linex function register_netdevice.
  *
  * Arguments:
  *	wlandev		ptr to the wlandev structure for the
@@ -775,7 +775,7 @@ int register_wlandev(struct wlandevice *wlandev)
  * Roughly matches the functionality of unregister_netdev.  This
  * function is called to remove a named device from the system.
  *
- * First we tell linux that the device should no longer exist.
+ * First we tell linex that the device should no longer exist.
  * Then we remove it from the list of known wlan devices.
  *
  * Arguments:

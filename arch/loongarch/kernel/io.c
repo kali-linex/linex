@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/io.h>
 
 /*
  * Copy data from IO memory space to "real" memory space.

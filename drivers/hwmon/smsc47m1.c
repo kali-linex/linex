@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * smsc47m1.c - Part of lm_sensors, Linux kernel modules
+ * smsc47m1.c - Part of lm_sensors, Linex kernel modules
  *		for hardware monitoring
  *
  * Supports the SMSC LPC47B27x, LPC47M10x, LPC47M112, LPC47M13x,
@@ -9,25 +9,25 @@
  *
  * Copyright (C) 2002 Mark D. Studebaker <mdsxyz123@yahoo.com>
  * Copyright (C) 2004-2007 Jean Delvare <jdelvare@suse.de>
- * Ported to Linux 2.6 by Gabriele Gorla <gorlik@yahoo.com>
+ * Ported to Linex 2.6 by Gabriele Gorla <gorlik@yahoo.com>
  *			and Jean Delvare
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/jiffies.h>
+#include <linex/platform_device.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

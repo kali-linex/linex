@@ -9,11 +9,11 @@
  * Copyright 1999 D. Jeff Dionne <jeff@rt-control.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
 #include <asm/traps.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

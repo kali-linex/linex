@@ -9,10 +9,10 @@
  *
  * You could find the datasheet in Documentation/arch/arm/sunxi.rst
  */
-#include <linux/bottom_half.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
+#include <linex/bottom_half.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/scatterlist.h>
 #include <crypto/internal/hash.h>
 #include <crypto/hmac.h>
 #include <crypto/scatterwalk.h>

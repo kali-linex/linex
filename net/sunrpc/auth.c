@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/auth.c
+ * linex/net/sunrpc/auth.c
  *
  * Generic RPC client authentication API.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hash.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/spinlock.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/hash.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/gss_api.h>
+#include <linex/spinlock.h>
 
 #include <trace/events/sunrpc.h>
 

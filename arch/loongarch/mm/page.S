@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm.h>
 #include <asm/export.h>
 #include <asm/page.h>

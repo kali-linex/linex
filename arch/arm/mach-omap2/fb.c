@@ -6,15 +6,15 @@
  * Author: Imre Deak <imre.deak@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/io.h>
-#include <linux/omapfb.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/memblock.h>
+#include <linex/io.h>
+#include <linex/omapfb.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/mach/map.h>
 

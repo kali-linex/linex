@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/lib/uaccess_with_memcpy.c
+ *  linex/arch/arm/lib/uaccess_with_memcpy.c
  *
  *  Written by: Lennert Buytenhek and Nicolas Pitre
  *  Copyright (C) 2009 Marvell Semiconductor
  */
 
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
-#include <linux/rwsem.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/hardirq.h> /* for in_atomic() */
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
+#include <linex/kernel.h>
+#include <linex/ctype.h>
+#include <linex/uaccess.h>
+#include <linex/rwsem.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/hardirq.h> /* for in_atomic() */
+#include <linex/gfp.h>
+#include <linex/highmem.h>
+#include <linex/hugetlb.h>
 #include <asm/current.h>
 #include <asm/page.h>
 
@@ -223,7 +223,7 @@ unsigned long arm_clear_user(void __user *addr, unsigned long n)
  * for results to make some sense.
  */
 
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
 static int __init test_size_treshold(void)
 {

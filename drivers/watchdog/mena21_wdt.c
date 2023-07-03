@@ -5,18 +5,18 @@
  * Copyright (C) 2013 MEN Mikro Elektronik Nuernberg GmbH
  *
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
+#include <linex/uaccess.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/of.h>
 
 #define NUM_GPIOS 6
 

@@ -9,7 +9,7 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/random.h>
+#include <linex/random.h>
 
 #include "fscrypt_private.h"
 

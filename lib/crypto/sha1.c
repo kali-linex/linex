@@ -6,11 +6,11 @@
  * This was based on the git SHA1 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
 #include <crypto/sha1.h>
 #include <asm/unaligned.h>
 

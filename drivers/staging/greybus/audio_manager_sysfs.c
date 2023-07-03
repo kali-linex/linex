@@ -5,8 +5,8 @@
  * Copyright 2015-2016 Google Inc.
  */
 
-#include <linux/string.h>
-#include <linux/sysfs.h>
+#include <linex/string.h>
+#include <linex/sysfs.h>
 
 #include "audio_manager.h"
 #include "audio_manager_private.h"

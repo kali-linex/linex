@@ -10,18 +10,18 @@
 #include <drm/drm_probe_helper.h>
 #include <video/mipi_display.h>
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
-#include <linux/phy/phy-mipi-dphy.h>
+#include <linex/phy/phy-mipi-dphy.h>
 
 #include "cdns-dsi-core.h"
 #ifdef CONFIG_DRM_CDNS_DSI_J721E

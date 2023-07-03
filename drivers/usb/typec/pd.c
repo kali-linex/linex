@@ -3,11 +3,11 @@
  * USB Power Delivery sysfs entries
  *
  * Copyright (C) 2022, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/slab.h>
-#include <linux/usb/pd.h>
+#include <linex/slab.h>
+#include <linex/usb/pd.h>
 
 #include "pd.h"
 

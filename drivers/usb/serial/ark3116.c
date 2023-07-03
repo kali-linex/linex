@@ -18,19 +18,19 @@
  * bottom of this file.
  */
 
-#include <linux/kernel.h>
-#include <linux/ioctl.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/ioctl.h>
+#include <linex/tty.h>
+#include <linex/slab.h>
+#include <linex/tty_flip.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
+#include <linex/serial.h>
+#include <linex/serial_reg.h>
+#include <linex/uaccess.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
 
 #define DRIVER_AUTHOR "Bart Hartgers <bart.hartgers+ark3116@gmail.com>"
 #define DRIVER_DESC "USB ARK3116 serial/IrDA driver"
@@ -690,7 +690,7 @@ MODULE_DESCRIPTION(DRIVER_DESC);
  * hardware bug or something.
  *
  * According to a patch provided here
- * https://lore.kernel.org/lkml/200907261419.50702.linux@rainbow-software.org
+ * https://lore.kernel.org/lkml/200907261419.50702.linex@rainbow-software.org
  * the ARK3116 can also be used as an IrDA dongle. Since I do not have
  * such a thing, I could not investigate that aspect. However, I can
  * speculate ;-).

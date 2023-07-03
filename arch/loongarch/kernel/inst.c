@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <linex/sizes.h>
+#include <linex/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/inst.h>

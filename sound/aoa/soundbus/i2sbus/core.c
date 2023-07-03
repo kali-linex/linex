@@ -5,13 +5,13 @@
  * Copyright 2006-2008 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include <sound/core.h>
 

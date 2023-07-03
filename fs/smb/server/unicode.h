@@ -22,9 +22,9 @@
 #define _CIFS_UNICODE_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/nls.h>
-#include <linux/unicode.h>
+#include <linex/types.h>
+#include <linex/nls.h>
+#include <linex/unicode.h>
 
 #define  UNIUPR_NOLOWER		/* Example to not expand lower case tables */
 

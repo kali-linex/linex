@@ -8,8 +8,8 @@
 #ifndef _GB_AUDIO_MANAGER_H_
 #define _GB_AUDIO_MANAGER_H_
 
-#include <linux/kobject.h>
-#include <linux/list.h>
+#include <linex/kobject.h>
+#include <linex/list.h>
 
 #define GB_AUDIO_MANAGER_NAME "gb_audio_manager"
 #define GB_AUDIO_MANAGER_MODULE_NAME_LEN 64

@@ -9,13 +9,13 @@
  * Copyright (C) 2009  Matt Fleming
  */
 
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
+#include <linex/vmalloc.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/io.h>
+#include <linex/memblock.h>
+#include <linex/proc_fs.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <asm/addrspace.h>

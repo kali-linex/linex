@@ -5,8 +5,8 @@
 #ifndef _ASM_PGALLOC_H
 #define _ASM_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
 
 #define __HAVE_ARCH_PMD_ALLOC_ONE
 #define __HAVE_ARCH_PUD_ALLOC_ONE

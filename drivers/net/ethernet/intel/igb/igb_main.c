@@ -3,40 +3,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/netdevice.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
-#include <linux/net_tstamp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/if_ether.h>
-#include <linux/prefetch.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/pm_runtime.h>
-#include <linux/etherdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/sctp.h>
+#include <linex/if_ether.h>
+#include <linex/prefetch.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
+#include <linex/pm_runtime.h>
+#include <linex/etherdevice.h>
 #ifdef CONFIG_IGB_DCA
-#include <linux/dca.h>
+#include <linex/dca.h>
 #endif
-#include <linux/i2c.h>
+#include <linex/i2c.h>
 #include "igb.h"
 
 enum queue_mode {

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2010, 2014, 2022 The Linux Foundation. All rights reserved.  */
+/* Copyright (c) 2010, 2014, 2022 The Linex Foundation. All rights reserved.  */
 
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <linex/console.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/init.h>
+#include <linex/kfifo.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
 
 #include <asm/dcc.h>
 #include <asm/processor.h>

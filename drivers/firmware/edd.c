@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/firmware/edd.c
+ * linex/drivers/firmware/edd.c
  *  Copyright (C) 2002, 2003, 2004 Dell Inc.
  *  by Matt Domsch <Matt_Domsch@dell.com>
  *  disk signature by Matt Domsch, Andrew Wilks, and Sandeep K. Shandilya
@@ -16,23 +16,23 @@
  * made in setup.S, copied to safe structures in setup.c,
  * and presents it in sysfs.
  *
- * Please see http://linux.dell.com/edd/results.html for
+ * Please see http://linex.dell.com/edd/results.html for
  * the list of BIOSs which have been reported to implement EDD.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/limits.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/edd.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/stat.h>
+#include <linex/err.h>
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/limits.h>
+#include <linex/device.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/edd.h>
 
 #define EDD_VERSION "0.16"
 #define EDD_DATE    "2004-Jun-25"

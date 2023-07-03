@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 #define LAYERSCAPE_SFP_OTP_OFFSET	0x0200
 

@@ -6,31 +6,31 @@
  * Copyright:	(C) 2012-2013  Linaro Limited
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/interrupt.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/clockchips.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/moduleparam.h>
+#include <linex/atomic.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/interrupt.h>
+#include <linex/cpu_pm.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/kthread.h>
+#include <linex/wait.h>
+#include <linex/time.h>
+#include <linex/clockchips.h>
+#include <linex/hrtimer.h>
+#include <linex/tick.h>
+#include <linex/notifier.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/sysfs.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/moduleparam.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cputype.h>

@@ -6,13 +6,13 @@
  *	Stephen Hemminger		<shemminger@osdl.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/etherdevice.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <uapi/linux/if_bridge.h>
+#include <uapi/linex/if_bridge.h>
 
 #include "br_private.h"
 #include "br_private_stp.h"

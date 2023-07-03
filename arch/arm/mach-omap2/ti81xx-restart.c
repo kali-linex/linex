@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/reboot.h>
 
 #include "iomap.h"
 #include "common.h"

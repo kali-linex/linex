@@ -9,15 +9,15 @@
  * Based on w1-ds2760 driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/idr.h>
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 
 #include "w1_ds2780.h"
 

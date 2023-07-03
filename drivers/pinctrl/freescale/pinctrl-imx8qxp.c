@@ -6,14 +6,14 @@
  */
 
 #include <dt-bindings/pinctrl/pads-imx8qxp.h>
-#include <linux/err.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/err.h>
+#include <linex/firmware/imx/sci.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
 
 #include "pinctrl-imx.h"
 

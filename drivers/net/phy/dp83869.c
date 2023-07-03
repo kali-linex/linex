@@ -3,15 +3,15 @@
  * Copyright (C) 2019 Texas Instruments Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/delay.h>
-#include <linux/bitfield.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/phy.h>
+#include <linex/delay.h>
+#include <linex/bitfield.h>
 
 #include <dt-bindings/net/ti-dp83869.h>
 

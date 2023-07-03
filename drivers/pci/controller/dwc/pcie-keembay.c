@@ -4,20 +4,20 @@
  * Copyright (C) 2020 Intel Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/iopoll.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 #include "pcie-designware.h"
 

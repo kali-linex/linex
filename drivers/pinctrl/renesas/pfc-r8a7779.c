@@ -7,7 +7,7 @@
  * Copyright (C) 2013  Cogent Embedded, Inc.
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "sh_pfc.h"
 

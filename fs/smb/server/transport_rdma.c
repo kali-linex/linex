@@ -9,11 +9,11 @@
 
 #define SUBMOD_NAME	"smb_direct"
 
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
+#include <linex/kthread.h>
+#include <linex/list.h>
+#include <linex/mempool.h>
+#include <linex/highmem.h>
+#include <linex/scatterlist.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/rw.h>

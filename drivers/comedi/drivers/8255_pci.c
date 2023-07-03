@@ -8,7 +8,7 @@
  * and the experimental cb_pcidio driver written by:
  *	Yoshiya Matsuzaka
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -52,9 +52,9 @@
  * Configuration Options: not applicable, uses PCI auto config.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/comedi/comedi_pci.h>
+#include <linex/comedi/comedi_8255.h>
 
 enum pci_8255_boardid {
 	BOARD_ADLINK_PCI7224,

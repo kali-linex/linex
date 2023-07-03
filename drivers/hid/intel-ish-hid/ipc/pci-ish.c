@@ -5,19 +5,19 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/sched.h>
+#include <linex/suspend.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/intel_ish.h>
 #include "ishtp-dev.h"
@@ -54,7 +54,7 @@ MODULE_DEVICE_TABLE(pci, ish_pci_tbl);
  * @dev:	ishtp device
  * @format:	printf style format
  *
- * Callback to direct log messages to Linux trace buffers
+ * Callback to direct log messages to Linex trace buffers
  */
 static __printf(2, 3)
 void ish_event_tracer(struct ishtp_device *dev, const char *format, ...)
@@ -399,8 +399,8 @@ module_pci_driver(ish_driver);
 
 /* Original author */
 MODULE_AUTHOR("Daniel Drubin <daniel.drubin@intel.com>");
-/* Adoption to upstream Linux kernel */
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+/* Adoption to upstream Linex kernel */
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 
 MODULE_DESCRIPTION("Intel(R) Integrated Sensor Hub PCI Device Driver");
 MODULE_LICENSE("GPL");

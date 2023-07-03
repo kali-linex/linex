@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The Linex Foundation. All rights reserved.
  */
 
 #ifndef _DP_PARSER_H_
 #define _DP_PARSER_H_
 
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-dp.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
+#include <linex/phy/phy-dp.h>
 
 #include "msm_drv.h"
 

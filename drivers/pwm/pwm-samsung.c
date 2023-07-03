@@ -2,26 +2,26 @@
 /*
  * Copyright (c) 2007 Ben Dooks
  * Copyright (c) 2008 Simtec Electronics
- *     Ben Dooks <ben@simtec.co.uk>, <ben-linux@fluff.org>
+ *     Ben Dooks <ben@simtec.co.uk>, <ben-linex@fluff.org>
  * Copyright (c) 2013 Tomasz Figa <tomasz.figa@gmail.com>
  * Copyright (c) 2017 Samsung Electronics Co., Ltd.
  *
  * PWM driver for Samsung SoCs
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/export.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/time.h>
 
 /* For struct samsung_timer_variant and samsung_pwm_lock. */
 #include <clocksource/samsung_pwm.h>

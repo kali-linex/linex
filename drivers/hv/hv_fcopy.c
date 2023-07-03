@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/nls.h>
-#include <linux/workqueue.h>
-#include <linux/hyperv.h>
-#include <linux/sched.h>
+#include <linex/nls.h>
+#include <linex/workqueue.h>
+#include <linex/hyperv.h>
+#include <linex/sched.h>
 #include <asm/hyperv-tlfs.h>
 
 #include "hyperv_vmbus.h"

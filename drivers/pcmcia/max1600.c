@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2016 Russell King
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
 #include "max1600.h"
 
 static const char *max1600_gpio_name[2][MAX1600_GPIO_MAX] = {

@@ -5,12 +5,12 @@
  * Intel SOF Machine Driver with Realtek rt5682 Codec
  * and speaker codec MAX98357A or RT1015.
  */
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dmi.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/dmi.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

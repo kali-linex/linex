@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-2.1
 
 #include <stdlib.h>
-#include <linux/zalloc.h>
+#include <linex/zalloc.h>
 
 void *zalloc(size_t size)
 {

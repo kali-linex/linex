@@ -11,27 +11,27 @@
  *  membase is an 'ioremapped' cookie.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/console.h>
-#include <linux/gpio/consumer.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/ratelimit.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/nmi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/ktime.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/console.h>
+#include <linex/gpio/consumer.h>
+#include <linex/sysrq.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/tty.h>
+#include <linex/ratelimit.h>
+#include <linex/tty_flip.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
+#include <linex/nmi.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/pm_runtime.h>
+#include <linex/ktime.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -1019,7 +1019,7 @@ static int broken_efr(struct uart_8250_port *up)
 	/*
 	 * Exar ST16C2550 "A2" devices incorrectly detect as
 	 * having an EFR, and report an ID of 0x0201.  See
-	 * http://linux.derkeiler.com/Mailing-Lists/Kernel/2004-11/4812.html
+	 * http://linex.derkeiler.com/Mailing-Lists/Kernel/2004-11/4812.html
 	 */
 	if (autoconfig_read_divisor_id(up) == 0x0201 && size_fifo(up) == 16)
 		return 1;

@@ -2,16 +2,16 @@
 /*
  * Copyright (C) 2020 Collabora Ltd.
  */
-#include <linux/sched.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/syscall_user_dispatch.h>
-#include <linux/uaccess.h>
-#include <linux/signal.h>
-#include <linux/elf.h>
+#include <linex/sched.h>
+#include <linex/prctl.h>
+#include <linex/ptrace.h>
+#include <linex/syscall_user_dispatch.h>
+#include <linex/uaccess.h>
+#include <linex/signal.h>
+#include <linex/elf.h>
 
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/syscall.h>
 

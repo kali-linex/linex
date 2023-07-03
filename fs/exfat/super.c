@@ -3,21 +3,21 @@
  *  Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/mount.h>
-#include <linux/cred.h>
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/fs_struct.h>
-#include <linux/iversion.h>
-#include <linux/nls.h>
-#include <linux/buffer_head.h>
-#include <linux/magic.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/time.h>
+#include <linex/mount.h>
+#include <linex/cred.h>
+#include <linex/statfs.h>
+#include <linex/seq_file.h>
+#include <linex/blkdev.h>
+#include <linex/fs_struct.h>
+#include <linex/iversion.h>
+#include <linex/nls.h>
+#include <linex/buffer_head.h>
+#include <linex/magic.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"

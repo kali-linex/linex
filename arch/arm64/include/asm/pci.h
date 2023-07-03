@@ -2,9 +2,9 @@
 #ifndef __ASM_PCI_H
 #define __ASM_PCI_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/io.h>
 

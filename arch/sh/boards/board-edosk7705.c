@@ -9,14 +9,14 @@
  * Modified for edosk7705 development
  * board by S. Dunn, 2003.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/smc91x.h>
-#include <linux/sh_intc.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/smc91x.h>
+#include <linex/sh_intc.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 #define SMC_IOBASE	0xA2000000
 #define SMC_IO_OFFSET	0x300

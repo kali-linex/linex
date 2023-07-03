@@ -28,9 +28,9 @@
  *    Christian König <christian.koenig@amd.com>
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/mmu_notifier.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/mmu_notifier.h>
 
 #include <drm/drm.h>
 

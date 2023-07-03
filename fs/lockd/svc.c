@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/svc.c
+ * linex/fs/lockd/svc.c
  *
  * This is the central lockd service.
  *
@@ -13,32 +13,32 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sysctl.h>
+#include <linex/moduleparam.h>
 
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/uio.h>
-#include <linux/smp.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/inetdevice.h>
+#include <linex/sched/signal.h>
+#include <linex/errno.h>
+#include <linex/in.h>
+#include <linex/uio.h>
+#include <linex/smp.h>
+#include <linex/mutex.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/inetdevice.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linex/sunrpc/types.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/sunrpc/svcsock.h>
+#include <linex/sunrpc/svc_xprt.h>
 #include <net/ip.h>
 #include <net/addrconf.h>
 #include <net/ipv6.h>
-#include <linux/lockd/lockd.h>
-#include <linux/nfs.h>
+#include <linex/lockd/lockd.h>
+#include <linex/nfs.h>
 
 #include "netns.h"
 #include "procfs.h"

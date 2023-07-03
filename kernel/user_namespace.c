@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_ns.h>
-#include <linux/highuid.h>
-#include <linux/cred.h>
-#include <linux/securebits.h>
-#include <linux/security.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <linex/export.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/user_namespace.h>
+#include <linex/proc_ns.h>
+#include <linex/highuid.h>
+#include <linex/cred.h>
+#include <linex/securebits.h>
+#include <linex/security.h>
+#include <linex/keyctl.h>
+#include <linex/key-type.h>
 #include <keys/user-type.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/projid.h>
-#include <linux/fs_struct.h>
-#include <linux/bsearch.h>
-#include <linux/sort.h>
+#include <linex/seq_file.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
+#include <linex/ctype.h>
+#include <linex/projid.h>
+#include <linex/fs_struct.h>
+#include <linex/bsearch.h>
+#include <linex/sort.h>
 
 static struct kmem_cache *user_ns_cachep __read_mostly;
 static DEFINE_MUTEX(userns_state_mutex);

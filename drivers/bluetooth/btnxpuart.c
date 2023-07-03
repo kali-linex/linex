@@ -4,18 +4,18 @@
  *  Copyright 2023 NXP
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
 
-#include <linux/serdev.h>
-#include <linux/of.h>
-#include <linux/skbuff.h>
+#include <linex/serdev.h>
+#include <linex/of.h>
+#include <linex/skbuff.h>
 #include <asm/unaligned.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/crc8.h>
-#include <linux/crc32.h>
-#include <linux/string_helpers.h>
+#include <linex/firmware.h>
+#include <linex/string.h>
+#include <linex/crc8.h>
+#include <linex/crc32.h>
+#include <linex/string_helpers.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

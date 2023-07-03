@@ -14,9 +14,9 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
 
 #include <media/v4l2-common.h>
 

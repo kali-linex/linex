@@ -10,11 +10,11 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/hdmi.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/hdmi.h>
 #include <drm/drm_edid.h>
 #include <sound/pcm_params.h>
 #include <sound/jack.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * CMOS/NV-RAM driver for Linux
+ * CMOS/NV-RAM driver for Linex
  *
  * Copyright (C) 1997 Roman Hodek <Roman.Hodek@informatik.uni-erlangen.de>
  * idea by and with help from Richard Jelinek <rj@suse.de>
@@ -31,23 +31,23 @@
 
 #define NVRAM_VERSION	"1.3"
 
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
+#include <linex/module.h>
+#include <linex/nvram.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/miscdevice.h>
+#include <linex/ioport.h>
+#include <linex/fcntl.h>
+#include <linex/mc146818rtc.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
+#include <linex/mutex.h>
+#include <linex/pagemap.h>
 
 #ifdef CONFIG_PPC
 #include <asm/nvram.h>

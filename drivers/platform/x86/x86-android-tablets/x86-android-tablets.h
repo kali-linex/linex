@@ -10,9 +10,9 @@
 #ifndef __PDX86_X86_ANDROID_TABLETS_H
 #define __PDX86_X86_ANDROID_TABLETS_H
 
-#include <linux/gpio_keys.h>
-#include <linux/i2c.h>
-#include <linux/irqdomain_defs.h>
+#include <linex/gpio_keys.h>
+#include <linex/i2c.h>
+#include <linex/irqdomain_defs.h>
 
 struct gpio_desc;
 struct gpiod_lookup_table;
@@ -20,7 +20,7 @@ struct platform_device_info;
 struct software_node;
 
 /*
- * Helpers to get Linux IRQ numbers given a description of the IRQ source
+ * Helpers to get Linex IRQ numbers given a description of the IRQ source
  * (either IOAPIC index, or GPIO chip name + pin-number).
  */
 enum x86_acpi_irq_type {

@@ -4,15 +4,15 @@
  * Author: Chi-Fang Li <cfli0@nuvoton.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/container_of.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/clk-provider.h>
+#include <linex/container_of.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/math64.h>
+#include <linex/slab.h>
+#include <linex/units.h>
 #include <dt-bindings/clock/nuvoton,ma35d1-clk.h>
 
 #include "clk-ma35d1.h"

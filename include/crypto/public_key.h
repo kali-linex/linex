@@ -7,11 +7,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_PUBLIC_KEY_H
-#define _LINUX_PUBLIC_KEY_H
+#ifndef _LINEX_PUBLIC_KEY_H
+#define _LINEX_PUBLIC_KEY_H
 
-#include <linux/keyctl.h>
-#include <linux/oid_registry.h>
+#include <linex/keyctl.h>
+#include <linex/oid_registry.h>
 
 /*
  * Cryptographic data for the public-key subtype of the asymmetric key type.
@@ -109,4 +109,4 @@ int public_key_verify_signature(const struct public_key *pkey,
 }
 #endif
 
-#endif /* _LINUX_PUBLIC_KEY_H */
+#endif /* _LINEX_PUBLIC_KEY_H */

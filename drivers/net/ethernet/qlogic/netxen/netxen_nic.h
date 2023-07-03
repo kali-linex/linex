@@ -8,24 +8,24 @@
 #ifndef _NETXEN_NIC_H_
 #define _NETXEN_NIC_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/tcp.h>
+#include <linex/skbuff.h>
+#include <linex/firmware.h>
 
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/timer.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/timer.h>
 
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -33,10 +33,10 @@
 #include "netxen_nic_hdr.h"
 #include "netxen_nic_hw.h"
 
-#define _NETXEN_NIC_LINUX_MAJOR 4
-#define _NETXEN_NIC_LINUX_MINOR 0
-#define _NETXEN_NIC_LINUX_SUBVERSION 82
-#define NETXEN_NIC_LINUX_VERSIONID  "4.0.82"
+#define _NETXEN_NIC_LINEX_MAJOR 4
+#define _NETXEN_NIC_LINEX_MINOR 0
+#define _NETXEN_NIC_LINEX_SUBVERSION 82
+#define NETXEN_NIC_LINEX_VERSIONID  "4.0.82"
 
 #define NETXEN_VERSION_CODE(a, b, c)	(((a) << 24) + ((b) << 16) + (c))
 #define _major(v)	(((v) >> 24) & 0xff)

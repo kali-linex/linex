@@ -17,21 +17,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/workqueue.h>
+#include <linex/slab.h>
+#include <linex/pm.h>
 #ifdef CONFIG_RTC_DRV_DS1374_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linex/fs.h>
+#include <linex/ioctl.h>
+#include <linex/miscdevice.h>
+#include <linex/reboot.h>
+#include <linex/watchdog.h>
 #endif
 
 #define DS1374_REG_TOD0		0x00 /* Time of Day */
@@ -572,7 +572,7 @@ static struct i2c_driver ds1374_driver = {
 		.of_match_table = of_match_ptr(ds1374_of_match),
 		.pm = &ds1374_pm,
 	},
-	.probe = ds1374_probe,
+	.probe_new = ds1374_probe,
 	.remove = ds1374_remove,
 	.id_table = ds1374_id,
 };

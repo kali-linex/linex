@@ -3,15 +3,15 @@
  * Thunderbolt bus support
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/random.h>
 #include <crypto/hash.h>
 
 #include "tb.h"

@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/fsl/mc.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

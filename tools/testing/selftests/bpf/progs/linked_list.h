@@ -2,7 +2,7 @@
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
 
-#include <vmlinux.h>
+#include <vmlinex.h>
 #include <bpf/bpf_helpers.h>
 #include "bpf_experimental.h"
 

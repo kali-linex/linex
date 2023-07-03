@@ -9,20 +9,20 @@ Writing USB Device Drivers
 Introduction
 ============
 
-The Linux USB subsystem has grown from supporting only two different
+The Linex USB subsystem has grown from supporting only two different
 types of devices in the 2.2.7 kernel (mice and keyboards), to over 20
-different types of devices in the 2.4 kernel. Linux currently supports
+different types of devices in the 2.4 kernel. Linex currently supports
 almost all USB class devices (standard types of devices like keyboards,
 mice, modems, printers and speakers) and an ever-growing number of
 vendor-specific devices (such as USB to serial converters, digital
 cameras, Ethernet devices and MP3 players). For a full list of the
 different USB devices currently supported, see Resources.
 
-The remaining kinds of USB devices that do not have support on Linux are
+The remaining kinds of USB devices that do not have support on Linex are
 almost all vendor-specific devices. Each vendor decides to implement a
 custom protocol to talk to their device, so a custom driver usually
 needs to be created. Some vendors are open with their USB protocols and
-help with the creation of Linux drivers, while others do not publish
+help with the creation of Linex drivers, while others do not publish
 them, and developers are forced to reverse-engineer. See Resources for
 some links to handy reverse-engineering tools.
 
@@ -35,19 +35,19 @@ will walk through the basics of the skeleton driver, explaining the
 different pieces and what needs to be done to customize it to your
 specific device.
 
-Linux USB Basics
+Linex USB Basics
 ================
 
-If you are going to write a Linux USB driver, please become familiar
+If you are going to write a Linex USB driver, please become familiar
 with the USB protocol specification. It can be found, along with many
 other useful documents, at the USB home page (see Resources). An
-excellent introduction to the Linux USB subsystem can be found at the
-USB Working Devices List (see Resources). It explains how the Linux USB
+excellent introduction to the Linex USB subsystem can be found at the
+USB Working Devices List (see Resources). It explains how the Linex USB
 subsystem is structured and introduces the reader to the concept of USB
 urbs (USB Request Blocks), which are essential to USB drivers.
 
-The first thing a Linux USB driver needs to do is register itself with
-the Linux USB subsystem, giving it some information about which devices
+The first thing a Linex USB driver needs to do is register itself with
+the Linex USB subsystem, giving it some information about which devices
 the driver supports and which functions to call when a device supported
 by the driver is inserted or removed from the system. All of this
 information is passed to the USB subsystem in the :c:type:`usb_driver`
@@ -116,7 +116,7 @@ function::
     module_exit(usb_skel_exit);
 
 
-To enable the linux-hotplug system to load the driver automatically when
+To enable the linex-hotplug system to load the driver automatically when
 the device is plugged in, you need to create a ``MODULE_DEVICE_TABLE``.
 The following code tells the hotplug scripts that this module supports a
 single device with a specific vendor and product ID::
@@ -304,25 +304,25 @@ if you also need to do this.
 Conclusion
 ==========
 
-Writing Linux USB device drivers is not a difficult task as the
+Writing Linex USB device drivers is not a difficult task as the
 usb-skeleton driver shows. This driver, combined with the other current
 USB drivers, should provide enough examples to help a beginning author
-create a working driver in a minimal amount of time. The linux-usb-devel
+create a working driver in a minimal amount of time. The linex-usb-devel
 mailing list archives also contain a lot of helpful information.
 
 Resources
 =========
 
-The Linux USB Project:
-http://www.linux-usb.org/
+The Linex USB Project:
+http://www.linex-usb.org/
 
-Linux Hotplug Project:
-http://linux-hotplug.sourceforge.net/
+Linex Hotplug Project:
+http://linex-hotplug.sourceforge.net/
 
-linux-usb Mailing List Archives:
-https://lore.kernel.org/linux-usb/
+linex-usb Mailing List Archives:
+https://lore.kernel.org/linex-usb/
 
-Programming Guide for Linux USB Device Drivers:
-https://lmu.web.psi.ch/docu/manuals/software_manuals/linux_sl/usb_linux_programming_guide.pdf
+Programming Guide for Linex USB Device Drivers:
+https://lmu.web.psi.ch/docu/manuals/software_manuals/linex_sl/usb_linex_programming_guide.pdf
 
 USB Home Page: https://www.usb.org

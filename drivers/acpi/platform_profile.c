@@ -2,12 +2,12 @@
 
 /* Platform profile sysfs interface */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_profile.h>
-#include <linux/sysfs.h>
+#include <linex/acpi.h>
+#include <linex/bits.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/platform_profile.h>
+#include <linex/sysfs.h>
 
 static struct platform_profile_handler *cur_profile;
 static DEFINE_MUTEX(profile_lock);

@@ -5,13 +5,13 @@
  * Copyright (c) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/mfd/atc260x/core.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linex/delay.h>
+#include <linex/mfd/atc260x/core.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
 
 struct atc260x_pwrc {
 	struct device *dev;

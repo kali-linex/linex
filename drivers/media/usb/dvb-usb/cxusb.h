@@ -2,12 +2,12 @@
 #ifndef _DVB_USB_CXUSB_H_
 #define _DVB_USB_CXUSB_H_
 
-#include <linux/completion.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linex/completion.h>
+#include <linex/i2c.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/usb.h>
+#include <linex/workqueue.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

@@ -5,32 +5,32 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel Linex Wireless <ilw@linex.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 #ifndef _IPW2100_H
 #define _IPW2100_H
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/list.h>
+#include <linex/delay.h>
+#include <linex/skbuff.h>
 #include <asm/io.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
+#include <linex/socket.h>
+#include <linex/if_arp.h>
+#include <linex/wireless.h>
 #include <net/iw_handler.h>	// new driver API
 
 #ifdef CONFIG_IPW2100_MONITOR
 #include <net/ieee80211_radiotap.h>
 #endif
 
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
 
 #include "libipw.h"
 

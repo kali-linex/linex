@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/types.h>
-#include <linux/seq_file.h>
+#include <linex/types.h>
+#include <linex/seq_file.h>
 
 struct flag_info {
 	u64		mask;

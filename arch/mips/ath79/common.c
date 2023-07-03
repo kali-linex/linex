@@ -9,10 +9,10 @@
  *  Parts of this file are based on Atheros' 2.6.15/2.6.31 BSP
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
 
 #include <asm/mach-ath79/ath79.h>
 #include <asm/mach-ath79/ar71xx_regs.h>

@@ -5,13 +5,13 @@
  * Copyright 2019 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/imu/adis.h>
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 #define ADIS16460_REG_FLASH_CNT		0x00
 #define ADIS16460_REG_DIAG_STAT		0x02

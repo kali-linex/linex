@@ -32,7 +32,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "mlx4.h"
 #include "fw.h"

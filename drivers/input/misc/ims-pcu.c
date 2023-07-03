@@ -5,18 +5,18 @@
  * Copyright (C) 2013 The IMS Company
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/usb/input.h>
-#include <linux/usb/cdc.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/ihex.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/usb/input.h>
+#include <linex/usb/cdc.h>
 #include <asm/unaligned.h>
 
 #define IMS_PCU_KEYMAP_LEN		32

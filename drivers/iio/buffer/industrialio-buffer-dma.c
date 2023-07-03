@@ -4,18 +4,18 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
-#include <linux/iio/buffer_impl.h>
-#include <linux/iio/buffer-dma.h>
-#include <linux/dma-mapping.h>
-#include <linux/sizes.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/poll.h>
+#include <linex/iio/buffer_impl.h>
+#include <linex/iio/buffer-dma.h>
+#include <linex/dma-mapping.h>
+#include <linex/sizes.h>
 
 /*
  * For DMA buffers the storage is sub-divided into so called blocks. Each block

@@ -7,14 +7,14 @@
  *
  *  With cleanup by Paul van Gool <pvangool@mimotech.com>, 2003.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/io.h>
 #include "pci-sh4.h"
 #include <asm/addrspace.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 static int __init __area_sdram_check(struct pci_channel *chan,
 				     unsigned int area)

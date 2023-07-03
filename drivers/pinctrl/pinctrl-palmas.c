@@ -7,19 +7,19 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mfd/palmas.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/pm.h>
+#include <linex/slab.h>
 
 #include "core.h"
 #include "pinconf.h"

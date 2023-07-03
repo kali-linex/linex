@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Dan Scally <djrscally@gmail.com> */
 
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/slab.h>
 
 #include "common.h"
 

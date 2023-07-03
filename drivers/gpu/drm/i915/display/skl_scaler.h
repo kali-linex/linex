@@ -5,7 +5,7 @@
 #ifndef INTEL_SCALER_H
 #define INTEL_SCALER_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 enum drm_scaling_filter;
 enum pipe;

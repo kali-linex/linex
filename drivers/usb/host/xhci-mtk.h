@@ -9,9 +9,9 @@
 #ifndef _XHCI_MTK_H_
 #define _XHCI_MTK_H_
 
-#include <linux/clk.h>
-#include <linux/hashtable.h>
-#include <linux/regulator/consumer.h>
+#include <linex/clk.h>
+#include <linex/hashtable.h>
+#include <linex/regulator/consumer.h>
 
 #include "xhci.h"
 

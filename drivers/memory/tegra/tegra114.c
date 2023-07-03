@@ -3,8 +3,8 @@
  * Copyright (C) 2014 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/of.h>
-#include <linux/mm.h>
+#include <linex/of.h>
+#include <linex/mm.h>
 
 #include <dt-bindings/memory/tegra114-mc.h>
 

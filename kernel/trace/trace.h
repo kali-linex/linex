@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#ifndef _LINUX_KERNEL_TRACE_H
-#define _LINUX_KERNEL_TRACE_H
+#ifndef _LINEX_KERNEL_TRACE_H
+#define _LINEX_KERNEL_TRACE_H
 
-#include <linux/fs.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/clocksource.h>
-#include <linux/ring_buffer.h>
-#include <linux/mmiotrace.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/trace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/trace_seq.h>
-#include <linux/trace_events.h>
-#include <linux/compiler.h>
-#include <linux/glob.h>
-#include <linux/irq_work.h>
-#include <linux/workqueue.h>
-#include <linux/ctype.h>
-#include <linux/once_lite.h>
+#include <linex/fs.h>
+#include <linex/atomic.h>
+#include <linex/sched.h>
+#include <linex/clocksource.h>
+#include <linex/ring_buffer.h>
+#include <linex/mmiotrace.h>
+#include <linex/tracepoint.h>
+#include <linex/ftrace.h>
+#include <linex/trace.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/trace_seq.h>
+#include <linex/trace_events.h>
+#include <linex/compiler.h>
+#include <linex/glob.h>
+#include <linex/irq_work.h>
+#include <linex/workqueue.h>
+#include <linex/ctype.h>
+#include <linex/once_lite.h>
 
 #include "pid_list.h"
 
@@ -1732,7 +1732,7 @@ struct event_trigger_ops {
  *	commands need to do this if they themselves log to the trace
  *	buffer (see the @post_trigger() member below).  @trigger_type
  *	values are defined by adding new values to the trigger_type
- *	enum in include/linux/trace_events.h.
+ *	enum in include/linex/trace_events.h.
  *
  * @flags: See the enum event_command_flags below.
  *
@@ -2034,4 +2034,4 @@ static inline int rv_init_interface(void)
 }
 #endif
 
-#endif /* _LINUX_KERNEL_TRACE_H */
+#endif /* _LINEX_KERNEL_TRACE_H */

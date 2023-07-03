@@ -32,11 +32,11 @@
 #include <nvif/clb069.h>
 #include <nvif/ifc00d.h>
 
-#include <linux/sched/mm.h>
-#include <linux/sort.h>
-#include <linux/hmm.h>
-#include <linux/memremap.h>
-#include <linux/rmap.h>
+#include <linex/sched/mm.h>
+#include <linex/sort.h>
+#include <linex/hmm.h>
+#include <linex/memremap.h>
+#include <linex/rmap.h>
 
 struct nouveau_svm {
 	struct nouveau_drm *drm;

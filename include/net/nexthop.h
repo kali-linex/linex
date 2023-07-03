@@ -6,13 +6,13 @@
  * Copyright (c) 2017-19 David Ahern <dsa@cumulusnetworks.com>
  */
 
-#ifndef __LINUX_NEXTHOP_H
-#define __LINUX_NEXTHOP_H
+#ifndef __LINEX_NEXTHOP_H
+#define __LINEX_NEXTHOP_H
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/route.h>
-#include <linux/types.h>
+#include <linex/netdevice.h>
+#include <linex/notifier.h>
+#include <linex/route.h>
+#include <linex/types.h>
 #include <net/ip_fib.h>
 #include <net/ip6_fib.h>
 #include <net/netlink.h>

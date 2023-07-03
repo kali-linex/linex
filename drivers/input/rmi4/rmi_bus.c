@@ -4,16 +4,16 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/pm.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/list.h>
+#include <linex/pm.h>
+#include <linex/rmi.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/of.h>
 #include "rmi_bus.h"
 #include "rmi_driver.h"
 

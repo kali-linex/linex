@@ -5,10 +5,10 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/align.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/align.h>
 
 #include "hwio.h"
 #include "wfx.h"

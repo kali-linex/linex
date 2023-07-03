@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
 #include "internal.h"
 #include <trace/events/fscache.h>
 

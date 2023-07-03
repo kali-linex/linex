@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kvm.h>
-#include <linux/psp-sev.h>
+#include <linex/kvm.h>
+#include <linex/psp-sev.h>
 #include <stdio.h>
 #include <sys/ioctl.h>
 #include <stdlib.h>

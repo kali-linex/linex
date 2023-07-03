@@ -12,19 +12,19 @@
  * and mono/stereo Class-D speaker driver.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/i2c.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/acpi.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

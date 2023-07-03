@@ -10,12 +10,12 @@
  * O(1) scheduler patch
  */
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _LINEX_BITOPS_H
+#error only <linex/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 #include <asm/intrinsics.h>
 #include <asm/barrier.h>
 

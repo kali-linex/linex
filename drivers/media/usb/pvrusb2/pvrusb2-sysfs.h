@@ -6,8 +6,8 @@
 #ifndef __PVRUSB2_SYSFS_H
 #define __PVRUSB2_SYSFS_H
 
-#include <linux/list.h>
-#include <linux/sysfs.h>
+#include <linex/list.h>
+#include <linex/sysfs.h>
 #include "pvrusb2-context.h"
 
 #ifdef CONFIG_VIDEO_PVRUSB2_SYSFS

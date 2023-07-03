@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2018 Quantenna Communications */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/crc32.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/circ_buf.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/crc32.h>
+#include <linex/completion.h>
+#include <linex/spinlock.h>
+#include <linex/circ_buf.h>
 
 #include "pcie_priv.h"
 #include "topaz_pcie_regs.h"

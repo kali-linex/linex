@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/interval_tree.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <linex/interval_tree.h>
+#include <linex/interval_tree_generic.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
 
 #define START(node) ((node)->start)
 #define LAST(node)  ((node)->last)

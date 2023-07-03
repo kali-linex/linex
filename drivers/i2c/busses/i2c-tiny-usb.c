@@ -6,17 +6,17 @@
  * Copyright (C) 2006-2007 Till Harbaum (Till@Harbaum.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 /* include interfaces to usb layer */
-#include <linux/usb.h>
+#include <linex/usb.h>
 
 /* include interface to i2c layer */
-#include <linux/i2c.h>
+#include <linex/i2c.h>
 
 /* commands via USB, must match command ids in the firmware */
 #define CMD_ECHO		0

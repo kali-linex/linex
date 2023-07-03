@@ -4,18 +4,18 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/clk.h>
+#include <linex/of_platform.h>
+#include <linex/of_irq.h>
+#include <linex/of_pci.h>
 
 #include <asm/addrspace.h>
 

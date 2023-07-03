@@ -14,28 +14,28 @@
  * - Low power mode
  * - USB wakeup
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/extcon.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/of.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/ehci_def.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/extcon.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/chipidea.h>
+#include <linex/usb/of.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
+#include <linex/usb/ehci_def.h>
 
 #include "ci.h"
 #include "udc.h"

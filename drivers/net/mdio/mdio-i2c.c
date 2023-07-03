@@ -10,10 +10,10 @@
  * our PHY drivers access to these PHYs, and so allowing configuration
  * of their settings.
  */
-#include <linux/i2c.h>
-#include <linux/mdio/mdio-i2c.h>
-#include <linux/phy.h>
-#include <linux/sfp.h>
+#include <linex/i2c.h>
+#include <linex/mdio/mdio-i2c.h>
+#include <linex/phy.h>
+#include <linex/sfp.h>
 
 /*
  * I2C bus addresses 0x50 and 0x51 are normally an EEPROM, which is

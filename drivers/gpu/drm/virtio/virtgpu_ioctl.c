@@ -25,9 +25,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/file.h>
-#include <linux/sync_file.h>
-#include <linux/uaccess.h>
+#include <linex/file.h>
+#include <linex/sync_file.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_file.h>
 #include <drm/virtgpu_drm.h>

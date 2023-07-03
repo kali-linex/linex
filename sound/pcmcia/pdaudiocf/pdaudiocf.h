@@ -9,8 +9,8 @@
 #define __PDAUDIOCF_H
 
 #include <sound/pcm.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 

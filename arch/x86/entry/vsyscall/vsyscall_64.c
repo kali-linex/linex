@@ -26,12 +26,12 @@
  * fault to a vsyscall address.
  */
 
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/sched/signal.h>
-#include <linux/mm_types.h>
-#include <linux/syscalls.h>
-#include <linux/ratelimit.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/sched/signal.h>
+#include <linex/mm_types.h>
+#include <linex/syscalls.h>
+#include <linex/ratelimit.h>
 
 #include <asm/vsyscall.h>
 #include <asm/unistd.h>

@@ -34,8 +34,8 @@
 #ifndef MLX5_FPGA_SDK_H
 #define MLX5_FPGA_SDK_H
 
-#include <linux/types.h>
-#include <linux/dma-direction.h>
+#include <linex/types.h>
+#include <linex/dma-direction.h>
 
 /**
  * DOC: Innova SDK

@@ -3,20 +3,20 @@
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/pci.h>
+#include <linex/mutex.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
 
 #define PCH_EVENT_SET	0	/* I2C Interrupt Event Set Status */
 #define PCH_EVENT_NONE	1	/* I2C Interrupt Event Clear Status */

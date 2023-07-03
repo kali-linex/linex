@@ -24,19 +24,19 @@
  *     David Airlie
  */
 
-#include <linux/async.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/vga_switcheroo.h>
+#include <linex/async.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/sysrq.h>
+#include <linex/tty.h>
+#include <linex/vga_switcheroo.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_fb_helper.h>

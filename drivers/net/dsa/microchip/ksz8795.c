@@ -6,21 +6,21 @@
  *	Tristram Ha <Tristram.Ha@microchip.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/gpio.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/microchip-ksz.h>
-#include <linux/phy.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/micrel_phy.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/gpio.h>
+#include <linex/if_vlan.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_data/microchip-ksz.h>
+#include <linex/phy.h>
+#include <linex/etherdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/micrel_phy.h>
 #include <net/dsa.h>
 #include <net/switchdev.h>
-#include <linux/phylink.h>
+#include <linex/phylink.h>
 
 #include "ksz_common.h"
 #include "ksz8795_reg.h"

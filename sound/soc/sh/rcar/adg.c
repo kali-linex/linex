@@ -3,8 +3,8 @@
 // Helper routines for R-Car sound ADG.
 //
 //  Copyright (C) 2013  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
 #include "rsnd.h"
 
 #define CLKA	0

@@ -5,20 +5,20 @@
  * Tzachi Perelstein <tzachi@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mbus.h>
-#include <linux/clk.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/mbus.h>
+#include <linex/clk.h>
+#include <linex/platform_data/usb-ehci-orion.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
 
 #include "ehci.h"
 

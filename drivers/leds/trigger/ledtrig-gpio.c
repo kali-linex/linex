@@ -5,13 +5,13 @@
  * Copyright 2009 Felipe Balbi <me@felipebalbi.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/gpio.h>
+#include <linex/interrupt.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
 #include "../leds.h"
 
 struct gpio_trig_data {

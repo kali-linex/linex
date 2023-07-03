@@ -9,21 +9,21 @@
  *
  * Copyright 2001 - 2004 Tensilica Inc.
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/stringify.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/timer.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/reboot.h>
+#include <linex/kdev_t.h>
+#include <linex/types.h>
+#include <linex/major.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/stringify.h>
+#include <linex/platform_device.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
+#include <linex/timer.h>
 
 #include <asm/processor.h>
 #include <asm/platform.h>
@@ -66,7 +66,7 @@ static struct notifier_block xt2000_restart_block = {
 
 void __init platform_setup(char** cmdline)
 {
-	led_print (0, "LINUX   ");
+	led_print (0, "LINEX   ");
 }
 
 /* Heartbeat. Let the LED blink. */

@@ -10,15 +10,15 @@
  *	Kieran Bingham <kieran.bingham@ideasonboard.com>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_graph.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/v4l2-dv-timings.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

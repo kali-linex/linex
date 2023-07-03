@@ -35,8 +35,8 @@
 #include "gc/gc_11_0_0_sh_mask.h"
 #include <asm/div64.h>
 
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_edid.h>
 #include <drm/drm_fb_helper.h>

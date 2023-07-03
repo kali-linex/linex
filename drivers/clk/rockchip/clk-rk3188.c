@@ -4,11 +4,11 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 #include <dt-bindings/clock/rk3188-cru-common.h>
 #include "clk.h"
 

@@ -10,12 +10,12 @@
 
 */
 
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <linex/fs.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/mutex.h>
 
 #include "b43.h"
 #include "main.h"

@@ -42,9 +42,9 @@ Bugs in the present implementation:
 
 These filesystems are rather similar. Here is a comparison with Minix FS:
 
-* Linux fdisk reports on partitions
+* Linex fdisk reports on partitions
 
-  - Minix FS     0x81 Linux/Minix
+  - Minix FS     0x81 Linex/Minix
   - Xenix FS     ??
   - SystemV FS   ??
   - Coherent FS  0x08 AIX bootable

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: LGPL-2.1 */
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linex.vnet.ibm.com>
  */
 #ifndef FS_9P_XATTR_H
 #define FS_9P_XATTR_H
 
-#include <linux/xattr.h>
+#include <linex/xattr.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

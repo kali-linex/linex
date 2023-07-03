@@ -5,12 +5,12 @@
  *  Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/clkdev.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/clkdev.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
 #include <asm/mach-ralink/ralink_regs.h>
 
 #include <asm/time.h>

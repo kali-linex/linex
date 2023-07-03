@@ -50,8 +50,8 @@
  * netdev functionality.
  */
 
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
+#include <linex/if_vlan.h>
+#include <linex/crc32.h>
 
 #include "opa_vnic_internal.h"
 

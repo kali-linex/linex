@@ -4,12 +4,12 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/seq_file.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
+#include <linex/seq_file.h>
 
 #include <video/omapfb_dss.h>
 

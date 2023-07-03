@@ -7,11 +7,11 @@
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 //
 
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/rt5682.h>

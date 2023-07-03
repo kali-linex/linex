@@ -5,19 +5,19 @@
  * Joel Stanley <joel@jms.id.au>
  */
 
-#include <linux/clk.h>
-#include <linux/gpio/aspeed.h>
-#include <linux/gpio/driver.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linex/clk.h>
+#include <linex/gpio/aspeed.h>
+#include <linex/gpio/driver.h>
+#include <linex/hashtable.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
 
 #include <asm/div64.h>
 
@@ -27,7 +27,7 @@
  * the aspeed specific API which allows the coprocessor to request
  * access to some GPIOs and to arbitrate between coprocessor and ARM.
  */
-#include <linux/gpio/consumer.h>
+#include <linex/gpio/consumer.h>
 #include "gpiolib.h"
 
 struct aspeed_bank_props {

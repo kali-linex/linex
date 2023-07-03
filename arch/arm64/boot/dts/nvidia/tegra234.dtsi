@@ -2252,7 +2252,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <8>;
+			linex,pci-domain = <8>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX2_C8_CORE>;
 			clock-names = "core";
@@ -2306,7 +2306,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <9>;
+			linex,pci-domain = <9>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX2_C9_CORE>;
 			clock-names = "core";
@@ -2360,7 +2360,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <10>;
+			linex,pci-domain = <10>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX2_C10_CORE>;
 			clock-names = "core";
@@ -2452,7 +2452,7 @@
 			device_type = "pci";
 			num-lanes = <1>;
 			num-viewport = <8>;
-			linux,pci-domain = <1>;
+			linex,pci-domain = <1>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX0_C1_CORE>;
 			clock-names = "core";
@@ -2506,7 +2506,7 @@
 			device_type = "pci";
 			num-lanes = <1>;
 			num-viewport = <8>;
-			linux,pci-domain = <2>;
+			linex,pci-domain = <2>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX0_C2_CORE>;
 			clock-names = "core";
@@ -2560,7 +2560,7 @@
 			device_type = "pci";
 			num-lanes = <1>;
 			num-viewport = <8>;
-			linux,pci-domain = <3>;
+			linex,pci-domain = <3>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX0_C3_CORE>;
 			clock-names = "core";
@@ -2614,7 +2614,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <4>;
+			linex,pci-domain = <4>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX0_C4_CORE>;
 			clock-names = "core";
@@ -2668,7 +2668,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <0>;
+			linex,pci-domain = <0>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX0_C0_CORE>;
 			clock-names = "core";
@@ -2722,7 +2722,7 @@
 			device_type = "pci";
 			num-lanes = <8>;
 			num-viewport = <8>;
-			linux,pci-domain = <5>;
+			linex,pci-domain = <5>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX1_C5_CORE>;
 			clock-names = "core";
@@ -2814,7 +2814,7 @@
 			device_type = "pci";
 			num-lanes = <4>;
 			num-viewport = <8>;
-			linux,pci-domain = <6>;
+			linex,pci-domain = <6>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX1_C6_CORE>;
 			clock-names = "core";
@@ -2906,7 +2906,7 @@
 			device_type = "pci";
 			num-lanes = <8>;
 			num-viewport = <8>;
-			linux,pci-domain = <7>;
+			linex,pci-domain = <7>;
 
 			clocks = <&bpmp TEGRA234_CLK_PEX2_C7_CORE>;
 			clock-names = "core";

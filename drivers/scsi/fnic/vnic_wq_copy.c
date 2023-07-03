@@ -4,10 +4,10 @@
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 #include "vnic_wq_copy.h"
 
 void vnic_wq_copy_enable(struct vnic_wq_copy *wq)

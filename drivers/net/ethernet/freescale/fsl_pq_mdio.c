@@ -11,16 +11,16 @@
  * Based on gianfar_mii.c and ucc_geth_mii.c (Li Yang, Kim Phillips)
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/of_address.h>
+#include <linex/of_mdio.h>
+#include <linex/of_device.h>
 
 #include <asm/io.h>
 #if IS_ENABLED(CONFIG_UCC_GETH)

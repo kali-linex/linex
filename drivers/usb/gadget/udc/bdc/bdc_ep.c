@@ -8,31 +8,31 @@
  *
  * Based on drivers under drivers/usb/
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/dmapool.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/dmapool.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/pm.h>
+#include <linex/io.h>
+#include <linex/irq.h>
 #include <asm/unaligned.h>
-#include <linux/platform_device.h>
-#include <linux/usb/composite.h>
+#include <linex/platform_device.h>
+#include <linex/usb/composite.h>
 
 #include "bdc.h"
 #include "bdc_ep.h"

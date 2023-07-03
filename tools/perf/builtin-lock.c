@@ -34,12 +34,12 @@
 #include <limits.h>
 #include <ctype.h>
 
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
-#include <linux/err.h>
-#include <linux/stringify.h>
+#include <linex/list.h>
+#include <linex/hash.h>
+#include <linex/kernel.h>
+#include <linex/zalloc.h>
+#include <linex/err.h>
+#include <linex/stringify.h>
 
 static struct perf_session *session;
 static struct target target;
@@ -2271,8 +2271,8 @@ int cmd_lock(int argc, const char **argv)
 	OPT_INCR('v', "verbose", &verbose, "be more verbose (show symbol address, etc)"),
 	OPT_BOOLEAN('D', "dump-raw-trace", &dump_trace, "dump raw trace in ASCII"),
 	OPT_BOOLEAN('f', "force", &force, "don't complain, do it"),
-	OPT_STRING(0, "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING(0, "vmlinex", &symbol_conf.vmlinex_name,
+		   "file", "vmlinex pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('q', "quiet", &quiet, "Do not show any warnings or messages"),

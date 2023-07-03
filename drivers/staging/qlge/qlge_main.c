@@ -2,43 +2,43 @@
 /*
  * QLogic qlge NIC HBA Driver
  * Copyright (c)  2003-2008 QLogic Corporation
- * Author:     Linux qlge network device driver by
+ * Author:     Linex qlge network device driver by
  *                      Ron Mercer <ron.mercer@qlogic.com>
  */
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/pagemap.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/dmapool.h>
+#include <linex/mempool.h>
+#include <linex/spinlock.h>
+#include <linex/kthread.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/prefetch.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/if_arp.h>
+#include <linex/if_ether.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/skbuff.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/prefetch.h>
 #include <net/ip6_checksum.h>
 
 #include "qlge.h"

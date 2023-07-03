@@ -5,7 +5,7 @@
  * and onward.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/export.h>
 
 	.text

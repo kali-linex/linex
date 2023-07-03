@@ -9,12 +9,12 @@
 #ifndef SPUFS_H
 #define SPUFS_H
 
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/cpumask.h>
-#include <linux/sched/signal.h>
+#include <linex/kref.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/fs.h>
+#include <linex/cpumask.h>
+#include <linex/sched/signal.h>
 
 #include <asm/spu.h>
 #include <asm/spu_csa.h>

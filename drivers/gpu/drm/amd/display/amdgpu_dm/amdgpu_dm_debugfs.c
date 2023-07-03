@@ -23,8 +23,8 @@
  *
  */
 
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
+#include <linex/string_helpers.h>
+#include <linex/uaccess.h>
 
 #include "dc.h"
 #include "amdgpu.h"

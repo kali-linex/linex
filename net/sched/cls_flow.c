@@ -5,19 +5,19 @@
  * Copyright (c) 2007, 2008 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/pkt_cls.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
+#include <linex/pkt_cls.h>
+#include <linex/skbuff.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/if_vlan.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <net/inet_sock.h>
 
 #include <net/pkt_cls.h>

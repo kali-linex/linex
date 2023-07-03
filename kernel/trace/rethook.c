@@ -2,13 +2,13 @@
 
 #define pr_fmt(fmt) "rethook: " fmt
 
-#include <linux/bug.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/preempt.h>
-#include <linux/rethook.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linex/bug.h>
+#include <linex/kallsyms.h>
+#include <linex/kprobes.h>
+#include <linex/preempt.h>
+#include <linex/rethook.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
 
 /* Return hook list (shadow stack by list) */
 

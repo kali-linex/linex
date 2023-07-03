@@ -5,9 +5,9 @@
  * Copyright (c) 2023 Keguang Zhang <keguang.zhang@gmail.com>
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/sizes.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/sizes.h>
 #include "timer-of.h"
 
 /* Loongson-1 PWM Timer Register Definitions */

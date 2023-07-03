@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/*  linux/arch/sparc/kernel/process.c
+/*  linex/arch/sparc/kernel/process.c
  *
  *  Copyright (C) 1995, 2008 David S. Miller (davem@davemloft.net)
  *  Copyright (C) 1996 Eddie C. Dost   (ecd@skynet.be)
@@ -8,28 +8,28 @@
 /*
  * This file handles the architecture-dependent parts of process handling..
  */
-#include <linux/elfcore.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <linex/elfcore.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/smp.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
 
 #include <asm/auxio.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/delay.h>
 #include <asm/processor.h>

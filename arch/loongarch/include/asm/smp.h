@@ -6,11 +6,11 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/linkage.h>
+#include <linex/threads.h>
+#include <linex/cpumask.h>
 
 extern int smp_num_siblings;
 extern int num_processors;

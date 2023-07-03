@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/uaccess.h>
+#include <linex/sched.h>
+#include <linex/stacktrace.h>
+#include <linex/uaccess.h>
 
 #include <asm/stacktrace.h>
 #include <asm/unwind.h>

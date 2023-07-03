@@ -5,13 +5,13 @@
  * Copyright 2006-2013 Solarflare Communications Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/crc32.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/crc32.h>
 #include "net_driver.h"
 #include "bitfield.h"
 #include "efx.h"

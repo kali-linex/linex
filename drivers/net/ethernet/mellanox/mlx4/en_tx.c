@@ -32,17 +32,17 @@
  */
 
 #include <asm/page.h>
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/vmalloc.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/mlx4/cq.h>
+#include <linex/slab.h>
+#include <linex/mlx4/qp.h>
+#include <linex/skbuff.h>
+#include <linex/if_vlan.h>
+#include <linex/prefetch.h>
+#include <linex/vmalloc.h>
+#include <linex/tcp.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/indirect_call_wrapper.h>
 #include <net/ipv6.h>
 
 #include "mlx4_en.h"

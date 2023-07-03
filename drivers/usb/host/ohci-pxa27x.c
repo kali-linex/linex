@@ -20,23 +20,23 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/of_gpio.h>
+#include <linex/platform_data/usb-ohci-pxa27x.h>
+#include <linex/platform_data/pxa2xx_udc.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/signal.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/otg.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include "ohci.h"
 

@@ -11,8 +11,8 @@
 #include "../../perf.h"
 #include <stdlib.h>
 #include <string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linex/time64.h>
+#include <linex/zalloc.h>
 
 static u64 context_len = 10 * NSEC_PER_MSEC;
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
 
 #define SYS_TPIDR2 "S3_3_C13_C0_5"
 

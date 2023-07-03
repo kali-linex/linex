@@ -10,21 +10,21 @@
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/atmdev.h>
+#include <linex/sonet.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/capability.h>
+#include <linex/slab.h>
 #include <asm/param.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 
 #include "suni.h"
 

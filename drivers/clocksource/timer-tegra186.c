@@ -3,15 +3,15 @@
  * Copyright (c) 2019-2020 NVIDIA Corporation. All rights reserved.
  */
 
-#include <linux/clocksource.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/watchdog.h>
+#include <linex/clocksource.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/watchdog.h>
 
 /* shared registers */
 #define TKETSC0 0x000

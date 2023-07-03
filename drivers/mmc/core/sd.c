@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/sd.c
+ *  linex/drivers/mmc/core/sd.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  SD support Copyright (C) 2004 Ian Molton, All Rights Reserved.
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
  */
 
-#include <linux/err.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/sysfs.h>
+#include <linex/err.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/pm_runtime.h>
+#include <linex/random.h>
+#include <linex/scatterlist.h>
+#include <linex/sysfs.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
 
 #include "core.h"
 #include "card.h"

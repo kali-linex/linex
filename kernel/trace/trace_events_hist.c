@@ -2,20 +2,20 @@
 /*
  * trace_events_hist - trace event hist triggers
  *
- * Copyright (C) 2015 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2015 Tom Zanussi <tom.zanussi@linex.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/rculist.h>
-#include <linux/tracefs.h>
+#include <linex/module.h>
+#include <linex/kallsyms.h>
+#include <linex/security.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/stacktrace.h>
+#include <linex/rculist.h>
+#include <linex/tracefs.h>
 
 /* for gfp flag names */
-#include <linux/trace_events.h>
+#include <linex/trace_events.h>
 #include <trace/events/mmflags.h>
 
 #include "tracing_map.h"

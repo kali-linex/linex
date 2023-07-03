@@ -6,14 +6,14 @@
  * Copyright 2016 Linaro Ltd.
  */
 
-#include <linux/cdev.h>
-#include <linux/completion.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/greybus.h>
+#include <linex/cdev.h>
+#include <linex/completion.h>
+#include <linex/firmware.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/ioctl.h>
+#include <linex/uaccess.h>
+#include <linex/greybus.h>
 
 #include "firmware.h"
 #include "greybus_firmware.h"

@@ -5,11 +5,11 @@
  * Copyright (C) 2020 John Crispin <john@phrozen.org>
  */
 
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linex/of_irq.h>
+#include <linex/irqchip.h>
+#include <linex/spinlock.h>
+#include <linex/of_address.h>
+#include <linex/irqchip/chained_irq.h>
 
 /* Global Interrupt Mask Register */
 #define RTL_ICTL_GIMR		0x00

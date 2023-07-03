@@ -7,10 +7,10 @@
  *  On Acorn machines, the following i2c devices are on the bus:
  *	- PCF8583 real time clock & static RAM
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/io.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/ioc.h>
@@ -91,6 +91,6 @@ static int __init i2c_ioc_init(void)
 
 module_init(i2c_ioc_init);
 
-MODULE_AUTHOR("Russell King <linux@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <linex@armlinex.org.uk>");
 MODULE_DESCRIPTION("ARM IOC/IOMD i2c driver");
 MODULE_LICENSE("GPL v2");

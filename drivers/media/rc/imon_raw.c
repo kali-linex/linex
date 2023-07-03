@@ -2,9 +2,9 @@
 //
 // Copyright (C) 2018 Sean Young <sean@mess.org>
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/input.h>
 #include <media/rc-core.h>
 
 /* Each bit is 250us */

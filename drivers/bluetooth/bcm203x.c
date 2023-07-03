@@ -7,18 +7,18 @@
  *  Copyright (C) 2003  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
 
-#include <linux/usb.h>
+#include <linex/usb.h>
 
 #include <net/bluetooth/bluetooth.h>
 

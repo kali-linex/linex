@@ -9,7 +9,7 @@
  *          Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/pci.h>
+#include <linex/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_probe_helper.h>

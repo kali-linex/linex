@@ -7,13 +7,13 @@
  * Written by Ryusuke Konishi.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/mm.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <linex/buffer_head.h>
+#include <linex/mpage.h>
+#include <linex/mm.h>
+#include <linex/writeback.h>
+#include <linex/backing-dev.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

@@ -5,14 +5,14 @@
  * Copyright (C) 2011, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include "slot-gpio.h"
 

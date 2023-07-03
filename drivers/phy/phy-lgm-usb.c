@@ -5,16 +5,16 @@
  * Copyright (C) 2020 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/usb/phy.h>
-#include <linux/workqueue.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/usb/phy.h>
+#include <linex/workqueue.h>
 
 #define CTRL1_OFFSET		0x14
 #define SRAM_EXT_LD_DONE	BIT(25)
@@ -278,5 +278,5 @@ module_platform_driver(lgm_phy_driver);
 
 MODULE_DESCRIPTION("Intel LGM USB PHY driver");
 MODULE_AUTHOR("Li Yin <yin1.li@intel.com>");
-MODULE_AUTHOR("Vadivel Murugan R <vadivel.muruganx.ramuthevar@linux.intel.com>");
+MODULE_AUTHOR("Vadivel Murugan R <vadivel.muruganx.ramuthevar@linex.intel.com>");
 MODULE_LICENSE("GPL v2");

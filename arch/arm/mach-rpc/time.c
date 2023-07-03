@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/common/time-acorn.c
+ *  linex/arch/arm/common/time-acorn.c
  *
  *  Copyright (c) 1996-2000 Russell King.
  *
@@ -10,11 +10,11 @@
  *   04-Dec-1997	RMK	Updated for new arch/arm/time.c
  *   13=Jun-2004	DS	Moved to arch/arm/common b/c shared w/CLPS7500
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/ioc.h>

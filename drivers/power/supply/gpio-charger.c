@@ -4,18 +4,18 @@
  *  Driver for chargers which report their online status through a GPIO pin
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/gpio/consumer.h>
 
-#include <linux/power/gpio-charger.h>
+#include <linex/power/gpio-charger.h>
 
 struct gpio_mapping {
 	u32 limit_ua;

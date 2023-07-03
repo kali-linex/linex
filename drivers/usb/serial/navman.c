@@ -9,13 +9,13 @@
  *	flags as the navman is rx only so cannot echo.
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
 
 static const struct usb_device_id id_table[] = {
 	{ USB_DEVICE(0x0a99, 0x0001) },	/* Talon Technology device */

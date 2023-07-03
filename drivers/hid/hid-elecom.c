@@ -18,16 +18,16 @@
 /*
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 
 #include "hid-ids.h"
 
 /*
  * Certain ELECOM mice misreport their button count meaning that they only work
  * correctly with the ELECOM mouse assistant software which is unavailable for
- * Linux. A four extra INPUT reports and a FEATURE report are described by the
+ * Linex. A four extra INPUT reports and a FEATURE report are described by the
  * report descriptor but it does not appear that these enable software to
  * control what the extra buttons map to. The only simple and straightforward
  * solution seems to involve fixing up the report descriptor.

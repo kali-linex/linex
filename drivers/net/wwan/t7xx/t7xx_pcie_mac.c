@@ -11,16 +11,16 @@
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include "t7xx_pci.h"
 #include "t7xx_pcie_mac.h"

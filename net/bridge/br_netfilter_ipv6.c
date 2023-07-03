@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle firewalling
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -10,23 +10,23 @@
  *	Lennert dedicates this file to Kerstin Wurdinger.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_arp.h>
-#include <linux/in_route.h>
-#include <linux/inetdevice.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/ip.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/if_pppox.h>
+#include <linex/ppp_defs.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter_arp.h>
+#include <linex/in_route.h>
+#include <linex/inetdevice.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -34,10 +34,10 @@
 #include <net/route.h>
 #include <net/netfilter/br_netfilter.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "br_private.h"
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
 int br_validate_ipv6(struct net *net, struct sk_buff *skb)

@@ -5,12 +5,12 @@
  *         Yingjoe Chen <yingjoe.chen@mediatek.com>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/regmap.h>
 #include <dt-bindings/pinctrl/mt65xx.h>
 
 #include "pinctrl-mtk-common.h"

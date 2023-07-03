@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
 
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/pid_namespace.h>
-#include <linux/fs.h>
-#include <linux/fdtable.h>
-#include <linux/filter.h>
-#include <linux/btf_ids.h>
+#include <linex/init.h>
+#include <linex/namei.h>
+#include <linex/pid_namespace.h>
+#include <linex/fs.h>
+#include <linex/fdtable.h>
+#include <linex/filter.h>
+#include <linex/btf_ids.h>
 #include "mmap_unlock_work.h"
 
 static const char * const iter_task_type_names[] = {

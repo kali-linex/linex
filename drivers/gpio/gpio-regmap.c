@@ -5,17 +5,17 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
-#include <linux/gpio/driver.h>
-#include <linux/gpio/regmap.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/regmap.h>
 
 struct gpio_regmap {
 	struct device *parent;

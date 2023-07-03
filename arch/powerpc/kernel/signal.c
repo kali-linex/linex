@@ -9,15 +9,15 @@
  * this archive for more details.
  */
 
-#include <linux/resume_user_mode.h>
-#include <linux/signal.h>
-#include <linux/uprobes.h>
-#include <linux/key.h>
-#include <linux/context_tracking.h>
-#include <linux/livepatch.h>
-#include <linux/syscalls.h>
+#include <linex/resume_user_mode.h>
+#include <linex/signal.h>
+#include <linex/uprobes.h>
+#include <linex/key.h>
+#include <linex/context_tracking.h>
+#include <linex/livepatch.h>
+#include <linex/syscalls.h>
 #include <asm/hw_breakpoint.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/switch_to.h>
 #include <asm/unistd.h>
 #include <asm/debug.h>

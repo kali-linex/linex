@@ -7,8 +7,8 @@
 #ifndef _ASM_X86_STACKTRACE_H
 #define _ASM_X86_STACKTRACE_H
 
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linex/uaccess.h>
+#include <linex/ptrace.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/switch_to.h>

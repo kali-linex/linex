@@ -6,10 +6,10 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
 #include "uvcvideo.h"
 

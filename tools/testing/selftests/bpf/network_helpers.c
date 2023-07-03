@@ -12,10 +12,10 @@
 #include <sys/mount.h>
 #include <sys/stat.h>
 
-#include <linux/err.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/limits.h>
+#include <linex/err.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/limits.h>
 
 #include "bpf_util.h"
 #include "network_helpers.h"

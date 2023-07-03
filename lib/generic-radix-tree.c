@@ -1,8 +1,8 @@
 
-#include <linux/export.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/gfp.h>
-#include <linux/kmemleak.h>
+#include <linex/export.h>
+#include <linex/generic-radix-tree.h>
+#include <linex/gfp.h>
+#include <linex/kmemleak.h>
 
 #define GENRADIX_ARY		(PAGE_SIZE / sizeof(struct genradix_node *))
 #define GENRADIX_ARY_SHIFT	ilog2(GENRADIX_ARY)

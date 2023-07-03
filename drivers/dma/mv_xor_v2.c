@@ -4,16 +4,16 @@
 
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
 
 #include "dmaengine.h"
 
@@ -149,7 +149,7 @@ struct mv_xor_v2_descriptor {
  * @desc_size: HW descriptor size
  * @npendings: number of pending descriptors (for which tx_submit has
  * @hw_queue_idx: HW queue index
- * @irq: The Linux interrupt number
+ * @irq: The Linex interrupt number
  * been called, but not yet issue_pending)
  */
 struct mv_xor_v2_device {

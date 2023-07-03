@@ -10,10 +10,10 @@
  * Paul Walmsley
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/twl.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mfd/twl.h>
 
 #include "soc.h"
 #include "voltage.h"

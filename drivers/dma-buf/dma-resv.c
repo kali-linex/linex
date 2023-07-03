@@ -33,13 +33,13 @@
  * Authors: Thomas Hellstrom <thellstrom-at-vmware-dot-com>
  */
 
-#include <linux/dma-resv.h>
-#include <linux/dma-fence-array.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/seq_file.h>
+#include <linex/dma-resv.h>
+#include <linex/dma-fence-array.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/sched/mm.h>
+#include <linex/mmu_notifier.h>
+#include <linex/seq_file.h>
 
 /**
  * DOC: Reservation Object Overview

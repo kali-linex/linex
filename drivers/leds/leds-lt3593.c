@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2009,2018 Daniel Mack <daniel@zonque.org>
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/leds.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/property.h>
 
 #define LED_LT3593_NAME "lt3593"
 

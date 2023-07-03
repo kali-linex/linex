@@ -6,13 +6,13 @@
  * Based on Panel Simple driver by Thierry Reding <treding@nvidia.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/display_timing.h>
 #include <video/videomode.h>

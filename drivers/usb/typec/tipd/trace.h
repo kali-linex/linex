@@ -14,9 +14,9 @@
 
 #include "tps6598x.h"
 
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linex/stringify.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
 
 #define show_irq_flags(flags) \
 	__print_flags_u64(flags, "|", \

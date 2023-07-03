@@ -4,8 +4,8 @@
  * Copyright (c)  2003-2014 QLogic Corporation
  */
 
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
 
 #include "qla_def.h"
 #include "qla_gbl.h"

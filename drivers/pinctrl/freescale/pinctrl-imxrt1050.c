@@ -4,11 +4,11 @@
  * Author(s): Giulio Benetti <giulio.benetti@benettiengineering.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
 
 #include "pinctrl-imx.h"
 

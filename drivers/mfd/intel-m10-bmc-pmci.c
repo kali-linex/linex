@@ -6,14 +6,14 @@
  * Copyright (C) 2020-2023 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dfl.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/dfl.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/intel-m10-bmc.h>
+#include <linex/minmax.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 struct m10bmc_pmci_device {
 	void __iomem *base;

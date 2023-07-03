@@ -9,14 +9,14 @@
  */
 
 #include <crypto/scatterwalk.h>
-#include <linux/cryptouser.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <linex/cryptouser.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
 #include <net/netlink.h>
 
 #include "hash.h"

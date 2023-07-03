@@ -6,15 +6,15 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/util_macros.h>
 
 #define INA3221_DRIVER_NAME		"ina3221"
 

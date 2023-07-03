@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/gpio/driver.h>
-#include <linux/cpumask.h>
-#include <linux/irq.h>
-#include <linux/minmax.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/gpio/driver.h>
+#include <linex/cpumask.h>
+#include <linex/irq.h>
+#include <linex/minmax.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 /*
  * Total register block size is 0x1C for one bank of four ports (A, B, C, D).

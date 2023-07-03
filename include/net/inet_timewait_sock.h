@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -11,17 +11,17 @@
 #ifndef _INET_TIMEWAIT_SOCK_
 #define _INET_TIMEWAIT_SOCK_
 
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/list.h>
+#include <linex/timer.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include <net/inet_sock.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/timewait_sock.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 struct inet_bind_bucket;
 

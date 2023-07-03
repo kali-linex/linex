@@ -7,12 +7,12 @@
  * Author: Herve Codina <herve.codina@bootlin.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 #include <soc/fsl/qe/qmc.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

@@ -11,24 +11,24 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/capability.h>
-#include <linux/if_arp.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/capability.h>
+#include <linex/if_arp.h>
+#include <linex/kmod.h>
+#include <linex/vmalloc.h>
+#include <linex/proc_fs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
 #include <net/compat.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_arp/arp_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_arp/arp_tables.h>
 #include "../../netfilter/xt_repldata.h"
 
 MODULE_LICENSE("GPL");

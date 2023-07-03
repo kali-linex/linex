@@ -6,21 +6,21 @@
  * Standard functionality for the common clock API.  See Documentation/driver-api/clk.rst
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/clkdev.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clk/clk-conf.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/pm_runtime.h>
+#include <linex/sched.h>
+#include <linex/clkdev.h>
 
 #include "clk.h"
 
@@ -1722,7 +1722,7 @@ EXPORT_SYMBOL_GPL(clk_round_rate);
 /**
  * __clk_notify - call clk notifier chain
  * @core: clk that is changing rate
- * @msg: clk notifier type (see include/linux/clk.h)
+ * @msg: clk notifier type (see include/linex/clk.h)
  * @old_rate: old clk rate
  * @new_rate: new clk rate
  *
@@ -1833,7 +1833,7 @@ static unsigned long clk_recalc(struct clk_core *core,
  * __clk_recalc_rates
  * @core: first clk in the subtree
  * @update_req: Whether req_rate should be updated with the new rate
- * @msg: notification type (see include/linux/clk.h)
+ * @msg: notification type (see include/linex/clk.h)
  *
  * Walks the subtree of clks starting with clk and recalculates rates as it
  * goes.  Note that if a clk does not implement the .recalc_rate callback then
@@ -3172,7 +3172,7 @@ EXPORT_SYMBOL_GPL(clk_is_match);
 /***        debugfs support        ***/
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 static struct dentry *rootdir;
 static int inited = 0;
@@ -5329,7 +5329,7 @@ static int parent_ready(struct device_node *np)
  *
  * Do not use this function. It exists only for legacy Device Tree
  * bindings, such as the one-clock-per-node style that are outdated.
- * Those bindings typically put all clock data into .dts and the Linux
+ * Those bindings typically put all clock data into .dts and the Linex
  * driver has no clock data, thus making it impossible to set this flag
  * correctly from the driver. Only those drivers may call
  * of_clk_detect_critical from their setup functions.

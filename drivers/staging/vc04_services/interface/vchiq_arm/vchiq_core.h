@@ -4,14 +4,14 @@
 #ifndef VCHIQ_CORE_H
 #define VCHIQ_CORE_H
 
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
-#include <linux/wait.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/kthread.h>
+#include <linex/kref.h>
+#include <linex/rcupdate.h>
+#include <linex/wait.h>
 
-#include "../../include/linux/raspberrypi/vchiq.h"
+#include "../../include/linex/raspberrypi/vchiq.h"
 #include "vchiq_cfg.h"
 
 /* Do this so that we can test-build the code on non-rpi systems */

@@ -11,12 +11,12 @@
  * memmap.
  */
 
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
-#include <linux/sort.h>
+#include <linex/kernel.h>
+#include <linex/efi.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/types.h>
+#include <linex/sort.h>
 #include <asm/e820/api.h>
 #include <asm/efi.h>
 

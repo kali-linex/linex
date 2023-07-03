@@ -5,7 +5,7 @@
  *   capable of working with almost all NAND chips currently available.
  *
  *	Additional technical information is available on
- *	http://www.linux-mtd.infradead.org/doc/nand.html
+ *	http://www.linex-mtd.infradead.org/doc/nand.html
  *
  *  Copyright (C) 2000 Steven J. Hill (sjhill@realitydiluted.com)
  *		  2002-2006 Thomas Gleixner (tglx@linutronix.de)
@@ -25,25 +25,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/types.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/nand.h>
+#include <linex/mtd/nand-ecc-sw-hamming.h>
+#include <linex/mtd/nand-ecc-sw-bch.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/mtd/partitions.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/gpio/consumer.h>
 
 #include "internals.h"
 

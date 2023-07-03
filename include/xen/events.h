@@ -2,10 +2,10 @@
 #ifndef _XEN_EVENTS_H
 #define _XEN_EVENTS_H
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
 #ifdef CONFIG_PCI_MSI
-#include <linux/msi.h>
+#include <linex/msi.h>
 #endif
 
 #include <xen/interface/event_channel.h>

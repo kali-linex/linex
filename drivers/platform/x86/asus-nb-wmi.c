@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/fb.h>
-#include <linux/dmi.h>
-#include <linux/i8042.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/fb.h>
+#include <linex/dmi.h>
+#include <linex/i8042.h>
 
 #include "asus-wmi.h"
 

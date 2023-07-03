@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i8253.h>
-#include <linux/time.h>
-#include <linux/export.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/i8253.h>
+#include <linex/time.h>
+#include <linex/export.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

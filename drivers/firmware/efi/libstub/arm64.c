@@ -7,7 +7,7 @@
  */
 
 
-#include <linux/efi.h>
+#include <linex/efi.h>
 #include <asm/efi.h>
 #include <asm/image.h>
 #include <asm/memory.h>

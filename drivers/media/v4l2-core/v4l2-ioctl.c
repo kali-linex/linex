@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for Linex version 2
  *
  * A generic framework to process V4L2 ioctl commands.
  *
@@ -8,16 +8,16 @@
  *              Mauro Carvalho Chehab <mchehab@kernel.org> (version 2)
  */
 
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
+#include <linex/compat.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/version.h>
 
-#include <linux/v4l2-subdev.h>
-#include <linux/videodev2.h>
+#include <linex/v4l2-subdev.h>
+#include <linex/videodev2.h>
 
 #include <media/media-device.h> /* for media_set_bus_info() */
 #include <media/v4l2-common.h>
@@ -73,7 +73,7 @@ static const struct std_descr standards[] = {
 	{ 0,			"Unknown"   }
 };
 
-/* video4linux standard ID conversion to standard name
+/* video4linex standard ID conversion to standard name
  */
 const char *v4l2_norm_to_name(v4l2_std_id id)
 {
@@ -1085,7 +1085,7 @@ static int v4l_querycap(const struct v4l2_ioctl_ops *ops,
 	struct video_device *vfd = video_devdata(file);
 	int ret;
 
-	cap->version = LINUX_VERSION_CODE;
+	cap->version = LINEX_VERSION_CODE;
 	cap->device_caps = vfd->device_caps;
 	cap->capabilities = vfd->device_caps | V4L2_CAP_DEVICE_CAPS;
 

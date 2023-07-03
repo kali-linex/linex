@@ -4,8 +4,8 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_MTD_SFDP_H
-#define __LINUX_MTD_SFDP_H
+#ifndef __LINEX_MTD_SFDP_H
+#define __LINEX_MTD_SFDP_H
 
 /* SFDP revisions */
 #define SFDP_JESD216_MAJOR	1
@@ -133,4 +133,4 @@ struct sfdp_parameter_header {
 	u8		id_msb;
 };
 
-#endif /* __LINUX_MTD_SFDP_H */
+#endif /* __LINEX_MTD_SFDP_H */

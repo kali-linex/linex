@@ -7,8 +7,8 @@
 #ifndef _LOGICVC_LAYER_H_
 #define _LOGICVC_LAYER_H_
 
-#include <linux/of.h>
-#include <linux/types.h>
+#include <linex/of.h>
+#include <linex/types.h>
 #include <drm/drm_plane.h>
 
 #define LOGICVC_LAYER_COLORSPACE_RGB		0

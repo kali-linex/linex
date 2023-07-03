@@ -3,11 +3,11 @@
  * Copyright (c) 2022, Linaro Limited, All rights reserved.
  * Author: Mike Leach <mike.leach@linaro.org>
  */
-#include <linux/coresight-pmu.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/coresight-pmu.h>
+#include <linex/cpumask.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "coresight-trace-id.h"
 

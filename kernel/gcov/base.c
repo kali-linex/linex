@@ -3,23 +3,23 @@
  *  This code maintains a list of active profiling data structures.
  *
  *    Copyright IBM Corp. 2009
- *    Author(s): Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *    Author(s): Peter Oberparleiter <oberpar@linex.vnet.ibm.com>
  *
  *    Uses gcc-internal data definitions.
  *    Based on the gcov-kernel patch by:
  *		 Hubertus Franke <frankeh@us.ibm.com>
  *		 Nigel Hinds <nhinds@us.ibm.com>
  *		 Rajan Ravindran <rajancr@us.ibm.com>
- *		 Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *		 Peter Oberparleiter <oberpar@linex.vnet.ibm.com>
  *		 Paul Larson
  */
 
 #define pr_fmt(fmt)	"gcov: " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
 #include "gcov.h"
 
 int gcov_events_enabled;

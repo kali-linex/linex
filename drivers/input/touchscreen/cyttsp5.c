@@ -10,17 +10,17 @@
  *                Alistair Francis <alistair@alistair23.me>
  */
 
-#include <linux/crc-itu-t.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/crc-itu-t.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 #include <asm/unaligned.h>
 
 #define CYTTSP5_NAME				"cyttsp5"
@@ -418,7 +418,7 @@ static int cyttsp5_parse_dt_key_code(struct device *dev)
 	/* Initialize the button to RESERVED */
 	memset32(si->key_code, KEY_RESERVED,  si->num_btns);
 
-	return device_property_read_u32_array(dev, "linux,keycodes",
+	return device_property_read_u32_array(dev, "linex,keycodes",
 					      si->key_code, si->num_btns);
 }
 

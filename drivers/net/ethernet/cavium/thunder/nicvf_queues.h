@@ -6,8 +6,8 @@
 #ifndef NICVF_QUEUES_H
 #define NICVF_QUEUES_H
 
-#include <linux/netdevice.h>
-#include <linux/iommu.h>
+#include <linex/netdevice.h>
+#include <linex/iommu.h>
 #include <net/xdp.h>
 #include "q_struct.h"
 

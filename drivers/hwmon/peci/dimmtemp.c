@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2018-2021 Intel Corporation
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/devm-helpers.h>
-#include <linux/hwmon.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/peci.h>
-#include <linux/peci-cpu.h>
-#include <linux/units.h>
-#include <linux/workqueue.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/devm-helpers.h>
+#include <linex/hwmon.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/peci.h>
+#include <linex/peci-cpu.h>
+#include <linex/units.h>
+#include <linex/workqueue.h>
 
 #include "common.h"
 
@@ -608,7 +608,7 @@ static struct auxiliary_driver peci_dimmtemp_driver = {
 
 module_auxiliary_driver(peci_dimmtemp_driver);
 
-MODULE_AUTHOR("Jae Hyun Yoo <jae.hyun.yoo@linux.intel.com>");
+MODULE_AUTHOR("Jae Hyun Yoo <jae.hyun.yoo@linex.intel.com>");
 MODULE_AUTHOR("Iwona Winiarska <iwona.winiarska@intel.com>");
 MODULE_DESCRIPTION("PECI dimmtemp driver");
 MODULE_LICENSE("GPL");

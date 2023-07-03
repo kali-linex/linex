@@ -7,12 +7,12 @@
  * Lorenzo Bianconi <lorenzo.bianconi@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
 
 #include "hts221.h"
 

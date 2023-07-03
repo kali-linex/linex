@@ -15,18 +15,18 @@
  * Peter Zijlstra <peterz@infradead.org>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/task.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/clock.h>
-#include <linux/export.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/rt.h>
+#include <linex/sched/task.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/wake_q.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/clock.h>
+#include <linex/export.h>
+#include <linex/rwsem.h>
+#include <linex/atomic.h>
 #include <trace/events/lock.h>
 
 #ifndef CONFIG_PREEMPT_RT

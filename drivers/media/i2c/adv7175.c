@@ -8,16 +8,16 @@
  *    - some corrections for Pinnacle Systems Inc. DC10plus card.
  *
  * Changes by Ronald Bultje <rbultje@ronald.bitfreak.net>
- *    - moved over to linux>=2.4.x i2c protocol (9/9/2002)
+ *    - moved over to linex>=2.4.x i2c protocol (9/9/2002)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/ioctl.h>
+#include <linex/uaccess.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-device.h>
 
 MODULE_DESCRIPTION("Analog Devices ADV7175 video encoder driver");

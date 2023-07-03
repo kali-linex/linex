@@ -8,24 +8,24 @@
  * This code is licenced under the GPL.
  */
 
-#include "linux/percpu-defs.h"
-#include <linux/clockchips.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/idle.h>
-#include <linux/notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/tick.h>
-#include <linux/mmu_context.h>
-#include <linux/context_tracking.h>
+#include "linex/percpu-defs.h"
+#include <linex/clockchips.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/idle.h>
+#include <linex/notifier.h>
+#include <linex/pm_qos.h>
+#include <linex/cpu.h>
+#include <linex/cpuidle.h>
+#include <linex/ktime.h>
+#include <linex/hrtimer.h>
+#include <linex/module.h>
+#include <linex/suspend.h>
+#include <linex/tick.h>
+#include <linex/mmu_context.h>
+#include <linex/context_tracking.h>
 #include <trace/events/power.h>
 
 #include "cpuidle.h"

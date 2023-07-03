@@ -5,16 +5,16 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  *
  * Author: Liam Girdwood
- *         linux@wolfsonmicro.com
+ *         linex@wolfsonmicro.com
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/wm8350/core.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 static int wm8350_i2c_probe(struct i2c_client *i2c)
 {

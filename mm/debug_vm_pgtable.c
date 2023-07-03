@@ -10,26 +10,26 @@
  */
 #define pr_fmt(fmt) "debug_vm_pgtable: [%-25s]: " fmt, __func__
 
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/kconfig.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mm_types.h>
-#include <linux/module.h>
-#include <linux/pfn_t.h>
-#include <linux/printk.h>
-#include <linux/pgtable.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/start_kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/io.h>
+#include <linex/gfp.h>
+#include <linex/highmem.h>
+#include <linex/hugetlb.h>
+#include <linex/kernel.h>
+#include <linex/kconfig.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/mm_types.h>
+#include <linex/module.h>
+#include <linex/pfn_t.h>
+#include <linex/printk.h>
+#include <linex/pgtable.h>
+#include <linex/random.h>
+#include <linex/spinlock.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/start_kernel.h>
+#include <linex/sched/mm.h>
+#include <linex/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgalloc.h>

@@ -6,17 +6,17 @@
  * Copyright (C) 2006-2016 Oracle Corporation
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/vbox_err.h>
-#include <linux/vbox_utils.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/vbox_err.h>
+#include <linex/vbox_utils.h>
 #include "vboxguest_core.h"
 
 /* Get the pointer to the first parameter of a HGCM call request. */

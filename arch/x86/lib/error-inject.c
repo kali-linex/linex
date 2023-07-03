@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/linkage.h>
-#include <linux/error-injection.h>
-#include <linux/kprobes.h>
-#include <linux/objtool.h>
+#include <linex/linkage.h>
+#include <linex/error-injection.h>
+#include <linex/kprobes.h>
+#include <linex/objtool.h>
 
 asmlinkage void just_return_func(void);
 

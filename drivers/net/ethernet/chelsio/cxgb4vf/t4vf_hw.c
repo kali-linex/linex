@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for Linex.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -33,8 +33,8 @@
  * SOFTWARE.
  */
 
-#include <linux/ethtool.h>
-#include <linux/pci.h>
+#include <linex/ethtool.h>
+#include <linex/pci.h>
 
 #include "t4vf_common.h"
 #include "t4vf_defs.h"

@@ -6,7 +6,7 @@
  *      Ben. Herrenschmidt (benh@kernel.crashing.org), IBM Corp.
  */
 
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 #include <asm/processor.h>
 #include <asm/reg.h>
 #include <asm/page.h>
@@ -656,7 +656,7 @@ normal_tlb_miss:
 	 * or'ing the fourth high bit.
 	 *
 	 * NOTE: For 64K pages, we do things slightly differently in
-	 * order to handle the weird page table format used by linux
+	 * order to handle the weird page table format used by linex
 	 */
 	srdi	r15,r16,44
 	oris	r10,r15,0x1

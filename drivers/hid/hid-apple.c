@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  USB HID quirks support for Linux
+ *  USB HID quirks support for Linex
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -15,14 +15,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/leds.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/leds.h>
 
 #include "hid-ids.h"
 

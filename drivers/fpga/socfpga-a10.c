@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2015-2016 Altera Corporation
  */
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/fpga/fpga-mgr.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/regmap.h>
 
 #define A10_FPGAMGR_DCLKCNT_OFST				0x08
 #define A10_FPGAMGR_DCLKSTAT_OFST				0x0c

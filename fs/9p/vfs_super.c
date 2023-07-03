@@ -5,20 +5,20 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
-#include <linux/fscache.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/stat.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/mount.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/statfs.h>
+#include <linex/magic.h>
+#include <linex/fscache.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

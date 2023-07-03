@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
 
 /**
  * batadv_test_bit() - check if bit is set in the current window

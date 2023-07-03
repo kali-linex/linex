@@ -30,7 +30,7 @@
 	 * have to stick with this. But it works.
 	 */
 	extcon_usb: extcon-usb {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&tlmm 38 GPIO_ACTIVE_HIGH>;
 	};
 
@@ -45,8 +45,8 @@
 			gpios = <&tlmm 124 GPIO_ACTIVE_HIGH>;
 			debounce-interval = <15>;
 			wakeup-source;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_KEYPAD_SLIDE>;
+			linex,input-type = <EV_SW>;
+			linex,code = <SW_KEYPAD_SLIDE>;
 		};
 	};
 
@@ -59,49 +59,49 @@
 		key-home {
 			label = "Home";
 			gpios = <&tlmm 21 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOMEPAGE>;
+			linex,code = <KEY_HOMEPAGE>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 
 		key-super-l {
 			label = "Super Left";
 			gpios = <&tlmm 32 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_FN>;
+			linex,code = <KEY_FN>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 
 		key-super-r {
 			label = "Super Right";
 			gpios = <&tlmm 33 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_FN>;
+			linex,code = <KEY_FN>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 
 		key-shift {
 			label = "Shift";
 			gpios = <&tlmm 114 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_RIGHTSHIFT>;
+			linex,code = <KEY_RIGHTSHIFT>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 
 		key-ctrl {
 			label = "Ctrl";
 			gpios = <&tlmm 128 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_LEFTCTRL>;
+			linex,code = <KEY_LEFTCTRL>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 
 		key-alt {
 			label = "Alt";
 			gpios = <&tlmm 129 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_LEFTALT>;
+			linex,code = <KEY_LEFTALT>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 		};
 	};
 
@@ -114,8 +114,8 @@
 		button-vol-up {
 			label = "Volume Up";
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,input-type = <EV_KEY>;
+			linex,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -123,16 +123,16 @@
 		button-camera-snapshot {
 			label = "Camera Snapshot";
 			gpios = <&pm8998_gpios 7 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_CAMERA>;
+			linex,input-type = <EV_KEY>;
+			linex,code = <KEY_CAMERA>;
 			debounce-interval = <15>;
 		};
 
 		button-camera-focus {
 			label = "Camera Focus";
 			gpios = <&pm8998_gpios 8 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_CAMERA_FOCUS>;
+			linex,input-type = <EV_KEY>;
+			linex,code = <KEY_CAMERA_FOCUS>;
 			debounce-interval = <15>;
 		};
 	};
@@ -155,7 +155,7 @@
 			function = LED_FUNCTION_CAPSLOCK;
 			gpios = <&tlmm 26 GPIO_ACTIVE_HIGH>;
 			label = "yellow:capslock";
-			linux,default-trigger = "kbd-capslock";
+			linex,default-trigger = "kbd-capslock";
 		};
 	};
 
@@ -365,7 +365,7 @@
 };
 
 &pm8998_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

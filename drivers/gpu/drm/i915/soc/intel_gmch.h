@@ -6,7 +6,7 @@
 #ifndef __INTEL_GMCH_H__
 #define __INTEL_GMCH_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct drm_i915_private;
 

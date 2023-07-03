@@ -3,13 +3,13 @@
  * Copyright (c) 2016 Ivan Vecera <cera@cera.cz>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/err.h>
-#include <linux/sfp.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/sysfs.h>
+#include <linex/thermal.h>
+#include <linex/err.h>
+#include <linex/sfp.h>
 
 #include "core.h"
 #include "core_env.h"

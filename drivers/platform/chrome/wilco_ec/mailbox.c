@@ -15,11 +15,11 @@
  * make assumptions about byte placement.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/platform_data/wilco-ec.h>
+#include <linex/platform_device.h>
 
 #include "../cros_ec_lpc_mec.h"
 

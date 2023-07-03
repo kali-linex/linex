@@ -3,10 +3,10 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/firmware.h>
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <linex/firmware.h>
+#include <linex/highmem.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
 
 #include "vpu_boot_api.h"
 #include "ivpu_drv.h"

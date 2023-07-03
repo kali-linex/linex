@@ -8,17 +8,17 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/genalloc.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/mm.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/genalloc.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 
 /*

@@ -6,7 +6,7 @@
 #ifndef __INTEL_DPIO_PHY_H__
 #define __INTEL_DPIO_PHY_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 enum pipe;
 enum port;

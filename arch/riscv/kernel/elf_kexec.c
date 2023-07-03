@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Load ELF vmlinux file for the kexec_file_load syscall.
+ * Load ELF vmlinex file for the kexec_file_load syscall.
  *
  * Copyright (C) 2021 Huawei Technologies Co, Ltd.
  *
@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt)	"kexec_image: " fmt
 
-#include <linux/elf.h>
-#include <linux/kexec.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/libfdt.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
+#include <linex/elf.h>
+#include <linex/kexec.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/libfdt.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
 #include <asm/setup.h>
 
 int arch_kimage_file_post_load_cleanup(struct kimage *image)

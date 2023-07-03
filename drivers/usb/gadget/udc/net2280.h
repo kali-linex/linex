@@ -10,8 +10,8 @@
  * Copyright (C) 2014 Ricardo Ribalda - Qtechnology/AS
  */
 
-#include <linux/usb/net2280.h>
-#include <linux/usb/usb338x.h>
+#include <linex/usb/net2280.h>
+#include <linex/usb/usb338x.h>
 
 /*-------------------------------------------------------------------------*/
 

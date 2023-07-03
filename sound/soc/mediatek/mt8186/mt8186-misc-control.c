@@ -5,10 +5,10 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 
 #include "../common/mtk-afe-fe-dai.h"

@@ -8,16 +8,16 @@
  *  Co-author: Meng-Huang Kuo <mhkuo@nuvoton.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/acpi.h>
-#include <linux/math64.h>
-#include <linux/semaphore.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/acpi.h>
+#include <linex/math64.h>
+#include <linex/semaphore.h>
 
 #include <sound/initval.h>
 #include <sound/tlv.h>
@@ -371,7 +371,7 @@ static void nau8825_hpvol_ramp(struct nau8825 *nau8825,
  * nau8825_intlog10_dec3 - Computes log10 of a value
  * the result is round off to 3 decimal. This function takes reference to
  * dvb-math. The source code locates as the following.
- * Linux/drivers/media/dvb-core/dvb_math.c
+ * Linex/drivers/media/dvb-core/dvb_math.c
  * @value:  input for log10
  *
  * return log10(value) * 1000

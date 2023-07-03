@@ -2,11 +2,11 @@
  *
  * BRIEF MODULE DESCRIPTION
  *      A DMA channel allocator for Au1x00. API is modeled loosely off of
- *      linux/kernel/dma.c.
+ *      linex/kernel/dma.c.
  *
  * Copyright 2000, 2008 MontaVista Software Inc.
  * Author: MontaVista Software, Inc. <source@mvista.com>
- * Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005 Ralf Baechle (ralf@linex-mips.org)
  *
  *  This program is free software; you can redistribute  it and/or modify it
  *  under  the terms of  the GNU General  Public License as published by the
@@ -30,12 +30,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1000_dma.h>

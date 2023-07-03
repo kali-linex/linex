@@ -5,7 +5,7 @@
 #ifndef __ASM_TOPOLOGY_H
 #define __ASM_TOPOLOGY_H
 
-#include <linux/smp.h>
+#include <linex/smp.h>
 
 #ifdef CONFIG_NUMA
 

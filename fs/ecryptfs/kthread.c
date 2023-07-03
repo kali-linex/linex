@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Linex filesystem encryption layer
  *
  * Copyright (C) 2008 International Business Machines Corp.
  *   Author(s): Michael A. Halcrow <mahalcro@us.ibm.com>
  */
 
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/mount.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
+#include <linex/mount.h>
 #include "ecryptfs_kernel.h"
 
 struct ecryptfs_open_req {

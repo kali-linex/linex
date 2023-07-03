@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/io.h>
 #include <asm/proc-fns.h>
 #include <asm/system_misc.h>
 

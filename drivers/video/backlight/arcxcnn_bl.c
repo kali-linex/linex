@@ -6,12 +6,12 @@
  * Author : Brian Dodge <bdodge@arcticsand.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/backlight.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 enum arcxcnn_chip_id {
 	ARC2C0608

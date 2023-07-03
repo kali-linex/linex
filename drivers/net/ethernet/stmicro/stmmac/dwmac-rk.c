@@ -7,21 +7,21 @@
  * Chen-Zhi (Roger Chen)  <roger.chen@rock-chips.com>
  */
 
-#include <linux/stmmac.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/phy.h>
-#include <linux/of_net.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/pm_runtime.h>
+#include <linex/stmmac.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/phy.h>
+#include <linex/of_net.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/of_gpio.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/pm_runtime.h>
 
 #include "stmmac_platform.h"
 

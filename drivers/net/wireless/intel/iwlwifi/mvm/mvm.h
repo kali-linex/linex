@@ -7,18 +7,18 @@
 #ifndef __IWL_MVM_H__
 #define __IWL_MVM_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/leds.h>
-#include <linux/in6.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/leds.h>
+#include <linex/in6.h>
 
 #ifdef CONFIG_THERMAL
-#include <linux/thermal.h>
+#include <linex/thermal.h>
 #endif
 
-#include <linux/ptp_clock_kernel.h>
+#include <linex/ptp_clock_kernel.h>
 
-#include <linux/ktime.h>
+#include <linex/ktime.h>
 
 #include "iwl-op-mode.h"
 #include "iwl-trans.h"
@@ -35,7 +35,7 @@
 #include "mei/iwl-mei.h"
 #include "iwl-nvm-parse.h"
 
-#include <linux/average.h>
+#include <linex/average.h>
 
 #define IWL_MVM_MAX_ADDRESSES		5
 /* RSSI offset for WkP */

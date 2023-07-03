@@ -10,10 +10,10 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <linex/kvm_host.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/rculist.h>
 
 #include <trace/events/kvm.h>
 

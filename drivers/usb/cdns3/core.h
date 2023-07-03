@@ -8,11 +8,11 @@
  * Authors: Peter Chen <peter.chen@nxp.com>
  *          Pawel Laszczak <pawell@cadence.com>
  */
-#ifndef __LINUX_CDNS3_CORE_H
-#define __LINUX_CDNS3_CORE_H
+#ifndef __LINEX_CDNS3_CORE_H
+#define __LINEX_CDNS3_CORE_H
 
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/role.h>
 
 struct cdns;
 
@@ -133,4 +133,4 @@ static inline int cdns_resume(struct cdns *cdns, u8 set_active)
 static inline int cdns_suspend(struct cdns *cdns)
 { return 0; }
 #endif /* CONFIG_PM_SLEEP */
-#endif /* __LINUX_CDNS3_CORE_H */
+#endif /* __LINEX_CDNS3_CORE_H */

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2015-2017, The Linux Foundation.
+// Copyright (c) 2015-2017, The Linex Foundation.
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linex/bitops.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/soundwire/sdw_type.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

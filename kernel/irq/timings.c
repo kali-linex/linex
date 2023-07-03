@@ -2,16 +2,16 @@
 // Copyright (C) 2016, Linaro Ltd - Daniel Lezcano <daniel.lezcano@linaro.org>
 #define pr_fmt(fmt) "irq_timings: " fmt
 
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/static_key.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/idr.h>
-#include <linux/irq.h>
-#include <linux/math64.h>
-#include <linux/log2.h>
+#include <linex/kernel.h>
+#include <linex/percpu.h>
+#include <linex/slab.h>
+#include <linex/static_key.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/idr.h>
+#include <linex/irq.h>
+#include <linex/math64.h>
+#include <linex/log2.h>
 
 #include <trace/events/irq.h>
 

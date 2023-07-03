@@ -21,20 +21,20 @@
  * Error Handling:
  *
  *   If error reporting is turned on the device encodes error into CAN
- *   error frames (see uapi/linux/can/error.h) and sends it using the
+ *   error frames (see uapi/linex/can/error.h) and sends it using the
  *   IN Endpoint. The driver updates statistics and forward it.
  */
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/signal.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
 #define UCAN_DRIVER_NAME "ucan"
 #define UCAN_MAX_RX_URBS 8
@@ -275,7 +275,7 @@ struct ucan_priv {
 	/* must be the first member */
 	struct can_priv can;
 
-	/* linux USB device structures */
+	/* linex USB device structures */
 	struct usb_device *udev;
 	struct net_device *netdev;
 
@@ -559,7 +559,7 @@ static bool ucan_handle_error_frame(struct ucan_priv *up,
 
 /* Callback on reception of a can frame via the IN endpoint
  *
- * This function allocates an skb and transferres it to the Linux
+ * This function allocates an skb and transferres it to the Linex
  * network stack
  */
 static void ucan_rx_can_msg(struct ucan_priv *up, struct ucan_message_in *m)
@@ -627,7 +627,7 @@ static void ucan_rx_can_msg(struct ucan_priv *up, struct ucan_message_in *m)
 			stats->rx_bytes += cf->len;
 	}
 
-	/* pass it to Linux */
+	/* pass it to Linex */
 	netif_rx(skb);
 }
 
@@ -1107,7 +1107,7 @@ static void ucan_clean_up_tx_urb(struct ucan_priv *up, struct urb *urb)
 	usb_free_urb(urb);
 }
 
-/* callback when Linux needs to send a can frame */
+/* callback when Linex needs to send a can frame */
 static netdev_tx_t ucan_start_xmit(struct sk_buff *skb,
 				   struct net_device *netdev)
 {
@@ -1483,7 +1483,7 @@ static int ucan_probe(struct usb_interface *intf,
 	/* Stage 3 - Driver Initialisation
 	 * -------------------------------
 	 *
-	 * Register device to Linux, prepare private structures and
+	 * Register device to Linex, prepare private structures and
 	 * reset the device.
 	 */
 

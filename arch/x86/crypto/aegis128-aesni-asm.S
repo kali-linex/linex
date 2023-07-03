@@ -6,8 +6,8 @@
  * Copyright (C) 2017-2018 Red Hat, Inc. All rights reserved.
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <linex/linkage.h>
+#include <linex/cfi_types.h>
 #include <asm/frame.h>
 
 #define STATE0	%xmm0

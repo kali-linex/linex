@@ -6,18 +6,18 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Thomas Richter <tmricht@linux.vnet.ibm.com>
+ *  Author(s):  Thomas Richter <tmricht@linex.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/ctype.h>
+#include <linex/mutex.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/if.h>
-#include <uapi/linux/smc.h>
+#include <uapi/linex/if.h>
+#include <uapi/linex/smc.h>
 
 #include <rdma/ib_verbs.h>
 

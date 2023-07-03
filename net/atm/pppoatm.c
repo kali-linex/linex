@@ -32,18 +32,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/capability.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/atmppp.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/capability.h>
+#include <linex/ppp_defs.h>
+#include <linex/ppp-ioctl.h>
+#include <linex/ppp_channel.h>
+#include <linex/atmppp.h>
 
 #include "common.h"
 

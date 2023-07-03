@@ -3,16 +3,16 @@
  * Copyright (C) 2022 Linaro Ltd.
  */
 
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
+#include <linex/bits.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/usb/typec_dp.h>
+#include <linex/usb/typec_mux.h>
 
 struct gpio_sbu_mux {
 	struct gpio_desc *enable_gpio;

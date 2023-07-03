@@ -4,16 +4,16 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/of_irq.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/msi.h>
+#include <linex/export.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/of_irq.h>
 
 #include <asm/dcr.h>
 #include <asm/machdep.h>

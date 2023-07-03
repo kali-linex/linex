@@ -3,9 +3,9 @@
 // Copyright (c) 2018 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
 

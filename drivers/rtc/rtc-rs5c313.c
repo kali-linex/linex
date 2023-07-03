@@ -41,13 +41,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
+#include <linex/io.h>
 
 #define DRV_NAME	"rs5c313"
 

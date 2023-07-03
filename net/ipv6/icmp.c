@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Internet Control Message Protocol (ICMPv6)
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -27,26 +27,26 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/netfilter.h>
+#include <linex/slab.h>
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/icmpv6.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/icmpv6.h>
 
 #include <net/ip.h>
 #include <net/sock.h>
@@ -67,7 +67,7 @@
 #include <net/dsfield.h>
 #include <net/l3mdev.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 static DEFINE_PER_CPU(struct sock *, ipv6_icmp_sk);
 

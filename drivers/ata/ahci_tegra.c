@@ -8,14 +8,14 @@
  *	Mikko Perttunen <mperttunen@nvidia.com>
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linex/ahci_platform.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
 
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/pmc.h>

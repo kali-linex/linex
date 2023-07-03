@@ -2,7 +2,7 @@
 #define TLAN_H
 /********************************************************************
  *
- *  Linux ThunderLAN Driver
+ *  Linex ThunderLAN Driver
  *
  *  tlan.h
  *  by James Banks
@@ -20,9 +20,9 @@
  ********************************************************************/
 
 
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
+#include <linex/io.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
 
 
 

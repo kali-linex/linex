@@ -8,15 +8,15 @@
 #ifndef SOUND_FIREFACE_H_INCLUDED
 #define SOUND_FIREFACE_H_INCLUDED
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
+#include <linex/device.h>
+#include <linex/firewire.h>
+#include <linex/firewire-constants.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/sched/signal.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

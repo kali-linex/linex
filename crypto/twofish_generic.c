@@ -27,11 +27,11 @@
 #include <asm/unaligned.h>
 #include <crypto/algapi.h>
 #include <crypto/twofish.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/bitops.h>
 
 /* Macros to compute the g() function in the encryption and decryption
  * rounds.  G1 is the straight g() function; G2 includes the 8-bit

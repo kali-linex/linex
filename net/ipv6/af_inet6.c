@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	PF_INET6 socket protocol family
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Adapted from linux/net/ipv4/af_inet.c
+ *	Adapted from linex/net/ipv4/af_inet.c
  *
  *	Fixes:
  *	piggy, Karl Knutson	:	Socket protocol table
@@ -16,29 +16,29 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/icmpv6.h>
+#include <linex/netfilter_ipv6.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -65,13 +65,13 @@
 #include <net/ioam6.h>
 #include <net/rawv6.h>
 
-#include <linux/uaccess.h>
-#include <linux/mroute6.h>
+#include <linex/uaccess.h>
+#include <linex/mroute6.h>
 
 #include "ip6_offload.h"
 
 MODULE_AUTHOR("Cast of dozens");
-MODULE_DESCRIPTION("IPv6 protocol stack for Linux");
+MODULE_DESCRIPTION("IPv6 protocol stack for Linex");
 MODULE_LICENSE("GPL");
 
 /* The inetsw6 table contains everything that inet6_create needs to

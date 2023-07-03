@@ -4,16 +4,16 @@
  * Copyright 2016-2019 NXP
  *
  */
-#include <linux/types.h>
-#include <linux/fsl/mc.h>
+#include <linex/types.h>
+#include <linex/fsl/mc.h>
 #include <soc/fsl/dpaa2-io.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dim.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/dim.h>
+#include <linex/slab.h>
 
 #include "dpio.h"
 #include "qbman-portal.h"

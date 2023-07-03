@@ -6,14 +6,14 @@
  * 				Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/nospec.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/jiffies.h>
+#include <linex/nospec.h>
+#include <linex/skbuff.h>
+#include <linex/string.h>
+#include <linex/types.h>
 #include <net/netlink.h>
 
 /* For these data types, attribute length should be exactly the given

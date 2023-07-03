@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt)	"UDC core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched/task_stack.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/idr.h>
+#include <linex/err.h>
+#include <linex/dma-mapping.h>
+#include <linex/sched/task_stack.h>
+#include <linex/workqueue.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb.h>
 
 #include "trace.h"
 

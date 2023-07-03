@@ -4,14 +4,14 @@
  *
  * Initially copied out of arch/powerpc/kernel/prom_parse.c
  */
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/nvmem-consumer.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/export.h>
+#include <linex/device.h>
+#include <linex/nvmem-consumer.h>
 
 /**
  * of_get_phy_mode - Get phy mode for given device_node

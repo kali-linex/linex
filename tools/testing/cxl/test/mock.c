@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //Copyright(c) 2021 Intel Corporation. All rights reserved.
 
-#include <linux/libnvdimm.h>
-#include <linux/rculist.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
+#include <linex/libnvdimm.h>
+#include <linex/rculist.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/acpi.h>
+#include <linex/pci.h>
 #include <cxlmem.h>
 #include <cxlpci.h>
 #include "mock.h"

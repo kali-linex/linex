@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 #ifndef _GSI_H_
 #define _GSI_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/platform_device.h>
+#include <linex/netdevice.h>
 
 #include "ipa_version.h"
 

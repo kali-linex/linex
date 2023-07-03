@@ -7,18 +7,18 @@
  * in ptrace.c and signal.c.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/entry-common.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/export.h>
-#include <linux/nospec.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/entry-common.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/export.h>
+#include <linex/nospec.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
 
 #ifdef CONFIG_XEN_PV
 #include <xen/xen-ops.h>

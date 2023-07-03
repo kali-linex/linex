@@ -3,15 +3,15 @@
  * Copyright (c) 2013 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include <asm/unaligned.h>
 #include <net/tcp.h>
 #include <net/netns/generic.h>
-#include <linux/proc_fs.h>
+#include <linex/proc_fs.h>
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/nf_synproxy.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter/nf_synproxy.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>

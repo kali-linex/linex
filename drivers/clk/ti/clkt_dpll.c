@@ -11,12 +11,12 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/clk/ti.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/clk/ti.h>
 
 #include <asm/div64.h>
 

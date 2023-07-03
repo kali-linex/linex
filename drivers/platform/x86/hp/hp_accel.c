@@ -9,23 +9,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/leds.h>
-#include <linux/atomic.h>
-#include <linux/acpi.h>
-#include <linux/i8042.h>
-#include <linux/serio.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/freezer.h>
+#include <linex/uaccess.h>
+#include <linex/leds.h>
+#include <linex/atomic.h>
+#include <linex/acpi.h>
+#include <linex/i8042.h>
+#include <linex/serio.h>
 #include "../../../misc/lis3lv02d/lis3lv02d.h"
 
 /* Delayed LEDs infrastructure ------------------------------------ */

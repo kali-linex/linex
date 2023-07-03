@@ -4,15 +4,15 @@
  * Copyright (C) 2021 Marvell.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/perf_event.h>
-#include <linux/hrtimer.h>
-#include <linux/acpi.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/perf_event.h>
+#include <linex/hrtimer.h>
+#include <linex/acpi.h>
 
 /* Performance Counters Operating Mode Control Registers */
 #define DDRC_PERF_CNT_OP_MODE_CTRL	0x8020

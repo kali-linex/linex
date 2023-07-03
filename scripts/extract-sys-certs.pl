@@ -6,7 +6,7 @@ use strict;
 use Math::BigInt;
 use Fcntl "SEEK_SET";
 
-die "Format: $0 [-s <systemmap-file>] <vmlinux-file> <keyring-file>\n"
+die "Format: $0 [-s <systemmap-file>] <vmlinex-file> <keyring-file>\n"
     if ($#ARGV != 1 && $#ARGV != 3 ||
 	$#ARGV == 3 && $ARGV[0] ne "-s");
 
@@ -17,15 +17,15 @@ if ($#ARGV == 3) {
     shift;
 }
 
-my $vmlinux = $ARGV[0];
+my $vmlinex = $ARGV[0];
 my $keyring = $ARGV[1];
 
 #
-# Parse the vmlinux section table
+# Parse the vmlinex section table
 #
-open FD, "objdump -h $vmlinux |" || die $vmlinux;
+open FD, "objdump -h $vmlinex |" || die $vmlinex;
 my @lines = <FD>;
-close(FD) || die $vmlinux;
+close(FD) || die $vmlinex;
 
 my @sections = ();
 
@@ -51,12 +51,12 @@ foreach my $line (@lines) {
 print "Have $#sections sections\n";
 
 #
-# Try and parse the vmlinux symbol table.  If the vmlinux file has been created
-# from a vmlinuz file with extract-vmlinux then the symbol table will be empty.
+# Try and parse the vmlinex symbol table.  If the vmlinex file has been created
+# from a vmlinuz file with extract-vmlinex then the symbol table will be empty.
 #
-open FD, "nm $vmlinux 2>/dev/null |" || die $vmlinux;
+open FD, "nm $vmlinex 2>/dev/null |" || die $vmlinex;
 @lines = <FD>;
-close(FD) || die $vmlinux;
+close(FD) || die $vmlinex;
 
 my %symbols = ();
 my $nr_symbols = 0;
@@ -78,7 +78,7 @@ sub parse_symbols(@) {
 parse_symbols(@lines);
 
 if ($nr_symbols == 0 && $sysmap ne "") {
-    print "No symbols in vmlinux, trying $sysmap\n";
+    print "No symbols in vmlinex, trying $sysmap\n";
 
     open FD, "<$sysmap" || die $sysmap;
     @lines = <FD>;
@@ -100,7 +100,7 @@ my $end;
 my $size;
 my $size_sym = Math::BigInt->new($symbols{"system_certificate_list_size"});
 
-open FD, "<$vmlinux" || die $vmlinux;
+open FD, "<$vmlinex" || die $vmlinex;
 binmode(FD);
 
 my $s = undef;
@@ -122,7 +122,7 @@ foreach my $sec (@sections) {
 
     my $size_off = $size_sym -$s_vma + $s_foff;
     my $packed;
-    die $vmlinux if (!defined(sysseek(FD, $size_off, SEEK_SET)));
+    die $vmlinex if (!defined(sysseek(FD, $size_off, SEEK_SET)));
     sysread(FD, $packed, 8);
     $size = unpack 'L!', $packed;
     $end = $start + $size;
@@ -144,12 +144,12 @@ my $foff = $start - $s->{vma} + $s->{foff};
 
 printf "Certificate list at file offset 0x%x\n", $foff;
 
-die $vmlinux if (!defined(sysseek(FD, $foff, SEEK_SET)));
+die $vmlinex if (!defined(sysseek(FD, $foff, SEEK_SET)));
 my $buf = "";
 my $len = sysread(FD, $buf, $size);
-die "$vmlinux" if (!defined($len));
-die "Short read on $vmlinux\n" if ($len != $size);
-close(FD) || die $vmlinux;
+die "$vmlinex" if (!defined($len));
+die "Short read on $vmlinex\n" if ($len != $size);
+close(FD) || die $vmlinex;
 
 open FD, ">$keyring" || die $keyring;
 binmode(FD);

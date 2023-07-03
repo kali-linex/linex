@@ -21,18 +21,18 @@
  * - CPU core voltage
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/dev_printk.h>
-#include <linux/dmi.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
-#include <linux/units.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/dev_printk.h>
+#include <linex/dmi.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/sort.h>
+#include <linex/units.h>
 
 #include <asm/unaligned.h>
 

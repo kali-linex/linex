@@ -5,12 +5,12 @@
  * Copyright (C) 2014 Red Hat, Inc., Johannes Weiner
  */
 
-#include <linux/page_counter.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/bug.h>
+#include <linex/page_counter.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/sched.h>
+#include <linex/bug.h>
 #include <asm/page.h>
 
 static void propagate_protected_usage(struct page_counter *c,

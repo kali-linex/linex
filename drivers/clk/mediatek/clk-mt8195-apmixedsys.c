@@ -10,8 +10,8 @@
 #include "clk-pllfh.h"
 
 #include <dt-bindings/clock/mt8195-clk.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 static const struct mtk_gate_regs apmixed_cg_regs = {
 	.set_ofs = 0x8,

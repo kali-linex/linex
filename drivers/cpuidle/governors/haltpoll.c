@@ -10,15 +10,15 @@
  * Authors: Marcelo Tosatti <mtosatti@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kvm_para.h>
+#include <linex/kernel.h>
+#include <linex/cpuidle.h>
+#include <linex/time.h>
+#include <linex/ktime.h>
+#include <linex/hrtimer.h>
+#include <linex/tick.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/kvm_para.h>
 #include <trace/events/power.h>
 
 static unsigned int guest_halt_poll_ns __read_mostly = 200000;

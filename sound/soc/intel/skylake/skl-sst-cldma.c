@@ -7,10 +7,10 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
 #include <sound/hda_register.h>
 #include "../common/sst-dsp.h"
 #include "../common/sst-dsp-priv.h"

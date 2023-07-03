@@ -8,9 +8,9 @@
 // Author: Ben Yi <yijiangtao@awinic.com>
 //
 
-#include <linux/crc32.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linex/crc32.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
 #include "aw88395_device.h"
 #include "aw88395_reg.h"
 

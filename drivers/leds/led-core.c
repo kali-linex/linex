@@ -7,16 +7,16 @@
  * Author: Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <uapi/linux/uleds.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <uapi/linex/uleds.h>
 #include "leds.h"
 
 DECLARE_RWSEM(leds_list_lock);

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa27x.c
+ *  linex/arch/arm/mach-pxa/pxa27x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Nov 05, 2002
@@ -8,23 +8,23 @@
  *
  * Code specific to PXA27x aka Bulverde.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
+#include <linex/dmaengine.h>
+#include <linex/dma/pxa-dma.h>
+#include <linex/gpio.h>
+#include <linex/gpio-pxa.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/irqchip.h>
+#include <linex/suspend.h>
+#include <linex/platform_device.h>
+#include <linex/syscore_ops.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/platform_data/i2c-pxa.h>
+#include <linex/platform_data/mmp_dma.h>
+#include <linex/soc/pxa/cpu.h>
+#include <linex/soc/pxa/smemc.h>
 
 #include <asm/mach/map.h>
 #include <asm/irq.h>
@@ -32,17 +32,17 @@
 #include "irqs.h"
 #include "pxa27x.h"
 #include "reset.h"
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/asoc-pxa.h>
+#include <linex/platform_data/pxa2xx_udc.h>
+#include <linex/platform_data/usb-ohci-pxa27x.h>
+#include <linex/platform_data/asoc-pxa.h>
 #include "pm.h"
 #include "addr-map.h"
 #include "smemc.h"
 
 #include "generic.h"
 #include "devices.h"
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
 
 void pxa27x_clear_otgph(void)
 {

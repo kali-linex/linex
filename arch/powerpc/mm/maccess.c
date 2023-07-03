@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
 
 #include <asm/disassemble.h>
 #include <asm/inst.h>

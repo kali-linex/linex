@@ -31,27 +31,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/rculist.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/acpi_dma.h>
-#include <linux/of_dma.h>
-#include <linux/mempool.h>
-#include <linux/numa.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/device.h>
+#include <linex/dmaengine.h>
+#include <linex/hardirq.h>
+#include <linex/spinlock.h>
+#include <linex/percpu.h>
+#include <linex/rcupdate.h>
+#include <linex/mutex.h>
+#include <linex/jiffies.h>
+#include <linex/rculist.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/acpi_dma.h>
+#include <linex/of_dma.h>
+#include <linex/mempool.h>
+#include <linex/numa.h>
 
 #include "dmaengine.h"
 
@@ -62,7 +62,7 @@ static long dmaengine_ref_count;
 
 /* --- debugfs implementation --- */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 static struct dentry *rootdir;
 

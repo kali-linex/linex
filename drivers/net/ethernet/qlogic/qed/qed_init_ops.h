@@ -7,8 +7,8 @@
 #ifndef _QED_INIT_OPS_H
 #define _QED_INIT_OPS_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 #include "qed.h"
 
 /**

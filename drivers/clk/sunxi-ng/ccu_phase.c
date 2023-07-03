@@ -4,9 +4,9 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
 
 #include "ccu_phase.h"
 

@@ -9,20 +9,20 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  * Alexander Aring <aar@pengutronix.de>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/of_gpio.h>
-#include <linux/ieee802154.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/hrtimer.h>
+#include <linex/jiffies.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/gpio.h>
+#include <linex/delay.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
+#include <linex/skbuff.h>
+#include <linex/of_gpio.h>
+#include <linex/ieee802154.h>
 
 #include <net/mac802154.h>
 #include <net/cfg802154.h>

@@ -4,8 +4,8 @@
  */
 
 #include <crypto/aes.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <linex/crypto.h>
+#include <linex/module.h>
 #include <asm/unaligned.h>
 
 /*

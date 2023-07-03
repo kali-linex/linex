@@ -5,17 +5,17 @@
 
 #define pr_fmt(fmt) "kcs-bmc: " fmt
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/ipmi_bmc.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/ipmi_bmc.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include "kcs_bmc_client.h"
 
@@ -563,6 +563,6 @@ static void __exit kcs_bmc_ipmi_exit(void)
 module_exit(kcs_bmc_ipmi_exit);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linex.intel.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_DESCRIPTION("KCS BMC to handle the IPMI request from system software");

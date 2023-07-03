@@ -4,18 +4,18 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 #include <soc/imx/revision.h>
 #include <dt-bindings/clock/imx6qdl-clock.h>
 

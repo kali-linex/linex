@@ -2,16 +2,16 @@
 /*
  * ADLX345/346 Three-Axis Digital Accelerometers (SPI Interface)
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.uclinex.org/
  *
  * Copyright (C) 2009 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_SPI */
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <linex/input.h>	/* BUS_SPI */
+#include <linex/module.h>
+#include <linex/spi/spi.h>
+#include <linex/pm.h>
+#include <linex/types.h>
 #include "adxl34x.h"
 
 #define MAX_SPI_FREQ_HZ		5000000
@@ -105,6 +105,6 @@ static struct spi_driver adxl34x_driver = {
 
 module_spi_driver(adxl34x_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinex.org>");
 MODULE_DESCRIPTION("ADXL345/346 Three-Axis Digital Accelerometer SPI Bus Driver");
 MODULE_LICENSE("GPL");

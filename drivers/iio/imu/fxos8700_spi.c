@@ -2,11 +2,11 @@
 /*
  * FXOS8700 - NXP IMU, SPI bits
  */
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
 
 #include "fxos8700.h"
 

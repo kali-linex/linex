@@ -17,7 +17,7 @@
 
 #include "udfdecl.h"
 
-#include <linux/bitops.h>
+#include <linex/bitops.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

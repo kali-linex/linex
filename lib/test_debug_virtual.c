@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/sizes.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/sizes.h>
+#include <linex/io.h>
 
 #include <asm/page.h>
 #ifdef CONFIG_MIPS

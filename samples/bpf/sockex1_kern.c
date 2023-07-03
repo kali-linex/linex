@@ -1,7 +1,7 @@
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/if_packet.h>
-#include <uapi/linux/ip.h>
+#include <uapi/linex/bpf.h>
+#include <uapi/linex/if_ether.h>
+#include <uapi/linex/if_packet.h>
+#include <uapi/linex/ip.h>
 #include <bpf/bpf_helpers.h>
 #include "bpf_legacy.h"
 

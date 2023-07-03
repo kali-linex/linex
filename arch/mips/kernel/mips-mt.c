@@ -4,16 +4,16 @@
  * Copyright (C) 2005 Mips Technologies, Inc
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/security.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/security.h>
 
 #include <asm/cpu.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/hardirq.h>
 #include <asm/mmu_context.h>
 #include <asm/mipsmtregs.h>
@@ -198,7 +198,7 @@ void mips_mt_set_cpuoptions(void)
 		unsigned long ectlval;
 		unsigned long itcblkgrn;
 
-		/* ErrCtl register is known as "ecc" to Linux */
+		/* ErrCtl register is known as "ecc" to Linex */
 		ectlval = read_c0_ecc();
 		write_c0_ecc(ectlval | (0x1 << 26));
 		ehb();

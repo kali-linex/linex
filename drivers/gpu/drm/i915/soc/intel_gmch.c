@@ -3,8 +3,8 @@
  * Copyright © 2023 Intel Corporation
  */
 
-#include <linux/pci.h>
-#include <linux/pnp.h>
+#include <linex/pci.h>
+#include <linex/pnp.h>
 
 #include <drm/drm_managed.h>
 #include <drm/i915_drm.h>

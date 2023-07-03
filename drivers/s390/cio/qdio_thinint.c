@@ -3,13 +3,13 @@
  * Copyright IBM Corp. 2000, 2009
  * Author(s): Utz Bacher <utz.bacher@de.ibm.com>
  *	      Cornelia Huck <cornelia.huck@de.ibm.com>
- *	      Jan Glauber <jang@linux.vnet.ibm.com>
+ *	      Jan Glauber <jang@linex.vnet.ibm.com>
  */
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/kernel_stat.h>
-#include <linux/atomic.h>
-#include <linux/rculist.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/kernel_stat.h>
+#include <linex/atomic.h>
+#include <linex/rculist.h>
 
 #include <asm/debug.h>
 #include <asm/qdio.h>

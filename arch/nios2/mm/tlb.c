@@ -9,10 +9,10 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
 
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>

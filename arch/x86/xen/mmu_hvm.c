@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/crash_dump.h>
+#include <linex/types.h>
+#include <linex/crash_dump.h>
 
 #include <xen/interface/xen.h>
 #include <xen/hvm.h>

@@ -6,13 +6,13 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/regmap.h>
+#include <linex/module.h>
 
 #include "clk-pll.h"
 #include "clk-regmap.h"

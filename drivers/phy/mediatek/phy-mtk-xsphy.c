@@ -8,13 +8,13 @@
  */
 
 #include <dt-bindings/phy/phy.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
 
 #include "phy-mtk-io.h"
 

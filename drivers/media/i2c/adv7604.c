@@ -15,19 +15,19 @@
  * REF_03 - Analog devices, ADV7604, Hardware Manual, Rev. F, August 2010
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/slab.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/hdmi.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/slab.h>
+#include <linex/v4l2-dv-timings.h>
+#include <linex/videodev2.h>
+#include <linex/workqueue.h>
+#include <linex/regmap.h>
+#include <linex/interrupt.h>
 
 #include <media/i2c/adv7604.h>
 #include <media/cec.h>

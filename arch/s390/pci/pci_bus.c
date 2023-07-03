@@ -3,22 +3,22 @@
  * Copyright IBM Corp. 2020
  *
  * Author(s):
- *   Pierre Morel <pmorel@linux.ibm.com>
+ *   Pierre Morel <pmorel@linex.ibm.com>
  *
  */
 
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/jump_label.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/jump_label.h>
+#include <linex/pci.h>
+#include <linex/printk.h>
 
 #include <asm/pci_clp.h>
 #include <asm/pci_dma.h>

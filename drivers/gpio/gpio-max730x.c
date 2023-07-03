@@ -27,13 +27,13 @@
  * The driver exports a standard gpiochip interface
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/spi/max7301.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/spi/max7301.h>
+#include <linex/gpio/driver.h>
+#include <linex/slab.h>
 
 /*
  * Pin configurations, see MAX7301 datasheet page 6

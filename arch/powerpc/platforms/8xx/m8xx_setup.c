@@ -11,14 +11,14 @@
  * bootup setup stuff..
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/fsl_devices.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/time.h>
+#include <linex/rtc.h>
+#include <linex/fsl_devices.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
 
 #include <asm/io.h>
 #include <asm/8xx_immap.h>

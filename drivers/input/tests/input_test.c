@@ -5,8 +5,8 @@
  * Copyright (c) 2023 Red Hat Inc
  */
 
-#include <linux/delay.h>
-#include <linux/input.h>
+#include <linex/delay.h>
+#include <linex/input.h>
 
 #include <kunit/test.h>
 

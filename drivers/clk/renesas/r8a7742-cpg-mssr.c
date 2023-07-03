@@ -5,10 +5,10 @@
  * Copyright (C) 2020 Renesas Electronics Corp.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a7742-cpg-mssr.h>
 

@@ -39,18 +39,18 @@
 
 /* =============== End of user configurable parameters ============== */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
+#include <linex/blkdev.h>
+#include <linex/spinlock.h>
+#include <linex/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

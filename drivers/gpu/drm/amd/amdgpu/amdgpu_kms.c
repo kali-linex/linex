@@ -34,11 +34,11 @@
 #include "amdgpu_vce.h"
 #include "atom.h"
 
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
 #include "amdgpu_amdkfd.h"
 #include "amdgpu_gem.h"
 #include "amdgpu_display.h"

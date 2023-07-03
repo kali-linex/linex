@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/mmc/sdio_ops.c
+ *  linex/drivers/mmc/sdio_ops.c
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
@@ -8,8 +8,8 @@
 #ifndef _MMC_SDIO_OPS_H
 #define _MMC_SDIO_OPS_H
 
-#include <linux/types.h>
-#include <linux/mmc/sdio.h>
+#include <linex/types.h>
+#include <linex/mmc/sdio.h>
 
 struct mmc_host;
 struct mmc_card;

@@ -5,21 +5,21 @@
  * Copyright (C) 2019 Mellanox Technologies
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/circ_buf.h>
-#include <linux/efi.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/circ_buf.h>
+#include <linex/efi.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
-#include <linux/virtio_config.h>
-#include <linux/virtio_console.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_net.h>
-#include <linux/virtio_ring.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_console.h>
+#include <linex/virtio_ids.h>
+#include <linex/virtio_net.h>
+#include <linex/virtio_ring.h>
 
 #include "mlxbf-tmfifo-regs.h"
 
@@ -204,7 +204,7 @@ struct mlxbf_tmfifo_msg_hdr {
 /*
  * Default MAC.
  * This MAC address will be read from EFI persistent variable if configured.
- * It can also be reconfigured with standard Linux tools.
+ * It can also be reconfigured with standard Linex tools.
  */
 static u8 mlxbf_tmfifo_net_default_mac[ETH_ALEN] = {
 	0x00, 0x1A, 0xCA, 0xFF, 0xFF, 0x01

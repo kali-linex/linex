@@ -11,13 +11,13 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/bitops.h>
-#include <linux/linkage.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
+#include <linex/bitops.h>
+#include <linex/linkage.h>
+#include <linex/smp.h>
+#include <linex/threads.h>
+#include <linex/cpumask.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/smp-ops.h>
 
 extern int smp_num_siblings;
@@ -110,7 +110,7 @@ static inline void *kexec_nonboot_cpu_func(void)
 #endif
 
 /*
- * This function will set up the necessary IPIs for Linux to communicate
+ * This function will set up the necessary IPIs for Linex to communicate
  * with the CPUs in mask.
  * Return 0 on success.
  */

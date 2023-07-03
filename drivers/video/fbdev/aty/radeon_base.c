@@ -16,7 +16,7 @@
  *	driver which has the following copyright notice:
  *
  *	Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                     VA Linux Systems Inc., Fremont, California.
+ *                     VA Linex Systems Inc., Fremont, California.
  *
  *	All Rights Reserved.
  *
@@ -35,7 +35,7 @@
  *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * 	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  *	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- *	NON-INFRINGEMENT.  IN NO EVENT SHALL ATI, VA LINUX SYSTEMS AND/OR
+ *	NON-INFRINGEMENT.  IN NO EVENT SHALL ATI, VA LINEX SYSTEMS AND/OR
  *	THEIR SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
  *	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  *	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
@@ -44,7 +44,7 @@
  *	XFree86 driver authors:
  *
  *	   Kevin E. Martin <martin@xfree86.org>
- *	   Rickard E. Faith <faith@valinux.com>
+ *	   Rickard E. Faith <faith@valinex.com>
  *	   Alan Hourihane <alanh@fairlite.demon.co.uk>
  *
  */
@@ -54,26 +54,26 @@
 
 #include "radeonfb.h"
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/time.h>
+#include <linex/fb.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/device.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #ifdef CONFIG_PPC
 
@@ -86,7 +86,7 @@
 #endif /* CONFIG_PPC */
 
 #include <video/radeon.h>
-#include <linux/radeonfb.h>
+#include <linex/radeonfb.h>
 
 #include "../edid.h" // MOVE THAT TO include/video
 #include "ati_ids.h"

@@ -9,7 +9,7 @@
 
 */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "b43.h"
 #include "phy_ht.h"

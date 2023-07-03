@@ -7,12 +7,12 @@
 #ifndef WILC_NETDEV_H
 #define WILC_NETDEV_H
 
-#include <linux/tcp.h>
-#include <linux/ieee80211.h>
+#include <linex/tcp.h>
+#include <linex/ieee80211.h>
 #include <net/cfg80211.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/if_arp.h>
-#include <linux/gpio/consumer.h>
+#include <linex/if_arp.h>
+#include <linex/gpio/consumer.h>
 
 #include "hif.h"
 #include "wlan.h"

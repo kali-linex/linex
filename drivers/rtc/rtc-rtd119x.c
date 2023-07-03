@@ -5,14 +5,14 @@
  * Copyright (c) 2017 Andreas Färber
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/spinlock.h>
 
 #define RTD_RTCSEC		0x00
 #define RTD_RTCMIN		0x04

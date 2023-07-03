@@ -52,25 +52,25 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/parport.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/hdlcdrv.h>
+#include <linex/baycom.h>
+#include <linex/parport.h>
+#include <linex/bitops.h>
+#include <linex/jiffies.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /* --------------------------------------------------------------------- */
 

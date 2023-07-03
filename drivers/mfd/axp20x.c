@@ -13,19 +13,19 @@
  * Author: Carlo Caione <carlo@caione.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/axp20x.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
 #define AXP20X_OFF	BIT(7)
 

@@ -9,17 +9,17 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/as3722.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/time.h>
+#include <linex/bcd.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/ioctl.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mfd/as3722.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/time.h>
 
 #define AS3722_RTC_START_YEAR	  2000
 struct as3722_rtc {

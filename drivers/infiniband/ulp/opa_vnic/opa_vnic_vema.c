@@ -51,8 +51,8 @@
  * Ethernet Management Agent (EMA) driver
  */
 
-#include <linux/module.h>
-#include <linux/xarray.h>
+#include <linex/module.h>
+#include <linex/xarray.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/opa_smi.h>

@@ -3,7 +3,7 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 #include <sys/wait.h>
 #include "../tests.h"
 

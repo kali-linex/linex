@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2016, The Linex Foundation. All rights reserved.
  */
 
 /* Qualcomm Technologies, Inc. EMAC Gigabit Ethernet Driver */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/of_device.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/acpi.h>
 #include "emac.h"
 #include "emac-mac.h"
 #include "emac-phy.h"

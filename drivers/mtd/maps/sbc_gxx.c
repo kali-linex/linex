@@ -32,14 +32,14 @@ separate MTD devices.
 
 // Includes
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
 #include <asm/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/partitions.h>
 
 // Defines
 

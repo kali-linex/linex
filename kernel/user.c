@@ -9,16 +9,16 @@
  * able to have per-user limits for system resources. 
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/key.h>
-#include <linux/sched/user.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_ns.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/key.h>
+#include <linex/sched/user.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/user_namespace.h>
+#include <linex/proc_ns.h>
 
 /*
  * userns count is 1 for root user, 1 for init_uts_ns,

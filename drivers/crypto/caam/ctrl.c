@@ -6,11 +6,11 @@
  * Copyright 2018-2019, 2023 NXP
  */
 
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sys_soc.h>
-#include <linux/fsl/mc.h>
+#include <linex/device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/sys_soc.h>
+#include <linex/fsl/mc.h>
 
 #include "compat.h"
 #include "debugfs.h"

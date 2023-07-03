@@ -29,10 +29,10 @@
  * ones that set the clock.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

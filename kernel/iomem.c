@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/mm.h>
 
 #ifndef ioremap_cache
 /* temporary while we convert existing ioremap_cache users to memremap */

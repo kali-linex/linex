@@ -4,17 +4,17 @@
  */
 
 /*
- * PDPI Lightning 4 gamecard driver for Linux.
+ * PDPI Lightning 4 gamecard driver for Linex.
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/gameport.h>
 
 #define L4_PORT			0x201
 #define L4_SELECT_ANALOG	0xa4

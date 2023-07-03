@@ -8,15 +8,15 @@
  * (C) Copyright 2020 Hewlett Packard Enterprise Development LP
  * Copyright (C) 2007-2014 Silicon Graphics, Inc. All rights reserved.
  */
-#include <linux/crash_dump.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/proc_fs.h>
-#include <linux/memory.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
+#include <linex/crash_dump.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpumask.h>
+#include <linex/proc_fs.h>
+#include <linex/memory.h>
+#include <linex/export.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
 
 #include <asm/e820/api.h>
 #include <asm/uv/uv_mmrs.h>

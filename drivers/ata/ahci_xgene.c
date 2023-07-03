@@ -9,14 +9,14 @@
  *
  * NOTE: PM support is not currently available.
  */
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ahci_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/phy/phy.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/ahci_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/phy/phy.h>
 #include "ahci.h"
 
 #define DRV_NAME "xgene-ahci"

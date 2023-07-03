@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/early_printk.c
+ *  linex/arch/arm/kernel/early_printk.c
  *
  *  Copyright (C) 2009 Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/init.h>
+#include <linex/string.h>
 
 extern void printascii(const char *);
 

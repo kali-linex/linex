@@ -7,13 +7,13 @@
 #ifndef _ASM_S390_DEBUG_H
 #define _ASM_S390_DEBUG_H
 
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/refcount.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/refcount.h>
+#include <linex/fs.h>
+#include <linex/init.h>
 
 #define DEBUG_MAX_LEVEL		   6  /* debug levels range from 0 to 6 */
 #define DEBUG_OFF_LEVEL		   -1 /* level where debug is switched off */

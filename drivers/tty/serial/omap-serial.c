@@ -16,26 +16,26 @@
  * this driver as required for the omap-platform.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/serial-omap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/serial.h>
+#include <linex/serial_reg.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/serial_core.h>
+#include <linex/irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_data/serial-omap.h>
 
 #define OMAP_MAX_HSUART_PORTS	10
 

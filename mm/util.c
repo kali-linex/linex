@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/security.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mman.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/elf.h>
-#include <linux/elf-randomize.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/processor.h>
-#include <linux/sizes.h>
-#include <linux/compat.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
+#include <linex/err.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task_stack.h>
+#include <linex/security.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/mman.h>
+#include <linex/hugetlb.h>
+#include <linex/vmalloc.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/elf.h>
+#include <linex/elf-randomize.h>
+#include <linex/personality.h>
+#include <linex/random.h>
+#include <linex/processor.h>
+#include <linex/sizes.h>
+#include <linex/compat.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 #include "swap.h"
@@ -898,7 +898,7 @@ struct percpu_counter vm_committed_as ____cacheline_aligned_in_smp;
 
 /*
  * The global memory commitment made in the system can be a metric
- * that can be used to drive ballooning decisions when Linux is hosted
+ * that can be used to drive ballooning decisions when Linex is hosted
  * as a guest. On Hyper-V, the host implements a policy engine for dynamically
  * balancing memory across competing virtual machines that are hosted.
  * Several metrics drive this policy engine including the guest reported

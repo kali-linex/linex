@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/ethtool.yaml */
 /* YNL-GEN user header */
-/* YNL-ARG --user-header linux/ethtool_netlink.h --exclude-op stats-get */
+/* YNL-ARG --user-header linex/ethtool_netlink.h --exclude-op stats-get */
 
-#ifndef _LINUX_ETHTOOL_GEN_H
-#define _LINUX_ETHTOOL_GEN_H
+#ifndef _LINEX_ETHTOOL_GEN_H
+#define _LINEX_ETHTOOL_GEN_H
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/types.h>
-#include <linux/ethtool.h>
+#include <linex/types.h>
+#include <linex/ethtool.h>
 
 struct ynl_sock;
 
@@ -5528,4 +5528,4 @@ struct ethtool_cable_test_tdr_ntf {
 
 void ethtool_cable_test_tdr_ntf_free(struct ethtool_cable_test_tdr_ntf *rsp);
 
-#endif /* _LINUX_ETHTOOL_GEN_H */
+#endif /* _LINEX_ETHTOOL_GEN_H */

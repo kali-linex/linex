@@ -6,16 +6,16 @@
  * Copyright (C) 2021 Nathan Rossi <nathan.rossi@digi.com>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
-#include <linux/platform_data/ina2xx.h>
+#include <linex/platform_data/ina2xx.h>
 
 /* INA238 register definitions */
 #define INA238_CONFIG			0x0

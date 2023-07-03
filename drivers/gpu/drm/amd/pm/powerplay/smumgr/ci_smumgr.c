@@ -20,11 +20,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include "linux/delay.h"
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include "linex/delay.h"
+#include <linex/types.h>
+#include <linex/pci.h>
 
 #include "smumgr.h"
 #include "pp_debug.h"

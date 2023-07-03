@@ -11,13 +11,13 @@
 
 #define pr_fmt(fmt) "dt-idle-genpd: " fmt
 
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/cpu.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include "dt_idle_genpd.h"
 

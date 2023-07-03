@@ -7,14 +7,14 @@
  * - FB1 is display 1 with unique memory area
  * - both display use 32 bit colors
  */
-#include <linux/aperture.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/aperture.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include "carminefb.h"
 #include "carminefb_regs.h"

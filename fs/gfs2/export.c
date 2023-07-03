@@ -4,12 +4,12 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/buffer_head.h>
+#include <linex/exportfs.h>
+#include <linex/gfs2_ondisk.h>
+#include <linex/crc32.h>
 
 #include "gfs2.h"
 #include "incore.h"

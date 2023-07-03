@@ -5,10 +5,10 @@
  *  Copyright (C) 2015 Endless Mobile, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
 #include <asm/unaligned.h>
-#include <linux/usb.h>
+#include <linex/usb.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

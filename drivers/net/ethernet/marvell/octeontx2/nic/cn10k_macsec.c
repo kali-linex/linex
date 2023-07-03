@@ -4,8 +4,8 @@
  * Copyright (C) 2022 Marvell.
  */
 
-#include <linux/rtnetlink.h>
-#include <linux/bitfield.h>
+#include <linex/rtnetlink.h>
+#include <linex/bitfield.h>
 #include "otx2_common.h"
 
 #define MCS_TCAM0_MAC_DA_MASK		GENMASK_ULL(47, 0)

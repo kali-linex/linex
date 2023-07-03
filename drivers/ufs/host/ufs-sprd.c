@@ -6,13 +6,13 @@
  * Author: Zhe Wang <zhe.wang1@unisoc.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/regulator/consumer.h>
+#include <linex/arm-smccc.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/regulator/consumer.h>
 
 #include <ufs/ufshcd.h>
 #include "ufshcd-pltfrm.h"

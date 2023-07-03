@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/inet.h>
-#include <linux/kernel.h>
+#include <linex/inet.h>
+#include <linex/kernel.h>
 #include <net/tcp.h>
 #include <net/netns/generic.h>
 #include <net/mptcp.h>
 #include <net/genetlink.h>
-#include <uapi/linux/mptcp.h>
+#include <uapi/linex/mptcp.h>
 
 #include "protocol.h"
 #include "mib.h"
@@ -775,7 +775,7 @@ static bool mptcp_local_id_match(const struct mptcp_sock *msk, u8 local_id, u8 i
 
 static void mptcp_pm_nl_rm_addr_or_subflow(struct mptcp_sock *msk,
 					   const struct mptcp_rm_list *rm_list,
-					   enum linux_mptcp_mib_field rm_type)
+					   enum linex_mptcp_mib_field rm_type)
 {
 	struct mptcp_subflow_context *subflow, *tmp;
 	struct sock *sk = (struct sock *)msk;

@@ -3,8 +3,8 @@
  * Routines common to most mpc85xx-based boards.
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 
 #include <asm/fsl_pm.h>
 #include <soc/fsl/qe/qe.h>

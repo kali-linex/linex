@@ -15,26 +15,26 @@
  * by syed khasim <x0khasim@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
 
-#include <linux/regulator/machine.h>
+#include <linex/regulator/machine.h>
 
-#include <linux/i2c.h>
-#include <linux/mfd/twl.h>
+#include <linex/i2c.h>
+#include <linex/mfd/twl.h>
 
 /* Register descriptions for audio */
-#include <linux/mfd/twl4030-audio.h>
+#include <linex/mfd/twl4030-audio.h>
 
 #include "twl-core.h"
 
@@ -160,7 +160,7 @@ static struct twl_private *twl_priv;
 static struct twl_mapping twl4030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <linex/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 
@@ -331,7 +331,7 @@ static const struct regmap_config twl4030_regmap_config[4] = {
 static struct twl_mapping twl6030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <linex/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 

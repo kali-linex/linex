@@ -5,28 +5,28 @@
  * This file contains the setup_arch() code, which handles the architecture-dependent
  * parts of early kernel initialization.
  */
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/crash_dump.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/ima.h>
-#include <linux/init_ohci1394_dma.h>
-#include <linux/initrd.h>
-#include <linux/iscsi_ibft.h>
-#include <linux/memblock.h>
-#include <linux/panic_notifier.h>
-#include <linux/pci.h>
-#include <linux/root_dev.h>
-#include <linux/hugetlb.h>
-#include <linux/tboot.h>
-#include <linux/usb/xhci-dbgp.h>
-#include <linux/static_call.h>
-#include <linux/swiotlb.h>
-#include <linux/random.h>
+#include <linex/acpi.h>
+#include <linex/console.h>
+#include <linex/crash_dump.h>
+#include <linex/dma-map-ops.h>
+#include <linex/dmi.h>
+#include <linex/efi.h>
+#include <linex/ima.h>
+#include <linex/init_ohci1394_dma.h>
+#include <linex/initrd.h>
+#include <linex/iscsi_ibft.h>
+#include <linex/memblock.h>
+#include <linex/panic_notifier.h>
+#include <linex/pci.h>
+#include <linex/root_dev.h>
+#include <linex/hugetlb.h>
+#include <linex/tboot.h>
+#include <linex/usb/xhci-dbgp.h>
+#include <linex/static_call.h>
+#include <linex/swiotlb.h>
+#include <linex/random.h>
 
-#include <uapi/linux/mount.h>
+#include <uapi/linex/mount.h>
 
 #include <xen/xen.h>
 
@@ -54,7 +54,7 @@
 #include <asm/thermal.h>
 #include <asm/unwind.h>
 #include <asm/vsyscall.h>
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
 /*
  * max_low_pfn_mapped: highest directly mapped pfn < 4 GB
@@ -994,7 +994,7 @@ void __init setup_arch(char **cmdline_p)
 
 #ifdef CONFIG_MEMORY_HOTPLUG
 	/*
-	 * Memory used by the kernel cannot be hot-removed because Linux
+	 * Memory used by the kernel cannot be hot-removed because Linex
 	 * cannot migrate the kernel pages. When memory hotplug is
 	 * enabled, we should prevent memblock from allocating memory
 	 * for the kernel.

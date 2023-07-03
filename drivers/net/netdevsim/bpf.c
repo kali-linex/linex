@@ -13,12 +13,12 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/rtnetlink.h>
+#include <linex/bpf.h>
+#include <linex/bpf_verifier.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/rtnetlink.h>
 #include <net/pkt_cls.h>
 
 #include "netdevsim.h"

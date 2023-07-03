@@ -6,24 +6,24 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/swap.h>
-#include <linux/swiotlb.h>
-#include <linux/sizes.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/libfdt.h>
-#include <linux/set_memory.h>
-#include <linux/dma-map-ops.h>
-#include <linux/crash_dump.h>
-#include <linux/hugetlb.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/initrd.h>
+#include <linex/swap.h>
+#include <linex/swiotlb.h>
+#include <linex/sizes.h>
+#include <linex/of_fdt.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/libfdt.h>
+#include <linex/set_memory.h>
+#include <linex/dma-map-ops.h>
+#include <linex/crash_dump.h>
+#include <linex/hugetlb.h>
 #ifdef CONFIG_RELOCATABLE
-#include <linux/elf.h>
+#include <linex/elf.h>
 #endif
-#include <linux/kfence.h>
+#include <linex/kfence.h>
 
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>
@@ -190,14 +190,14 @@ early_param("mem", early_mem);
 
 static void __init setup_bootmem(void)
 {
-	phys_addr_t vmlinux_end = __pa_symbol(&_end);
+	phys_addr_t vmlinex_end = __pa_symbol(&_end);
 	phys_addr_t max_mapped_addr;
-	phys_addr_t phys_ram_end, vmlinux_start;
+	phys_addr_t phys_ram_end, vmlinex_start;
 
 	if (IS_ENABLED(CONFIG_XIP_KERNEL))
-		vmlinux_start = __pa_symbol(&_sdata);
+		vmlinex_start = __pa_symbol(&_sdata);
 	else
-		vmlinux_start = __pa_symbol(&_start);
+		vmlinex_start = __pa_symbol(&_start);
 
 	memblock_enforce_memory_limit(memory_limit);
 
@@ -207,11 +207,11 @@ static void __init setup_bootmem(void)
 	 * any allocation to happen between _end and the next pmd aligned page.
 	 */
 	if (IS_ENABLED(CONFIG_64BIT) && IS_ENABLED(CONFIG_STRICT_KERNEL_RWX))
-		vmlinux_end = (vmlinux_end + PMD_SIZE - 1) & PMD_MASK;
+		vmlinex_end = (vmlinex_end + PMD_SIZE - 1) & PMD_MASK;
 	/*
 	 * Reserve from the start of the kernel to the end of the kernel
 	 */
-	memblock_reserve(vmlinux_start, vmlinux_end - vmlinux_start);
+	memblock_reserve(vmlinex_start, vmlinex_end - vmlinex_start);
 
 	phys_ram_end = memblock_end_of_DRAM();
 	if (!IS_ENABLED(CONFIG_XIP_KERNEL))
@@ -869,7 +869,7 @@ static void __init relocate_kernel(void)
 
 		/*
 		 * Make sure to not relocate vdso symbols like rt_sigreturn
-		 * which are linked from the address 0 in vmlinux since
+		 * which are linked from the address 0 in vmlinex since
 		 * vdso symbol addresses are actually used as an offset from
 		 * mm->context.vdso in VDSO_OFFSET macro.
 		 */

@@ -5,12 +5,12 @@
  *  Copyright (c) 2002 Vojtech Pavlik
  *  Copyright (c) 2002, 2006, 2008 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
 

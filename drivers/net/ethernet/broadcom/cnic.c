@@ -9,28 +9,28 @@
  *
  * Original skeleton written by: John(Zongxi) Chen (zongxi@broadcom.com)
  * Previously modified and maintained by: Michael Chan <mchan@broadcom.com>
- * Maintained By: Dept-HSGLinuxNICDev@qlogic.com
+ * Maintained By: Dept-HSGLinexNICDev@qlogic.com
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/uio_driver.h>
-#include <linux/in.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/uio_driver.h>
+#include <linex/in.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/prefetch.h>
+#include <linex/random.h>
 #if IS_ENABLED(CONFIG_VLAN_8021Q)
 #define BCM_VLAN 1
 #endif

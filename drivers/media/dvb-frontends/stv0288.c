@@ -13,12 +13,12 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
 #include <asm/div64.h>
 
 #include <media/dvb_frontend.h>

@@ -1,4 +1,4 @@
-/* sundance.c: A Linux device driver for the Sundance ST201 "Alta". */
+/* sundance.c: A Linex device driver for the Sundance ST201 "Alta". */
 /*
 	Written 1999-2000 by Donald Becker.
 
@@ -75,28 +75,28 @@ static char *media[MAX_UNITS];
 #define PKT_BUF_SZ		1536	/* Size of each temporary Rx buffer.*/
 
 /* Include files, designed to support most kernel versions 2.0.0 and later. */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/crc32.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
 
 MODULE_AUTHOR("Donald Becker <becker@scyld.com>");
 MODULE_DESCRIPTION("Sundance Alta Ethernet driver");

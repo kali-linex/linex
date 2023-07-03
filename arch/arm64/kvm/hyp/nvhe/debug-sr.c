@@ -6,8 +6,8 @@
 
 #include <hyp/debug-sr.h>
 
-#include <linux/compiler.h>
-#include <linux/kvm_host.h>
+#include <linex/compiler.h>
+#include <linex/kvm_host.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/kvm_asm.h>

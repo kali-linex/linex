@@ -50,7 +50,7 @@
 
 		key-1 {
 			label = "A";
-			linux,code = <BTN_0>;
+			linex,code = <BTN_0>;
 			gpios = <&gpio GPIOH_6 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <34 IRQ_TYPE_EDGE_BOTH>;
@@ -58,7 +58,7 @@
 
 		key-2 {
 			label = "B";
-			linux,code = <BTN_1>;
+			linex,code = <BTN_1>;
 			gpios = <&gpio GPIOH_7 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <35 IRQ_TYPE_EDGE_BOTH>;
@@ -66,7 +66,7 @@
 
 		key-3 {
 			label = "C";
-			linux,code = <BTN_2>;
+			linex,code = <BTN_2>;
 			gpios = <&gpio_ao GPIOAO_2 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <2 IRQ_TYPE_EDGE_BOTH>;
@@ -74,8 +74,8 @@
 
 		key-mic-mute {
 			label = "MicMute";
-			linux,code = <SW_MUTE_DEVICE>;
-			linux,input-type = <EV_SW>;
+			linex,code = <SW_MUTE_DEVICE>;
+			linex,input-type = <EV_SW>;
 			gpios = <&gpio_ao GPIOE_2 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <99 IRQ_TYPE_EDGE_BOTH>;
@@ -83,7 +83,7 @@
 
 		key-power {
 			label = "PowerKey";
-			linux,code = <KEY_POWER>;
+			linex,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_3 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <3 IRQ_TYPE_EDGE_BOTH>;
@@ -118,7 +118,7 @@
 			label = "sei610:red:power";
 			pwms = <&pwm_AO_ab 0 30518 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			linex,default-trigger = "default-on";
 			active-low;
 		};
 	};

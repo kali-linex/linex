@@ -6,15 +6,15 @@
  * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
  */
 #include <crypto/internal/hash.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/crypto.h>
+#include <linex/types.h>
 #include <crypto/sha2.h>
 #include <crypto/sha512_base.h>
-#include <linux/percpu.h>
+#include <linex/percpu.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

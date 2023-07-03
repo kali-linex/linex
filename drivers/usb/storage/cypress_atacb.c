@@ -6,11 +6,11 @@
  * Copyright (c) 2008 Matthieu Castet (castet.matthieu@free.fr)
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_eh.h>
-#include <linux/ata.h>
+#include <linex/ata.h>
 
 #include "usb.h"
 #include "protocol.h"

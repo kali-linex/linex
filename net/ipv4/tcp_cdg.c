@@ -25,10 +25,10 @@
  *   o Limit shadow window to 2 * cwnd, or to cwnd when application limited.
  *   o More accurate e^-x.
  */
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/sched/clock.h>
+#include <linex/kernel.h>
+#include <linex/random.h>
+#include <linex/module.h>
+#include <linex/sched/clock.h>
 
 #include <net/tcp.h>
 
@@ -158,9 +158,9 @@ static void tcp_cdg_hystart_update(struct sock *sk)
 			ca->last_ack = now_us;
 			if (after(now_us, ca->round_start + base_owd)) {
 				NET_INC_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTTRAINDETECT);
+					      LINEX_MIB_TCPHYSTARTTRAINDETECT);
 				NET_ADD_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTTRAINCWND,
+					      LINEX_MIB_TCPHYSTARTTRAINCWND,
 					      tcp_snd_cwnd(tp));
 				tp->snd_ssthresh = tcp_snd_cwnd(tp);
 				return;
@@ -177,9 +177,9 @@ static void tcp_cdg_hystart_update(struct sock *sk)
 
 			if (ca->rtt.min > thresh) {
 				NET_INC_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTDELAYDETECT);
+					      LINEX_MIB_TCPHYSTARTDELAYDETECT);
 				NET_ADD_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTDELAYCWND,
+					      LINEX_MIB_TCPHYSTARTDELAYCWND,
 					      tcp_snd_cwnd(tp));
 				tp->snd_ssthresh = tcp_snd_cwnd(tp);
 			}

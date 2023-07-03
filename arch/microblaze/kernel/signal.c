@@ -18,24 +18,24 @@
  * archive for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/percpu.h>
-#include <linux/linkage.h>
-#include <linux/resume_user_mode.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/personality.h>
+#include <linex/percpu.h>
+#include <linex/linkage.h>
+#include <linex/resume_user_mode.h>
 #include <asm/entry.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
+#include <linex/uaccess.h>
+#include <linex/syscalls.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 

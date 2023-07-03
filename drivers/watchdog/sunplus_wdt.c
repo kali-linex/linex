@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/watchdog.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/watchdog.h>
 
 #define WDT_CTRL		0x00
 #define WDT_CNT			0x04

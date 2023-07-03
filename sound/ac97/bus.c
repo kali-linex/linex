@@ -3,18 +3,18 @@
  * Copyright (C) 2016 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
 #include <sound/ac97/codec.h>
 #include <sound/ac97/controller.h>
 #include <sound/ac97/regs.h>

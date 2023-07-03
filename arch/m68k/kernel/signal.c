@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/signal.c
+ *  linex/arch/m68k/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,7 +9,7 @@
  */
 
 /*
- * Linux/m68k support by Hamish Macdonald
+ * Linex/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  *
@@ -28,25 +28,25 @@
  * signal handlers!
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/extable.h>
-#include <linux/resume_user_mode.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/syscalls.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/highuid.h>
+#include <linex/personality.h>
+#include <linex/tty.h>
+#include <linex/binfmts.h>
+#include <linex/extable.h>
+#include <linex/resume_user_mode.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/traps.h>
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>

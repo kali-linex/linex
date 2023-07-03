@@ -10,12 +10,12 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/2496fc.pdf
  */
 
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <linex/spi/spi.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/driver.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/property.h>
 
 #include "ltc2497.h"
 

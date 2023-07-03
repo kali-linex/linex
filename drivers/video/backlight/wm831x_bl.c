@@ -5,17 +5,17 @@
  * Copyright 2009 Wolfson Microelectonics plc
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/slab.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/regulator.h>
+#include <linex/mfd/wm831x/core.h>
+#include <linex/mfd/wm831x/pdata.h>
+#include <linex/mfd/wm831x/regulator.h>
 
 struct wm831x_backlight_data {
 	struct wm831x *wm831x;

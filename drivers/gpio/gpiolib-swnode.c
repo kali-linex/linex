@@ -4,15 +4,15 @@
  *
  * Copyright 2022 Google LLC
  */
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/property.h>
-#include <linux/string.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/property.h>
+#include <linex/string.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
 
 #include "gpiolib.h"
 #include "gpiolib-swnode.h"

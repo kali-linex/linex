@@ -3,14 +3,14 @@
  *
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/timer.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/socket.h>
+#include <linex/timer.h>
 #include <net/ax25.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/rose.h>
-#include <linux/init.h>
+#include <linex/init.h>
 
 static struct sk_buff_head loopback_queue;
 #define ROSE_LOOPBACK_LIMIT 1000

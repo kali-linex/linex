@@ -10,12 +10,12 @@
  * Copyright (C) 2012 Jonas Gorski <jonas.gorski@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_flash.h>

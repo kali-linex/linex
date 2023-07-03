@@ -39,23 +39,23 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_SUNRPC_XPRT_RDMA_H
-#define _LINUX_SUNRPC_XPRT_RDMA_H
+#ifndef _LINEX_SUNRPC_XPRT_RDMA_H
+#define _LINEX_SUNRPC_XPRT_RDMA_H
 
-#include <linux/wait.h> 		/* wait_queue_head_t, etc */
-#include <linux/spinlock.h> 		/* spinlock_t, etc */
-#include <linux/atomic.h>		/* atomic_t, etc */
-#include <linux/kref.h>			/* struct kref */
-#include <linux/workqueue.h>		/* struct work_struct */
-#include <linux/llist.h>
+#include <linex/wait.h> 		/* wait_queue_head_t, etc */
+#include <linex/spinlock.h> 		/* spinlock_t, etc */
+#include <linex/atomic.h>		/* atomic_t, etc */
+#include <linex/kref.h>			/* struct kref */
+#include <linex/workqueue.h>		/* struct work_struct */
+#include <linex/llist.h>
 
 #include <rdma/rdma_cm.h>		/* RDMA connection api */
 #include <rdma/ib_verbs.h>		/* RDMA verbs api */
 
-#include <linux/sunrpc/clnt.h> 		/* rpc_xprt */
-#include <linux/sunrpc/rpc_rdma_cid.h> 	/* completion IDs */
-#include <linux/sunrpc/rpc_rdma.h> 	/* RPC/RDMA protocol */
-#include <linux/sunrpc/xprtrdma.h> 	/* xprt parameters */
+#include <linex/sunrpc/clnt.h> 		/* rpc_xprt */
+#include <linex/sunrpc/rpc_rdma_cid.h> 	/* completion IDs */
+#include <linex/sunrpc/rpc_rdma.h> 	/* RPC/RDMA protocol */
+#include <linex/sunrpc/xprtrdma.h> 	/* xprt parameters */
 
 #define RDMA_RESOLVE_TIMEOUT	(5000)	/* 5 seconds */
 #define RDMA_CONNECT_RETRY_MAX	(2)	/* retries if no listener backlog */
@@ -602,4 +602,4 @@ void xprt_rdma_bc_destroy(struct rpc_xprt *, unsigned int);
 
 extern struct xprt_class xprt_rdma_bc;
 
-#endif				/* _LINUX_SUNRPC_XPRT_RDMA_H */
+#endif				/* _LINEX_SUNRPC_XPRT_RDMA_H */

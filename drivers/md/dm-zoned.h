@@ -8,18 +8,18 @@
 #ifndef DM_ZONED_H
 #define DM_ZONED_H
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/rwsem.h>
-#include <linux/rbtree.h>
-#include <linux/radix-tree.h>
-#include <linux/shrinker.h>
+#include <linex/types.h>
+#include <linex/blkdev.h>
+#include <linex/device-mapper.h>
+#include <linex/dm-kcopyd.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
+#include <linex/rwsem.h>
+#include <linex/rbtree.h>
+#include <linex/radix-tree.h>
+#include <linex/shrinker.h>
 
 /*
  * dm-zoned creates block devices with 4KB blocks, always.

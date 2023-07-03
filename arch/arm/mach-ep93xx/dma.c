@@ -14,14 +14,14 @@
  *   Copyright (C) 2009 Ryan Mallon <rmallon@gmail.com>
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <linex/platform_data/dma-ep93xx.h>
 #include "hardware.h"
 
 #include "soc.h"

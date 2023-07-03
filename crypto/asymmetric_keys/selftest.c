@@ -4,9 +4,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/cred.h>
-#include <linux/key.h>
+#include <linex/kernel.h>
+#include <linex/cred.h>
+#include <linex/key.h>
 #include <crypto/pkcs7.h>
 #include "x509_parser.h"
 

@@ -4,28 +4,28 @@
  * Copyright (C) 2009, 2010, 2011 Red Hat, Inc.
  * Copyright (C) 2009, 2010, 2011 Amit Shah <amit.shah@redhat.com>
  */
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/splice.h>
-#include <linux/pagemap.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_console.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linex/cdev.h>
+#include <linex/debugfs.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/freezer.h>
+#include <linex/fs.h>
+#include <linex/splice.h>
+#include <linex/pagemap.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/virtio.h>
+#include <linex/virtio_console.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
 #include "../tty/hvc/hvc_console.h"
 
 #define is_rproc_enabled IS_ENABLED(CONFIG_REMOTEPROC)

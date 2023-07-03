@@ -6,11 +6,11 @@
 * Peter Ujfalusi <peter.ujfalusi@ti.com>
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/clk-provider.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/twl6040.h>
+#include <linex/clk-provider.h>
 
 struct twl6040_pdmclk {
 	struct twl6040 *twl6040;

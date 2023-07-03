@@ -3,19 +3,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linex/fs.h>
+#include <linex/fcntl.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/syscalls.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
 
 #include <asm/bcache.h>
 #include <asm/cacheflush.h>

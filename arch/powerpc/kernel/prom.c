@@ -11,26 +11,26 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/kexec.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
-#include <linux/seq_buf.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/threads.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/initrd.h>
+#include <linex/bitops.h>
+#include <linex/export.h>
+#include <linex/kexec.h>
+#include <linex/irq.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/libfdt.h>
+#include <linex/cpu.h>
+#include <linex/pgtable.h>
+#include <linex/seq_buf.h>
 
 #include <asm/rtas.h>
 #include <asm/page.h>
@@ -433,32 +433,32 @@ static int __init early_init_dt_scan_chosen_ppc(unsigned long node,
 
 #ifdef CONFIG_PPC64
 	/* check if iommu is forced on or off */
-	if (of_get_flat_dt_prop(node, "linux,iommu-off", NULL) != NULL)
+	if (of_get_flat_dt_prop(node, "linex,iommu-off", NULL) != NULL)
 		iommu_is_off = 1;
-	if (of_get_flat_dt_prop(node, "linux,iommu-force-on", NULL) != NULL)
+	if (of_get_flat_dt_prop(node, "linex,iommu-force-on", NULL) != NULL)
 		iommu_force_on = 1;
 #endif
 
 	/* mem=x on the command line is the preferred mechanism */
-	lprop = of_get_flat_dt_prop(node, "linux,memory-limit", NULL);
+	lprop = of_get_flat_dt_prop(node, "linex,memory-limit", NULL);
 	if (lprop)
 		memory_limit = *lprop;
 
 #ifdef CONFIG_PPC64
-	lprop = of_get_flat_dt_prop(node, "linux,tce-alloc-start", NULL);
+	lprop = of_get_flat_dt_prop(node, "linex,tce-alloc-start", NULL);
 	if (lprop)
 		tce_alloc_start = *lprop;
-	lprop = of_get_flat_dt_prop(node, "linux,tce-alloc-end", NULL);
+	lprop = of_get_flat_dt_prop(node, "linex,tce-alloc-end", NULL);
 	if (lprop)
 		tce_alloc_end = *lprop;
 #endif
 
 #ifdef CONFIG_KEXEC_CORE
-	lprop = of_get_flat_dt_prop(node, "linux,crashkernel-base", NULL);
+	lprop = of_get_flat_dt_prop(node, "linex,crashkernel-base", NULL);
 	if (lprop)
 		crashk_res.start = *lprop;
 
-	lprop = of_get_flat_dt_prop(node, "linux,crashkernel-size", NULL);
+	lprop = of_get_flat_dt_prop(node, "linex,crashkernel-size", NULL);
 	if (lprop)
 		crashk_res.end = crashk_res.start + *lprop - 1;
 #endif
@@ -521,10 +521,10 @@ static int  __init early_init_drmem_lmb(struct drmem_lmb *lmb,
 	if (is_kexec_kdump) {
 		/*
 		 * For each memblock in ibm,dynamic-memory, a
-		 * corresponding entry in linux,drconf-usable-memory
+		 * corresponding entry in linex,drconf-usable-memory
 		 * property contains a counter 'p' followed by 'p'
 		 * (base, size) duple. Now read the counter from
-		 * linux,drconf-usable-memory property
+		 * linex,drconf-usable-memory property
 		 */
 		rngs = dt_mem_next_cell(dt_root_size_cells, usm);
 		if (!rngs) /* there are no (base, size) duple */

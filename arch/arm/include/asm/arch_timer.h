@@ -5,10 +5,10 @@
 #include <asm/barrier.h>
 #include <asm/errno.h>
 #include <asm/hwcap.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/types.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/types.h>
 
 #include <clocksource/arm_arch_timer.h>
 

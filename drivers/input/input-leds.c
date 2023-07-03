@@ -5,12 +5,12 @@
  * Copyright 2010-2015 Samuel Thibault <samuel.thibault@ens-lyon.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/input.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/leds.h>
+#include <linex/input.h>
 
 #if IS_ENABLED(CONFIG_VT)
 #define VT_TRIGGER(_name)	.trigger = _name

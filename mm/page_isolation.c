@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/page_isolation.c
+ * linex/mm/page_isolation.c
  */
 
-#include <linux/mm.h>
-#include <linux/page-isolation.h>
-#include <linux/pageblock-flags.h>
-#include <linux/memory.h>
-#include <linux/hugetlb.h>
-#include <linux/page_owner.h>
-#include <linux/migrate.h>
+#include <linex/mm.h>
+#include <linex/page-isolation.h>
+#include <linex/pageblock-flags.h>
+#include <linex/memory.h>
+#include <linex/hugetlb.h>
+#include <linex/page_owner.h>
+#include <linex/migrate.h>
 #include "internal.h"
 
 #define CREATE_TRACE_POINTS

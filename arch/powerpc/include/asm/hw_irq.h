@@ -7,8 +7,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/errno.h>
-#include <linux/compiler.h>
+#include <linex/errno.h>
+#include <linex/compiler.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 
@@ -257,7 +257,7 @@ static inline bool pmi_irq_pending(void)
  * To support disabling and enabling of irq with PMI, set of
  * new powerpc_local_irq_pmu_save() and powerpc_local_irq_restore()
  * functions are added. These macros are implemented using generic
- * linux local_irq_* code from include/linux/irqflags.h.
+ * linex local_irq_* code from include/linex/irqflags.h.
  */
 #define raw_local_irq_pmu_save(flags)					\
 	do {								\

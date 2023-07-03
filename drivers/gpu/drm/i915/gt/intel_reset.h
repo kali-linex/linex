@@ -6,9 +6,9 @@
 #ifndef I915_RESET_H
 #define I915_RESET_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/srcu.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/srcu.h>
 
 #include "intel_engine_types.h"
 #include "intel_reset_types.h"

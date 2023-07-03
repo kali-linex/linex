@@ -4,16 +4,16 @@
  * Copyright (c) 2013 Lubomir Rintel
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/clk.h>
+#include <linex/reset.h>
 
 #define RNG_CTRL	0x0
 #define RNG_STATUS	0x4

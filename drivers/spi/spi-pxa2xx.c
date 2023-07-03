@@ -4,29 +4,29 @@
  * Copyright (C) 2013, 2021 Intel Corporation
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/spi.h>
+#include <linex/spi/pxa2xx_spi.h>
+#include <linex/spi/spi.h>
 
 #include "spi-pxa2xx.h"
 
@@ -1413,7 +1413,7 @@ static int pxa2xx_spi_fw_translate_cs(struct spi_controller *controller,
 		/*
 		 * For Atoms the ACPI DeviceSelection used by the Windows
 		 * driver starts from 1 instead of 0 so translate it here
-		 * to match what Linux expects.
+		 * to match what Linex expects.
 		 */
 		case LPSS_BYT_SSP:
 		case LPSS_BSW_SSP:

@@ -4,28 +4,28 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/trace_recursion.h>
-#include <linux/trace_events.h>
-#include <linux/ring_buffer.h>
-#include <linux/trace_clock.h>
-#include <linux/sched/clock.h>
-#include <linux/trace_seq.h>
-#include <linux/spinlock.h>
-#include <linux/irq_work.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>	/* for self test */
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
+#include <linex/trace_recursion.h>
+#include <linex/trace_events.h>
+#include <linex/ring_buffer.h>
+#include <linex/trace_clock.h>
+#include <linex/sched/clock.h>
+#include <linex/trace_seq.h>
+#include <linex/spinlock.h>
+#include <linex/irq_work.h>
+#include <linex/security.h>
+#include <linex/uaccess.h>
+#include <linex/hardirq.h>
+#include <linex/kthread.h>	/* for self test */
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/hash.h>
+#include <linex/list.h>
+#include <linex/cpu.h>
+#include <linex/oom.h>
 
 #include <asm/local.h>
 

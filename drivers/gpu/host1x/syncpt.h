@@ -8,11 +8,11 @@
 #ifndef __HOST1X_SYNCPT_H
 #define __HOST1X_SYNCPT_H
 
-#include <linux/atomic.h>
-#include <linux/host1x.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/sched.h>
+#include <linex/atomic.h>
+#include <linex/host1x.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/sched.h>
 
 #include "fence.h"
 #include "intr.h"

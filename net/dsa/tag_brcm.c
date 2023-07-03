@@ -5,11 +5,11 @@
  * Copyright (C) 2014 Broadcom Corporation
  */
 
-#include <linux/dsa/brcm.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/dsa/brcm.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
 #include "tag.h"
 

@@ -7,13 +7,13 @@
 #ifndef __XEN_PCIBACK_H__
 #define __XEN_PCIBACK_H__
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
 #include <xen/xenbus.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/atomic.h>
 #include <xen/events.h>
 #include <xen/interface/io/pciif.h>
 

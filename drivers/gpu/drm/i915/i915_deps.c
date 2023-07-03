@@ -3,8 +3,8 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/dma-fence.h>
-#include <linux/slab.h>
+#include <linex/dma-fence.h>
+#include <linex/slab.h>
 
 #include <drm/ttm/ttm_bo.h>
 

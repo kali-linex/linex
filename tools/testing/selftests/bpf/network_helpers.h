@@ -3,12 +3,12 @@
 #define __NETWORK_HELPERS_H
 #include <sys/socket.h>
 #include <sys/types.h>
-#include <linux/types.h>
+#include <linex/types.h>
 typedef __u16 __sum16;
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linex/if_ether.h>
+#include <linex/if_packet.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
 #include <netinet/tcp.h>
 #include <bpf/bpf_endian.h>
 

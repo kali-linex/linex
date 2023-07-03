@@ -3,11 +3,11 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/clk.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 #include <drm/drm_bridge_connector.h>
 #include <drm/drm_device.h>
 #include <drm/drm_modeset_helper.h>

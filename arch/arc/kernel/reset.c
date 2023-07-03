@@ -3,10 +3,10 @@
  * Copyright (C) 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
-#include <linux/pm.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/reboot.h>
+#include <linex/pm.h>
 
 void machine_halt(void)
 {

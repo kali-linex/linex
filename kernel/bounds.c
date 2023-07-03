@@ -7,11 +7,11 @@
 
 #define __GENERATING_BOUNDS_H
 /* Include headers that define the enum constants of interest */
-#include <linux/page-flags.h>
-#include <linux/mmzone.h>
-#include <linux/kbuild.h>
-#include <linux/log2.h>
-#include <linux/spinlock_types.h>
+#include <linex/page-flags.h>
+#include <linex/mmzone.h>
+#include <linex/kbuild.h>
+#include <linex/log2.h>
+#include <linex/spinlock_types.h>
 
 int main(void)
 {

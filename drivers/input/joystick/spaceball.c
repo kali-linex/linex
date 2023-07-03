@@ -8,14 +8,14 @@
  */
 
 /*
- * SpaceTec SpaceBall 2003/3003/4000 FLX driver for Linux
+ * SpaceTec SpaceBall 2003/3003/4000 FLX driver for Linex
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/serio.h>
 #include <asm/unaligned.h>
 
 #define DRIVER_DESC	"SpaceTec SpaceBall 2003/3003/4000 FLX driver"

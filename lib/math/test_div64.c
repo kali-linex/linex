@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/time64.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/ktime.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/time64.h>
+#include <linex/types.h>
 
 #include <asm/div64.h>
 

@@ -7,18 +7,18 @@
  * Author: Minghuan Lian <Minghuan.Lian@nxp.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/interrupt.h>
+#include <linex/iommu.h>
+#include <linex/irq.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/of_irq.h>
+#include <linex/of_pci.h>
+#include <linex/of_platform.h>
+#include <linex/spinlock.h>
 
 #define MSI_IRQS_PER_MSIR	32
 #define MSI_MSIR_OFFSET		4

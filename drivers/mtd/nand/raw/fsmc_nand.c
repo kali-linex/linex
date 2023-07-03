@@ -13,27 +13,27 @@
  *  Copyright © 2009 Alessandro Rubini
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/resource.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/amba/bus.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/resource.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/nand-ecc-sw-hamming.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/mtd/partitions.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/amba/bus.h>
 #include <mtd/mtd-abi.h>
 
 /* fsmc controller registers for NOR flash */

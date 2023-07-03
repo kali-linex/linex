@@ -3,12 +3,12 @@
 #define _ASM_X86_VDSO_H
 
 #include <asm/page_types.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
 
 #ifndef __ASSEMBLER__
 
-#include <linux/mm_types.h>
+#include <linex/mm_types.h>
 
 struct vdso_image {
 	void *data;

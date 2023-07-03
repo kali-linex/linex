@@ -46,11 +46,11 @@
  * provided by the Intel VSEC driver.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/intel_tpmi.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/intel_tpmi.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "vsec.h"
 
@@ -132,7 +132,7 @@ struct tpmi_info_header {
 
 /*
  * List of supported TMPI IDs.
- * Some TMPI IDs are not used by Linux, so the numbers are not consecutive.
+ * Some TMPI IDs are not used by Linex, so the numbers are not consecutive.
  */
 enum intel_tpmi_id {
 	TPMI_ID_RAPL = 0, /* Running Average Power Limit */

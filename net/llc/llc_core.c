@@ -12,13 +12,13 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/if_ether.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/init.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 

@@ -6,9 +6,9 @@
  */
 
 #define pr_fmt(fmt) "ASYM: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
 #include <crypto/public_key.h>
 #include "asymmetric_keys.h"
 

@@ -9,14 +9,14 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/slab.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <linex/mfd/pcf50633/core.h>
 
 #define PCF50633_OOCSTAT_ONKEY	0x01
 #define PCF50633_REG_OOCSTAT	0x12

@@ -6,19 +6,19 @@
  * Copyright (C) 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/kref.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/nvmem-provider.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 
 struct nvmem_device {
 	struct module		*owner;

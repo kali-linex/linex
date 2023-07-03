@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/memory.c
+ *  linex/mm/memory.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
@@ -39,52 +39,52 @@
  * Aug/Sep 2004 Changed to four level page tables (Andi Kleen)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/memremap.h>
-#include <linux/kmsan.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/delayacct.h>
-#include <linux/init.h>
-#include <linux/pfn_t.h>
-#include <linux/writeback.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/swapops.h>
-#include <linux/elf.h>
-#include <linux/gfp.h>
-#include <linux/migrate.h>
-#include <linux/string.h>
-#include <linux/memory-tiers.h>
-#include <linux/debugfs.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/dax.h>
-#include <linux/oom.h>
-#include <linux/numa.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/sysctl.h>
-#include <linux/net_mm.h>
+#include <linex/kernel_stat.h>
+#include <linex/mm.h>
+#include <linex/mm_inline.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/numa_balancing.h>
+#include <linex/sched/task.h>
+#include <linex/hugetlb.h>
+#include <linex/mman.h>
+#include <linex/swap.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/memremap.h>
+#include <linex/kmsan.h>
+#include <linex/ksm.h>
+#include <linex/rmap.h>
+#include <linex/export.h>
+#include <linex/delayacct.h>
+#include <linex/init.h>
+#include <linex/pfn_t.h>
+#include <linex/writeback.h>
+#include <linex/memcontrol.h>
+#include <linex/mmu_notifier.h>
+#include <linex/swapops.h>
+#include <linex/elf.h>
+#include <linex/gfp.h>
+#include <linex/migrate.h>
+#include <linex/string.h>
+#include <linex/memory-tiers.h>
+#include <linex/debugfs.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/dax.h>
+#include <linex/oom.h>
+#include <linex/numa.h>
+#include <linex/perf_event.h>
+#include <linex/ptrace.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/sysctl.h>
+#include <linex/net_mm.h>
 
 #include <trace/events/kmem.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 
@@ -5246,7 +5246,7 @@ out:
 EXPORT_SYMBOL_GPL(handle_mm_fault);
 
 #ifdef CONFIG_LOCK_MM_AND_FIND_VMA
-#include <linux/extable.h>
+#include <linex/extable.h>
 
 static inline bool get_mmap_lock_carefully(struct mm_struct *mm, struct pt_regs *regs)
 {

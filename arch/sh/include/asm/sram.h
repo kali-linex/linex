@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_HAVE_SRAM_POOL
 
-#include <linux/spinlock.h>
-#include <linux/genalloc.h>
+#include <linex/spinlock.h>
+#include <linex/genalloc.h>
 
 /* arch/sh/mm/sram.c */
 extern struct gen_pool *sram_pool;

@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2010 Broadcom Corporation
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
 
 #include <brcm_hw_ids.h>
 #include <chipcommon.h>

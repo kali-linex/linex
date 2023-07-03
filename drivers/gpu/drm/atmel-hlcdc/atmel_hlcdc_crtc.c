@@ -7,12 +7,12 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/media-bus-format.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/media-bus-format.h>
+#include <linex/mfd/atmel-hlcdc.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
 
 #include <video/videomode.h>
 

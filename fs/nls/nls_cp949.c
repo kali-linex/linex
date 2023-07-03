@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_cp949.c
+ * linex/fs/nls/nls_cp949.c
  *
  * Charset cp949 translation tables.
  * This translation table was generated automatically, the
@@ -7,11 +7,11 @@
  * (http://www.microsoft.com/typography/unicode/unicodecp.htm)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/nls.h>
+#include <linex/errno.h>
 
 static const wchar_t c2u_81[256] = {
 	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,/* 0x00-0x07 */

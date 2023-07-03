@@ -32,9 +32,9 @@
  * The verifier should be able to handle such code patterns.
  */
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/ipv6.h>
-#include <linux/version.h>
+#include <linex/bpf.h>
+#include <linex/ipv6.h>
+#include <linex/version.h>
 #include <sys/socket.h>
 #include <bpf/bpf_helpers.h>
 

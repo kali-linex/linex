@@ -12,8 +12,8 @@
  */
 
 #include <rv/automata.h>
-#include <linux/rv.h>
-#include <linux/bug.h>
+#include <linex/rv.h>
+#include <linex/bug.h>
 
 #ifdef CONFIG_RV_REACTORS
 

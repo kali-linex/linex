@@ -1,44 +1,44 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 tunneling device
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Ville Nuorvala		<vnuorval@tcs.hut.fi>
- *	Yasuyuki Kozakai	<kozakai@linux-ipv6.org>
+ *	Yasuyuki Kozakai	<kozakai@linex-ipv6.org>
  *
  *      Based on:
- *      linux/net/ipv6/sit.c and linux/net/ipv4/ipip.c
+ *      linex/net/ipv6/sit.c and linex/net/ipv4/ipip.c
  *
  *      RFC 2473
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
-#include <linux/etherdevice.h>
+#include <linex/module.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/sockios.h>
+#include <linex/icmp.h>
+#include <linex/if.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/net.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/icmpv6.h>
+#include <linex/init.h>
+#include <linex/route.h>
+#include <linex/rtnetlink.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/slab.h>
+#include <linex/hash.h>
+#include <linex/etherdevice.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 
 #include <net/icmp.h>
 #include <net/ip.h>

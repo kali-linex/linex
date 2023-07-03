@@ -4,9 +4,9 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/pid_namespace.h>
-#include <linux/pm_runtime.h>
-#include <linux/sysfs.h>
+#include <linex/pid_namespace.h>
+#include <linex/pm_runtime.h>
+#include <linex/sysfs.h>
 #include "coresight-etm4x.h"
 #include "coresight-priv.h"
 #include "coresight-syscfg.h"

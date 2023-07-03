@@ -9,14 +9,14 @@
  * Leo Yan <leo.yan@linaro.org>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/thermal.h>
+#include <linex/cpufreq.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/of_device.h>
+#include <linex/thermal.h>
 
 #define HI6220_TEMP0_LAG			(0x0)
 #define HI6220_TEMP0_TH				(0x4)

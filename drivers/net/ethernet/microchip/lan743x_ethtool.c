@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /* Copyright (C) 2018 Microchip Technology Inc. */
 
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
+#include <linex/netdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/pci.h>
+#include <linex/phy.h>
 #include "lan743x_main.h"
 #include "lan743x_ethtool.h"
-#include <linux/sched.h>
-#include <linux/iopoll.h>
+#include <linex/sched.h>
+#include <linex/iopoll.h>
 
 /* eeprom */
 #define LAN743X_EEPROM_MAGIC		    (0x74A5)

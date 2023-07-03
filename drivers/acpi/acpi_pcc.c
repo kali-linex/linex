@@ -15,11 +15,11 @@
  * handling of PCC OpRegion in the firmware.
  *
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/acpi.h>
+#include <linex/completion.h>
+#include <linex/idr.h>
+#include <linex/io.h>
 
 #include <acpi/pcc.h>
 

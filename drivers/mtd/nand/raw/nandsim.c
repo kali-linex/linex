@@ -12,27 +12,27 @@
 
 #define pr_fmt(fmt)  "[nandsim]" fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/vmalloc.h>
+#include <linex/math64.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/delay.h>
+#include <linex/list.h>
+#include <linex/random.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
 
 /* Default simulator parameters values */
 #if !defined(CONFIG_NANDSIM_FIRST_ID_BYTE)  || \

@@ -3,17 +3,17 @@
    Copyright (C) 2001 Rusty Russell.
 
 */
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/security.h>
+#include <linex/kernel.h>
+#include <linex/kstrtox.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/security.h>
 
 #ifdef CONFIG_SYSFS
 /* Protects all built-in parameters, modules use their own param_lock */

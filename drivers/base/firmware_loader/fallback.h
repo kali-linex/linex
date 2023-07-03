@@ -2,8 +2,8 @@
 #ifndef __FIRMWARE_FALLBACK_H
 #define __FIRMWARE_FALLBACK_H
 
-#include <linux/firmware.h>
-#include <linux/device.h>
+#include <linex/firmware.h>
+#include <linex/device.h>
 
 #include "firmware.h"
 #include "sysfs.h"

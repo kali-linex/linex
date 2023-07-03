@@ -23,8 +23,8 @@
  * counterpart in the DU documentation, that models those semi-global resources.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linex/clk.h>
+#include <linex/io.h>
 
 #include "rcar_du_drv.h"
 #include "rcar_du_group.h"

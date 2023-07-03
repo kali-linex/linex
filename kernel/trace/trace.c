@@ -12,42 +12,42 @@
  *  Copyright (C) 2004-2006 Ingo Molnar
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
-#include <linux/ring_buffer.h>
+#include <linex/ring_buffer.h>
 #include <generated/utsrelease.h>
-#include <linux/stacktrace.h>
-#include <linux/writeback.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/irqflags.h>
-#include <linux/debugfs.h>
-#include <linux/tracefs.h>
-#include <linux/pagemap.h>
-#include <linux/hardirq.h>
-#include <linux/linkage.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/splice.h>
-#include <linux/kdebug.h>
-#include <linux/string.h>
-#include <linux/mount.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/panic_notifier.h>
-#include <linux/poll.h>
-#include <linux/nmi.h>
-#include <linux/fs.h>
-#include <linux/trace.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/rt.h>
-#include <linux/fsnotify.h>
-#include <linux/irq_work.h>
-#include <linux/workqueue.h>
+#include <linex/stacktrace.h>
+#include <linex/writeback.h>
+#include <linex/kallsyms.h>
+#include <linex/security.h>
+#include <linex/seq_file.h>
+#include <linex/irqflags.h>
+#include <linex/debugfs.h>
+#include <linex/tracefs.h>
+#include <linex/pagemap.h>
+#include <linex/hardirq.h>
+#include <linex/linkage.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/ftrace.h>
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/splice.h>
+#include <linex/kdebug.h>
+#include <linex/string.h>
+#include <linex/mount.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/panic_notifier.h>
+#include <linex/poll.h>
+#include <linex/nmi.h>
+#include <linex/fs.h>
+#include <linex/trace.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/rt.h>
+#include <linex/fsnotify.h>
+#include <linex/irq_work.h>
+#include <linex/workqueue.h>
 
 #include <asm/setup.h> /* COMMAND_LINE_SIZE */
 
@@ -2869,7 +2869,7 @@ trace_event_buffer_lock_reserve(struct trace_buffer **current_rb,
 		 * This buffer will simulate a ring_buffer_event,
 		 * where the type_len is zero and the array[0] will
 		 * hold the full length.
-		 * (see include/linux/ring-buffer.h for details on
+		 * (see include/linex/ring-buffer.h for details on
 		 *  how the ring_buffer_event is structured).
 		 *
 		 * Using a temp buffer during filtering and copying it

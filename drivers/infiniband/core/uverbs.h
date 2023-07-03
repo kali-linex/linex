@@ -37,11 +37,11 @@
 #ifndef UVERBS_H
 #define UVERBS_H
 
-#include <linux/kref.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/cdev.h>
+#include <linex/kref.h>
+#include <linex/idr.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/cdev.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_umem.h>

@@ -12,15 +12,15 @@
  *                and Philip Prindeville <philipp@redfish-solutions.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/machine.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/string.h>
+#include <linex/leds.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/gpio_keys.h>
+#include <linex/gpio/machine.h>
 
 #include <asm/geode.h>
 

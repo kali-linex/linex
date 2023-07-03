@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/string.h> /* for memcpy() */
+#include <linex/string.h> /* for memcpy() */
 
 #include "system_global.h"
 

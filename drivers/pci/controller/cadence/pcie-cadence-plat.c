@@ -5,12 +5,12 @@
  * Copyright (c) 2019, Cadence Design Systems
  * Author: Tom Joseph <tjoseph@cadence.com>
  */
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/of_device.h>
 #include "pcie-cadence.h"
 
 #define CDNS_PLAT_CPU_TO_BUS_ADDR	0x0FFFFFFF

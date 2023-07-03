@@ -6,11 +6,11 @@
  * Copyright (c) 2021-2022 Samuel Holland <samuel@sholland.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
 
 #include "pinctrl-sunxi.h"
 

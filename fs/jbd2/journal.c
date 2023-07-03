@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/journal.c
+ * linex/fs/jbd2/journal.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
@@ -19,33 +19,33 @@
  * journaling (ext2 can use a reserved inode for storing the log).
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/math64.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/vmalloc.h>
-#include <linux/backing-dev.h>
-#include <linux/bitops.h>
-#include <linux/ratelimit.h>
-#include <linux/sched/mm.h>
+#include <linex/module.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/jbd2.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/freezer.h>
+#include <linex/pagemap.h>
+#include <linex/kthread.h>
+#include <linex/poison.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/math64.h>
+#include <linex/hash.h>
+#include <linex/log2.h>
+#include <linex/vmalloc.h>
+#include <linex/backing-dev.h>
+#include <linex/bitops.h>
+#include <linex/ratelimit.h>
+#include <linex/sched/mm.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/jbd2.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 
 #ifdef CONFIG_JBD2_DEBUG

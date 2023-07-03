@@ -5,22 +5,22 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/acpi_viot.h>
-#include <linux/iommu.h>
-#include <linux/signal.h>
-#include <linux/kthread.h>
-#include <linux/dmi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/pgtable.h>
-#include <linux/crc32.h>
-#include <linux/dma-direct.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/acpi.h>
+#include <linex/acpi_iort.h>
+#include <linex/acpi_viot.h>
+#include <linex/iommu.h>
+#include <linex/signal.h>
+#include <linex/kthread.h>
+#include <linex/dmi.h>
+#include <linex/dma-map-ops.h>
+#include <linex/platform_data/x86/apple.h>
+#include <linex/pgtable.h>
+#include <linex/crc32.h>
+#include <linex/dma-direct.h>
 
 #include "internal.h"
 
@@ -1220,7 +1220,7 @@ acpi_backlight_cap_match(acpi_handle handle, u32 level, void *context,
 
 /* Returns true if the ACPI object is a video device which can be
  * handled by video.ko.
- * The device will get a Linux specific CID added in scan.c to
+ * The device will get a Linex specific CID added in scan.c to
  * identify the device as an ACPI graphics device
  * Be aware that the graphics device may not be physically present
  * Use acpi_video_get_capabilities() to detect general ACPI video

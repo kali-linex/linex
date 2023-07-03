@@ -7,16 +7,16 @@
  * Copyright (C) 2009 Texas Instrument Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
 
 /* Register definitions */
 #define	TPS65023_REG_VERSION		0

@@ -9,19 +9,19 @@
 
 #include <asm/barrier.h>
 #include <dt-bindings/dma/at91.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/dmapool.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_dma.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
 
 #include "dmaengine.h"
 

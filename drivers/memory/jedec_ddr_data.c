@@ -7,7 +7,7 @@
  * Aneesh V <aneesh@ti.com>
  */
 
-#include <linux/export.h>
+#include <linex/export.h>
 
 #include "jedec_ddr.h"
 

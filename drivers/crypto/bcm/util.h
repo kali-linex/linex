@@ -6,8 +6,8 @@
 #ifndef _UTIL_H
 #define _UTIL_H
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
 
 #include "spu.h"
 

@@ -4,16 +4,16 @@
 // Copyright (c) 2012 Samsung Electronics Co., Ltd.
 // Author: Joonyoung Shim <jy0922.shim@samsung.com>
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/i2c.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/i2c.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/interrupt.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
 /* Write only registers */
 #define MMS114_MODE_CONTROL		0x01

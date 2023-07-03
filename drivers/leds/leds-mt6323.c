@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/mfd/mt6323/registers.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /*
  * Register field for MT6323_TOP_CKPDN0 to enable

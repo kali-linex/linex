@@ -10,7 +10,7 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/errno.h>
+#include <linex/errno.h>
 
 struct dentry;
 struct device_node;

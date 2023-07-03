@@ -6,38 +6,38 @@
  * Derived from binfmt_elf.c
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/security.h>
-#include <linux/highmem.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/elf.h>
-#include <linux/elf-fdpic.h>
-#include <linux/elfcore.h>
-#include <linux/coredump.h>
-#include <linux/dax.h>
-#include <linux/regset.h>
+#include <linex/fs.h>
+#include <linex/stat.h>
+#include <linex/sched.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/cputime.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/binfmts.h>
+#include <linex/string.h>
+#include <linex/file.h>
+#include <linex/fcntl.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/security.h>
+#include <linex/highmem.h>
+#include <linex/highuid.h>
+#include <linex/personality.h>
+#include <linex/ptrace.h>
+#include <linex/init.h>
+#include <linex/elf.h>
+#include <linex/elf-fdpic.h>
+#include <linex/elfcore.h>
+#include <linex/coredump.h>
+#include <linex/dax.h>
+#include <linex/regset.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/param.h>
 
 typedef char *elf_caddr_t;
@@ -56,17 +56,17 @@ typedef char *elf_caddr_t;
 
 MODULE_LICENSE("GPL");
 
-static int load_elf_fdpic_binary(struct linux_binprm *);
+static int load_elf_fdpic_binary(struct linex_binprm *);
 static int elf_fdpic_fetch_phdrs(struct elf_fdpic_params *, struct file *);
 static int elf_fdpic_map_file(struct elf_fdpic_params *, struct file *,
 			      struct mm_struct *, const char *);
 
-static int create_elf_fdpic_tables(struct linux_binprm *, struct mm_struct *,
+static int create_elf_fdpic_tables(struct linex_binprm *, struct mm_struct *,
 				   struct elf_fdpic_params *,
 				   struct elf_fdpic_params *);
 
 #ifndef CONFIG_MMU
-static int elf_fdpic_map_file_constdisp_on_uclinux(struct elf_fdpic_params *,
+static int elf_fdpic_map_file_constdisp_on_uclinex(struct elf_fdpic_params *,
 						   struct file *,
 						   struct mm_struct *);
 #endif
@@ -78,7 +78,7 @@ static int elf_fdpic_map_file_by_direct_mmap(struct elf_fdpic_params *,
 static int elf_fdpic_core_dump(struct coredump_params *cprm);
 #endif
 
-static struct linux_binfmt elf_fdpic_format = {
+static struct linex_binfmt elf_fdpic_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_elf_fdpic_binary,
 #ifdef CONFIG_ELF_CORE
@@ -179,7 +179,7 @@ static int elf_fdpic_fetch_phdrs(struct elf_fdpic_params *params,
 /*
  * load an fdpic binary into various bits of memory
  */
-static int load_elf_fdpic_binary(struct linux_binprm *bprm)
+static int load_elf_fdpic_binary(struct linex_binprm *bprm)
 {
 	struct elf_fdpic_params exec_params, interp_params;
 	struct pt_regs *regs = current_pt_regs();
@@ -346,9 +346,9 @@ static int load_elf_fdpic_binary(struct linux_binprm *bprm)
 	 * defunct, deceased, etc.
 	 */
 	if (elf_check_fdpic(&exec_params.hdr))
-		set_personality(PER_LINUX_FDPIC);
+		set_personality(PER_LINEX_FDPIC);
 	else
-		set_personality(PER_LINUX);
+		set_personality(PER_LINEX);
 	if (elf_read_implies_exec(&exec_params.hdr, executable_stack))
 		current->personality |= READ_IMPLIES_EXEC;
 
@@ -494,7 +494,7 @@ error:
  * present useful information to the program by shovelling it onto the new
  * process's stack
  */
-static int create_elf_fdpic_tables(struct linux_binprm *bprm,
+static int create_elf_fdpic_tables(struct linex_binprm *bprm,
 				   struct mm_struct *mm,
 				   struct elf_fdpic_params *exec_params,
 				   struct elf_fdpic_params *interp_params)
@@ -774,7 +774,7 @@ static int elf_fdpic_map_file(struct elf_fdpic_params *params,
 	case ELF_FDPIC_FLAG_CONSTDISP:
 	case ELF_FDPIC_FLAG_CONTIGUOUS:
 #ifndef CONFIG_MMU
-		ret = elf_fdpic_map_file_constdisp_on_uclinux(params, file, mm);
+		ret = elf_fdpic_map_file_constdisp_on_uclinex(params, file, mm);
 		if (ret < 0)
 			return ret;
 		break;
@@ -864,8 +864,8 @@ static int elf_fdpic_map_file(struct elf_fdpic_params *params,
 		break;
 	}
 
-	/* now elide adjacent segments in the load map on MMU linux
-	 * - on uClinux the holes between may actually be filled with system
+	/* now elide adjacent segments in the load map on MMU linex
+	 * - on uClinex the holes between may actually be filled with system
 	 *   stuff or stuff from other processes
 	 */
 #ifdef CONFIG_MMU
@@ -915,10 +915,10 @@ dynamic_error:
 
 /*****************************************************************************/
 /*
- * map a file with constant displacement under uClinux
+ * map a file with constant displacement under uClinex
  */
 #ifndef CONFIG_MMU
-static int elf_fdpic_map_file_constdisp_on_uclinux(
+static int elf_fdpic_map_file_constdisp_on_uclinex(
 	struct elf_fdpic_params *params,
 	struct file *file,
 	struct mm_struct *mm)
@@ -1111,8 +1111,8 @@ static int elf_fdpic_map_file_by_direct_mmap(struct elf_fdpic_params *params,
 		}
 
 		/* clear any space allocated but not loaded
-		 * - on uClinux we can just clear the lot
-		 * - on MMU linux we'll get a SIGBUS beyond the last page
+		 * - on uClinex we can just clear the lot
+		 * - on MMU linex we'll get a SIGBUS beyond the last page
 		 *   extant in the file
 		 */
 		excess = phdr->p_memsz - phdr->p_filesz;
@@ -1512,7 +1512,7 @@ static int elf_fdpic_core_dump(struct coredump_params *cprm)
 
 	/* If segs > PN_XNUM(0xffff), then e_phnum overflows. To avoid
 	 * this, kernel supports extended numbering. Have a look at
-	 * include/linux/elf.h for further information. */
+	 * include/linex/elf.h for further information. */
 	e_phnum = segs > PN_XNUM ? PN_XNUM : segs;
 
 	/* Set up header */

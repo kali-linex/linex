@@ -9,14 +9,14 @@
  * Copyright 2012 Free Electrons
  */
 
-#include <linux/backlight.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/regulator/consumer.h>
+#include <linex/backlight.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/property.h>
+#include <linex/pwm.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -5,13 +5,13 @@
  * Copyright 2009-2014 Analog Devices Inc.
  */
 
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/crc32.h>
+#include <linex/firmware.h>
+#include <linex/kernel.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <sound/control.h>
 #include <sound/soc.h>

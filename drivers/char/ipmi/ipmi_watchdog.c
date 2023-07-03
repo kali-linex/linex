@@ -13,30 +13,30 @@
 
 #define pr_fmt(fmt) "IPMI Watchdog: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/mutex.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kdebug.h>
-#include <linux/kstrtox.h>
-#include <linux/rwsem.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/notifier.h>
-#include <linux/nmi.h>
-#include <linux/reboot.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/sched/signal.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/ipmi.h>
+#include <linex/ipmi_smi.h>
+#include <linex/mutex.h>
+#include <linex/watchdog.h>
+#include <linex/miscdevice.h>
+#include <linex/init.h>
+#include <linex/completion.h>
+#include <linex/kdebug.h>
+#include <linex/kstrtox.h>
+#include <linex/rwsem.h>
+#include <linex/errno.h>
+#include <linex/uaccess.h>
+#include <linex/notifier.h>
+#include <linex/nmi.h>
+#include <linex/reboot.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/atomic.h>
+#include <linex/sched/signal.h>
 
 #ifdef CONFIG_X86
 /*

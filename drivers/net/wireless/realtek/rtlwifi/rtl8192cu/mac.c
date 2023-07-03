@@ -16,7 +16,7 @@
 #include "trx.h"
 #include "../rtl8192c/fw_common.h"
 
-#include <linux/module.h>
+#include <linex/module.h>
 
 /* macro to shorten lines */
 

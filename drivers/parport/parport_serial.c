@@ -11,15 +11,15 @@
  * that.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/parport.h>
+#include <linex/parport_pc.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
-#include <linux/8250_pci.h>
+#include <linex/8250_pci.h>
 
 enum parport_pc_pci_cards {
 	titan_110l = 0,

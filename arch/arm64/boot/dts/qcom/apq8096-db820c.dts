@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2016, The Linex Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -92,20 +92,20 @@
 
 		button {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8994_gpios 2 GPIO_ACTIVE_LOW>;
 		};
 	};
 
 	usb2_id: usb2-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&pmi8994_gpios 6 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb2_vbus_det_gpio>;
 	};
 
 	usb3_id: usb3-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&pm8994_gpios 22 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb3_vbus_det_gpio>;
@@ -263,7 +263,7 @@
 
 &pm8994_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 };
 
 &tlmm {
@@ -664,7 +664,7 @@
 		function = LED_FUNCTION_HEARTBEAT;
 		function-enumerator = <1>;
 
-		linux,default-trigger = "heartbeat";
+		linex,default-trigger = "heartbeat";
 		default-state = "on";
 	};
 

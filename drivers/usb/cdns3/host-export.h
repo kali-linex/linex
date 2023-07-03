@@ -6,8 +6,8 @@
  *
  * Authors: Peter Chen <peter.chen@nxp.com>
  */
-#ifndef __LINUX_CDNS3_HOST_EXPORT
-#define __LINUX_CDNS3_HOST_EXPORT
+#ifndef __LINEX_CDNS3_HOST_EXPORT
+#define __LINEX_CDNS3_HOST_EXPORT
 
 #if IS_ENABLED(CONFIG_USB_CDNS_HOST)
 
@@ -24,4 +24,4 @@ static inline void cdns_host_exit(struct cdns *cdns) { }
 
 #endif /* USB_CDNS_HOST */
 
-#endif /* __LINUX_CDNS3_HOST_EXPORT */
+#endif /* __LINEX_CDNS3_HOST_EXPORT */

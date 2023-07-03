@@ -18,14 +18,14 @@
 
 		button-0 {
 			label = "BTNESC";
-			linux,code = <1>; /* ESC button */
+			linex,code = <1>; /* ESC button */
 			gpios = <&pioA 10 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		button-1 {
 			label = "IRQBTN";
-			linux,code = <99>; /* SysReq button */
+			linex,code = <99>; /* SysReq button */
 			gpios = <&pioE 31 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};

@@ -11,18 +11,18 @@
  * are wrong ... no idea why.
  *
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
-#include <linux/of_device.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/sizes.h>
+#include <linex/spi/flash.h>
+#include <linex/spi/spi.h>
+#include <linex/of_device.h>
 
 struct mchp48_caps {
 	unsigned int size;

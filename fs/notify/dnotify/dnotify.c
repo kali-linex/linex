@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Directory notifications for Linux.
+ * Directory notifications for Linex.
  *
  * Copyright (C) 2000,2001,2002 Stephen Rothwell
  *
  * Copyright (C) 2009 Eric Paris <Red Hat Inc>
  * dnotify was largly rewritten to use the new fsnotify infrastructure
  */
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/dnotify.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify_backend.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/dnotify.h>
+#include <linex/init.h>
+#include <linex/security.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/fdtable.h>
+#include <linex/fsnotify_backend.h>
 
 static int dir_notify_enable __read_mostly = 1;
 #ifdef CONFIG_SYSCTL

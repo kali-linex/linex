@@ -9,24 +9,24 @@
 #ifndef __UBI_UBI_H__
 #define __UBI_UBI_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/ubi.h>
-#include <linux/pgtable.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/rwsem.h>
+#include <linex/spinlock.h>
+#include <linex/fs.h>
+#include <linex/cdev.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/vmalloc.h>
+#include <linex/notifier.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/ubi.h>
+#include <linex/pgtable.h>
 
 #include "ubi-media.h"
 
@@ -281,7 +281,7 @@ struct ubi_eba_leb_desc {
 
 /**
  * struct ubi_volume - UBI volume description data structure.
- * @dev: device object to make use of the Linux device model
+ * @dev: device object to make use of the Linex device model
  * @cdev: character device object to create character device
  * @ubi: reference to the UBI device description object
  * @vol_id: volume ID
@@ -439,7 +439,7 @@ struct ubi_debug_info {
 
 /**
  * struct ubi_device - UBI device description structure
- * @dev: UBI device object to use the Linux device model
+ * @dev: UBI device object to use the Linex device model
  * @cdev: character device object to create character device
  * @ubi_num: UBI device number
  * @ubi_name: UBI device name

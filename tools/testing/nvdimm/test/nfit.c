@@ -3,19 +3,19 @@
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/libnvdimm.h>
-#include <linux/genalloc.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ndctl.h>
-#include <linux/sizes.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/workqueue.h>
+#include <linex/libnvdimm.h>
+#include <linex/genalloc.h>
+#include <linex/vmalloc.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/ndctl.h>
+#include <linex/sizes.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 #include <nd-core.h>
 #include <intel.h>
 #include <nfit.h>

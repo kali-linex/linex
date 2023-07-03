@@ -21,11 +21,11 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/gfp.h>
 
 #include "smumgr.h"
 #include "tonga_smumgr.h"

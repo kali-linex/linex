@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/handshake.yaml */
 /* YNL-GEN user source */
@@ -7,10 +7,10 @@
 #include <string.h>
 #include "handshake-user.h"
 #include "ynl.h"
-#include <linux/handshake.h>
+#include <linex/handshake.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <linex/genetlink.h>
 
 /* Enums */
 static const char * const handshake_op_strmap[] = {

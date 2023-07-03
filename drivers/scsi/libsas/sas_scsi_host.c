@@ -6,11 +6,11 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/kthread.h>
-#include <linux/firmware.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
+#include <linex/kthread.h>
+#include <linex/firmware.h>
+#include <linex/export.h>
+#include <linex/ctype.h>
+#include <linex/kernel.h>
 
 #include "sas_internal.h"
 
@@ -26,12 +26,12 @@
 #include "scsi_transport_api.h"
 #include "scsi_priv.h"
 
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/scatterlist.h>
-#include <linux/libata.h>
+#include <linex/err.h>
+#include <linex/blkdev.h>
+#include <linex/freezer.h>
+#include <linex/gfp.h>
+#include <linex/scatterlist.h>
+#include <linex/libata.h>
 
 /* record final status and free the task */
 static void sas_end_task(struct scsi_cmnd *sc, struct sas_task *task)

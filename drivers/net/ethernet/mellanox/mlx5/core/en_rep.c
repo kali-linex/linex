@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/mlx5/fs.h>
+#include <linex/debugfs.h>
+#include <linex/mlx5/fs.h>
 #include <net/switchdev.h>
 #include <net/pkt_cls.h>
 #include <net/act_api.h>

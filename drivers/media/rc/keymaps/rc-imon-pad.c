@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * standard imon remote key table, which isn't really entirely

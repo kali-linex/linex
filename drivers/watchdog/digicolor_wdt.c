@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
+#include <linex/of_address.h>
 
 #define TIMER_A_CONTROL		0
 #define TIMER_A_COUNT		4

@@ -3,9 +3,9 @@
  * bpf-script-example.c
  * Test basic LLVM building
  */
-#ifndef LINUX_VERSION_CODE
-# error Need LINUX_VERSION_CODE
-# error Example: for 4.2 kernel, put 'clang-opt="-DLINUX_VERSION_CODE=0x40200" into llvm section of ~/.perfconfig'
+#ifndef LINEX_VERSION_CODE
+# error Need LINEX_VERSION_CODE
+# error Example: for 4.2 kernel, put 'clang-opt="-DLINEX_VERSION_CODE=0x40200" into llvm section of ~/.perfconfig'
 #endif
 #define BPF_ANY 0
 #define BPF_MAP_TYPE_ARRAY 2
@@ -57,4 +57,4 @@ int bpf_func__SyS_epoll_pwait(void *ctx)
 	return new_flag;
 }
 char _license[] SEC("license") = "GPL";
-int _version SEC("version") = LINUX_VERSION_CODE;
+int _version SEC("version") = LINEX_VERSION_CODE;

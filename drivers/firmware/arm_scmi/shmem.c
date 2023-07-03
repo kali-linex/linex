@@ -5,10 +5,10 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/ktime.h>
-#include <linux/io.h>
-#include <linux/processor.h>
-#include <linux/types.h>
+#include <linex/ktime.h>
+#include <linex/io.h>
+#include <linex/processor.h>
+#include <linex/types.h>
 
 #include <asm-generic/bug.h>
 

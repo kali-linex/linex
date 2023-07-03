@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/devlink.yaml */
 /* YNL-GEN user header */
 
-#ifndef _LINUX_DEVLINK_GEN_H
-#define _LINUX_DEVLINK_GEN_H
+#ifndef _LINEX_DEVLINK_GEN_H
+#define _LINEX_DEVLINK_GEN_H
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/types.h>
-#include <linux/devlink.h>
+#include <linex/types.h>
+#include <linex/devlink.h>
 
 struct ynl_sock;
 
@@ -207,4 +207,4 @@ void devlink_info_get_rsp_free(struct devlink_info_get_rsp *rsp);
 struct devlink_info_get_rsp *
 devlink_info_get(struct ynl_sock *ys, struct devlink_info_get_req *req);
 
-#endif /* _LINUX_DEVLINK_GEN_H */
+#endif /* _LINEX_DEVLINK_GEN_H */

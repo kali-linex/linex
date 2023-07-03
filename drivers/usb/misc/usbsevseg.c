@@ -6,12 +6,12 @@
  * Based on usbled.c by Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/usb.h>
 
 
 #define DRIVER_AUTHOR "Harrison Metzger <harrisonmetz@gmail.com>"

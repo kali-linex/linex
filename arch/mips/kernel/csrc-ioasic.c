@@ -2,11 +2,11 @@
 /*
  *  DEC I/O ASIC's counter clocksource
  *
- *  Copyright (C) 2008	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008	Yoichi Yuasa <yuasa@linex-mips.org>
  */
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/init.h>
+#include <linex/clocksource.h>
+#include <linex/sched_clock.h>
+#include <linex/init.h>
 
 #include <asm/ds1287.h>
 #include <asm/time.h>

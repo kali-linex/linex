@@ -1,10 +1,10 @@
 #include <stdbool.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/zalloc.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/log2.h>
+#include <linex/zalloc.h>
 
 #include "../../util/evlist.h"
 #include "../../util/auxtrace.h"

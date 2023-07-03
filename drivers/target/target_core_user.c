@@ -6,21 +6,21 @@
  * Copyright (C) 2017 Chinamobile, Inc.
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/parser.h>
-#include <linux/vmalloc.h>
-#include <linux/uio_driver.h>
-#include <linux/xarray.h>
-#include <linux/stringify.h>
-#include <linux/bitops.h>
-#include <linux/highmem.h>
-#include <linux/configfs.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/pagemap.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/parser.h>
+#include <linex/vmalloc.h>
+#include <linex/uio_driver.h>
+#include <linex/xarray.h>
+#include <linex/stringify.h>
+#include <linex/bitops.h>
+#include <linex/highmem.h>
+#include <linex/configfs.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
+#include <linex/pagemap.h>
 #include <net/genetlink.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
@@ -28,7 +28,7 @@
 #include <target/target_core_fabric.h>
 #include <target/target_core_backend.h>
 
-#include <linux/target_core_user.h>
+#include <linex/target_core_user.h>
 
 /**
  * DOC: Userspace I/O

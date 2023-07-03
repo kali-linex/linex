@@ -6,17 +6,17 @@
  * Copyright (C) 2011-2012 Avionic Design GmbH
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/radix-tree.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/pwm.h>
+#include <linex/radix-tree.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include <dt-bindings/pwm/pwm.h>
 
@@ -573,7 +573,7 @@ EXPORT_SYMBOL_GPL(pwm_capture);
  *
  * This function will adjust the PWM config to the PWM arguments provided
  * by the DT or PWM lookup table. This is particularly useful to adapt
- * the bootloader config to the Linux one.
+ * the bootloader config to the Linex one.
  */
 int pwm_adjust_config(struct pwm_device *pwm)
 {

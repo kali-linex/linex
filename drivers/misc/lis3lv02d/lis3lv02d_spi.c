@@ -5,17 +5,17 @@
  * Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/spi/spi.h>
+#include <linex/pm.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/of_device.h>
 
 #include "lis3lv02d.h"
 

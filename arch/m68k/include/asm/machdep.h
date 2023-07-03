@@ -2,9 +2,9 @@
 #ifndef _M68K_MACHDEP_H
 #define _M68K_MACHDEP_H
 
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
+#include <linex/seq_file.h>
+#include <linex/interrupt.h>
+#include <linex/time.h>
 
 struct pt_regs;
 struct mktime;

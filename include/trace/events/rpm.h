@@ -6,8 +6,8 @@
 #if !defined(_TRACE_RUNTIME_POWER_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RUNTIME_POWER_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <linex/ktime.h>
+#include <linex/tracepoint.h>
 
 struct device;
 

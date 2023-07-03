@@ -8,8 +8,8 @@
 #ifndef _ASM_RISCV_ELF_H
 #define _ASM_RISCV_ELF_H
 
-#include <uapi/linux/elf.h>
-#include <linux/compat.h>
+#include <uapi/linex/elf.h>
+#include <linex/compat.h>
 #include <uapi/asm/elf.h>
 #include <asm/auxvec.h>
 #include <asm/byteorder.h>
@@ -116,8 +116,8 @@ do {								\
 		NEW_AUX_ENT(AT_IGNORE, 0);			 \
 } while (0)
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linex_binprm;
+extern int arch_setup_additional_pages(struct linex_binprm *bprm,
 	int uses_interp);
 #endif /* CONFIG_MMU */
 
@@ -134,8 +134,8 @@ do {    if ((ex).e_ident[EI_CLASS] == ELFCLASS32)		\
 		set_thread_flag(TIF_32BIT);			\
 	else							\
 		clear_thread_flag(TIF_32BIT);			\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |			\
+	if (personality(current->personality) != PER_LINEX32)	\
+		set_personality(PER_LINEX |			\
 			(current->personality & (~PER_MASK)));	\
 } while (0)
 
@@ -145,7 +145,7 @@ do {    if ((ex).e_ident[EI_CLASS] == ELFCLASS32)		\
 typedef compat_ulong_t			compat_elf_greg_t;
 typedef compat_elf_greg_t		compat_elf_gregset_t[ELF_NGREG];
 
-extern int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int compat_arch_setup_additional_pages(struct linex_binprm *bprm,
 					      int uses_interp);
 #define compat_arch_setup_additional_pages \
 				compat_arch_setup_additional_pages

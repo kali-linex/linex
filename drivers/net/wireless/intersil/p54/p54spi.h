@@ -9,8 +9,8 @@
 #ifndef P54SPI_H
 #define P54SPI_H
 
-#include <linux/mutex.h>
-#include <linux/list.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
 #include <net/mac80211.h>
 
 #include "p54.h"

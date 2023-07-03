@@ -5,17 +5,17 @@
  * Copyright 2023 Advanced Micro Devices, Inc.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/pm_runtime.h>
-#include <linux/wait.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/pm_runtime.h>
+#include <linex/wait.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bus.h"

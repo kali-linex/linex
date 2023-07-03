@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/stop_machine.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/circ_buf.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/edac.h>
+#include <linex/interrupt.h>
+#include <linex/string.h>
+#include <linex/stop_machine.h>
+#include <linex/delay.h>
+#include <linex/sizes.h>
+#include <linex/atomic.h>
+#include <linex/bitfield.h>
+#include <linex/circ_buf.h>
 
 #include <asm/page.h>
 

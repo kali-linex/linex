@@ -8,13 +8,13 @@
  * Copyright (C) 1999 Andrew R. Baker (andrewb@uab.edu)
  *		      - Indigo2 changes
  *		      - Interrupt handling fixes
- * Copyright (C) 2001, 2003 Ladislav Michl (ladis@linux-mips.org)
+ * Copyright (C) 2001, 2003 Ladislav Michl (ladis@linex-mips.org)
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/ftrace.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/kernel_stat.h>
+#include <linex/interrupt.h>
+#include <linex/ftrace.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/sgi/hpc3.h>

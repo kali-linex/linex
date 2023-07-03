@@ -11,28 +11,28 @@
  */
 
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <net/sock.h>
 
-#include <linux/drbd.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/sched/signal.h>
-#include <linux/pkt_sched.h>
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
+#include <linex/drbd.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/in.h>
+#include <linex/mm.h>
+#include <linex/memcontrol.h>
+#include <linex/mm_inline.h>
+#include <linex/slab.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/sched/signal.h>
+#include <linex/pkt_sched.h>
+#include <linex/unistd.h>
+#include <linex/vmalloc.h>
+#include <linex/random.h>
+#include <linex/string.h>
+#include <linex/scatterlist.h>
+#include <linex/part_stat.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h"
@@ -634,7 +634,7 @@ static struct socket *drbd_try_connect(struct drbd_connection *connection)
 	*  for the outgoing connections.
 	*  This is needed for multihomed hosts and to be
 	*  able to use lo: interfaces for drbd.
-	* Make sure to use 0 as port number, so linux selects
+	* Make sure to use 0 as port number, so linex selects
 	*  a free one dynamically.
 	*/
 	what = "bind before connect";

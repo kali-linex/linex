@@ -3,14 +3,14 @@
 
 /* ethtool support for e1000 */
 
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/pm_runtime.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/ethtool.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/vmalloc.h>
+#include <linex/pm_runtime.h>
 
 #include "e1000.h"
 

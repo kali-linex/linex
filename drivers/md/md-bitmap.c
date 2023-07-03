@@ -16,18 +16,18 @@
  * flush after percent set rather than just time based. (maybe both).
  */
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/buffer_head.h>
-#include <linux/seq_file.h>
+#include <linex/blkdev.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/timer.h>
+#include <linex/sched.h>
+#include <linex/list.h>
+#include <linex/file.h>
+#include <linex/mount.h>
+#include <linex/buffer_head.h>
+#include <linex/seq_file.h>
 #include <trace/events/block.h>
 #include "md.h"
 #include "md-bitmap.h"

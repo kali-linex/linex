@@ -25,10 +25,10 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/mm.h>
+#include <linex/dma-map-ops.h> /* for dma_default_coherent */
 
 #include <asm/mipsregs.h>
 

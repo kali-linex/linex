@@ -7,16 +7,16 @@
  * based on arch/mips/kernel/time.c timer driver
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/sched_clock.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/slab.h>
+#include <linex/sched_clock.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 
 /*
  * This driver configures the 2 16/32-bit count-up timers as follows:

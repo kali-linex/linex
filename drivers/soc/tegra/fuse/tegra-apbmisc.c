@@ -3,11 +3,11 @@
  * Copyright (c) 2014-2023, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/io.h>
 
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/common.h>

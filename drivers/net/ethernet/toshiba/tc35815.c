@@ -1,5 +1,5 @@
 /*
- * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for linux.
+ * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for linex.
  *
  * Based on skelton.c by Donald Becker.
  *
@@ -26,27 +26,27 @@
 static const char version[] = "tc35815.c:v" DRV_VERSION "\n";
 #define MODNAME			"tc35815"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
+#include <linex/if_vlan.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/phy.h>
+#include <linex/workqueue.h>
+#include <linex/platform_device.h>
+#include <linex/prefetch.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 

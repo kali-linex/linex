@@ -6,17 +6,17 @@
  * Copyright (C) 2011 Peter Zijlstra
  *
  */
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/err.h>
-#include <linux/static_key.h>
-#include <linux/jump_label_ratelimit.h>
-#include <linux/bug.h>
-#include <linux/cpu.h>
+#include <linex/memory.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
+#include <linex/err.h>
+#include <linex/static_key.h>
+#include <linex/jump_label_ratelimit.h>
+#include <linex/bug.h>
+#include <linex/cpu.h>
 #include <asm/sections.h>
 
 /* mutex to protect coming/going of the jump_label table */
@@ -420,7 +420,7 @@ static enum jump_label_type jump_label_type(struct jump_entry *entry)
 	bool enabled = static_key_enabled(key);
 	bool branch = jump_entry_is_branch(entry);
 
-	/* See the comment in linux/jump_label.h */
+	/* See the comment in linex/jump_label.h */
 	return enabled ^ branch;
 }
 
@@ -538,7 +538,7 @@ enum jump_label_type jump_label_init_type(struct jump_entry *entry)
 	bool type = static_key_type(key);
 	bool branch = jump_entry_is_branch(entry);
 
-	/* See the comment in linux/jump_label.h */
+	/* See the comment in linex/jump_label.h */
 	return type ^ branch;
 }
 

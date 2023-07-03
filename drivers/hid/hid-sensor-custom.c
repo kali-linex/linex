@@ -4,19 +4,19 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/kfifo.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/bsearch.h>
-#include <linux/platform_device.h>
-#include <linux/hid-sensor-hub.h>
+#include <linex/ctype.h>
+#include <linex/dmi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/miscdevice.h>
+#include <linex/kfifo.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/bsearch.h>
+#include <linex/platform_device.h>
+#include <linex/hid-sensor-hub.h>
 
 #define HID_CUSTOM_NAME_LENGTH		64
 #define HID_CUSTOM_MAX_CORE_ATTRS	10
@@ -1073,5 +1073,5 @@ static struct platform_driver hid_sensor_custom_platform_driver = {
 module_platform_driver(hid_sensor_custom_platform_driver);
 
 MODULE_DESCRIPTION("HID Sensor Custom and Generic sensor Driver");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 MODULE_LICENSE("GPL");

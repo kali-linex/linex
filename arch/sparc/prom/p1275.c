@@ -5,12 +5,12 @@
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/irqflags.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/irqflags.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

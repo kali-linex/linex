@@ -4,11 +4,11 @@
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include "vnic_dev.h"
 #include "vnic_rq.h"
 

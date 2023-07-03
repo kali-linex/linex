@@ -8,16 +8,16 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/device/class.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
+#include <linex/device/class.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/kdev_t.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/blkdev.h>
+#include <linex/mutex.h>
 #include "base.h"
 
 /* /sys/class */

@@ -12,12 +12,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/integrity.h>
+#include <linex/types.h>
+#include <linex/integrity.h>
 #include <crypto/sha1.h>
 #include <crypto/hash.h>
-#include <linux/key.h>
-#include <linux/audit.h>
+#include <linex/key.h>
+#include <linex/audit.h>
 
 /* iint action cache flags */
 #define IMA_MEASURE		0x00000001

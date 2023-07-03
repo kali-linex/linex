@@ -19,10 +19,10 @@
  * will be installed instead (and use of 'wait' instruction is prohibited).
  */
 
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
 
 #include <asm/idle.h>
 #include <asm/processor.h>

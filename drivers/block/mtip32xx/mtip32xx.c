@@ -8,28 +8,28 @@
  *    Copyright (C) 2009 Integrated Device Technology, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/bio.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/ata.h>
+#include <linex/delay.h>
+#include <linex/hdreg.h>
+#include <linex/uaccess.h>
+#include <linex/random.h>
+#include <linex/smp.h>
+#include <linex/compat.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/bio.h>
+#include <linex/dma-mapping.h>
+#include <linex/idr.h>
+#include <linex/kthread.h>
 #include <../drivers/ata/ahci.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/prefetch.h>
-#include <linux/numa.h>
+#include <linex/export.h>
+#include <linex/debugfs.h>
+#include <linex/prefetch.h>
+#include <linex/numa.h>
 #include "mtip32xx.h"
 
 #define HW_CMD_SLOT_SZ		(MTIP_MAX_COMMAND_SLOTS * 32)

@@ -7,17 +7,17 @@
 
 #define DRV_NAME	"xen_wdt"
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linex/bug.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/hrtimer.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
 #include <xen/xen.h>
 #include <asm/xen/hypercall.h>
 #include <xen/interface/sched.h>

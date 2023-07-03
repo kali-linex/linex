@@ -15,31 +15,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/crc32.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/crc32.h>
 #include <asm/types.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/sort.h>
-#include <linux/if_vlan.h>
-#include <linux/of_platform.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
+#include <linex/sort.h>
+#include <linex/if_vlan.h>
+#include <linex/of_platform.h>
+#include <linex/fsl/ptp_qoriq.h>
 
 #include "gianfar.h"
 

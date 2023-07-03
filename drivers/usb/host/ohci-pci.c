@@ -15,12 +15,12 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 
 #include "ohci.h"
 #include "pci-quirks.h"

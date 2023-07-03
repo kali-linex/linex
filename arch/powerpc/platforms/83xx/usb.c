@@ -7,11 +7,11 @@
  */
 
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <asm/io.h>
 #include <sysdev/fsl_soc.h>

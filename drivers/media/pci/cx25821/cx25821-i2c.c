@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *	Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *	Based on Steven Toth <stoth@linextv.org> cx23885 driver
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/i2c.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
 #include "cx25821.h"
 
 static unsigned int i2c_debug;

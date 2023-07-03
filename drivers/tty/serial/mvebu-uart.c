@@ -7,26 +7,26 @@
 * ***************************************************************************
 */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/math64.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
 /* Register Map */
 #define UART_STD_RBR		0x00

@@ -8,8 +8,8 @@
 #ifndef _VMCI_DRIVER_H_
 #define _VMCI_DRIVER_H_
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/wait.h>
+#include <linex/vmw_vmci_defs.h>
+#include <linex/wait.h>
 
 #include "vmci_queue_pair.h"
 #include "vmci_context.h"

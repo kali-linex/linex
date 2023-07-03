@@ -17,9 +17,9 @@
 #include <crypto/engine.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/skcipher.h>
-#include <linux/crypto.h>
-#include <linux/debugfs.h>
-#include <linux/hw_random.h>
+#include <linex/crypto.h>
+#include <linex/debugfs.h>
+#include <linex/hw_random.h>
 
 #define TQ0_TYPE_DATA 0
 #define TQ0_TYPE_CTRL BIT(0)

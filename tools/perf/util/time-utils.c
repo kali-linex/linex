@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stdlib.h>
 #include <string.h>
-#include <linux/string.h>
+#include <linex/string.h>
 #include <sys/time.h>
-#include <linux/time64.h>
+#include <linex/time64.h>
 #include <time.h>
 #include <errno.h>
 #include <inttypes.h>
 #include <math.h>
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 
 #include "debug.h"
 #include "time-utils.h"

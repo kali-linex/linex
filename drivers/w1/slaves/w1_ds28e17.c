@@ -5,20 +5,20 @@
  * Copyright (c) 2016 Jan Kandziora <jjj@gmx.de>
  */
 
-#include <linux/crc16.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/crc16.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #define CRC16_INIT 0
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 
 #define W1_FAMILY_DS28E17 0x19
 

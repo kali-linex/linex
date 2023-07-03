@@ -8,7 +8,7 @@
 /*
  * User space memory access functions
  */
-#include <linux/string.h>
+#include <linex/string.h>
 #include <asm/memory.h>
 #include <asm/domain.h>
 #include <asm/unaligned.h>
@@ -299,7 +299,7 @@ do {									\
 #define __get_user_asm_byte(x, addr, err, __t)			\
 	__get_user_asm(x, addr, err, "ldrb" __t)
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __LINEX_ARM_ARCH__ >= 6
 
 #define __get_user_asm_half(x, addr, err, __t)			\
 	__get_user_asm(x, addr, err, "ldrh" __t)
@@ -324,7 +324,7 @@ do {									\
 })
 #endif
 
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __LINEX_ARM_ARCH__ >= 6 */
 
 #define __get_user_asm_word(x, addr, err, __t)			\
 	__get_user_asm(x, addr, err, "ldr" __t)
@@ -401,7 +401,7 @@ do {									\
 #define __put_user_asm_byte(x, __pu_addr, err, __t)		\
 	__put_user_asm(x, __pu_addr, err, "strb" __t)
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __LINEX_ARM_ARCH__ >= 6
 
 #define __put_user_asm_half(x, __pu_addr, err, __t)		\
 	__put_user_asm(x, __pu_addr, err, "strh" __t)
@@ -424,7 +424,7 @@ do {									\
 })
 #endif
 
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __LINEX_ARM_ARCH__ >= 6 */
 
 #define __put_user_asm_word(x, __pu_addr, err, __t)		\
 	__put_user_asm(x, __pu_addr, err, "str" __t)

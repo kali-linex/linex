@@ -11,15 +11,15 @@
  * @Date 	Jun 24 2008
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/io.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
 #include "cthw20k1.h"
 #include "ct20k1reg.h"
 

@@ -5,8 +5,8 @@
  * Copyright (C) 2013 IBM
  */
 
-#include <linux/delay.h>
-#include <linux/of_platform.h>
+#include <linex/delay.h>
+#include <linex/of_platform.h>
 #include <asm/opal.h>
 #include <asm/machdep.h>
 

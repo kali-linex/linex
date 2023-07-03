@@ -14,10 +14,10 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
 
 #define TAPE_DBF_AREA	tape_core_dbf
 

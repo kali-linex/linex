@@ -8,7 +8,7 @@
  *****************************************************************************/
 
 #include <acpi/acpi.h>
-#include <linux/kmemleak.h>
+#include <linex/kmemleak.h>
 #include "accommon.h"
 #include "acnamesp.h"
 

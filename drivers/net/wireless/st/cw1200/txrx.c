@@ -7,8 +7,8 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
 
 #include "cw1200.h"
 #include "wsm.h"

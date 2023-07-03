@@ -4,15 +4,15 @@
  * for more details.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linex-mips.org>
  */
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/prefetch.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linex/init.h>
+#include <linex/irqflags.h>
+#include <linex/notifier.h>
+#include <linex/prefetch.h>
+#include <linex/ptrace.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/cop2.h>
 #include <asm/current.h>

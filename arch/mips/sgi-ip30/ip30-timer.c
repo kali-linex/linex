@@ -8,12 +8,12 @@
  * Copyright (C) 2011 Joshua Kinard <kumba@gentoo.org>
  */
 
-#include <linux/clocksource.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/sched_clock.h>
+#include <linex/clocksource.h>
+#include <linex/cpumask.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/percpu.h>
+#include <linex/sched_clock.h>
 
 #include <asm/time.h>
 #include <asm/cevt-r4k.h>

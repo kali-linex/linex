@@ -3,9 +3,9 @@
  * Copyright (C) 2015 Jakub Kicinski <kubakici@wp.pl>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/usb.h>
 
 #include "mt76x0.h"
 #include "mcu.h"

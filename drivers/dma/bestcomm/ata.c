@@ -9,14 +9,14 @@
  * Copyright (C) 2006      Freescale - John Rigby
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <asm/io.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include <linux/fsl/bestcomm/ata.h>
+#include <linex/fsl/bestcomm/bestcomm.h>
+#include <linex/fsl/bestcomm/bestcomm_priv.h>
+#include <linex/fsl/bestcomm/ata.h>
 
 
 /* ======================================================================== */

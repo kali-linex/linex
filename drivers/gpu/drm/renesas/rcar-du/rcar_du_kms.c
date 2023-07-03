@@ -18,11 +18,11 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/wait.h>
+#include <linex/device.h>
+#include <linex/dma-buf.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
+#include <linex/wait.h>
 
 #include "rcar_du_crtc.h"
 #include "rcar_du_drv.h"

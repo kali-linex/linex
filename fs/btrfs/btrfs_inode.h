@@ -6,8 +6,8 @@
 #ifndef BTRFS_INODE_H
 #define BTRFS_INODE_H
 
-#include <linux/hash.h>
-#include <linux/refcount.h>
+#include <linex/hash.h>
+#include <linex/refcount.h>
 #include "extent_map.h"
 #include "extent_io.h"
 #include "ordered-data.h"

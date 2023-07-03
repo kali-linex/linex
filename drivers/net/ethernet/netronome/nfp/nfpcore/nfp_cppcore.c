@@ -10,15 +10,15 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
 
 #include "nfp_arm.h"
 #include "nfp_cpp.h"
@@ -1274,7 +1274,7 @@ void *nfp_cpp_priv(struct nfp_cpp *cpp)
 }
 
 /**
- * nfp_cpp_device() - Get the Linux device handle of a CPP handle
+ * nfp_cpp_device() - Get the Linex device handle of a CPP handle
  * @cpp:	CPP handle
  *
  * Return: Device for the NFP CPP bus

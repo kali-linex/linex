@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
 
 #include "dpu_core_irq.h"
 #include "dpu_kms.h"

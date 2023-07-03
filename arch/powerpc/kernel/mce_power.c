@@ -3,16 +3,16 @@
  * Machine check exception handling CPU-side for power7 and power8
  *
  * Copyright 2013 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linex.vnet.ibm.com>
  */
 
 #undef DEBUG
 #define pr_fmt(fmt) "mce_power: " fmt
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/extable.h>
-#include <linux/pgtable.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/extable.h>
+#include <linex/pgtable.h>
 #include <asm/mmu.h>
 #include <asm/mce.h>
 #include <asm/machdep.h>
@@ -39,7 +39,7 @@ unsigned long addr_to_pfn(struct pt_regs *regs, unsigned long addr)
 		mm = &init_mm;
 
 	local_irq_save(flags);
-	ptep = __find_linux_pte(mm->pgd, addr, NULL, &shift);
+	ptep = __find_linex_pte(mm->pgd, addr, NULL, &shift);
 	if (!ptep) {
 		pfn = ULONG_MAX;
 		goto out;

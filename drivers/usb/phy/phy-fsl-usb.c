@@ -8,24 +8,24 @@
  * Initialization based on code from Shlomi Gridish.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/workqueue.h>
-#include <linux/time.h>
-#include <linux/fsl_devices.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/proc_fs.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/timer.h>
+#include <linex/usb.h>
+#include <linex/device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/workqueue.h>
+#include <linex/time.h>
+#include <linex/fsl_devices.h>
+#include <linex/platform_device.h>
+#include <linex/uaccess.h>
 
 #include <asm/unaligned.h>
 

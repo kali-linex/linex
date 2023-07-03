@@ -51,7 +51,7 @@
 
 #include <asm/byteorder.h>
 #include <crypto/b128ops.h>
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 /* Comment by Rik:
  *

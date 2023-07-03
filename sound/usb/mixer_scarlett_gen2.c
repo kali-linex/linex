@@ -128,9 +128,9 @@
  *   to Off and power-cycling the device
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/moduleparam.h>
 
 #include <sound/control.h>
 #include <sound/tlv.h>

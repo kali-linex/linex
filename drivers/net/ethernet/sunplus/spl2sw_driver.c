@@ -3,15 +3,15 @@
  *       All rights reserved.
  */
 
-#include <linux/platform_device.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/of_net.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <linex/platform_device.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/spinlock.h>
+#include <linex/of_net.h>
+#include <linex/reset.h>
+#include <linex/clk.h>
+#include <linex/of.h>
 
 #include "spl2sw_register.h"
 #include "spl2sw_define.h"

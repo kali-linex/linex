@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/recovery.c
+ * linex/fs/jbd2/recovery.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1999
  *
@@ -13,12 +13,12 @@
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
-#include <linux/blkdev.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/jbd2.h>
+#include <linex/errno.h>
+#include <linex/crc32.h>
+#include <linex/blkdev.h>
 #endif
 
 /*

@@ -3,10 +3,10 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
+#include <linex/sched.h>
+#include <linex/pagemap.h>
+#include <linex/spinlock.h>
+#include <linex/page-flags.h>
 #include <asm/bug.h>
 #include "misc.h"
 #include "ctree.h"

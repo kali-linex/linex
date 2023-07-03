@@ -11,11 +11,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
-#include <linux/perf_event.h>
-#include <linux/bsearch.h>
-#include <linux/sort.h>
+#include <linex/types.h>
+#include <linex/kvm_host.h>
+#include <linex/perf_event.h>
+#include <linex/bsearch.h>
+#include <linex/sort.h>
 #include <asm/perf_event.h>
 #include <asm/cpu_device_id.h>
 #include "x86.h"

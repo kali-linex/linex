@@ -11,9 +11,9 @@
  */
 #define __COMPAT_SYSCALL_NR
 
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/syscalls.h>
+#include <linex/compat.h>
+#include <linex/compiler.h>
+#include <linex/syscalls.h>
 
 #include <asm/syscall.h>
 

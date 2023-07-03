@@ -21,28 +21,28 @@
 
 #define pr_fmt(fmt) "ipmi_si: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/list.h>
+#include <linex/notifier.h>
+#include <linex/mutex.h>
+#include <linex/kthread.h>
 #include <asm/irq.h>
-#include <linux/interrupt.h>
-#include <linux/rcupdate.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
+#include <linex/interrupt.h>
+#include <linex/rcupdate.h>
+#include <linex/ipmi.h>
+#include <linex/ipmi_smi.h>
 #include "ipmi_si.h"
 #include "ipmi_si_sm.h"
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
 
 /* Measure times between events in the driver. */
 #undef DEBUG_TIMING

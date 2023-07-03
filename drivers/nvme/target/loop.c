@@ -4,11 +4,11 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/scatterlist.h>
-#include <linux/blk-mq.h>
-#include <linux/nvme.h>
-#include <linux/module.h>
-#include <linux/parser.h>
+#include <linex/scatterlist.h>
+#include <linex/blk-mq.h>
+#include <linex/nvme.h>
+#include <linex/module.h>
+#include <linex/parser.h>
 #include "nvmet.h"
 #include "../host/nvme.h"
 #include "../host/fabrics.h"

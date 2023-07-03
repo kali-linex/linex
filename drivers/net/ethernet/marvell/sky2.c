@@ -12,29 +12,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
+#include <linex/crc32.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/slab.h>
 #include <net/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/mii.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/dmi.h>
+#include <linex/tcp.h>
+#include <linex/in.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/if_vlan.h>
+#include <linex/prefetch.h>
+#include <linex/debugfs.h>
+#include <linex/mii.h>
+#include <linex/of_device.h>
+#include <linex/of_net.h>
+#include <linex/dmi.h>
 
 #include <asm/irq.h>
 
@@ -5160,6 +5160,6 @@ module_init(sky2_init_module);
 module_exit(sky2_cleanup_module);
 
 MODULE_DESCRIPTION("Marvell Yukon 2 Gigabit Ethernet driver");
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@linex-foundation.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

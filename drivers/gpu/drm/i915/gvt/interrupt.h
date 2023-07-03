@@ -32,8 +32,8 @@
 #ifndef _GVT_INTERRUPT_H_
 #define _GVT_INTERRUPT_H_
 
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
+#include <linex/hrtimer.h>
+#include <linex/kernel.h>
 
 #include "i915_reg_defs.h"
 

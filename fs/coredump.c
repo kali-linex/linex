@@ -1,49 +1,49 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/freezer.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/swap.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/perf_event.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/key.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/coredump.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/utsname.h>
-#include <linux/pid_namespace.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/audit.h>
-#include <linux/kmod.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_struct.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/oom.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/path.h>
-#include <linux/timekeeping.h>
-#include <linux/sysctl.h>
-#include <linux/elf.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/freezer.h>
+#include <linex/mm.h>
+#include <linex/stat.h>
+#include <linex/fcntl.h>
+#include <linex/swap.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/pagemap.h>
+#include <linex/perf_event.h>
+#include <linex/highmem.h>
+#include <linex/spinlock.h>
+#include <linex/key.h>
+#include <linex/personality.h>
+#include <linex/binfmts.h>
+#include <linex/coredump.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task_stack.h>
+#include <linex/utsname.h>
+#include <linex/pid_namespace.h>
+#include <linex/module.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/tsacct_kern.h>
+#include <linex/cn_proc.h>
+#include <linex/audit.h>
+#include <linex/kmod.h>
+#include <linex/fsnotify.h>
+#include <linex/fs_struct.h>
+#include <linex/pipe_fs_i.h>
+#include <linex/oom.h>
+#include <linex/compat.h>
+#include <linex/fs.h>
+#include <linex/path.h>
+#include <linex/timekeeping.h>
+#include <linex/sysctl.h>
+#include <linex/elf.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/tlb.h>
 #include <asm/exec.h>
@@ -521,7 +521,7 @@ void do_coredump(const kernel_siginfo_t *siginfo)
 	struct core_state core_state;
 	struct core_name cn;
 	struct mm_struct *mm = current->mm;
-	struct linux_binfmt * binfmt;
+	struct linex_binfmt * binfmt;
 	const struct cred *old_cred;
 	struct cred *cred;
 	int retval = 0;

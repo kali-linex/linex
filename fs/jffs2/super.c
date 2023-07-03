@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/jffs2.h>
-#include <linux/pagemap.h>
-#include <linux/mtd/super.h>
-#include <linux/ctype.h>
-#include <linux/namei.h>
-#include <linux/seq_file.h>
-#include <linux/exportfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/fs.h>
+#include <linex/err.h>
+#include <linex/mount.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/jffs2.h>
+#include <linex/pagemap.h>
+#include <linex/mtd/super.h>
+#include <linex/ctype.h>
+#include <linex/namei.h>
+#include <linex/seq_file.h>
+#include <linex/exportfs.h>
 #include "compr.h"
 #include "nodelist.h"
 

@@ -11,8 +11,8 @@
  * Copyright (C) 2016-2017 Renesas Electronics Corp.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
 
 #include "sh_pfc.h"
 

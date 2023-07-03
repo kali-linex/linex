@@ -4,16 +4,16 @@
  * Copyright (C) 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/dma-mapping.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/gfp.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

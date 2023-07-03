@@ -6,11 +6,11 @@
  * Author: Jingoo Han <jg1.han@samsung.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include <drm/bridge/analogix_dp.h>
 

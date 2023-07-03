@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/init.c
+ *  linex/arch/m68k/mm/init.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
@@ -8,20 +8,20 @@
  *  to motorola.c and sun3mmu.c
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/gfp.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/traps.h>

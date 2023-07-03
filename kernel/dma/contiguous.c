@@ -45,11 +45,11 @@
 
 #include <asm/page.h>
 
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/sizes.h>
-#include <linux/dma-map-ops.h>
-#include <linux/cma.h>
+#include <linex/memblock.h>
+#include <linex/err.h>
+#include <linex/sizes.h>
+#include <linex/dma-map-ops.h>
+#include <linex/cma.h>
 
 #ifdef CONFIG_CMA_SIZE_MBYTES
 #define CMA_SIZE_MBYTES CONFIG_CMA_SIZE_MBYTES
@@ -373,9 +373,9 @@ void dma_free_contiguous(struct device *dev, struct page *page, size_t size)
  * Support for reserved memory regions defined in device tree
  */
 #ifdef CONFIG_OF_RESERVED_MEM
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/of_reserved_mem.h>
 
 #undef pr_fmt
 #define pr_fmt(fmt) fmt
@@ -400,7 +400,7 @@ static const struct reserved_mem_ops rmem_cma_ops = {
 static int __init rmem_cma_setup(struct reserved_mem *rmem)
 {
 	unsigned long node = rmem->fdt_node;
-	bool default_cma = of_get_flat_dt_prop(node, "linux,cma-default", NULL);
+	bool default_cma = of_get_flat_dt_prop(node, "linex,cma-default", NULL);
 	struct cma *cma;
 	int err;
 

@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/livepatch.h>
-#include <linux/list.h>
-#include <linux/ftrace.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
-#include <linux/printk.h>
+#include <linex/livepatch.h>
+#include <linex/list.h>
+#include <linex/ftrace.h>
+#include <linex/rculist.h>
+#include <linex/slab.h>
+#include <linex/bug.h>
+#include <linex/printk.h>
 #include "core.h"
 #include "patch.h"
 #include "transition.h"

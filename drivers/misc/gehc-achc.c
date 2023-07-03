@@ -6,13 +6,13 @@
  * Copyright (C) 2018-2021 GE Healthcare
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/spi/spi.h>
 
 #define ACHC_MAX_FREQ_HZ 300000
 #define ACHC_FAST_READ_FREQ_HZ 1000000

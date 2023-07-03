@@ -4,7 +4,7 @@
 #ifndef __IOMMUFD_DOUBLE_SPAN_H
 #define __IOMMUFD_DOUBLE_SPAN_H
 
-#include <linux/interval_tree.h>
+#include <linex/interval_tree.h>
 
 /*
  * This is a variation of the general interval_tree_span_iter that computes the

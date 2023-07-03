@@ -5,22 +5,22 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/processor.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
+#include <linex/vmw_vmci_defs.h>
+#include <linex/vmw_vmci_api.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/highmem.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/processor.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/vmalloc.h>
 
 #include "vmci_datagram.h"
 #include "vmci_doorbell.h"

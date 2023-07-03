@@ -17,14 +17,14 @@
  * License along with this library; if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/kvm_para.h>
-#include <linux/range.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/kvm_para.h>
+#include <linex/range.h>
 
 #include <asm/processor.h>
 #include <asm/e820/api.h>

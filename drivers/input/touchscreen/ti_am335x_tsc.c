@@ -14,22 +14,22 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sort.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/sort.h>
+#include <linex/pm_wakeirq.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
+#include <linex/mfd/ti_am335x_tscadc.h>
 
 #define ADCFSM_STEPID		0x10
 #define SEQ_SETTLE		275

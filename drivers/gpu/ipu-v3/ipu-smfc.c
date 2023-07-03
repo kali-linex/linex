@@ -2,14 +2,14 @@
 /*
  * Copyright 2008-2010 Freescale Semiconductor, Inc. All Rights Reserved.
  */
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/errno.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
 #include <video/imx-ipu-v3.h>
 
 #include "ipu-prv.h"

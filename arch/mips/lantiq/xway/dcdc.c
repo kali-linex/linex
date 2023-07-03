@@ -5,8 +5,8 @@
  *  Copyright (C) 2010 Sameer Ahmad, Lantiq GmbH
  */
 
-#include <linux/ioport.h>
-#include <linux/of_platform.h>
+#include <linex/ioport.h>
+#include <linex/of_platform.h>
 
 #include <lantiq_soc.h>
 

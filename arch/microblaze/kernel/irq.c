@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/seq_file.h>
-#include <linux/kernel_stat.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
+#include <linex/init.h>
+#include <linex/ftrace.h>
+#include <linex/kernel.h>
+#include <linex/hardirq.h>
+#include <linex/interrupt.h>
+#include <linex/irqflags.h>
+#include <linex/seq_file.h>
+#include <linex/kernel_stat.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/of_irq.h>
 
 void __irq_entry do_IRQ(struct pt_regs *regs)
 {

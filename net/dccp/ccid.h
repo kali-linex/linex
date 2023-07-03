@@ -11,10 +11,10 @@
  */
 
 #include <net/sock.h>
-#include <linux/compiler.h>
-#include <linux/dccp.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <linex/compiler.h>
+#include <linex/dccp.h>
+#include <linex/list.h>
+#include <linex/module.h>
 
 /* maximum value for a CCID (RFC 4340, 19.5) */
 #define CCID_MAX		255

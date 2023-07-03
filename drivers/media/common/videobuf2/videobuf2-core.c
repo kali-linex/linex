@@ -16,15 +16,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/freezer.h>
+#include <linex/kthread.h>
 
 #include <media/videobuf2-core.h>
 #include <media/v4l2-mc.h>
@@ -2998,7 +2998,7 @@ static int vb2_thread(void *data)
 			break;
 	}
 
-	/* Hmm, linux becomes *very* unhappy without this ... */
+	/* Hmm, linex becomes *very* unhappy without this ... */
 	while (!kthread_should_stop()) {
 		set_current_state(TASK_INTERRUPTIBLE);
 		schedule();
@@ -3009,7 +3009,7 @@ static int vb2_thread(void *data)
 /*
  * This function should not be used for anything else but the videobuf2-dvb
  * support. If you think you have another good use-case for this, then please
- * contact the linux-media mailinglist first.
+ * contact the linex-media mailinglist first.
  */
 int vb2_thread_start(struct vb2_queue *q, vb2_thread_fnc fnc, void *priv,
 		     const char *thread_name)

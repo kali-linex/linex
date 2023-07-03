@@ -6,16 +6,16 @@
  * physical memory layout description available about x86 systems.
  *
  * The kernel takes the E820 memory layout and optionally modifies it with
- * quirks and other tweaks, and feeds that into the generic Linux memory
+ * quirks and other tweaks, and feeds that into the generic Linex memory
  * allocation code routines via a platform independent interface (memblock, etc.).
  */
-#include <linux/crash_dump.h>
-#include <linux/memblock.h>
-#include <linux/suspend.h>
-#include <linux/acpi.h>
-#include <linux/firmware-map.h>
-#include <linux/sort.h>
-#include <linux/memory_hotplug.h>
+#include <linex/crash_dump.h>
+#include <linex/memblock.h>
+#include <linex/suspend.h>
+#include <linex/acpi.h>
+#include <linex/firmware-map.h>
+#include <linex/sort.h>
+#include <linex/memory_hotplug.h>
 
 #include <asm/e820/api.h>
 #include <asm/setup.h>
@@ -51,7 +51,7 @@
  *   low level x86 platform code, or modified by boot parameters, before
  *   passed on to higher level MM layers.
  *
- * Once the E820 map has been converted to the standard Linux memory layout
+ * Once the E820 map has been converted to the standard Linex memory layout
  * information its role stops - modifying it has no effect and does not get
  * re-propagated. So its main role is a temporary bootstrap storage of firmware
  * specific memory layout data during early bootup.

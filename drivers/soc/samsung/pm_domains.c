@@ -9,14 +9,14 @@
 // conjunction with runtime-pm. Support for both device-tree and non-device-tree
 // based power domain support is included.
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_domain.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/pm_domain.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 struct exynos_pm_domain_config {
 	/* Value for LOCAL_PWR_CFG and STATUS fields for each domain */

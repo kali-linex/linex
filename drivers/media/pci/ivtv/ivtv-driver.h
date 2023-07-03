@@ -37,24 +37,24 @@
  *                using information provided by Jiun-Kuei Jung @ AVerMedia.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/list.h>
-#include <linux/unistd.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/sched/signal.h>
+#include <linex/fs.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/list.h>
+#include <linex/unistd.h>
+#include <linex/pagemap.h>
+#include <linex/scatterlist.h>
+#include <linex/kthread.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 
 #include <media/v4l2-common.h>
@@ -66,7 +66,7 @@
 #include <media/drv-intf/cx2341x.h>
 #include <media/i2c/ir-kbd-i2c.h>
 
-#include <linux/ivtv.h>
+#include <linex/ivtv.h>
 
 /* Memory layout */
 #define IVTV_ENCODER_OFFSET	0x00000000

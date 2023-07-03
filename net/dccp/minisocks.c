@@ -6,11 +6,11 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
+#include <linex/dccp.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/timer.h>
 
 #include <net/sock.h>
 #include <net/xfrm.h>

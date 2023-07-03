@@ -10,9 +10,9 @@
 #define _ASM_PTRACE_H
 
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
 #include <asm/isadep.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>

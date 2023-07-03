@@ -6,8 +6,8 @@
 #ifndef __INTEL_GGTT_FENCING_H__
 #define __INTEL_GGTT_FENCING_H__
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linex/list.h>
+#include <linex/types.h>
 
 #include "i915_active.h"
 

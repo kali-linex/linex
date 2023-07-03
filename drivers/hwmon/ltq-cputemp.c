@@ -4,13 +4,13 @@
  * Copyright (C) 2017 Florian Eckert <fe@dev.tdt.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 #include <lantiq_soc.h>
 

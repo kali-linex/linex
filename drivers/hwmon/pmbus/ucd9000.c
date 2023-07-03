@@ -6,18 +6,18 @@
  * Copyright (C) 2011 Ericsson AB.
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/pmbus.h>
-#include <linux/gpio/driver.h>
-#include <linux/timekeeping.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/pmbus.h>
+#include <linex/gpio/driver.h>
+#include <linex/timekeeping.h>
 #include "pmbus.h"
 
 enum chips { ucd9000, ucd90120, ucd90124, ucd90160, ucd90320, ucd9090,

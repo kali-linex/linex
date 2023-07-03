@@ -5,17 +5,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/phy.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
 
 #include "cgx.h"
 #include "rvu.h"

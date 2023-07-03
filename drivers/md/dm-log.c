@@ -6,14 +6,14 @@
  * This file is released under the LGPL.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/dm-io.h>
-#include <linux/dm-dirty-log.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/dm-io.h>
+#include <linex/dm-dirty-log.h>
 
-#include <linux/device-mapper.h>
+#include <linex/device-mapper.h>
 
 #define DM_MSG_PREFIX "dirty region log"
 

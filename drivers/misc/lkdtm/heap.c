@@ -4,9 +4,9 @@
  * page allocation and slab allocations.
  */
 #include "lkdtm.h"
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/sched.h>
 
 static struct kmem_cache *double_free_cache;
 static struct kmem_cache *a_cache;

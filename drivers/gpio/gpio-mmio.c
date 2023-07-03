@@ -40,25 +40,25 @@ o        `                     ~~~~\___/~~~~    ` controller in FPGA is ,.`
  *               `.......````.```
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/log2.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/gpio/driver.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 static void bgpio_write8(void __iomem *reg, unsigned long data)
 {

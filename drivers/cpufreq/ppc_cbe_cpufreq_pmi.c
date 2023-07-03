@@ -7,13 +7,13 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/of_platform.h>
+#include <linex/pm_qos.h>
+#include <linex/slab.h>
 
 #include <asm/processor.h>
 #include <asm/pmi.h>

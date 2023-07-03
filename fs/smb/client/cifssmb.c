@@ -14,16 +14,16 @@
  /* treated slightly differently for reconnection purposes since we never     */
  /* want to reuse a stale file handle and only the caller knows the file info */
 
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/kernel.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/uaccess.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/kernel.h>
+#include <linex/vfs.h>
+#include <linex/slab.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/uaccess.h>
 #include "cifspdu.h"
 #include "cifsfs.h"
 #include "cifsglob.h"

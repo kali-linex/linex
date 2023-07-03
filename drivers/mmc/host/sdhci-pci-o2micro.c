@@ -7,12 +7,12 @@
  *          Ernest Zhang <ernest.zhang@bayhubtech.com>
  */
 
-#include <linux/pci.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/bitfield.h>
+#include <linex/pci.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
+#include <linex/bitfield.h>
 
 #include "sdhci.h"
 #include "sdhci-pci.h"

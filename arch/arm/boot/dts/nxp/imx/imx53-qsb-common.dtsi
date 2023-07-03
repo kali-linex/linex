@@ -48,20 +48,20 @@
 		key-power {
 			label = "Power Button";
 			gpios = <&gpio1 8 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linex,code = <KEY_POWER>;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio2 14 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio2 15 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 			wakeup-source;
 		};
 	};
@@ -74,7 +74,7 @@
 		led-user {
 			label = "Heartbeat";
 			gpios = <&gpio7 7 0>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 		};
 	};
 

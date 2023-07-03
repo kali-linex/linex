@@ -1,14 +1,14 @@
 /*
- *  Amiga Linux/m68k Ariadne Ethernet Driver
+ *  Amiga Linex/m68k Ariadne Ethernet Driver
  *
- *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@linux-m68k.org)
+ *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@linex-m68k.org)
  *			     Peter De Schrijver (p2@mind.be)
  *
  *  ---------------------------------------------------------------------------
  *
  *  This program is based on
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for linex.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -21,7 +21,7 @@
  *  ---------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the Linex
  *  distribution for more details.
  *
  *  ---------------------------------------------------------------------------
@@ -37,19 +37,19 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 /*#define DEBUG*/
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/zorro.h>
+#include <linex/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/amigaints.h>

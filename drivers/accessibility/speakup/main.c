@@ -9,32 +9,32 @@
  *  Copyright (C) 2003  David Borowski.
  */
 
-#include <linux/kernel.h>
-#include <linux/vt.h>
-#include <linux/tty.h>
-#include <linux/mm.h>		/* __get_free_page() and friends */
-#include <linux/vt_kern.h>
-#include <linux/ctype.h>
-#include <linux/selection.h>
-#include <linux/unistd.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/keyboard.h>	/* for KT_SHIFT */
-#include <linux/kbd_kern.h>	/* for vc_kbd_* and friends */
-#include <linux/input.h>
-#include <linux/kmod.h>
+#include <linex/kernel.h>
+#include <linex/vt.h>
+#include <linex/tty.h>
+#include <linex/mm.h>		/* __get_free_page() and friends */
+#include <linex/vt_kern.h>
+#include <linex/ctype.h>
+#include <linex/selection.h>
+#include <linex/unistd.h>
+#include <linex/jiffies.h>
+#include <linex/kthread.h>
+#include <linex/keyboard.h>	/* for KT_SHIFT */
+#include <linex/kbd_kern.h>	/* for vc_kbd_* and friends */
+#include <linex/input.h>
+#include <linex/kmod.h>
 
 /* speakup_*_selection */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/consolemap.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/consolemap.h>
 
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <linex/spinlock.h>
+#include <linex/notifier.h>
 
-#include <linux/uaccess.h>	/* copy_from|to|user() and others */
+#include <linex/uaccess.h>	/* copy_from|to|user() and others */
 
 #include "spk_priv.h"
 #include "speakup.h"

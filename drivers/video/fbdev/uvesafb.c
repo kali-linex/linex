@@ -9,20 +9,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/connector.h>
-#include <linux/random.h>
-#include <linux/platform_device.h>
-#include <linux/limits.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/skbuff.h>
+#include <linex/timer.h>
+#include <linex/completion.h>
+#include <linex/connector.h>
+#include <linex/random.h>
+#include <linex/platform_device.h>
+#include <linex/limits.h>
+#include <linex/fb.h>
+#include <linex/io.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <video/edid.h>
 #include <video/uvesafb.h>
 #ifdef CONFIG_X86

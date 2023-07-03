@@ -9,10 +9,10 @@
  * and other info.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/power_supply.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/wilco-ec.h>
+#include <linex/power_supply.h>
 
 #define DRV_NAME "wilco-charger"
 

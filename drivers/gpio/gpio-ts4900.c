@@ -3,14 +3,14 @@
  * Digital I/O driver for Technologic Systems I2C FPGA Core
  *
  * Copyright (C) 2015, 2018 Technologic Systems
- * Copyright (C) 2016 Savoir-Faire Linux
+ * Copyright (C) 2016 Savoir-Faire Linex
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/gpio/driver.h>
+#include <linex/i2c.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #define DEFAULT_PIN_NUMBER	32
 /*

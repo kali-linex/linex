@@ -61,19 +61,19 @@
  * IDENTITY_FRAME_BIT on all identity mapped PFNs.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/list.h>
+#include <linex/hash.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/memblock.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #include <asm/cache.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <asm/xen/page.h>
 #include <asm/xen/hypercall.h>
@@ -795,7 +795,7 @@ int clear_foreign_p2m_mapping(struct gnttab_unmap_grant_ref *unmap_ops,
 }
 
 #ifdef CONFIG_XEN_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 #include "debugfs.h"
 static int p2m_dump_show(struct seq_file *m, void *v)
 {

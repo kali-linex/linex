@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/fs/ufs/util.h
+ *  linex/fs/ufs/util.h
  *
  * Copyright (C) 1998 
  * Daniel Pirkl <daniel.pirkl@email.cz>
  * Charles University, Faculty of Mathematics and Physics
  */
 
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
+#include <linex/buffer_head.h>
+#include <linex/fs.h>
 #include "swab.h"
 
 

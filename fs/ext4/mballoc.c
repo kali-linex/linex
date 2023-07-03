@@ -11,11 +11,11 @@
 
 #include "ext4_jbd2.h"
 #include "mballoc.h"
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
-#include <linux/backing-dev.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/nospec.h>
+#include <linex/backing-dev.h>
 #include <trace/events/ext4.h>
 
 /*

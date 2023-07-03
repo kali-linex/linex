@@ -2,13 +2,13 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/acpi.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/vgaarb.h>
 #include <asm/cacheflush.h>
 #include <asm/loongson.h>
 

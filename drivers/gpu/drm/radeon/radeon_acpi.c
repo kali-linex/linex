@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
 
 #include <acpi/acpi_bus.h>
 #include <acpi/video.h>

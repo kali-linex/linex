@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linex kernel.
 #
 
-extra-y			+= vmlinux.lds
+extra-y			+= vmlinex.lds
 
 obj-$(CONFIG_AMIGA)	:= head.o
 obj-$(CONFIG_ATARI)	:= head.o

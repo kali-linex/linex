@@ -3,12 +3,12 @@
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
 
-#include <linux/gfp.h>
+#include <linex/gfp.h>
 #include <rdma/ib_verbs.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/resource.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/sched/mm.h>
+#include <linex/resource.h>
 
 #include "siw.h"
 #include "siw_mem.h"

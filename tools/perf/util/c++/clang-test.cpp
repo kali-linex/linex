@@ -24,7 +24,7 @@ __test__clang_to_IR(void)
 	if (fetch_kernel_version(&kernel_version, NULL, 0))
 		return std::unique_ptr<llvm::Module>(nullptr);
 
-	std::string cflag_kver("-DLINUX_VERSION_CODE=" +
+	std::string cflag_kver("-DLINEX_VERSION_CODE=" +
 				std::to_string(kernel_version));
 
 	std::unique_ptr<llvm::Module> M =

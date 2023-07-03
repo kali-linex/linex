@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 
 __INITDATA
 

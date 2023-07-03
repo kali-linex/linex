@@ -9,15 +9,15 @@
  */
 
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/tty.h>
-#include <linux/compat.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/serio.h>
+#include <linex/tty.h>
+#include <linex/compat.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Input device TTY line discipline");

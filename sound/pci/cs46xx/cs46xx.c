@@ -10,10 +10,10 @@
     reloading the module may solve this.
 */
 
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linex/pci.h>
+#include <linex/time.h>
+#include <linex/init.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include "cs46xx.h"
 #include <sound/initval.h>

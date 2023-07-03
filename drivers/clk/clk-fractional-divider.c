@@ -38,15 +38,15 @@
  * saturated values.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/rational.h>
-#include <linux/slab.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/math.h>
+#include <linex/module.h>
+#include <linex/rational.h>
+#include <linex/slab.h>
 
-#include <linux/clk-provider.h>
+#include <linex/clk-provider.h>
 
 #include "clk-fractional-divider.h"
 

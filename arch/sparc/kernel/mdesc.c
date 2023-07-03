@@ -3,22 +3,22 @@
  *
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/log2.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/refcount.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/log2.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/miscdevice.h>
+#include <linex/memblock.h>
+#include <linex/export.h>
+#include <linex/refcount.h>
 
 #include <asm/cpudata.h>
 #include <asm/hypervisor.h>
 #include <asm/mdesc.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/oplib.h>
 #include <asm/smp.h>
 #include <asm/adi.h>

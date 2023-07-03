@@ -8,10 +8,10 @@
  */
 
 #include "hsr_forward.h"
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
 #include "hsr_main.h"
 #include "hsr_framereg.h"
 

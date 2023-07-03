@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/mtd/mtd.h>
+#include <linex/platform_device.h>
+#include <linex/bcma/bcma.h>
 
 #include "bcm47xxsflash.h"
 

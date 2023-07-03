@@ -10,12 +10,12 @@
  * family.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/bitops.h>
+#include <linex/gpio/driver.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "../pinmux.h"

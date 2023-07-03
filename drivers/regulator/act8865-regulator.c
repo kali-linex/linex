@@ -7,18 +7,18 @@
  * Copyright (C) 2013 Atmel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/act8865.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/act8865.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/power_supply.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regmap.h>
 #include <dt-bindings/regulator/active-semi,8865-regulator.h>
 
 /*

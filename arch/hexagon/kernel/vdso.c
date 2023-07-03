@@ -2,13 +2,13 @@
 /*
  * vDSO implementation for Hexagon
  *
- * Copyright (c) 2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/binfmts.h>
+#include <linex/err.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/binfmts.h>
 
 #include <asm/vdso.h>
 
@@ -46,7 +46,7 @@ arch_initcall(vdso_init);
 /*
  * Called from binfmt_elf.  Create a VMA for the vDSO page.
  */
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linex_binprm *bprm, int uses_interp)
 {
 	int ret;
 	unsigned long vdso_base;

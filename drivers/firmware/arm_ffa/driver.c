@@ -22,16 +22,16 @@
 #define DRIVER_NAME "ARM FF-A"
 #define pr_fmt(fmt) DRIVER_NAME ": " fmt
 
-#include <linux/arm_ffa.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
+#include <linex/arm_ffa.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/uuid.h>
 
 #include "common.h"
 
@@ -53,7 +53,7 @@
 
 static ffa_fn *invoke_ffa_fn;
 
-static const int ffa_linux_errmap[] = {
+static const int ffa_linex_errmap[] = {
 	/* better than switch case as long as return value is continuous */
 	0,		/* FFA_RET_SUCCESS */
 	-EOPNOTSUPP,	/* FFA_RET_NOT_SUPPORTED */
@@ -66,12 +66,12 @@ static const int ffa_linux_errmap[] = {
 	-ECANCELED,	/* FFA_RET_ABORTED */
 };
 
-static inline int ffa_to_linux_errno(int errno)
+static inline int ffa_to_linex_errno(int errno)
 {
 	int err_idx = -errno;
 
-	if (err_idx >= 0 && err_idx < ARRAY_SIZE(ffa_linux_errmap))
-		return ffa_linux_errmap[err_idx];
+	if (err_idx >= 0 && err_idx < ARRAY_SIZE(ffa_linex_errmap))
+		return ffa_linex_errmap[err_idx];
 	return -EINVAL;
 }
 
@@ -147,7 +147,7 @@ static int ffa_rx_release(void)
 		      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	/* check for ret.a0 == FFA_RX_RELEASE ? */
 
@@ -164,7 +164,7 @@ static int ffa_rxtx_map(phys_addr_t tx_buf, phys_addr_t rx_buf, u32 pg_cnt)
 		      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	return 0;
 }
@@ -178,7 +178,7 @@ static int ffa_rxtx_unmap(u16 vm_id)
 		      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	return 0;
 }
@@ -206,7 +206,7 @@ __ffa_partition_info_get(u32 uuid0, u32 uuid1, u32 uuid2, u32 uuid3,
 
 	if (partition_info.a0 == FFA_ERROR) {
 		mutex_unlock(&drv_info->rx_lock);
-		return ffa_to_linux_errno((int)partition_info.a2);
+		return ffa_to_linex_errno((int)partition_info.a2);
 	}
 
 	count = partition_info.a2;
@@ -270,7 +270,7 @@ static int ffa_id_get(u16 *vm_id)
 		      }, &id);
 
 	if (id.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)id.a2);
+		return ffa_to_linex_errno((int)id.a2);
 
 	*vm_id = FIELD_GET(VM_ID_MASK, (id.a2));
 
@@ -303,7 +303,7 @@ static int ffa_msg_send_direct_req(u16 src_id, u16 dst_id, bool mode_32bit,
 			      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	if (ret.a0 == resp_id) {
 		data->data0 = ret.a3;
@@ -334,7 +334,7 @@ static int ffa_mem_first_frag(u32 func_id, phys_addr_t buf, u32 buf_sz,
 			      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	if (ret.a0 == FFA_SUCCESS) {
 		if (handle)
@@ -366,7 +366,7 @@ static int ffa_mem_next_frag(u64 handle, u32 frag_len)
 			      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	if (ret.a0 == FFA_MEM_FRAG_RX)
 		return ret.a3;
@@ -511,7 +511,7 @@ static int ffa_memory_reclaim(u64 g_handle, u32 flags)
 		      }, &ret);
 
 	if (ret.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)ret.a2);
+		return ffa_to_linex_errno((int)ret.a2);
 
 	return 0;
 }
@@ -524,7 +524,7 @@ static int ffa_features(u32 func_feat_id, u32 input_props,
 	if (!ARM_SMCCC_IS_FAST_CALL(func_feat_id) && input_props) {
 		pr_err("%s: Invalid Parameters: %x, %x", __func__,
 		       func_feat_id, input_props);
-		return ffa_to_linux_errno(FFA_RET_INVALID_PARAMETERS);
+		return ffa_to_linex_errno(FFA_RET_INVALID_PARAMETERS);
 	}
 
 	invoke_ffa_fn((ffa_value_t){
@@ -532,7 +532,7 @@ static int ffa_features(u32 func_feat_id, u32 input_props,
 		}, &id);
 
 	if (id.a0 == FFA_ERROR)
-		return ffa_to_linux_errno((int)id.a2);
+		return ffa_to_linex_errno((int)id.a2);
 
 	if (if_props_1)
 		*if_props_1 = id.a2;

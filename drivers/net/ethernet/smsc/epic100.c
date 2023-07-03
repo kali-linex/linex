@@ -1,4 +1,4 @@
-/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for Linux. */
+/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for Linex. */
 /*
 	Written/copyright 1997-2001 by Donald Becker.
 
@@ -67,26 +67,26 @@ static int rx_copybreak;
 #define TX_FIFO_THRESH 256
 #define RX_FIFO_THRESH 1		/* 0-3, 0==32, 64,96, or 3==128 bytes  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/crc32.h>
+#include <linex/bitops.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 
 /* These identify the driver base version and may not be removed. */

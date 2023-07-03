@@ -4,7 +4,7 @@
  *
  *  Maintained by: Benjamin Herrenschmidt <benh@kernel.crashing.org> and
  *		   Jeff Garzik <jgarzik@pobox.com>
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy linex-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003 Benjamin Herrenschmidt <benh@kernel.crashing.org>
@@ -20,19 +20,19 @@
  *  Hardware documentation available under NDA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi.h>
-#include <linux/libata.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/libata.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #define DRV_NAME	"sata_svw"
 #define DRV_VERSION	"2.3"

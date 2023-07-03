@@ -3,15 +3,15 @@
  * Copyright 2008 Cisco Systems, Inc.  All rights reserved.
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/workqueue.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/workqueue.h>
 #include <scsi/fc/fc_fip.h>
 #include <scsi/fc/fc_els.h>
 #include <scsi/fc/fc_fcoe.h>

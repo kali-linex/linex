@@ -3,18 +3,18 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_mdio.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
 
 #include "hns_dsaf_main.h"
 #include "hns_dsaf_misc.h"

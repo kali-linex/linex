@@ -4,14 +4,14 @@
  *
  * Copyright (c) 2008 Marvell Semiconductor
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire Linex Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinex.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/if_bridge.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
+#include <linex/bitfield.h>
+#include <linex/if_bridge.h>
+#include <linex/phy.h>
+#include <linex/phylink.h>
 
 #include "chip.h"
 #include "global2.h"

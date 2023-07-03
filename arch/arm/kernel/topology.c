@@ -11,20 +11,20 @@
  * for more details.
  */
 
-#include <linux/arch_topology.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/of.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/arch_topology.h>
+#include <linex/cpu.h>
+#include <linex/cpufreq.h>
+#include <linex/cpumask.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/percpu.h>
+#include <linex/node.h>
+#include <linex/nodemask.h>
+#include <linex/of.h>
+#include <linex/sched.h>
+#include <linex/sched/topology.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include <asm/cpu.h>
 #include <asm/cputype.h>

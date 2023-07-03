@@ -2,12 +2,12 @@
  * GPL (C) 2002 Martin Devera (devik@cdi.cz).
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/math64.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_connbytes.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/skbuff.h>
+#include <linex/math64.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_connbytes.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_acct.h>
 

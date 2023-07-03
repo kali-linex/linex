@@ -32,10 +32,10 @@
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
 #include <sound/jack.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/acpi.h>
 
 #include "../codecs/rt5645.h"
 

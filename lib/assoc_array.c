@@ -7,10 +7,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 //#define DEBUG
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/assoc_array_priv.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/assoc_array_priv.h>
 
 /*
  * Iterate over an associative array.  The caller must hold the RCU read lock

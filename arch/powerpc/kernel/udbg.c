@@ -5,11 +5,11 @@
  * c 2001 PPC 64 Team, IBM Corp
  */
 
-#include <linux/stdarg.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <linex/stdarg.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/console.h>
+#include <linex/init.h>
 #include <asm/processor.h>
 #include <asm/udbg.h>
 

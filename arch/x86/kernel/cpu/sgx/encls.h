@@ -2,11 +2,11 @@
 #ifndef _X86_ENCLS_H
 #define _X86_ENCLS_H
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/rwsem.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/rwsem.h>
+#include <linex/types.h>
 #include <asm/asm.h>
 #include <asm/traps.h>
 #include "sgx.h"

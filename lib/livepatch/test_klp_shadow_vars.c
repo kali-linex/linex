@@ -3,11 +3,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/livepatch.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/livepatch.h>
+#include <linex/slab.h>
 
 /*
  * Keep a small list of pointers so that we can print address-agnostic

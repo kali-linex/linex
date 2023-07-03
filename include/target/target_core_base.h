@@ -2,12 +2,12 @@
 #ifndef TARGET_CORE_BASE_H
 #define TARGET_CORE_BASE_H
 
-#include <linux/configfs.h>      /* struct config_group */
-#include <linux/dma-direction.h> /* enum dma_data_direction */
-#include <linux/sbitmap.h>
-#include <linux/percpu-refcount.h>
-#include <linux/semaphore.h>     /* struct semaphore */
-#include <linux/completion.h>
+#include <linex/configfs.h>      /* struct config_group */
+#include <linex/dma-direction.h> /* enum dma_data_direction */
+#include <linex/sbitmap.h>
+#include <linex/percpu-refcount.h>
+#include <linex/semaphore.h>     /* struct semaphore */
+#include <linex/completion.h>
 
 #define TARGET_CORE_VERSION		"v5.0"
 
@@ -469,7 +469,7 @@ struct se_cmd {
 	u64			tag; /* SAM command identifier aka task tag */
 	/* Delay for ALUA Active/NonOptimized state access in milliseconds */
 	int			alua_nonop_delay;
-	/* See include/linux/dma-mapping.h */
+	/* See include/linex/dma-mapping.h */
 	enum dma_data_direction	data_direction;
 	/* For SAM Task Attribute */
 	int			sam_task_attr;

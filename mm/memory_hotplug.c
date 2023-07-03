@@ -1,40 +1,40 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/memory_hotplug.c
+ *  linex/mm/memory_hotplug.c
  *
  *  Copyright (C)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/memory.h>
-#include <linux/memremap.h>
-#include <linux/memory_hotplug.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/migrate.h>
-#include <linux/page-isolation.h>
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/mm_inline.h>
-#include <linux/firmware-map.h>
-#include <linux/stop_machine.h>
-#include <linux/hugetlb.h>
-#include <linux/memblock.h>
-#include <linux/compaction.h>
-#include <linux/rmap.h>
-#include <linux/module.h>
+#include <linex/stddef.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/swap.h>
+#include <linex/interrupt.h>
+#include <linex/pagemap.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
+#include <linex/writeback.h>
+#include <linex/slab.h>
+#include <linex/sysctl.h>
+#include <linex/cpu.h>
+#include <linex/memory.h>
+#include <linex/memremap.h>
+#include <linex/memory_hotplug.h>
+#include <linex/vmalloc.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/migrate.h>
+#include <linex/page-isolation.h>
+#include <linex/pfn.h>
+#include <linex/suspend.h>
+#include <linex/mm_inline.h>
+#include <linex/firmware-map.h>
+#include <linex/stop_machine.h>
+#include <linex/hugetlb.h>
+#include <linex/memblock.h>
+#include <linex/compaction.h>
+#include <linex/rmap.h>
+#include <linex/module.h>
 
 #include <asm/tlbflush.h>
 

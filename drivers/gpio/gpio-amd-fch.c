@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_data/gpio/gpio-amd-fch.h>
-#include <linux/spinlock.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/driver.h>
+#include <linex/platform_data/gpio/gpio-amd-fch.h>
+#include <linex/spinlock.h>
 
 #define AMD_FCH_MMIO_BASE		0xFED80000
 #define AMD_FCH_GPIO_BANK0_BASE		0x1500

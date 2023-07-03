@@ -7,21 +7,21 @@
 //	Author: Tracy Yi <tracy-yi@ti.com>
 //	Frank Shi <shifu0704@thundersoft.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/firmware.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/i2c.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/firmware.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/slab.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

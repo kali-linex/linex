@@ -2,12 +2,12 @@
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/smp.h>
+#include <linex/kernel.h>
+#include <linex/irq.h>
+#include <linex/kernel_stat.h>
+#include <linex/pci.h>
+#include <linex/msi.h>
+#include <linex/smp.h>
 
 #include <asm/isc.h>
 #include <asm/airq.h>

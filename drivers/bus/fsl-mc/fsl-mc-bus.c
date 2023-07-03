@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) "fsl-mc: " fmt
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/limits.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/acpi.h>
-#include <linux/iommu.h>
-#include <linux/dma-map-ops.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/limits.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/acpi.h>
+#include <linex/iommu.h>
+#include <linex/dma-map-ops.h>
 
 #include "fsl-mc-private.h"
 
@@ -775,7 +775,7 @@ static void fsl_mc_device_release(struct device *dev)
 }
 
 /*
- * Add a newly discovered fsl-mc device to be visible in Linux
+ * Add a newly discovered fsl-mc device to be visible in Linex
  */
 int fsl_mc_device_add(struct fsl_mc_obj_desc *obj_desc,
 		      struct fsl_mc_io *mc_io,
@@ -915,7 +915,7 @@ static struct notifier_block fsl_mc_nb;
 
 /**
  * fsl_mc_device_remove - Remove an fsl-mc device from being visible to
- * Linux
+ * Linex
  *
  * @mc_dev: Pointer to an fsl-mc device
  */

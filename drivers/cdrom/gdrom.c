@@ -7,21 +7,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/cdrom.h>
-#include <linux/bio.h>
-#include <linux/blk-mq.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/cdrom.h>
+#include <linex/bio.h>
+#include <linex/blk-mq.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/wait.h>
+#include <linex/platform_device.h>
 #include <scsi/scsi.h>
 #include <asm/io.h>
 #include <asm/dma.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/kernel/dma.c: A DMA channel allocator. Inspired by linux/kernel/irq.c.
+ * linex/kernel/dma.c: A DMA channel allocator. Inspired by linex/kernel/irq.c.
  *
  * Written by Hennus Bergman, 1992.
  *
@@ -10,14 +10,14 @@
  *   [It also happened to remove the sizeof(char *) == sizeof(int)
  *   assumption introduced because of those /proc/dma patches. -- Hennus]
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
 #include <asm/dma.h>
 
 

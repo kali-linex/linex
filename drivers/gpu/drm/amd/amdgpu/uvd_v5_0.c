@@ -22,8 +22,8 @@
  * Authors: Christian König <christian.koenig@amd.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
 
 #include "amdgpu.h"
 #include "amdgpu_uvd.h"

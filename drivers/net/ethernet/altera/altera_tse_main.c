@@ -17,27 +17,27 @@
  * Major updates contributed by GlobalLogic
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/mdio/mdio-regmap.h>
-#include <linux/netdevice.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/pcs-lynx.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
+#include <linex/atomic.h>
+#include <linex/delay.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/mdio/mdio-regmap.h>
+#include <linex/netdevice.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/pcs-lynx.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/skbuff.h>
 #include <asm/cacheflush.h>
 
 #include "altera_utils.h"

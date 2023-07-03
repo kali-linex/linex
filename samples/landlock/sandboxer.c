@@ -10,8 +10,8 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/landlock.h>
-#include <linux/prctl.h>
+#include <linex/landlock.h>
+#include <linex/prctl.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -4,21 +4,21 @@
  * Copyright (C) 2007, 2008, Marvell International Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/memory.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/cpumask.h>
-#include <linux/platform_data/dma-mv_xor.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/memory.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/cpumask.h>
+#include <linex/platform_data/dma-mv_xor.h>
 
 #include "dmaengine.h"
 #include "mv_xor.h"

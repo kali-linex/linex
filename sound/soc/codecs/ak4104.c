@@ -5,12 +5,12 @@
  * Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/of_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
 #include <sound/asoundef.h>
 #include <sound/core.h>
 #include <sound/soc.h>

@@ -4,7 +4,7 @@
  *  DRAM access routines
  */
 
-#include <linux/time.h>
+#include <linex/time.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/info.h>

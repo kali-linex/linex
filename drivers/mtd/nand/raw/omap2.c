@@ -5,29 +5,29 @@
  * Copyright © 2004 David Brownell
  */
 
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/omap-dma.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/sched.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/nand-ecc-sw-bch.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/omap-dma.h>
+#include <linex/iopoll.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
-#include <linux/platform_data/elm.h>
+#include <linex/platform_data/elm.h>
 
-#include <linux/omap-gpmc.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <linex/omap-gpmc.h>
+#include <linex/platform_data/mtd-nand-omap2.h>
 
 #define	DRIVER_NAME	"omap2-nand"
 #define	OMAP_NAND_TIMEOUT_MS	5000
@@ -2287,7 +2287,7 @@ static void omap_nand_remove(struct platform_device *pdev)
 	nand_cleanup(nand_chip);
 }
 
-/* omap_nand_ids defined in linux/platform_data/mtd-nand-omap2.h */
+/* omap_nand_ids defined in linex/platform_data/mtd-nand-omap2.h */
 MODULE_DEVICE_TABLE(of, omap_nand_ids);
 
 static struct platform_driver omap_nand_driver = {

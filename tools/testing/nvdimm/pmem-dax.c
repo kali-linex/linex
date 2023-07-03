@@ -3,8 +3,8 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 #include "test/nfit_test.h"
-#include <linux/blkdev.h>
-#include <linux/dax.h>
+#include <linex/blkdev.h>
+#include <linex/dax.h>
 #include <pmem.h>
 #include <nd.h>
 

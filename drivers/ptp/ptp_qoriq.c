@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/timex.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <linex/device.h>
+#include <linex/hrtimer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/timex.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
 
-#include <linux/fsl/ptp_qoriq.h>
+#include <linex/fsl/ptp_qoriq.h>
 
 /*
  * Register access functions

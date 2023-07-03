@@ -3,8 +3,8 @@
 #ifndef DRM_MODULE_H
 #define DRM_MODULE_H
 
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 
 #include <drm/drm_drv.h>
 

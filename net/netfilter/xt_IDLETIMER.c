@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/netfilter/xt_IDLETIMER.c
+ * linex/net/netfilter/xt_IDLETIMER.c
  *
  * Netfilter module to trigger a timer when packet matches.
  * After timer expires a kevent will be sent.
@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/alarmtimer.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_IDLETIMER.h>
-#include <linux/kdev_t.h>
-#include <linux/kobject.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
+#include <linex/module.h>
+#include <linex/timer.h>
+#include <linex/alarmtimer.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_IDLETIMER.h>
+#include <linex/kdev_t.h>
+#include <linex/kobject.h>
+#include <linex/workqueue.h>
+#include <linex/sysfs.h>
 
 struct idletimer_tg {
 	struct list_head entry;

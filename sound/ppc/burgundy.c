@@ -6,9 +6,9 @@
  * code based on dmasound.c.
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/delay.h>
 #include <sound/core.h>
 #include "pmac.h"
 #include "burgundy.h"

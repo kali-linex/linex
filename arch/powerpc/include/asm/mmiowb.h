@@ -4,7 +4,7 @@
 
 #ifdef CONFIG_MMIOWB
 
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 #include <asm/barrier.h>
 #include <asm/paca.h>
 

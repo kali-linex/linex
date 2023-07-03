@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Linex/PA-RISC Project (http://www.parisc-linex.org/)
  *
  * kernel entry points (interruptions, system call wrappers)
  *  Copyright (C) 1999,2000 Philipp Rumpf 
@@ -26,8 +26,8 @@
 #include <asm/thread_info.h>
 #include <asm/alternative.h>
 
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linex/linkage.h>
+#include <linex/pgtable.h>
 
 #ifdef CONFIG_64BIT
 	.level 2.0w
@@ -349,7 +349,7 @@
 	*/
 	.macro		space_check	spc,tmp,fault
 	mfsp		%sr7,\tmp
-	/* check against %r0 which is same value as LINUX_GATEWAY_SPACE */
+	/* check against %r0 which is same value as LINEX_GATEWAY_SPACE */
 	or,COND(<>)	%r0,\spc,%r0	/* user may execute gateway page
 					 * as kernel, so defeat the space
 					 * check if it is */
@@ -852,9 +852,9 @@ intr_check_sig:
 	 * Only do signals if we are returning to user space
 	 */
 	LDREG	PT_IASQ0(%r16), %r20
-	cmpib,COND(=),n LINUX_GATEWAY_SPACE, %r20, intr_restore /* forward */
+	cmpib,COND(=),n LINEX_GATEWAY_SPACE, %r20, intr_restore /* forward */
 	LDREG	PT_IASQ1(%r16), %r20
-	cmpib,COND(=),n LINUX_GATEWAY_SPACE, %r20, intr_restore /* forward */
+	cmpib,COND(=),n LINEX_GATEWAY_SPACE, %r20, intr_restore /* forward */
 
 	copy	%r0, %r25			/* long in_syscall = 0 */
 #ifdef CONFIG_64BIT

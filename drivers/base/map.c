@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/drivers/base/map.c
+ *  linex/drivers/base/map.c
  *
  * (C) Copyright Al Viro 2002,2003
  *
@@ -9,12 +9,12 @@
  * local to that file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/kdev_t.h>
-#include <linux/kobject.h>
-#include <linux/kobj_map.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/kdev_t.h>
+#include <linex/kobject.h>
+#include <linex/kobj_map.h>
 
 struct kobj_map {
 	struct probe {

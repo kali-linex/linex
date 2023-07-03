@@ -10,17 +10,17 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/kstrtox.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/thread_info.h>
-#include <linux/vmalloc.h>
-#include <linux/atomic.h>
-#include <linux/jump_label.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/kstrtox.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/thread_info.h>
+#include <linex/vmalloc.h>
+#include <linex/atomic.h>
+#include <linex/jump_label.h>
 #include <asm/sections.h>
 #include "slab.h"
 

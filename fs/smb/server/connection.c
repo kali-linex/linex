@@ -4,9 +4,9 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
+#include <linex/mutex.h>
+#include <linex/freezer.h>
+#include <linex/module.h>
 
 #include "server.h"
 #include "smb_common.h"

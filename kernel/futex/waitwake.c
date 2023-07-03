@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/sched/task.h>
-#include <linux/sched/signal.h>
-#include <linux/freezer.h>
+#include <linex/sched/task.h>
+#include <linex/sched/signal.h>
+#include <linex/freezer.h>
 
 #include "futex.h"
 

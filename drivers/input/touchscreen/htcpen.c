@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Pau Oliva Fora <pof@eslack.org>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/isa.h>
-#include <linux/ioport.h>
-#include <linux/dmi.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/isa.h>
+#include <linex/ioport.h>
+#include <linex/dmi.h>
 
 MODULE_AUTHOR("Pau Oliva Fora <pau@eslack.org>");
 MODULE_DESCRIPTION("HTC Shift touchscreen driver");

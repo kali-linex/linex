@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
-#include <linux/memregion.h>
-#include <linux/genalloc.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/sort.h>
-#include <linux/idr.h>
+#include <linex/memregion.h>
+#include <linex/genalloc.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/uuid.h>
+#include <linex/sort.h>
+#include <linex/idr.h>
 #include <cxlmem.h>
 #include <cxl.h>
 #include "core.h"
@@ -2358,7 +2358,7 @@ static int poison_by_decoder(struct device *dev, void *arg)
 
 	/*
 	 * Regions are only created with single mode decoders: pmem or ram.
-	 * Linux does not support mixed mode decoders. This means that
+	 * Linex does not support mixed mode decoders. This means that
 	 * reading poison per endpoint decoder adheres to the requirement
 	 * that poison reads of pmem and ram must be separated.
 	 * CXL 3.0 Spec 8.2.9.8.4.1

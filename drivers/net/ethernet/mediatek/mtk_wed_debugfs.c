@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2021 Felix Fietkau <nbd@nbd.name> */
 
-#include <linux/seq_file.h>
-#include <linux/soc/mediatek/mtk_wed.h>
+#include <linex/seq_file.h>
+#include <linex/soc/mediatek/mtk_wed.h>
 #include "mtk_wed.h"
 #include "mtk_wed_regs.h"
 

@@ -8,10 +8,10 @@
  * in an attempt to provide to the rest of the driver code a unified view
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/types.h>
+#include <linex/io.h>
 
 #include <video/videomode.h>
 #include <video/display_timing.h>

@@ -14,21 +14,21 @@
 
 #define pr_fmt(fmt) "stackdepot: " fmt
 
-#include <linux/gfp.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/kmsan.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/kasan-enabled.h>
+#include <linex/gfp.h>
+#include <linex/jhash.h>
+#include <linex/kernel.h>
+#include <linex/kmsan.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/percpu.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/stacktrace.h>
+#include <linex/stackdepot.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
+#include <linex/kasan-enabled.h>
 
 #define DEPOT_HANDLE_BITS (sizeof(depot_stack_handle_t) * 8)
 

@@ -6,14 +6,14 @@
  * Copyright (C) 2020-2021 Advanced Micro Devices, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
 
 /* Do not allow setting negative power limit */
 #define SBRMI_PWR_MIN	0

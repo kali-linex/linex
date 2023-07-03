@@ -30,8 +30,8 @@
  * SOFTWARE.
  *
  */
-#include <linux/errno.h>
-#include <linux/pci.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
 
 #include "usnic_ib.h"
 #include "vnic_resource.h"

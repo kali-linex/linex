@@ -10,10 +10,10 @@
 #ifndef _NILFS_BMAP_H
 #define _NILFS_BMAP_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/nilfs2_ondisk.h>	/* nilfs_binfo, nilfs_inode, etc */
+#include <linex/types.h>
+#include <linex/fs.h>
+#include <linex/buffer_head.h>
+#include <linex/nilfs2_ondisk.h>	/* nilfs_binfo, nilfs_inode, etc */
 #include "alloc.h"
 #include "dat.h"
 

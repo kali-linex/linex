@@ -8,22 +8,22 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/of_net.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/phy.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/crc32.h>
+#include <linex/if_vlan.h>
+#include <linex/of_net.h>
 #include <net/ip.h>
 #include <net/ncsi.h>
 

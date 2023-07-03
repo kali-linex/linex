@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*  Copyright(c) 2016-20 Intel Corporation. */
 
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/miscdevice.h>
-#include <linux/node.h>
-#include <linux/pagemap.h>
-#include <linux/ratelimit.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linex/file.h>
+#include <linex/freezer.h>
+#include <linex/highmem.h>
+#include <linex/kthread.h>
+#include <linex/miscdevice.h>
+#include <linex/node.h>
+#include <linex/pagemap.h>
+#include <linex/ratelimit.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
 #include <asm/sgx.h>
 #include "driver.h"
 #include "encl.h"

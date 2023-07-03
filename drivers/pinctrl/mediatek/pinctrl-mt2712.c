@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/regmap.h>
+#include <linex/pinctrl/pinconf-generic.h>
 #include <dt-bindings/pinctrl/mt65xx.h>
 
 #include "pinctrl-mtk-common.h"

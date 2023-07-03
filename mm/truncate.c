@@ -8,20 +8,20 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/backing-dev.h>
-#include <linux/dax.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/buffer_head.h>	/* grr. try_to_release_page */
-#include <linux/shmem_fs.h>
-#include <linux/rmap.h>
+#include <linex/kernel.h>
+#include <linex/backing-dev.h>
+#include <linex/dax.h>
+#include <linex/gfp.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/export.h>
+#include <linex/pagemap.h>
+#include <linex/highmem.h>
+#include <linex/pagevec.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/buffer_head.h>	/* grr. try_to_release_page */
+#include <linex/shmem_fs.h>
+#include <linex/rmap.h>
 #include "internal.h"
 
 /*

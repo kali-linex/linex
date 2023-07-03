@@ -3,8 +3,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
 
 static int test_klp_callbacks_mod_init(void)
 {

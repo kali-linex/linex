@@ -5,32 +5,32 @@
  *              Alignment and value checking mods by Craig Metz
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/errqueue.h>
+#include <linex/module.h>
+#include <linex/signal.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/sched/user.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/stat.h>
+#include <linex/socket.h>
+#include <linex/file.h>
+#include <linex/fcntl.h>
+#include <linex/net.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/security.h>
+#include <linex/pid_namespace.h>
+#include <linex/pid.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/errqueue.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/compat.h>
 #include <net/scm.h>

@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/mtd/mtd.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/jffs2.h>
+#include <linex/xattr.h>
+#include <linex/mtd/mtd.h>
 #include "nodelist.h"
 
 static int jffs2_trusted_getxattr(const struct xattr_handler *handler,

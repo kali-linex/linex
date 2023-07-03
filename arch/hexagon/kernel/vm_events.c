@@ -2,14 +2,14 @@
 /*
  * Mostly IRQ support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/debug.h>
+#include <linex/kernel.h>
+#include <linex/sched/debug.h>
 #include <asm/registers.h>
-#include <linux/irq.h>
-#include <linux/hardirq.h>
+#include <linex/irq.h>
+#include <linex/hardirq.h>
 
 /*
  * show_regs - print pt_regs structure

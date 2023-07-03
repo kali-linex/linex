@@ -11,10 +11,10 @@
 #ifndef _MEDIA_DEVICE_H
 #define _MEDIA_DEVICE_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 
 #include <media/media-devnode.h>
 #include <media/media-entity.h>

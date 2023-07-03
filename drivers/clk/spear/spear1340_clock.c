@@ -8,12 +8,12 @@
  * Viresh Kumar <vireshk@kernel.org>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk/spear.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock_types.h>
+#include <linex/clkdev.h>
+#include <linex/clk/spear.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of_platform.h>
+#include <linex/spinlock_types.h>
 #include "clk.h"
 
 /* Clock Configuration Registers */

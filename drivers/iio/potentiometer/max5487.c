@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2016 Cristina-Gabriela Moraru <cristina.moraru09@gmail.com>
  */
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
+#include <linex/acpi.h>
 
-#include <linux/iio/sysfs.h>
-#include <linux/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/iio.h>
 
 #define MAX5487_WRITE_WIPER_A	(0x01 << 8)
 #define MAX5487_WRITE_WIPER_B	(0x02 << 8)

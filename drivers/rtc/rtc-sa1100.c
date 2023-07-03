@@ -17,19 +17,19 @@
  *   by Richard Purdie <rpurdie@rpsys.net>
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/clk.h>
+#include <linex/rtc.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/of.h>
+#include <linex/pm.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
 
 #define RTSR_HZE		BIT(3)	/* HZ interrupt enable */
 #define RTSR_ALE		BIT(2)	/* RTC alarm interrupt enable */

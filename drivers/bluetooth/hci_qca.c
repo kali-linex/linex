@@ -6,7 +6,7 @@
  *  protocol extension to H4.
  *
  *  Copyright (C) 2007 Texas Instruments, Inc.
- *  Copyright (c) 2010, 2012, 2018 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2010, 2012, 2018 The Linex Foundation. All rights reserved.
  *
  *  Acknowledgements:
  *  This file is based on hci_ll.c, which was...
@@ -15,22 +15,22 @@
  *  by Maxim Krasnyansky and Marcel Holtmann.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/devcoredump.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/serdev.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/devcoredump.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/acpi.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/serdev.h>
+#include <linex/mutex.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

@@ -5,9 +5,9 @@
  *         Tiffany Lin <tiffany.lin@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 
 #include "vdec_drv_if.h"
 #include "mtk_vcodec_dec.h"

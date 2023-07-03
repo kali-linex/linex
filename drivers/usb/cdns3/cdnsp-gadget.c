@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
+#include <linex/moduleparam.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/iopoll.h>
+#include <linex/delay.h>
+#include <linex/log2.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/irq.h>
+#include <linex/dmi.h>
 
 #include "core.h"
 #include "gadget-export.h"

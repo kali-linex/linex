@@ -12,7 +12,7 @@ ccflags-remove-$(CONFIG_FUNCTION_TRACER) += $(CC_FLAGS_FTRACE)
 
 ifdef CONFIG_CC_IS_CLANG
 # clang stores addresses on the stack causing the frame size to blow
-# out. See https://github.com/ClangBuiltLinux/linux/issues/252
+# out. See https://github.com/ClangBuiltLinex/linex/issues/252
 KBUILD_CFLAGS += -Wframe-larger-than=4096
 endif
 

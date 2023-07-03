@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/circ_buf.h>
-#include <linux/iversion.h>
-#include <linux/netfs.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/circ_buf.h>
+#include <linex/iversion.h>
+#include <linex/netfs.h>
 #include "internal.h"
 #include "afs_fs.h"
 #include "xdr_fs.h"

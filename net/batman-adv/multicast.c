@@ -7,39 +7,39 @@
 #include "multicast.h"
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/byteorder/generic.h>
-#include <linux/container_of.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/icmpv6.h>
-#include <linux/if_bridge.h>
-#include <linux/if_ether.h>
-#include <linux/igmp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/printk.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/byteorder/generic.h>
+#include <linex/container_of.h>
+#include <linex/errno.h>
+#include <linex/etherdevice.h>
+#include <linex/gfp.h>
+#include <linex/icmpv6.h>
+#include <linex/if_bridge.h>
+#include <linex/if_ether.h>
+#include <linex/igmp.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/inetdevice.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/netdevice.h>
+#include <linex/netlink.h>
+#include <linex/printk.h>
+#include <linex/rculist.h>
+#include <linex/rcupdate.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include <net/addrconf.h>
 #include <net/genetlink.h>
 #include <net/if_inet6.h>
@@ -47,8 +47,8 @@
 #include <net/ipv6.h>
 #include <net/netlink.h>
 #include <net/sock.h>
-#include <uapi/linux/batadv_packet.h>
-#include <uapi/linux/batman_adv.h>
+#include <uapi/linex/batadv_packet.h>
+#include <uapi/linex/batman_adv.h>
 
 #include "bridge_loop_avoidance.h"
 #include "hard-interface.h"
@@ -563,7 +563,7 @@ static int batadv_mcast_mla_bridge_get(struct net_device *dev,
 	int ret;
 
 	/* we don't need to detect these devices/listeners, the IGMP/MLD
-	 * snooping code of the Linux bridge already does that for us
+	 * snooping code of the Linex bridge already does that for us
 	 */
 	ret = br_multicast_list_adjacent(dev, &bridge_mcast_list);
 	if (ret < 0)

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,16 +16,16 @@
 
 #define FASTRETRANS_DEBUG 1
 
-#include <linux/list.h>
-#include <linux/tcp.h>
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/skbuff.h>
-#include <linux/kref.h>
-#include <linux/ktime.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/list.h>
+#include <linex/tcp.h>
+#include <linex/bug.h>
+#include <linex/slab.h>
+#include <linex/cache.h>
+#include <linex/percpu.h>
+#include <linex/skbuff.h>
+#include <linex/kref.h>
+#include <linex/ktime.h>
+#include <linex/indirect_call_wrapper.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_timewait_sock.h>
@@ -41,11 +41,11 @@
 #include <net/dst.h>
 #include <net/mptcp.h>
 
-#include <linux/seq_file.h>
-#include <linux/memcontrol.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/siphash.h>
-#include <linux/net_mm.h>
+#include <linex/seq_file.h>
+#include <linex/memcontrol.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/siphash.h>
+#include <linex/net_mm.h>
 
 extern struct inet_hashinfo tcp_hashinfo;
 
@@ -773,7 +773,7 @@ void tcp_send_window_probe(struct sock *sk);
 
 /* TCP uses 32bit jiffies to save some space.
  * Note that this is different from tcp_time_stamp, which
- * historically has been the same until linux-4.13.
+ * historically has been the same until linex-4.13.
  */
 #define tcp_jiffies32 ((u32)jiffies)
 
@@ -1582,7 +1582,7 @@ static inline bool tcp_paws_reject(const struct tcp_options_received *rx_opt,
 	   out-of-sync and half-open connections will not be reset.
 	   Actually, the problem would be not existing if all
 	   the implementations followed draft about maintaining clock
-	   via reboots. Linux-2.2 DOES NOT!
+	   via reboots. Linex-2.2 DOES NOT!
 
 	   However, we can relax time bounds for RST segments to MSL.
 	 */
@@ -1687,7 +1687,7 @@ struct tcp_md5sig_key *tcp_v4_md5_lookup(const struct sock *sk,
 					 const struct sock *addr_sk);
 
 #ifdef CONFIG_TCP_MD5SIG
-#include <linux/jump_label.h>
+#include <linex/jump_label.h>
 extern struct static_key_false_deferred tcp_md5_needed;
 struct tcp_md5sig_key *__tcp_md5_do_lookup(const struct sock *sk, int l3index,
 					   const union tcp_md5_addr *addr,
@@ -2117,7 +2117,7 @@ static inline __u32 cookie_init_sequence(const struct tcp_request_sock_ops *ops,
 					 __u16 *mss)
 {
 	tcp_synq_overflow(sk);
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESSENT);
+	__NET_INC_STATS(sock_net(sk), LINEX_MIB_SYNCOOKIESSENT);
 	return ops->cookie_init_seq(skb, mss);
 }
 #else
@@ -2269,7 +2269,7 @@ static inline void tcp_segs_in(struct tcp_sock *tp, const struct sk_buff *skb)
 static inline void tcp_listendrop(const struct sock *sk)
 {
 	atomic_inc(&((struct sock *)sk)->sk_drops);
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	__NET_INC_STATS(sock_net(sk), LINEX_MIB_LISTENDROPS);
 }
 
 enum hrtimer_restart tcp_pace_kick(struct hrtimer *timer);

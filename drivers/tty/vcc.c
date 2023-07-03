@@ -4,14 +4,14 @@
  * Copyright (C) 2017 Oracle. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/termios_internal.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/termios_internal.h>
 #include <asm/vio.h>
 #include <asm/ldc.h>
 

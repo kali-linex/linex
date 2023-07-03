@@ -8,12 +8,12 @@
  *  Henning Schild <henning.schild@siemens.com>
  */
 
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/x86/simatic-ipc-base.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/x86/simatic-ipc-base.h>
 
 static struct gpiod_lookup_table *simatic_ipc_led_gpio_table;
 

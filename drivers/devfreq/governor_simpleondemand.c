@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/devfreq/governor_simpleondemand.c
+ *  linex/drivers/devfreq/governor_simpleondemand.c
  *
  *  Copyright (C) 2011 Samsung Electronics
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/devfreq.h>
-#include <linux/math64.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/devfreq.h>
+#include <linex/math64.h>
 #include "governor.h"
 
 /* Default constants for DevFreq-Simple-Ondemand (DFSO) */

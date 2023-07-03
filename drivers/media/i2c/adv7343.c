@@ -15,18 +15,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/videodev2.h>
+#include <linex/uaccess.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
 
 #include <media/i2c/adv7343.h>
 #include <media/v4l2-async.h>

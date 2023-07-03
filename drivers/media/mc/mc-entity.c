@@ -8,10 +8,10 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/bitmap.h>
-#include <linux/list.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/bitmap.h>
+#include <linex/list.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 #include <media/media-entity.h>
 #include <media/media-device.h>
 

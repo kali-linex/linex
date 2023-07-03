@@ -7,15 +7,15 @@
 //
 // Author: Matti Vaittinen <matti.vaittinen@fi.rohmeurope.com>
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/regulator/driver.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/regulator/driver.h>
 
 #include "internal.h"
 

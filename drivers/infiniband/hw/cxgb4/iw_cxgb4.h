@@ -31,21 +31,21 @@
 #ifndef __IW_CXGB4_H__
 #define __IW_CXGB4_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/xarray.h>
-#include <linux/completion.h>
-#include <linux/netdevice.h>
-#include <linux/sched/mm.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/inet.h>
-#include <linux/wait.h>
-#include <linux/kref.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/workqueue.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/xarray.h>
+#include <linex/completion.h>
+#include <linex/netdevice.h>
+#include <linex/sched/mm.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/inet.h>
+#include <linex/wait.h>
+#include <linex/kref.h>
+#include <linex/timer.h>
+#include <linex/io.h>
+#include <linex/workqueue.h>
 
 #include <asm/byteorder.h>
 

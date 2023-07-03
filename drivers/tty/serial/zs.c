@@ -44,27 +44,27 @@
  * complicated and prevents the use of some automatic modes of operation.
  */
 
-#include <linux/bug.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irqflags.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
+#include <linex/bug.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/irqflags.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/major.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/spinlock.h>
+#include <linex/sysrq.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/types.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include <asm/dec/interrupts.h>
 #include <asm/dec/ioasic_addrs.h>
@@ -73,7 +73,7 @@
 #include "zs.h"
 
 
-MODULE_AUTHOR("Maciej W. Rozycki <macro@linux-mips.org>");
+MODULE_AUTHOR("Maciej W. Rozycki <macro@linex-mips.org>");
 MODULE_DESCRIPTION("DECstation Z85C30 serial driver");
 MODULE_LICENSE("GPL");
 

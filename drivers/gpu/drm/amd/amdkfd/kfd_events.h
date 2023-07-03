@@ -24,13 +24,13 @@
 #ifndef KFD_EVENTS_H_INCLUDED
 #define KFD_EVENTS_H_INCLUDED
 
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/wait.h>
+#include <linex/kernel.h>
+#include <linex/hashtable.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/wait.h>
 #include "kfd_priv.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linex/kfd_ioctl.h>
 
 /*
  * IDR supports non-negative integer IDs. Small IDs are used for

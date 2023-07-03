@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/id.c
+ * linex/arch/arm/mach-omap2/id.c
  *
  * OMAP2 CPU identification code
  *
@@ -11,15 +11,15 @@
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 
 #ifdef CONFIG_SOC_BUS
-#include <linux/sys_soc.h>
+#include <linex/sys_soc.h>
 #endif
 
 #include <asm/cputype.h>

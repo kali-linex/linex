@@ -5,9 +5,9 @@
 #ifndef _ASM_POWERPC_NVRAM_H
 #define _ASM_POWERPC_NVRAM_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/list.h>
 #include <uapi/asm/nvram.h>
 
 /*

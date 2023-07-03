@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2021, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
 
-#include <linux/soc/qcom/smem.h>
+#include <linex/soc/qcom/smem.h>
 #include <clocksource/arm_arch_timer.h>
 
 #define RPM_DYNAMIC_ADDR	0x14

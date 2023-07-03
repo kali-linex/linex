@@ -4,9 +4,9 @@
  * Copyright 2011 Solarflare Communications Inc.
  */
 
-#include <linux/cpu_rmap.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <linex/cpu_rmap.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
 
 /*
  * These functions maintain a mapping from CPUs to some ordered set of

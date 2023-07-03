@@ -8,9 +8,9 @@
  * Copyright (c) 2017 Andreas Färber
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/soc/actions/owl-sps.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/soc/actions/owl-sps.h>
 
 #define OWL_SPS_PG_CTL	0x0
 

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linex-c -*- ------------------------------------------------------- *
  *   
  *   Copyright 2001 H. Peter Anvin - All Rights Reserved
  *
  * ----------------------------------------------------------------------- */
 
 /*
- * linux/fs/isofs/compress.c
+ * linex/fs/isofs/compress.c
  *
  * Transparent decompression of files on an iso9660 filesystem
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/bio.h>
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/zlib.h>
 
 #include "isofs.h"
 #include "zisofs.h"

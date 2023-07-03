@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  * This file describes the structure passed from the BootX application
- * (for MacOS) when it is used to boot Linux.
+ * (for MacOS) when it is used to boot Linex.
  *
  * Written by Benjamin Herrenschmidt.
  */
@@ -10,11 +10,11 @@
 #ifndef _UAPI__ASM_BOOTX_H__
 #define _UAPI__ASM_BOOTX_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #ifdef macintosh
 #include <Types.h>
-#include "linux_type_defs.h"
+#include "linex_type_defs.h"
 #endif
 
 #ifdef macintosh

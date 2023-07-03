@@ -25,35 +25,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/percpu.h>
-#include <linux/ptrace.h>
-#include <linux/workqueue.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/completion.h>
-#include <linux/uuid.h>
-#include <linux/uaccess.h>
-#include <linux/suspend.h>
-#include <linux/siphash.h>
-#include <linux/sched/isolation.h>
+#include <linex/utsname.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/poll.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/blkdev.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/nodemask.h>
+#include <linex/spinlock.h>
+#include <linex/kthread.h>
+#include <linex/percpu.h>
+#include <linex/ptrace.h>
+#include <linex/workqueue.h>
+#include <linex/irq.h>
+#include <linex/ratelimit.h>
+#include <linex/syscalls.h>
+#include <linex/completion.h>
+#include <linex/uuid.h>
+#include <linex/uaccess.h>
+#include <linex/suspend.h>
+#include <linex/siphash.h>
+#include <linex/sched/isolation.h>
 #include <crypto/chacha.h>
 #include <crypto/blake2s.h>
 #include <asm/archrandom.h>
@@ -1594,7 +1594,7 @@ const struct file_operations urandom_fops = {
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static int sysctl_random_min_urandom_seed = CRNG_RESEED_INTERVAL / HZ;
 static int sysctl_random_write_wakeup_bits = POOL_READY_BITS;

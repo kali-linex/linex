@@ -21,14 +21,14 @@
  *
  */
 
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/bits.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 /*
  * MAX 6620 registers

@@ -3,15 +3,15 @@
 * Simple driver for Texas Instruments LM3642 LED Flash driver chip
 * Copyright (C) 2012 Texas Instruments
 */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/regmap.h>
-#include <linux/platform_data/leds-lm3642.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/fs.h>
+#include <linex/regmap.h>
+#include <linex/platform_data/leds-lm3642.h>
 
 #define	REG_FILT_TIME			(0x0)
 #define	REG_IVFM_MODE			(0x1)

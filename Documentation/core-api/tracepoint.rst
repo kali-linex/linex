@@ -1,5 +1,5 @@
 ===============================
-The Linux Kernel Tracepoint API
+The Linex Kernel Tracepoint API
 ===============================
 
 :Author: Jason Baron

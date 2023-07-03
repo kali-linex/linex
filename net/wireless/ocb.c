@@ -9,7 +9,7 @@
  * Funded by: Volkswagen Group Research
  */
 
-#include <linux/ieee80211.h>
+#include <linex/ieee80211.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"
 #include "core.h"

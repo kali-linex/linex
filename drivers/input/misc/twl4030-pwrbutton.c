@@ -20,15 +20,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/twl.h>
 
 #define PWR_PWRON_IRQ (1 << 0)
 

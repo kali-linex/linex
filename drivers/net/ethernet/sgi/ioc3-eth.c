@@ -22,28 +22,28 @@
 #define IOC3_NAME	"ioc3-eth"
 #define IOC3_VERSION	"2.6.3-4"
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crc16.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/gfp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/nvmem-consumer.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/crc16.h>
+#include <linex/crc32.h>
+#include <linex/mii.h>
+#include <linex/in.h>
+#include <linex/io.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/gfp.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/skbuff.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/nvmem-consumer.h>
 
 #include <net/ip.h>
 
@@ -1283,6 +1283,6 @@ static struct platform_driver ioc3eth_driver = {
 
 module_platform_driver(ioc3eth_driver);
 
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@linex-mips.org>");
 MODULE_DESCRIPTION("SGI IOC3 Ethernet driver");
 MODULE_LICENSE("GPL");

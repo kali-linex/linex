@@ -5,20 +5,20 @@
  * Copyright 2022 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/regmap.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
+#include <linex/iio/iio.h>
+#include <linex/regmap.h>
+#include <linex/units.h>
 
 #include <asm/unaligned.h>
 

@@ -10,17 +10,17 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/spi/spi.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/regulator/consumer.h>
 
 #define TI_ADC_DRV_NAME	"ti-adc161s626"
 

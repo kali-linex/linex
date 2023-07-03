@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-fsl-dspi.h>
-#include <linux/spi/flash.h>
-#include <linux/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/partitions.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-fsl-dspi.h>
+#include <linex/spi/flash.h>
+#include <linex/dma-mapping.h>
 #include <asm/mcfsim.h>
 
 /*

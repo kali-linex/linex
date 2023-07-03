@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2016, The Linex Foundation. All rights reserved.
  */
 
 #ifndef _EMAC_H_
 #define _EMAC_H_
 
-#include <linux/irqreturn.h>
-#include <linux/netdevice.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <linex/irqreturn.h>
+#include <linex/netdevice.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
 #include "emac-mac.h"
 #include "emac-phy.h"
 #include "emac-sgmii.h"

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-#ifndef __LINUX_GUD_INTERNAL_H
-#define __LINUX_GUD_INTERNAL_H
+#ifndef __LINEX_GUD_INTERNAL_H
+#define __LINEX_GUD_INTERNAL_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/scatterlist.h>
+#include <linex/usb.h>
+#include <linex/workqueue.h>
 #include <uapi/drm/drm_fourcc.h>
 
 #include <drm/drm_modes.h>

@@ -5,8 +5,8 @@
 #if !defined(_TRACE_NMI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NMI_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <linex/ktime.h>
+#include <linex/tracepoint.h>
 
 TRACE_EVENT(nmi_handler,
 

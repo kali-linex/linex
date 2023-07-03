@@ -4,11 +4,11 @@
  * Copyright (c) 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/bitfield.h>
-#include <linux/brcmphy.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linex/bitfield.h>
+#include <linex/brcmphy.h>
+#include <linex/hwmon.h>
+#include <linex/module.h>
+#include <linex/phy.h>
 
 #include "bcm-phy-lib.h"
 

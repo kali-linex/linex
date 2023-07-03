@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org)
- * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched/debug.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
+#include <linex/console.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/panic_notifier.h>
+#include <linex/reboot.h>
+#include <linex/sched/debug.h>
+#include <linex/proc_fs.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/utsname.h>
+#include <linex/socket.h>
+#include <linex/un.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/file.h>
+#include <linex/uaccess.h>
 #include <asm/switch_to.h>
 
 #include <init.h>
@@ -615,7 +615,7 @@ static void with_console(struct mc_request *req, void (*proc)(void *),
 
 #ifdef CONFIG_MAGIC_SYSRQ
 
-#include <linux/sysrq.h>
+#include <linex/sysrq.h>
 
 static void sysrq_proc(void *arg)
 {
@@ -656,7 +656,7 @@ static void stack_proc(void *arg)
 /*
  * Mconsole stack trace
  *  Added by Allan Graves, Jeff Dike
- *  Dumps a stacks registers to the linux console.
+ *  Dumps a stacks registers to the linex console.
  *  Usage stack <pid>.
  */
 void mconsole_stack(struct mc_request *req)

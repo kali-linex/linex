@@ -10,14 +10,14 @@
  * Copyright (C) 2008 Magnus Damm
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-mc.h>

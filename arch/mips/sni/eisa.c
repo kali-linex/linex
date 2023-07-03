@@ -7,10 +7,10 @@
  * modified for SNI usage by Thomas Bogendoerfer
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/eisa.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/eisa.h>
+#include <linex/init.h>
 
 /* The default EISA device parent (virtual root device).
  * Now use a platform device, since that's the obvious choice. */

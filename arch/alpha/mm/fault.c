@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/mm/fault.c
+ *  linex/arch/alpha/mm/fault.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
 #include <asm/io.h>
 
 #define __EXTERN_INLINE inline
@@ -15,17 +15,17 @@
 #include <asm/tlbflush.h>
 #undef  __EXTERN_INLINE
 
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/extable.h>
+#include <linex/uaccess.h>
+#include <linex/perf_event.h>
 
 extern void die_if_kernel(char *,struct pt_regs *,long, unsigned long *);
 

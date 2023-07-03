@@ -19,16 +19,16 @@
  *  Author: Manjunatha Halli <manjunatha_halli@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/jiffies.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/nospec.h>
+#include <linex/jiffies.h>
 
 #include "fmdrv.h"
 #include "fmdrv_v4l2.h"
 #include "fmdrv_common.h"
-#include <linux/ti_wilink_st.h>
+#include <linex/ti_wilink_st.h>
 #include "fmdrv_rx.h"
 #include "fmdrv_tx.h"
 

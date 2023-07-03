@@ -9,9 +9,9 @@
 #include <crypto/internal/simd.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <linex/cpufeature.h>
+#include <linex/crypto.h>
+#include <linex/module.h>
 
 #include <asm/hwcap.h>
 #include <asm/neon.h>

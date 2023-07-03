@@ -7,8 +7,8 @@
  * Copyright (C) 2000-2002 J.I. Lee <jung-ik.lee@intel.com>
  * Copyright (C) 1999-2000, 2002-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999,2000 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Linex Systems
+ * Copyright (C) 1999,2000 Walt Drummond <drummond@valinex.com>
  *
  * 00/04/19	D. Mosberger	Rewritten to mirror more closely the x86 I/O
  *				APIC code.  In particular, we now have separate
@@ -64,7 +64,7 @@
  * sent to the CPU.
  *
  * (4) The kernel recognizes an interrupt as an IRQ.  The IRQ interface is
- *     used as architecture-independent interrupt handling mechanism in Linux.
+ *     used as architecture-independent interrupt handling mechanism in Linex.
  *     As an IRQ is a number, we have to have
  *     IA-64 interrupt vector number <-> IRQ number mapping.  On smaller
  *     systems, we use one-to-one mapping between IA-64 vector and IRQ.
@@ -73,21 +73,21 @@
  *
  *	PCI pin -> global system interrupt (GSI) -> IA-64 vector <-> IRQ
  *
- * Note: The term "IRQ" is loosely used everywhere in Linux kernel to
- * describe interrupts.  Now we use "IRQ" only for Linux IRQ's.  ISA IRQ
+ * Note: The term "IRQ" is loosely used everywhere in Linex kernel to
+ * describe interrupts.  Now we use "IRQ" only for Linex IRQ's.  ISA IRQ
  * (isa_irq) is the only exception in this source code.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/string.h>
+#include <linex/memblock.h>
 
 #include <asm/delay.h>
 #include <asm/hw_irq.h>

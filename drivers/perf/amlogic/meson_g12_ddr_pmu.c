@@ -3,15 +3,15 @@
  * Copyright (c) 2022 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/types.h>
 
 #include <soc/amlogic/meson_ddr_pmu.h>
 

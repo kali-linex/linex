@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              LINEX operating system.  IPVS is now implemented as a module
  *              over the Netfilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linexvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -20,17 +20,17 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/net.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>		/* for proc_net_* */
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
+#include <linex/interrupt.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/net.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>		/* for proc_net_* */
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
 
 #include <net/net_namespace.h>
 #include <net/ip_vs.h>

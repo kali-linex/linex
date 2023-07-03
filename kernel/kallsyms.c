@@ -12,25 +12,25 @@
  *      Changed the compression method from stem compression to "table lookup"
  *      compression (see scripts/kallsyms.c for a more complete description)
  */
-#include <linux/kallsyms.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/kdb.h>
-#include <linux/err.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>	/* for cond_resched */
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/filter.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bsearch.h>
-#include <linux/btf_ids.h>
+#include <linex/kallsyms.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/fs.h>
+#include <linex/kdb.h>
+#include <linex/err.h>
+#include <linex/proc_fs.h>
+#include <linex/sched.h>	/* for cond_resched */
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/filter.h>
+#include <linex/ftrace.h>
+#include <linex/kprobes.h>
+#include <linex/build_bug.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/bsearch.h>
+#include <linex/btf_ids.h>
 
 #include "kallsyms_internal.h"
 
@@ -285,7 +285,7 @@ unsigned long kallsyms_lookup_name(const char *name)
 }
 
 /*
- * Iterate over all symbols in vmlinux.  For symbols from modules use
+ * Iterate over all symbols in vmlinex.  For symbols from modules use
  * module_kallsyms_on_each_symbol instead.
  */
 int kallsyms_on_each_symbol(int (*fn)(void *, const char *, unsigned long),

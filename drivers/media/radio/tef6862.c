@@ -4,13 +4,13 @@
  * Copyright (c) 2009 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 

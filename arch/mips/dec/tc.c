@@ -9,12 +9,12 @@
  *	General Public License.  See the file "COPYING" in the main
  *	directory of this archive for more details.
  */
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/tc.h>
+#include <linex/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

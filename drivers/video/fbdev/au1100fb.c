@@ -7,8 +7,8 @@
  *  	Karl Lessard <klessard@sunrisetelecom.com>
  *  	<c.pellegrin@exadron.com>
  *
- * PM support added by Rodolfo Giometti <giometti@linux.it>
- * Cursor enable/disable by Rodolfo Giometti <giometti@linux.it>
+ * PM support added by Rodolfo Giometti <giometti@linex.it>
+ * Cursor enable/disable by Rodolfo Giometti <giometti@linex.it>
  *
  * Copyright 2002 MontaVista Software
  * Author: MontaVista Software, Inc.
@@ -18,7 +18,7 @@
  * Author: Alchemy Semiconductor
  *
  * Based on:
- * linux/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
+ * linex/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
  *  Created 28 Dec 1997 by Geert Uytterhoeven
  *
  *  This program is free software; you can redistribute	 it and/or modify it
@@ -41,19 +41,19 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ctype.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <asm/mach-au1x00/au1000.h>
 

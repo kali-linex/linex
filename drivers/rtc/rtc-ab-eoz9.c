@@ -5,15 +5,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
 
 #define ABEOZ9_REG_CTRL1		0x00
 #define ABEOZ9_REG_CTRL1_MASK		GENMASK(7, 0)
@@ -455,7 +455,7 @@ static const struct hwmon_channel_info abeoz9_temp = {
 	.config = abeoz9_temp_config,
 };
 
-static const struct hwmon_channel_info * const abeoz9_info[] = {
+static const struct hwmon_channel_info *abeoz9_info[] = {
 	&abeoz9_chip,
 	&abeoz9_temp,
 	NULL
@@ -584,7 +584,7 @@ static struct i2c_driver abeoz9_driver = {
 		.name = "rtc-ab-eoz9",
 		.of_match_table = of_match_ptr(abeoz9_dt_match),
 	},
-	.probe = abeoz9_probe,
+	.probe_new = abeoz9_probe,
 	.id_table = abeoz9_id,
 };
 

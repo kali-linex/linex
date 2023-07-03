@@ -11,20 +11,20 @@
  *   interface.
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
-#include <linux/usb.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/prefetch.h>
+#include <linex/usb.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

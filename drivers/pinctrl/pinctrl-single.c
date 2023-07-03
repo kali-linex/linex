@@ -9,26 +9,26 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/seq_file.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
-#include <linux/platform_data/pinctrl-single.h>
+#include <linex/platform_data/pinctrl-single.h>
 
 #include "core.h"
 #include "devicetree.h"

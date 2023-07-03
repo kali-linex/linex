@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH Linex-syscall-note */
 /*
- * OpenRISC Linux
+ * OpenRISC Linex
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -47,7 +47,7 @@
 typedef unsigned long elf_greg_t;
 
 /*
- * Note that NGREG is defined to ELF_NGREG in include/linux/elfcore.h, and is
+ * Note that NGREG is defined to ELF_NGREG in include/linex/elfcore.h, and is
  * thus exposed to user-space.
  */
 #define ELF_NGREG (sizeof(struct user_regs_struct) / sizeof(elf_greg_t))
@@ -55,7 +55,7 @@ typedef elf_greg_t elf_gregset_t[ELF_NGREG];
 
 typedef struct __or1k_fpu_state elf_fpregset_t;
 
-/* EM_OPENRISC is defined in linux/elf-em.h */
+/* EM_OPENRISC is defined in linex/elf-em.h */
 #define EM_OR32         0x8472
 
 /*

@@ -3,7 +3,7 @@
  * Copyright(c) 2020 Intel Corporation.
  */
 
-#include <linux/component.h>
+#include <linex/component.h>
 
 #include <drm/i915_pxp_tee_interface.h>
 #include <drm/i915_component.h>

@@ -7,16 +7,16 @@
  * Author: Mark Zhan <rongkai.zhan@windriver.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/rtc/m48t59.h>
+#include <linex/bcd.h>
+#include <linex/slab.h>
 
 #ifndef NO_IRQ
 #define NO_IRQ	(-1)

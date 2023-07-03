@@ -7,13 +7,13 @@
  * Author: Joseph Chen <chenjh@rock-chips.com>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 static irqreturn_t pwrkey_fall_irq(int irq, void *_pwr)
 {

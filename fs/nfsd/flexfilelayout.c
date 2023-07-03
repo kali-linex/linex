@@ -7,11 +7,11 @@
  * the same. I.e., writing to the mds via a NFSv4.1 WRITE
  * goes to the same location as the NFSv3 WRITE.
  */
-#include <linux/slab.h>
+#include <linex/slab.h>
 
-#include <linux/nfsd/debug.h>
+#include <linex/nfsd/debug.h>
 
-#include <linux/sunrpc/addr.h>
+#include <linex/sunrpc/addr.h>
 
 #include "flexfilelayoutxdr.h"
 #include "pnfs.h"

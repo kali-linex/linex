@@ -12,9 +12,9 @@
 #ifndef __ASM_MACH_AR71XX_REGS_H
 #define __ASM_MACH_AR71XX_REGS_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/bitops.h>
 
 #define AR71XX_APB_BASE		0x18000000
 #define AR71XX_GE0_BASE		0x19000000

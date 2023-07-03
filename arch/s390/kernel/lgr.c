@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux Guest Relocation (LGR) detection
+ * Linex Guest Relocation (LGR) detection
  *
  * Copyright IBM Corp. 2012
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@linex.vnet.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
 #include <asm/facility.h>
 #include <asm/sysinfo.h>
 #include <asm/ebcdic.h>

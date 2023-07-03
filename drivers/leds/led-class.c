@@ -6,20 +6,20 @@
  * Copyright (C) 2005-2007 Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <uapi/linux/uleds.h>
-#include <linux/of.h>
+#include <linex/ctype.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
+#include <uapi/linex/uleds.h>
+#include <linex/of.h>
 #include "leds.h"
 
 static struct class *leds_class;
@@ -451,7 +451,7 @@ int led_classdev_register_ext(struct device *parent,
 
 		if (init_data->fwnode) {
 			fwnode_property_read_string(init_data->fwnode,
-				"linux,default-trigger",
+				"linex,default-trigger",
 				&led_cdev->default_trigger);
 
 			if (fwnode_property_present(init_data->fwnode,

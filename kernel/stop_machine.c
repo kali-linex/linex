@@ -4,24 +4,24 @@
  *
  * Copyright (C) 2008, 2005	IBM Corporation.
  * Copyright (C) 2008, 2005	Rusty Russell rusty@rustcorp.com.au
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Linex Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  */
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/stop_machine.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/smpboot.h>
-#include <linux/atomic.h>
-#include <linux/nmi.h>
-#include <linux/sched/wake_q.h>
+#include <linex/compiler.h>
+#include <linex/completion.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/kthread.h>
+#include <linex/export.h>
+#include <linex/percpu.h>
+#include <linex/sched.h>
+#include <linex/stop_machine.h>
+#include <linex/interrupt.h>
+#include <linex/kallsyms.h>
+#include <linex/smpboot.h>
+#include <linex/atomic.h>
+#include <linex/nmi.h>
+#include <linex/sched/wake_q.h>
 
 /*
  * Structure to determine completion condition and record errors.  May

@@ -10,9 +10,9 @@
 #ifndef _WM5102_H
 #define _WM5102_H
 
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/pm.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/pm.h>
 
 extern const struct regmap_config wm5102_i2c_regmap;
 extern const struct regmap_config wm5102_spi_regmap;

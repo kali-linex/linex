@@ -8,29 +8,29 @@
  * Based on Sharp's 2.4 kernel patches/lubbock.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>	/* symbol_get ; symbol_put */
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input-event-codes.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/regulator/machine.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/memblock.h>
+#include <linex/kernel.h>
+#include <linex/module.h>	/* symbol_get ; symbol_put */
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/gpio_keys.h>
+#include <linex/gpio.h>
+#include <linex/gpio/machine.h>
+#include <linex/leds.h>
+#include <linex/i2c.h>
+#include <linex/platform_data/i2c-pxa.h>
+#include <linex/platform_data/pca953x.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/ads7846.h>
+#include <linex/spi/corgi_lcd.h>
+#include <linex/spi/pxa2xx_spi.h>
+#include <linex/mtd/sharpsl.h>
+#include <linex/mtd/physmap.h>
+#include <linex/input-event-codes.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/regulator/machine.h>
+#include <linex/io.h>
+#include <linex/reboot.h>
+#include <linex/memblock.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
@@ -41,9 +41,9 @@
 #include "pxa27x.h"
 #include "pxa27x-udc.h"
 #include "reset.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linex/platform_data/mmc-pxamci.h>
+#include <linex/platform_data/usb-ohci-pxa27x.h>
+#include <linex/platform_data/video-pxafb.h>
 #include "spitz.h"
 #include "sharpsl_pm.h"
 #include "smemc.h"

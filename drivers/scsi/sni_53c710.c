@@ -13,18 +13,18 @@
  * Based on lasi700.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/mm.h>
+#include <linex/blkdev.h>
+#include <linex/sched.h>
+#include <linex/ioport.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
 
 #include <asm/page.h>
 #include <asm/irq.h>

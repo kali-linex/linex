@@ -13,7 +13,7 @@
 #ifndef U_PRINTER_H
 #define U_PRINTER_H
 
-#include <linux/usb/composite.h>
+#include <linex/usb/composite.h>
 
 struct f_printer_opts {
 	struct usb_function_instance	func_inst;

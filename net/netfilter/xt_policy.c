@@ -4,15 +4,15 @@
  * Copyright (c) 2004,2005 Patrick McHardy, <kaber@trash.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
 #include <net/xfrm.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/xt_policy.h>
-#include <linux/netfilter/x_tables.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/xt_policy.h>
+#include <linex/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_DESCRIPTION("Xtables: IPsec policy match");

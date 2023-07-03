@@ -6,14 +6,14 @@
  *
  *  Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/cpuidle.h>
-#include <linux/export.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/suspend.h>
+#include <linex/cpuidle.h>
+#include <linex/export.h>
 #include <asm/suspend.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 static unsigned long cpuidle_mode[] = {
 	SUSP_SH_SLEEP, /* regular sleep mode */

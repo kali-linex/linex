@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2004,2019 Greg Kroah-Hartman <greg@kroah.com>
  *  Copyright (C) 2004 IBM Inc.
- *  Copyright (C) 2019 Linux Foundation <gregkh@linuxfoundation.org>
+ *  Copyright (C) 2019 Linex Foundation <gregkh@linexfoundation.org>
  *
  *  debugfs is for people to use instead of /proc or /sys.
  *  See ./Documentation/core-api/kernel-api.rst for more details.
@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt)	"debugfs: " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/namei.h>
-#include <linux/debugfs.h>
-#include <linux/fsnotify.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/pagemap.h>
+#include <linex/init.h>
+#include <linex/kobject.h>
+#include <linex/namei.h>
+#include <linex/debugfs.h>
+#include <linex/fsnotify.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
+#include <linex/parser.h>
+#include <linex/magic.h>
+#include <linex/slab.h>
+#include <linex/security.h>
 
 #include "internal.h"
 

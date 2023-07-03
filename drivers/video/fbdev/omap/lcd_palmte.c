@@ -3,12 +3,12 @@
  * LCD panel support for the Palm Tungsten E
  *
  * Original version : Romain Goyet <r.goyet@gmail.com>
- * Current version : Laurent Gonzalez <palmte.linux@free.fr>
+ * Current version : Laurent Gonzalez <palmte.linex@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
 
 #include "omapfb.h"
 
@@ -47,6 +47,6 @@ static struct platform_driver palmte_panel_driver = {
 
 module_platform_driver(palmte_panel_driver);
 
-MODULE_AUTHOR("Romain Goyet <r.goyet@gmail.com>, Laurent Gonzalez <palmte.linux@free.fr>");
+MODULE_AUTHOR("Romain Goyet <r.goyet@gmail.com>, Laurent Gonzalez <palmte.linex@free.fr>");
 MODULE_DESCRIPTION("LCD panel support for the Palm Tungsten E");
 MODULE_LICENSE("GPL");

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018, The Linex Foundation. All rights reserved.
  *
  * Inspired by dwc3-of-simple.c
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/of_clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/extcon.h>
-#include <linux/interconnect.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/usb/of.h>
-#include <linux/reset.h>
-#include <linux/iopoll.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/irq.h>
+#include <linex/of_clk.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/extcon.h>
+#include <linex/interconnect.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
+#include <linex/usb/of.h>
+#include <linex/reset.h>
+#include <linex/iopoll.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb.h>
 #include "core.h"
 
 /* USB QSCRATCH Hardware registers */

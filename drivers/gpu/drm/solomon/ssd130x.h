@@ -19,7 +19,7 @@
 #include <drm/drm_encoder.h>
 #include <drm/drm_plane_helper.h>
 
-#include <linux/regmap.h>
+#include <linex/regmap.h>
 
 #define SSD130X_DATA				0x40
 #define SSD130X_COMMAND				0x80

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd
  */
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/device.h>
+#include <linex/interconnect.h>
+#include <linex/interconnect-provider.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 #include <dt-bindings/interconnect/qcom,sc8280xp.h>
 
 #include "bcm-voter.h"

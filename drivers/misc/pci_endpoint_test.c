@@ -6,24 +6,24 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
 
-#include <linux/pci_regs.h>
+#include <linex/pci_regs.h>
 
-#include <uapi/linux/pcitest.h>
+#include <uapi/linex/pcitest.h>
 
 #define DRV_MODULE_NAME				"pci-endpoint-test"
 

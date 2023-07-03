@@ -2,16 +2,16 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/mmap_lock.h>
 
-#include <linux/mm.h>
-#include <linux/cgroup.h>
-#include <linux/memcontrol.h>
-#include <linux/mmap_lock.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/smp.h>
-#include <linux/trace_events.h>
-#include <linux/local_lock.h>
+#include <linex/mm.h>
+#include <linex/cgroup.h>
+#include <linex/memcontrol.h>
+#include <linex/mmap_lock.h>
+#include <linex/mutex.h>
+#include <linex/percpu.h>
+#include <linex/rcupdate.h>
+#include <linex/smp.h>
+#include <linex/trace_events.h>
+#include <linex/local_lock.h>
 
 EXPORT_TRACEPOINT_SYMBOL(mmap_lock_start_locking);
 EXPORT_TRACEPOINT_SYMBOL(mmap_lock_acquire_returned);
@@ -222,7 +222,7 @@ out:
 
 /*
  * Trace calls must be in a separate file, as otherwise there's a circular
- * dependency between linux/mmap_lock.h and trace/events/mmap_lock.h.
+ * dependency between linex/mmap_lock.h and trace/events/mmap_lock.h.
  */
 
 void __mmap_lock_do_trace_start_locking(struct mm_struct *mm, bool write)

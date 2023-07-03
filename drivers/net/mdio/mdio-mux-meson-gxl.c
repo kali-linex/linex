@@ -3,13 +3,13 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/mdio-mux.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #define ETH_REG2		0x0
 #define  REG2_PHYID		GENMASK(21, 0)

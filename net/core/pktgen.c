@@ -10,7 +10,7 @@
  * Jens Låås <jens.laas@data.slu.se>
  *
  * A tool for loading the network with preconfigurated packets.
- * The tool is implemented as a linux module.  Parameters are output
+ * The tool is implemented as a linex module.  Parameters are output
  * device, delay (to hard_xmit), number of packets, and whether
  * to use multiple SKBs or just the same one.
  * pktgen uses the installed interface's output routine.
@@ -83,7 +83,7 @@
  *
  * Included flow support. 030802 ANK.
  *
- * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-linux.org>
+ * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-linex.org>
  *
  * Remove if fix from added Harald Welte <laforge@netfilter.org> 040419
  * ia64 compilation fix from  Aron Griffis <aron@hp.com> 040604
@@ -112,46 +112,46 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sys.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/hrtimer.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/wait.h>
-#include <linux/etherdevice.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
-#include <linux/mmzone.h>
+#include <linex/sys.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/unistd.h>
+#include <linex/string.h>
+#include <linex/ptrace.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/capability.h>
+#include <linex/hrtimer.h>
+#include <linex/freezer.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_arp.h>
+#include <linex/if_vlan.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/udp.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/wait.h>
+#include <linex/etherdevice.h>
+#include <linex/kthread.h>
+#include <linex/prefetch.h>
+#include <linex/mmzone.h>
 #include <net/net_namespace.h>
 #include <net/checksum.h>
 #include <net/ipv6.h>
@@ -163,11 +163,11 @@
 #endif
 #include <net/netns/generic.h>
 #include <asm/byteorder.h>
-#include <linux/rcupdate.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
+#include <linex/rcupdate.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/timex.h>
+#include <linex/uaccess.h>
 #include <asm/dma.h>
 #include <asm/div64.h>		/* do_div */
 
@@ -2653,12 +2653,12 @@ static int pktgen_output_ipsec(struct sk_buff *skb, struct pktgen_dev *pkt_dev)
 	err = pktgen_xfrm_outer_mode_output(x, skb);
 	rcu_read_unlock_bh();
 	if (err) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEMODEERROR);
+		XFRM_INC_STATS(net, LINEX_MIB_XFRMOUTSTATEMODEERROR);
 		goto error;
 	}
 	err = x->type->output(x, skb);
 	if (err) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+		XFRM_INC_STATS(net, LINEX_MIB_XFRMOUTSTATEPROTOERROR);
 		goto error;
 	}
 	spin_lock_bh(&x->lock);

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2021 NXP
  */
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/of_mdio.h>
+#include <linex/pcs/pcs-xpcs.h>
+#include <linex/of_mdio.h>
 #include "sja1105.h"
 
 #define SJA1110_PCS_BANK_REG		SJA1110_SPI_ADDR(0x3fc)

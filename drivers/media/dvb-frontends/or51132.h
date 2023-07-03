@@ -8,8 +8,8 @@
 #ifndef OR51132_H
 #define OR51132_H
 
-#include <linux/firmware.h>
-#include <linux/dvb/frontend.h>
+#include <linex/firmware.h>
+#include <linex/dvb/frontend.h>
 
 struct or51132_config
 {

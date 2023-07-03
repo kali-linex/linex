@@ -7,8 +7,8 @@
 #ifndef __QLCNIC_HDR_H_
 #define __QLCNIC_HDR_H_
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 
 #include "qlcnic_hw.h"
 

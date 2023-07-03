@@ -2,7 +2,7 @@
 /*
  * Auvitek AU8522 QAM/8VSB demodulator driver and video decoder
  *
- * Copyright (C) 2009 Devin Heitmueller <dheitmueller@linuxtv.org>
+ * Copyright (C) 2009 Devin Heitmueller <dheitmueller@linextv.org>
  * Copyright (C) 2005-2008 Auvitek International, Ltd.
  */
 
@@ -14,11 +14,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include "au8522.h"

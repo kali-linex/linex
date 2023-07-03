@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* ELM327 based CAN interface driver (tty line discipline)
  *
- * This driver started as a derivative of linux/drivers/net/can/slcan.c
+ * This driver started as a derivative of linex/drivers/net/can/slcan.c
  * and my thanks go to the original authors for their inspiration.
  *
- * can327.c Author : Max Staudt <max-linux@enpas.org>
+ * can327.c Author : Max Staudt <max-linex@enpas.org>
  * slcan.c Author  : Oliver Hartkopp <socketcan@hartkopp.net>
  * slip.c Authors  : Laurence Culhane <loz@holmes.demon.co.uk>
  *                   Fred N. van Kempen <waltje@uwalt.nl.mugnet.org>
@@ -12,29 +12,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/module.h>
 
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/tty_ldisc.h>
-#include <linux/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/ctype.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/tty.h>
+#include <linex/tty_ldisc.h>
+#include <linex/workqueue.h>
 
-#include <uapi/linux/tty.h>
+#include <uapi/linex/tty.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/rx-offload.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
+#include <linex/can/rx-offload.h>
 
 #define CAN327_NAPI_WEIGHT 4
 

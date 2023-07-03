@@ -10,7 +10,7 @@
 #ifndef __DRM_UTILS_H__
 #define __DRM_UTILS_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 int drm_get_panel_orientation_quirk(int width, int height);
 

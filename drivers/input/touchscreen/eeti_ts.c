@@ -11,16 +11,16 @@
  *   Copyright (c) 2007 Ujjwal Pande <ujjwal@kenati.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/timer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/input.h>
+#include <linex/input/touchscreen.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/timer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 struct eeti_ts {

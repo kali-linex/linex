@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linex/pci.h>
+#include <linex/vgaarb.h>
 
 #include <video/vga.h>
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/sock_diag.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/packet_diag.h>
-#include <linux/percpu.h>
+#include <linex/module.h>
+#include <linex/sock_diag.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/packet_diag.h>
+#include <linex/percpu.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

@@ -6,14 +6,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/string.h>
 #include <mach/fpga.h>
 #include <asm/sram.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 static int __init fpga_sram_init(void)
 {

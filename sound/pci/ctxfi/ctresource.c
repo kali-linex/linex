@@ -13,8 +13,8 @@
 
 #include "ctresource.h"
 #include "cthardware.h"
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 
 #define AUDIO_SLOT_BLOCK_NUM 	256
 

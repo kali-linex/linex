@@ -14,19 +14,19 @@
  * another interface, some abstraction will have to be introduced.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/property.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mod_devicetable.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/property.h>
 
 #define DEFAULT_HEARTBEAT 60
 #define MAX_HEARTBEAT     60

@@ -3,19 +3,19 @@
  * Copyright 2012 Simon Arlott
  */
 
-#include <linux/bitops.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sched_clock.h>
+#include <linex/bitops.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/interrupt.h>
+#include <linex/irqreturn.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/sched_clock.h>
 
 #include <asm/irq.h>
 

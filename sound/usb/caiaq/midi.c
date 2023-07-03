@@ -3,9 +3,9 @@
  *   Copyright (c) 2006,2007 Daniel Mack
 */
 
-#include <linux/device.h>
-#include <linux/usb.h>
-#include <linux/gfp.h>
+#include <linex/device.h>
+#include <linex/usb.h>
+#include <linex/gfp.h>
 #include <sound/rawmidi.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

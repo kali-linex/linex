@@ -3,13 +3,13 @@
  * Input driver for joysticks connected over ADC.
  * Copyright (c) 2019-2020 Artur Rojek <contact@artur-rojek.eu>
  */
-#include <linux/ctype.h>
-#include <linux/input.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/consumer.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/ctype.h>
+#include <linex/input.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/consumer.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 #include <asm/unaligned.h>
 
@@ -154,10 +154,10 @@ static int adc_joystick_set_axes(struct device *dev, struct adc_joystick *joy)
 			goto err_fwnode_put;
 		}
 
-		error = fwnode_property_read_u32(child, "linux,code",
+		error = fwnode_property_read_u32(child, "linex,code",
 						 &axes[i].code);
 		if (error) {
-			dev_err(dev, "linux,code invalid or missing\n");
+			dev_err(dev, "linex,code invalid or missing\n");
 			goto err_fwnode_put;
 		}
 

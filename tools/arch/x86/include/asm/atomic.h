@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_ASM_X86_ATOMIC_H
-#define _TOOLS_LINUX_ASM_X86_ATOMIC_H
+#ifndef _TOOLS_LINEX_ASM_X86_ATOMIC_H
+#define _TOOLS_LINEX_ASM_X86_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 #include "rmwcc.h"
 
 #define LOCK_PREFIX "\n\tlock; "
@@ -81,4 +81,4 @@ static inline int test_and_clear_bit(long nr, unsigned long *addr)
 	GEN_BINARY_RMWcc(LOCK_PREFIX __ASM_SIZE(btc), *addr, "Ir", nr, "%0", "c");
 }
 
-#endif /* _TOOLS_LINUX_ASM_X86_ATOMIC_H */
+#endif /* _TOOLS_LINEX_ASM_X86_ATOMIC_H */

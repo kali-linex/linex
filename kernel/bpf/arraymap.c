@@ -2,16 +2,16 @@
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  * Copyright (c) 2016,2017 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/filter.h>
-#include <linux/perf_event.h>
-#include <uapi/linux/btf.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/btf_ids.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/filter.h>
+#include <linex/perf_event.h>
+#include <uapi/linex/btf.h>
+#include <linex/rcupdate_trace.h>
+#include <linex/btf_ids.h>
 
 #include "map_in_map.h"
 

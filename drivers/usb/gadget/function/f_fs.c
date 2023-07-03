@@ -14,27 +14,27 @@
 /* #define DEBUG */
 /* #define VERBOSE_DEBUG */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/fs_parser.h>
-#include <linux/hid.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
+#include <linex/blkdev.h>
+#include <linex/pagemap.h>
+#include <linex/export.h>
+#include <linex/fs_parser.h>
+#include <linex/hid.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/sched/signal.h>
+#include <linex/uio.h>
+#include <linex/vmalloc.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ccid.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/functionfs.h>
+#include <linex/usb/ccid.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/functionfs.h>
 
-#include <linux/aio.h>
-#include <linux/kthread.h>
-#include <linux/poll.h>
-#include <linux/eventfd.h>
+#include <linex/aio.h>
+#include <linex/kthread.h>
+#include <linex/poll.h>
+#include <linex/eventfd.h>
 
 #include "u_fs.h"
 #include "u_f.h"

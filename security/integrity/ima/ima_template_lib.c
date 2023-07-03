@@ -10,8 +10,8 @@
  */
 
 #include "ima_template_lib.h"
-#include <linux/xattr.h>
-#include <linux/evm.h>
+#include <linex/xattr.h>
+#include <linex/evm.h>
 
 static bool ima_template_hash_algo_allowed(u8 algo)
 {

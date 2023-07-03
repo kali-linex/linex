@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/mmc/core/sdio_cis.c
+ * linex/drivers/mmc/core/sdio_cis.c
  *
  * Author:	Nicolas Pitre
  * Created:	June 11, 2007
@@ -9,13 +9,13 @@
  * Copyright 2007 Pierre Ossman
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_func.h>
 
 #include "sdio_cis.h"
 #include "sdio_ops.h"

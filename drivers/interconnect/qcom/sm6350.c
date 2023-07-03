@@ -3,11 +3,11 @@
  * Copyright (C) 2022 Luca Weiss <luca.weiss@fairphone.com>
  */
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/device.h>
+#include <linex/interconnect.h>
+#include <linex/interconnect-provider.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 #include <dt-bindings/interconnect/qcom,sm6350.h>
 
 #include "bcm-voter.h"

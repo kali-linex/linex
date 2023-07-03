@@ -11,8 +11,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/err.h>
-#include <linux/btf.h>
+#include <linex/err.h>
+#include <linex/btf.h>
 #include <elf.h>
 #include <libelf.h>
 #include <fcntl.h>

@@ -5,18 +5,18 @@
  * This is a text format reader.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/usb.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/time.h>
+#include <linex/ktime.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/debugfs.h>
+#include <linex/scatterlist.h>
+#include <linex/uaccess.h>
 
 #include "usb_mon.h"
 

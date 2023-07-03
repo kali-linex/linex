@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	ipddp.h: Header for IP-over-DDP driver for Linux.
+ *	ipddp.h: Header for IP-over-DDP driver for Linex.
  */
 
-#ifndef __LINUX_IPDDP_H
-#define __LINUX_IPDDP_H
+#ifndef __LINEX_IPDDP_H
+#define __LINEX_IPDDP_H
 
 #ifdef __KERNEL__
 
@@ -25,4 +25,4 @@ struct ipddp_route
 #define IPDDP_DECAP	2
 
 #endif	/* __KERNEL__ */
-#endif	/* __LINUX_IPDDP_H */
+#endif	/* __LINEX_IPDDP_H */

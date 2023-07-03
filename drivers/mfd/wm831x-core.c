@@ -7,24 +7,24 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
+#include <linex/mfd/core.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/otp.h>
-#include <linux/mfd/wm831x/pmu.h>
-#include <linux/mfd/wm831x/regulator.h>
+#include <linex/mfd/wm831x/core.h>
+#include <linex/mfd/wm831x/pdata.h>
+#include <linex/mfd/wm831x/irq.h>
+#include <linex/mfd/wm831x/auxadc.h>
+#include <linex/mfd/wm831x/otp.h>
+#include <linex/mfd/wm831x/pmu.h>
+#include <linex/mfd/wm831x/regulator.h>
 
 /* Current settings - values are 2*2^(reg_val/4) microamps.  These are
  * exported since they are used by multiple drivers.

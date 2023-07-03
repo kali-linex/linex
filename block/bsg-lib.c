@@ -6,13 +6,13 @@
  *  Copyright (C) 2011   Red Hat, Inc.  All rights reserved.
  *  Copyright (C) 2011   Mike Christie
  */
-#include <linux/bsg.h>
-#include <linux/slab.h>
-#include <linux/blk-mq.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
-#include <linux/bsg-lib.h>
-#include <linux/export.h>
+#include <linex/bsg.h>
+#include <linex/slab.h>
+#include <linex/blk-mq.h>
+#include <linex/delay.h>
+#include <linex/scatterlist.h>
+#include <linex/bsg-lib.h>
+#include <linex/export.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/sg.h>
 

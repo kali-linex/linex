@@ -4,9 +4,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
+#include <linex/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/scatterlist.h>
 #include <asm/machvec.h>
 
 /*

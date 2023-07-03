@@ -2,18 +2,18 @@
 /*
  * Based on arch/arm/kernel/sys_arm.c
  *
- * Copyright (C) People who wrote linux/arch/i386/kernel/sys_i386.c
+ * Copyright (C) People who wrote linex/arch/i386/kernel/sys_i386.c
  * Copyright (C) 1995, 1996 Russell King.
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/compat.h>
-#include <linux/cpufeature.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linex/compat.h>
+#include <linex/cpufeature.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/system_misc.h>

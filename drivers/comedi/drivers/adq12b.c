@@ -8,7 +8,7 @@
  *	universidad nacional de cuyo
  *	argentina
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -46,9 +46,9 @@
  * - The PACER is not supported in this version
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/comedi/comedidev.h>
 
 /* address scheme (page 2.17 of the manual) */
 #define ADQ12B_CTREG		0x00

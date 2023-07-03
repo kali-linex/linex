@@ -2,7 +2,7 @@
 /*
  * Driver for the Apple SoC PWM controller
  *
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi Linex Contributors
  *
  * Limitations:
  * - The writes to cycle registers are shadowed until a write to
@@ -12,12 +12,12 @@
  * - When APPLE_PWM_CTRL is set to 0, the output is constant low
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/math64.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/math64.h>
 
 #define APPLE_PWM_CTRL        0x00
 #define APPLE_PWM_ON_CYCLES   0x1c

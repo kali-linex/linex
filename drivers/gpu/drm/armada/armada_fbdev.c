@@ -4,10 +4,10 @@
  *  Written from the i915 driver.
  */
 
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

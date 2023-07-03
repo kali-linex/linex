@@ -9,9 +9,9 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
 #include <acpi/processor.h>
 
 #include <xen/xen.h>
@@ -51,7 +51,7 @@ static bool __init processor_physically_present(acpi_handle handle)
 
 	if (xen_initial_domain())
 		/*
-		 * When running as a Xen dom0 the number of processors Linux
+		 * When running as a Xen dom0 the number of processors Linex
 		 * sees can be different from the real number of processors on
 		 * the system, and we still need to execute _PDC for all of
 		 * them.

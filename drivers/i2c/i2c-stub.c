@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) "i2c-stub: " fmt
 
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #define MAX_CHIPS 10
 

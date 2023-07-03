@@ -14,20 +14,20 @@
 #include <drm/drm_edid.h>
 #include <drm/drm_encoder.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/extcon.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/extcon.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_graph.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
 #include <media/rc-core.h>
 

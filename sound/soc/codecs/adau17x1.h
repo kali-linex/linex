@@ -2,8 +2,8 @@
 #ifndef __ADAU17X1_H__
 #define __ADAU17X1_H__
 
-#include <linux/regmap.h>
-#include <linux/platform_data/adau17x1.h>
+#include <linex/regmap.h>
+#include <linex/platform_data/adau17x1.h>
 
 #include "sigmadsp.h"
 

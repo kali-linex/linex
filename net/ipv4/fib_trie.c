@@ -20,7 +20,7 @@
  *
  * Code from fib_hash has been reused which includes the following header:
  *
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -35,31 +35,31 @@
  *		Paul E. McKenney <paulmck@us.ibm.com>
  *		Patrick McHardy <kaber@trash.net>
  */
-#include <linux/cache.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/notifier.h>
+#include <linex/cache.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/errno.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/proc_fs.h>
+#include <linex/rcupdate.h>
+#include <linex/skbuff.h>
+#include <linex/netlink.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/vmalloc.h>
+#include <linex/notifier.h>
 #include <net/net_namespace.h>
 #include <net/inet_dscp.h>
 #include <net/ip.h>

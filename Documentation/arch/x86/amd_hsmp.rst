@@ -47,7 +47,7 @@ An example
 To access hsmp device from a C program.
 First, you need to include the headers::
 
-  #include <linux/amd_hsmp.h>
+  #include <linex/amd_hsmp.h>
 
 Which defines the supported messages/message IDs.
 

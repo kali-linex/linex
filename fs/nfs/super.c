@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/super.c
+ *  linex/fs/nfs/super.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -21,45 +21,45 @@
  *   of another (see nfs_lookup())
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/init.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/xprtrdma.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <linex/time.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/sunrpc/metrics.h>
+#include <linex/sunrpc/xprtsock.h>
+#include <linex/sunrpc/xprtrdma.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_mount.h>
+#include <linex/nfs4_mount.h>
+#include <linex/lockd/bind.h>
+#include <linex/seq_file.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/vfs.h>
+#include <linex/inet.h>
+#include <linex/in6.h>
+#include <linex/slab.h>
 #include <net/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/nfs_xdr.h>
-#include <linux/magic.h>
-#include <linux/parser.h>
-#include <linux/nsproxy.h>
-#include <linux/rcupdate.h>
+#include <linex/netdevice.h>
+#include <linex/nfs_xdr.h>
+#include <linex/magic.h>
+#include <linex/parser.h>
+#include <linex/nsproxy.h>
+#include <linex/rcupdate.h>
 
-#include <linux/uaccess.h>
-#include <linux/nfs_ssc.h>
+#include <linex/uaccess.h>
+#include <linex/nfs_ssc.h>
 
-#include <uapi/linux/tls.h>
+#include <uapi/linex/tls.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"
@@ -279,9 +279,9 @@ int nfs_statfs(struct dentry *dentry, struct kstatfs *buf)
 
 	/*
 	 * On most *nix systems, f_blocks, f_bfree, and f_bavail
-	 * are reported in units of f_frsize.  Linux hasn't had
+	 * are reported in units of f_frsize.  Linex hasn't had
 	 * an f_frsize field in its statfs struct until recently,
-	 * thus historically Linux's sys_statfs reports these
+	 * thus historically Linex's sys_statfs reports these
 	 * fields in units of f_bsize.
 	 */
 	buf->f_bsize = dentry->d_sb->s_blocksize;

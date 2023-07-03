@@ -3,8 +3,8 @@
 /*
  * Copyright (C) 2021, Linaro Limited. All rights reserved.
  */
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
 #include <crypto/gcm.h>
 #include <crypto/authenc.h>
 #include <crypto/internal/aead.h>

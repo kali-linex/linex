@@ -6,7 +6,7 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "internals.h"
 

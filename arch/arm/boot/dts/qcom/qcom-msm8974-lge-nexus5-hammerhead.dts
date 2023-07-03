@@ -29,15 +29,15 @@
 		key-volume-up {
 			label = "volume_up";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEUP>;
 		};
 
 		key-volume-down {
 			label = "volume_down";
 			gpios = <&pm8941_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 

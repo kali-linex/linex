@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2022 Google */
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
-#include <linux/cgroup.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
+#include <linex/bpf.h>
+#include <linex/btf_ids.h>
+#include <linex/cgroup.h>
+#include <linex/kernel.h>
+#include <linex/seq_file.h>
 
 #include "../cgroup/cgroup-internal.h"  /* cgroup_mutex and cgroup_is_dead */
 

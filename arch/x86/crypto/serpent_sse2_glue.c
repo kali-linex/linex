@@ -12,10 +12,10 @@
  *   Copyright (c) 2006 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/crypto.h>
+#include <linex/err.h>
 #include <crypto/algapi.h>
 #include <crypto/b128ops.h>
 #include <crypto/internal/simd.h>

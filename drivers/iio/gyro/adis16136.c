@@ -6,17 +6,17 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/spi/spi.h>
+#include <linex/sysfs.h>
+#include <linex/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/imu/adis.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/imu/adis.h>
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 #define ADIS16136_REG_FLASH_CNT		0x00
 #define ADIS16136_REG_TEMP_OUT		0x02

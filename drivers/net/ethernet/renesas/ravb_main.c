@@ -8,28 +8,28 @@
  * Based on the SuperH Ethernet driver
  */
 
-#include <linux/cache.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/reset.h>
-#include <linux/math64.h>
+#include <linex/cache.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/net_tstamp.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/reset.h>
+#include <linex/math64.h>
 
 #include "ravb.h"
 

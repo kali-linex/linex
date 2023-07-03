@@ -9,7 +9,7 @@
 #ifndef _ASM_PGTABLE_H
 #define _ASM_PGTABLE_H
 
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 #include <asm/pgtable-bits.h>
@@ -57,8 +57,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/mm_types.h>
-#include <linux/mmzone.h>
+#include <linex/mm_types.h>
+#include <linex/mmzone.h>
 #include <asm/fixmap.h>
 #include <asm/sparsemem.h>
 

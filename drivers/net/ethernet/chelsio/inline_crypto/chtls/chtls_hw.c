@@ -5,16 +5,16 @@
  * Written by: Atul Gupta (atul.gupta@chelsio.com)
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/tls.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/workqueue.h>
+#include <linex/skbuff.h>
+#include <linex/timer.h>
+#include <linex/notifier.h>
+#include <linex/inetdevice.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/tls.h>
 #include <net/tls.h>
 
 #include "chtls.h"

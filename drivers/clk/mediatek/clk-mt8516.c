@@ -6,12 +6,12 @@
  * Copyright (c) 2023 Collabora Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/mfd/syscon.h>
+#include <linex/platform_device.h>
 
 #include "clk-gate.h"
 #include "clk-mtk.h"

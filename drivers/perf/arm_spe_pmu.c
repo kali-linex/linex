@@ -12,28 +12,28 @@
 #define DRVNAME					PMUNAME "_pmu"
 #define pr_fmt(fmt)				DRVNAME ": " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/capability.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/perf_event.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/vmalloc.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/capability.h>
+#include <linex/cpuhotplug.h>
+#include <linex/cpumask.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/perf_event.h>
+#include <linex/perf/arm_pmu.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/vmalloc.h>
 
 #include <asm/barrier.h>
 #include <asm/cpufeature.h>

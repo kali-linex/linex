@@ -4,7 +4,7 @@
  *
  * Watchdog driver for integrated watchdog in the SuperH processors.
  *
- * Copyright (C) 2001 - 2012  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2001 - 2012  Paul Mundt <lethal@linex-sh.org>
  *
  * 14-Dec-2001 Matt Domsch <Matt_Domsch@dell.com>
  *     Added nowayout module option to override CONFIG_WATCHDOG_NOWAYOUT
@@ -16,20 +16,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/watchdog.h>
-#include <linux/pm_runtime.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/watchdog.h>
+#include <linex/pm_runtime.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/err.h>
 #include <asm/watchdog.h>
 
 #define DRV_NAME "sh-wdt"
@@ -321,7 +321,7 @@ static void __exit sh_wdt_exit(void)
 module_init(sh_wdt_init);
 module_exit(sh_wdt_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@linex-sh.org>");
 MODULE_DESCRIPTION("SuperH watchdog driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:" DRV_NAME);

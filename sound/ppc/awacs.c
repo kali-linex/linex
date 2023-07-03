@@ -7,11 +7,11 @@
  */
 
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include "pmac.h"
 

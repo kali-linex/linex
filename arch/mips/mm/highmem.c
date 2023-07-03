@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linex/compiler.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/highmem.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>
 

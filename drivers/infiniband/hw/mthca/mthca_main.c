@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/gfp.h>
 
 #include "mthca_dev.h"
 #include "mthca_config_reg.h"

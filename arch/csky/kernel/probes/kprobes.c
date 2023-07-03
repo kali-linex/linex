@@ -2,12 +2,12 @@
 
 #define pr_fmt(fmt) "kprobes: " fmt
 
-#include <linux/kprobes.h>
-#include <linux/extable.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
+#include <linex/kprobes.h>
+#include <linex/extable.h>
+#include <linex/slab.h>
+#include <linex/stop_machine.h>
 #include <asm/ptrace.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 

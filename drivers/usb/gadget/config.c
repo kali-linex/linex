@@ -5,18 +5,18 @@
  * Copyright (C) 2003 David Brownell
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/string.h>
+#include <linex/device.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/otg.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/otg.h>
 
 /**
  * usb_descriptor_fillbuf - fill buffer with descriptors

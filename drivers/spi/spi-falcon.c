@@ -4,13 +4,13 @@
  *  Copyright (C) 2012 Thomas Langer <thomas.langer@lantiq.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
 
 #include <lantiq_soc.h>
 

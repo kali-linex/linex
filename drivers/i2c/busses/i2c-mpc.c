@@ -8,22 +8,22 @@
  * Copyright (C) 2021 Allied Telesis Labs
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/fsl_devices.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/fsl_devices.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc85xx.h>

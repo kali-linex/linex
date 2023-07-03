@@ -2,8 +2,8 @@
 /* Copyright (C) 2018 Netronome Systems, Inc */
 /* Copyright (C) 2021 Corigine, Inc */
 
-#include <linux/bpf_trace.h>
-#include <linux/netdevice.h>
+#include <linex/bpf_trace.h>
+#include <linex/netdevice.h>
 
 #include "../nfp_app.h"
 #include "../nfp_net.h"

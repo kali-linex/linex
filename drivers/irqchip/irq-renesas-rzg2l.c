@@ -7,17 +7,17 @@
  * Author: Lad Prabhakar <prabhakar.mahadev-lad.rj@bp.renesas.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/spinlock.h>
 
 #define IRQC_IRQ_START			1
 #define IRQC_IRQ_COUNT			8

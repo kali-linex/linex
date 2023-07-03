@@ -2,20 +2,20 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/acpi.h>
+#include <linex/atomic.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irqchip.h>
+#include <linex/kernel_stat.h>
+#include <linex/proc_fs.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/kallsyms.h>
+#include <linex/uaccess.h>
 
 #include <asm/irq.h>
 #include <asm/loongson.h>

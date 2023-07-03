@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/dir.c
+ *  linex/fs/nfs/dir.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -18,28 +18,28 @@
  *  6 Jun 1999	Cache readdir lookups in the page cache. -DaveM
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/swap.h>
-#include <linux/sched.h>
-#include <linux/kmemleak.h>
-#include <linux/xattr.h>
-#include <linux/hash.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/time.h>
+#include <linex/errno.h>
+#include <linex/stat.h>
+#include <linex/fcntl.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_mount.h>
+#include <linex/pagemap.h>
+#include <linex/pagevec.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/swap.h>
+#include <linex/sched.h>
+#include <linex/kmemleak.h>
+#include <linex/xattr.h>
+#include <linex/hash.h>
 
 #include "delegation.h"
 #include "iostat.h"
@@ -2618,7 +2618,7 @@ nfs_unblock_rename(struct rpc_task *task, struct nfs_renamedata *data)
 
 /*
  * RENAME
- * FIXME: Some nfsds, like the Linux user space nfsd, may generate a
+ * FIXME: Some nfsds, like the Linex user space nfsd, may generate a
  * different file handle for the same inode after a rename (e.g. when
  * moving to a different directory). A fail-safe method to do so would
  * be to look up old_dir/old_name, create a link to new_dir/new_name and

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Acorn RiscPC mouse driver for Linux/ARM
+ *  Acorn RiscPC mouse driver for Linex/ARM
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  *  Copyright (C) 1996-2002 Russell King
@@ -14,12 +14,12 @@
  * the complete state and then work out if something has changed.
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/ptrace.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

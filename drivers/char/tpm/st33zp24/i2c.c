@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * STMicroelectronics TPM I2C Linux driver for TPM ST33ZP24
+ * STMicroelectronics TPM I2C Linex driver for TPM ST33ZP24
  * Copyright (C) 2009 - 2016 STMicroelectronics
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/tpm.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/of.h>
+#include <linex/acpi.h>
+#include <linex/tpm.h>
 
 #include "../tpm.h"
 #include "st33zp24.h"

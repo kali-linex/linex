@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/sa1111_generic.c
+ * linex/drivers/pcmcia/sa1111_generic.c
  *
  * We implement the generic parts of a SA1111 PCMCIA driver.  This
  * basically means we handle everything except controlling the
  * power.  Power is machine specific...
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
 #include <pcmcia/ss.h>
 

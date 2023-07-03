@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/ti-msgmgr.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_controller.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/soc/ti/ti-msgmgr.h>
 
 #define Q_DATA_OFFSET(proxy, queue, reg)	\
 		     ((0x10000 * (proxy)) + (0x80 * (queue)) + ((reg) * 4))
@@ -430,20 +430,14 @@ static int ti_msgmgr_send_data(struct mbox_chan *chan, void *data)
 		/* Ensure all unused data is 0 */
 		data_trail &= 0xFFFFFFFF >> (8 * (sizeof(u32) - trail_bytes));
 		writel(data_trail, data_reg);
-		data_reg += sizeof(u32);
+		data_reg++;
 	}
-
 	/*
 	 * 'data_reg' indicates next register to write. If we did not already
 	 * write on tx complete reg(last reg), we must do so for transmit
-	 * In addition, we also need to make sure all intermediate data
-	 * registers(if any required), are reset to 0 for TISCI backward
-	 * compatibility to be maintained.
 	 */
-	while (data_reg <= qinst->queue_buff_end) {
-		writel(0, data_reg);
-		data_reg += sizeof(u32);
-	}
+	if (data_reg <= qinst->queue_buff_end)
+		writel(0, qinst->queue_buff_end);
 
 	/* If we are in polled mode, wait for a response before proceeding */
 	if (ti_msgmgr_chan_has_polled_queue_rx(message->chan_rx))

@@ -3,7 +3,7 @@
  * Copyright (C) 2023 Google Corporation
  */
 
-#include <linux/devcoredump.h>
+#include <linex/devcoredump.h>
 
 #include <asm/unaligned.h>
 #include <net/bluetooth/bluetooth.h>

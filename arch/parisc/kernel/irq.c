@@ -8,14 +8,14 @@
  * Copyright (C) 1999-2000 Grant Grundler
  * Copyright (c) 2005 Matthew Wilcox
  */
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/sched/task_stack.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel_stat.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
+#include <linex/sched/task_stack.h>
 #include <asm/io.h>
 
 #include <asm/softirq_stack.h>

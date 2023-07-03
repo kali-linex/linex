@@ -6,24 +6,24 @@
  * Copyright (C) 2012 Mike Sinkovsky <msink@permonline.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wiznet.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/wiznet.h>
+#include <linex/ethtool.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/gpio.h>
 
 #include "w5100.h"
 

@@ -4,28 +4,28 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2002 - 2004 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2002 - 2004 Dominik Brodowski <linex@brodo.de>
  *  Copyright (C) 2006       Denis Sadykov <denis.m.sadykov@intel.com>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/sched.h>
+#include <linex/cpufreq.h>
+#include <linex/compiler.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
+#include <linex/platform_device.h>
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
 
 #include <acpi/processor.h>
 #include <acpi/cppc_acpi.h>

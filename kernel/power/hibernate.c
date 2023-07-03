@@ -11,27 +11,27 @@
 
 #define pr_fmt(fmt) "PM: hibernation: " fmt
 
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pm.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/ctype.h>
-#include <linux/ktime.h>
-#include <linux/security.h>
-#include <linux/secretmem.h>
+#include <linex/blkdev.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
+#include <linex/reboot.h>
+#include <linex/string.h>
+#include <linex/device.h>
+#include <linex/async.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/pm.h>
+#include <linex/nmi.h>
+#include <linex/console.h>
+#include <linex/cpu.h>
+#include <linex/freezer.h>
+#include <linex/gfp.h>
+#include <linex/syscore_ops.h>
+#include <linex/ctype.h>
+#include <linex/ktime.h>
+#include <linex/security.h>
+#include <linex/secretmem.h>
 #include <trace/events/power.h>
 
 #include "power.h"

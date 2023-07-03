@@ -6,14 +6,14 @@
  * Dmitry Kasatkin <dmitry.kasatkin@intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/kernel_read_file.h>
-#include <linux/key-type.h>
-#include <linux/digsig.h>
-#include <linux/vmalloc.h>
+#include <linex/err.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/cred.h>
+#include <linex/kernel_read_file.h>
+#include <linex/key-type.h>
+#include <linex/digsig.h>
+#include <linex/vmalloc.h>
 #include <crypto/public_key.h>
 #include <keys/system_keyring.h>
 

@@ -26,8 +26,8 @@
  *          Jerome Glisse
  */
 
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

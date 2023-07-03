@@ -4,16 +4,16 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/mempool.h>
-#include <linux/seq_file.h>
-#include <linux/writeback.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/bio.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/buffer_head.h>
+#include <linex/mempool.h>
+#include <linex/seq_file.h>
+#include <linex/writeback.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_filsys.h"

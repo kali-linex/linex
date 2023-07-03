@@ -73,9 +73,9 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/etherdevice.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/etherdevice.h>
 
 #include "tag.h"
 

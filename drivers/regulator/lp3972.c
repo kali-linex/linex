@@ -5,14 +5,14 @@
  * Based on lp3971.c
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/lp3972.h>
-#include <linux/slab.h>
+#include <linex/bug.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/lp3972.h>
+#include <linex/slab.h>
 
 struct lp3972 {
 	struct device *dev;

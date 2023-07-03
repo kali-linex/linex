@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Intel Corporation
 
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/slab.h>
 
 #include "ipu3.h"
 #include "ipu3-css.h"

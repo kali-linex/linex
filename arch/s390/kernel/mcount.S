@@ -4,7 +4,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/ftrace.h>
 #include <asm/nospec-insn.h>

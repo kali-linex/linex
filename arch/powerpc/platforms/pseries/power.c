@@ -9,10 +9,10 @@
  *  Copyright (C) 2007 IBM Corporation.
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <linex/kobject.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/init.h>
 #include <asm/machdep.h>
 
 #include "pseries.h"

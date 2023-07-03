@@ -11,11 +11,11 @@
 
 #define pr_fmt(fmt) "FS-Cache: " fmt
 
-#include <linux/slab.h>
-#include <linux/fscache-cache.h>
+#include <linex/slab.h>
+#include <linex/fscache-cache.h>
 #include <trace/events/fscache.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
 
 /*
  * cache.c

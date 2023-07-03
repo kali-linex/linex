@@ -10,11 +10,11 @@
  * and using buffers obtained after all above.
  */
 
-#include <linux/uaccess.h>
-#include <linux/time.h>
+#include <linex/uaccess.h>
+#include <linex/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
+#include <linex/buffer_head.h>
+#include <linex/kernel.h>
 
 static inline void buffer_info_init_left(struct tree_balance *tb,
                                          struct buffer_info *bi)

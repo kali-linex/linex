@@ -9,7 +9,7 @@
 #ifndef COBALT_OMNITEK_H
 #define COBALT_OMNITEK_H
 
-#include <linux/scatterlist.h>
+#include <linex/scatterlist.h>
 #include "cobalt-driver.h"
 
 struct sg_dma_descriptor {

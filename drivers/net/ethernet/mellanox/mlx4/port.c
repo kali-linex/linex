@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/export.h>
+#include <linex/errno.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/export.h>
 
-#include <linux/mlx4/cmd.h>
+#include <linex/mlx4/cmd.h>
 
 #include "mlx4.h"
 #include "mlx4_stats.h"

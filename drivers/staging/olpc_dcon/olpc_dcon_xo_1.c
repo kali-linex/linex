@@ -10,10 +10,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cs5535.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <linex/cs5535.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
 #include <asm/olpc.h>
 
 #include "olpc_dcon.h"

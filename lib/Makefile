@@ -333,13 +333,13 @@ $(obj)/crc64table.h: $(obj)/gen_crc64table
 	$(call cmd,crc64)
 
 #
-# Build a fast OID lookip registry from include/linux/oid_registry.h
+# Build a fast OID lookip registry from include/linex/oid_registry.h
 #
 obj-$(CONFIG_OID_REGISTRY) += oid_registry.o
 
 $(obj)/oid_registry.o: $(obj)/oid_registry_data.c
 
-$(obj)/oid_registry_data.c: $(srctree)/include/linux/oid_registry.h \
+$(obj)/oid_registry_data.c: $(srctree)/include/linex/oid_registry.h \
 			    $(src)/build_OID_registry
 	$(call cmd,build_OID_registry)
 
@@ -415,7 +415,7 @@ clean-files += $(TEST_FORTIFY_LOGS)
 clean-files += $(addsuffix .o, $(TEST_FORTIFY_LOGS))
 $(obj)/test_fortify/%.log: $(src)/test_fortify/%.c \
 			   $(src)/test_fortify/test_fortify.h \
-			   $(srctree)/include/linux/fortify-string.h \
+			   $(srctree)/include/linex/fortify-string.h \
 			   $(srctree)/scripts/test_fortify.sh \
 			   FORCE
 	$(call if_changed,test_fortify)

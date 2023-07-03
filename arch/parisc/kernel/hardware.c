@@ -15,9 +15,9 @@
 
 
 #include <asm/hardware.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
 /*
  *	HP PARISC Hardware Database

@@ -30,19 +30,19 @@
  * Code formatting improvements
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/usb.h>
-#include <linux/types.h>
-#include <linux/ethtool.h>
-#include <linux/dma-mapping.h>
-#include <linux/wait.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/usb.h>
+#include <linex/types.h>
+#include <linex/ethtool.h>
+#include <linex/dma-mapping.h>
+#include <linex/wait.h>
+#include <linex/firmware.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 
 #undef DEBUG

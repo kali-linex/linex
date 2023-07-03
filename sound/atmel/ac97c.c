@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2005-2009 Atmel Corporation
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
-#include <linux/device.h>
-#include <linux/atmel_pdc.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/bitmap.h>
+#include <linex/device.h>
+#include <linex/atmel_pdc.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

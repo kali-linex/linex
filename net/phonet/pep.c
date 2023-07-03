@@ -9,16 +9,16 @@
  * Author: Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/socket.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <asm/ioctls.h>
 
-#include <linux/phonet.h>
-#include <linux/module.h>
+#include <linex/phonet.h>
+#include <linex/module.h>
 #include <net/phonet/phonet.h>
 #include <net/phonet/pep.h>
 #include <net/phonet/gprs.h>

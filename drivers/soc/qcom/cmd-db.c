@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2016-2018, 2020, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2016-2018, 2020, The Linex Foundation. All rights reserved. */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
 
 #include <soc/qcom/cmd-db.h>
 

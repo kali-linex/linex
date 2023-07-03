@@ -17,20 +17,20 @@
 //    o Delayed power down of audio subsystem to reduce pops between a quick
 //      device reopen.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/async.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/jiffies.h>
+#include <linex/debugfs.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

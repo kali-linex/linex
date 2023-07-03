@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/include/asm-sh/microdev.h
+ * linex/include/asm-sh/microdev.h
  *
  * Copyright (C) 2003 Sean McGoogan (Sean.McGoogan@superh.com)
  *
@@ -32,17 +32,17 @@ extern void microdev_print_fpga_intc_status(void);
 
 
 /*
- * The following are the IRQ numbers for the Linux Kernel for external
+ * The following are the IRQ numbers for the Linex Kernel for external
  * interrupts.  i.e. the numbers seen by 'cat /proc/interrupt'.
  */
-#define MICRODEV_LINUX_IRQ_KEYBOARD	 1	/* SuperIO Keyboard */
-#define MICRODEV_LINUX_IRQ_SERIAL1	 2	/* SuperIO Serial #1 */
-#define MICRODEV_LINUX_IRQ_ETHERNET	 3	/* on-board Ethnernet */
-#define MICRODEV_LINUX_IRQ_SERIAL2	 4	/* SuperIO Serial #2 */
-#define MICRODEV_LINUX_IRQ_USB_HC	 7	/* on-board USB HC */
-#define MICRODEV_LINUX_IRQ_MOUSE	12	/* SuperIO PS/2 Mouse */
-#define MICRODEV_LINUX_IRQ_IDE2		13	/* SuperIO IDE #2 */
-#define MICRODEV_LINUX_IRQ_IDE1		14	/* SuperIO IDE #1 */
+#define MICRODEV_LINEX_IRQ_KEYBOARD	 1	/* SuperIO Keyboard */
+#define MICRODEV_LINEX_IRQ_SERIAL1	 2	/* SuperIO Serial #1 */
+#define MICRODEV_LINEX_IRQ_ETHERNET	 3	/* on-board Ethnernet */
+#define MICRODEV_LINEX_IRQ_SERIAL2	 4	/* SuperIO Serial #2 */
+#define MICRODEV_LINEX_IRQ_USB_HC	 7	/* on-board USB HC */
+#define MICRODEV_LINEX_IRQ_MOUSE	12	/* SuperIO PS/2 Mouse */
+#define MICRODEV_LINEX_IRQ_IDE2		13	/* SuperIO IDE #2 */
+#define MICRODEV_LINEX_IRQ_IDE1		14	/* SuperIO IDE #1 */
 
 /*
  * The following are the IRQ numbers for the INTC on the FPGA for

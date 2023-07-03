@@ -4,11 +4,11 @@
  */
 #ifndef __NFIT_TEST_H__
 #define __NFIT_TEST_H__
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/uuid.h>
-#include <linux/ioport.h>
-#include <linux/spinlock_types.h>
+#include <linex/acpi.h>
+#include <linex/list.h>
+#include <linex/uuid.h>
+#include <linex/ioport.h>
+#include <linex/spinlock_types.h>
 
 struct nfit_test_request {
 	struct list_head list;

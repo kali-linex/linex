@@ -1,11 +1,11 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linex kernel.
 #
 
-extra-y	+= vmlinux.lds
+extra-y	+= vmlinex.lds
 
-CPPFLAGS_vmlinux.lds += -U$(UTS_MACHINE)
+CPPFLAGS_vmlinex.lds += -U$(UTS_MACHINE)
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

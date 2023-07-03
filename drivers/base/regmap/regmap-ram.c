@@ -6,13 +6,13 @@
 //
 // Copyright (c) 2023, Arm Ltd
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/swab.h>
 
 #include "internal.h"
 

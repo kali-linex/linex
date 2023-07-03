@@ -11,19 +11,19 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel Linex Wireless <ilw@linex.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 
-#include <linux/hardirq.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <linex/hardirq.h>
+#include <linex/kmod.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
 
 #include <net/lib80211.h>
-#include <linux/wireless.h>
+#include <linex/wireless.h>
 
 #include "libipw.h"
 

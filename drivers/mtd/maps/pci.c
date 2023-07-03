@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mtd/maps/pci.c
+ *  linex/drivers/mtd/maps/pci.c
  *
  *  Copyright (C) 2001 Russell King, All rights reserved.
  *
@@ -8,14 +8,14 @@
  *  - Intel IQ80310 ATU.
  *  - Intel EBSA285 (blank rom programming mode). Tested working 27/09/2001
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/partitions.h>
 
 struct map_pci_info;
 
@@ -325,6 +325,6 @@ static struct pci_driver mtd_pci_driver = {
 module_pci_driver(mtd_pci_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linex.org.uk>");
 MODULE_DESCRIPTION("Generic PCI map driver");
 MODULE_DEVICE_TABLE(pci, mtd_pci_ids);

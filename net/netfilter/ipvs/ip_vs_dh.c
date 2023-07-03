@@ -33,12 +33,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/hash.h>
+#include <linex/ip.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/hash.h>
 
 #include <net/ip_vs.h>
 

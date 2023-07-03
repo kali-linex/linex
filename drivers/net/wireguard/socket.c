@@ -9,11 +9,11 @@
 #include "queueing.h"
 #include "messages.h"
 
-#include <linux/ctype.h>
-#include <linux/net.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
-#include <linux/inetdevice.h>
+#include <linex/ctype.h>
+#include <linex/net.h>
+#include <linex/if_vlan.h>
+#include <linex/if_ether.h>
+#include <linex/inetdevice.h>
 #include <net/udp_tunnel.h>
 #include <net/ipv6.h>
 

@@ -10,12 +10,12 @@
  * Path selector registration.
  */
 
-#include <linux/device-mapper.h>
-#include <linux/module.h>
+#include <linex/device-mapper.h>
+#include <linex/module.h>
 
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 struct ps_internal {
 	struct path_selector_type pst;

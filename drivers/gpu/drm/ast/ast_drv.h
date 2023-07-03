@@ -28,10 +28,10 @@
 #ifndef __AST_DRV_H__
 #define __AST_DRV_H__
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/io.h>
+#include <linex/types.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

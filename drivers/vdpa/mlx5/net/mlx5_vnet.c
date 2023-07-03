@@ -1,22 +1,22 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
-#include <linux/module.h>
-#include <linux/vdpa.h>
-#include <linux/vringh.h>
-#include <uapi/linux/virtio_net.h>
-#include <uapi/linux/virtio_ids.h>
-#include <uapi/linux/vdpa.h>
-#include <linux/virtio_config.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/mlx5_ifc_vdpa.h>
-#include <linux/mlx5/mpfs.h>
+#include <linex/module.h>
+#include <linex/vdpa.h>
+#include <linex/vringh.h>
+#include <uapi/linex/virtio_net.h>
+#include <uapi/linex/virtio_ids.h>
+#include <uapi/linex/vdpa.h>
+#include <linex/virtio_config.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/mlx5/cq.h>
+#include <linex/mlx5/qp.h>
+#include <linex/mlx5/device.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/vport.h>
+#include <linex/mlx5/fs.h>
+#include <linex/mlx5/mlx5_ifc_vdpa.h>
+#include <linex/mlx5/mpfs.h>
 #include "mlx5_vdpa.h"
 #include "mlx5_vnet.h"
 

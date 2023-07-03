@@ -8,30 +8,30 @@
 
 #define pr_fmt(fmt) "pstore: " fmt
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
+#include <linex/atomic.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/kmsg_dump.h>
+#include <linex/console.h>
+#include <linex/module.h>
+#include <linex/pstore.h>
 #if IS_ENABLED(CONFIG_PSTORE_LZO_COMPRESS)
-#include <linux/lzo.h>
+#include <linex/lzo.h>
 #endif
 #if IS_ENABLED(CONFIG_PSTORE_LZ4_COMPRESS) || IS_ENABLED(CONFIG_PSTORE_LZ4HC_COMPRESS)
-#include <linux/lz4.h>
+#include <linex/lz4.h>
 #endif
 #if IS_ENABLED(CONFIG_PSTORE_ZSTD_COMPRESS)
-#include <linux/zstd.h>
+#include <linex/zstd.h>
 #endif
-#include <linux/crypto.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <linex/crypto.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/jiffies.h>
+#include <linex/workqueue.h>
 
 #include "internal.h"
 

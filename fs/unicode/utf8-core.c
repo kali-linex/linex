@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/errno.h>
-#include <linux/stringhash.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/parser.h>
+#include <linex/errno.h>
+#include <linex/stringhash.h>
 
 #include "utf8n.h"
 

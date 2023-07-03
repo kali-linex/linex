@@ -8,17 +8,17 @@
  * This file is based on sha1_generic.c and sha1_ssse3_glue.c:
  *  Copyright (c) Alan Smithee.
  *  Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- *  Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ *  Copyright (c) Jean-Francois Dive <jef@linexbe.org>
  *  Copyright (c) Mathias Krause <minipli@googlemail.com>
- *  Copyright (c) Chandramouli Narayanan <mouli@linux.intel.com>
+ *  Copyright (c) Chandramouli Narayanan <mouli@linex.intel.com>
  */
 
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
 #include <asm/neon.h>

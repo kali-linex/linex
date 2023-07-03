@@ -9,21 +9,21 @@
  * Derived from ehci-platform.c
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/pinctrl/consumer.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/hrtimer.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/ehci_pdriver.h>
+#include <linex/pinctrl/consumer.h>
 
 #include "ehci.h"
 

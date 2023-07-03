@@ -5,13 +5,13 @@
  * Copyright 2014-2019 Analog Devices Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/bitops.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 
 #include "ad7091r-base.h"
 

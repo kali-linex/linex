@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Multicast support for IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/igmp.c and linux/ipv4/ip_sockglue.c
+ *	Based on linex/ipv4/igmp.c and linex/ipv4/ip_sockglue.c
  */
 
 /* Changes:
@@ -22,29 +22,29 @@
  *		- MLDv2 support
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/pkt_sched.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/jiffies.h>
+#include <linex/net.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/route.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/pkt_sched.h>
 #include <net/mld.h>
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

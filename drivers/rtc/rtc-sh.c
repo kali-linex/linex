@@ -11,20 +11,20 @@
  *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
  *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
  */
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/kernel.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/log2.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
 #ifdef CONFIG_SUPERH
 #include <asm/rtc.h>
 #else
@@ -680,7 +680,7 @@ static struct platform_driver sh_rtc_platform_driver = {
 module_platform_driver_probe(sh_rtc_platform_driver, sh_rtc_probe);
 
 MODULE_DESCRIPTION("SuperH on-chip RTC driver");
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>, "
+MODULE_AUTHOR("Paul Mundt <lethal@linex-sh.org>, "
 	      "Jamie Lenehan <lenehan@twibble.org>, "
 	      "Angelo Castello <angelo.castello@st.com>");
 MODULE_LICENSE("GPL v2");

@@ -4,15 +4,15 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/file.h>
-#include <linux/xattr.h>
-#include <linux/rbtree.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/ratelimit.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/namei.h>
+#include <linex/file.h>
+#include <linex/xattr.h>
+#include <linex/rbtree.h>
+#include <linex/security.h>
+#include <linex/cred.h>
+#include <linex/ratelimit.h>
 #include "overlayfs.h"
 
 struct ovl_cache_entry {

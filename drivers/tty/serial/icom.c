@@ -8,39 +8,39 @@
   *
   * Based on code from serial.c
   */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/termios.h>
-#include <linux/fs.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/firmware.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/tty.h>
+#include <linex/termios.h>
+#include <linex/fs.h>
+#include <linex/tty_flip.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/serial_reg.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/ptrace.h>
+#include <linex/ioport.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/kref.h>
+#include <linex/firmware.h>
+#include <linex/bitops.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*#define ICOM_TRACE		 enable port trace capabilities */
 

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/arch/arm/mach-nspire/nspire.c
+ *	linex/arch/arm/mach-nspire/nspire.c
  *
  *	Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */
-#include <linux/init.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-vic.h>
-#include <linux/clkdev.h>
-#include <linux/amba/bus.h>
+#include <linex/init.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-vic.h>
+#include <linex/clkdev.h>
+#include <linex/amba/bus.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

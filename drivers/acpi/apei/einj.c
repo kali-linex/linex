@@ -12,15 +12,15 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/nmi.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
 #include <asm/unaligned.h>
 
 #include "apei-internal.h"

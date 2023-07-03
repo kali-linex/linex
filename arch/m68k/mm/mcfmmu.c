@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Based upon linux/arch/m68k/mm/sun3mmu.c
- * Based upon linux/arch/ppc/mm/mmu_context.c
+ * Based upon linex/arch/m68k/mm/sun3mmu.c
+ * Based upon linex/arch/ppc/mm/mmu_context.c
  *
  * Implementations of mm routines specific to the Coldfire MMU.
  *
  * Copyright (c) 2008 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/memblock.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

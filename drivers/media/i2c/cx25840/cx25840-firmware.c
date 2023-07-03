@@ -2,9 +2,9 @@
 /* cx25840 firmware functions
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/firmware.h>
 #include <media/v4l2-common.h>
 #include <media/drv-intf/cx25840.h>
 

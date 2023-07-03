@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Linex implementation.
  *
  * Version : 1.0.0
  *
@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
+#include <linex/buffer_head.h>
+#include <linex/slab.h>
+#include <linex/crc32.h>
 #include "qnx6.h"
 
 static void qnx6_mmi_copy_sb(struct qnx6_super_block *qsb,

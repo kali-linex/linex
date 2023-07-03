@@ -15,8 +15,8 @@
 #include "ctdaio.h"
 #include "cthardware.h"
 #include "ctimap.h"
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
 
 #define DAIO_OUT_MAX		SPDIFOO
 

@@ -41,7 +41,7 @@
 	};
 
 	extcon_usb: extcon-usb {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&tlmm 102 GPIO_ACTIVE_HIGH>;
 	};
 
@@ -54,9 +54,9 @@
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&tlmm 47 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 			wakeup-source;
 		};
 	};
@@ -277,7 +277,7 @@
 
 &pon_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEUP>;
+	linex,code = <KEY_VOLUMEUP>;
 };
 
 &rpm_requests {

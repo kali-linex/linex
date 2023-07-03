@@ -6,8 +6,8 @@
 #ifndef __IVPU_IPC_H__
 #define __IVPU_IPC_H__
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
 
 #include "vpu_jsm_api.h"
 

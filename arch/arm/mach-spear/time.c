@@ -3,22 +3,22 @@
  * arch/arm/plat-spear/time.c
  *
  * Copyright (C) 2010 ST Microelectronics
- * Shiraz Hashim<shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim<shiraz.linex.kernel@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/time.h>
-#include <linux/irq.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/time.h>
+#include <linex/irq.h>
 #include <asm/mach/time.h>
 #include "generic.h"
 

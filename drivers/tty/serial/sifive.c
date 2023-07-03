@@ -28,21 +28,21 @@
  * programming model.
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/clk.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/serial_core.h>
+#include <linex/serial_reg.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
 /*
  * Register offsets
@@ -281,7 +281,7 @@ static void __ssp_transmit_char(struct sifive_serial_port *ssp, int ch)
  * __ssp_transmit_chars() - enqueue multiple bytes onto the TX FIFO
  * @ssp: pointer to a struct sifive_serial_port
  *
- * Transfer up to a TX FIFO size's worth of characters from the Linux serial
+ * Transfer up to a TX FIFO size's worth of characters from the Linex serial
  * transmit buffer to the SiFive UART TX FIFO.
  *
  * Context: Any context.  Expects @ssp->port.lock to be held by caller.
@@ -368,7 +368,7 @@ static void __ssp_disable_rxwm(struct sifive_serial_port *ssp)
  * Try to read a byte from the SiFive UART RX FIFO, referenced by
  * @ssp, and to return it.  Also returns the RX FIFO empty bit in
  * the char pointed to by @ch.  The caller must pass the byte back to the
- * Linux serial layer if needed.
+ * Linex serial layer if needed.
  *
  * Returns: the byte read from the UART RX FIFO.
  */
@@ -396,7 +396,7 @@ static char __ssp_receive_char(struct sifive_serial_port *ssp, char *is_empty)
  * @ssp: pointer to a struct sifive_serial_port
  *
  * Receive up to an RX FIFO's worth of bytes from the SiFive UART referred
- * to by @ssp and pass them up to the Linux serial layer.
+ * to by @ssp and pass them up to the Linex serial layer.
  *
  * Context: Expects ssp->port.lock to be held by caller.
  */
@@ -492,7 +492,7 @@ static void __maybe_unused __ssp_wait_for_xmitr(struct sifive_serial_port *ssp)
 }
 
 /*
- * Linux serial API functions
+ * Linex serial API functions
  */
 
 static void sifive_serial_stop_tx(struct uart_port *port)
@@ -765,7 +765,7 @@ OF_EARLYCON_DECLARE(sifive, "sifive,fu540-c000-uart0",
 #endif /* CONFIG_SERIAL_EARLYCON */
 
 /*
- * Linux console interface
+ * Linex console interface
  */
 
 #ifdef CONFIG_SERIAL_SIFIVE_CONSOLE

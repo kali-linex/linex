@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The Linex Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/remoteproc.h>
-#include <linux/firmware.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/remoteproc.h>
+#include <linex/firmware.h>
+#include <linex/of.h>
 
 #include "core.h"
 #include "dp_tx.h"

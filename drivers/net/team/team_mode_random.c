@@ -4,12 +4,12 @@
  * Copyright (c) 2013 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/if_team.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/if_team.h>
 
 static bool rnd_transmit(struct team *team, struct sk_buff *skb)
 {

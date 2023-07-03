@@ -8,8 +8,8 @@
 
 struct clk;
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <linex/clk-provider.h>
+#include <linex/spinlock.h>
 
 #define SET	0x4
 #define CLR	0x8

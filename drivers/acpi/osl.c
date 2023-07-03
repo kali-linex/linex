@@ -6,34 +6,34 @@
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  *  Copyright (c) 2008 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@linex.intel.com>
  */
 
 #define pr_fmt(fmt) "ACPI: OSL: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/nmi.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/semaphore.h>
-#include <linux/security.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/lockdep.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/kmod.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/nmi.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/ioport.h>
+#include <linex/list.h>
+#include <linex/jiffies.h>
+#include <linex/semaphore.h>
+#include <linex/security.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linex/uaccess.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
 
 #include "acpica/accommon.h"
 #include "internal.h"
@@ -49,7 +49,7 @@ struct acpi_os_dpc {
 };
 
 #ifdef ENABLE_DEBUGGER
-#include <linux/kdb.h>
+#include <linex/kdb.h>
 
 /* stuff for debugger support */
 int acpi_in_debugger;
@@ -1216,7 +1216,7 @@ acpi_os_create_semaphore(u32 max_units, u32 initial_units, acpi_handle * handle)
 }
 
 /*
- * TODO: A better way to delete semaphores?  Linux doesn't have a
+ * TODO: A better way to delete semaphores?  Linex doesn't have a
  * 'delete_semaphore()' function -- may result in an invalid
  * pointer dereference for non-synchronized consumers.	Should
  * we at least check for blocked threads and signal/cancel them?

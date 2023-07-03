@@ -1,5 +1,5 @@
 ===========================================
-IBM's Journaled File System (JFS) for Linux
+IBM's Journaled File System (JFS) for Linex
 ===========================================
 
 JFS Homepage:  http://jfs.sourceforge.net/

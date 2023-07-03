@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * SuperTrak EX Series Storage Controller driver for Linux
+ * SuperTrak EX Series Storage Controller driver for Linex
  *
  *	Copyright (C) 2005-2015 Promise Technology Inc.
  *
  *	Written By:
- *		Ed Lin <promise_linux@promise.com>
+ *		Ed Lin <promise_linex@promise.com>
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
-#include <linux/reboot.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/interrupt.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/ktime.h>
+#include <linex/reboot.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>

@@ -5,11 +5,11 @@
  * Copyright (C) 2009, Marvell International Ltd.
  **/
 
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/of.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>
-#include <linux/mmc/sdio_func.h>
+#include <linex/mmc/sdio_func.h>
 
 #include "btmrvl_drv.h"
 #include "btmrvl_sdio.h"

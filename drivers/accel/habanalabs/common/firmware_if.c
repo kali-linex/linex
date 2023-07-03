@@ -8,11 +8,11 @@
 #include "habanalabs.h"
 #include "../include/common/hl_boot_if.h"
 
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/vmalloc.h>
+#include <linex/firmware.h>
+#include <linex/crc32.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/vmalloc.h>
 
 #include <trace/events/habanalabs.h>
 
@@ -903,7 +903,7 @@ int hl_fw_cpucp_info_get(struct hl_device *hdev,
 
 	kernel_ver = extract_fw_ver_from_str(prop->cpucp_info.kernel_version);
 	if (kernel_ver) {
-		dev_info(hdev->dev, "Linux version %s", kernel_ver);
+		dev_info(hdev->dev, "Linex version %s", kernel_ver);
 		kfree(kernel_ver);
 	}
 
@@ -1349,7 +1349,7 @@ int hl_fw_cpucp_engine_core_asid_set(struct hl_device *hdev, u32 asid)
 	return rc;
 }
 
-void hl_fw_ask_hard_reset_without_linux(struct hl_device *hdev)
+void hl_fw_ask_hard_reset_without_linex(struct hl_device *hdev)
 {
 	struct static_fw_load_mgr *static_loader =
 			&hdev->fw_loader.static_loader;
@@ -1366,7 +1366,7 @@ void hl_fw_ask_hard_reset_without_linux(struct hl_device *hdev)
 	}
 }
 
-void hl_fw_ask_halt_machine_without_linux(struct hl_device *hdev)
+void hl_fw_ask_halt_machine_without_linex(struct hl_device *hdev)
 {
 	struct fw_load_mgr *fw_loader = &hdev->fw_loader;
 	u32 status, cpu_boot_status_reg, cpu_timeout;
@@ -2417,7 +2417,7 @@ static void hl_fw_boot_fit_update_state(struct hl_device *hdev,
 			prop->hard_reset_done_by_fw ? "enabled" : "disabled");
 }
 
-static void hl_fw_dynamic_update_linux_interrupt_if(struct hl_device *hdev)
+static void hl_fw_dynamic_update_linex_interrupt_if(struct hl_device *hdev)
 {
 	struct cpu_dyn_regs *dyn_regs =
 			&hdev->fw_loader.dynamic_loader.comm_desc.cpu_dyn_regs;
@@ -2458,14 +2458,14 @@ static int hl_fw_dynamic_load_image(struct hl_device *hdev,
 	/*
 	 * when loading image we have one of 2 scenarios:
 	 * 1. current FW component is preboot and we want to load boot-fit
-	 * 2. current FW component is boot-fit and we want to load linux
+	 * 2. current FW component is boot-fit and we want to load linex
 	 */
 	if (load_fwc == FW_COMP_BOOT_FIT) {
 		cur_fwc = FW_COMP_PREBOOT;
 		fw_name = fw_loader->boot_fit_img.image_name;
 	} else {
 		cur_fwc = FW_COMP_BOOT_FIT;
-		fw_name = fw_loader->linux_img.image_name;
+		fw_name = fw_loader->linex_img.image_name;
 	}
 
 	/* request FW in order to communicate to FW the size to be allocated */
@@ -2517,8 +2517,8 @@ static int hl_fw_dynamic_wait_for_boot_fit_active(struct hl_device *hdev,
 
 	/*
 	 * Make sure CPU boot-loader is running
-	 * Note that the CPU_BOOT_STATUS_SRAM_AVAIL is generally set by Linux
-	 * yet there is a debug scenario in which we loading uboot (without Linux)
+	 * Note that the CPU_BOOT_STATUS_SRAM_AVAIL is generally set by Linex
+	 * yet there is a debug scenario in which we loading uboot (without Linex)
 	 * which at later stage is relocated to DRAM. In this case we expect
 	 * uboot to set the CPU_BOOT_STATUS_SRAM_AVAIL and so we add it to the
 	 * poll flags
@@ -2540,7 +2540,7 @@ static int hl_fw_dynamic_wait_for_boot_fit_active(struct hl_device *hdev,
 	return 0;
 }
 
-static int hl_fw_dynamic_wait_for_linux_active(struct hl_device *hdev,
+static int hl_fw_dynamic_wait_for_linex_active(struct hl_device *hdev,
 						struct fw_load_mgr *fw_loader)
 {
 	struct dynamic_fw_load_mgr *dyn_loader;
@@ -2549,7 +2549,7 @@ static int hl_fw_dynamic_wait_for_linux_active(struct hl_device *hdev,
 
 	dyn_loader = &fw_loader->dynamic_loader;
 
-	/* Make sure CPU linux is running */
+	/* Make sure CPU linex is running */
 
 	rc = hl_poll_timeout(
 		hdev,
@@ -2559,7 +2559,7 @@ static int hl_fw_dynamic_wait_for_linux_active(struct hl_device *hdev,
 		hdev->fw_poll_interval_usec,
 		fw_loader->cpu_timeout);
 	if (rc) {
-		dev_err(hdev->dev, "failed to wait for Linux (status = %d)\n", status);
+		dev_err(hdev->dev, "failed to wait for Linex (status = %d)\n", status);
 		return rc;
 	}
 
@@ -2568,9 +2568,9 @@ static int hl_fw_dynamic_wait_for_linux_active(struct hl_device *hdev,
 }
 
 /**
- * hl_fw_linux_update_state -	update internal data structures after Linux
+ * hl_fw_linex_update_state -	update internal data structures after Linex
  *				is loaded.
- *				Note: Linux initialization is comprised mainly
+ *				Note: Linex initialization is comprised mainly
  *				of two stages - loading kernel (SRAM_AVAIL)
  *				& loading ARMCP.
  *				Therefore reading boot device status in any of
@@ -2582,13 +2582,13 @@ static int hl_fw_dynamic_wait_for_linux_active(struct hl_device *hdev,
  *
  * @return 0 on success, otherwise non-zero error code
  */
-static void hl_fw_linux_update_state(struct hl_device *hdev,
+static void hl_fw_linex_update_state(struct hl_device *hdev,
 						u32 cpu_boot_dev_sts0_reg,
 						u32 cpu_boot_dev_sts1_reg)
 {
 	struct asic_fixed_properties *prop = &hdev->asic_prop;
 
-	hdev->fw_loader.fw_comp_loaded |= FW_TYPE_LINUX;
+	hdev->fw_loader.fw_comp_loaded |= FW_TYPE_LINEX;
 
 	/* Read FW application security bits */
 	if (prop->fw_cpu_boot_dev_sts0_valid) {
@@ -2797,21 +2797,21 @@ static int hl_fw_dynamic_init_cpu(struct hl_device *hdev,
 			le32_to_cpu(dyn_regs->cpu_boot_dev_sts1));
 
 	/*
-	 * when testing FW load (without Linux) on PLDM we don't want to
+	 * when testing FW load (without Linex) on PLDM we don't want to
 	 * wait until boot fit is active as it may take several hours.
 	 * instead, we load the bootfit and let it do all initialization in
 	 * the background.
 	 */
-	if (hdev->pldm && !(hdev->fw_components & FW_TYPE_LINUX))
+	if (hdev->pldm && !(hdev->fw_components & FW_TYPE_LINEX))
 		return 0;
 
-	/* Enable DRAM scrambling before Linux boot and after successful
+	/* Enable DRAM scrambling before Linex boot and after successful
 	 *  UBoot
 	 */
 	hdev->asic_funcs->init_cpu_scrambler_dram(hdev);
 
-	if (!(hdev->fw_components & FW_TYPE_LINUX)) {
-		dev_info(hdev->dev, "Skip loading Linux F/W\n");
+	if (!(hdev->fw_components & FW_TYPE_LINEX)) {
+		dev_info(hdev->dev, "Skip loading Linex F/W\n");
 		return 0;
 	}
 
@@ -2826,23 +2826,23 @@ static int hl_fw_dynamic_init_cpu(struct hl_device *hdev,
 		}
 	}
 
-	/* load Linux image to FW */
-	rc = hl_fw_dynamic_load_image(hdev, fw_loader, FW_COMP_LINUX,
+	/* load Linex image to FW */
+	rc = hl_fw_dynamic_load_image(hdev, fw_loader, FW_COMP_LINEX,
 							fw_loader->cpu_timeout);
 	if (rc) {
-		dev_err(hdev->dev, "failed to load Linux\n");
+		dev_err(hdev->dev, "failed to load Linex\n");
 		goto protocol_err;
 	}
 
-	rc = hl_fw_dynamic_wait_for_linux_active(hdev, fw_loader);
+	rc = hl_fw_dynamic_wait_for_linex_active(hdev, fw_loader);
 	if (rc)
 		goto protocol_err;
 
-	hl_fw_linux_update_state(hdev,
+	hl_fw_linex_update_state(hdev,
 				le32_to_cpu(dyn_regs->cpu_boot_dev_sts0),
 				le32_to_cpu(dyn_regs->cpu_boot_dev_sts1));
 
-	hl_fw_dynamic_update_linux_interrupt_if(hdev);
+	hl_fw_dynamic_update_linex_interrupt_if(hdev);
 
 protocol_err:
 	if (fw_loader->dynamic_loader.fw_desc_valid) {
@@ -2936,8 +2936,8 @@ static int hl_fw_static_init_cpu(struct hl_device *hdev,
 
 	/*
 	 * Make sure CPU boot-loader is running
-	 * Note that the CPU_BOOT_STATUS_SRAM_AVAIL is generally set by Linux
-	 * yet there is a debug scenario in which we loading uboot (without Linux)
+	 * Note that the CPU_BOOT_STATUS_SRAM_AVAIL is generally set by Linex
+	 * yet there is a debug scenario in which we loading uboot (without Linex)
 	 * which at later stage is relocated to DRAM. In this case we expect
 	 * uboot to set the CPU_BOOT_STATUS_SRAM_AVAIL and so we add it to the
 	 * poll flags
@@ -2968,13 +2968,13 @@ static int hl_fw_static_init_cpu(struct hl_device *hdev,
 		goto out;
 	}
 
-	/* Enable DRAM scrambling before Linux boot and after successful
+	/* Enable DRAM scrambling before Linex boot and after successful
 	 *  UBoot
 	 */
 	hdev->asic_funcs->init_cpu_scrambler_dram(hdev);
 
-	if (!(hdev->fw_components & FW_TYPE_LINUX)) {
-		dev_info(hdev->dev, "Skip loading Linux F/W\n");
+	if (!(hdev->fw_components & FW_TYPE_LINEX)) {
+		dev_info(hdev->dev, "Skip loading Linex F/W\n");
 		rc = 0;
 		goto out;
 	}
@@ -3045,7 +3045,7 @@ static int hl_fw_static_init_cpu(struct hl_device *hdev,
 	if (rc)
 		return rc;
 
-	hl_fw_linux_update_state(hdev, cpu_boot_dev_status0_reg,
+	hl_fw_linex_update_state(hdev, cpu_boot_dev_status0_reg,
 						cpu_boot_dev_status1_reg);
 
 	return 0;

@@ -5,13 +5,13 @@
 #ifndef IOATDMA_H
 #define IOATDMA_H
 
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/dmapool.h>
-#include <linux/cache.h>
-#include <linux/pci_ids.h>
-#include <linux/circ_buf.h>
-#include <linux/interrupt.h>
+#include <linex/dmaengine.h>
+#include <linex/init.h>
+#include <linex/dmapool.h>
+#include <linex/cache.h>
+#include <linex/pci_ids.h>
+#include <linex/circ_buf.h>
+#include <linex/interrupt.h>
 #include "registers.h"
 #include "hw.h"
 

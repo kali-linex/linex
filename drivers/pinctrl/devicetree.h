@@ -5,7 +5,7 @@
  * Copyright (C) 2012 NVIDIA CORPORATION. All rights reserved.
  */
 
-#include <linux/errno.h>
+#include <linex/errno.h>
 
 struct device_node;
 struct of_phandle_args;

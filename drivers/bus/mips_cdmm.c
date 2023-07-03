@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
+#include <linex/atomic.h>
+#include <linex/err.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
 #include <asm/cdmm.h>
 #include <asm/hazards.h>
 #include <asm/mipsregs.h>

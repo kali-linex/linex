@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH Linex-syscall-note */
 #ifndef _UAPIUUACCE_H
 #define _UAPIUUACCE_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linex/types.h>
+#include <linex/ioctl.h>
 
 /*
  * UACCE_CMD_START_Q: Start queue

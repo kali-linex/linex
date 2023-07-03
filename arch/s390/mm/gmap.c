@@ -5,19 +5,19 @@
  *    Copyright IBM Corp. 2007, 2020
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  *		 David Hildenbrand <david@redhat.com>
- *		 Janosch Frank <frankja@linux.vnet.ibm.com>
+ *		 Janosch Frank <frankja@linex.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/pagewalk.h>
+#include <linex/swap.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/swapops.h>
+#include <linex/ksm.h>
+#include <linex/mman.h>
+#include <linex/pgtable.h>
 
 #include <asm/pgalloc.h>
 #include <asm/gmap.h>

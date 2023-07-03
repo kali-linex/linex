@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Silicon Labs C2 port core Linux support
+ *  Silicon Labs C2 port core Linex support
  *
- *  Copyright (c) 2007 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2007 Rodolfo Giometti <giometti@linex.it>
  *  Copyright (c) 2007 Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/idr.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
-#include <linux/c2port.h>
+#include <linex/c2port.h>
 
 #define DRIVER_NAME             "c2port"
 #define DRIVER_VERSION          "0.51.0"
@@ -995,6 +995,6 @@ static void __exit c2port_exit(void)
 module_init(c2port_init);
 module_exit(c2port_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linex.it>");
 MODULE_DESCRIPTION("Silicon Labs C2 port support v. " DRIVER_VERSION);
 MODULE_LICENSE("GPL");

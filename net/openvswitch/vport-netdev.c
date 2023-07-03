@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if_arp.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/llc.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/openvswitch.h>
-#include <linux/export.h>
+#include <linex/if_arp.h>
+#include <linex/if_bridge.h>
+#include <linex/if_vlan.h>
+#include <linex/kernel.h>
+#include <linex/llc.h>
+#include <linex/rtnetlink.h>
+#include <linex/skbuff.h>
+#include <linex/openvswitch.h>
+#include <linex/export.h>
 
 #include <net/ip_tunnels.h>
 #include <net/rtnetlink.h>

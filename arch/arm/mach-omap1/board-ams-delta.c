@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-ams-delta.c
+ * linex/arch/arm/mach-omap1/board-ams-delta.c
  *
  * Modified from board-generic.c
  *
@@ -8,33 +8,33 @@
  *
  * Copyright (C) 2006 Jonathan McDowell <noodles@earth.li>
  */
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_8250.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/soc/ti/omap1-mux.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/leds.h>
+#include <linex/mtd/nand-gpio.h>
+#include <linex/mtd/partitions.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/serial_8250.h>
+#include <linex/export.h>
+#include <linex/omapfb.h>
+#include <linex/io.h>
+#include <linex/platform_data/gpio-omap.h>
+#include <linex/soc/ti/omap1-mux.h>
 
 #include <asm/serial.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/keypad-omap.h>
+#include <linex/platform_data/keypad-omap.h>
 
 #include "hardware.h"
 #include "usb.h"

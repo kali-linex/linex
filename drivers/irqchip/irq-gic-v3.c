@@ -6,27 +6,27 @@
 
 #define pr_fmt(fmt)	"GICv3: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kstrtox.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/kstrtox.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/percpu.h>
+#include <linex/refcount.h>
+#include <linex/slab.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-common.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/irq-partition-percpu.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/arm-smccc.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic-common.h>
+#include <linex/irqchip/arm-gic-v3.h>
+#include <linex/irqchip/irq-partition-percpu.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/arm-smccc.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>
@@ -134,7 +134,7 @@ static DEFINE_PER_CPU(bool, has_rss);
 #define gic_data_rdist_rd_base()	(gic_data_rdist()->rd_base)
 #define gic_data_rdist_sgi_base()	(gic_data_rdist_rd_base() + SZ_64K)
 
-/* Our default, arbitrary priority value. Linux only uses one anyway. */
+/* Our default, arbitrary priority value. Linex only uses one anyway. */
 #define DEFAULT_PMR_VALUE	0xf0
 
 enum gic_intid_range {
@@ -1892,7 +1892,7 @@ static void gic_enable_nmi_support(void)
 	/*
 	 * How priority values are used by the GIC depends on two things:
 	 * the security state of the GIC (controlled by the GICD_CTRL.DS bit)
-	 * and if Group 0 interrupts can be delivered to Linux in the non-secure
+	 * and if Group 0 interrupts can be delivered to Linex in the non-secure
 	 * world as FIQs (controlled by the SCR_EL3.FIQ bit). These affect the
 	 * ICC_PMR_EL1 register and the priority that software assigns to
 	 * interrupts:

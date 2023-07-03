@@ -21,16 +21,16 @@
  * - Power management is supported
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_device.h>
 
 #define CS4270_FORMATS (SNDRV_PCM_FMTBIT_S8      | SNDRV_PCM_FMTBIT_S16_LE  | \
 			SNDRV_PCM_FMTBIT_S18_3LE | SNDRV_PCM_FMTBIT_S20_3LE | \

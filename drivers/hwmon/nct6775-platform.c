@@ -3,20 +3,20 @@
  * nct6775 - Platform driver for the hardware monitoring
  *	     functionality of Nuvoton NCT677x Super-I/O chips
  *
- * Copyright (C) 2012  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2012  Guenter Roeck <linex@roeck-us.net>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/hwmon-vid.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "nct6775.h"
 
@@ -1618,7 +1618,7 @@ static void __exit sensors_nct6775_platform_exit(void)
 	platform_driver_unregister(&nct6775_driver);
 }
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linex@roeck-us.net>");
 MODULE_DESCRIPTION("Platform driver for NCT6775F and compatible chips");
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(HWMON_NCT6775);

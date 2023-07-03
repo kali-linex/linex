@@ -124,28 +124,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
-#include <linux/rtnetlink.h>
+#include <linex/hardirq.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/mii.h>
+#include <linex/if_vlan.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/string.h>
+#include <linex/firmware.h>
+#include <linex/rtnetlink.h>
 #include <asm/unaligned.h>
 
 

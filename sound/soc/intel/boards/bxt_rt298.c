@@ -8,8 +8,8 @@
  *   Intel Skylake I2S Machine driver
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

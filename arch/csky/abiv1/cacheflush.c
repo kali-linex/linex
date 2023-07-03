@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/syscalls.h>
+#include <linex/spinlock.h>
 #include <asm/page.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>

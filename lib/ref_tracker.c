@@ -2,12 +2,12 @@
 
 #define pr_fmt(fmt) "ref_tracker: " fmt
 
-#include <linux/export.h>
-#include <linux/list_sort.h>
-#include <linux/ref_tracker.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
+#include <linex/export.h>
+#include <linex/list_sort.h>
+#include <linex/ref_tracker.h>
+#include <linex/slab.h>
+#include <linex/stacktrace.h>
+#include <linex/stackdepot.h>
 
 #define REF_TRACKER_STACK_ENTRIES 16
 #define STACK_BUF_SIZE 1024

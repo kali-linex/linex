@@ -8,7 +8,7 @@
 #ifndef __ASM_POWERPC_KFENCE_H
 #define __ASM_POWERPC_KFENCE_H
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 #include <asm/pgtable.h>
 
 #ifdef CONFIG_PPC64_ELF_ABI_V1

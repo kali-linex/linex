@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/nvidia/nvidia.c - nVidia fb driver
+ * linex/drivers/video/nvidia/nvidia.c - nVidia fb driver
  *
  * Copyright 2004 Antonino Daplas <adaplas@pol.net>
  *
@@ -9,19 +9,19 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h>
-#include <linux/backlight.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/console.h>
+#include <linex/backlight.h>
 #ifdef CONFIG_BOOTX_TEXT
 #include <asm/btext.h>
 #endif

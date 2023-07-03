@@ -8,19 +8,19 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/of_fdt.h>
-#include <linux/sched/task.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/crash_dump.h>
+#include <linex/acpi.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/sched.h>
+#include <linex/console.h>
+#include <linex/screen_info.h>
+#include <linex/of_fdt.h>
+#include <linex/sched/task.h>
+#include <linex/smp.h>
+#include <linex/efi.h>
+#include <linex/crash_dump.h>
 
 #include <asm/acpi.h>
 #include <asm/alternative.h>

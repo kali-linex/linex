@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/dma-mapping.c
+ *  linex/arch/arm/mm/dma-mapping.c
  *
  *  Copyright (C) 2000-2004 Russell King
  *
  *  DMA uncached mapping support.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/genalloc.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
-#include <linux/cma.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/genalloc.h>
+#include <linex/gfp.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
+#include <linex/highmem.h>
+#include <linex/memblock.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/io.h>
+#include <linex/vmalloc.h>
+#include <linex/sizes.h>
+#include <linex/cma.h>
 
 #include <asm/memory.h>
 #include <asm/highmem.h>

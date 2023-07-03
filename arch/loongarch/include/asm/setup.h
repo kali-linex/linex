@@ -6,7 +6,7 @@
 #ifndef _LOONGARCH_SETUP_H
 #define _LOONGARCH_SETUP_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <uapi/asm/setup.h>
 
 #define VECSIZE 0x200

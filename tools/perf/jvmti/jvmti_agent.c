@@ -35,7 +35,7 @@
 #include <sys/mman.h>
 #include <syscall.h> /* for gettid() */
 #include <err.h>
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "jvmti_agent.h"
 #include "../util/jitdump.h"

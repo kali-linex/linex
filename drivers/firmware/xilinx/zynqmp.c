@@ -10,20 +10,20 @@
  *  Rajan Vaja <rajanv@xilinx.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hashtable.h>
+#include <linex/arm-smccc.h>
+#include <linex/compiler.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/hashtable.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/firmware/xlnx-event-manager.h>
+#include <linex/firmware/xlnx-zynqmp.h>
+#include <linex/firmware/xlnx-event-manager.h>
 #include "zynqmp-debug.h"
 
 /* Max HashMap Order for PM API feature check (1<<7 = 128) */
@@ -78,10 +78,10 @@ static const struct mfd_cell firmware_devs[] = {
 };
 
 /**
- * zynqmp_pm_ret_code() - Convert PMU-FW error codes to Linux error codes
+ * zynqmp_pm_ret_code() - Convert PMU-FW error codes to Linex error codes
  * @ret_status:		PMUFW return code
  *
- * Return: corresponding Linux error code
+ * Return: corresponding Linex error code
  */
 static int zynqmp_pm_ret_code(u32 ret_status)
 {
@@ -1353,7 +1353,7 @@ EXPORT_SYMBOL_GPL(zynqmp_pm_set_requirement);
  * @src:       Source device where PDI is located
  * @address:   PDI src address
  *
- * This function provides support to load PDI from linux
+ * This function provides support to load PDI from linex
  *
  * Return: Returns status, either success or error+reason
  */

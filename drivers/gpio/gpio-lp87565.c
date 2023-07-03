@@ -6,12 +6,12 @@
  * Based on the LP873X driver
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <linex/mfd/lp87565.h>
 
 struct lp87565_gpio {
 	struct gpio_chip chip;

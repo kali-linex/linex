@@ -16,8 +16,8 @@
 #include "desc_constr.h"
 #include "sg_sw_sec4.h"
 #include "caampkc.h"
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
 
 #define DESC_RSA_PUB_LEN	(2 * CAAM_CMD_SZ + SIZEOF_RSA_PUB_PDB)
 #define DESC_RSA_PRIV_F1_LEN	(2 * CAAM_CMD_SZ + \

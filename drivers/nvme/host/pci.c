@@ -4,30 +4,30 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/async.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/blk-integrity.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kstrtox.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/once.h>
-#include <linux/pci.h>
-#include <linux/suspend.h>
-#include <linux/t10-pi.h>
-#include <linux/types.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/sed-opal.h>
-#include <linux/pci-p2pdma.h>
+#include <linex/acpi.h>
+#include <linex/async.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/blk-mq-pci.h>
+#include <linex/blk-integrity.h>
+#include <linex/dmi.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kstrtox.h>
+#include <linex/memremap.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/once.h>
+#include <linex/pci.h>
+#include <linex/suspend.h>
+#include <linex/t10-pi.h>
+#include <linex/types.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/sed-opal.h>
+#include <linex/pci-p2pdma.h>
 
 #include "trace.h"
 #include "nvme.h"
@@ -3509,7 +3509,7 @@ static void __exit nvme_exit(void)
 	flush_workqueue(nvme_wq);
 }
 
-MODULE_AUTHOR("Matthew Wilcox <willy@linux.intel.com>");
+MODULE_AUTHOR("Matthew Wilcox <willy@linex.intel.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("1.0");
 module_init(nvme_init);

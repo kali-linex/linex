@@ -3,27 +3,27 @@
  * Cherryview/Braswell pinctrl driver
  *
  * Copyright (C) 2014, 2020 Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linex.intel.com>
  *
  * This driver is based on the original Cherryview GPIO driver by
  *   Ning Li <ning.li@intel.com>
- *   Alan Cox <alan@linux.intel.com>
+ *   Alan Cox <alan@linex.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/gpio/driver.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/types.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "pinctrl-intel.h"
 
@@ -1371,7 +1371,7 @@ static int chv_gpio_set_intr_line(struct intel_pinctrl *pctrl, unsigned int pin)
 	/*
 	 * The interrupt line selected by the BIOS is already in use by
 	 * another pin, this is a known BIOS bug found on several models.
-	 * But this may also be caused by Linux deciding to use a pin as
+	 * But this may also be caused by Linex deciding to use a pin as
 	 * IRQ which was not expected to be used as such by the BIOS authors,
 	 * so log this at info level only.
 	 */
@@ -1508,7 +1508,7 @@ static void chv_gpio_irq_handler(struct irq_desc *desc)
 }
 
 /*
- * Certain machines seem to hardcode Linux IRQ numbers in their ACPI
+ * Certain machines seem to hardcode Linex IRQ numbers in their ACPI
  * tables. Since we leave GPIOs that are not capable of generating
  * interrupts out of the irqdomain the numbering will be different and
  * cause devices using the hardcoded IRQ numbers fail. In order not to
@@ -1912,6 +1912,6 @@ static void __exit chv_pinctrl_exit(void)
 }
 module_exit(chv_pinctrl_exit);
 
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linex.intel.com>");
 MODULE_DESCRIPTION("Intel Cherryview/Braswell pinctrl driver");
 MODULE_LICENSE("GPL v2");

@@ -12,8 +12,8 @@
 #ifndef __ALPHA_MARVEL__H__
 #define __ALPHA_MARVEL__H__
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
 
 #include <asm/compiler.h>
 

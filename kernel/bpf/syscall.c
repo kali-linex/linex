@@ -1,40 +1,40 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/bpf.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/bpf_trace.h>
-#include <linux/bpf_lirc.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bsearch.h>
-#include <linux/btf.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/vmalloc.h>
-#include <linux/mmzone.h>
-#include <linux/anon_inodes.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/license.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/cred.h>
-#include <linux/timekeeping.h>
-#include <linux/ctype.h>
-#include <linux/nospec.h>
-#include <linux/audit.h>
-#include <uapi/linux/btf.h>
-#include <linux/pgtable.h>
-#include <linux/bpf_lsm.h>
-#include <linux/poll.h>
-#include <linux/sort.h>
-#include <linux/bpf-netns.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/memcontrol.h>
-#include <linux/trace_events.h>
+#include <linex/bpf.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/bpf_trace.h>
+#include <linex/bpf_lirc.h>
+#include <linex/bpf_verifier.h>
+#include <linex/bsearch.h>
+#include <linex/btf.h>
+#include <linex/syscalls.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/vmalloc.h>
+#include <linex/mmzone.h>
+#include <linex/anon_inodes.h>
+#include <linex/fdtable.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/license.h>
+#include <linex/filter.h>
+#include <linex/kernel.h>
+#include <linex/idr.h>
+#include <linex/cred.h>
+#include <linex/timekeeping.h>
+#include <linex/ctype.h>
+#include <linex/nospec.h>
+#include <linex/audit.h>
+#include <uapi/linex/btf.h>
+#include <linex/pgtable.h>
+#include <linex/bpf_lsm.h>
+#include <linex/poll.h>
+#include <linex/sort.h>
+#include <linex/bpf-netns.h>
+#include <linex/rcupdate_trace.h>
+#include <linex/memcontrol.h>
+#include <linex/trace_events.h>
 #include <net/netfilter/nf_bpf_link.h>
 
 #define IS_FD_ARRAY(map) ((map)->map_type == BPF_MAP_TYPE_PERF_EVENT_ARRAY || \
@@ -63,7 +63,7 @@ static const struct bpf_map_ops * const bpf_map_types[] = {
 #define BPF_MAP_TYPE(_id, _ops) \
 	[_id] = &_ops,
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linex/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -1107,7 +1107,7 @@ static int map_create(union bpf_attr *attr)
 	if (err)
 		return -EINVAL;
 
-	if (attr->btf_vmlinux_value_type_id) {
+	if (attr->btf_vmlinex_value_type_id) {
 		if (attr->map_type != BPF_MAP_TYPE_STRUCT_OPS ||
 		    attr->btf_key_type_id || attr->btf_value_type_id)
 			return -EINVAL;
@@ -1226,7 +1226,7 @@ static int map_create(union bpf_attr *attr)
 	     * counter part.  Thus, attr->btf_fd has
 	     * to be valid also.
 	     */
-	    attr->btf_vmlinux_value_type_id) {
+	    attr->btf_vmlinex_value_type_id) {
 		struct btf *btf;
 
 		btf = btf_get_by_fd(attr->btf_fd);
@@ -1250,8 +1250,8 @@ static int map_create(union bpf_attr *attr)
 
 		map->btf_key_type_id = attr->btf_key_type_id;
 		map->btf_value_type_id = attr->btf_value_type_id;
-		map->btf_vmlinux_value_type_id =
-			attr->btf_vmlinux_value_type_id;
+		map->btf_vmlinex_value_type_id =
+			attr->btf_vmlinex_value_type_id;
 	}
 
 	err = security_bpf_map_alloc(map);
@@ -2005,7 +2005,7 @@ static const struct bpf_prog_ops * const bpf_prog_types[] = {
 	[_id] = & _name ## _prog_ops,
 #define BPF_MAP_TYPE(_id, _ops)
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linex/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -2614,8 +2614,8 @@ static int bpf_prog_load(union bpf_attr *attr, bpfptr_t uattr, u32 uattr_size)
 			}
 		}
 	} else if (attr->attach_btf_id) {
-		/* fall back to vmlinux BTF, if BTF type ID is specified */
-		attach_btf = bpf_get_btf_vmlinux();
+		/* fall back to vmlinex BTF, if BTF type ID is specified */
+		attach_btf = bpf_get_btf_vmlinex();
 		if (IS_ERR(attach_btf))
 			return PTR_ERR(attach_btf);
 		if (!attach_btf)
@@ -2885,7 +2885,7 @@ static int bpf_link_release(struct inode *inode, struct file *filp)
 #define BPF_LINK_TYPE(_id, _name) [_id] = #_name,
 static const char *bpf_link_type_strs[] = {
 	[BPF_LINK_TYPE_UNSPEC] = "<invalid>",
-#include <linux/bpf_types.h>
+#include <linex/bpf_types.h>
 };
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
@@ -4349,7 +4349,7 @@ static int bpf_map_get_info_by_fd(struct file *file,
 		info.btf_key_type_id = map->btf_key_type_id;
 		info.btf_value_type_id = map->btf_value_type_id;
 	}
-	info.btf_vmlinux_value_type_id = map->btf_vmlinux_value_type_id;
+	info.btf_vmlinex_value_type_id = map->btf_vmlinex_value_type_id;
 
 	if (bpf_map_is_offloaded(map)) {
 		err = bpf_map_offload_info_fill(&info, map);

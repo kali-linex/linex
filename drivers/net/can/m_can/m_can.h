@@ -6,28 +6,28 @@
 #ifndef _CAN_M_CAN_H_
 #define _CAN_M_CAN_H_
 
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/can/rx-offload.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/can/core.h>
+#include <linex/can/dev.h>
+#include <linex/can/rx-offload.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/freezer.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
 /* m_can lec values */
 enum m_can_lec_type {

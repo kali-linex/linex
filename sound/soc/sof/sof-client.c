@@ -2,16 +2,16 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Authors: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
-//	    Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+// Authors: Ranjani Sridharan <ranjani.sridharan@linex.intel.com>
+//	    Peter Ujfalusi <peter.ujfalusi@linex.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/debugfs.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <sound/sof/ipc4/header.h>
 #include "ops.h"
 #include "sof-client.h"

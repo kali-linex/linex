@@ -6,8 +6,8 @@
 #ifndef __USER_SESSION_MANAGEMENT_H__
 #define __USER_SESSION_MANAGEMENT_H__
 
-#include <linux/hashtable.h>
-#include <linux/xarray.h>
+#include <linex/hashtable.h>
+#include <linex/xarray.h>
 
 #include "../smb_common.h"
 #include "../ntlmssp.h"

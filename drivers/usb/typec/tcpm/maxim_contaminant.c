@@ -5,13 +5,13 @@
  * USB-C module to reduce wakeups due to contaminants.
  */
 
-#include <linux/device.h>
-#include <linux/irqreturn.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec.h>
+#include <linex/device.h>
+#include <linex/irqreturn.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/usb/tcpci.h>
+#include <linex/usb/tcpm.h>
+#include <linex/usb/typec.h>
 
 #include "tcpci_maxim.h"
 

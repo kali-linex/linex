@@ -6,15 +6,15 @@
  *	Marek Belisko <marek.belisko@streamunlimited.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

@@ -2,9 +2,9 @@
 /* Copyright (c) 2020, Intel Corporation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
+#include <linex/clk-provider.h>
+#include <linex/pci.h>
+#include <linex/dmi.h>
 #include "dwmac-intel.h"
 #include "dwmac4.h"
 #include "stmmac.h"

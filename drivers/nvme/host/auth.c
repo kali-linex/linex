@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2020 Hannes Reinecke, SUSE Linux
+ * Copyright (c) 2020 Hannes Reinecke, SUSE Linex
  */
 
-#include <linux/crc32.h>
-#include <linux/base64.h>
-#include <linux/prandom.h>
+#include <linex/crc32.h>
+#include <linex/base64.h>
+#include <linex/prandom.h>
 #include <asm/unaligned.h>
 #include <crypto/hash.h>
 #include <crypto/dh.h>
 #include "nvme.h"
 #include "fabrics.h"
-#include <linux/nvme-auth.h>
+#include <linex/nvme-auth.h>
 
 #define CHAP_BUF_SIZE 4096
 static struct kmem_cache *nvme_chap_buf_cache;

@@ -11,8 +11,8 @@
 #ifndef __AA_RESOURCE_H
 #define __AA_RESOURCE_H
 
-#include <linux/resource.h>
-#include <linux/sched.h>
+#include <linex/resource.h>
+#include <linex/sched.h>
 
 #include "apparmorfs.h"
 

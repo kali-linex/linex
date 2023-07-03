@@ -3,11 +3,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/uuid.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/uuid.h>
 
 struct test_uuid_data {
 	const char *uuid;
@@ -129,5 +129,5 @@ static void __exit test_uuid_exit(void)
 }
 module_exit(test_uuid_exit);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linex.intel.com>");
 MODULE_LICENSE("Dual BSD/GPL");

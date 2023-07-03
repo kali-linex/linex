@@ -5,11 +5,11 @@
  * Copyright (C) IBM Corporation 2016
  */
 
-#include <linux/delay.h>
-#include <linux/fsi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/fsi.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #include "fsi-master.h"
 

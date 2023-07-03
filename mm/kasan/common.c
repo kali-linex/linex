@@ -9,23 +9,23 @@
  *        Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/kasan.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/memblock.h>
+#include <linex/memory.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/slab.h>
+#include <linex/stacktrace.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/bug.h>
 
 #include "kasan.h"
 #include "../slab.h"

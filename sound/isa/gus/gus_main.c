@@ -4,12 +4,12 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/control.h>

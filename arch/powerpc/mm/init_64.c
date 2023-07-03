@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -16,30 +16,30 @@
 
 #undef DEBUG
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/idr.h>
-#include <linux/nodemask.h>
-#include <linux/module.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/memremap.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/stddef.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/highmem.h>
+#include <linex/idr.h>
+#include <linex/nodemask.h>
+#include <linex/module.h>
+#include <linex/poison.h>
+#include <linex/memblock.h>
+#include <linex/hugetlb.h>
+#include <linex/slab.h>
+#include <linex/of_fdt.h>
+#include <linex/libfdt.h>
+#include <linex/memremap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>
@@ -48,7 +48,7 @@
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/smp.h>
 #include <asm/machdep.h>
 #include <asm/tlb.h>
@@ -90,7 +90,7 @@ static struct page * __meminit vmemmap_subsection_start(unsigned long vmemmap_ad
  * If any subsection in the 16G range mapped by vmemmap is valid we consider the
  * vmemmap populated (There is a page table entry already present). We can't do
  * a page table lookup here because with the hash translation we don't keep
- * vmemmap details in linux page table.
+ * vmemmap details in linex page table.
  */
 static int __meminit vmemmap_populated(unsigned long vmemmap_addr, int vmemmap_map_size)
 {

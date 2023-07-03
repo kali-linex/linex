@@ -15,9 +15,9 @@
  */
 
 #include "udfdecl.h"
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

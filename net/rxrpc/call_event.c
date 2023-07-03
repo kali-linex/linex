@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/circ_buf.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
+#include <linex/module.h>
+#include <linex/circ_buf.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/udp.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include "ar-internal.h"

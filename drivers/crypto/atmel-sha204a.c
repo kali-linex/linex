@@ -5,17 +5,17 @@
  * Copyright (c) 2019 Linaro, Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 #include "atmel-i2c.h"
 
 static void atmel_sha204a_rng_done(struct atmel_i2c_work_data *work_data,

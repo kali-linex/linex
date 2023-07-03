@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_CACHEFLUSH_H
 #define _ASM_RISCV_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 
 static inline void local_flush_icache_all(void)
 {

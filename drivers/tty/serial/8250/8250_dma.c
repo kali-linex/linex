@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2013 Intel Corporation
  */
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_reg.h>
-#include <linux/dma-mapping.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial_reg.h>
+#include <linex/dma-mapping.h>
 
 #include "8250.h"
 

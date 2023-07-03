@@ -5,13 +5,13 @@
  * -------------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/nfc.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/nfc.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
 #include <net/nfc/nfc.h>
 #include <net/nfc/nci_core.h>
 

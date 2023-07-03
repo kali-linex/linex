@@ -5,33 +5,33 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/ctype.h>
-#include <linux/utsname.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/pagevec.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
-#include <linux/uuid.h>
-#include <linux/uaccess.h>
+#include <linex/fs.h>
+#include <linex/net.h>
+#include <linex/string.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/ctype.h>
+#include <linex/utsname.h>
+#include <linex/mempool.h>
+#include <linex/delay.h>
+#include <linex/completion.h>
+#include <linex/kthread.h>
+#include <linex/pagevec.h>
+#include <linex/freezer.h>
+#include <linex/namei.h>
+#include <linex/uuid.h>
+#include <linex/uaccess.h>
 #include <asm/processor.h>
-#include <linux/inet.h>
-#include <linux/module.h>
+#include <linex/inet.h>
+#include <linex/module.h>
 #include <keys/user-type.h>
 #include <net/ipv6.h>
-#include <linux/parser.h>
-#include <linux/bvec.h>
+#include <linex/parser.h>
+#include <linex/bvec.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -2265,7 +2265,7 @@ cifs_get_smb_ses(struct TCP_Server_Info *server, struct smb3_fs_context *ctx)
 	if (ctx->domainauto)
 		ses->domainAuto = ctx->domainauto;
 	ses->cred_uid = ctx->cred_uid;
-	ses->linux_uid = ctx->linux_uid;
+	ses->linex_uid = ctx->linex_uid;
 
 	ses->sectype = ctx->sectype;
 	ses->sign = ctx->sign;
@@ -2520,7 +2520,7 @@ cifs_get_tcon(struct cifs_ses *ses, struct smb3_fs_context *ctx)
 		}
 	}
 
-	if (ctx->linux_ext) {
+	if (ctx->linex_ext) {
 		if (ses->server->posix_ext_supported) {
 			tcon->posix_extensions = true;
 			pr_warn_once("SMB3.11 POSIX Extensions are experimental\n");
@@ -2710,8 +2710,8 @@ compare_mount_options(struct super_block *sb, struct cifs_mnt_data *mnt_data)
 	if (new->ctx->rsize && new->ctx->rsize < old->ctx->rsize)
 		return 0;
 
-	if (!uid_eq(old->ctx->linux_uid, new->ctx->linux_uid) ||
-	    !gid_eq(old->ctx->linux_gid, new->ctx->linux_gid))
+	if (!uid_eq(old->ctx->linex_uid, new->ctx->linex_uid) ||
+	    !gid_eq(old->ctx->linex_gid, new->ctx->linex_gid))
 		return 0;
 
 	if (old->ctx->file_mode != new->ctx->file_mode ||
@@ -2919,7 +2919,7 @@ ip_rfc1001_connect(struct TCP_Server_Info *server)
 			      RFC1001_NAME_LEN_WITH_NULL);
 	else
 		rfc1002mangle(req.trailer.session_req.calling_name,
-			      "LINUX_CIFS_CLNT",
+			      "LINEX_CIFS_CLNT",
 			      RFC1001_NAME_LEN_WITH_NULL);
 
 	/*
@@ -3087,10 +3087,10 @@ void reset_cifs_unix_caps(unsigned int xid, struct cifs_tcon *tcon,
 	 */
 	__u64 saved_cap = le64_to_cpu(tcon->fsUnixInfo.Capability);
 
-	if (ctx && ctx->no_linux_ext) {
+	if (ctx && ctx->no_linex_ext) {
 		tcon->fsUnixInfo.Capability = 0;
 		tcon->unix_ext = 0; /* Unix Extensions disabled */
-		cifs_dbg(FYI, "Linux protocol extensions disabled\n");
+		cifs_dbg(FYI, "Linex protocol extensions disabled\n");
 		return;
 	} else if (ctx)
 		tcon->unix_ext = 1; /* Unix Extensions supported */
@@ -3391,7 +3391,7 @@ static int mount_setup_tlink(struct cifs_sb_info *cifs_sb, struct cifs_ses *ses,
 	if (tlink == NULL)
 		return -ENOMEM;
 
-	tlink->tl_uid = ses->linux_uid;
+	tlink->tl_uid = ses->linex_uid;
 	tlink->tl_tcon = tcon;
 	tlink->tl_time = jiffies;
 	set_bit(TCON_LINK_MASTER, &tlink->tl_flags);
@@ -3835,7 +3835,7 @@ cifs_setup_session(const unsigned int xid, struct cifs_ses *ses,
 
 	if (!is_binding) {
 		ses->capabilities = server->capabilities;
-		if (!linuxExtEnabled)
+		if (!linexExtEnabled)
 			ses->capabilities &= (~server->vals->cap_unix);
 
 		if (ses->auth_key.response) {
@@ -3902,7 +3902,7 @@ cifs_construct_tcon(struct cifs_sb_info *cifs_sb, kuid_t fsuid)
 		return ERR_PTR(-ENOMEM);
 
 	ctx->local_nls = cifs_sb->local_nls;
-	ctx->linux_uid = fsuid;
+	ctx->linex_uid = fsuid;
 	ctx->cred_uid = fsuid;
 	ctx->UNC = master_tcon->tree_name;
 	ctx->retry = master_tcon->retry;
@@ -3913,8 +3913,8 @@ cifs_construct_tcon(struct cifs_sb_info *cifs_sb, kuid_t fsuid)
 	ctx->resilient = master_tcon->use_resilient;
 	ctx->persistent = master_tcon->use_persistent;
 	ctx->handle_timeout = master_tcon->handle_timeout;
-	ctx->no_linux_ext = !master_tcon->unix_ext;
-	ctx->linux_ext = master_tcon->posix_extensions;
+	ctx->no_linex_ext = !master_tcon->unix_ext;
+	ctx->linex_ext = master_tcon->posix_extensions;
 	ctx->sectype = master_tcon->ses->sectype;
 	ctx->sign = master_tcon->ses->sign;
 	ctx->seal = master_tcon->seal;

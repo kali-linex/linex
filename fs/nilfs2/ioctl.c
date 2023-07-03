@@ -7,16 +7,16 @@
  * Written by Koji Sato.
  */
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/capability.h>	/* capable() */
-#include <linux/uaccess.h>	/* copy_from_user(), copy_to_user() */
-#include <linux/vmalloc.h>
-#include <linux/compat.h>	/* compat_ptr() */
-#include <linux/mount.h>	/* mnt_want_write_file(), mnt_drop_write_file() */
-#include <linux/buffer_head.h>
-#include <linux/fileattr.h>
+#include <linex/fs.h>
+#include <linex/wait.h>
+#include <linex/slab.h>
+#include <linex/capability.h>	/* capable() */
+#include <linex/uaccess.h>	/* copy_from_user(), copy_to_user() */
+#include <linex/vmalloc.h>
+#include <linex/compat.h>	/* compat_ptr() */
+#include <linex/mount.h>	/* mnt_want_write_file(), mnt_drop_write_file() */
+#include <linex/buffer_head.h>
+#include <linex/fileattr.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "bmap.h"

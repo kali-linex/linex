@@ -5,16 +5,16 @@
  * Copyright (c) 2012 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/string.h>
+#include <linex/netlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_tables.h>
@@ -399,6 +399,6 @@ module_init(nft_nat_module_init);
 module_exit(nft_nat_module_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Tomasz Bursztyka <tomasz.bursztyka@linux.intel.com>");
+MODULE_AUTHOR("Tomasz Bursztyka <tomasz.bursztyka@linex.intel.com>");
 MODULE_ALIAS_NFT_EXPR("nat");
 MODULE_DESCRIPTION("Network Address Translation support");

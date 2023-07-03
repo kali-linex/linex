@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/pinctrl/pinctrl-lantiq.h
- *  based on linux/drivers/pinctrl/pinctrl-pxa3xx.h
+ *  linex/drivers/pinctrl/pinctrl-lantiq.h
+ *  based on linex/drivers/pinctrl/pinctrl-pxa3xx.h
  *
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
@@ -9,13 +9,13 @@
 #ifndef __PINCTRL_LANTIQ_H
 #define __PINCTRL_LANTIQ_H
 
-#include <linux/clkdev.h>
+#include <linex/clkdev.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "core.h"
 

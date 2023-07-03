@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/video/mmp/hw/mmp_ctrl.c
+ * linex/drivers/video/mmp/hw/mmp_ctrl.c
  * Marvell MMP series Display Controller support
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -8,22 +8,22 @@
  *          Lisa Du <cldu@marvell.com>
  *          Zhou Zhu <zzhu3@marvell.com>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/vmalloc.h>
+#include <linex/uaccess.h>
+#include <linex/kthread.h>
+#include <linex/io.h>
 
 #include "mmp_ctrl.h"
 

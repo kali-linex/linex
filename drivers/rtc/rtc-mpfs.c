@@ -7,17 +7,17 @@
  * Author: Daire McNamara <daire.mcnamara@microchip.com>
  *         & Conor Dooley <conor.dooley@microchip.com>
  */
-#include "linux/bits.h"
-#include "linux/iopoll.h"
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
+#include "linex/bits.h"
+#include "linex/iopoll.h"
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/slab.h>
+#include <linex/rtc.h>
 
 #define CONTROL_REG		0x00
 #define MODE_REG		0x04

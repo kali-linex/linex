@@ -42,17 +42,17 @@
 
 #define pr_fmt(fmt) "dvb_net: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/nospec.h>
-#include <linux/etherdevice.h>
-#include <linux/dvb/net.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/crc32.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/nospec.h>
+#include <linex/etherdevice.h>
+#include <linex/dvb/net.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
+#include <linex/crc32.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
 
 #include <media/dvb_demux.h>
 #include <media/dvb_net.h>
@@ -123,7 +123,7 @@ struct dvb_net_priv {
  *	assume 802.3 if the type field is short enough to be a length.
  *	This is normal practice and works for any 'now in use' protocol.
  *
- *  stolen from eth.c out of the linux kernel, hacked for dvb-device
+ *  stolen from eth.c out of the linex kernel, hacked for dvb-device
  *  by Michael Holzt <kju@debian.org>
  */
 static __be16 dvb_net_eth_type_trans(struct sk_buff *skb,

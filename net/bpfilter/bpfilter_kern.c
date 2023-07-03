@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/umh.h>
-#include <linux/bpfilter.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/umh.h>
+#include <linex/bpfilter.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/fs.h>
+#include <linex/file.h>
 #include "msgfmt.h"
 
 extern char bpfilter_umh_start;

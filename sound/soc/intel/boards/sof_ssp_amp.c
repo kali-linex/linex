@@ -7,11 +7,11 @@
  * with RT1308/CS35L41 codec.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

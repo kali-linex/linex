@@ -6,8 +6,8 @@
 #ifndef _ASM_RISCV_PGTABLE_H
 #define _ASM_RISCV_PGTABLE_H
 
-#include <linux/mmzone.h>
-#include <linux/sizes.h>
+#include <linex/mmzone.h>
+#include <linex/sizes.h>
 
 #include <asm/pgtable-bits.h>
 
@@ -110,7 +110,7 @@
 
 #include <asm/page.h>
 #include <asm/tlbflush.h>
-#include <linux/mm_types.h>
+#include <linex/mm_types.h>
 
 #define __page_val_to_pfn(_val)  (((_val) & _PAGE_PFN_MASK) >> _PAGE_PFN_SHIFT)
 
@@ -120,7 +120,7 @@
 #include <asm/pgtable-32.h>
 #endif /* CONFIG_64BIT */
 
-#include <linux/page_table_check.h>
+#include <linex/page_table_check.h>
 
 #ifdef CONFIG_XIP_KERNEL
 #define XIP_FIXUP(addr) ({							\
@@ -817,7 +817,7 @@ static inline pte_t pte_swp_clear_exclusive(pte_t pte)
 #endif /* CONFIG_ARCH_ENABLE_THP_MIGRATION */
 
 /*
- * In the RV64 Linux scheme, we give the user half of the virtual-address space
+ * In the RV64 Linex scheme, we give the user half of the virtual-address space
  * and give the kernel the other (upper) half.
  */
 #ifdef CONFIG_64BIT

@@ -8,26 +8,26 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/fsnotify.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/fsnotify.h>
+#include <linex/backing-dev.h>
+#include <linex/init.h>
+#include <linex/ioctl.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/pagemap.h>
+#include <linex/poll.h>
+#include <linex/of.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "spufs.h"
 

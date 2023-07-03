@@ -3,14 +3,14 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/parser.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <linex/list.h>
+#include <linex/jhash.h>
+#include <linex/slab.h>
+#include <linex/rwsem.h>
+#include <linex/parser.h>
+#include <linex/namei.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
 
 #include "share_config.h"
 #include "user_config.h"

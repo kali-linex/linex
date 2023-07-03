@@ -2,25 +2,25 @@
 /* drivers/mtd/maps/plat-ram.c
  *
  * (c) 2004-2005 Simtec Electronics
- *	http://www.simtec.co.uk/products/SWLINUX/
+ *	http://www.simtec.co.uk/products/SWLINEX/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Generic platform device based RAM map
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/plat-ram.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/plat-ram.h>
 
 #include <asm/io.h>
 

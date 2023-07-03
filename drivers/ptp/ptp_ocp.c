@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
 
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/serial_8250.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/i2c-xiic.h>
-#include <linux/platform_data/i2c-ocores.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/xilinx_spi.h>
-#include <linux/spi/altera.h>
+#include <linex/bits.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/serial_8250.h>
+#include <linex/clkdev.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/i2c-xiic.h>
+#include <linex/platform_data/i2c-ocores.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/xilinx_spi.h>
+#include <linex/spi/altera.h>
 #include <net/devlink.h>
-#include <linux/i2c.h>
-#include <linux/mtd/mtd.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/crc16.h>
+#include <linex/i2c.h>
+#include <linex/mtd/mtd.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/crc16.h>
 
 #define PCI_VENDOR_ID_FACEBOOK			0x1d9b
 #define PCI_DEVICE_ID_FACEBOOK_TIMECARD		0x0400

@@ -11,17 +11,17 @@
  * UEvent sending added by Evgeny Romanov <romanov@neurosoft.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/swab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/ds2782_battery.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/swab.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/idr.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/ds2782_battery.h>
 
 #define DS2782_REG_RARC		0x06	/* Remaining active relative capacity */
 

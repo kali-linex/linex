@@ -1,5 +1,5 @@
-#include <linux/unistd.h>
-#include <linux/bpf.h>
+#include <linex/unistd.h>
+#include <linex/bpf.h>
 
 #include <stdio.h>
 #include <stdlib.h>

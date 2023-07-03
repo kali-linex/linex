@@ -10,15 +10,15 @@
  *  Raphael Derosso Pereira <raphaelpereira@gmail.com>
  *  Copyright (C) 2009
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
 
 /* Address for each register */
 #define CHIP_ID            0x00

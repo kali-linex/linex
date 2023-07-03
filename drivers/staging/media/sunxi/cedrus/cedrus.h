@@ -22,9 +22,9 @@
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>
 
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linex/iopoll.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
 
 #define CEDRUS_NAME			"cedrus"
 

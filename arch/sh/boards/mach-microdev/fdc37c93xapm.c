@@ -8,10 +8,10 @@
  *
  * SuperH SH4-202 MicroDev board support.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/err.h>
 #include <mach/microdev.h>
 
 #define SMSC_CONFIG_PORT_ADDR	 (0x3F0)

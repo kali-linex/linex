@@ -6,22 +6,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/unistd.h>
-#include <linux/property.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mdio.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/unistd.h>
+#include <linex/property.h>
 
 void mdio_device_free(struct mdio_device *mdiodev)
 {

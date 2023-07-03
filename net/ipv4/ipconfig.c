@@ -18,7 +18,7 @@
  *
  *  DHCP support added.  To users this looks like a whole separate
  *  protocol, but we know it's just a bag on the side of BOOTP.
- *		-- Chip Salzenberg <chip@valinux.com>, May 2000
+ *		-- Chip Salzenberg <chip@valinex.com>, May 2000
  *
  *  Ported DHCP support from 2.2.16 to 2.4.0-test4
  *              -- Eric Biederman <ebiederman@lnxi.com>, 30 Aug 2000
@@ -33,39 +33,39 @@
  *              --  Chris Novakovic <chris@chrisn.me.uk>, April 2018
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/delay.h>
-#include <linux/nfs_fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/jiffies.h>
+#include <linex/random.h>
+#include <linex/init.h>
+#include <linex/utsname.h>
+#include <linex/in.h>
+#include <linex/if.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/socket.h>
+#include <linex/route.h>
+#include <linex/udp.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/major.h>
+#include <linex/root_dev.h>
+#include <linex/delay.h>
+#include <linex/nfs_fs.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include <net/net_namespace.h>
 #include <net/arp.h>
 #include <net/ip.h>
 #include <net/ipconfig.h>
 #include <net/route.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <net/checksum.h>
 #include <asm/processor.h>
 

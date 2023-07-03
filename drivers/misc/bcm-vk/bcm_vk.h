@@ -6,18 +6,18 @@
 #ifndef BCM_VK_H
 #define BCM_VK_H
 
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/irq.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/misc/bcm_vk.h>
+#include <linex/atomic.h>
+#include <linex/firmware.h>
+#include <linex/irq.h>
+#include <linex/kref.h>
+#include <linex/miscdevice.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/poll.h>
+#include <linex/sched/signal.h>
+#include <linex/tty.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/misc/bcm_vk.h>
 
 #include "bcm_vk_msg.h"
 

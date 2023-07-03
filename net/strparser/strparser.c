@@ -5,22 +5,22 @@
  * Copyright (c) 2016 Tom Herbert <tom@herbertland.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linex/bpf.h>
+#include <linex/errno.h>
+#include <linex/errqueue.h>
+#include <linex/file.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/poll.h>
+#include <linex/rculist.h>
+#include <linex/skbuff.h>
+#include <linex/socket.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
 #include <net/strparser.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>

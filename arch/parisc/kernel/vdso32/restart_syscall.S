@@ -9,7 +9,7 @@
 #include <asm/unistd.h>
 #include <asm/vdso.h>
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 	.text
 

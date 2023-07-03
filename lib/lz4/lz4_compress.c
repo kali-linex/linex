@@ -33,10 +33,10 @@
 /*-************************************
  *	Dependencies
  **************************************/
-#include <linux/lz4.h>
+#include <linex/lz4.h>
 #include "lz4defs.h"
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
 #include <asm/unaligned.h>
 
 static const int LZ4_minLength = (MFLIMIT + 1);

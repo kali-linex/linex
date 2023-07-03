@@ -9,14 +9,14 @@
  * Major contributions and discoveries by Russell King.
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/vexpress.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
+#include <linex/vexpress.h>
 
 #include <drm/drm_fourcc.h>
 

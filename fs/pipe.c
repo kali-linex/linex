@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/pipe.c
+ *  linex/fs/pipe.c
  *
  *  Copyright (C) 1991, 1992, 1999  Linus Torvalds
  */
 
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/log2.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/magic.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/uio.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/audit.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <linux/memcontrol.h>
-#include <linux/watch_queue.h>
-#include <linux/sysctl.h>
+#include <linex/mm.h>
+#include <linex/file.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/log2.h>
+#include <linex/mount.h>
+#include <linex/pseudo_fs.h>
+#include <linex/magic.h>
+#include <linex/pipe_fs_i.h>
+#include <linex/uio.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/audit.h>
+#include <linex/syscalls.h>
+#include <linex/fcntl.h>
+#include <linex/memcontrol.h>
+#include <linex/watch_queue.h>
+#include <linex/sysctl.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ioctls.h>
 
 #include "internal.h"
@@ -688,7 +688,7 @@ pipe_poll(struct file *filp, poll_table *wait)
 		if (!pipe_full(head, tail, pipe->max_usage))
 			mask |= EPOLLOUT | EPOLLWRNORM;
 		/*
-		 * Most Unices do not set EPOLLERR for FIFOs but on Linux they
+		 * Most Unices do not set EPOLLERR for FIFOs but on Linex they
 		 * behave exactly like pipes for poll().
 		 */
 		if (!pipe->readers)

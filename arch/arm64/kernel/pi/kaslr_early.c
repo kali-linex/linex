@@ -5,12 +5,12 @@
 // NOTE: code in this file runs *very* early, and is not permitted to use
 // global variables or anything that relies on absolute addressing.
 
-#include <linux/libfdt.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
-#include <linux/string.h>
+#include <linex/libfdt.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
+#include <linex/sizes.h>
+#include <linex/string.h>
 
 #include <asm/archrandom.h>
 #include <asm/memory.h>

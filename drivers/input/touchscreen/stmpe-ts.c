@@ -6,21 +6,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/input/touchscreen.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/workqueue.h>
 
-#include <linux/mfd/stmpe.h>
+#include <linex/mfd/stmpe.h>
 
 /* Register layouts and functionalities are identical on all stmpexxx variants
  * with touchscreen controller

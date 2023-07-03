@@ -12,14 +12,14 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm_types.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm_types.h>
+#include <linex/tick.h>
+#include <linex/uaccess.h>
 
 #include <asm/unistd.h>
 #include <asm/traps.h>

@@ -4,15 +4,15 @@
  * Copyright (C) 1999 kaz Kojima
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/init.h>
+#include <linex/delay.h>
 
 #include <asm/io.h>
 #include <mach-se/mach/se.h>
@@ -69,7 +69,7 @@ static void stnic_init (struct net_device *dev);
 static u32 stnic_msg_enable;
 
 module_param_named(msg_enable, stnic_msg_enable, uint, 0444);
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see linex/netdevice.h for bitmap)");
 
 /* SH7750 specific read/write io. */
 static inline void

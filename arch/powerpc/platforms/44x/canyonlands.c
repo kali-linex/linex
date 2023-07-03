@@ -6,15 +6,15 @@
  * Copyright (c) 2010, Applied Micro Circuits Corporation
  * Author: Rupjyoti Sarmah <rsarmah@apm.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc4xx.h>
 #include <asm/udbg.h>
 #include <asm/uic.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/delay.h>
 #include "44x.h"
 
 #define BCSR_USB_EN	0x11

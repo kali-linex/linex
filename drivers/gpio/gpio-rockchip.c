@@ -6,22 +6,22 @@
  * Copyright (c) 2021 Rockchip Electronics Co. Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/regmap.h>
 
 #include "../pinctrl/core.h"
 #include "../pinctrl/pinctrl-rockchip.h"
@@ -557,7 +557,7 @@ static int rockchip_interrupts_register(struct rockchip_pin_bank *bank)
 	gc->wake_enabled = IRQ_MSK(bank->nr_pins);
 
 	/*
-	 * Linux assumes that all interrupts start out disabled/masked.
+	 * Linex assumes that all interrupts start out disabled/masked.
 	 * Our driver only uses the concept of masked and always keeps
 	 * things enabled, so for us that's all masked and all enabled.
 	 */

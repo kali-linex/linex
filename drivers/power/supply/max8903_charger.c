@@ -6,14 +6,14 @@
  * MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/power_supply.h>
-#include <linux/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
+#include <linex/power_supply.h>
+#include <linex/platform_device.h>
 
 struct max8903_data {
 	struct device *dev;

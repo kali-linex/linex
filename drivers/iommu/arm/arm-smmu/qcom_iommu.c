@@ -6,30 +6,30 @@
  * Copyright (C) 2017 Red Hat
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/kconfig.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/atomic.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/io-pgtable.h>
+#include <linex/iommu.h>
+#include <linex/iopoll.h>
+#include <linex/kconfig.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "arm-smmu.h"
 

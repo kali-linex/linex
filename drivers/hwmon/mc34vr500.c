@@ -5,18 +5,18 @@
  * Author: Mario Kicherer <dev@kicherer.org>
  */
 
-#include <linux/bits.h>
-#include <linux/dev_printk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/dev_printk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/hwmon.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/irqreturn.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
 #define MC34VR500_I2C_ADDR		0x08
 #define MC34VR500_DEVICEID_VALUE	0x14

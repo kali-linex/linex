@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
-#include <linux/uio.h>
+#include <linex/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/gfp.h>
+#include <linex/cpu.h>
+#include <linex/uio.h>
 #include <asm/asm-extable.h>
 #include <asm/ctl_reg.h>
 #include <asm/io.h>

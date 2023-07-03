@@ -1,18 +1,18 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/notifier.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/vport.h>
 #include "mlx5_core.h"
 #include "mlx5_irq.h"
 #include "pci_irq.h"
 #include "lib/sf.h"
 #include "lib/eq.h"
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linex/cpu_rmap.h>
 #endif
 
 #define MLX5_SFS_PER_CTRL_IRQ 64

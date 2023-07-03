@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/arm/ep93xx-pcm.c - EP93xx ALSA PCM interface
+ * linex/sound/arm/ep93xx-pcm.c - EP93xx ALSA PCM interface
  *
  * Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  * Copyright (C) 2006 Applied Data Systems
@@ -9,16 +9,16 @@
  *   Copyright (c) 2008 Ryan Mallon
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/dmaengine.h>
 
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/dmaengine_pcm.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <linex/platform_data/dma-ep93xx.h>
 
 #include "ep93xx-pcm.h"
 

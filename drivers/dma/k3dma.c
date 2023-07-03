@@ -3,22 +3,22 @@
  * Copyright (c) 2013 - 2015 Linaro Ltd.
  * Copyright (c) 2013 HiSilicon Limited.
  */
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/of_dma.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/dmaengine.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/of_dma.h>
 
 #include "virt-dma.h"
 

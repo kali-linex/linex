@@ -8,9 +8,9 @@
 #ifndef _CRYPTO_HASH_H
 #define _CRYPTO_HASH_H
 
-#include <linux/atomic.h>
-#include <linux/crypto.h>
-#include <linux/string.h>
+#include <linex/atomic.h>
+#include <linex/crypto.h>
+#include <linex/string.h>
 
 struct crypto_ahash;
 

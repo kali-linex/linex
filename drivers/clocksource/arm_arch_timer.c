@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/clocksource/arm_arch_timer.c
+ *  linex/drivers/clocksource/arm_arch_timer.c
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved
@@ -8,26 +8,26 @@
 
 #define pr_fmt(fmt) 	"arch_timer: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/clocksource_ids.h>
-#include <linux/interrupt.h>
-#include <linux/kstrtox.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/ptp_kvm.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/clocksource_ids.h>
+#include <linex/interrupt.h>
+#include <linex/kstrtox.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/sched/clock.h>
+#include <linex/sched_clock.h>
+#include <linex/acpi.h>
+#include <linex/arm-smccc.h>
+#include <linex/ptp_kvm.h>
 
 #include <asm/arch_timer.h>
 #include <asm/virt.h>

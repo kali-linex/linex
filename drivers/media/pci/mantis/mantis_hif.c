@@ -6,11 +6,11 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 #include <asm/io.h>
 
 #include <media/dmxdev.h>

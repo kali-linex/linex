@@ -5,15 +5,15 @@
  * Copyright (C) 2002 David S. Miller.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
+#include <linex/moduleloader.h>
+#include <linex/kernel.h>
+#include <linex/elf.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/gfp.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/mm.h>
 
 #include <asm/processor.h>
 #include <asm/spitfire.h>
@@ -23,7 +23,7 @@
 
 #ifdef CONFIG_SPARC64
 
-#include <linux/jump_label.h>
+#include <linex/jump_label.h>
 
 static void *module_map(unsigned long size)
 {

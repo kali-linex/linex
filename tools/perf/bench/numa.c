@@ -28,10 +28,10 @@
 #include <sys/wait.h>
 #include <sys/prctl.h>
 #include <sys/types.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
-#include <linux/numa.h>
-#include <linux/zalloc.h>
+#include <linex/kernel.h>
+#include <linex/time64.h>
+#include <linex/numa.h>
+#include <linex/zalloc.h>
 
 #include "../util/header.h"
 #include "../util/mutex.h"

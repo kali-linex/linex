@@ -11,13 +11,13 @@
  * using the `switch_config` parameter.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/serio.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #define DRIVER_DESC		"FS-iA6B iBus RC receiver"
 

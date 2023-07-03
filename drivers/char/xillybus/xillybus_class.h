@@ -8,10 +8,10 @@
 #ifndef __XILLYBUS_CLASS_H
 #define __XILLYBUS_CLASS_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/module.h>
 
 int xillybus_init_chrdev(struct device *dev,
 			 const struct file_operations *fops,

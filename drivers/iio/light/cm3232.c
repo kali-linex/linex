@@ -8,12 +8,12 @@
  * IIO driver for CM3232 (7-bit I2C slave address 0x10).
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/init.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/init.h>
 
 /* Registers Address */
 #define CM3232_REG_ADDR_CMD		0x00

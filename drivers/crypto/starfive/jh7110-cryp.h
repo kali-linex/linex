@@ -2,9 +2,9 @@
 #ifndef __STARFIVE_STR_H__
 #define __STARFIVE_STR_H__
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
 
 #include <crypto/engine.h>
 #include <crypto/sha2.h>

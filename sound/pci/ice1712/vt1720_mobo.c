@@ -7,9 +7,9 @@
  *	Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */      
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
 #include <sound/core.h>
 
 #include "ice1712.h"

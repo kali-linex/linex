@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020, Broadcom */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/kernel.h>
+#include <linex/kdebug.h>
+#include <linex/gpio/consumer.h>
 
 struct out_pin {
 	u32 enable_mask;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/kernel/capability.c
+ * linex/kernel/capability.c
  *
  * Copyright (C) 1997  Andrew Main <zefram@fysh.org>
  *
@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/uaccess.h>
+#include <linex/audit.h>
+#include <linex/capability.h>
+#include <linex/mm.h>
+#include <linex/export.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/pid_namespace.h>
+#include <linex/user_namespace.h>
+#include <linex/uaccess.h>
 
 int file_caps_enabled = 1;
 
@@ -33,7 +33,7 @@ __setup("no_file_caps", file_caps_disable);
 /*
  * More recent versions of libcap are available from:
  *
- *   http://www.kernel.org/pub/linux/libs/security/linux-privs/
+ *   http://www.kernel.org/pub/linex/libs/security/linex-privs/
  */
 
 static void warn_legacy_capability_use(void)
@@ -45,7 +45,7 @@ static void warn_legacy_capability_use(void)
 }
 
 /*
- * Version 2 capabilities worked fine, but the linux/capability.h file
+ * Version 2 capabilities worked fine, but the linex/capability.h file
  * that accompanied their introduction encouraged their use without
  * the necessary user-space source code changes. As such, we have
  * created a version 3 with equivalent functionality to version 2, but
@@ -80,15 +80,15 @@ static int cap_validate_magic(cap_user_header_t header, unsigned *tocopy)
 		return -EFAULT;
 
 	switch (version) {
-	case _LINUX_CAPABILITY_VERSION_1:
+	case _LINEX_CAPABILITY_VERSION_1:
 		warn_legacy_capability_use();
-		*tocopy = _LINUX_CAPABILITY_U32S_1;
+		*tocopy = _LINEX_CAPABILITY_U32S_1;
 		break;
-	case _LINUX_CAPABILITY_VERSION_2:
+	case _LINEX_CAPABILITY_VERSION_2:
 		warn_deprecated_v2();
 		fallthrough;	/* v3 is otherwise equivalent to v2 */
-	case _LINUX_CAPABILITY_VERSION_3:
-		*tocopy = _LINUX_CAPABILITY_U32S_3;
+	case _LINEX_CAPABILITY_VERSION_3:
+		*tocopy = _LINEX_CAPABILITY_U32S_3;
 		break;
 	default:
 		if (put_user((u32)_KERNEL_CAPABILITY_VERSION, &header->version))

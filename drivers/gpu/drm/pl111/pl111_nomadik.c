@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
 #include "pl111_nomadik.h"
 
 #define PMU_CTRL_OFFSET 0x0000

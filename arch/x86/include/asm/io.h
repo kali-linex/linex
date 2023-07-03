@@ -38,9 +38,9 @@
 #define ARCH_HAS_IOREMAP_WC
 #define ARCH_HAS_IOREMAP_WT
 
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/cc_platform.h>
+#include <linex/string.h>
+#include <linex/compiler.h>
+#include <linex/cc_platform.h>
 #include <asm/page.h>
 #include <asm/early_ioremap.h>
 #include <asm/pgtable_types.h>

@@ -17,8 +17,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <linux/mount.h>
-#include <linux/unistd.h>
+#include <linex/mount.h>
+#include <linex/unistd.h>
 
 static inline int fsopen(const char *fsname, unsigned int flags)
 {

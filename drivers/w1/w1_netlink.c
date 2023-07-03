@@ -3,10 +3,10 @@
  * Copyright (c) 2003 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/connector.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/netlink.h>
+#include <linex/connector.h>
 
 #include "w1_internal.h"
 #include "w1_netlink.h"

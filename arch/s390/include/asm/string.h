@@ -8,8 +8,8 @@
 #ifndef _S390_STRING_H_
 #define _S390_STRING_H_
 
-#ifndef _LINUX_TYPES_H
-#include <linux/types.h>
+#ifndef _LINEX_TYPES_H
+#include <linex/types.h>
 #endif
 
 #define __HAVE_ARCH_MEMCPY	/* gcc builtin & arch function */

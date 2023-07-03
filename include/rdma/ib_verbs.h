@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB */
 /*
  * Copyright (c) 2004 Mellanox Technologies Ltd.  All rights reserved.
  * Copyright (c) 2004 Infinicon Corporation.  All rights reserved.
@@ -12,30 +12,30 @@
 #ifndef IB_VERBS_H
 #define IB_VERBS_H
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/irq_poll.h>
-#include <uapi/linux/if_ether.h>
+#include <linex/ethtool.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/rwsem.h>
+#include <linex/workqueue.h>
+#include <linex/irq_poll.h>
+#include <uapi/linex/if_ether.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/refcount.h>
-#include <linux/if_link.h>
-#include <linux/atomic.h>
-#include <linux/mmu_notifier.h>
-#include <linux/uaccess.h>
-#include <linux/cgroup_rdma.h>
-#include <linux/irqflags.h>
-#include <linux/preempt.h>
-#include <linux/dim.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/refcount.h>
+#include <linex/if_link.h>
+#include <linex/atomic.h>
+#include <linex/mmu_notifier.h>
+#include <linex/uaccess.h>
+#include <linex/cgroup_rdma.h>
+#include <linex/irqflags.h>
+#include <linex/preempt.h>
+#include <linex/dim.h>
 #include <uapi/rdma/ib_user_verbs.h>
 #include <rdma/rdma_counter.h>
 #include <rdma/restrack.h>
@@ -2670,7 +2670,7 @@ struct ib_device_ops {
 
 	/*
 	 * Provide NUMA node. This API exists for rdmavt/hfi1 only.
-	 * Everyone else relies on Linux memory management model.
+	 * Everyone else relies on Linex memory management model.
 	 */
 	int (*get_numa_node)(struct ib_device *dev);
 

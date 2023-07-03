@@ -5,18 +5,18 @@
  *
  * Copyright (C) 2019 Integrated Device Technology, Inc., a Renesas Company.
  */
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/timekeeping.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/mfd/rsmu.h>
-#include <linux/mfd/idt8a340_reg.h>
+#include <linex/firmware.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/delay.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/timekeeping.h>
+#include <linex/string.h>
+#include <linex/of.h>
+#include <linex/mfd/rsmu.h>
+#include <linex/mfd/idt8a340_reg.h>
 #include <asm/unaligned.h>
 
 #include "ptp_private.h"

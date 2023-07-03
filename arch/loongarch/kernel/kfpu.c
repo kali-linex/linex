@@ -3,8 +3,8 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/cpu.h>
-#include <linux/init.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
 #include <asm/fpu.h>
 #include <asm/smp.h>
 

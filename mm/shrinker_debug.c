@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/shrinker.h>
-#include <linux/memcontrol.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/shrinker.h>
+#include <linex/memcontrol.h>
 
 /* defined in vmscan.c */
 extern struct rw_semaphore shrinker_rwsem;

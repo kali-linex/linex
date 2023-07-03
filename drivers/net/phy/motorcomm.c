@@ -6,11 +6,11 @@
  * Author: Frank <Frank.Sae@motor-comm.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/of.h>
 
 #define PHY_ID_YT8511		0x0000010a
 #define PHY_ID_YT8521		0x0000011a

@@ -4,18 +4,18 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/io.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_hw.h"

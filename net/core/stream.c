@@ -13,12 +13,12 @@
  *                     Alan Cox <alan@lxorguk.ukuu.org.uk> (Borrowed comments 8-))
  */
 
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/net.h>
-#include <linux/signal.h>
-#include <linux/tcp.h>
-#include <linux/wait.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <linex/net.h>
+#include <linex/signal.h>
+#include <linex/tcp.h>
+#include <linex/wait.h>
 #include <net/sock.h>
 
 /**

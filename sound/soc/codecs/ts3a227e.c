@@ -5,14 +5,14 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_gpio.h>
+#include <linex/regmap.h>
+#include <linex/acpi.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

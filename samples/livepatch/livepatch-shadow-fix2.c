@@ -24,10 +24,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/livepatch.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/livepatch.h>
+#include <linex/slab.h>
 
 /* Shadow variable enums */
 #define SV_LEAK		1

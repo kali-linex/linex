@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/irq.c
+ *  linex/arch/arm/mach-pxa/irq.c
  *
  *  Generic PXA IRQ handling
  *
@@ -8,16 +8,16 @@
  *  Created:	Jun 15, 2001
  *  Copyright:	MontaVista Software Inc.
  */
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/syscore_ops.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include <asm/exception.h>
 

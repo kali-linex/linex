@@ -6,9 +6,9 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
 */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/io.h>
 #include <media/drv-intf/exynos-fimc.h>
 
 #include "fimc-lite-reg.h"

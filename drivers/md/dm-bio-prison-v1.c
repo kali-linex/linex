@@ -9,10 +9,10 @@
 #include "dm-bio-prison-v1.h"
 #include "dm-bio-prison-v2.h"
 
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/spinlock.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 /*----------------------------------------------------------------*/
 

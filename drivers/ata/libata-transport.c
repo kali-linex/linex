@@ -24,15 +24,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
 #include <scsi/scsi_transport.h>
-#include <linux/libata.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
+#include <linex/libata.h>
+#include <linex/hdreg.h>
+#include <linex/uaccess.h>
+#include <linex/pm_runtime.h>
 
 #include "libata.h"
 #include "libata-transport.h"

@@ -17,8 +17,8 @@
 
 #include "ctresource.h"
 #include "ctimap.h"
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
 #include <sound/core.h>
 
 #define SRC_STATE_OFF	0x0

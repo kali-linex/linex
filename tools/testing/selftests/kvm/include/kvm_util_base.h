@@ -9,12 +9,12 @@
 
 #include "test_util.h"
 
-#include <linux/compiler.h>
-#include "linux/hashtable.h"
-#include "linux/list.h"
-#include <linux/kernel.h>
-#include <linux/kvm.h>
-#include "linux/rbtree.h"
+#include <linex/compiler.h>
+#include "linex/hashtable.h"
+#include "linex/list.h"
+#include <linex/kernel.h>
+#include <linex/kvm.h>
+#include "linex/rbtree.h"
 
 #include <asm/atomic.h>
 

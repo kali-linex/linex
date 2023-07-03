@@ -9,8 +9,8 @@
 #ifndef __XEN_PCIBACK_CONF_SPACE_QUIRKS_H__
 #define __XEN_PCIBACK_CONF_SPACE_QUIRKS_H__
 
-#include <linux/pci.h>
-#include <linux/list.h>
+#include <linex/pci.h>
+#include <linex/list.h>
 
 struct xen_pcibk_config_quirk {
 	struct list_head quirks_list;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
 #include <net/netfilter/nf_flow_table.h>
 
 static void *nf_flow_table_cpu_seq_start(struct seq_file *seq, loff_t *pos)

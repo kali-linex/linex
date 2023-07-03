@@ -30,31 +30,31 @@
 
 #define pr_fmt(fmt) "vga_switcheroo: " fmt
 
-#include <linux/apple-gmux.h>
-#include <linux/console.h>
-#include <linux/debugfs.h>
-#include <linux/fb.h>
-#include <linux/fs.h>
-#include <linux/fbcon.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
+#include <linex/apple-gmux.h>
+#include <linex/console.h>
+#include <linex/debugfs.h>
+#include <linex/fb.h>
+#include <linex/fs.h>
+#include <linex/fbcon.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
+#include <linex/vgaarb.h>
+#include <linex/vga_switcheroo.h>
 
 /**
  * DOC: Overview
  *
- * vga_switcheroo is the Linux subsystem for laptop hybrid graphics.
+ * vga_switcheroo is the Linex subsystem for laptop hybrid graphics.
  * These come in two flavors:
  *
  * * muxed: Dual GPUs with a multiplexer chip to switch outputs between GPUs.
  * * muxless: Dual GPUs but only one of them is connected to outputs.
  *   The other one is merely used to offload rendering, its results
- *   are copied over PCIe into the framebuffer. On Linux this is
+ *   are copied over PCIe into the framebuffer. On Linex this is
  *   supported with DRI PRIME.
  *
  * Hybrid graphics started to appear in the late Naughties and were initially

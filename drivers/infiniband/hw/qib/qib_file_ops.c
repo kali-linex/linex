@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/uio.h>
-#include <linux/pgtable.h>
+#include <linex/pci.h>
+#include <linex/poll.h>
+#include <linex/cdev.h>
+#include <linex/swap.h>
+#include <linex/vmalloc.h>
+#include <linex/highmem.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/uio.h>
+#include <linex/pgtable.h>
 
 #include <rdma/ib.h>
 

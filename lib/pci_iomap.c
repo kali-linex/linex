@@ -4,10 +4,10 @@
  *
  * (C) Copyright 2004 Linus Torvalds
  */
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linex/pci.h>
+#include <linex/io.h>
 
-#include <linux/export.h>
+#include <linex/export.h>
 
 #ifdef CONFIG_PCI
 /**

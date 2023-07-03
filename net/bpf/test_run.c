@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2017 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/sched/signal.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/btf_ids.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/etherdevice.h>
+#include <linex/filter.h>
+#include <linex/rcupdate_trace.h>
+#include <linex/sched/signal.h>
 #include <net/bpf_sk_storage.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <net/net_namespace.h>
 #include <net/page_pool.h>
-#include <linux/error-injection.h>
-#include <linux/smp.h>
-#include <linux/sock_diag.h>
-#include <linux/netfilter.h>
+#include <linex/error-injection.h>
+#include <linex/smp.h>
+#include <linex/sock_diag.h>
+#include <linex/netfilter.h>
 #include <net/xdp.h>
 #include <net/netfilter/nf_bpf_link.h>
 
@@ -504,7 +504,7 @@ out:
  */
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmlinex BTF");
 __bpf_kfunc int bpf_fentry_test1(int a)
 {
 	return a + 1;

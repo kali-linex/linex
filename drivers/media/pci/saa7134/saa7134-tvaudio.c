@@ -10,13 +10,13 @@
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/delay.h>
+#include <linex/freezer.h>
 #include <asm/div64.h>
 
 /* ------------------------------------------------------------------ */

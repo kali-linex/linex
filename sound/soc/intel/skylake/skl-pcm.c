@@ -10,9 +10,9 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/delay.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "skl.h"

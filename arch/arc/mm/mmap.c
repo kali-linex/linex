@@ -7,10 +7,10 @@
  * Copyright (C) 2013 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/sched/mm.h>
 
 #include <asm/cacheflush.h>
 

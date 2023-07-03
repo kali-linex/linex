@@ -8,15 +8,15 @@
  *    Driver sometimes hangs... Nobody knows why at this moment...
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

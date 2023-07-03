@@ -159,7 +159,7 @@ parameter is applicable::
 			A lot of drivers have their options described inside
 			the Documentation/scsi/ sub-directory.
 	SECURITY Different security models are enabled.
-	SELINUX SELinux support is enabled.
+	SELINEX SELinex support is enabled.
 	SERIAL	Serial support is enabled.
 	SH	SuperH architecture is enabled.
 	SMP	The kernel is an SMP kernel.
@@ -170,7 +170,7 @@ parameter is applicable::
 	UMS	USB Mass Storage support is enabled.
 	USB	USB support is enabled.
 	USBHID	USB Human Interface Device support is enabled.
-	V4L	Video For Linux support is enabled.
+	V4L	Video For Linex support is enabled.
 	VMMIO   Driver for memory mapped virtio devices is enabled.
 	VGA	The VGA console has been enabled.
 	VT	Virtual terminal support is enabled.

@@ -3,14 +3,14 @@
  * Device driver for s390 storage class memory.
  *
  * Copyright IBM Corp. 2012
- * Author(s): Sebastian Ott <sebott@linux.vnet.ibm.com>
+ * Author(s): Sebastian Ott <sebott@linex.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "scm_block"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <asm/eadm.h>
 #include "scm_blk.h"
 

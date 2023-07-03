@@ -11,9 +11,9 @@
 #include <errno.h>
 #include <fnmatch.h>
 #include <stdio.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/zalloc.h>
 #include "pmu.h"
 #include "pmus.h"
 #include "evsel.h"

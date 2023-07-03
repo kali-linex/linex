@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	Linux Magic System Request Key Hacks
+ *	Linex Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *	based on ideas by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>
@@ -15,42 +15,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/ctype.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/reboot.h>
-#include <linux/sysrq.h>
-#include <linux/kbd_kern.h>
-#include <linux/proc_fs.h>
-#include <linux/nmi.h>
-#include <linux/quotaops.h>
-#include <linux/perf_event.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/spinlock.h>
-#include <linux/vt_kern.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/oom.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
-#include <linux/moduleparam.h>
-#include <linux/jiffies.h>
-#include <linux/syscalls.h>
-#include <linux/of.h>
-#include <linux/rcupdate.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/rt.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/ctype.h>
+#include <linex/interrupt.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/kdev_t.h>
+#include <linex/major.h>
+#include <linex/reboot.h>
+#include <linex/sysrq.h>
+#include <linex/kbd_kern.h>
+#include <linex/proc_fs.h>
+#include <linex/nmi.h>
+#include <linex/quotaops.h>
+#include <linex/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/suspend.h>
+#include <linex/writeback.h>
+#include <linex/swap.h>
+#include <linex/spinlock.h>
+#include <linex/vt_kern.h>
+#include <linex/workqueue.h>
+#include <linex/hrtimer.h>
+#include <linex/oom.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/uaccess.h>
+#include <linex/moduleparam.h>
+#include <linex/jiffies.h>
+#include <linex/syscalls.h>
+#include <linex/of.h>
+#include <linex/rcupdate.h>
 
 #include <asm/ptrace.h>
 #include <asm/irq_regs.h>
@@ -324,7 +324,7 @@ static const struct sysrq_key_op sysrq_showstate_blocked_op = {
 };
 
 #ifdef CONFIG_TRACING
-#include <linux/ftrace.h>
+#include <linex/ftrace.h>
 
 static void sysrq_ftrace_dump(int key)
 {
@@ -763,7 +763,7 @@ static void sysrq_of_get_keyreset_config(void)
 	struct property *prop;
 	const __be32 *p;
 
-	np = of_find_node_by_path("/chosen/linux,sysrq-reset-seq");
+	np = of_find_node_by_path("/chosen/linex,sysrq-reset-seq");
 	if (!np) {
 		pr_debug("No sysrq node found");
 		return;

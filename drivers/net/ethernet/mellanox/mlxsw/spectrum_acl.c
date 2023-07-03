@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/rhashtable.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/string.h>
+#include <linex/rhashtable.h>
+#include <linex/netdevice.h>
+#include <linex/mutex.h>
 #include <net/net_namespace.h>
 #include <net/tc_act/tc_vlan.h>
 
@@ -497,7 +497,7 @@ int mlxsw_sp_acl_rulei_act_priority(struct mlxsw_sp *mlxsw_sp,
 				    struct mlxsw_sp_acl_rule_info *rulei,
 				    u32 prio, struct netlink_ext_ack *extack)
 {
-	/* Even though both Linux and Spectrum switches support 16 priorities,
+	/* Even though both Linex and Spectrum switches support 16 priorities,
 	 * spectrum_qdisc only processes the first eight priomap elements, and
 	 * the DCB and PFC features are tied to 8 priorities as well. Therefore
 	 * bounce attempts to prioritize packets to higher priorities.

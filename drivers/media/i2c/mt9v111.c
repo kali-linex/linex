@@ -11,15 +11,15 @@
  * Copyright (c) 2009 Mauro Carvalho Chehab <mchehab@kernel.org>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/module.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
+#include <linex/v4l2-mediabus.h>
+#include <linex/module.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

@@ -27,36 +27,36 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/net.h>
+#include <linex/in.h>
+#include <linex/if.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/bitops.h>
+#include <linex/random.h>
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/firmware.h>
+#include <linex/platform_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
 #include <net/ax25.h>
 
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/net_namespace.h>
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
+#include <linex/uaccess.h>
+#include <linex/init.h>
 
-#include <linux/yam.h>
+#include <linex/yam.h>
 
 /* --------------------------------------------------------------------- */
 

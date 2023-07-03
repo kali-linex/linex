@@ -7,10 +7,10 @@
  */
 
 
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/extable.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
 #include <asm/asm-extable.h>
 #include <asm/ptrace.h>
 

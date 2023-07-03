@@ -3,17 +3,17 @@
  * extcon driver for Basin Cove PMIC
  *
  * Copyright (c) 2019, Intel Corporation.
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  */
 
-#include <linux/extcon-provider.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/mfd/intel_soc_pmic_mrfld.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/extcon-provider.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/mfd/intel_soc_pmic_mrfld.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "extcon-intel.h"
 
@@ -288,6 +288,6 @@ static struct platform_driver mrfld_extcon_driver = {
 };
 module_platform_driver(mrfld_extcon_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linex.intel.com>");
 MODULE_DESCRIPTION("extcon driver for Intel Merrifield Basin Cove PMIC");
 MODULE_LICENSE("GPL v2");

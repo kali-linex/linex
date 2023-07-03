@@ -7,11 +7,11 @@
  * Written by Ryusuke Konishi.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
+#include <linex/buffer_head.h>
+#include <linex/blkdev.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
+#include <linex/crc32.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "sufile.h"

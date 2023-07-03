@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * HighPoint RR3xxx/4xxx controller driver for Linux
+ * HighPoint RR3xxx/4xxx controller driver for Linex
  * Copyright (C) 2006-2015 HighPoint Technologies, Inc. All Rights Reserved.
  *
- * Please report bugs/comments/suggestions to linux@highpoint-tech.com
+ * Please report bugs/comments/suggestions to linex@highpoint-tech.com
  *
  * For more information, visit http://www.highpoint-tech.com
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/spinlock.h>
+#include <linex/gfp.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <scsi/scsi_cmnd.h>

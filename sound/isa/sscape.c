@@ -7,15 +7,15 @@
  *   the OSS/Free SoundScape driver, written by Hannu Savolainen.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/pnp.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/isa.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/pnp.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>

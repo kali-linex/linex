@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2002-2014 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -32,9 +32,9 @@
  * subdevice 1 is unused.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedi_pci.h>
 
 #include "amplc_pc236.h"
 #include "plx9052.h"

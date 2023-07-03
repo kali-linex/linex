@@ -6,17 +6,17 @@
  * Derived from the PCAN project file driver/src/pcan_pccard.c
  * Copyright (C) 2006-2010 PEAK System-Technik GmbH
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/io.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
 #include "sja1000.h"
 
 MODULE_AUTHOR("Stephane Grosjean <s.grosjean@peak-system.com>");

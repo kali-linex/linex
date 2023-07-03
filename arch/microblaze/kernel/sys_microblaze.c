@@ -12,25 +12,25 @@
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/file.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/semaphore.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/syscalls.h>
+#include <linex/sem.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/stat.h>
+#include <linex/mman.h>
+#include <linex/sys.h>
+#include <linex/ipc.h>
+#include <linex/file.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/semaphore.h>
+#include <linex/uaccess.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
 #include <asm/syscalls.h>
 
 SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,

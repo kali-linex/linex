@@ -5,16 +5,16 @@
  * Antoine Tenart <antoine.tenart@free-electrons.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/arm-smccc.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /* Relative to priv->base */
 #define MVEBU_COMPHY_SERDES_CFG0(n)		(0x0 + (n) * 0x1000)
@@ -845,7 +845,7 @@ static int mvebu_comphy_power_on(struct phy *phy)
 		 lane->id, lane->mode, ret);
 
 try_legacy:
-	/* Fallback to Linux's implementation */
+	/* Fallback to Linex's implementation */
 	return mvebu_comphy_power_on_legacy(phy);
 }
 
@@ -904,7 +904,7 @@ static int mvebu_comphy_power_off(struct phy *phy)
 	if (!ret)
 		return ret;
 
-	/* Fallback to Linux's implementation */
+	/* Fallback to Linex's implementation */
 	return mvebu_comphy_power_off_legacy(phy);
 }
 

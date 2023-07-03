@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	TCP over IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
  *	Based on:
- *	linux/net/ipv4/tcp.c
- *	linux/net/ipv4/tcp_input.c
- *	linux/net/ipv4/tcp_output.c
+ *	linex/net/ipv4/tcp.c
+ *	linex/net/ipv4/tcp_input.c
+ *	linex/net/ipv4/tcp_output.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -19,27 +19,27 @@
  *	YOSHIFUJI Hideaki @USAGI:	convert /proc/net/tcp6 to seq_file.
  */
 
-#include <linux/bottom_half.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/jiffies.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/jhash.h>
-#include <linux/ipsec.h>
-#include <linux/times.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/bottom_half.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/jiffies.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/init.h>
+#include <linex/jhash.h>
+#include <linex/ipsec.h>
+#include <linex/times.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/ipv6.h>
+#include <linex/icmpv6.h>
+#include <linex/random.h>
+#include <linex/indirect_call_wrapper.h>
 
 #include <net/tcp.h>
 #include <net/ndisc.h>
@@ -60,11 +60,11 @@
 #include <net/secure_seq.h>
 #include <net/busy_poll.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 
 #include <crypto/hash.h>
-#include <linux/scatterlist.h>
+#include <linex/scatterlist.h>
 
 #include <trace/events/tcp.h>
 
@@ -414,7 +414,7 @@ static int tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 	bh_lock_sock(sk);
 	if (sock_owned_by_user(sk) && type != ICMPV6_PKT_TOOBIG)
-		__NET_INC_STATS(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		__NET_INC_STATS(net, LINEX_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == TCP_CLOSE)
 		goto out;
@@ -422,7 +422,7 @@ static int tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 	if (static_branch_unlikely(&ip6_min_hopcount)) {
 		/* min_hopcount can be changed concurrently from do_ipv6_setsockopt() */
 		if (ipv6_hdr(skb)->hop_limit < READ_ONCE(tcp_inet6_sk(sk)->min_hopcount)) {
-			__NET_INC_STATS(net, LINUX_MIB_TCPMINTTLDROP);
+			__NET_INC_STATS(net, LINEX_MIB_TCPMINTTLDROP);
 			goto out;
 		}
 	}
@@ -433,7 +433,7 @@ static int tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 	snd_una = fastopen ? tcp_rsk(fastopen)->snt_isn : tp->snd_una;
 	if (sk->sk_state != TCP_LISTEN &&
 	    !between(seq, snd_una, tp->snd_nxt)) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, LINEX_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -453,7 +453,7 @@ static int tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 		u32 mtu = ntohl(info);
 
 		/* We are not interested in TCP_LISTEN and open_requests
-		 * (SYN-ACKs send out by Linux are always <576bytes so
+		 * (SYN-ACKs send out by Linex are always <576bytes so
 		 * they should go through unfragmented).
 		 */
 		if (sk->sk_state == TCP_LISTEN)
@@ -1405,7 +1405,7 @@ static struct sock *tcp_v6_syn_recv_sock(const struct sock *sk, struct sk_buff *
 	return newsk;
 
 out_overflow:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	__NET_INC_STATS(sock_net(sk), LINEX_MIB_LISTENOVERFLOWS);
 out_nonewsk:
 	dst_release(dst);
 out:
@@ -1703,7 +1703,7 @@ process:
 	if (static_branch_unlikely(&ip6_min_hopcount)) {
 		/* min_hopcount can be changed concurrently from do_ipv6_setsockopt() */
 		if (unlikely(hdr->hop_limit < READ_ONCE(tcp_inet6_sk(sk)->min_hopcount))) {
-			__NET_INC_STATS(net, LINUX_MIB_TCPMINTTLDROP);
+			__NET_INC_STATS(net, LINEX_MIB_TCPMINTTLDROP);
 			drop_reason = SKB_DROP_REASON_TCP_MINTTL;
 			goto discard_and_relse;
 		}

@@ -3,28 +3,28 @@
  * Copyright (c) 2016 Facebook
  * Copyright (c) 2018 Covalent IO, Inc. http://covalent.io
  */
-#include <uapi/linux/btf.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/filter.h>
+#include <uapi/linex/btf.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/bpf_verifier.h>
+#include <linex/filter.h>
 #include <net/netlink.h>
-#include <linux/file.h>
-#include <linux/vmalloc.h>
-#include <linux/stringify.h>
-#include <linux/bsearch.h>
-#include <linux/sort.h>
-#include <linux/perf_event.h>
-#include <linux/ctype.h>
-#include <linux/error-injection.h>
-#include <linux/bpf_lsm.h>
-#include <linux/btf_ids.h>
-#include <linux/poison.h>
-#include <linux/module.h>
+#include <linex/file.h>
+#include <linex/vmalloc.h>
+#include <linex/stringify.h>
+#include <linex/bsearch.h>
+#include <linex/sort.h>
+#include <linex/perf_event.h>
+#include <linex/ctype.h>
+#include <linex/error-injection.h>
+#include <linex/bpf_lsm.h>
+#include <linex/btf_ids.h>
+#include <linex/poison.h>
+#include <linex/module.h>
 
 #include "disasm.h"
 
@@ -33,7 +33,7 @@ static const struct bpf_verifier_ops * const bpf_verifier_ops[] = {
 	[_id] = & _name ## _verifier_ops,
 #define BPF_MAP_TYPE(_id, _ops)
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linex/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -331,7 +331,7 @@ struct bpf_kfunc_call_arg_meta {
 	u64 mem_size;
 };
 
-struct btf *btf_vmlinux;
+struct btf *btf_vmlinex;
 
 static DEFINE_MUTEX(bpf_verifier_lock);
 
@@ -2611,7 +2611,7 @@ static struct btf *find_kfunc_desc_btf(struct bpf_verifier_env *env, s16 offset)
 
 		return __find_kfunc_desc_btf(env, offset);
 	}
-	return btf_vmlinux ?: ERR_PTR(-ENOENT);
+	return btf_vmlinex ?: ERR_PTR(-ENOENT);
 }
 
 static int add_kfunc_call(struct bpf_verifier_env *env, u32 func_id, s16 offset)
@@ -2631,7 +2631,7 @@ static int add_kfunc_call(struct bpf_verifier_env *env, u32 func_id, s16 offset)
 	tab = prog_aux->kfunc_tab;
 	btf_tab = prog_aux->kfunc_btf_tab;
 	if (!tab) {
-		if (!btf_vmlinux) {
+		if (!btf_vmlinex) {
 			verbose(env, "calling kernel function is not supported without CONFIG_DEBUG_INFO_BTF\n");
 			return -ENOTSUPP;
 		}
@@ -5008,7 +5008,7 @@ static int map_kptr_match_type(struct bpf_verifier_env *env,
 	if (__check_ptr_off_reg(env, reg, regno, true))
 		return -EACCES;
 
-	/* A full type match is needed, as BTF can be vmlinux or module BTF, and
+	/* A full type match is needed, as BTF can be vmlinex or module BTF, and
 	 * we also need to take into account the reg->off.
 	 *
 	 * We want to support cases like:
@@ -5897,7 +5897,7 @@ BTF_TYPE_SAFE_TRUSTED(struct bpf_iter__task) {
 	struct task_struct *task;
 };
 
-BTF_TYPE_SAFE_TRUSTED(struct linux_binprm) {
+BTF_TYPE_SAFE_TRUSTED(struct linex_binprm) {
 	struct file *file;
 };
 
@@ -5942,7 +5942,7 @@ static bool type_is_trusted(struct bpf_verifier_env *env,
 {
 	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct bpf_iter_meta));
 	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct bpf_iter__task));
-	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct linux_binprm));
+	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct linex_binprm));
 	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct file));
 	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct dentry));
 	BTF_TYPE_EMIT(BTF_TYPE_SAFE_TRUSTED(struct socket));
@@ -6108,7 +6108,7 @@ static int check_ptr_to_map_access(struct bpf_verifier_env *env,
 	u32 btf_id;
 	int ret;
 
-	if (!btf_vmlinux) {
+	if (!btf_vmlinex) {
 		verbose(env, "map_ptr access not supported without CONFIG_DEBUG_INFO_BTF\n");
 		return -ENOTSUPP;
 	}
@@ -6119,8 +6119,8 @@ static int check_ptr_to_map_access(struct bpf_verifier_env *env,
 		return -ENOTSUPP;
 	}
 
-	t = btf_type_by_id(btf_vmlinux, *map->ops->map_btf_id);
-	tname = btf_name_by_offset(btf_vmlinux, t->name_off);
+	t = btf_type_by_id(btf_vmlinex, *map->ops->map_btf_id);
+	tname = btf_name_by_offset(btf_vmlinex, t->name_off);
 
 	if (!env->allow_ptr_leaks) {
 		verbose(env,
@@ -6142,13 +6142,13 @@ static int check_ptr_to_map_access(struct bpf_verifier_env *env,
 
 	/* Simulate access to a PTR_TO_BTF_ID */
 	memset(&map_reg, 0, sizeof(map_reg));
-	mark_btf_ld_reg(env, &map_reg, 0, PTR_TO_BTF_ID, btf_vmlinux, *map->ops->map_btf_id, 0);
+	mark_btf_ld_reg(env, &map_reg, 0, PTR_TO_BTF_ID, btf_vmlinex, *map->ops->map_btf_id, 0);
 	ret = btf_struct_access(&env->log, &map_reg, off, size, atype, &btf_id, &flag, NULL);
 	if (ret < 0)
 		return ret;
 
 	if (value_regno >= 0)
-		mark_btf_ld_reg(env, regs, value_regno, ret, btf_vmlinux, btf_id, flag);
+		mark_btf_ld_reg(env, regs, value_regno, ret, btf_vmlinex, btf_id, flag);
 
 	return 0;
 }
@@ -7710,11 +7710,11 @@ found:
 			}
 
 			if (!btf_struct_ids_match(&env->log, reg->btf, reg->btf_id, reg->off,
-						  btf_vmlinux, *arg_btf_id,
+						  btf_vmlinex, *arg_btf_id,
 						  strict_type_match)) {
 				verbose(env, "R%d is of type %s but %s is expected\n",
 					regno, btf_type_name(reg->btf, reg->btf_id),
-					btf_type_name(btf_vmlinux, *arg_btf_id));
+					btf_type_name(btf_vmlinex, *arg_btf_id));
 				return -EACCES;
 			}
 		}
@@ -8953,7 +8953,7 @@ static int set_find_vma_callback_state(struct bpf_verifier_env *env,
 
 	callee->regs[BPF_REG_2].type = PTR_TO_BTF_ID;
 	__mark_reg_known_zero(&callee->regs[BPF_REG_2]);
-	callee->regs[BPF_REG_2].btf =  btf_vmlinux;
+	callee->regs[BPF_REG_2].btf =  btf_vmlinex;
 	callee->regs[BPF_REG_2].btf_id = btf_tracing_ids[BTF_TRACING_TYPE_VMA],
 
 	/* pointer to stack or null */
@@ -9690,7 +9690,7 @@ static int check_helper_call(struct bpf_verifier_env *env, struct bpf_insn *insn
 					func_id_name(func_id));
 				return -EINVAL;
 			}
-			ret_btf = btf_vmlinux;
+			ret_btf = btf_vmlinex;
 			ret_btf_id = *fn->ret_btf_id;
 		}
 		if (ret_btf_id == 0) {
@@ -9951,7 +9951,7 @@ static bool __is_kfunc_ptr_arg_type(const struct btf *btf,
 	t = btf_type_skip_modifiers(btf, t->type, &res_id);
 	if (!t)
 		return false;
-	return btf_types_are_same(btf, res_id, btf_vmlinux, kf_arg_btf_ids[type]);
+	return btf_types_are_same(btf, res_id, btf_vmlinex, kf_arg_btf_ids[type]);
 }
 
 static bool is_kfunc_arg_dynptr(const struct btf *btf, const struct btf_param *arg)
@@ -10235,7 +10235,7 @@ static int process_kf_arg_ptr_to_btf_id(struct bpf_verifier_env *env,
 		reg_btf = reg->btf;
 		reg_ref_id = reg->btf_id;
 	} else {
-		reg_btf = btf_vmlinux;
+		reg_btf = btf_vmlinex;
 		reg_ref_id = *reg2btf_ids[base_type(reg->type)];
 	}
 
@@ -10253,7 +10253,7 @@ static int process_kf_arg_ptr_to_btf_id(struct bpf_verifier_env *env,
 	 *	refcount_t usage;
 	 * };
 	 *
-	 * Note that as specified in <linux/cpumask.h>, cpumask_t is typedef'ed
+	 * Note that as specified in <linex/cpumask.h>, cpumask_t is typedef'ed
 	 * to a struct cpumask, so it would be safe to pass a struct
 	 * bpf_cpumask * to a kfunc expecting a struct cpumask *.
 	 *
@@ -10500,7 +10500,7 @@ __process_kf_arg_ptr_to_graph_root(struct bpf_verifier_env *env,
 	struct btf_record *rec;
 	u32 head_off;
 
-	if (meta->btf != btf_vmlinux) {
+	if (meta->btf != btf_vmlinex) {
 		verbose(env, "verifier internal error: unexpected btf mismatch in kfunc call\n");
 		return -EFAULT;
 	}
@@ -10568,7 +10568,7 @@ __process_kf_arg_ptr_to_graph_node(struct bpf_verifier_env *env,
 	struct btf_field *field;
 	u32 node_off;
 
-	if (meta->btf != btf_vmlinux) {
+	if (meta->btf != btf_vmlinex) {
 		verbose(env, "verifier internal error: unexpected btf mismatch in kfunc call\n");
 		return -EFAULT;
 	}
@@ -10816,7 +10816,7 @@ static int check_kfunc_args(struct bpf_verifier_env *env, struct bpf_kfunc_call_
 				verbose(env, "allocated object must be referenced\n");
 				return -EINVAL;
 			}
-			if (meta->btf == btf_vmlinux &&
+			if (meta->btf == btf_vmlinex &&
 			    meta->func_id == special_kfunc_list[KF_bpf_obj_drop_impl]) {
 				meta->arg_btf = reg->btf;
 				meta->arg_btf_id = reg->btf_id;
@@ -11213,7 +11213,7 @@ static int check_kfunc_call(struct bpf_verifier_env *env, struct bpf_insn *insn,
 
 	if (is_kfunc_acquire(&meta) && !btf_type_is_struct_ptr(meta.btf, t)) {
 		/* Only exception is bpf_obj_new_impl */
-		if (meta.btf != btf_vmlinux ||
+		if (meta.btf != btf_vmlinex ||
 		    (meta.func_id != special_kfunc_list[KF_bpf_obj_new_impl] &&
 		     meta.func_id != special_kfunc_list[KF_bpf_refcount_acquire_impl])) {
 			verbose(env, "acquire kernel function does not return PTR_TO_BTF_ID\n");
@@ -11227,7 +11227,7 @@ static int check_kfunc_call(struct bpf_verifier_env *env, struct bpf_insn *insn,
 	} else if (btf_type_is_ptr(t)) {
 		ptr_type = btf_type_skip_modifiers(desc_btf, t->type, &ptr_type_id);
 
-		if (meta.btf == btf_vmlinux && btf_id_set_contains(&special_kfunc_set, meta.func_id)) {
+		if (meta.btf == btf_vmlinex && btf_id_set_contains(&special_kfunc_set, meta.func_id)) {
 			if (meta.func_id == special_kfunc_list[KF_bpf_obj_new_impl]) {
 				struct btf *ret_btf;
 				u32 ret_btf_id;
@@ -11398,7 +11398,7 @@ static int check_kfunc_call(struct bpf_verifier_env *env, struct bpf_insn *insn,
 		if (reg_may_point_to_spin_lock(&regs[BPF_REG_0]) && !regs[BPF_REG_0].id)
 			regs[BPF_REG_0].id = ++env->id_gen;
 	} else if (btf_type_is_void(t)) {
-		if (meta.btf == btf_vmlinux && btf_id_set_contains(&special_kfunc_set, meta.func_id)) {
+		if (meta.btf == btf_vmlinex && btf_id_set_contains(&special_kfunc_set, meta.func_id)) {
 			if (meta.func_id == special_kfunc_list[KF_bpf_obj_drop_impl]) {
 				insn_aux->kptr_struct_meta =
 					btf_find_struct_meta(meta.arg_btf,
@@ -16516,13 +16516,13 @@ static int find_btf_percpu_datasec(struct btf *btf)
 	int i, n;
 
 	/*
-	 * Both vmlinux and module each have their own ".data..percpu"
-	 * DATASECs in BTF. So for module's case, we need to skip vmlinux BTF
+	 * Both vmlinex and module each have their own ".data..percpu"
+	 * DATASECs in BTF. So for module's case, we need to skip vmlinex BTF
 	 * types to look at only module's own BTF types.
 	 */
 	n = btf_nr_types(btf);
 	if (btf_is_module(btf))
-		i = btf_nr_types(btf_vmlinux);
+		i = btf_nr_types(btf_vmlinex);
 	else
 		i = 1;
 
@@ -16564,11 +16564,11 @@ static int check_pseudo_btf_id(struct bpf_verifier_env *env,
 			return -EINVAL;
 		}
 	} else {
-		if (!btf_vmlinux) {
+		if (!btf_vmlinex) {
 			verbose(env, "kernel is missing BTF, make sure CONFIG_DEBUG_INFO_BTF=y is specified in Kconfig.\n");
 			return -EINVAL;
 		}
-		btf = btf_vmlinux;
+		btf = btf_vmlinex;
 		btf_get(btf);
 	}
 
@@ -16776,7 +16776,7 @@ static bool bpf_map_is_cgroup_storage(struct bpf_map *map)
  * 1. if it accesses map FD, replace it with actual map pointer.
  * 2. if it accesses btf_id of a VAR, replace it with pointer to the var.
  *
- * NOTE: btf_vmlinux is required for converting pseudo btf_id.
+ * NOTE: btf_vmlinex is required for converting pseudo btf_id.
  */
 static int resolve_pseudo_ldimm64(struct bpf_verifier_env *env)
 {
@@ -18920,8 +18920,8 @@ static int check_struct_ops_btf_id(struct bpf_verifier_env *env)
 	}
 
 	member = &btf_type_member(t)[member_idx];
-	mname = btf_name_by_offset(btf_vmlinux, member->name_off);
-	func_proto = btf_type_resolve_func_ptr(btf_vmlinux, member->type,
+	mname = btf_name_by_offset(btf_vmlinex, member->name_off);
+	func_proto = btf_type_resolve_func_ptr(btf_vmlinex, member->type,
 					       NULL);
 	if (!func_proto) {
 		verbose(env, "attach to invalid member %s(@idx %u) of struct %s\n",
@@ -19101,11 +19101,11 @@ int bpf_check_attach_target(struct bpf_verifier_log *log,
 		tname += sizeof(prefix) - 1;
 		t = btf_type_by_id(btf, t->type);
 		if (!btf_type_is_ptr(t))
-			/* should never happen in valid vmlinux build */
+			/* should never happen in valid vmlinex build */
 			return -EINVAL;
 		t = btf_type_by_id(btf, t->type);
 		if (!btf_type_is_func_proto(t))
-			/* should never happen in valid vmlinux build */
+			/* should never happen in valid vmlinex build */
 			return -EINVAL;
 
 		break;
@@ -19360,15 +19360,15 @@ static int check_attach_btf_id(struct bpf_verifier_env *env)
 	return 0;
 }
 
-struct btf *bpf_get_btf_vmlinux(void)
+struct btf *bpf_get_btf_vmlinex(void)
 {
-	if (!btf_vmlinux && IS_ENABLED(CONFIG_DEBUG_INFO_BTF)) {
+	if (!btf_vmlinex && IS_ENABLED(CONFIG_DEBUG_INFO_BTF)) {
 		mutex_lock(&bpf_verifier_lock);
-		if (!btf_vmlinux)
-			btf_vmlinux = btf_parse_vmlinux();
+		if (!btf_vmlinex)
+			btf_vmlinex = btf_parse_vmlinex();
 		mutex_unlock(&bpf_verifier_lock);
 	}
-	return btf_vmlinux;
+	return btf_vmlinex;
 }
 
 int bpf_check(struct bpf_prog **prog, union bpf_attr *attr, bpfptr_t uattr, __u32 uattr_size)
@@ -19405,7 +19405,7 @@ int bpf_check(struct bpf_prog **prog, union bpf_attr *attr, bpfptr_t uattr, __u3
 	env->fd_array = make_bpfptr(attr->fd_array, uattr.is_kernel);
 	is_priv = bpf_capable();
 
-	bpf_get_btf_vmlinux();
+	bpf_get_btf_vmlinex();
 
 	/* grab the mutex to protect few globals used by verifier */
 	if (!is_priv)
@@ -19422,10 +19422,10 @@ int bpf_check(struct bpf_prog **prog, union bpf_attr *attr, bpfptr_t uattr, __u3
 
 	mark_verifier_state_clean(env);
 
-	if (IS_ERR(btf_vmlinux)) {
+	if (IS_ERR(btf_vmlinex)) {
 		/* Either gcc or pahole or kernel are broken. */
 		verbose(env, "in-kernel BTF is malformed\n");
-		ret = PTR_ERR(btf_vmlinux);
+		ret = PTR_ERR(btf_vmlinex);
 		goto skip_full_check;
 	}
 

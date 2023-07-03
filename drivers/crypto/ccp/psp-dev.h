@@ -10,10 +10,10 @@
 #ifndef __PSP_DEV_H__
 #define __PSP_DEV_H__
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/bits.h>
-#include <linux/interrupt.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/bits.h>
+#include <linex/interrupt.h>
 
 #include "sp-dev.h"
 

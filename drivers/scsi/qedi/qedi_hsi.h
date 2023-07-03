@@ -8,22 +8,22 @@
 /*
  * Add include to common target
  */
-#include <linux/qed/common_hsi.h>
+#include <linex/qed/common_hsi.h>
 
 /*
  * Add include to common storage target
  */
-#include <linux/qed/storage_common.h>
+#include <linex/qed/storage_common.h>
 
 /*
  * Add include to common TCP target
  */
-#include <linux/qed/tcp_common.h>
+#include <linex/qed/tcp_common.h>
 
 /*
  * Add include to common iSCSI target for both eCore and protocol driver
  */
-#include <linux/qed/iscsi_common.h>
+#include <linex/qed/iscsi_common.h>
 
 /*
  * iSCSI CMDQ element

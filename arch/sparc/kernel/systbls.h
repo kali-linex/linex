@@ -2,10 +2,10 @@
 #ifndef _SYSTBLS_H
 #define _SYSTBLS_H
 
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/types.h>
+#include <linex/signal.h>
+#include <linex/kernel.h>
+#include <linex/compat.h>
+#include <linex/types.h>
 
 #include <asm/utrap.h>
 

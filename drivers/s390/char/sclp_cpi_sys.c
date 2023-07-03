@@ -10,18 +10,18 @@
 #define KMSG_COMPONENT "sclp_cpi"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kmod.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/stat.h>
+#include <linex/device.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/kmod.h>
+#include <linex/timer.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/completion.h>
+#include <linex/export.h>
 #include <asm/ebcdic.h>
 #include <asm/sclp.h>
 

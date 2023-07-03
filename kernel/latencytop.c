@@ -3,7 +3,7 @@
  * latencytop.c: Latency display infrastructure
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linex.intel.com>
  */
 
 /*
@@ -43,19 +43,19 @@
  * of times)
  */
 
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/latencytop.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/stat.h>
-#include <linux/list.h>
-#include <linux/stacktrace.h>
-#include <linux/sysctl.h>
+#include <linex/kallsyms.h>
+#include <linex/seq_file.h>
+#include <linex/notifier.h>
+#include <linex/spinlock.h>
+#include <linex/proc_fs.h>
+#include <linex/latencytop.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/stat.h>
+#include <linex/list.h>
+#include <linex/stacktrace.h>
+#include <linex/sysctl.h>
 
 static DEFINE_RAW_SPINLOCK(latency_lock);
 

@@ -9,8 +9,8 @@
 #ifndef __GREYBUS_FIRMWARE_USER_H
 #define __GREYBUS_FIRMWARE_USER_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linex/ioctl.h>
+#include <linex/types.h>
 
 #define GB_FIRMWARE_U_TAG_MAX_SIZE		10
 

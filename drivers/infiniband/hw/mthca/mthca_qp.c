@@ -33,9 +33,9 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
 
 #include <asm/io.h>
 

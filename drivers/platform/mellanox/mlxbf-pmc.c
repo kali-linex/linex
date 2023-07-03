@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0-only OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0-only OR Linex-OpenIB
 /*
  * Mellanox BlueField Performance Monitoring Counters driver
  *
@@ -8,14 +8,14 @@
  * Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/errno.h>
-#include <linux/hwmon.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <uapi/linux/psci.h>
+#include <linex/acpi.h>
+#include <linex/arm-smccc.h>
+#include <linex/bitfield.h>
+#include <linex/errno.h>
+#include <linex/hwmon.h>
+#include <linex/platform_device.h>
+#include <linex/string.h>
+#include <uapi/linex/psci.h>
 
 #define MLXBF_PMC_WRITE_REG_32 0x82000009
 #define MLXBF_PMC_READ_REG_32 0x8200000A

@@ -5,20 +5,20 @@
  *
  * This driver supports the ACCES 104-QUAD-8 and ACCES 104-QUAD-4.
  */
-#include <linux/bitops.h>
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/counter.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/isa.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
 
 #define QUAD8_EXTENT 32
 

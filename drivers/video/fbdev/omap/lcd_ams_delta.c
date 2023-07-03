@@ -7,14 +7,14 @@
  * Copyright (C) 2006 Jonathan McDowell <noodles@earth.li>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/lcd.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/lcd.h>
 
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/soc/ti/omap1-io.h>
 
 #include "omapfb.h"
 

@@ -2,13 +2,13 @@
 #ifndef __NET_IP_TUNNELS_H
 #define __NET_IP_TUNNELS_H 1
 
-#include <linux/if_tunnel.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/types.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/bitops.h>
+#include <linex/if_tunnel.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/socket.h>
+#include <linex/types.h>
+#include <linex/u64_stats_sync.h>
+#include <linex/bitops.h>
 
 #include <net/dsfield.h>
 #include <net/gro_cells.h>

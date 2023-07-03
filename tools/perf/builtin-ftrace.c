@@ -16,8 +16,8 @@
 #include <math.h>
 #include <poll.h>
 #include <ctype.h>
-#include <linux/capability.h>
-#include <linux/string.h>
+#include <linex/capability.h>
+#include <linex/string.h>
 
 #include "debug.h"
 #include <subcmd/pager.h>

@@ -5,10 +5,10 @@
  * Copyright IBM Corp. 2013
  */
 
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/jump_label.h>
+#include <linex/export.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/jump_label.h>
 #include <asm/asm-extable.h>
 #include <asm/facility.h>
 #include <asm/pci_insn.h>

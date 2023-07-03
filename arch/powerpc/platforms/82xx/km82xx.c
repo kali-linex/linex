@@ -9,16 +9,16 @@
  * Author: Scott Wood <scottwood@freescale.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/fsl_devices.h>
+#include <linex/of_platform.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/cpm2.h>
 #include <asm/udbg.h>
 #include <asm/machdep.h>
-#include <linux/time.h>
+#include <linex/time.h>
 #include <asm/mpc8260.h>
 
 #include <sysdev/fsl_soc.h>

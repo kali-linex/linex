@@ -4,11 +4,11 @@
  *
  * Copyright IBM Corporation, 2011
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linex.ibm.com>
  */
 
-#ifndef __LINUX_RCU_H
-#define __LINUX_RCU_H
+#ifndef __LINEX_RCU_H
+#define __LINEX_RCU_H
 
 #include <trace/events/rcu.h>
 
@@ -327,7 +327,7 @@ extern void resched_cpu(int cpu);
 
 #if !defined(CONFIG_TINY_RCU)
 
-#include <linux/rcu_node_tree.h>
+#include <linex/rcu_node_tree.h>
 
 extern int rcu_num_lvls;
 extern int num_rcu_lvl[];
@@ -648,4 +648,4 @@ static inline bool rcu_cpu_beenfullyonline(int cpu) { return true; }
 bool rcu_cpu_beenfullyonline(int cpu);
 #endif
 
-#endif /* __LINUX_RCU_H */
+#endif /* __LINEX_RCU_H */

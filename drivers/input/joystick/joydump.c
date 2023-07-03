@@ -8,11 +8,11 @@
  * out of the joystick port into the syslog ...
  */
 
-#include <linux/module.h>
-#include <linux/gameport.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/gameport.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #define DRIVER_DESC	"Gameport data dumper module"
 

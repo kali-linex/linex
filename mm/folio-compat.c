@@ -4,10 +4,10 @@
  * eventually.
  */
 
-#include <linux/migrate.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
+#include <linex/migrate.h>
+#include <linex/pagemap.h>
+#include <linex/rmap.h>
+#include <linex/swap.h>
 #include "internal.h"
 
 struct address_space *page_mapping(struct page *page)

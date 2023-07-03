@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/platform_device.h>
-#include <linux/ktime.h>
+#include <linex/delay.h>
+#include <linex/highmem.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/scatterlist.h>
+#include <linex/platform_device.h>
+#include <linex/ktime.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
 
 #include "cqhci.h"
 #include "cqhci-crypto.h"

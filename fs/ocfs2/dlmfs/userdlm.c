@@ -11,13 +11,13 @@
  * Copyright (C) 2003, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/sched/signal.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/crc32.h>
 
 #include "../ocfs2_lockingver.h"
 #include "../stackglue.h"

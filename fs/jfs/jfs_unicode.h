@@ -6,7 +6,7 @@
 #ifndef _H_JFS_UNICODE
 #define _H_JFS_UNICODE
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include <asm/byteorder.h>
 #include "jfs_types.h"
 

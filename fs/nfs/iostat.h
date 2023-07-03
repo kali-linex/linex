@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/fs/nfs/iostat.h
+ *  linex/fs/nfs/iostat.h
  *
  *  Declarations for NFS client per-mount statistics
  *
@@ -11,9 +11,9 @@
 #ifndef _NFS_IOSTAT
 #define _NFS_IOSTAT
 
-#include <linux/percpu.h>
-#include <linux/cache.h>
-#include <linux/nfs_iostat.h>
+#include <linex/percpu.h>
+#include <linex/cache.h>
+#include <linex/nfs_iostat.h>
 
 struct nfs_iostats {
 	unsigned long long	bytes[__NFSIOS_BYTESMAX];

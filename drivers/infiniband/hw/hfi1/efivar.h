@@ -6,7 +6,7 @@
 #ifndef _HFI1_EFIVAR_H
 #define _HFI1_EFIVAR_H
 
-#include <linux/efi.h>
+#include <linex/efi.h>
 
 #include "hfi.h"
 

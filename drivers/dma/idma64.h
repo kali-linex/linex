@@ -8,12 +8,12 @@
 #ifndef __DMA_IDMA64_H__
 #define __DMA_IDMA64_H__
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
 
 #include "virt-dma.h"
 

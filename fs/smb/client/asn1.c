@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/oid_registry.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/oid_registry.h>
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "cifsproto.h"

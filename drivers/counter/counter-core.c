@@ -3,21 +3,21 @@
  * Generic Counter interface
  * Copyright (C) 2020 William Breathitt Gray
  */
-#include <linux/cdev.h>
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/device/bus.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linex/cdev.h>
+#include <linex/counter.h>
+#include <linex/device.h>
+#include <linex/device/bus.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/gfp.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/kdev_t.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/wait.h>
 
 #include "counter-chrdev.h"
 #include "counter-sysfs.h"

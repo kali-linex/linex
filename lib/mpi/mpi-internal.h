@@ -17,12 +17,12 @@
 #ifndef G10_MPI_INTERNAL_H
 #define G10_MPI_INTERNAL_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/mpi.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/mpi.h>
+#include <linex/errno.h>
 
 #define log_debug printk
 #define log_bug printk

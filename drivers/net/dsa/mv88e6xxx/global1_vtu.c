@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2008 Marvell Semiconductor
  * Copyright (c) 2015 CMC Electronics, Inc.
- * Copyright (c) 2017 Savoir-faire Linux, Inc.
+ * Copyright (c) 2017 Savoir-faire Linex, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <linex/bitfield.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
 
 #include "chip.h"
 #include "global1.h"

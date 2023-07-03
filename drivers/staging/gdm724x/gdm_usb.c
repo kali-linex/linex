@@ -3,15 +3,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/usb/cdc.h>
-#include <linux/wait.h>
-#include <linux/if_ether.h>
-#include <linux/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/usb.h>
+#include <linex/sched.h>
+#include <linex/kthread.h>
+#include <linex/usb/cdc.h>
+#include <linex/wait.h>
+#include <linex/if_ether.h>
+#include <linex/pm_runtime.h>
 
 #include "gdm_usb.h"
 #include "gdm_lte.h"

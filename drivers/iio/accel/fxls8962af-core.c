@@ -12,20 +12,20 @@
  * https://www.nxp.com/docs/en/errata/ES_FXLS8962AF.pdf
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regmap.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/kfifo_buf.h>
+#include <linex/iio/sysfs.h>
 
 #include "fxls8962af.h"
 

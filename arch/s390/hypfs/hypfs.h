@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for Linex on s390.
  *
  *    Copyright IBM Corp. 2006
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -9,11 +9,11 @@
 #ifndef _HYPFS_H_
 #define _HYPFS_H_
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/debugfs.h>
+#include <linex/workqueue.h>
+#include <linex/kref.h>
 #include <asm/hypfs.h>
 
 #define REG_FILE_MODE    0440

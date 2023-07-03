@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/fb.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
 
 ssize_t fb_io_read(struct fb_info *info, char __user *buf, size_t count, loff_t *ppos)
 {

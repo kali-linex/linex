@@ -8,27 +8,27 @@
  *  Copyright (C) 2012 Bertrand Achard (nvram access fixes)
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kstrtox.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/rtc/ds1307.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linex/bcd.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kstrtox.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/rtc/ds1307.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/clk-provider.h>
+#include <linex/regmap.h>
+#include <linex/watchdog.h>
 
 /*
- * We can't determine type by probing, but if we expect pre-Linux code
+ * We can't determine type by probing, but if we expect pre-Linex code
  * to have set the chip up as a clock (turning on the oscillator and
- * setting the date and time), Linux can ignore the non-clock features.
+ * setting the date and time), Linex can ignore the non-clock features.
  * That's a natural job for a factory or repair bench.
  */
 enum ds_type {
@@ -2011,7 +2011,7 @@ static struct i2c_driver ds1307_driver = {
 		.name	= "rtc-ds1307",
 		.of_match_table = ds1307_of_match,
 	},
-	.probe		= ds1307_probe,
+	.probe_new	= ds1307_probe,
 	.id_table	= ds1307_id,
 };
 

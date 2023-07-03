@@ -6,10 +6,10 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <linex/pm.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/delay.h>
 
 #include <asm/reboot.h>
 

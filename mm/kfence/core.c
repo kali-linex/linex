@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) "kfence: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/debugfs.h>
-#include <linux/hash.h>
-#include <linux/irq_work.h>
-#include <linux/jhash.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/moduleparam.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linex/atomic.h>
+#include <linex/bug.h>
+#include <linex/debugfs.h>
+#include <linex/hash.h>
+#include <linex/irq_work.h>
+#include <linex/jhash.h>
+#include <linex/kcsan-checks.h>
+#include <linex/kfence.h>
+#include <linex/kmemleak.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/log2.h>
+#include <linex/memblock.h>
+#include <linex/moduleparam.h>
+#include <linex/notifier.h>
+#include <linex/panic_notifier.h>
+#include <linex/random.h>
+#include <linex/rcupdate.h>
+#include <linex/sched/clock.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
 
 #include <asm/kfence.h>
 

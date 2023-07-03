@@ -24,22 +24,22 @@
 
 #define pr_fmt(fmt) "bmp280: " fmt
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h> /* For irq_get_irq_data() */
-#include <linux/completion.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
+#include <linex/bitops.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/regmap.h>
+#include <linex/delay.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h> /* For irq_get_irq_data() */
+#include <linex/completion.h>
+#include <linex/pm_runtime.h>
+#include <linex/random.h>
 
 #include <asm/unaligned.h>
 

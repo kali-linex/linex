@@ -4,16 +4,16 @@
  * Author: Fabien Dessenne <fabien.dessenne@st.com>
  */
 
-#include <linux/bitrev.h>
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/crc32poly.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitrev.h>
+#include <linex/clk.h>
+#include <linex/crc32.h>
+#include <linex/crc32poly.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include <crypto/internal/hash.h>
 

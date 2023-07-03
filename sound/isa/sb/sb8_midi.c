@@ -13,8 +13,8 @@
  *   Added full duplex UART mode for DSP version 2.0 and later.
  */
 
-#include <linux/io.h>
-#include <linux/time.h>
+#include <linex/io.h>
+#include <linex/time.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 

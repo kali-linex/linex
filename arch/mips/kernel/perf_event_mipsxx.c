@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux performance counter support for MIPS.
+ * Linex performance counter support for MIPS.
  *
  * Copyright (C) 2010 MIPS Technologies, Inc.
  * Copyright (C) 2011 Cavium Networks, Inc.
@@ -12,12 +12,12 @@
  * support references the code of MIPS stacktrace.c.
  */
 
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <linex/cpumask.h>
+#include <linex/interrupt.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/perf_event.h>
+#include <linex/uaccess.h>
 
 #include <asm/irq.h>
 #include <asm/irq_regs.h>

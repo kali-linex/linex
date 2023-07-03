@@ -7,9 +7,9 @@
 #ifndef __PINCTRL_MTK_COMMON_H
 #define __PINCTRL_MTK_COMMON_H
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/regmap.h>
+#include <linex/pinctrl/pinconf-generic.h>
 
 #include "mtk-eint.h"
 

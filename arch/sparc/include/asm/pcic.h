@@ -10,13 +10,13 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
+#include <linex/types.h>
+#include <linex/smp.h>
+#include <linex/pci.h>
+#include <linex/ioport.h>
 #include <asm/pbm.h>
 
-struct linux_pcic {
+struct linex_pcic {
         void __iomem            *pcic_regs;
         unsigned long           pcic_io;
         void __iomem            *pcic_config_space_addr;
@@ -25,7 +25,7 @@ struct linux_pcic {
 	struct resource		pcic_res_io;
 	struct resource		pcic_res_cfg_addr;
 	struct resource		pcic_res_cfg_data;
-        struct linux_pbm_info   pbm;
+        struct linex_pbm_info   pbm;
 	struct pcic_ca2irq	*pcic_imap;
 	int			pcic_imdim;
 };

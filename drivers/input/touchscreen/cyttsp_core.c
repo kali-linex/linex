@@ -13,16 +13,16 @@
  * Contact Cypress Semiconductor at www.cypress.com <kev@cypress.com>
  */
 
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/property.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/input.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/gpio.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/property.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include "cyttsp_core.h"
 

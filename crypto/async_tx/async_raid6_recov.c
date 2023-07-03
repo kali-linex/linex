@@ -6,13 +6,13 @@
  * based on raid6recov.c:
  *   Copyright 2002 H. Peter Anvin
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/dmaengine.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/raid/pq.h>
+#include <linex/async_tx.h>
+#include <linex/dmaengine.h>
 
 static struct dma_async_tx_descriptor *
 async_sum_product(struct page *dest, unsigned int d_off,

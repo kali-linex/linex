@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptctl.c
+ *  linex/drivers/message/fusion/mptctl.c
  *      mpt Ioctl driver.
  *      For use with LSI PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinex@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -45,20 +45,20 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/delay.h>	/* for mdelay */
+#include <linex/miscdevice.h>
+#include <linex/mutex.h>
+#include <linex/compat.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -73,7 +73,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT misc device (ioctl) driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_LINEX_VERSION_COMMON
 #define MYNAM		"mptctl"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -159,7 +159,7 @@ static struct fasync_struct *async_queue=NULL;
 //                  ^----------------- 80 + 512
 #define MAX_SGL_BYTES		((MAX_FRAGS_SPILL1 + 1 + (4 * FRAGS_PER_BUCKET)) * 8)
 
-/* linux only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
+/* linex only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
 #define MAX_KMALLOC_SZ		(128*1024)
 
 #define MPT_IOCTL_DEFAULT_TIMEOUT 10	/* Default timeout value (seconds) */
@@ -1328,7 +1328,7 @@ mptctl_getiocinfo (MPT_ADAPTER *ioc, unsigned long arg, unsigned int data_size)
 
 	/* Set the Version Strings.
 	 */
-	strncpy (karg->driverVersion, MPT_LINUX_PACKAGE_NAME, MPT_IOCTL_VERSION_LENGTH);
+	strncpy (karg->driverVersion, MPT_LINEX_PACKAGE_NAME, MPT_IOCTL_VERSION_LENGTH);
 	karg->driverVersion[MPT_IOCTL_VERSION_LENGTH-1]='\0';
 
 	karg->busChangeEvent = 0;

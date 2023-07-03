@@ -9,15 +9,15 @@
 #ifndef STA_INFO_H
 #define STA_INFO_H
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/workqueue.h>
-#include <linux/average.h>
-#include <linux/bitfield.h>
-#include <linux/etherdevice.h>
-#include <linux/rhashtable.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/list.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
+#include <linex/workqueue.h>
+#include <linex/average.h>
+#include <linex/bitfield.h>
+#include <linex/etherdevice.h>
+#include <linex/rhashtable.h>
+#include <linex/u64_stats_sync.h>
 #include "key.h"
 
 /**

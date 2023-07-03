@@ -7,17 +7,17 @@
  *  Copyright (C) 2022 Microchip Technology Inc., All Rights Reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/units.h>
-#include <linux/tty.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/units.h>
+#include <linex/tty.h>
 
 #include <asm/byteorder.h>
 

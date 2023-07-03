@@ -15,15 +15,15 @@
  * Platform initialization for Discontig Memory
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/nodemask.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/nmi.h>
+#include <linex/swap.h>
+#include <linex/memblock.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/nodemask.h>
+#include <linex/slab.h>
 #include <asm/efi.h>
 #include <asm/tlb.h>
 #include <asm/meminit.h>

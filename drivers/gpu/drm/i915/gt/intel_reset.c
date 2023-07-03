@@ -3,9 +3,9 @@
  * Copyright © 2008-2018 Intel Corporation
  */
 
-#include <linux/sched/mm.h>
-#include <linux/stop_machine.h>
-#include <linux/string_helpers.h>
+#include <linex/sched/mm.h>
+#include <linex/stop_machine.h>
+#include <linex/string_helpers.h>
 
 #include "display/intel_display_reset.h"
 #include "display/intel_overlay.h"

@@ -8,10 +8,10 @@
 #include "gve_dqo.h"
 #include "gve_adminq.h"
 #include "gve_utils.h"
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
 #include <net/ip6_checksum.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>

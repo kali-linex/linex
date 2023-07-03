@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/fault-armv.c
+ *  linex/arch/arm/mm/fault-armv.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Modifications for ARM processor (c) 1995-2002 Russell King
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/bitops.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/pagemap.h>
+#include <linex/gfp.h>
 
 #include <asm/bugs.h>
 #include <asm/cacheflush.h>
@@ -23,7 +23,7 @@
 
 static pteval_t shared_pte_mask = L_PTE_MT_BUFFERABLE;
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __LINEX_ARM_ARCH__ < 6
 /*
  * We take the easy way out of this problem - we make the
  * PTE uncacheable.  However, we leave the write buffer on.
@@ -209,7 +209,7 @@ void update_mmu_cache(struct vm_area_struct *vma, unsigned long addr,
 			__flush_icache_all();
 	}
 }
-#endif	/* __LINUX_ARM_ARCH__ < 6 */
+#endif	/* __LINEX_ARM_ARCH__ < 6 */
 
 /*
  * Check whether the write buffer has physical address aliasing

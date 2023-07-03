@@ -4,14 +4,14 @@
  *
  * Copyright (c) 2017, 2021-2022 Intel Corporation.
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *	    Jonathan Yong <jonathan.yong@intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/platform_data/x86/p2sb.h>
+#include <linex/bits.h>
+#include <linex/export.h>
+#include <linex/pci.h>
+#include <linex/platform_data/x86/p2sb.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

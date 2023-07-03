@@ -12,43 +12,43 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <linex/stringify.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/dma-mapping.h>
+#include <linex/bitops.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/delay.h>
+#include <linex/delay.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/time.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
+#include <linex/time.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/if.h>
+#include <linex/if_vlan.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/checksum.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/prefetch.h>
-#include <linux/cache.h>
-#include <linux/firmware.h>
-#include <linux/log2.h>
-#include <linux/crash_dump.h>
+#include <linex/workqueue.h>
+#include <linex/crc32.h>
+#include <linex/prefetch.h>
+#include <linex/cache.h>
+#include <linex/firmware.h>
+#include <linex/log2.h>
+#include <linex/crash_dump.h>
 
 #if IS_ENABLED(CONFIG_CNIC)
 #define BCM_CNIC 1

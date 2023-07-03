@@ -4,8 +4,8 @@
 
 #include <stdbool.h>
 #include <sys/types.h> // pid_t
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 #include <perf/cpumap.h>
 
 struct auxtrace_record;

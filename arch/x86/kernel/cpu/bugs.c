@@ -8,14 +8,14 @@
  *	- Channing Corn (tests & fixes),
  *	- Andrew D. Balsa (code cleanup).
  */
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched/smt.h>
-#include <linux/pgtable.h>
-#include <linux/bpf.h>
+#include <linex/init.h>
+#include <linex/cpu.h>
+#include <linex/module.h>
+#include <linex/nospec.h>
+#include <linex/prctl.h>
+#include <linex/sched/smt.h>
+#include <linex/pgtable.h>
+#include <linex/bpf.h>
 
 #include <asm/spec-ctrl.h>
 #include <asm/cmdline.h>

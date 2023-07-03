@@ -20,21 +20,21 @@
  * during SPI transfers by setting max_speed_hz via the device tree.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi_bitbang.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 

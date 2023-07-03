@@ -27,9 +27,9 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/pci.h>		/* To determine if a card is pci-e */
-#include <linux/log2.h>
-#include <linux/platform_device.h>
+#include <linex/pci.h>		/* To determine if a card is pci-e */
+#include <linex/log2.h>
+#include <linex/platform_device.h>
 #include "ath5k.h"
 #include "reg.h"
 #include "debug.h"

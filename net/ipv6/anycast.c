@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Anycast support for IPv6
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	David L Stevens (dlstevens@us.ibm.com)
@@ -9,23 +9,23 @@
  *	based heavily on net/ipv6/mcast.c
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/random.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/route.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

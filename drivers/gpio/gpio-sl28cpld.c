@@ -5,15 +5,15 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/regmap.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/regmap.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /* GPIO flavor */
 #define GPIO_REG_DIR	0x00

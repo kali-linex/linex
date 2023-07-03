@@ -6,9 +6,9 @@
  * TODO: Merge attr_set_size/attr_data_get_block/attr_allocate_frame?
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
 
 #include "debug.h"
 #include "ntfs.h"

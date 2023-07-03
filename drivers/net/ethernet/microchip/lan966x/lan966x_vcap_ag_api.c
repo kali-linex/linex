@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0 OR MIT)
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
 
 #include "lan966x_vcap_ag_api.h"
 

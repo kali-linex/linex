@@ -9,11 +9,11 @@
  * Copyright (C) 2002 Intel Corporation
  * Copyright (C) 2003-2004 MontaVista Software, Inc.
  */
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/xip.h>
+#include <linex/export.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/xip.h>
 #include "physmap-ixp4xx.h"
 
 /*

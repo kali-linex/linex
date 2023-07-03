@@ -27,27 +27,27 @@
 
 		button-batlow-n {
 			label = "BATLOW#";
-			linux,code = <KEY_BATTERY>;
+			linex,code = <KEY_BATTERY>;
 			gpios = <&gpio3 RK_PA7 GPIO_ACTIVE_LOW>;
 		};
 
 		button-slp-btn-n {
 			label = "SLP_BTN#";
-			linux,code = <KEY_SLEEP>;
+			linex,code = <KEY_SLEEP>;
 			gpios = <&gpio1 RK_PB7 GPIO_ACTIVE_LOW>;
 		};
 
 		button-wake-n {
 			label = "WAKE#";
-			linux,code = <KEY_WAKEUP>;
+			linex,code = <KEY_WAKEUP>;
 			gpios = <&gpio1 RK_PB6 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		switch-lid-btn-n {
 			label = "LID_BTN#";
-			linux,code = <SW_LID>;
-			linux,input-type = <EV_SW>;
+			linex,code = <SW_LID>;
+			linex,input-type = <EV_SW>;
 			gpios = <&gpio3 RK_PA6 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -57,7 +57,7 @@
 
 		sd_card_led: led-1 {
 			gpios = <&gpio3 RK_PB3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc2";
+			linex,default-trigger = "mmc2";
 			function = LED_FUNCTION_SD;
 			color = <LED_COLOR_ID_BLUE>;
 		};

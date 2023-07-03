@@ -34,14 +34,14 @@
  *    later models it's called RCLK.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 #include <asm/mach-au1x00/au1000.h>
 
 /* Base clock: 12MHz is the default in all databooks, and I haven't

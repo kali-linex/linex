@@ -10,17 +10,17 @@
  * and Nettle, by Niels Möller.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/completion.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/jump_label.h>
+#include <linex/kernel.h>
+#include <linex/kmod.h>
+#include <linex/module.h>
+#include <linex/param.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/completion.h>
 #include "internal.h"
 
 LIST_HEAD(crypto_alg_list);

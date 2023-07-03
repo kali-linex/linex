@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Force feedback support for Linux input subsystem
+ *  Force feedback support for Linex input subsystem
  *
  *  Copyright (c) 2006 Anssi Hannula <anssi.hannula@gmail.com>
  *  Copyright (c) 2006 Dmitry Torokhov <dtor@mail.ru>
@@ -8,11 +8,11 @@
 
 /* #define DEBUG */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 /*
  * Check that the effect_id is a valid effect and whether the user

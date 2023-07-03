@@ -11,9 +11,9 @@
  * Copyright (C) 2008 Magnus Damm
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-dma-contig.h>

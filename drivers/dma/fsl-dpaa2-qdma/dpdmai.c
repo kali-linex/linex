@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright 2019 NXP
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/fsl/mc.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/fsl/mc.h>
 #include "dpdmai.h"
 
 struct dpdmai_rsp_get_attributes {

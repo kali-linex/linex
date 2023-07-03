@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2011 Texas Instruments, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/bug.h>
+#include <linex/io.h>
 
 #include <asm/div64.h>
 

@@ -6,13 +6,13 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
 
 #define OCP2SCP_TIMING 0x18
 #define SYNC2_MASK 0xf

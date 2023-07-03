@@ -46,8 +46,8 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_SMAPI_H
-#define _LINUX_SMAPI_H
+#ifndef _LINEX_SMAPI_H
+#define _LINEX_SMAPI_H
 
 typedef struct {
 	int bDSPPresent;

@@ -3,8 +3,8 @@
  * Copyright (C) 2001 Dave Engebretsen IBM Corporation
  */
 
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
+#include <linex/interrupt.h>
+#include <linex/of_irq.h>
 
 #include "pseries.h"
 

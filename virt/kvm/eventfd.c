@@ -9,21 +9,21 @@
  *	Gregory Haskins <ghaskins@novell.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/workqueue.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/eventfd.h>
-#include <linux/kernel.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/seqlock.h>
-#include <linux/irqbypass.h>
+#include <linex/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/kvm_irqfd.h>
+#include <linex/workqueue.h>
+#include <linex/syscalls.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/file.h>
+#include <linex/list.h>
+#include <linex/eventfd.h>
+#include <linex/kernel.h>
+#include <linex/srcu.h>
+#include <linex/slab.h>
+#include <linex/seqlock.h>
+#include <linex/irqbypass.h>
 #include <trace/events/kvm.h>
 
 #include <kvm/iodev.h>

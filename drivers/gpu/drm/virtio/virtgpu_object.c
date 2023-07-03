@@ -23,8 +23,8 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
+#include <linex/dma-mapping.h>
+#include <linex/moduleparam.h>
 
 #include "virtgpu_drv.h"
 

@@ -11,7 +11,7 @@
  * Red Hat Inc. https://www.redhat.com
  *
  * Forked and adapted from the i5000_edac driver which was
- * written by Douglas Thompson Linux Networx <norsk5@xmission.com>
+ * written by Douglas Thompson Linex Networx <norsk5@xmission.com>
  *
  * This module is based on the following document:
  *
@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/slab.h>
+#include <linex/edac.h>
+#include <linex/mmzone.h>
 
 #include "edac_module.h"
 

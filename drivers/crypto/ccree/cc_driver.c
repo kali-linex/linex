@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2012-2019 ARM Limited or its affiliates. */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
-#include <linux/crypto.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/crypto.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
 
 #include "cc_driver.h"
 #include "cc_request_mgr.h"

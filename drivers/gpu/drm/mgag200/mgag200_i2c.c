@@ -26,10 +26,10 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/export.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
-#include <linux/pci.h>
+#include <linex/export.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/i2c.h>
+#include <linex/pci.h>
 
 #include "mgag200_drv.h"
 

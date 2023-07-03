@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/pid.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/syscalls.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/acct.h>
-#include <linux/slab.h>
-#include <linux/proc_ns.h>
-#include <linux/reboot.h>
-#include <linux/export.h>
-#include <linux/sched/task.h>
-#include <linux/sched/signal.h>
-#include <linux/idr.h>
+#include <linex/pid.h>
+#include <linex/pid_namespace.h>
+#include <linex/user_namespace.h>
+#include <linex/syscalls.h>
+#include <linex/cred.h>
+#include <linex/err.h>
+#include <linex/acct.h>
+#include <linex/slab.h>
+#include <linex/proc_ns.h>
+#include <linex/reboot.h>
+#include <linex/export.h>
+#include <linex/sched/task.h>
+#include <linex/sched/signal.h>
+#include <linex/idr.h>
 #include "pid_sysctl.h"
 
 static DEFINE_MUTEX(pid_caches_mutex);
@@ -322,13 +322,13 @@ int reboot_pid_ns(struct pid_namespace *pid_ns, int cmd)
 		return 0;
 
 	switch (cmd) {
-	case LINUX_REBOOT_CMD_RESTART2:
-	case LINUX_REBOOT_CMD_RESTART:
+	case LINEX_REBOOT_CMD_RESTART2:
+	case LINEX_REBOOT_CMD_RESTART:
 		pid_ns->reboot = SIGHUP;
 		break;
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
-	case LINUX_REBOOT_CMD_HALT:
+	case LINEX_REBOOT_CMD_POWER_OFF:
+	case LINEX_REBOOT_CMD_HALT:
 		pid_ns->reboot = SIGINT;
 		break;
 	default:

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/drivers/serial/acorn.c
+ *  linex/drivers/serial/acorn.c
  *
  *  Copyright (C) 1996-2003 Russell King.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/tty.h>
+#include <linex/serial_core.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/init.h>
 
 #include <asm/io.h>
 #include <asm/ecard.h>

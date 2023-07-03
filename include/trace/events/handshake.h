@@ -5,8 +5,8 @@
 #if !defined(_TRACE_HANDSHAKE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HANDSHAKE_H
 
-#include <linux/net.h>
-#include <linux/tracepoint.h>
+#include <linex/net.h>
+#include <linex/tracepoint.h>
 
 DECLARE_EVENT_CLASS(handshake_event_class,
 	TP_PROTO(

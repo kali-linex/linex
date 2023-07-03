@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2010 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 
 #include "vnic_vic.h"
 

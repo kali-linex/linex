@@ -6,14 +6,14 @@
  *  Copyright 2007 Sony Corp.
  */
 
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/rcuwait.h>
+#include <linex/delay.h>
+#include <linex/freezer.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/reboot.h>
+#include <linex/rcuwait.h>
 
 #include <asm/firmware.h>
 #include <asm/lv1call.h>

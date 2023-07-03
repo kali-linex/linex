@@ -9,26 +9,26 @@
 
 #define pr_fmt(fmt) "kvm-guest: " fmt
 
-#include <linux/context_tracking.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kvm_para.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hardirq.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/hash.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kprobes.h>
-#include <linux/nmi.h>
-#include <linux/swait.h>
-#include <linux/syscore_ops.h>
-#include <linux/cc_platform.h>
-#include <linux/efi.h>
+#include <linex/context_tracking.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/kvm_para.h>
+#include <linex/cpu.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/hardirq.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/hash.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/kprobes.h>
+#include <linex/nmi.h>
+#include <linex/swait.h>
+#include <linex/syscore_ops.h>
+#include <linex/cc_platform.h>
+#include <linex/efi.h>
 #include <asm/timer.h>
 #include <asm/cpu.h>
 #include <asm/traps.h>

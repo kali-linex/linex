@@ -3,7 +3,7 @@
  * Copyright (c) 2016 Facebook
  */
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 
 #include "disasm.h"
 

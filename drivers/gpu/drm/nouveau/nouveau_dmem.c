@@ -36,10 +36,10 @@
 
 #include <nvhw/class/cla0b5.h>
 
-#include <linux/sched/mm.h>
-#include <linux/hmm.h>
-#include <linux/memremap.h>
-#include <linux/migrate.h>
+#include <linex/sched/mm.h>
+#include <linex/hmm.h>
+#include <linex/memremap.h>
+#include <linex/migrate.h>
 
 /*
  * FIXME: this is ugly right now we are using TTM to allocate vram and we pin

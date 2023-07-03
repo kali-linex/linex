@@ -8,12 +8,12 @@
  * helper functions when coping with rational numbers
  */
 
-#include <linux/rational.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/minmax.h>
-#include <linux/limits.h>
-#include <linux/module.h>
+#include <linex/rational.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
+#include <linex/minmax.h>
+#include <linex/limits.h>
+#include <linex/module.h>
 
 /*
  * calculate best rational approximation for a given fraction

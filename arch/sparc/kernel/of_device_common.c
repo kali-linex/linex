@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/export.h>
+#include <linex/mod_devicetable.h>
+#include <linex/errno.h>
+#include <linex/irq.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
 
 #include "of_device_common.h"
 

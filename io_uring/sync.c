@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/io_uring.h>
-#include <linux/fsnotify.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/namei.h>
+#include <linex/io_uring.h>
+#include <linex/fsnotify.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/linex/io_uring.h>
 
 #include "io_uring.h"
 #include "sync.h"

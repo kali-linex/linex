@@ -11,31 +11,31 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	linex-arm-kernel@lists.arm.linex.org.uk
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/lcd.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/cpufreq.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/lcd.h>
+#include <linex/math64.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
-#include <linux/regulator/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

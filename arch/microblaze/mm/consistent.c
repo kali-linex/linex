@@ -6,12 +6,12 @@
  * Copyright (C) 2005 John Williams <jwilliams@itee.uq.edu.au>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/dma-map-ops.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/dma-map-ops.h>
 #include <asm/cpuinfo.h>
 #include <asm/cacheflush.h>
 

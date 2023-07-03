@@ -3,15 +3,15 @@
  * Copyright 2013 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/usb.h>
+#include <linex/hid.h>
+#include <linex/mutex.h>
+#include <linex/videodev2.h>
 #include <asm/unaligned.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
@@ -174,7 +174,7 @@ static void usb_raremono_disconnect(struct usb_interface *intf)
 }
 
 /*
- * Linux Video interface
+ * Linex Video interface
  */
 static int vidioc_querycap(struct file *file, void *priv,
 					struct v4l2_capability *v)

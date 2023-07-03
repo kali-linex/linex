@@ -6,10 +6,10 @@
  * Chao Xie <chao.xie@marvell.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <linex/clk-provider.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/err.h>
 
 #include "clk.h"
 

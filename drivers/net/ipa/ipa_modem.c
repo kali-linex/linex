@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2014-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_rmnet.h>
-#include <linux/etherdevice.h>
+#include <linex/errno.h>
+#include <linex/if_arp.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/if_rmnet.h>
+#include <linex/etherdevice.h>
 #include <net/pkt_sched.h>
-#include <linux/pm_runtime.h>
-#include <linux/remoteproc/qcom_rproc.h>
+#include <linex/pm_runtime.h>
+#include <linex/remoteproc/qcom_rproc.h>
 
 #include "ipa.h"
 #include "ipa_data.h"

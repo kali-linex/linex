@@ -5,7 +5,7 @@
  */
 
 #include <test_progs.h>
-#include <linux/limits.h>
+#include <linex/limits.h>
 
 #include "bprm_opts.skel.h"
 #include "network_helpers.h"

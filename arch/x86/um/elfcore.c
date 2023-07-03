@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/elf.h>
-#include <linux/coredump.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linex/elf.h>
+#include <linex/coredump.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
 
 #include <asm/elf.h>
 

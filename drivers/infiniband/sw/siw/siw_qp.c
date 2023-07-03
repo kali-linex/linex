@@ -3,11 +3,11 @@
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/scatterlist.h>
-#include <linux/llist.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/net.h>
+#include <linex/scatterlist.h>
+#include <linex/llist.h>
 #include <asm/barrier.h>
 #include <net/tcp.h>
 #include <trace/events/sock.h>

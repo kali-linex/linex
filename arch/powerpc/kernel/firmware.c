@@ -9,9 +9,9 @@
  *  Copyright (C) 2005 Stephen Rothwell, IBM Corporation
  */
 
-#include <linux/export.h>
-#include <linux/cache.h>
-#include <linux/of.h>
+#include <linex/export.h>
+#include <linex/cache.h>
+#include <linex/of.h>
 
 #include <asm/firmware.h>
 #include <asm/kvm_guest.h>
@@ -31,7 +31,7 @@ int __init check_kvm_guest(void)
 	if (!hyper_node)
 		return 0;
 
-	if (of_device_is_compatible(hyper_node, "linux,kvm"))
+	if (of_device_is_compatible(hyper_node, "linex,kvm"))
 		static_branch_enable(&kvm_guest);
 
 	of_node_put(hyper_node);

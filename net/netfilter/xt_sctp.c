@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/sctp.h>
+#include <linex/sctp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_sctp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_sctp.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kiran Kumar Immidi");

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/blkdev.h>
 #include "internal.h"
 
 static int devinfo_show(struct seq_file *f, void *v)

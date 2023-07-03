@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <sys/capability.h>
-#include <linux/capability.h>
+#include <linex/capability.h>
 
 int main(void)
 {

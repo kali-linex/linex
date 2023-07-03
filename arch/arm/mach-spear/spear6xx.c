@@ -10,14 +10,14 @@
  * Copyright 2012 Stefan Roese <sr@denx.de>
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/clk.h>
-#include <linux/clk/spear.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/amba/pl080.h>
+#include <linex/amba/pl08x.h>
+#include <linex/clk.h>
+#include <linex/clk/spear.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/amba/pl080.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>

@@ -22,7 +22,7 @@
  * Authors: Ben Skeggs
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include "aux.h"
 #include "pad.h"

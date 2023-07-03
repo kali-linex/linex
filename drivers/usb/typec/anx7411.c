@@ -6,27 +6,27 @@
  * Copyright(c) 2022, Analogix Semiconductor. All rights reserved.
  *
  */
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/workqueue.h>
-#include <linux/power_supply.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/usb/pd.h>
+#include <linex/usb/role.h>
+#include <linex/usb/tcpci.h>
+#include <linex/usb/typec.h>
+#include <linex/usb/typec_dp.h>
+#include <linex/usb/typec_mux.h>
+#include <linex/workqueue.h>
+#include <linex/power_supply.h>
 
 #define TCPC_ADDRESS1		0x58
 #define TCPC_ADDRESS2		0x56

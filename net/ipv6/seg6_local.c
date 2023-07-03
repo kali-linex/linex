@@ -7,11 +7,11 @@
  *  eBPF support: Mathieu Xhonneux <m.xhonneux@gmail.com>
  */
 
-#include <linux/filter.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/module.h>
+#include <linex/filter.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/net.h>
+#include <linex/module.h>
 #include <net/ip.h>
 #include <net/lwtunnel.h>
 #include <net/netevent.h>
@@ -19,8 +19,8 @@
 #include <net/ip6_fib.h>
 #include <net/route.h>
 #include <net/seg6.h>
-#include <linux/seg6.h>
-#include <linux/seg6_local.h>
+#include <linex/seg6.h>
+#include <linex/seg6_local.h>
 #include <net/addrconf.h>
 #include <net/ip6_route.h>
 #include <net/dst_cache.h>
@@ -29,9 +29,9 @@
 #include <net/seg6_hmac.h>
 #endif
 #include <net/seg6_local.h>
-#include <linux/etherdevice.h>
-#include <linux/bpf.h>
-#include <linux/netfilter.h>
+#include <linex/etherdevice.h>
+#include <linex/bpf.h>
+#include <linex/netfilter.h>
 
 #define SEG6_F_ATTR(i)		BIT(i)
 

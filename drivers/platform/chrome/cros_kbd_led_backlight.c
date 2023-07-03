@@ -3,19 +3,19 @@
 //
 // Copyright (C) 2012 Google, Inc.
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
 struct keyboard_led {
 	struct led_classdev cdev;
@@ -32,7 +32,7 @@ struct keyboard_led {
  *				LED device register
  * @max_brightness:		Maximum brightness.
  *
- * See struct led_classdev in include/linux/leds.h for more details.
+ * See struct led_classdev in include/linex/leds.h for more details.
  */
 struct keyboard_led_drvdata {
 	int (*init)(struct platform_device *pdev);

@@ -7,9 +7,9 @@
  * Author: Damien Horsley <Damien.Horsley@imgtec.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/module.h>
 
 #include <sound/soc.h>
 

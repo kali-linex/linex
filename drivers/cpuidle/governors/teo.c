@@ -132,13 +132,13 @@
  * be selected instead, as long as is not a polling state.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/topology.h>
-#include <linux/tick.h>
+#include <linex/cpuidle.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/topology.h>
+#include <linex/tick.h>
 
 /*
  * The number of bits to shift the CPU's capacity by in order to determine

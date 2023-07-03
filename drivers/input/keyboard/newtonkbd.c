@@ -4,13 +4,13 @@
  */
 
 /*
- * Newton keyboard driver for Linux
+ * Newton keyboard driver for Linex
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/serio.h>
 
 #define DRIVER_DESC	"Newton keyboard driver"
 

@@ -3,12 +3,12 @@
  * Copyright (C) 2014 Intel Corporation
  *
  * Authors:
- *	Chen, Gong <gong.chen@linux.intel.com>
+ *	Chen, Gong <gong.chen@linex.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/ras.h>
-#include <linux/uuid.h>
+#include <linex/init.h>
+#include <linex/ras.h>
+#include <linex/uuid.h>
 
 #define CREATE_TRACE_POINTS
 #define TRACE_INCLUDE_PATH ../../include/ras

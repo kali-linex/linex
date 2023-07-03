@@ -3,14 +3,14 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/tty.h>
-#include <linux/fcntl.h>
-#include <linux/uaccess.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/tty.h>
+#include <linex/fcntl.h>
+#include <linex/uaccess.h>
 #include "tty.h"
 
 static int is_ignored(int sig)

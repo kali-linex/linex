@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The Linex Foundation. All rights reserved.
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linex/bitfield.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/mhi.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/wait.h>
 #include "internal.h"
 
 static DEFINE_IDA(mhi_controller_ida);

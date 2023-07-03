@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/mfd/da9063/registers.h>
-#include <linux/mfd/da9063/core.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/mfd/da9063/registers.h>
+#include <linex/mfd/da9063/core.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 /*
  * Watchdog selector to timeout in seconds.

@@ -4,13 +4,13 @@
  * Author: Jyri Sarha <jsarha@ti.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

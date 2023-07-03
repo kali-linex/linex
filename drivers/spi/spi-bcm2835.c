@@ -11,25 +11,25 @@
  * spi-atmel.c, Copyright (C) 2006 Atmel Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h> /* FIXME: using chip internals */
-#include <linux/gpio/driver.h> /* FIXME: using chip internals */
-#include <linux/of_irq.h>
-#include <linux/spi/spi.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h> /* FIXME: using chip internals */
+#include <linex/gpio/driver.h> /* FIXME: using chip internals */
+#include <linex/of_irq.h>
+#include <linex/spi/spi.h>
 
 /* SPI register offsets */
 #define BCM2835_SPI_CS			0x00

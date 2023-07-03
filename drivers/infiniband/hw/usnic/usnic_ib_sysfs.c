@@ -31,8 +31,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <linex/init.h>
+#include <linex/errno.h>
 
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>

@@ -32,20 +32,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/socket.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
+#include <linex/socket.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/kernel.h>
+#include <linex/workqueue.h>
+#include <linex/list.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/udp_tunnel.h>
 #include <net/ipv6_stubs.h>
-#include <linux/tipc_netlink.h>
+#include <linex/tipc_netlink.h>
 #include "core.h"
 #include "addr.h"
 #include "net.h"

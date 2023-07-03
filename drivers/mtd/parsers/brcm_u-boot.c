@@ -3,11 +3,11 @@
  * Copyright © 2022 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
 
 #define BRCM_U_BOOT_MAX_OFFSET		0x200000
 #define BRCM_U_BOOT_STEP		0x1000

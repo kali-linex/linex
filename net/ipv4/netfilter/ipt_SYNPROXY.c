@@ -3,9 +3,9 @@
  * Copyright (c) 2013 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_SYNPROXY.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_SYNPROXY.h>
 
 #include <net/netfilter/nf_synproxy.h>
 

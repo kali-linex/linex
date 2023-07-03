@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH Linex-syscall-note */
 /*
  * Author: Hanlu Li <lihanlu@loongson.cn>
  *         Huacai Chen <chenhuacai@loongson.cn>
@@ -8,8 +8,8 @@
 #ifndef _UAPI_ASM_SIGCONTEXT_H
 #define _UAPI_ASM_SIGCONTEXT_H
 
-#include <linux/types.h>
-#include <linux/posix_types.h>
+#include <linex/types.h>
+#include <linex/posix_types.h>
 
 /* FP context was used */
 #define SC_USED_FP		(1 << 0)

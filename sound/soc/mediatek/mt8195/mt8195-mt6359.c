@@ -8,10 +8,10 @@
  *	   YC Hung <yc.hung@mediatek.com>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/rt5682.h>

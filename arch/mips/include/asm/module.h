@@ -2,8 +2,8 @@
 #ifndef _ASM_MODULE_H
 #define _ASM_MODULE_H
 
-#include <linux/list.h>
-#include <linux/elf.h>
+#include <linex/list.h>
+#include <linex/elf.h>
 #include <asm/extable.h>
 
 struct mod_arch_specific {

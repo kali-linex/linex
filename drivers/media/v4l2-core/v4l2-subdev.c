@@ -8,16 +8,16 @@
  *	    Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/export.h>
-#include <linux/ioctl.h>
-#include <linux/leds.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/overflow.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/version.h>
-#include <linux/videodev2.h>
+#include <linex/export.h>
+#include <linex/ioctl.h>
+#include <linex/leds.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/overflow.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/version.h>
+#include <linex/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
@@ -522,7 +522,7 @@ static long subdev_do_ioctl(struct file *file, unsigned int cmd, void *arg,
 		struct v4l2_subdev_capability *cap = arg;
 
 		memset(cap->reserved, 0, sizeof(cap->reserved));
-		cap->version = LINUX_VERSION_CODE;
+		cap->version = LINEX_VERSION_CODE;
 		cap->capabilities =
 			(ro_subdev ? V4L2_SUBDEV_CAP_RO_SUBDEV : 0) |
 			(streams_subdev ? V4L2_SUBDEV_CAP_STREAMS : 0);

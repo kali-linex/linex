@@ -7,16 +7,16 @@
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/stddef.h>
-#include <linux/acpi.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/notifier.h>
+#include <linex/platform_device.h>
+#include <linex/jiffies.h>
+#include <linex/stddef.h>
+#include <linex/acpi.h>
 
 #include "internal.h"
 

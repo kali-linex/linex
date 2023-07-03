@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Implementation of the diskquota system for the LINUX operating system. QUOTA
+ * Implementation of the diskquota system for the LINEX operating system. QUOTA
  * is implemented using the BSD system call interface as the means of
  * communication with the user level. This file contains the generic routines
  * called by the different filesystems on allocation of an inode or block.
  * These routines take care of the administration needed to have a consistent
  * diskquota tracking system. The ideas of both user and group quotas are based
  * on the Melbourne quota system as used on BSD derived systems. The internal
- * implementation is based on one of the several variants of the LINUX
+ * implementation is based on one of the several variants of the LINEX
  * inode-subsystem with added complexity of the diskquota system.
  *
  * Author:	Marco van Wieringen <mvw@planets.elm.net>
@@ -54,35 +54,35 @@
  * (C) Copyright 1994 - 1997 Marco van Wieringen
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/kmod.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/sched/mm.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/mm.h>
+#include <linex/time.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/stat.h>
+#include <linex/tty.h>
+#include <linex/file.h>
+#include <linex/slab.h>
+#include <linex/sysctl.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/security.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/kmod.h>
+#include <linex/namei.h>
+#include <linex/capability.h>
+#include <linex/quotaops.h>
+#include <linex/blkdev.h>
+#include <linex/sched/mm.h>
 #include "../internal.h" /* ugh */
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*
  * There are five quota SMP locks:

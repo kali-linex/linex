@@ -7,12 +7,12 @@
  * https://github.com/microchip-ung/sparx-5_reginfo
  */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/dma-mapping.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/dma-mapping.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

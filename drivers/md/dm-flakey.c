@@ -6,13 +6,13 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linex/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/slab.h>
 
 #define DM_MSG_PREFIX "flakey"
 

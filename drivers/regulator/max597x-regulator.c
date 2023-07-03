@@ -7,20 +7,20 @@
  * Author: Patrick Rudolph <patrick.rudolph@9elements.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/platform_device.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/platform_device.h>
 
-#include <linux/mfd/max597x.h>
+#include <linex/mfd/max597x.h>
 
 struct max597x_regulator {
 	int num_switches, mon_rng, irng, shunt_micro_ohms, lim_uA;

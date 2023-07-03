@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/random.h>
+#include <linex/random.h>
 
 #include "gt/intel_gt_pm.h"
 #include "i915_driver.h"

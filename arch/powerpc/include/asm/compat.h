@@ -5,8 +5,8 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <linex/types.h>
+#include <linex/sched.h>
 
 #define compat_ipc_pid_t compat_ipc_pid_t
 typedef u16		compat_ipc_pid_t;

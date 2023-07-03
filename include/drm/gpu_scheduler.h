@@ -25,10 +25,10 @@
 #define _DRM_GPU_SCHEDULER_H_
 
 #include <drm/spsc_queue.h>
-#include <linux/dma-fence.h>
-#include <linux/completion.h>
-#include <linux/xarray.h>
-#include <linux/workqueue.h>
+#include <linex/dma-fence.h>
+#include <linex/completion.h>
+#include <linex/xarray.h>
+#include <linex/workqueue.h>
 
 #define MAX_WAIT_SCHED_ENTITY_Q_EMPTY msecs_to_jiffies(1000)
 

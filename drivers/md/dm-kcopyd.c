@@ -10,22 +10,22 @@
  * completion notification.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-kcopyd.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
+#include <linex/blkdev.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/device-mapper.h>
+#include <linex/dm-kcopyd.h>
 
 #include "dm-core.h"
 

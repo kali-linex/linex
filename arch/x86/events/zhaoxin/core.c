@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/nmi.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/nmi.h>
 
 #include <asm/cpufeature.h>
 #include <asm/hardirq.h>

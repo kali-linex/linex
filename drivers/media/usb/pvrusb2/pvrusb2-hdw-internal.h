@@ -18,10 +18,10 @@
 
 */
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linex/videodev2.h>
+#include <linex/i2c.h>
+#include <linex/workqueue.h>
+#include <linex/mutex.h>
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-io.h"
 #include <media/v4l2-device.h>

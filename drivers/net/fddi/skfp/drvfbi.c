@@ -19,8 +19,8 @@
 #include "h/smc.h"
 #include "h/supern_2.h"
 #include "h/skfbiinc.h"
-#include <linux/bitrev.h>
-#include <linux/pci.h>
+#include <linex/bitrev.h>
+#include <linex/pci.h>
 
 /*
  * PCM active state

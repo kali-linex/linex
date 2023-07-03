@@ -6,13 +6,13 @@
  */
 
 #include "dm.h"
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/device-mapper.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/dax.h>
+#include <linex/slab.h>
+#include <linex/device-mapper.h>
 
 #define DM_MSG_PREFIX "linear"
 

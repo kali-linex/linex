@@ -7,13 +7,13 @@
  * Copyright (C) 2010-2012 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/bcm47xx_nvram.h>
+#include <linex/io.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/mtd/mtd.h>
+#include <linex/bcm47xx_nvram.h>
 
 #define NVRAM_MAGIC			0x48534C46	/* 'FLSH' */
 #define NVRAM_SPACE			0x10000

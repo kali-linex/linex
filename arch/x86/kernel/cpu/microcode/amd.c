@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  AMD CPU Microcode Update Driver for Linux
+ *  AMD CPU Microcode Update Driver for Linex
  *
  *  This driver allows to upgrade microcode on F10h AMD
  *  CPUs and later.
@@ -21,13 +21,13 @@
  */
 #define pr_fmt(fmt) "microcode: " fmt
 
-#include <linux/earlycpio.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <linex/earlycpio.h>
+#include <linex/firmware.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/initrd.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
 
 #include <asm/microcode_amd.h>
 #include <asm/microcode.h>

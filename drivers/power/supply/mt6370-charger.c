@@ -5,22 +5,22 @@
  * Author: ChiaEn Wu <chiaen_wu@richtek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/devm-helpers.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/linear_range.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/workqueue.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/devm-helpers.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iio/consumer.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/linear_range.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/workqueue.h>
 
 #define MT6370_REG_CHG_CTRL1		0x111
 #define MT6370_REG_CHG_CTRL2		0x112

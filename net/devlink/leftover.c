@@ -7,20 +7,20 @@
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/timekeeping.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/gfp.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/netdevice.h>
+#include <linex/spinlock.h>
+#include <linex/refcount.h>
+#include <linex/workqueue.h>
+#include <linex/u64_stats_sync.h>
+#include <linex/timekeeping.h>
 #include <rdma/ib_verbs.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

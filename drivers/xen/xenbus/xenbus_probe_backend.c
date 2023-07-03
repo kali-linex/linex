@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -37,15 +37,15 @@
 	pr_debug("(%s:%d) " fmt "\n",			\
 		 __func__, __LINE__, ##__VA_ARGS__)
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
-#include <linux/semaphore.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/notifier.h>
+#include <linex/export.h>
+#include <linex/semaphore.h>
 
 #include <asm/page.h>
 #include <asm/xen/hypervisor.h>

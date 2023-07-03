@@ -33,11 +33,11 @@
  * SOFTWARE.
  */
 
-#include <linux/if_vlan.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/netdevice.h>
 #include <net/addrconf.h>
 
 #include <rdma/ib_cache.h>

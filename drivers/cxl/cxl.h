@@ -4,11 +4,11 @@
 #ifndef __CXL_H__
 #define __CXL_H__
 
-#include <linux/libnvdimm.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/io.h>
+#include <linex/libnvdimm.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/log2.h>
+#include <linex/io.h>
 
 /**
  * DOC: cxl objects

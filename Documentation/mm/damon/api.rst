@@ -5,13 +5,13 @@ API Reference
 =============
 
 Kernel space programs can use every feature of DAMON using below APIs.  All you
-need to do is including ``damon.h``, which is located in ``include/linux/`` of
+need to do is including ``damon.h``, which is located in ``include/linex/`` of
 the source tree.
 
 Structures
 ==========
 
-.. kernel-doc:: include/linux/damon.h
+.. kernel-doc:: include/linex/damon.h
 
 
 Functions

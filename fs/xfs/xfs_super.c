@@ -43,9 +43,9 @@
 #include "xfs_iunlink_item.h"
 #include "xfs_dahash_test.h"
 
-#include <linux/magic.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <linex/magic.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
 
 static const struct super_operations xfs_super_operations;
 
@@ -657,7 +657,7 @@ xfs_fs_alloc_inode(
 
 /*
  * Now that the generic code is guaranteed not to be accessing
- * the linux inode, we can inactivate and reclaim the inode.
+ * the linex inode, we can inactivate and reclaim the inode.
  */
 STATIC void
 xfs_fs_destroy_inode(

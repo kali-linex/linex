@@ -10,13 +10,13 @@
  *	Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
 #include <drm/drm_edid.h>
 #include <sound/asound.h>
 #include <sound/asoundef.h>

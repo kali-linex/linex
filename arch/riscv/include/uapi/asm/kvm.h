@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  * Copyright (C) 2019 Western Digital Corporation or its affiliates.
  *
@@ -6,12 +6,12 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#ifndef __LINUX_KVM_RISCV_H
-#define __LINUX_KVM_RISCV_H
+#ifndef __LINEX_KVM_RISCV_H
+#define __LINEX_KVM_RISCV_H
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/bitsperlong.h>
 #include <asm/ptrace.h>
 
@@ -213,4 +213,4 @@ enum KVM_RISCV_SBI_EXT_ID {
 
 #endif
 
-#endif /* __LINUX_KVM_RISCV_H */
+#endif /* __LINEX_KVM_RISCV_H */

@@ -8,9 +8,9 @@
  * For certain dcmd codes, the dongle interprets string data from the host.
  ******************************************************************************/
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>

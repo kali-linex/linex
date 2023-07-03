@@ -35,11 +35,11 @@
 #include "ui/ui.h"
 #include "print_binary.h"
 #include "archinsn.h"
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linex/bitmap.h>
+#include <linex/kernel.h>
+#include <linex/stringify.h>
+#include <linex/time64.h>
+#include <linex/zalloc.h>
 #include <sys/utsname.h>
 #include "asm/bug.h"
 #include "util/mem-events.h"
@@ -55,14 +55,14 @@
 #include <unistd.h>
 #include <subcmd/pager.h>
 #include <perf/evlist.h>
-#include <linux/err.h>
+#include <linex/err.h>
 #include "util/dlfilter.h"
 #include "util/record.h"
 #include "util/util.h"
 #include "util/cgroup.h"
 #include "perf.h"
 
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>
 #endif
@@ -3886,8 +3886,8 @@ int cmd_script(int argc, const char **argv)
 		   "do various checks like samples ordering and lost events"),
 	OPT_BOOLEAN(0, "header", &header, "Show data header."),
 	OPT_BOOLEAN(0, "header-only", &header_only, "Show only data header."),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmlinex", &symbol_conf.vmlinex_name,
+		   "file", "vmlinex pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('G', "hide-call-graph", &no_callchain,
@@ -3984,8 +3984,8 @@ int cmd_script(int argc, const char **argv)
 	OPT_STRING(0, "guestmount", &symbol_conf.guestmount, "directory",
 		   "guest mount directory under which every guest os"
 		   " instance has a subdir"),
-	OPT_STRING(0, "guestvmlinux", &symbol_conf.default_guest_vmlinux_name,
-		   "file", "file saving guest os vmlinux"),
+	OPT_STRING(0, "guestvmlinex", &symbol_conf.default_guest_vmlinex_name,
+		   "file", "file saving guest os vmlinex"),
 	OPT_STRING(0, "guestkallsyms", &symbol_conf.default_guest_kallsyms,
 		   "file", "file saving guest os /proc/kallsyms"),
 	OPT_STRING(0, "guestmodules", &symbol_conf.default_guest_modules,
@@ -4015,7 +4015,7 @@ int cmd_script(int argc, const char **argv)
 			     PARSE_OPT_STOP_AT_NON_OPTION);
 
 	if (symbol_conf.guestmount ||
-	    symbol_conf.default_guest_vmlinux_name ||
+	    symbol_conf.default_guest_vmlinex_name ||
 	    symbol_conf.default_guest_kallsyms ||
 	    symbol_conf.default_guest_modules ||
 	    symbol_conf.guest_code) {

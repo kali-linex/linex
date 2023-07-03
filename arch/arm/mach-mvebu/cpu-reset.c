@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "mvebu-cpureset: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/resource.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of_address.h>
+#include <linex/io.h>
+#include <linex/resource.h>
 
 #include "common.h"
 

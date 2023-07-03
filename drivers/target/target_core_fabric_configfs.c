@@ -7,24 +7,24 @@
  *
  * (c) Copyright 2010-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@linex-iscsi.org>
 *
  ****************************************************************************/
 
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/utsname.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/unistd.h>
+#include <linex/string.h>
+#include <linex/syscalls.h>
+#include <linex/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

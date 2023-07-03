@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -10,7 +10,7 @@
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
  *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@valinex.co.jp>
  *
  * Fixes:
  *		Alan Cox	:	verify_area() calls
@@ -74,29 +74,29 @@
 
 #define pr_fmt(fmt) "UDP: " fmt
 
-#include <linux/bpf-cgroup.h>
-#include <linux/uaccess.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linex/memblock.h>
+#include <linex/highmem.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/module.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/igmp.h>
+#include <linex/inetdevice.h>
+#include <linex/in.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/mm.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
 #include <net/tcp_states.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/skbuff.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/icmp.h>
 #include <net/inet_hashtables.h>
@@ -106,8 +106,8 @@
 #include <net/gso.h>
 #include <net/xfrm.h>
 #include <trace/events/udp.h>
-#include <linux/static_key.h>
-#include <linux/btf_ids.h>
+#include <linex/static_key.h>
+#include <linex/btf_ids.h>
 #include <trace/events/skb.h>
 #include <net/busy_poll.h>
 #include "udp_impl.h"

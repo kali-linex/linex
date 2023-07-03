@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Linex/PA-RISC Project (http://www.parisc-linex.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
@@ -34,7 +34,7 @@
 #include "sgl_float.h"
 #include "dbl_float.h"
 #include "hppa.h"
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 /* #include <machine/sys/mdep_private.h> */
 
 #undef Fpustatus_register

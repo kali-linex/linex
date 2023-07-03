@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt) "Modules: " fmt
 
-#include <linux/bitops.h>
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/gfp.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleloader.h>
-#include <linux/random.h>
-#include <linux/scs.h>
-#include <linux/vmalloc.h>
+#include <linex/bitops.h>
+#include <linex/elf.h>
+#include <linex/ftrace.h>
+#include <linex/gfp.h>
+#include <linex/kasan.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/moduleloader.h>
+#include <linex/random.h>
+#include <linex/scs.h>
+#include <linex/vmalloc.h>
 
 #include <asm/alternative.h>
 #include <asm/insn.h>

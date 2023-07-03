@@ -4,15 +4,15 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/hotplug.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/irq.h>
+#include <linex/cpu.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/hotplug.h>
+#include <linex/slab.h>
+#include <linex/smp.h>
+#include <linex/types.h>
+#include <linex/irq.h>
 
 #include <asm/bcache.h>
 #include <asm/mips-cps.h>

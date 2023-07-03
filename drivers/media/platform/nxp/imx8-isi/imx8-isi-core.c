@@ -3,20 +3,20 @@
  * Copyright 2019-2020 NXP
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

@@ -2,16 +2,16 @@
 /*
  * BIOS Flash chip on Intel 440GX board.
  *
- * Bugs this currently does not work under linuxBIOS.
+ * Bugs this currently does not work under linexBIOS.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
 
 #define PIIXE_IOBASE_RESOURCE	11
 

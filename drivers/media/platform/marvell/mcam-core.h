@@ -7,8 +7,8 @@
 #ifndef _MCAM_CORE_H
 #define _MCAM_CORE_H
 
-#include <linux/list.h>
-#include <linux/clk-provider.h>
+#include <linex/list.h>
+#include <linex/clk-provider.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-dev.h>

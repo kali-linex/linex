@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2013-2022, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Linex driver
  */
 
-#include <linux/pci.h>
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
+#include <linex/pci.h>
+#include <linex/jiffies.h>
+#include <linex/ktime.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
 
-#include <linux/mei.h>
+#include <linex/mei.h>
 
 #include "mei_dev.h"
 #include "hw-txe.h"

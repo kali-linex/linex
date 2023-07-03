@@ -3,15 +3,15 @@
  * Copyright (C) 2016 IBM Corporation
  *
  * Authors:
- * Thiago Jung Bauermann <bauerman@linux.vnet.ibm.com>
- * Mimi Zohar <zohar@linux.vnet.ibm.com>
+ * Thiago Jung Bauermann <bauerman@linex.vnet.ibm.com>
+ * Mimi Zohar <zohar@linex.vnet.ibm.com>
  */
 
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
-#include <linux/kexec.h>
-#include <linux/of.h>
-#include <linux/ima.h>
+#include <linex/seq_file.h>
+#include <linex/vmalloc.h>
+#include <linex/kexec.h>
+#include <linex/of.h>
+#include <linex/ima.h>
 #include "ima.h"
 
 #ifdef CONFIG_IMA_KEXEC

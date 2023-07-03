@@ -3,12 +3,12 @@
  * Copyright (C) 2005-2006 Micronas USA Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-device.h>
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 MODULE_DESCRIPTION("OmniVision ov7640 sensor driver");
 MODULE_LICENSE("GPL v2");

@@ -8,13 +8,13 @@
  * Copyright (C) 2017 Rockchip Electronics Co., Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/minmax.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/minmax.h>
+#include <linex/pm_runtime.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
 
 #include "rkisp1-common.h"
 #include "rkisp1-regs.h"

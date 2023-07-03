@@ -5,27 +5,27 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/math.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/lcm.h>
-#include <linux/property.h>
-#include <linux/swab.h>
-#include <linux/crc32.h>
+#include <linex/clk.h>
+#include <linex/bitfield.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/math.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/spi/spi.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/lcm.h>
+#include <linex/property.h>
+#include <linex/swab.h>
+#include <linex/crc32.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/imu/adis.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/imu/adis.h>
+#include <linex/iio/trigger_consumer.h>
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 #define ADIS16480_PAGE_SIZE 0x80
 

@@ -10,24 +10,24 @@
 
 /* Note that BB means BUGBUG (ie something to fix eventually) */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/vfs.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
-#include <linux/random.h>
-#include <linux/uuid.h>
-#include <linux/xattr.h>
-#include <uapi/linux/magic.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/mount.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/seq_file.h>
+#include <linex/vfs.h>
+#include <linex/mempool.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/namei.h>
+#include <linex/random.h>
+#include <linex/uuid.h>
+#include <linex/xattr.h>
+#include <uapi/linex/magic.h>
 #include <net/ipv6.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -36,8 +36,8 @@
 #include "cifsproto.h"
 #include "cifs_debug.h"
 #include "cifs_fs_sb.h"
-#include <linux/mm.h>
-#include <linux/key-type.h>
+#include <linex/mm.h>
+#include <linex/key-type.h>
 #include "cifs_spnego.h"
 #include "fscache.h"
 #ifdef CONFIG_CIFS_DFS_UPCALL
@@ -61,7 +61,7 @@
 int cifsFYI = 0;
 bool traceSMB;
 bool enable_oplocks = true;
-bool linuxExtEnabled = true;
+bool linexExtEnabled = true;
 bool lookupCacheEnabled = true;
 bool disable_legacy_dialects; /* false by default */
 bool enable_gcm_256 = true;
@@ -571,14 +571,14 @@ cifs_show_options(struct seq_file *s, struct dentry *root)
 	}
 
 	seq_printf(s, ",uid=%u",
-		   from_kuid_munged(&init_user_ns, cifs_sb->ctx->linux_uid));
+		   from_kuid_munged(&init_user_ns, cifs_sb->ctx->linex_uid));
 	if (cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_UID)
 		seq_puts(s, ",forceuid");
 	else
 		seq_puts(s, ",noforceuid");
 
 	seq_printf(s, ",gid=%u",
-		   from_kgid_munged(&init_user_ns, cifs_sb->ctx->linux_gid));
+		   from_kgid_munged(&init_user_ns, cifs_sb->ctx->linex_gid));
 	if (cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_GID)
 		seq_puts(s, ",forcegid");
 	else

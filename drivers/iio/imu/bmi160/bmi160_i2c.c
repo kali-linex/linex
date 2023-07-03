@@ -8,10 +8,10 @@
  *      - 0x68 if SDO is pulled to GND
  *      - 0x69 if SDO is pulled to VDDIO
  */
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #include "bmi160.h"
 

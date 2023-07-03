@@ -4,16 +4,16 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <linex/gpio/driver.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_data/syscon.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
 
 #define SYS_ID			0x000
 #define SYS_SW			0x004

@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/rhashtable.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/etherdevice.h>
+#include <linex/rhashtable.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

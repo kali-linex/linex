@@ -1,51 +1,51 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swapfile.c
+ *  linex/mm/swapfile.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  */
 
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/shmem_fs.h>
-#include <linux/blk-cgroup.h>
-#include <linux/random.h>
-#include <linux/writeback.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/mutex.h>
-#include <linux/capability.h>
-#include <linux/syscalls.h>
-#include <linux/memcontrol.h>
-#include <linux/poll.h>
-#include <linux/oom.h>
-#include <linux/frontswap.h>
-#include <linux/swapfile.h>
-#include <linux/export.h>
-#include <linux/swap_slots.h>
-#include <linux/sort.h>
-#include <linux/completion.h>
-#include <linux/suspend.h>
+#include <linex/blkdev.h>
+#include <linex/mm.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
+#include <linex/hugetlb.h>
+#include <linex/mman.h>
+#include <linex/slab.h>
+#include <linex/kernel_stat.h>
+#include <linex/swap.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/namei.h>
+#include <linex/shmem_fs.h>
+#include <linex/blk-cgroup.h>
+#include <linex/random.h>
+#include <linex/writeback.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
+#include <linex/ksm.h>
+#include <linex/rmap.h>
+#include <linex/security.h>
+#include <linex/backing-dev.h>
+#include <linex/mutex.h>
+#include <linex/capability.h>
+#include <linex/syscalls.h>
+#include <linex/memcontrol.h>
+#include <linex/poll.h>
+#include <linex/oom.h>
+#include <linex/frontswap.h>
+#include <linex/swapfile.h>
+#include <linex/export.h>
+#include <linex/swap_slots.h>
+#include <linex/sort.h>
+#include <linex/completion.h>
+#include <linex/suspend.h>
 
 #include <asm/tlbflush.h>
-#include <linux/swapops.h>
-#include <linux/swap_cgroup.h>
+#include <linex/swapops.h>
+#include <linex/swap_cgroup.h>
 #include "swap.h"
 
 static bool swap_count_continued(struct swap_info_struct *, pgoff_t,

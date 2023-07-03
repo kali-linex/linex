@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The Linex Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Ltd
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/soc/qcom/pmic_glink.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/soc/qcom/pdr.h>
+#include <linex/soc/qcom/pmic_glink.h>
 #include "ucsi.h"
 
 #define UCSI_BUF_SIZE                   48

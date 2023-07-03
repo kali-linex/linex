@@ -12,13 +12,13 @@
  * ds3502	1	128		10			01010xx
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/property.h>
 
 #define DS1803_WIPER_0         0xA9
 #define DS1803_WIPER_1         0xAA

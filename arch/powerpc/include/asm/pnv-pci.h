@@ -6,10 +6,10 @@
 #ifndef _ASM_PNV_PCI_H
 #define _ASM_PNV_PCI_H
 
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/irq.h>
-#include <linux/of.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/irq.h>
+#include <linex/of.h>
 #include <misc/cxl-base.h>
 #include <asm/opal-api.h>
 

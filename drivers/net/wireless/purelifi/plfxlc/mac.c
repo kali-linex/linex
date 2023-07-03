@@ -3,12 +3,12 @@
  * Copyright (c) 2021 pureLiFi
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/gpio.h>
-#include <linux/jiffies.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/gpio.h>
+#include <linex/jiffies.h>
 #include <net/ieee80211_radiotap.h>
 
 #include "chip.h"

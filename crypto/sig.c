@@ -7,12 +7,12 @@
 
 #include <crypto/akcipher.h>
 #include <crypto/internal/sig.h>
-#include <linux/cryptouser.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <linex/cryptouser.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/scatterlist.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

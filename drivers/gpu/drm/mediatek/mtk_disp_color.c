@@ -3,13 +3,13 @@
  * Copyright (c) 2017 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/soc/mediatek/mtk-cmdq.h>
 
 #include "mtk_disp_drv.h"
 #include "mtk_drm_crtc.h"

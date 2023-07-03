@@ -4,14 +4,14 @@
  * Author: Allen-KH Cheng <allen-kh.cheng@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_controller.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
 
 struct mtk_adsp_mbox_priv {
 	struct device *dev;

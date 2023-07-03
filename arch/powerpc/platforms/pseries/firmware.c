@@ -18,7 +18,7 @@
  */
 
 
-#include <linux/of_fdt.h>
+#include <linex/of_fdt.h>
 #include <asm/firmware.h>
 #include <asm/prom.h>
 #include <asm/udbg.h>

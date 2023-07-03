@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "dce_abm.h"
 #include "dm_services.h"

@@ -6,15 +6,15 @@
 
 */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <asm/page.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/pci.h>
 
 #include <asm/irq.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

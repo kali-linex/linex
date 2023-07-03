@@ -8,13 +8,13 @@
 
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
 #include <trace/events/asoc.h>
 
 /**

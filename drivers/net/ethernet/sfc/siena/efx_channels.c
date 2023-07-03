@@ -9,8 +9,8 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
-#include <linux/filter.h>
+#include <linex/module.h>
+#include <linex/filter.h>
 #include "efx_channels.h"
 #include "efx.h"
 #include "efx_common.h"

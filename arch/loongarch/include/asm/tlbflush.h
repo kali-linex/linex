@@ -5,7 +5,7 @@
 #ifndef __ASM_TLBFLUSH_H
 #define __ASM_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 
 /*
  * TLB flushing:

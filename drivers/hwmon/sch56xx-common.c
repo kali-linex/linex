@@ -6,19 +6,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/dmi.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/watchdog.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
 #include "sch56xx-common.h"
 
 static bool ignore_dmi;

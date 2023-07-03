@@ -10,18 +10,18 @@
  * particular use case.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/sysfs.h>
 
 #include "iio_dummy_evgen.h"
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/irq_sim.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/irq_sim.h>
 
 /* Fiddly bit of faking and irq without hardware */
 #define IIO_EVENTGEN_NO 10

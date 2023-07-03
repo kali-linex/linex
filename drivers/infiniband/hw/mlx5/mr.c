@@ -32,13 +32,13 @@
  */
 
 
-#include <linux/kref.h>
-#include <linux/random.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
+#include <linex/kref.h>
+#include <linex/random.h>
+#include <linex/debugfs.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-resv.h>
 #include <rdma/ib_umem_odp.h>
 #include "dm.h"
 #include "mlx5_ib.h"

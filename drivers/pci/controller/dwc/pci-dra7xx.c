@@ -7,27 +7,27 @@
  * Authors: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/resource.h>
+#include <linex/types.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/gpio/consumer.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

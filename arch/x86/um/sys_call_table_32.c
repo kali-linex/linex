@@ -4,9 +4,9 @@
  * with some changes for UML.
  */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
-#include <linux/cache.h>
+#include <linex/linkage.h>
+#include <linex/sys.h>
+#include <linex/cache.h>
 #include <asm/syscall.h>
 
 /*

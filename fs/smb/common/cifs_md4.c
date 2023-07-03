@@ -16,11 +16,11 @@
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
  *
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
 #include "md4.h"
 

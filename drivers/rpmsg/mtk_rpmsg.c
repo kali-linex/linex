@@ -2,14 +2,14 @@
 //
 // Copyright 2019 Google LLC.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/rpmsg/mtk_rpmsg.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/remoteproc.h>
+#include <linex/rpmsg/mtk_rpmsg.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "rpmsg_internal.h"
 

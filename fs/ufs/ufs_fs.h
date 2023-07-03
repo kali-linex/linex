@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/ufs_fs.h
+ *  linex/include/linex/ufs_fs.h
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -28,14 +28,14 @@
  *
  */
 
-#ifndef __LINUX_UFS_FS_H
-#define __LINUX_UFS_FS_H
+#ifndef __LINEX_UFS_FS_H
+#define __LINEX_UFS_FS_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/stat.h>
+#include <linex/fs.h>
+#include <linex/workqueue.h>
 
 #include <asm/div64.h>
 typedef __u64 __bitwise __fs64;
@@ -959,4 +959,4 @@ struct ufs_super_block_third {
 	__u8	fs_space[1];
 };
 
-#endif /* __LINUX_UFS_FS_H */
+#endif /* __LINEX_UFS_FS_H */

@@ -3,14 +3,14 @@
  * Copyright 2011 Calxeda, Inc.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/init.h>
-#include <linux/psci.h>
-#include <linux/suspend.h>
+#include <linex/cpu_pm.h>
+#include <linex/init.h>
+#include <linex/psci.h>
+#include <linex/suspend.h>
 
 #include <asm/suspend.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/linex/psci.h>
 
 #include "core.h"
 

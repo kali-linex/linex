@@ -5,13 +5,13 @@
  * Copyright (c) 2018 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/efi_embedded_fw.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linex/dmi.h>
+#include <linex/efi.h>
+#include <linex/efi_embedded_fw.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/vmalloc.h>
 #include <crypto/sha2.h>
 
 /* Exported for use by lib/test_firmware.c only */

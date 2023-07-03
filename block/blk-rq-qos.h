@@ -2,12 +2,12 @@
 #ifndef RQ_QOS_H
 #define RQ_QOS_H
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/blk_types.h>
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/blk-mq.h>
+#include <linex/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/blk_types.h>
+#include <linex/atomic.h>
+#include <linex/wait.h>
+#include <linex/blk-mq.h>
 
 #include "blk-mq-debugfs.h"
 

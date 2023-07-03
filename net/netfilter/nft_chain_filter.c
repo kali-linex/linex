@@ -1,12 +1,12 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_tables.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_arp.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/netfilter_arp.h>
 #include <net/netfilter/nf_tables_ipv4.h>
 #include <net/netfilter/nf_tables_ipv6.h>
 

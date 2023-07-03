@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/dns_resolve.c
+ * linex/fs/nfs/dns_resolve.c
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
@@ -9,10 +9,10 @@
 
 #ifdef CONFIG_NFS_USE_KERNEL_DNS
 
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/dns_resolver.h>
+#include <linex/module.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/dns_resolver.h>
 #include "dns_resolve.h"
 
 ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
@@ -35,20 +35,20 @@ ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
 
 #else
 
-#include <linux/module.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/seq_file.h>
-#include <linux/inet.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/nfs_fs.h>
+#include <linex/module.h>
+#include <linex/hash.h>
+#include <linex/string.h>
+#include <linex/kmod.h>
+#include <linex/slab.h>
+#include <linex/socket.h>
+#include <linex/seq_file.h>
+#include <linex/inet.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/cache.h>
+#include <linex/sunrpc/svcauth.h>
+#include <linex/sunrpc/rpc_pipe_fs.h>
+#include <linex/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "dns_resolve.h"

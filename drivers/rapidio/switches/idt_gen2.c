@@ -6,12 +6,12 @@
  * Alexandre Bounine <alexandre.bounine@idt.com>
  */
 
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/delay.h>
+#include <linex/stat.h>
+#include <linex/module.h>
+#include <linex/rio.h>
+#include <linex/rio_drv.h>
+#include <linex/rio_ids.h>
+#include <linex/delay.h>
 
 #include <asm/page.h>
 #include "../rio.h"

@@ -5,11 +5,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/tee_drv.h>
+#include <linex/arm-smccc.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/tee_drv.h>
 #include "optee_private.h"
 
 struct notif_entry {

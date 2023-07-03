@@ -13,37 +13,37 @@
 
 #define pr_fmt(fmt) "nbd: " fmt
 
-#include <linux/major.h>
+#include <linex/major.h>
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/ioctl.h>
-#include <linux/mutex.h>
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/blkdev.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/fs.h>
+#include <linex/bio.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/file.h>
+#include <linex/ioctl.h>
+#include <linex/mutex.h>
+#include <linex/compiler.h>
+#include <linex/completion.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 #include <net/sock.h>
-#include <linux/net.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/blk-mq.h>
+#include <linex/net.h>
+#include <linex/kthread.h>
+#include <linex/types.h>
+#include <linex/debugfs.h>
+#include <linex/blk-mq.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/types.h>
 
-#include <linux/nbd.h>
-#include <linux/nbd-netlink.h>
+#include <linex/nbd.h>
+#include <linex/nbd-netlink.h>
 #include <net/genetlink.h>
 
 #define CREATE_TRACE_POINTS

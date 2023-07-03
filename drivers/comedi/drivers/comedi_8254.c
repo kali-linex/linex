@@ -6,7 +6,7 @@
  *
  * Based on 8253.h and various subdevice implementations in comedi drivers.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -113,11 +113,11 @@
  * counters is not handled by this module. These features are driver dependent.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8254.h>
 
 static unsigned int __i8254_read(struct comedi_8254 *i8254, unsigned int reg)
 {

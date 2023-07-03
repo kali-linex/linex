@@ -8,8 +8,8 @@
  * IO accessing functions which shouldn't be inlined because they're too big
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 #include <asm/io.h>
 
 /* Copies a block of memory to a device in an efficient manner.

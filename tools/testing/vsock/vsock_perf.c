@@ -17,7 +17,7 @@
 #include <stdint.h>
 #include <poll.h>
 #include <sys/socket.h>
-#include <linux/vm_sockets.h>
+#include <linex/vm_sockets.h>
 
 #define DEFAULT_BUF_SIZE_BYTES	(128 * 1024)
 #define DEFAULT_TO_SEND_BYTES	(64 * 1024)

@@ -4,18 +4,18 @@
  * Author: Jie Qiu <jie.qiu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/media-bus-format.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/soc/mediatek/mtk-mmsys.h>
+#include <linex/types.h>
 
 #include <video/videomode.h>
 

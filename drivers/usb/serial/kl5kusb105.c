@@ -31,17 +31,17 @@
  *	implement handshaking or decide that we do not support it
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
 #include "kl5kusb105.h"
 
 #define DRIVER_AUTHOR "Utz-Uwe Haus <haus@uuhaus.de>, Johan Hovold <jhovold@gmail.com>"

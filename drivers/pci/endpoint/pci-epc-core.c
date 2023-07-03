@@ -6,14 +6,14 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
-#include <linux/pci-ep-cfs.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
+#include <linex/pci-ep-cfs.h>
 
 static struct class *pci_epc_class;
 

@@ -2,9 +2,9 @@
 #ifndef __ASM_MMU_H
 #define __ASM_MMU_H
 
-#include <linux/atomic.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
 typedef struct {
 	union {

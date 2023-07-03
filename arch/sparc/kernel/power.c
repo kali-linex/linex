@@ -4,12 +4,12 @@
  * Copyright (C) 1999, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/reboot.h>
+#include <linex/of_device.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

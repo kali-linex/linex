@@ -8,20 +8,20 @@
 //
 // This driver is based on max17040_battery.c
 
-#include <linux/acpi.h>
-#include <linux/devm-helpers.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/power/max17042_battery.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/acpi.h>
+#include <linex/devm-helpers.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
+#include <linex/mod_devicetable.h>
+#include <linex/power_supply.h>
+#include <linex/power/max17042_battery.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
 /* Status register bits */
 #define STATUS_POR_BIT         (1 << 1)

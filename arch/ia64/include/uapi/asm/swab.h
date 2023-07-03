@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 #ifndef _ASM_IA64_SWAB_H
 #define _ASM_IA64_SWAB_H
 
@@ -7,9 +7,9 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>, Hewlett-Packard Co.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/intrinsics.h>
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 static __inline__ __attribute_const__ __u64 __arch_swab64(__u64 x)
 {

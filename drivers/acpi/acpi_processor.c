@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  * Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- * Copyright (C) 2004       Dominik Brodowski <linux@brodo.de>
+ * Copyright (C) 2004       Dominik Brodowski <linex@brodo.de>
  * Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  * Copyright (C) 2013, Intel Corporation
  *                     Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 
 #include <acpi/processor.h>
 

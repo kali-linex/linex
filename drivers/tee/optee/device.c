@@ -5,10 +5,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
+#include <linex/uuid.h>
 #include "optee_private.h"
 
 static int optee_ctx_match(struct tee_ioctl_version_data *ver, const void *data)

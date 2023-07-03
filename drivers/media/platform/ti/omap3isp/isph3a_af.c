@@ -12,9 +12,9 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-/* Linux specific include files */
-#include <linux/device.h>
-#include <linux/slab.h>
+/* Linex specific include files */
+#include <linex/device.h>
+#include <linex/slab.h>
 
 #include "isp.h"
 #include "isph3a.h"

@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/security.h>
-#include <linux/completion.h>
-#include <linux/list.h>
+#include <linex/security.h>
+#include <linex/completion.h>
+#include <linex/list.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

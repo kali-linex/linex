@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/init.c
+ *  linex/arch/arm/mm/init.c
  *
  *  Copyright (C) 1995-2005 Russell King
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/dma-map-ops.h>
-#include <linux/sizes.h>
-#include <linux/stop_machine.h>
-#include <linux/swiotlb.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/swap.h>
+#include <linex/init.h>
+#include <linex/mman.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/export.h>
+#include <linex/nodemask.h>
+#include <linex/initrd.h>
+#include <linex/of_fdt.h>
+#include <linex/highmem.h>
+#include <linex/gfp.h>
+#include <linex/memblock.h>
+#include <linex/dma-map-ops.h>
+#include <linex/sizes.h>
+#include <linex/stop_machine.h>
+#include <linex/swiotlb.h>
 
 #include <asm/cp15.h>
 #include <asm/mach-types.h>

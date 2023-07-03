@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "i915_debugfs_params.h"
 #include "gt/intel_gt.h"

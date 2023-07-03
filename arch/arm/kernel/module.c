@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/module.c
+ *  linex/arch/arm/kernel/module.c
  *
  *  Copyright (C) 2002 Russell King.
  *  Modified for nommu by Hyok S. Choi
  *
  * Module allocation method suggested by Andi Kleen.
  */
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/moduleloader.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/elf.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/string.h>
+#include <linex/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/smp_plat.h>

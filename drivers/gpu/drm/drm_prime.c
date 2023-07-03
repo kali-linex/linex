@@ -26,10 +26,10 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/dma-buf.h>
-#include <linux/rbtree.h>
-#include <linux/module.h>
+#include <linex/export.h>
+#include <linex/dma-buf.h>
+#include <linex/rbtree.h>
+#include <linex/module.h>
 
 #include <drm/drm.h>
 #include <drm/drm_drv.h>

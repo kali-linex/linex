@@ -10,17 +10,17 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/percpu.h>
-#include <linux/start_kernel.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/cc_platform.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/percpu.h>
+#include <linex/start_kernel.h>
+#include <linex/io.h>
+#include <linex/memblock.h>
+#include <linex/cc_platform.h>
+#include <linex/pgtable.h>
 
 #include <asm/processor.h>
 #include <asm/proto.h>

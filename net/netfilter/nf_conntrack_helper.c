@@ -3,22 +3,22 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.linex-ipv6.org>
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/rtnetlink.h>
+#include <linex/types.h>
+#include <linex/netfilter.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/vmalloc.h>
+#include <linex/stddef.h>
+#include <linex/random.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/rculist.h>
+#include <linex/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

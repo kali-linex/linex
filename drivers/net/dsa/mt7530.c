@@ -3,23 +3,23 @@
  * Mediatek MT7530 DSA Switch driver
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/iopoll.h>
-#include <linux/mdio.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phylink.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
+#include <linex/etherdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/iopoll.h>
+#include <linex/mdio.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/phylink.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
 #include <net/dsa.h>
 
 #include "mt7530.h"

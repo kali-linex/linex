@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/regulator/consumer.h>
 
 #include <dt-bindings/clock/maxim,max9485.h>
 

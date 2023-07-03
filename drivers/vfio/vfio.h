@@ -6,11 +6,11 @@
 #ifndef __VFIO_VFIO_H__
 #define __VFIO_VFIO_H__
 
-#include <linux/file.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/vfio.h>
+#include <linex/file.h>
+#include <linex/device.h>
+#include <linex/cdev.h>
+#include <linex/module.h>
+#include <linex/vfio.h>
 
 struct iommufd_ctx;
 struct iommu_group;

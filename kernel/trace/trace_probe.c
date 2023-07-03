@@ -11,7 +11,7 @@
  */
 #define pr_fmt(fmt)	"trace_probe: " fmt
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 
 #include "trace_probe.h"
 
@@ -306,7 +306,7 @@ static int parse_trace_event_arg(char *arg, struct fetch_insn *code,
 
 static struct btf *traceprobe_get_btf(void)
 {
-	struct btf *btf = bpf_get_btf_vmlinux();
+	struct btf *btf = bpf_get_btf_vmlinex();
 
 	if (IS_ERR_OR_NULL(btf))
 		return NULL;

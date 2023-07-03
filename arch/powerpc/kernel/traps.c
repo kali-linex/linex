@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Copyright (C) 1995-1996  Gary Thomas (gdt@linuxppc.org)
+ *  Copyright (C) 1995-1996  Gary Thomas (gdt@linexppc.org)
  *  Copyright 2007-2010 Freescale Semiconductor, Inc.
  *
  *  Modified by Cort Dougan (cort@cs.nmt.edu)
@@ -11,36 +11,36 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pkeys.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/extable.h>
-#include <linux/module.h>	/* print_modules */
-#include <linux/prctl.h>
-#include <linux/delay.h>
-#include <linux/kprobes.h>
-#include <linux/kexec.h>
-#include <linux/backlight.h>
-#include <linux/bug.h>
-#include <linux/kdebug.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
-#include <linux/smp.h>
-#include <linux/console.h>
-#include <linux/kmsg_dump.h>
-#include <linux/debugfs.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/pkeys.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/extable.h>
+#include <linex/module.h>	/* print_modules */
+#include <linex/prctl.h>
+#include <linex/delay.h>
+#include <linex/kprobes.h>
+#include <linex/kexec.h>
+#include <linex/backlight.h>
+#include <linex/bug.h>
+#include <linex/kdebug.h>
+#include <linex/ratelimit.h>
+#include <linex/context_tracking.h>
+#include <linex/smp.h>
+#include <linex/console.h>
+#include <linex/kmsg_dump.h>
+#include <linex/debugfs.h>
 
 #include <asm/emulated_ops.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/machdep.h>
@@ -164,7 +164,7 @@ extern void panic_flush_kmsg_start(void)
 	 * relatively minimal work. Don't use delay functions (TB may
 	 * be broken), don't crash dump (need to set a firmware log),
 	 * don't run notifiers. We do want to get some information to
-	 * Linux console.
+	 * Linex console.
 	 */
 	console_verbose();
 	bust_spinlocks(1);
@@ -386,7 +386,7 @@ void _exception(int signr, struct pt_regs *regs, int code, unsigned long addr)
  * recoverable.
  *
  * An alternative would be for HV NMIs to use SPRG for scratch to avoid the
- * HSPRG1 clobber, however this would cause guest SPRG to be clobbered. Linux
+ * HSPRG1 clobber, however this would cause guest SPRG to be clobbered. Linex
  * guests should always have MSR[RI]=0 when its scratch SPRG is in use, so
  * that would work. However any other guest OS that may have the SPRG live
  * and MSR[RI]=1 could encounter silent corruption.

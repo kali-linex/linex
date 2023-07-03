@@ -5,9 +5,9 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
 #include "core.h"
 #include "registers.h"
 

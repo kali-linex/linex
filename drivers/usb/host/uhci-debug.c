@@ -10,9 +10,9 @@
  * (C) Copyright 1999-2001 Johannes Erdfelt
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/debugfs.h>
 #include <asm/io.h>
 
 #include "uhci-hcd.h"

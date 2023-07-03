@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/err.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/err.h>
+#include <linex/mtd/mtd.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/vmalloc.h>
+#include <linex/random.h>
 
 #include "mtd_test.h"
 

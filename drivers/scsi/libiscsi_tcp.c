@@ -16,16 +16,16 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kfifo.h>
-#include <linux/scatterlist.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/inet.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/kfifo.h>
+#include <linex/scatterlist.h>
+#include <linex/module.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

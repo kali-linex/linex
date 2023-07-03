@@ -2,13 +2,13 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
+#include <linex/time.h>
+#include <linex/fs.h>
 #include "reiserfs.h"
-#include <linux/string.h>
-#include <linux/buffer_head.h>
+#include <linex/string.h>
+#include <linex/buffer_head.h>
 
-#include <linux/stdarg.h>
+#include <linex/stdarg.h>
 
 static char error_buf[1024];
 static char fmt_buf[1024];

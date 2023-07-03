@@ -4,11 +4,11 @@
 #ifndef _CPPI_DMA_H_
 #define _CPPI_DMA_H_
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/dmapool.h>
-#include <linux/dmaengine.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/dmapool.h>
+#include <linex/dmaengine.h>
 
 #include "musb_core.h"
 #include "musb_dma.h"

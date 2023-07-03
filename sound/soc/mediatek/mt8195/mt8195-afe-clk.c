@@ -7,7 +7,7 @@
  *         Trevor Wu <trevor.wu@mediatek.com>
  */
 
-#include <linux/clk.h>
+#include <linex/clk.h>
 
 #include "mt8195-afe-common.h"
 #include "mt8195-afe-clk.h"

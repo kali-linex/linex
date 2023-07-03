@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pci.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
+#include <linex/pci.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
 
 #include "nitrox_dev.h"
 #include "nitrox_csr.h"

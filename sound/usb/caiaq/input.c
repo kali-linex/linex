@@ -3,11 +3,11 @@
  *   Copyright (c) 2006,2007 Daniel Mack, Tim Ruetz
 */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <linex/device.h>
+#include <linex/gfp.h>
+#include <linex/init.h>
+#include <linex/usb.h>
+#include <linex/usb/input.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 

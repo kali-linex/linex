@@ -3,16 +3,16 @@
  * Copyright (C) 2019-2021 Linaro Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
-#include <uapi/linux/tee.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
+#include <linex/uuid.h>
+#include <uapi/linex/tee.h>
 
 #include "common.h"
 

@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ============================================================
-Linux Kernel Driver for Huawei Intelligent NIC(HiNIC) family
+Linex Kernel Driver for Huawei Intelligent NIC(HiNIC) family
 ============================================================
 
 Overview:

@@ -7,9 +7,9 @@
 #ifndef HOST1X_DRM_H
 #define HOST1X_DRM_H 1
 
-#include <linux/host1x.h>
-#include <linux/iova.h>
-#include <linux/gpio/consumer.h>
+#include <linex/host1x.h>
+#include <linex/iova.h>
+#include <linex/gpio/consumer.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_bridge.h>

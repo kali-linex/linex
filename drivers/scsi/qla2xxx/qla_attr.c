@@ -6,10 +6,10 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/kthread.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/kthread.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 
 static int qla24xx_vport_disable(struct fc_vport *, bool);
 

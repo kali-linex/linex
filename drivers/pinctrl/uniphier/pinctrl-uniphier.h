@@ -7,10 +7,10 @@
 #ifndef __PINCTRL_UNIPHIER_H__
 #define __PINCTRL_UNIPHIER_H__
 
-#include <linux/bits.h>
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/build_bug.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 
 struct platform_device;
 

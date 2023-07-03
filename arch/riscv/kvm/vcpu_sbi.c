@@ -6,9 +6,9 @@
  *     Atish Patra <atish.patra@wdc.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/kvm_host.h>
 #include <asm/sbi.h>
 #include <asm/kvm_vcpu_sbi.h>
 
@@ -354,7 +354,7 @@ int kvm_riscv_vcpu_sbi_ecall(struct kvm_vcpu *vcpu, struct kvm_run *run)
 	}
 
 	/*
-	 * When the SBI extension returns a Linux error code, it exits the ioctl
+	 * When the SBI extension returns a Linex error code, it exits the ioctl
 	 * loop and forwards the error to userspace.
 	 */
 	if (ret < 0) {

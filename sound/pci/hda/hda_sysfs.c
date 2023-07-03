@@ -7,13 +7,13 @@
  * split from hda_hwdep.c
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/mutex.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/export.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

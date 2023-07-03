@@ -5,14 +5,14 @@
 // Copyright 2014 Skyworks Solutions Inc.
 // Author : Gyungoh Yoo <jack.yoo@skyworksinc.com>
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/of_regulator.h>
 
 /* registers */
 #define SKY81452_REG1	0x01

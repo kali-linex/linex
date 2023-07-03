@@ -5,33 +5,33 @@
  * USB Power Delivery protocol stack.
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/proc_fs.h>
-#include <linux/property.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/pd_ado.h>
-#include <linux/usb/pd_bdo.h>
-#include <linux/usb/pd_ext_sdb.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/role.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec_altmode.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/hrtimer.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/power_supply.h>
+#include <linex/proc_fs.h>
+#include <linex/property.h>
+#include <linex/sched/clock.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/usb.h>
+#include <linex/usb/pd.h>
+#include <linex/usb/pd_ado.h>
+#include <linex/usb/pd_bdo.h>
+#include <linex/usb/pd_ext_sdb.h>
+#include <linex/usb/pd_vdo.h>
+#include <linex/usb/role.h>
+#include <linex/usb/tcpm.h>
+#include <linex/usb/typec_altmode.h>
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/linex/sched/types.h>
 
 #define FOREACH_STATE(S)			\
 	S(INVALID_STATE),			\

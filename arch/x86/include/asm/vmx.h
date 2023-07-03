@@ -12,9 +12,9 @@
 #define VMX_H
 
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/types.h>
 
 #include <uapi/asm/vmx.h>
 #include <asm/vmxfeatures.h>

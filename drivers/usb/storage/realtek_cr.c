@@ -9,20 +9,20 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
-#include <linux/cdrom.h>
+#include <linex/cdrom.h>
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/usb_usual.h>
+#include <linex/usb.h>
+#include <linex/slab.h>
+#include <linex/usb_usual.h>
 
 #include "usb.h"
 #include "transport.h"

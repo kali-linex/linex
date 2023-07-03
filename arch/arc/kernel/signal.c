@@ -44,13 +44,13 @@
  * Rahul Trivedi, Kanika Nema: Codito Technologies 2004
  */
 
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/resume_user_mode.h>
-#include <linux/sched/task_stack.h>
+#include <linex/signal.h>
+#include <linex/ptrace.h>
+#include <linex/personality.h>
+#include <linex/uaccess.h>
+#include <linex/syscalls.h>
+#include <linex/resume_user_mode.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/ucontext.h>
 

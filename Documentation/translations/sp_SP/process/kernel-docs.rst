@@ -9,10 +9,10 @@
 ============================================
 
 La necesidad de un documento como este se hizo evidente en la lista de
-correo de linux-kernel cuando las mismas preguntas, solicitando sugerencias
+correo de linex-kernel cuando las mismas preguntas, solicitando sugerencias
 e información, aparecieron una y otra vez.
 
-Afortunadamente, a medida que más y más gente accede a GNU/Linux, más
+Afortunadamente, a medida que más y más gente accede a GNU/Linex, más
 desarrolladores se interesan por el kernel. Sin embargo, leer las fuentes
 no siempre es suficiente. Es fácil entender el código, pero se pierden los
 conceptos, la filosofía y decisiones de diseño detrás de dicho código.
@@ -38,12 +38,12 @@ documento en cuestión.
    fecha de publicación, del más reciente al más antiguo. Los maintainers
    deben ir retirando recursos obsoletos o anticuados.
 
-Documentos en el árbol del kernel Linux
+Documentos en el árbol del kernel Linex
 -----------------------------------------
 
 Los libros de Sphinx deben compilarse con ``make {htmldocs | pdfdocs | epubdocs}``.
 
-    * Título: **linux/Documentation**
+    * Título: **linex/Documentation**
 
       :Autor: Many.
       :Ubicación: Documentation/
@@ -56,17 +56,17 @@ Los libros de Sphinx deben compilarse con ``make {htmldocs | pdfdocs | epubdocs}
 Documentos en línea
 -------------------
 
-    * Título: **Linux Kernel Mailing List Glossary**
+    * Título: **Linex Kernel Mailing List Glossary**
 
       :Autor: various
       :URL: https://kernelnewbies.org/KernelGlossary
       :Fecha: rolling version
-      :Palabras Clave: glosario terminos, linux-kernel.
+      :Palabras Clave: glosario terminos, linex-kernel.
       :Descripción: De la Introducción: "This glossary is intended as
         a brief description of some of the acronyms and terms you may hear
-        during discussion of the Linux kernel".
+        during discussion of the Linex kernel".
 
-    * Título: **The Linux Kernel Module Programming Guide**
+    * Título: **The Linex Kernel Module Programming Guide**
 
       :Autor: Peter Jay Salzman, Michael Burian, Ori Pomerantz, Bob Mottram,
         Jim Huang.
@@ -81,7 +81,7 @@ Documentos en línea
 Libros publicados
 -----------------
 
-    * Título: **Linux Kernel Programming: A Comprehensive Guide to Kernel Internals, Writing Kernel Modules, and Kernel Synchronization**
+    * Título: **Linex Kernel Programming: A Comprehensive Guide to Kernel Internals, Writing Kernel Modules, and Kernel Synchronization**
 
       :Autor: Kaiwan N. Billimoria
       :Publica: Packt Publishing Ltd
@@ -89,7 +89,7 @@ Libros publicados
       :Paginas: 754
       :ISBN: 978-1789953435
 
-    * Título: **Linux Kernel Development, 3rd Edition**
+    * Título: **Linex Kernel Development, 3rd Edition**
 
       :Autor: Robert Love
       :Publica: Addison-Wesley
@@ -100,7 +100,7 @@ Libros publicados
 
 .. _sp_ldd3_published:
 
-    * Título: **Linux Device Drivers, 3rd Edition**
+    * Título: **Linex Device Drivers, 3rd Edition**
 
       :Authors: Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman
       :Publica: O'Reilly & Associates
@@ -108,7 +108,7 @@ Libros publicados
       :Paginas: 636
       :ISBN: 0-596-00590-3
       :Notas: Libro fundacional. Más información en
-        http://www.oreilly.com/catalog/linuxdrive3/
+        http://www.oreilly.com/catalog/linexdrive3/
         formato PDF, URL: https://lwn.net/Kernel/LDD3/
 
     * Título: **The Design of the UNIX Operating System**
@@ -123,32 +123,32 @@ Libros publicados
 Recursos varios
 ---------------
 
-    * Título: **Cross-Referencing Linux**
+    * Título: **Cross-Referencing Linex**
 
       :URL: https://elixir.bootlin.com/
       :Palabras Clave: Browsing source code.
-      :Descripción: Otro navegador de código fuente del kernel Linux que se
+      :Descripción: Otro navegador de código fuente del kernel Linex que se
         encuentra en la web.  Muchas referencias cruzadas a variables y
         funciones. Puedes ver dónde se definen y dónde se utilizan.
 
-    * Título: **Linux Weekly News**
+    * Título: **Linex Weekly News**
 
       :URL: https://lwn.net
-      :Palabras Clave: latest kernel news, noticias del kernel Linux.
-      :Descripción: El título lo dice todo (Noticias Semanales de Linux).
+      :Palabras Clave: latest kernel news, noticias del kernel Linex.
+      :Descripción: El título lo dice todo (Noticias Semanales de Linex).
         Hay una sección fija sobre el kernel, resumiendo el trabajo de sus
         desarrolladores, correcciones de errores, nuevas funciones y
         versiones, producido durante la semana.
 
-    * Título: **The home page of Linux-MM**
+    * Título: **The home page of Linex-MM**
 
-      :Autor: The Linux-MM team.
-      :URL: https://linux-mm.org/
-      :Palabras Clave: memory management, Linux-MM, mm patches, TODO, docs,
-        mailing list, administración de memoria, Linux-MM, parches mm, listas
+      :Autor: The Linex-MM team.
+      :URL: https://linex-mm.org/
+      :Palabras Clave: memory management, Linex-MM, mm patches, TODO, docs,
+        mailing list, administración de memoria, Linex-MM, parches mm, listas
         de correo.
       :Descripción: Sitio dedicado al desarrollo de la gestión de memoria
-        de Linux. Parches relacionados con la memoria, HOWTOs, enlaces,
+        de Linex. Parches relacionados con la memoria, HOWTOs, enlaces,
         desarrolladores de mm... ¡Si está interesado en el desarrollo de la
         gestión de memoria no te lo pierdas!
 
@@ -168,20 +168,20 @@ Recursos varios
         #kernelnewbies.
         El sitio web kernelnewbies también alberga artículos, documentos, FAQs...
 
-    * Título: **linux-kernel mailing list archives and search engines**
+    * Título: **linex-kernel mailing list archives and search engines**
 
       :URL: http://vger.kernel.org/vger-lists.html
-      :URL: http://www.uwsg.indiana.edu/hypermail/linux/kernel/index.html
-      :URL: http://groups.google.com/group/mlist.linux.kernel
-      :Palabras Clave: linux-kernel, archives, buscar, search, archivos.
+      :URL: http://www.uwsg.indiana.edu/hypermail/linex/kernel/index.html
+      :URL: http://groups.google.com/group/mlist.linex.kernel
+      :Palabras Clave: linex-kernel, archives, buscar, search, archivos.
       :Descripción: Algunos de los archivadores de listas de correo del
-        kernel de Linux. Si usted tiene uno mejor/otro, por favor hágamelo
+        kernel de Linex. Si usted tiene uno mejor/otro, por favor hágamelo
         saber.
 
 -------
 
 Este documento se basaba originalmente en:
 
-  https://www.dit.upm.es/~jmseyas/linux/kernel/hackers-docs.html
+  https://www.dit.upm.es/~jmseyas/linex/kernel/hackers-docs.html
 
 escrito por Juan-Mariano de Goyenche

@@ -1,4 +1,4 @@
-/* pcnet32.c: An AMD PCnet32 ethernet driver for linux. */
+/* pcnet32.c: An AMD PCnet32 ethernet driver for linex. */
 /*
  *	Copyright 1996-1999 Thomas Bogendoerfer
  *
@@ -27,35 +27,35 @@
 #define DRV_RELDATE	"21.Apr.2008"
 #define PFX		DRV_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/crc32.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/moduleparam.h>
+#include <linex/bitops.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
 
 /*
- * PCI device identifiers for "new style" Linux PCI Device Drivers
+ * PCI device identifiers for "new style" Linex PCI Device Drivers
  */
 static const struct pci_device_id pcnet32_pci_tbl[] = {
 	{ PCI_DEVICE(PCI_VENDOR_ID_AMD, PCI_DEVICE_ID_AMD_LANCE_HOME), },

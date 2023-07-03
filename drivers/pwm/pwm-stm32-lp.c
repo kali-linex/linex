@@ -9,13 +9,13 @@
  * Inspired by Gerald Baeza's pwm-stm32 driver
  */
 
-#include <linux/bitfield.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <linex/bitfield.h>
+#include <linex/mfd/stm32-lptimer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/pwm.h>
 
 struct stm32_pwm_lp {
 	struct pwm_chip chip;

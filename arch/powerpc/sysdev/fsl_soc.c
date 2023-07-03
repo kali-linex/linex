@@ -8,26 +8,26 @@
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/spi/spi.h>
-#include <linux/fsl_devices.h>
-#include <linux/fs_enet_pd.h>
-#include <linux/fs_uart_pd.h>
-#include <linux/reboot.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/major.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/export.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/spi/spi.h>
+#include <linex/fsl_devices.h>
+#include <linex/fs_enet_pd.h>
+#include <linex/fs_uart_pd.h>
+#include <linex/reboot.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/time.h>

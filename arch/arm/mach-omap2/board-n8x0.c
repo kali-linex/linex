@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/board-n8x0.c
+ * linex/arch/arm/mach-omap2/board-n8x0.c
  *
  * Copyright (C) 2005-2009 Nokia Corporation
  * Author: Juha Yrjola <juha.yrjola@nokia.com>
@@ -8,21 +8,21 @@
  * Modified from mach-omap2/board-generic.c
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/musb.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/platform_data/mmc-omap.h>
-#include <linux/mfd/menelaus.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/stddef.h>
+#include <linex/i2c.h>
+#include <linex/spi/spi.h>
+#include <linex/usb/musb.h>
+#include <linex/mmc/host.h>
+#include <linex/platform_data/spi-omap2-mcspi.h>
+#include <linex/platform_data/mmc-omap.h>
+#include <linex/mfd/menelaus.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

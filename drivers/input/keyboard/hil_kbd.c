@@ -1,5 +1,5 @@
 /*
- * Generic linux-input device driver for keyboard devices
+ * Generic linex-input device driver for keyboard devices
  *
  * Copyright (c) 2001 Brian S. Julin
  * All rights reserved.
@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/hil.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
+#include <linex/hil.h>
+#include <linex/input.h>
+#include <linex/serio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/completion.h>
+#include <linex/slab.h>
+#include <linex/pci_ids.h>
 
 #define PREFIX "HIL: "
 

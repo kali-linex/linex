@@ -6,8 +6,8 @@
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>,
  */
 
-#include <linux/processor.h>
-#include <linux/delay.h>
+#include <linex/processor.h>
+#include <linex/delay.h>
 #include <asm/div64.h>
 #include <asm/timex.h>
 

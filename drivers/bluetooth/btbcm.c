@@ -6,11 +6,11 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/dmi.h>
-#include <linux/of.h>
+#include <linex/efi.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/dmi.h>
+#include <linex/of.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-sa1100/assabet.c
+ * linex/arch/arm/mach-sa1100/assabet.c
  *
  * Author: Nicolas Pitre
  *
  * This file contains all Assabet-specific tweaks.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/gpio-reg.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio_keys.h>
+#include <linex/ioport.h>
+#include <linex/platform_data/sa11x0-serial.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/serial_core.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/ucb1x00.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
 
 #include <video/sa1100fb.h>
 
@@ -41,7 +41,7 @@
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
 #include <mach/assabet.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linex/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

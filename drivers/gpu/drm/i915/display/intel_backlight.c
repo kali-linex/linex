@@ -3,10 +3,10 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/backlight.h>
-#include <linux/kernel.h>
-#include <linux/pwm.h>
-#include <linux/string_helpers.h>
+#include <linex/backlight.h>
+#include <linex/kernel.h>
+#include <linex/pwm.h>
+#include <linex/string_helpers.h>
 
 #include <acpi/video.h>
 

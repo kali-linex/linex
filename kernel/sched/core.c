@@ -6,79 +6,79 @@
  *
  *  Copyright (C) 1991-2002  Linus Torvalds
  */
-#include <linux/highmem.h>
-#include <linux/hrtimer_api.h>
-#include <linux/ktime_api.h>
-#include <linux/sched/signal.h>
-#include <linux/syscalls_api.h>
-#include <linux/debug_locks.h>
-#include <linux/prefetch.h>
-#include <linux/capability.h>
-#include <linux/pgtable_api.h>
-#include <linux/wait_bit.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock_api.h>
-#include <linux/cpumask_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/hardirq.h>
-#include <linux/softirq.h>
-#include <linux/refcount_api.h>
-#include <linux/topology.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cond_resched.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/init.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/rseq_api.h>
-#include <linux/sched/rt.h>
+#include <linex/highmem.h>
+#include <linex/hrtimer_api.h>
+#include <linex/ktime_api.h>
+#include <linex/sched/signal.h>
+#include <linex/syscalls_api.h>
+#include <linex/debug_locks.h>
+#include <linex/prefetch.h>
+#include <linex/capability.h>
+#include <linex/pgtable_api.h>
+#include <linex/wait_bit.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock_api.h>
+#include <linex/cpumask_api.h>
+#include <linex/lockdep_api.h>
+#include <linex/hardirq.h>
+#include <linex/softirq.h>
+#include <linex/refcount_api.h>
+#include <linex/topology.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/cond_resched.h>
+#include <linex/sched/cputime.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/init.h>
+#include <linex/sched/isolation.h>
+#include <linex/sched/loadavg.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/nohz.h>
+#include <linex/sched/rseq_api.h>
+#include <linex/sched/rt.h>
 
-#include <linux/blkdev.h>
-#include <linux/context_tracking.h>
-#include <linux/cpuset.h>
-#include <linux/delayacct.h>
-#include <linux/init_task.h>
-#include <linux/interrupt.h>
-#include <linux/ioprio.h>
-#include <linux/kallsyms.h>
-#include <linux/kcov.h>
-#include <linux/kprobes.h>
-#include <linux/llist_api.h>
-#include <linux/mmu_context.h>
-#include <linux/mmzone.h>
-#include <linux/mutex_api.h>
-#include <linux/nmi.h>
-#include <linux/nospec.h>
-#include <linux/perf_event_api.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/rcuwait_api.h>
-#include <linux/sched/wake_q.h>
-#include <linux/scs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/vtime.h>
-#include <linux/wait_api.h>
-#include <linux/workqueue_api.h>
+#include <linex/blkdev.h>
+#include <linex/context_tracking.h>
+#include <linex/cpuset.h>
+#include <linex/delayacct.h>
+#include <linex/init_task.h>
+#include <linex/interrupt.h>
+#include <linex/ioprio.h>
+#include <linex/kallsyms.h>
+#include <linex/kcov.h>
+#include <linex/kprobes.h>
+#include <linex/llist_api.h>
+#include <linex/mmu_context.h>
+#include <linex/mmzone.h>
+#include <linex/mutex_api.h>
+#include <linex/nmi.h>
+#include <linex/nospec.h>
+#include <linex/perf_event_api.h>
+#include <linex/profile.h>
+#include <linex/psi.h>
+#include <linex/rcuwait_api.h>
+#include <linex/sched/wake_q.h>
+#include <linex/scs.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/vtime.h>
+#include <linex/wait_api.h>
+#include <linex/workqueue_api.h>
 
 #ifdef CONFIG_PREEMPT_DYNAMIC
 # ifdef CONFIG_GENERIC_ENTRY
-#  include <linux/entry-common.h>
+#  include <linex/entry-common.h>
 # endif
 #endif
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/linex/sched/types.h>
 
 #include <asm/irq_regs.h>
 #include <asm/switch_to.h>
 #include <asm/tlb.h>
 
 #define CREATE_TRACE_POINTS
-#include <linux/sched/rseq_api.h>
+#include <linex/sched/rseq_api.h>
 #include <trace/events/sched.h>
 #include <trace/events/ipi.h>
 #undef CREATE_TRACE_POINTS
@@ -8682,7 +8682,7 @@ EXPORT_SYMBOL(__cond_resched_rwlock_write);
 #ifdef CONFIG_PREEMPT_DYNAMIC
 
 #ifdef CONFIG_GENERIC_ENTRY
-#include <linux/entry-common.h>
+#include <linex/entry-common.h>
 #endif
 
 /*

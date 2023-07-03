@@ -4,9 +4,9 @@
  * Copyright (C) 2017 Jonathan Liu <net147@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/iopoll.h>
+#include <linex/clk.h>
+#include <linex/i2c.h>
+#include <linex/iopoll.h>
 
 #include "sun4i_hdmi.h"
 

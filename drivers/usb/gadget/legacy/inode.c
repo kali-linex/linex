@@ -9,28 +9,28 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/uts.h>
-#include <linux/wait.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/kthread.h>
-#include <linux/aio.h>
-#include <linux/uio.h>
-#include <linux/refcount.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/pagemap.h>
+#include <linex/uts.h>
+#include <linex/wait.h>
+#include <linex/compiler.h>
+#include <linex/uaccess.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/kthread.h>
+#include <linex/aio.h>
+#include <linex/uio.h>
+#include <linex/refcount.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/moduleparam.h>
 
-#include <linux/usb/gadgetfs.h>
-#include <linux/usb/gadget.h>
+#include <linex/usb/gadgetfs.h>
+#include <linex/usb/gadget.h>
 
 
 /*

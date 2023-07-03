@@ -14,29 +14,29 @@
  *	      serial8250_register_8250_port() ports
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/tty.h>
-#include <linux/ratelimit.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/nmi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/sysrq.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/tty.h>
+#include <linex/ratelimit.h>
+#include <linex/tty_flip.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
+#include <linex/nmi.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
 #ifdef CONFIG_SPARC
-#include <linux/sunserialcore.h>
+#include <linex/sunserialcore.h>
 #endif
 
 #include <asm/irq.h>

@@ -6,16 +6,16 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/input.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
 
 MODULE_AUTHOR("Benjamin Tissoires <benjamin.tissoires@redhat.com>");
 MODULE_DESCRIPTION("Surface 3 platform driver");

@@ -8,12 +8,12 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
 
-#include <linux/configfs.h>
+#include <linex/configfs.h>
 #include "configfs_internal.h"
 
 /* Protects attachments of new symlinks */

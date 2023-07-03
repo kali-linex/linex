@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/vdpa.h>
-#include <uapi/linux/vdpa.h>
+#include <linex/module.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
+#include <linex/vdpa.h>
+#include <uapi/linex/vdpa.h>
 #include <net/genetlink.h>
-#include <linux/mod_devicetable.h>
-#include <linux/virtio_ids.h>
+#include <linex/mod_devicetable.h>
+#include <linex/virtio_ids.h>
 
 static LIST_HEAD(mdev_head);
 /* A global mutex that protects vdpa management device and device level operations. */

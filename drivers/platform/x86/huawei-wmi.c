@@ -5,19 +5,19 @@
  *  Copyright (C) 2018	      Ayman Bagabas <ayman.bagabas@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/sysfs.h>
-#include <linux/wmi.h>
+#include <linex/acpi.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/sysfs.h>
+#include <linex/wmi.h>
 #include <acpi/battery.h>
 
 /*

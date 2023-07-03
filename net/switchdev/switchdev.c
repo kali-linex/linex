@@ -5,18 +5,18 @@
  * Copyright (c) 2014-2015 Scott Feldman <sfeldma@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/list.h>
+#include <linex/workqueue.h>
+#include <linex/if_vlan.h>
+#include <linex/rtnetlink.h>
 #include <net/switchdev.h>
 
 static LIST_HEAD(deferred);

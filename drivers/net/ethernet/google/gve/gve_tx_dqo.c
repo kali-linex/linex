@@ -9,9 +9,9 @@
 #include "gve_utils.h"
 #include "gve_dqo.h"
 #include <net/ip.h>
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <linex/tcp.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
 
 /* Returns true if a gve_tx_pending_packet_dqo object is available. */
 static bool gve_has_pending_packet(struct gve_tx_ring *tx)

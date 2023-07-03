@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/xattr.h>
 #include "xattr.h"
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 static int
 user_get(const struct xattr_handler *handler, struct dentry *unused,

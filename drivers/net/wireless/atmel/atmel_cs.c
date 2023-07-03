@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- linex-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,8 +7,8 @@
 
     This code was developed from version 2.1.1 of the Atmel drivers,
     released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Linux aironet drivers (C) Benjamin Reed,
-    and the Linux PCMCIA package, (C) David Hinds.
+    includes code from the Linex aironet drivers (C) Benjamin Reed,
+    and the Linex PCMCIA package, (C) David Hinds.
 
     For all queries about this code, please contact the current author,
     Simon Kelley <simon@thekelleys.org.uk> and not Atmel Corporation.
@@ -32,14 +32,14 @@
 #ifdef __IN_PCMCIA_PACKAGE__
 #include <pcmcia/k_compat.h>
 #endif
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/netdevice.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
@@ -47,7 +47,7 @@
 #include <pcmcia/ciscode.h>
 
 #include <asm/io.h>
-#include <linux/wireless.h>
+#include <linex/wireless.h>
 
 #include "atmel.h"
 

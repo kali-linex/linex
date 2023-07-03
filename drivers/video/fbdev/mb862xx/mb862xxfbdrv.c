@@ -10,18 +10,18 @@
 
 #undef DEBUG
 
-#include <linux/aperture.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linex/aperture.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
 #if defined(CONFIG_OF)
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 #endif
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/debug_locks.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/kallsyms.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/debug_locks.h>
 
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

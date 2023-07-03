@@ -14,13 +14,13 @@
  * potential races with the interrupt handling.
  */
 
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/bitfield.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define AL3010_DRV_NAME "al3010"
 

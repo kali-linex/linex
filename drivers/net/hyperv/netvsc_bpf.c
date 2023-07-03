@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/netpoll.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/netpoll.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
+#include <linex/kernel.h>
 #include <net/xdp.h>
 
-#include <linux/mutex.h>
-#include <linux/rtnetlink.h>
+#include <linex/mutex.h>
+#include <linex/rtnetlink.h>
 
 #include "hyperv_net.h"
 

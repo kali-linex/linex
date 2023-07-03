@@ -9,9 +9,9 @@
  */
 
 #include "opl3_voice.h"
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Uros Bizjak <uros@kss-loka.si>");

@@ -15,12 +15,12 @@
  * will be subsequently registered.
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
 
 #include "simple-mfd-i2c.h"
 

@@ -3,9 +3,9 @@
  * PCM timer handling on ctxfi
  */
 
-#include <linux/slab.h>
-#include <linux/math64.h>
-#include <linux/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/math64.h>
+#include <linex/moduleparam.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include "ctatc.h"

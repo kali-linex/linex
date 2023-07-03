@@ -3,19 +3,19 @@
  * fs/sysfs/file.c - sysfs regular (text) file implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Linex Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * Please see Documentation/filesystems/sysfs.rst for more information.
  */
 
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/mm.h>
+#include <linex/module.h>
+#include <linex/kobject.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/seq_file.h>
+#include <linex/mm.h>
 
 #include "sysfs.h"
 

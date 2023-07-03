@@ -25,11 +25,11 @@
 #ifndef __INTEL_UNCORE_H__
 #define __INTEL_UNCORE_H__
 
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
-#include <linux/hrtimer.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/types.h>
+#include <linex/spinlock.h>
+#include <linex/notifier.h>
+#include <linex/hrtimer.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/types.h>
 
 #include "i915_reg_defs.h"
 

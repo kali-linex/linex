@@ -7,13 +7,13 @@
  *
  **************************************************************************/
 
-#include <linux/aperture.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <linex/aperture.h>
+#include <linex/cpu.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/pm_runtime.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
 
 #include <asm/set_memory.h>
 

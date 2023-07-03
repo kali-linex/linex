@@ -30,13 +30,13 @@
  * SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/poll.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/in.h>
+#include <linex/ipv6.h>
+#include <linex/poll.h>
 #include <net/sock.h>
 
 #include "rds.h"

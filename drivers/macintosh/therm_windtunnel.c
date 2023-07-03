@@ -27,16 +27,16 @@
  *   
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/of_platform.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kthread.h>
+#include <linex/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

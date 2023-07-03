@@ -7,40 +7,40 @@
  * Copyright (C) 2007 Herbert Valerio Riedel <hvr@gnu.org>
  *
  * Thanks go to Michael Burian and Ray Lehtiniemi for their key
- * role in the ep93xx linux community.
+ * role in the ep93xx linex community.
  */
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/gpio/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
-#include <linux/irqchip/arm-vic.h>
-#include <linux/reboot.h>
-#include <linux/usb/ohci_pdriver.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/sys_soc.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
+#include <linex/leds.h>
+#include <linex/uaccess.h>
+#include <linex/termios.h>
+#include <linex/amba/bus.h>
+#include <linex/amba/serial.h>
+#include <linex/mtd/physmap.h>
+#include <linex/i2c.h>
+#include <linex/gpio/machine.h>
+#include <linex/spi/spi.h>
+#include <linex/export.h>
+#include <linex/irqchip/arm-vic.h>
+#include <linex/reboot.h>
+#include <linex/usb/ohci_pdriver.h>
+#include <linex/random.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <linex/platform_data/video-ep93xx.h>
+#include <linex/platform_data/keypad-ep93xx.h>
+#include <linex/platform_data/spi-ep93xx.h>
+#include <linex/soc/cirrus/ep93xx.h>
 
 #include "gpio-ep93xx.h"
 

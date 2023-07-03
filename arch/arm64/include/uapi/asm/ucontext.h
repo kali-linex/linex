@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  * Copyright (C) 2012 ARM Ltd.
  *
@@ -17,7 +17,7 @@
 #ifndef _UAPI__ASM_UCONTEXT_H
 #define _UAPI__ASM_UCONTEXT_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct ucontext {
 	unsigned long	  uc_flags;

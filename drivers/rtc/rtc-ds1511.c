@@ -11,16 +11,16 @@
  * bit, but not a full watchdog driver.
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linex/bcd.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/module.h>
 
 enum ds1511reg {
 	DS1511_SEC = 0x0,

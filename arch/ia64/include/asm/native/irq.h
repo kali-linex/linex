@@ -2,8 +2,8 @@
 /******************************************************************************
  * arch/ia64/include/asm/native/irq.h
  *
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at valinex co jp>
+ *                    VA Linex Systems Japan K.K.
  */
 
 #ifndef _ASM_IA64_NATIVE_IRQ_H

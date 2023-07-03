@@ -3,7 +3,7 @@
  * Copyright © 2007 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  *
- * Derived from: ROMFS file system, Linux implementation
+ * Derived from: ROMFS file system, Linex implementation
  *
  * Copyright © 1997-1999  Janos Farkas <chexum@shadow.banki.hu>
  *
@@ -58,23 +58,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/mtd/super.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
-#include <linux/major.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/time.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/fs_context.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/statfs.h>
+#include <linex/mtd/super.h>
+#include <linex/ctype.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/uaccess.h>
+#include <linex/major.h>
 #include "internal.h"
 
 static struct kmem_cache *romfs_inode_cachep;

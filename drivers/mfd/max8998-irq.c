@@ -5,11 +5,11 @@
 // Copyright (C) 2010 Samsung Electronics Co.Ltd
 // Author: Joonyoung Shim <jy0922.shim@samsung.com>
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/max8998-private.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/max8998-private.h>
 
 struct max8998_irq_data {
 	int reg;

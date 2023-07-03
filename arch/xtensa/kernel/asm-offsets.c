@@ -15,17 +15,17 @@
 #include <asm/processor.h>
 #include <asm/coprocessor.h>
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <linex/types.h>
+#include <linex/stddef.h>
+#include <linex/thread_info.h>
+#include <linex/ptrace.h>
+#include <linex/mm.h>
+#include <linex/kbuild.h>
+#include <linex/suspend.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 int main(void)
 {

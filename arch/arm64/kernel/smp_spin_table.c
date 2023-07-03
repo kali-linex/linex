@@ -5,12 +5,12 @@
  * Copyright (C) 2013 ARM Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/smp.h>
+#include <linex/types.h>
+#include <linex/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu_ops.h>

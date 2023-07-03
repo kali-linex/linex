@@ -7,10 +7,10 @@
  *     Michael Trimarchi <michael@amarulasolutions.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
 
 #include "pcm179x.h"
 

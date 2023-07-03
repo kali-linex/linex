@@ -7,12 +7,12 @@
  */
 
 #include <asm/current.h>
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/lsm_hooks.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
+#include <linex/cred.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/lsm_hooks.h>
+#include <linex/rcupdate.h>
+#include <linex/sched.h>
 
 #include "common.h"
 #include "cred.h"

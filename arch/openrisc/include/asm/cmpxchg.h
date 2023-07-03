@@ -16,9 +16,9 @@
 #ifndef __ASM_OPENRISC_CMPXCHG_H
 #define __ASM_OPENRISC_CMPXCHG_H
 
-#include  <linux/bits.h>
-#include  <linux/compiler.h>
-#include  <linux/types.h>
+#include  <linex/bits.h>
+#include  <linex/compiler.h>
+#include  <linex/types.h>
 
 #define __HAVE_ARCH_CMPXCHG 1
 

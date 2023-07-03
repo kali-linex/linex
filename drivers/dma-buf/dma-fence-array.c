@@ -9,9 +9,9 @@
  *	Christian König <christian.koenig@amd.com>
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/dma-fence-array.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/dma-fence-array.h>
 
 #define PENDING_ERROR 1
 

@@ -8,14 +8,14 @@
 #ifndef _MV88E6XXX_CHIP_H
 #define _MV88E6XXX_CHIP_H
 
-#include <linux/idr.h>
-#include <linux/if_vlan.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kthread.h>
-#include <linux/phy.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
+#include <linex/idr.h>
+#include <linex/if_vlan.h>
+#include <linex/irq.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kthread.h>
+#include <linex/phy.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/timecounter.h>
 #include <net/dsa.h>
 
 #define EDSA_HLEN		8

@@ -6,7 +6,7 @@
  *
  * Based on the am35x "glue layer" code.
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for Linex.
  *
  * musb_dsps.c will be a common file for all the TI DSPS platforms
  * such as dm64x, dm36x, dm35x, da8x, am35x and ti81x.
@@ -14,24 +14,24 @@
  * da8xx.c would be merged to this file after testing.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/sizes.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/usb/usb_phy_generic.h>
+#include <linex/platform_data/usb-omap.h>
+#include <linex/sizes.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/usb/of.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/usb/of.h>
 
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 #include "musb_core.h"
 

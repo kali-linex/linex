@@ -12,16 +12,16 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/hugetlb.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/srcu.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/hugetlb.h>
+#include <linex/delay.h>
+#include <linex/timex.h>
+#include <linex/srcu.h>
 #include <asm/processor.h>
 #include "gru.h"
 #include "grutables.h"

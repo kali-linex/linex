@@ -13,16 +13,16 @@
  * voltage unit is nV.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/delay.h>
+#include <linex/sysfs.h>
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 /* Masks */
 #define MCP3422_CHANNEL_MASK	0x60

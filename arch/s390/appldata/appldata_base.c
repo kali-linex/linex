@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Base infrastructure for Linux-z/VM Monitor Stream, Stage 1.
+ * Base infrastructure for Linex-z/VM Monitor Stream, Stage 1.
  * Exports appldata_register_ops() and appldata_unregister_ops() for the
  * data gathering modules.
  *
@@ -12,23 +12,23 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/sched/stat.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/sched/stat.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/pagemap.h>
+#include <linex/sysctl.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/workqueue.h>
 #include <asm/appldata.h>
 #include <asm/vtimer.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/smp.h>
 
@@ -123,7 +123,7 @@ static void appldata_work_fn(struct work_struct *work)
 
 static struct appldata_product_id appldata_id = {
 	.prod_nr    = {0xD3, 0xC9, 0xD5, 0xE4,
-		       0xE7, 0xD2, 0xD9},	/* "LINUXKR" */
+		       0xE7, 0xD2, 0xD9},	/* "LINEXKR" */
 	.prod_fn    = 0xD5D3,			/* "NL" */
 	.version_nr = 0xF2F6,			/* "26" */
 	.release_nr = 0xF0F1,			/* "01" */

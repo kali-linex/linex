@@ -28,9 +28,9 @@
 #include <error.h>
 #include <fcntl.h>
 #include <getopt.h>
-#include <linux/filter.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
+#include <linex/filter.h>
+#include <linex/if_ether.h>
+#include <linex/if_packet.h>
 #include <net/if.h>
 #include <netdb.h>
 #include <netinet/ip.h>

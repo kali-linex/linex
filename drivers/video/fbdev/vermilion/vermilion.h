@@ -15,10 +15,10 @@
 #ifndef _VERMILION_H_
 #define _VERMILION_H_
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/atomic.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/atomic.h>
+#include <linex/mutex.h>
 
 #define VML_DEVICE_GPU 0x5002
 #define VML_DEVICE_VDC 0x5009

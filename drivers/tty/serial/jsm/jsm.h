@@ -13,11 +13,11 @@
 #ifndef __JSM_DRIVER_H
 #define __JSM_DRIVER_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>	/* To pick up the varions Linux types */
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/types.h>	/* To pick up the varions Linex types */
+#include <linex/tty.h>
+#include <linex/serial_core.h>
+#include <linex/device.h>
 
 /*
  * Debugging levels can be set using debug insmod variable

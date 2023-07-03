@@ -72,20 +72,20 @@
  *   wrappers provided below.
  */
 
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/cred.h>
-#include <linux/fcntl.h>
-#include <linux/eventpoll.h>
-#include <linux/sem.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/ipc.h>
-#include <linux/ipc_namespace.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linex/syscalls.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/cred.h>
+#include <linex/fcntl.h>
+#include <linex/eventpoll.h>
+#include <linex/sem.h>
+#include <linex/socket.h>
+#include <linex/net.h>
+#include <linex/ipc.h>
+#include <linex/ipc_namespace.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
 
 #include <asm/syscall.h>
 

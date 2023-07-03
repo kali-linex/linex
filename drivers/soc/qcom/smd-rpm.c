@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
 
-#include <linux/rpmsg.h>
-#include <linux/soc/qcom/smd-rpm.h>
+#include <linex/rpmsg.h>
+#include <linex/soc/qcom/smd-rpm.h>
 
 #define RPM_REQUEST_TIMEOUT     (5 * HZ)
 

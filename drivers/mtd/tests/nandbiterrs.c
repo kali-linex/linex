@@ -29,13 +29,13 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mtd/mtd.h>
-#include <linux/err.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mtd/mtd.h>
+#include <linex/err.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/slab.h>
 #include "mtd_test.h"
 
 static int dev;

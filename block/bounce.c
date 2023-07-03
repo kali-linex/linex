@@ -6,19 +6,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/gfp.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
+#include <linex/mm.h>
+#include <linex/export.h>
+#include <linex/swap.h>
+#include <linex/gfp.h>
+#include <linex/bio.h>
+#include <linex/pagemap.h>
+#include <linex/mempool.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/init.h>
+#include <linex/hash.h>
+#include <linex/highmem.h>
+#include <linex/printk.h>
 #include <asm/tlbflush.h>
 
 #include <trace/events/block.h>

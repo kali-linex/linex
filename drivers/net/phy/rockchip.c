@@ -9,12 +9,12 @@
  * David Wu <david.wu@rock-chips.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/netdevice.h>
+#include <linex/phy.h>
 
 #define INTERNAL_EPHY_ID			0x1234d400
 

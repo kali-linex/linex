@@ -8,13 +8,13 @@
  * Based on wm97xx-core.c
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/platform_data/mcs.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/irq.h>
+#include <linex/platform_data/mcs.h>
+#include <linex/slab.h>
 
 /* Registers */
 #define MCS5000_TS_STATUS		0x00

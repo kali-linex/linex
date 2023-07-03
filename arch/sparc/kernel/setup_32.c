@@ -1,40 +1,40 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/kernel/setup.c
+ *  linex/arch/sparc/kernel/setup.c
  *
  *  Copyright (C) 1995  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 2000  Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/initrd.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/initrd.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/start_kernel.h>
-#include <uapi/linux/mount.h>
+#include <linex/user.h>
+#include <linex/screen_info.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/syscalls.h>
+#include <linex/kdev_t.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/console.h>
+#include <linex/spinlock.h>
+#include <linex/root_dev.h>
+#include <linex/cpu.h>
+#include <linex/kdebug.h>
+#include <linex/export.h>
+#include <linex/start_kernel.h>
+#include <uapi/linex/mount.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -270,7 +270,7 @@ struct tt_entry *sparc_ttable;
 /* Called from head_32.S - before we have setup anything
  * in the kernel. Be very careful with what you do here.
  */
-void __init sparc32_start_kernel(struct linux_romvec *rp)
+void __init sparc32_start_kernel(struct linex_romvec *rp)
 {
 	prom_init(rp);
 
@@ -356,10 +356,10 @@ void __init setup_arch(char **cmdline_p)
 
 	prom_setsync(prom_sync_me);
 
-	if((boot_flags & BOOTME_DEBUG) && (linux_dbvec != NULL) &&
-	   ((*(short *)linux_dbvec) != -1)) {
+	if((boot_flags & BOOTME_DEBUG) && (linex_dbvec != NULL) &&
+	   ((*(short *)linex_dbvec) != -1)) {
 		printk("Booted under KADB. Syncing trap table.\n");
-		(*(linux_dbvec->teach_debugger))();
+		(*(linex_dbvec->teach_debugger))();
 	}
 
 	/* Run-time patch instructions to match the cpu model */

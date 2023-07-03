@@ -4,9 +4,9 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/nospec.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <linex/nospec.h>
+#include <linex/sched/signal.h>
+#include <linex/uaccess.h>
 
 #include <uapi/drm/i915_drm.h>
 

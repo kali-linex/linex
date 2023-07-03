@@ -15,9 +15,9 @@
 #ifndef VIDTV_MUX_H
 #define VIDTV_MUX_H
 
-#include <linux/hashtable.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/hashtable.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include <media/dvb_frontend.h>
 

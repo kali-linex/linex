@@ -10,15 +10,15 @@
  * Based on arch/powerpc/platforms/maple/setup.c
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
-#include <linux/gfp.h>
-#include <linux/irqdomain.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/console.h>
+#include <linex/export.h>
+#include <linex/pci.h>
+#include <linex/of_platform.h>
+#include <linex/gfp.h>
+#include <linex/irqdomain.h>
 
 #include <asm/iommu.h>
 #include <asm/machdep.h>

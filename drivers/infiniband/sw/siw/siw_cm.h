@@ -9,7 +9,7 @@
 #define _SIW_CM_H
 
 #include <net/sock.h>
-#include <linux/tcp.h>
+#include <linex/tcp.h>
 
 #include <rdma/iw_cm.h>
 

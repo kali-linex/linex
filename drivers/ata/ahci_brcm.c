@@ -5,19 +5,19 @@
  * Copyright © 2009-2015 Broadcom Corporation
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/string.h>
+#include <linex/ahci_platform.h>
+#include <linex/compiler.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/libata.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/string.h>
 
 #include "ahci.h"
 

@@ -8,18 +8,18 @@
  *	Copyright (C) 2006,2008 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi-mem.h>
+#include <linex/spi/spi_bitbang.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/err.h>
 
 #define DRV_NAME	"ath79-spi"
 

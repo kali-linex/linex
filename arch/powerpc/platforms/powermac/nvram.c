@@ -4,20 +4,20 @@
  *
  *  Todo: - add support for the OF persistent properties
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/memblock.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/nvram.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
+#include <linex/memblock.h>
+#include <linex/completion.h>
+#include <linex/spinlock.h>
+#include <linex/of_address.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

@@ -9,13 +9,13 @@
  *		Steve French (sfrench@us.ibm.com)
  */
 
-#include <linux/dcache.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
+#include <linex/dcache.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/vfs.h>
+#include <linex/fs.h>
+#include <linex/inet.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 #include "cifsfs.h"

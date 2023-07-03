@@ -25,9 +25,9 @@
  * transaction with a roll-back capability.
  */
 
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/math64.h>
+#include <linex/err.h>
+#include <linex/uaccess.h>
+#include <linex/math64.h>
 #include "ubi.h"
 
 /**

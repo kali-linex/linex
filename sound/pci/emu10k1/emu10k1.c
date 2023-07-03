@@ -7,10 +7,10 @@
  *      Added support for Audigy 2 Value.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/time.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 #include <sound/initval.h>

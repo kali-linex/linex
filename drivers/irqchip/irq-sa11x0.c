@@ -5,14 +5,14 @@
  *
  * Generic IRQ handling for the SA11x0.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/syscore_ops.h>
-#include <linux/irqchip/irq-sa11x0.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/syscore_ops.h>
+#include <linex/irqchip/irq-sa11x0.h>
 
 #include <soc/sa1100/pwer.h>
 

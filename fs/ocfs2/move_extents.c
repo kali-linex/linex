@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2011 Oracle.  All rights reserved.
  */
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/mount.h>
-#include <linux/swap.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/mount.h>
+#include <linex/swap.h>
 
 #include <cluster/masklog.h>
 

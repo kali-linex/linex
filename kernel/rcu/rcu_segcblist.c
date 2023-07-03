@@ -4,13 +4,13 @@
  *
  * Copyright IBM Corporation, 2017
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linex.ibm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/cpu.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 
 #include "rcu_segcblist.h"
 

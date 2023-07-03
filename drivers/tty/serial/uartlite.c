@@ -6,25 +6,25 @@
  * Copyright (C) 2007 Secret Lab Technologies Ltd.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/bitfield.h>
+#include <linex/console.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/clk.h>
+#include <linex/pm_runtime.h>
 
 #define ULITE_NAME		"ttyUL"
 #define ULITE_MAJOR		204

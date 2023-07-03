@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2020, Intel Corporation
  * Author: K V, Abhilash <abhilash.k.v@intel.com>
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
 
-#include <linux/property.h>
-#include <linux/usb/pd.h>
+#include <linex/property.h>
+#include <linex/usb/pd.h>
 
 #include "ucsi.h"
 

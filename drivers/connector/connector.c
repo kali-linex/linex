@@ -6,18 +6,18 @@
  * All rights reserved.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/skbuff.h>
 #include <net/netlink.h>
-#include <linux/moduleparam.h>
-#include <linux/connector.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
+#include <linex/moduleparam.h>
+#include <linex/connector.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/proc_fs.h>
+#include <linex/spinlock.h>
 
 #include <net/sock.h>
 

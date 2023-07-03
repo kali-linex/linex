@@ -6,33 +6,33 @@
 
 OBJCOPYFLAGS= -O binary -R .note -R .note.gnu.build-id -R .comment -S
 
-LINUX_START_TEXT = $$($(READELF) -h vmlinux | \
+LINEX_START_TEXT = $$($(READELF) -h vmlinex | \
 			grep "Entry point address" | grep -o 0x.*)
 
-UIMAGE_LOADADDR    = $(CONFIG_LINUX_LINK_BASE)
-UIMAGE_ENTRYADDR   = $(LINUX_START_TEXT)
+UIMAGE_LOADADDR    = $(CONFIG_LINEX_LINK_BASE)
+UIMAGE_ENTRYADDR   = $(LINEX_START_TEXT)
 
-targets += vmlinux.bin
-targets += vmlinux.bin.gz
-targets += vmlinux.bin.lzma
+targets += vmlinex.bin
+targets += vmlinex.bin.gz
+targets += vmlinex.bin.lzma
 targets += uImage.bin
 targets += uImage.gz
 targets += uImage.lzma
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinex.bin: vmlinex FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.gz: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin.lzma: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.bin.lzma: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,lzma)
 
-$(obj)/uImage.bin: $(obj)/vmlinux.bin FORCE
+$(obj)/uImage.bin: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,uimage,none)
 
-$(obj)/uImage.gz: $(obj)/vmlinux.bin.gz FORCE
+$(obj)/uImage.gz: $(obj)/vmlinex.bin.gz FORCE
 	$(call if_changed,uimage,gzip)
 
-$(obj)/uImage.lzma: $(obj)/vmlinux.bin.lzma FORCE
+$(obj)/uImage.lzma: $(obj)/vmlinex.bin.lzma FORCE
 	$(call if_changed,uimage,lzma)

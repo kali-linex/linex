@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2021 Intel Corporation
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/peci.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/peci.h>
 
 #include "internal.h"
 

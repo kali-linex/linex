@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Linex staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -17,16 +17,16 @@
 #define _SUCCESS	1
 #define _FAIL		0
 
-#include <linux/spinlock.h>
+#include <linex/spinlock.h>
 
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/sched/signal.h>
-#include <linux/sem.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/semaphore.h>
+#include <linex/sched/signal.h>
+#include <linex/sem.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 #include <net/iw_handler.h>
-#include <linux/proc_fs.h>      /* Necessary because we use the proc fs */
+#include <linex/proc_fs.h>      /* Necessary because we use the proc fs */
 
 #include "basic_types.h"
 

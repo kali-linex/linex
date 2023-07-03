@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2015, The Linex Foundation. All rights reserved.
  */
 
 #ifndef UFS_QCOM_H_
 #define UFS_QCOM_H_
 
-#include <linux/reset-controller.h>
-#include <linux/reset.h>
+#include <linex/reset-controller.h>
+#include <linex/reset.h>
 #include <soc/qcom/ice.h>
 #include <ufs/ufshcd.h>
 

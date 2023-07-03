@@ -12,8 +12,8 @@
  * 02/29/00     D.Mosberger	moved most things into hw_irq.h
  */
 
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <linex/types.h>
+#include <linex/cpumask.h>
 #include <asm/native/irq.h>
 
 #define NR_IRQS		IA64_NATIVE_NR_IRQS

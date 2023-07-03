@@ -4,11 +4,11 @@
  * Copyright 2005, Devicescape Software, Inc.
  * Copyright (C) 2016 Intel Deutschland GmbH
  */
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/export.h>
 #include <asm/unaligned.h>
 
 #include <net/mac80211.h>

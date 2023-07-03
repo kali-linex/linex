@@ -9,22 +9,22 @@
  * Author: Michael White <michael.white@cirrus.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/version.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/version.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

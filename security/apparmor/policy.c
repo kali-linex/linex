@@ -68,12 +68,12 @@
  * FIXME: move profile lists to using rcu_lists
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/cred.h>
-#include <linux/rculist.h>
-#include <linux/user_namespace.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/cred.h>
+#include <linex/rculist.h>
+#include <linex/user_namespace.h>
 
 #include "include/apparmor.h"
 #include "include/capability.h"

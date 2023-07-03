@@ -4,20 +4,20 @@
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>
  */
 
-#include <linux/cpufeature.h>
-#include <linux/cpuhotplug.h>
-#include <linux/fs.h>
-#include <linux/hashtable.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/isst_if.h>
+#include <linex/cpufeature.h>
+#include <linex/cpuhotplug.h>
+#include <linex/fs.h>
+#include <linex/hashtable.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/isst_if.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

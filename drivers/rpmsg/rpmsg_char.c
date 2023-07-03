@@ -13,18 +13,18 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/rpmsg.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/rpmsg.h>
+#include <linex/cdev.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/poll.h>
+#include <linex/rpmsg.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/rpmsg.h>
 
 #include "rpmsg_char.h"
 #include "rpmsg_internal.h"

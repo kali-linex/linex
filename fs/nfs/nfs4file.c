@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/nfs/file.c
+ *  linex/fs/nfs/file.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  */
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/falloc.h>
-#include <linux/mount.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_ssc.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/falloc.h>
+#include <linex/mount.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_ssc.h>
 #include "delegation.h"
 #include "internal.h"
 #include "iostat.h"

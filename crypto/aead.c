@@ -8,14 +8,14 @@
  */
 
 #include <crypto/internal/aead.h>
-#include <linux/cryptouser.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <linex/cryptouser.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

@@ -3,16 +3,16 @@
  * Copyright (c) 2015 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
-#include <linux/soc/mediatek/mtk-mutex.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <linex/clk.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/soc/mediatek/mtk-mmsys.h>
+#include <linex/soc/mediatek/mtk-mutex.h>
+#include <linex/soc/mediatek/mtk-cmdq.h>
 
 #define MTK_MUTEX_MAX_HANDLES			10
 

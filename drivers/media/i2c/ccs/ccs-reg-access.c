@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2011--2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@linex.intel.com>
  */
 
 #include <asm/unaligned.h>
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
 
 #include "ccs.h"
 #include "ccs-limits.h"

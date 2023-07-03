@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2019 Intel Corporation. */
 
-#include <linux/hash.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/static_call.h>
+#include <linex/hash.h>
+#include <linex/bpf.h>
+#include <linex/filter.h>
+#include <linex/static_call.h>
 
 /* The BPF dispatcher is a multiway branch code generator. The
  * dispatcher is a mechanism to avoid the performance penalty of an

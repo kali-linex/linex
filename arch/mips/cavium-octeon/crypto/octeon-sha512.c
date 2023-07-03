@@ -13,12 +13,12 @@
  * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
  */
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 #include <crypto/sha2.h>
 #include <crypto/sha512_base.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

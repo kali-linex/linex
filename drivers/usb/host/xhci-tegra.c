@@ -6,29 +6,29 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/tegra/xusb.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/pm.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/phy.h>
-#include <linux/usb/role.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/phy/phy.h>
+#include <linex/phy/tegra/xusb.h>
+#include <linex/platform_device.h>
+#include <linex/usb/ch9.h>
+#include <linex/pm.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/phy.h>
+#include <linex/usb/role.h>
 #include <soc/tegra/pmc.h>
 
 #include "xhci.h"

@@ -7,16 +7,16 @@
  * Author: Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_phonet.h>
-#include <linux/phonet.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/gfp.h>
+#include <linex/usb.h>
+#include <linex/usb/cdc.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/if_phonet.h>
+#include <linex/phonet.h>
 
 #define PN_MEDIA_USB	0x1B
 

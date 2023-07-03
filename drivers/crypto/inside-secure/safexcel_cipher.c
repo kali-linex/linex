@@ -6,9 +6,9 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
 #include <crypto/aead.h>
 #include <crypto/aes.h>
 #include <crypto/authenc.h>

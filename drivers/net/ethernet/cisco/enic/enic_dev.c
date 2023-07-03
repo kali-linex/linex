@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2011 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
 
 #include "vnic_dev.h"
 #include "vnic_vic.h"

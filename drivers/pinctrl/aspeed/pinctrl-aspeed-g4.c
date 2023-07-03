@@ -2,19 +2,19 @@
 /*
  * Copyright (C) 2016 IBM Corp.
  */
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

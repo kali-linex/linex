@@ -4,15 +4,15 @@
  * Copyright 2017 Daniel Axtens, IBM Corporation.
  */
 
-#include <linux/crc-t10dif.h>
-#include <linux/crc32.h>
+#include <linex/crc-t10dif.h>
+#include <linex/crc32.h>
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/cpufeature.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/cpufeature.h>
 #include <asm/switch_to.h>
 
 static unsigned long iterations = 10000;

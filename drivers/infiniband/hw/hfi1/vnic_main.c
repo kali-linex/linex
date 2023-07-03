@@ -7,8 +7,8 @@
  * This file contains HFI1 support for VNIC functionality
  */
 
-#include <linux/io.h>
-#include <linux/if_vlan.h>
+#include <linex/io.h>
+#include <linex/if_vlan.h>
 
 #include "vnic.h"
 #include "netdev.h"

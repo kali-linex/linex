@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/export.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 static unsigned long acpi_iobase;
 

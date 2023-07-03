@@ -29,13 +29,13 @@
  *  on every box.
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
+#include <linex/capability.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/miscdevice.h>
+#include <linex/spinlock.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/perf.h>
 #include <asm/parisc-device.h>
 #include <asm/processor.h>

@@ -11,20 +11,20 @@
  * All rights reserved.
  */
 
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/stringify.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linex/platform_device.h>
+#include <linex/uio_driver.h>
+#include <linex/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/stringify.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
 
 #define DRIVER_NAME "uio_pdrv_genirq"
 
@@ -127,7 +127,7 @@ static int uio_pdrv_genirq_probe(struct platform_device *pdev)
 			return -ENOMEM;
 		}
 
-		if (!of_property_read_string(node, "linux,uio-name", &name))
+		if (!of_property_read_string(node, "linex,uio-name", &name))
 			uioinfo->name = devm_kstrdup(&pdev->dev, name, GFP_KERNEL);
 		else
 			uioinfo->name = devm_kasprintf(&pdev->dev, GFP_KERNEL,

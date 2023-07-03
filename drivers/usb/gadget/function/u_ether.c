@@ -9,16 +9,16 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/string_helpers.h>
-#include <linux/usb/composite.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/gfp.h>
+#include <linex/device.h>
+#include <linex/ctype.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/string_helpers.h>
+#include <linex/usb/composite.h>
 
 #include "u_ether.h"
 
@@ -46,7 +46,7 @@
 
 #define UETH__VERSION	"29-May-2008"
 
-/* Experiments show that both Linux and Windows hosts allow up to 16k
+/* Experiments show that both Linex and Windows hosts allow up to 16k
  * frame sizes. Set the max MTU size to 15k+52 to prevent allocating 32k
  * blocks and still have efficient handling. */
 #define GETHER_MAX_MTU_SIZE 15412

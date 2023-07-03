@@ -7,8 +7,8 @@
 #ifndef _QEDI_ISCSI_H_
 #define _QEDI_ISCSI_H_
 
-#include <linux/socket.h>
-#include <linux/completion.h>
+#include <linex/socket.h>
+#include <linex/completion.h>
 #include "qedi.h"
 
 #define ISCSI_MAX_SESS_PER_HBA	4096

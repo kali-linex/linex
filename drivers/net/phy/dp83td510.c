@@ -3,10 +3,10 @@
  * Copyright (c) 2022 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linex/bitfield.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/phy.h>
 
 #define DP83TD510E_PHY_ID			0x20000181
 

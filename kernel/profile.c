@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/profile.c
+ *  linex/kernel/profile.c
  *  Simple profiling. Manages a direct-mapped profile hit count buffer,
  *  with configurable resolution, support for restricting the cpus on
  *  which profiling is done, and switching between cpu time and
@@ -15,18 +15,18 @@
  *	Oracle, 2004
  */
 
-#include <linux/export.h>
-#include <linux/profile.h>
-#include <linux/memblock.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/stat.h>
+#include <linex/export.h>
+#include <linex/profile.h>
+#include <linex/memblock.h>
+#include <linex/notifier.h>
+#include <linex/mm.h>
+#include <linex/cpumask.h>
+#include <linex/cpu.h>
+#include <linex/highmem.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/stat.h>
 
 #include <asm/sections.h>
 #include <asm/irq_regs.h>
@@ -340,9 +340,9 @@ void profile_tick(int type)
 }
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
 
 static int prof_cpu_mask_proc_show(struct seq_file *m, void *v)
 {

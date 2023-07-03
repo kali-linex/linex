@@ -5,18 +5,18 @@
 // Copyright (C) 2020 Renesas Electronics Corp.
 // Copyright (C) 2020 Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 //
-// based on ${LINUX}/sound/soc/generic/audio-graph-card.c
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+// based on ${LINEX}/sound/soc/generic/audio-graph-card.c
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/of_graph.h>
+#include <linex/platform_device.h>
+#include <linex/string.h>
 #include <sound/graph_card.h>
 
 /************************************

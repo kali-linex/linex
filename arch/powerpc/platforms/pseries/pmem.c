@@ -6,15 +6,15 @@
 
 #define pr_fmt(fmt)     "pseries-pmem: " fmt
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>	/* for idle_task_exit */
-#include <linux/sched/hotplug.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/sched.h>	/* for idle_task_exit */
+#include <linex/sched/hotplug.h>
+#include <linex/cpu.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
 #include <asm/rtas.h>
 #include <asm/firmware.h>
 #include <asm/machdep.h>

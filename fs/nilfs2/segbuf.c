@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/crc32.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/crc32.h>
+#include <linex/backing-dev.h>
+#include <linex/slab.h>
 #include "page.h"
 #include "segbuf.h"
 

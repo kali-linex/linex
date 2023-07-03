@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/lib/zlib_deflate/deflate_syms.c
+ * linex/lib/zlib_deflate/deflate_syms.c
  *
  * Exported symbols for the deflate functionality.
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/init.h>
 
-#include <linux/zlib.h>
+#include <linex/zlib.h>
 
 EXPORT_SYMBOL(zlib_deflate_workspacesize);
 EXPORT_SYMBOL(zlib_deflate_dfltcc_enabled);

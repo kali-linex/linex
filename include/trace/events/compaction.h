@@ -5,9 +5,9 @@
 #if !defined(_TRACE_COMPACTION_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_COMPACTION_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/tracepoint.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/tracepoint.h>
 #include <trace/events/mmflags.h>
 
 

@@ -5,9 +5,9 @@
  * Copyright (C) 2021 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/log2.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/spi-nor.h>
+#include <linex/log2.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/spi-nor.h>
 
 #include "core.h"
 

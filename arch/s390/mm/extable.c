@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/panic.h>
+#include <linex/bitfield.h>
+#include <linex/extable.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/panic.h>
 #include <asm/asm-extable.h>
 #include <asm/extable.h>
 

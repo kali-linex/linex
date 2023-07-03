@@ -8,28 +8,28 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/debugfs.h>
-#include <linux/of_fdt.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/of_clk.h>
+#include <linex/clocksource.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
+#include <linex/cpu.h>
+#include <linex/initrd.h>
+#include <linex/console.h>
+#include <linex/debugfs.h>
+#include <linex/of_fdt.h>
+#include <linex/pgtable.h>
 
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/page.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/param.h>
-#include <linux/pci.h>
-#include <linux/cache.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/bug.h>
+#include <linex/param.h>
+#include <linex/pci.h>
+#include <linex/cache.h>
+#include <linex/of.h>
+#include <linex/dma-mapping.h>
 #include <asm/cacheflush.h>
 #include <asm/entry.h>
 #include <asm/cpuinfo.h>
@@ -65,7 +65,7 @@ void __init setup_arch(char **cmdline_p)
 	xilinx_pci_init();
 }
 
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCLINEX
 /* Handle both romfs and cramfs types, without generating unnecessary
  code (ie no point checking for CRAMFS if it's not even enabled) */
 inline unsigned get_romfs_len(unsigned *addr)
@@ -81,7 +81,7 @@ inline unsigned get_romfs_len(unsigned *addr)
 #endif
 	return 0;
 }
-#endif	/* CONFIG_MTD_UCLINUX_EBSS */
+#endif	/* CONFIG_MTD_UCLINEX_EBSS */
 
 unsigned long kernel_tlb;
 
@@ -92,11 +92,11 @@ void __init machine_early_init(const char *cmdline, unsigned int ram,
 	unsigned long *src, *dst;
 	unsigned int offset = 0;
 
-	/* If CONFIG_MTD_UCLINUX is defined, assume ROMFS is at the
+	/* If CONFIG_MTD_UCLINEX is defined, assume ROMFS is at the
 	 * end of kernel. There are two position which we want to check.
 	 * The first is __init_end and the second __bss_start.
 	 */
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCLINEX
 	int romfs_size;
 	unsigned int romfs_base;
 	char *old_klimit = klimit;
@@ -134,7 +134,7 @@ void __init machine_early_init(const char *cmdline, unsigned int ram,
 	else
 		pr_info("Compiled-in FDT at %p\n", _fdt_start);
 
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCLINEX
 	pr_info("Found romfs @ 0x%08x (0x%08x)\n",
 			romfs_base, romfs_size);
 	pr_info("#### klimit %p ####\n", old_klimit);

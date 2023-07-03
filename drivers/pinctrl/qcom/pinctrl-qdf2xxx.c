@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  *
  * GPIO and pin control functions on this SOC are handled by the "TLMM"
  * device.  The driver which controls this device is pinctrl-msm.c.  Each
@@ -15,10 +15,10 @@
  * pinctrl-msm.c into another driver.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/acpi.h>
 
 #include "pinctrl-msm.h"
 

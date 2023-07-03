@@ -8,24 +8,24 @@
  *
  *  Started by: Thomas Gleixner and Ingo Molnar
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/percpu.h>
-#include <linux/nmi.h>
-#include <linux/profile.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/loadavg.h>
-#include <linux/module.h>
-#include <linux/irq_work.h>
-#include <linux/posix-timers.h>
-#include <linux/context_tracking.h>
-#include <linux/mm.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/hrtimer.h>
+#include <linex/interrupt.h>
+#include <linex/kernel_stat.h>
+#include <linex/percpu.h>
+#include <linex/nmi.h>
+#include <linex/profile.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/stat.h>
+#include <linex/sched/nohz.h>
+#include <linex/sched/loadavg.h>
+#include <linex/module.h>
+#include <linex/irq_work.h>
+#include <linex/posix-timers.h>
+#include <linex/context_tracking.h>
+#include <linex/mm.h>
 
 #include <asm/irq_regs.h>
 

@@ -12,18 +12,18 @@
  * Contact Cypress Semiconductor at www.cypress.com <ttdrivers@cypress.com>
  */
 
-#ifndef _LINUX_CYTTSP4_CORE_H
-#define _LINUX_CYTTSP4_CORE_H
+#ifndef _LINEX_CYTTSP4_CORE_H
+#define _LINEX_CYTTSP4_CORE_H
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/platform_data/cyttsp4.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/limits.h>
+#include <linex/module.h>
+#include <linex/stringify.h>
+#include <linex/types.h>
+#include <linex/platform_data/cyttsp4.h>
 
 #define CY_REG_BASE			0x00
 
@@ -445,4 +445,4 @@ int cyttsp_i2c_read_block_data(struct device *dev, u8 *xfer_buf, u16 addr,
 		u8 length, void *values);
 extern const struct dev_pm_ops cyttsp4_pm_ops;
 
-#endif /* _LINUX_CYTTSP4_CORE_H */
+#endif /* _LINEX_CYTTSP4_CORE_H */

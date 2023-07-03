@@ -7,20 +7,20 @@
  * Author: Rémi Denis-Courmont
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_phonet.h>
-#include <linux/if_arp.h>
+#include <linex/netdevice.h>
+#include <linex/if_ether.h>
+#include <linex/if_phonet.h>
+#include <linex/if_arp.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/composite.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/cdc.h>
+#include <linex/usb/composite.h>
 
 #include "u_phonet.h"
 #include "u_ether.h"

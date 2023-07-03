@@ -5,13 +5,13 @@
  * 	Copyright(c) Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <linux/atalk.h>
-#include <linux/export.h>
+#include <linex/atalk.h>
+#include <linex/export.h>
 
 
 static __inline__ struct atalk_iface *atalk_get_interface_idx(loff_t pos)

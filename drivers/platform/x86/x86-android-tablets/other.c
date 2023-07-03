@@ -8,10 +8,10 @@
  * Copyright (C) 2021-2023 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/gpio/machine.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
 
 #include "shared-psy-info.h"
 #include "x86-android-tablets.h"
@@ -255,7 +255,7 @@ static int __init czc_p10t_init(void)
 	 * of the port 0x68 is known.
 	 *
 	 * In the Android mode, the home button sends just a single scancode,
-	 * which can be handled in Linux userspace more reasonably and the back
+	 * which can be handled in Linex userspace more reasonably and the back
 	 * button only sends a scancode without toggling the kill switch.
 	 * The scancode can then be mapped either to Back or RF Kill functionality
 	 * in userspace, depending on how the button is labeled on that particular

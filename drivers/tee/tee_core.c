@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/cdev.h>
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uaccess.h>
+#include <linex/cdev.h>
+#include <linex/cred.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
+#include <linex/uaccess.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
 #include "tee_private.h"
@@ -212,7 +212,7 @@ int tee_session_calc_client_uuid(uuid_t *uuid, u32 connection_method,
 	}
 
 	/*
-	 * In Linux environment client UUID is based on UUIDv5.
+	 * In Linex environment client UUID is based on UUIDv5.
 	 *
 	 * Determine client UUID with following semantics for 'name':
 	 *

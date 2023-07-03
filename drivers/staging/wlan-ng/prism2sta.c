@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linex-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linex-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linex-wlan.com
+ * http://www.linex-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -45,29 +45,29 @@
  *
  * --------------------------------------------------------------------
  *
- * This file implements the module and linux pcmcia routines for the
+ * This file implements the module and linex pcmcia routines for the
  * prism2 driver.
  *
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/byteorder/generic.h>
-#include <linux/etherdevice.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/wireless.h>
+#include <linex/netdevice.h>
+#include <linex/workqueue.h>
+#include <linex/byteorder/generic.h>
+#include <linex/etherdevice.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/delay.h>
 #include <asm/byteorder.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/bitops.h>
+#include <linex/if_arp.h>
+#include <linex/if_ether.h>
+#include <linex/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -332,7 +332,7 @@ static int prism2sta_mlmerequest(struct wlandevice *wlandev,
 		result = prism2mgmt_flashdl_write(wlandev, msg);
 		break;
 		/*
-		 * Linux specific messages
+		 * Linex specific messages
 		 */
 	case DIDMSG_LNXREQ_HOSTWEP:
 		break;		/* ignore me. */
@@ -1830,7 +1830,7 @@ void prism2sta_ev_txexc(struct wlandevice *wlandev, u16 status)
 void prism2sta_ev_tx(struct wlandevice *wlandev, u16 status)
 {
 	pr_debug("Tx Complete, status=0x%04x\n", status);
-	/* update linux network stats */
+	/* update linex network stats */
 	wlandev->netdev->stats.tx_packets++;
 }
 

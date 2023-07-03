@@ -2,21 +2,21 @@
 /*
  * SMP support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched/mm.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/mm_types.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/sched/mm.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/cpu.h>
+#include <linex/mm_types.h>
 
 #include <asm/time.h>    /*  timer_interrupt  */
 #include <asm/hexagon_vm.h>

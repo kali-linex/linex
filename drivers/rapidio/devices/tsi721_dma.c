@@ -6,20 +6,20 @@
  * Alexandre Bounine <alexandre.bounine@idt.com>
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kfifo.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/rio.h>
+#include <linex/rio_drv.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/kfifo.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
 #include "../../dma/dmaengine.h"
 
 #include "tsi721.h"
@@ -284,7 +284,7 @@ void tsi721_bdma_handler(struct tsi721_bdma_chan *bdma_chan)
 #ifdef CONFIG_PCI_MSI
 /**
  * tsi721_omsg_msix - MSI-X interrupt handler for BDMA channels
- * @irq: Linux interrupt number
+ * @irq: Linex interrupt number
  * @ptr: Pointer to interrupt-specific data (BDMA channel structure)
  *
  * Handles BDMA channel interrupts signaled using MSI-X.

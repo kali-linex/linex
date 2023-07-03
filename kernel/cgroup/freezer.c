@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cgroup.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/signal.h>
+#include <linex/cgroup.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/sched/signal.h>
 
 #include "cgroup-internal.h"
 

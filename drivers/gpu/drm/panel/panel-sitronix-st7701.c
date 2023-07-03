@@ -8,12 +8,12 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>
 
-#include <linux/bitfield.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/bitfield.h>
+#include <linex/gpio/consumer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

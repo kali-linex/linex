@@ -8,11 +8,11 @@
 #define _CAAMALG_QI2_H_
 
 #include <crypto/internal/skcipher.h>
-#include <linux/compiler_attributes.h>
+#include <linex/compiler_attributes.h>
 #include <soc/fsl/dpaa2-io.h>
 #include <soc/fsl/dpaa2-fd.h>
-#include <linux/threads.h>
-#include <linux/netdevice.h>
+#include <linex/threads.h>
+#include <linex/netdevice.h>
 #include "dpseci.h"
 #include "desc_constr.h"
 

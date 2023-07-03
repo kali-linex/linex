@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include <linux/debugfs.h>
-#include <linux/mlx5/fs.h>
+#include <linex/debugfs.h>
+#include <linex/mlx5/fs.h>
 #include "mlx5_vnet.h"
 
 static int tirn_show(struct seq_file *file, void *priv)

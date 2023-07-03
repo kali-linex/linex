@@ -6,35 +6,35 @@
  *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/memory_hotplug.h>
-#include <linux/initrd.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/swap.h>
+#include <linex/smp.h>
+#include <linex/init.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/pci.h>
+#include <linex/pfn.h>
+#include <linex/poison.h>
+#include <linex/memblock.h>
+#include <linex/proc_fs.h>
+#include <linex/memory_hotplug.h>
+#include <linex/initrd.h>
+#include <linex/cpumask.h>
+#include <linex/gfp.h>
 
 #include <asm/asm.h>
 #include <asm/bios_ebda.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/dma.h>
 #include <asm/fixmap.h>
 #include <asm/e820/api.h>
@@ -711,7 +711,7 @@ static void __init test_wp_bit(void)
 	}
 
 	printk(KERN_CONT "No.\n");
-	panic("Linux doesn't support CPUs with broken WP.");
+	panic("Linex doesn't support CPUs with broken WP.");
 }
 
 void __init mem_init(void)

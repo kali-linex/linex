@@ -10,15 +10,15 @@
  * the Free Software Foundation.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-resv.h>
+#include <linex/module.h>
+#include <linex/refcount.h>
+#include <linex/scatterlist.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/highmem.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>

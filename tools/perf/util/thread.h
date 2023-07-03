@@ -2,9 +2,9 @@
 #ifndef __PERF_THREAD_H
 #define __PERF_THREAD_H
 
-#include <linux/refcount.h>
-#include <linux/rbtree.h>
-#include <linux/list.h>
+#include <linex/refcount.h>
+#include <linex/rbtree.h>
+#include <linex/list.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>

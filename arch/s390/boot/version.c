@@ -5,4 +5,4 @@
 #include "boot.h"
 
 const char kernel_version[] = UTS_RELEASE
-	" (" LINUX_COMPILE_BY "@" LINUX_COMPILE_HOST ") " UTS_VERSION;
+	" (" LINEX_COMPILE_BY "@" LINEX_COMPILE_HOST ") " UTS_VERSION;

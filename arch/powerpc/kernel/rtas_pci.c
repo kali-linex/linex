@@ -8,14 +8,14 @@
  * Based on code from pci.c, chrp_pci.c and pSeries_pci.c
  */
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
+#include <linex/kernel.h>
+#include <linex/threads.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
+#include <linex/of_address.h>
+#include <linex/of_fdt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

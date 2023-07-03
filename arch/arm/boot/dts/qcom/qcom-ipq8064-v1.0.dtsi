@@ -73,16 +73,16 @@
 
 			button-1 {
 				label = "reset";
-				linux,code = <KEY_RESTART>;
+				linex,code = <KEY_RESTART>;
 				gpios = <&qcom_pinmux 54 GPIO_ACTIVE_LOW>;
-				linux,input-type = <1>;
+				linex,input-type = <1>;
 				debounce-interval = <60>;
 			};
 			button-2 {
 				label = "wps";
-				linux,code = <KEY_WPS_BUTTON>;
+				linex,code = <KEY_WPS_BUTTON>;
 				gpios = <&qcom_pinmux 65 GPIO_ACTIVE_LOW>;
-				linux,input-type = <1>;
+				linex,input-type = <1>;
 				debounce-interval = <60>;
 			};
 		};
@@ -95,14 +95,14 @@
 			led-0 {
 				label = "led_usb1";
 				gpios = <&qcom_pinmux 7 GPIO_ACTIVE_HIGH>;
-				linux,default-trigger = "usbdev";
+				linex,default-trigger = "usbdev";
 				default-state = "off";
 			};
 
 			led-1 {
 				label = "led_usb3";
 				gpios = <&qcom_pinmux 8 GPIO_ACTIVE_HIGH>;
-				linux,default-trigger = "usbdev";
+				linex,default-trigger = "usbdev";
 				default-state = "off";
 			};
 

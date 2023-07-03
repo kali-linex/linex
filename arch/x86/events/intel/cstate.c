@@ -100,10 +100,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/perf_event.h>
+#include <linex/nospec.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include "../perf_event.h"

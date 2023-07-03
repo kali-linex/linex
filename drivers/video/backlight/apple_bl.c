@@ -5,7 +5,7 @@
  *  Copyright (c) Red Hat <mjg@redhat.com>
  *  Based on code from Pommed:
  *  Copyright (C) 2006 Nicolas Boichat <nicolas @boichat.ch>
- *  Copyright (C) 2006 Felipe Alfaro Solana <felipe_alfaro @linuxmail.org>
+ *  Copyright (C) 2006 Felipe Alfaro Solana <felipe_alfaro @linexmail.org>
  *  Copyright (C) 2007 Julien BLACHE <jb@jblache.org>
  *
  *  This driver triggers SMIs which cause the firmware to change the
@@ -15,15 +15,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/atomic.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/backlight.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/atomic.h>
 #include <acpi/video.h>
 
 static struct backlight_device *apple_backlight_device;

@@ -10,22 +10,22 @@
  * Based on the FTP conntrack helper (net/netfilter/nf_conntrack_ftp.c):
  *  (C) 1999-2001 Paul `Rusty' Russell
  *  (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
- *  (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ *  (C) 2003,2004 USAGI/WIDE Project <http://www.linex-ipv6.org>
  *  (C) 2003 Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/netfilter.h>
+#include <linex/slab.h>
+#include <linex/in.h>
+#include <linex/tcp.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_sane.h>
+#include <linex/netfilter/nf_conntrack_sane.h>
 
 #define HELPER_NAME "sane"
 

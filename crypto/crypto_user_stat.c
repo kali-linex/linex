@@ -8,10 +8,10 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/cryptouser.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 

@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2016, Intel Corporation
  *
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *
  * Intel MID Power Management Unit device driver handles the South Complex PCI
  * devices such as GPDMA, SPI, I2C, PWM, and so on. By default PCI core
@@ -16,13 +16,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
 
 #include <asm/intel-mid.h>
 

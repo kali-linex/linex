@@ -9,7 +9,7 @@
 
 #include "debug.h"
 #include "util/event.h"
-#include <linux/bits.h>
+#include <linex/bits.h>
 
 struct perf_session;
 struct perf_pmu;

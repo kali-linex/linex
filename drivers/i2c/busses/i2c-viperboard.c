@@ -7,18 +7,18 @@
  *  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <linex/usb.h>
+#include <linex/i2c.h>
 
-#include <linux/mfd/viperboard.h>
+#include <linex/mfd/viperboard.h>
 
 struct vprbrd_i2c {
 	struct i2c_adapter i2c;

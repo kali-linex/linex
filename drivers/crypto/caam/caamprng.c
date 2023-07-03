@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/completion.h>
+#include <linex/completion.h>
 #include <crypto/internal/rng.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
 #include "compat.h"
 #include "regs.h"
 #include "intern.h"

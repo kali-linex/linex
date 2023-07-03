@@ -4,7 +4,7 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linex-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -14,8 +14,8 @@
 #ifndef BE_ROCE_H
 #define BE_ROCE_H
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
 
 #define BE_ROCE_ABI_VERSION	1
 

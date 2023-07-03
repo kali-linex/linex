@@ -3,13 +3,13 @@
  * Copyright(c) 2015 EZchip Technologies.
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
 #include "nps_enet.h"
 
 #define DRV_NAME			"nps_mgt_enet"

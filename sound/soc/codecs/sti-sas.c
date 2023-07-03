@@ -5,11 +5,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/mfd/syscon.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/mfd/syscon.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

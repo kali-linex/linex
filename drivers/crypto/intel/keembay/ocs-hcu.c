@@ -5,11 +5,11 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/irq.h>
+#include <linex/module.h>
 
 #include <crypto/sha2.h>
 

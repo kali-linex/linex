@@ -113,16 +113,16 @@
  *
  * http://www.cs.berkeley.edu/~istoica/papers/eevdf-tr-95.pdf
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/cgroup.h>
-#include <linux/ktime.h>
-#include <linux/rbtree.h>
-#include <linux/ioprio.h>
-#include <linux/sbitmap.h>
-#include <linux/delay.h>
-#include <linux/backing-dev.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/blkdev.h>
+#include <linex/cgroup.h>
+#include <linex/ktime.h>
+#include <linex/rbtree.h>
+#include <linex/ioprio.h>
+#include <linex/sbitmap.h>
+#include <linex/delay.h>
+#include <linex/backing-dev.h>
 
 #include <trace/events/block.h>
 

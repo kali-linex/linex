@@ -11,15 +11,15 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/hugetlb.h>
-#include <linux/sched/mm.h>
-#include <linux/security.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
+#include <linex/hugetlb.h>
+#include <linex/sched/mm.h>
+#include <linex/security.h>
 #include <asm/mman.h>
 #include <asm/mmu.h>
 #include <asm/copro.h>

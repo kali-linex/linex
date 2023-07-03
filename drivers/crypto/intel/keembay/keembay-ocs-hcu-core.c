@@ -5,12 +5,12 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 #include <crypto/engine.h>
 #include <crypto/scatterwalk.h>

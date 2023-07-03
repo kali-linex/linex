@@ -7,13 +7,13 @@
  *         lrg@slimlogic.co.uk
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>
@@ -21,7 +21,7 @@
 #include <sound/pxa2xx-lib.h>
 #include <sound/dmaengine_pcm.h>
 
-#include <linux/platform_data/asoc-pxa.h>
+#include <linex/platform_data/asoc-pxa.h>
 
 #include "pxa2xx-i2s.h"
 

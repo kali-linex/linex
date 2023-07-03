@@ -3,11 +3,11 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@linex.intel.com>
 //
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/slab.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/slab.h>
 #include <sound/hdaudio_ext.h>
 #include "avs.h"
 #include "messages.h"

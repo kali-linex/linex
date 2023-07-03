@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/head-nommu.S
+ *  linex/arch/arm/kernel/head-nommu.S
  *
  *  Copyright (C) 1994-2002 Russell King
  *  Copyright (C) 2003-2006 Hyok S. Choi
  *
  *  Common kernel startup code (non-paged MM)
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/errno.h>
 
 #include <asm/assembler.h>
 #include <asm/ptrace.h>
@@ -29,7 +29,7 @@
  * are: MMU = off, D-cache = off, I-cache = dont care, r0 = 0,
  * r1 = machine nr.
  *
- * See linux/arch/arm/tools/mach-types for the complete list of machine
+ * See linex/arch/arm/tools/mach-types for the complete list of machine
  * numbers for r1.
  *
  */
@@ -168,7 +168,7 @@ M_CLASS(streq	r3, [r12, #PMSAv8_MAIR1])
 	biceq	r0, r0, #CR_BR			@ Disable the 'default mem-map'
 	orreq	r0, r0, #CR_M			@ Set SCTRL.M (MPU on)
 #endif
-#if defined(CONFIG_ALIGNMENT_TRAP) && __LINUX_ARM_ARCH__ < 6
+#if defined(CONFIG_ALIGNMENT_TRAP) && __LINEX_ARM_ARCH__ < 6
 	orr	r0, r0, #CR_A
 #else
 	bic	r0, r0, #CR_A

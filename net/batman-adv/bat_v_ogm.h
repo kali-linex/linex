@@ -9,9 +9,9 @@
 
 #include "main.h"
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 int batadv_v_ogm_init(struct batadv_priv *bat_priv);
 void batadv_v_ogm_free(struct batadv_priv *bat_priv);

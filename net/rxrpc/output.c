@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/net.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <linex/net.h>
+#include <linex/gfp.h>
+#include <linex/skbuff.h>
+#include <linex/export.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <net/udp.h>

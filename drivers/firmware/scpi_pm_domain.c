@@ -5,12 +5,12 @@
  * Copyright (C) 2016 ARM Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_domain.h>
-#include <linux/scpi_protocol.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/pm_domain.h>
+#include <linex/scpi_protocol.h>
 
 struct scpi_pm_domain {
 	struct generic_pm_domain genpd;

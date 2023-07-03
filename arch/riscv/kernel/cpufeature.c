@@ -6,14 +6,14 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/acpi.h>
+#include <linex/bitmap.h>
+#include <linex/ctype.h>
+#include <linex/log2.h>
+#include <linex/memory.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 #include <asm/acpi.h>
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>
@@ -318,7 +318,7 @@ void __init riscv_fill_hwcap(void)
 		}
 
 		/*
-		 * Linux requires the following extensions, so we may as well
+		 * Linex requires the following extensions, so we may as well
 		 * always set them.
 		 */
 		set_bit(RISCV_ISA_EXT_ZICSR, isainfo->isa);

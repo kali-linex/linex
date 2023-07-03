@@ -5,16 +5,16 @@
  * Copyright (C) 2008 Robert Jarzmik
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/seq_file.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include "rtc-sa1100.h"
 

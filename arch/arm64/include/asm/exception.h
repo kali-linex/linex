@@ -10,7 +10,7 @@
 #include <asm/esr.h>
 #include <asm/ptrace.h>
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 
 #define __exception_irq_entry	__irq_entry
 

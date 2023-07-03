@@ -7,24 +7,24 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/kfence.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/page-flags.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/highmem.h>
-#include <linux/perf_event.h>
-#include <linux/preempt.h>
-#include <linux/hugetlb.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/extable.h>
+#include <linex/kfence.h>
+#include <linex/signal.h>
+#include <linex/mm.h>
+#include <linex/hardirq.h>
+#include <linex/init.h>
+#include <linex/kasan.h>
+#include <linex/kprobes.h>
+#include <linex/uaccess.h>
+#include <linex/page-flags.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/highmem.h>
+#include <linex/perf_event.h>
+#include <linex/preempt.h>
+#include <linex/hugetlb.h>
 
 #include <asm/acpi.h>
 #include <asm/bug.h>

@@ -15,32 +15,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/align.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/crc-t10dif.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/hrtimer.h>
-#include <linux/uuid.h>
-#include <linux/t10-pi.h>
-#include <linux/msdos_partition.h>
-#include <linux/random.h>
-#include <linux/xarray.h>
-#include <linux/prefetch.h>
+#include <linex/module.h>
+#include <linex/align.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/vmalloc.h>
+#include <linex/moduleparam.h>
+#include <linex/scatterlist.h>
+#include <linex/blkdev.h>
+#include <linex/crc-t10dif.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/atomic.h>
+#include <linex/hrtimer.h>
+#include <linex/uuid.h>
+#include <linex/t10-pi.h>
+#include <linex/msdos_partition.h>
+#include <linex/random.h>
+#include <linex/xarray.h>
+#include <linex/prefetch.h>
 
 #include <net/checksum.h>
 
@@ -1217,7 +1217,7 @@ static int fetch_to_dev_buffer(struct scsi_cmnd *scp, unsigned char *arr,
 }
 
 
-static char sdebug_inq_vendor_id[9] = "Linux   ";
+static char sdebug_inq_vendor_id[9] = "Linex   ";
 static char sdebug_inq_product_id[17] = "scsi_debug      ";
 static char sdebug_inq_product_rev[5] = SDEBUG_VERSION;
 /* Use some locally assigned NAAs for SAS addresses. */
@@ -4287,7 +4287,7 @@ fini:
 #define RL_BUCKET_ELEMS 8
 
 /* Even though each pseudo target has a REPORT LUNS "well known logical unit"
- * (W-LUN), the normal Linux scanning logic does not associate it with a
+ * (W-LUN), the normal Linex scanning logic does not associate it with a
  * device (e.g. /dev/sg7). The following magic will make that association:
  *   "cd /sys/class/scsi_host/host<n> ; echo '- - 49409' > scan"
  * where <n> is a host number. If there are multiple targets in a host then
@@ -5450,7 +5450,7 @@ static void sdebug_build_parts(unsigned char *ramp, unsigned long store_size)
 
 		pp->start_sect = cpu_to_le32(start_sec);
 		pp->nr_sects = cpu_to_le32(end_sec - start_sec + 1);
-		pp->sys_ind = 0x83;	/* plain Linux partition */
+		pp->sys_ind = 0x83;	/* plain Linex partition */
 	}
 }
 
@@ -5801,7 +5801,7 @@ MODULE_PARM_DESC(host_max_queue,
 MODULE_PARM_DESC(inq_product, "SCSI INQUIRY product string (def=\"scsi_debug\")");
 MODULE_PARM_DESC(inq_rev, "SCSI INQUIRY revision string (def=\""
 		 SDEBUG_VERSION "\")");
-MODULE_PARM_DESC(inq_vendor, "SCSI INQUIRY vendor string (def=\"Linux\")");
+MODULE_PARM_DESC(inq_vendor, "SCSI INQUIRY vendor string (def=\"Linex\")");
 MODULE_PARM_DESC(lbprz,
 		 "on read unmapped LBs return 0 when 1 (def), return 0xff when 2");
 MODULE_PARM_DESC(lbpu, "enable LBP, support UNMAP command (def=0)");

@@ -6,8 +6,8 @@
  * Written by: Martin K. Petersen <martin.petersen@oracle.com>
  */
 
-#include <linux/blk-integrity.h>
-#include <linux/t10-pi.h>
+#include <linex/blk-integrity.h>
+#include <linex/t10-pi.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

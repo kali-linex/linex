@@ -5,15 +5,15 @@
  *	       Martin Schwidefsky <schwidefsky@de.ibm.com>,
  */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include <asm/asm-extable.h>
 #include <asm/ebcdic.h>
 #include <asm/debug.h>

@@ -10,9 +10,9 @@
  * from the 'wrong end'.
  */
 
-#include <linux/compiler.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
+#include <linex/compiler.h>
+#include <linex/bitops.h>
+#include <linex/export.h>
 
 unsigned long find_first_bit_inv(const unsigned long *addr, unsigned long size)
 {

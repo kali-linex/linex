@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
 #include "hw.h"
 #include "hw-ops.h"
 

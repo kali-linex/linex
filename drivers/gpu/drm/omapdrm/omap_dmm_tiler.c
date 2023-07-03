@@ -7,24 +7,24 @@
  *         Andy Gross <andy.gross@ti.com>
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h> /* platform_device() */
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h> /* platform_device() */
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/vmalloc.h>
+#include <linex/wait.h>
 
 #include "omap_dmm_tiler.h"
 #include "omap_dmm_priv.h"

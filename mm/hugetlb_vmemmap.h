@@ -6,9 +6,9 @@
  *
  *     Author: Muchun Song <songmuchun@bytedance.com>
  */
-#ifndef _LINUX_HUGETLB_VMEMMAP_H
-#define _LINUX_HUGETLB_VMEMMAP_H
-#include <linux/hugetlb.h>
+#ifndef _LINEX_HUGETLB_VMEMMAP_H
+#define _LINEX_HUGETLB_VMEMMAP_H
+#include <linex/hugetlb.h>
 
 #ifdef CONFIG_HUGETLB_PAGE_OPTIMIZE_VMEMMAP
 int hugetlb_vmemmap_restore(const struct hstate *h, struct page *head);
@@ -57,4 +57,4 @@ static inline bool hugetlb_vmemmap_optimizable(const struct hstate *h)
 {
 	return hugetlb_vmemmap_optimizable_size(h) != 0;
 }
-#endif /* _LINUX_HUGETLB_VMEMMAP_H */
+#endif /* _LINEX_HUGETLB_VMEMMAP_H */

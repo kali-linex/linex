@@ -5,21 +5,21 @@
  * Author: Danilo Krummrich <danilokrummrich@dk-develop.de>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/preempt.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/timekeeping.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/serio.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
+#include <linex/preempt.h>
+#include <linex/property.h>
+#include <linex/of.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
+#include <linex/timekeeping.h>
 
 #define DRIVER_NAME		"ps2-gpio"
 

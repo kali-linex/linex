@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
+#include <linex/fs.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/slab.h>
+#include <linex/xattr.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"

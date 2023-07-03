@@ -4,14 +4,14 @@
  * Copyright (C) 2007 Thomas Bogendörfer (tsbogend@alpha.frankende)
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

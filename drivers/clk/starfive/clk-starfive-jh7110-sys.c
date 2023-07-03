@@ -6,12 +6,12 @@
  * Copyright (C) 2022 StarFive Technology Co., Ltd.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/clk-provider.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <soc/starfive/reset-starfive-jh71x0.h>
 

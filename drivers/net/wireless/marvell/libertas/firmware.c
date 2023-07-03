@@ -3,9 +3,9 @@
  * Firmware loading and handling functions.
  */
 
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <linex/sched.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
 
 #include "dev.h"
 #include "decl.h"

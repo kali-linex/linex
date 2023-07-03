@@ -5,13 +5,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/ptp_classify.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
+#include <linex/ptp_classify.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/net_tstamp.h>
+#include <linex/netdevice.h>
+#include <linex/workqueue.h>
 
 #include "bcm-phy-lib.h"
 

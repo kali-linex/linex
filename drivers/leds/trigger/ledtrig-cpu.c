@@ -19,13 +19,13 @@
  * Copyright 2011 - 2012 Bryan Wu <bryan.wu@canonical.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/syscore_ops.h>
-#include <linux/rwsem.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/percpu.h>
+#include <linex/syscore_ops.h>
+#include <linex/rwsem.h>
+#include <linex/cpu.h>
 #include "../leds.h"
 
 #define MAX_NAME_LEN	8

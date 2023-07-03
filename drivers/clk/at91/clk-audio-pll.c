@@ -30,13 +30,13 @@
  * parent - fixed parent.  No clk_set_parent support
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clk/at91_pmc.h>
+#include <linex/of.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include "pmc.h"
 

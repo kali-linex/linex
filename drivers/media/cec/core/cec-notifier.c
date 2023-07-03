@@ -6,13 +6,13 @@
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/of_platform.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/list.h>
+#include <linex/kref.h>
+#include <linex/of_platform.h>
 
 #include <media/cec.h>
 #include <media/cec-notifier.h>

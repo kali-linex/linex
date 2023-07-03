@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/spi/spi-loopback-test.c
+ *  linex/drivers/spi/spi-loopback-test.c
  *
  *  (c) Martin Sperl <kernel@martin.sperl.org>
  *
@@ -9,16 +9,16 @@
  *  this can also get used for regression testing
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/list_sort.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/printk.h>
-#include <linux/vmalloc.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/list.h>
+#include <linex/list_sort.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/printk.h>
+#include <linex/vmalloc.h>
+#include <linex/spi/spi.h>
 
 #include "spi-test.h"
 
@@ -382,7 +382,7 @@ static int spi_loopback_test_probe(struct spi_device *spi)
 
 /* non const match table to permit to change via a module parameter */
 static struct of_device_id spi_loopback_test_of_match[] = {
-	{ .compatible	= "linux,spi-loopback-test", },
+	{ .compatible	= "linex,spi-loopback-test", },
 	{ }
 };
 

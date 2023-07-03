@@ -10,14 +10,14 @@
  * is not much point in implementing the full Dwarf2 unwind API.
  */
 
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/memblock.h>
+#include <linex/sort.h>
+#include <linex/slab.h>
+#include <linex/stop_machine.h>
+#include <linex/uaccess.h>
+#include <linex/ptrace.h>
 #include <asm/sections.h>
 #include <asm/unaligned.h>
 #include <asm/unwind.h>

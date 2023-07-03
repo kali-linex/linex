@@ -4,19 +4,19 @@
  * Copyright 2010 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/srcu.h>
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
-#include <linux/debugfs.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
+#include <linex/highmem.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/hugetlb.h>
+#include <linex/vmalloc.h>
+#include <linex/srcu.h>
+#include <linex/anon_inodes.h>
+#include <linex/file.h>
+#include <linex/debugfs.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

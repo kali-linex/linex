@@ -45,10 +45,10 @@
 
 		key-volume-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&pm6125_gpios 5 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			linex,can-disable;
 			wakeup-source;
 		};
 	};
@@ -85,7 +85,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

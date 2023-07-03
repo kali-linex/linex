@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The Linex Foundation. All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/string.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/debugfs.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/platform_device.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/soc/qcom/smem.h>
+#include <linex/string.h>
 #include <net/sock.h>
 
 #include "debug.h"

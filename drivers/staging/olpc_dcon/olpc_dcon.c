@@ -10,21 +10,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/backlight.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/olpc-ec.h>
+#include <linex/kernel.h>
+#include <linex/fb.h>
+#include <linex/console.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/backlight.h>
+#include <linex/device.h>
+#include <linex/uaccess.h>
+#include <linex/ctype.h>
+#include <linex/panic_notifier.h>
+#include <linex/reboot.h>
+#include <linex/olpc-ec.h>
 #include <asm/tsc.h>
 #include <asm/olpc.h>
 

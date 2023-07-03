@@ -32,18 +32,18 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/mdio.h>
-#include <linux/bitops.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/if_vlan.h>
+#include <linex/mdio.h>
+#include <linex/bitops.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 #include <net/ip6_checksum.h>
-#include <linux/crc32.h>
+#include <linex/crc32.h>
 #include "alx.h"
 #include "hw.h"
 #include "reg.h"

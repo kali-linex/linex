@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mfd/ucb1x00-core.c
+ *  linex/drivers/mfd/ucb1x00-core.c
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  *
@@ -13,19 +13,19 @@
  *  Note that all locks are private to this file.  Nothing else may
  *  touch them.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/pm.h>
-#include <linux/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/mfd/ucb1x00.h>
+#include <linex/pm.h>
+#include <linex/gpio/driver.h>
 
 static DEFINE_MUTEX(ucb1x00_mutex);
 static LIST_HEAD(ucb1x00_drivers);
@@ -773,6 +773,6 @@ EXPORT_SYMBOL(ucb1x00_register_driver);
 EXPORT_SYMBOL(ucb1x00_unregister_driver);
 
 MODULE_ALIAS("mcp:ucb1x00");
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linex.org.uk>");
 MODULE_DESCRIPTION("UCB1x00 core driver");
 MODULE_LICENSE("GPL");

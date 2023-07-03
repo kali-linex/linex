@@ -4,18 +4,18 @@
  * Author: Cosmin Tanislav <cosmin.tanislav@analog.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/kfifo_buf.h>
+#include <linex/iio/sysfs.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mod_devicetable.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
 #include <asm/unaligned.h>
 
 #include "adxl367.h"

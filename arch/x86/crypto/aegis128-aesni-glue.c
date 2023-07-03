@@ -11,7 +11,7 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/module.h>
+#include <linex/module.h>
 #include <asm/fpu/api.h>
 #include <asm/cpu_device_id.h>
 

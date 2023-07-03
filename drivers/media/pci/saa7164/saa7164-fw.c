@@ -5,8 +5,8 @@
  *  Copyright (c) 2010-2015 Steven Toth <stoth@kernellabs.com>
  */
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
 
 #include "saa7164.h"
 

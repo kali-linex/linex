@@ -3,8 +3,8 @@
  * Copyright (C) 2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/videodev2.h>
+#include <linex/device.h>
+#include <linex/videodev2.h>
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>
 

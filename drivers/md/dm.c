@@ -11,26 +11,26 @@
 #include "dm-uevent.h"
 #include "dm-ima.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/blkpg.h>
-#include <linux/bio.h>
-#include <linux/mempool.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/pr.h>
-#include <linux/refcount.h>
-#include <linux/part_stat.h>
-#include <linux/blk-crypto.h>
-#include <linux/blk-crypto-profile.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/blkpg.h>
+#include <linex/bio.h>
+#include <linex/mempool.h>
+#include <linex/dax.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/uio.h>
+#include <linex/hdreg.h>
+#include <linex/delay.h>
+#include <linex/wait.h>
+#include <linex/pr.h>
+#include <linex/refcount.h>
+#include <linex/part_stat.h>
+#include <linex/blk-crypto.h>
+#include <linex/blk-crypto-profile.h>
 
 #define DM_MSG_PREFIX "core"
 

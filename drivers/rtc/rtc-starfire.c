@@ -6,10 +6,10 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
 
 #include <asm/oplib.h>
 

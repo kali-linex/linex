@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/fsl/ptp_qoriq.h>
 
 #include "enetc.h"
 

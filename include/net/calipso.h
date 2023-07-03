@@ -17,14 +17,14 @@
 #ifndef _CALIPSO_H
 #define _CALIPSO_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
+#include <linex/types.h>
+#include <linex/rcupdate.h>
+#include <linex/list.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
 #include <net/netlabel.h>
 #include <net/request_sock.h>
-#include <linux/refcount.h>
+#include <linex/refcount.h>
 #include <asm/unaligned.h>
 
 /* known doi values */

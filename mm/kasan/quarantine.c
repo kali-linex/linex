@@ -8,18 +8,18 @@
  * Based on code by Dmitry Chernenkov.
  */
 
-#include <linux/gfp.h>
-#include <linux/hash.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/shrinker.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/cpuhotplug.h>
+#include <linex/gfp.h>
+#include <linex/hash.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/percpu.h>
+#include <linex/printk.h>
+#include <linex/shrinker.h>
+#include <linex/slab.h>
+#include <linex/srcu.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/cpuhotplug.h>
 
 #include "../slab.h"
 #include "kasan.h"

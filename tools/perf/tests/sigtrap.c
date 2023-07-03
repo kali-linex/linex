@@ -8,8 +8,8 @@
 #include <errno.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/string.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/string.h>
 #include <pthread.h>
 #include <signal.h>
 #include <sys/ioctl.h>
@@ -66,7 +66,7 @@ static bool attr_has_sigtrap(void)
 	const char *name;
 	int i, id;
 
-	btf = btf__load_vmlinux_btf();
+	btf = btf__load_vmlinex_btf();
 	if (btf == NULL) {
 		/* should be an old kernel */
 		return false;

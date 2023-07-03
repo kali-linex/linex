@@ -16,14 +16,14 @@
  * Various hacks, Fred Barnes <frmb2@ukc.ac.uk>, 04/2000
  */
 
-#include <linux/module.h>
-#include <linux/threads.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/sched/signal.h>
+#include <linex/module.h>
+#include <linex/threads.h>
+#include <linex/parport.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/sched/signal.h>
 
 #undef DEBUG /* undef me for production */
 

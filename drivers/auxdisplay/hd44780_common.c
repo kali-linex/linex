@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 
 #include "charlcd.h"
 #include "hd44780_common.h"

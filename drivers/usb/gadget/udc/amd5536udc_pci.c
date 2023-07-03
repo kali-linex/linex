@@ -32,15 +32,15 @@
 #define UDC_MOD_DESCRIPTION		"AMD 5536 UDC - USB Device Controller"
 
 /* system */
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/prefetch.h>
-#include <linux/pci.h>
+#include <linex/device.h>
+#include <linex/dmapool.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/prefetch.h>
+#include <linex/pci.h>
 
 /* udc specific */
 #include "amd5536udc.h"

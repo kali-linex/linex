@@ -4,16 +4,16 @@
  * Copyright (C) 2014 ARM Limited
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/vexpress.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/of_platform.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/vexpress.h>
 
 #define SYS_MISC		0x0
 #define SYS_MISC_MASTERSITE	(1 << 14)

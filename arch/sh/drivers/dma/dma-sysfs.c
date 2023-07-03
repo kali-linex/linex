@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2004 - 2006  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/stat.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/string.h>
 #include <asm/dma.h>
 
 static struct bus_type dma_subsys = {

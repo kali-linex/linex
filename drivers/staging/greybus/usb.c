@@ -5,12 +5,12 @@
  * Copyright 2014 Google Inc.
  * Copyright 2014 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/greybus.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/greybus.h>
 
 #include "gbphy.h"
 

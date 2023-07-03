@@ -5,13 +5,13 @@
  *  Copyright (C) 2013-2015 Lantiq Beteiligungs-GmbH & Co.KG
  */
 
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/clkdev.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <linex/ioport.h>
+#include <linex/export.h>
+#include <linex/clkdev.h>
+#include <linex/spinlock.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
 
 #include <lantiq_soc.h>
 

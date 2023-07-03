@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c)  2018 Intel Corporation */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/if_vlan.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/if_vlan.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/ip.h>
+#include <linex/pm_runtime.h>
 #include <net/pkt_sched.h>
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 #include <net/xdp_sock_drv.h>
-#include <linux/pci.h>
+#include <linex/pci.h>
 
 #include <net/ipv6.h>
 
@@ -20,7 +20,7 @@
 #include "igc_tsn.h"
 #include "igc_xdp.h"
 
-#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet Linux Driver"
+#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet Linex Driver"
 
 #define DEFAULT_MSG_ENABLE (NETIF_MSG_DRV | NETIF_MSG_PROBE | NETIF_MSG_LINK)
 
@@ -31,7 +31,7 @@
 
 static int debug = -1;
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linex.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 module_param(debug, int, 0);

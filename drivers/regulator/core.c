@@ -7,25 +7,25 @@
 //
 // Author: Liam Girdwood <lrg@slimlogic.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/async.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/suspend.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regulator/coupler.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/regulator.h>

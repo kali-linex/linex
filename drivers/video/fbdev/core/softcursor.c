@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/console/softcursor.c
+ * linex/drivers/video/console/softcursor.c
  *
  * Generic software cursor for frame buffer devices
  *
@@ -10,10 +10,10 @@
  * archive for more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/fb.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
 

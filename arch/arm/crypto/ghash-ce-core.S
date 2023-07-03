@@ -6,7 +6,7 @@
  * Copyright (C) 2023 Google LLC. <ardb@google.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 
 	.arch		armv8-a

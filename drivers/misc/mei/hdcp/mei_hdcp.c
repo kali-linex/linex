@@ -16,11 +16,11 @@
  * negotiation messages to ME FW command payloads and vice versa.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mei.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/component.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/mei.h>
+#include <linex/mei_cl_bus.h>
+#include <linex/component.h>
 #include <drm/drm_connector.h>
 #include <drm/i915_component.h>
 #include <drm/i915_hdcp_interface.h>

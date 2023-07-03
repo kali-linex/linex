@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/workqueue.h>
-#include <linux/module.h>
+#include <linex/workqueue.h>
+#include <linex/module.h>
 
 #include "mlx4.h"
 

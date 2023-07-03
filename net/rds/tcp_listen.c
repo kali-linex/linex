@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
+#include <linex/kernel.h>
+#include <linex/gfp.h>
+#include <linex/in.h>
 #include <net/tcp.h>
 #include <trace/events/sock.h>
 

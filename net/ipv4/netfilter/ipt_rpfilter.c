@@ -5,16 +5,16 @@
  * based on fib_frontend.c; Author: Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/ip.h>
 #include <net/ip.h>
 #include <net/ip_fib.h>
 #include <net/route.h>
 
-#include <linux/netfilter/xt_rpfilter.h>
-#include <linux/netfilter/x_tables.h>
+#include <linex/netfilter/xt_rpfilter.h>
+#include <linex/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Florian Westphal <fw@strlen.de>");

@@ -6,9 +6,9 @@
 #ifndef __STI_RESET_SYSCFG_H
 #define __STI_RESET_SYSCFG_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linex/device.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
 
 /**
  * Reset channel description for a system configuration register based

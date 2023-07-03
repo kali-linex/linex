@@ -11,14 +11,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/dmi.h>
-#include <linux/wmi.h>
+#include <linex/acpi.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/mutex.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/dmi.h>
+#include <linex/wmi.h>
 #include "firmware_attributes_class.h"
 #include "think-lmi.h"
 

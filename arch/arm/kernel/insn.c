@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
 #include <asm/opcodes.h>
 
 static unsigned long __arm_gen_branch_thumb2(unsigned long pc,

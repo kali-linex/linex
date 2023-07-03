@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 #ifndef _IPA_H_
 #define _IPA_H_
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/pm_wakeup.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/notifier.h>
+#include <linex/pm_wakeup.h>
 
 #include "ipa_version.h"
 #include "gsi.h"

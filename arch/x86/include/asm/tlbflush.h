@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_TLBFLUSH_H
 #define _ASM_X86_TLBFLUSH_H
 
-#include <linux/mm_types.h>
-#include <linux/sched.h>
+#include <linex/mm_types.h>
+#include <linex/sched.h>
 
 #include <asm/processor.h>
 #include <asm/cpufeature.h>

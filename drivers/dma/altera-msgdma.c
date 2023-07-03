@@ -8,18 +8,18 @@
  * Copyright (C) 2016 Xilinx, Inc. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of_dma.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/of_dma.h>
 
 #include "dmaengine.h"
 

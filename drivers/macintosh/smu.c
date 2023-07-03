@@ -18,27 +18,27 @@
  *    the userland interface
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/completion.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/dmapool.h>
+#include <linex/memblock.h>
+#include <linex/vmalloc.h>
+#include <linex/highmem.h>
+#include <linex/jiffies.h>
+#include <linex/interrupt.h>
+#include <linex/rtc.h>
+#include <linex/completion.h>
+#include <linex/miscdevice.h>
+#include <linex/delay.h>
+#include <linex/poll.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -46,7 +46,7 @@
 #include <asm/pmac_feature.h>
 #include <asm/smu.h>
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define VERSION "0.7"
 #define AUTHOR  "(c) 2005 Benjamin Herrenschmidt, IBM Corp."

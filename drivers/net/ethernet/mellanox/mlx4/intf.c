@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/errno.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/errno.h>
 #include <net/devlink.h>
 
 #include "mlx4.h"

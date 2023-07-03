@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/atari/time.c
+ * linex/arch/m68k/atari/time.c
  *
  * Atari time and real time clock stuff
  *
@@ -10,15 +10,15 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/mc146818rtc.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/mc146818rtc.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/clocksource.h>
+#include <linex/delay.h>
+#include <linex/export.h>
 
 #include <asm/atariints.h>
 #include <asm/machdep.h>

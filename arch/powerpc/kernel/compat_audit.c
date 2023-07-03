@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #undef __powerpc64__
-#include <linux/audit_arch.h>
+#include <linex/audit_arch.h>
 #include <asm/unistd.h>
 
 unsigned ppc32_dir_class[] = {

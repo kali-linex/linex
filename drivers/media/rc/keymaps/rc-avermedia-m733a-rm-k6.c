@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * Avermedia M733A with IR model RM-K6

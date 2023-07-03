@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2012-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/suspend.h>
 #include "wil6210.h"
-#include <linux/rtnetlink.h>
-#include <linux/pm_runtime.h>
+#include <linex/rtnetlink.h>
+#include <linex/pm_runtime.h>
 
 static int n_msi = 3;
 module_param(n_msi, int, 0444);

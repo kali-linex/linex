@@ -3,8 +3,8 @@
 #ifndef _UFS_FAULT_INJECTION_H
 #define _UFS_FAULT_INJECTION_H
 
-#include <linux/kconfig.h>
-#include <linux/types.h>
+#include <linex/kconfig.h>
+#include <linex/types.h>
 
 #ifdef CONFIG_SCSI_UFS_FAULT_INJECTION
 bool ufs_trigger_eh(void);

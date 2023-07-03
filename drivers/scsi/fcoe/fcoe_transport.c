@@ -5,14 +5,14 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/netdevice.h>
+#include <linex/ethtool.h>
+#include <linex/errno.h>
+#include <linex/crc32.h>
 #include <scsi/libfcoe.h>
 
 #include "libfcoe.h"

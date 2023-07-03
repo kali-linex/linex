@@ -9,21 +9,21 @@
  * Many thanks to all socketcan devs!
  */
 
-#include <linux/bitfield.h>
-#include <linux/clocksource.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/timecounter.h>
-#include <linux/units.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linex/bitfield.h>
+#include <linex/clocksource.h>
+#include <linex/ethtool.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/signal.h>
+#include <linex/timecounter.h>
+#include <linex/units.h>
+#include <linex/usb.h>
+#include <linex/workqueue.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
 
 /* Device specific constants */
 #define USB_GS_USB_1_VENDOR_ID 0x1d50
@@ -275,7 +275,7 @@ struct gs_host_frame {
 	};
 } __packed;
 /* The GS USB devices make use of the same flags and masks as in
- * linux/can.h and linux/can/error.h, and no additional mapping is necessary.
+ * linex/can.h and linex/can/error.h, and no additional mapping is necessary.
  */
 
 /* Only send a max of GS_MAX_TX_URBS frames per channel at a time. */

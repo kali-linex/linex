@@ -10,36 +10,36 @@
  * Copyright (C) Hans Alblas PE1AYX (hans@esrac.ele.tue.nl)
  * Copyright (C) Frederic Rible F1OAT (frible@teaser.fr)
  */
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/fcntl.h>
+#include <linex/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/notifier.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/sysctl.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
 #include <net/net_namespace.h>
 #include <net/tcp_states.h>
 #include <net/ip.h>

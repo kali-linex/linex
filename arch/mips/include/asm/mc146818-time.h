@@ -8,9 +8,9 @@
 #ifndef __ASM_MC146818_TIME_H
 #define __ASM_MC146818_TIME_H
 
-#include <linux/bcd.h>
-#include <linux/mc146818rtc.h>
-#include <linux/time.h>
+#include <linex/bcd.h>
+#include <linex/mc146818rtc.h>
+#include <linex/time.h>
 
 /*
  * For check timing call set_rtc_mmss() 500ms; used in timer interrupt.

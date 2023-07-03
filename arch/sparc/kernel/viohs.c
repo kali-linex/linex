@@ -4,13 +4,13 @@
  * Copyright (C) 2007 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/slab.h>
 
 #include <asm/ldc.h>
 #include <asm/vio.h>

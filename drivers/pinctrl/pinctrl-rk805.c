@@ -11,21 +11,21 @@
  * Based on the pinctrl-as3722 driver
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/rk808.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/gpio/driver.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mfd/rk808.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinconf.h"

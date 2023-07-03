@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/inode.c
+ *  linex/fs/hfsplus/inode.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,15 +9,15 @@
  * Inode handling routines
  */
 
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mpage.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/uio.h>
-#include <linux/fileattr.h>
+#include <linex/blkdev.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/mpage.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/uio.h>
+#include <linex/fileattr.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

@@ -3,15 +3,15 @@
  *
  * Copyright (C) 2023 Ji-Ze Hong (Peter Hong) <peter_hong@fintek.com.tw>
  */
-#include <linux/bitfield.h>
-#include <linux/netdevice.h>
-#include <linux/units.h>
-#include <linux/usb.h>
+#include <linex/bitfield.h>
+#include <linex/netdevice.h>
+#include <linex/units.h>
+#include <linex/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/platform/sja1000.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
+#include <linex/can/platform/sja1000.h>
 
 #include <asm-generic/unaligned.h>
 

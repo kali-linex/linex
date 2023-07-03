@@ -7,11 +7,11 @@
  * (C) 2007, 2008, 2011, 2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/inet.h>
+#include <linex/udp.h>
+#include <linex/tcp.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
@@ -19,7 +19,7 @@
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_seqadj.h>
-#include <linux/netfilter/nf_conntrack_sip.h>
+#include <linex/netfilter/nf_conntrack_sip.h>
 
 #define NAT_HELPER_NAME "sip"
 

@@ -6,7 +6,7 @@
 #ifndef _CCU_GATE_H_
 #define _CCU_GATE_H_
 
-#include <linux/clk-provider.h>
+#include <linex/clk-provider.h>
 
 #include "ccu_common.h"
 

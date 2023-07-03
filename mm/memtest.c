@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
 
 bool early_memtest_done;
 phys_addr_t early_memtest_bad_size;

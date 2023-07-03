@@ -4,16 +4,16 @@
  * which don't implement their own.
  */
 
-#include <linux/kernel.h>
-#include <linux/buildid.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
-#include <linux/kexec.h>
-#include <linux/utsname.h>
-#include <linux/stop_machine.h>
+#include <linex/kernel.h>
+#include <linex/buildid.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/smp.h>
+#include <linex/atomic.h>
+#include <linex/kexec.h>
+#include <linex/utsname.h>
+#include <linex/stop_machine.h>
 
 static char dump_stack_arch_desc_str[128];
 
@@ -39,7 +39,7 @@ void __init dump_stack_set_arch_desc(const char *fmt, ...)
 
 #if IS_ENABLED(CONFIG_STACKTRACE_BUILD_ID)
 #define BUILD_ID_FMT " %20phN"
-#define BUILD_ID_VAL vmlinux_build_id
+#define BUILD_ID_VAL vmlinex_build_id
 #else
 #define BUILD_ID_FMT "%s"
 #define BUILD_ID_VAL ""

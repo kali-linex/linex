@@ -3,12 +3,12 @@
 // Copyright 2012 Freescale Semiconductor, Inc.
 // Copyright 2012 Linaro Ltd.
 
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/i2c.h>
-#include <linux/of_gpio.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/i2c.h>
+#include <linex/of_gpio.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 

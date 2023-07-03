@@ -2,11 +2,11 @@
 /*
  * Clause 45 PHY support
  */
-#include <linux/ethtool.h>
-#include <linux/export.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linex/ethtool.h>
+#include <linex/export.h>
+#include <linex/mdio.h>
+#include <linex/mii.h>
+#include <linex/phy.h>
 
 #include "mdio-open-alliance.h"
 

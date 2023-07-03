@@ -2,7 +2,7 @@
 #include "demangle-cxx.h"
 #include <stdlib.h>
 #include <string.h>
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 #ifdef HAVE_LIBBFD_SUPPORT
 #define PACKAGE 'perf'

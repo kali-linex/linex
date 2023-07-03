@@ -10,18 +10,18 @@
  * Krzysztof Kozłowski <krzk@kernel.org>
  */
 
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/crypto.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #define EXYNOS_TRNG_CLKDIV         (0x0)
 

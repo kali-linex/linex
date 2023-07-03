@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pgtable.h>
-#include <linux/cpuidle.h>
+#include <linex/ftrace.h>
+#include <linex/percpu.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/pgtable.h>
+#include <linex/cpuidle.h>
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>

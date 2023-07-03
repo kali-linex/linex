@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linex/fb.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/vgaarb.h>
 #include <asm/fb.h>
 
 void fb_pgprotect(struct file *file, struct vm_area_struct *vma, unsigned long off)

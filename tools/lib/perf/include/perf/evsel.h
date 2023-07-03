@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include <perf/core.h>
 #include <stdbool.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct perf_evsel;
 struct perf_event_attr;

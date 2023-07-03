@@ -5,18 +5,18 @@
  * Copyright (c) 2009-2012, NVIDIA Corporation. All rights reserved.
  */
 
-#include <linux/clk/tegra.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/suspend.h>
+#include <linex/clk/tegra.h>
+#include <linex/cpumask.h>
+#include <linex/cpu_pm.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/suspend.h>
 
-#include <linux/firmware/trusted_foundations.h>
+#include <linex/firmware/trusted_foundations.h>
 
 #include <soc/tegra/flowctrl.h>
 #include <soc/tegra/fuse.h>

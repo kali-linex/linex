@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/filter.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/export.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/if_vlan.h>
+#include <linex/filter.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 #include <net/ip.h>
@@ -13,29 +13,29 @@
 #include <net/gre.h>
 #include <net/pptp.h>
 #include <net/tipc.h>
-#include <linux/igmp.h>
-#include <linux/icmp.h>
-#include <linux/sctp.h>
-#include <linux/dccp.h>
-#include <linux/if_tunnel.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/stddef.h>
-#include <linux/if_ether.h>
-#include <linux/if_hsr.h>
-#include <linux/mpls.h>
-#include <linux/tcp.h>
-#include <linux/ptp_classify.h>
+#include <linex/igmp.h>
+#include <linex/icmp.h>
+#include <linex/sctp.h>
+#include <linex/dccp.h>
+#include <linex/if_tunnel.h>
+#include <linex/if_pppox.h>
+#include <linex/ppp_defs.h>
+#include <linex/stddef.h>
+#include <linex/if_ether.h>
+#include <linex/if_hsr.h>
+#include <linex/mpls.h>
+#include <linex/tcp.h>
+#include <linex/ptp_classify.h>
 #include <net/flow_dissector.h>
 #include <net/pkt_cls.h>
 #include <scsi/fc/fc_fcoe.h>
-#include <uapi/linux/batadv_packet.h>
-#include <linux/bpf.h>
+#include <uapi/linex/batadv_packet.h>
+#include <linex/bpf.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_labels.h>
 #endif
-#include <linux/bpf-netns.h>
+#include <linex/bpf-netns.h>
 
 static void dissector_set_key(struct flow_dissector *flow_dissector,
 			      enum flow_dissector_key_id key_id)

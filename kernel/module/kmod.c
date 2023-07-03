@@ -4,30 +4,30 @@
  * Copyright (C) 2023 Luis Chamberlain <mcgrof@kernel.org>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/binfmts.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/notifier.h>
-#include <linux/suspend.h>
-#include <linux/rwsem.h>
-#include <linux/ptrace.h>
-#include <linux/async.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/binfmts.h>
+#include <linex/syscalls.h>
+#include <linex/unistd.h>
+#include <linex/kmod.h>
+#include <linex/slab.h>
+#include <linex/completion.h>
+#include <linex/cred.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/workqueue.h>
+#include <linex/security.h>
+#include <linex/mount.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/resource.h>
+#include <linex/notifier.h>
+#include <linex/suspend.h>
+#include <linex/rwsem.h>
+#include <linex/ptrace.h>
+#include <linex/async.h>
+#include <linex/uaccess.h>
 
 #include <trace/events/module.h>
 #include "internal.h"
@@ -74,7 +74,7 @@ static int call_modprobe(char *orig_module_name, int wait)
 	struct subprocess_info *info;
 	static char *envp[] = {
 		"HOME=/",
-		"TERM=linux",
+		"TERM=linex",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

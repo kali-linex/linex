@@ -5,24 +5,24 @@
  * Copyright (c) 2003 Stephen Hemminger <shemminger@osdl.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/isolation.h>
-#include <linux/nsproxy.h>
+#include <linex/capability.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/isolation.h>
+#include <linex/nsproxy.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/cpu.h>
+#include <linex/rtnetlink.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
+#include <linex/jiffies.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/cpu.h>
 
 #include "dev.h"
 #include "net-sysfs.h"

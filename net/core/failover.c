@@ -7,11 +7,11 @@
  * The notifier and event handling code is based on netvsc driver.
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <uapi/linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <uapi/linex/if_arp.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_vlan.h>
 #include <net/failover.h>
 
 static LIST_HEAD(failover_list);

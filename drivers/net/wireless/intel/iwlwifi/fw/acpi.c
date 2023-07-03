@@ -3,8 +3,8 @@
  * Copyright (C) 2017 Intel Deutschland GmbH
  * Copyright (C) 2019-2023 Intel Corporation
  */
-#include <linux/uuid.h>
-#include <linux/dmi.h>
+#include <linex/uuid.h>
+#include <linex/dmi.h>
 #include "iwl-drv.h"
 #include "iwl-debug.h"
 #include "acpi.h"

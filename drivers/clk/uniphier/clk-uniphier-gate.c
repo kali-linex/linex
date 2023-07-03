@@ -4,9 +4,9 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/regmap.h>
 
 #include "clk-uniphier.h"
 

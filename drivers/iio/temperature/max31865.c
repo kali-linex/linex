@@ -8,16 +8,16 @@
  * Author: Navin Sankar Velliangiri <navin@linumiz.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linex/ctype.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
 #include <asm/unaligned.h>
 
 /*

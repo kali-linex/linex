@@ -5,13 +5,13 @@
  *  Copyright (C) 2006  Paul Mundt
  *  Copyright (C) 2009  Magnus Damm
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_intc.h>
+#include <linex/io.h>
 #include <asm/platform_early.h>
 
 static struct plat_sci_port scif0_platform_data = {

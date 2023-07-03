@@ -3,17 +3,17 @@
 // pv88090-regulator.c - Regulator device driver for PV88090
 // Copyright (C) 2015  Powerventure Semiconductor Ltd.
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regmap.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/regulator/of_regulator.h>
 #include "pv88090-regulator.h"
 
 #define PV88090_MAX_REGULATORS	5

@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_SHARED_TDX_H
 #define _ASM_X86_SHARED_TDX_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/types.h>
 
 #define TDX_HYPERCALL_STANDARD  0
 

@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/hrtimer.h>
+#include <linex/ktime.h>
 
 #include "ptp.h"
 #include "mbox.h"

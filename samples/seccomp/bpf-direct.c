@@ -17,10 +17,10 @@
 #define __USE_GNU 1
 #define _GNU_SOURCE 1
 
-#include <linux/types.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>
-#include <linux/unistd.h>
+#include <linex/types.h>
+#include <linex/filter.h>
+#include <linex/seccomp.h>
+#include <linex/unistd.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stddef.h>

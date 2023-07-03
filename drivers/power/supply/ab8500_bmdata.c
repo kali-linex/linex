@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/power_supply.h>
-#include <linux/of.h>
+#include <linex/export.h>
+#include <linex/power_supply.h>
+#include <linex/of.h>
 
 #include "ab8500-bm.h"
 

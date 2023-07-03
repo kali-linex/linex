@@ -10,8 +10,8 @@
 
 #define pr_fmt(fmt) "UDPLite: " fmt
 
-#include <linux/export.h>
-#include <linux/proc_fs.h>
+#include <linex/export.h>
+#include <linex/proc_fs.h>
 #include "udp_impl.h"
 
 struct udp_table 	udplite_table __read_mostly;

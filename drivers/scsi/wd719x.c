@@ -15,7 +15,7 @@
  * Western Digital Corporation
  * 09-15-95
  *
- * http://web.archive.org/web/20070717175254/http://sun1.rrzn.uni-hannover.de/gaertner.juergen/wd719x/Linux/Docu/Spider/
+ * http://web.archive.org/web/20070717175254/http://sun1.rrzn.uni-hannover.de/gaertner.juergen/wd719x/Linex/Docu/Spider/
  */
 
 /*
@@ -35,12 +35,12 @@
  *  - tagged queueing
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/eeprom_93cx6.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/firmware.h>
+#include <linex/eeprom_93cx6.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>

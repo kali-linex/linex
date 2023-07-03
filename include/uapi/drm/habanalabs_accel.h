@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note
  *
  * Copyright 2016-2022 HabanaLabs, Ltd.
  * All Rights Reserved.
@@ -8,8 +8,8 @@
 #ifndef HABANALABS_H_
 #define HABANALABS_H_
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linex/types.h>
+#include <linex/ioctl.h>
 
 /*
  * Defines that are asic-specific but constitutes as ABI between kernel driver
@@ -1416,8 +1416,8 @@ union hl_cb_args {
  *      cb_handle field. The interface provides the ability to create a
  *      large CBs, Which aren’t limited to “HL_MAX_CB_SIZE”. Therefore, it
  *      increases the PCI-DMA queues throughput. This CB allocation method
- *      also reduces the use of Linux DMA-able memory pool. Which are limited
- *      and used by other Linux sub-systems.
+ *      also reduces the use of Linex DMA-able memory pool. Which are limited
+ *      and used by other Linex sub-systems.
  */
 #define HL_CS_CHUNK_FLAGS_USER_ALLOC_CB 0x1
 
@@ -2250,7 +2250,7 @@ struct hl_debug_args {
  * If the timeout value is 0, the driver won't sleep at all. It will check
  * the status of the CS and return immediately
  *
- * The return value of the IOCTL is a standard Linux error code. The possible
+ * The return value of the IOCTL is a standard Linex error code. The possible
  * values are:
  *
  * EINTR     - Kernel waiting has been interrupted, e.g. due to OS signal

@@ -6,11 +6,11 @@
  *  Author: Wu Zhangjin <wuzhangjin@gmail.com>
  */
 
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/i8042.h>
-#include <linux/export.h>
+#include <linex/suspend.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
+#include <linex/i8042.h>
+#include <linex/export.h>
 
 #include <asm/i8259.h>
 #include <asm/mipsregs.h>

@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2016, 2018
  *
- *    Author(s): David Hildenbrand <dahi@linux.vnet.ibm.com>
+ *    Author(s): David Hildenbrand <dahi@linex.vnet.ibm.com>
  */
-#include <linux/vmalloc.h>
-#include <linux/kvm_host.h>
-#include <linux/bug.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
-#include <linux/sched/signal.h>
+#include <linex/vmalloc.h>
+#include <linex/kvm_host.h>
+#include <linex/bug.h>
+#include <linex/list.h>
+#include <linex/bitmap.h>
+#include <linex/sched/signal.h>
 
 #include <asm/gmap.h>
 #include <asm/mmu_context.h>

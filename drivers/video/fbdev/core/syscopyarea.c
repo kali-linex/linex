@@ -12,10 +12,10 @@
  *  more details.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/fb.h>
 #include <asm/types.h>
 #include <asm/io.h>
 #include "fb_draw.h"

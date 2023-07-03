@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/acpi.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 #include <net/addrconf.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>

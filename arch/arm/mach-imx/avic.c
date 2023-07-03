@@ -4,13 +4,13 @@
  * Copyright 2008 Juergen Beisert, kernel@pengutronix.de
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 #include <asm/mach/irq.h>
 #include <asm/exception.h>
 

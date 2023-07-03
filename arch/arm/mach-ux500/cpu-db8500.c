@@ -4,22 +4,22 @@
  *
  * Author: Srinidhi KASAGAR <srinidhi.kasagar@stericsson.com>
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/platform_data/arm-ux500-pm.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/regulator/machine.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/amba/bus.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/mfd/dbx500-prcmu.h>
+#include <linex/platform_data/arm-ux500-pm.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/regulator/machine.h>
 
 #include <asm/outercache.h>
 #include <asm/hardware/cache-l2x0.h>

@@ -7,7 +7,7 @@
 #ifndef TXX9DMAC_H
 #define TXX9DMAC_H
 
-#include <linux/dmaengine.h>
+#include <linex/dmaengine.h>
 #include <asm/txx9/dmac.h>
 
 /*

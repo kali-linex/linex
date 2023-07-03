@@ -2,34 +2,34 @@
 /*
  * Qualcomm PCIe root complex driver
  *
- * Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2015, The Linex Foundation. All rights reserved.
  * Copyright 2015 Linaro Limited.
  *
  * Author: Stanimir Varbanov <svarbanov@mm-sol.com>
  */
 
-#include <linux/clk.h>
-#include <linux/crc8.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/phy/pcie.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/crc8.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interconnect.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/phy/pcie.h>
+#include <linex/phy/phy.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/reboot.h>
-#include <linux/serial_core.h>
+#include <linex/reboot.h>
+#include <linex/serial_core.h>
 #include <clocksource/timer-goldfish.h>
 
 #include <asm/bootinfo.h>

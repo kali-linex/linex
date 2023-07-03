@@ -8,26 +8,26 @@
  *	-- Copyright IBM Corp. 2003
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/compat.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kdev_t.h>
+#include <linex/tty.h>
+#include <linex/vt_kern.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/panic_notifier.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/memblock.h>
+#include <linex/compat.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
 #include <asm/ebcdic.h>
 #include <asm/cpcmd.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "raw3270.h"
 #include "keyboard.h"

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <stdbool.h>
-#include <linux/bpf.h>
-#include <linux/netdev.h>
+#include <linex/bpf.h>
+#include <linex/netdev.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 #include <bpf/bpf_tracing.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/udp.h>
+#include <linex/if_ether.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/udp.h>
 #include <asm-generic/errno-base.h>
 
 #include "xdp_features.h"

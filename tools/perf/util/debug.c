@@ -8,8 +8,8 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <api/debug.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <linex/kernel.h>
+#include <linex/time64.h>
 #include <sys/time.h>
 #ifdef HAVE_BACKTRACE_SUPPORT
 #include <execinfo.h>
@@ -24,7 +24,7 @@
 #include "ui/ui.h"
 #include "util/parse-sublevel-options.h"
 
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>

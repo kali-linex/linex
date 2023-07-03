@@ -9,9 +9,9 @@
  * the GPU in DRM API tests.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
 
 #include <drm/drm_gem.h>
 #include <drm/drm_atomic.h>

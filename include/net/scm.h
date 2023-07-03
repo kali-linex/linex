@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NET_SCM_H
-#define __LINUX_NET_SCM_H
+#ifndef __LINEX_NET_SCM_H
+#define __LINEX_NET_SCM_H
 
-#include <linux/limits.h>
-#include <linux/net.h>
-#include <linux/cred.h>
-#include <linux/security.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/sched/signal.h>
+#include <linex/limits.h>
+#include <linex/net.h>
+#include <linex/cred.h>
+#include <linex/security.h>
+#include <linex/pid.h>
+#include <linex/nsproxy.h>
+#include <linex/sched/signal.h>
 
 /* Well, we should have at least one descriptor open
  * to accept passed FDs 8)
@@ -204,5 +204,5 @@ static inline void scm_recv_unix(struct socket *sock, struct msghdr *msg,
 	scm_destroy_cred(scm);
 }
 
-#endif /* __LINUX_NET_SCM_H */
+#endif /* __LINEX_NET_SCM_H */
 

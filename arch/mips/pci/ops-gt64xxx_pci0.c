@@ -5,9 +5,9 @@
  *	Authors: Carsten Langgaard <carstenl@mips.com>
  *		 Maciej W. Rozycki <macro@mips.com>
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
 
 #include <asm/gt64120.h>
 

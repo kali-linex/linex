@@ -9,7 +9,7 @@
 #ifndef __DW_MIPI_DSI__
 #define __DW_MIPI_DSI__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include <drm/drm_modes.h>
 

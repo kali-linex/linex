@@ -6,19 +6,19 @@
  * Copyright (C) 2015 STMicroelectronics Pvt. Ltd. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/nfc.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/nfc.h>
+#include <linex/of_gpio.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/wait.h>
 #include <net/nfc/digital.h>
 #include <net/nfc/nfc.h>
 

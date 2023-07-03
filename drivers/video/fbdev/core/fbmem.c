@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fbmem.c
+ *  linex/drivers/video/fbmem.c
  *
  *  Copyright (C) 1994 Martin Schaller
  *
@@ -11,31 +11,31 @@
  * for more details.
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/vt.h>
-#include <linux/init.h>
-#include <linux/linux_logo.h>
-#include <linux/proc_fs.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/mem_encrypt.h>
-#include <linux/pci.h>
+#include <linex/compat.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/major.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/vt.h>
+#include <linex/init.h>
+#include <linex/linex_logo.h>
+#include <linex/proc_fs.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/console.h>
+#include <linex/kmod.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/efi.h>
+#include <linex/fb.h>
+#include <linex/fbcon.h>
+#include <linex/mem_encrypt.h>
+#include <linex/pci.h>
 
 #include <video/nomodeset.h>
 #include <video/vga.h>
@@ -193,7 +193,7 @@ static inline unsigned safe_shift(unsigned d, int n)
 }
 
 static void fb_set_logocmap(struct fb_info *info,
-				   const struct linux_logo *logo)
+				   const struct linex_logo *logo)
 {
 	struct fb_cmap palette_cmap;
 	u16 palette_green[16];
@@ -227,7 +227,7 @@ static void fb_set_logocmap(struct fb_info *info,
 }
 
 static void  fb_set_logo_truepalette(struct fb_info *info,
-					    const struct linux_logo *logo,
+					    const struct linex_logo *logo,
 					    u32 *palette)
 {
 	static const unsigned char mask[] = { 0,0x80,0xc0,0xe0,0xf0,0xf8,0xfc,0xfe,0xff };
@@ -257,7 +257,7 @@ static void  fb_set_logo_truepalette(struct fb_info *info,
 }
 
 static void fb_set_logo_directpalette(struct fb_info *info,
-					     const struct linux_logo *logo,
+					     const struct linex_logo *logo,
 					     u32 *palette)
 {
 	int redshift, greenshift, blueshift;
@@ -272,7 +272,7 @@ static void fb_set_logo_directpalette(struct fb_info *info,
 }
 
 static void fb_set_logo(struct fb_info *info,
-			       const struct linux_logo *logo, u8 *dst,
+			       const struct linex_logo *logo, u8 *dst,
 			       int depth)
 {
 	int i, j, k;
@@ -323,12 +323,12 @@ static void fb_set_logo(struct fb_info *info,
 }
 
 /*
- * Three (3) kinds of logo maps exist.  linux_logo_clut224 (>16 colors),
- * linux_logo_vga16 (16 colors) and linux_logo_mono (2 colors).  Depending on
+ * Three (3) kinds of logo maps exist.  linex_logo_clut224 (>16 colors),
+ * linex_logo_vga16 (16 colors) and linex_logo_mono (2 colors).  Depending on
  * the visual format and color depth of the framebuffer, the DAC, the
  * pseudo_palette, and the logo data will be adjusted accordingly.
  *
- * Case 1 - linux_logo_clut224:
+ * Case 1 - linex_logo_clut224:
  * Color exceeds the number of console colors (16), thus we set the hardware DAC
  * using fb_set_cmap() appropriately.  The "needs_cmapreset"  flag will be set.
  *
@@ -336,14 +336,14 @@ static void fb_set_logo(struct fb_info *info,
  * one for temporary use. The "needs_directpalette" or "needs_truepalette" flags
  * will be set.
  *
- * Case 2 - linux_logo_vga16:
+ * Case 2 - linex_logo_vga16:
  * The number of colors just matches the console colors, thus there is no need
  * to set the DAC or the pseudo_palette.  However, the bitmap is packed, ie,
  * each byte contains color information for two pixels (upper and lower nibble).
  * To be consistent with fb_imageblit() usage, we therefore separate the two
  * nibbles into separate bytes. The "depth" flag will be set to 4.
  *
- * Case 3 - linux_logo_mono:
+ * Case 3 - linex_logo_mono:
  * This is similar with Case 2.  Each byte contains information for 8 pixels.
  * We isolate each bit and expand each into a byte. The "depth" flag will
  * be set to 1.
@@ -353,7 +353,7 @@ static struct logo_data {
 	int needs_directpalette;
 	int needs_truepalette;
 	int needs_cmapreset;
-	const struct linux_logo *logo;
+	const struct linex_logo *logo;
 } fb_logo __read_mostly;
 
 static void fb_rotate_logo_ud(const u8 *in, u8 *out, u32 width, u32 height)
@@ -453,7 +453,7 @@ static void fb_do_show_logo(struct fb_info *info, struct fb_image *image,
 }
 
 static int fb_show_logo_line(struct fb_info *info, int rotate,
-			     const struct linux_logo *logo, int y,
+			     const struct linex_logo *logo, int y,
 			     unsigned int n)
 {
 	u32 *palette = NULL, *saved_pseudo_palette = NULL;
@@ -542,12 +542,12 @@ static int fb_show_logo_line(struct fb_info *info, int rotate,
 
 #define FB_LOGO_EX_NUM_MAX 10
 static struct logo_data_extra {
-	const struct linux_logo *logo;
+	const struct linex_logo *logo;
 	unsigned int n;
 } fb_logo_ex[FB_LOGO_EX_NUM_MAX];
 static unsigned int fb_logo_ex_num;
 
-void fb_append_extra_logo(const struct linux_logo *logo, unsigned int n)
+void fb_append_extra_logo(const struct linex_logo *logo, unsigned int n)
 {
 	if (!n || fb_logo_ex_num == FB_LOGO_EX_NUM_MAX)
 		return;
@@ -652,9 +652,9 @@ int fb_prepare_logo(struct fb_info *info, int rotate)
 	}
 
 	/* What depth we asked for might be different from what we get */
-	if (fb_logo.logo->type == LINUX_LOGO_CLUT224)
+	if (fb_logo.logo->type == LINEX_LOGO_CLUT224)
 		fb_logo.depth = 8;
-	else if (fb_logo.logo->type == LINUX_LOGO_VGA16)
+	else if (fb_logo.logo->type == LINEX_LOGO_VGA16)
 		fb_logo.depth = 4;
 	else
 		fb_logo.depth = 1;

@@ -9,16 +9,16 @@
  */
 #define pr_fmt(fmt) "pinconfig core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinconf.h>
 #include "core.h"
 #include "pinconf.h"
 

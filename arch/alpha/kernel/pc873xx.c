@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ioport.h>
+#include <linex/ioport.h>
 #include <asm/io.h>
 
 #include "pc873xx.h"

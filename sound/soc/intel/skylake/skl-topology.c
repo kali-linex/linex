@@ -8,10 +8,10 @@
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/firmware.h>
-#include <linux/uuid.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/firmware.h>
+#include <linex/uuid.h>
 #include <sound/intel-nhlt.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

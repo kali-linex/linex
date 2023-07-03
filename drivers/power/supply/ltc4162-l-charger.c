@@ -4,13 +4,13 @@
  *  Copyright (C) 2020, Topic Embedded Products
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/power_supply.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
 
 /* Registers (names based on what datasheet uses) */
 #define LTC4162L_EN_LIMIT_ALERTS_REG		0x0D

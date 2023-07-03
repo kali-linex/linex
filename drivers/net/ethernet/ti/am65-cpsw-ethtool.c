@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/net_tstamp.h>
-#include <linux/phylink.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/net_tstamp.h>
+#include <linex/phylink.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "am65-cpsw-nuss.h"
 #include "cpsw_ale.h"

@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2005-2011, 2021-2022 Intel Corporation
  */
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
 #include "iwl-drv.h"
 #include "iwl-debug.h"
 #include "iwl-devtrace.h"

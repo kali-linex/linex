@@ -4,13 +4,13 @@
 #ifndef _QED_NVMETCP_H
 #define _QED_NVMETCP_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/qed/tcp_common.h>
-#include <linux/qed/qed_nvmetcp_if.h>
-#include <linux/qed/qed_chain.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/qed/tcp_common.h>
+#include <linex/qed/qed_nvmetcp_if.h>
+#include <linex/qed/qed_chain.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_mcp.h"

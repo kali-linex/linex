@@ -14,12 +14,12 @@
  * Copyright (C) 2010-2011 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/videodev2.h>
+#include <linex/workqueue.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-mem2mem.h>

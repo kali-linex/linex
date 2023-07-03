@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2011 by Jarod Wilson <jarod@redhat.com>
  */
-#include <linux/module.h>
+#include <linex/module.h>
 
 #include "rc-core-priv.h"
 

@@ -4,13 +4,13 @@
  * Lei Chuanhua <Chuanhua.lei@intel.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linex/bitfield.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
 
 #define RCU_RST_STAT	0x0024
 #define RCU_RST_REQ	0x0048

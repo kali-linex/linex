@@ -6,17 +6,17 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/netfs.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/stat.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/sched.h>
+#include <linex/swap.h>
+#include <linex/uio.h>
+#include <linex/netfs.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

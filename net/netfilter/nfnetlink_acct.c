@@ -3,24 +3,24 @@
  * (C) 2011 Pablo Neira Ayuso <pablo@netfilter.org>
  * (C) 2011 Intra2net AG <https://www.intra2net.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/atomic.h>
+#include <linex/refcount.h>
+#include <linex/netlink.h>
+#include <linex/rculist.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_acct.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_acct.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");

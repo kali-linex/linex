@@ -8,30 +8,30 @@
  *  Derived from "arch/i386/kernel/sys_i386.c"
  *
  *  This file contains various random system calls that
- *  have a non-standard calling sequence on the Linux/s390
+ *  have a non-standard calling sequence on the Linex/s390
  *  platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
-#include <linux/unistd.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
-#include <linux/entry-common.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/smp.h>
+#include <linex/sem.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/stat.h>
+#include <linex/syscalls.h>
+#include <linex/mman.h>
+#include <linex/file.h>
+#include <linex/utsname.h>
+#include <linex/personality.h>
+#include <linex/unistd.h>
+#include <linex/ipc.h>
+#include <linex/uaccess.h>
+#include <linex/string.h>
+#include <linex/thread_info.h>
+#include <linex/entry-common.h>
 
 #include <asm/ptrace.h>
 #include <asm/vtime.h>
@@ -39,7 +39,7 @@
 #include "entry.h"
 
 /*
- * Perform the mmap() system call. Linux for S/390 isn't able to handle more
+ * Perform the mmap() system call. Linex for S/390 isn't able to handle more
  * than 5 system call parameters, so this system call uses a memory block
  * for parameter passing.
  */
@@ -90,15 +90,15 @@ SYSCALL_DEFINE1(s390_personality, unsigned int, personality)
 {
 	unsigned int ret = current->personality;
 
-	if (personality(current->personality) == PER_LINUX32 &&
-	    personality(personality) == PER_LINUX)
-		personality |= PER_LINUX32;
+	if (personality(current->personality) == PER_LINEX32 &&
+	    personality(personality) == PER_LINEX)
+		personality |= PER_LINEX32;
 
 	if (personality != 0xffffffff)
 		set_personality(personality);
 
-	if (personality(ret) == PER_LINUX32)
-		ret &= ~PER_LINUX32;
+	if (personality(ret) == PER_LINEX32)
+		ret &= ~PER_LINEX32;
 
 	return ret;
 }

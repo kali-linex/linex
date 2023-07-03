@@ -7,10 +7,10 @@
  * Contact: Luciano Coelho <luciano.coelho@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
+#include <linex/interrupt.h>
 
 #include "wlcore.h"
 #include "debug.h"

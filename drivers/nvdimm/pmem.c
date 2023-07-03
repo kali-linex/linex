@@ -7,24 +7,24 @@
  * Copyright (c) 2015, Boaz Harrosh <boaz@plexistor.com>.
  */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/hdreg.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/set_memory.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/badblocks.h>
-#include <linux/memremap.h>
-#include <linux/vmalloc.h>
-#include <linux/blk-mq.h>
-#include <linux/pfn_t.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
-#include <linux/nd.h>
-#include <linux/mm.h>
+#include <linex/blkdev.h>
+#include <linex/pagemap.h>
+#include <linex/hdreg.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/set_memory.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/badblocks.h>
+#include <linex/memremap.h>
+#include <linex/vmalloc.h>
+#include <linex/blk-mq.h>
+#include <linex/pfn_t.h>
+#include <linex/slab.h>
+#include <linex/uio.h>
+#include <linex/dax.h>
+#include <linex/nd.h>
+#include <linex/mm.h>
 #include <asm/cacheflush.h>
 #include "pmem.h"
 #include "btt.h"
@@ -763,5 +763,5 @@ static struct nd_device_driver nd_pmem_driver = {
 
 module_nd_driver(nd_pmem_driver);
 
-MODULE_AUTHOR("Ross Zwisler <ross.zwisler@linux.intel.com>");
+MODULE_AUTHOR("Ross Zwisler <ross.zwisler@linex.intel.com>");
 MODULE_LICENSE("GPL v2");

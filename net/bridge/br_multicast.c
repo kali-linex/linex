@@ -5,27 +5,27 @@
  * Copyright (c) 2010 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/if_ether.h>
-#include <linux/igmp.h>
-#include <linux/in.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/random.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/inetdevice.h>
-#include <linux/mroute.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/if_ether.h>
+#include <linex/igmp.h>
+#include <linex/in.h>
+#include <linex/jhash.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/netdevice.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/random.h>
+#include <linex/rculist.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/inetdevice.h>
+#include <linex/mroute.h>
 #include <net/ip.h>
 #include <net/switchdev.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/icmpv6.h>
+#include <linex/icmpv6.h>
 #include <net/ipv6.h>
 #include <net/mld.h>
 #include <net/ip6_checksum.h>

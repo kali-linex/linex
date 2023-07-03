@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linex.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -18,16 +18,16 @@
  * functional code.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/crc-itu-t.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/pci.h>
+#include <linex/string.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/crc-itu-t.h>
 
 #include "card_base.h"
 #include "card_ddcb.h"

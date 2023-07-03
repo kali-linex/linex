@@ -3,7 +3,7 @@
 # builddeb 1.3
 # Copyright 2003 Wichert Akkerman <wichert@wiggy.net>
 #
-# Simple script to generate a deb package for a Linux kernel. All the
+# Simple script to generate a deb package for a Linex kernel. All the
 # complexity of what to do with a kernel after it is installed or removed
 # is left to other scripts and packages: they can install scripts in the
 # /etc/kernel/{pre,post}{inst,rm}.d/ directories (or an alternative location
@@ -51,7 +51,7 @@ create_package() {
 	dpkg-deb $dpkg_deb_opts ${KDEB_COMPRESS:+-Z$KDEB_COMPRESS} --build "$pdir" ..
 }
 
-install_linux_image () {
+install_linex_image () {
 	pdir=$1
 	pname=$2
 
@@ -59,7 +59,7 @@ install_linux_image () {
 
 	# Only some architectures with OF support have this target
 	if is_enabled CONFIG_OF_EARLY_FLATTREE && [ -d "${srctree}/arch/${SRCARCH}/boot/dts" ]; then
-		${MAKE} -f ${srctree}/Makefile INSTALL_DTBS_PATH="${pdir}/usr/lib/linux-image-${KERNELRELEASE}" dtbs_install
+		${MAKE} -f ${srctree}/Makefile INSTALL_DTBS_PATH="${pdir}/usr/lib/linex-image-${KERNELRELEASE}" dtbs_install
 	fi
 
 	${MAKE} -f ${srctree}/Makefile INSTALL_MOD_PATH="${pdir}" modules_install
@@ -85,9 +85,9 @@ install_linux_image () {
 	# path instead
 	case "${SRCARCH}" in
 	um)
-		installed_image_path="usr/bin/linux-${KERNELRELEASE}";;
+		installed_image_path="usr/bin/linex-${KERNELRELEASE}";;
 	parisc|mips|powerpc)
-		installed_image_path="boot/vmlinux-${KERNELRELEASE}";;
+		installed_image_path="boot/vmlinex-${KERNELRELEASE}";;
 	*)
 		installed_image_path="boot/vmlinuz-${KERNELRELEASE}";;
 	esac
@@ -122,7 +122,7 @@ install_linux_image () {
 	done
 }
 
-install_linux_image_dbg () {
+install_linex_image_dbg () {
 	pdir=$1
 	image_pdir=$2
 
@@ -148,12 +148,12 @@ install_linux_image_dbg () {
 	# Different tools want the image in different locations
 	# perf
 	mkdir -p ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
-	cp vmlinux ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
+	cp vmlinex ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
 	# systemtap
 	mkdir -p ${pdir}/usr/lib/debug/boot/
-	ln -s ../lib/modules/${KERNELRELEASE}/vmlinux ${pdir}/usr/lib/debug/boot/vmlinux-${KERNELRELEASE}
+	ln -s ../lib/modules/${KERNELRELEASE}/vmlinex ${pdir}/usr/lib/debug/boot/vmlinex-${KERNELRELEASE}
 	# kdump-tools
-	ln -s lib/modules/${KERNELRELEASE}/vmlinux ${pdir}/usr/lib/debug/vmlinux-${KERNELRELEASE}
+	ln -s lib/modules/${KERNELRELEASE}/vmlinex ${pdir}/usr/lib/debug/vmlinex-${KERNELRELEASE}
 }
 
 install_kernel_headers () {
@@ -182,7 +182,7 @@ install_kernel_headers () {
 		fi
 	} > debian/hdrobjfiles
 
-	destdir=$pdir/usr/src/linux-headers-$version
+	destdir=$pdir/usr/src/linex-headers-$version
 	mkdir -p $destdir
 	tar -c -f - -C $srctree -T debian/hdrsrcfiles | tar -xf - -C $destdir
 	tar -c -f - -T debian/hdrobjfiles | tar -xf - -C $destdir
@@ -192,7 +192,7 @@ install_kernel_headers () {
 	cp $KCONFIG_CONFIG $destdir/.config
 
 	mkdir -p $pdir/lib/modules/$version/
-	ln -s /usr/src/linux-headers-$version $pdir/lib/modules/$version/build
+	ln -s /usr/src/linex-headers-$version $pdir/lib/modules/$version/build
 }
 
 install_libc_headers () {
@@ -218,15 +218,15 @@ for package in ${packages_enabled}
 do
 	case ${package} in
 	*-dbg)
-		# This must be done after linux-image, that is, we expect the
-		# debug package appears after linux-image in debian/control.
-		install_linux_image_dbg debian/linux-image-dbg debian/linux-image;;
-	linux-image-*|user-mode-linux-*)
-		install_linux_image debian/linux-image ${package};;
-	linux-libc-dev)
-		install_libc_headers debian/linux-libc-dev;;
-	linux-headers-*)
-		install_kernel_headers debian/linux-headers ${package#linux-headers-};;
+		# This must be done after linex-image, that is, we expect the
+		# debug package appears after linex-image in debian/control.
+		install_linex_image_dbg debian/linex-image-dbg debian/linex-image;;
+	linex-image-*|user-mode-linex-*)
+		install_linex_image debian/linex-image ${package};;
+	linex-libc-dev)
+		install_libc_headers debian/linex-libc-dev;;
+	linex-headers-*)
+		install_kernel_headers debian/linex-headers ${package#linex-headers-};;
 	esac
 done
 
@@ -234,13 +234,13 @@ for package in ${packages_enabled}
 do
 	case ${package} in
 	*-dbg)
-		create_package ${package} debian/linux-image-dbg;;
-	linux-image-*|user-mode-linux-*)
-		create_package ${package} debian/linux-image;;
-	linux-libc-dev)
-		create_package ${package} debian/linux-libc-dev;;
-	linux-headers-*)
-		create_package ${package} debian/linux-headers;;
+		create_package ${package} debian/linex-image-dbg;;
+	linex-image-*|user-mode-linex-*)
+		create_package ${package} debian/linex-image;;
+	linex-libc-dev)
+		create_package ${package} debian/linex-libc-dev;;
+	linex-headers-*)
+		create_package ${package} debian/linex-headers;;
 	esac
 done
 

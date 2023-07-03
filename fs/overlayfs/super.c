@@ -4,20 +4,20 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <uapi/linux/magic.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/parser.h>
-#include <linux/module.h>
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/exportfs.h>
-#include <linux/file.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <uapi/linex/magic.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/xattr.h>
+#include <linex/mount.h>
+#include <linex/parser.h>
+#include <linex/module.h>
+#include <linex/statfs.h>
+#include <linex/seq_file.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/exportfs.h>
+#include <linex/file.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
 #include "overlayfs.h"
 
 MODULE_AUTHOR("Miklos Szeredi <miklos@szeredi.hu>");

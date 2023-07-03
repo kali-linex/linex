@@ -24,8 +24,8 @@
 #include <sys/resource.h>
 #include <unistd.h>
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
+#include <linex/bpf.h>
+#include <linex/errno.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

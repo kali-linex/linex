@@ -9,17 +9,17 @@
  * Adapted to new DSS2 framework: Roger Quadros <roger.quadros@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/spi/spi.h>
+#include <linex/jiffies.h>
+#include <linex/sched.h>
+#include <linex/backlight.h>
+#include <linex/fb.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
 
 #include <video/omapfb_dss.h>
 

@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/if_arp.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
 #include <net/netns/generic.h>
 #include <net/net_namespace.h>
 #include <net/pkt_sched.h>

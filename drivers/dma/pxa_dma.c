@@ -3,23 +3,23 @@
  * Copyright 2015 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/dmapool.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/of.h>
-#include <linux/wait.h>
-#include <linux/dma/pxa-dma.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/dmaengine.h>
+#include <linex/platform_device.h>
+#include <linex/device.h>
+#include <linex/platform_data/mmp_dma.h>
+#include <linex/dmapool.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/of.h>
+#include <linex/wait.h>
+#include <linex/dma/pxa-dma.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"
@@ -181,9 +181,9 @@ static bool pxad_filter_fn(struct dma_chan *chan, void *param);
  * Debug fs
  */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
 
 static int requester_chan_show(struct seq_file *s, void *p)
 {

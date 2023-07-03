@@ -8,14 +8,14 @@
  * Author: Jorge Eduardo Candelaria <jedu@slimlogic.co.uk>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps65910.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/tps65910.h>
+#include <linex/of_device.h>
 
 struct tps65910_gpio {
 	struct gpio_chip gpio_chip;

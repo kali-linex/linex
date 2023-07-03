@@ -26,7 +26,7 @@
 
 #include "hdp/hdp_6_0_0_offset.h"
 #include "hdp/hdp_6_0_0_sh_mask.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linex/kfd_ioctl.h>
 
 static void hdp_v6_0_flush_hdp(struct amdgpu_device *adev,
 				struct amdgpu_ring *ring)

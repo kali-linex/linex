@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* XDR types for nfsd. This is mainly a typing exercise. */
 
-#ifndef LINUX_NFSD_H
-#define LINUX_NFSD_H
+#ifndef LINEX_NFSD_H
+#define LINEX_NFSD_H
 
-#include <linux/vfs.h>
+#include <linex/vfs.h>
 #include "nfsd.h"
 #include "nfsfh.h"
 
@@ -174,4 +174,4 @@ bool svcxdr_encode_stat(struct xdr_stream *xdr, __be32 status);
 bool svcxdr_encode_fattr(struct svc_rqst *rqstp, struct xdr_stream *xdr,
 			 const struct svc_fh *fhp, const struct kstat *stat);
 
-#endif /* LINUX_NFSD_H */
+#endif /* LINEX_NFSD_H */

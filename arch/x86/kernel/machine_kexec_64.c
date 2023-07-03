@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of Linex booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  */
 
 #define pr_fmt(fmt)	"kexec: " fmt
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/reboot.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/vmalloc.h>
-#include <linux/efi.h>
-#include <linux/cc_platform.h>
+#include <linex/mm.h>
+#include <linex/kexec.h>
+#include <linex/string.h>
+#include <linex/gfp.h>
+#include <linex/reboot.h>
+#include <linex/numa.h>
+#include <linex/ftrace.h>
+#include <linex/io.h>
+#include <linex/suspend.h>
+#include <linex/vmalloc.h>
+#include <linex/efi.h>
+#include <linex/cc_platform.h>
 
 #include <asm/init.h>
 #include <asm/tlbflush.h>

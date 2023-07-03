@@ -11,9 +11,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
-#include <linux/preempt.h>
-#include <linux/types.h>
+#include <linex/linkage.h>
+#include <linex/preempt.h>
+#include <linex/types.h>
 
 #include <asm/virt.h>
 

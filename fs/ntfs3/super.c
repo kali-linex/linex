@@ -14,10 +14,10 @@
  * run - maps VCN to LCN         - Stored in attributes in packed form.
  * attr - attribute segment      - std/name/data etc records inside MFT.
  * mi  - MFT inode               - One MFT record(usually 1024 bytes or 4K), consists of attributes.
- * ni  - NTFS inode              - Extends linux inode. consists of one or more mft inodes.
+ * ni  - NTFS inode              - Extends linex inode. consists of one or more mft inodes.
  * index - unit inside directory - 2K, 4K, <=page size, does not depend on cluster size.
  *
- * WSL - Windows Subsystem for Linux
+ * WSL - Windows Subsystem for Linex
  * https://docs.microsoft.com/en-us/windows/wsl/file-permissions
  * It stores uid/gid/mode/dev in xattr
  *
@@ -47,18 +47,18 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/log2.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/nls.h>
-#include <linux/seq_file.h>
-#include <linux/statfs.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
+#include <linex/exportfs.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/log2.h>
+#include <linex/minmax.h>
+#include <linex/module.h>
+#include <linex/nls.h>
+#include <linex/seq_file.h>
+#include <linex/statfs.h>
 
 #include "debug.h"
 #include "ntfs.h"
@@ -1552,7 +1552,7 @@ static int __init init_ntfs_fs(void)
 	pr_info("ntfs3: Max link count %u\n", NTFS_LINK_MAX);
 
 	if (IS_ENABLED(CONFIG_NTFS3_FS_POSIX_ACL))
-		pr_info("ntfs3: Enabled Linux POSIX ACLs support\n");
+		pr_info("ntfs3: Enabled Linex POSIX ACLs support\n");
 	if (IS_ENABLED(CONFIG_NTFS3_64BIT_CLUSTER))
 		pr_notice(
 			"ntfs3: Warning: Activated 64 bits per cluster. Windows does not support this\n");
@@ -1595,7 +1595,7 @@ static void __exit exit_ntfs_fs(void)
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("ntfs3 read/write filesystem");
 #ifdef CONFIG_NTFS3_FS_POSIX_ACL
-MODULE_INFO(behaviour, "Enabled Linux POSIX ACLs support");
+MODULE_INFO(behaviour, "Enabled Linex POSIX ACLs support");
 #endif
 #ifdef CONFIG_NTFS3_64BIT_CLUSTER
 MODULE_INFO(

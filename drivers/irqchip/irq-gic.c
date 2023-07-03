@@ -17,29 +17,29 @@
  * As such, the enable set/clear, pending set/clear and active bit
  * registers are banked per-cpu for these sources.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/acpi.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqchip/arm-gic.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kstrtox.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/cpumask.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/acpi.h>
+#include <linex/irqdomain.h>
+#include <linex/interrupt.h>
+#include <linex/percpu.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqchip/arm-gic.h>
 
 #include <asm/cputype.h>
 #include <asm/irq.h>
@@ -1003,7 +1003,7 @@ void gic_migrate_target(unsigned int new_cpu_id)
 	 * Now let's migrate and clear any potential SGIs that might be
 	 * pending for us (cur_cpu_id).  Since GIC_DIST_SGI_PENDING_SET
 	 * is a banked register, we can only forward the SGI using
-	 * GIC_DIST_SOFTINT.  The original SGI source is lost but Linux
+	 * GIC_DIST_SOFTINT.  The original SGI source is lost but Linex
 	 * doesn't use that information anyway.
 	 *
 	 * For the same reason we do not adjust SGI source information

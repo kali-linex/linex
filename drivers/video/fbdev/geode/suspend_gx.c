@@ -3,10 +3,10 @@
  *   Copyright (C) 2007 Advanced Micro Devices, Inc.
  *   Copyright (C) 2008 Andres Salomon <dilinger@debian.org>
  */
-#include <linux/fb.h>
+#include <linex/fb.h>
 #include <asm/io.h>
 #include <asm/msr.h>
-#include <linux/cs5535.h>
+#include <linex/cs5535.h>
 #include <asm/delay.h>
 
 #include "gxfb.h"

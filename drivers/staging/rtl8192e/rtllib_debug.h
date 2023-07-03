@@ -7,7 +7,7 @@
 #ifndef _RTL_DEBUG_H
 #define _RTL_DEBUG_H
 
-#include <linux/bits.h>
+#include <linex/bits.h>
 
 /* Allow files to override DRV_NAME */
 #ifndef DRV_NAME

@@ -6,12 +6,12 @@
  *  Based on card-4232.c by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/initval.h>

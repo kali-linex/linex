@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/panic.c
+ *  linex/kernel/panic.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -9,32 +9,32 @@
  * This function is used through-out the kernel (including mm and fs)
  * to indicate a major problem.
  */
-#include <linux/debug_locks.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/kgdb.h>
-#include <linux/kmsg_dump.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/vt_kern.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ftrace.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kexec.h>
-#include <linux/panic_notifier.h>
-#include <linux/sched.h>
-#include <linux/string_helpers.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/bug.h>
-#include <linux/ratelimit.h>
-#include <linux/debugfs.h>
-#include <linux/sysfs.h>
-#include <linux/context_tracking.h>
+#include <linex/debug_locks.h>
+#include <linex/sched/debug.h>
+#include <linex/interrupt.h>
+#include <linex/kgdb.h>
+#include <linex/kmsg_dump.h>
+#include <linex/kallsyms.h>
+#include <linex/notifier.h>
+#include <linex/vt_kern.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/ftrace.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
+#include <linex/kexec.h>
+#include <linex/panic_notifier.h>
+#include <linex/sched.h>
+#include <linex/string_helpers.h>
+#include <linex/sysrq.h>
+#include <linex/init.h>
+#include <linex/nmi.h>
+#include <linex/console.h>
+#include <linex/bug.h>
+#include <linex/ratelimit.h>
+#include <linex/debugfs.h>
+#include <linex/sysfs.h>
+#include <linex/context_tracking.h>
 #include <trace/events/error_report.h>
 #include <asm/sections.h>
 

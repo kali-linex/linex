@@ -8,13 +8,13 @@
  * Interval tree used to store the PAT memory type reservations.
  */
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/interval_tree_generic.h>
+#include <linex/sched.h>
+#include <linex/gfp.h>
+#include <linex/pgtable.h>
 
 #include <asm/memtype.h>
 

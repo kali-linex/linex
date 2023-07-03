@@ -3,7 +3,7 @@
  * Copyright (c) 2021, Microsoft Corporation.
  *
  * Authors:
- *   Beau Belgrave <beaub@linux.microsoft.com>
+ *   Beau Belgrave <beaub@linex.microsoft.com>
  */
 
 #include <errno.h>
@@ -13,7 +13,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <linux/user_events.h>
+#include <linex/user_events.h>
 
 const char *data_file = "/sys/kernel/tracing/user_events_data";
 int enabled = 0;

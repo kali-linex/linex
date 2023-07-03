@@ -31,7 +31,7 @@ struct kvm_vcpu_sbi_extension {
 	unsigned long extid_end;
 	/**
 	 * SBI extension handler. It can be defined for a given extension or group of
-	 * extension. But it should always return linux error codes rather than SBI
+	 * extension. But it should always return linex error codes rather than SBI
 	 * specific error codes.
 	 */
 	int (*handler)(struct kvm_vcpu *vcpu, struct kvm_run *run,

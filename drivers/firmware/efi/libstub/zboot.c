@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/efi.h>
-#include <linux/pe.h>
+#include <linex/efi.h>
+#include <linex/pe.h>
 #include <asm/efi.h>
 #include <asm/unaligned.h>
 
@@ -87,7 +87,7 @@ efi_zboot_entry(efi_handle_t handle, efi_system_table_t *systab)
 	if (status != EFI_SUCCESS)
 		return status;
 
-	efi_info("Decompressing Linux Kernel...\n");
+	efi_info("Decompressing Linex Kernel...\n");
 
 	// SizeOfImage from the compressee's PE/COFF header
 	alloc_size = round_up(get_unaligned_le32(_gzdata_end - 4),

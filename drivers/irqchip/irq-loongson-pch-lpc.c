@@ -7,13 +7,13 @@
 
 #define pr_fmt(fmt) "lpc: " fmt
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/syscore_ops.h>
 
 /* Registers */
 #define LPC_INT_CTL		0x00

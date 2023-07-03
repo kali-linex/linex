@@ -7,9 +7,9 @@
 #include <asm/asm-offsets.h>
 
 #ifdef CONFIG_CPU_LITTLE_ENDIAN
-OUTPUT_FORMAT("elf32-sh-linux", "elf32-sh-linux", "elf32-sh-linux")
+OUTPUT_FORMAT("elf32-sh-linex", "elf32-sh-linex", "elf32-sh-linex")
 #else
-OUTPUT_FORMAT("elf32-shbig-linux", "elf32-shbig-linux", "elf32-shbig-linux")
+OUTPUT_FORMAT("elf32-shbig-linex", "elf32-shbig-linex", "elf32-shbig-linex")
 #endif
 OUTPUT_ARCH(sh)
 
@@ -74,7 +74,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.6 {
+	LINEX_2.6 {
 	global:
 		__kernel_vsyscall;
 		__kernel_sigreturn;

@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_crypto.c
+ *  linex/net/sunrpc/gss_krb5_crypto.c
  *
  *  Copyright (c) 2000-2008 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -37,15 +37,15 @@
 #include <crypto/algapi.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/random.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
+#include <linex/err.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/scatterlist.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/random.h>
+#include <linex/sunrpc/gss_krb5.h>
+#include <linex/sunrpc/xdr.h>
 #include <kunit/visibility.h>
 
 #include "gss_krb5_internal.h"

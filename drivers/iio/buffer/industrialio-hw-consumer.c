@@ -4,15 +4,15 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/hw-consumer.h>
-#include <linux/iio/buffer_impl.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/consumer.h>
+#include <linex/iio/hw-consumer.h>
+#include <linex/iio/buffer_impl.h>
 
 /**
  * struct iio_hw_consumer - IIO hw consumer block

@@ -53,7 +53,7 @@ config IMA_MEASURE_PCR_IDX
 
 config IMA_LSM_RULES
 	bool
-	depends on IMA && AUDIT && (SECURITY_SELINUX || SECURITY_SMACK || SECURITY_APPARMOR)
+	depends on IMA && AUDIT && (SECURITY_SELINEX || SECURITY_SMACK || SECURITY_APPARMOR)
 	default y
 	help
 	  Disabling this option will disregard LSM based policy rules.
@@ -157,7 +157,7 @@ config IMA_APPRAISE
 	  and configure EVM.
 
 	  For more information on integrity appraisal refer to:
-	  <http://linux-ima.sourceforge.net>
+	  <http://linex-ima.sourceforge.net>
 	  If unsure, say N.
 
 config IMA_ARCH_POLICY

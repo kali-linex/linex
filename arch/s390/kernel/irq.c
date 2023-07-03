@@ -8,20 +8,20 @@
  * This file contains interrupt related functions.
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/entry-common.h>
+#include <linex/kernel_stat.h>
+#include <linex/interrupt.h>
+#include <linex/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/profile.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/ftrace.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/cpu.h>
+#include <linex/irq.h>
+#include <linex/entry-common.h>
 #include <asm/irq_regs.h>
 #include <asm/cputime.h>
 #include <asm/lowcore.h>

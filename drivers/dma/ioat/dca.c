@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel I/OAT DMA Linux driver
+ * Intel I/OAT DMA Linex driver
  * Copyright(c) 2007 - 2009 Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/dca.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/dca.h>
 
 /* either a kernel change is needed, or we need something like this in kernel */
 #ifndef CONFIG_SMP

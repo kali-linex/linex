@@ -8,13 +8,13 @@
  * Paul Walmsley <pwalmsley@nvidia.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
 #include <soc/tegra/fuse.h>
 
 #include "clk.h"

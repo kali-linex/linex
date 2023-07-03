@@ -9,8 +9,8 @@
  * differences should be hidden in the spux.c,h files.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 
 #include "util.h"
 #include "spu.h"

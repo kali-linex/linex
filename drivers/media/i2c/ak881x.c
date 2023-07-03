@@ -5,12 +5,12 @@
  * Copyright (C) 2010, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
+#include <linex/module.h>
 
 #include <media/i2c/ak881x.h>
 #include <media/v4l2-common.h>

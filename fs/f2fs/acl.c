@@ -5,11 +5,11 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext2/acl.c
+ * Portions of this code from linex/fs/ext2/acl.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
-#include <linux/f2fs_fs.h>
+#include <linex/f2fs_fs.h>
 #include "f2fs.h"
 #include "xattr.h"
 #include "acl.h"

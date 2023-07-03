@@ -8,15 +8,15 @@
  * Started by Ingo Molnar <mingo@elte.hu>
  */
 
-#include <linux/elf-randomize.h>
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/random.h>
-#include <linux/compat.h>
-#include <linux/security.h>
+#include <linex/elf-randomize.h>
+#include <linex/personality.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/random.h>
+#include <linex/compat.h>
+#include <linex/security.h>
 #include <asm/elf.h>
 
 static unsigned long stack_maxrandom_size(void)

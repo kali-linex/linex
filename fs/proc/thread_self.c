@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/pid_namespace.h>
+#include <linex/cache.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/pid_namespace.h>
 #include "internal.h"
 
 /*

@@ -4,11 +4,11 @@
  * Copyright 2006-2007 Michael Ellerman, IBM Corp.
  */
 
-#include <linux/crash_dump.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
+#include <linex/crash_dump.h>
+#include <linex/device.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/msi.h>
 
 #include <asm/rtas.h>
 #include <asm/hw_irq.h>

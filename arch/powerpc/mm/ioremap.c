@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/vmalloc.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/mmzone.h>
+#include <linex/vmalloc.h>
 #include <asm/io-workarounds.h>
 
 unsigned long ioremap_bot;

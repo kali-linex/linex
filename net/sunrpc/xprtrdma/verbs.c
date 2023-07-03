@@ -49,11 +49,11 @@
  *  o buffer memory
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/svc_rdma.h>
-#include <linux/log2.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/svc_rdma.h>
+#include <linex/log2.h>
 
 #include <asm-generic/barrier.h>
 #include <asm/bitops.h>

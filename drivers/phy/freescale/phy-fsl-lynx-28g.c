@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2021-2022 NXP. */
 
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
 
 #define LYNX_28G_NUM_LANE			8
 #define LYNX_28G_NUM_PLL			2

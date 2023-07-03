@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The Linex Foundation. All rights reserved.
  *
  * Description: CoreSight Embedded Trace Buffer driver
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/circ_buf.h>
-#include <linux/mm.h>
-#include <linux/perf_event.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/pm_runtime.h>
+#include <linex/seq_file.h>
+#include <linex/coresight.h>
+#include <linex/amba/bus.h>
+#include <linex/clk.h>
+#include <linex/circ_buf.h>
+#include <linex/mm.h>
+#include <linex/perf_event.h>
 
 
 #include "coresight-priv.h"

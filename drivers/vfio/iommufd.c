@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#include <linux/vfio.h>
-#include <linux/iommufd.h>
+#include <linex/vfio.h>
+#include <linex/iommufd.h>
 
 #include "vfio.h"
 

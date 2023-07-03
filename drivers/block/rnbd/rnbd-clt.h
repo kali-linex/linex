@@ -10,11 +10,11 @@
 #ifndef RNBD_CLT_H
 #define RNBD_CLT_H
 
-#include <linux/wait.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/blk-mq.h>
-#include <linux/refcount.h>
+#include <linex/wait.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/blk-mq.h>
+#include <linex/refcount.h>
 
 #include <rtrs.h>
 #include "rnbd-proto.h"

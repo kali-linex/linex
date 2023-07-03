@@ -6,11 +6,11 @@
  * Copyright (c) 2011-2013 MiraMEMS Sensing Technology Co., Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/byteorder/generic.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/byteorder/generic.h>
 
 #define DA311_CHIP_ID			0x13
 

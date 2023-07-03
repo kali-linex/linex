@@ -19,13 +19,13 @@
 #include "msi-ec.h"
 
 #include <acpi/battery.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
 
 static const char *const SM_ECO_NAME       = "eco";
 static const char *const SM_COMFORT_NAME   = "comfort";

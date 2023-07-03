@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Data gathering module for Linux-VM Monitor Stream, Stage 1.
+ * Data gathering module for Linex-VM Monitor Stream, Stage 1.
  * Collects data related to memory management.
  *
  * Copyright IBM Corp. 2003, 2006
@@ -8,13 +8,13 @@
  * Author: Gerald Schaefer <gerald.schaefer@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/kernel_stat.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
 #include <asm/io.h>
 
 #include "appldata.h"
@@ -35,7 +35,7 @@ struct appldata_mem_data {
 	u32 sync_count_1;       /* after VM collected the record data, */
 	u32 sync_count_2;	/* sync_count_1 and sync_count_2 should be the
 				   same. If not, the record has been updated on
-				   the Linux side while VM was collecting the
+				   the Linex side while VM was collecting the
 				   (possibly corrupt) data */
 
 	u64 pgpgin;		/* data read from disk  */
@@ -158,4 +158,4 @@ module_exit(appldata_mem_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Gerald Schaefer");
-MODULE_DESCRIPTION("Linux-VM Monitor Stream, MEMORY statistics");
+MODULE_DESCRIPTION("Linex-VM Monitor Stream, MEMORY statistics");

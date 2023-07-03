@@ -11,10 +11,10 @@
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>
 #include "rtl2830.h"
-#include <linux/i2c-mux.h>
-#include <linux/math64.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
+#include <linex/i2c-mux.h>
+#include <linex/math64.h>
+#include <linex/regmap.h>
+#include <linex/bitops.h>
 
 struct rtl2830_dev {
 	struct rtl2830_platform_data *pdata;

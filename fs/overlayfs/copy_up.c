@@ -4,21 +4,21 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fileattr.h>
-#include <linux/splice.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
-#include <linux/cred.h>
-#include <linux/namei.h>
-#include <linux/fdtable.h>
-#include <linux/ratelimit.h>
-#include <linux/exportfs.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/fileattr.h>
+#include <linex/splice.h>
+#include <linex/xattr.h>
+#include <linex/security.h>
+#include <linex/uaccess.h>
+#include <linex/sched/signal.h>
+#include <linex/cred.h>
+#include <linex/namei.h>
+#include <linex/fdtable.h>
+#include <linex/ratelimit.h>
+#include <linex/exportfs.h>
 #include "overlayfs.h"
 
 #define OVL_COPY_UP_CHUNK_SIZE (1 << 20)

@@ -3,14 +3,14 @@
    (C) 1996 Peter Braam
    */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/time.h>
 
-#include <linux/coda.h>
-#include <linux/pagemap.h>
+#include <linex/coda.h>
+#include <linex/pagemap.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 
 static inline int coda_fideq(struct CodaFid *fid1, struct CodaFid *fid2)
 {

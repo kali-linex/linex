@@ -10,8 +10,8 @@
 #ifndef SCSI_TRANSPORT_FC_H
 #define SCSI_TRANSPORT_FC_H
 
-#include <linux/sched.h>
-#include <linux/bsg-lib.h>
+#include <linex/sched.h>
+#include <linex/bsg-lib.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_netlink.h>

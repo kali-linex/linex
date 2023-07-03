@@ -4,17 +4,17 @@
  * Author:     Luis Carlos Cobo <luisca@cozybit.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linex/etherdevice.h>
+#include <linex/list.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
 #include <net/mac80211.h>
 #include "wme.h"
 #include "ieee80211_i.h"
 #include "mesh.h"
-#include <linux/rhashtable.h>
+#include <linex/rhashtable.h>
 
 static void mesh_path_free_rcu(struct mesh_table *tbl, struct mesh_path *mpath);
 

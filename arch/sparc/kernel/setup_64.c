@@ -1,39 +1,39 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc64/kernel/setup.c
+ *  linex/arch/sparc64/kernel/setup.c
  *
  *  Copyright (C) 1995,1996  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1997       Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/inet.h>
-#include <linux/console.h>
-#include <linux/root_dev.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/start_kernel.h>
-#include <linux/memblock.h>
-#include <uapi/linux/mount.h>
+#include <linex/user.h>
+#include <linex/screen_info.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/seq_file.h>
+#include <linex/syscalls.h>
+#include <linex/kdev_t.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/inet.h>
+#include <linex/console.h>
+#include <linex/root_dev.h>
+#include <linex/interrupt.h>
+#include <linex/cpu.h>
+#include <linex/initrd.h>
+#include <linex/module.h>
+#include <linex/start_kernel.h>
+#include <linex/memblock.h>
+#include <uapi/linex/mount.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>

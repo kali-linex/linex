@@ -9,11 +9,11 @@
 #ifndef __DMA_SHDMA_H
 #define __DMA_SHDMA_H
 
-#include <linux/sh_dma.h>
-#include <linux/shdma-base.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
+#include <linex/sh_dma.h>
+#include <linex/shdma-base.h>
+#include <linex/dmaengine.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
 
 #define SH_DMAE_MAX_CHANNELS 20
 #define SH_DMAE_TCR_MAX 0x00FFFFFF	/* 16MB */

@@ -6,9 +6,9 @@
  * Peng Fan <peng.fan@nxp.com>
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/interconnect/fsl,imx8mp.h>
 
 #include "imx.h"

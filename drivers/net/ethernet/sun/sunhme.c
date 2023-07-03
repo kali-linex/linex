@@ -14,33 +14,33 @@
  *     argument : macaddr=0x00,0x10,0x20,0x30,0x40,0x50
  */
 
-#include <linux/bitops.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/errno.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/fcntl.h>
+#include <linex/in.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/mii.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/random.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #include <asm/byteorder.h>
 #include <asm/dma.h>
@@ -2201,7 +2201,7 @@ static void hme_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *info
 	}
 #ifdef CONFIG_SBUS
 	else {
-		const struct linux_prom_registers *regs;
+		const struct linex_prom_registers *regs;
 		struct platform_device *op = hp->happy_dev;
 		regs = of_get_property(op->dev.of_node, "regs", NULL);
 		if (regs)

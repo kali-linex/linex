@@ -3,22 +3,22 @@
 // Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com/
 // Author: Vignesh Raghavendra <vigneshr@ti.com>
 
-#include <linux/completion.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/hyperbus.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/sched/task_stack.h>
-#include <linux/types.h>
+#include <linex/completion.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mtd/cfi.h>
+#include <linex/mtd/hyperbus.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mux/consumer.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/sched/task_stack.h>
+#include <linex/types.h>
 
 #define AM654_HBMC_CALIB_COUNT 25
 

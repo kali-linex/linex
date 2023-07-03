@@ -6,9 +6,9 @@
  *
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
- *	    Paul E. McKenney <paulmck@linux.ibm.com>
+ *	    Paul E. McKenney <paulmck@linex.ibm.com>
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@linex.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  *
  * For detailed explanation of Read-Copy Update mechanism see -
@@ -17,52 +17,52 @@
 
 #define pr_fmt(fmt) "rcu: " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/panic.h>
-#include <linux/panic_notifier.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/kernel_stat.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/prefetch.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/trace_events.h>
-#include <linux/suspend.h>
-#include <linux/ftrace.h>
-#include <linux/tick.h>
-#include <linux/sysrq.h>
-#include <linux/kprobes.h>
-#include <linux/gfp.h>
-#include <linux/oom.h>
-#include <linux/smpboot.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/clock.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kasan.h>
-#include <linux/context_tracking.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/rcupdate_wait.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/nmi.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/export.h>
+#include <linex/completion.h>
+#include <linex/moduleparam.h>
+#include <linex/panic.h>
+#include <linex/panic_notifier.h>
+#include <linex/percpu.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/mutex.h>
+#include <linex/time.h>
+#include <linex/kernel_stat.h>
+#include <linex/wait.h>
+#include <linex/kthread.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/prefetch.h>
+#include <linex/delay.h>
+#include <linex/random.h>
+#include <linex/trace_events.h>
+#include <linex/suspend.h>
+#include <linex/ftrace.h>
+#include <linex/tick.h>
+#include <linex/sysrq.h>
+#include <linex/kprobes.h>
+#include <linex/gfp.h>
+#include <linex/oom.h>
+#include <linex/smpboot.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
+#include <linex/sched/isolation.h>
+#include <linex/sched/clock.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/kasan.h>
+#include <linex/context_tracking.h>
 #include "../time/tick-internal.h"
 
 #include "tree.h"

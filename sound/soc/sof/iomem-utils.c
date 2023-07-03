@@ -5,11 +5,11 @@
 //
 // Copyright(c) 2018-2022 Intel Corporation. All rights reserved.
 //
-// Author: Keyon Jie <yang.jie@linux.intel.com>
+// Author: Keyon Jie <yang.jie@linex.intel.com>
 //
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/platform_device.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/platform_device.h>
 #include <asm/unaligned.h>
 #include <sound/soc.h>
 #include <sound/sof.h>

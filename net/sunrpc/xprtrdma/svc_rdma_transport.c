@@ -42,21 +42,21 @@
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/export.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/rw.h>
 
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/debug.h>
+#include <linex/sunrpc/svc_xprt.h>
+#include <linex/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

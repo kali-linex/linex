@@ -5,17 +5,17 @@
  * Author:
  * Mimi Zohar <zohar@us.ibm.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/magic.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
-#include <linux/fsverity.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/xattr.h>
+#include <linex/magic.h>
+#include <linex/ima.h>
+#include <linex/evm.h>
+#include <linex/fsverity.h>
 #include <keys/system_keyring.h>
-#include <uapi/linux/fsverity.h>
+#include <uapi/linex/fsverity.h>
 
 #include "ima.h"
 

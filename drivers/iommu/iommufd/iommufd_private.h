@@ -4,10 +4,10 @@
 #ifndef __IOMMUFD_PRIVATE_H
 #define __IOMMUFD_PRIVATE_H
 
-#include <linux/rwsem.h>
-#include <linux/xarray.h>
-#include <linux/refcount.h>
-#include <linux/uaccess.h>
+#include <linex/rwsem.h>
+#include <linex/xarray.h>
+#include <linex/refcount.h>
+#include <linex/uaccess.h>
 
 struct iommu_domain;
 struct iommu_group;

@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
 
 #include "ftmac100.h"
 

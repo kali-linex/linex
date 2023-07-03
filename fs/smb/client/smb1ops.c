@@ -5,9 +5,9 @@
  *  Copyright (c) 2012, Jeff Layton <jlayton@redhat.com>
  */
 
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
-#include <uapi/linux/magic.h>
+#include <linex/pagemap.h>
+#include <linex/vfs.h>
+#include <uapi/linex/magic.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 #include "cifs_debug.h"
@@ -1186,7 +1186,7 @@ struct smb_version_operations smb1_operations = {
 	.get_next_mid = cifs_get_next_mid,
 	.read_data_offset = cifs_read_data_offset,
 	.read_data_length = cifs_read_data_length,
-	.map_error = map_smb_to_linux_error,
+	.map_error = map_smb_to_linex_error,
 	.find_mid = cifs_find_mid,
 	.check_message = checkSMB,
 	.dump_detail = cifs_dump_detail,

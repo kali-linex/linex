@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  *
- * Copyright (c) 2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011, The Linex Foundation. All rights reserved.
  */
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/bitops.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
+#include <linex/of.h>
+#include <linex/of_dma.h>
+#include <linex/bitops.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
 #include "mmci.h"
 
 /* Registers */

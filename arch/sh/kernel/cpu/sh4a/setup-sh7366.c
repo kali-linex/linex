@@ -4,16 +4,16 @@
  *
  *  Copyright (C) 2008 Renesas Solutions
  *
- * Based on linux/arch/sh/kernel/cpu/sh4a/setup-sh7722.c
+ * Based on linex/arch/sh/kernel/cpu/sh4a/setup-sh7722.c
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/r8a66597.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/uio_driver.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_intc.h>
+#include <linex/usb/r8a66597.h>
 #include <asm/clock.h>
 #include <asm/platform_early.h>
 

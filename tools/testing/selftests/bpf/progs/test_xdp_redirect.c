@@ -9,7 +9,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
  */
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("redirect_to_111")

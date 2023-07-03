@@ -7,29 +7,29 @@
  * Copyright 2009-2011 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/mxs-dma.h>
-#include <linux/highmem.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/spi/mxs-spi.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/dma/mxs-dma.h>
+#include <linex/highmem.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/completion.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/stmp_device.h>
+#include <linex/spi/mxs-spi.h>
 
 #define DRIVER_NAME	"mxs-mmc"
 

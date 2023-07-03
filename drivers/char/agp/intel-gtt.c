@@ -1,7 +1,7 @@
 /*
  * Intel GTT (Graphics Translation Table) routines
  *
- * Caveat: This driver implements the linux agp interface, but this is far from
+ * Caveat: This driver implements the linex agp interface, but this is far from
  * a agp driver! GTT support ended up here for purely historical reasons: The
  * old userspace intel graphics drivers needed an interface to map memory into
  * the GTT. And the drm provides a default interface for graphic devices sitting
@@ -15,13 +15,13 @@
  * /fairy-tale-mode off
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/agp_backend.h>
-#include <linux/iommu.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/pagemap.h>
+#include <linex/agp_backend.h>
+#include <linex/iommu.h>
+#include <linex/delay.h>
 #include <asm/smp.h>
 #include "agp.h"
 #include "intel-agp.h"

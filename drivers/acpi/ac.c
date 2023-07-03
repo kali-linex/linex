@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) "ACPI: AC: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/dmi.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/acpi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/dmi.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/acpi.h>
 #include <acpi/battery.h>
 
 #define ACPI_AC_CLASS			"ac_adapter"

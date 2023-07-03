@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * super.c - NTFS kernel super block handling. Part of the Linux-NTFS project.
+ * super.c - NTFS kernel super block handling. Part of the Linex-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2001,2002 Richard Russon
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>	/* For bdev_logical_block_size(). */
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/moduleparam.h>
-#include <linux/bitmap.h>
+#include <linex/stddef.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/blkdev.h>	/* For bdev_logical_block_size(). */
+#include <linex/backing-dev.h>
+#include <linex/buffer_head.h>
+#include <linex/vfs.h>
+#include <linex/moduleparam.h>
+#include <linex/bitmap.h>
 
 #include "sysctl.h"
 #include "logfile.h"
@@ -2644,7 +2644,7 @@ static int ntfs_statfs(struct dentry *dentry, struct kstatfs *sfs)
 	up_read(&vol->mftbmp_lock);
 	/*
 	 * File system id. This is extremely *nix flavour dependent and even
-	 * within Linux itself all fs do their own thing. I interpret this to
+	 * within Linex itself all fs do their own thing. I interpret this to
 	 * mean a unique id associated with the mounted fs and not the id
 	 * associated with the filesystem driver, the latter is already given
 	 * by the filesystem type in sfs->f_type. Thus we use the 64-bit

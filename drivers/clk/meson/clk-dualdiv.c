@@ -21,8 +21,8 @@
  * for each divider to set when the switching is done.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
 
 #include "clk-regmap.h"
 #include "clk-dualdiv.h"

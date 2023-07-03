@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/task_io_accounting_ops.h>
+#include <linex/export.h>
+#include <linex/task_io_accounting_ops.h>
 #include "internal.h"
 
 /*

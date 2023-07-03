@@ -3,17 +3,17 @@
  * Copyright (C) 2017 Google, Inc.
  */
 
-#ifndef _LINUX_BINDER_ALLOC_H
-#define _LINUX_BINDER_ALLOC_H
+#ifndef _LINEX_BINDER_ALLOC_H
+#define _LINEX_BINDER_ALLOC_H
 
-#include <linux/rbtree.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/rtmutex.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/list_lru.h>
-#include <uapi/linux/android/binder.h>
+#include <linex/rbtree.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/rtmutex.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/list_lru.h>
+#include <uapi/linex/android/binder.h>
 
 extern struct list_lru binder_alloc_lru;
 struct binder_transaction;
@@ -180,5 +180,5 @@ int binder_alloc_copy_from_buffer(struct binder_alloc *alloc,
 				  binder_size_t buffer_offset,
 				  size_t bytes);
 
-#endif /* _LINUX_BINDER_ALLOC_H */
+#endif /* _LINEX_BINDER_ALLOC_H */
 

@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linex/acpi.h>
+#include <linex/cdev.h>
+#include <linex/dmi.h>
+#include <linex/firmware.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of_gpio.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/time.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

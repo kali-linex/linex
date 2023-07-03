@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/kernel/fiq.c
+ *  linex/arch/arm/kernel/fiq.c
  *
  *  Copyright (C) 1998 Russell King
  *  Copyright (C) 1998, 1999 Phil Blundell
@@ -36,11 +36,11 @@
  *	 - enables FIQ.
  *  6. Goto 3
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/seq_file.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

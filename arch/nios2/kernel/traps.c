@@ -10,17 +10,17 @@
  * archive for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/ptrace.h>
 
 #include <asm/traps.h>
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 static DEFINE_SPINLOCK(die_lock);
 

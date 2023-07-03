@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of Linex booting another kernel
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <linex/mm.h>
+#include <linex/kexec.h>
+#include <linex/delay.h>
+#include <linex/reboot.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/memblock.h>
+#include <linex/of_fdt.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/kexec-internal.h>

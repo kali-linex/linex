@@ -7,8 +7,8 @@
  *	Anup Patel <apatel@ventanamicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
+#include <linex/kernel.h>
+#include <linex/kvm_host.h>
 #include <asm/hwcap.h>
 
 DEFINE_STATIC_KEY_FALSE(kvm_riscv_aia_available);

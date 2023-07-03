@@ -6,9 +6,9 @@
  *          Haicheng Li <haicheng.li@intel.com>
  */
 
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/fiemap.h>
+#include <linex/fs.h>
+#include <linex/f2fs_fs.h>
+#include <linex/fiemap.h>
 
 #include "f2fs.h"
 #include "node.h"

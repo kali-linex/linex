@@ -3,12 +3,12 @@
  *   Copyright (C) 2019 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
 
 #include "glob.h"
 #include "crypto_ctx.h"

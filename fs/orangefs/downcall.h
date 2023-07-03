@@ -6,7 +6,7 @@
  */
 
 /*
- *  Definitions of downcalls used in Linux kernel module.
+ *  Definitions of downcalls used in Linex kernel module.
  */
 
 #ifndef __DOWNCALL_H

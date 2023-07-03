@@ -2,9 +2,9 @@
 #ifndef _SPARC_PGALLOC_H
 #define _SPARC_PGALLOC_H
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/pgtable.h>
 
 #include <asm/pgtsrmmu.h>
 #include <asm/vaddrs.h>

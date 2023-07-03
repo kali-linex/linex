@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/sun3/dvma.c
+ * linex/arch/m68k/sun3/dvma.c
  *
  * Written by Sam Creasey
  *
@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/list.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/list.h>
 #include <asm/page.h>
 #include <asm/sun3mmu.h>
 #include <asm/dvma.h>

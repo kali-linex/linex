@@ -6,16 +6,16 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linex.vnet.ibm.com>
  */
 #ifndef _SMC_H
 #define _SMC_H
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include "linux/ism.h"
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/wait.h>
+#include "linex/ism.h"
 
 struct sock;
 

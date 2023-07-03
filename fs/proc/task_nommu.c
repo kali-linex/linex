@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs_struct.h>
-#include <linux/mount.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/sched/mm.h>
+#include <linex/mm.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/fs_struct.h>
+#include <linex/mount.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/sched/mm.h>
 
 #include "internal.h"
 

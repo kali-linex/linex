@@ -13,36 +13,36 @@
  * HopeRf with a similar interace - e. g. RFM69HCW, RFM12, RFM95, ...
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <linex@wolf-entwicklungen.de>
  */
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/err.h>
-#include <linux/kfifo.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/spi/spi.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/idr.h>
+#include <linex/ioctl.h>
+#include <linex/uaccess.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/cdev.h>
+#include <linex/err.h>
+#include <linex/kfifo.h>
+#include <linex/errno.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kthread.h>
+#include <linex/wait.h>
+#include <linex/spi/spi.h>
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linex/compat.h>
 #endif
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include "pi433_if.h"
 #include "rf69.h"
@@ -1430,7 +1430,7 @@ static void __exit pi433_exit(void)
 }
 module_exit(pi433_exit);
 
-MODULE_AUTHOR("Marcus Wolf, <linux@wolf-entwicklungen.de>");
+MODULE_AUTHOR("Marcus Wolf, <linex@wolf-entwicklungen.de>");
 MODULE_DESCRIPTION("Driver for Pi433");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:pi433");

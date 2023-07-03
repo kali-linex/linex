@@ -10,17 +10,17 @@
  *  based on i386 version
  *    Copyright (C) 2001 Rusty Russell.
  */
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/bug.h>
-#include <linux/memory.h>
+#include <linex/module.h>
+#include <linex/elf.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/ftrace.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/kasan.h>
+#include <linex/moduleloader.h>
+#include <linex/bug.h>
+#include <linex/memory.h>
 #include <asm/alternative.h>
 #include <asm/nospec-branch.h>
 #include <asm/facility.h>

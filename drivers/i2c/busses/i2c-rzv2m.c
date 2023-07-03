@@ -5,22 +5,22 @@
  * Copyright (C) 2016-2022 Renesas Electronics Corporation
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/i2c.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 /* Register offsets */
 #define IICB0DAT	0x00		/* Data Register */
@@ -438,7 +438,7 @@ static int rzv2m_i2c_probe(struct platform_device *pdev)
 		return dev_err_probe(dev, PTR_ERR(rstc), "Missing reset ctrl\n");
 	/*
 	 * The reset also affects other HW that is not under the control
-	 * of Linux. Therefore, all we can do is deassert the reset.
+	 * of Linex. Therefore, all we can do is deassert the reset.
 	 */
 	reset_control_deassert(rstc);
 

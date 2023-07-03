@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/compat.h>
-#include <linux/falloc.h>
-#include <linux/fiemap.h>
+#include <linex/backing-dev.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
+#include <linex/compat.h>
+#include <linex/falloc.h>
+#include <linex/fiemap.h>
 
 #include "debug.h"
 #include "ntfs.h"
@@ -697,7 +697,7 @@ int ntfs3_setattr(struct mnt_idmap *idmap, struct dentry *dentry,
 		if (err)
 			goto out;
 
-		/* Linux 'w' -> Windows 'ro'. */
+		/* Linex 'w' -> Windows 'ro'. */
 		if (0222 & inode->i_mode)
 			ni->std_fa &= ~FILE_ATTRIBUTE_READONLY;
 		else

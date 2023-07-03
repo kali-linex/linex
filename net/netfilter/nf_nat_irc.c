@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/tcp.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/tcp.h>
+#include <linex/kernel.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_irc.h>
+#include <linex/netfilter/nf_conntrack_irc.h>
 
 #define NAT_HELPER_NAME "irc"
 

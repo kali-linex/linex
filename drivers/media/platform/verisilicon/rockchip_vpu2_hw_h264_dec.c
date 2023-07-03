@@ -10,8 +10,8 @@
  *	Tomasz Figa <tfiga@chromium.org>
  */
 
-#include <linux/types.h>
-#include <linux/sort.h>
+#include <linex/types.h>
+#include <linex/sort.h>
 
 #include <media/v4l2-mem2mem.h>
 

@@ -15,21 +15,21 @@
 
 #define pr_fmt(fmt) "ACPI: thermal: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/thermal.h>
-#include <linux/acpi.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
-#include <linux/units.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/dmi.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/jiffies.h>
+#include <linex/kmod.h>
+#include <linex/reboot.h>
+#include <linex/device.h>
+#include <linex/thermal.h>
+#include <linex/acpi.h>
+#include <linex/workqueue.h>
+#include <linex/uaccess.h>
+#include <linex/units.h>
 
 #define ACPI_THERMAL_CLASS		"thermal_zone"
 #define ACPI_THERMAL_DEVICE_NAME	"Thermal Zone"
@@ -67,7 +67,7 @@ do { \
 	if (flags != ACPI_TRIPS_INIT) \
 		acpi_handle_info(tz->device->handle, \
 			"ACPI thermal trip point %s changed\n" \
-			"Please report to linux-acpi@vger.kernel.org\n", str); \
+			"Please report to linex-acpi@vger.kernel.org\n", str); \
 } while (0)
 
 static int act;

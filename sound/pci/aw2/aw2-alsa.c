@@ -7,14 +7,14 @@
  * This file is part of the Audiowerk2 ALSA driver
  *
  *****************************************************************************/
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

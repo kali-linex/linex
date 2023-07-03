@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2013 Seiji Aguchi <seiji.aguchi@hds.com>
  */
-#include <linux/jump_label.h>
-#include <linux/atomic.h>
+#include <linex/jump_label.h>
+#include <linex/atomic.h>
 
 #include <asm/trace/exceptions.h>
 

@@ -2,14 +2,14 @@
 /*
  * sm3-neon-core.S - SM3 secure hash using NEON instructions
  *
- * Linux/arm64 port of the libgcrypt SM3 implementation for AArch64
+ * Linex/arm64 port of the libgcrypt SM3 implementation for AArch64
  *
  * Copyright (C) 2021 Jussi Kivilinna <jussi.kivilinna@iki.fi>
- * Copyright (c) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (c) 2022 Tianjia Zhang <tianjia.zhang@linex.alibaba.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <linex/linkage.h>
+#include <linex/cfi_types.h>
 #include <asm/assembler.h>
 
 /* Context structure */

@@ -6,8 +6,8 @@
 
 #ifndef _QED_DCBX_H
 #define _QED_DCBX_H
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_hw.h"

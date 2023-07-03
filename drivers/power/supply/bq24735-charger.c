@@ -17,19 +17,19 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linex/devm-helpers.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/gpio/consumer.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
 
-#include <linux/power/bq24735-charger.h>
+#include <linex/power/bq24735-charger.h>
 
 /* BQ24735 available commands and their respective masks */
 #define BQ24735_CHARGE_OPT		0x12

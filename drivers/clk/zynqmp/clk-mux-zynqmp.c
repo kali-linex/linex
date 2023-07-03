@@ -5,8 +5,8 @@
  *  Copyright (C) 2016-2018 Xilinx
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/slab.h>
 #include "clk-zynqmp.h"
 
 /*

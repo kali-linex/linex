@@ -6,20 +6,20 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/time.h>
+#include <linex/ethtool.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/rcupdate.h>
+#include <linex/time.h>
 #include <net/gso.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>

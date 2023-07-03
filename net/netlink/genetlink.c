@@ -7,18 +7,18 @@
  *				Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string_helpers.h>
-#include <linux/skbuff.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
-#include <linux/rwsem.h>
-#include <linux/idr.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/string_helpers.h>
+#include <linex/skbuff.h>
+#include <linex/mutex.h>
+#include <linex/bitmap.h>
+#include <linex/rwsem.h>
+#include <linex/idr.h>
 #include <net/sock.h>
 #include <net/genetlink.h>
 

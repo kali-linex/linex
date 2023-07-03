@@ -25,8 +25,8 @@
 #ifndef _TTM_DEVICE_H_
 #define _TTM_DEVICE_H_
 
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include <drm/ttm/ttm_resource.h>
 #include <drm/ttm/ttm_pool.h>
 

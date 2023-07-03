@@ -2,7 +2,7 @@
 /*
  * Au1xxx counter0 (aka Time-Of-Year counter) RTC interface driver.
  *
- * Copyright (C) 2008 Manuel Lauss <mano@roarinelk.homelinux.net>
+ * Copyright (C) 2008 Manuel Lauss <mano@roarinelk.homelinex.net>
  */
 
 /* All current Au1xxx SoCs have 2 counters fed by an external 32.768 kHz
@@ -14,12 +14,12 @@
  * made as this would take far too long.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/rtc.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
 #include <asm/mach-au1x00/au1000.h>
 
 /* 32kHz clock enabled and detected */

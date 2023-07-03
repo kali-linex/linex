@@ -9,14 +9,14 @@
  *   Based on OSS ACI and ALSA OPTi9xx drivers
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/pnp.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>

@@ -9,29 +9,29 @@
  * Copyright (c) 2002, Trond Myklebust <trond.myklebust@fys.uio.no>
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/namei.h>
-#include <linux/fsnotify.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/utsname.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/mount.h>
+#include <linex/fs_context.h>
+#include <linex/namei.h>
+#include <linex/fsnotify.h>
+#include <linex/kernel.h>
+#include <linex/rcupdate.h>
+#include <linex/utsname.h>
 
 #include <asm/ioctls.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/seq_file.h>
+#include <linex/poll.h>
+#include <linex/wait.h>
+#include <linex/seq_file.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/nsproxy.h>
-#include <linux/notifier.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/workqueue.h>
+#include <linex/sunrpc/rpc_pipe_fs.h>
+#include <linex/sunrpc/cache.h>
+#include <linex/nsproxy.h>
+#include <linex/notifier.h>
 
 #include "netns.h"
 #include "sunrpc.h"

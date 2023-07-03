@@ -15,8 +15,8 @@
  * frames.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/bits.h>
+#include <linex/etherdevice.h>
+#include <linex/bits.h>
 
 #include "tag.h"
 

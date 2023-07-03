@@ -3,7 +3,7 @@
  * Copyright © 2008-2015 Intel Corporation
  */
 
-#include <linux/highmem.h>
+#include <linex/highmem.h>
 
 #include "display/intel_display.h"
 #include "i915_drv.h"

@@ -2,8 +2,8 @@
 /* Copyright(c) 2013 - 2018 Intel Corporation. */
 
 #include "i40e.h"
-#include <linux/ptp_classify.h>
-#include <linux/posix-clock.h>
+#include <linex/ptp_classify.h>
+#include <linex/posix-clock.h>
 
 /* The XL710 timesync is very much like Intel's 82599 design when it comes to
  * the fundamental clock design. However, the clock operations are much simpler

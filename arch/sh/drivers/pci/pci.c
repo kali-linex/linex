@@ -6,17 +6,17 @@
  * Copyright (c) 2002  M. R. Brown
  *
  * Modelled after arch/mips/pci/pci.c:
- *  Copyright (C) 2003, 04 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 04 Ralf Baechle (ralf@linex-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
 
 unsigned long PCIBIOS_MIN_IO = 0x0000;
 unsigned long PCIBIOS_MIN_MEM = 0;

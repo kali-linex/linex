@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptscsih.c
+ *  linex/drivers/message/fusion/mptscsih.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinex@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -44,17 +44,17 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/interrupt.h>
-#include <linux/reboot.h>	/* notifier code */
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/kdev_t.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>	/* for mdelay */
+#include <linex/interrupt.h>
+#include <linex/reboot.h>	/* notifier code */
+#include <linex/workqueue.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -69,7 +69,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT SCSI Host driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_LINEX_VERSION_COMMON
 #define MYNAM		"mptscsih"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -787,7 +787,7 @@ mptscsih_io_done(MPT_ADAPTER *ioc, MPT_FRAME_HDR *mf, MPT_FRAME_HDR *mr)
 			fallthrough;
 
 		case MPI_IOCSTATUS_SCSI_TASK_TERMINATED:	/* 0x0048 */
-			/* Linux handles an unsolicited DID_RESET better
+			/* Linex handles an unsolicited DID_RESET better
 			 * than an unsolicited DID_ABORT.
 			 */
 			sc->result = DID_RESET << 16;
@@ -1259,7 +1259,7 @@ mptscsih_resume(struct pci_dev *pdev)
  *	mptscsih_info - Return information about MPT adapter
  *	@SChost: Pointer to Scsi_Host structure
  *
- *	(linux scsi_host_template.info routine)
+ *	(linex scsi_host_template.info routine)
  *
  *	Returns pointer to buffer where information was written.
  */
@@ -1303,11 +1303,11 @@ int mptscsih_show_info(struct seq_file *m, struct Scsi_Host *host)
  *	mptscsih_qcmd - Primary Fusion MPT SCSI initiator IO start routine.
  *	@SCpnt: Pointer to scsi_cmnd structure
  *
- *	(linux scsi_host_template.queuecommand routine)
+ *	(linex scsi_host_template.queuecommand routine)
  *	This is the primary SCSI IO start routine.  Create a MPI SCSIIORequest
- *	from a linux scsi_cmnd request and send it to the IOC.
+ *	from a linex scsi_cmnd request and send it to the IOC.
  *
- *	Returns 0. (rtn value discarded by linux scsi mid-layer)
+ *	Returns 0. (rtn value discarded by linex scsi mid-layer)
  */
 int
 mptscsih_qcmd(struct scsi_cmnd *SCpnt)
@@ -1670,10 +1670,10 @@ mptscsih_get_tm_timeout(MPT_ADAPTER *ioc)
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /**
- *	mptscsih_abort - Abort linux scsi_cmnd routine, new_eh variant
+ *	mptscsih_abort - Abort linex scsi_cmnd routine, new_eh variant
  *	@SCpnt: Pointer to scsi_cmnd structure, IO to be aborted
  *
- *	(linux scsi_host_template.eh_abort_handler routine)
+ *	(linex scsi_host_template.eh_abort_handler routine)
  *
  *	Returns SUCCESS or FAILED.
  **/
@@ -1796,7 +1796,7 @@ mptscsih_abort(struct scsi_cmnd * SCpnt)
  *	mptscsih_dev_reset - Perform a SCSI TARGET_RESET!  new_eh variant
  *	@SCpnt: Pointer to scsi_cmnd structure, IO which reset is due to
  *
- *	(linux scsi_host_template.eh_dev_reset_handler routine)
+ *	(linex scsi_host_template.eh_dev_reset_handler routine)
  *
  *	Returns SUCCESS or FAILED.
  **/
@@ -1856,7 +1856,7 @@ mptscsih_dev_reset(struct scsi_cmnd * SCpnt)
  *	mptscsih_bus_reset - Perform a SCSI BUS_RESET!	new_eh variant
  *	@SCpnt: Pointer to scsi_cmnd structure, IO which reset is due to
  *
- *	(linux scsi_host_template.eh_bus_reset_handler routine)
+ *	(linex scsi_host_template.eh_bus_reset_handler routine)
  *
  *	Returns SUCCESS or FAILED.
  **/
@@ -1906,7 +1906,7 @@ mptscsih_bus_reset(struct scsi_cmnd * SCpnt)
  *	mptscsih_host_reset - Perform a SCSI host adapter RESET (new_eh variant)
  *	@SCpnt: Pointer to scsi_cmnd structure, IO which reset is due to
  *
- *	(linux scsi_host_template.eh_host_reset_handler routine)
+ *	(linex scsi_host_template.eh_host_reset_handler routine)
  *
  *	Returns SUCCESS or FAILED.
  */

@@ -5,9 +5,9 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
 
 #include <cluster/masklog.h>
 

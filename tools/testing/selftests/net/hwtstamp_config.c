@@ -12,9 +12,9 @@
 #include <sys/socket.h>
 #include <sys/ioctl.h>
 
-#include <linux/if.h>
-#include <linux/net_tstamp.h>
-#include <linux/sockios.h>
+#include <linex/if.h>
+#include <linex/net_tstamp.h>
+#include <linex/sockios.h>
 
 static int
 lookup_value(const char **names, int size, const char *name)

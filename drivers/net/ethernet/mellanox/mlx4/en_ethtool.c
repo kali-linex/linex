@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/in.h>
+#include <linex/kernel.h>
+#include <linex/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/mlx4/driver.h>
+#include <linex/mlx4/device.h>
+#include <linex/in.h>
 #include <net/ip.h>
-#include <linux/bitmap.h>
-#include <linux/mii.h>
+#include <linex/bitmap.h>
+#include <linex/mii.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

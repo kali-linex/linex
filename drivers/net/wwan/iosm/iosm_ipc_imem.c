@@ -3,8 +3,8 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
 
 #include "iosm_ipc_chnl_cfg.h"
 #include "iosm_ipc_devlink.h"

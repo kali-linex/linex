@@ -5,9 +5,9 @@
 // Author: Shawn Guo <shawn.guo@linaro.org>
 // Copyright 2012 Freescale Semiconductor, Inc.
 
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
 #include "pinctrl-mxs.h"
 
 enum imx23_pin_enum {

@@ -9,11 +9,11 @@
  */
 
 #include <crypto/internal/blake2s.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bug.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/bug.h>
 #include <asm/unaligned.h>
 
 static const u8 blake2s_sigma[10][16] = {

@@ -38,7 +38,7 @@
  * Reorganized FASYNC support so mouse code can share it.
  *	-- ctm@ardi.com, 9Sep95
  *
- * New TIOCLINUX variants added.
+ * New TIOCLINEX variants added.
  *	-- mj@k332.feld.cvut.cz, 19-Nov-95
  *
  * Restrict vt switching via ioctl()
@@ -58,56 +58,56 @@
  *      -- C. Scott Ananian <cananian@alumni.princeton.edu>, 14-Jan-1998
  *
  * Reduced memory usage for older ARM systems
- *      -- Russell King <rmk@arm.linux.org.uk>
+ *      -- Russell King <rmk@arm.linex.org.uk>
  *
  * Move do_SAK() into process context.  Less stack use in devfs functions.
  * alloc_tty_struct() always uses kmalloc()
  *			 -- Andrew Morton <andrewm@uow.edu.eu> 17Mar01
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/devpts_fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/console.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/kd.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/ratelimit.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/termios_internal.h>
+#include <linex/types.h>
+#include <linex/major.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/fcntl.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/interrupt.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/devpts_fs.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/console.h>
+#include <linex/timer.h>
+#include <linex/ctype.h>
+#include <linex/kd.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/ppp-ioctl.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/wait.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/serial.h>
+#include <linex/ratelimit.h>
+#include <linex/compat.h>
+#include <linex/uaccess.h>
+#include <linex/termios_internal.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
+#include <linex/kbd_kern.h>
+#include <linex/vt_kern.h>
+#include <linex/selection.h>
 
-#include <linux/kmod.h>
-#include <linux/nsproxy.h>
+#include <linex/kmod.h>
+#include <linex/nsproxy.h>
 #include "tty.h"
 
 #undef TTY_DEBUG_HANGUP
@@ -2352,7 +2352,7 @@ EXPORT_SYMBOL(tty_do_resize);
  * @arg: user buffer for result
  *
  * Copies the user idea of the window size to the kernel. Traditionally this is
- * just advisory information but for the Linux console it actually has driver
+ * just advisory information but for the Linex console it actually has driver
  * level meaning and triggers a VC resize.
  *
  * Locking:

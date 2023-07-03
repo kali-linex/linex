@@ -13,10 +13,10 @@
 #include "../util/parse-events.h"
 #include "internal/threadmap.h"
 #include "internal/cpumap.h"
-#include <linux/perf_event.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
-#include <linux/string.h>
+#include <linex/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/time64.h>
+#include <linex/string.h>
 #include <subcmd/parse-options.h>
 
 #define MMAP_FLUSH_DEFAULT 1

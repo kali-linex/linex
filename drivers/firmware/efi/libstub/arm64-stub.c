@@ -7,7 +7,7 @@
  */
 
 
-#include <linux/efi.h>
+#include <linex/efi.h>
 #include <asm/efi.h>
 #include <asm/memory.h>
 #include <asm/sections.h>
@@ -63,7 +63,7 @@ efi_status_t handle_kernel_image(unsigned long *image_addr,
 	u64 min_kimg_align = efi_get_kimg_min_align();
 
 	if (IS_ENABLED(CONFIG_RANDOMIZE_BASE)) {
-		efi_guid_t li_fixed_proto = LINUX_EFI_LOADED_IMAGE_FIXED_GUID;
+		efi_guid_t li_fixed_proto = LINEX_EFI_LOADED_IMAGE_FIXED_GUID;
 		void *p;
 
 		if (efi_nokaslr) {

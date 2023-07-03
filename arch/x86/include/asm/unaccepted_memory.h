@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_UNACCEPTED_MEMORY_H
 #define _ASM_X86_UNACCEPTED_MEMORY_H
 
-#include <linux/efi.h>
+#include <linex/efi.h>
 #include <asm/tdx.h>
 #include <asm/sev.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/resize.c
+ *  linex/fs/ext4/resize.c
  *
  * Support for resizing an ext4 filesystem while it is mounted.
  *
@@ -12,9 +12,9 @@
 
 #define EXT4FS_DEBUG
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
 
 #include "ext4_jbd2.h"
 

@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/sys_arm.c
+ *  linex/arch/arm/kernel/sys_arm.c
  *
- *  Copyright (C) People who wrote linux/arch/i386/kernel/sys_i386.c
+ *  Copyright (C) People who wrote linex/arch/i386/kernel/sys_i386.c
  *  Copyright (C) 1995, 1996 Russell King.
  *
  *  This file contains various random system calls that
- *  have a non-standard calling sequence on the Linux/arm
+ *  have a non-standard calling sequence on the Linex/arm
  *  platform.
  */
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/sem.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/stat.h>
+#include <linex/syscalls.h>
+#include <linex/mman.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/ipc.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
 #include <asm/syscalls.h>
 
 /*

@@ -5,19 +5,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/device.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/etherdevice.h>
-#include <linux/libfdt_env.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/device.h>
+#include <linex/phy.h>
+#include <linex/netdevice.h>
+#include <linex/phy_fixed.h>
+#include <linex/phylink.h>
+#include <linex/etherdevice.h>
+#include <linex/libfdt_env.h>
 
 #include "mac.h"
 #include "fman_mac.h"

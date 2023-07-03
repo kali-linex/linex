@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/extable.h>
+#include <linex/uaccess.h>
 #include <asm/asm-extable.h>
 #include <asm/branch.h>
 

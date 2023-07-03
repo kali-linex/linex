@@ -5,17 +5,17 @@
  * Copyright (C) 2013 Renesas Solutions Corp.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/can/dev.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/ethtool.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
+#include <linex/can/dev.h>
+#include <linex/clk.h>
+#include <linex/of.h>
 
 #define RCAR_CAN_DRV_NAME	"rcar_can"
 

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*x
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/clk.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/clk-provider.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
+#include <linex/clk.h>
 
 #include <dt-bindings/clock/qcom,mmcc-msm8996.h>
 

@@ -11,11 +11,11 @@
  */
 
 #include <arpa/inet.h>
-#include <linux/if_tun.h>
-#include <linux/limits.h>
-#include <linux/sysctl.h>
-#include <linux/time_types.h>
-#include <linux/net_tstamp.h>
+#include <linex/if_tun.h>
+#include <linex/limits.h>
+#include <linex/sysctl.h>
+#include <linex/time_types.h>
+#include <linex/net_tstamp.h>
 #include <net/if.h>
 #include <stdbool.h>
 #include <stdio.h>

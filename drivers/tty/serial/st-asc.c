@@ -5,23 +5,23 @@
  * Copyright (C) 2003-2013 STMicroelectronics (R&D) Limited
  */
 
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/serial_core.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/serial.h>
+#include <linex/console.h>
+#include <linex/sysrq.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/serial_core.h>
+#include <linex/clk.h>
+#include <linex/gpio/consumer.h>
 
 #define DRIVER_NAME "st-asc"
 #define ASC_SERIAL_NAME "ttyAS"

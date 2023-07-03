@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Kang Luwei <luwei.kang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linex.intel.com>
  *   Wu Hao <hao.wu@intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
@@ -15,8 +15,8 @@
  *   Mitchel, Henry <henry.mitchel@intel.com>
  */
 
-#include <linux/fpga-dfl.h>
-#include <linux/uaccess.h>
+#include <linex/fpga-dfl.h>
+#include <linex/uaccess.h>
 
 #include "dfl.h"
 #include "dfl-fme.h"

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-2-Clause
 /* Copyright (C) 2018 KVASER AB, Sweden. All rights reserved.
  * Parts of this driver are based on the following:
- *  - Kvaser linux pciefd driver (version 5.25)
- *  - PEAK linux canfd driver
+ *  - Kvaser linex pciefd driver (version 5.25)
+ *  - PEAK linex canfd driver
  */
 
-#include <linux/bitfield.h>
-#include <linux/can/dev.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <linex/bitfield.h>
+#include <linex/can/dev.h>
+#include <linex/device.h>
+#include <linex/ethtool.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/minmax.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/timer.h>
 
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("Kvaser AB <support@kvaser.com>");

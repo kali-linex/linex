@@ -75,12 +75,12 @@
  *       range 12 30
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/blkdev.h>
+#include <linex/mm.h>
+#include <linex/string.h>
 #include <crypto/hash.h>
 #include "messages.h"
 #include "ctree.h"

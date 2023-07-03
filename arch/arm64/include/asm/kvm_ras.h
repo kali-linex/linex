@@ -4,9 +4,9 @@
 #ifndef __ARM64_KVM_RAS_H__
 #define __ARM64_KVM_RAS_H__
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/errno.h>
+#include <linex/types.h>
 
 #include <asm/acpi.h>
 

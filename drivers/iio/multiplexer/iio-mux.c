@@ -7,15 +7,15 @@
  * Author: Peter Rosin <peda@axentia.se>
  */
 
-#include <linux/err.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mux/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/err.h>
+#include <linex/iio/consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/mux/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 struct mux_ext_info_cache {
 	char *data;

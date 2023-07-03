@@ -127,8 +127,8 @@
  *
  * .. [#f1] https://github.com/intel/TBD
  */
-#include <linux/device.h>
-#include <linux/miscdevice.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
 
 #define MSR_ARRAY_BIST				0x00000105
 #define MSR_COPY_SCAN_HASHES			0x000002c2

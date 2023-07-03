@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/fsl/guts.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/fsl/guts.h>
 
 #include <asm/io.h>
 #include <asm/fsl_pm.h>

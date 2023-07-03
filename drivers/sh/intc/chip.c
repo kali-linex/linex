@@ -8,9 +8,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/cpumask.h>
-#include <linux/bsearch.h>
-#include <linux/io.h>
+#include <linex/cpumask.h>
+#include <linex/bsearch.h>
+#include <linex/io.h>
 #include "internals.h"
 
 void _intc_enable(struct irq_data *data, unsigned long handle)

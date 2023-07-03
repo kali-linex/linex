@@ -43,7 +43,7 @@
 /* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA */
 /*                                                                           */
 /* Bugs/Comments/Suggestions about this driver should be mailed to:          */
-/*      ipslinux@adaptec.com        	                                     */
+/*      ipslinex@adaptec.com        	                                     */
 /*                                                                           */
 /* For system support issues, contact your local IBM Customer support.       */
 /* Directions to find IBM Customer Support for each country can be found at: */
@@ -79,7 +79,7 @@
 /*          - Add ability to flash BIOS                                      */
 /* 4.00.04  - Rename structures/constants to be prefixed with IPS_           */
 /* 4.00.05  - Remove wish_block from init routine                            */
-/*          - Use linux/spinlock.h instead of asm/spinlock.h for kernels     */
+/*          - Use linex/spinlock.h instead of asm/spinlock.h for kernels     */
 /*            2.3.18 and later                                               */
 /*          - Sync with other changes from the 2.3 kernels                   */
 /* 4.00.06  - Fix timeout with initial FFDC command                          */
@@ -164,21 +164,21 @@
 #include <asm/io.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/proc_fs.h>
+#include <linex/reboot.h>
+#include <linex/interrupt.h>
 
-#include <linux/blkdev.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
+#include <linex/blkdev.h>
+#include <linex/types.h>
+#include <linex/dma-mapping.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -190,14 +190,14 @@
 
 #include "ips.h"
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/stat.h>
+#include <linex/stat.h>
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
+#include <linex/spinlock.h>
+#include <linex/init.h>
 
-#include <linux/smp.h>
+#include <linex/smp.h>
 
 #ifdef MODULE
 static char *ips = NULL;
@@ -1032,7 +1032,7 @@ static int ips_eh_reset(struct scsi_cmnd *SC)
 /*   Send a command to the controller                                       */
 /*                                                                          */
 /* NOTE:                                                                    */
-/*    Linux obtains io_request_lock before calling this function            */
+/*    Linex obtains io_request_lock before calling this function            */
 /*                                                                          */
 /****************************************************************************/
 static int ips_queue_lck(struct scsi_cmnd *SC)
@@ -3240,7 +3240,7 @@ ips_done(ips_ha_t * ha, ips_scb_t * scb)
 /*                                                                          */
 /* Routine Description:                                                     */
 /*                                                                          */
-/*   Map Controller Error codes to Linux Error Codes                        */
+/*   Map Controller Error codes to Linex Error Codes                        */
 /*                                                                          */
 /****************************************************************************/
 static int
@@ -5621,7 +5621,7 @@ ips_write_driver_status(ips_ha_t * ha, int intr)
 	ips_get_bios_version(ha, intr);
 
 	/* change values (as needed) */
-	ha->nvram->operating_system = IPS_OS_LINUX;
+	ha->nvram->operating_system = IPS_OS_LINEX;
 	ha->nvram->adapter_type = ha->ad_type;
 	memcpy((char *) ha->nvram->driver_high, IPS_VERSION_HIGH, 4);
 	memcpy((char *) ha->nvram->driver_low, IPS_VERSION_LOW, 4);
@@ -5638,7 +5638,7 @@ ips_write_driver_status(ips_ha_t * ha, int intr)
 		return (0);
 	}
 
-	/* IF NVRAM Page 5 is OK, Use it for Slot Number Info Because Linux Doesn't Do Slots */
+	/* IF NVRAM Page 5 is OK, Use it for Slot Number Info Because Linex Doesn't Do Slots */
 	ha->slot_num = ha->nvram->adapter_slot;
 
 	return (1);

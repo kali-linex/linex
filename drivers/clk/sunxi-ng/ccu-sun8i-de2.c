@@ -3,12 +3,12 @@
  * Copyright (c) 2017 Icenowy Zheng <icenowy@aosc.io>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

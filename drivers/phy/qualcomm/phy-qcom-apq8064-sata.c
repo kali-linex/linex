@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/time.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
 
 /* PHY registers */
 #define UNIPHY_PLL_REFCLK_CFG		0x000

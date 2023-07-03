@@ -18,10 +18,10 @@
  * The value 0 is always selecting the GPIO mode, while other
  * values (start from 1) for selecting the function mode.
  */
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/device.h>
+#include <linex/regmap.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "pinctrl-meson.h"
 #include "pinctrl-meson-axg-pmx.h"

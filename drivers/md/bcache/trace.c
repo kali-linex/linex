@@ -2,8 +2,8 @@
 #include "bcache.h"
 #include "btree.h"
 
-#include <linux/blktrace_api.h>
-#include <linux/module.h>
+#include <linex/blktrace_api.h>
+#include <linex/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/bcache.h>

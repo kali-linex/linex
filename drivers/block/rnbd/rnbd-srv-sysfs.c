@@ -9,12 +9,12 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <linex/kobject.h>
+#include <linex/sysfs.h>
+#include <linex/stat.h>
+#include <linex/list.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
 
 #include "rnbd-srv.h"
 

@@ -30,11 +30,11 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
 #define ANUBIS_MIN_KEY_SIZE	16
 #define ANUBIS_MAX_KEY_SIZE	40

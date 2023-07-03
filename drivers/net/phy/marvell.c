@@ -10,33 +10,33 @@
  *
  * Copyright (c) 2013 Michael Stapelberg <michael@stapelberg.de>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/phy.h>
-#include <linux/marvell_phy.h>
-#include <linux/bitfield.h>
-#include <linux/of.h>
-#include <linux/sfp.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/hwmon.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/phy.h>
+#include <linex/marvell_phy.h>
+#include <linex/bitfield.h>
+#include <linex/of.h>
+#include <linex/sfp.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define MII_MARVELL_PHY_PAGE		22
 #define MII_MARVELL_COPPER_PAGE		0x00

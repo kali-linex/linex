@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/group_cpus.h>
-#include <linux/virtio.h>
-#include <linux/vdpa.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/uuid.h>
+#include <linex/group_cpus.h>
+#include <linex/virtio.h>
+#include <linex/vdpa.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_ring.h>
 
 #define MOD_VERSION  "0.1"
 #define MOD_AUTHOR   "Jason Wang <jasowang@redhat.com>"

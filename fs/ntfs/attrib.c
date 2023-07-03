@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * attrib.c - NTFS attribute operations.  Part of the Linux-NTFS project.
+ * attrib.c - NTFS attribute operations.  Part of the Linex-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
+#include <linex/buffer_head.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/swap.h>
+#include <linex/writeback.h>
 
 #include "attrib.h"
 #include "debug.h"

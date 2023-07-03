@@ -14,20 +14,20 @@
  * there are no boards known to use channel 1.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/pm_wakeup.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/pm_wakeup.h>
+#include <linex/regulator/consumer.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
 
 #define LRADC_CTRL		0x00
 #define LRADC_INTC		0x04
@@ -240,9 +240,9 @@ static int sun4i_lradc_load_dt_keymap(struct device *dev,
 			return -EINVAL;
 		}
 
-		error = of_property_read_u32(pp, "linux,code", &map->keycode);
+		error = of_property_read_u32(pp, "linex,code", &map->keycode);
 		if (error) {
-			dev_err(dev, "%pOFn: Inval linux,code prop\n", pp);
+			dev_err(dev, "%pOFn: Inval linex,code prop\n", pp);
 			of_node_put(pp);
 			return -EINVAL;
 		}

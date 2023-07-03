@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPV4 GSO/GRO offload support
- *	Linux INET implementation
+ *	Linex INET implementation
  *
  *	TCPv4 GSO/GRO support
  */
 
-#include <linux/indirect_call_wrapper.h>
-#include <linux/skbuff.h>
+#include <linex/indirect_call_wrapper.h>
+#include <linex/skbuff.h>
 #include <net/gro.h>
 #include <net/gso.h>
 #include <net/tcp.h>

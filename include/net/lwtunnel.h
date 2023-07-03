@@ -2,10 +2,10 @@
 #ifndef __NET_LWTUNNEL_H
 #define __NET_LWTUNNEL_H 1
 
-#include <linux/lwtunnel.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/lwtunnel.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include <net/route.h>
 
 #define LWTUNNEL_HASH_BITS   7

@@ -5,14 +5,14 @@
  *	Authors: Carsten Langgaard <carstenl@mips.com>
  *		 Maciej W. Rozycki <macro@mips.com>
  *
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linex-mips.org)
  *
  * MIPS boards specific PCI support.
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
 #include <asm/gt64120.h>
 #include <asm/mips-cps.h>

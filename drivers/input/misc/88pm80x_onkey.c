@@ -19,12 +19,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/mfd/88pm80x.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #define PM800_LONG_ONKEY_EN		(1 << 0)
 #define PM800_LONG_KEY_DELAY		(8)	/* 1 .. 16 seconds */

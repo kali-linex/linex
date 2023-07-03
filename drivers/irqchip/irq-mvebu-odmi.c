@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) "GIC-ODMI: " fmt
 
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 #define GICP_ODMIN_SET			0x40

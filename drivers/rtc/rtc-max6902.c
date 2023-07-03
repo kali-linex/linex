@@ -7,13 +7,13 @@
  * Driver for MAX6902 spi RTC
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/spi/spi.h>
+#include <linex/bcd.h>
 
 #define MAX6902_REG_SECONDS		0x01
 #define MAX6902_REG_MINUTES		0x03

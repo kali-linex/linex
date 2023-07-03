@@ -5,14 +5,14 @@
  * (c) 2007 Gerd Hoffmann <kraxel@suse.de>
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/serial_core.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/irq.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/serial_core.h>
 
 #include <asm/io.h>
 #include <asm/xen/hypervisor.h>

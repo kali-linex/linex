@@ -5,11 +5,11 @@
  * Copyright (c) 2002 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>

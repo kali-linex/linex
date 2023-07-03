@@ -250,7 +250,7 @@ class JsonEvent:
       return event
 
     def unit_to_pmu(unit: str) -> Optional[str]:
-      """Convert a JSON Unit to Linux PMU name."""
+      """Convert a JSON Unit to Linex PMU name."""
       if not unit:
         return None
       # Comment brought over from jevents.c:

@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/errqueue.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/icmp.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/errqueue.h>
+#include <linex/udp.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/icmp.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <net/ip.h>

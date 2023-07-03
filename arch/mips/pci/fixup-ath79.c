@@ -3,9 +3,9 @@
  *  Copyright (C) 2018 John Crispin <john@phrozen.org>
  */
 
-#include <linux/pci.h>
-//#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <linex/pci.h>
+//#include <linex/of_irq.h>
+#include <linex/of_pci.h>
 
 int pcibios_plat_dev_init(struct pci_dev *dev)
 {

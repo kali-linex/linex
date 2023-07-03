@@ -7,13 +7,13 @@
 #ifndef __KSZ_COMMON_H
 #define __KSZ_COMMON_H
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/phy.h>
+#include <linex/regmap.h>
 #include <net/dsa.h>
-#include <linux/irq.h>
+#include <linex/irq.h>
 
 #include "ksz_ptp.h"
 

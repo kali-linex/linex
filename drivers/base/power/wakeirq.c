@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Device wakeirq helper functions */
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
 
 #include "power.h"
 

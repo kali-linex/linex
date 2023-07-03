@@ -5,14 +5,14 @@
  * Author: Kunihiko Hayashi <hayashi.kunihiko@socionext.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/bitfield.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

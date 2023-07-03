@@ -5,17 +5,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/sys_soc.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/sys_soc.h>
 
-#include <linux/fsl/mc.h>
+#include <linex/fsl/mc.h>
 #include <soc/fsl/dpaa2-io.h>
 
 #include "qbman-portal.h"

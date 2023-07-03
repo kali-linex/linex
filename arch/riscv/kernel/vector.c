@@ -3,13 +3,13 @@
  * Copyright (C) 2023 SiFive
  * Author: Andy Chiu <andy.chiu@sifive.com>
  */
-#include <linux/export.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/prctl.h>
+#include <linex/export.h>
+#include <linex/sched/signal.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/uaccess.h>
+#include <linex/prctl.h>
 
 #include <asm/thread_info.h>
 #include <asm/processor.h>

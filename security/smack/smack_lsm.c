@@ -15,34 +15,34 @@
  *  Copyright (C) 2011 Intel Corporation.
  */
 
-#include <linux/xattr.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/stat.h>
-#include <linux/kd.h>
+#include <linex/xattr.h>
+#include <linex/pagemap.h>
+#include <linex/mount.h>
+#include <linex/stat.h>
+#include <linex/kd.h>
 #include <asm/ioctls.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/dccp.h>
-#include <linux/icmpv6.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/dccp.h>
+#include <linex/icmpv6.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
 #include <net/cipso_ipv4.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/audit.h>
-#include <linux/magic.h>
-#include <linux/dcache.h>
-#include <linux/personality.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/binfmts.h>
-#include <linux/parser.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/watch_queue.h>
-#include <linux/io_uring.h>
+#include <linex/audit.h>
+#include <linex/magic.h>
+#include <linex/dcache.h>
+#include <linex/personality.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/binfmts.h>
+#include <linex/parser.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/watch_queue.h>
+#include <linex/io_uring.h>
 #include "smack.h"
 
 #define TRANS_TRUE	"TRUE"
@@ -854,7 +854,7 @@ static int smack_sb_statfs(struct dentry *dentry)
  *
  * Returns 0 if it gets a blob, -EPERM if exec forbidden and -ENOMEM otherwise
  */
-static int smack_bprm_creds_for_exec(struct linux_binprm *bprm)
+static int smack_bprm_creds_for_exec(struct linex_binprm *bprm)
 {
 	struct inode *inode = file_inode(bprm->file);
 	struct task_smack *bsp = smack_cred(bprm->cred);
@@ -1564,11 +1564,11 @@ static void smack_inode_getsecid(struct inode *inode, u32 *secid)
  * There is no smack_file_permission hook
  *
  * Should access checks be done on each read or write?
- * UNICOS and SELinux say yes.
+ * UNICOS and SELinex say yes.
  * Trusted Solaris, Trusted Irix, and just about everyone else says no.
  *
  * I'll say no for now. Smack does not do the frequent
- * label changing that SELinux does.
+ * label changing that SELinex does.
  */
 
 /**

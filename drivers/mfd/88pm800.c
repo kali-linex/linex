@@ -20,13 +20,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/88pm80x.h>
+#include <linex/slab.h>
 
 /* Interrupt Registers */
 #define PM800_INT_STATUS1		(0x05)

@@ -4,17 +4,17 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/if_arp.h>
+#include <linex/netdevice.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/moduleparam.h>
 #include <net/dst.h>
 #include <net/neighbour.h>
 #include <net/pkt_sched.h>

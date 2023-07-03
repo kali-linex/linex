@@ -3,11 +3,11 @@
  * Universal MIDI Packet (UMP) support
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/mm.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/export.h>
+#include <linex/mm.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/ump.h>

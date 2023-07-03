@@ -5,8 +5,8 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
+#include <linex/kernel.h>
+#include <linex/limits.h>
 
 /* Simulated format definitions. */
 static struct test_format {

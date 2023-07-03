@@ -12,12 +12,12 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/drbd.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <linex/bitmap.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
+#include <linex/drbd.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
 
 #include "drbd_int.h"
 

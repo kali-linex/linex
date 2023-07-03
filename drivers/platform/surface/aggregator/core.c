@@ -10,19 +10,19 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/serdev.h>
-#include <linux/sysfs.h>
+#include <linex/acpi.h>
+#include <linex/atomic.h>
+#include <linex/completion.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/serdev.h>
+#include <linex/sysfs.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/device.h>
 
 #include "bus.h"
 #include "controller.h"

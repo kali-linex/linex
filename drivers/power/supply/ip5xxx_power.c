@@ -2,10 +2,10 @@
 //
 // Copyright (C) 2021 Samuel Holland <samuel@sholland.org>
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/power_supply.h>
+#include <linex/regmap.h>
 
 #define IP5XXX_SYS_CTL0			0x01
 #define IP5XXX_SYS_CTL0_WLED_DET_EN		BIT(4)

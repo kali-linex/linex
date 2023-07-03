@@ -11,15 +11,15 @@
  * TODO: data ready irq
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define TMP006_VOBJECT 0x00
 #define TMP006_TAMBIENT 0x01

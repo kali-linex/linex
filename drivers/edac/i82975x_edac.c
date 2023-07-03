@@ -9,11 +9,11 @@
  *   Copied from i82875p_edac.c source:
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR		"i82975x_edac"

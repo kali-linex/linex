@@ -2,19 +2,19 @@
  /* Copyright (C) 2004-2006, Advanced Micro Devices, Inc.
   */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/crypto.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/crypto.h>
+#include <linex/spinlock.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/delay.h>
 
 #include "geode-aes.h"
 

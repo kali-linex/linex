@@ -2,15 +2,15 @@
 /*
  * Copyright (c) 2010 Broadcom Corporation
  */
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/if_ether.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/if_ether.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/err.h>
+#include <linex/jiffies.h>
 #include <net/cfg80211.h>
 
 #include <brcmu_utils.h>

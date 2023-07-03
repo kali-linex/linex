@@ -3,16 +3,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2003, 04, 05 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 05 Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2007  Maciej W. Rozycki
  * Copyright (C) 2008  Thiemo Seufer
  * Copyright (C) 2012  MIPS Technologies, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/proc_fs.h>
 
 #include <asm/bugs.h>
 #include <asm/cacheops.h>

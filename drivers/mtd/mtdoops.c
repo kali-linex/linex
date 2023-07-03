@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/timekeeping.h>
-#include <linux/mtd/mtd.h>
-#include <linux/kmsg_dump.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/timekeeping.h>
+#include <linex/mtd/mtd.h>
+#include <linex/kmsg_dump.h>
 
 /* Maximum MTD partition size */
 #define MTDOOPS_MAX_MTD_SIZE (8 * 1024 * 1024)

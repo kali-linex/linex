@@ -5,10 +5,10 @@
  * Copyright (C) 2019 Intel Corporation
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/ieee80211.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/ieee80211.h>
 #include "iwl-io.h"
 #include "iwl-trans.h"
 #include "iwl-agn-hw.h"

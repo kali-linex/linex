@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dss.c
+ * linex/drivers/video/omap2/dss/dss.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,25 +11,25 @@
 
 #define DSS_SUBSYS_NAME "DSS"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gfp.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/component.h>
-#include <linux/pinctrl/consumer.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/gfp.h>
+#include <linex/sizes.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
+#include <linex/suspend.h>
+#include <linex/component.h>
+#include <linex/pinctrl/consumer.h>
 
 #include <video/omapfb_dss.h>
 

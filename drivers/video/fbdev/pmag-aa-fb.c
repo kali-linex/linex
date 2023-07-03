@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmag-aa-fb.c
+ *	linex/drivers/video/pmag-aa-fb.c
  *	Copyright 2002 Karsten Merker <merker@debian.org>
  *
  *	PMAG-AA TurboChannel framebuffer card support ... derived from
@@ -14,7 +14,7 @@
  *	Public License.  See the file COPYING in the main directory of this
  *	archive for more details.
  *
- *	2002-09-28  Karsten Merker <merker@linuxtag.org>
+ *	2002-09-28  Karsten Merker <merker@linextag.org>
  *		Version 0.01: First try to get a PMAG-AA running.
  *
  *	2003-02-24  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
@@ -23,26 +23,26 @@
  *	2003-09-21  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
  *		Hardware cursor support.
  *
- *	2016-02-21  Maciej W. Rozycki  <macro@linux-mips.org>
+ *	2016-02-21  Maciej W. Rozycki  <macro@linex-mips.org>
  *		Version 0.03: Rewritten for the new FB and TC APIs.
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/tc.h>
+#include <linex/timer.h>
 
 #include "bt455.h"
 #include "bt431.h"
 
 /* Version information */
 #define DRIVER_VERSION "0.03"
-#define DRIVER_AUTHOR "Karsten Merker <merker@linuxtag.org>"
+#define DRIVER_AUTHOR "Karsten Merker <merker@linextag.org>"
 #define DRIVER_DESCRIPTION "PMAG-AA Framebuffer Driver"
 
 /*

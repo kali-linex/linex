@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <dt-bindings/leds/rt4831-backlight.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/backlight.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
 #define RT4831_REG_BLCFG	0x02
 #define RT4831_REG_BLDIML	0x04

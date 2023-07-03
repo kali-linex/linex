@@ -45,7 +45,7 @@ createCompilerInvocation(llvm::opt::ArgStringList CFlags, StringRef& Path,
 {
 	llvm::opt::ArgStringList CCArgs {
 		"-cc1",
-		"-triple", "bpf-pc-linux",
+		"-triple", "bpf-pc-linex",
 		"-fsyntax-only",
 		"-O2",
 		"-nostdsysteminc",
@@ -135,7 +135,7 @@ getBPFObjectFromModule(llvm::Module *Module)
 {
 	using namespace llvm;
 
-	std::string TargetTriple("bpf-pc-linux");
+	std::string TargetTriple("bpf-pc-linex");
 	std::string Error;
 	const Target* Target = TargetRegistry::lookupTarget(TargetTriple, Error);
 	if (!Target) {

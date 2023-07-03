@@ -12,13 +12,13 @@
  */
 #define pr_fmt(fmt) "hw-breakpoint: " fmt
 
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/smp.h>
-#include <linux/cpu_pm.h>
-#include <linux/coresight.h>
+#include <linex/errno.h>
+#include <linex/hardirq.h>
+#include <linex/perf_event.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/smp.h>
+#include <linex/cpu_pm.h>
+#include <linex/coresight.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cputype.h>

@@ -2,8 +2,8 @@
 #ifndef _PERF_TRACE_BEAUTY_H
 #define _PERF_TRACE_BEAUTY_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
 #include <sys/types.h>
 #include <stdbool.h>
 

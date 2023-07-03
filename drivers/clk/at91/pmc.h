@@ -8,10 +8,10 @@
 #ifndef __PMC_H_
 #define __PMC_H_
 
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <linex/io.h>
+#include <linex/irqdomain.h>
+#include <linex/regmap.h>
+#include <linex/spinlock.h>
 
 #include <dt-bindings/clock/at91.h>
 

@@ -5,7 +5,7 @@
 #include <sys/eventfd.h>
 
 #define __EXPORTED_HEADERS__
-#include <linux/vfio.h>
+#include <linex/vfio.h>
 
 #include "iommufd_utils.h"
 

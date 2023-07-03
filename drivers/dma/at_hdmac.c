@@ -11,19 +11,19 @@
  */
 
 #include <dt-bindings/dma/at91.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/overflow.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/dmapool.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/overflow.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

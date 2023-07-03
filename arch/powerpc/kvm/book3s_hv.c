@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE Linex Products GmbH. All rights reserved.
  *
  * Authors:
  *    Paul Mackerras <paulus@au1.ibm.com>
@@ -15,35 +15,35 @@
  * by Alexander Graf <agraf@suse.de>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/stat.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
-#include <linux/srcu.h>
-#include <linux/miscdevice.h>
-#include <linux/debugfs.h>
-#include <linux/gfp.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/smp.h>
+#include <linex/kvm_host.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/preempt.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/stat.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/anon_inodes.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/spinlock.h>
+#include <linex/page-flags.h>
+#include <linex/srcu.h>
+#include <linex/miscdevice.h>
+#include <linex/debugfs.h>
+#include <linex/gfp.h>
+#include <linex/vmalloc.h>
+#include <linex/highmem.h>
+#include <linex/hugetlb.h>
+#include <linex/kvm_irqfd.h>
+#include <linex/irqbypass.h>
+#include <linex/module.h>
+#include <linex/compiler.h>
+#include <linex/of.h>
+#include <linex/irqdomain.h>
+#include <linex/smp.h>
 
 #include <asm/ftrace.h>
 #include <asm/reg.h>
@@ -54,7 +54,7 @@
 #include <asm/disassemble.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>

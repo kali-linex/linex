@@ -13,28 +13,28 @@
  * Hari Kanigeri <h-kanigeri2@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/clk/ti.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/remoteproc.h>
-#include <linux/mailbox_client.h>
-#include <linux/omap-iommu.h>
-#include <linux/omap-mailbox.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reset.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/clk.h>
+#include <linex/clk/ti.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of_device.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/remoteproc.h>
+#include <linex/mailbox_client.h>
+#include <linex/omap-iommu.h>
+#include <linex/omap-mailbox.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/reset.h>
 #include <clocksource/timer-ti-dm.h>
 
-#include <linux/platform_data/dmtimer-omap.h>
+#include <linex/platform_data/dmtimer-omap.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

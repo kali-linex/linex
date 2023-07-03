@@ -10,8 +10,8 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/units.h>
+#include <linex/kernel.h>
+#include <linex/units.h>
 
 #include "es58x_core.h"
 #include "es581_4.h"

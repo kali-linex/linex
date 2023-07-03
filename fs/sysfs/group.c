@@ -5,15 +5,15 @@
  * Copyright (c) 2003 Patrick Mochel
  * Copyright (c) 2003 Open Source Development Lab
  * Copyright (c) 2013 Greg Kroah-Hartman
- * Copyright (c) 2013 The Linux Foundation
+ * Copyright (c) 2013 The Linex Foundation
  */
 
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <linex/kobject.h>
+#include <linex/module.h>
+#include <linex/dcache.h>
+#include <linex/namei.h>
+#include <linex/err.h>
+#include <linex/fs.h>
 #include "sysfs.h"
 
 

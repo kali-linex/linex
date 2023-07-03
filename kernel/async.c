@@ -3,7 +3,7 @@
  * async.c: Asynchronous function calls for boot performance
  *
  * (C) Copyright 2009 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linex.intel.com>
  */
 
 
@@ -44,14 +44,14 @@ asynchronous and synchronous parts of the kernel.
 
 */
 
-#include <linux/async.h>
-#include <linux/atomic.h>
-#include <linux/ktime.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/async.h>
+#include <linex/atomic.h>
+#include <linex/ktime.h>
+#include <linex/export.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "workqueue_internal.h"
 

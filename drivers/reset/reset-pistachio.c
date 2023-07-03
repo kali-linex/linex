@@ -7,13 +7,13 @@
  * Author: Damien Horsley <Damien.Horsley@imgtec.com>
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
+#include <linex/mfd/syscon.h>
 
 #include <dt-bindings/reset/pistachio-resets.h>
 

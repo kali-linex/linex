@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,21 +33,21 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/workqueue.h>
-#include <linux/ratelimit.h>
-#include <linux/moduleparam.h>
+#include <linex/bitmap.h>
+#include <linex/memblock.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/hardirq.h>
+#include <linex/workqueue.h>
+#include <linex/ratelimit.h>
+#include <linex/moduleparam.h>
 #ifdef CONFIG_XEN_GRANT_DMA_ALLOC
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 #endif
 
 #include <xen/xen.h>

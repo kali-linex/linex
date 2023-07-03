@@ -3,18 +3,18 @@
  * ip_vs_proto_ah_esp.c:	AH/ESP IPSec load balancing support for IPVS
  *
  * Authors:	Julian Anastasov <ja@ssi.bg>, February 2002
- *		Wensong Zhang <wensong@linuxvirtualserver.org>
+ *		Wensong Zhang <wensong@linexvirtualserver.org>
  */
 
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv4.h>
 
 #include <net/ip_vs.h>
 

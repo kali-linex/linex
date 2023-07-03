@@ -35,9 +35,9 @@
  * call must not fail.
  */
 
-#include <linux/ieee80211.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/ieee80211.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

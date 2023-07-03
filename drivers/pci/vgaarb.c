@@ -14,26 +14,26 @@
 #define vgaarb_info(dev, fmt, arg...)	dev_info(dev, "vgaarb: " fmt, ##arg)
 #define vgaarb_err(dev, fmt, arg...)	dev_err(dev, "vgaarb: " fmt, ##arg)
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/screen_info.h>
-#include <linux/vt.h>
-#include <linux/console.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/sched/signal.h>
+#include <linex/wait.h>
+#include <linex/spinlock.h>
+#include <linex/poll.h>
+#include <linex/miscdevice.h>
+#include <linex/slab.h>
+#include <linex/screen_info.h>
+#include <linex/vt.h>
+#include <linex/console.h>
+#include <linex/acpi.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/vgaarb.h>
+#include <linex/vgaarb.h>
 
 static void vga_arbiter_notify_clients(void);
 /*

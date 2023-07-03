@@ -8,11 +8,11 @@
 #include <pthread.h>
 #include <sys/mman.h>
 #include <sys/wait.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linex/kernel.h>
+#include <linex/time64.h>
+#include <linex/list.h>
+#include <linex/err.h>
+#include <linex/zalloc.h>
 #include <internal/lib.h>
 #include <subcmd/parse-options.h>
 

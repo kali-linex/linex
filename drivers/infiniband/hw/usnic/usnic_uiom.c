@@ -32,14 +32,14 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/iommu.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/iommu.h>
+#include <linex/workqueue.h>
+#include <linex/list.h>
 #include <rdma/ib_verbs.h>
 
 #include "usnic_log.h"

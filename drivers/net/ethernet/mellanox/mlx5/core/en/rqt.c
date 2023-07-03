@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2021, Mellanox Technologies inc. All rights reserved. */
 
 #include "rqt.h"
-#include <linux/mlx5/transobj.h>
+#include <linex/mlx5/transobj.h>
 
 void mlx5e_rss_params_indir_init_uniform(struct mlx5e_rss_params_indir *indir,
 					 unsigned int num_channels)

@@ -10,11 +10,11 @@
 #ifndef __U_ETHER_H
 #define __U_ETHER_H
 
-#include <linux/err.h>
-#include <linux/if_ether.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/cdc.h>
-#include <linux/netdevice.h>
+#include <linex/err.h>
+#include <linex/if_ether.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/cdc.h>
+#include <linex/netdevice.h>
 
 #define QMULT_DEFAULT 5
 

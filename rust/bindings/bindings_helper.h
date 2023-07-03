@@ -6,11 +6,11 @@
  * Sorted alphabetically.
  */
 
-#include <linux/errname.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linex/errname.h>
+#include <linex/slab.h>
+#include <linex/refcount.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
 
 /* `bindgen` gets confused at certain things. */
 const gfp_t BINDINGS_GFP_KERNEL = GFP_KERNEL;

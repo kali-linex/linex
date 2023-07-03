@@ -11,16 +11,16 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/genalloc.h>
-#include <linux/dma-mapping.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/reboot.h>
+#include <linex/proc_fs.h>
+#include <linex/genalloc.h>
+#include <linex/dma-mapping.h>
 #include <asm/isc.h>
 #include <asm/crw.h>
 

@@ -5,13 +5,13 @@
  * Copyright 2016 Noralf Trønnes
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

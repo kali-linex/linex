@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-   SCSI Tape Driver for Linux version 1.1 and newer. See the accompanying
+   SCSI Tape Driver for Linex version 1.1 and newer. See the accompanying
    file Documentation/scsi/st.rst for more information.
 
    History:
@@ -20,31 +20,31 @@
 
 static const char *verstr = "20160209";
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/major.h>
-#include <linux/cdrom.h>
-#include <linux/ioctl.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <linex/compat.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/mtio.h>
+#include <linex/major.h>
+#include <linex/cdrom.h>
+#include <linex/ioctl.h>
+#include <linex/fcntl.h>
+#include <linex/spinlock.h>
+#include <linex/blkdev.h>
+#include <linex/moduleparam.h>
+#include <linex/cdev.h>
+#include <linex/idr.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/dma.h>
 #include <asm/unaligned.h>
 
@@ -4255,7 +4255,7 @@ static int st_probe(struct device *dev)
 		sdev_printk(KERN_INFO, SDp,
 			    "OnStream tapes are no longer supported;\n");
 		sdev_printk(KERN_INFO, SDp,
-			    "please mail to linux-scsi@vger.kernel.org.\n");
+			    "please mail to linex-scsi@vger.kernel.org.\n");
 		return -ENODEV;
 	}
 

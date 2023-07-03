@@ -5,13 +5,13 @@
  * Copyright (c) 2021 Flextronics International Sweden AB
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pmbus.h>
+#include <linex/slab.h>
 #include "pmbus.h"
 
 enum chips { pim4006, pim4328, pim4820 };

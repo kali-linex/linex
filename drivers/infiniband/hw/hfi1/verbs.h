@@ -6,15 +6,15 @@
 #ifndef HFI1_VERBS_H
 #define HFI1_VERBS_H
 
-#include <linux/types.h>
-#include <linux/seqlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/seqlock.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/kref.h>
+#include <linex/workqueue.h>
+#include <linex/kthread.h>
+#include <linex/completion.h>
+#include <linex/slab.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_mad.h>

@@ -2,8 +2,8 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@linex.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@linex.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  */
@@ -11,7 +11,7 @@
 #ifndef _SISLITE_H
 #define _SISLITE_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 typedef u16 ctx_hndl_t;
 typedef u32 res_hndl_t;

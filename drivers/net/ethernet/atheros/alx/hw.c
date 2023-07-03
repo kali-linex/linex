@@ -31,10 +31,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/mdio.h>
+#include <linex/etherdevice.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/mdio.h>
 #include "reg.h"
 #include "hw.h"
 

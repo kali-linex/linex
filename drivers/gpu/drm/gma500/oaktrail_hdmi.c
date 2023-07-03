@@ -24,7 +24,7 @@
  *	Li Peng <peng.li@intel.com>
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include <drm/drm.h>
 #include <drm/drm_crtc_helper.h>

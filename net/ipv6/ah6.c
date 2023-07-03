@@ -15,14 +15,14 @@
 
 #include <crypto/algapi.h>
 #include <crypto/hash.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include <net/ip.h>
 #include <net/ah.h>
-#include <linux/crypto.h>
-#include <linux/pfkeyv2.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
+#include <linex/crypto.h>
+#include <linex/pfkeyv2.h>
+#include <linex/string.h>
+#include <linex/scatterlist.h>
 #include <net/ip6_route.h>
 #include <net/icmp.h>
 #include <net/ipv6.h>

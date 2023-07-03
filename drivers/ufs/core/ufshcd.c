@@ -2,26 +2,26 @@
 /*
  * Universal Flash Storage Host controller driver Core
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, The Linex Foundation. All rights reserved.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
  *	Vinayak Holikatti <h.vinayak@samsung.com>
  */
 
-#include <linux/async.h>
-#include <linux/devfreq.h>
-#include <linux/nls.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
-#include <linux/blk-pm.h>
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched/clock.h>
+#include <linex/async.h>
+#include <linex/devfreq.h>
+#include <linex/nls.h>
+#include <linex/of.h>
+#include <linex/bitfield.h>
+#include <linex/blk-pm.h>
+#include <linex/blkdev.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
+#include <linex/sched/clock.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_dbg.h>
 #include <scsi/scsi_driver.h>

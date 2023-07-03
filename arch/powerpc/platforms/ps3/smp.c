@@ -6,8 +6,8 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <linex/kernel.h>
+#include <linex/smp.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

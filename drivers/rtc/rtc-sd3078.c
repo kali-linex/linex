@@ -4,12 +4,12 @@
  * Copyright (C) 2018 Zoro Li
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linex/bcd.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
 
 #define SD3078_REG_SC			0x00
 #define SD3078_REG_MN			0x01
@@ -217,7 +217,7 @@ static struct i2c_driver sd3078_driver = {
 		.name   = "sd3078",
 		.of_match_table = of_match_ptr(rtc_dt_match),
 	},
-	.probe      = sd3078_probe,
+	.probe_new  = sd3078_probe,
 	.id_table   = sd3078_id,
 };
 

@@ -7,28 +7,28 @@
  * Copyright © 2021-2022 Microsoft Corporation
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/dcache.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/lsm_hooks.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/path.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/landlock.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/bits.h>
+#include <linex/compiler_types.h>
+#include <linex/dcache.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/lsm_hooks.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/path.h>
+#include <linex/rcupdate.h>
+#include <linex/spinlock.h>
+#include <linex/stat.h>
+#include <linex/types.h>
+#include <linex/wait_bit.h>
+#include <linex/workqueue.h>
+#include <uapi/linex/landlock.h>
 
 #include "common.h"
 #include "cred.h"

@@ -19,8 +19,8 @@
 #include <time.h>
 #include <sys/syscall.h>
 #include <sys/types.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
+#include <linex/stat.h>
+#include <linex/fcntl.h>
 #define statx foo
 #define statx_timestamp foo_timestamp
 struct statx;

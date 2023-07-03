@@ -8,8 +8,8 @@
  * Author: Atul Garg <agarg@arasan.com>
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include "sdhci.h"
 #include "sdhci-pci.h"

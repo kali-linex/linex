@@ -5,17 +5,17 @@
  */
 
 #include <sound/core.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
+#include <linex/major.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/nospec.h>
 #include <sound/rawmidi.h>
 #include <sound/info.h>
 #include <sound/control.h>

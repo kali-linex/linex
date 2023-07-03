@@ -8,10 +8,10 @@
 #ifndef GPIOLIB_ACPI_H
 #define GPIOLIB_ACPI_H
 
-#include <linux/err.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/types.h>
 
-#include <linux/gpio/consumer.h>
+#include <linex/gpio/consumer.h>
 
 struct device;
 struct fwnode_handle;

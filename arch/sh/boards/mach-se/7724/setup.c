@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7724/setup.c
+ * linex/arch/sh/boards/se/7724/setup.c
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
@@ -13,26 +13,26 @@
 
 #include <cpu/sh7724.h>
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/smc91x.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/input/sh_keysc.h>
+#include <linex/interrupt.h>
+#include <linex/memblock.h>
+#include <linex/mfd/tmio.h>
+#include <linex/mmc/host.h>
+#include <linex/mtd/physmap.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
+#include <linex/sh_eth.h>
+#include <linex/sh_intc.h>
+#include <linex/smc91x.h>
+#include <linex/usb/r8a66597.h>
+#include <linex/videodev2.h>
+#include <linex/dma-map-ops.h>
 
 #include <mach-se/mach/se7724.h>
 #include <media/drv-intf/renesas-ceu.h>

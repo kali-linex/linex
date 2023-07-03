@@ -8,18 +8,18 @@
  * Based on the work of Josef Gajdusek <atx@atx.name>
  */
 
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linex/bitmap.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/thermal.h>
 
 #include "thermal_hwmon.h"
 

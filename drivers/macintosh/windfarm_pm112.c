@@ -6,14 +6,14 @@
  * Copyright (C) 2005 Paul Mackerras, IBM Corp. <paulus@samba.org>
  * Copyright (C) 2006 Benjamin Herrenschmidt, IBM Corp.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #include <asm/smu.h>
 

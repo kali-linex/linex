@@ -4,9 +4,9 @@
  * stmmac XGMAC support.
  */
 
-#include <linux/bitrev.h>
-#include <linux/crc32.h>
-#include <linux/iopoll.h>
+#include <linex/bitrev.h>
+#include <linex/crc32.h>
+#include <linex/iopoll.h>
 #include "stmmac.h"
 #include "stmmac_ptp.h"
 #include "dwxlgmac2.h"

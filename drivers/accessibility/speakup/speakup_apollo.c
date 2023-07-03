@@ -9,11 +9,11 @@
  * this code is specifically written as a driver for the speakup screenreview
  * package and is not a general device driver.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
-#include <linux/serial_reg.h>	/* for UART_MCR* constants */
+#include <linex/jiffies.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/kthread.h>
+#include <linex/serial_reg.h>	/* for UART_MCR* constants */
 
 #include "spk_priv.h"
 #include "speakup.h"

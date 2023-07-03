@@ -6,10 +6,10 @@
  * to control the PIN resources on SCU domain.
  */
 
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/imx/svc/rm.h>
+#include <linex/module.h>
+#include <linex/gpio/driver.h>
+#include <linex/platform_device.h>
+#include <linex/firmware/imx/svc/rm.h>
 #include <dt-bindings/firmware/imx/rsrc.h>
 
 struct scu_gpio_priv {

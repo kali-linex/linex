@@ -16,7 +16,7 @@
 	Support information and updates available at
 	http://www.scyld.com/network/pci-skeleton.html
 
-	Linux kernel updates:
+	Linex kernel updates:
 
 	Version 2.51, Nov 17, 2001 (jgarzik):
 	- Add ethtool support
@@ -66,27 +66,27 @@ static int full_duplex[MAX_UNITS] = { -1, -1, -1, -1, -1, -1, -1, -1 };
 
 
 /* Include files, designed to support most kernel versions 2.0.0 and later. */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
 
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 
 /* This driver was written to use PCI memory space, however some x86 systems

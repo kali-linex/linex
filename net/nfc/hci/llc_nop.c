@@ -5,7 +5,7 @@
  * Copyright (C) 2012  Intel Corporation. All rights reserved.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "llc.h"
 

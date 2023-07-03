@@ -3,19 +3,19 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/sched/signal.h>
-#include <linux/poll.h>
-#include <linux/pid.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_context.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/bitmap.h>
+#include <linex/sched/signal.h>
+#include <linex/poll.h>
+#include <linex/pid.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/sched/mm.h>
+#include <linex/mmu_context.h>
 #include <asm/cputable.h>
 #include <asm/current.h>
 #include <asm/copro.h>

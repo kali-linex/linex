@@ -7,15 +7,15 @@
 /* Does not work. Warning may block system in capture mode */
 /* #define USE_VAR48KRATE */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>

@@ -4,7 +4,7 @@
  * Author: Frank Mori Hess, based on code from the das16 driver.
  * Copyright (C) 2001 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -21,7 +21,7 @@
  *
  * I was _barely_ able to reach the full 1 MHz capability of this board, using
  * a hard real-time interrupt (set the TRIG_RT flag in your struct comedi_cmd
- * and use rtlinux or RTAI). The board can't do dma, so the bottleneck is
+ * and use rtlinex or RTAI). The board can't do dma, so the bottleneck is
  * pulling the data across the ISA bus. I timed the interrupt handler, and it
  * took my computer ~470 microseconds to pull 512 samples from the board. So
  * at 1 Mhz sampling rate, expect your CPU to be spending almost all of its
@@ -39,12 +39,12 @@
  * irq can be omitted, although the cmd interface will not work without it.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
-#include <linux/comedi/comedi_8254.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8255.h>
+#include <linex/comedi/comedi_8254.h>
 
 /*
  * Register map (dev->iobase)

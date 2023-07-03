@@ -10,17 +10,17 @@
  * Copyright (C) 2015 Renesas Electronics Corp.
  */
 
-#include <linux/bug.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linex/bug.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/pm.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
 
 #include "renesas-cpg-mssr.h"
 #include "rcar-cpg-lib.h"

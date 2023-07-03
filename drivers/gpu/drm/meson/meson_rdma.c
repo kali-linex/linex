@@ -4,8 +4,8 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/dma-mapping.h>
+#include <linex/bitfield.h>
+#include <linex/dma-mapping.h>
 
 #include "meson_drv.h"
 #include "meson_registers.h"

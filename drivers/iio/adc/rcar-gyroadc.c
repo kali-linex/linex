@@ -5,23 +5,23 @@
  * Copyright 2016 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/regulator/consumer.h>
+#include <linex/of_platform.h>
+#include <linex/err.h>
+#include <linex/pm_runtime.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
 
 #define DRIVER_NAME				"rcar-gyroadc"
 

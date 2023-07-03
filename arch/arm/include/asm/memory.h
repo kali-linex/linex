@@ -10,10 +10,10 @@
 #ifndef __ASM_ARM_MEMORY_H
 #define __ASM_ARM_MEMORY_H
 
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
+#include <linex/compiler.h>
+#include <linex/const.h>
+#include <linex/types.h>
+#include <linex/sizes.h>
 
 #ifdef CONFIG_NEED_MACH_MEMORY_H
 #include <mach/memory.h>

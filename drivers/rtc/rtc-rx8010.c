@@ -6,13 +6,13 @@
  * Copyright(C) General Electric Company 2015
  */
 
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linex/bcd.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
 
 #define RX8010_SEC		0x10
 #define RX8010_MIN		0x11
@@ -424,7 +424,7 @@ static struct i2c_driver rx8010_driver = {
 		.name = "rtc-rx8010",
 		.of_match_table = of_match_ptr(rx8010_of_match),
 	},
-	.probe		= rx8010_probe,
+	.probe_new	= rx8010_probe,
 	.id_table	= rx8010_id,
 };
 

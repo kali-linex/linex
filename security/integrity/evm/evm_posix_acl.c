@@ -6,8 +6,8 @@
  * Mimi Zohar <zohar@us.ibm.com>
  */
 
-#include <linux/xattr.h>
-#include <linux/evm.h>
+#include <linex/xattr.h>
+#include <linex/evm.h>
 
 int posix_xattr_acl(const char *xattr)
 {

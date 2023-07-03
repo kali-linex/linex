@@ -25,13 +25,13 @@
  *
  * Send feedback to <colpatch@us.ibm.com>
  */
-#include <linux/interrupt.h>
-#include <linux/nodemask.h>
-#include <linux/export.h>
-#include <linux/mmzone.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <linex/interrupt.h>
+#include <linex/nodemask.h>
+#include <linex/export.h>
+#include <linex/mmzone.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/irq.h>
 #include <asm/io_apic.h>
 #include <asm/cpu.h>
 

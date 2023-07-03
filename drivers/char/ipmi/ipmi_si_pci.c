@@ -7,8 +7,8 @@
 
 #define pr_fmt(fmt) "ipmi_pci: " fmt
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 #include "ipmi_si.h"
 
 static bool pci_registered;

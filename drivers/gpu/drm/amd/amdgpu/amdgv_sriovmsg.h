@@ -307,7 +307,7 @@ unsigned int amd_sriov_msg_checksum(void *obj, unsigned long obj_size, unsigned 
 				    unsigned int checksum);
 
 /* assertion at compile time */
-#ifdef __linux__
+#ifdef __linex__
 #define stringification(s)  _stringification(s)
 #define _stringification(s) #s
 

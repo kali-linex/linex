@@ -7,16 +7,16 @@
  * Author: Jisheng Zhang <jszhang@kernel.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/reset.h>
+#include <linex/sizes.h>
 
 #include "sdhci-pltfm.h"
 

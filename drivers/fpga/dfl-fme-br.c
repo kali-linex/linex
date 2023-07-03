@@ -13,8 +13,8 @@
  *   Henry Mitchel <henry.mitchel@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/fpga/fpga-bridge.h>
+#include <linex/module.h>
+#include <linex/fpga/fpga-bridge.h>
 
 #include "dfl.h"
 #include "dfl-fme-pr.h"

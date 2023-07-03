@@ -19,9 +19,9 @@
  *   Host -> LVDS|--(STDP4028)--|DP -> DP|--(STDP2690)--|DP++ -> Video output
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

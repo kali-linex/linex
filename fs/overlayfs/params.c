@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/xattr.h>
 #include "overlayfs.h"
 
 static ssize_t ovl_parse_param_split_lowerdirs(char *str)

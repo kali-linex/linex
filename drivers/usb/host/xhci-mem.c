@@ -5,15 +5,15 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the Linex EHCI driver.
  */
 
-#include <linux/usb.h>
-#include <linux/overflow.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
+#include <linex/usb.h>
+#include <linex/overflow.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/dmapool.h>
+#include <linex/dma-mapping.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

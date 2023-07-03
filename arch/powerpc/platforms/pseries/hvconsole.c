@@ -10,9 +10,9 @@
  * LPAR console support.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/errno.h>
 #include <asm/hvcall.h>
 #include <asm/hvconsole.h>
 #include <asm/plpar_wrappers.h>

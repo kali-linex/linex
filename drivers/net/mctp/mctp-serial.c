@@ -7,21 +7,21 @@
  *
  *  https://www.dmtf.org/sites/default/files/standards/documents/DSP0253_1.0.0.pdf
  *
- * This driver provides DSP0253-type MCTP-over-serial transport using a Linux
+ * This driver provides DSP0253-type MCTP-over-serial transport using a Linex
  * tty device, by setting the N_MCTP line discipline on the tty.
  *
  * Copyright (c) 2021 Code Construct
  */
 
-#include <linux/idr.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/workqueue.h>
-#include <linux/crc-ccitt.h>
+#include <linex/idr.h>
+#include <linex/if_arp.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/tty.h>
+#include <linex/workqueue.h>
+#include <linex/crc-ccitt.h>
 
-#include <linux/mctp.h>
+#include <linex/mctp.h>
 #include <net/mctp.h>
 #include <net/pkt_sched.h>
 

@@ -6,14 +6,14 @@
  * Author: Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/88pm860x.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -30,16 +30,16 @@
  * You can find the corresponding selftest in the 'alsa' selftests folder.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/init.h>
 #include <sound/pcm.h>
 #include <sound/core.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/random.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/timer.h>
+#include <linex/random.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
 
 #define DEVNAME "pcmtestd"
 #define CARD_NAME "pcm-test-card"

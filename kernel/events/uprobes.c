@@ -9,25 +9,25 @@
  * Copyright (C) 2011-2012 Red Hat, Inc., Peter Zijlstra
  */
 
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>	/* read_mapping_page */
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/export.h>
-#include <linux/rmap.h>		/* anon_vma_prepare */
-#include <linux/mmu_notifier.h>	/* set_pte_at_notify */
-#include <linux/swap.h>		/* folio_free_swap */
-#include <linux/ptrace.h>	/* user_enable_single_step */
-#include <linux/kdebug.h>	/* notifier mechanism */
-#include <linux/percpu-rwsem.h>
-#include <linux/task_work.h>
-#include <linux/shmem_fs.h>
-#include <linux/khugepaged.h>
+#include <linex/kernel.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>	/* read_mapping_page */
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/export.h>
+#include <linex/rmap.h>		/* anon_vma_prepare */
+#include <linex/mmu_notifier.h>	/* set_pte_at_notify */
+#include <linex/swap.h>		/* folio_free_swap */
+#include <linex/ptrace.h>	/* user_enable_single_step */
+#include <linex/kdebug.h>	/* notifier mechanism */
+#include <linex/percpu-rwsem.h>
+#include <linex/task_work.h>
+#include <linex/shmem_fs.h>
+#include <linex/khugepaged.h>
 
-#include <linux/uprobes.h>
+#include <linex/uprobes.h>
 
 #define UINSNS_PER_PAGE			(PAGE_SIZE/UPROBE_XOL_SLOT_BYTES)
 #define MAX_UPROBE_XOL_SLOTS		UINSNS_PER_PAGE

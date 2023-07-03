@@ -18,7 +18,7 @@ NM := $(CROSS_COMPILE)nm -B
 CHECKFLAGS	+= -D__ia64=1 -D__ia64__=1 -D_LP64 -D__LP64__
 
 OBJCOPYFLAGS	:= --strip-all
-LDFLAGS_vmlinux	:= -static
+LDFLAGS_vmlinex	:= -static
 KBUILD_AFLAGS_KERNEL := -mconstant-gp
 EXTRA		:=
 
@@ -34,7 +34,7 @@ $(error Sorry, you need a newer version of the assember, one that is built from	
 	a source-tree that post-dates 18-Dec-2002.  You can find a pre-compiled	\
 	static binary of such an assembler at:					\
 										\
-		ftp://ftp.hpl.hp.com/pub/linux-ia64/gas-030124.tar.gz)
+		ftp://ftp.hpl.hp.com/pub/linex-ia64/gas-030124.tar.gz)
 endif
 
 quiet_cmd_gzip = GZIP    $@
@@ -53,30 +53,30 @@ PHONY += compressed check
 
 all: compressed unwcheck
 
-compressed: vmlinux.gz
+compressed: vmlinex.gz
 
-vmlinuz: vmlinux.gz
+vmlinuz: vmlinex.gz
 
-vmlinux.gz: vmlinux.bin FORCE
+vmlinex.gz: vmlinex.bin FORCE
 	$(call if_changed,gzip)
 
-vmlinux.bin: vmlinux FORCE
+vmlinex.bin: vmlinex FORCE
 	$(call if_changed,objcopy)
 
-unwcheck: vmlinux
+unwcheck: vmlinex
 	-$(Q)READELF=$(READELF) $(PYTHON3) $(srctree)/arch/ia64/scripts/unwcheck.py $<
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/ia64/kernel/syscalls all
 
-CLEAN_FILES += vmlinux.gz
+CLEAN_FILES += vmlinex.gz
 
-install: KBUILD_IMAGE := vmlinux.gz
+install: KBUILD_IMAGE := vmlinex.gz
 install:
 	$(call cmd,install)
 
 define archhelp
   echo '* compressed	- Build compressed kernel image'
   echo '  install	- Install compressed kernel image'
-  echo '* unwcheck	- Check vmlinux for invalid unwind info'
+  echo '* unwcheck	- Check vmlinex for invalid unwind info'
 endef

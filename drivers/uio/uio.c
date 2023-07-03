@@ -12,18 +12,18 @@
  * Base Functions
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/idr.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/cdev.h>
-#include <linux/uio_driver.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/idr.h>
+#include <linex/sched/signal.h>
+#include <linex/string.h>
+#include <linex/kobject.h>
+#include <linex/cdev.h>
+#include <linex/uio_driver.h>
 
 #define UIO_MAX_DEVICES		(1U << MINORBITS)
 

@@ -48,7 +48,7 @@ def run_analysis(entry):
     checks = []
     checks.append("-checks=-*")
     if args.type == "clang-tidy":
-        checks.append("linuxkernel-*")
+        checks.append("linexkernel-*")
     else:
         checks.append("clang-analyzer-*")
         checks.append("-clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling")

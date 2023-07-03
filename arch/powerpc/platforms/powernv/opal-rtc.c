@@ -6,13 +6,13 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/of_platform.h>
 
 #include <asm/opal.h>
 #include <asm/firmware.h>

@@ -4,8 +4,8 @@
  * Written by Miao Xie <miaox@cn.fujitsu.com>
  */
 
-#include <linux/slab.h>
-#include <linux/iversion.h>
+#include <linex/slab.h>
+#include <linex/iversion.h>
 #include "ctree.h"
 #include "fs.h"
 #include "messages.h"

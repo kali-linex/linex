@@ -8,10 +8,10 @@
  * Date:	2016-8-24
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/of_address.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/ktime.h>
+#include <linex/of_address.h>
 
 #include "sdhci-pltfm.h"
 #include "sdhci-xenon.h"

@@ -15,7 +15,7 @@
  */
 
 	.text
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/asm-offsets.h>

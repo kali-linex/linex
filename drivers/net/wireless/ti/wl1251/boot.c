@@ -5,7 +5,7 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "reg.h"
 #include "boot.h"

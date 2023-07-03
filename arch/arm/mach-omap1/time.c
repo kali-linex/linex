@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/time.c
+ * linex/arch/arm/mach-omap1/time.c
  *
  * OMAP Timers
  *
@@ -33,17 +33,17 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/sched_clock.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/io.h>
+#include <linex/sched_clock.h>
 
 #include <asm/irq.h>
 

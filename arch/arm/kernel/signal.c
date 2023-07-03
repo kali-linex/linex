@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/signal.c
+ *  linex/arch/arm/kernel/signal.c
  *
  *  Copyright (C) 1995-2009 Russell King
  */
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/resume_user_mode.h>
-#include <linux/uprobes.h>
-#include <linux/syscalls.h>
+#include <linex/errno.h>
+#include <linex/random.h>
+#include <linex/signal.h>
+#include <linex/personality.h>
+#include <linex/uaccess.h>
+#include <linex/resume_user_mode.h>
+#include <linex/uprobes.h>
+#include <linex/syscalls.h>
 
 #include <asm/elf.h>
 #include <asm/cacheflush.h>

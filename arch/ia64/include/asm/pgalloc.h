@@ -15,10 +15,10 @@
  */
 
 
-#include <linux/compiler.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/threads.h>
+#include <linex/compiler.h>
+#include <linex/mm.h>
+#include <linex/page-flags.h>
+#include <linex/threads.h>
 
 #include <asm-generic/pgalloc.h>
 

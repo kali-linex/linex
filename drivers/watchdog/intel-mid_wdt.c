@@ -6,15 +6,15 @@
  *      - Merrifield only
  *
  *      Copyright (C) 2014 Intel Corporation. All rights reserved.
- *      Contact: David Cohen <david.a.cohen@linux.intel.com>
+ *      Contact: David Cohen <david.a.cohen@linex.intel.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/nmi.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/platform_data/intel-mid_wdt.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/nmi.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
+#include <linex/platform_data/intel-mid_wdt.h>
 
 #include <asm/intel_scu_ipc.h>
 #include <asm/intel-mid.h>
@@ -200,6 +200,6 @@ static struct platform_driver mid_wdt_driver = {
 
 module_platform_driver(mid_wdt_driver);
 
-MODULE_AUTHOR("David Cohen <david.a.cohen@linux.intel.com>");
+MODULE_AUTHOR("David Cohen <david.a.cohen@linex.intel.com>");
 MODULE_DESCRIPTION("Watchdog Driver for Intel MID platform");
 MODULE_LICENSE("GPL");

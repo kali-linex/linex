@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc/kernel/time.c
+/* linex/arch/sparc/kernel/time.c
  *
  * Copyright (C) 1995 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
@@ -15,26 +15,26 @@
  * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/profile.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/time.h>
+#include <linex/rtc/m48t59.h>
+#include <linex/timex.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/ioport.h>
+#include <linex/profile.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include <asm/mc146818rtc.h>
 #include <asm/oplib.h>

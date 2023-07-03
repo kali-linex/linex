@@ -10,8 +10,8 @@
  *          Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/iosys-map.h>
-#include <linux/export.h>
+#include <linex/iosys-map.h>
+#include <linex/export.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -5,16 +5,16 @@
  *
  *  Copyright (C) 2016 Jens Axboe <axboe@kernel.dk>
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/sbitmap.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/blkdev.h>
+#include <linex/bio.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/compiler.h>
+#include <linex/rbtree.h>
+#include <linex/sbitmap.h>
 
 #include <trace/events/block.h>
 

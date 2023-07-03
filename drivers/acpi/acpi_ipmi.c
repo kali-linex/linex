@@ -7,10 +7,10 @@
  *            Lv Zheng <lv.zheng@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/ipmi.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/ipmi.h>
+#include <linex/spinlock.h>
 
 MODULE_AUTHOR("Zhao Yakui");
 MODULE_DESCRIPTION("ACPI IPMI Opregion driver");

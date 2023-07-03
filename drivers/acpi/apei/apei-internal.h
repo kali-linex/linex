@@ -7,7 +7,7 @@
 #ifndef APEI_INTERNAL_H
 #define APEI_INTERNAL_H
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 
 struct apei_exec_context;
 

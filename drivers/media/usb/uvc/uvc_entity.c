@@ -6,9 +6,9 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/videodev2.h>
 
 #include <media/v4l2-common.h>
 

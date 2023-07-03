@@ -4,8 +4,8 @@
 #if !defined(_TRACE_RTC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RTC_H
 
-#include <linux/rtc.h>
-#include <linux/tracepoint.h>
+#include <linex/rtc.h>
+#include <linex/tracepoint.h>
 
 DECLARE_EVENT_CLASS(rtc_time_alarm_class,
 

@@ -5,24 +5,24 @@
  * Copyright 2015-2017 Socionext Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/types.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/types.h>
+#include <linex/u64_stats_sync.h>
 
 /* General Register Group */
 #define AVE_IDR			0x000	/* ID */

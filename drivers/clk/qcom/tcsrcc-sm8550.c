@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022, Qualcomm Innovation Center, Inc. All rights reserved.
  * Copyright (c) 2022, Linaro Limited
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
 #include <dt-bindings/clock/qcom,sm8550-tcsr.h>
 

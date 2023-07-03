@@ -13,8 +13,8 @@
 #include <asm/sn/klconfig.h>
 #include <asm/sn/ioc3.h>
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
 
 #include "ip27-common.h"
 

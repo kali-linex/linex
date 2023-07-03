@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) "kcsan: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/kcsan-checks.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/random.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "encoding.h"
 

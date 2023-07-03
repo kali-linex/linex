@@ -10,10 +10,10 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/blktrace_api.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linex/blktrace_api.h>
+#include <linex/jiffies.h>
+#include <linex/types.h>
+#include <linex/slab.h>
 #include <scsi/fc/fc_els.h>
 #include "zfcp_ext.h"
 #include "zfcp_fc.h"

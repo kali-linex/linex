@@ -5,10 +5,10 @@
  * Copyright (C) 2006-2018 Oracle Corporation
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vbox_err.h>
-#include <linux/vbox_utils.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vbox_err.h>
+#include <linex/vbox_utils.h>
 #include "vfsmod.h"
 
 #define SHFL_REQUEST \

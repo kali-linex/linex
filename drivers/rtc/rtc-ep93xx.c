@@ -6,11 +6,11 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/gfp.h>
 
 #define EP93XX_RTC_DATA			0x000
 #define EP93XX_RTC_MATCH		0x004

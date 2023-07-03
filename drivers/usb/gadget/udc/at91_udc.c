@@ -10,26 +10,26 @@
 #undef	VERBOSE_DEBUG
 #undef	PACKET_TRACE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/prefetch.h>
+#include <linex/clk.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/of.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_data/atmel.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/atmel-matrix.h>
 
 #include "at91_udc.h"
 
@@ -49,7 +49,7 @@
  * The VBUS sensing helps during enumeration, and allows both USB clocks
  * (and the transceiver) to stay gated off until they're necessary, saving
  * power.  During USB suspend, the 48 MHz clock is gated off in hardware;
- * it may also be gated off by software during some Linux sleep states.
+ * it may also be gated off by software during some Linex sleep states.
  */
 
 #define	DRIVER_VERSION	"3 May 2006"
@@ -95,7 +95,7 @@ static const struct {
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 
 static const char debug_filename[] = "driver/udc";
 

@@ -10,8 +10,8 @@
 #ifndef __WM_ADSP_H
 #define __WM_ADSP_H
 
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <linex/firmware/cirrus/cs_dsp.h>
+#include <linex/firmware/cirrus/wmfw.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

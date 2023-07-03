@@ -5,14 +5,14 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/bitfield.h>
+#include <linex/clk.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/reset.h>
+#include <linex/phy/phy.h>
+#include <linex/bitfield.h>
 
 #include <video/mipi_display.h>
 

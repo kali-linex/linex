@@ -14,7 +14,7 @@
 #include <asm/reg.h>
 #include <asm/cacheflush.h>
 #include <asm/switch_to.h>
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 
 /* #define DEBUG */
 

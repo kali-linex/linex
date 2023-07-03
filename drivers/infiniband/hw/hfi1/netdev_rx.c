@@ -13,8 +13,8 @@
 #include "netdev.h"
 #include "hfi.h"
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 #include <rdma/ib_verbs.h>
 
 static int hfi1_netdev_setup_ctxt(struct hfi1_netdev_rx *rx,

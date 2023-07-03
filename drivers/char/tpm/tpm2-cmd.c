@@ -3,7 +3,7 @@
  * Copyright (C) 2014, 2015 Intel Corporation
  *
  * Authors:
- * Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+ * Jarkko Sakkinen <jarkko.sakkinen@linex.intel.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *

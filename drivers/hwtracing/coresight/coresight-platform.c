@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/coresight.h>
-#include <linux/cpumask.h>
+#include <linex/acpi.h>
+#include <linex/types.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/amba/bus.h>
+#include <linex/coresight.h>
+#include <linex/cpumask.h>
 #include <asm/smp_plat.h>
 
 #include "coresight-priv.h"

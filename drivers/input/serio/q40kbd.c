@@ -7,19 +7,19 @@
  */
 
 /*
- * Q40 PS/2 keyboard controller driver for Linux/m68k
+ * Q40 PS/2 keyboard controller driver for Linex/m68k
  */
 
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/serio.h>
+#include <linex/interrupt.h>
+#include <linex/err.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/q40_master.h>
 #include <asm/irq.h>
 #include <asm/q40ints.h>

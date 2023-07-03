@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include "hardware.h"
 #include "common.h"

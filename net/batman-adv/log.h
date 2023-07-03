@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/printk.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/printk.h>
 
 #ifdef CONFIG_BATMAN_ADV_DEBUG
 

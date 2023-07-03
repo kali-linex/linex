@@ -41,22 +41,22 @@
 #ifndef _PM8001_SAS_H_
 #define _PM8001_SAS_H_
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/types.h>
+#include <linex/ctype.h>
+#include <linex/dma-mapping.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
 #include <scsi/libsas.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/sas_ata.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
+#include <linex/atomic.h>
+#include <linex/blk-mq.h>
+#include <linex/blk-mq-pci.h>
 #include "pm8001_defs.h"
 
 #define DRV_NAME		"pm80xx"

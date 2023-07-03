@@ -3,10 +3,10 @@
  * Copyright (c) 2012-2020 Synaptics Incorporated
  */
 
-#include <linux/kernel.h>
-#include <linux/rmi.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/rmi.h>
+#include <linex/input.h>
+#include <linex/slab.h>
 #include "rmi_driver.h"
 
 #define RMI_F3A_MAX_GPIO_COUNT		128

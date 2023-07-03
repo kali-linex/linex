@@ -5,30 +5,30 @@
  *
  * Copyright (C) 2004-2007 Cavium Networks
  * Copyright (C) 2008, 2009 Wind River Systems
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linex-mips.org>
  */
-#include <linux/compiler.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/serial.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/string.h>	/* for memset */
-#include <linux/tty.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/kexec.h>
+#include <linex/compiler.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/memblock.h>
+#include <linex/serial.h>
+#include <linex/smp.h>
+#include <linex/types.h>
+#include <linex/string.h>	/* for memset */
+#include <linex/tty.h>
+#include <linex/time.h>
+#include <linex/platform_device.h>
+#include <linex/serial_core.h>
+#include <linex/serial_8250.h>
+#include <linex/of_fdt.h>
+#include <linex/libfdt.h>
+#include <linex/kexec.h>
 
 #include <asm/processor.h>
 #include <asm/reboot.h>
@@ -311,7 +311,7 @@ EXPORT_SYMBOL(octeon_is_simulation);
 
 /**
  * octeon_is_pci_host - Return true if Octeon is in PCI Host mode. This means
- * Linux can control the PCI bus.
+ * Linex can control the PCI bus.
  *
  * Return: Non-zero if Octeon is in host mode.
  */
@@ -382,7 +382,7 @@ static int octeon_get_boot_uart(void)
 }
 
 /**
- * octeon_get_boot_coremask - Get the coremask Linux was booted on.
+ * octeon_get_boot_coremask - Get the coremask Linex was booted on.
  *
  * Return: Core mask
  */
@@ -832,9 +832,9 @@ void __init prom_init(void)
 	octeon_uart = octeon_get_boot_uart();
 
 #ifdef CONFIG_SMP
-	octeon_write_lcd("LinuxSMP");
+	octeon_write_lcd("LinexSMP");
 #else
-	octeon_write_lcd("Linux");
+	octeon_write_lcd("Linex");
 #endif
 
 	octeon_setup_delays();

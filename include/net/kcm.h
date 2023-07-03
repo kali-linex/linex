@@ -8,10 +8,10 @@
 #ifndef __NET_KCM_H_
 #define __NET_KCM_H_
 
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/strparser.h>
-#include <uapi/linux/kcm.h>
+#include <uapi/linex/kcm.h>
 
 extern unsigned int kcm_net_id;
 

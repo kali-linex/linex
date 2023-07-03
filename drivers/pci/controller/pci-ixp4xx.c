@@ -6,7 +6,7 @@
  *
  * Based on the IXP4xx arch/arm/mach-ixp4xx/common-pci.c driver
  * Copyright (C) 2002 Intel Corporation
- * Copyright (C) 2003 Greg Ungerer <gerg@linux-m68k.org>
+ * Copyright (C) 2003 Greg Ungerer <gerg@linex-m68k.org>
  * Copyright (C) 2003-2004 MontaVista Software, Inc.
  * Copyright (C) 2005 Deepak Saxena <dsaxena@plexity.net>
  * Copyright (C) 2005 Alessandro Zummo <a.zummo@towertech.it>
@@ -16,16 +16,16 @@
  * - DMA support
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bits.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/bits.h>
 #include "../pci.h"
 
 /* Register offsets */

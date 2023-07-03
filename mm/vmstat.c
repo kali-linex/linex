@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/vmstat.c
+ *  linex/mm/vmstat.c
  *
  *  Manages VM statistics
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -10,25 +10,25 @@
  *		Christoph Lameter <christoph@lameter.com>
  *  Copyright (C) 2008-2014 Christoph Lameter
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/vmstat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/page_ext.h>
-#include <linux/page_owner.h>
-#include <linux/sched/isolation.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/vmstat.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/sched.h>
+#include <linex/math64.h>
+#include <linex/writeback.h>
+#include <linex/compaction.h>
+#include <linex/mm_inline.h>
+#include <linex/page_ext.h>
+#include <linex/page_owner.h>
+#include <linex/sched/isolation.h>
 
 #include "internal.h"
 

@@ -3,13 +3,13 @@
  * Copyright (C) 2020 Theobroma Systems Design und Consulting GmbH
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/media-bus-format.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regulator/consumer.h>
 
 #include <video/display_timing.h>
 #include <video/mipi_display.h>

@@ -20,14 +20,14 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
-#include <linux/ctype.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/cacheinfo.h>
+#include <linex/ctype.h>
+#include <linex/interrupt.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/module.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
 
 #include "arm_cspmu.h"
 #include "nvidia_cspmu.h"

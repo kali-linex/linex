@@ -6,8 +6,8 @@
 #ifndef __INTEL_VBLANK_H__
 #define __INTEL_VBLANK_H__
 
-#include <linux/ktime.h>
-#include <linux/types.h>
+#include <linex/ktime.h>
+#include <linex/types.h>
 
 struct drm_crtc;
 struct intel_crtc;

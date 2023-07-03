@@ -10,11 +10,11 @@
 #include "dm-space-map-metadata.h"
 #include "dm-persistent-data-internal.h"
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/device-mapper.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/hash.h>
+#include <linex/slab.h>
+#include <linex/device-mapper.h>
 
 #define DM_MSG_PREFIX "transaction manager"
 

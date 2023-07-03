@@ -5,16 +5,16 @@
  * Copyright (C) 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/nfs_fs.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/uio.h>
+#include <linex/net.h>
+#include <linex/in.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/nfs_fs.h>
 #include "internal.h"
 
 #define NFSDBG_FACILITY	NFSDBG_MOUNT

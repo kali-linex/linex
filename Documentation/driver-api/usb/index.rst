@@ -1,5 +1,5 @@
 =============
-Linux USB API
+Linex USB API
 =============
 
 .. toctree::

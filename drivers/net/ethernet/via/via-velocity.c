@@ -2,10 +2,10 @@
 /*
  * This code is derived from the VIA reference driver (copyright message
  * below) provided to Red Hat by VIA Networking Technologies, Inc. for
- * addition to the Linux kernel.
+ * addition to the Linex kernel.
  *
  * The code has been merged into one source file, cleaned up to follow
- * Linux coding style,  ported to the Linux 2.6 kernel tree and cleaned
+ * Linex coding style,  ported to the Linex 2.6 kernel tree and cleaned
  * for 64bit hardware platforms.
  *
  * TODO
@@ -17,7 +17,7 @@
  *
  * This source has not been verified for use in safety critical systems.
  *
- * Please direct queries about the revamped driver to the linux-kernel
+ * Please direct queries about the revamped driver to the linex-kernel
  * list not VIA.
  *
  * Original code:
@@ -34,45 +34,45 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/io.h>
-#include <linux/if.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/inetdevice.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/crc-ccitt.h>
-#include <linux/crc32.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/dma-mapping.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/string.h>
+#include <linex/wait.h>
+#include <linex/io.h>
+#include <linex/if.h>
+#include <linex/uaccess.h>
+#include <linex/proc_fs.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/inetdevice.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/in.h>
+#include <linex/if_arp.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/crc-ccitt.h>
+#include <linex/crc32.h>
 
 #include "via-velocity.h"
 
@@ -2478,7 +2478,7 @@ static struct net_device_stats *velocity_get_stats(struct net_device *dev)
 	dev->stats.rx_errors = vptr->mib_counter[HW_MIB_ifRxErrorPkts];
 	dev->stats.rx_length_errors = vptr->mib_counter[HW_MIB_ifInRangeLengthErrors];
 
-//  unsigned long   rx_dropped;     /* no space in linux buffers    */
+//  unsigned long   rx_dropped;     /* no space in linex buffers    */
 	dev->stats.collisions = vptr->mib_counter[HW_MIB_ifTxEtherCollisions];
 	/* detailed rx_errors: */
 //  unsigned long   rx_length_errors;

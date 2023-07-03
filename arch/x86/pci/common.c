@@ -5,13 +5,13 @@
  *	(c) 1999--2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <linex/sched.h>
+#include <linex/pci.h>
+#include <linex/pci-acpi.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
 
 #include <asm/acpi.h>
 #include <asm/segment.h>

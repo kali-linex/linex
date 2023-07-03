@@ -5,17 +5,17 @@
  * Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
  * Copyright (c) 2023, Linaro Limited
  */
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include <asm/unaligned.h>
 

@@ -3,10 +3,10 @@
 #define __ASM_POWERPC_SYSCALLS_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/compat.h>
+#include <linex/compiler.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
+#include <linex/compat.h>
 
 #include <asm/syscall.h>
 #ifdef CONFIG_PPC64
@@ -27,7 +27,7 @@ struct rtas_args;
  * long long munging:
  * The 32 bit ABI passes long longs in an odd even register pair.
  * High and low parts are swapped depending on endian mode,
- * so define a macro (similar to mips linux32) to handle that.
+ * so define a macro (similar to mips linex32) to handle that.
  */
 #ifdef __LITTLE_ENDIAN__
 #define merge_64(low, high) (((u64)high << 32) | low)

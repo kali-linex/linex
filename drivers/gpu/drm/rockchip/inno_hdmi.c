@@ -5,15 +5,15 @@
  *    Yakir Yang <ykk@rock-chips.com>
  */
 
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hdmi.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
+#include <linex/irq.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/hdmi.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

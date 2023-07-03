@@ -5,7 +5,7 @@
 #include "../string.h"
 #include "efi.h"
 
-#include <linux/numa.h>
+#include <linex/numa.h>
 
 /*
  * Longest parameter of 'acpi=' is 'copy_dsdt', plus an extra '\0'

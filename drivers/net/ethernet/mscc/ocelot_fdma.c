@@ -7,13 +7,13 @@
  * Page recycling code is mostly taken from gianfar driver.
  */
 
-#include <linux/align.h>
-#include <linux/bitops.h>
-#include <linux/dmapool.h>
-#include <linux/dsa/ocelot.h>
-#include <linux/netdevice.h>
-#include <linux/of_platform.h>
-#include <linux/skbuff.h>
+#include <linex/align.h>
+#include <linex/bitops.h>
+#include <linex/dmapool.h>
+#include <linex/dsa/ocelot.h>
+#include <linex/netdevice.h>
+#include <linex/of_platform.h>
+#include <linex/skbuff.h>
 
 #include "ocelot_fdma.h"
 #include "ocelot_qs.h"

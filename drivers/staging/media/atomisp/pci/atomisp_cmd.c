@@ -17,15 +17,15 @@
  *
  *
  */
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/pm_runtime.h>
-#include <linux/timer.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/kfifo.h>
+#include <linex/pm_runtime.h>
+#include <linex/timer.h>
 
 #include <asm/iosf_mbi.h>
 

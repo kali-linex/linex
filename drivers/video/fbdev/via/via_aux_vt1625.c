@@ -6,7 +6,7 @@
  * driver for VIA VT1625(M) HDTV Encoder
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include "via_aux.h"
 
 

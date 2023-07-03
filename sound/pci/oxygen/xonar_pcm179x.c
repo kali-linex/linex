@@ -167,9 +167,9 @@
  *   GPO 1 -> route mic-in from input jack (0) or front panel header (1)
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
 #include <sound/ac97_codec.h>
 #include <sound/control.h>
 #include <sound/core.h>

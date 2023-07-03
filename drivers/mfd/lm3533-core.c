@@ -7,19 +7,19 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/mfd/core.h>
+#include <linex/regmap.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
-#include <linux/mfd/lm3533.h>
+#include <linex/mfd/lm3533.h>
 
 
 #define LM3533_BOOST_OVP_MASK		0x06

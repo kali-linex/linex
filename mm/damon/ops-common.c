@@ -5,10 +5,10 @@
  * Author: SeongJae Park <sj@kernel.org>
  */
 
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
+#include <linex/mmu_notifier.h>
+#include <linex/page_idle.h>
+#include <linex/pagemap.h>
+#include <linex/rmap.h>
 
 #include "ops-common.h"
 

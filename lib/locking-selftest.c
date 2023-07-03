@@ -11,20 +11,20 @@
  *
  *  Copyright (C) 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/ww_mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/delay.h>
-#include <linux/lockdep.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/irqflags.h>
-#include <linux/rtmutex.h>
-#include <linux/local_lock.h>
+#include <linex/rwsem.h>
+#include <linex/mutex.h>
+#include <linex/ww_mutex.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/delay.h>
+#include <linex/lockdep.h>
+#include <linex/spinlock.h>
+#include <linex/kallsyms.h>
+#include <linex/interrupt.h>
+#include <linex/debug_locks.h>
+#include <linex/irqflags.h>
+#include <linex/rtmutex.h>
+#include <linex/local_lock.h>
 
 #ifdef CONFIG_PREEMPT_RT
 # define NON_RT(...)

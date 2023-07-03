@@ -5,23 +5,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/errno.h>	/* error codes */
-#include <linux/kernel.h>	/* printk */
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/fcntl.h>	/* O_NONBLOCK */
-#include <linux/init.h>
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmsap.h>
-#include <linux/atmsvc.h>
-#include <linux/atmdev.h>
-#include <linux/bitops.h>
+#include <linex/string.h>
+#include <linex/net.h>		/* struct socket, struct proto_ops */
+#include <linex/errno.h>	/* error codes */
+#include <linex/kernel.h>	/* printk */
+#include <linex/skbuff.h>
+#include <linex/wait.h>
+#include <linex/sched/signal.h>
+#include <linex/fcntl.h>	/* O_NONBLOCK */
+#include <linex/init.h>
+#include <linex/atm.h>		/* ATM stuff */
+#include <linex/atmsap.h>
+#include <linex/atmsvc.h>
+#include <linex/atmdev.h>
+#include <linex/bitops.h>
 #include <net/sock.h>		/* for sock_no_* */
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <linex/uaccess.h>
+#include <linex/export.h>
 
 #include "resources.h"
 #include "common.h"		/* common for PVCs and SVCs */

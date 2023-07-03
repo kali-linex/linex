@@ -17,9 +17,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

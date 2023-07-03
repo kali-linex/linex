@@ -4,11 +4,11 @@
  * Author: Andy Yan <andy.yan@rock-chips.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/component.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/component.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
 #include <drm/drm_fourcc.h>
 #include <drm/drm_plane.h>
 #include <drm/drm_print.h>

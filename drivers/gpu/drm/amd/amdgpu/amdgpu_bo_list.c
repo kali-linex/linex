@@ -28,7 +28,7 @@
  *    Christian König <deathsimple@vodafone.de>
  */
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "amdgpu.h"
 #include "amdgpu_trace.h"

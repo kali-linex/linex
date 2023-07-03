@@ -6,14 +6,14 @@
  * Supported models: W83773G
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
 /* W83773 has 3 channels */
 #define W83773_CHANNELS				3

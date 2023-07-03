@@ -7,12 +7,12 @@
  * Authors : Utz Bacher <utz.bacher@de.ibm.com>
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include <asm/machdep.h>
 #include <asm/nvram.h>

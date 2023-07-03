@@ -5,17 +5,17 @@
  * Author: Dipen Patel <dipenp@nvidia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/hte.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/hte.h>
+#include <linex/delay.h>
+#include <linex/debugfs.h>
 
 #define HTE_TS_NAME_LEN		10
 

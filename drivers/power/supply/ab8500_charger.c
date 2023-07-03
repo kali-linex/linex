@@ -10,28 +10,28 @@
  *	Arun R Murthy <arun.murthy@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/component.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
-#include <linux/kobject.h>
-#include <linux/of.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/usb/otg.h>
-#include <linux/mutex.h>
-#include <linux/iio/consumer.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/component.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/notifier.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/completion.h>
+#include <linex/regulator/consumer.h>
+#include <linex/err.h>
+#include <linex/workqueue.h>
+#include <linex/kobject.h>
+#include <linex/of.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/abx500/ab8500.h>
+#include <linex/mfd/abx500.h>
+#include <linex/usb/otg.h>
+#include <linex/mutex.h>
+#include <linex/iio/consumer.h>
 
 #include "ab8500-bm.h"
 #include "ab8500-chargalg.h"

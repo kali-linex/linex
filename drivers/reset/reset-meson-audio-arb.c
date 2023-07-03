@@ -2,12 +2,12 @@
 // Copyright (c) 2018 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/reset-controller.h>
+#include <linex/spinlock.h>
 
 #include <dt-bindings/reset/amlogic,meson-axg-audio-arb.h>
 

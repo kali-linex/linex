@@ -3,28 +3,28 @@
  * fs/dax.c - Direct Access filesystem code
  * Copyright (c) 2013-2014 Intel Corporation
  * Author: Matthew Wilcox <matthew.r.wilcox@intel.com>
- * Author: Ross Zwisler <ross.zwisler@linux.intel.com>
+ * Author: Ross Zwisler <ross.zwisler@linex.intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/memcontrol.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/pagevec.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/vmstat.h>
-#include <linux/pfn_t.h>
-#include <linux/sizes.h>
-#include <linux/mmu_notifier.h>
-#include <linux/iomap.h>
-#include <linux/rmap.h>
+#include <linex/atomic.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
+#include <linex/dax.h>
+#include <linex/fs.h>
+#include <linex/highmem.h>
+#include <linex/memcontrol.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/pagevec.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/uio.h>
+#include <linex/vmstat.h>
+#include <linex/pfn_t.h>
+#include <linex/sizes.h>
+#include <linex/mmu_notifier.h>
+#include <linex/iomap.h>
+#include <linex/rmap.h>
 #include <asm/pgalloc.h>
 
 #define CREATE_TRACE_POINTS

@@ -3,7 +3,7 @@
  * ACPI Sony Notebook Control Driver (SNC and SPIC)
  *
  * Copyright (C) 2004-2005 Stelian Pop <stelian@popies.net>
- * Copyright (C) 2007-2009 Mattia Dongili <malattia@linux.it>
+ * Copyright (C) 2007-2009 Mattia Dongili <malattia@linex.it>
  *
  * Parts of this driver inspired from asus_acpi.c and ibm_acpi.c
  * which are copyrighted by their respective authors.
@@ -23,38 +23,38 @@
  *
  * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinex.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/sonypi.h>
-#include <linux/sony-laptop.h>
-#include <linux/rfkill.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/backlight.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/dmi.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/input.h>
+#include <linex/kfifo.h>
+#include <linex/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/slab.h>
+#include <linex/sonypi.h>
+#include <linex/sony-laptop.h>
+#include <linex/rfkill.h>
 #ifdef CONFIG_SONYPI_COMPAT
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
+#include <linex/poll.h>
+#include <linex/miscdevice.h>
 #endif
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <acpi/video.h>
 
 #define dprintk(fmt, ...)			\

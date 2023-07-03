@@ -6,10 +6,10 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/regmap.h>
+#include <linex/acpi.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

@@ -5,8 +5,8 @@
  * Author: Won Chung <wonchung@google.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <linex/acpi.h>
+#include <linex/sysfs.h>
 
 #include "physical_location.h"
 

@@ -9,13 +9,13 @@
  *                     PeiSen Hou <pshou@realtek.com.tw>
  */
 
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/clocksource.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #ifdef CONFIG_X86
 /* for art-tsc conversion */

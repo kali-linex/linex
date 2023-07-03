@@ -2,7 +2,7 @@
 /*
  * OpenRISC asm-offsets.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,18 +19,18 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/io.h>
+#include <linex/thread_info.h>
+#include <linex/kbuild.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

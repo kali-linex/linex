@@ -6,25 +6,25 @@
  */
 
 // clang-format off
-#ifndef _LINUX_NTFS3_NTFS_FS_H
-#define _LINUX_NTFS3_NTFS_FS_H
+#ifndef _LINEX_NTFS3_NTFS_FS_H
+#define _LINEX_NTFS3_NTFS_FS_H
 
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/page-flags.h>
-#include <linux/pagemap.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/types.h>
-#include <linux/uidgid.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
+#include <linex/fs.h>
+#include <linex/highmem.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/page-flags.h>
+#include <linex/pagemap.h>
+#include <linex/rbtree.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/time64.h>
+#include <linex/types.h>
+#include <linex/uidgid.h>
 #include <asm/div64.h>
 #include <asm/page.h>
 
@@ -340,7 +340,7 @@ enum ntfs_inode_mutex_lock_class {
 /*
  * struct ntfs_inode
  *
- * Ntfs inode - extends linux inode. consists of one or more MFT inodes.
+ * Ntfs inode - extends linex inode. consists of one or more MFT inodes.
  */
 struct ntfs_inode {
 	struct mft_inode mi; // base record
@@ -1154,4 +1154,4 @@ static inline void le64_sub_cpu(__le64 *var, u64 val)
 	*var = cpu_to_le64(le64_to_cpu(*var) - val);
 }
 
-#endif /* _LINUX_NTFS3_NTFS_FS_H */
+#endif /* _LINEX_NTFS3_NTFS_FS_H */

@@ -3,14 +3,14 @@
  * Copyright (c) 2016, Linaro Ltd.
  * Copyright (c) 2015, Sony Mobile Communications Inc.
  */
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/rpmsg.h>
-#include <linux/soc/qcom/wcnss_ctrl.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/rpmsg.h>
+#include <linex/soc/qcom/wcnss_ctrl.h>
 
 #define WCNSS_REQUEST_TIMEOUT	(5 * HZ)
 #define WCNSS_CBC_TIMEOUT	(10 * HZ)

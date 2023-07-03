@@ -39,19 +39,19 @@
 #ifndef __CARL9170_H
 #define __CARL9170_H
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/hw_random.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/completion.h>
+#include <linex/spinlock.h>
+#include <linex/hw_random.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
-#include <linux/usb.h>
+#include <linex/usb.h>
 #ifdef CONFIG_CARL9170_LEDS
-#include <linux/leds.h>
+#include <linex/leds.h>
 #endif /* CONFIG_CARL9170_LEDS */
 #ifdef CONFIG_CARL9170_WPC
-#include <linux/input.h>
+#include <linex/input.h>
 #endif /* CONFIG_CARL9170_WPC */
 #include "eeprom.h"
 #include "wlan.h"

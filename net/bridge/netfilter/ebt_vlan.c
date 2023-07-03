@@ -5,13 +5,13 @@
  *          Bart De Schuymer <bdschuym@pandora.be>
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_vlan.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_bridge/ebtables.h>
+#include <linex/netfilter_bridge/ebt_vlan.h>
 
 #define MODULE_VERS "0.6"
 

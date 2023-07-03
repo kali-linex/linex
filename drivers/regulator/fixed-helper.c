@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/fixed.h>
 
 struct fixed_regulator_data {
 	struct fixed_voltage_config cfg;

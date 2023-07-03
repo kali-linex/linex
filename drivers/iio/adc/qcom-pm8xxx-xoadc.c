@@ -10,17 +10,17 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
+#include <linex/iio/adc/qcom-vadc-common.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/regulator/consumer.h>
 
 /*
  * Definitions for the "user processor" registers lifted from the v3.4
@@ -306,7 +306,7 @@ static const struct xoadc_channel pm8058_xoadc_channels[] = {
 
 /*
  * The PM8921 has some pre-muxing on its channels, this comes from the vendor tree
- * include/linux/mfd/pm8xxx/pm8xxx-adc.h
+ * include/linex/mfd/pm8xxx/pm8xxx-adc.h
  * board-flo-pmic.c (Nexus 7) and board-8064-pmic.c
  */
 static const struct xoadc_channel pm8921_xoadc_channels[] = {

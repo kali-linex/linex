@@ -11,14 +11,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpumask.h>
-#include <linux/devfreq.h>
-#include <linux/dtpm.h>
-#include <linux/energy_model.h>
-#include <linux/of.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <linex/cpumask.h>
+#include <linex/devfreq.h>
+#include <linex/dtpm.h>
+#include <linex/energy_model.h>
+#include <linex/of.h>
+#include <linex/pm_qos.h>
+#include <linex/slab.h>
+#include <linex/units.h>
 
 struct dtpm_devfreq {
 	struct dtpm dtpm;

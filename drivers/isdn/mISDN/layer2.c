@@ -6,8 +6,8 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/mISDNif.h>
-#include <linux/slab.h>
+#include <linex/mISDNif.h>
+#include <linex/slab.h>
 #include "core.h"
 #include "fsm.h"
 #include "layer2.h"

@@ -5,8 +5,8 @@
 #include <bpf/btf.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <linux/unistd.h>
-#include <linux/mount.h>
+#include <linex/unistd.h>
+#include <linex/mount.h>
 #include <sys/syscall.h>
 
 static inline int sys_fsopen(const char *fsname, unsigned flags)

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/net/wireless/libertas/if_sdio.h
+ *  linex/drivers/net/wireless/libertas/if_sdio.h
  *
  *  Copyright 2007 Pierre Ossman
  */

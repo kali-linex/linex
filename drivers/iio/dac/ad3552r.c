@@ -6,13 +6,13 @@
  * Copyright 2021 Analog Devices Inc.
  */
 #include <asm/unaligned.h>
-#include <linux/device.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/device.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 /* Register addresses */
 /* Primary address space */

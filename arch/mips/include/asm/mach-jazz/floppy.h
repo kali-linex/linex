@@ -8,10 +8,10 @@
 #ifndef __ASM_MACH_JAZZ_FLOPPY_H
 #define __ASM_MACH_JAZZ_FLOPPY_H
 
-#include <linux/delay.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <linex/delay.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
+#include <linex/mm.h>
 #include <asm/addrspace.h>
 #include <asm/jazz.h>
 #include <asm/jazzdma.h>

@@ -6,7 +6,7 @@
  * driver for VIA VT1622(M) Digital TV Encoder
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include "via_aux.h"
 
 

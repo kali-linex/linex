@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include "optee_private.h"
 
 struct optee_supp_req {

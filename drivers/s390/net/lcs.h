@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*lcs.h*/
 
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/refcount.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/workqueue.h>
+#include <linex/refcount.h>
 #include <asm/ccwdev.h>
 
 #define LCS_DBF_TEXT(level, name, text) \

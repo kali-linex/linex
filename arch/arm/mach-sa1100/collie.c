@@ -1,8 +1,8 @@
 /*
- * linux/arch/arm/mach-sa1100/collie.c
+ * linex/arch/arm/mach-sa1100/collie.c
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linex/COPYING for more information.
  *
  * This file contains all Collie-specific tweaks.
  *
@@ -17,21 +17,21 @@
  *  04-16-2001 Lineo Japan,Inc. ...
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/timer.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/power/gpio-charger.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/delay.h>
+#include <linex/platform_data/sa11x0-serial.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/ucb1x00.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/timer.h>
+#include <linex/gpio_keys.h>
+#include <linex/input.h>
+#include <linex/gpio.h>
+#include <linex/gpio/machine.h>
+#include <linex/power/gpio-charger.h>
 
 #include <video/sa1100fb.h>
 
@@ -48,7 +48,7 @@
 #include <asm/hardware/scoop.h>
 #include <asm/mach/sharpsl_param.h>
 #include <asm/hardware/locomo.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linex/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

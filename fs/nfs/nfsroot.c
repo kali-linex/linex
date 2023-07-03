@@ -71,13 +71,13 @@
  *	Chuck Lever	:	Add "nfsrootdebug".
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/nfs.h>
-#include <linux/nfs_fs.h>
-#include <linux/utsname.h>
-#include <linux/root_dev.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/nfs.h>
+#include <linex/nfs_fs.h>
+#include <linex/utsname.h>
+#include <linex/root_dev.h>
 #include <net/ipconfig.h>
 
 #include "internal.h"

@@ -13,14 +13,14 @@
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/regmap.h>
+#include <linex/device.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/io.h>
 
 #include "inno_rk3036.h"
 

@@ -3,10 +3,10 @@
 #ifndef __PLATFORM_EARLY__
 #define __PLATFORM_EARLY__
 
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 struct sh_early_platform_driver {
 	const char *class_str;

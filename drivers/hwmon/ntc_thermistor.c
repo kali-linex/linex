@@ -6,16 +6,16 @@
  *  MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/err.h>
-#include <linux/fixp-arith.h>
-#include <linux/iio/consumer.h>
-#include <linux/hwmon.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/math64.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/err.h>
+#include <linex/fixp-arith.h>
+#include <linex/iio/consumer.h>
+#include <linex/hwmon.h>
 
 enum ntc_thermistor_type {
 	TYPE_B57330V2103,

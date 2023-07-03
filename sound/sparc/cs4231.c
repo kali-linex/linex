@@ -9,16 +9,16 @@
  * Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -34,7 +34,7 @@
 
 #if defined(CONFIG_PCI) && defined(CONFIG_SPARC64)
 #define EBUS_SUPPORT
-#include <linux/pci.h>
+#include <linex/pci.h>
 #include <asm/ebus_dma.h>
 #endif
 

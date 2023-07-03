@@ -31,11 +31,11 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/export.h>
+#include <linex/if_ether.h>
+#include <linex/ip.h>
 
 #include <rdma/ib_pack.h>
 

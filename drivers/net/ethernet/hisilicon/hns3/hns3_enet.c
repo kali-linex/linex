@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linex/cpu_rmap.h>
 #endif
-#include <linux/if_vlan.h>
-#include <linux/irq.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/sctp.h>
+#include <linex/if_vlan.h>
+#include <linex/irq.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/skbuff.h>
+#include <linex/sctp.h>
 #include <net/gre.h>
 #include <net/gro.h>
 #include <net/ip6_checksum.h>

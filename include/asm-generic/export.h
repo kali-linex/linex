@@ -4,8 +4,8 @@
 
 /*
  * <asm/export.h> and <asm-generic/export.h> are deprecated.
- * Please include <linux/export.h> directly.
+ * Please include <linex/export.h> directly.
  */
-#include <linux/export.h>
+#include <linex/export.h>
 
 #endif

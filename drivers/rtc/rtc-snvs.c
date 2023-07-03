@@ -2,17 +2,17 @@
 //
 // Copyright (C) 2011-2012 Freescale Semiconductor, Inc.
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/rtc.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/rtc.h>
+#include <linex/clk.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 #define SNVS_LPREGISTER_OFFSET	0x34
 

@@ -11,15 +11,15 @@
  *		Shiping Ji <shji@microsoft.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/bitfield.h>
+#include <linex/edac.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 #include "edac_mc.h"
 
 /* DMC-520 registers */

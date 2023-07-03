@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-1.0+
-/* generic HDLC line discipline for Linux
+/* generic HDLC line discipline for Linex
  *
  * Written by Paul Fulghum paulkf@microgate.com
  * for Microgate Corporation
@@ -76,27 +76,27 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/interrupt.h>
+#include <linex/ptrace.h>
 
-#include <linux/poll.h>
-#include <linux/in.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>	/* used in new tty drivers */
-#include <linux/signal.h>	/* used in new tty drivers */
-#include <linux/if.h>
-#include <linux/bitops.h>
+#include <linex/poll.h>
+#include <linex/in.h>
+#include <linex/ioctl.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/errno.h>
+#include <linex/string.h>	/* used in new tty drivers */
+#include <linex/signal.h>	/* used in new tty drivers */
+#include <linex/if.h>
+#include <linex/bitops.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "tty.h"
 
 /*

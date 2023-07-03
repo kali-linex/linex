@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/platform_device.h>
 #include "tsens.h"
 
 /* ----- SROT ------ */

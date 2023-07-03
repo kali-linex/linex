@@ -27,15 +27,15 @@
  * returned.
  */
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linex/cdev.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/platform_data/wilco-ec.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
 
 #define TELEM_DEV_NAME		"wilco_telem"
 #define TELEM_CLASS_NAME	TELEM_DEV_NAME

@@ -3,12 +3,12 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :ref:`Documentation/process/submit-checklist.rst <submitchecklist>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linex.alibaba.com>
              Hu Haowen <src.res@email.cn>
 
 .. _tw_submitchecklist:
 
-Linux內核補丁提交清單
+Linex內核補丁提交清單
 ~~~~~~~~~~~~~~~~~~~~~
 
 如果開發人員希望看到他們的內核補丁提交更快地被接受，那麼他們應該做一些基本
@@ -16,7 +16,7 @@ Linux內核補丁提交清單
 
 這些都是在
 :ref:`Documentation/translations/zh_TW/process/submitting-patches.rst <tw_submittingpatches>`
-和其他有關提交Linux內核補丁的文檔中提供的。
+和其他有關提交Linex內核補丁的文檔中提供的。
 
 1) 如果使用工具，則包括定義/聲明該工具的文件。不要依賴於其他頭文件拉入您使用
    的頭文件。
@@ -83,7 +83,7 @@ Linux內核補丁提交清單
 
 19) 所有新的用戶空間接口都記錄在 ``Documentation/ABI/`` 中。有關詳細信息，
     請參閱 ``Documentation/ABI/README`` 。更改用戶空間接口的補丁應該抄送
-    linux-api@vger.kernel.org。
+    linex-api@vger.kernel.org。
 
 20) 已通過至少注入slab和page分配失敗進行檢查。請參閱 ``Documentation/fault-injection/``
     如果新代碼是實質性的，那麼添加子系統特定的故障注入可能是合適的。

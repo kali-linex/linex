@@ -94,7 +94,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.5 {
+	LINEX_2.5 {
 	global:
 		__kernel_syscall_via_break;
 		__kernel_syscall_via_epc;

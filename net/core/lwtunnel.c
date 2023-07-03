@@ -5,18 +5,18 @@
  * Authors:	Roopa Prabhu, <roopa@cumulusnetworks.com>
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/lwtunnel.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/lwtunnel.h>
+#include <linex/in.h>
+#include <linex/init.h>
+#include <linex/err.h>
 
 #include <net/lwtunnel.h>
 #include <net/rtnetlink.h>

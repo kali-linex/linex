@@ -6,14 +6,14 @@
  *  Justin Iurman <justin.iurman@uliege.be>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/ioam6.h>
-#include <linux/ioam6_genl.h>
-#include <linux/rhashtable.h>
-#include <linux/netdevice.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/net.h>
+#include <linex/ioam6.h>
+#include <linex/ioam6_genl.h>
+#include <linex/rhashtable.h>
+#include <linex/netdevice.h>
 
 #include <net/addrconf.h>
 #include <net/genetlink.h>

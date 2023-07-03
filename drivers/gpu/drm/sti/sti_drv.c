@@ -4,11 +4,11 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com> for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/component.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

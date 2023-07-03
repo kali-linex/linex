@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/char/nsc_gpio.c
+/* linex/drivers/char/nsc_gpio.c
 
    National Semiconductor common GPIO device-file/VFS methods.
    Allows a user space process to control the GPIO pins.
@@ -8,14 +8,14 @@
    Copyright (c) 2005      Jim Cromie <jim.cromie@gmail.com>
 */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/nsc_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/nsc_gpio.h>
+#include <linex/platform_device.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 
 #define NAME "nsc_gpio"

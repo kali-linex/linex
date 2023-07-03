@@ -56,11 +56,11 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/usb/gadget.h>
-#include <linux/module.h>
-#include <linux/dmapool.h>
-#include <linux/iopoll.h>
+#include <linex/dma-mapping.h>
+#include <linex/usb/gadget.h>
+#include <linex/module.h>
+#include <linex/dmapool.h>
+#include <linex/iopoll.h>
 
 #include "core.h"
 #include "gadget-export.h"

@@ -7,28 +7,28 @@
  * Copyright (C) 2016, Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
+#include <linex/of.h>
+#include <linex/of_graph.h>
+#include <linex/time.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/dmaengine.h>
+#include <linex/dma/pxa-dma.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>
@@ -40,9 +40,9 @@
 
 #include <media/videobuf2-dma-sg.h>
 
-#include <linux/videodev2.h>
+#include <linex/videodev2.h>
 
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linex/platform_data/media/camera-pxa.h>
 
 #define PXA_CAM_VERSION "0.0.6"
 #define PXA_CAM_DRV_NAME "pxa27x-camera"

@@ -21,21 +21,21 @@
 
 #define UBD_SHIFT 4
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
-#include <linux/major.h>
-#include <linux/cdrom.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/ata.h>
+#include <linex/hdreg.h>
+#include <linex/major.h>
+#include <linex/cdrom.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
 #include <asm/tlbflush.h>
 #include <kern_util.h>
 #include "mconsole_kern.h"

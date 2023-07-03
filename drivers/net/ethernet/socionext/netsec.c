@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/acpi.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/netlink.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <linex/types.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/acpi.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/netlink.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
 
 #include <net/tcp.h>
 #include <net/page_pool.h>

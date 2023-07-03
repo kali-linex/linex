@@ -7,13 +7,13 @@
 #ifndef _CORESIGHT_CORESIGHT_CTI_H
 #define _CORESIGHT_CORESIGHT_CTI_H
 
-#include <linux/coresight.h>
-#include <linux/device.h>
-#include <linux/fwnode.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linex/coresight.h>
+#include <linex/device.h>
+#include <linex/fwnode.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
 
 #include "coresight-priv.h"
 

@@ -6,9 +6,9 @@
 
 */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

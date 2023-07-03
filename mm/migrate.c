@@ -1,55 +1,55 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Memory Migration functionality - linux/mm/migrate.c
+ * Memory Migration functionality - linex/mm/migrate.c
  *
  * Copyright (C) 2006 Silicon Graphics, Inc., Christoph Lameter
  *
  * Page migration was first developed in the context of the memory hotplug
  * project. The main authors of the migration code are:
  *
- * IWAMOTO Toshihiro <iwamoto@valinux.co.jp>
- * Hirokazu Takahashi <taka@valinux.co.jp>
+ * IWAMOTO Toshihiro <iwamoto@valinex.co.jp>
+ * Hirokazu Takahashi <taka@valinex.co.jp>
  * Dave Hansen <haveblue@us.ibm.com>
  * Christoph Lameter
  */
 
-#include <linux/migrate.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/writeback.h>
-#include <linux/mempolicy.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/compaction.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/gfp.h>
-#include <linux/pfn_t.h>
-#include <linux/memremap.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/balloon_compaction.h>
-#include <linux/page_idle.h>
-#include <linux/page_owner.h>
-#include <linux/sched/mm.h>
-#include <linux/ptrace.h>
-#include <linux/oom.h>
-#include <linux/memory.h>
-#include <linux/random.h>
-#include <linux/sched/sysctl.h>
-#include <linux/memory-tiers.h>
+#include <linex/migrate.h>
+#include <linex/export.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/pagemap.h>
+#include <linex/buffer_head.h>
+#include <linex/mm_inline.h>
+#include <linex/nsproxy.h>
+#include <linex/ksm.h>
+#include <linex/rmap.h>
+#include <linex/topology.h>
+#include <linex/cpu.h>
+#include <linex/cpuset.h>
+#include <linex/writeback.h>
+#include <linex/mempolicy.h>
+#include <linex/vmalloc.h>
+#include <linex/security.h>
+#include <linex/backing-dev.h>
+#include <linex/compaction.h>
+#include <linex/syscalls.h>
+#include <linex/compat.h>
+#include <linex/hugetlb.h>
+#include <linex/hugetlb_cgroup.h>
+#include <linex/gfp.h>
+#include <linex/pfn_t.h>
+#include <linex/memremap.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/balloon_compaction.h>
+#include <linex/page_idle.h>
+#include <linex/page_owner.h>
+#include <linex/sched/mm.h>
+#include <linex/ptrace.h>
+#include <linex/oom.h>
+#include <linex/memory.h>
+#include <linex/random.h>
+#include <linex/sched/sysctl.h>
+#include <linex/memory-tiers.h>
 
 #include <asm/tlbflush.h>
 

@@ -5,10 +5,10 @@
  *
  * Based from clk-highbank.c
  */
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/of.h>
 
 #include "clk.h"
 

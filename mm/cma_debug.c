@@ -6,12 +6,12 @@
  */
 
 
-#include <linux/debugfs.h>
-#include <linux/cma.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
+#include <linex/debugfs.h>
+#include <linex/cma.h>
+#include <linex/list.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/mm_types.h>
 
 #include "cma.h"
 

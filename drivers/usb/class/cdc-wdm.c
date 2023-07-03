@@ -12,22 +12,22 @@
  *
  * Many thanks to Carl Nordbeck
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/wwan.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/ioctl.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/poll.h>
+#include <linex/skbuff.h>
+#include <linex/usb.h>
+#include <linex/usb/cdc.h>
+#include <linex/wwan.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/usb/cdc-wdm.h>
+#include <linex/usb/cdc-wdm.h>
 
 #define DRIVER_AUTHOR "Oliver Neukum"
 #define DRIVER_DESC "USB Abstract Control Model driver for USB WCM Device Management"

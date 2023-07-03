@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/jump_label.h>
+#include <linex/jump_label.h>
 
 extern struct static_key_false disable_kuap_key;
 
@@ -20,7 +20,7 @@ static __always_inline bool kuep_is_disabled(void)
 
 #ifdef CONFIG_PPC_KUAP
 
-#include <linux/sched.h>
+#include <linex/sched.h>
 
 #define KUAP_NONE	(~0UL)
 #define KUAP_ALL	(~1UL)

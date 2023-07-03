@@ -9,14 +9,14 @@
  * Copyright (C) 2020-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/types.h>
 
-#include <linux/surface_aggregator/device.h>
+#include <linex/surface_aggregator/device.h>
 
 
 /* -- Device registry. ------------------------------------------------------ */

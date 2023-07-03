@@ -8,21 +8,21 @@
  * Copyright (C) 2021 Glider bv
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/property.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/input.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/leds.h>
+#include <linex/workqueue.h>
+#include <linex/mm.h>
 
-#include <linux/map_to_7segment.h>
-#include <linux/map_to_14segment.h>
+#include <linex/map_to_7segment.h>
+#include <linex/map_to_14segment.h>
 
 #include <asm/unaligned.h>
 
@@ -535,7 +535,7 @@ static int ht16k33_keypad_probe(struct i2c_client *client,
 	keypad->dev->open = ht16k33_keypad_start;
 	keypad->dev->close = ht16k33_keypad_stop;
 
-	if (!device_property_read_bool(dev, "linux,no-autorepeat"))
+	if (!device_property_read_bool(dev, "linex,no-autorepeat"))
 		__set_bit(EV_REP, keypad->dev->evbit);
 
 	err = device_property_read_u32(dev, "debounce-delay-ms",

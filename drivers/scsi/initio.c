@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**************************************************************************
- * Initio 9100 device driver for Linux.
+ * Initio 9100 device driver for Linex.
  *
  * Copyright (c) 1994-1998 Initio Corporation
  * Copyright (c) 1998 Bas Vermeulen <bvermeul@blackstar.xs4all.nl>
@@ -11,7 +11,7 @@
  *
  * DESCRIPTION:
  *
- * This is the Linux low-level SCSI driver for Initio INI-9X00U/UW SCSI host
+ * This is the Linex low-level SCSI driver for Initio INI-9X00U/UW SCSI host
  * adapters
  *
  * 08/06/97 hc	- v1.01h
@@ -65,22 +65,22 @@
  *		- Re-add reset_bus support
  **************************************************************************/
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/spinlock.h>
+#include <linex/stat.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/dma-mapping.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

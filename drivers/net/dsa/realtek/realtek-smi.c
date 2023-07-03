@@ -25,20 +25,20 @@
  * Copyright (C) 2009-2010 Gabor Juhos <juhosg@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/skbuff.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/bitops.h>
+#include <linex/if_bridge.h>
 
 #include "realtek.h"
 

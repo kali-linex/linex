@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7206/irq.c
+ * linex/arch/sh/boards/se/7206/irq.c
  *
  * Copyright (C) 2005,2006 Yoshinori Sato
  *
  * Hitachi SolutionEngine Support.
  *
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
 #include <mach-se/mach/se7206.h>
 
 #define INTSTS0 0x31800000

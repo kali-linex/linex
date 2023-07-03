@@ -11,7 +11,7 @@
 #ifndef __AA_IPC_H
 #define __AA_IPC_H
 
-#include <linux/sched.h>
+#include <linex/sched.h>
 
 int aa_may_signal(struct aa_label *sender, struct aa_label *target, int sig);
 

@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
 #include <drm/drm_edid.h>
 #include <drm/drm_print.h>

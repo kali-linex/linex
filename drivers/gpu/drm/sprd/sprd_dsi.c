@@ -3,12 +3,12 @@
  * Copyright (C) 2020 Unisoc Inc.
  */
 
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_graph.h>
+#include <linex/component.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_graph.h>
 #include <video/mipi_display.h>
 
 #include <drm/drm_atomic_helper.h>

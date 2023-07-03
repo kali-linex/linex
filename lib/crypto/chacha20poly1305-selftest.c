@@ -8,11 +8,11 @@
 #include <crypto/poly1305.h>
 
 #include <asm/unaligned.h>
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 
 struct chacha20poly1305_testvec {
 	const u8 *input, *output, *assoc, *nonce, *key;

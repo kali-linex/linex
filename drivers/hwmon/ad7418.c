@@ -9,16 +9,16 @@
  * Copyright (C) 1998-99 Frodo Looijaard <frodol@dds.nl>
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #include "lm75.h"
 

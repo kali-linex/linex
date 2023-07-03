@@ -20,11 +20,11 @@
 
 #define pr_fmt(fmt) "X25: " fmt
 
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/x25.h>

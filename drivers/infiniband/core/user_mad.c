@@ -35,23 +35,23 @@
 
 #define pr_fmt(fmt) "user_mad: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/cdev.h>
+#include <linex/dma-mapping.h>
+#include <linex/poll.h>
+#include <linex/mutex.h>
+#include <linex/kref.h>
+#include <linex/compat.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/slab.h>
+#include <linex/nospec.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_mad.h>

@@ -12,14 +12,14 @@
  * on DA850 implement HW FIFOs instead of DMA into DXR and DRR registers
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/platform_data/davinci_asp.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/platform_data/davinci_asp.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

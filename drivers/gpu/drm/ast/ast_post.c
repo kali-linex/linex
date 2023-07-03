@@ -26,8 +26,8 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
 
 #include <drm/drm_print.h>
 

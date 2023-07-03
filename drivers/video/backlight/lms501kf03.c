@@ -6,13 +6,13 @@
  * Author: Jingoo Han  <jg1.han@samsung.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/wait.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/lcd.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
+#include <linex/wait.h>
 
 #define COMMAND_ONLY		0x00
 #define DATA_ONLY		0x01

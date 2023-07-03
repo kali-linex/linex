@@ -5,10 +5,10 @@
  * Copyright (c) 2014 Jeff Layton <jlayton@primarydata.com>
  */
 
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/nsproxy.h>
+#include <linex/fs.h>
+#include <linex/proc_fs.h>
+#include <linex/module.h>
+#include <linex/nsproxy.h>
 #include <net/net_namespace.h>
 
 #include "netns.h"

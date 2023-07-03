@@ -7,15 +7,15 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/arm_sdei.h>
-#include <linux/sched.h>
-#include <linux/ftrace.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/kvm_host.h>
-#include <linux/preempt.h>
-#include <linux/suspend.h>
+#include <linex/arm_sdei.h>
+#include <linex/sched.h>
+#include <linex/ftrace.h>
+#include <linex/kexec.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
+#include <linex/kvm_host.h>
+#include <linex/preempt.h>
+#include <linex/suspend.h>
 #include <asm/cpufeature.h>
 #include <asm/fixmap.h>
 #include <asm/thread_info.h>
@@ -23,8 +23,8 @@
 #include <asm/signal32.h>
 #include <asm/smp_plat.h>
 #include <asm/suspend.h>
-#include <linux/kbuild.h>
-#include <linux/arm-smccc.h>
+#include <linex/kbuild.h>
+#include <linex/arm-smccc.h>
 
 int main(void)
 {

@@ -3,16 +3,16 @@
  *
  *  Copyright 2007 Rusty Russell IBM Corporation
  */
-#include <linux/virtio.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_config.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/hrtimer.h>
-#include <linux/dma-mapping.h>
-#include <linux/kmsan.h>
-#include <linux/spinlock.h>
+#include <linex/virtio.h>
+#include <linex/virtio_ring.h>
+#include <linex/virtio_config.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/hrtimer.h>
+#include <linex/dma-mapping.h>
+#include <linex/kmsan.h>
+#include <linex/spinlock.h>
 #include <xen/xen.h>
 
 #ifdef DEBUG

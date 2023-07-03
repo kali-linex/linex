@@ -6,12 +6,12 @@
 //
 // Author: James Schulman <james.schulman@cirrus.com>
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/firmware.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
+#include <linex/firmware.h>
+#include <linex/regulator/consumer.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

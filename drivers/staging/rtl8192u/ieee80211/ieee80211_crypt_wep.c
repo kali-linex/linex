@@ -5,18 +5,18 @@
  * Copyright (c) 2002-2004, Jouni Malinen <jkmaline@cc.hut.fi>
  */
 
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
+#include <linex/fips.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/skbuff.h>
+#include <linex/string.h>
 
 #include "ieee80211.h"
 
 #include <crypto/arc4.h>
-#include <linux/crc32.h>
+#include <linex/crc32.h>
 
 MODULE_AUTHOR("Jouni Malinen");
 MODULE_DESCRIPTION("Host AP crypt: WEP");

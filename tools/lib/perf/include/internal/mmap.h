@@ -2,9 +2,9 @@
 #ifndef __LIBPERF_INTERNAL_MMAP_H
 #define __LIBPERF_INTERNAL_MMAP_H
 
-#include <linux/compiler.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/refcount.h>
+#include <linex/types.h>
 #include <stdbool.h>
 #include <internal/cpumap.h>
 

@@ -23,8 +23,8 @@
 #ifndef _DRM_DP_HELPER_H_
 #define _DRM_DP_HELPER_H_
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
 
 #include <drm/display/drm_dp.h>
 #include <drm/drm_connector.h>

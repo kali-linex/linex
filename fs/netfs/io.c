@@ -5,15 +5,15 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/sched/mm.h>
-#include <linux/task_io_accounting_ops.h>
+#include <linex/module.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/uio.h>
+#include <linex/sched/mm.h>
+#include <linex/task_io_accounting_ops.h>
 #include "internal.h"
 
 /*

@@ -3,13 +3,13 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/string.h>
+#include <linex/string_helpers.h>
 
 static __init bool test_string_check_buf(const char *name, unsigned int flags,
 					 char *in, size_t p,

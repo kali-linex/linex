@@ -6,14 +6,14 @@
 
 #define DSS_SUBSYS_NAME "APPLY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/seq_file.h>
 
 #include <video/omapfb_dss.h>
 

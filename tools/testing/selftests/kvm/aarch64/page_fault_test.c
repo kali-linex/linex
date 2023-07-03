@@ -9,13 +9,13 @@
  */
 
 #define _GNU_SOURCE
-#include <linux/bitmap.h>
+#include <linex/bitmap.h>
 #include <fcntl.h>
 #include <test_util.h>
 #include <kvm_util.h>
 #include <processor.h>
 #include <asm/sysreg.h>
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 #include "guest_modes.h"
 #include "userfaultfd_util.h"
 

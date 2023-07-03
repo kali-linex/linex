@@ -41,20 +41,20 @@
 		key-power {
 			label = "Power Button";
 			gpios = <&gpio4 10 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linex,code = <KEY_POWER>;
 		};
 
 		event-hallsensor {
 			label = "Hallsensor";
 			gpios = <&gpio5 15 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_RESERVED>;
-			linux,input-type = <EV_SW>;
+			linex,code = <KEY_RESERVED>;
+			linex,input-type = <EV_SW>;
 		};
 
 		event-frontlight {
 			label = "Frontlight";
 			gpios = <&gpio4 1 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_DISPLAYTOGGLE>;
+			linex,code = <KEY_DISPLAYTOGGLE>;
 		};
 	};
 

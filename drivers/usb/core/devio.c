@@ -21,27 +21,27 @@
 
 /*****************************************************************************/
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/usb/quirks.h>
-#include <linux/cdev.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
-#include <linux/dma-mapping.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/signal.h>
+#include <linex/poll.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/usb.h>
+#include <linex/usbdevice_fs.h>
+#include <linex/usb/hcd.h>	/* for usbcore internals */
+#include <linex/usb/quirks.h>
+#include <linex/cdev.h>
+#include <linex/notifier.h>
+#include <linex/security.h>
+#include <linex/user_namespace.h>
+#include <linex/scatterlist.h>
+#include <linex/uaccess.h>
+#include <linex/dma-mapping.h>
 #include <asm/byteorder.h>
-#include <linux/moduleparam.h>
+#include <linex/moduleparam.h>
 
 #include "usb.h"
 

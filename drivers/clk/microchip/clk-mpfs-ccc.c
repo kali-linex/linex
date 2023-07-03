@@ -5,10 +5,10 @@
  * Copyright (C) 2022 Microchip Technology Inc. and its subsidiaries
  */
 #include "asm-generic/errno-base.h"
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/clock/microchip,mpfs-clock.h>
 
 /* address offset of control registers */

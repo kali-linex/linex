@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/mm/init.c
+ *  linex/arch/alpha/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
 /* 2.3.x zone allocator, 1999 Andrea Arcangeli <andrea@suse.de> */
 
-#include <linux/pagemap.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/memblock.h> /* max_low_pfn */
-#include <linux/vmalloc.h>
-#include <linux/gfp.h>
+#include <linex/pagemap.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/init.h>
+#include <linex/memblock.h> /* max_low_pfn */
+#include <linex/vmalloc.h>
+#include <linex/gfp.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/hwrpb.h>
 #include <asm/dma.h>
@@ -61,8 +61,8 @@ pgd_alloc(struct mm_struct *mm)
 
 
 /*
- * BAD_PAGE is the page that is used for page faults when linux
- * is out-of-memory. Older versions of linux just did a
+ * BAD_PAGE is the page that is used for page faults when linex
+ * is out-of-memory. Older versions of linex just did a
  * do_exit(), but using this instead means there is less risk
  * for a process dying in kernel mode, possibly leaving an inode
  * unused etc..
@@ -103,7 +103,7 @@ switch_to_system_map(void)
 	unsigned long newptbr;
 	unsigned long original_pcb_ptr;
 
-	/* Initialize the kernel's page tables.  Linux puts the vptb in
+	/* Initialize the kernel's page tables.  Linex puts the vptb in
 	   the last slot of the L1 page table.  */
 	memset(swapper_pg_dir, 0, PAGE_SIZE);
 	newptbr = ((unsigned long) swapper_pg_dir - PAGE_OFFSET) >> PAGE_SHIFT;

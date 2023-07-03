@@ -5,10 +5,10 @@
  * https://tools.ietf.org/id/draft-ribose-cfrg-sm4-10.html
  *
  * Copyright (C) 2022, Alibaba Group.
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linex.alibaba.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 
 /* Register macros */

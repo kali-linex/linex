@@ -6,22 +6,22 @@
  * Copyright (C) 2016 Freescale Semiconductor Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/property.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
+#include <linex/acpi.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/property.h>
+#include <linex/mod_devicetable.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
+#include <linex/gpio/driver.h>
+#include <linex/bitops.h>
+#include <linex/interrupt.h>
 
 #define MPC8XXX_GPIO_PINS	32
 

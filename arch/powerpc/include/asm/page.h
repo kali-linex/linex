@@ -7,8 +7,8 @@
  */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
 #else
 #include <asm/types.h>
 #endif

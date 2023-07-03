@@ -9,11 +9,11 @@
  * Copyright (C) 2010 ROCKCHIP, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
+#include <linex/module.h>
+#include <linex/clk-provider.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
 
 #define HYM8563_CTL1		0x00
 #define HYM8563_CTL1_TEST	BIT(7)
@@ -576,7 +576,7 @@ static struct i2c_driver hym8563_driver = {
 		.pm	= &hym8563_pm_ops,
 		.of_match_table	= hym8563_dt_idtable,
 	},
-	.probe		= hym8563_probe,
+	.probe_new	= hym8563_probe,
 	.id_table	= hym8563_id,
 };
 

@@ -29,7 +29,7 @@
 #include <dlfcn.h>
 #include <stddef.h>
 #include <sys/auxv.h>
-#include <linux/auxvec.h>
+#include <linex/auxvec.h>
 
 #include "../kselftest.h"
 #include "rseq.h"

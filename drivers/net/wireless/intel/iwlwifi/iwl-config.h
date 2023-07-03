@@ -7,10 +7,10 @@
 #ifndef __IWL_CONFIG_H__
 #define __IWL_CONFIG_H__
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/ieee80211.h>
+#include <linex/nl80211.h>
 #include "iwl-csr.h"
 
 enum iwl_device_family {

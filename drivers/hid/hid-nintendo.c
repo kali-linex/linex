@@ -6,8 +6,8 @@
  *
  * The following resources/projects were referenced for this driver:
  *   https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering
- *   https://gitlab.com/pjranki/joycon-linux-kernel (Peter Rankin)
- *   https://github.com/FrotBot/SwitchProConLinuxUSB
+ *   https://gitlab.com/pjranki/joycon-linex-kernel (Peter Rankin)
+ *   https://github.com/FrotBot/SwitchProConLinexUSB
  *   https://github.com/MTCKC/ProconXInput
  *   https://github.com/Davidobot/BetterJoyForCemu
  *   hid-wiimote kernel hid driver
@@ -24,16 +24,16 @@
 
 #include "hid-ids.h"
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/spinlock.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/hid.h>
+#include <linex/input.h>
+#include <linex/jiffies.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/power_supply.h>
+#include <linex/spinlock.h>
 
 /*
  * Reference the url below for the following HID report defines:
@@ -2228,7 +2228,7 @@ static int nintendo_hid_probe(struct hid_device *hdev,
 	/*
 	 * Patch the hw version of pro controller/joycons, so applications can
 	 * distinguish between the default HID mappings and the mappings defined
-	 * by the Linux game controller spec. This is important for the SDL2
+	 * by the Linex game controller spec. This is important for the SDL2
 	 * library, which has a game controller database, which uses device ids
 	 * in combination with version as a key.
 	 */

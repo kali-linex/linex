@@ -7,32 +7,32 @@
  * Copyright(c) 1999 - 2005 Intel Corporation. All rights reserved.
  */
 
-#include <linux/atomic.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/hardirq.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/irqflags.h>
-#include <linux/irqreturn.h>
-#include <linux/mii.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/crc32.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/hardirq.h>
+#include <linex/if_vlan.h>
+#include <linex/in.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>
+#include <linex/irqflags.h>
+#include <linex/irqreturn.h>
+#include <linex/mii.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/pm.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/tcp.h>
+#include <linex/timer.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include "atl2.h"
 
@@ -1267,7 +1267,7 @@ static void atl2_setup_pcicmd(struct pci_dev *pdev)
 
 	/*
 	 * some motherboards BIOS(PXE/EFI) driver may set PME
-	 * while they transfer control to OS (Windows/Linux)
+	 * while they transfer control to OS (Windows/Linex)
 	 * so we should clear this bit before NIC work normally
 	 */
 	pci_write_config_dword(pdev, REG_PM_CTRLSTAT, 0);

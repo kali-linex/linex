@@ -5,9 +5,9 @@
  *
  * This file contains the dummy interrupt chip implementation
  */
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/export.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/export.h>
 
 #include "internals.h"
 

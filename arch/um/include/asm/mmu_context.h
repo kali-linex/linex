@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
 #ifndef __UM_MMU_CONTEXT_H
 #define __UM_MMU_CONTEXT_H
 
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/mmap_lock.h>
+#include <linex/sched.h>
+#include <linex/mm_types.h>
+#include <linex/mmap_lock.h>
 
 #include <asm/mm_hooks.h>
 #include <asm/mmu.h>

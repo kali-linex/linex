@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/sh03/rtc.c -- CTP/PCI-SH03 on-chip RTC support
+ * linex/arch/sh/boards/sh03/rtc.c -- CTP/PCI-SH03 on-chip RTC support
  *
  *  Copyright (C) 2004  Saito.K & Jeanne(ksaito@interface.co.jp)
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/bcd.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/time.h>
+#include <linex/bcd.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
 
 #define RTC_BASE	0xb0000000
 #define RTC_SEC1	(RTC_BASE + 0)

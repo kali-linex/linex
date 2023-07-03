@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob.clark@linaro.org>
  */
 
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_debugfs.h>

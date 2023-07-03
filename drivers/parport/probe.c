@@ -6,12 +6,12 @@
  *             Philip Blundell <philb@gnu.org>
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/parport.h>
+#include <linex/string.h>
+#include <linex/string_helpers.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
 static const struct {
 	const char *token;

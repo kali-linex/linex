@@ -5,10 +5,10 @@
  * Parse symbolic events/counts passed in as options:
  */
 
-#include <linux/list.h>
+#include <linex/list.h>
 #include <stdbool.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <linex/types.h>
+#include <linex/perf_event.h>
 #include <string.h>
 
 struct evsel;

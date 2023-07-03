@@ -5,12 +5,12 @@
  * Copyright (c) 2004 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/if_ether.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/icmpv6.h>
+#include <linex/netfilter_ipv6.h>
 #include <net/dst.h>
 #include <net/ipv6.h>
 #include <net/ip6_route.h>

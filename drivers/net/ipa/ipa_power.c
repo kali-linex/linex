@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The Linex Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitops.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/interconnect.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/bitops.h>
 
-#include "linux/soc/qcom/qcom_aoss.h"
+#include "linex/soc/qcom/qcom_aoss.h"
 
 #include "ipa.h"
 #include "ipa_power.h"

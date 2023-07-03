@@ -5,16 +5,16 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/anon_inodes.h>
-#include <linux/namei.h>
-#include <linux/file.h>
-#include <uapi/linux/mount.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/syscalls.h>
+#include <linex/security.h>
+#include <linex/anon_inodes.h>
+#include <linex/namei.h>
+#include <linex/file.h>
+#include <uapi/linex/mount.h>
 #include "internal.h"
 #include "mount.h"
 

@@ -14,8 +14,8 @@
  *   Copyright (C) 2008 Analog Devices, Inc
  */
 
-#include <linux/usb/audio.h>
-#include <linux/module.h>
+#include <linex/usb/audio.h>
+#include <linex/module.h>
 
 #include "u_audio.h"
 #include "u_uac1.h"

@@ -5,11 +5,11 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/sched/mm.h>
+#include <linex/fs.h>
+#include <linex/f2fs_fs.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/sched/mm.h>
 
 #include "f2fs.h"
 #include "node.h"

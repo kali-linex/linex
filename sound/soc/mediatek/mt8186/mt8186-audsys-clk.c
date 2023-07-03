@@ -5,9 +5,9 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
 #include "mt8186-afe-common.h"
 #include "mt8186-audsys-clk.h"
 #include "mt8186-audsys-clkid.h"

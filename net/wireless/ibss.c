@@ -6,10 +6,10 @@
  * Copyright (C) 2020-2022 Intel Corporation
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/etherdevice.h>
+#include <linex/if_arp.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include <net/cfg80211.h>
 #include "wext-compat.h"
 #include "nl80211.h"

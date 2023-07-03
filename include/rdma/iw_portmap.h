@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB */
 /*
  * Copyright (c) 2014 Intel Corporation. All rights reserved.
  * Copyright (c) 2014 Chelsio, Inc. All rights reserved.
@@ -7,8 +7,8 @@
 #ifndef _IW_PORTMAP_H
 #define _IW_PORTMAP_H
 
-#include <linux/socket.h>
-#include <linux/netlink.h>
+#include <linex/socket.h>
+#include <linex/netlink.h>
 
 #define IWPM_ULIBNAME_SIZE	32
 #define IWPM_DEVNAME_SIZE	32

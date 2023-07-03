@@ -2,8 +2,8 @@
 #ifndef BMI160_H_
 #define BMI160_H_
 
-#include <linux/iio/iio.h>
-#include <linux/regulator/consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/regulator/consumer.h>
 
 struct bmi160_data {
 	struct regmap *regmap;

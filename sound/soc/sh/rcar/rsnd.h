@@ -8,17 +8,17 @@
 #ifndef RSND_H
 #define RSND_H
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/sh_dma.h>
-#include <linux/workqueue.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/of_irq.h>
+#include <linex/sh_dma.h>
+#include <linex/workqueue.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 

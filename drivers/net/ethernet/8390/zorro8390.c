@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Amiga Linux/m68k and Linux/PPC Zorro NS8390 Ethernet Driver
+ *  Amiga Linex/m68k and Linex/PPC Zorro NS8390 Ethernet Driver
  *
  *  (C) Copyright 1998-2000 by some Elitist 680x0 Users(TM)
  *
  *  ---------------------------------------------------------------------------
  *
- *  This program is based on all the other NE2000 drivers for Linux
+ *  This program is based on all the other NE2000 drivers for Linex
  *
  *  ---------------------------------------------------------------------------
  *
@@ -16,15 +16,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/zorro.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/zorro.h>
+#include <linex/jiffies.h>
 
 #include <asm/irq.h>
 #include <asm/amigaints.h>

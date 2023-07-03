@@ -4,37 +4,37 @@
  *
  * Copyright (C) 2016 Linaro Ltd.
  * Copyright (C) 2014 Sony Mobile Communications AB
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/devcoredump.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/soc/qcom/mdt_loader.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/devcoredump.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/remoteproc.h>
+#include <linex/reset.h>
+#include <linex/soc/qcom/mdt_loader.h>
+#include <linex/iopoll.h>
+#include <linex/slab.h>
 
 #include "remoteproc_internal.h"
 #include "qcom_common.h"
 #include "qcom_pil_info.h"
 #include "qcom_q6v5.h"
 
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <linex/firmware/qcom/qcom_scm.h>
 
 #define MPSS_CRASH_REASON_SMEM		421
 
@@ -1387,7 +1387,7 @@ static int q6v5_mpss_load(struct q6v5 *qproc)
 	q6v5_xfer_mem_ownership(qproc, &qproc->mpss_perm, true, false,
 				qproc->mpss_phys, qproc->mpss_size);
 
-	/* Share ownership between Linux and MSS, during segment loading */
+	/* Share ownership between Linex and MSS, during segment loading */
 	ret = q6v5_xfer_mem_ownership(qproc, &qproc->mpss_perm, true, true,
 				      qproc->mpss_phys, qproc->mpss_size);
 	if (ret) {
@@ -1527,7 +1527,7 @@ static void qcom_q6v5_dump_segment(struct rproc *rproc,
 	if (!qproc->dump_mba_loaded) {
 		ret = q6v5_reload_mba(rproc);
 		if (!ret) {
-			/* Reset ownership back to Linux to copy segments */
+			/* Reset ownership back to Linex to copy segments */
 			ret = q6v5_xfer_mem_ownership(qproc, &qproc->mpss_perm,
 						      true, false,
 						      qproc->mpss_phys,

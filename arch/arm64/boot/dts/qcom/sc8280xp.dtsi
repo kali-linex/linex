@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Limited
  */
 
@@ -1726,7 +1726,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <6>;
+			linex,pci-domain = <6>;
 			num-lanes = <1>;
 
 			interrupts = <GIC_SPI 141 IRQ_TYPE_LEVEL_HIGH>,
@@ -1826,7 +1826,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <5>;
+			linex,pci-domain = <5>;
 			num-lanes = <2>;
 
 			interrupts = <GIC_SPI 145 IRQ_TYPE_LEVEL_HIGH>,
@@ -1924,7 +1924,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <4>;
+			linex,pci-domain = <4>;
 			num-lanes = <4>;
 
 			interrupts = <GIC_SPI 312 IRQ_TYPE_LEVEL_HIGH>,
@@ -2025,7 +2025,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <3>;
+			linex,pci-domain = <3>;
 			num-lanes = <2>;
 
 			interrupts = <GIC_SPI 306 IRQ_TYPE_LEVEL_HIGH>,
@@ -2123,7 +2123,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <2>;
+			linex,pci-domain = <2>;
 			num-lanes = <4>;
 
 			interrupts = <GIC_SPI 86 IRQ_TYPE_LEVEL_HIGH>,

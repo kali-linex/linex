@@ -6,12 +6,12 @@
 
 #ifndef _QED_FCOE_H
 #define _QED_FCOE_H
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/qed/qed_fcoe_if.h>
-#include <linux/qed/qed_chain.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/qed/qed_fcoe_if.h>
+#include <linex/qed/qed_chain.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_mcp.h"

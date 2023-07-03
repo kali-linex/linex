@@ -24,19 +24,19 @@
  *		stevel@mvista.com or source@mvista.com
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel_stat.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/timex.h>
+#include <linex/random.h>
+#include <linex/delay.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

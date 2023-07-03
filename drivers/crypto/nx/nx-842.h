@@ -4,14 +4,14 @@
 #define __NX_842_H__
 
 #include <crypto/algapi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/ratelimit.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/ratelimit.h>
 
 /* Restrictions on Data Descriptor List (DDL) and Entry (DDE) buffers
  *

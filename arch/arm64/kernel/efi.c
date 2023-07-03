@@ -7,8 +7,8 @@
  * Copyright (C) 2013, 2014 Linaro Ltd.
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
+#include <linex/efi.h>
+#include <linex/init.h>
 
 #include <asm/efi.h>
 #include <asm/stacktrace.h>

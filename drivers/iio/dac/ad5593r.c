@@ -8,10 +8,10 @@
 
 #include "ad5592r-base.h"
 
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
 
 #include <asm/unaligned.h>
 

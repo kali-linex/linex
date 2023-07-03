@@ -7,10 +7,10 @@
 #ifndef __MESON_DRV_H
 #define __MESON_DRV_H
 
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
 struct drm_crtc;
 struct drm_device;

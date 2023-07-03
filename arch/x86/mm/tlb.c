@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/init.h>
+#include <linex/init.h>
 
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/sched/smt.h>
-#include <linux/task_work.h>
+#include <linex/mm.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/cpu.h>
+#include <linex/debugfs.h>
+#include <linex/sched/smt.h>
+#include <linex/task_work.h>
 
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>

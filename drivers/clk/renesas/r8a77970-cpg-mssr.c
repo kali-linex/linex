@@ -9,11 +9,11 @@
  * Copyright (C) 2015 Glider bvba
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a77970-cpg-mssr.h>
 

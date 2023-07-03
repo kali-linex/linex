@@ -15,7 +15,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include "rsi_usb.h"
 
 /**

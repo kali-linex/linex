@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linex/jump_label.h>
+#include <linex/kernel.h>
+#include <linex/memory.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 
 #define NOP32_HI	0xc400

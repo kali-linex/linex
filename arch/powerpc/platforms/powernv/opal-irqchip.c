@@ -2,23 +2,23 @@
 /*
  * This file implements an irqchip for OPAL events. Whenever there is
  * an interrupt that is handled by OPAL we get passed a list of events
- * that Linux needs to do something about. These basically look like
- * interrupts to Linux so we implement an irqchip to handle them.
+ * that Linex needs to do something about. These basically look like
+ * interrupts to Linex so we implement an irqchip to handle them.
  *
  * Copyright Alistair Popple, IBM Corporation 2014.
  */
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of_irq.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/kthread.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/of_irq.h>
 
 #include <asm/machdep.h>
 #include <asm/opal.h>
@@ -294,7 +294,7 @@ machine_arch_initcall(powernv, opal_event_init);
  * opal_event_request(unsigned int opal_event_nr) - Request an event
  * @opal_event_nr: the opal event number to request
  *
- * This routine can be used to find the linux virq number which can
+ * This routine can be used to find the linex virq number which can
  * then be passed to request_irq to assign a handler for a particular
  * opal event. This should only be used by legacy devices which don't
  * have proper device tree bindings. Most devices should use

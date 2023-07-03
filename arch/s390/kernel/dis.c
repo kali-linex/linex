@@ -6,24 +6,24 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/reboot.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/timer.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/kallsyms.h>
+#include <linex/reboot.h>
+#include <linex/kprobes.h>
+#include <linex/kdebug.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 #include <asm/dis.h>
 #include <asm/io.h>
 #include <asm/cpcmd.h>

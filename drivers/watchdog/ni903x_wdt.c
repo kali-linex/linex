@@ -3,12 +3,12 @@
  * Copyright (C) 2016 National Instruments Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/watchdog.h>
 
 #define NIWD_CONTROL	0x01
 #define NIWD_COUNTER2	0x02

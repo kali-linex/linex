@@ -6,13 +6,13 @@
  *               Krzysztof Opasiak <k.opasiak@samsung.com>
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/ch9.h>
-#include <linux/sysfs.h>
-#include <linux/kthread.h>
-#include <linux/byteorder/generic.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/ch9.h>
+#include <linex/sysfs.h>
+#include <linex/kthread.h>
+#include <linex/byteorder/generic.h>
 
 #include "usbip_common.h"
 #include "vudc.h"

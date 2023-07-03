@@ -23,8 +23,8 @@
 
 #define ADDRCONF_NOTIFY_PRIORITY	0
 
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linex/in.h>
+#include <linex/in6.h>
 
 struct prefix_info {
 	__u8			type;
@@ -49,8 +49,8 @@ struct prefix_info {
 	struct in6_addr		prefix;
 };
 
-#include <linux/ipv6.h>
-#include <linux/netdevice.h>
+#include <linex/ipv6.h>
+#include <linex/netdevice.h>
 #include <net/if_inet6.h>
 #include <net/ipv6.h>
 

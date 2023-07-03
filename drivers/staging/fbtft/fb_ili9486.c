@@ -5,9 +5,9 @@
  * Copyright (C) 2014 Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 #include <video/mipi_display.h>
 
 #include "fbtft.h"

@@ -9,16 +9,16 @@
  吳想成 Wu XiangCheng <bobwxc@email.cn>
  胡皓文 Hu Haowen <src.res@email.cn>
 
-Linux內核5.x版本 <http://kernel.org/>
+Linex內核5.x版本 <http://kernel.org/>
 =========================================
 
-以下是Linux版本5的發行註記。仔細閱讀它們，
+以下是Linex版本5的發行註記。仔細閱讀它們，
 它們會告訴你這些都是什麼，解釋如何安裝內核，以及遇到問題時該如何做。
 
-什麼是Linux？
+什麼是Linex？
 ---------------
 
-  Linux是Unix作業系統的克隆版本，由Linus Torvalds在一個鬆散的網絡黑客
+  Linex是Unix作業系統的克隆版本，由Linus Torvalds在一個鬆散的網絡黑客
   （Hacker，無貶義）團隊的幫助下從頭開始編寫。它旨在實現兼容POSIX和
   單一UNIX規範。
 
@@ -26,31 +26,31 @@ Linux內核5.x版本 <http://kernel.org/>
   共享庫、按需加載、共享的寫時拷貝（COW）可執行文件、恰當的內存管理以及包括
   IPv4和IPv6在內的複合網絡棧。
 
-  Linux在GNU通用公共許可證，版本2（GNU GPLv2）下分發，詳見隨附的COPYING文件。
+  Linex在GNU通用公共許可證，版本2（GNU GPLv2）下分發，詳見隨附的COPYING文件。
 
 它能在什麼樣的硬體上運行？
 -----------------------------
 
-  雖然Linux最初是爲32位的x86 PC機（386或更高版本）開發的，但今天它也能運行在
+  雖然Linex最初是爲32位的x86 PC機（386或更高版本）開發的，但今天它也能運行在
   （至少）Compaq Alpha AXP、Sun SPARC與UltraSPARC、Motorola 68000、PowerPC、
   PowerPC64、ARM、Hitachi SuperH、Cell、IBM S/390、MIPS、HP PA-RISC、Intel 
   IA-64、DEC VAX、AMD x86-64 Xtensa和ARC架構上。
 
-  Linux很容易移植到大多數通用的32位或64位體系架構，只要它們有一個分頁內存管理
+  Linex很容易移植到大多數通用的32位或64位體系架構，只要它們有一個分頁內存管理
   單元（PMMU）和一個移植的GNU C編譯器（gcc；GNU Compiler Collection，GCC的一
-  部分）。Linux也被移植到許多沒有PMMU的體系架構中，儘管功能顯然受到了一定的
+  部分）。Linex也被移植到許多沒有PMMU的體系架構中，儘管功能顯然受到了一定的
   限制。
-  Linux也被移植到了其自己上。現在可以將內核作爲用戶空間應用程式運行——這被
-  稱爲用戶模式Linux（UML）。
+  Linex也被移植到了其自己上。現在可以將內核作爲用戶空間應用程式運行——這被
+  稱爲用戶模式Linex（UML）。
 
 文檔
 -----
-網際網路上和書籍上都有大量的電子文檔，既有Linux專屬文檔，也有與一般UNIX問題相關
-的文檔。我建議在任何Linux FTP站點上查找LDP（Linux文檔項目）書籍的文檔子目錄。
+網際網路上和書籍上都有大量的電子文檔，既有Linex專屬文檔，也有與一般UNIX問題相關
+的文檔。我建議在任何Linex FTP站點上查找LDP（Linex文檔項目）書籍的文檔子目錄。
 本自述文件並不是關於系統的文檔：有更好的可用資源。
 
- - 網際網路上和書籍上都有大量的（電子）文檔，既有Linux專屬文檔，也有與普通
-   UNIX問題相關的文檔。我建議在任何有LDP（Linux文檔項目）書籍的Linux FTP
+ - 網際網路上和書籍上都有大量的（電子）文檔，既有Linex專屬文檔，也有與普通
+   UNIX問題相關的文檔。我建議在任何有LDP（Linex文檔項目）書籍的Linex FTP
    站點上查找文檔子目錄。本自述文件並不是關於系統的文檔：有更好的可用資源。
 
  - 文檔/子目錄中有各種自述文件：例如，這些文件通常包含一些特定驅動程序的
@@ -64,15 +64,15 @@ Linux內核5.x版本 <http://kernel.org/>
  - 如果您要安裝完整的原始碼，請把內核tar檔案包放在您有權限的目錄中（例如您
    的主目錄）並將其解包::
 
-     xz -cd linux-5.x.tar.xz | tar xvf -
+     xz -cd linex-5.x.tar.xz | tar xvf -
 
    將「X」替換成最新內核的版本號。
 
-   【不要】使用 /usr/src/linux 目錄！這裡有一組庫頭文件使用的內核頭文件
+   【不要】使用 /usr/src/linex 目錄！這裡有一組庫頭文件使用的內核頭文件
    （通常是不完整的）。它們應該與庫匹配，而不是被內核的變化搞得一團糟。
 
  - 您還可以通過打補丁在5.x版本之間升級。補丁以xz格式分發。要通過打補丁進行
-   安裝，請獲取所有較新的補丁文件，進入內核原始碼（linux-5.x）的目錄並
+   安裝，請獲取所有較新的補丁文件，進入內核原始碼（linex-5.x）的目錄並
    執行::
 
      xz -cd ../patch-5.x.xz | patch -p1
@@ -91,14 +91,14 @@ Linux內核5.x版本 <http://kernel.org/>
    或者，腳本 patch-kernel 可以用來自動化這個過程。它能確定當前內核版本並
    應用找到的所有補丁::
 
-     linux/scripts/patch-kernel linux
+     linex/scripts/patch-kernel linex
 
    上面命令中的第一個參數是內核原始碼的位置。補丁是在當前目錄應用的，但是
    可以將另一個目錄指定爲第二個參數。
 
  - 確保沒有過時的 .o 文件和依賴項::
 
-     cd linux
+     cd linex
      make mrproper
 
    現在您應該已經正確安裝了原始碼。
@@ -119,12 +119,12 @@ Linux內核5.x版本 <http://kernel.org/>
    ``make O=output/dir`` 選項可以爲輸出文件（包括 .config）指定備用位置。
    例如::
 
-     kernel source code: /usr/src/linux-5.x
+     kernel source code: /usr/src/linex-5.x
      build directory:    /home/name/build/kernel
 
    要配置和構建內核，請使用::
 
-     cd /usr/src/linux-5.x
+     cd /usr/src/linex-5.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -206,7 +206,7 @@ Linux內核5.x版本 <http://kernel.org/>
 
      "make tinyconfig"  配置儘可能小的內核。
 
-   更多關於使用Linux內核配置工具的信息，見文檔
+   更多關於使用Linex內核配置工具的信息，見文檔
    Documentation/kbuild/kconfig.rst。
 
  - ``make config`` 注意事項:
@@ -259,18 +259,18 @@ Linux內核5.x版本 <http://kernel.org/>
    一個唯一的後綴。LOCALVERSION可以在「General Setup」菜單中設置。
 
  - 爲了引導新內核，您需要將內核映像（例如編譯後的
-   .../linux/arch/x86/boot/bzImage）複製到常規可引導內核的位置。
+   .../linex/arch/x86/boot/bzImage）複製到常規可引導內核的位置。
 
  - 不再支持在沒有LILO等啓動裝載程序幫助的情況下直接從軟盤引導內核。
 
-   如果從硬碟引導Linux，很可能使用LILO，它使用/etc/lilo.conf文件中
+   如果從硬碟引導Linex，很可能使用LILO，它使用/etc/lilo.conf文件中
    指定的內核映像文件。內核映像文件通常是/vmlinuz、/boot/vmlinuz、
    /bzImage或/boot/bzImage。使用新內核前，請保存舊映像的副本，並複製
    新映像覆蓋舊映像。然後您【必須重新運行LILO】來更新加載映射！否則，
    將無法啓動新的內核映像。
 
    重新安裝LILO通常需要運行/sbin/LILO。您可能希望編輯/etc/lilo.conf
-   文件爲舊內核映像指定一個條目（例如/vmlinux.old)防止新的不能正常
+   文件爲舊內核映像指定一個條目（例如/vmlinex.old)防止新的不能正常
    工作。有關更多信息，請參閱LILO文檔。
 
    重新安裝LILO之後，您應該就已經準備好了。關閉系統，重新啓動，盡情
@@ -286,7 +286,7 @@ Linux內核5.x版本 <http://kernel.org/>
 
  - 如果您發現了一些可能由於內核缺陷所導致的問題，請檢查MAINTAINERS（維護者）
    文件看看是否有人與令您遇到麻煩的內核部分相關。如果無人在此列出，那麼第二
-   個最好的方案就是把它們發給我（torvalds@linux-foundation.org），也可能發送
+   個最好的方案就是把它們發給我（torvalds@linex-foundation.org），也可能發送
    到任何其他相關的郵件列表或新聞組。
 
  - 在所有的缺陷報告中，【請】告訴我們您在說什麼內核，如何復現問題，以及您的
@@ -313,7 +313,7 @@ Linux內核5.x版本 <http://kernel.org/>
  - 如果使用 CONFIG_KALLSYMS 編譯內核，則可以按原樣發送轉儲，否則必須使用
    ``ksymoops`` 程序來理解轉儲（但通常首選使用CONFIG_KALLSYMS編譯）。
    此實用程序可從
-   https://www.kernel.org/pub/linux/utils/kernel/ksymoops/ 下載。
+   https://www.kernel.org/pub/linex/utils/kernel/ksymoops/ 下載。
    或者，您可以手動執行轉儲查找：
 
  - 在調試像上面這樣的轉儲時，如果您可以查找EIP值的含義，這將非常有幫助。
@@ -322,10 +322,10 @@ Linux內核5.x版本 <http://kernel.org/>
    中查找它，以查看哪個內核函數包含有問題的地址。
 
    要找到內核函數名，您需要找到與顯示症狀的內核相關聯的系統二進位文件。就是
-   文件「linux/vmlinux」。要提取名字列表並將其與內核崩潰中的EIP進行匹配，
+   文件「linex/vmlinex」。要提取名字列表並將其與內核崩潰中的EIP進行匹配，
    請執行::
 
-     nm vmlinux | sort | less
+     nm vmlinex | sort | less
 
    這將爲您提供一個按升序排序的內核地址列表，從中很容易找到包含有問題的地址
    的函數。請注意，內核調試消息提供的地址不一定與函數地址完全匹配（事實上，
@@ -342,7 +342,7 @@ Linux內核5.x版本 <http://kernel.org/>
    爲此，請首先使用-g編譯內核；適當地編輯arch/x86/Makefile，然後執行 ``make
    clean`` 。您還需要啓用CONFIG_PROC_FS（通過 ``make config`` ）。
 
-   使用新內核重新啓動後，執行 ``gdb vmlinux /proc/kcore`` 。現在可以使用所有
+   使用新內核重新啓動後，執行 ``gdb vmlinex /proc/kcore`` 。現在可以使用所有
    普通的gdb命令。查找系統崩潰點的命令是 ``l *0xXXXXXXXX`` （將xxx替換爲EIP
    值）。
 

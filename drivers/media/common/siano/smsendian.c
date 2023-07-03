@@ -8,7 +8,7 @@
 
  ****************************************************************/
 
-#include <linux/export.h>
+#include <linex/export.h>
 #include <asm/byteorder.h>
 
 #include "smsendian.h"

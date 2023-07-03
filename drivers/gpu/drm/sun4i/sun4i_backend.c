@@ -6,14 +6,14 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/component.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/component.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

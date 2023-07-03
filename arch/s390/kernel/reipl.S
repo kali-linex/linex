@@ -5,7 +5,7 @@
  *		 Denis Joseph Barrow,
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/nospec-insn.h>
 #include <asm/sigp.h>

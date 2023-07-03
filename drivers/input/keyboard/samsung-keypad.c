@@ -7,20 +7,20 @@
  * Author: Donghwa Lee <dh09.lee@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/sched.h>
-#include <linux/input/samsung-keypad.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/sched.h>
+#include <linex/input/samsung-keypad.h>
 
 #define SAMSUNG_KEYIFCON			0x00
 #define SAMSUNG_KEYIFSTSCLR			0x04
@@ -287,15 +287,15 @@ samsung_keypad_parse_dt(struct device *dev)
 		u32 row, col, key_code;
 		of_property_read_u32(key_np, "keypad,row", &row);
 		of_property_read_u32(key_np, "keypad,column", &col);
-		of_property_read_u32(key_np, "linux,code", &key_code);
+		of_property_read_u32(key_np, "linex,code", &key_code);
 		*keymap++ = KEY(row, col, key_code);
 	}
 
-	pdata->no_autorepeat = of_property_read_bool(np, "linux,input-no-autorepeat");
+	pdata->no_autorepeat = of_property_read_bool(np, "linex,input-no-autorepeat");
 
 	pdata->wakeup = of_property_read_bool(np, "wakeup-source") ||
 			/* legacy name */
-			of_property_read_bool(np, "linux,input-wakeup");
+			of_property_read_bool(np, "linex,input-wakeup");
 
 
 	return pdata;

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* System call table for i386. */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
-#include <linux/cache.h>
-#include <linux/syscalls.h>
+#include <linex/linkage.h>
+#include <linex/sys.h>
+#include <linex/cache.h>
+#include <linex/syscalls.h>
 #include <asm/syscall.h>
 
 #ifdef CONFIG_IA32_EMULATION

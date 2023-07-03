@@ -11,7 +11,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linex-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -20,9 +20,9 @@
  *    Daisy Chang           <daisyc@us.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/in.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
 #include <net/if_inet6.h>

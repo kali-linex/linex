@@ -7,21 +7,21 @@
  * Copyright (C) 2016 Lino Sanfilippo <LinoSanfilippo@gmx.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/list.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/crc32.h>
+#include <linex/dma-mapping.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/list.h>
+#include <linex/u64_stats_sync.h>
 
 #include "slic.h"
 

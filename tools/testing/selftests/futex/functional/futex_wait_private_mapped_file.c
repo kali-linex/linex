@@ -22,7 +22,7 @@
 #include <syscall.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/futex.h>
+#include <linex/futex.h>
 #include <pthread.h>
 #include <libgen.h>
 #include <signal.h>

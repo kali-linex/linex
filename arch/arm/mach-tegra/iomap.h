@@ -10,8 +10,8 @@
 #ifndef __MACH_TEGRA_IOMAP_H
 #define __MACH_TEGRA_IOMAP_H
 
-#include <linux/pgtable.h>
-#include <linux/sizes.h>
+#include <linex/pgtable.h>
+#include <linex/sizes.h>
 
 #define TEGRA_IRAM_BASE			0x40000000
 #define TEGRA_IRAM_SIZE			SZ_256K

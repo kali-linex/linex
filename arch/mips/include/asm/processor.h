@@ -11,10 +11,10 @@
 #ifndef _ASM_PROCESSOR_H
 #define _ASM_PROCESSOR_H
 
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/sizes.h>
-#include <linux/threads.h>
+#include <linex/atomic.h>
+#include <linex/cpumask.h>
+#include <linex/sizes.h>
+#include <linex/threads.h>
 
 #include <asm/cachectl.h>
 #include <asm/cpu.h>

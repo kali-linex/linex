@@ -5,15 +5,15 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 // SOF client support:
-//  Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
-//  Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+//  Ranjani Sridharan <ranjani.sridharan@linex.intel.com>
+//  Peter Ujfalusi <peter.ujfalusi@linex.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/string_helpers.h>
-#include <linux/stddef.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/string_helpers.h>
+#include <linex/stddef.h>
 
 #include <sound/soc.h>
 #include <sound/sof/header.h>

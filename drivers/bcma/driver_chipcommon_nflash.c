@@ -7,10 +7,10 @@
 
 #include "bcma_private.h"
 
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/brcmnand.h>
-#include <linux/bcma/bcma.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/brcmnand.h>
+#include <linex/bcma/bcma.h>
 
 /* Alternate NAND controller driver name in order to allow both bcm47xxnflash
  * and bcma_brcmnand to be built into the same kernel image.

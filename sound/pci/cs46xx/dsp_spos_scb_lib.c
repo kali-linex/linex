@@ -7,12 +7,12 @@
  */
 
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

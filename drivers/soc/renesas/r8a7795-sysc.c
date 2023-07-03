@@ -5,9 +5,9 @@
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <linex/bits.h>
+#include <linex/kernel.h>
+#include <linex/sys_soc.h>
 
 #include <dt-bindings/power/r8a7795-sysc.h>
 

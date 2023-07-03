@@ -39,22 +39,22 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/selection.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/of_address.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/selection.h>
+#include <linex/init.h>
+#include <linex/nvram.h>
+#include <linex/adb.h>
+#include <linex/cuda.h>
+#include <linex/of_address.h>
 #ifdef CONFIG_MAC
 #include <asm/macintosh.h>
 #endif
@@ -440,7 +440,7 @@ static int read_valkyrie_sense(struct fb_info_valkyrie *p)
  * swiping the platinumfb code is that we now have more comprehensible error
  * messages when a vmode/cmode switch fails. (Most of the error messages are
  * platinumfb.c, but I added two of my own, and I also changed some commas
- * into colons to make the messages more consistent with other Linux error
+ * into colons to make the messages more consistent with other Linex error
  * messages.) In addition, I think the new code *might* fix some vmode-
  * switching oddities, but I'm not sure.
  *

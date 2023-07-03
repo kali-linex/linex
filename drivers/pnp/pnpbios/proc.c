@@ -18,16 +18,16 @@
  * The other files are human-readable.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/pnp.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/proc_fs.h>
+#include <linex/pnp.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "pnpbios.h"
 

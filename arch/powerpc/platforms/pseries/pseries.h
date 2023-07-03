@@ -6,7 +6,7 @@
 #ifndef _PSERIES_PSERIES_H
 #define _PSERIES_PSERIES_H
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 #include <asm/rtas.h>
 
 struct device_node;
@@ -14,7 +14,7 @@ struct device_node;
 void __init request_event_sources_irqs(struct device_node *np,
 				       irq_handler_t handler, const char *name);
 
-#include <linux/of.h>
+#include <linex/of.h>
 
 struct pt_regs;
 

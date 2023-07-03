@@ -8,8 +8,8 @@
  * This file contains HFI1 support for IPOIB SDMA functionality
  */
 
-#include <linux/log2.h>
-#include <linux/circ_buf.h>
+#include <linex/log2.h>
+#include <linex/circ_buf.h>
 
 #include "sdma.h"
 #include "verbs.h"

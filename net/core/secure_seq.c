@@ -3,20 +3,20 @@
  * Copyright (C) 2016 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/random.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/siphash.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/cache.h>
+#include <linex/random.h>
+#include <linex/hrtimer.h>
+#include <linex/ktime.h>
+#include <linex/string.h>
+#include <linex/net.h>
+#include <linex/siphash.h>
 #include <net/secure_seq.h>
 
 #if IS_ENABLED(CONFIG_IPV6) || IS_ENABLED(CONFIG_INET)
-#include <linux/in6.h>
+#include <linex/in6.h>
 #include <net/tcp.h>
 
 static siphash_aligned_key_t net_secret;

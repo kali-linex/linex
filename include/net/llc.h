@@ -12,15 +12,15 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rculist_nulls.h>
-#include <linux/hash.h>
-#include <linux/jhash.h>
+#include <linex/if.h>
+#include <linex/if_ether.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/rculist_nulls.h>
+#include <linex/hash.h>
+#include <linex/jhash.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 struct net_device;
 struct packet_type;

@@ -3,12 +3,12 @@
  * MCE event pool management in MCE context
  *
  * Copyright (C) 2015 Intel Corp.
- * Author: Chen, Gong <gong.chen@linux.intel.com>
+ * Author: Chen, Gong <gong.chen@linex.intel.com>
  */
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/genalloc.h>
-#include <linux/llist.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/genalloc.h>
+#include <linex/llist.h>
 #include "internal.h"
 
 /*

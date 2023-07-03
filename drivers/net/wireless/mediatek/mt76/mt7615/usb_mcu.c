@@ -5,8 +5,8 @@
  *	   Lorenzo Bianconi <lorenzo@kernel.org>
  *	   Sean Wang <sean.wang@mediatek.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 #include "mt7615.h"
 #include "mac.h"

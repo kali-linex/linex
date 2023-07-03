@@ -1,13 +1,13 @@
-Linux CDC ACM inf
+Linex CDC ACM inf
 -----------------
 
-.. include:: linux-cdc-acm.inf
+.. include:: linex-cdc-acm.inf
     :literal:
 
-Linux inf
+Linex inf
 ---------
 
-.. include:: linux.inf
+.. include:: linex.inf
     :literal:
 
 USB devfs drop permissions source

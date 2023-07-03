@@ -6,7 +6,7 @@
 #endif
 #include <errno.h>
 #include <unistd.h>
-#include <linux/err.h>
+#include <linex/err.h>
 #include <bpf/libbpf.h>
 
 #include "main.h"

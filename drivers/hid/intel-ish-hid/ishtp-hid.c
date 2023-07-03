@@ -5,9 +5,9 @@
  * Copyright (c) 2012-2016, Intel Corporation.
  */
 
-#include <linux/hid.h>
-#include <linux/intel-ish-client-if.h>
-#include <uapi/linux/input.h>
+#include <linex/hid.h>
+#include <linex/intel-ish-client-if.h>
+#include <uapi/linex/input.h>
 #include "ishtp-hid.h"
 
 /**

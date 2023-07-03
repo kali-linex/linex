@@ -6,8 +6,8 @@
 #ifndef __NETNS_CAN_H__
 #define __NETNS_CAN_H__
 
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
 
 struct can_dev_rcv_lists;
 struct can_pkg_stats;

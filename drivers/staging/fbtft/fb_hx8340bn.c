@@ -10,12 +10,12 @@
  * Copyright (C) 2013 Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/spi/spi.h>
+#include <linex/delay.h>
 #include <video/mipi_display.h>
 
 #include "fbtft.h"

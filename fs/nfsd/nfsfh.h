@@ -5,14 +5,14 @@
  * This file describes the layout of the file handles as passed
  * over the wire.
  */
-#ifndef _LINUX_NFSD_NFSFH_H
-#define _LINUX_NFSD_NFSFH_H
+#ifndef _LINEX_NFSD_NFSFH_H
+#define _LINEX_NFSD_NFSFH_H
 
-#include <linux/crc32.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/iversion.h>
-#include <linux/exportfs.h>
-#include <linux/nfs4.h>
+#include <linex/crc32.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/iversion.h>
+#include <linex/exportfs.h>
+#include <linex/nfs4.h>
 
 /*
  * The file handle starts with a sequence of four-byte words.
@@ -41,7 +41,7 @@
  * The fileid_type identifies how the file within the filesystem is encoded.
  *   The values for this field are filesystem specific, exccept that
  *   filesystems must not use the values '0' or '0xff'. 'See enum fid_type'
- *   in include/linux/exportfs.h for currently registered values.
+ *   in include/linex/exportfs.h for currently registered values.
  */
 
 struct knfsd_fh {
@@ -297,4 +297,4 @@ u64 nfsd4_change_attribute(struct kstat *stat, struct inode *inode);
 extern void fh_fill_pre_attrs(struct svc_fh *fhp);
 extern void fh_fill_post_attrs(struct svc_fh *fhp);
 extern void fh_fill_both_attrs(struct svc_fh *fhp);
-#endif /* _LINUX_NFSD_NFSFH_H */
+#endif /* _LINEX_NFSD_NFSFH_H */

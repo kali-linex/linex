@@ -2,18 +2,18 @@
 /*
  * UEFI Common Platform Error Record (CPER) support
  *
- * Copyright (C) 2017, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2017, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/cper.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
-#include <linux/bcd.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/time.h>
+#include <linex/cper.h>
+#include <linex/dmi.h>
+#include <linex/acpi.h>
+#include <linex/pci.h>
+#include <linex/printk.h>
+#include <linex/bcd.h>
 #include <acpi/ghes.h>
 #include <ras/ras_event.h>
 

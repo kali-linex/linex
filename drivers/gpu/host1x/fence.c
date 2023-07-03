@@ -5,11 +5,11 @@
  * Copyright (c) 2020, NVIDIA Corporation.
  */
 
-#include <linux/dma-fence.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sync_file.h>
+#include <linex/dma-fence.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/sync_file.h>
 
 #include "fence.h"
 #include "intr.h"

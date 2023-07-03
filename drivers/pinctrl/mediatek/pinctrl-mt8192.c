@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include "pinctrl-mtk-mt8192.h"
 #include "pinctrl-paris.h"
 

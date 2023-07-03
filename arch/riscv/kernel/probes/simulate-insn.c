@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/kprobes.h>
 
 #include "decode-insn.h"
 #include "simulate-insn.h"

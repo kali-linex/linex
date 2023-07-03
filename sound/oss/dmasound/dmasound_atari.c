@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/sound/oss/dmasound/dmasound_atari.c
+ *  linex/sound/oss/dmasound/dmasound_atari.c
  *
  *  Atari TT and Falcon DMA Sound Driver
  *
- *  See linux/sound/oss/dmasound/dmasound_core.c for copyright and credits
+ *  See linex/sound/oss/dmasound/dmasound_core.c for copyright and credits
  *  prior to 28/01/2001
  *
  *  28/01/2001 [0.1] Iain Sandoe
@@ -15,15 +15,15 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/soundcard.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/soundcard.h>
+#include <linex/mm.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/atariints.h>
 #include <asm/atari_stram.h>
 

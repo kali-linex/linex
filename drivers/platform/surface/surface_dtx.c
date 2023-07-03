@@ -11,24 +11,24 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/fs.h>
-#include <linux/input.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/fs.h>
+#include <linex/input.h>
+#include <linex/ioctl.h>
+#include <linex/kernel.h>
+#include <linex/kfifo.h>
+#include <linex/kref.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
-#include <linux/surface_aggregator/dtx.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/device.h>
+#include <linex/surface_aggregator/dtx.h>
 
 
 /* -- SSAM interface. ------------------------------------------------------- */

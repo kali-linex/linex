@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/err_ev7.c
+ *	linex/arch/alpha/kernel/err_ev7.c
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *
  *	Error handling code supporting Alpha systems
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <linex/init.h>
+#include <linex/sched.h>
 
 #include <asm/io.h>
 #include <asm/hwrpb.h>

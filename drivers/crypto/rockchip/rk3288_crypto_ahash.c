@@ -8,9 +8,9 @@
  *
  * Some ideas are from marvell/cesa.c and s5p-sss.c driver.
  */
-#include <linux/device.h>
+#include <linex/device.h>
 #include <asm/unaligned.h>
-#include <linux/iopoll.h>
+#include <linex/iopoll.h>
 #include "rk3288_crypto.h"
 
 /*

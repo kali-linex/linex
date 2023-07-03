@@ -4,16 +4,16 @@
 // Copyright (c) 2017 Samsung Electronics Co., Ltd.
 // Copyright (c) 2017 Andi Shyti <andi@etezian.org>
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/input/mt.h>
+#include <linex/input/touchscreen.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
 
 /* I2C commands */
 #define STMFTS_READ_INFO			0x80

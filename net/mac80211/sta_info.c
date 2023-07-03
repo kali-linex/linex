@@ -7,16 +7,16 @@
  * Copyright (C) 2018-2023 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/timer.h>
-#include <linux/rtnetlink.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/timer.h>
+#include <linex/rtnetlink.h>
 
 #include <net/codel.h>
 #include <net/mac80211.h>

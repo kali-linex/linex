@@ -9,19 +9,19 @@
  *              Vlad Lungu   <vlad.lungu@windriver.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
-#include <linux/kmod.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/videodev2.h>
+#include <linex/kmod.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
@@ -101,7 +101,7 @@ static inline struct vip_buffer *to_vip_buffer(struct vb2_v4l2_buffer *vb2)
  * @sequence: sequence number of acquired buffer
  * @active: current active buffer
  * @lock: used in videobuf2 callback
- * @v4l_lock: serialize its video4linux ioctls
+ * @v4l_lock: serialize its video4linex ioctls
  * @tcount: Number of top frames
  * @bcount: Number of bottom frames
  * @overflow: Number of FIFO overflows

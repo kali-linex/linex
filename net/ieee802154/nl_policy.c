@@ -5,9 +5,9 @@
  * Copyright (C) 2007, 2008 Siemens AG
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <net/netlink.h>
-#include <linux/nl802154.h>
+#include <linex/nl802154.h>
 
 #define NLA_HW_ADDR NLA_U64
 

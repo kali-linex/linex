@@ -7,14 +7,14 @@
  * Copyright (c) 2023, Oracle and/or its affiliates.
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/fdtable.h>
-#include <linux/rhashtable.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/inet.h>
+#include <linex/fdtable.h>
+#include <linex/rhashtable.h>
 
 #include <net/sock.h>
 #include <net/genetlink.h>
@@ -22,7 +22,7 @@
 
 #include <kunit/visibility.h>
 
-#include <uapi/linux/handshake.h>
+#include <uapi/linex/handshake.h>
 #include "handshake.h"
 
 #include <trace/events/handshake.h>

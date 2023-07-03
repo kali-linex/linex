@@ -13,15 +13,15 @@
  */
 #include <asm/cpm.h>
 #include <soc/fsl/qe/qe.h>
-#include <linux/dma-mapping.h>
-#include <linux/fsl_devices.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/byteorder/generic.h>
+#include <linex/dma-mapping.h>
+#include <linex/fsl_devices.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/spi/spi.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/byteorder/generic.h>
 
 #include "spi-fsl-cpm.h"
 #include "spi-fsl-lib.h"

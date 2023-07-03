@@ -3,10 +3,10 @@
 #define __ASM_POWERPC_MMU_CONTEXT_H
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
 #include <asm/mmu.h>	
 #include <asm/cputable.h>
 #include <asm/cputhreads.h>

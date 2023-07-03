@@ -6,17 +6,17 @@
  * Copyright 2006-2008, 2011-2012, 2015 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/sched/hotplug.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/kexec.h>
-#include <linux/highmem.h>
-#include <linux/cpu.h>
-#include <linux/fsl/guts.h>
-#include <linux/pgtable.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/sched/hotplug.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/kexec.h>
+#include <linex/highmem.h>
+#include <linex/cpu.h>
+#include <linex/fsl/guts.h>
+#include <linex/pgtable.h>
 
 #include <asm/machdep.h>
 #include <asm/page.h>

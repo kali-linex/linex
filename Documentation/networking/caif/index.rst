@@ -8,5 +8,5 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   linux_caif
+   linex_caif
    caif

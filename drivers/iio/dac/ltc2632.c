@@ -6,12 +6,12 @@
  * expanded by Silvan Murer <silvan.murer@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linex/device.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
+#include <linex/iio/iio.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 

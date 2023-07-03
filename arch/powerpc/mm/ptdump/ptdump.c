@@ -7,21 +7,21 @@
  * /sys/kernel/debug/kernel_pagetables.
  *
  * Derived from the arm64 implementation:
- * Copyright (c) 2014, The Linux Foundation, Laura Abbott.
+ * Copyright (c) 2014, The Linex Foundation, Laura Abbott.
  * (C) Copyright 2008 Intel Corporation, Arjan van de Ven.
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/hugetlb.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/ptdump.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/fs.h>
+#include <linex/hugetlb.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/ptdump.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
 #include <asm/fixmap.h>
-#include <linux/const.h>
-#include <linux/kasan.h>
+#include <linex/const.h>
+#include <linex/kasan.h>
 #include <asm/page.h>
 #include <asm/hugetlb.h>
 

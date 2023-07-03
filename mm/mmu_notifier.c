@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/mmu_notifier.c
+ *  linex/mm/mmu_notifier.c
  *
  *  Copyright (C) 2008  Qumranet, Inc.
  *  Copyright (C) 2008  SGI
- *             Christoph Lameter <cl@linux.com>
+ *             Christoph Lameter <cl@linex.com>
  */
 
-#include <linux/rculist.h>
-#include <linux/mmu_notifier.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/interval_tree.h>
-#include <linux/srcu.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
+#include <linex/rculist.h>
+#include <linex/mmu_notifier.h>
+#include <linex/export.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/interval_tree.h>
+#include <linex/srcu.h>
+#include <linex/rcupdate.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/slab.h>
 
 /* global SRCU for all MMs */
 DEFINE_STATIC_SRCU(srcu);

@@ -8,9 +8,9 @@
  */
 
 #include <dt-bindings/clock/hi3670-clock.h>
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 #include "clk.h"
 
 static const struct hisi_fixed_rate_clock hi3670_fixed_rate_clks[] = {

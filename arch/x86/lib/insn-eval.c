@@ -3,10 +3,10 @@
  *
  * Copyright (C) Intel Corporation 2017
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ratelimit.h>
-#include <linux/mmu_context.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/ratelimit.h>
+#include <linex/mmu_context.h>
 #include <asm/desc_defs.h>
 #include <asm/desc.h>
 #include <asm/inat.h>

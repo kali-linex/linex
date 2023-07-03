@@ -24,12 +24,12 @@
 #ifndef __AMDGPU_MN_H__
 #define __AMDGPU_MN_H__
 
-#include <linux/types.h>
-#include <linux/hmm.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/interval_tree.h>
-#include <linux/mmu_notifier.h>
+#include <linex/types.h>
+#include <linex/hmm.h>
+#include <linex/rwsem.h>
+#include <linex/workqueue.h>
+#include <linex/interval_tree.h>
+#include <linex/mmu_notifier.h>
 
 int amdgpu_hmm_range_get_pages(struct mmu_interval_notifier *notifier,
 			       uint64_t start, uint64_t npages, bool readonly,

@@ -5,10 +5,10 @@
  * Copyright (C) 2015, Marvell International Ltd.
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <asm/unaligned.h>
-#include <linux/firmware.h>
-#include <linux/nfc.h>
+#include <linex/firmware.h>
+#include <linex/nfc.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 #include "nfcmrvl.h"

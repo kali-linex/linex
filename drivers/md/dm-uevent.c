@@ -3,13 +3,13 @@
  * Device Mapper Uevent Support (dm-uevent)
  *
  * Copyright IBM Corporation, 2007
- *	Author: Mike Anderson <andmike@linux.vnet.ibm.com>
+ *	Author: Mike Anderson <andmike@linex.vnet.ibm.com>
  */
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kobject.h>
-#include <linux/dm-ioctl.h>
-#include <linux/export.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/kobject.h>
+#include <linex/dm-ioctl.h>
+#include <linex/export.h>
 
 #include "dm.h"
 #include "dm-uevent.h"

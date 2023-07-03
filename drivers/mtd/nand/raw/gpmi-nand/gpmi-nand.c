@@ -5,17 +5,17 @@
  * Copyright (C) 2010-2015 Freescale Semiconductor, Inc.
  * Copyright (C) 2008 Embedded Alley Solutions, Inc.
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched/task_stack.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma/mxs-dma.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/sched/task_stack.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mtd/partitions.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/dma/mxs-dma.h>
 #include "gpmi-nand.h"
 #include "gpmi-regs.h"
 #include "bch-regs.h"

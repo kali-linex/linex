@@ -3,12 +3,12 @@
 // Cadence PCIe host controller driver.
 // Author: Cyrille Pitchen <cyrille.pitchen@free-electrons.com>
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/list_sort.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/list_sort.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/platform_device.h>
 
 #include "pcie-cadence.h"
 

@@ -6,15 +6,15 @@
  * Copyright (C) 2010 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/pm_opp.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/pm_opp.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
 
 #include <asm/system_misc.h>
 

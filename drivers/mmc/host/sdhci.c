@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
+ *  linex/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -9,28 +9,28 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/ktime.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/ktime.h>
+#include <linex/highmem.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/scatterlist.h>
+#include <linex/sizes.h>
+#include <linex/regulator/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
 
-#include <linux/leds.h>
+#include <linex/leds.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include "sdhci.h"
 

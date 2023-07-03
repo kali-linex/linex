@@ -2,21 +2,21 @@
 // Copyright (C) 2016-2020 Arm Limited
 // CMN-600 Coherent Mesh Network PMU driver
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/debugfs.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
 
 /* Common register stuff */
 #define CMN_NODE_INFO			0x0000

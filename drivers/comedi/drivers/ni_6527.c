@@ -3,7 +3,7 @@
  * ni_6527.c
  * Comedi driver for National Instruments PCI-6527
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1999,2002,2003 David A. Schleef <ds@schleef.org>
  */
 
@@ -18,9 +18,9 @@
  * Configuration Options: not applicable, uses PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedi_pci.h>
 
 /*
  * PCI BAR1 - Register memory map

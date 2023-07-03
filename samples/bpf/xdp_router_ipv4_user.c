@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2017 Cavium, Inc.
  */
-#include <linux/bpf.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linex/bpf.h>
+#include <linex/netlink.h>
+#include <linex/rtnetlink.h>
 #include <assert.h>
 #include <errno.h>
 #include <signal.h>

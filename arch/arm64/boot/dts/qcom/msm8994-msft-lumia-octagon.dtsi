@@ -65,8 +65,8 @@
 		volup-key {
 			label = "Volume Up";
 			gpios = <&pm8994_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -74,8 +74,8 @@
 		camsnap-key {
 			label = "Camera Snapshot";
 			gpios = <&pm8994_gpios 4 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA>;
+			linex,input-type = <1>;
+			linex,code = <KEY_CAMERA>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -83,8 +83,8 @@
 		camfocus-key {
 			label = "Camera Focus";
 			gpios = <&pm8994_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -101,17 +101,17 @@
 		event-hall-front-sensor {
 			label = "Hall Effect Front Sensor";
 			gpios = <&tlmm 42 GPIO_ACTIVE_HIGH>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			linex,input-type = <EV_SW>;
+			linex,code = <SW_LID>;
+			linex,can-disable;
 		};
 
 		event-hall-back-sensor {
 			label = "Hall Effect Back Sensor";
 			gpios = <&tlmm 75 GPIO_ACTIVE_HIGH>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_MACHINE_COVER>;
-			linux,can-disable;
+			linex,input-type = <EV_SW>;
+			linex,code = <SW_MACHINE_COVER>;
+			linex,can-disable;
 		};
 	};
 
@@ -494,14 +494,14 @@
 		compatible = "qcom,pm8941-pwrkey";
 		interrupts = <0 8 0 IRQ_TYPE_EDGE_BOTH>;
 		debounce = <15625>;
-		linux,code = <KEY_POWER>;
+		linex,code = <KEY_POWER>;
 	};
 
 	resin {
 		compatible = "qcom,pm8941-resin";
 		interrupts = <0 8 1 IRQ_TYPE_EDGE_BOTH>;
 		debounce = <15625>;
-		linux,code = <KEY_VOLUMEDOWN>;
+		linex,code = <KEY_VOLUMEDOWN>;
 	};
 };
 

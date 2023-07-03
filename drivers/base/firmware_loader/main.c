@@ -10,33 +10,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kernel_read_file.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/highmem.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/async.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/reboot.h>
-#include <linux/security.h>
-#include <linux/zstd.h>
-#include <linux/xz.h>
+#include <linex/capability.h>
+#include <linex/device.h>
+#include <linex/kernel_read_file.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/initrd.h>
+#include <linex/timer.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
+#include <linex/highmem.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/file.h>
+#include <linex/list.h>
+#include <linex/fs.h>
+#include <linex/async.h>
+#include <linex/pm.h>
+#include <linex/suspend.h>
+#include <linex/syscore_ops.h>
+#include <linex/reboot.h>
+#include <linex/security.h>
+#include <linex/zstd.h>
+#include <linex/xz.h>
 
 #include <generated/utsrelease.h>
 

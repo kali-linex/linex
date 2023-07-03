@@ -2,12 +2,12 @@
 #ifndef _FUTEX_H
 #define _FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/rtmutex.h>
-#include <linux/sched/wake_q.h>
+#include <linex/futex.h>
+#include <linex/rtmutex.h>
+#include <linex/sched/wake_q.h>
 
 #ifdef CONFIG_PREEMPT_RT
-#include <linux/rcuwait.h>
+#include <linex/rcuwait.h>
 #endif
 
 #include <asm/futex.h>

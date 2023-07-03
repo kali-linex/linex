@@ -9,25 +9,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/in.h>
-#include <linux/skbuff.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/poison.h>
+#include <linex/kernel.h>
+#include <linex/capability.h>
+#include <linex/in.h>
+#include <linex/skbuff.h>
+#include <linex/kmod.h>
+#include <linex/vmalloc.h>
+#include <linex/netdevice.h>
+#include <linex/module.h>
+#include <linex/poison.h>
 #include <net/ipv6.h>
 #include <net/compat.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
+#include <linex/uaccess.h>
+#include <linex/mutex.h>
+#include <linex/proc_fs.h>
+#include <linex/err.h>
+#include <linex/cpumask.h>
 
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter/x_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter/x_tables.h>
 #include <net/netfilter/nf_log.h>
 #include "../../netfilter/xt_repldata.h"
 

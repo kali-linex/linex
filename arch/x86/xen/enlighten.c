@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #ifdef CONFIG_XEN_BALLOON_MEMORY_HOTPLUG
-#include <linux/memblock.h>
+#include <linex/memblock.h>
 #endif
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/kexec.h>
-#include <linux/slab.h>
-#include <linux/panic_notifier.h>
+#include <linex/console.h>
+#include <linex/cpu.h>
+#include <linex/kexec.h>
+#include <linex/slab.h>
+#include <linex/panic_notifier.h>
 
 #include <xen/xen.h>
 #include <xen/features.h>
@@ -37,7 +37,7 @@ EXPORT_SYMBOL_GPL(hypercall_page);
 DEFINE_PER_CPU(struct vcpu_info *, xen_vcpu);
 DEFINE_PER_CPU(struct vcpu_info, xen_vcpu_info);
 
-/* Linux <-> Xen vCPU id mapping */
+/* Linex <-> Xen vCPU id mapping */
 DEFINE_PER_CPU(uint32_t, xen_vcpu_id);
 EXPORT_PER_CPU_SYMBOL(xen_vcpu_id);
 

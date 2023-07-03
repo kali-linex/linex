@@ -6,18 +6,18 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/entry-kvm.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/kvm_host.h>
+#include <linex/bitops.h>
+#include <linex/entry-kvm.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/kdebug.h>
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/signal.h>
+#include <linex/fs.h>
+#include <linex/kvm_host.h>
 #include <asm/csr.h>
 #include <asm/cacheflush.h>
 #include <asm/hwcap.h>

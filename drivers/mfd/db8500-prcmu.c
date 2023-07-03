@@ -11,31 +11,31 @@
  *
  * U8500 PRCM Unit interface driver
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/regulator/db8500-prcmu.h>
-#include <linux/regulator/machine.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/completion.h>
+#include <linex/irq.h>
+#include <linex/jiffies.h>
+#include <linex/bitops.h>
+#include <linex/fs.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/uaccess.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/dbx500-prcmu.h>
+#include <linex/mfd/abx500/ab8500.h>
+#include <linex/regulator/db8500-prcmu.h>
+#include <linex/regulator/machine.h>
 #include "db8500-prcmu-regs.h"
 
 /* Index of different voltages to be used when accessing AVSData */

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
  *  compress_offload.h - compress offload header definations
  *
  *  Copyright (C) 2011 Intel Corporation
- *  Authors:	Vinod Koul <vinod.koul@linux.intel.com>
- *		Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+ *  Authors:	Vinod Koul <vinod.koul@linex.intel.com>
+ *		Pierre-Louis Bossart <pierre-louis.bossart@linex.intel.com>
  */
 #ifndef __COMPRESS_OFFLOAD_H
 #define __COMPRESS_OFFLOAD_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <sound/asound.h>
 #include <sound/compress_params.h>
 

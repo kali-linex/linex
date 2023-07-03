@@ -14,8 +14,8 @@
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
-#include <linux/input.h>
-#include <linux/module.h>
+#include <linex/input.h>
+#include <linex/module.h>
 #include <sound/soc.h>
 
 #define TDM_CHANNELS	8

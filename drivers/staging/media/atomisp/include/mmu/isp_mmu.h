@@ -23,9 +23,9 @@
 #ifndef	__ISP_MMU_H__
 #define	__ISP_MMU_H__
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 
 /*
  * do not change these values, the page size for ISP must be the

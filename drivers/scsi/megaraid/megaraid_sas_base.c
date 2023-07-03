@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  Linex MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2003-2013  LSI Corporation
  *  Copyright (c) 2013-2016  Avago Technologies
@@ -14,30 +14,30 @@
  *           Kashyap Desai <kashyap.desai@broadcom.com>
  *           Sumit Saxena <sumit.saxena@broadcom.com>
  *
- *  Send feedback to: megaraidlinux.pdl@broadcom.com
+ *  Send feedback to: megaraidlinex.pdl@broadcom.com
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/list.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/uio.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/irq_poll.h>
-#include <linux/blk-mq-pci.h>
+#include <linex/fs.h>
+#include <linex/compat.h>
+#include <linex/blkdev.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/vmalloc.h>
+#include <linex/irq_poll.h>
+#include <linex/blk-mq-pci.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -129,7 +129,7 @@ MODULE_PARM_DESC(host_tagset_enable, "Shared host tagset enable/disable Default:
 
 MODULE_LICENSE("GPL");
 MODULE_VERSION(MEGASAS_VERSION);
-MODULE_AUTHOR("megaraidlinux.pdl@broadcom.com");
+MODULE_AUTHOR("megaraidlinex.pdl@broadcom.com");
 MODULE_DESCRIPTION("Broadcom MegaRAID SAS Driver");
 
 int megasas_transition_to_ready(struct megasas_instance *instance, int ocr);

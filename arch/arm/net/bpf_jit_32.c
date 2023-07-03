@@ -6,15 +6,15 @@
  * Copyright (c) 2011 Mircea Gherzan <mgherzan@gmail.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <linex/bpf.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/filter.h>
+#include <linex/netdevice.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/if_vlan.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hwcap.h>
@@ -207,7 +207,7 @@ struct jit_ctx {
 	u32 *offsets;
 	u32 *target;
 	u32 stack_size;
-#if __LINUX_ARM_ARCH__ < 7
+#if __LINEX_ARM_ARCH__ < 7
 	u16 epilogue_bytes;
 	u16 imm_count;
 	u32 *imms;
@@ -349,7 +349,7 @@ static void jit_fill_hole(void *area, unsigned int size)
 		*ptr++ = __opcode_to_mem_arm(ARM_INST_UDF);
 }
 
-#if defined(CONFIG_AEABI) && (__LINUX_ARM_ARCH__ >= 5)
+#if defined(CONFIG_AEABI) && (__LINEX_ARM_ARCH__ >= 5)
 /* EABI requires the stack to be aligned to 64-bit boundaries */
 #define STACK_ALIGNMENT	8
 #else
@@ -361,7 +361,7 @@ static void jit_fill_hole(void *area, unsigned int size)
 #define _STACK_SIZE	(ctx->prog->aux->stack_depth + SCRATCH_SIZE)
 #define STACK_SIZE	ALIGN(_STACK_SIZE, STACK_ALIGNMENT)
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __LINEX_ARM_ARCH__ < 7
 
 static u16 imm_offset(u32 k, struct jit_ctx *ctx)
 {
@@ -406,7 +406,7 @@ static u16 imm_offset(u32 k, struct jit_ctx *ctx)
 	return imm;
 }
 
-#endif /* __LINUX_ARM_ARCH__ */
+#endif /* __LINEX_ARM_ARCH__ */
 
 static inline int bpf2a32_offset(int bpf_to, int bpf_from,
 				 const struct jit_ctx *ctx) {
@@ -425,7 +425,7 @@ static inline int bpf2a32_offset(int bpf_to, int bpf_from,
  */
 static inline void emit_mov_i_no8m(const u8 rd, u32 val, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 7
+#if __LINEX_ARM_ARCH__ < 7
 	emit(ARM_LDR_I(rd, ARM_PC, imm_offset(val, ctx)), ctx);
 #else
 	emit(ARM_MOVW(rd, val & 0xffff), ctx);
@@ -454,7 +454,7 @@ static void emit_bx_r(u8 tgt_reg, struct jit_ctx *ctx)
 
 static inline void emit_blx_r(u8 tgt_reg, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 5
+#if __LINEX_ARM_ARCH__ < 5
 	emit(ARM_MOV_R(ARM_LR, ARM_PC), ctx);
 	emit_bx_r(tgt_reg, ctx);
 #else
@@ -479,7 +479,7 @@ static inline void emit_udivmod(u8 rd, u8 rm, u8 rn, struct jit_ctx *ctx, u8 op)
 	const int exclude_mask = BIT(ARM_R0) | BIT(ARM_R1);
 	const s8 *tmp = bpf2a32[TMP_REG_1];
 
-#if __LINUX_ARM_ARCH__ == 7
+#if __LINEX_ARM_ARCH__ == 7
 	if (elf_hwcap & HWCAP_IDIVA) {
 		if (op == BPF_DIV)
 			emit(ARM_UDIV(rd, rm, rn), ctx);
@@ -553,7 +553,7 @@ static const s8 *arm_bpf_get_reg64(const s8 *reg, const s8 *tmp,
 				   struct jit_ctx *ctx)
 {
 	if (is_stacked(reg[1])) {
-		if (__LINUX_ARM_ARCH__ >= 6 ||
+		if (__LINEX_ARM_ARCH__ >= 6 ||
 		    ctx->cpu_architecture >= CPU_ARCH_ARMv5TE) {
 			emit(ARM_LDRD_I(tmp[1], ARM_FP,
 					EBPF_SCRATCH_TO_ARM_FP(reg[1])), ctx);
@@ -584,7 +584,7 @@ static void arm_bpf_put_reg64(const s8 *reg, const s8 *src,
 			      struct jit_ctx *ctx)
 {
 	if (is_stacked(reg[1])) {
-		if (__LINUX_ARM_ARCH__ >= 6 ||
+		if (__LINEX_ARM_ARCH__ >= 6 ||
 		    ctx->cpu_architecture >= CPU_ARCH_ARMv5TE) {
 			emit(ARM_STRD_I(src[1], ARM_FP,
 				       EBPF_SCRATCH_TO_ARM_FP(reg[1])), ctx);
@@ -762,7 +762,7 @@ static inline void emit_a32_mov_r64(const bool is64, const s8 dst[],
 		if (!ctx->prog->aux->verifier_zext)
 			/* Zero out high 4 bytes */
 			emit_a32_mov_i(dst_hi, 0, ctx);
-	} else if (__LINUX_ARM_ARCH__ < 6 &&
+	} else if (__LINEX_ARM_ARCH__ < 6 &&
 		   ctx->cpu_architecture < CPU_ARCH_ARMv5TE) {
 		/* complete 8 byte move */
 		emit_a32_mov_r(dst_lo, src_lo, ctx);
@@ -1233,7 +1233,7 @@ static int emit_bpf_tail_call(struct jit_ctx *ctx)
 /* 0xabcd => 0xcdab */
 static inline void emit_rev16(const u8 rd, const u8 rn, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 6
+#if __LINEX_ARM_ARCH__ < 6
 	const s8 *tmp2 = bpf2a32[TMP_REG_2];
 
 	emit(ARM_AND_I(tmp2[1], rn, 0xff), ctx);
@@ -1248,7 +1248,7 @@ static inline void emit_rev16(const u8 rd, const u8 rn, struct jit_ctx *ctx)
 /* 0xabcdefgh => 0xghefcdab */
 static inline void emit_rev32(const u8 rd, const u8 rn, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 6
+#if __LINEX_ARM_ARCH__ < 6
 	const s8 *tmp2 = bpf2a32[TMP_REG_2];
 
 	emit(ARM_AND_I(tmp2[1], rn, 0xff), ctx);
@@ -1568,7 +1568,7 @@ emit_bswap_uxt:
 		switch (imm) {
 		case 16:
 			/* zero-extend 16 bits into 64 bits */
-#if __LINUX_ARM_ARCH__ < 6
+#if __LINEX_ARM_ARCH__ < 6
 			emit_a32_mov_i(tmp2[1], 0xffff, ctx);
 			emit(ARM_AND_R(rd[1], rd[1], tmp2[1]), ctx);
 #else /* ARMv6+ */
@@ -1935,7 +1935,7 @@ struct bpf_prog *bpf_int_jit_compile(struct bpf_prog *prog)
 
 	ctx.epilogue_offset = ctx.idx;
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __LINEX_ARM_ARCH__ < 7
 	tmp_idx = ctx.idx;
 	build_epilogue(&ctx);
 	ctx.epilogue_bytes = (ctx.idx - tmp_idx) * 4;
@@ -2009,7 +2009,7 @@ struct bpf_prog *bpf_int_jit_compile(struct bpf_prog *prog)
 	prog->jited_len = image_size;
 
 out_imms:
-#if __LINUX_ARM_ARCH__ < 7
+#if __LINEX_ARM_ARCH__ < 7
 	if (ctx.imm_count)
 		kfree(ctx.imms);
 #endif

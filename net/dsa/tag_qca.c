@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/bitfield.h>
+#include <linex/etherdevice.h>
+#include <linex/bitfield.h>
 #include <net/dsa.h>
-#include <linux/dsa/tag_qca.h>
+#include <linex/dsa/tag_qca.h>
 
 #include "tag.h"
 

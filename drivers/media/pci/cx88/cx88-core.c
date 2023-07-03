@@ -13,18 +13,18 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/sound.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/kmod.h>
+#include <linex/sound.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/videodev2.h>
+#include <linex/mutex.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

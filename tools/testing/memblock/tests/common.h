@@ -4,10 +4,10 @@
 
 #include <stdlib.h>
 #include <assert.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/sizes.h>
-#include <linux/printk.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
+#include <linex/sizes.h>
+#include <linex/printk.h>
 #include <../selftests/kselftest.h>
 
 #define MEM_SIZE		SZ_32K

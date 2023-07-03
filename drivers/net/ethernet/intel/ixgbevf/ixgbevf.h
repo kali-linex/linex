@@ -4,13 +4,13 @@
 #ifndef _IXGBEVF_H_
 #define _IXGBEVF_H_
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/timer.h>
+#include <linex/io.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/u64_stats_sync.h>
 #include <net/xdp.h>
 
 #include "vf.h"

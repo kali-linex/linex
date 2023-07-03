@@ -2,7 +2,7 @@
 #ifndef __ASM_IDLE_H
 #define __ASM_IDLE_H
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 extern asmlinkage void __arch_cpu_idle(void);
 

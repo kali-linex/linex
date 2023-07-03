@@ -13,7 +13,7 @@
  *  Credits:
  *	Jonathan A. Buzzard - Toshiba HCI info, and critical tips on reverse
  *		engineering the Windows drivers
- *	Yasushi Nagato - changes for linux kernel 2.4 -> 2.5
+ *	Yasushi Nagato - changes for linex kernel 2.4 -> 2.5
  *	Rob Miller - TV out and hotkeys help
  */
 
@@ -22,29 +22,29 @@
 #define TOSHIBA_ACPI_VERSION	"0.24"
 #define PROC_INTERFACE_VERSION	1
 
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/i8042.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/rfkill.h>
-#include <linux/hwmon.h>
-#include <linux/iio/iio.h>
-#include <linux/toshiba.h>
+#include <linex/compiler.h>
+#include <linex/dmi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/backlight.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/i8042.h>
+#include <linex/acpi.h>
+#include <linex/uaccess.h>
+#include <linex/miscdevice.h>
+#include <linex/rfkill.h>
+#include <linex/hwmon.h>
+#include <linex/iio/iio.h>
+#include <linex/toshiba.h>
 #include <acpi/battery.h>
 #include <acpi/video.h>
 

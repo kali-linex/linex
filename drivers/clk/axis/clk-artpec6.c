@@ -5,13 +5,13 @@
  * Copyright 2015-2016 Axis Communications AB.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 #include <dt-bindings/clock/axis,artpec6-clkctrl.h>
 
 #define NUM_I2S_CLOCKS 2

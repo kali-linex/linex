@@ -12,11 +12,11 @@
  *         Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "core.h"
 #include "gadget-export.h"
@@ -171,7 +171,7 @@ err_phy3_init:
 
 /**
  * cdns3_plat_remove() - unbind drd driver and clean up
- * @pdev: Pointer to Linux platform device
+ * @pdev: Pointer to Linex platform device
  *
  * Returns 0 on success otherwise negative errno
  */

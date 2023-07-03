@@ -8,15 +8,15 @@
 #include "ingenic-drm.h"
 #include "ingenic-ipu.h"
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/gcd.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/time.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/gcd.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/time.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

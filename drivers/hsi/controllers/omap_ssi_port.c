@@ -7,15 +7,15 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/delay.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/debugfs.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/debugfs.h>
 
 #include "omap_ssi_regs.h"
 #include "omap_ssi.h"

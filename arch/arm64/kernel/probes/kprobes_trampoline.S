@@ -3,7 +3,7 @@
  * trampoline entry and return code for kretprobes.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/assembler.h>
 

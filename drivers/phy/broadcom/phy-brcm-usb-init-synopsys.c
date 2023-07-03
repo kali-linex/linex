@@ -6,10 +6,10 @@
  * for newer Synopsys based USB hardware first used on the bcm7216.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linex/delay.h>
+#include <linex/io.h>
 
-#include <linux/soc/brcmstb/brcmstb.h>
+#include <linex/soc/brcmstb/brcmstb.h>
 #include "phy-brcm-usb-init.h"
 
 #define PHY_LOCK_TIMEOUT_MS 200

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The Linex Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/of_device.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/rpmsg.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/of_device.h>
+#include <linex/soc/qcom/apr.h>
+#include <linex/soc/qcom/pdr.h>
+#include <linex/rpmsg.h>
+#include <linex/of.h>
 
 enum {
 	PR_TYPE_APR = 0,

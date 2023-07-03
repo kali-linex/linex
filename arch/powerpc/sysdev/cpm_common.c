@@ -14,13 +14,13 @@
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
 
 #include <asm/udbg.h>
 #include <asm/io.h>
@@ -31,7 +31,7 @@
 #include <mm/mmu_decl.h>
 
 #if defined(CONFIG_CPM2) || defined(CONFIG_8xx_GPIO)
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
+#include <linex/gpio/legacy-of-mm-gpiochip.h>
 #endif
 
 static int __init cpm_init(void)

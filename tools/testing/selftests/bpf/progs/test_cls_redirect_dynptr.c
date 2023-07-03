@@ -6,16 +6,16 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <linux/bpf.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/pkt_cls.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <linex/bpf.h>
+#include <linex/icmp.h>
+#include <linex/icmpv6.h>
+#include <linex/if_ether.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/pkt_cls.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

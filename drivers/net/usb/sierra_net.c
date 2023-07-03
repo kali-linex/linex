@@ -3,7 +3,7 @@
  * USB-to-WWAN Driver for Sierra Wireless modems
  *
  * Copyright (C) 2008, 2009, 2010 Paxton Smith, Matthew Safar, Rory Filer
- *                          <linux@sierrawireless.com>
+ *                          <linex@sierrawireless.com>
  *
  * Portions of this based on the cdc_ether driver by David Brownell (2003-2005)
  * and Ole Andre Vadla Ravnas (ActiveSync) (2006).
@@ -20,18 +20,18 @@ static const char driver_name[] = "sierra_net";
 /* if defined debug messages enabled */
 /*#define	DEBUG*/
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/usb.h>
+#include <linex/usb/cdc.h>
 #include <net/ip.h>
 #include <net/udp.h>
 #include <asm/unaligned.h>
-#include <linux/usb/usbnet.h>
+#include <linex/usb/usbnet.h>
 
 #define SWI_USB_REQUEST_GET_FW_ATTR	0x06
 #define SWI_GET_FW_ATTR_MASK		0x08

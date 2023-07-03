@@ -11,9 +11,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <linux/tls.h>
-#include <linux/tcp.h>
-#include <linux/socket.h>
+#include <linex/tls.h>
+#include <linex/tcp.h>
+#include <linex/socket.h>
 
 #include <sys/epoll.h>
 #include <sys/types.h>

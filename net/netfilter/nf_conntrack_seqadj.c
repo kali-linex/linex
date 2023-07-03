@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <linex/types.h>
+#include <linex/netfilter.h>
 #include <net/tcp.h>
 
 #include <net/netfilter/nf_conntrack.h>

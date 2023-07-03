@@ -7,8 +7,8 @@
 //
 // Base S3C24XX platform device definitions
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
 
 #include "devs.h"
 

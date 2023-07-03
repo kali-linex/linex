@@ -8,13 +8,13 @@
  * Contact: Eduardo Valentin <eduardo.valentin@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
+#include <linex/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -52,7 +52,7 @@ static const struct v4l2_file_operations radio_si4713_fops = {
 	.unlocked_ioctl	= video_ioctl2,
 };
 
-/* Video4Linux Interface */
+/* Video4Linex Interface */
 
 /* radio_si4713_querycap - query device capabilities */
 static int radio_si4713_querycap(struct file *file, void *priv,

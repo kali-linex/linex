@@ -6,13 +6,13 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/dvb/ca.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/string.h>
+#include <linex/dvb/ca.h>
 #include <media/dvbdev.h>
 #include <media/dvb_frontend.h>
 #include "dst_ca.h"

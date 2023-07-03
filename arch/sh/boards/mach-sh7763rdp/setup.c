@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/renesas/sh7763rdp/setup.c
+ * linex/arch/sh/boards/renesas/sh7763rdp/setup.c
  *
  * Renesas Solutions sh7763rdp board
  *
  * Copyright (C) 2008 Renesas Solutions Corp.
  * Copyright (C) 2008 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/mtd/physmap.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/mtd/physmap.h>
+#include <linex/fb.h>
+#include <linex/io.h>
+#include <linex/sh_eth.h>
+#include <linex/sh_intc.h>
 #include <mach/sh7763rdp.h>
 #include <asm/sh7760fb.h>
 
@@ -27,7 +27,7 @@ static struct mtd_partition sh7763rdp_nor_flash_partitions[] = {
 		.size = (2 * 128 * 1024),
 		.mask_flags = MTD_WRITEABLE,	/* Read-only */
 	}, {
-		.name = "Linux-Kernel",
+		.name = "Linex-Kernel",
 		.offset = MTDPART_OFS_APPEND,
 		.size = (20 * 128 * 1024),
 	}, {

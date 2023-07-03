@@ -3,7 +3,7 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <types.h>
 #include "phytbl_n.h"
 

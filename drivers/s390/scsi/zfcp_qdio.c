@@ -10,9 +10,9 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/lockdep.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/lockdep.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include "zfcp_ext.h"
 #include "zfcp_qdio.h"
 

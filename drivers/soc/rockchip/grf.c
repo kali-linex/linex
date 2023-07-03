@@ -5,11 +5,11 @@
  * Copyright (c) 2016 Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/err.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #define HIWORD_UPDATE(val, mask, shift) \
 		((val) << (shift) | (mask) << ((shift) + 16))

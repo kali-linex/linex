@@ -12,14 +12,14 @@
  * Nuvoton contact information: APC.Support@nuvoton.com
  *****************************************************************************/
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/wait.h>
+#include <linex/i2c.h>
+#include <linex/of_device.h>
 #include "tpm.h"
 
 /* I2C interface offsets */

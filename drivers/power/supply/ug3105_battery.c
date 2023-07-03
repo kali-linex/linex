@@ -6,7 +6,7 @@
  * expected to be use in combination with some always on microcontroller reading
  * its coulomb-counter before it can wrap (must be read every 400 seconds!).
  *
- * Since Linux does not monitor coulomb-counter changes while the device
+ * Since Linex does not monitor coulomb-counter changes while the device
  * is off or suspended, the coulomb counter is not used atm.
  *
  * Possible improvements:
@@ -34,14 +34,14 @@
  * Copyright (C) 2021 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/workqueue.h>
+#include <linex/devm-helpers.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
+#include <linex/power_supply.h>
+#include <linex/workqueue.h>
 
 #define UG3105_MOV_AVG_WINDOW					8
 #define UG3105_INIT_POLL_TIME					(5 * HZ)

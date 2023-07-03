@@ -2,8 +2,8 @@
 #ifndef __FSNOTIFY_FDINFO_H__
 #define __FSNOTIFY_FDINFO_H__
 
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
+#include <linex/errno.h>
+#include <linex/proc_fs.h>
 
 struct seq_file;
 struct file;

@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/swait.h>
-#include <linux/ftrace.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/cpu.h>
+#include <linex/cpuidle.h>
+#include <linex/gfp.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
+#include <linex/syscore_ops.h>
+#include <linex/swait.h>
+#include <linex/ftrace.h>
 #include <trace/events/power.h>
-#include <linux/compiler.h>
-#include <linux/moduleparam.h>
+#include <linex/compiler.h>
+#include <linex/moduleparam.h>
 
 #include "power.h"
 

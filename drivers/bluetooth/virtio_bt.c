@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/virtio.h>
+#include <linex/virtio_config.h>
+#include <linex/skbuff.h>
 
-#include <uapi/linux/virtio_ids.h>
-#include <uapi/linux/virtio_bt.h>
+#include <uapi/linex/virtio_ids.h>
+#include <uapi/linex/virtio_bt.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

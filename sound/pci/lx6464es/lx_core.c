@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- *
+/* -*- linex-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  * low-level interface
@@ -9,10 +9,10 @@
 
 /* #define RMH_DEBUG 1 */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include "lx6464es.h"
 #include "lx_core.h"

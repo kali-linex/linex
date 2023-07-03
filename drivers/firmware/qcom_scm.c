@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010,2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010,2015,2019 The Linex Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/dma-mapping.h>
-#include <linux/interconnect.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/reset-controller.h>
-#include <linux/arm-smccc.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/completion.h>
+#include <linex/cpumask.h>
+#include <linex/export.h>
+#include <linex/dma-mapping.h>
+#include <linex/interconnect.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/clk.h>
+#include <linex/reset-controller.h>
+#include <linex/arm-smccc.h>
 
 #include "qcom_scm.h"
 
@@ -341,7 +341,7 @@ static int qcom_scm_set_boot_addr_mc(void *entry, unsigned int flags)
  * qcom_scm_set_warm_boot_addr() - Set the warm boot address for all cpus
  * @entry: Entry point function for the cpus
  *
- * Set the Linux entry point for the SCM to transfer control to when coming
+ * Set the Linex entry point for the SCM to transfer control to when coming
  * out of a power down. CPU power down may be executed on cpuidle or hotplug.
  */
 int qcom_scm_set_warm_boot_addr(void *entry)

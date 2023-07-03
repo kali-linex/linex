@@ -6,12 +6,12 @@
  * Author: Vipin Sharma <vipinsh@google.com>
  */
 
-#include <linux/limits.h>
-#include <linux/cgroup.h>
-#include <linux/errno.h>
-#include <linux/atomic.h>
-#include <linux/slab.h>
-#include <linux/misc_cgroup.h>
+#include <linex/limits.h>
+#include <linex/cgroup.h>
+#include <linex/errno.h>
+#include <linex/atomic.h>
+#include <linex/slab.h>
+#include <linex/misc_cgroup.h>
 
 #define MAX_STR "max"
 #define MAX_NUM ULONG_MAX

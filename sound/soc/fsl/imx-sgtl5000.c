@@ -3,11 +3,11 @@
 // Copyright 2012 Freescale Semiconductor, Inc.
 // Copyright 2012 Linaro Ltd.
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/i2c.h>
+#include <linex/clk.h>
 #include <sound/soc.h>
 
 #include "../codecs/sgtl5000.h"

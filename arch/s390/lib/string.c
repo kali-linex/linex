@@ -12,9 +12,9 @@
 # define __NO_FORTIFY
 #endif
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/export.h>
 
 /*
  * Helper functions to find the end of a string

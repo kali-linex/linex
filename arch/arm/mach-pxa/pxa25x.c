@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa25x.c
+ *  linex/arch/arm/mach-pxa/pxa25x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -13,21 +13,21 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
+#include <linex/dmaengine.h>
+#include <linex/dma/pxa-dma.h>
+#include <linex/gpio.h>
+#include <linex/gpio-pxa.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/suspend.h>
+#include <linex/syscore_ops.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/platform_data/mmp_dma.h>
+#include <linex/soc/pxa/cpu.h>
+#include <linex/soc/pxa/smemc.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>

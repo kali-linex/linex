@@ -12,14 +12,14 @@
  * Copyright 2000-2010 Broadcom Corporation
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "brcmnand.h"
 

@@ -9,10 +9,10 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
 
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/mfd/syscon.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "rk3066_hdmi.h"
 

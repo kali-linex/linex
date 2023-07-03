@@ -5,17 +5,17 @@
  * (c) 2018 Eyal Birger <eyal.birger@gmail.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/tc_ematch/tc_em_ipt.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/gfp.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/skbuff.h>
+#include <linex/tc_ematch/tc_em_ipt.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 #include <net/pkt_cls.h>
 
 struct em_ipt_match {

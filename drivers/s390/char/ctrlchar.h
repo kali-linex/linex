@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/tty.h>
-#include <linux/sysrq.h>
-#include <linux/workqueue.h>
+#include <linex/tty.h>
+#include <linex/sysrq.h>
+#include <linex/workqueue.h>
 
 extern unsigned int
 ctrlchar_handle(const unsigned char *buf, int len, struct tty_struct *tty);

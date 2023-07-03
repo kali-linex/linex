@@ -5,9 +5,9 @@
 #ifndef _ASM_PCI_H
 #define _ASM_PCI_H
 
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linex/ioport.h>
+#include <linex/list.h>
+#include <linex/types.h>
 #include <asm/io.h>
 
 #define PCIBIOS_MIN_IO		0x4000

@@ -6,11 +6,11 @@
  * Copyright (c) 2004 Li Shaohua <shaohua.li@intel.com>
  */
 
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/mod_devicetable.h>
+#include <linex/export.h>
+#include <linex/acpi.h>
+#include <linex/pnp.h>
+#include <linex/slab.h>
+#include <linex/mod_devicetable.h>
 
 #include "../base.h"
 #include "pnpacpi.h"

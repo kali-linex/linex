@@ -3,10 +3,10 @@
  * Copyright (c) 2016-2017, NVIDIA CORPORATION. All rights reserved
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/slab.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

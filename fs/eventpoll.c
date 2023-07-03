@@ -6,37 +6,37 @@
  *  Davide Libenzi <davidel@xmailserver.org>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/rbtree.h>
-#include <linux/wait.h>
-#include <linux/eventpoll.h>
-#include <linux/mount.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/anon_inodes.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/string.h>
+#include <linex/list.h>
+#include <linex/hash.h>
+#include <linex/spinlock.h>
+#include <linex/syscalls.h>
+#include <linex/rbtree.h>
+#include <linex/wait.h>
+#include <linex/eventpoll.h>
+#include <linex/mount.h>
+#include <linex/bitops.h>
+#include <linex/mutex.h>
+#include <linex/anon_inodes.h>
+#include <linex/device.h>
+#include <linex/uaccess.h>
 #include <asm/io.h>
 #include <asm/mman.h>
-#include <linux/atomic.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/compat.h>
-#include <linux/rculist.h>
+#include <linex/atomic.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/compat.h>
+#include <linex/rculist.h>
 #include <net/busy_poll.h>
 
 /*
@@ -307,7 +307,7 @@ static void unlist_file(struct epitems_head *head)
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static long long_zero;
 static long long_max = LONG_MAX;
@@ -1205,7 +1205,7 @@ static int ep_poll_callback(wait_queue_entry_t *wait, unsigned mode, int sync, v
 
 	/*
 	 * If we are transferring events to userspace, we can hold no locks
-	 * (because we're accessing user memory, and because of linux f_op->poll()
+	 * (because we're accessing user memory, and because of linex f_op->poll()
 	 * semantics). All the events that happen during that period of time are
 	 * chained in ep->ovflist and requeued later on.
 	 */

@@ -14,19 +14,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/panic/... */
-#include <linux/fs.h>			/* For file operations */
-#include <linux/miscdevice.h>		/* For struct miscdevice */
-#include <linux/watchdog.h>		/* For the watchdog specific items */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/platform_device.h>	/* For platform_driver framework */
-#include <linux/spinlock.h>		/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>		/* For copy_to_user/put_user/... */
-#include <linux/io.h>			/* For devm_ioremap */
+#include <linex/module.h>		/* For module specific items */
+#include <linex/moduleparam.h>		/* For new moduleparam's */
+#include <linex/types.h>		/* For standard types (like size_t) */
+#include <linex/errno.h>		/* For the -ENODEV/... values */
+#include <linex/kernel.h>		/* For printk/panic/... */
+#include <linex/fs.h>			/* For file operations */
+#include <linex/miscdevice.h>		/* For struct miscdevice */
+#include <linex/watchdog.h>		/* For the watchdog specific items */
+#include <linex/init.h>			/* For __init/__exit/... */
+#include <linex/platform_device.h>	/* For platform_driver framework */
+#include <linex/spinlock.h>		/* For spin_lock/spin_unlock/... */
+#include <linex/uaccess.h>		/* For copy_to_user/put_user/... */
+#include <linex/io.h>			/* For devm_ioremap */
 
 #include <asm/mach-rc32434/integ.h>	/* For the Watchdog registers */
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *  Copyright IBM Corp. 2012, 2022
- *  Author(s): Holger Dengler <hd@linux.vnet.ibm.com>
+ *  Author(s): Holger Dengler <hd@linex.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/mod_devicetable.h>
 
 #include "ap_bus.h"
 #include "zcrypt_api.h"

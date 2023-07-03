@@ -14,9 +14,9 @@
  * Copyright (C) 2010 Texas Instruments, Inc.
  * Thara Gopinath <thara@ti.com>
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/init.h>
 
 #include "common.h"
 #include "soc.h"

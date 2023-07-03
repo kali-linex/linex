@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2017 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linex.intel.com>
  */
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/nls.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/nls.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

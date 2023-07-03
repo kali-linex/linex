@@ -2,18 +2,18 @@
 /*
  * arch/sh/drivers/pci/ops-titan.c
  *
- * Ported to new API by Paul Mundt <lethal@linux-sh.org>
+ * Ported to new API by Paul Mundt <lethal@linex-sh.org>
  *
  * Modified from ops-snapgear.c written by  David McCullough
  * Highly leveraged from pci-bigsur.c, written by Dustin McIntire.
  *
  * PCI initialization for the Titan boards
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/io.h>
 #include <mach/titan.h>
 #include "pci-sh4.h"
 

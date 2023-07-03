@@ -12,9 +12,9 @@
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_panel.h>
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/phy/phy.h>
+#include <linex/bits.h>
+#include <linex/completion.h>
+#include <linex/phy/phy.h>
 
 struct clk;
 struct reset_control;

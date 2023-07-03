@@ -7,13 +7,13 @@
  * It is based on tpm_tis_spi driver by Peter Huewe and Christophe Ricard.
  */
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/wait.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pm.h>
+#include <linex/spi/spi.h>
+#include <linex/wait.h>
 
 #include "tpm_tis_core.h"
 #include "tpm_tis_spi.h"

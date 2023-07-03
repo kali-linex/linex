@@ -11,10 +11,10 @@
  * Same code handles filtering of duplicates for PRP as well.
  */
 
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linex/if_ether.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/rculist.h>
 #include "hsr_main.h"
 #include "hsr_framereg.h"
 #include "hsr_netlink.h"

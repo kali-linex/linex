@@ -15,10 +15,10 @@
  */
 
 #include <errno.h>
-#include <linux/audit.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>
-#include <linux/unistd.h>
+#include <linex/audit.h>
+#include <linex/filter.h>
+#include <linex/seccomp.h>
+#include <linex/unistd.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>

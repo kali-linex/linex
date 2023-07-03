@@ -7,8 +7,8 @@
  * Copyright (C) Huawei Inc., 2014
  */
 
-#include <linux/kprobes.h>
-#include <linux/jump_label.h>
+#include <linex/kprobes.h>
+#include <linex/jump_label.h>
 #include <asm/kprobes.h>
 #include <asm/cacheflush.h>
 /* for arm_gen_branch */
@@ -53,7 +53,7 @@ asm (
 			 */
 			"	and	r4, sp, #4\n"
 			"	sub	sp, sp, r4\n"
-#if __LINUX_ARM_ARCH__ >= 5
+#if __LINEX_ARM_ARCH__ >= 5
 			"	blx	r2\n"
 #else
 			"	mov     lr, pc\n"

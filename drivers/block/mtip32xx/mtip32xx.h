@@ -11,10 +11,10 @@
 #ifndef __MTIP32XX_H__
 #define __MTIP32XX_H__
 
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/ata.h>
-#include <linux/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/rwsem.h>
+#include <linex/ata.h>
+#include <linex/interrupt.h>
 
 /* Offset of Subsystem Device ID in pci confoguration space */
 #define PCI_SUBSYSTEM_DEVICEID	0x2E
@@ -93,7 +93,7 @@
 
 /*
  * Per-tag bitfield size in longs.
- * Linux bit manipulation functions
+ * Linex bit manipulation functions
  * (i.e. test_and_set_bit, find_next_zero_bit)
  * manipulate memory in longs, so we try to make the math work.
  * take the slot groups and find the number of longs, rounding up.

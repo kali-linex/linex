@@ -5,22 +5,22 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/cred.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/key.h>
+#include <linex/keyctl.h>
+#include <linex/fs.h>
+#include <linex/capability.h>
+#include <linex/cred.h>
+#include <linex/string.h>
+#include <linex/err.h>
+#include <linex/vmalloc.h>
+#include <linex/security.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
 #include <keys/request_key_auth-type.h>
 #include "internal.h"
 

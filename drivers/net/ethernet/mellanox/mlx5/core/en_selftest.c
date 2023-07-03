@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
 #include <net/udp.h>
 #include "en.h"
 #include "en/port.h"

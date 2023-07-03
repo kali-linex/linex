@@ -4,13 +4,13 @@
  * Copyright (c) 2012 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/if_team.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/if_team.h>
 
 static bool bc_transmit(struct team *team, struct sk_buff *skb)
 {

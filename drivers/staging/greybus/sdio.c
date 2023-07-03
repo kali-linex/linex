@@ -6,13 +6,13 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <linex/kernel.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/scatterlist.h>
+#include <linex/workqueue.h>
+#include <linex/greybus.h>
 
 #include "gbphy.h"
 

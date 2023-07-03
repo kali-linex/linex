@@ -3,15 +3,15 @@
  * Copyright (c) 2017, Linaro Ltd
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mailbox_controller.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mailbox_controller.h>
 
 #define QCOM_APCS_IPC_BITS	32
 

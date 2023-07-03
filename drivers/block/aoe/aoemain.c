@@ -4,10 +4,10 @@
  * Module initialization routines, discover timer
  */
 
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/hdreg.h>
+#include <linex/blkdev.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include "aoe.h"
 
 MODULE_LICENSE("GPL");

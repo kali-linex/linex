@@ -5,14 +5,14 @@
  * Copyright (C) 2016 Freescale Semiconductor, Inc.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_fdt.h>
-#include <linux/sys_soc.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/fsl/guts.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of_fdt.h>
+#include <linex/sys_soc.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/fsl/guts.h>
 
 struct fsl_soc_die_attr {
 	char	*die;

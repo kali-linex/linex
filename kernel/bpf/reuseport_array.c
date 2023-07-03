@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2018 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/err.h>
-#include <linux/sock_diag.h>
+#include <linex/bpf.h>
+#include <linex/err.h>
+#include <linex/sock_diag.h>
 #include <net/sock_reuseport.h>
-#include <linux/btf_ids.h>
+#include <linex/btf_ids.h>
 
 struct reuseport_array {
 	struct bpf_map map;

@@ -12,13 +12,13 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/quirks.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/kstrtox.h>
+#include <linex/string.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/quirks.h>
+#include <linex/of.h>
 #include "usb.h"
 
 /* Active configuration fields */

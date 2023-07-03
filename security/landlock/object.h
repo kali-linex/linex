@@ -9,9 +9,9 @@
 #ifndef _SECURITY_LANDLOCK_OBJECT_H
 #define _SECURITY_LANDLOCK_OBJECT_H
 
-#include <linux/compiler_types.h>
-#include <linux/refcount.h>
-#include <linux/spinlock.h>
+#include <linex/compiler_types.h>
+#include <linex/refcount.h>
+#include <linex/spinlock.h>
 
 struct landlock_object;
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/regmap.h>
+#include <linex/regmap.h>
 #include <net/dsa.h>
 
 #include "qca8k.h"

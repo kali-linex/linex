@@ -2,7 +2,7 @@
 /*
  * Memory fault handling for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Linex Foundation. All rights reserved.
  */
 
 /*
@@ -12,13 +12,13 @@
  */
 
 #include <asm/traps.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/extable.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
+#include <linex/uaccess.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/extable.h>
+#include <linex/hardirq.h>
+#include <linex/perf_event.h>
 
 /*
  * Decode of hardware exception sends us to one of several

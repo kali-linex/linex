@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/netdev.yaml */
 /* YNL-GEN user source */
@@ -7,10 +7,10 @@
 #include <string.h>
 #include "netdev-user.h"
 #include "ynl.h"
-#include <linux/netdev.h>
+#include <linex/netdev.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <linex/genetlink.h>
 
 /* Enums */
 static const char * const netdev_op_strmap[] = {

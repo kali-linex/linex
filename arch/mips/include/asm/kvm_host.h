@@ -10,15 +10,15 @@
 #ifndef __MIPS_KVM_HOST_H__
 #define __MIPS_KVM_HOST_H__
 
-#include <linux/cpumask.h>
-#include <linux/mutex.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/kvm.h>
-#include <linux/kvm_types.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
+#include <linex/cpumask.h>
+#include <linex/mutex.h>
+#include <linex/hrtimer.h>
+#include <linex/interrupt.h>
+#include <linex/types.h>
+#include <linex/kvm.h>
+#include <linex/kvm_types.h>
+#include <linex/threads.h>
+#include <linex/spinlock.h>
 
 #include <asm/asm.h>
 #include <asm/inst.h>

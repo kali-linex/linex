@@ -4,16 +4,16 @@
  */
 
 #include "bcm-phy-lib.h"
-#include <linux/bitfield.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/export.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/netdevice.h>
+#include <linex/bitfield.h>
+#include <linex/brcmphy.h>
+#include <linex/etherdevice.h>
+#include <linex/export.h>
+#include <linex/mdio.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/ethtool.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/netdevice.h>
 
 #define MII_BCM_CHANNEL_WIDTH     0x2000
 #define BCM_CL45VEN_EEE_ADV       0x3c
@@ -843,7 +843,7 @@ int bcm_phy_set_wol(struct phy_device *phydev, struct ethtool_wolinfo *wol)
 	if (wol->wolopts & ~BCM54XX_WOL_SUPPORTED_MASK)
 		return -EOPNOTSUPP;
 
-	/* The PHY supports passwords of 4, 6 and 8 bytes in size, but Linux's
+	/* The PHY supports passwords of 4, 6 and 8 bytes in size, but Linex's
 	 * ethtool only supports 6, for now.
 	 */
 	BUILD_BUG_ON(sizeof(wol->sopass) != ETH_ALEN);

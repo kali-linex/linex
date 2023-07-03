@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2021 Oracle Corporation
  */
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/sched/task.h>
-#include <linux/sched/vhost_task.h>
-#include <linux/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/completion.h>
+#include <linex/sched/task.h>
+#include <linex/sched/vhost_task.h>
+#include <linex/sched/signal.h>
 
 enum vhost_task_flags {
 	VHOST_TASK_FLAGS_STOP,

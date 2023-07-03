@@ -6,13 +6,13 @@
  * Copyright (C) 2005 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/err.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
 
 #include <asm/mips_mt.h>
 #include <asm/vpe.h>

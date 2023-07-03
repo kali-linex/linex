@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/acpi.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
 
-#include <linux/iio/common/st_sensors_i2c.h>
+#include <linex/iio/common/st_sensors_i2c.h>
 #include "st_accel.h"
 
 static const struct of_device_id st_accel_of_match[] = {

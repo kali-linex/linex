@@ -1,12 +1,12 @@
 /*
- * Created: Fri Jan  8 09:01:26 1999 by faith@valinux.com
+ * Created: Fri Jan  8 09:01:26 1999 by faith@valinex.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Linex Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author Rickard E. (Rik) Faith <faith@valinux.com>
- * Author Gareth Hughes <gareth@valinux.com>
+ * Author Rickard E. (Rik) Faith <faith@valinex.com>
+ * Author Gareth Hughes <gareth@valinex.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -22,16 +22,16 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA LINEX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/nospec.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <linex/export.h>
+#include <linex/nospec.h>
+#include <linex/pci.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_auth.h>
 #include <drm/drm_crtc.h>

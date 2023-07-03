@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/intel_tpmi.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/intel_tpmi.h>
 
 #include "uncore-frequency-common.h"
 

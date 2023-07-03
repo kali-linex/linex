@@ -2,14 +2,14 @@
 /*
  * Power trace points
  *
- * Copyright (C) 2009 Arjan van de Ven <arjan@linux.intel.com>
+ * Copyright (C) 2009 Arjan van de Ven <arjan@linex.intel.com>
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
+#include <linex/sched.h>
+#include <linex/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/power.h>

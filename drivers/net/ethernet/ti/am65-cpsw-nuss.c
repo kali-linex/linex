@@ -5,30 +5,30 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/phylink.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/rtnetlink.h>
-#include <linux/mfd/syscon.h>
-#include <linux/sys_soc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <linex/clk.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/kmemleak.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_device.h>
+#include <linex/phylink.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/rtnetlink.h>
+#include <linex/mfd/syscon.h>
+#include <linex/sys_soc.h>
+#include <linex/dma/ti-cppi5.h>
+#include <linex/dma/k3-udma-glue.h>
 #include <net/switchdev.h>
 
 #include "cpsw_ale.h"

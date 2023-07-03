@@ -3,17 +3,17 @@
 #ifndef _IDXD_H_
 #define _IDXD_H_
 
-#include <linux/sbitmap.h>
-#include <linux/dmaengine.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/bitmap.h>
-#include <linux/perf_event.h>
-#include <linux/iommu.h>
-#include <uapi/linux/idxd.h>
+#include <linex/sbitmap.h>
+#include <linex/dmaengine.h>
+#include <linex/percpu-rwsem.h>
+#include <linex/wait.h>
+#include <linex/cdev.h>
+#include <linex/idr.h>
+#include <linex/pci.h>
+#include <linex/bitmap.h>
+#include <linex/perf_event.h>
+#include <linex/iommu.h>
+#include <uapi/linex/idxd.h>
 #include "registers.h"
 
 #define IDXD_DRIVER_VERSION	"1.00"

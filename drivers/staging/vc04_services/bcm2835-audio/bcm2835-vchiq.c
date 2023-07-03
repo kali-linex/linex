@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2011 Broadcom Corporation.  All rights reserved. */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/completion.h>
 #include "bcm2835.h"
 #include "vc_vchi_audioserv_defs.h"
 

@@ -4,7 +4,7 @@
  *  acard-ahci.c - ACard AHCI SATA support
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
- *		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *		    Please ALWAYS copy linex-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2010 Red Hat, Inc.
@@ -17,19 +17,19 @@
  * http://www.intel.com/technology/serialata/pdf/rev1_1.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/gfp.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/gfp.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <linex/libata.h>
 #include "ahci.h"
 
 #define DRV_NAME	"acard-ahci"

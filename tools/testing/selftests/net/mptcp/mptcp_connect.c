@@ -27,9 +27,9 @@
 #include <netdb.h>
 #include <netinet/in.h>
 
-#include <linux/tcp.h>
-#include <linux/time_types.h>
-#include <linux/sockios.h>
+#include <linex/tcp.h>
+#include <linex/time_types.h>
+#include <linex/sockios.h>
 
 extern int optind;
 

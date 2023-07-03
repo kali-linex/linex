@@ -6,7 +6,7 @@
  *	Dave Gerlach
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 

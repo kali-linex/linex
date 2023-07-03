@@ -6,10 +6,10 @@
  */
 
 #define pr_fmt(fmt) "EFI: "fmt
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/err.h>
-#include <linux/efi.h>
+#include <linex/module.h>
+#include <linex/printk.h>
+#include <linex/err.h>
+#include <linex/efi.h>
 
 /**
  * parse_efi_signature_list - Parse an EFI signature list for certificates

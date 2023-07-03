@@ -5,15 +5,15 @@
  * Copyright (c) 2014 Guenter Roeck
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/jiffies.h>
+#include <linex/regmap.h>
 
 /* chip registers */
 #define LTC4260_CONTROL	0x00
@@ -179,6 +179,6 @@ static struct i2c_driver ltc4260_driver = {
 
 module_i2c_driver(ltc4260_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linex@roeck-us.net>");
 MODULE_DESCRIPTION("LTC4260 driver");
 MODULE_LICENSE("GPL");

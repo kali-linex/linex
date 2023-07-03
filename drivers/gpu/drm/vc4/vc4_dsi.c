@@ -18,16 +18,16 @@
  * hopefully present.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk-provider.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/component.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

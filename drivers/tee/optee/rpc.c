@@ -5,10 +5,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
 #include "optee_private.h"
 #include "optee_rpc_cmd.h"
 

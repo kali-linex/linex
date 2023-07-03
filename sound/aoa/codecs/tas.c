@@ -58,13 +58,13 @@
  *    and up to the hardware designer to not wire
  *    them up in some weird unusable way.
  */
-#include <linux/i2c.h>
+#include <linex/i2c.h>
 #include <asm/pmac_low_i2c.h>
 #include <asm/prom.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 
 MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");
 MODULE_LICENSE("GPL");

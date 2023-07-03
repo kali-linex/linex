@@ -8,8 +8,8 @@
  * Added by: Jerone Young <jyoung5@us.ibm.com>
  */
 
-#include <linux/of.h>
-#include <linux/kernel.h>
+#include <linex/of.h>
+#include <linex/kernel.h>
 #include <asm/machdep.h>
 
 static int mode_spin;

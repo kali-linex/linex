@@ -4,12 +4,12 @@
  * Author: Stanley Chu <stanley.chu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
 
 #include "phy-mtk-io.h"
 

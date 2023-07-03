@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include "komeda_format_caps.h"
 #include "malidp_utils.h"
 

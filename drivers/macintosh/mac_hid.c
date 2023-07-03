@@ -9,12 +9,12 @@
  * This file will soon be removed in favor of an uinput userspace tool.
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/sysctl.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 MODULE_LICENSE("GPL");
 

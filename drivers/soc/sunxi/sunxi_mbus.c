@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2020 Maxime Ripard <maxime@cerno.tech> */
 
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/device.h>
+#include <linex/dma-map-ops.h>
+#include <linex/init.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 static const char * const sunxi_mbus_devices[] = {
 	/*

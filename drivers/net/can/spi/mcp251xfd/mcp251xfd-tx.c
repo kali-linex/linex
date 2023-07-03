@@ -13,7 +13,7 @@
 //
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 
 #include "mcp251xfd.h"
 

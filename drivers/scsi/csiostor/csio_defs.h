@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for Linex.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,13 +35,13 @@
 #ifndef __CSIO_DEFS_H__
 #define __CSIO_DEFS_H__
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/bug.h>
+#include <linex/pci.h>
+#include <linex/jiffies.h>
 
 #define CSIO_INVALID_IDX		0xFFFFFFFF
 #define CSIO_INC_STATS(elem, val)	((elem)->stats.val++)

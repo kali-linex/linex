@@ -19,7 +19,7 @@
  *
  *****************************************************************************/
 
-#include <linux/string.h>
+#include <linex/string.h>
 #include "r8192U.h"
 #include "r8192U_hw.h"
 
@@ -231,7 +231,7 @@ static int rtl8180_wx_get_range(struct net_device *dev,
 	memset(range, 0, sizeof(*range));
 
 	/* Let's try to keep this struct in the same order as in
-	 * linux/include/wireless.h
+	 * linex/include/wireless.h
 	 */
 
 	/* TODO: See what values we can set, and remove the ones we can't

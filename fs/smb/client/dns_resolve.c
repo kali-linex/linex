@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/dns_resolver.h>
+#include <linex/inet.h>
+#include <linex/slab.h>
+#include <linex/dns_resolver.h>
 #include "dns_resolve.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

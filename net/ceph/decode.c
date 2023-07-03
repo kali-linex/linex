@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linex/ceph/ceph_debug.h>
 
-#include <linux/inet.h>
+#include <linex/inet.h>
 
-#include <linux/ceph/decode.h>
-#include <linux/ceph/messenger.h>  /* for ceph_pr_addr() */
+#include <linex/ceph/decode.h>
+#include <linex/ceph/messenger.h>  /* for ceph_pr_addr() */
 
 static int
 ceph_decode_entity_addr_versioned(void **p, void *end,

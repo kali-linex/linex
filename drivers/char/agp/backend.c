@@ -27,16 +27,16 @@
  * TODO:
  * - Allocate more than order 0 pages to avoid too much linear map splitting.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/miscdevice.h>
-#include <linux/pm.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/vmalloc.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/miscdevice.h>
+#include <linex/pm.h>
+#include <linex/agp_backend.h>
+#include <linex/agpgart.h>
+#include <linex/vmalloc.h>
 #include <asm/io.h>
 #include "agp.h"
 
@@ -337,7 +337,7 @@ EXPORT_SYMBOL(agp_try_unsupported_boot);
 static int __init agp_init(void)
 {
 	if (!agp_off)
-		printk(KERN_INFO "Linux agpgart interface v%d.%d\n",
+		printk(KERN_INFO "Linex agpgart interface v%d.%d\n",
 			AGPGART_VERSION_MAJOR, AGPGART_VERSION_MINOR);
 	return 0;
 }

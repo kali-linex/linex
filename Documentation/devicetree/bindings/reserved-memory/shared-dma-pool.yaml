@@ -44,16 +44,16 @@ properties:
           dma_alloc_from_dev_coherent instead for atomic coherent
           allocation.
 
-  linux,cma-default:
+  linex,cma-default:
     type: boolean
     description: >
-      If this property is present, then Linux will use the region for
+      If this property is present, then Linex will use the region for
       the default pool of the contiguous memory allocator.
 
-  linux,dma-default:
+  linex,dma-default:
     type: boolean
     description: >
-      If this property is present, then Linux will use the region for
+      If this property is present, then Linex will use the region for
       the default pool of the consistent DMA allocator.
 
 if:
@@ -76,12 +76,12 @@ examples:
           ranges;
 
           /* global autoconfigured region for contiguous allocations */
-          linux,cma {
+          linex,cma {
               compatible = "shared-dma-pool";
               reusable;
               size = <0x4000000>;
               alignment = <0x2000>;
-              linux,cma-default;
+              linex,cma-default;
           };
 
           display_reserved: framebuffer@78000000 {

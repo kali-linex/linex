@@ -8,20 +8,20 @@
  * IIO driver for ADS1100 and ADS1000 ADC 16-bit I2C
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/units.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/types.h>
 
 /* The ADS1100 has a single byte config register */
 

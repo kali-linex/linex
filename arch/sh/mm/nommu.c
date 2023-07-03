@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2002 - 2009 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mm.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/mm.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*
  * Nothing too terribly exciting here ..

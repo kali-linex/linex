@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Forwarding database
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/times.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/rculist.h>
+#include <linex/spinlock.h>
+#include <linex/times.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/jhash.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/atomic.h>
 #include <asm/unaligned.h>
-#include <linux/if_vlan.h>
+#include <linex/if_vlan.h>
 #include <net/switchdev.h>
 #include <trace/events/bridge.h>
 #include "br_private.h"

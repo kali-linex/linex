@@ -4,46 +4,46 @@
  *
  * Copyright (C) IBM Corporation, 2015
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linex.ibm.com>
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/rcupdate.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/moduleparam.h>
+#include <linex/percpu.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/freezer.h>
+#include <linex/cpu.h>
+#include <linex/delay.h>
+#include <linex/stat.h>
+#include <linex/srcu.h>
+#include <linex/slab.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/vmalloc.h>
-#include <linux/rcupdate_trace.h>
+#include <linex/torture.h>
+#include <linex/vmalloc.h>
+#include <linex/rcupdate_trace.h>
 
 #include "rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linex.ibm.com>");
 
 #define SCALE_FLAG "-scale:"
 #define SCALEOUT_STRING(s) \

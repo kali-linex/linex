@@ -5,8 +5,8 @@
  *    Copyright (C) 2010 Alexander Graf (agraf@suse.de)
  */
 
-#include <linux/pgtable.h>
-#include <linux/linkage.h>
+#include <linex/pgtable.h>
+#include <linex/linkage.h>
 
 #include <asm/reg.h>
 #include <asm/page.h>

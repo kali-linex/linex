@@ -5,14 +5,14 @@
  * Copyright (C) 2019-2022 Intel Corporation. All rights reserved.
  *
  */
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/mfd/intel-m10-bmc.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 struct m10bmc_sec;
 

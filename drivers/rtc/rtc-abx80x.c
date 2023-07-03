@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
-#include <linux/watchdog.h>
+#include <linex/bcd.h>
+#include <linex/bitfield.h>
+#include <linex/i2c.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/rtc.h>
+#include <linex/watchdog.h>
 
 #define ABX8XX_REG_HTH		0x00
 #define ABX8XX_REG_SC		0x01
@@ -992,7 +992,7 @@ static struct i2c_driver abx80x_driver = {
 		.name	= "rtc-abx80x",
 		.of_match_table = of_match_ptr(abx80x_of_match),
 	},
-	.probe		= abx80x_probe,
+	.probe_new	= abx80x_probe,
 	.id_table	= abx80x_id,
 };
 

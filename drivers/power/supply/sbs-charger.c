@@ -8,17 +8,17 @@
  * Implemetation based on sbs-battery.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
-#include <linux/devm-helpers.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/power_supply.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/regmap.h>
+#include <linex/bitops.h>
+#include <linex/devm-helpers.h>
 
 #define SBS_CHARGER_REG_SPEC_INFO		0x11
 #define SBS_CHARGER_REG_STATUS			0x13

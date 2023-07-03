@@ -6,24 +6,24 @@
 #define KMSG_COMPONENT "cpu"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/memblock.h>
-#include <linux/uaccess.h>
-#include <linux/sysctl.h>
-#include <linux/cpuset.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/nodemask.h>
-#include <linux/node.h>
+#include <linex/workqueue.h>
+#include <linex/memblock.h>
+#include <linex/uaccess.h>
+#include <linex/sysctl.h>
+#include <linex/cpuset.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/topology.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/nodemask.h>
+#include <linex/node.h>
 #include <asm/sysinfo.h>
 
 #define PTF_HORIZONTAL	(0UL)

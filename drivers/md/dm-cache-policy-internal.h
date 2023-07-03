@@ -8,7 +8,7 @@
 #ifndef DM_CACHE_POLICY_INTERNAL_H
 #define DM_CACHE_POLICY_INTERNAL_H
 
-#include <linux/vmalloc.h>
+#include <linex/vmalloc.h>
 #include "dm-cache-policy.h"
 
 /*----------------------------------------------------------------*/

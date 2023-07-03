@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/root.c
+ *  linex/fs/proc/root.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
  *  proc root directory handling functions
  */
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/stat.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/pid_namespace.h>
-#include <linux/fs_parser.h>
-#include <linux/cred.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/sched/stat.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/user_namespace.h>
+#include <linex/fs_context.h>
+#include <linex/mount.h>
+#include <linex/pid_namespace.h>
+#include <linex/fs_parser.h>
+#include <linex/cred.h>
+#include <linex/magic.h>
+#include <linex/slab.h>
 
 #include "internal.h"
 

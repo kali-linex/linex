@@ -6,25 +6,25 @@
  * Author: Bartosz Golaszewski <bgolaszewski@baylibre.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/compiler.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/regmap.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
 
 #define MTK_STAR_DRVNAME			"mtk_star_emac"
 

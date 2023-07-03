@@ -5,9 +5,9 @@
  *  Copyright (C) 2013-2015 Lantiq Beteiligungs-GmbH & Co.KG
  */
 
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/clk.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/clk.h>
 
 #include <asm/time.h>
 #include <asm/irq.h>

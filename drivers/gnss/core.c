@@ -7,18 +7,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gnss.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linex/cdev.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/gnss.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/wait.h>
 
 #define GNSS_FLAG_HAS_WRITE_RAW		BIT(0)
 

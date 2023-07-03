@@ -8,12 +8,12 @@
  *    statistics, and service functions...
  *    Add vports, etc
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/bsg-lib.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/bsg-lib.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

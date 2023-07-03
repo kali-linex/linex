@@ -1874,7 +1874,7 @@ static const struct net_device_ops bdx_netdev_ops = {
  * and a hardware reset occur.
  *
  * functions and their order used as explained in
- * /usr/src/linux/Documentation/DMA-{API,mapping}.txt
+ * /usr/src/linex/Documentation/DMA-{API,mapping}.txt
  *
  */
 

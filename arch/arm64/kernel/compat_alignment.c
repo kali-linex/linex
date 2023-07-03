@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // based on arch/arm/mm/alignment.c
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/perf_event.h>
+#include <linex/uaccess.h>
 
 #include <asm/exception.h>
 #include <asm/ptrace.h>

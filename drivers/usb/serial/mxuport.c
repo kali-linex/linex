@@ -12,19 +12,19 @@
  *	16 ports : UPort 1610-16, UPort 1650-16
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/jiffies.h>
+#include <linex/serial.h>
+#include <linex/serial_reg.h>
+#include <linex/slab.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
 #include <asm/unaligned.h>
 
 /* Definitions for the vendor ID and device ID */

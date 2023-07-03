@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <net/snmp.h>
 #include <net/tls.h>
 
@@ -10,24 +10,24 @@
 
 #ifdef CONFIG_PROC_FS
 static const struct snmp_mib tls_mib_list[] = {
-	SNMP_MIB_ITEM("TlsCurrTxSw", LINUX_MIB_TLSCURRTXSW),
-	SNMP_MIB_ITEM("TlsCurrRxSw", LINUX_MIB_TLSCURRRXSW),
-	SNMP_MIB_ITEM("TlsCurrTxDevice", LINUX_MIB_TLSCURRTXDEVICE),
-	SNMP_MIB_ITEM("TlsCurrRxDevice", LINUX_MIB_TLSCURRRXDEVICE),
-	SNMP_MIB_ITEM("TlsTxSw", LINUX_MIB_TLSTXSW),
-	SNMP_MIB_ITEM("TlsRxSw", LINUX_MIB_TLSRXSW),
-	SNMP_MIB_ITEM("TlsTxDevice", LINUX_MIB_TLSTXDEVICE),
-	SNMP_MIB_ITEM("TlsRxDevice", LINUX_MIB_TLSRXDEVICE),
-	SNMP_MIB_ITEM("TlsDecryptError", LINUX_MIB_TLSDECRYPTERROR),
-	SNMP_MIB_ITEM("TlsRxDeviceResync", LINUX_MIB_TLSRXDEVICERESYNC),
-	SNMP_MIB_ITEM("TlsDecryptRetry", LINUX_MIB_TLSDECRYPTRETRY),
-	SNMP_MIB_ITEM("TlsRxNoPadViolation", LINUX_MIB_TLSRXNOPADVIOL),
+	SNMP_MIB_ITEM("TlsCurrTxSw", LINEX_MIB_TLSCURRTXSW),
+	SNMP_MIB_ITEM("TlsCurrRxSw", LINEX_MIB_TLSCURRRXSW),
+	SNMP_MIB_ITEM("TlsCurrTxDevice", LINEX_MIB_TLSCURRTXDEVICE),
+	SNMP_MIB_ITEM("TlsCurrRxDevice", LINEX_MIB_TLSCURRRXDEVICE),
+	SNMP_MIB_ITEM("TlsTxSw", LINEX_MIB_TLSTXSW),
+	SNMP_MIB_ITEM("TlsRxSw", LINEX_MIB_TLSRXSW),
+	SNMP_MIB_ITEM("TlsTxDevice", LINEX_MIB_TLSTXDEVICE),
+	SNMP_MIB_ITEM("TlsRxDevice", LINEX_MIB_TLSRXDEVICE),
+	SNMP_MIB_ITEM("TlsDecryptError", LINEX_MIB_TLSDECRYPTERROR),
+	SNMP_MIB_ITEM("TlsRxDeviceResync", LINEX_MIB_TLSRXDEVICERESYNC),
+	SNMP_MIB_ITEM("TlsDecryptRetry", LINEX_MIB_TLSDECRYPTRETRY),
+	SNMP_MIB_ITEM("TlsRxNoPadViolation", LINEX_MIB_TLSRXNOPADVIOL),
 	SNMP_MIB_SENTINEL
 };
 
 static int tls_statistics_seq_show(struct seq_file *seq, void *v)
 {
-	unsigned long buf[LINUX_MIB_TLSMAX] = {};
+	unsigned long buf[LINEX_MIB_TLSMAX] = {};
 	struct net *net = seq->private;
 	int i;
 

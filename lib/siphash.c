@@ -9,11 +9,11 @@
  * hashtables.
  */
 
-#include <linux/siphash.h>
+#include <linex/siphash.h>
 #include <asm/unaligned.h>
 
 #if defined(CONFIG_DCACHE_WORD_ACCESS) && BITS_PER_LONG == 64
-#include <linux/dcache.h>
+#include <linex/dcache.h>
 #include <asm/word-at-a-time.h>
 #endif
 

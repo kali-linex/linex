@@ -18,26 +18,26 @@ tl;dr
 netdev
 ------
 
-netdev is a mailing list for all network-related Linux stuff.  This
+netdev is a mailing list for all network-related Linex stuff.  This
 includes anything found under net/ (i.e. core code like IPv6) and
-drivers/net (i.e. hardware specific drivers) in the Linux source tree.
+drivers/net (i.e. hardware specific drivers) in the Linex source tree.
 
 Note that some subsystems (e.g. wireless drivers) which have a high
 volume of traffic have their own specific mailing lists and trees.
 
-The netdev list is managed (like many other Linux mailing lists) through
+The netdev list is managed (like many other Linex mailing lists) through
 VGER (http://vger.kernel.org/) with archives available at
 https://lore.kernel.org/netdev/
 
 Aside from subsystems like those mentioned above, all network-related
-Linux development (i.e. RFC, review, comments, etc.) takes place on
+Linex development (i.e. RFC, review, comments, etc.) takes place on
 netdev.
 
 Development cycle
 -----------------
 
 Here is a bit of background information on
-the cadence of Linux development.  Each new release starts off with a
+the cadence of Linex development.  Each new release starts off with a
 two week "merge window" where the main maintainers feed their new stuff
 to Linus for merging into the mainline tree.  After the two weeks, the
 merge window is closed, and it is called/tagged ``-rc1``.  No new
@@ -51,7 +51,7 @@ official vX.Y is released.
 To find out where we are now in the cycle - load the mainline (Linus)
 page here:
 
-  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  https://git.kernel.org/pub/scm/linex/kernel/git/torvalds/linex.git
 
 and note the top of the "tags" section.  If it is rc1, it is early in
 the dev cycle.  If it was tagged rc7 a week ago, then a release is
@@ -69,8 +69,8 @@ the names, the ``net`` tree is for fixes to existing code already in the
 mainline tree from Linus, and ``net-next`` is where the new code goes
 for the future release.  You can find the trees here:
 
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git
+- https://git.kernel.org/pub/scm/linex/kernel/git/netdev/net.git
+- https://git.kernel.org/pub/scm/linex/kernel/git/netdev/net-next.git
 
 Relating that to kernel development: At the beginning of the 2-week
 merge window, the ``net-next`` tree will be closed - no new changes/features.
@@ -370,7 +370,7 @@ and the patch series contains a set of kernel selftest for
 ``tools/testing/selftests/net`` or using the KUnit framework.
 
 You are expected to test your changes on top of the relevant networking
-tree (``net`` or ``net-next``) and not e.g. a stable tree or ``linux-next``.
+tree (``net`` or ``net-next``) and not e.g. a stable tree or ``linex-next``.
 
 patchwork checks
 ~~~~~~~~~~~~~~~~

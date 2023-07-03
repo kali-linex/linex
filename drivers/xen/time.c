@@ -2,12 +2,12 @@
 /*
  * Xen stolen ticks accounting.
  */
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/math64.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/static_call.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/math64.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/static_call.h>
 
 #include <asm/paravirt.h>
 #include <asm/xen/hypervisor.h>

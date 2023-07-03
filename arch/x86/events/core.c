@@ -12,23 +12,23 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/capability.h>
-#include <linux/notifier.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kdebug.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
-#include <linux/static_call.h>
+#include <linex/perf_event.h>
+#include <linex/capability.h>
+#include <linex/notifier.h>
+#include <linex/hardirq.h>
+#include <linex/kprobes.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/kdebug.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/clock.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/nospec.h>
+#include <linex/static_call.h>
 
 #include <asm/apic.h>
 #include <asm/stacktrace.h>
@@ -2817,7 +2817,7 @@ static unsigned long get_segment_base(unsigned int segment)
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
+#include <linex/compat.h>
 
 static inline int
 perf_callchain_user32(struct pt_regs *regs, struct perf_callchain_entry_ctx *entry)

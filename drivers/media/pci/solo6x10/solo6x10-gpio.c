@@ -9,10 +9,10 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
 
 #include "solo6x10.h"
 

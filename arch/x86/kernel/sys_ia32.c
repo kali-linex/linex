@@ -3,8 +3,8 @@
  * sys_ia32.c: Conversion between 32bit and 64bit native syscalls. Based on
  *             sys_sparc32
  *
- * Copyright (C) 2000		VA Linux Co
- * Copyright (C) 2000		Don Dugger <n0ano@valinux.com>
+ * Copyright (C) 2000		VA Linex Co
+ * Copyright (C) 2000		Don Dugger <n0ano@valinex.com>
  * Copyright (C) 1999		Arun Sharma <arun.sharma@intel.com>
  * Copyright (C) 1997,1998	Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  * Copyright (C) 1997		David S. Miller (davem@caip.rutgers.edu)
@@ -21,31 +21,31 @@
  * hopefully all marked.  This should be fixed.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/times.h>
-#include <linux/utsname.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/poll.h>
-#include <linux/personality.h>
-#include <linux/stat.h>
-#include <linux/rwsem.h>
-#include <linux/compat.h>
-#include <linux/vfs.h>
-#include <linux/ptrace.h>
-#include <linux/highuid.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/sched/task.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/signal.h>
+#include <linex/syscalls.h>
+#include <linex/times.h>
+#include <linex/utsname.h>
+#include <linex/mm.h>
+#include <linex/uio.h>
+#include <linex/poll.h>
+#include <linex/personality.h>
+#include <linex/stat.h>
+#include <linex/rwsem.h>
+#include <linex/compat.h>
+#include <linex/vfs.h>
+#include <linex/ptrace.h>
+#include <linex/highuid.h>
+#include <linex/sysctl.h>
+#include <linex/slab.h>
+#include <linex/sched/task.h>
 #include <asm/mman.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 #include <asm/vgtod.h>
 #include <asm/ia32.h>
 
@@ -206,7 +206,7 @@ COMPAT_SYSCALL_DEFINE4(ia32_fstatat64, unsigned int, dfd,
 }
 
 /*
- * Linux/i386 didn't use to be able to handle more than
+ * Linex/i386 didn't use to be able to handle more than
  * 4 system call parameters, so these system calls used a memory
  * block for parameter passing..
  */

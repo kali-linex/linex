@@ -7,9 +7,9 @@
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@ghostprotocols.net>
  */
 #include "dccp.h"
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 
 static struct kmem_cache *dccp_ackvec_slab;
 static struct kmem_cache *dccp_ackvec_record_slab;

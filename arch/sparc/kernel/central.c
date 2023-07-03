@@ -4,14 +4,14 @@
  * Copyright (C) 1997, 1999, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include <asm/fhc.h>
 #include <asm/upa.h>

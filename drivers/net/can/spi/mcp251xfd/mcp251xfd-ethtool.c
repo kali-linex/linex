@@ -6,7 +6,7 @@
 //               Marc Kleine-Budde <kernel@pengutronix.de>
 //
 
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 
 #include "mcp251xfd.h"
 #include "mcp251xfd-ram.h"

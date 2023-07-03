@@ -22,9 +22,9 @@
  * Authors: Andres Rodriguez <andresx7@gmail.com>
  */
 
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/pid.h>
+#include <linex/fdtable.h>
+#include <linex/file.h>
+#include <linex/pid.h>
 
 #include <drm/amdgpu_drm.h>
 

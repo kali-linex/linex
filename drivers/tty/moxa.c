@@ -6,44 +6,44 @@
  *      Copyright (C) 1999-2000  Moxa Technologies (support@moxa.com).
  *      Copyright (c) 2007 Jiri Slaby <jirislaby@gmail.com>
  *
- *      This code is loosely based on the Linux serial driver, written by
+ *      This code is loosely based on the Linex serial driver, written by
  *      Linus Torvalds, Theodore T'so and others.
  */
 
 /*
  *    MOXA Intellio Series Driver
- *      for             : LINUX
+ *      for             : LINEX
  *      date            : 1999/1/7
  *      version         : 5.1
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/ioport.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/major.h>
+#include <linex/string.h>
+#include <linex/fcntl.h>
+#include <linex/ptrace.h>
+#include <linex/serial.h>
+#include <linex/tty_driver.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
+#include <linex/ratelimit.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define	MOXA			0x400
 #define MOXA_GET_IQUEUE		(MOXA + 1)	/* get input buffered count */
@@ -1056,7 +1056,7 @@ static int moxa_load_fw(struct moxa_board_conf *brd, const struct firmware *fw)
 		goto err;
 	}
 	if (hdr->type != 3) {
-		sprintf(rsn, "not for linux, type is %u", hdr->type);
+		sprintf(rsn, "not for linex, type is %u", hdr->type);
 		goto err;
 	}
 	if (moxa_check_fw_model(brd, hdr->model)) {

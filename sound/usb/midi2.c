@@ -3,17 +3,17 @@
  * MIDI 2.0 support
  */
 
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/usb/midi-v2.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/wait.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/midi.h>
+#include <linex/usb/midi-v2.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

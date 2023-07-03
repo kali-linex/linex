@@ -11,15 +11,15 @@
 #include "dm-cache-metadata.h"
 #include "dm-io-tracker.h"
 
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/dm-io.h>
+#include <linex/dm-kcopyd.h>
+#include <linex/jiffies.h>
+#include <linex/init.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #define DM_MSG_PREFIX "cache"
 

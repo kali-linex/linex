@@ -2,16 +2,16 @@
 #ifndef GSPCAV2_H
 #define GSPCAV2_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/usb.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
-#include <linux/mutex.h>
+#include <linex/mutex.h>
 
 
 

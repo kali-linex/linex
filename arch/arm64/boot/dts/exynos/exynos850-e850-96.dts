@@ -50,13 +50,13 @@
 
 		volume-down-key {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,code = <KEY_VOLUMEDOWN>;
 			gpios = <&gpa1 0 GPIO_ACTIVE_LOW>;
 		};
 
 		volume-up-key {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&gpa0 7 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -70,7 +70,7 @@
 			gpios = <&gpg2 2 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_YELLOW>;
 			function = LED_FUNCTION_HEARTBEAT;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 		};
 
 		/* eMMC_LED */
@@ -78,7 +78,7 @@
 			label = "yellow:user2";
 			gpios = <&gpg2 3 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_YELLOW>;
-			linux,default-trigger = "mmc0";
+			linex,default-trigger = "mmc0";
 		};
 
 		/* SD_LED */
@@ -87,7 +87,7 @@
 			gpios = <&gpg2 4 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_WHITE>;
 			function = LED_FUNCTION_SD;
-			linux,default-trigger = "mmc2";
+			linex,default-trigger = "mmc2";
 		};
 
 		/* WIFI_LED */
@@ -96,7 +96,7 @@
 			gpios = <&gpg2 6 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_YELLOW>;
 			function = LED_FUNCTION_WLAN;
-			linux,default-trigger = "phy0tx";
+			linex,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
@@ -106,7 +106,7 @@
 			gpios = <&gpg2 7 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_BLUETOOTH;
-			linux,default-trigger = "hci0-power";
+			linex,default-trigger = "hci0-power";
 			default-state = "off";
 		};
 	};

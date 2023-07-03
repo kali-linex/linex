@@ -2,22 +2,22 @@
 /*
  * Driver for Texas Instruments / National Semiconductor LM95234
  *
- * Copyright (c) 2013, 2014 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (c) 2013, 2014 Guenter Roeck <linex@roeck-us.net>
  *
  * Derived from lm95241.c
  * Copyright (C) 2008, 2010 Davide Rizzo <elpa.rizzo@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
 
 #define DRVNAME "lm95234"
 
@@ -728,6 +728,6 @@ static struct i2c_driver lm95234_driver = {
 
 module_i2c_driver(lm95234_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linex@roeck-us.net>");
 MODULE_DESCRIPTION("LM95233/LM95234 sensor driver");
 MODULE_LICENSE("GPL");

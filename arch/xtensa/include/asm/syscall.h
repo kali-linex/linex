@@ -10,9 +10,9 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H
 
-#include <linux/err.h>
+#include <linex/err.h>
 #include <asm/ptrace.h>
-#include <uapi/linux/audit.h>
+#include <uapi/linex/audit.h>
 
 static inline int syscall_get_arch(struct task_struct *task)
 {

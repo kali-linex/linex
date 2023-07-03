@@ -14,10 +14,10 @@
  * bypass.
  */
 
-#include <linux/irqbypass.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linex/irqbypass.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("IRQ bypass manager utility module");

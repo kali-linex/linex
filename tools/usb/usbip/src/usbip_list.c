@@ -23,7 +23,7 @@
 
 #include <dirent.h>
 
-#include <linux/usb/ch9.h>
+#include <linex/usb/ch9.h>
 
 #include "usbip_common.h"
 #include "usbip_network.h"

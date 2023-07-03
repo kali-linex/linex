@@ -6,13 +6,13 @@
  * Author: Asias He <asias@redhat.com>
  *         Stefan Hajnoczi <stefanha@redhat.com>
  */
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/virtio_vsock.h>
-#include <uapi/linux/vsockmon.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <linex/ctype.h>
+#include <linex/list.h>
+#include <linex/virtio_vsock.h>
+#include <uapi/linex/vsockmon.h>
 
 #include <net/sock.h>
 #include <net/af_vsock.h>

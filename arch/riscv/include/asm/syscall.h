@@ -11,9 +11,9 @@
 #define _ASM_RISCV_SYSCALL_H
 
 #include <asm/hwprobe.h>
-#include <uapi/linux/audit.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <uapi/linex/audit.h>
+#include <linex/sched.h>
+#include <linex/err.h>
 
 /* The array of function pointers for syscalls. */
 extern void * const sys_call_table[];

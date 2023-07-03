@@ -4,12 +4,12 @@
  *
  * Control the Cobalt Qube/RaQ front LED
  */
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
 #define LED_FRONT_LEFT	0x01
 #define LED_FRONT_RIGHT	0x02

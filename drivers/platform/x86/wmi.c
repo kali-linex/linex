@@ -16,24 +16,24 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/build_bug.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/uuid.h>
-#include <linux/wmi.h>
-#include <linux/fs.h>
-#include <uapi/linux/wmi.h>
+#include <linex/acpi.h>
+#include <linex/bits.h>
+#include <linex/build_bug.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/uuid.h>
+#include <linex/wmi.h>
+#include <linex/fs.h>
+#include <uapi/linex/wmi.h>
 
 MODULE_AUTHOR("Carlos Corbacho");
 MODULE_DESCRIPTION("ACPI-WMI Mapping Driver");

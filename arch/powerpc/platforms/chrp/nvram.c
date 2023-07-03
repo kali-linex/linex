@@ -5,12 +5,12 @@
  * /dev/nvram driver for PPC
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/of.h>
 #include <asm/machdep.h>
 #include <asm/rtas.h>
 #include "chrp.h"

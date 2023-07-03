@@ -10,10 +10,10 @@
 #ifndef __KVM_S390_GACCESS_H
 #define __KVM_S390_GACCESS_H
 
-#include <linux/compiler.h>
-#include <linux/kvm_host.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linex/compiler.h>
+#include <linex/kvm_host.h>
+#include <linex/uaccess.h>
+#include <linex/ptrace.h>
 #include "kvm-s390.h"
 
 /**

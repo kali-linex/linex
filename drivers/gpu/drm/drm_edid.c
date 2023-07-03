@@ -28,14 +28,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/bitfield.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vga_switcheroo.h>
+#include <linex/bitfield.h>
+#include <linex/hdmi.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/vga_switcheroo.h>
 
 #include <drm/drm_displayid.h>
 #include <drm/drm_drv.h>

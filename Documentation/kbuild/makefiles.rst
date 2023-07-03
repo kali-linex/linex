@@ -1,8 +1,8 @@
 ======================
-Linux Kernel Makefiles
+Linex Kernel Makefiles
 ======================
 
-This document describes the Linux kernel Makefiles.
+This document describes the Linex kernel Makefiles.
 
 Overview
 ========
@@ -18,7 +18,7 @@ The Makefiles have five parts::
 The top Makefile reads the .config file, which comes from the kernel
 configuration process.
 
-The top Makefile is responsible for building two major products: vmlinux
+The top Makefile is responsible for building two major products: vmlinex
 (the resident kernel image) and modules (any module files).
 It builds these goals by recursively descending into the subdirectories of
 the kernel source tree.
@@ -106,14 +106,14 @@ nor linked.
 Built-in object goals - obj-y
 -----------------------------
 
-The kbuild Makefile specifies object files for vmlinux
+The kbuild Makefile specifies object files for vmlinex
 in the $(obj-y) lists.  These lists depend on the kernel
 configuration.
 
 Kbuild compiles all the $(obj-y) files.  It then calls
 ``$(AR) rcSTP`` to merge these files into one built-in.a file.
 This is a thin archive without a symbol table. It will be later
-linked into vmlinux by scripts/link-vmlinux.sh
+linked into vmlinex by scripts/link-vmlinex.sh
 
 The order of files in $(obj-y) is significant.  Duplicates in
 the lists are allowed: the first instance will be linked into
@@ -243,14 +243,14 @@ down in the ext2 directory.
 
 Kbuild uses this information not only to decide that it needs to visit
 the directory, but also to decide whether or not to link objects from
-the directory into vmlinux.
+the directory into vmlinex.
 
 When Kbuild descends into the directory with "y", all built-in objects
 from that directory are combined into the built-in.a, which will be
-eventually linked into vmlinux.
+eventually linked into vmlinex.
 
 When Kbuild descends into the directory with "m", in contrast, nothing
-from that directory will be linked into vmlinux. If the Makefile in
+from that directory will be linked into vmlinex. If the Makefile in
 that directory specifies obj-y, those objects will be left orphan.
 It is very likely a bug of the Makefile or of dependencies in Kconfig.
 
@@ -264,7 +264,7 @@ Examples::
   # scripts/Makefile
   subdir-$(CONFIG_GCC_PLUGINS) += gcc-plugins
   subdir-$(CONFIG_MODVERSIONS) += genksyms
-  subdir-$(CONFIG_SECURITY_SELINUX) += selinux
+  subdir-$(CONFIG_SECURITY_SELINEX) += selinex
 
 Unlike obj-y/m, subdir-y/m does not need the trailing slash since this
 syntax is always used for directories.
@@ -273,27 +273,27 @@ It is good practice to use a ``CONFIG_`` variable when assigning directory
 names. This allows kbuild to totally skip the directory if the
 corresponding ``CONFIG_`` option is neither "y" nor "m".
 
-Non-builtin vmlinux targets - extra-y
+Non-builtin vmlinex targets - extra-y
 -------------------------------------
 
-extra-y specifies targets which are needed for building vmlinux,
+extra-y specifies targets which are needed for building vmlinex,
 but not combined into built-in.a.
 
 Examples are:
 
-1) vmlinux linker script
+1) vmlinex linker script
 
-   The linker script for vmlinux is located at
-   arch/$(SRCARCH)/kernel/vmlinux.lds
+   The linker script for vmlinex is located at
+   arch/$(SRCARCH)/kernel/vmlinex.lds
 
 Example::
 
   # arch/x86/kernel/Makefile
-  extra-y	+= vmlinux.lds
+  extra-y	+= vmlinex.lds
 
-$(extra-y) should only contain targets needed for vmlinux.
+$(extra-y) should only contain targets needed for vmlinex.
 
-Kbuild skips extra-y when vmlinux is apparently not a final goal.
+Kbuild skips extra-y when vmlinex is apparently not a final goal.
 (e.g. ``make modules``, or building external modules)
 
 If you intend to build targets unconditionally, always-y (explained
@@ -327,7 +327,7 @@ ccflags-y, asflags-y and ldflags-y
   Example::
 
     # drivers/acpi/acpica/Makefile
-    ccflags-y				:= -Os -D_LINUX -DBUILDING_ACPICA
+    ccflags-y				:= -Os -D_LINEX -DBUILDING_ACPICA
     ccflags-$(CONFIG_ACPI_DEBUG)	+= -DACPI_DEBUG_OUTPUT
 
   This variable is necessary because the top Makefile owns the
@@ -459,7 +459,7 @@ $(kecho)
   Example::
 
     # arch/arm/Makefile
-    $(BOOT_TARGETS): vmlinux
+    $(BOOT_TARGETS): vmlinex
             $(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/$@
             @$(kecho) '  Kernel: $(boot)/$@ is ready'
 
@@ -652,7 +652,7 @@ cc-cross-prefix
     #arch/m68k/Makefile
     ifneq ($(SUBARCH),$(ARCH))
             ifeq ($(CROSS_COMPILE),)
-                    CROSS_COMPILE := $(call cc-cross-prefix, m68k-linux-gnu-)
+                    CROSS_COMPILE := $(call cc-cross-prefix, m68k-linex-gnu-)
             endif
     endif
 
@@ -669,7 +669,7 @@ ld-option
   Example::
 
     #Makefile
-    LDFLAGS_vmlinux += $(call ld-option, -X)
+    LDFLAGS_vmlinex += $(call ld-option, -X)
 
 Script invocation
 -----------------
@@ -1033,7 +1033,7 @@ When kbuild executes, the following steps are followed (roughly):
 
 1) Configuration of the kernel => produce .config
 
-2) Store kernel version in include/linux/version.h
+2) Store kernel version in include/linex/version.h
 
 3) Updating all other prerequisites to the target prepare:
 
@@ -1044,7 +1044,7 @@ When kbuild executes, the following steps are followed (roughly):
 
    - The values of the above variables are expanded in arch/$(SRCARCH)/Makefile.
 
-5) All object files are then linked and the resulting file vmlinux is
+5) All object files are then linked and the resulting file vmlinex is
    located at the root of the obj tree.
    The very first objects linked are listed in scripts/head-object-list.txt.
 
@@ -1069,20 +1069,20 @@ KBUILD_LDFLAGS
     KBUILD_LDFLAGS         := -m elf_s390
 
   Note: ldflags-y can be used to further customise
-  the flags used. See `Non-builtin vmlinux targets - extra-y`_.
+  the flags used. See `Non-builtin vmlinex targets - extra-y`_.
 
-LDFLAGS_vmlinux
-  Options for $(LD) when linking vmlinux
+LDFLAGS_vmlinex
+  Options for $(LD) when linking vmlinex
 
-  LDFLAGS_vmlinux is used to specify additional flags to pass to
-  the linker when linking the final vmlinux image.
+  LDFLAGS_vmlinex is used to specify additional flags to pass to
+  the linker when linking the final vmlinex image.
 
-  LDFLAGS_vmlinux uses the LDFLAGS_$@ support.
+  LDFLAGS_vmlinex uses the LDFLAGS_$@ support.
 
   Example::
 
     #arch/x86/Makefile
-    LDFLAGS_vmlinux := -e stext
+    LDFLAGS_vmlinex := -e stext
 
 OBJCOPYFLAGS
   objcopy flags
@@ -1091,7 +1091,7 @@ OBJCOPYFLAGS
   the flags specified in OBJCOPYFLAGS will be used.
 
   $(call if_changed,objcopy) is often used to generate raw binaries on
-  vmlinux.
+  vmlinex.
 
   Example::
 
@@ -1099,11 +1099,11 @@ OBJCOPYFLAGS
     OBJCOPYFLAGS := -O binary
 
     #arch/s390/boot/Makefile
-    $(obj)/image: vmlinux FORCE
+    $(obj)/image: vmlinex FORCE
             $(call if_changed,objcopy)
 
   In this example, the binary $(obj)/image is a binary version of
-  vmlinux. The usage of $(call if_changed,xxx) will be described later.
+  vmlinex. The usage of $(call if_changed,xxx) will be described later.
 
 KBUILD_AFLAGS
   Assembler flags
@@ -1215,17 +1215,17 @@ KBUILD_LDFLAGS_MODULE
 KBUILD_LDS
   The linker script with full path. Assigned by the top-level Makefile.
 
-KBUILD_VMLINUX_OBJS
-  All object files for vmlinux. They are linked to vmlinux in the same
-  order as listed in KBUILD_VMLINUX_OBJS.
+KBUILD_VMLINEX_OBJS
+  All object files for vmlinex. They are linked to vmlinex in the same
+  order as listed in KBUILD_VMLINEX_OBJS.
 
   The objects listed in scripts/head-object-list.txt are exceptions;
   they are placed before the other objects.
 
-KBUILD_VMLINUX_LIBS
-  All .a ``lib`` files for vmlinux. KBUILD_VMLINUX_OBJS and
-  KBUILD_VMLINUX_LIBS together specify all the object files used to
-  link vmlinux.
+KBUILD_VMLINEX_LIBS
+  All .a ``lib`` files for vmlinex. KBUILD_VMLINEX_OBJS and
+  KBUILD_VMLINEX_LIBS together specify all the object files used to
+  link vmlinex.
 
 Add prerequisites to archheaders
 --------------------------------
@@ -1259,7 +1259,7 @@ List directories to visit when descending
 -----------------------------------------
 
 An arch Makefile cooperates with the top Makefile to define variables
-which specify how to build the vmlinux file.  Note that there is no
+which specify how to build the vmlinex file.  Note that there is no
 corresponding arch-specific section for modules; the module-building
 machinery is all architecture-independent.
 
@@ -1290,7 +1290,7 @@ core-y, libs-y, drivers-y
 Architecture-specific boot images
 ---------------------------------
 
-An arch Makefile specifies goals that take the vmlinux file, compress
+An arch Makefile specifies goals that take the vmlinex file, compress
 it, wrap it in bootstrapping code, and copy the resulting files
 somewhere. This includes various kinds of installation commands.
 The actual goals are not standardized across architectures.
@@ -1310,7 +1310,7 @@ Example::
 
   #arch/x86/Makefile
   boot := arch/x86/boot
-  bzImage: vmlinux
+  bzImage: vmlinex
           $(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 ``$(Q)$(MAKE) $(build)=<dir>`` is the recommended way to invoke
@@ -1335,7 +1335,7 @@ An architecture shall always, per default, build a bootable image.
 In ``make help``, the default goal is highlighted with a ``*``.
 
 Add a new prerequisite to all: to select a default goal different
-from vmlinux.
+from vmlinex.
 
 Example::
 
@@ -1393,12 +1393,12 @@ gzip
   Example::
 
     #arch/x86/boot/compressed/Makefile
-    $(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+    $(obj)/vmlinex.bin.gz: $(vmlinex.bin.all-y) FORCE
             $(call if_changed,gzip)
 
 dtc
   Create flattened device tree blob object suitable for linking
-  into vmlinux. Device tree blobs linked into vmlinux are placed
+  into vmlinex. Device tree blobs linked into vmlinex are placed
   in an init section in the image. Platform code *must* copy the
   blob to non-init memory prior to calling unflatten_device_tree().
 
@@ -1416,10 +1416,10 @@ dtc
 Preprocessing linker scripts
 ----------------------------
 
-When the vmlinux image is built, the linker script
-arch/$(SRCARCH)/kernel/vmlinux.lds is used.
+When the vmlinex image is built, the linker script
+arch/$(SRCARCH)/kernel/vmlinex.lds is used.
 
-The script is a preprocessed variant of the file vmlinux.lds.S
+The script is a preprocessed variant of the file vmlinex.lds.S
 located in the same directory.
 
 kbuild knows .lds files and includes a rule ``*lds.S`` -> ``*lds``.
@@ -1427,13 +1427,13 @@ kbuild knows .lds files and includes a rule ``*lds.S`` -> ``*lds``.
 Example::
 
   #arch/x86/kernel/Makefile
-  extra-y := vmlinux.lds
+  extra-y := vmlinex.lds
 
 The assignment to extra-y is used to tell kbuild to build the
-target vmlinux.lds.
+target vmlinex.lds.
 
-The assignment to $(CPPFLAGS_vmlinux.lds) tells kbuild to use the
-specified options when building the target vmlinux.lds.
+The assignment to $(CPPFLAGS_vmlinex.lds) tells kbuild to use the
+specified options when building the target vmlinex.lds.
 
 When building the ``*.lds`` target, kbuild uses the variables::
 
@@ -1461,17 +1461,17 @@ Post-link pass
 --------------
 
 If the file arch/xxx/Makefile.postlink exists, this makefile
-will be invoked for post-link objects (vmlinux and modules.ko)
+will be invoked for post-link objects (vmlinex and modules.ko)
 for architectures to run post-link passes on. Must also handle
 the clean target.
 
 This pass runs after kallsyms generation. If the architecture
 needs to modify symbol locations, rather than manipulate the
 kallsyms, it may be easier to add another postlink target for
-.tmp_vmlinux? targets to be called from link-vmlinux.sh.
+.tmp_vmlinex? targets to be called from link-vmlinex.sh.
 
 For example, powerpc uses this to check relocation sanity of
-the linked vmlinux file.
+the linked vmlinex file.
 
 Kbuild syntax for exported headers
 ==================================
@@ -1498,7 +1498,7 @@ See subsequent chapter for the syntax of the Kbuild file.
 no-export-headers
 -----------------
 
-no-export-headers is essentially used by include/uapi/linux/Kbuild to
+no-export-headers is essentially used by include/uapi/linex/Kbuild to
 avoid exporting specific headers (e.g. kvm.h) on architectures that do
 not support it. It should be avoided as much as possible.
 

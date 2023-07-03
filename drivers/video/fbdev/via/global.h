@@ -8,16 +8,16 @@
 #ifndef __GLOBAL_H__
 #define __GLOBAL_H__
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/console.h>
-#include <linux/timer.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/console.h>
+#include <linex/timer.h>
 
 #ifdef CONFIG_X86
 #include <asm/olpc.h>

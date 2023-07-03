@@ -4,17 +4,17 @@
  * Author: Chi-Fang Li <cfli0@nuvoton.com>
  */
 
-#include <linux/bits.h>
-#include <linux/container_of.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <linex/bits.h>
+#include <linex/container_of.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/reset-controller.h>
+#include <linex/spinlock.h>
 #include <dt-bindings/reset/nuvoton,ma35d1-reset.h>
 
 struct ma35d1_reset_data {

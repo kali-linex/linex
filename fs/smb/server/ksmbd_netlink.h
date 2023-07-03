@@ -2,13 +2,13 @@
 /*
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  *
- *   linux-ksmbd-devel@lists.sourceforge.net
+ *   linex-ksmbd-devel@lists.sourceforge.net
  */
 
-#ifndef _LINUX_KSMBD_SERVER_H
-#define _LINUX_KSMBD_SERVER_H
+#ifndef _LINEX_KSMBD_SERVER_H
+#define _LINEX_KSMBD_SERVER_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /*
  * This is a userspace ABI to communicate data between ksmbd and user IPC
@@ -410,4 +410,4 @@ enum KSMBD_TREE_CONN_STATUS {
 #define KSMBD_CONFIG_OPT_AUTO		2
 #define KSMBD_CONFIG_OPT_MANDATORY	3
 
-#endif /* _LINUX_KSMBD_SERVER_H */
+#endif /* _LINEX_KSMBD_SERVER_H */

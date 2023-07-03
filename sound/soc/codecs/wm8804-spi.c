@@ -7,9 +7,9 @@
  * Author: Charles Keepax <ckeepax@opensource.wolfsonmicro.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
 
 #include "wm8804.h"
 

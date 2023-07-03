@@ -3,21 +3,21 @@
 
 /* Kernel module implementing an IP set type: the hash:net,iface type */
 
-#include <linux/jhash.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/random.h>
+#include <linex/jhash.h>
+#include <linex/module.h>
+#include <linex/ip.h>
+#include <linex/skbuff.h>
+#include <linex/errno.h>
+#include <linex/random.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_hash.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/netfilter/ipset/pfxlen.h>
+#include <linex/netfilter/ipset/ip_set.h>
+#include <linex/netfilter/ipset/ip_set_hash.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1    nomatch flag support added */

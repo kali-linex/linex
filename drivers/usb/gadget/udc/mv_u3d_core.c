@@ -3,29 +3,29 @@
  * Copyright (C) 2011 Marvell International Ltd. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/notifier.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/pm.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/mv_usb.h>
+#include <linex/clk.h>
 
 #include "mv_u3d.h"
 

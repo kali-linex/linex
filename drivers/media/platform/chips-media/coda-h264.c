@@ -7,9 +7,9 @@
  *    Xavier Duret
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/videodev2.h>
 
 #include "coda.h"
 

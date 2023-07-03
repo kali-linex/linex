@@ -1,21 +1,21 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/x86/boot/compressed/Makefile
+# linex/arch/x86/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmlinex image from the original vmlinex
 #
 # vmlinuz is:
 #	decompression code (*.o)
 #	asm globals (piggy.S), including:
-#		vmlinux.bin.(gz|bz2|lzma|...)
+#		vmlinex.bin.(gz|bz2|lzma|...)
 #
-# vmlinux.bin is:
-#	vmlinux stripped of debugging and comments
-# vmlinux.bin.all is:
-#	vmlinux.bin + vmlinux.relocs
-# vmlinux.bin.(gz|bz2|lzma|...) is:
+# vmlinex.bin is:
+#	vmlinex stripped of debugging and comments
+# vmlinex.bin.all is:
+#	vmlinex.bin + vmlinex.relocs
+# vmlinex.bin.(gz|bz2|lzma|...) is:
 #	(see scripts/Makefile.lib size_append)
-#	compressed vmlinux.bin.all + u32 size of vmlinux.bin.all
+#	compressed vmlinex.bin.all + u32 size of vmlinex.bin.all
 
 # Sanitizer runtimes are unavailable and cannot be linked for early boot code.
 KASAN_SANITIZE			:= n
@@ -26,8 +26,8 @@ OBJECT_FILES_NON_STANDARD	:= y
 # Prevents link failures: __sanitizer_cov_trace_pc() is not linked in.
 KCOV_INSTRUMENT		:= n
 
-targets := vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 vmlinux.bin.lzma \
-	vmlinux.bin.xz vmlinux.bin.lzo vmlinux.bin.lz4 vmlinux.bin.zst
+targets := vmlinex vmlinex.bin vmlinex.bin.gz vmlinex.bin.bz2 vmlinex.bin.lzma \
+	vmlinex.bin.xz vmlinex.bin.lzo vmlinex.bin.lz4 vmlinex.bin.zst
 
 # CLANG_FLAGS must come before any cc-disable-warning or cc-option calls in
 # case of cross compiling, as it has the '--target=' flag, which is needed to
@@ -51,7 +51,7 @@ KBUILD_CFLAGS += -fno-asynchronous-unwind-tables
 KBUILD_CFLAGS += -D__DISABLE_EXPORTS
 # Disable relocation relaxation in case the link is not PIE.
 KBUILD_CFLAGS += $(call cc-option,-Wa$(comma)-mrelax-relocations=no)
-KBUILD_CFLAGS += -include $(srctree)/include/linux/hidden.h
+KBUILD_CFLAGS += -include $(srctree)/include/linex/hidden.h
 
 # sev.c indirectly inludes inat-table.h which is generated during
 # compilation and stored in $(objtree). Add the directory to the includes so
@@ -66,15 +66,15 @@ KBUILD_LDFLAGS := -m elf_$(UTS_MACHINE)
 KBUILD_LDFLAGS += $(call ld-option,--no-ld-generated-unwind-info)
 # Compressed kernel should be built as PIE since it may be loaded at any
 # address by the bootloader.
-LDFLAGS_vmlinux := -pie $(call ld-option, --no-dynamic-linker)
+LDFLAGS_vmlinex := -pie $(call ld-option, --no-dynamic-linker)
 ifdef CONFIG_LD_ORPHAN_WARN
-LDFLAGS_vmlinux += --orphan-handling=$(CONFIG_LD_ORPHAN_WARN_LEVEL)
+LDFLAGS_vmlinex += --orphan-handling=$(CONFIG_LD_ORPHAN_WARN_LEVEL)
 endif
-LDFLAGS_vmlinux += -z noexecstack
+LDFLAGS_vmlinex += -z noexecstack
 ifeq ($(CONFIG_LD_IS_BFD),y)
-LDFLAGS_vmlinux += $(call ld-option,--no-warn-rwx-segments)
+LDFLAGS_vmlinex += $(call ld-option,--no-warn-rwx-segments)
 endif
-LDFLAGS_vmlinux += -T
+LDFLAGS_vmlinex += -T
 
 hostprogs	:= mkpiggy
 HOST_EXTRACFLAGS += -I$(srctree)/tools/include
@@ -86,62 +86,62 @@ quiet_cmd_voffset = VOFFSET $@
 
 targets += ../voffset.h
 
-$(obj)/../voffset.h: vmlinux FORCE
+$(obj)/../voffset.h: vmlinex FORCE
 	$(call if_changed,voffset)
 
 $(obj)/misc.o: $(obj)/../voffset.h
 
-vmlinux-objs-y := $(obj)/vmlinux.lds $(obj)/kernel_info.o $(obj)/head_$(BITS).o \
+vmlinex-objs-y := $(obj)/vmlinex.lds $(obj)/kernel_info.o $(obj)/head_$(BITS).o \
 	$(obj)/misc.o $(obj)/string.o $(obj)/cmdline.o $(obj)/error.o \
 	$(obj)/piggy.o $(obj)/cpuflags.o
 
-vmlinux-objs-$(CONFIG_EARLY_PRINTK) += $(obj)/early_serial_console.o
-vmlinux-objs-$(CONFIG_RANDOMIZE_BASE) += $(obj)/kaslr.o
+vmlinex-objs-$(CONFIG_EARLY_PRINTK) += $(obj)/early_serial_console.o
+vmlinex-objs-$(CONFIG_RANDOMIZE_BASE) += $(obj)/kaslr.o
 ifdef CONFIG_X86_64
-	vmlinux-objs-y += $(obj)/ident_map_64.o
-	vmlinux-objs-y += $(obj)/idt_64.o $(obj)/idt_handlers_64.o
-	vmlinux-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/mem_encrypt.o
-	vmlinux-objs-y += $(obj)/pgtable_64.o
-	vmlinux-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/sev.o
+	vmlinex-objs-y += $(obj)/ident_map_64.o
+	vmlinex-objs-y += $(obj)/idt_64.o $(obj)/idt_handlers_64.o
+	vmlinex-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/mem_encrypt.o
+	vmlinex-objs-y += $(obj)/pgtable_64.o
+	vmlinex-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/sev.o
 endif
 
-vmlinux-objs-$(CONFIG_ACPI) += $(obj)/acpi.o
-vmlinux-objs-$(CONFIG_INTEL_TDX_GUEST) += $(obj)/tdx.o $(obj)/tdcall.o $(obj)/tdx-shared.o
-vmlinux-objs-$(CONFIG_UNACCEPTED_MEMORY) += $(obj)/mem.o
+vmlinex-objs-$(CONFIG_ACPI) += $(obj)/acpi.o
+vmlinex-objs-$(CONFIG_INTEL_TDX_GUEST) += $(obj)/tdx.o $(obj)/tdcall.o $(obj)/tdx-shared.o
+vmlinex-objs-$(CONFIG_UNACCEPTED_MEMORY) += $(obj)/mem.o
 
-vmlinux-objs-$(CONFIG_EFI) += $(obj)/efi.o
-vmlinux-objs-$(CONFIG_EFI_MIXED) += $(obj)/efi_mixed.o
-vmlinux-objs-$(CONFIG_EFI_STUB) += $(objtree)/drivers/firmware/efi/libstub/lib.a
+vmlinex-objs-$(CONFIG_EFI) += $(obj)/efi.o
+vmlinex-objs-$(CONFIG_EFI_MIXED) += $(obj)/efi_mixed.o
+vmlinex-objs-$(CONFIG_EFI_STUB) += $(objtree)/drivers/firmware/efi/libstub/lib.a
 
-$(obj)/vmlinux: $(vmlinux-objs-y) FORCE
+$(obj)/vmlinex: $(vmlinex-objs-y) FORCE
 	$(call if_changed,ld)
 
-OBJCOPYFLAGS_vmlinux.bin :=  -R .comment -S
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmlinex.bin :=  -R .comment -S
+$(obj)/vmlinex.bin: vmlinex FORCE
 	$(call if_changed,objcopy)
 
-targets += $(patsubst $(obj)/%,%,$(vmlinux-objs-y)) vmlinux.bin.all vmlinux.relocs
+targets += $(patsubst $(obj)/%,%,$(vmlinex-objs-y)) vmlinex.bin.all vmlinex.relocs
 
-# vmlinux.relocs is created by the vmlinux postlink step.
-$(obj)/vmlinux.relocs: vmlinux
+# vmlinex.relocs is created by the vmlinex postlink step.
+$(obj)/vmlinex.relocs: vmlinex
 	@true
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
-vmlinux.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmlinux.relocs
+vmlinex.bin.all-y := $(obj)/vmlinex.bin
+vmlinex.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmlinex.relocs
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.gz: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.bz2: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,bzip2_with_size)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.lzma: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,lzma_with_size)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.xz: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,xzkern_with_size)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.lzo: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,lzo_with_size)
-$(obj)/vmlinux.bin.lz4: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.lz4: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,lz4_with_size)
-$(obj)/vmlinux.bin.zst: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinex.bin.zst: $(vmlinex.bin.all-y) FORCE
 	$(call if_changed,zstd22_with_size)
 
 suffix-$(CONFIG_KERNEL_GZIP)	:= gz
@@ -156,5 +156,5 @@ quiet_cmd_mkpiggy = MKPIGGY $@
       cmd_mkpiggy = $(obj)/mkpiggy $< > $@
 
 targets += piggy.S
-$(obj)/piggy.S: $(obj)/vmlinux.bin.$(suffix-y) $(obj)/mkpiggy FORCE
+$(obj)/piggy.S: $(obj)/vmlinex.bin.$(suffix-y) $(obj)/mkpiggy FORCE
 	$(call if_changed,mkpiggy)

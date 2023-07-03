@@ -24,29 +24,29 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mmc/sdio.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/highmem.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/mfd/tmio.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/platform_device.h>
+#include <linex/pm_qos.h>
+#include <linex/pm_runtime.h>
+#include <linex/regulator/consumer.h>
+#include <linex/mmc/sdio.h>
+#include <linex/scatterlist.h>
+#include <linex/sizes.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
 
 #include "tmio_mmc.h"
 

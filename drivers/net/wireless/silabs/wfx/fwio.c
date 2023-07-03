@@ -5,10 +5,10 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/bitfield.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/bitfield.h>
 
 #include "fwio.h"
 #include "wfx.h"

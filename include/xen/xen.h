@@ -2,7 +2,7 @@
 #ifndef _XEN_XEN_H
 #define _XEN_XEN_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 enum xen_domain_type {
 	XEN_NATIVE,		/* running on bare hardware    */
@@ -58,7 +58,7 @@ extern u64 xen_saved_max_mem_size;
 #ifdef CONFIG_XEN_UNPOPULATED_ALLOC
 int xen_alloc_unpopulated_pages(unsigned int nr_pages, struct page **pages);
 void xen_free_unpopulated_pages(unsigned int nr_pages, struct page **pages);
-#include <linux/ioport.h>
+#include <linex/ioport.h>
 int arch_xen_unpopulated_init(struct resource **res);
 #else
 #include <xen/balloon.h>
@@ -77,7 +77,7 @@ static inline void xen_free_unpopulated_pages(unsigned int nr_pages,
 #if defined(CONFIG_XEN_DOM0) && defined(CONFIG_ACPI) && defined(CONFIG_X86)
 bool __init xen_processor_present(uint32_t acpi_id);
 #else
-#include <linux/bug.h>
+#include <linex/bug.h>
 static inline bool xen_processor_present(uint32_t acpi_id)
 {
 	BUG();

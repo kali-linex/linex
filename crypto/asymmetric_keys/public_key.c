@@ -12,13 +12,13 @@
 #include <crypto/public_key.h>
 #include <crypto/sig.h>
 #include <keys/asymmetric-subtype.h>
-#include <linux/asn1.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/asn1.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 MODULE_DESCRIPTION("In-software asymmetric public-key subtype");
 MODULE_AUTHOR("Red Hat, Inc.");

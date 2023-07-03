@@ -2,7 +2,7 @@
 #define VERSION "0.23"
 /* ns83820.c by Benjamin LaHaise with contributions.
  *
- * Questions/comments/discussion to linux-ns83820@kvack.org.
+ * Questions/comments/discussion to linex-ns83820@kvack.org.
  *
  * $Revision: 1.34.2.23 $
  *
@@ -81,31 +81,31 @@
 //#define dprintk		printk
 #define dprintk(x...)		do { } while (0)
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>	/* for iph */
-#include <linux/in.h>	/* for IPPROTO_... */
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/ethtool.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ip.h>	/* for iph */
+#include <linex/in.h>	/* for IPPROTO_... */
+#include <linex/compiler.h>
+#include <linex/prefetch.h>
+#include <linex/ethtool.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/if_vlan.h>
+#include <linex/rtnetlink.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define DRV_NAME "ns83820"
 

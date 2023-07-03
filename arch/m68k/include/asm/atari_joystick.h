@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ATARI_JOYSTICK_H
-#define _LINUX_ATARI_JOYSTICK_H
+#ifndef _LINEX_ATARI_JOYSTICK_H
+#define _LINEX_ATARI_JOYSTICK_H
 
 /*
- * linux/include/linux/atari_joystick.h
+ * linex/include/linex/atari_joystick.h
  * header file for Atari Joystick driver
  * by Robert de Vries (robert@and.nl) on 19Jul93
  */

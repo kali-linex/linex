@@ -6,14 +6,14 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <linex/compiler.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
 
 #include <asm/cpufeature.h>
 #include <asm/syscall.h>
@@ -30,7 +30,7 @@ SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
 
 SYSCALL_DEFINE1(arm64_personality, unsigned int, personality)
 {
-	if (personality(personality) == PER_LINUX32 &&
+	if (personality(personality) == PER_LINEX32 &&
 		!system_supports_32bit_el0())
 		return -EINVAL;
 	return ksys_personality(personality);

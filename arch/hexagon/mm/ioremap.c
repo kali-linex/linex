@@ -2,12 +2,12 @@
 /*
  * I/O remap functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linex/io.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
 
 void __iomem *ioremap(unsigned long phys_addr, unsigned long size)
 {

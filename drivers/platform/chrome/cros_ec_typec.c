@@ -6,15 +6,15 @@
  * Chrome OS EC.
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_usbpd_notify.h>
-#include <linux/platform_device.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_tbt.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_usbpd_notify.h>
+#include <linex/platform_device.h>
+#include <linex/usb/pd_vdo.h>
+#include <linex/usb/typec_dp.h>
+#include <linex/usb/typec_tbt.h>
 
 #include "cros_ec_typec.h"
 #include "cros_typec_vdm.h"

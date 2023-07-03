@@ -1,5 +1,5 @@
 ==========================
-Linux Tracing Technologies
+Linex Tracing Technologies
 ==========================
 
 .. toctree::

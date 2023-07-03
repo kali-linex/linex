@@ -21,16 +21,16 @@
  * "cb" means control block
  */
 
-#include <linux/acpi.h>
-#include <linux/dcbnl.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pkt_sched.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/dcbnl.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/pkt_sched.h>
+#include <linex/types.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
 

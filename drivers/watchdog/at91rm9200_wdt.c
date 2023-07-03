@@ -8,26 +8,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-st.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/atmel-st.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
+#include <linex/watchdog.h>
+#include <linex/uaccess.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #define WDT_DEFAULT_TIME	5	/* seconds */
 #define WDT_MAX_TIME		256	/* seconds */

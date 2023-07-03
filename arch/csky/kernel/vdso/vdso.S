@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/page.h>
 
 	__PAGE_ALIGNED_DATA

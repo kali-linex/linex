@@ -3,25 +3,25 @@
  * Copyright (C) 2023 Otto Pflüger
  *
  * Based on gcc-msm8953.c:
- *   Copyright 2021, The Linux Foundation. All rights reserved.
+ *   Copyright 2021, The Linex Foundation. All rights reserved.
  * with parts taken from gcc-qcs404.c:
- *   Copyright 2018, The Linux Foundation. All rights reserved.
+ *   Copyright 2018, The Linex Foundation. All rights reserved.
  * and gcc-msm8939.c:
  *   Copyright 2020 Linaro Limited
  * adapted with data from clock-gcc-8952.c in Qualcomm's msm-4.9 release:
- *   Copyright (c) 2014-2020, The Linux Foundation. All rights reserved.
+ *   Copyright (c) 2014-2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linex/bitops.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
 
 #include <dt-bindings/clock/qcom,gcc-msm8917.h>
 

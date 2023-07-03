@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Linex Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -21,26 +21,26 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/sched/clock.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/miscdevice.h>
-#include <linux/percpu.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/crash_dump.h>
-#include <linux/cpu.h>
-#include <linux/cpuhotplug.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/sched/clock.h>
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/firmware.h>
+#include <linex/miscdevice.h>
+#include <linex/percpu.h>
+#include <linex/irq.h>
+#include <linex/bitops.h>
+#include <linex/crash_dump.h>
+#include <linex/cpu.h>
+#include <linex/cpuhotplug.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -14718,11 +14718,11 @@ out:
 }
 
 /**
- * lpfc_sli4_request_firmware_update - Request linux generic firmware upgrade
+ * lpfc_sli4_request_firmware_update - Request linex generic firmware upgrade
  * @phba: pointer to lpfc hba data structure.
  * @fw_upgrade: which firmware to update.
  *
- * This routine is called to perform Linux generic firmware upgrade on device
+ * This routine is called to perform Linex generic firmware upgrade on device
  * that supports such feature.
  **/
 int

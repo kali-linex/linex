@@ -6,13 +6,13 @@
  * Copyright (c) 2011, Sagrad Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/spi/spi.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/of.h>
 
 #include "bus.h"
 #include "wfx.h"

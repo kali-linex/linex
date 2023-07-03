@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2022 Google */
 
-#include "vmlinux.h"
+#include "vmlinex.h"
 #include <bpf/bpf_tracing.h>
 
 bool prog1_called = false;

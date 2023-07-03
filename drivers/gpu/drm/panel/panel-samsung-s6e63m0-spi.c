@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/spi/spi.h>
+#include <linex/delay.h>
 
 #include <drm/drm_mipi_dbi.h>
 #include <drm/drm_print.h>

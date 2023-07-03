@@ -22,19 +22,19 @@
  * Contributors: Andreas Larsson <andreas@gaisler.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/can/dev.h>
-#include <linux/spinlock.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/ethtool.h>
+#include <linex/io.h>
+#include <linex/can/dev.h>
+#include <linex/spinlock.h>
+#include <linex/of_platform.h>
+#include <linex/of_irq.h>
 
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 
 #define DRV_NAME	"grcan"
 

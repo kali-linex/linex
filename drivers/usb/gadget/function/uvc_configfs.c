@@ -12,8 +12,8 @@
 
 #include "uvc_configfs.h"
 
-#include <linux/sort.h>
-#include <linux/usb/video.h>
+#include <linex/sort.h>
+#include <linex/usb/video.h>
 
 /* -----------------------------------------------------------------------------
  * Global Utility Structures and Macros

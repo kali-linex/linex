@@ -7,16 +7,16 @@
  *	based on ipt_ROUTE.c from Cédric de Launois
  *	<delaunois@info.ucl.be>
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/route.h>
-#include <linux/netfilter/x_tables.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/route.h>
+#include <linex/netfilter/x_tables.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/route.h>
 #include <net/netfilter/ipv4/nf_dup_ipv4.h>
 #include <net/netfilter/ipv6/nf_dup_ipv6.h>
-#include <linux/netfilter/xt_TEE.h>
+#include <linex/netfilter/xt_TEE.h>
 
 struct xt_tee_priv {
 	struct list_head	list;

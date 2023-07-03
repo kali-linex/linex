@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies */
 
-#include <linux/mlx5/vport.h>
+#include <linex/mlx5/vport.h>
 #include <rdma/ib_verbs.h>
 #include <net/addrconf.h>
 

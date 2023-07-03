@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/clnt4xdr.c
+ * linex/fs/lockd/clnt4xdr.c
  *
  * XDR functions to encode/decode NLM version 4 RPC arguments and results.
  *
@@ -9,13 +9,13 @@
  * Copyright (C) 2010, Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/lockd/lockd.h>
+#include <linex/types.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/lockd/lockd.h>
 
-#include <uapi/linux/nfs3.h>
+#include <uapi/linex/nfs3.h>
 
 #define NLMDBG_FACILITY		NLMDBG_XDR
 

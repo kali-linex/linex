@@ -9,14 +9,14 @@
  *
  * CI interface support (c) 2004 Andrew de Quincey <adq_dvb@lidskialf.net>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linextv.org
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
 #include <media/rc-core.h>
 
 #include "budget.h"

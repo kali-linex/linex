@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/cpumask.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
+#include <linex/device.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
+#include <linex/percpu.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/export.h>
+#include <linex/nodemask.h>
+#include <linex/cpumask.h>
+#include <linex/notifier.h>
+#include <linex/of.h>
 
 #include <asm/current.h>
 #include <asm/processor.h>

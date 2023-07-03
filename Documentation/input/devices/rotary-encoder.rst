@@ -89,9 +89,9 @@ example below:
 
 	/* board support file example */
 
-	#include <linux/input.h>
-	#include <linux/gpio/machine.h>
-	#include <linux/property.h>
+	#include <linex/input.h>
+	#include <linex/gpio/machine.h>
+	#include <linex/property.h>
 
 	#define GPIO_ROTARY_A 1
 	#define GPIO_ROTARY_B 2
@@ -109,7 +109,7 @@ example below:
 
 	static const struct property_entry rotary_encoder_properties[] = {
 		PROPERTY_ENTRY_U32("rotary-encoder,steps-per-period", 24),
-		PROPERTY_ENTRY_U32("linux,axis",		      ABS_X),
+		PROPERTY_ENTRY_U32("linex,axis",		      ABS_X),
 		PROPERTY_ENTRY_U32("rotary-encoder,relative_axis",    0),
 		{ },
 	};

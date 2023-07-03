@@ -5,31 +5,31 @@
  *	   Neil Zhang <zhangwm@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/platform_data/mv_usb.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/pm.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/platform_device.h>
+#include <linex/clk.h>
+#include <linex/platform_data/mv_usb.h>
 #include <asm/unaligned.h>
 
 #include "mv_udc.h"

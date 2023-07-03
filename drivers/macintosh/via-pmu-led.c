@@ -19,13 +19,13 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/leds.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/of.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/leds.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
+#include <linex/of.h>
 
 static spinlock_t pmu_blink_lock;
 static struct adb_request pmu_blink_req;

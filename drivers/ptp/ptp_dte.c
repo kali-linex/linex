@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2017 Broadcom
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/types.h>
 
 #define DTE_NCO_LOW_TIME_REG	0x00
 #define DTE_NCO_TIME_REG	0x04

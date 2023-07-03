@@ -10,10 +10,10 @@
  * for more details.
  */
 
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/cpu.h>
+#include <linex/percpu.h>
+#include <linex/sched.h>
+#include <linex/sched/topology.h>
+#include <linex/cpu.h>
 
 #include <asm/topology.h>
 #include <asm/sections.h>

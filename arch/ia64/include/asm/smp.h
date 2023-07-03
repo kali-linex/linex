@@ -2,8 +2,8 @@
 /*
  * SMP Support
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Linex Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinex.com>
  * (c) Copyright 2001-2003, 2005 Hewlett-Packard Development Company, L.P.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
@@ -11,12 +11,12 @@
 #ifndef _ASM_IA64_SMP_H
 #define _ASM_IA64_SMP_H
 
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/bitops.h>
-#include <linux/irqreturn.h>
+#include <linex/init.h>
+#include <linex/threads.h>
+#include <linex/kernel.h>
+#include <linex/cpumask.h>
+#include <linex/bitops.h>
+#include <linex/irqreturn.h>
 
 #include <asm/param.h>
 #include <asm/processor.h>

@@ -5,22 +5,22 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/mman.h>
+#include <linex/proc_fs.h>
+#include <linex/mm.h>
+#include <linex/mmzone.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/smp.h>
+#include <linex/seq_file.h>
+#include <linex/hugetlb.h>
+#include <linex/vmalloc.h>
 #include <asm/tlb.h>
 #include <asm/div64.h>
 #include "internal.h"

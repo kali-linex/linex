@@ -5,18 +5,18 @@
 // Copyright (C) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/swab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/soundwire/sdw_type.h>
+#include <linex/swab.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include "cs35l56.h"
 

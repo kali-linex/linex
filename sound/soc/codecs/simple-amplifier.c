@@ -4,9 +4,9 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
 #include <sound/soc.h>
 
 #define DRV_NAME "simple-amplifier"

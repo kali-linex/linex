@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-rpc/riscpc.c
+ *  linex/arch/arm/mach-rpc/riscpc.c
  *
  *  Copyright (C) 1998-2001 Russell King
  *
  *  Architecture specific fixups.
  */
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/serial_8250.h>
-#include <linux/ata_platform.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/serial_8250.h>
+#include <linex/ata_platform.h>
+#include <linex/io.h>
+#include <linex/i2c.h>
+#include <linex/reboot.h>
 
 #include <asm/elf.h>
 #include <asm/mach-types.h>

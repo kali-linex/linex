@@ -3,9 +3,9 @@
 
 #ifndef __HCLGE_CMD_H
 #define __HCLGE_CMD_H
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/etherdevice.h>
 #include "hnae3.h"
 #include "hclge_comm_cmd.h"
 

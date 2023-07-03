@@ -4,20 +4,20 @@
  * Copyright (C) 2007 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/sja1000.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/can/dev.h>
+#include <linex/can/platform/sja1000.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 
 #include "sja1000.h"
 

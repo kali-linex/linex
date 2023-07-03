@@ -4,12 +4,12 @@
  * Copyright (C) 2002-2004 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/buildid.h>
-#include <linux/crash_core.h>
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
+#include <linex/buildid.h>
+#include <linex/crash_core.h>
+#include <linex/init.h>
+#include <linex/utsname.h>
+#include <linex/vmalloc.h>
+#include <linex/sizes.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>

@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------*/
 /*
-   Qlogic linux driver - work in progress. No Warranty express or implied.
+   Qlogic linex driver - work in progress. No Warranty express or implied.
    Use at your own risk.  Support Tort Reform so you won't have to read all
    these silly disclaimers.
 
@@ -39,17 +39,17 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>		/* to get disk capacity */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
+#include <linex/module.h>
+#include <linex/blkdev.h>		/* to get disk capacity */
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/proc_fs.h>
+#include <linex/unistd.h>
+#include <linex/spinlock.h>
+#include <linex/stat.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

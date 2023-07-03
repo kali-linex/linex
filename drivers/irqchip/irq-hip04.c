@@ -22,24 +22,24 @@
  * registers are banked per-cpu for these sources.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/cpumask.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic.h>
 
 #include <asm/irq.h>
 #include <asm/exception.h>

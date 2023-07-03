@@ -10,13 +10,13 @@
  * Copyright (C) 2019 GRATE-DRIVER project
  */
 
-#include <linux/bits.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include "clk.h"
 

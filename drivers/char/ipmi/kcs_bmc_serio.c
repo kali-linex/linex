@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /* Copyright (c) 2021 IBM Corp. */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
+#include <linex/serio.h>
+#include <linex/slab.h>
 
 #include "kcs_bmc_client.h"
 

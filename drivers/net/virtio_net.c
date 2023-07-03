@@ -4,21 +4,21 @@
  * Copyright 2007 Rusty Russell <rusty@rustcorp.com.au> IBM Corporation
  */
 //#define DEBUG
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_net.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/scatterlist.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/average.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/virtio.h>
+#include <linex/virtio_net.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
+#include <linex/scatterlist.h>
+#include <linex/if_vlan.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/average.h>
+#include <linex/filter.h>
+#include <linex/kernel.h>
 #include <net/route.h>
 #include <net/xdp.h>
 #include <net/net_failover.h>

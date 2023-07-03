@@ -4,22 +4,22 @@
  *
  * Copyright 2022 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/limits.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/limits.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #define LTC2688_DAC_CHANNELS			16
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-sa1100/cpu-sa1110.c
+ *  linex/arch/arm/mach-sa1100/cpu-sa1110.c
  *
  *  Copyright (C) 2001 Russell King
  *
@@ -13,13 +13,13 @@
  *
  * The SDRAM type can be passed on the command line as cpu_sa1110.sdram=type
  */
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
+#include <linex/cpufreq.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
 
 #include <asm/cputype.h>
 #include <asm/mach-types.h>

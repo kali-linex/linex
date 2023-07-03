@@ -51,12 +51,12 @@
  */
 
 
-#include <linux/maple_tree.h>
-#include <linux/xarray.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/limits.h>
+#include <linex/maple_tree.h>
+#include <linex/xarray.h>
+#include <linex/types.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/limits.h>
 #include <asm/barrier.h>
 
 #define CREATE_TRACE_POINTS

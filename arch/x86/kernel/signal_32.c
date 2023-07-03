@@ -7,21 +7,21 @@
  *  2000-12-*   x86-64 compatibility mode signal handling by Andi Kleen
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/compat.h>
-#include <linux/binfmts.h>
-#include <linux/syscalls.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/personality.h>
+#include <linex/compat.h>
+#include <linex/binfmts.h>
+#include <linex/syscalls.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/fpu/signal.h>
 #include <asm/ptrace.h>
 #include <asm/user32.h>

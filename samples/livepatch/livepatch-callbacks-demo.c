@@ -33,7 +33,7 @@
  *   rmmod livepatch_callbacks_mod
  *
  * Watch dmesg output to see livepatch enablement, callback execution
- * and patching operations for both vmlinux and module targets.
+ * and patching operations for both vmlinex and module targets.
  *
  * NOTE: swap the insmod order of livepatch-callbacks-mod.ko and
  *       livepatch-callbacks-demo.ko to observe what happens when a
@@ -43,7 +43,7 @@
  *       callback return status.  Try setting up a non-zero status
  *       such as -19 (-ENODEV):
  *
- *       # Load demo livepatch, vmlinux is patched
+ *       # Load demo livepatch, vmlinex is patched
  *       insmod samples/livepatch/livepatch-callbacks-demo.ko
  *
  *       # Setup next pre-patch callback to return -ENODEV
@@ -80,9 +80,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/livepatch.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/livepatch.h>
 
 static int pre_patch_ret;
 module_param(pre_patch_ret, int, 0644);
@@ -101,7 +101,7 @@ static void callback_info(const char *callback, struct klp_object *obj)
 		pr_info("%s: %s -> %s\n", callback, obj->mod->name,
 			module_state[obj->mod->state]);
 	else
-		pr_info("%s: vmlinux\n", callback);
+		pr_info("%s: vmlinex\n", callback);
 }
 
 /* Executed on object patching (ie, patch enablement) */
@@ -147,7 +147,7 @@ static struct klp_func busymod_funcs[] = {
 
 static struct klp_object objs[] = {
 	{
-		.name = NULL,	/* vmlinux */
+		.name = NULL,	/* vmlinex */
 		.funcs = no_funcs,
 		.callbacks = {
 			.pre_patch = pre_patch_callback,

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  * Copyright (c) 2018, Linaro Limited
  */
 
-#include <linux/bitops.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/regmap.h>
 #include "tsens.h"
 
 /* ----- SROT ------ */

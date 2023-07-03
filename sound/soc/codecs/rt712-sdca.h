@@ -8,12 +8,12 @@
 #ifndef __RT712_H__
 #define __RT712_H__
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linex/pm.h>
+#include <linex/regmap.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_type.h>
 #include <sound/soc.h>
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 
 struct  rt712_sdca_priv {
 	struct regmap *regmap;

@@ -3,13 +3,13 @@
  * Copyright (C) 2019 Mellanox Technologies. All rights reserved
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
 
 #include "netdevsim.h"
 

@@ -7,8 +7,8 @@
 #ifndef _VNIC_RQ_H_
 #define _VNIC_RQ_H_
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
 
 #include "vnic_dev.h"
 #include "vnic_cq.h"

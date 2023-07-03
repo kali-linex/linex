@@ -24,22 +24,22 @@
  * processor from ever speculating a cache line from this page.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/numa.h>
-#include <linux/refcount.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/miscdevice.h>
+#include <linex/spinlock.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/numa.h>
+#include <linex/refcount.h>
 #include <asm/page.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/tlbflush.h>
 #include <asm/uncached.h>
 
@@ -290,6 +290,6 @@ mspec_exit(void)
 module_init(mspec_init);
 module_exit(mspec_exit);
 
-MODULE_AUTHOR("Silicon Graphics, Inc. <linux-altix@sgi.com>");
+MODULE_AUTHOR("Silicon Graphics, Inc. <linex-altix@sgi.com>");
 MODULE_DESCRIPTION("Driver for SGI SN special memory operations");
 MODULE_LICENSE("GPL");

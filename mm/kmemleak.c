@@ -60,50 +60,50 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/mmzone.h>
-#include <linux/slab.h>
-#include <linux/thread_info.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/jiffies.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/kthread.h>
+#include <linex/rbtree.h>
+#include <linex/fs.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/cpumask.h>
+#include <linex/spinlock.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/rcupdate.h>
+#include <linex/stacktrace.h>
+#include <linex/stackdepot.h>
+#include <linex/cache.h>
+#include <linex/percpu.h>
+#include <linex/memblock.h>
+#include <linex/pfn.h>
+#include <linex/mmzone.h>
+#include <linex/slab.h>
+#include <linex/thread_info.h>
+#include <linex/err.h>
+#include <linex/uaccess.h>
+#include <linex/string.h>
+#include <linex/nodemask.h>
+#include <linex/mm.h>
+#include <linex/workqueue.h>
+#include <linex/crc32.h>
 
 #include <asm/sections.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
-#include <linux/kasan.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/memory_hotplug.h>
+#include <linex/kasan.h>
+#include <linex/kfence.h>
+#include <linex/kmemleak.h>
+#include <linex/memory_hotplug.h>
 
 /*
  * Kmemleak configuration and common defines.

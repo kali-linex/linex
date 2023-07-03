@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/xdr.c
+ * linex/fs/lockd/xdr.c
  *
  * XDR support for lockd and the lock client.
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/nfs.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/nfs.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/lockd/lockd.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/sunrpc/stats.h>
+#include <linex/lockd/lockd.h>
 
-#include <uapi/linux/nfs2.h>
+#include <uapi/linex/nfs2.h>
 
 #include "svcxdr.h"
 

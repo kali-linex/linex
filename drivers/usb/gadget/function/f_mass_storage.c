@@ -168,33 +168,33 @@
 /* #define VERBOSE_DEBUG */
 /* #define DUMP_MSGS */
 
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/dcache.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kstrtox.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/limits.h>
-#include <linux/pagemap.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/blkdev.h>
+#include <linex/completion.h>
+#include <linex/dcache.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/fcntl.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/kstrtox.h>
+#include <linex/kthread.h>
+#include <linex/sched/signal.h>
+#include <linex/limits.h>
+#include <linex/pagemap.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/freezer.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/composite.h>
 
-#include <linux/nospec.h>
+#include <linex/nospec.h>
 
 #include "configfs.h"
 
@@ -2971,7 +2971,7 @@ void fsg_common_set_inquiry_string(struct fsg_common *common, const char *vn,
 	/* Prepare inquiryString */
 	i = get_default_bcdDevice();
 	snprintf(common->inquiry_string, sizeof(common->inquiry_string),
-		 "%-8s%-16s%04x", vn ?: "Linux",
+		 "%-8s%-16s%04x", vn ?: "Linex",
 		 /* Assume product name dependent on the first LUN */
 		 pn ?: ((*common->luns)->cdrom
 		     ? "File-CD Gadget"

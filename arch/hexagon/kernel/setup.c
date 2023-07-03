@@ -2,17 +2,17 @@
 /*
  * Arch related setup for Hexagon
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/of_fdt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/memblock.h>
+#include <linex/mmzone.h>
+#include <linex/mm.h>
+#include <linex/seq_file.h>
+#include <linex/console.h>
+#include <linex/of_fdt.h>
 #include <asm/io.h>
 #include <asm/sections.h>
 #include <asm/setup.h>

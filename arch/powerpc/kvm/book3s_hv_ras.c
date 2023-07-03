@@ -4,11 +4,11 @@
  * Copyright 2012 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
+#include <linex/kernel.h>
 #include <asm/opal.h>
 #include <asm/mce.h>
 #include <asm/machdep.h>

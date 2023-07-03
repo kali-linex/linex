@@ -6,23 +6,23 @@
  * Based upon code written by Ross Biro, Linus Torvalds, Bob Manson,
  * and David Mosberger.
  *
- * Added Linux support -miguel (weird, eh?, the original code was meant
+ * Added Linex support -miguel (weird, eh?, the original code was meant
  * to emulate SunOS).
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/smp.h>
+#include <linex/security.h>
+#include <linex/signal.h>
+#include <linex/regset.h>
+#include <linex/elf.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 
 #include "kernel.h"

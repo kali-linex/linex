@@ -8,14 +8,14 @@
  * Datasheet:
  * https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001-00.pdf
  */
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/log2.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/log2.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #include "bme680.h"
 

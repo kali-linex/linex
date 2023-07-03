@@ -5,27 +5,27 @@
  *
  * originally based on:
  *
- *  linux/bvme/config.c
+ *  linex/bvme/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/serial_reg.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/console.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/major.h>
+#include <linex/serial_reg.h>
+#include <linex/rtc.h>
+#include <linex/vt_kern.h>
+#include <linex/bcd.h>
+#include <linex/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

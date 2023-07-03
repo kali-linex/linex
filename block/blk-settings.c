@@ -2,18 +2,18 @@
 /*
  * Functions related to setting various queue properties from drivers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev-defs.h>
-#include <linux/gcd.h>
-#include <linux/lcm.h>
-#include <linux/jiffies.h>
-#include <linux/gfp.h>
-#include <linux/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/pagemap.h>
+#include <linex/backing-dev-defs.h>
+#include <linex/gcd.h>
+#include <linex/lcm.h>
+#include <linex/jiffies.h>
+#include <linex/gfp.h>
+#include <linex/dma-mapping.h>
 
 #include "blk.h"
 #include "blk-rq-qos.h"
@@ -760,7 +760,7 @@ void blk_queue_virt_boundary(struct request_queue *q, unsigned long mask)
 	/*
 	 * Devices that require a virtual boundary do not support scatter/gather
 	 * I/O natively, but instead require a descriptor list entry for each
-	 * page (which might not be idential to the Linux PAGE_SIZE).  Because
+	 * page (which might not be idential to the Linex PAGE_SIZE).  Because
 	 * of that they are not limited by our notion of "segment size".
 	 */
 	if (mask)

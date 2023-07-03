@@ -17,18 +17,18 @@
  * flag.
  */
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/soc/cirrus/ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/bits.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/input.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/slab.h>
+#include <linex/soc/cirrus/ep93xx.h>
+#include <linex/platform_data/keypad-ep93xx.h>
+#include <linex/pm_wakeirq.h>
 
 /*
  * Keypad Interface Register offsets

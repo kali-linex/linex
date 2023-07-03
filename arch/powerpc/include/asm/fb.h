@@ -2,7 +2,7 @@
 #ifndef _ASM_FB_H_
 #define _ASM_FB_H_
 
-#include <linux/fs.h>
+#include <linex/fs.h>
 
 #include <asm/page.h>
 

@@ -7,10 +7,10 @@
  *     Greentime Hu <greentime.hu@sifive.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
-#include <linux/uaccess.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/kvm_host.h>
+#include <linex/uaccess.h>
 #include <asm/hwcap.h>
 #include <asm/kvm_vcpu_vector.h>
 #include <asm/vector.h>

@@ -3,12 +3,12 @@
  * Copyright 2023 IBM Corp.
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/hwmon-sysfs.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/pmbus.h>
+#include <linex/hwmon-sysfs.h>
 #include "pmbus.h"
 
 static const struct i2c_device_id acbel_fsg032_id[] = {

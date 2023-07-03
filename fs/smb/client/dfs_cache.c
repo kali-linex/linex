@@ -5,13 +5,13 @@
  * Copyright (c) 2018-2019 Paulo Alcantara <palcantara@suse.de>
  */
 
-#include <linux/jhash.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/nls.h>
-#include <linux/workqueue.h>
-#include <linux/uuid.h>
+#include <linex/jhash.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
+#include <linex/proc_fs.h>
+#include <linex/nls.h>
+#include <linex/workqueue.h>
+#include <linex/uuid.h>
 #include "cifsglob.h"
 #include "smb2pdu.h"
 #include "smb2proto.h"

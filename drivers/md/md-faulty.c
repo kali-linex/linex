@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * faulty.c : Multiple Devices driver for Linux
+ * faulty.c : Multiple Devices driver for Linex
  *
  * Copyright (C) 2004 Neil Brown
  *
@@ -53,12 +53,12 @@
 #define	ModeShift	5
 
 #define MaxFault	50
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/raid/md_u.h>
-#include <linux/slab.h>
+#include <linex/blkdev.h>
+#include <linex/module.h>
+#include <linex/raid/md_u.h>
+#include <linex/slab.h>
 #include "md.h"
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 
 
 static void faulty_fail(struct bio *bio)

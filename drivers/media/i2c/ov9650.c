@@ -8,18 +8,18 @@
  * by Vladimir Fonov.
  * Copyright (c) 2010, Vladimir Fonov
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/media.h>
+#include <linex/module.h>
+#include <linex/ratelimit.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-async.h>

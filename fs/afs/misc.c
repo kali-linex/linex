@@ -5,15 +5,15 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
 #include "internal.h"
 #include "afs_fs.h"
 #include "protocol_uae.h"
 
 /*
- * convert an AFS abort code to a Linux error number
+ * convert an AFS abort code to a Linex error number
  */
 int afs_abort_to_error(u32 abort_code)
 {

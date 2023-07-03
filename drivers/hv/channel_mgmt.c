@@ -8,20 +8,20 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/hyperv.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/cpu.h>
+#include <linex/hyperv.h>
 #include <asm/mshyperv.h>
-#include <linux/sched/isolation.h>
+#include <linex/sched/isolation.h>
 
 #include "hyperv_vmbus.h"
 

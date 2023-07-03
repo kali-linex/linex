@@ -7,9 +7,9 @@
  * Only include this header file from your architecture's <asm/fb.h>.
  */
 
-#include <linux/io.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linex/io.h>
+#include <linex/mm_types.h>
+#include <linex/pgtable.h>
 
 struct fb_info;
 struct file;

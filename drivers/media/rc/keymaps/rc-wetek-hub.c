@@ -2,7 +2,7 @@
 // Copyright (c) 2018 Christian Hewitt
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * This keymap is used with the WeTek Hub STB.

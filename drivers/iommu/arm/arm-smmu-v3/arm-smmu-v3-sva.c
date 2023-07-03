@@ -3,11 +3,11 @@
  * Implementation of the IOMMU SVA API for the ARM SMMUv3
  */
 
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/mmu_notifier.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
+#include <linex/mm.h>
+#include <linex/mmu_context.h>
+#include <linex/mmu_notifier.h>
+#include <linex/sched/mm.h>
+#include <linex/slab.h>
 
 #include "arm-smmu-v3.h"
 #include "../../iommu-sva.h"

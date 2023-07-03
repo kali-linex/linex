@@ -14,18 +14,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/fs_parser.h>
-#include <linux/statfs.h>
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/fs_parser.h>
+#include <linex/statfs.h>
+#include <linex/sched.h>
+#include <linex/nsproxy.h>
+#include <linex/magic.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

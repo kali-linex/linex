@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2015, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/devm-helpers.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/ktime.h>
-#include <linux/regulator/driver.h>
-#include <linux/regmap.h>
-#include <linux/list.h>
-#include <linux/mfd/syscon.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/devm-helpers.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/ktime.h>
+#include <linex/regulator/driver.h>
+#include <linex/regmap.h>
+#include <linex/list.h>
+#include <linex/mfd/syscon.h>
+#include <linex/io.h>
 
 /* Pin control enable input pins. */
 #define SPMI_REGULATOR_PIN_CTRL_ENABLE_NONE		0x00

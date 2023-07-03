@@ -4,10 +4,10 @@
  * Copyright (c) 2014 Hisilicon Limited.
  */
 
-#include <linux/of_address.h>
+#include <linex/of_address.h>
 #include <dt-bindings/clock/hix5hd2-clock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 #include "clk.h"
 
 static struct hisi_fixed_rate_clock hix5hd2_fixed_rate_clks[] __initdata = {

@@ -4,16 +4,16 @@
 #include <asm/bug.h>
 #include <errno.h>
 #include <string.h>
-#include <linux/ring_buffer.h>
-#include <linux/perf_event.h>
+#include <linex/ring_buffer.h>
+#include <linex/perf_event.h>
 #include <perf/mmap.h>
 #include <perf/event.h>
 #include <perf/evsel.h>
 #include <internal/mmap.h>
 #include <internal/lib.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/stringify.h>
+#include <linex/kernel.h>
+#include <linex/math64.h>
+#include <linex/stringify.h>
 #include "internal.h"
 
 void perf_mmap__init(struct perf_mmap *map, struct perf_mmap *prev,

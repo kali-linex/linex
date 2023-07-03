@@ -24,7 +24,7 @@
 #ifndef __KFD_IOMMU_H__
 #define __KFD_IOMMU_H__
 
-#include <linux/kconfig.h>
+#include <linex/kconfig.h>
 
 #if IS_REACHABLE(CONFIG_AMD_IOMMU_V2)
 

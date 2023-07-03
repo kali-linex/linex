@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 
 #include "../helpline.h"
 #include "../ui.h"

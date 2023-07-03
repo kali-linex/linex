@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* $Id: sunlance.c,v 1.112 2002/01/15 06:48:55 davem Exp $
- * lance.c: Linux/Sparc/Lance driver
+ * lance.c: Linex/Sparc/Lance driver
  *
  *	Written 1995, 1996 by Miguel de Icaza
  * Sources:
- *	The Linux  depca driver
- *	The Linux  lance driver.
- *	The Linux  skeleton driver.
+ *	The Linex  depca driver
+ *	The Linex  lance driver.
+ *	The Linex  skeleton driver.
  *	The NetBSD Sparc/Lance driver.
  *	Theo de Raadt (deraadt@openbsd.org)
  *	NCR92C990 Lan Controller manual
@@ -72,29 +72,29 @@
 
 static char lancestr[] = "LANCE";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/socket.h> /* Used for the temporal inet entries and routing */
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/crc32.h>
+#include <linex/errno.h>
+#include <linex/socket.h> /* Used for the temporal inet entries and routing */
+#include <linex/route.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/ethtool.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/gfp.h>
+#include <linex/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

@@ -19,13 +19,13 @@
 #ifndef __RSI_SDIO_INTF__
 #define __RSI_SDIO_INTF__
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio_ids.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sd.h>
+#include <linex/mmc/sdio_ids.h>
 #include "rsi_main.h"
 
 enum sdio_interrupt_type {

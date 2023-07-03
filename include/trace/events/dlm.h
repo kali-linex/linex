@@ -5,9 +5,9 @@
 #if !defined(_TRACE_DLM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_DLM_H
 
-#include <linux/dlm.h>
-#include <linux/dlmconstants.h>
-#include <linux/tracepoint.h>
+#include <linex/dlm.h>
+#include <linex/dlmconstants.h>
+#include <linex/tracepoint.h>
 
 #include "../../../fs/dlm/dlm_internal.h"
 

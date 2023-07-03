@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Linex
  *
  * Copyright (c) 2016-present, Facebook, Inc.
  * All rights reserved.
@@ -8,11 +8,11 @@
  * zstd_wrapper.c
  */
 
-#include <linux/mutex.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/zstd.h>
-#include <linux/vmalloc.h>
+#include <linex/mutex.h>
+#include <linex/bio.h>
+#include <linex/slab.h>
+#include <linex/zstd.h>
+#include <linex/vmalloc.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

@@ -7,10 +7,10 @@
  */
 
 #include <stddef.h>
-#include <linux/bpf.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/tcp.h>
+#include <linex/bpf.h>
+#include <linex/types.h>
+#include <linex/stddef.h>
+#include <linex/tcp.h>
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>

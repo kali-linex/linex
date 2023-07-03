@@ -6,18 +6,18 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/uvc.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/bits.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/uvc.h>
+#include <linex/videodev2.h>
+#include <linex/vmalloc.h>
+#include <linex/wait.h>
 #include <asm/unaligned.h>
 
 #include <media/v4l2-common.h>
@@ -2165,7 +2165,7 @@ static int uvc_probe(struct usb_interface *intf,
 			 "Forcing device quirks to 0x%x by module parameter for testing purpose.\n",
 			 dev->quirks);
 		dev_info(&dev->udev->dev,
-			 "Please report required quirks to the linux-media mailing list.\n");
+			 "Please report required quirks to the linex-media mailing list.\n");
 	}
 
 	if (dev->info->uvc_version) {

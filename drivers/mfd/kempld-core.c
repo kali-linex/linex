@@ -6,14 +6,14 @@
  * Author: Michael Brunner <michael.brunner@kontron.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/kempld.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/kempld.h>
+#include <linex/module.h>
+#include <linex/dmi.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/acpi.h>
 
 #define MAX_ID_LEN 4
 static char force_device_id[MAX_ID_LEN + 1] = "";

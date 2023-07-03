@@ -34,14 +34,14 @@
  * Written by: Atul Gupta (atul.gupta@chelsio.com)
  */
 
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/pps_kernel.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/udp.h>
+#include <linex/module.h>
+#include <linex/net_tstamp.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/pps_kernel.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/ptp_classify.h>
+#include <linex/udp.h>
 
 #include "cxgb4.h"
 #include "t4_hw.h"

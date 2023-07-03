@@ -6,20 +6,20 @@
  * Author: MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/spi/ads7846.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/gpio.h>
+#include <linex/gpio/machine.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/leds.h>
+#include <linex/mmc/host.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi_gpio.h>
+#include <linex/spi/ads7846.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/gpio-au1000.h>
 #include <asm/mach-au1x00/au1000_dma.h>

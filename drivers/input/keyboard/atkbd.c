@@ -13,19 +13,19 @@
  * converter.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/vivaldi-fmap.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
-#include <linux/libps2.h>
-#include <linux/mutex.h>
-#include <linux/dmi.h>
-#include <linux/property.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/input/vivaldi-fmap.h>
+#include <linex/serio.h>
+#include <linex/workqueue.h>
+#include <linex/libps2.h>
+#include <linex/mutex.h>
+#include <linex/dmi.h>
+#include <linex/property.h>
 
 #define DRIVER_DESC	"AT and PS/2 keyboard driver"
 
@@ -1049,8 +1049,8 @@ static int atkbd_get_keymap_from_fwnode(struct atkbd *atkbd)
 	u32 *ptr;
 	u16 scancode, keycode;
 
-	/* Parse "linux,keymap" property */
-	n = device_property_count_u32(dev, "linux,keymap");
+	/* Parse "linex,keymap" property */
+	n = device_property_count_u32(dev, "linex,keymap");
 	if (n <= 0 || n > ATKBD_KEYMAP_SIZE)
 		return -ENXIO;
 
@@ -1058,7 +1058,7 @@ static int atkbd_get_keymap_from_fwnode(struct atkbd *atkbd)
 	if (!ptr)
 		return -ENOMEM;
 
-	if (device_property_read_u32_array(dev, "linux,keymap", ptr, n)) {
+	if (device_property_read_u32_array(dev, "linex,keymap", ptr, n)) {
 		dev_err(dev, "problem parsing FW keymap property\n");
 		kfree(ptr);
 		return -EINVAL;

@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/scatterlist.h>
-#include <linux/netfs.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/uio.h>
+#include <linex/scatterlist.h>
+#include <linex/netfs.h>
 #include "internal.h"
 
 /**

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-osk.c
+ * linex/arch/arm/mach-omap1/board-osk.c
  *
  * Board specific init for OMAP5912 OSK
  *
@@ -25,25 +25,25 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/omap1_bl.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/i2c.h>
+#include <linex/leds.h>
+#include <linex/smc91x.h>
+#include <linex/omapfb.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/mfd/tps65010.h>
+#include <linex/platform_data/gpio-omap.h>
+#include <linex/platform_data/omap1_bl.h>
+#include <linex/soc/ti/omap1-io.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

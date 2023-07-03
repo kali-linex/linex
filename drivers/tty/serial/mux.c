@@ -12,21 +12,21 @@
 **
 */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/console.h>
-#include <linux/delay.h> /* for udelay */
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/console.h>
+#include <linex/delay.h> /* for udelay */
+#include <linex/device.h>
+#include <linex/io.h>
 #include <asm/irq.h>
 #include <asm/parisc-device.h>
 
-#include <linux/sysrq.h>
-#include <linux/serial_core.h>
+#include <linex/sysrq.h>
+#include <linex/serial_core.h>
 
 #define MUX_OFFSET 0x800
 #define MUX_LINE_OFFSET 0x80

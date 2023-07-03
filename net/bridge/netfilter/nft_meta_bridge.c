@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/netlink.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nft_meta.h>
-#include <linux/if_bridge.h>
-#include <uapi/linux/netfilter_bridge.h> /* NF_BR_PRE_ROUTING */
+#include <linex/if_bridge.h>
+#include <uapi/linex/netfilter_bridge.h> /* NF_BR_PRE_ROUTING */
 
 #include "../br_private.h"
 

@@ -8,12 +8,12 @@
  */
 
 #define pr_fmt(fmt) "kasan: " fmt
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/sched/task.h>
-#include <linux/start_kernel.h>
-#include <linux/pgtable.h>
+#include <linex/kasan.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/sched/task.h>
+#include <linex/start_kernel.h>
+#include <linex/pgtable.h>
 #include <asm/cputype.h>
 #include <asm/highmem.h>
 #include <asm/mach/map.h>

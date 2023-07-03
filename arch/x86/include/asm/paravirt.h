@@ -12,10 +12,10 @@
 #include <asm/nospec-branch.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/static_call_types.h>
+#include <linex/bug.h>
+#include <linex/types.h>
+#include <linex/cpumask.h>
+#include <linex/static_call_types.h>
 #include <asm/frame.h>
 
 u64 dummy_steal_clock(int cpu);

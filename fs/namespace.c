@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/namespace.c
+ *  linex/fs/namespace.c
  *
  * (C) Copyright Al Viro 2000, 2001
  *
@@ -8,30 +8,30 @@
  * Heavily rewritten.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/capability.h>
-#include <linux/mnt_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/idr.h>
-#include <linux/init.h>		/* init_rootfs */
-#include <linux/fs_struct.h>	/* get_fs_root et.al. */
-#include <linux/fsnotify.h>	/* fsnotify_vfsmount_delete */
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/proc_ns.h>
-#include <linux/magic.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/task_work.h>
-#include <linux/sched/task.h>
-#include <uapi/linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/shmem_fs.h>
-#include <linux/mnt_idmapping.h>
+#include <linex/syscalls.h>
+#include <linex/export.h>
+#include <linex/capability.h>
+#include <linex/mnt_namespace.h>
+#include <linex/user_namespace.h>
+#include <linex/namei.h>
+#include <linex/security.h>
+#include <linex/cred.h>
+#include <linex/idr.h>
+#include <linex/init.h>		/* init_rootfs */
+#include <linex/fs_struct.h>	/* get_fs_root et.al. */
+#include <linex/fsnotify.h>	/* fsnotify_vfsmount_delete */
+#include <linex/file.h>
+#include <linex/uaccess.h>
+#include <linex/proc_ns.h>
+#include <linex/magic.h>
+#include <linex/memblock.h>
+#include <linex/proc_fs.h>
+#include <linex/task_work.h>
+#include <linex/sched/task.h>
+#include <uapi/linex/mount.h>
+#include <linex/fs_context.h>
+#include <linex/shmem_fs.h>
+#include <linex/mnt_idmapping.h>
 
 #include "pnode.h"
 #include "internal.h"

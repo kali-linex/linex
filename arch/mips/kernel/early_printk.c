@@ -3,14 +3,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2002, 2003, 06, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2002, 2003, 06, 07 Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
- *   written by Ralf Baechle (ralf@linux-mips.org)
+ *   written by Ralf Baechle (ralf@linex-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/printk.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/printk.h>
+#include <linex/init.h>
 
 #include <asm/setup.h>
 

@@ -11,17 +11,17 @@
  * See file:Documentation/input/devices/rotary-encoder.rst for more information
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/property.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/pm.h>
+#include <linex/property.h>
 
 #define DRV_NAME "rotary-encoder"
 
@@ -231,7 +231,7 @@ static int rotary_encoder_probe(struct platform_device *pdev)
 		return -EINVAL;
 	}
 
-	device_property_read_u32(dev, "linux,axis", &encoder->axis);
+	device_property_read_u32(dev, "linex,axis", &encoder->axis);
 	encoder->relative_axis =
 		device_property_read_bool(dev, "rotary-encoder,relative-axis");
 

@@ -12,19 +12,19 @@
 #include <kunit/assert.h>
 #include <kunit/try-catch.h>
 
-#include <linux/compiler.h>
-#include <linux/container_of.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/kconfig.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/container_of.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/jump_label.h>
+#include <linex/kconfig.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include <asm/rwonce.h>
 

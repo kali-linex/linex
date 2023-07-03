@@ -7,11 +7,11 @@
  */
 
 /*
- *  Linux VFS inode operations.
+ *  Linex VFS inode operations.
  */
 
-#include <linux/blkdev.h>
-#include <linux/fileattr.h>
+#include <linex/blkdev.h>
+#include <linex/fileattr.h>
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"

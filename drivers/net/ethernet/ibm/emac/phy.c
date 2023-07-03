@@ -18,13 +18,13 @@
  * (c) 2004-2005, Eugene Surovegin <ebs@ebshome.net>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/mii.h>
+#include <linex/ethtool.h>
+#include <linex/delay.h>
 
 #include "emac.h"
 #include "phy.h"

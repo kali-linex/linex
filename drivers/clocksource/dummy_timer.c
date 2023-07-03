@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/clocksource/dummy_timer.c
+ *  linex/drivers/clocksource/dummy_timer.c
  *
  *  Copyright (C) 2013 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/cpumask.h>
+#include <linex/clockchips.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/percpu.h>
+#include <linex/cpumask.h>
 
 static DEFINE_PER_CPU(struct clock_event_device, dummy_timer_evt);
 

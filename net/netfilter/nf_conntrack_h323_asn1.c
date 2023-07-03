@@ -8,11 +8,11 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #else
 #include <stdio.h>
 #endif
-#include <linux/netfilter/nf_conntrack_h323_asn1.h>
+#include <linex/netfilter/nf_conntrack_h323_asn1.h>
 
 /* Trace Flag */
 #ifndef H323_TRACE

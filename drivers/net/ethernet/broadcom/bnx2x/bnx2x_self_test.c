@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
 #include "bnx2x.h"
 
 #define NA 0xCD

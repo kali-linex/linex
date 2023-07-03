@@ -7,8 +7,8 @@
 #ifndef __ATMEL_I2C_H__
 #define __ATMEL_I2C_H__
 
-#include <linux/hw_random.h>
-#include <linux/types.h>
+#include <linex/hw_random.h>
+#include <linex/types.h>
 
 #define ATMEL_ECC_PRIORITY		300
 

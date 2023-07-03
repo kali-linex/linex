@@ -3,10 +3,10 @@
 #ifndef BTRFS_FS_H
 #define BTRFS_FS_H
 
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/btrfs_tree.h>
-#include <linux/sizes.h>
+#include <linex/blkdev.h>
+#include <linex/fs.h>
+#include <linex/btrfs_tree.h>
+#include <linex/sizes.h>
 #include "extent-io-tree.h"
 #include "extent_map.h"
 #include "async-thread.h"

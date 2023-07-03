@@ -8,18 +8,18 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/swap.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/file.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/module.h>
+#include <linex/swap.h>
+#include <linex/falloc.h>
+#include <linex/uio.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/file.h>
 
 static int fuse_send_open(struct fuse_mount *fm, u64 nodeid,
 			  unsigned int open_flags, int opcode,

@@ -2,18 +2,18 @@
 #ifndef _FIREWIRE_CORE_H
 #define _FIREWIRE_CORE_H
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/mm_types.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/fs.h>
+#include <linex/list.h>
+#include <linex/idr.h>
+#include <linex/mm_types.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
-#include <linux/refcount.h>
+#include <linex/refcount.h>
 
 struct device;
 struct fw_card;

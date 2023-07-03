@@ -5,24 +5,24 @@
  * Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
  *	David Altobelli <david.altobelli@hpe.com>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/pci.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/device.h>
+#include <linex/file.h>
+#include <linex/cdev.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
+#include <linex/wait.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
 #include "hpilo.h"
 
 static struct class *ilo_class;

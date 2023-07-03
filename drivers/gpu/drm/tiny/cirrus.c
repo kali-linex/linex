@@ -16,9 +16,9 @@
  * Copyright 1999-2001 Jeff Garzik <jgarzik@pobox.com>
  */
 
-#include <linux/iosys-map.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/iosys-map.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include <video/cirrus.h>
 #include <video/vga.h>

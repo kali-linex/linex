@@ -6,17 +6,17 @@
  */
 
 #include <crypto/internal/aead.h>
-#include <linux/completion.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/completion.h>
+#include <linex/ctype.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/rtnetlink.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include "internal.h"
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* -*-linux-c-*-
+/* -*-linex-c-*-
 
  * vendor-specific code for SCSI CD-ROM's goes here.
  *
@@ -35,12 +35,12 @@
  *              HP 6020 writers now supported.
  */
 
-#include <linux/cdrom.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/bcd.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <linex/cdrom.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/bcd.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

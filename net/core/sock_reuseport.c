@@ -8,10 +8,10 @@
 
 #include <net/ip.h>
 #include <net/sock_reuseport.h>
-#include <linux/bpf.h>
-#include <linux/idr.h>
-#include <linux/filter.h>
-#include <linux/rcupdate.h>
+#include <linex/bpf.h>
+#include <linex/idr.h>
+#include <linex/filter.h>
+#include <linex/rcupdate.h>
 
 #define INIT_SOCKS 128
 
@@ -676,7 +676,7 @@ out:
 	return nsk;
 
 failure:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMIGRATEREQFAILURE);
+	__NET_INC_STATS(sock_net(sk), LINEX_MIB_TCPMIGRATEREQFAILURE);
 	goto out;
 }
 EXPORT_SYMBOL(reuseport_migrate_sock);

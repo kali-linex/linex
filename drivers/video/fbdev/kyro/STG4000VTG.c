@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/STG4000VTG.c
+ *  linex/drivers/video/kyro/STG4000VTG.c
  *
  *  Copyright (C) 2002 STMicroelectronics
  *
@@ -8,7 +8,7 @@
  * for more details.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <video/kyro.h>
 
 #include "STG4000Reg.h"

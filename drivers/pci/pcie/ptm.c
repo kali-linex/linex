@@ -4,9 +4,9 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
 #include "../pci.h"
 
 /*

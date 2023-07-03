@@ -6,14 +6,14 @@
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/log2.h>
+#include <linex/slab.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x69, I2C_CLIENT_END };

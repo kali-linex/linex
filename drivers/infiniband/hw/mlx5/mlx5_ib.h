@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB */
 /*
  * Copyright (c) 2013-2020, Mellanox Technologies inc. All rights reserved.
  * Copyright (c) 2020, Intel Corporation. All rights reserved.
@@ -7,17 +7,17 @@
 #ifndef MLX5_IB_H
 #define MLX5_IB_H
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_smi.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/qp.h>
-#include <linux/types.h>
-#include <linux/mlx5/transobj.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/cq.h>
+#include <linex/mlx5/fs.h>
+#include <linex/mlx5/qp.h>
+#include <linex/types.h>
+#include <linex/mlx5/transobj.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/mlx5-abi.h>
 #include <rdma/uverbs_ioctl.h>

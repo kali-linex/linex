@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mlx5/driver.h>
-#include <linux/xarray.h>
+#include <linex/highmem.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/mlx5/driver.h>
+#include <linex/xarray.h>
 #include "mlx5_core.h"
 #include "lib/eq.h"
 #include "lib/tout.h"

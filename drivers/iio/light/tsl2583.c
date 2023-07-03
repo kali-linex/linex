@@ -7,18 +7,18 @@
  * Copyright (c) 2016-2017 Brian Masney <masneyb@onstation.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/i2c.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/mutex.h>
+#include <linex/unistd.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/pm_runtime.h>
 
 /* Device Registers and Masks */
 #define TSL2583_CNTRL			0x00

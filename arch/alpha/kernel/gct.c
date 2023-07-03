@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/gct.c
+ *	linex/arch/alpha/kernel/gct.c
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 
 #include <asm/hwrpb.h>
 #include <asm/gct.h>

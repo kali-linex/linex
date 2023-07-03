@@ -16,19 +16,19 @@
  *	timing value tweaking so it looks good on every monitor in every mode
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 #include <video/vga.h>
 #include <video/trident.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
 
 struct tridentfb_par {
 	void __iomem *io_virt;	/* iospace virtual memory address */

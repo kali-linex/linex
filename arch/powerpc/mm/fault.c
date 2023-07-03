@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -11,29 +11,29 @@
  *  Modified for PPC64 by Dave Engebretsen (engebret@ibm.com)
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/extable.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
-#include <linux/hugetlb.h>
-#include <linux/uaccess.h>
-#include <linux/kfence.h>
-#include <linux/pkeys.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/pagemap.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/highmem.h>
+#include <linex/extable.h>
+#include <linex/kprobes.h>
+#include <linex/kdebug.h>
+#include <linex/perf_event.h>
+#include <linex/ratelimit.h>
+#include <linex/context_tracking.h>
+#include <linex/hugetlb.h>
+#include <linex/uaccess.h>
+#include <linex/kfence.h>
+#include <linex/pkeys.h>
 
 #include <asm/firmware.h>
 #include <asm/interrupt.h>

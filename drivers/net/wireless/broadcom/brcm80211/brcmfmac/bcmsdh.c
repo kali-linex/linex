@@ -4,24 +4,24 @@
  */
 /* ****************** SDIO CARD Interface Functions **************************/
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/scatterlist.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/sched.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/scatterlist.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/pm_runtime.h>
+#include <linex/suspend.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
 #include <net/cfg80211.h>
 
 #include <defs.h>

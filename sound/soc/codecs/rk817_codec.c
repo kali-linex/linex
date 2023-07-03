@@ -4,15 +4,15 @@
 //
 // Copyright (c) 2018, Fuzhou Rockchip Electronics Co., Ltd All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/mfd/rk808.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/mfd/rk808.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

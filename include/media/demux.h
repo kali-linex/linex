@@ -26,11 +26,11 @@
 #ifndef __DEMUX_H
 #define __DEMUX_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/time.h>
-#include <linux/dvb/dmx.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/time.h>
+#include <linex/dvb/dmx.h>
 
 /*
  * Common definitions

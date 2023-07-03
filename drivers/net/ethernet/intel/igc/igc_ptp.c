@@ -3,14 +3,14 @@
 
 #include "igc.h"
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/ptp_classify.h>
-#include <linux/clocksource.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/pci.h>
+#include <linex/ptp_classify.h>
+#include <linex/clocksource.h>
+#include <linex/ktime.h>
+#include <linex/delay.h>
+#include <linex/iopoll.h>
 
 #define INCVALUE_MASK		0x7fffffff
 #define ISGN			0x80000000

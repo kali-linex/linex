@@ -1,8 +1,8 @@
 /*
- *  linux/drivers/video/fm2fb.c -- BSC FrameMaster II/Rainbow II frame buffer
+ *  linex/drivers/video/fm2fb.c -- BSC FrameMaster II/Rainbow II frame buffer
  *				   device
  *
- *	Copyright (C) 1998 Steffen A. Mork (linux-dev@morknet.de)
+ *	Copyright (C) 1998 Steffen A. Mork (linex-dev@morknet.de)
  *	Copyright (C) 1999 Geert Uytterhoeven
  *
  *  Written for 2.0.x by Steffen A. Mork
@@ -14,11 +14,11 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/zorro.h>
 #include <asm/io.h>
 
 /*

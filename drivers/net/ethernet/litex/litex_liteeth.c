@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/litex.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
+#include <linex/etherdevice.h>
+#include <linex/interrupt.h>
+#include <linex/litex.h>
+#include <linex/module.h>
+#include <linex/of_net.h>
+#include <linex/platform_device.h>
 
 #define LITEETH_WRITER_SLOT       0x00
 #define LITEETH_WRITER_LENGTH     0x04

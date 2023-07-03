@@ -4,15 +4,15 @@
 
 #define pr_fmt(fmt) "imx:clk-gpr-mux: " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/clk-provider.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linex/clk-provider.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
 
 #include "clk.h"
 

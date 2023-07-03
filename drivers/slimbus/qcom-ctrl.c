@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The Linex Foundation
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/pm_runtime.h>
 #include "slimbus.h"
 
 /* Manager registers */

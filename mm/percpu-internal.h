@@ -2,9 +2,9 @@
 #ifndef _MM_PERCPU_INTERNAL_H
 #define _MM_PERCPU_INTERNAL_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/memcontrol.h>
+#include <linex/types.h>
+#include <linex/percpu.h>
+#include <linex/memcontrol.h>
 
 /*
  * pcpu_block_md is the metadata block struct.
@@ -142,7 +142,7 @@ static inline size_t pcpu_obj_full_size(size_t size)
 
 #ifdef CONFIG_PERCPU_STATS
 
-#include <linux/spinlock.h>
+#include <linex/spinlock.h>
 
 struct percpu_stats {
 	u64 nr_alloc;		/* lifetime # of allocations */

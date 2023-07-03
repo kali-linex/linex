@@ -5,16 +5,16 @@
  * Copyright (c) 2016 BayLibre, SAS.
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/of_device.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/of_device.h>
 
 #define BITS_PER_REG	32
 

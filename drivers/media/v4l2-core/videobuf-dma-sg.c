@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * helper functions for SG DMA video4linux capture buffers
+ * helper functions for SG DMA video4linex capture buffers
  *
  * The functions expect the hardware being able to scatter gather
  * (i.e. the buffers are not linear in physical memory, but fragmented
@@ -15,18 +15,18 @@
  * (c) 2006 Ted Walther and John Sokol
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pgtable.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/sched/mm.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/pgtable.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
+#include <linex/dma-mapping.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/scatterlist.h>
 #include <asm/page.h>
 
 #include <media/videobuf-dma-sg.h>
@@ -44,7 +44,7 @@
 static int debug;
 module_param(debug, int, 0644);
 
-MODULE_DESCRIPTION("helper module to manage video4linux dma sg buffers");
+MODULE_DESCRIPTION("helper module to manage video4linex dma sg buffers");
 MODULE_AUTHOR("Mauro Carvalho Chehab <mchehab@kernel.org>");
 MODULE_LICENSE("GPL");
 

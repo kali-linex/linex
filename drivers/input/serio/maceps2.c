@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * SGI O2 MACE PS2 controller driver for linux
+ * SGI O2 MACE PS2 controller driver for linex
  *
  * Copyright (C) 2002 Vivien Chappelier
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/serio.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/err.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>
 
-MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linux-mips.org");
+MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linex-mips.org");
 MODULE_DESCRIPTION("SGI O2 MACE PS2 controller driver");
 MODULE_LICENSE("GPL");
 

@@ -3,14 +3,14 @@
  * Copyright 2018 Noralf Trønnes
  */
 
-#include <linux/dma-buf.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <linex/dma-buf.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/shmem_fs.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/module.h>
 
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>

@@ -7,8 +7,8 @@
  * Copyright (C) 2021-2022   Intel Corporation
  */
 
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <linex/kobject.h>
+#include <linex/slab.h>
 #include "ieee80211_i.h"
 #include "key.h"
 #include "debugfs.h"

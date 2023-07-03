@@ -3,21 +3,21 @@
  *  module/drivers.c
  *  functions for manipulating drivers
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - Linex Control and Measurement Device Interface
  *  Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  *  Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/dma-direction.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/dma-direction.h>
+#include <linex/interrupt.h>
+#include <linex/firmware.h>
+#include <linex/comedi/comedidev.h>
 #include "comedi_internal.h"
 
 struct comedi_driver *comedi_drivers;

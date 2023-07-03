@@ -10,10 +10,10 @@
  *           (C) 2017 Hemant K Shaw, IBM Corporation.
  */
 
-#include <linux/perf_event.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/io.h>
+#include <linex/perf_event.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/io.h>
 #include <asm/opal.h>
 
 /*

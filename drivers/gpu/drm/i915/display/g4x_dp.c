@@ -5,7 +5,7 @@
  * DisplayPort support for G4x,ILK,SNB,IVB,VLV,CHV (HSW+ handled by the DDI code).
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include "g4x_dp.h"
 #include "i915_reg.h"

@@ -10,14 +10,14 @@
  */
 
 #include "rk3288_crypto.h"
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/reset.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/clk.h>
+#include <linex/crypto.h>
+#include <linex/reset.h>
 
 static struct rockchip_ip rocklist = {
 	.dev_list = LIST_HEAD_INIT(rocklist.dev_list),

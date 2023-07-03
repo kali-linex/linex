@@ -6,10 +6,10 @@
  * Author: Björn Töpel <bjorn.topel@intel.com>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <net/xdp_sock.h>
-#include <linux/xdp_diag.h>
-#include <linux/sock_diag.h>
+#include <linex/xdp_diag.h>
+#include <linex/sock_diag.h>
 
 #include "xsk_queue.h"
 #include "xsk.h"

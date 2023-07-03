@@ -8,22 +8,22 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/lsm_hooks.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/ptrace.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/audit.h>
-#include <linux/user_namespace.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/zstd.h>
+#include <linex/lsm_hooks.h>
+#include <linex/moduleparam.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/ptrace.h>
+#include <linex/ctype.h>
+#include <linex/sysctl.h>
+#include <linex/audit.h>
+#include <linex/user_namespace.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/zstd.h>
 #include <net/sock.h>
-#include <uapi/linux/mount.h>
+#include <uapi/linex/mount.h>
 
 #include "include/apparmor.h"
 #include "include/apparmorfs.h"
@@ -734,7 +734,7 @@ fail:
  * apparmor_bprm_committing_creds - do task cleanup on committing new creds
  * @bprm: binprm for the exec  (NOT NULL)
  */
-static void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
+static void apparmor_bprm_committing_creds(struct linex_binprm *bprm)
 {
 	struct aa_label *label = aa_current_raw_label();
 	struct aa_label *new_label = cred_label(bprm->cred);
@@ -756,7 +756,7 @@ static void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
  * apparmor_bprm_committed_creds() - do cleanup after new creds committed
  * @bprm: binprm for the exec  (NOT NULL)
  */
-static void apparmor_bprm_committed_creds(struct linux_binprm *bprm)
+static void apparmor_bprm_committed_creds(struct linex_binprm *bprm)
 {
 	/* clear out temporary/transitional state from the context */
 	aa_clear_task_ctx_trans(task_ctx(current));
@@ -1823,14 +1823,14 @@ static const struct nf_hook_ops apparmor_nf_ops[] = {
 		.hook =         apparmor_ip_postroute,
 		.pf =           NFPROTO_IPV4,
 		.hooknum =      NF_INET_POST_ROUTING,
-		.priority =     NF_IP_PRI_SELINUX_FIRST,
+		.priority =     NF_IP_PRI_SELINEX_FIRST,
 	},
 #if IS_ENABLED(CONFIG_IPV6)
 	{
 		.hook =         apparmor_ip_postroute,
 		.pf =           NFPROTO_IPV6,
 		.hooknum =      NF_INET_POST_ROUTING,
-		.priority =     NF_IP6_PRI_SELINUX_FIRST,
+		.priority =     NF_IP6_PRI_SELINEX_FIRST,
 	},
 #endif
 };

@@ -2,9 +2,9 @@
 #ifndef __SPARC64_IO_H
 #define __SPARC64_IO_H
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 
 #include <asm/page.h>      /* IO address mapping routines need this */
 #include <asm/asi.h>

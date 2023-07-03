@@ -7,13 +7,13 @@
  * Author: Hyunhee Kim <hyunhee.kim@samsung.com>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/regulator-haptic.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_data/regulator-haptic.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
 
 #define MAX_MAGNITUDE_SHIFT	16
 

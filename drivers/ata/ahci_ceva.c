@@ -6,13 +6,13 @@
  * based on the AHCI SATA platform driver by Jeff Garzik and Anton Vorontsov
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linex/ahci_platform.h>
+#include <linex/kernel.h>
+#include <linex/libata.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
 #include "ahci.h"
 
 /* Vendor Specific Register Offsets */

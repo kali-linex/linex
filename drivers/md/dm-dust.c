@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/device-mapper.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
+#include <linex/device-mapper.h>
+#include <linex/module.h>
+#include <linex/rbtree.h>
 
 #define DM_MSG_PREFIX "dust"
 

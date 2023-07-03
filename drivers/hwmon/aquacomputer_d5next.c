@@ -11,14 +11,14 @@
  * Copyright 2022 Jack Doan <me@jackdoan.com>
  */
 
-#include <linux/crc16.h>
-#include <linux/debugfs.h>
-#include <linux/hid.h>
-#include <linux/hwmon.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
+#include <linex/crc16.h>
+#include <linex/debugfs.h>
+#include <linex/hid.h>
+#include <linex/hwmon.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/seq_file.h>
 #include <asm/unaligned.h>
 
 #define USB_VENDOR_ID_AQUACOMPUTER	0x0c70

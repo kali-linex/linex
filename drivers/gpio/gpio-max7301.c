@@ -7,13 +7,13 @@
  * Check max730x.c for further details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/max7301.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/max7301.h>
 
 /* A write to the MAX7301 means one message with one transfer */
 static int max7301_spi_write(struct device *dev, unsigned int reg,

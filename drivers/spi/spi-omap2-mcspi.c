@@ -7,27 +7,27 @@
  *		Juha Yrjola <juha.yrjola@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gcd.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/gcd.h>
 
-#include <linux/spi/spi.h>
+#include <linex/spi/spi.h>
 
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <linex/platform_data/spi-omap2-mcspi.h>
 
 #define OMAP2_MCSPI_MAX_FREQ		48000000
 #define OMAP2_MCSPI_MAX_DIVIDER		4096

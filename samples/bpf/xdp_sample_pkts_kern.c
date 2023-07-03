@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ptrace.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
+#include <linex/ptrace.h>
+#include <linex/version.h>
+#include <uapi/linex/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 #define SAMPLE_SIZE 64ul
@@ -54,4 +54,4 @@ int xdp_sample_prog(struct xdp_md *ctx)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = LINEX_VERSION_CODE;

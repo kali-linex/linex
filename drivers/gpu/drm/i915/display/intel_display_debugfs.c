@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include <drm/drm_debugfs.h>
 #include <drm/drm_edid.h>

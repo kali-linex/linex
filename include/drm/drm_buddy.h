@@ -6,10 +6,10 @@
 #ifndef __DRM_BUDDY_H__
 #define __DRM_BUDDY_H__
 
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linex/bitops.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
 
 #include <drm/drm_print.h>
 

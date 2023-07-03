@@ -33,8 +33,8 @@
 #include <rdma/uverbs_std_types.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_verbs.h>
-#include <linux/bug.h>
-#include <linux/file.h>
+#include <linex/bug.h>
+#include <linex/file.h>
 #include <rdma/restrack.h>
 #include "rdma_core.h"
 #include "uverbs.h"

@@ -2,13 +2,13 @@
 /*
  * Copyright(c) 2013-2016 Intel Corporation. All rights reserved.
  */
-#include <linux/memremap.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linex/memremap.h>
+#include <linex/blkdev.h>
+#include <linex/device.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
 #include "nd-core.h"
 #include "pfn.h"
 #include "nd.h"

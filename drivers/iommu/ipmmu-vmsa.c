@@ -6,23 +6,23 @@
  * Copyright (C) 2014-2020 Renesas Electronics Corporation
  */
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linex/bitmap.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/io-pgtable.h>
+#include <linex/iommu.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
 
 #if defined(CONFIG_ARM) && !defined(CONFIG_IOMMU_DMA)
 #include <asm/dma-iommu.h>

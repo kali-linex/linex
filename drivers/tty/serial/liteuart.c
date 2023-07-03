@@ -5,20 +5,20 @@
  * Copyright (C) 2019-2020 Antmicro <www.antmicro.com>
  */
 
-#include <linux/bits.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/litex.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/xarray.h>
+#include <linex/bits.h>
+#include <linex/console.h>
+#include <linex/interrupt.h>
+#include <linex/litex.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/tty_flip.h>
+#include <linex/xarray.h>
 
 /*
  * CSRs definitions (base address offsets + width)

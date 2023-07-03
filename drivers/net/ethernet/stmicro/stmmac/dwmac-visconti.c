@@ -5,10 +5,10 @@
  * (C) Copyright 2020 Toshiba Electronic Devices & Storage Corporation
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/stmmac.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_net.h>
+#include <linex/stmmac.h>
 
 #include "stmmac_platform.h"
 #include "dwmac4.h"

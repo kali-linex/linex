@@ -16,15 +16,15 @@
 #ifndef BNX2X_H
 #define BNX2X_H
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/pci_regs.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/dma-mapping.h>
+#include <linex/types.h>
+#include <linex/pci_regs.h>
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/timecounter.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/net_tstamp.h>
+#include <linex/timecounter.h>
 
 /* compilation time flags */
 
@@ -52,7 +52,7 @@
 
 #define BNX2X_MIN_MSIX_VEC_CNT(bp)		((bp)->min_msix_vec_cnt)
 
-#include <linux/mdio.h>
+#include <linex/mdio.h>
 
 #include "bnx2x_reg.h"
 #include "bnx2x_fw_defs.h"

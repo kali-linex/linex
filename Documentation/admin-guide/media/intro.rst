@@ -4,7 +4,7 @@
 Introduction
 ============
 
-The media subsystem consists on Linux support for several different types
+The media subsystem consists on Linex support for several different types
 of devices:
 
 - Audio and video grabbers;
@@ -21,7 +21,7 @@ APIs:
 
 - Remote Controller API;
 - HDMI CEC API;
-- Video4Linux API;
+- Video4Linex API;
 - Media controller API;
-- Video4Linux Request API (experimental);
+- Video4Linex Request API (experimental);
 - Digital TV API (also known as DVB API).

@@ -8,17 +8,17 @@
  * Loosly based on i82365.c from the pcmcia-cs package
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
 
 #include <pcmcia/ss.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 
 #include "i82092aa.h"
 #include "i82365.h"

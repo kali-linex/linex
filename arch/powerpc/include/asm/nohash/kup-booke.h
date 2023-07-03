@@ -13,8 +13,8 @@
 
 #else
 
-#include <linux/jump_label.h>
-#include <linux/sched.h>
+#include <linex/jump_label.h>
+#include <linex/sched.h>
 
 #include <asm/reg.h>
 

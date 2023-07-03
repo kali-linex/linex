@@ -6,15 +6,15 @@
  * Copyright (c) 2002 Pavel Machek <pavel@ucw.cz>
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/suspend.h>
-#include <linux/scatterlist.h>
-#include <linux/kdebug.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <linex/gfp.h>
+#include <linex/smp.h>
+#include <linex/suspend.h>
+#include <linex/scatterlist.h>
+#include <linex/kdebug.h>
+#include <linex/cpu.h>
+#include <linex/pgtable.h>
+#include <linex/types.h>
+#include <linex/crc32.h>
 
 #include <asm/e820/api.h>
 #include <asm/init.h>

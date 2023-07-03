@@ -7,9 +7,9 @@
  *
  * Based on vexpress, Copyright (c) 2003 ARM Limited, All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/threads.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
+#include <linex/threads.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 

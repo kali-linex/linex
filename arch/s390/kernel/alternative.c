@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
+#include <linex/module.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
 #include <asm/text-patching.h>
 #include <asm/alternative.h>
 #include <asm/facility.h>

@@ -7,16 +7,16 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/simd.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/fips.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include "internal.h"
 

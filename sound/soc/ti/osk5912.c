@@ -7,16 +7,16 @@
  * Contact: Arun KS  <arunks@mistralsolutions.com>
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 #include "../codecs/tlv320aic23.h"

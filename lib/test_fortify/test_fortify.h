@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 void do_fortify_tests(void);
 

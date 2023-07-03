@@ -3,11 +3,11 @@
 #ifndef __ASM_VMAP_STACK_H
 #define __ASM_VMAP_STACK_H
 
-#include <linux/bug.h>
-#include <linux/gfp.h>
-#include <linux/kconfig.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linex/bug.h>
+#include <linex/gfp.h>
+#include <linex/kconfig.h>
+#include <linex/vmalloc.h>
+#include <linex/pgtable.h>
 #include <asm/memory.h>
 #include <asm/thread_info.h>
 

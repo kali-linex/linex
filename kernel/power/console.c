@@ -5,12 +5,12 @@
  * Originally from swsusp.
  */
 
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/kbd_kern.h>
-#include <linux/vt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/console.h>
+#include <linex/vt_kern.h>
+#include <linex/kbd_kern.h>
+#include <linex/vt.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 #include "power.h"
 
 #define SUSPEND_CONSOLE	(MAX_NR_CONSOLES-1)

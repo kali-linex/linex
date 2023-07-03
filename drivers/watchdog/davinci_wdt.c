@@ -9,17 +9,17 @@
  * 2007 (c) MontaVista Software, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mod_devicetable.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/clk.h>
+#include <linex/err.h>
 
 #define MODULE_NAME "DAVINCI-WDT: "
 

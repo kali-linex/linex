@@ -40,7 +40,7 @@
 		/* GPIO is board-specific */
 		button_restart: button-restart {
 			label = "Restart";
-			linux,code = <KEY_RESTART>;
+			linex,code = <KEY_RESTART>;
 		};
 	};
 

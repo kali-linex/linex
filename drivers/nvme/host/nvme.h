@@ -6,16 +6,16 @@
 #ifndef _NVME_H
 #define _NVME_H
 
-#include <linux/nvme.h>
-#include <linux/cdev.h>
-#include <linux/pci.h>
-#include <linux/kref.h>
-#include <linux/blk-mq.h>
-#include <linux/sed-opal.h>
-#include <linux/fault-inject.h>
-#include <linux/rcupdate.h>
-#include <linux/wait.h>
-#include <linux/t10-pi.h>
+#include <linex/nvme.h>
+#include <linex/cdev.h>
+#include <linex/pci.h>
+#include <linex/kref.h>
+#include <linex/blk-mq.h>
+#include <linex/sed-opal.h>
+#include <linex/fault-inject.h>
+#include <linex/rcupdate.h>
+#include <linex/wait.h>
+#include <linex/t10-pi.h>
 
 #include <trace/events/block.h>
 

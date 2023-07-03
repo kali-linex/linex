@@ -5,15 +5,15 @@
  * backpack.c is a low-level protocol driver for the Micro Solutions
  * "BACKPACK" parallel port IDE adapter (works on Series 6 drives).
  *
- * Written by: Ken Hahn (linux-dev@micro-solutions.com)
- *             Clive Turvey (linux-dev@micro-solutions.com)
+ * Written by: Ken Hahn (linex-dev@micro-solutions.com)
+ *             Clive Turvey (linex-dev@micro-solutions.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/parport.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/parport.h>
 #include "pata_parport.h"
 
 /* 60772 Commands */

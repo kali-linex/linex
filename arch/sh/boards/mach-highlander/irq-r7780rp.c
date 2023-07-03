@@ -6,9 +6,9 @@
  * Copyright (C) 2006  Paul Mundt
  * Copyright (C) 2008  Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 #include <mach/highlander.h>
 
 enum {

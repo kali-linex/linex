@@ -5,16 +5,16 @@
  * Copyright (C) 2020, Google LLC.
  */
 
-#include <linux/stdarg.h>
+#include <linex/stdarg.h>
 
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/math.h>
-#include <linux/printk.h>
-#include <linux/sched/debug.h>
-#include <linux/seq_file.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/lockdep.h>
+#include <linex/math.h>
+#include <linex/printk.h>
+#include <linex/sched/debug.h>
+#include <linex/seq_file.h>
+#include <linex/stacktrace.h>
+#include <linex/string.h>
 #include <trace/events/error_report.h>
 
 #include <asm/kfence.h>

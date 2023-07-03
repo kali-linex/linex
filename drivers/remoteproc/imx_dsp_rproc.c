@@ -2,25 +2,25 @@
 /* Copyright 2021 NXP */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <linex/arm-smccc.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/firmware.h>
+#include <linex/firmware/imx/sci.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_client.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/remoteproc.h>
+#include <linex/slab.h>
 
 #include "imx_rproc.h"
 #include "remoteproc_elf_helpers.h"

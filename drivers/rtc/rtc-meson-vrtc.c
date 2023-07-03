@@ -4,12 +4,12 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/time64.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/time64.h>
 
 struct meson_vrtc_data {
 	void __iomem *io_alarm;

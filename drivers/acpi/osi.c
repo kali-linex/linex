@@ -10,11 +10,11 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/platform_data/x86/apple.h>
 
 #include "internal.h"
 
@@ -29,9 +29,9 @@ struct acpi_osi_entry {
 
 static struct acpi_osi_config {
 	u8		default_disabling;
-	unsigned int	linux_enable:1;
-	unsigned int	linux_dmi:1;
-	unsigned int	linux_cmdline:1;
+	unsigned int	linex_enable:1;
+	unsigned int	linex_dmi:1;
+	unsigned int	linex_cmdline:1;
 	unsigned int	darwin_enable:1;
 	unsigned int	darwin_dmi:1;
 	unsigned int	darwin_cmdline:1;
@@ -48,12 +48,12 @@ osi_setup_entries[OSI_STRING_ENTRIES_MAX] __initdata = {
 
 static u32 acpi_osi_handler(acpi_string interface, u32 supported)
 {
-	if (!strcmp("Linux", interface)) {
+	if (!strcmp("Linex", interface)) {
 		pr_notice_once(FW_BUG
-			"BIOS _OSI(Linux) query %s%s\n",
-			osi_config.linux_enable ? "honored" : "ignored",
-			osi_config.linux_cmdline ? " via cmdline" :
-			osi_config.linux_dmi ? " via DMI" : "");
+			"BIOS _OSI(Linex) query %s%s\n",
+			osi_config.linex_enable ? "honored" : "ignored",
+			osi_config.linex_cmdline ? " via cmdline" :
+			osi_config.linex_dmi ? " via DMI" : "");
 	}
 	if (!strcmp("Darwin", interface)) {
 		pr_notice_once(
@@ -137,49 +137,49 @@ static void __init acpi_osi_setup_darwin(bool enable)
 }
 
 /*
- * The story of _OSI(Linux)
+ * The story of _OSI(Linex)
  *
- * From pre-history through Linux-2.6.22, Linux responded TRUE upon a BIOS
- * OSI(Linux) query.
+ * From pre-history through Linex-2.6.22, Linex responded TRUE upon a BIOS
+ * OSI(Linex) query.
  *
  * Unfortunately, reference BIOS writers got wind of this and put
- * OSI(Linux) in their example code, quickly exposing this string as
+ * OSI(Linex) in their example code, quickly exposing this string as
  * ill-conceived and opening the door to an un-bounded number of BIOS
  * incompatibilities.
  *
- * For example, OSI(Linux) was used on resume to re-POST a video card on
- * one system, because Linux at that time could not do a speedy restore in
+ * For example, OSI(Linex) was used on resume to re-POST a video card on
+ * one system, because Linex at that time could not do a speedy restore in
  * its native driver. But then upon gaining quick native restore
- * capability, Linux has no way to tell the BIOS to skip the time-consuming
- * POST -- putting Linux at a permanent performance disadvantage. On
- * another system, the BIOS writer used OSI(Linux) to infer native OS
- * support for IPMI!  On other systems, OSI(Linux) simply got in the way of
- * Linux claiming to be compatible with other operating systems, exposing
+ * capability, Linex has no way to tell the BIOS to skip the time-consuming
+ * POST -- putting Linex at a permanent performance disadvantage. On
+ * another system, the BIOS writer used OSI(Linex) to infer native OS
+ * support for IPMI!  On other systems, OSI(Linex) simply got in the way of
+ * Linex claiming to be compatible with other operating systems, exposing
  * BIOS issues such as skipped device initialization.
  *
- * So "Linux" turned out to be a really poor chose of OSI string, and from
- * Linux-2.6.23 onward we respond FALSE.
+ * So "Linex" turned out to be a really poor chose of OSI string, and from
+ * Linex-2.6.23 onward we respond FALSE.
  *
- * BIOS writers should NOT query _OSI(Linux) on future systems. Linux will
- * complain on the console when it sees it, and return FALSE. To get Linux
+ * BIOS writers should NOT query _OSI(Linex) on future systems. Linex will
+ * complain on the console when it sees it, and return FALSE. To get Linex
  * to return TRUE for your system  will require a kernel source update to
- * add a DMI entry, or boot with "acpi_osi=Linux"
+ * add a DMI entry, or boot with "acpi_osi=Linex"
  */
-static void __init __acpi_osi_setup_linux(bool enable)
+static void __init __acpi_osi_setup_linex(bool enable)
 {
-	osi_config.linux_enable = !!enable;
+	osi_config.linex_enable = !!enable;
 	if (enable)
-		acpi_osi_setup("Linux");
+		acpi_osi_setup("Linex");
 	else
-		acpi_osi_setup("!Linux");
+		acpi_osi_setup("!Linex");
 }
 
-static void __init acpi_osi_setup_linux(bool enable)
+static void __init acpi_osi_setup_linex(bool enable)
 {
 	/* Override acpi_osi_dmi_blacklisted() */
-	osi_config.linux_dmi = 0;
-	osi_config.linux_cmdline = 1;
-	__acpi_osi_setup_linux(enable);
+	osi_config.linex_dmi = 0;
+	osi_config.linex_cmdline = 1;
+	__acpi_osi_setup_linex(enable);
 }
 
 /*
@@ -224,10 +224,10 @@ static void __init acpi_osi_setup_late(void)
 
 static int __init osi_setup(char *str)
 {
-	if (str && !strcmp("Linux", str))
-		acpi_osi_setup_linux(true);
-	else if (str && !strcmp("!Linux", str))
-		acpi_osi_setup_linux(false);
+	if (str && !strcmp("Linex", str))
+		acpi_osi_setup_linex(true);
+	else if (str && !strcmp("!Linex", str))
+		acpi_osi_setup_linex(false);
 	else if (str && !strcmp("Darwin", str))
 		acpi_osi_setup_darwin(true);
 	else if (str && !strcmp("!Darwin", str))
@@ -252,17 +252,17 @@ static void __init acpi_osi_dmi_darwin(void)
 	__acpi_osi_setup_darwin(true);
 }
 
-static void __init acpi_osi_dmi_linux(bool enable,
+static void __init acpi_osi_dmi_linex(bool enable,
 				      const struct dmi_system_id *d)
 {
-	pr_notice("DMI detected to setup _OSI(\"Linux\"): %s\n", d->ident);
-	osi_config.linux_dmi = 1;
-	__acpi_osi_setup_linux(enable);
+	pr_notice("DMI detected to setup _OSI(\"Linex\"): %s\n", d->ident);
+	osi_config.linex_dmi = 1;
+	__acpi_osi_setup_linex(enable);
 }
 
-static int __init dmi_enable_osi_linux(const struct dmi_system_id *d)
+static int __init dmi_enable_osi_linex(const struct dmi_system_id *d)
 {
-	acpi_osi_dmi_linux(true, d);
+	acpi_osi_dmi_linex(true, d);
 
 	return 0;
 }
@@ -294,10 +294,10 @@ static int __init dmi_disable_osi_win8(const struct dmi_system_id *d)
 }
 
 /*
- * Linux default _OSI response behavior is determined by this DMI table.
+ * Linex default _OSI response behavior is determined by this DMI table.
  *
- * Note that _OSI("Linux")/_OSI("Darwin") determined here can be overridden
- * by acpi_osi=!Linux/acpi_osi=!Darwin command line options.
+ * Note that _OSI("Linex")/_OSI("Darwin") determined here can be overridden
+ * by acpi_osi=!Linex/acpi_osi=!Darwin command line options.
  */
 static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	{
@@ -444,8 +444,8 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	},
 
 	/*
-	 * BIOS invocation of _OSI(Linux) is almost always a BIOS bug.
-	 * Linux ignores it, except for the machines enumerated below.
+	 * BIOS invocation of _OSI(Linex) is almost always a BIOS bug.
+	 * Linex ignores it, except for the machines enumerated below.
 	 */
 
 	/*
@@ -454,7 +454,7 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	 * fixing both brightness control, and rfkill not working.
 	 */
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_linex,
 	.ident = "Asus EEE PC 1015PX",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "ASUSTeK Computer INC."),

@@ -4,8 +4,8 @@
  *    Author: Alan Maguire <alan.maguire@oracle.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
 
 #include <kunit/test.h>
 

@@ -4,14 +4,14 @@
  *	Hitachi HD64461 companion chip support
  */
 
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 #include <asm/irq.h>
 #include <asm/hd64461.h>
 

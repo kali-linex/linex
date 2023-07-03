@@ -6,10 +6,10 @@
 #include "qla_def.h"
 #include "qla_gbl.h"
 
-#include <linux/kthread.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/bsg-lib.h>
+#include <linex/kthread.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/bsg-lib.h>
 
 static void qla2xxx_free_fcport_work(struct work_struct *work)
 {

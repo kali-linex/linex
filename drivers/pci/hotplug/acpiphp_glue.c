@@ -27,16 +27,16 @@
 
 #define pr_fmt(fmt) "acpiphp_glue: " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/pci-acpi.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/pci-acpi.h>
+#include <linex/pm_runtime.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
 
 #include "../pci.h"
 #include "acpiphp.h"

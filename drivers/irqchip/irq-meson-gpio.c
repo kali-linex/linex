@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/irqchip.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #define MAX_NUM_CHANNEL 64
 #define MAX_INPUT_MUX 256

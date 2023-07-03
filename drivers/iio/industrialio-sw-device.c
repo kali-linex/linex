@@ -5,15 +5,15 @@
  * Copyright (c) 2016 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kmod.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
-#include <linux/iio/sw_device.h>
-#include <linux/iio/configfs.h>
-#include <linux/configfs.h>
+#include <linex/iio/sw_device.h>
+#include <linex/iio/configfs.h>
+#include <linex/configfs.h>
 
 static struct config_group *iio_devices_group;
 static const struct config_item_type iio_device_type_group_type;

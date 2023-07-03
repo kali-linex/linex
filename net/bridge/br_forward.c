@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Forwarding decision
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/netfilter_bridge.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/netpoll.h>
+#include <linex/skbuff.h>
+#include <linex/if_vlan.h>
+#include <linex/netfilter_bridge.h>
 #include "br_private.h"
 
 /* Don't forward packets to originating port or forwarding disabled */

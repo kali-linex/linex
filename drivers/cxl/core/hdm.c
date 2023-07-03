@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <linex/seq_file.h>
+#include <linex/device.h>
+#include <linex/delay.h>
 
 #include "cxlmem.h"
 #include "core.h"

@@ -4,8 +4,8 @@
  *
  *  Copyright (C) 2006  Jamie Lenehan
  */
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linex/init.h>
+#include <linex/irq.h>
 #include <mach/titan.h>
 #include <asm/io.h>
 

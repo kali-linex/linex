@@ -8,31 +8,31 @@
  *
  *  DMA support added by Chip Coldwell.
  */
-#include <linux/circ_buf.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/atmel_pdc.h>
-#include <linux/uaccess.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/suspend.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linex/circ_buf.h>
+#include <linex/tty.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/console.h>
+#include <linex/sysrq.h>
+#include <linex/tty_flip.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/atmel_pdc.h>
+#include <linex/uaccess.h>
+#include <linex/platform_data/atmel.h>
+#include <linex/timer.h>
+#include <linex/err.h>
+#include <linex/irq.h>
+#include <linex/suspend.h>
+#include <linex/mm.h>
+#include <linex/io.h>
 
 #include <asm/div64.h>
 #include <asm/ioctls.h>
@@ -50,7 +50,7 @@
 #define ATMEL_RTS_HIGH_OFFSET	16
 #define ATMEL_RTS_LOW_OFFSET	20
 
-#include <linux/serial_core.h>
+#include <linex/serial_core.h>
 
 #include "serial_mctrl_gpio.h"
 #include "atmel_serial.h"

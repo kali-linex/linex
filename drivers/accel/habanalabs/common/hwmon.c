@@ -7,8 +7,8 @@
 
 #include "habanalabs.h"
 
-#include <linux/pci.h>
-#include <linux/hwmon.h>
+#include <linex/pci.h>
+#include <linex/hwmon.h>
 
 #define HWMON_NR_SENSOR_TYPES		(hwmon_max)
 

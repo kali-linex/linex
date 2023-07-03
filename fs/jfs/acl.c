@@ -5,10 +5,10 @@
  *   Copyright (C) Linus Torvalds, 1991, 1992
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/posix_acl_xattr.h>
 #include "jfs_incore.h"
 #include "jfs_txnmgr.h"
 #include "jfs_xattr.h"

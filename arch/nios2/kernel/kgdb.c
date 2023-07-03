@@ -8,10 +8,10 @@
  * Based on the code posted by Kazuyasu on the Altera Forum at:
  * http://www.alteraforum.com/forum/showpost.php?p=77003&postcount=20
  */
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/io.h>
+#include <linex/ptrace.h>
+#include <linex/kgdb.h>
+#include <linex/kdebug.h>
+#include <linex/io.h>
 
 static int wait_for_remote_debugger;
 

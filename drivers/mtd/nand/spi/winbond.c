@@ -7,9 +7,9 @@
  *	Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mtd/spinand.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/mtd/spinand.h>
 
 #define SPINAND_MFR_WINBOND		0xEF
 

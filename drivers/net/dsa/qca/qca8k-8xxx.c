@@ -2,24 +2,24 @@
 /*
  * Copyright (C) 2009 Felix Fietkau <nbd@nbd.name>
  * Copyright (C) 2011-2012 Gabor Juhos <juhosg@openwrt.org>
- * Copyright (c) 2015, 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2019, The Linex Foundation. All rights reserved.
  * Copyright (c) 2016 John Crispin <john@phrozen.org>
  */
 
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/netdevice.h>
+#include <linex/bitfield.h>
+#include <linex/regmap.h>
 #include <net/dsa.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/mdio.h>
-#include <linux/phylink.h>
-#include <linux/gpio/consumer.h>
-#include <linux/etherdevice.h>
-#include <linux/dsa/tag_qca.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/of_platform.h>
+#include <linex/mdio.h>
+#include <linex/phylink.h>
+#include <linex/gpio/consumer.h>
+#include <linex/etherdevice.h>
+#include <linex/dsa/tag_qca.h>
 
 #include "qca8k.h"
 #include "qca8k_leds.h"
@@ -1834,7 +1834,7 @@ qca8k_setup(struct dsa_switch *ds)
 			qca8k_port_set_status(priv, i, 0);
 	}
 
-	/* Forward all unknown frames to CPU port for Linux processing
+	/* Forward all unknown frames to CPU port for Linex processing
 	 * Notice that in multi-cpu config only one port should be set
 	 * for igmp, unknown, multicast and broadcast packet
 	 */

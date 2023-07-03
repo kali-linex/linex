@@ -2,8 +2,8 @@
 #ifndef HOSTAP_H
 #define HOSTAP_H
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
+#include <linex/ethtool.h>
+#include <linex/kernel.h>
 
 #include "hostap_wlan.h"
 #include "hostap_ap.h"

@@ -6,32 +6,32 @@ NC='\033[0m' # No Color
 
 declare -a FILES
 FILES=(
-  "include/uapi/linux/const.h"
+  "include/uapi/linex/const.h"
   "include/uapi/drm/drm.h"
   "include/uapi/drm/i915_drm.h"
-  "include/uapi/linux/fadvise.h"
-  "include/uapi/linux/fcntl.h"
-  "include/uapi/linux/fs.h"
-  "include/uapi/linux/fscrypt.h"
-  "include/uapi/linux/kcmp.h"
-  "include/uapi/linux/kvm.h"
-  "include/uapi/linux/in.h"
-  "include/uapi/linux/mount.h"
-  "include/uapi/linux/openat2.h"
-  "include/uapi/linux/perf_event.h"
-  "include/uapi/linux/prctl.h"
-  "include/uapi/linux/sched.h"
-  "include/uapi/linux/stat.h"
-  "include/uapi/linux/usbdevice_fs.h"
-  "include/uapi/linux/vhost.h"
+  "include/uapi/linex/fadvise.h"
+  "include/uapi/linex/fcntl.h"
+  "include/uapi/linex/fs.h"
+  "include/uapi/linex/fscrypt.h"
+  "include/uapi/linex/kcmp.h"
+  "include/uapi/linex/kvm.h"
+  "include/uapi/linex/in.h"
+  "include/uapi/linex/mount.h"
+  "include/uapi/linex/openat2.h"
+  "include/uapi/linex/perf_event.h"
+  "include/uapi/linex/prctl.h"
+  "include/uapi/linex/sched.h"
+  "include/uapi/linex/stat.h"
+  "include/uapi/linex/usbdevice_fs.h"
+  "include/uapi/linex/vhost.h"
   "include/uapi/sound/asound.h"
-  "include/linux/bits.h"
+  "include/linex/bits.h"
   "include/vdso/bits.h"
-  "include/linux/const.h"
+  "include/linex/const.h"
   "include/vdso/const.h"
-  "include/linux/hash.h"
-  "include/linux/list-sort.h"
-  "include/uapi/linux/hw_breakpoint.h"
+  "include/linex/hash.h"
+  "include/linex/list-sort.h"
+  "include/uapi/linex/hw_breakpoint.h"
   "arch/x86/include/asm/disabled-features.h"
   "arch/x86/include/asm/required-features.h"
   "arch/x86/include/asm/cpufeatures.h"
@@ -73,7 +73,7 @@ FILES=(
   "include/asm-generic/bitops/__fls.h"
   "include/asm-generic/bitops/fls.h"
   "include/asm-generic/bitops/fls64.h"
-  "include/linux/coresight-pmu.h"
+  "include/linex/coresight-pmu.h"
   "include/uapi/asm-generic/errno.h"
   "include/uapi/asm-generic/errno-base.h"
   "include/uapi/asm-generic/ioctls.h"
@@ -96,7 +96,7 @@ SYNC_CHECK_FILES=(
 
 declare -a BEAUTY_FILES
 BEAUTY_FILES=(
-  "include/linux/socket.h"
+  "include/linex/socket.h"
 )
 
 declare -a FAILURES
@@ -157,16 +157,16 @@ do
 done
 
 # diff with extra ignore lines
-check arch/x86/lib/memcpy_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memcpy_\(erms\|orig\))" -I"^#include <linux/cfi_types.h>"'
+check arch/x86/lib/memcpy_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memcpy_\(erms\|orig\))" -I"^#include <linex/cfi_types.h>"'
 check arch/x86/lib/memset_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memset_\(erms\|orig\))"'
 check arch/x86/include/asm/amd-ibs.h  '-I "^#include [<\"]\(asm/\)*msr-index.h"'
 check arch/arm64/include/asm/cputype.h '-I "^#include [<\"]\(asm/\)*sysreg.h"'
 check include/uapi/asm-generic/mman.h '-I "^#include <\(uapi/\)*asm-generic/mman-common\(-tools\)*.h>"'
-check include/uapi/linux/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
-check include/linux/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
-check include/linux/ctype.h	      '-I "isdigit("'
-check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <linux/export.h>" -B'
-check lib/list_sort.c		      '-I "^#include <linux/bug.h>"'
+check include/uapi/linex/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
+check include/linex/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
+check include/linex/ctype.h	      '-I "isdigit("'
+check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <linex/export.h>" -B'
+check lib/list_sort.c		      '-I "^#include <linex/bug.h>"'
 
 # diff non-symmetric files
 check_2 tools/perf/arch/x86/entry/syscalls/syscall_64.tbl arch/x86/entry/syscalls/syscall_64.tbl

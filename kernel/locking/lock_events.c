@@ -16,10 +16,10 @@
 /*
  * Collect locking event counts
  */
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/fs.h>
+#include <linex/debugfs.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/fs.h>
 
 #include "lock_events.h"
 

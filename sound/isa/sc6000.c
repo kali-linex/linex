@@ -12,10 +12,10 @@
  *  for OSS/Free included in the kernel source as reference.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/isa.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/isa.h>
+#include <linex/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>

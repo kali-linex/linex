@@ -9,9 +9,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 #include "debug.h"
 #include "llvm-utils.h"
 #include "config.h"
@@ -21,7 +21,7 @@
 
 #define CLANG_BPF_CMD_DEFAULT_TEMPLATE				\
 		"$CLANG_EXEC -D__KERNEL__ -D__NR_CPUS__=$NR_CPUS "\
-		"-DLINUX_VERSION_CODE=$LINUX_VERSION_CODE "	\
+		"-DLINEX_VERSION_CODE=$LINEX_VERSION_CODE "	\
 		"$CLANG_OPTIONS $PERF_BPF_INC_OPTIONS $KERNEL_INC_OPTIONS " \
 		"-Wno-unused-value -Wno-pointer-sign "		\
 		"-working-directory $WORKING_DIR "		\
@@ -306,7 +306,7 @@ static const char *kinc_fetch_script =
 "cat << EOF > $TMPDIR/Makefile\n"
 "obj-y := dummy.o\n"
 "\\$(obj)/%.o: \\$(src)/%.c\n"
-"\t@echo -n \"\\$(NOSTDINC_FLAGS) \\$(LINUXINCLUDE) \\$(EXTRA_CFLAGS)\"\n"
+"\t@echo -n \"\\$(NOSTDINC_FLAGS) \\$(LINEXINCLUDE) \\$(EXTRA_CFLAGS)\"\n"
 "\t\\$(CC) -c -o \\$@ \\$<\n"
 "EOF\n"
 "touch $TMPDIR/dummy.c\n"
@@ -453,7 +453,7 @@ int llvm__compile_bpf(const char *path, void **p_obj_buf,
 	void *obj_buf = NULL;
 	int err, nr_cpus_avail;
 	unsigned int kernel_version;
-	char linux_version_code_str[64];
+	char linex_version_code_str[64];
 	const char *clang_opt = llvm_param.clang_opt;
 	char clang_path[PATH_MAX], llc_path[PATH_MAX], abspath[PATH_MAX], nr_cpus_avail_str[64];
 	char serr[STRERR_BUFSIZE];
@@ -493,12 +493,12 @@ int llvm__compile_bpf(const char *path, void **p_obj_buf,
 	if (fetch_kernel_version(&kernel_version, NULL, 0))
 		kernel_version = 0;
 
-	snprintf(linux_version_code_str, sizeof(linux_version_code_str),
+	snprintf(linex_version_code_str, sizeof(linex_version_code_str),
 		 "0x%x", kernel_version);
 	if (asprintf(&perf_bpf_include_opts, "-I%s/", libbpf_include_dir) < 0)
 		goto errout;
 	force_set_env("NR_CPUS", nr_cpus_avail_str);
-	force_set_env("LINUX_VERSION_CODE", linux_version_code_str);
+	force_set_env("LINEX_VERSION_CODE", linex_version_code_str);
 	force_set_env("CLANG_EXEC", clang_path);
 	force_set_env("CLANG_OPTIONS", clang_opt);
 	force_set_env("KERNEL_INC_OPTIONS", kbuild_include_opts);

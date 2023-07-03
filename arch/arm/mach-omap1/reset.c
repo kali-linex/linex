@@ -2,9 +2,9 @@
 /*
  * OMAP1 reset support
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/reboot.h>
 
 #include "hardware.h"
 #include "iomap.h"

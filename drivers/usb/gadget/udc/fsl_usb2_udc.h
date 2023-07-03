@@ -8,8 +8,8 @@
 #ifndef __FSL_USB2_UDC_H
 #define __FSL_USB2_UDC_H
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 /* ### define USB registers here
  */

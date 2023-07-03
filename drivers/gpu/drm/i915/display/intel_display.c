@@ -24,13 +24,13 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/dma-resv.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <linex/dma-resv.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_atomic.h>

@@ -4,15 +4,15 @@
 //
 //Copyright 2020 Advanced Micro Devices, Inc.
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
 
 #include "rn_acp3x.h"
 

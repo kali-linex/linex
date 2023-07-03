@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/mon.c
+ * linex/fs/lockd/mon.c
  *
  * The kernel statd client.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/xprtsock.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/lockd/lockd.h>
 
 #include <asm/unaligned.h>
 

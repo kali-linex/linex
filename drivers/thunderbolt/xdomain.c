@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/prandom.h>
-#include <linux/string_helpers.h>
-#include <linux/utsname.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/kmod.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/prandom.h>
+#include <linex/string_helpers.h>
+#include <linex/utsname.h>
+#include <linex/uuid.h>
+#include <linex/workqueue.h>
 
 #include "tb.h"
 

@@ -1,8 +1,8 @@
-# SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+# SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 # Copyright (c) 2019, Intel Corporation.
 
 #
-# Makefile for the Intel(R) Ethernet Connection RDMA Linux Driver
+# Makefile for the Intel(R) Ethernet Connection RDMA Linex Driver
 #
 
 obj-$(CONFIG_INFINIBAND_IRDMA) += irdma.o

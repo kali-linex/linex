@@ -5,7 +5,7 @@
  *
  */
 
-#include<linux/bitfield.h>
+#include<linex/bitfield.h>
 
 #include "rvu.h"
 #include "rvu_reg.h"

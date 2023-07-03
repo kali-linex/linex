@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/net/sunrpc/auth_unix.c
+ * linex/net/sunrpc/auth_unix.c
  *
  * UNIX-style authentication; no AUTH_SHORT support
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/user_namespace.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/mempool.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/auth.h>
+#include <linex/user_namespace.h>
 
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)

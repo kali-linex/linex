@@ -3,9 +3,9 @@
  * rtl8712_recv.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * Linex device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Linex staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,8 +16,8 @@
 
 #define _RTL8712_RECV_C_
 
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <linex/if_ether.h>
+#include <linex/ip.h>
 #include <net/cfg80211.h>
 
 #include "osdep_service.h"

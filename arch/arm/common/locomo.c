@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/common/locomo.c
+ * linex/arch/arm/common/locomo.c
  *
  * Sharp LoCoMo support
  *
@@ -12,16 +12,16 @@
  * Based on sa1111.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

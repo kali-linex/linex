@@ -17,12 +17,12 @@
  * ppc:
  *  Copyright 2008-2009 Paul Mackerras, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/perf_event.h>
+#include <linex/export.h>
 #include <asm/processor.h>
 
 struct cpu_hw_events {

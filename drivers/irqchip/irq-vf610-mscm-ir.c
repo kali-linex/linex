@@ -19,17 +19,17 @@
  *   variants of Vybrid.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
+#include <linex/cpu_pm.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/syscon.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/regmap.h>
 
 #define MSCM_CPxNUM		0x4
 

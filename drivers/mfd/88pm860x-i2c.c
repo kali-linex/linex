@@ -6,11 +6,11 @@
  *
  * Author: Haojian Zhuang <haojian.zhuang@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/88pm860x.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/mfd/88pm860x.h>
 
 int pm860x_reg_read(struct i2c_client *i2c, int reg)
 {

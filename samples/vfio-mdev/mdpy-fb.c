@@ -17,11 +17,11 @@
  * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
  * more details.
  */
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/io.h>
+#include <linex/pci.h>
+#include <linex/module.h>
 #include <drm/drm_fourcc.h>
 #include "mdpy-defs.h"
 

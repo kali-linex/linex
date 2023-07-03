@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2021 Felix Fietkau <nbd@nbd.name> */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/dma-mapping.h>
-#include <linux/skbuff.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/mfd/syscon.h>
-#include <linux/debugfs.h>
-#include <linux/soc/mediatek/mtk_wed.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/bitfield.h>
+#include <linex/dma-mapping.h>
+#include <linex/skbuff.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/mfd/syscon.h>
+#include <linex/debugfs.h>
+#include <linex/soc/mediatek/mtk_wed.h>
 #include <net/flow_offload.h>
 #include <net/pkt_cls.h>
 #include "mtk_eth_soc.h"

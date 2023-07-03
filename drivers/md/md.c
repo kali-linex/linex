@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   md.c : Multiple Devices driver for Linux
+   md.c : Multiple Devices driver for Linex
      Copyright (C) 1998, 1999, 2000 Ingo Molnar
 
      completely rewritten, based on the MD driver code from Marc Zyngier
@@ -37,33 +37,33 @@
 
 */
 
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/badblocks.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/hdreg.h>
-#include <linux/proc_fs.h>
-#include <linux/random.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/file.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/raid/md_p.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/detect.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
-#include <linux/part_stat.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/kthread.h>
+#include <linex/blkdev.h>
+#include <linex/blk-integrity.h>
+#include <linex/badblocks.h>
+#include <linex/sysctl.h>
+#include <linex/seq_file.h>
+#include <linex/fs.h>
+#include <linex/poll.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/hdreg.h>
+#include <linex/proc_fs.h>
+#include <linex/random.h>
+#include <linex/major.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/file.h>
+#include <linex/compat.h>
+#include <linex/delay.h>
+#include <linex/raid/md_p.h>
+#include <linex/raid/md_u.h>
+#include <linex/raid/detect.h>
+#include <linex/slab.h>
+#include <linex/percpu-refcount.h>
+#include <linex/part_stat.h>
 
 #include <trace/events/block.h>
 #include "md.h"

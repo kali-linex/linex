@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext2/dir.c
+ *  linex/fs/ext2/dir.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/dir.c
+ *  linex/fs/minix/dir.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -23,10 +23,10 @@
  */
 
 #include "ext2.h"
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/iversion.h>
+#include <linex/buffer_head.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/iversion.h>
 
 typedef struct ext2_dir_entry_2 ext2_dirent;
 

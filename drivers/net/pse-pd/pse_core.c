@@ -5,9 +5,9 @@
 // Copyright (c) 2022 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
 //
 
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/pse-pd/pse.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/pse-pd/pse.h>
 
 static DEFINE_MUTEX(pse_list_mutex);
 static LIST_HEAD(pse_controller_list);

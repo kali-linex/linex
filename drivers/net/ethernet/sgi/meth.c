@@ -4,26 +4,26 @@
  *
  * Copyright (C) 2001-2003 Ilya Volynets
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/device.h> /* struct device, et al */
-#include <linux/netdevice.h>   /* struct device, and other headers */
-#include <linux/etherdevice.h> /* eth_type_trans */
-#include <linux/ip.h>          /* struct iphdr */
-#include <linux/tcp.h>         /* struct tcphdr */
-#include <linux/skbuff.h>
-#include <linux/mii.h>         /* MII definitions */
-#include <linux/crc32.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/device.h> /* struct device, et al */
+#include <linex/netdevice.h>   /* struct device, and other headers */
+#include <linex/etherdevice.h> /* eth_type_trans */
+#include <linex/ip.h>          /* struct iphdr */
+#include <linex/tcp.h>         /* struct tcphdr */
+#include <linex/skbuff.h>
+#include <linex/mii.h>         /* MII definitions */
+#include <linex/crc32.h>
 
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>

@@ -33,13 +33,13 @@
  * SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/moduleparam.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
 #include <rdma/ib_cache.h>
 
 #include "ipoib.h"

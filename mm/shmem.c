@@ -1,5 +1,5 @@
 /*
- * Resizable virtual memory filesystem for Linux.
+ * Resizable virtual memory filesystem for Linex.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *		 2000 Transmeta Corp.
@@ -21,25 +21,25 @@
  * This file is released under the GPL.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/ramfs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/fileattr.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/shmem_fs.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/hugetlb.h>
-#include <linux/fs_parser.h>
-#include <linux/swapfile.h>
-#include <linux/iversion.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/vfs.h>
+#include <linex/mount.h>
+#include <linex/ramfs.h>
+#include <linex/pagemap.h>
+#include <linex/file.h>
+#include <linex/fileattr.h>
+#include <linex/mm.h>
+#include <linex/random.h>
+#include <linex/sched/signal.h>
+#include <linex/export.h>
+#include <linex/shmem_fs.h>
+#include <linex/swap.h>
+#include <linex/uio.h>
+#include <linex/hugetlb.h>
+#include <linex/fs_parser.h>
+#include <linex/swapfile.h>
+#include <linex/iversion.h>
 #include "swap.h"
 
 static struct vfsmount *shm_mnt;
@@ -51,35 +51,35 @@ static struct vfsmount *shm_mnt;
  * which makes it a completely usable filesystem.
  */
 
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/percpu_counter.h>
-#include <linux/falloc.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/swapops.h>
-#include <linux/mempolicy.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/migrate.h>
-#include <linux/highmem.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <uapi/linux/memfd.h>
-#include <linux/rmap.h>
-#include <linux/uuid.h>
+#include <linex/xattr.h>
+#include <linex/exportfs.h>
+#include <linex/posix_acl.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/mman.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/backing-dev.h>
+#include <linex/writeback.h>
+#include <linex/pagevec.h>
+#include <linex/percpu_counter.h>
+#include <linex/falloc.h>
+#include <linex/splice.h>
+#include <linex/security.h>
+#include <linex/swapops.h>
+#include <linex/mempolicy.h>
+#include <linex/namei.h>
+#include <linex/ctype.h>
+#include <linex/migrate.h>
+#include <linex/highmem.h>
+#include <linex/seq_file.h>
+#include <linex/magic.h>
+#include <linex/syscalls.h>
+#include <linex/fcntl.h>
+#include <uapi/linex/memfd.h>
+#include <linex/rmap.h>
+#include <linex/uuid.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "internal.h"
 
@@ -4471,7 +4471,7 @@ int shmem_zero_setup(struct vm_area_struct *vma)
 
 	/*
 	 * Cloning a new file under mmap_lock leads to a lock ordering conflict
-	 * between XFS directory reading and selinux: since this file is only
+	 * between XFS directory reading and selinex: since this file is only
 	 * accessible to the user through its mapping, use S_PRIVATE flag to
 	 * bypass file security, in the same way as shmem_kernel_file_setup().
 	 */

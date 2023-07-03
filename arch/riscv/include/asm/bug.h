@@ -6,9 +6,9 @@
 #ifndef _ASM_RISCV_BUG_H
 #define _ASM_RISCV_BUG_H
 
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/const.h>
+#include <linex/types.h>
 
 #include <asm/asm.h>
 

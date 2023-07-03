@@ -12,8 +12,8 @@
  *									   *
  ***************************************************************************/
 
-#include <linux/io.h>
-#include <linux/export.h>
+#include <linex/io.h>
+#include <linex/export.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

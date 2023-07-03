@@ -21,9 +21,9 @@
  *   by an atheros frame while transmitted over a serial channel;
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
 #include "qca_7k_common.h"
 

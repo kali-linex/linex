@@ -4,8 +4,8 @@
  */
 
 #include <dt-bindings/clock/mediatek,mt8365-clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 
 #include "clk-gate.h"
 #include "clk-mtk.h"

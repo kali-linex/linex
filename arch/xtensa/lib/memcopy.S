@@ -9,7 +9,7 @@
  * Copyright (C) 2002 - 2012 Tensilica Inc.
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asmmacro.h>
 #include <asm/core.h>
 

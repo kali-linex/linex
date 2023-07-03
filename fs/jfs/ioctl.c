@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/jfs/ioctl.c
+ * linex/fs/jfs/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/capability.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/blkdev.h>
+#include <linex/fs.h>
+#include <linex/ctype.h>
+#include <linex/capability.h>
+#include <linex/mount.h>
+#include <linex/time.h>
+#include <linex/sched.h>
+#include <linex/blkdev.h>
 #include <asm/current.h>
-#include <linux/uaccess.h>
-#include <linux/fileattr.h>
+#include <linex/uaccess.h>
+#include <linex/fileattr.h>
 
 #include "jfs_filsys.h"
 #include "jfs_debug.h"

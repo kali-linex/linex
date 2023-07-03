@@ -4,25 +4,25 @@
  * Author: Flora Fu, MediaTek
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mt6323/core.h>
-#include <linux/mfd/mt6331/core.h>
-#include <linux/mfd/mt6357/core.h>
-#include <linux/mfd/mt6358/core.h>
-#include <linux/mfd/mt6359/core.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6331/registers.h>
-#include <linux/mfd/mt6357/registers.h>
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6359/registers.h>
-#include <linux/mfd/mt6397/registers.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/regmap.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/mt6323/core.h>
+#include <linex/mfd/mt6331/core.h>
+#include <linex/mfd/mt6357/core.h>
+#include <linex/mfd/mt6358/core.h>
+#include <linex/mfd/mt6359/core.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/mfd/mt6323/registers.h>
+#include <linex/mfd/mt6331/registers.h>
+#include <linex/mfd/mt6357/registers.h>
+#include <linex/mfd/mt6358/registers.h>
+#include <linex/mfd/mt6359/registers.h>
+#include <linex/mfd/mt6397/registers.h>
 
 #define MT6323_RTC_BASE		0x8000
 #define MT6323_RTC_SIZE		0x40

@@ -6,11 +6,11 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/device.h>
+#include <linex/types.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linex/surface_aggregator/serial_hub.h>
 #include "ssh_parser.h"
 
 /**

@@ -4,19 +4,19 @@
  */
 
 /*
- *  82C710 C&T mouse port chip driver for Linux
+ *  82C710 C&T mouse port chip driver for Linex
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/serio.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <asm/io.h>
 

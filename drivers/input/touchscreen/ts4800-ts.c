@@ -1,22 +1,22 @@
 /*
  * Touchscreen driver for the TS-4800 board
  *
- * Copyright (c) 2015 - Savoir-faire Linux
+ * Copyright (c) 2015 - Savoir-faire Linex
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/bitops.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/input.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 /* polling interval in ms */
 #define POLL_INTERVAL		3
@@ -217,7 +217,7 @@ static struct platform_driver ts4800_ts_driver = {
 };
 module_platform_driver(ts4800_ts_driver);
 
-MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinux.com>");
+MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinex.com>");
 MODULE_DESCRIPTION("TS-4800 Touchscreen Driver");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:ts4800_ts");

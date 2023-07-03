@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/acornfb.c
+ *  linex/drivers/video/acornfb.c
  *
  *  Copyright (C) 1998-2001 Russell King
  *
@@ -14,18 +14,18 @@
  *  - Blanking 8bpp displays with VIDC
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/fb.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/gfp.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

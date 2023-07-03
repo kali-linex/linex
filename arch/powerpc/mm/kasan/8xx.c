@@ -2,9 +2,9 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/kasan.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
+#include <linex/kasan.h>
+#include <linex/memblock.h>
+#include <linex/hugetlb.h>
 
 static int __init
 kasan_init_shadow_8M(unsigned long k_start, unsigned long k_end, void *block)

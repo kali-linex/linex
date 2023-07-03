@@ -2,9 +2,9 @@
 
 #include <asm/mach-ralink/ralink_regs.h>
 #include <asm/mach-ralink/rt305x.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
 #include "pinctrl-mtmips.h"
 
 #define RT305X_GPIO_MODE_UART0_SHIFT	2

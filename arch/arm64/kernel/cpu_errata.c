@@ -5,9 +5,9 @@
  * Copyright (C) 2014 ARM Ltd.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/types.h>
-#include <linux/cpu.h>
+#include <linex/arm-smccc.h>
+#include <linex/types.h>
+#include <linex/cpu.h>
 #include <asm/cpu.h>
 #include <asm/cputype.h>
 #include <asm/cpufeature.h>

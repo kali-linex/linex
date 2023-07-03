@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "xive-kvm: " fmt
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/file.h>
-#include <linux/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/kvm_host.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/file.h>
+#include <linex/irqdomain.h>
 #include <asm/uaccess.h>
 #include <asm/kvm_book3s.h>
 #include <asm/kvm_ppc.h>
@@ -22,8 +22,8 @@
 #include <asm/debug.h>
 #include <asm/opal.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 #include "book3s_xive.h"
 
@@ -240,7 +240,7 @@ static vm_fault_t xive_native_esb_fault(struct vm_fault *vmf)
 	u64 page_offset;
 
 	/*
-	 * Linux/KVM uses a two pages ESB setting, one for trigger and
+	 * Linex/KVM uses a two pages ESB setting, one for trigger and
 	 * one for EOI
 	 */
 	page_offset = vmf->pgoff - vma->vm_pgoff;
@@ -673,7 +673,7 @@ static int kvmppc_xive_native_set_queue_config(struct kvmppc_xive *xive,
 	 /*
 	  * Unconditional Notification is forced by default at the
 	  * OPAL level because the use of END ESBs is not supported by
-	  * Linux.
+	  * Linex.
 	  */
 	rc = kvmppc_xive_native_configure_queue(xc->vp_id, q, priority,
 					(__be32 *) qaddr, kvm_eq.qshift, true);

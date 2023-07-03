@@ -3,9 +3,9 @@
  * Copyright 2021-2022 Innovative Advantage Inc.
  */
 
-#include <linux/mfd/ocelot.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/mfd/ocelot.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 #include <soc/mscc/ocelot.h>
 #include <soc/mscc/vsc7514_regs.h>
 #include "felix.h"

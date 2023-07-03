@@ -5,12 +5,12 @@
  * Copyright (C) 2018-2020 Intel Corporation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dev_printk.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/module.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/dev_printk.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/intel-m10-bmc.h>
+#include <linex/module.h>
 
 static ssize_t bmc_version_show(struct device *dev,
 				struct device_attribute *attr, char *buf)

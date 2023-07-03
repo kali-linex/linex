@@ -23,10 +23,10 @@
  *   for their cards in their manuals.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/comedi/comedi_pci.h>
 
 #define READ_TIMEOUT 50
 

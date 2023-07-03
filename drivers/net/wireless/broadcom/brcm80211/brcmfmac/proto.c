@@ -4,9 +4,9 @@
  */
 
 
- #include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+ #include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
 
 #include <brcmu_wifi.h>
 #include "core.h"

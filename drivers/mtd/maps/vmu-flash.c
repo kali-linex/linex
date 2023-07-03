@@ -5,13 +5,13 @@
  * Copyright (c) Adrian McMenamin 2002 - 2009
  * Copyright (c) Paul Mundt 2001
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/maple.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/maple.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
 
 struct vmu_cache {
 	unsigned char *buffer;		/* Cache */

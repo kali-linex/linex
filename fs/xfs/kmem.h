@@ -6,10 +6,10 @@
 #ifndef __XFS_SUPPORT_KMEM_H__
 #define __XFS_SUPPORT_KMEM_H__
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
 
 /*
  * General memory allocation interfaces

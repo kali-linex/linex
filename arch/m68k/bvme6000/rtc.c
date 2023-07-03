@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	Real Time Clock interface for Linux on the BVME6000
+ *	Real Time Clock interface for Linex on the BVME6000
  *
  * Based on the PC driver by Paul Gortmaker.
  */
 
 #define RTC_VERSION		"1.00"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/rtc.h>	/* For struct rtc_time and ioctls, etc */
-#include <linux/bcd.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/miscdevice.h>
+#include <linex/ioport.h>
+#include <linex/capability.h>
+#include <linex/fcntl.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/module.h>
+#include <linex/rtc.h>	/* For struct rtc_time and ioctls, etc */
+#include <linex/bcd.h>
 #include <asm/bvme6000hw.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/setup.h>
 
 /*

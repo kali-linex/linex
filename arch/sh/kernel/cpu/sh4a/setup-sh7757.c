@@ -6,17 +6,17 @@
  *
  *  based on setup-sh7785.c : Copyright (C) 2007  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_dma.h>
+#include <linex/sh_intc.h>
+#include <linex/usb/ohci_pdriver.h>
 #include <cpu/dma-register.h>
 #include <cpu/sh7757.h>
 #include <asm/platform_early.h>

@@ -7,18 +7,18 @@
  *
  * Copyright (C) 2010-11 Texas Instruments Incorporated - http://www.ti.com/
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/platform_data/uio_pruss.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/uio_driver.h>
+#include <linex/platform_data/uio_pruss.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/genalloc.h>
 
 #define DRV_NAME "pruss_uio"
 #define DRV_VERSION "1.0"

@@ -5,24 +5,24 @@
  * Copyright 2021 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/cache.h>
-#include <linux/crc8.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/regulator/consumer.h>
-#include <linux/phy.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/cache.h>
+#include <linex/crc8.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/if_bridge.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/regulator/consumer.h>
+#include <linex/phy.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
 
 #include <net/switchdev.h>
 

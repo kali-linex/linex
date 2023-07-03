@@ -10,12 +10,12 @@
  * MXC GPIO support. (c) 2008 Daniel Mack <daniel@caiaq.de>
  * Copyright 2008 Juergen Beisert, kernel@pengutronix.de
  */
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
+#include <linex/gpio/driver.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
 
 /* GPIO registers definition */
 #define GPIO_DATA_OUT		0x00

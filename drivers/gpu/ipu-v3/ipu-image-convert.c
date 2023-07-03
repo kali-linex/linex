@@ -5,8 +5,8 @@
  * Queued image conversion support, with tiling and rotation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
 #include <video/imx-ipu-image-convert.h>
 #include "ipu-prv.h"
 

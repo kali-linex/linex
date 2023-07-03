@@ -1,8 +1,8 @@
 #ifndef _NF_CONNTRACK_COUNT_H
 #define _NF_CONNTRACK_COUNT_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 #include <net/netfilter/nf_conntrack_zones.h>
 

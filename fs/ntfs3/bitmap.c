@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
+#include <linex/buffer_head.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
 
 #include "ntfs.h"
 #include "ntfs_fs.h"

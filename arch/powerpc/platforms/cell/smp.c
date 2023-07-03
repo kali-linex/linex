@@ -10,21 +10,21 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/cache.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/cpu.h>
+#include <linex/pgtable.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/io.h>

@@ -20,9 +20,9 @@
  *
  */
 
-#include <linux/bits.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <linex/bits.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
 #include "device.h"
 #include "mac.h"
 #include "baseband.h"

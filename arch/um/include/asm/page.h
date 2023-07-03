@@ -7,7 +7,7 @@
 #ifndef __UM_PAGE_H
 #define __UM_PAGE_H
 
-#include <linux/const.h>
+#include <linex/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #define PAGE_SHIFT	12
@@ -18,8 +18,8 @@
 
 struct page;
 
-#include <linux/pfn.h>
-#include <linux/types.h>
+#include <linex/pfn.h>
+#include <linex/types.h>
 #include <asm/vm-flags.h>
 
 /*

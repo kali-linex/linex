@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/videodev2.h>
 #include "tuner-i2c.h"
 #include "tea5767.h"
 

@@ -8,10 +8,10 @@
 #ifndef _LIBFC_H_
 #define _LIBFC_H_
 
-#include <linux/timer.h>
-#include <linux/if.h>
-#include <linux/percpu.h>
-#include <linux/refcount.h>
+#include <linex/timer.h>
+#include <linex/if.h>
+#include <linex/percpu.h>
+#include <linex/refcount.h>
 
 #include <scsi/scsi_transport.h>
 #include <scsi/scsi_transport_fc.h>

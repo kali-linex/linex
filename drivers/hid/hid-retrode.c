@@ -8,10 +8,10 @@
 /*
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/hid.h>
+#include <linex/module.h>
 #include "hid-ids.h"
 
 #define CONTROLLER_NAME_BASE "Retrode"

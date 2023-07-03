@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2019-2020 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_address.h>
 #include "qcom_pil_info.h"
 
 /*

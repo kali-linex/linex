@@ -8,8 +8,8 @@
  *         Chun-Chia Chiu <chun-chia.chiu@mediatek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/regmap.h>
 #include <sound/pcm_params.h>
 #include "mt8188-afe-clk.h"
 #include "mt8188-afe-common.h"

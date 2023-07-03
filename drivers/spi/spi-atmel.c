@@ -5,23 +5,23 @@
  * Copyright (C) 2006 Atmel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
+#include <linex/io.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
 #include <trace/events/spi.h>
 
 /* SPI register offsets */

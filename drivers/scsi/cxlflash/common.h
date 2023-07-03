@@ -2,8 +2,8 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@linex.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@linex.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  */
@@ -11,12 +11,12 @@
 #ifndef _CXLFLASH_COMMON_H
 #define _CXLFLASH_COMMON_H
 
-#include <linux/async.h>
-#include <linux/cdev.h>
-#include <linux/irq_poll.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/types.h>
+#include <linex/async.h>
+#include <linex/cdev.h>
+#include <linex/irq_poll.h>
+#include <linex/list.h>
+#include <linex/rwsem.h>
+#include <linex/types.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

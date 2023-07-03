@@ -20,19 +20,19 @@
  */
 
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
-#include <linux/module.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/ctype.h>
+#include <linex/usb.h>
+#include <linex/moduleparam.h>
+#include <linex/mutex.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/audio-v2.h>
+#include <linex/usb/audio-v3.h>
+#include <linex/module.h>
 
 #include <sound/control.h>
 #include <sound/core.h>
@@ -1152,7 +1152,7 @@ static const struct usb_device_id usb_audio_ids [] = {
 MODULE_DEVICE_TABLE(usb, usb_audio_ids);
 
 /*
- * entry point for linux usb interface
+ * entry point for linex usb interface
  */
 
 static struct usb_driver usb_audio_driver = {

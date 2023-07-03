@@ -5,8 +5,8 @@
  * Copyright (C) 2008 ARM Limited
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
 #include <asm/cputype.h>
 #include <asm/system_info.h>

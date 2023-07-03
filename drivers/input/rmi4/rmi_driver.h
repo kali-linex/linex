@@ -7,10 +7,10 @@
 #ifndef _RMI_DRIVER_H
 #define _RMI_DRIVER_H
 
-#include <linux/ctype.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
-#include <linux/input.h>
+#include <linex/ctype.h>
+#include <linex/hrtimer.h>
+#include <linex/ktime.h>
+#include <linex/input.h>
 #include "rmi_bus.h"
 
 #define SYNAPTICS_INPUT_DEVICE_NAME "Synaptics RMI4 Touch Sensor"

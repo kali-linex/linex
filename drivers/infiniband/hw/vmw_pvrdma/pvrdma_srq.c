@@ -44,8 +44,8 @@
  */
 
 #include <asm/page.h>
-#include <linux/io.h>
-#include <linux/wait.h>
+#include <linex/io.h>
+#include <linex/wait.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_user_verbs.h>

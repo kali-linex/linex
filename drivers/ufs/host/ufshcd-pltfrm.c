@@ -8,10 +8,10 @@
  *	Vinayak Holikatti <h.vinayak@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
 
 #include <ufs/ufshcd.h>
 #include "ufshcd-pltfrm.h"

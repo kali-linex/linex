@@ -5,20 +5,20 @@
  * Author: Florian Westphal <fw@strlen.de>
  */
 
-#include <linux/bpf.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/slab.h>
+#include <linex/bpf.h>
+#include <linex/module.h>
+#include <linex/kallsyms.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/errno.h>
+#include <linex/netlink.h>
+#include <linex/slab.h>
 
-#include <linux/netfilter.h>
+#include <linex/netfilter.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_hook.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_hook.h>
 
 #include <net/netfilter/nf_tables.h>
 #include <net/sock.h>

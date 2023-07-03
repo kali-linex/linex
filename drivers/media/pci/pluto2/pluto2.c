@@ -2,22 +2,22 @@
 /*
  * pluto2.c - Satelco Easywatch Mobile Terrestrial Receiver [DVB-T]
  *
- * Copyright (C) 2005 Andreas Oberritter <obi@linuxtv.org>
+ * Copyright (C) 2005 Andreas Oberritter <obi@linextv.org>
  *
  * based on pluto2.c 1.10 - http://instinct-wp8.no-ip.org/pluto/
  *	by Dany Salman <salmandany@yahoo.fr>
  *	Copyright (c) 2004 TDF
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
 #include <media/demux.h>
 #include <media/dmxdev.h>
@@ -782,6 +782,6 @@ static struct pci_driver pluto2_driver = {
 
 module_pci_driver(pluto2_driver);
 
-MODULE_AUTHOR("Andreas Oberritter <obi@linuxtv.org>");
+MODULE_AUTHOR("Andreas Oberritter <obi@linextv.org>");
 MODULE_DESCRIPTION("Pluto2 driver");
 MODULE_LICENSE("GPL");

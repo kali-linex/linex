@@ -8,26 +8,26 @@
  * Nitro is a hypervisor that has been developed by Amazon.
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/hugetlb.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nitro_enclaves.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/range.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <uapi/linux/vm_sockets.h>
+#include <linex/anon_inodes.h>
+#include <linex/capability.h>
+#include <linex/cpu.h>
+#include <linex/device.h>
+#include <linex/file.h>
+#include <linex/hugetlb.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nitro_enclaves.h>
+#include <linex/pci.h>
+#include <linex/poll.h>
+#include <linex/range.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <uapi/linex/vm_sockets.h>
 
 #include "ne_misc_dev.h"
 #include "ne_pci_dev.h"
@@ -330,13 +330,13 @@ static int ne_setup_cpu_pool(const char *ne_cpu_list)
 
 	/*
 	 * CPUs that are given to enclave(s) should not be considered online
-	 * by Linux anymore, as the hypervisor will degrade them to floating.
+	 * by Linex anymore, as the hypervisor will degrade them to floating.
 	 * The physical CPUs (full cores) are carved out of the primary / parent
 	 * VM and given to the enclave VM. The same number of vCPUs would run
 	 * on less pCPUs for the primary / parent VM.
 	 *
 	 * We offline them here, to not degrade performance and expose correct
-	 * topology to Linux and user space.
+	 * topology to Linex and user space.
 	 */
 	for_each_cpu(cpu, cpu_pool) {
 		rc = remove_cpu(cpu);
@@ -1311,7 +1311,7 @@ static long ne_enclave_ioctl(struct file *file, unsigned int cmd, unsigned long 
 		 * VMADDR_CID_LOCAL = 1
 		 * VMADDR_CID_HOST = 2
 		 * Note: 0 is used as a placeholder to auto-generate an enclave CID.
-		 * http://man7.org/linux/man-pages/man7/vsock.7.html
+		 * http://man7.org/linex/man-pages/man7/vsock.7.html
 		 */
 		if (enclave_start_info.enclave_cid > 0 &&
 		    enclave_start_info.enclave_cid <= VMADDR_CID_HOST) {

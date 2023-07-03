@@ -2,8 +2,8 @@
 
 #define pr_fmt(fmt) "ipmi_hardcode: " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
 #include "ipmi_si.h"
 #include "ipmi_plat_data.h"
 

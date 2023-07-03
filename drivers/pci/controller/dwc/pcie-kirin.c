@@ -8,25 +8,25 @@
  * Author: Xiaowei Song <songxiaowei@huawei.com>
  */
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/phy/phy.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/resource.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/compiler.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/of_pci.h>
+#include <linex/phy/phy.h>
+#include <linex/pci.h>
+#include <linex/pci_regs.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/resource.h>
+#include <linex/types.h>
 #include "pcie-designware.h"
 
 #define to_kirin_pcie(x) dev_get_drvdata((x)->dev)

@@ -33,31 +33,31 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * IDT PCIe-switch NTB Linux driver
+ * IDT PCIe-switch NTB Linex driver
  *
  * Contact Information:
  * Serge Semin <fancer.lancer@gmail.com>, <Sergey.Semin@t-platforms.ru>
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/sizes.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/ntb.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/sizes.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/aer.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/debugfs.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/ntb.h>
 
 #include "ntb_hw_idt.h"
 
@@ -972,7 +972,7 @@ static int idt_ntb_link_disable(struct ntb_dev *ntb)
  * a scanning algorithm to have all the possible memory windows configuration
  * covered.
  *
- * NOTE 1 BAR setup must be done before Linux kernel enumerated NT-function
+ * NOTE 1 BAR setup must be done before Linex kernel enumerated NT-function
  * of any port, so this driver would have memory windows configurations fixed.
  * In this way all initializations must be performed either by platform BIOS
  * or using EEPROM connected to IDT PCIe-switch master SMBus.

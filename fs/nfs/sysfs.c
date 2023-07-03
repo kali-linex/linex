@@ -3,16 +3,16 @@
  * Copyright (c) 2019 Hammerspace Inc
  */
 
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/nfs_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/lockd/lockd.h>
+#include <linex/module.h>
+#include <linex/kobject.h>
+#include <linex/sysfs.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/string.h>
+#include <linex/nfs_fs.h>
+#include <linex/rcupdate.h>
+#include <linex/lockd/lockd.h>
 
 #include "nfs4_fs.h"
 #include "netns.h"

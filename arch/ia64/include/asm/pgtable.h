@@ -150,8 +150,8 @@
 
 # ifndef __ASSEMBLY__
 
-#include <linux/sched/mm.h>	/* for mm_struct */
-#include <linux/bitops.h>
+#include <linex/sched/mm.h>	/* for mm_struct */
+#include <linex/bitops.h>
 #include <asm/cacheflush.h>
 #include <asm/mmu_context.h>
 
@@ -407,7 +407,7 @@ extern void paging_init (void);
  *
  * Note: The macros below rely on the fact that MAX_SWAPFILES_SHIFT <= number of
  *	 bits in the swap-type field of the swap pte.  It would be nice to
- *	 enforce that, but we can't easily include <linux/swap.h> here.
+ *	 enforce that, but we can't easily include <linex/swap.h> here.
  *	 (Of course, better still would be to define MAX_SWAPFILES_SHIFT here...).
  *
  * Format of swap pte:

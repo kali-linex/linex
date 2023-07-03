@@ -5,17 +5,17 @@
  * Copyright (C) 2017 Synopsys
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
 /* PLL registers addresses */
 #define PLL_REG_IDIV	0x0

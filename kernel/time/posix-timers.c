@@ -9,28 +9,28 @@
  *
  * These are all the functions necessary to implement POSIX clocks & timers
  */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/sched/task.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/sched/task.h>
 
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/hash.h>
-#include <linux/posix-clock.h>
-#include <linux/posix-timers.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/hashtable.h>
-#include <linux/compat.h>
-#include <linux/nospec.h>
-#include <linux/time_namespace.h>
+#include <linex/uaccess.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/compiler.h>
+#include <linex/hash.h>
+#include <linex/posix-clock.h>
+#include <linex/posix-timers.h>
+#include <linex/syscalls.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/export.h>
+#include <linex/hashtable.h>
+#include <linex/compat.h>
+#include <linex/nospec.h>
+#include <linex/time_namespace.h>
 
 #include "timekeeping.h"
 #include "posix-timers.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon_rotate.c -- Software Rotation
+ *  linex/drivers/video/console/fbcon_rotate.c -- Software Rotation
  *
  *      Copyright (C) 2005 Antonino Daplas <adaplas @pol.net>
  *
@@ -8,12 +8,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/fb.h>
+#include <linex/vt_kern.h>
+#include <linex/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 #include "fbcon_rotate.h"

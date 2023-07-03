@@ -6,9 +6,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/xattr.h>
 #include "internal.h"
 
 /*

@@ -7,9 +7,9 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/buffer_head.h>
 #include "efs.h"
 
 static int efs_symlink_read_folio(struct file *file, struct folio *folio)

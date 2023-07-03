@@ -4,14 +4,14 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/spi/spi.h>
 
 #define DEFAULT_NGPIO 8
 

@@ -7,20 +7,20 @@
  * Jonas Jensen <jonas.jensen@gmail.com>
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
-#include <linux/bitops.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_dma.h>
+#include <linex/bitops.h>
 
 #include <asm/cacheflush.h>
 

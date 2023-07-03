@@ -7,16 +7,16 @@
 // Datasheet for BD71837MWV available from
 // https://www.rohm.com/datasheet/BD71837MWV/bd71837mwv-e
 
-#include <linux/gpio_keys.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/rohm-bd718x7.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linex/gpio_keys.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/rohm-bd718x7.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
 
 static struct gpio_keys_button button = {
 	.code = KEY_POWER,

@@ -7,20 +7,20 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/spi-nor.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/spi/flash.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/spi-nor.h>
+#include <linex/mutex.h>
+#include <linex/of_platform.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/spi/flash.h>
 
 #include "core.h"
 

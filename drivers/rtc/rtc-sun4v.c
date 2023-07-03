@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
 
 #include <asm/hypervisor.h>
 

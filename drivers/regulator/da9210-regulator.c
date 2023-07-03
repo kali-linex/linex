@@ -3,16 +3,16 @@
 // da9210-regulator.c - Regulator device driver for DA9210
 // Copyright (C) 2013  Dialog Semiconductor Ltd.
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/of_device.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/of_device.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regmap.h>
 
 #include "da9210-regulator.h"
 

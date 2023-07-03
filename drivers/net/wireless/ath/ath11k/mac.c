@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The Linex Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
-#include <linux/bitfield.h>
-#include <linux/inetdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/bitfield.h>
+#include <linex/inetdevice.h>
 #include <net/if_inet6.h>
 #include <net/ipv6.h>
 

@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /***************************************************************************
- *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linux-vserver.org>  *
+ *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linex-vserver.org>  *
  *                                                                         *
  *   Based on Logitech G13 driver (v0.4)                                   *
  *     Copyright (C) 2009 by Rick L. Vinyard, Jr. <rvinyard@cs.nmsu.edu>   *
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
-#include <linux/input.h>
+#include <linex/hid.h>
+#include <linex/hid-debug.h>
+#include <linex/input.h>
 #include "hid-ids.h"
 
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
+#include <linex/fb.h>
+#include <linex/vmalloc.h>
+#include <linex/backlight.h>
+#include <linex/lcd.h>
 
-#include <linux/leds.h>
+#include <linex/leds.h>
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/debugfs.h>
 
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <linex/completion.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
 
 #include "hid-picolcd.h"
 

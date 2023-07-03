@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/perf_event.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/perf_event.h>
 #include <asm/unistd.h>
 #include <sys/ptrace.h>
 #include <sys/wait.h>

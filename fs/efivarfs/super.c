@@ -4,16 +4,16 @@
  * Copyright (C) 2012 Jeremy Kerr <jeremy.kerr@canonical.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/ucs2_string.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
-#include <linux/statfs.h>
+#include <linex/ctype.h>
+#include <linex/efi.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/ucs2_string.h>
+#include <linex/slab.h>
+#include <linex/magic.h>
+#include <linex/statfs.h>
 
 #include "internal.h"
 
@@ -153,7 +153,7 @@ static int efivarfs_callback(efi_char16_t *name16, efi_guid_t vendor,
 	int err = -ENOMEM;
 	bool is_removable = false;
 
-	if (guid_equal(&vendor, &LINUX_EFI_RANDOM_SEED_TABLE_GUID))
+	if (guid_equal(&vendor, &LINEX_EFI_RANDOM_SEED_TABLE_GUID))
 		return 0;
 
 	entry = kzalloc(sizeof(*entry), GFP_KERNEL);

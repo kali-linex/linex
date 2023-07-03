@@ -24,14 +24,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/stop_machine.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/stop_machine.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 
 #define PFX	KBUILD_MODNAME ": "

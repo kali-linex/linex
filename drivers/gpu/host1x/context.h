@@ -8,8 +8,8 @@
 #ifndef __HOST1X_CONTEXT_H
 #define __HOST1X_CONTEXT_H
 
-#include <linux/mutex.h>
-#include <linux/refcount.h>
+#include <linex/mutex.h>
+#include <linex/refcount.h>
 
 struct host1x;
 

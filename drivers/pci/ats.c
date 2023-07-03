@@ -9,10 +9,10 @@
  * Copyright (C) 2011 Advanced Micro Devices,
  */
 
-#include <linux/export.h>
-#include <linux/pci-ats.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/pci-ats.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
 #include "pci.h"
 

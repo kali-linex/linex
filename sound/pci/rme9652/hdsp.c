@@ -7,16 +7,16 @@
  *                          Thomas Charbonnel
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/math64.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
+#include <linex/nospec.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -41,7 +41,7 @@ module_param_array(id, charp, NULL, 0444);
 MODULE_PARM_DESC(id, "ID string for RME Hammerfall DSP interface.");
 module_param_array(enable, bool, NULL, 0444);
 MODULE_PARM_DESC(enable, "Enable/disable specific Hammerfall DSP soundcards.");
-MODULE_AUTHOR("Paul Davis <paul@linuxaudiosystems.com>, Marcus Andersson, Thomas Charbonnel <thomas@undata.org>");
+MODULE_AUTHOR("Paul Davis <paul@linexaudiosystems.com>, Marcus Andersson, Thomas Charbonnel <thomas@undata.org>");
 MODULE_DESCRIPTION("RME Hammerfall DSP");
 MODULE_LICENSE("GPL");
 MODULE_FIRMWARE("rpm_firmware.bin");

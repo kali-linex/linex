@@ -7,12 +7,12 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm831x/core.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/wm831x/core.h>
 
 struct wm831x_clk {
 	struct wm831x *wm831x;

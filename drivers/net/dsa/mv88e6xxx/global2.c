@@ -4,13 +4,13 @@
  *
  * Copyright (c) 2008 Marvell Semiconductor
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire Linex Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinex.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <linex/bitfield.h>
+#include <linex/interrupt.h>
+#include <linex/irqdomain.h>
 
 #include "chip.h"
 #include "global1.h" /* for MV88E6XXX_G1_STS_IRQ_DEVICE */

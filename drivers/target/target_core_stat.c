@@ -7,19 +7,19 @@
  *
  * (c) Copyright 2006-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@linex-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/configfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/utsname.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

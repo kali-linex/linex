@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <linex/types.h>
+#include <linex/ip.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/icmp.h>
+#include <linex/sysctl.h>
 #include <net/route.h>
 #include <net/ip.h>
 
@@ -16,7 +16,7 @@
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_bridge.h>
 
-#include <linux/netfilter/nf_tables.h>
+#include <linex/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables.h>
 
 #include "../br_private.h"

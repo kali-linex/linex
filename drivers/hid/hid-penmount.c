@@ -11,8 +11,8 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/hid.h>
+#include <linex/module.h>
+#include <linex/hid.h>
 #include "hid-ids.h"
 
 static int penmount_input_mapping(struct hid_device *hdev,

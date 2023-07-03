@@ -7,16 +7,16 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/kobject.h>
+#include <linex/sysfs.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/delay.h>
 
 #include <asm/opal.h>
 

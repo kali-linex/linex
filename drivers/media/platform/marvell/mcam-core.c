@@ -6,25 +6,25 @@
  * Copyright 2011 Jonathan Corbet corbet@lwn.net
  * Copyright 2018 Lubomir Rintel <lkundrak@v3.sk>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/videodev2.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/wait.h>
+#include <linex/list.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/videodev2.h>
+#include <linex/pm_runtime.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

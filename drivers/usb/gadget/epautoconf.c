@@ -5,16 +5,16 @@
  * Copyright (C) 2004 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/device.h>
 
-#include <linux/ctype.h>
-#include <linux/string.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 /**
  * usb_ep_autoconfig_ss() - choose an endpoint matching the ep

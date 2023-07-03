@@ -14,19 +14,19 @@
  *
  */
 
-#include <linux/compat.h>
-#include <linux/workqueue.h>
+#include <linex/compat.h>
+#include <linex/workqueue.h>
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/audit.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <linex/pfkeyv2.h>
+#include <linex/ipsec.h>
+#include <linex/module.h>
+#include <linex/cache.h>
+#include <linex/audit.h>
+#include <linex/uaccess.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
 
 #include <crypto/aead.h>
 

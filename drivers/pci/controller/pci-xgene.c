@@ -6,20 +6,20 @@
  *
  * Author: Tanmay Inamdar <tinamdar@apm.com>.
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/memblock.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/pci-acpi.h>
+#include <linex/pci-ecam.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include "../pci.h"
 

@@ -13,8 +13,8 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/math.h>
+#include <linex/kernel.h>
+#include <linex/math.h>
 
 #include "ia_css_pipe_binarydesc.h"
 #include "ia_css_frame_format.h"

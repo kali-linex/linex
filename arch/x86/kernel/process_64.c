@@ -3,7 +3,7 @@
  *  Copyright (C) 1995  Linus Torvalds
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinex.com>, May 2000
  *
  *  X86-64 port
  *	Andi Kleen.
@@ -15,31 +15,31 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/prctl.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/ftrace.h>
-#include <linux/syscalls.h>
-#include <linux/iommu.h>
+#include <linex/cpu.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/elfcore.h>
+#include <linex/smp.h>
+#include <linex/slab.h>
+#include <linex/user.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/ptrace.h>
+#include <linex/notifier.h>
+#include <linex/kprobes.h>
+#include <linex/kdebug.h>
+#include <linex/prctl.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
+#include <linex/ftrace.h>
+#include <linex/syscalls.h>
+#include <linex/iommu.h>
 
 #include <asm/processor.h>
 #include <asm/pkru.h>
@@ -223,7 +223,7 @@ static __always_inline void save_base_legacy(struct task_struct *prev_p,
 		 * context switch between 64-bit programs), and avoiding
 		 * the RDMSR helps a lot, so we just assume that whatever
 		 * value is already saved is correct.  This matches historical
-		 * Linux behavior, so it won't break existing applications.
+		 * Linex behavior, so it won't break existing applications.
 		 *
 		 * To avoid leaking state, on non-X86_BUG_NULL_SEG CPUs, if we
 		 * report that the base is zero, it needs to actually be zero:
@@ -233,7 +233,7 @@ static __always_inline void save_base_legacy(struct task_struct *prev_p,
 		/*
 		 * If the selector is 1, 2, or 3, then the base is zero on
 		 * !X86_BUG_NULL_SEG CPUs and could be anything on
-		 * X86_BUG_NULL_SEG CPUs.  In the latter case, Linux
+		 * X86_BUG_NULL_SEG CPUs.  In the latter case, Linex
 		 * has never attempted to preserve the base across context
 		 * switches.
 		 *

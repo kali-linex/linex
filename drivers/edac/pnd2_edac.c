@@ -16,19 +16,19 @@
  * rank, bank, row and column using the appropriate "dunit_ops" functions/parameters.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
-#include <linux/bitmap.h>
-#include <linux/math64.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_data/x86/p2sb.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/edac.h>
+#include <linex/mmzone.h>
+#include <linex/smp.h>
+#include <linex/bitmap.h>
+#include <linex/math64.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_data/x86/p2sb.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

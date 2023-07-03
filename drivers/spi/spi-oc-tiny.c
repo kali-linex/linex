@@ -12,15 +12,15 @@
  *	Ben Dooks <ben@simtec.co.uk>
  */
 
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/spi_oc_tiny.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi_bitbang.h>
+#include <linex/spi/spi_oc_tiny.h>
+#include <linex/io.h>
+#include <linex/of.h>
 
 #define DRV_NAME "spi_oc_tiny"
 
@@ -184,7 +184,7 @@ static irqreturn_t tiny_spi_irq(int irq, void *dev)
 }
 
 #ifdef CONFIG_OF
-#include <linux/of_gpio.h>
+#include <linex/of_gpio.h>
 
 static int tiny_spi_of_probe(struct platform_device *pdev)
 {

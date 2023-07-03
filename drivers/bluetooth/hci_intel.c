@@ -6,18 +6,18 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/wait.h>
+#include <linex/tty.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/acpi.h>
+#include <linex/interrupt.h>
+#include <linex/pm_runtime.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

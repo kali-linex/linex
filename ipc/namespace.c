@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/namespace.c
+ * linex/ipc/namespace.c
  * Copyright (C) 2006 Pavel Emelyanov <xemul@openvz.org> OpenVZ, SWsoft Inc.
  */
 
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rcupdate.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_ns.h>
-#include <linux/sched/task.h>
+#include <linex/ipc.h>
+#include <linex/msg.h>
+#include <linex/ipc_namespace.h>
+#include <linex/rcupdate.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/cred.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/user_namespace.h>
+#include <linex/proc_ns.h>
+#include <linex/sched/task.h>
 
 #include "util.h"
 

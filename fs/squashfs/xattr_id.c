@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Linex
  *
  * Copyright (c) 2010
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -13,9 +13,9 @@
  * into the on disk location of the xattr data.
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/vfs.h>
+#include <linex/slab.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

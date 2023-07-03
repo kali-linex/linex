@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2019, The Linex Foundation. All rights reserved.
  * Copyright (c) 2019, Linaro Limited
  */
 
@@ -369,7 +369,7 @@
 &pon_resin {
 	status = "okay";
 
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 };
 
 &qupv3_id_1 {

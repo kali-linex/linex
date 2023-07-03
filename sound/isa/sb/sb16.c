@@ -5,11 +5,11 @@
  */
 
 #include <asm/dma.h>
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/pnp.h>
+#include <linex/err.h>
+#include <linex/isa.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/sb16_csp.h>

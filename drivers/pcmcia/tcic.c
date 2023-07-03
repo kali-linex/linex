@@ -31,20 +31,20 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/platform_device.h>
+#include <linex/bitops.h>
 
 #include <asm/io.h>
 
@@ -285,7 +285,7 @@ static u_int __init irq_scan(u_int mask0)
 /*======================================================================
 
     See if a card is present, powered up, in IO mode, and already
-    bound to a (non-PCMCIA) Linux driver.
+    bound to a (non-PCMCIA) Linex driver.
 
     We make an exception for cards that look like serial devices.
     

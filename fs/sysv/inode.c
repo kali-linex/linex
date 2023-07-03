@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/sysv/inode.c
+ *  linex/fs/sysv/inode.c
  *
  *  minix/inode.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -22,13 +22,13 @@
  *  the superblock.
  */
 
-#include <linux/highuid.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/namei.h>
+#include <linex/highuid.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/buffer_head.h>
+#include <linex/vfs.h>
+#include <linex/writeback.h>
+#include <linex/namei.h>
 #include <asm/byteorder.h>
 #include "sysv.h"
 

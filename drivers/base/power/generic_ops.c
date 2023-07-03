@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2010 Rafael J. Wysocki <rjw@sisk.pl>, Novell Inc.
  */
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/export.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/export.h>
 
 #ifdef CONFIG_PM
 /**

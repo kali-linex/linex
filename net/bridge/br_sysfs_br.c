@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Sysfs attributes of bridge
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Stephen Hemminger		<shemminger@osdl.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/times.h>
-#include <linux/sched/signal.h>
+#include <linex/capability.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/rtnetlink.h>
+#include <linex/spinlock.h>
+#include <linex/times.h>
+#include <linex/sched/signal.h>
 
 #include "br_private.h"
 

@@ -10,9 +10,9 @@
 #define pr_fmt(fmt)	"AMD-Vi: " fmt
 #define dev_fmt(fmt)	pr_fmt(fmt)
 
-#include <linux/bitops.h>
-#include <linux/io-pgtable.h>
-#include <linux/kernel.h>
+#include <linex/bitops.h>
+#include <linex/io-pgtable.h>
+#include <linex/kernel.h>
 
 #include <asm/barrier.h>
 

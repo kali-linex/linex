@@ -2,10 +2,10 @@
 #ifndef SOUND_FIREWIRE_AMDTP_H_INCLUDED
 #define SOUND_FIREWIRE_AMDTP_H_INCLUDED
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
 #include <sound/asound.h>
 #include "packets-buffer.h"
 

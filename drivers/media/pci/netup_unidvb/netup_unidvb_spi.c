@@ -10,9 +10,9 @@
  */
 
 #include "netup_unidvb.h"
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/mtd/partitions.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/flash.h>
+#include <linex/mtd/partitions.h>
 #include <mtd/mtd-abi.h>
 
 #define NETUP_SPI_CTRL_IRQ	0x1000

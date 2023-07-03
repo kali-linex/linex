@@ -2,12 +2,12 @@
 #ifndef _ASM_X86_APICDEF_H
 #define _ASM_X86_APICDEF_H
 
-#include <linux/bits.h>
+#include <linex/bits.h>
 
 /*
  * Constants for various Intel APICs. (local APIC, IOAPIC, etc.)
  *
- * Alan Cox <Alan.Cox@linux.org>, 1995.
+ * Alan Cox <Alan.Cox@linex.org>, 1995.
  * Ingo Molnar <mingo@redhat.com>, 1999, 2000
  */
 

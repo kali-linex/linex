@@ -5,8 +5,8 @@
  * Copyright (C) 2010-2011 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
 
 #include "ad525x_dpot.h"
 

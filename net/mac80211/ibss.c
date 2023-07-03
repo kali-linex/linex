@@ -12,13 +12,13 @@
  * Copyright(c) 2018-2023 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/if_ether.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/etherdevice.h>
+#include <linex/rtnetlink.h>
 #include <net/mac80211.h>
 
 #include "ieee80211_i.h"

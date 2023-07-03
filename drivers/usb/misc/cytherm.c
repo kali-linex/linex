@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-/* -*- linux-c -*-
+/* -*- linex-c -*-
  * Cypress USB Thermometer driver 
  * 
- * Copyright (c) 2004 Erik Rigtorp <erkki@linux.nu> <erik@rigtorp.com>
+ * Copyright (c) 2004 Erik Rigtorp <erkki@linex.nu> <erik@rigtorp.com>
  * 
  * This driver works with Elektor magazine USB Interface as published in 
  * issue #291. It should also work with the original starter kit/demo board
@@ -10,11 +10,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/usb.h>
 
 #define DRIVER_AUTHOR "Erik Rigtorp"
 #define DRIVER_DESC "Cypress USB Thermometer driver"

@@ -6,7 +6,7 @@
 #ifndef __DRIVERS_CLK_TEGRA_CVB_H
 #define __DRIVERS_CLK_TEGRA_CVB_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct device;
 

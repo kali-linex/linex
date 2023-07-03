@@ -3,14 +3,14 @@
  * Copyright (C) 2018 Mellanox Technologies.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

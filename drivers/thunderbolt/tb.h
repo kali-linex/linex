@@ -9,11 +9,11 @@
 #ifndef TB_H_
 #define TB_H_
 
-#include <linux/nvmem-provider.h>
-#include <linux/pci.h>
-#include <linux/thunderbolt.h>
-#include <linux/uuid.h>
-#include <linux/bitfield.h>
+#include <linex/nvmem-provider.h>
+#include <linex/pci.h>
+#include <linex/thunderbolt.h>
+#include <linex/uuid.h>
+#include <linex/bitfield.h>
 
 #include "tb_regs.h"
 #include "ctl.h"

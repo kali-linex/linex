@@ -3,16 +3,16 @@
 // Copyright (c) 2014 MediaTek Inc.
 // Author: Flora Fu <flora.fu@mediatek.com>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6397/registers.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6397-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/mfd/mt6397/registers.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/mt6397-regulator.h>
+#include <linex/regulator/of_regulator.h>
 #include <dt-bindings/regulator/mediatek,mt6397-regulator.h>
 
 /*

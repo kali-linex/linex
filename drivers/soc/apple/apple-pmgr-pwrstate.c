@@ -2,20 +2,20 @@
 /*
  * Apple SoC PMGR device power state driver
  *
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi Linex Contributors
  */
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reset-controller.h>
-#include <linux/module.h>
+#include <linex/bitops.h>
+#include <linex/bitfield.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/reset-controller.h>
+#include <linex/module.h>
 
 #define APPLE_PMGR_RESET        BIT(31)
 #define APPLE_PMGR_AUTO_ENABLE  BIT(28)

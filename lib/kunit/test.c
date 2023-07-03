@@ -9,12 +9,12 @@
 #include <kunit/resource.h>
 #include <kunit/test.h>
 #include <kunit/test-bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/panic.h>
-#include <linux/sched/debug.h>
-#include <linux/sched.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/panic.h>
+#include <linex/sched/debug.h>
+#include <linex/sched.h>
 
 #include "debugfs.h"
 #include "hooks-impl.h"

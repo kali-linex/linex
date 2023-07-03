@@ -9,9 +9,9 @@
  * Copyright (C) 2019 Gautam Ramakrishnan <gautamramk@gmail.com>
  */
 
-#include <linux/jhash.h>
-#include <linux/sizes.h>
-#include <linux/vmalloc.h>
+#include <linex/jhash.h>
+#include <linex/sizes.h>
+#include <linex/vmalloc.h>
 #include <net/pkt_cls.h>
 #include <net/pie.h>
 

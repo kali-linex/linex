@@ -21,9 +21,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <media/i2c/ths7303.h>
 #include <media/v4l2-device.h>

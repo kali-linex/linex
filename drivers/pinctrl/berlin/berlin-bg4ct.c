@@ -7,10 +7,10 @@
  * Author: Jisheng Zhang <jszhang@marvell.com>
  */
 
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #include "berlin.h"
 

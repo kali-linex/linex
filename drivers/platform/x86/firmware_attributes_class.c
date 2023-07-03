@@ -2,9 +2,9 @@
 
 /* Firmware attributes class helper module */
 
-#include <linux/mutex.h>
-#include <linux/device/class.h>
-#include <linux/module.h>
+#include <linex/mutex.h>
+#include <linex/device/class.h>
+#include <linex/module.h>
 #include "firmware_attributes_class.h"
 
 static DEFINE_MUTEX(fw_attr_lock);

@@ -1,12 +1,12 @@
 #ifndef IOU_CORE_H
 #define IOU_CORE_H
 
-#include <linux/errno.h>
-#include <linux/lockdep.h>
-#include <linux/resume_user_mode.h>
-#include <linux/kasan.h>
-#include <linux/io_uring_types.h>
-#include <uapi/linux/eventpoll.h>
+#include <linex/errno.h>
+#include <linex/lockdep.h>
+#include <linex/resume_user_mode.h>
+#include <linex/kasan.h>
+#include <linex/io_uring_types.h>
+#include <uapi/linex/eventpoll.h>
 #include "io-wq.h"
 #include "slist.h"
 #include "filetable.h"

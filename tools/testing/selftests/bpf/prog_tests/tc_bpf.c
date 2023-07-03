@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <test_progs.h>
-#include <linux/pkt_cls.h>
+#include <linex/pkt_cls.h>
 
 #include "test_tc_bpf.skel.h"
 

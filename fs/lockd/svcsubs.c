@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/svcsubs.c
+ * linex/fs/lockd/svcsubs.c
  *
  * Various support routines for the NLM server.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/lockd/lockd.h>
-#include <linux/lockd/share.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <uapi/linux/nfs2.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/time.h>
+#include <linex/in.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/lockd/lockd.h>
+#include <linex/lockd/share.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <uapi/linex/nfs2.h>
 
 #define NLMDBG_FACILITY		NLMDBG_SVCSUBS
 

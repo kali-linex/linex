@@ -3,7 +3,7 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/sort.h>
+#include <linex/sort.h>
 
 #include "i915_drv.h"
 

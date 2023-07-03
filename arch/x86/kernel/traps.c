@@ -3,7 +3,7 @@
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinex.com>, May 2000
  */
 
 /*
@@ -12,35 +12,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/context_tracking.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsan.h>
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/hardirq.h>
-#include <linux/atomic.h>
-#include <linux/iommu.h>
+#include <linex/context_tracking.h>
+#include <linex/interrupt.h>
+#include <linex/kallsyms.h>
+#include <linex/kmsan.h>
+#include <linex/spinlock.h>
+#include <linex/kprobes.h>
+#include <linex/uaccess.h>
+#include <linex/kdebug.h>
+#include <linex/kgdb.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/ptrace.h>
+#include <linex/uprobes.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/kexec.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/bug.h>
+#include <linex/nmi.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/hardirq.h>
+#include <linex/atomic.h>
+#include <linex/iommu.h>
 
 #include <asm/stacktrace.h>
 #include <asm/processor.h>
@@ -1380,7 +1380,7 @@ static void ve_raise_fault(struct pt_regs *regs, long error_code)
  *  * Specific CPUID leaf accesses
  *  * Access to specific guest physical addresses
  *
- * In the settings that Linux will run in, virtualization exceptions are
+ * In the settings that Linex will run in, virtualization exceptions are
  * never generated on accesses to normal, TD-private memory that has been
  * accepted (by BIOS or with tdx_enc_status_changed()).
  *

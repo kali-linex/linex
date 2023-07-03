@@ -8,8 +8,8 @@
 
 #include "i915_priolist_types.h"
 
-#include <linux/bitfield.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/types.h>
 
 #include "intel_context.h"
 

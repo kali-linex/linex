@@ -4,11 +4,11 @@
  * as specified in rfc8998
  * https://datatracker.ietf.org/doc/html/rfc8998
  *
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linex.alibaba.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <linex/linkage.h>
+#include <linex/cfi_types.h>
 #include <asm/assembler.h>
 #include "sm4-ce-asm.h"
 

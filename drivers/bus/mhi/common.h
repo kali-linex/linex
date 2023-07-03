@@ -7,8 +7,8 @@
 #ifndef _MHI_COMMON_H
 #define _MHI_COMMON_H
 
-#include <linux/bitfield.h>
-#include <linux/mhi.h>
+#include <linex/bitfield.h>
+#include <linex/mhi.h>
 
 /* MHI registers */
 #define MHIREGLEN			0x00

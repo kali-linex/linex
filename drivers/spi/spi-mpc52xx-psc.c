@@ -7,18 +7,18 @@
  * Copyright (C) 2006 TOPTICA Photonics AG.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/workqueue.h>
+#include <linex/completion.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/spi/spi.h>
+#include <linex/slab.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc52xx_psc.h>

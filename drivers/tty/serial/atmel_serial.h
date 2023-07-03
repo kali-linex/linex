@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
- * include/linux/atmel_serial.h
+ * include/linex/atmel_serial.h
  *
  * Copyright (C) 2005 Ivan Kokshaysky
  * Copyright (C) SAN People
@@ -9,7 +9,7 @@
  * Based on AT91RM9200 datasheet revision E.
  */
 
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 
 #ifndef ATMEL_SERIAL_H
 #define ATMEL_SERIAL_H

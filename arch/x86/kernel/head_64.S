@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/x86/kernel/head_64.S -- start in 32bit and switch to 64bit
+ *  linex/arch/x86/kernel/head_64.S -- start in 32bit and switch to 64bit
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  *  Copyright (C) 2000 Pavel Machek <pavel@suse.cz>
@@ -10,10 +10,10 @@
  */
 
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linex/linkage.h>
+#include <linex/threads.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
 #include <asm/segment.h>
 #include <asm/page.h>
 #include <asm/msr.h>

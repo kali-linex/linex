@@ -8,9 +8,9 @@
 
 #include "messages.h"
 
-#include <linux/hashtable.h>
-#include <linux/mutex.h>
-#include <linux/siphash.h>
+#include <linex/hashtable.h>
+#include <linex/mutex.h>
+#include <linex/siphash.h>
 
 struct wg_peer;
 

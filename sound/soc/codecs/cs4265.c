@@ -7,17 +7,17 @@
  * Author: Paul Handrigan <paul.handrigan@cirrus.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/gpio/consumer.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

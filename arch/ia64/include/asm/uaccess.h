@@ -33,11 +33,11 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/page-flags.h>
+#include <linex/compiler.h>
+#include <linex/page-flags.h>
 
 #include <asm/intrinsics.h>
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 #include <asm/io.h>
 #include <asm/extable.h>
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/of_address.h>
+#include <linex/err.h>
+#include <linex/pci.h>
+#include <linex/io.h>
+#include <linex/gfp.h>
+#include <linex/export.h>
+#include <linex/of_address.h>
 
 enum devm_ioremap_type {
 	DEVM_IOREMAP = 0,

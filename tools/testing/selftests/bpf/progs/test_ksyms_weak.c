@@ -5,7 +5,7 @@
  * Copyright (c) 2021 Google
  */
 
-#include "vmlinux.h"
+#include "vmlinex.h"
 
 #include <bpf/bpf_helpers.h>
 

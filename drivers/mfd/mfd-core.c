@@ -7,19 +7,19 @@
  * Copyright (c) 2007,2008 Dmitry Baryshkov
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/property.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regulator/consumer.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/list.h>
+#include <linex/property.h>
+#include <linex/mfd/core.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/regulator/consumer.h>
 
 static LIST_HEAD(mfd_of_node_list);
 

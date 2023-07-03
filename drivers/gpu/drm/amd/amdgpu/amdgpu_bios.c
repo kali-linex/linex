@@ -29,9 +29,9 @@
 #include "amdgpu.h"
 #include "atom.h"
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
 /*
  * BIOS.
  */

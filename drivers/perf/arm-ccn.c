@@ -4,16 +4,16 @@
  * Copyright (C) 2014 ARM Limited
  */
 
-#include <linux/ctype.h>
-#include <linux/hrtimer.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/ctype.h>
+#include <linex/hrtimer.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #define CCN_NUM_XP_PORTS 2
 #define CCN_NUM_VCS 4

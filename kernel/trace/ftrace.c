@@ -14,27 +14,27 @@
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
 
-#include <linux/stop_machine.h>
-#include <linux/clocksource.h>
-#include <linux/sched/task.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/tracefs.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>
-#include <linux/uaccess.h>
-#include <linux/bsearch.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/sort.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
-#include <linux/kprobes.h>
+#include <linex/stop_machine.h>
+#include <linex/clocksource.h>
+#include <linex/sched/task.h>
+#include <linex/kallsyms.h>
+#include <linex/security.h>
+#include <linex/seq_file.h>
+#include <linex/tracefs.h>
+#include <linex/hardirq.h>
+#include <linex/kthread.h>
+#include <linex/uaccess.h>
+#include <linex/bsearch.h>
+#include <linex/module.h>
+#include <linex/ftrace.h>
+#include <linex/sysctl.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/sort.h>
+#include <linex/list.h>
+#include <linex/hash.h>
+#include <linex/rcupdate.h>
+#include <linex/kprobes.h>
 
 #include <trace/events/sched.h>
 
@@ -125,7 +125,7 @@ struct ftrace_ops __rcu *ftrace_ops_list __read_mostly = &ftrace_list_end;
 ftrace_func_t ftrace_trace_function __read_mostly = ftrace_stub;
 struct ftrace_ops global_ops;
 
-/* Defined by vmlinux.lds.h see the comment above arch_ftrace_ops_list_func for details */
+/* Defined by vmlinex.lds.h see the comment above arch_ftrace_ops_list_func for details */
 void ftrace_ops_list_func(unsigned long ip, unsigned long parent_ip,
 			  struct ftrace_ops *op, struct ftrace_regs *fregs);
 
@@ -6486,7 +6486,7 @@ static int ftrace_process_locs(struct module *mod,
 		return 0;
 
 	/*
-	 * Sorting mcount in vmlinux at build time depend on
+	 * Sorting mcount in vmlinex at build time depend on
 	 * CONFIG_BUILDTIME_MCOUNT_SORT, while mcount loc in
 	 * modules can not be sorted at build time.
 	 */
@@ -7379,7 +7379,7 @@ out:
  * An architecture can pass partial regs with ftrace_ops and still
  * set the ARCH_SUPPORTS_FTRACE_OPS.
  *
- * In vmlinux.lds.h, ftrace_ops_list_func() is defined to be
+ * In vmlinex.lds.h, ftrace_ops_list_func() is defined to be
  * arch_ftrace_ops_list_func.
  */
 #if ARCH_SUPPORTS_FTRACE_OPS

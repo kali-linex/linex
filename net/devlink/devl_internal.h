@@ -3,12 +3,12 @@
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/xarray.h>
+#include <linex/mutex.h>
+#include <linex/netdevice.h>
+#include <linex/notifier.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
+#include <linex/xarray.h>
 #include <net/devlink.h>
 #include <net/net_namespace.h>
 

@@ -5,17 +5,17 @@
  * Copyright (C) 2009 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clkdev.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/gcd.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/clkdev.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>

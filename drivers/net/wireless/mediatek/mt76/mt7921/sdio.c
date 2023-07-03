@@ -3,13 +3,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/mmc/sdio_func.h>
 
 #include "mt7921.h"
 #include "../sdio.h"

@@ -4,10 +4,10 @@
  *
  * Copyright IBM Corporation, 2019
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linex.ibm.com>
  */
 
-#include <linux/kvm_para.h>
+#include <linex/kvm_para.h>
 
 //////////////////////////////////////////////////////////////////////////////
 //

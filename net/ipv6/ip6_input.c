@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 input
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *	Ian P. Morris		<I.P.Morris@soton.ac.uk>
  *
- *	Based in linux/net/ipv4/ip_input.c
+ *	Based in linex/net/ipv4/ip_input.c
  */
 /* Changes
  *
@@ -15,20 +15,20 @@
  *	YOSHIFUJI Hideaki @USAGI: Remove ipv6_parse_exthdrs().
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/mroute6.h>
-#include <linux/slab.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/in6.h>
+#include <linex/icmpv6.h>
+#include <linex/mroute6.h>
+#include <linex/slab.h>
+#include <linex/indirect_call_wrapper.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv6.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

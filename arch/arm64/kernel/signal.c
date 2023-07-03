@@ -6,19 +6,19 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/freezer.h>
-#include <linux/stddef.h>
-#include <linux/uaccess.h>
-#include <linux/sizes.h>
-#include <linux/string.h>
-#include <linux/resume_user_mode.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
+#include <linex/cache.h>
+#include <linex/compat.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/freezer.h>
+#include <linex/stddef.h>
+#include <linex/uaccess.h>
+#include <linex/sizes.h>
+#include <linex/string.h>
+#include <linex/resume_user_mode.h>
+#include <linex/ratelimit.h>
+#include <linex/syscalls.h>
 
 #include <asm/daifflags.h>
 #include <asm/debug-monitors.h>

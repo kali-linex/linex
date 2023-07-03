@@ -4,9 +4,9 @@
  *
  *  Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/export.h>
 
 #include "internals.h"
 

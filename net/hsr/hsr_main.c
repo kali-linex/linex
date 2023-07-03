@@ -7,11 +7,11 @@
  * Event handling for HSR and PRP devices.
  */
 
-#include <linux/netdevice.h>
+#include <linex/netdevice.h>
 #include <net/rtnetlink.h>
-#include <linux/rculist.h>
-#include <linux/timer.h>
-#include <linux/etherdevice.h>
+#include <linex/rculist.h>
+#include <linex/timer.h>
+#include <linex/etherdevice.h>
 #include "hsr_main.h"
 #include "hsr_device.h"
 #include "hsr_netlink.h"

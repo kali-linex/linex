@@ -9,7 +9,7 @@
  *	(c) 1999/2000 Henning Zabel <henning@uni-paderborn.de>
  *
  *
- * The driver brings the USB functions of the MDC800 to Linux.
+ * The driver brings the USB functions of the MDC800 to Linex.
  * To use the Camera you must support the USB Protocol of the camera
  * to the Kernel Node.
  * The Driver uses a misc device Node. Create it with :
@@ -72,20 +72,20 @@
  * (20/10/1999)
  */
 
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/spinlock.h>
+#include <linex/errno.h>
+#include <linex/random.h>
+#include <linex/poll.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
 
-#include <linux/usb.h>
-#include <linux/fs.h>
+#include <linex/usb.h>
+#include <linex/fs.h>
 
 /*
  * Version Information

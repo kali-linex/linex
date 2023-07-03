@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2016 Synopsys Inc.
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 
 #include "i2c-designware-core.h"
 

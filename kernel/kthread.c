@@ -7,27 +7,27 @@
  * even if we're invoked from userspace (think modprobe, hotplug cpu,
  * etc.).
  */
-#include <uapi/linux/sched/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/unistd.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/numa.h>
-#include <linux/sched/isolation.h>
+#include <uapi/linex/sched/types.h>
+#include <linex/mm.h>
+#include <linex/mmu_context.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
+#include <linex/kthread.h>
+#include <linex/completion.h>
+#include <linex/err.h>
+#include <linex/cgroup.h>
+#include <linex/cpuset.h>
+#include <linex/unistd.h>
+#include <linex/file.h>
+#include <linex/export.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/freezer.h>
+#include <linex/ptrace.h>
+#include <linex/uaccess.h>
+#include <linex/numa.h>
+#include <linex/sched/isolation.h>
 #include <trace/events/sched.h>
 
 

@@ -5,14 +5,14 @@
  * Copyright (c) 2008-2013 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/trigger.h>
 
 
 struct iio_interrupt_trigger_info {

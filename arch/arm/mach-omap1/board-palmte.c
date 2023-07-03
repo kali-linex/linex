@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-palmte.c
+ * linex/arch/arm/mach-omap1/board-palmte.c
  *
  * Modified from board-generic.c
  *
@@ -8,27 +8,27 @@
  *
  * Original version : Laurent Gonzalez
  *
- * Maintainers : http://palmtelinux.sf.net
- *                palmtelinux-developpers@lists.sf.net
+ * Maintainers : http://palmtelinex.sf.net
+ *                palmtelinex-developpers@lists.sf.net
  *
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  */
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/apm-emulation.h>
-#include <linux/omapfb.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/spi/spi.h>
+#include <linex/interrupt.h>
+#include <linex/apm-emulation.h>
+#include <linex/omapfb.h>
+#include <linex/omap-dma.h>
+#include <linex/platform_data/keypad-omap.h>
+#include <linex/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

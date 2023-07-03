@@ -13,10 +13,10 @@
  *   Copyright (C) 2008 Nokia Corporation and/or its subsidiary(-ies).
  */
 
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
+#include <linex/slab.h>
+#include <linex/firmware.h>
+#include <linex/etherdevice.h>
+#include <linex/module.h>
 
 #include <net/mac80211.h>
 

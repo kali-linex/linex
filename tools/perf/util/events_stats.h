@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <perf/event.h>
-#include <linux/types.h>
+#include <linex/types.h>
 #include "auxtrace.h"
 
 /*

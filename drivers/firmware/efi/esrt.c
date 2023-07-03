@@ -13,17 +13,17 @@
  */
 #define pr_fmt(fmt) "esrt: " fmt
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/capability.h>
+#include <linex/device.h>
+#include <linex/efi.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/kobject.h>
+#include <linex/list.h>
+#include <linex/memblock.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 #include <asm/io.h>
 #include <asm/early_ioremap.h>

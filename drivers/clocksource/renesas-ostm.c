@@ -6,13 +6,13 @@
  * Copyright (C) 2017 Chris Brandt
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/sched_clock.h>
+#include <linex/slab.h>
 
 #include "timer-of.h"
 

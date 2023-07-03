@@ -7,16 +7,16 @@
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/rtnetlink.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
 #include <net/dsa_stubs.h>
 #include <net/sch_generic.h>
 

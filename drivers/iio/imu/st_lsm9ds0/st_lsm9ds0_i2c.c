@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2021, Intel Corporation
  *
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/regmap.h>
 
-#include <linux/iio/common/st_sensors_i2c.h>
+#include <linex/iio/common/st_sensors_i2c.h>
 
 #include "st_lsm9ds0.h"
 
@@ -74,7 +74,7 @@ static struct i2c_driver st_lsm9ds0_driver = {
 };
 module_i2c_driver(st_lsm9ds0_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linex.intel.com>");
 MODULE_DESCRIPTION("STMicroelectronics LSM9DS0 IMU I2C driver");
 MODULE_LICENSE("GPL v2");
 MODULE_IMPORT_NS(IIO_ST_SENSORS);

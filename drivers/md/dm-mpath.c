@@ -6,27 +6,27 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linex/device-mapper.h>
 
 #include "dm-rq.h"
 #include "dm-bio-record.h"
 #include "dm-path-selector.h"
 #include "dm-uevent.h"
 
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linex/blkdev.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
+#include <linex/mempool.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/timer.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
 #include <scsi/scsi_dh.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
+#include <linex/atomic.h>
+#include <linex/blk-mq.h>
 
 static struct workqueue_struct *dm_mpath_wq;
 

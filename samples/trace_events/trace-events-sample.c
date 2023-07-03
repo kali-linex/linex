@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kthread.h>
+#include <linex/module.h>
+#include <linex/kthread.h>
 
 /*
  * Any file that uses trace points, must include the header.

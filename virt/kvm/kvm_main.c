@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -15,47 +15,47 @@
 
 #include <kvm/iodev.h>
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/stat.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/anon_inodes.h>
-#include <linux/profile.h>
-#include <linux/kvm_para.h>
-#include <linux/pagemap.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/srcu.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/bsearch.h>
-#include <linux/io.h>
-#include <linux/lockdep.h>
-#include <linux/kthread.h>
-#include <linux/suspend.h>
+#include <linex/kvm_host.h>
+#include <linex/kvm.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/percpu.h>
+#include <linex/mm.h>
+#include <linex/miscdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/reboot.h>
+#include <linex/debugfs.h>
+#include <linex/highmem.h>
+#include <linex/file.h>
+#include <linex/syscore_ops.h>
+#include <linex/cpu.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/stat.h>
+#include <linex/cpumask.h>
+#include <linex/smp.h>
+#include <linex/anon_inodes.h>
+#include <linex/profile.h>
+#include <linex/kvm_para.h>
+#include <linex/pagemap.h>
+#include <linex/mman.h>
+#include <linex/swap.h>
+#include <linex/bitops.h>
+#include <linex/spinlock.h>
+#include <linex/compat.h>
+#include <linex/srcu.h>
+#include <linex/hugetlb.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
+#include <linex/bsearch.h>
+#include <linex/io.h>
+#include <linex/lockdep.h>
+#include <linex/kthread.h>
+#include <linex/suspend.h>
 
 #include <asm/processor.h>
 #include <asm/ioctl.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "coalesced_mmio.h"
 #include "async_pf.h"
@@ -67,7 +67,7 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/kvm.h>
 
-#include <linux/kvm_dirty_ring.h>
+#include <linex/kvm_dirty_ring.h>
 
 
 /* Worst case buffer size needed for holding an integer. */

@@ -9,9 +9,9 @@
 #ifndef NET_9P_CLIENT_H
 #define NET_9P_CLIENT_H
 
-#include <linux/utsname.h>
-#include <linux/idr.h>
-#include <linux/tracepoint-defs.h>
+#include <linex/utsname.h>
+#include <linex/idr.h>
+#include <linex/tracepoint-defs.h>
 
 /* Number of requests per row */
 #define P9_ROW_MAXTAG 255

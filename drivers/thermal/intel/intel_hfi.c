@@ -4,8 +4,8 @@
  *
  * Copyright (c) 2021, Intel Corporation.
  *
- * Authors: Aubrey Li <aubrey.li@linux.intel.com>
- *          Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
+ * Authors: Aubrey Li <aubrey.li@linex.intel.com>
+ *          Ricardo Neri <ricardo.neri-calderon@linex.intel.com>
  *
  *
  * The Hardware Feedback Interface provides a performance and energy efficiency
@@ -21,22 +21,22 @@
 
 #define pr_fmt(fmt)  "intel-hfi: " fmt
 
-#include <linux/bitops.h>
-#include <linux/cpufeature.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math.h>
-#include <linux/mutex.h>
-#include <linux/percpu-defs.h>
-#include <linux/printk.h>
-#include <linux/processor.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/topology.h>
-#include <linux/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/cpufeature.h>
+#include <linex/cpumask.h>
+#include <linex/gfp.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/math.h>
+#include <linex/mutex.h>
+#include <linex/percpu-defs.h>
+#include <linex/printk.h>
+#include <linex/processor.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/topology.h>
+#include <linex/workqueue.h>
 
 #include <asm/msr.h>
 

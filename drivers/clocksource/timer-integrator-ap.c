@@ -5,14 +5,14 @@
  * Copyright (c) 2014, Linaro Limited
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/sched_clock.h>
+#include <linex/clk.h>
+#include <linex/clocksource.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/sched_clock.h>
 
 #include "timer-sp.h"
 

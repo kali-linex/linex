@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/bpf_verifier.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/btf_ids.h>
+#include <linex/filter.h>
 #include <net/tcp.h>
 #include <net/bpf_sk_storage.h>
 
@@ -51,7 +51,7 @@ static bool is_unsupported(u32 member_offset)
 	return false;
 }
 
-extern struct btf *btf_vmlinux;
+extern struct btf *btf_vmlinex;
 
 static bool bpf_tcp_ca_is_valid_access(int off, int size,
 				       enum bpf_access_type type,

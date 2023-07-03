@@ -4,13 +4,13 @@
  * Written by Chris Hudson <chudson@kionix.com>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input/kxtj9.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/input/kxtj9.h>
 
 #define NAME			"kxtj9"
 #define G_MAX			8000

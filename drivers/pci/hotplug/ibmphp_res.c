@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/list.h>
+#include <linex/init.h>
 #include "ibmphp.h"
 
 static int flags = 0;		/* for testing */

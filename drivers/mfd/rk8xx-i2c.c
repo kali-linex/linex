@@ -10,11 +10,11 @@
  * Author: Wadim Egorov <w.egorov@phytec.de>
  */
 
-#include <linux/i2c.h>
-#include <linux/mfd/rk808.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/mfd/rk808.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
 
 struct rk8xx_i2c_platform_data {
 	const struct regmap_config *regmap_cfg;

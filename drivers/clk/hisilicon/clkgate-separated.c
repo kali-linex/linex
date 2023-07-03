@@ -9,10 +9,10 @@
  *	   Xin Li <li.xin@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
 #include "clk.h"
 

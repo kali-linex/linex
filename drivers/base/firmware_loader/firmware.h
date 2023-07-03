@@ -2,12 +2,12 @@
 #ifndef __FIRMWARE_LOADER_H
 #define __FIRMWARE_LOADER_H
 
-#include <linux/bitops.h>
-#include <linux/firmware.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/completion.h>
+#include <linex/bitops.h>
+#include <linex/firmware.h>
+#include <linex/types.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/completion.h>
 
 /**
  * enum fw_opt - options to control firmware loading behaviour

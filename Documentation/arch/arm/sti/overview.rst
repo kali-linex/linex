@@ -1,5 +1,5 @@
 ======================
-STi ARM Linux Overview
+STi ARM Linex Overview
 ======================
 
 Introduction
@@ -7,7 +7,7 @@ Introduction
 
   The ST Microelectronics Multimedia and Application Processors range of
   CortexA9 System-on-Chip are supported by the 'STi' platform of
-  ARM Linux. Currently STiH407, STiH410 and STiH418 are supported.
+  ARM Linex. Currently STiH407, STiH410 and STiH418 are supported.
 
 
 configuration

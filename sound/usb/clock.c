@@ -3,13 +3,13 @@
  *   Clock domain and sample rate management functions
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/audio-v2.h>
+#include <linex/usb/audio-v3.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

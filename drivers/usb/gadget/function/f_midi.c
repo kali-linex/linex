@@ -18,21 +18,21 @@
  *   Ben Williamson <ben.williamson@greyinnovation.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/kfifo.h>
+#include <linex/spinlock.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/midi.h>
 
 #include "u_f.h"
 #include "u_midi.h"

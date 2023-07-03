@@ -8,22 +8,22 @@
  * Author: Vivek Gautam <gautam.vivek@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/iopoll.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/soc/samsung/exynos-regs-pmu.h>
 
 /* Exynos USB PHY registers */
 #define EXYNOS5_FSEL_9MHZ6		0x0

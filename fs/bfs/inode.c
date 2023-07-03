@@ -7,20 +7,20 @@
  *	Made endianness-clean by Andrew Stribblehill <ads@wompom.org>, 2005.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/buffer_head.h>
+#include <linex/vfs.h>
+#include <linex/writeback.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
 #include "bfs.h"
 
 MODULE_AUTHOR("Tigran Aivazian <aivazian.tigran@gmail.com>");
-MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for Linux");
+MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for Linex");
 MODULE_LICENSE("GPL");
 
 #undef DEBUG

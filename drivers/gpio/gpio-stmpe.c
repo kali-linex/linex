@@ -5,15 +5,15 @@
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/mfd/stmpe.h>
+#include <linex/seq_file.h>
+#include <linex/bitops.h>
 
 /*
  * These registers are modified under the irq bus lock and cached to avoid

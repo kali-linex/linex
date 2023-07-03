@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt)	"LOGIC PIO: " fmt
 
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/logic_pio.h>
-#include <linux/mm.h>
-#include <linux/rculist.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/io.h>
+#include <linex/logic_pio.h>
+#include <linex/mm.h>
+#include <linex/rculist.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
 
 /* The unique hardware address list */
 static LIST_HEAD(io_range_list);

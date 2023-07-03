@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * From split of dump_linuxpagetables.c
+ * From split of dump_linexpagetables.c
  * Copyright 2016, Rashmica Gupta, IBM Corp.
  *
  */
-#include <linux/kernel.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/pgtable.h>
 
 #include "ptdump.h"
 

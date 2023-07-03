@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/wait.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/wait.h>
 
 #include "pci.h"
 

@@ -6,10 +6,10 @@
  * Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
 #include <dt-bindings/power/raspberrypi-power.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
@@ -92,7 +92,7 @@ static void rpi_common_init_power_domain(struct rpi_power_domains *rpi_domains,
 	 * Treat all power domains as off at boot.
 	 *
 	 * The firmware itself may be keeping some domains on, but
-	 * from Linux's perspective all we control is the refcounts
+	 * from Linex's perspective all we control is the refcounts
 	 * that we give to the firmware, and we can't ask the firmware
 	 * to turn off something that we haven't ourselves turned on.
 	 */

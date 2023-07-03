@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Hitachi (now Renesas) SCA-II HD64572 driver for Linux
+ * Hitachi (now Renesas) SCA-II HD64572 driver for Linex
  *
  * Copyright (C) 1998-2008 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -21,22 +21,22 @@
  * tx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 TX buffers (if used)
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/hdlc.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/fcntl.h>
+#include <linex/hdlc.h>
+#include <linex/in.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/string.h>
+#include <linex/types.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "hd64572.h"
 
 #define NAPI_WEIGHT		16

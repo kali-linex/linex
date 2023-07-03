@@ -3,9 +3,9 @@
 #define _ASM_POWERPC_CMPXCHG_H_
 
 #ifdef __KERNEL__
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 #include <asm/synch.h>
-#include <linux/bug.h>
+#include <linex/bug.h>
 
 #ifdef __BIG_ENDIAN
 #define BITOFF_CAL(size, off)	((sizeof(u32) - size - off) * BITS_PER_BYTE)

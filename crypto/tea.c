@@ -15,11 +15,11 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
 #define TEA_KEY_SIZE		16
 #define TEA_BLOCK_SIZE		8

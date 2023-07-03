@@ -186,37 +186,37 @@
 		event-fan0-presence {
 			label = "fan0-presence";
 			gpios = <&pca0 6 GPIO_ACTIVE_LOW>;
-			linux,code = <6>;
+			linex,code = <6>;
 		};
 
 		event-fan1-presence {
 			label = "fan1-presence";
 			gpios = <&pca0 7 GPIO_ACTIVE_LOW>;
-			linux,code = <7>;
+			linex,code = <7>;
 		};
 
 		event-fan2-presence {
 			label = "fan2-presence";
 			gpios = <&pca0 8 GPIO_ACTIVE_LOW>;
-			linux,code = <8>;
+			linex,code = <8>;
 		};
 
 		event-fan3-presence {
 			label = "fan3-presence";
 			gpios = <&pca0 9 GPIO_ACTIVE_LOW>;
-			linux,code = <9>;
+			linex,code = <9>;
 		};
 
 		event-fan4-presence {
 			label = "fan4-presence";
 			gpios = <&pca0 10 GPIO_ACTIVE_LOW>;
-			linux,code = <10>;
+			linex,code = <10>;
 		};
 
 		event-fan5-presence {
 			label = "fan5-presence";
 			gpios = <&pca0 11 GPIO_ACTIVE_LOW>;
-			linux,code = <11>;
+			linex,code = <11>;
 		};
 	};
 

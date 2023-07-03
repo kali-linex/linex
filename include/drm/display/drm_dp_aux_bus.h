@@ -10,8 +10,8 @@
 #ifndef _DP_AUX_BUS_H_
 #define _DP_AUX_BUS_H_
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <linex/device.h>
+#include <linex/mod_devicetable.h>
 
 /**
  * struct dp_aux_ep_device - Main dev structure for DP AUX endpoints

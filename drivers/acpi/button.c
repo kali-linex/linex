@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) "ACPI: button: " fmt
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
 #include <acpi/button.h>
 
 #define ACPI_BUTTON_CLASS		"button"

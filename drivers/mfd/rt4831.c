@@ -5,12 +5,12 @@
  * Author: ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #define RT4831_REG_REVISION	0x01
 #define RT4831_REG_ENABLE	0x08

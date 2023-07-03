@@ -3,11 +3,11 @@
  *
  * Copyright (C) 2008 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
- * - Derived from security/selinux/hooks.c
+ * - Derived from security/selinex/hooks.c
  */
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task.h>
+#include <linex/sched/mm.h>
 
 /*
  * Returns true if the task does not share ->mm with another thread/process.

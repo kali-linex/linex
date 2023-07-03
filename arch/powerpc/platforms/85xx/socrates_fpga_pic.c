@@ -3,11 +3,11 @@
  *  Copyright (C) 2008 Ilya Yanok, Emcraft Systems
  */
 
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linex/irq.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
 
 /*
  * The FPGA supports 9 interrupt sources, which can be routed to 3

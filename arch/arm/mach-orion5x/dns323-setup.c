@@ -13,22 +13,22 @@
  * License, or (at your option) any later version.
  *
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/leds.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/ata_platform.h>
-#include <linux/phy.h>
-#include <linux/marvell_phy.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/pci.h>
+#include <linex/irq.h>
+#include <linex/mtd/physmap.h>
+#include <linex/mv643xx_eth.h>
+#include <linex/leds.h>
+#include <linex/gpio_keys.h>
+#include <linex/input.h>
+#include <linex/i2c.h>
+#include <linex/ata_platform.h>
+#include <linex/phy.h>
+#include <linex/marvell_phy.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>
@@ -111,7 +111,7 @@ subsys_initcall(dns323_pci_init);
  * Layout as used by D-Link:
  *  0x00000000-0x00010000 : "MTD1"
  *  0x00010000-0x00020000 : "MTD2"
- *  0x00020000-0x001a0000 : "Linux Kernel"
+ *  0x00020000-0x001a0000 : "Linex Kernel"
  *  0x001a0000-0x007d0000 : "File System"
  *  0x007d0000-0x00800000 : "u-boot"
  */
@@ -129,7 +129,7 @@ static struct mtd_partition dns323_partitions[] = {
 		.size	= 0x00010000,
 		.offset = 0x00010000,
 	}, {
-		.name	= "Linux Kernel",
+		.name	= "Linex Kernel",
 		.size	= 0x00180000,
 		.offset	= 0x00020000,
 	}, {

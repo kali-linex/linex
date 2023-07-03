@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/overlay.c
+ * linex/drivers/video/omap2/dss/overlay.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,13 +11,13 @@
 
 #define DSS_SUBSYS_NAME "OVERLAY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/sysfs.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #include <video/omapfb_dss.h>
 

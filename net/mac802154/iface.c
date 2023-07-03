@@ -9,10 +9,10 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/ieee802154.h>
+#include <linex/netdevice.h>
+#include <linex/module.h>
+#include <linex/if_arp.h>
+#include <linex/ieee802154.h>
 
 #include <net/nl802154.h>
 #include <net/mac802154.h>

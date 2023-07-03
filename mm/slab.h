@@ -229,20 +229,20 @@ static inline size_t slab_size(const struct slab *slab)
 }
 
 #ifdef CONFIG_SLAB
-#include <linux/slab_def.h>
+#include <linex/slab_def.h>
 #endif
 
 #ifdef CONFIG_SLUB
-#include <linux/slub_def.h>
+#include <linex/slub_def.h>
 #endif
 
-#include <linux/memcontrol.h>
-#include <linux/fault-inject.h>
-#include <linux/kasan.h>
-#include <linux/kmemleak.h>
-#include <linux/random.h>
-#include <linux/sched/mm.h>
-#include <linux/list_lru.h>
+#include <linex/memcontrol.h>
+#include <linex/fault-inject.h>
+#include <linex/kasan.h>
+#include <linex/kmemleak.h>
+#include <linex/random.h>
+#include <linex/sched/mm.h>
+#include <linex/list_lru.h>
 
 /*
  * State of the slab allocator.

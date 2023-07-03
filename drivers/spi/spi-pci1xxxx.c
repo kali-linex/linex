@@ -5,10 +5,10 @@
 //          Kumaravel Thiagarajan <Kumaravel.Thiagarajan@microchip.com>
 
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/spi/spi.h>
+#include <linex/delay.h>
 
 #define DRV_NAME "spi-pci1xxxx"
 

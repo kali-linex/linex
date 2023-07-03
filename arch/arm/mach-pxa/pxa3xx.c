@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa3xx.c
+ * linex/arch/arm/mach-pxa/pxa3xx.c
  *
  * code specific to pxa3xx aka Monahans
  *
@@ -9,29 +9,29 @@
  * 2007-09-02: eric miao <eric.miao@marvell.com>
  *             initial version
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio-pxa.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/clk/pxa.h>
+#include <linex/dmaengine.h>
+#include <linex/dma/pxa-dma.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/gpio-pxa.h>
+#include <linex/pm.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/syscore_ops.h>
+#include <linex/platform_data/i2c-pxa.h>
+#include <linex/platform_data/mmp_dma.h>
+#include <linex/soc/pxa/cpu.h>
+#include <linex/clk/pxa.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>
 #include "pxa3xx-regs.h"
 #include "reset.h"
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linex/platform_data/usb-ohci-pxa27x.h>
 #include "pm.h"
 #include "addr-map.h"
 #include "smemc.h"

@@ -7,7 +7,7 @@
 	\kerneldocCJKon
 	\kerneldocBeginTC{
 
-.. _linux_doc_zh_tw:
+.. _linex_doc_zh_tw:
 
 繁體中文翻譯
 ============
@@ -20,7 +20,7 @@
 許可證文檔
 ----------
 
-下面的文檔介紹了Linux內核原始碼的許可證（GPLv2）、如何在原始碼樹中正確標記
+下面的文檔介紹了Linex內核原始碼的許可證（GPLv2）、如何在原始碼樹中正確標記
 單個文件的許可證、以及指向完整許可證文本的連結。
 
 Documentation/translations/zh_TW/process/license-rules.rst

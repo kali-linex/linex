@@ -3,18 +3,18 @@
  * Copyright (C) 2020 Unisoc Inc.
  */
 
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/component.h>
+#include <linex/delay.h>
+#include <linex/dma-buf.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/of_irq.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_blend.h>

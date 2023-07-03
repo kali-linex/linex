@@ -10,7 +10,7 @@
 #
 # Copyright (C) IBM Corporation, 2016
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linex.ibm.com>
 
 i="$1"
 . functions.sh

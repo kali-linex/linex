@@ -3,9 +3,9 @@
  * rtl8712_cmd.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * Linex device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Linex staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,23 +16,23 @@
 
 #define _RTL8712_CMD_C_
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/circ_buf.h>
-#include <linux/uaccess.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/module.h>
+#include <linex/kref.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/circ_buf.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/semaphore.h>
-#include <linux/rtnetlink.h>
+#include <linex/atomic.h>
+#include <linex/semaphore.h>
+#include <linex/rtnetlink.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

@@ -5,11 +5,11 @@
  *  Copyright 2007 Jan D. Louw <jd.louw@mweb.co.za>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/dvb/frontend.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/dvb/frontend.h>
 
 #include <media/dvb_frontend.h>
 #include "zl10039.h"

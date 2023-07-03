@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/firmware.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include "radeon.h"
 #include "radeon_ucode.h"

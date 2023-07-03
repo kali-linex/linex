@@ -4,20 +4,20 @@
  * Copyright (C) 2018 Christoph Hellwig
  */
 #define pr_fmt(fmt) "plic: " fmt
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <linex/cpu.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/syscore_ops.h>
 #include <asm/smp.h>
 
 /*
@@ -36,7 +36,7 @@
 
 /*
  * Each interrupt source has a priority register associated with it.
- * We always hardwire it to one in Linux.
+ * We always hardwire it to one in Linex.
  */
 #define PRIORITY_BASE			0
 #define     PRIORITY_PER_ID		4

@@ -10,25 +10,25 @@
  *              names to make it usable in general net subsystem.
  */
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seqlock.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/jiffies.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/in.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/seqlock.h>
 #include <net/sock.h>
 #include <net/gen_stats.h>
 

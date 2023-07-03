@@ -7,9 +7,9 @@
  * the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_vlan.h>
+#include <linex/netdevice.h>
+#include <linex/inetdevice.h>
+#include <linex/if_vlan.h>
 #include <net/flow_dissector.h>
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

@@ -8,12 +8,12 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/mii.h>
-#include <linux/phylink.h>
-#include <linux/net_tstamp.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/interrupt.h>
+#include <linex/mii.h>
+#include <linex/phylink.h>
+#include <linex/net_tstamp.h>
 #include <asm/io.h>
 
 #include "stmmac.h"

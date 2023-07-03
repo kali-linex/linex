@@ -3,23 +3,23 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.linex-ipv6.org>
  * (c) 2005-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/siphash.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
+#include <linex/types.h>
+#include <linex/netfilter.h>
+#include <linex/skbuff.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/stddef.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/percpu.h>
+#include <linex/kernel.h>
+#include <linex/siphash.h>
+#include <linex/moduleparam.h>
+#include <linex/export.h>
 #include <net/net_namespace.h>
 #include <net/netns/hash.h>
 

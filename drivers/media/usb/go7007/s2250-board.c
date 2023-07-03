@@ -3,11 +3,11 @@
  * Copyright (C) 2008 Sensoray Company Inc.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
+#include <linex/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-subdev.h>

@@ -3,26 +3,26 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/printk.h>
-#include <linux/pci_ids.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/semaphore.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcma/bcma.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/printk.h>
+#include <linex/pci_ids.h>
+#include <linex/netdevice.h>
+#include <linex/interrupt.h>
+#include <linex/sched/signal.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/core.h>
+#include <linex/semaphore.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/bcma/bcma.h>
+#include <linex/debugfs.h>
+#include <linex/vmalloc.h>
 #include <asm/unaligned.h>
 #include <defs.h>
 #include <brcmu_wifi.h>

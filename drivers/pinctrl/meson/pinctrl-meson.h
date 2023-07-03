@@ -5,12 +5,12 @@
  * Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linex/gpio/driver.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
+#include <linex/module.h>
 
 struct fwnode_handle;
 

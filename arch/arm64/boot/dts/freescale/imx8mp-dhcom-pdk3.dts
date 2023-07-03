@@ -68,7 +68,7 @@
 		button-0 {
 			gpios = <&gpio1 9 GPIO_ACTIVE_LOW>; /* GPIO A */
 			label = "TA1-GPIO-A";
-			linux,code = <KEY_A>;
+			linex,code = <KEY_A>;
 			pinctrl-0 = <&pinctrl_dhcom_a>;
 			pinctrl-names = "default";
 			wakeup-source;
@@ -77,7 +77,7 @@
 		button-1 {
 			gpios = <&gpio1 8 GPIO_ACTIVE_LOW>; /* GPIO B */
 			label = "TA2-GPIO-B";
-			linux,code = <KEY_B>;
+			linex,code = <KEY_B>;
 			pinctrl-0 = <&pinctrl_dhcom_b>;
 			pinctrl-names = "default";
 			wakeup-source;
@@ -86,7 +86,7 @@
 		button-2 {
 			gpios = <&gpio5 2 GPIO_ACTIVE_LOW>; /* GPIO C */
 			label = "TA3-GPIO-C";
-			linux,code = <KEY_C>;
+			linex,code = <KEY_C>;
 			pinctrl-0 = <&pinctrl_dhcom_c>;
 			pinctrl-names = "default";
 			wakeup-source;
@@ -95,7 +95,7 @@
 		button-3 {
 			gpios = <&gpio5 22 GPIO_ACTIVE_LOW>; /* GPIO E */
 			label = "TA4-GPIO-E";
-			linux,code = <KEY_E>;
+			linex,code = <KEY_E>;
 			pinctrl-0 = <&pinctrl_dhcom_e>;
 			pinctrl-names = "default";
 			wakeup-source;

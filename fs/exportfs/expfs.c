@@ -9,14 +9,14 @@
  * For details on why we do all the strange and hairy things in here
  * take a look at Documentation/filesystems/nfs/exporting.rst.
  */
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
+#include <linex/exportfs.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/module.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
 
 #define dprintk(fmt, args...) pr_debug(fmt, ##args)
 

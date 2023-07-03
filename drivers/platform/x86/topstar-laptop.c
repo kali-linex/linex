@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/leds.h>
+#include <linex/platform_device.h>
 
 #define TOPSTAR_LAPTOP_CLASS "topstar"
 

@@ -5,19 +5,19 @@
  * Copyright (c) 2008-2009 PIKA Technologies
  *   Sean MacLennan <smaclennan@pikatech.com>
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/kthread.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/of_platform.h>
+#include <linex/kthread.h>
+#include <linex/leds.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

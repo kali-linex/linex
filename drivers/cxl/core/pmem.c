@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. */
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
 #include <cxlmem.h>
 #include <cxl.h>
 #include "core.h"

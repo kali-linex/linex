@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/bcd.h>
 #include <mach/fpga.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 #define FPGA_REGS_OFFSET	0x03fff800
 #define FPGA_REGS_SIZE		0x490

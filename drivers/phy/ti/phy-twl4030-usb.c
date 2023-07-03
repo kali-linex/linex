@@ -11,22 +11,22 @@
  *	- 3-pin mode support may be added in future.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/musb.h>
-#include <linux/usb/ulpi.h>
-#include <linux/mfd/twl.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/usb/otg.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_runtime.h>
+#include <linex/usb/musb.h>
+#include <linex/usb/ulpi.h>
+#include <linex/mfd/twl.h>
+#include <linex/regulator/consumer.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 
 /* Register defines */
 

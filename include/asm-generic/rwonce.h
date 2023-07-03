@@ -22,9 +22,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler_types.h>
-#include <linux/kasan-checks.h>
-#include <linux/kcsan-checks.h>
+#include <linex/compiler_types.h>
+#include <linex/kasan-checks.h>
+#include <linex/kcsan-checks.h>
 
 /*
  * Yes, this permits 64-bit accesses on 32-bit architectures. These will

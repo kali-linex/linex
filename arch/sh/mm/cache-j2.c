@@ -5,9 +5,9 @@
  * Copyright (C) 2015-2016 Smart Energy Instruments, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/cpumask.h>
 
 #include <asm/cache.h>
 #include <asm/addrspace.h>

@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/freezer.h>
-#include <linux/jiffies.h>
+#include <linex/freezer.h>
+#include <linex/jiffies.h>
 #include "vivid-core.h"
 #include "vivid-kthread-touch.h"
 #include "vivid-touch-cap.h"

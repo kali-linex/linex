@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2006 Andriy Skulysh <askulsyh@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linex/init.h>
+#include <linex/suspend.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
 #include <asm/io.h>
 #include <asm/hd64461.h>
 #include <asm/bl_bit.h>

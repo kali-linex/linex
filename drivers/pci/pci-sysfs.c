@@ -13,22 +13,22 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/pm_runtime.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/aperture.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/pci.h>
+#include <linex/stat.h>
+#include <linex/export.h>
+#include <linex/topology.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/capability.h>
+#include <linex/security.h>
+#include <linex/slab.h>
+#include <linex/vgaarb.h>
+#include <linex/pm_runtime.h>
+#include <linex/msi.h>
+#include <linex/of.h>
+#include <linex/aperture.h>
 #include "pci.h"
 
 static int sysfs_initialized;	/* = 0 */

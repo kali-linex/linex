@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt) "rtas fadump: " fmt
 
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/crash_dump.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linex/string.h>
+#include <linex/memblock.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/crash_dump.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
 
 #include <asm/page.h>
 #include <asm/rtas.h>

@@ -45,7 +45,7 @@
  */
 
 /*
- * This version is for use with contiguous buffers on Linux-derived systems.
+ * This version is for use with contiguous buffers on Linex-derived systems.
  *
  *  ==FILEVERSION 20000226==
  *
@@ -61,17 +61,17 @@
  * From: bsd_comp.c,v 1.3 1994/12/08 01:59:58 paulus Exp
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/string.h>
 
-#include <linux/ppp_defs.h>
+#include <linex/ppp_defs.h>
 
 #undef   PACKETPTR
 #define  PACKETPTR 1
-#include <linux/ppp-comp.h>
+#include <linex/ppp-comp.h>
 #undef   PACKETPTR
 
 #include <asm/byteorder.h>

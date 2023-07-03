@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/net_tstamp.h>
+#include <linex/phy.h>
+#include <linex/ptp_clock_kernel.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_reg.h"

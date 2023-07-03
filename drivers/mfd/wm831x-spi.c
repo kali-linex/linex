@@ -7,16 +7,16 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pm.h>
+#include <linex/spi/spi.h>
+#include <linex/regmap.h>
+#include <linex/err.h>
 
-#include <linux/mfd/wm831x/core.h>
+#include <linex/mfd/wm831x/core.h>
 
 static int wm831x_spi_probe(struct spi_device *spi)
 {

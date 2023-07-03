@@ -5,12 +5,12 @@
  * Copyright (C) 2018-2022 ARM Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/scmi_protocol.h>
 #include <asm/div64.h>
 
 static const struct scmi_clk_proto_ops *scmi_proto_clk_ops;

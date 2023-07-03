@@ -8,10 +8,10 @@
 // Author: Weidong Wang <wangweidong.a@awinic.com>
 //
 
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/firmware.h>
+#include <linex/of_gpio.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include "aw88395.h"
 #include "aw88395_device.h"

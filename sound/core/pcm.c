@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/device.h>
+#include <linex/nospec.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/pcm.h>
@@ -298,7 +298,7 @@ static const char *snd_pcm_state_name(snd_pcm_state_t state)
 }
 
 #if IS_ENABLED(CONFIG_SND_PCM_OSS)
-#include <linux/soundcard.h>
+#include <linex/soundcard.h>
 
 static const char *snd_pcm_oss_format_name(int format)
 {

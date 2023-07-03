@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 
 #include <asm/addrspace.h>
 #include <asm/paccess.h>

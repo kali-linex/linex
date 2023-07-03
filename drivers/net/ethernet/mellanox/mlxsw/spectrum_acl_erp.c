@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/bitmap.h>
-#include <linux/errno.h>
-#include <linux/genalloc.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/objagg.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linex/bitmap.h>
+#include <linex/errno.h>
+#include <linex/genalloc.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/objagg.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
 
 #include "core.h"
 #include "reg.h"

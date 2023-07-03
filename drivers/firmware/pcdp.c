@@ -8,11 +8,11 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/efi.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <linex/acpi.h>
+#include <linex/console.h>
+#include <linex/efi.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
 #include <asm/vga.h>
 #include "pcdp.h"
 

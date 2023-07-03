@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Linex implementation.
  *
  * Version : 1.0.0
  *
@@ -11,19 +11,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/crc32.h>
-#include <linux/mpage.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/highuid.h>
+#include <linex/pagemap.h>
+#include <linex/buffer_head.h>
+#include <linex/writeback.h>
+#include <linex/statfs.h>
+#include <linex/parser.h>
+#include <linex/seq_file.h>
+#include <linex/mount.h>
+#include <linex/crc32.h>
+#include <linex/mpage.h>
 #include "qnx6.h"
 
 static const struct super_operations qnx6_sops;

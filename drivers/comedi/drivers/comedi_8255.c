@@ -5,7 +5,7 @@
  *
  * Split from the Comedi "8255" driver module.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -28,9 +28,9 @@
  * supported is mode 0.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/comedi/comedi_8255.h>
 
 struct subdev_8255_private {
 	unsigned long regbase;

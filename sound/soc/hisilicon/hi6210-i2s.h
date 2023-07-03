@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/soc/hisilicon/hi6210-i2s.h
+ * linex/sound/soc/hisilicon/hi6210-i2s.h
  *
  * Copyright (C) 2015 Linaro, Ltd
  * Author: Andy Green <andy.green@linaro.org>

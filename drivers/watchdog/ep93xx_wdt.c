@@ -21,10 +21,10 @@
  * daemon dies.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/watchdog.h>
+#include <linex/io.h>
 
 /* default timeout (secs) */
 #define WDT_TIMEOUT 30

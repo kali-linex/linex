@@ -14,19 +14,19 @@
  * 3. Operating mode: INT
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/mod_devicetable.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/pm.h>
+#include <linex/bitops.h>
+#include <linex/mod_devicetable.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/events.h>
 
 #define TMP007_TDIE 0x01
 #define TMP007_CONFIG 0x02

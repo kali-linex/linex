@@ -2,12 +2,12 @@
 /*
  * Functions related to mapping data to requests
  */
-#include <linux/kernel.h>
-#include <linux/sched/task_stack.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/uio.h>
+#include <linex/kernel.h>
+#include <linex/sched/task_stack.h>
+#include <linex/module.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/uio.h>
 
 #include "blk.h"
 

@@ -4,14 +4,14 @@
  * Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/cred.h>
-#include <linux/ctype.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/ratelimit.h>
-#include <linux/mount.h>
-#include <linux/exportfs.h>
+#include <linex/fs.h>
+#include <linex/cred.h>
+#include <linex/ctype.h>
+#include <linex/namei.h>
+#include <linex/xattr.h>
+#include <linex/ratelimit.h>
+#include <linex/mount.h>
+#include <linex/exportfs.h>
 #include "overlayfs.h"
 
 #include "../internal.h"	/* for vfs_path_lookup */

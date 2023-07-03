@@ -7,7 +7,7 @@
 #ifndef CAIF_LAYER_H_
 #define CAIF_LAYER_H_
 
-#include <linux/list.h>
+#include <linex/list.h>
 
 struct cflayer;
 struct cfpkt;

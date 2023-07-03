@@ -27,7 +27,7 @@
 		key {
 			label = "KEY-A";
 			gpios = <&gpio1 18 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_A>;
+			linex,code = <KEY_A>;
 			wakeup-source;
 		};
 	};
@@ -84,13 +84,13 @@
 		user-led1 {
 			label = "yellow";
 			gpios = <&gpio1 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "off";
+			linex,default-trigger = "off";
 		};
 
 		user-led2 {
 			label = "red";
 			gpios = <&gpio5 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "off";
+			linex,default-trigger = "off";
 		};
 	};
 };
@@ -260,7 +260,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart4>;
 	rts-gpios = <&gpio3 2 GPIO_ACTIVE_HIGH>;
-	linux,rs485-enabled-at-boot-time;
+	linex,rs485-enabled-at-boot-time;
 	status = "okay";
 };
 

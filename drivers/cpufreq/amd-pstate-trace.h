@@ -10,9 +10,9 @@
 #if !defined(_AMD_PSTATE_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _AMD_PSTATE_TRACE_H
 
-#include <linux/cpufreq.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_events.h>
+#include <linex/cpufreq.h>
+#include <linex/tracepoint.h>
+#include <linex/trace_events.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM amd_cpu

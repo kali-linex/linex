@@ -14,12 +14,12 @@
  * http://www.intersil.com/cda/deviceinfo/0,1477,X1205,00.html
  */
 
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
 
 /* offsets into CCR area */
 
@@ -679,7 +679,7 @@ static struct i2c_driver x1205_driver = {
 		.name	= "rtc-x1205",
 		.of_match_table = x1205_dt_ids,
 	},
-	.probe		= x1205_probe,
+	.probe_new	= x1205_probe,
 	.remove		= x1205_remove,
 	.id_table	= x1205_id,
 };

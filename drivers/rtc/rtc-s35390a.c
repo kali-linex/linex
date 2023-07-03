@@ -5,13 +5,13 @@
  * Copyright (c) 2007 Byron Bradley
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bitrev.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/i2c.h>
+#include <linex/bitrev.h>
+#include <linex/bcd.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
 
 #define S35390A_CMD_STATUS1	0
 #define S35390A_CMD_STATUS2	1
@@ -499,7 +499,7 @@ static struct i2c_driver s35390a_driver = {
 		.name	= "rtc-s35390a",
 		.of_match_table = of_match_ptr(s35390a_of_match),
 	},
-	.probe		= s35390a_probe,
+	.probe_new	= s35390a_probe,
 	.id_table	= s35390a_id,
 };
 

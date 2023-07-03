@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linex/mm.h>
+#include <linex/io.h>
 
 bool ioremap_allowed(phys_addr_t phys_addr, size_t size, unsigned long prot)
 {

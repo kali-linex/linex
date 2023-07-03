@@ -11,11 +11,11 @@
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio.h>
 
 #include <sound/l3.h>
 

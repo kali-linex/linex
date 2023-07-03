@@ -8,17 +8,17 @@
  * Author: Jingoo Han <jg1.han@samsung.com>
  */
 
-#include <linux/align.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma/edma.h>
-#include <linux/gpio/consumer.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
+#include <linex/align.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/dma/edma.h>
+#include <linex/gpio/consumer.h>
+#include <linex/ioport.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/sizes.h>
+#include <linex/types.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/of_address.h>
-#include <linux/iommu.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/remoteproc/qcom_rproc.h>
+#include <linex/of_address.h>
+#include <linex/iommu.h>
 
 #include "ce.h"
 #include "coredump.h"

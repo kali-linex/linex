@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  */
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <linex/bitfield.h>
+#include <linex/bpf.h>
+#include <linex/filter.h>
 #include <asm/cacheflush.h>
 #include <asm/inst.h>
 

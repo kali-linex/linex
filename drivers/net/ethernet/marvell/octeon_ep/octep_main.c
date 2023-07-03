@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/vmalloc.h>
 
 #include "octep_config.h"
 #include "octep_main.h"

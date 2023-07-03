@@ -6,12 +6,12 @@
  *	    Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/video.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/video.h>
 #include <asm/unaligned.h>
 
 #include <media/v4l2-dev.h>

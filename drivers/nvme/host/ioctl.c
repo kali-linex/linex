@@ -3,9 +3,9 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  * Copyright (c) 2017-2021 Christoph Hellwig.
  */
-#include <linux/ptrace.h>	/* for force_successful_syscall_return */
-#include <linux/nvme_ioctl.h>
-#include <linux/io_uring.h>
+#include <linex/ptrace.h>	/* for force_successful_syscall_return */
+#include <linex/nvme_ioctl.h>
+#include <linex/io_uring.h>
 #include "nvme.h"
 
 enum {

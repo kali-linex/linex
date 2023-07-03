@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
-#include <linux/sched.h>
-#include <linux/of.h>
+#include <linex/sched.h>
+#include <linex/of.h>
 #include <net/page_pool.h>
 #include "mt76.h"
 

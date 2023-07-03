@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2008, 2009  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/sh_timer.h>
 #include <asm/platform_early.h>
 
 enum {

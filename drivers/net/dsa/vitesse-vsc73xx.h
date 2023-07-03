@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio/driver.h>
+#include <linex/device.h>
+#include <linex/etherdevice.h>
+#include <linex/gpio/driver.h>
 
 /**
  * struct vsc73xx - VSC73xx state container

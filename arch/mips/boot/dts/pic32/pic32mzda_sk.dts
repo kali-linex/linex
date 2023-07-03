@@ -31,13 +31,13 @@
 		led-1 {
 			label = "pic32mzda_sk:red:led1";
 			gpios = <&gpio7 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 		};
 
 		led-2 {
 			label = "pic32mzda_sk:yellow:led2";
 			gpios = <&gpio7 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linex,default-trigger = "mmc0";
 		};
 
 		led-3 {
@@ -54,19 +54,19 @@
 
 		button-1 {
 			label = "ESC";
-			linux,code = <1>;
+			linex,code = <1>;
 			gpios = <&gpio1 12 0>;
 		};
 
 		button-2 {
 			label = "Home";
-			linux,code = <102>;
+			linex,code = <102>;
 			gpios = <&gpio1 13 0>;
 		};
 
 		button-3 {
 			label = "Menu";
-			linux,code = <139>;
+			linex,code = <139>;
 			gpios = <&gpio1 14 0>;
 		};
 	};

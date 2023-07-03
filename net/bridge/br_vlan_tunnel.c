@@ -6,10 +6,10 @@
  *	Roopa Prabhu		<roopa@cumulusnetworks.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
 #include <net/switchdev.h>
 #include <net/dst_metadata.h>
 

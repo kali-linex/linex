@@ -14,19 +14,19 @@
  *   Alan Hourihane <alanh-at-tungstengraphics-dot-com>
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/fb.h>
+#include <linex/pci.h>
 #include <asm/set_memory.h>
 #include <asm/tlbflush.h>
-#include <linux/mmzone.h>
+#include <linex/mmzone.h>
 
 /* #define VERMILION_DEBUG */
 

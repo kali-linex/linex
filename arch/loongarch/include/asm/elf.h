@@ -5,9 +5,9 @@
 #ifndef _ASM_ELF_H
 #define _ASM_ELF_H
 
-#include <linux/auxvec.h>
-#include <linux/fs.h>
-#include <uapi/linux/elf.h>
+#include <linex/auxvec.h>
+#include <linex/fs.h>
+#include <uapi/linex/elf.h>
 
 #include <asm/current.h>
 #include <asm/vdso.h>
@@ -234,8 +234,8 @@ do {									\
 									\
 	loongarch_set_personality_fcsr(state);				\
 									\
-	if (personality(current->personality) != PER_LINUX)		\
-		set_personality(PER_LINUX);				\
+	if (personality(current->personality) != PER_LINEX)		\
+		set_personality(PER_LINEX);				\
 } while (0)
 
 #endif /* CONFIG_32BIT */
@@ -253,8 +253,8 @@ do {									\
 	loongarch_set_personality_fcsr(state);				\
 									\
 	p = personality(current->personality);				\
-	if (p != PER_LINUX32 && p != PER_LINUX)				\
-		set_personality(PER_LINUX);				\
+	if (p != PER_LINEX32 && p != PER_LINEX)				\
+		set_personality(PER_LINEX);				\
 } while (0)
 
 #endif /* CONFIG_64BIT */
@@ -309,8 +309,8 @@ do {									\
 } while (0)
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linex_binprm;
+extern int arch_setup_additional_pages(struct linex_binprm *bprm,
 				       int uses_interp);
 
 struct arch_elf_state {

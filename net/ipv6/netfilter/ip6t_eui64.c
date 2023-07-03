@@ -4,13 +4,13 @@
 /* (C) 2001-2002 Andras Kis-Szabo <kisza@sch.bme.hu>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <linux/if_ether.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/ipv6.h>
+#include <linex/if_ether.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
 
 MODULE_DESCRIPTION("Xtables: IPv6 EUI64 address match");
 MODULE_LICENSE("GPL");

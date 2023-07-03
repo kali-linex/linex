@@ -5,22 +5,22 @@
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/io-pgtable.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/io-pgtable.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/clk.h>
+#include <linex/err.h>
 
 #include <asm/cacheflush.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 #include "msm_iommu_hw-8xxx.h"
 #include "msm_iommu.h"

@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmagb-b-fb.c
+ *	linex/drivers/video/pmagb-b-fb.c
  *
  *	PMAGB-B TURBOchannel Smart Frame Buffer (SFB) card support,
  *	derived from:
@@ -9,7 +9,7 @@
  *
  *	DECstation related code Copyright (C) 1999, 2000, 2001 by
  *	Michael Engel <engel@unix-ag.org>,
- *	Karsten Merker <merker@linuxtag.org> and
+ *	Karsten Merker <merker@linextag.org> and
  *	Harald Koerfgen.
  *	Copyright (c) 2005, 2006  Maciej W. Rozycki
  *
@@ -18,15 +18,15 @@
  *	archive for more details.
  */
 
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/tc.h>
+#include <linex/types.h>
 
 #include <asm/io.h>
 

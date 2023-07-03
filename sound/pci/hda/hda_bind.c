@@ -4,12 +4,12 @@
  * Copyright (c) Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/pm.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/export.h>
+#include <linex/pm.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

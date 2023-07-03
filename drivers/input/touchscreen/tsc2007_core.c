@@ -17,15 +17,15 @@
  *	Copyright (C) 2005 Dirk Behme
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/platform_data/tsc2007.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/gpio/consumer.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/mod_devicetable.h>
+#include <linex/property.h>
+#include <linex/platform_data/tsc2007.h>
 #include "tsc2007.h"
 
 int tsc2007_xfer(struct tsc2007 *tsc, u8 cmd)

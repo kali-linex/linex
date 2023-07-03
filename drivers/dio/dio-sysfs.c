@@ -11,9 +11,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/dio.h>
-#include <linux/stat.h>
+#include <linex/kernel.h>
+#include <linex/dio.h>
+#include <linex/stat.h>
 
 /* show configuration fields */
 

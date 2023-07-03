@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 #include "ipvlan.h"
-#include <linux/if_vlan.h>
-#include <linux/if_tap.h>
-#include <linux/interrupt.h>
-#include <linux/nsproxy.h>
-#include <linux/compat.h>
-#include <linux/if_tun.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/uio.h>
+#include <linex/if_vlan.h>
+#include <linex/if_tap.h>
+#include <linex/interrupt.h>
+#include <linex/nsproxy.h>
+#include <linex/compat.h>
+#include <linex/if_tun.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/cache.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
+#include <linex/cdev.h>
+#include <linex/idr.h>
+#include <linex/fs.h>
+#include <linex/uio.h>
 
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>
 #include <net/sock.h>
-#include <linux/virtio_net.h>
+#include <linex/virtio_net.h>
 
 #define TUN_OFFLOADS (NETIF_F_HW_CSUM | NETIF_F_TSO_ECN | NETIF_F_TSO | \
 		      NETIF_F_TSO6)

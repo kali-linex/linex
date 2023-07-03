@@ -197,14 +197,14 @@
  *		from memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/kprobes.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/bug.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/sched/clock.h>
+#include <linex/kprobes.h>
+#include <linex/errno.h>
+#include <linex/stddef.h>
+#include <linex/bug.h>
 #include <asm/opcodes.h>
 
 #include "core.h"
@@ -1631,7 +1631,7 @@ static int __init run_all_tests(void)
 		goto out;
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __LINEX_ARM_ARCH__ >= 7
 	/* We are able to run all test cases so coverage should be complete */
 	if (coverage_fail) {
 		pr_err("FAIL: Test coverage checks failed\n");

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/io.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/moduleparam.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/sizes.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/aer.h>
+#include <linex/io.h>
 #include "cxlmem.h"
 #include "cxlpci.h"
 #include "cxl.h"

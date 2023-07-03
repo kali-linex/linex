@@ -6,10 +6,10 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <sys/types.h>
 #include <machine.h>
-#include <uapi/linux/kcmp.h>
+#include <uapi/linex/kcmp.h>
 
 #include "trace/beauty/generated/kcmp_type_array.c"
 

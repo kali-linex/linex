@@ -6,12 +6,12 @@
  * Author: Fabrice Gasnier <fabrice.gasnier@st.com> for STMicroelectronics.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/tee_drv.h>
+#include <linex/arm-smccc.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of_device.h>
+#include <linex/tee_drv.h>
 
 #include "stm32-bsec-optee-ta.h"
 

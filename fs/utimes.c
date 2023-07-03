@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/utime.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <linex/file.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/utime.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
+#include <linex/compat.h>
 #include <asm/unistd.h>
-#include <linux/filelock.h>
+#include <linex/filelock.h>
 
 static bool nsec_valid(long nsec)
 {

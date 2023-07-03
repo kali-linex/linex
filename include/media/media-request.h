@@ -6,16 +6,16 @@
  * Copyright (C) 2018 Intel Corporation
  *
  * Author: Hans Verkuil <hans.verkuil@cisco.com>
- * Author: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Author: Sakari Ailus <sakari.ailus@linex.intel.com>
  */
 
 #ifndef MEDIA_REQUEST_H
 #define MEDIA_REQUEST_H
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/refcount.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/refcount.h>
 
 #include <media/media-device.h>
 

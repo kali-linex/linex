@@ -9,10 +9,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/interrupt.h>
-#include <linux/ratelimit.h>
-#include <linux/irq.h>
-#include <linux/sched/isolation.h>
+#include <linex/interrupt.h>
+#include <linex/ratelimit.h>
+#include <linex/irq.h>
+#include <linex/sched/isolation.h>
 
 #include "internals.h"
 

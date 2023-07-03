@@ -6,11 +6,11 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/of.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #include <soc/at91/atmel-sfr.h>
 

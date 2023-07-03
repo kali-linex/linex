@@ -9,24 +9,24 @@
  * Copyright (C) 1997 Theodore Ts'o
  */
 
-#include <linux/cache.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linex/cache.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/printk.h>
+#include <linex/mount.h>
+#include <linex/init.h>
+#include <linex/idr.h>
+#include <linex/bitops.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
 
 #include "internal.h"
 

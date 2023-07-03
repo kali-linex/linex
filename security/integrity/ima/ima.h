@@ -10,16 +10,16 @@
  *	internal Integrity Measurement Architecture (IMA) definitions
  */
 
-#ifndef __LINUX_IMA_H
-#define __LINUX_IMA_H
+#ifndef __LINEX_IMA_H
+#define __LINEX_IMA_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/hash.h>
-#include <linux/tpm.h>
-#include <linux/audit.h>
+#include <linex/types.h>
+#include <linex/crypto.h>
+#include <linex/fs.h>
+#include <linex/security.h>
+#include <linex/hash.h>
+#include <linex/tpm.h>
+#include <linex/audit.h>
 #include <crypto/hash_info.h>
 
 #include "../integrity.h"
@@ -452,4 +452,4 @@ static inline int ima_filter_rule_match(u32 secid, u32 field, u32 op,
 #define	POLICY_FILE_FLAGS	S_IWUSR
 #endif /* CONFIG_IMA_READ_POLICY */
 
-#endif /* __LINUX_IMA_H */
+#endif /* __LINEX_IMA_H */

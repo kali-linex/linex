@@ -7,12 +7,12 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/io.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/iosf_mbi.h>
@@ -151,6 +151,6 @@ module_init(punit_atom_debug_init);
 module_exit(punit_atom_debug_exit);
 
 MODULE_AUTHOR("Kumar P, Mahesh <mahesh.kumar.p@intel.com>");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 MODULE_DESCRIPTION("Driver for Punit devices states debugging");
 MODULE_LICENSE("GPL v2");

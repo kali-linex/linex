@@ -5,19 +5,19 @@
  * Normal mappings of chips in physical memory
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/list.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/cfi.h>
+#include <linex/mtd/flashchip.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/list.h>
 
 
 #define xstr(s) str(s)

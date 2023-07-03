@@ -3,7 +3,7 @@
  * Copyright © 2014 Intel Corporation
  */
 
-#include <linux/circ_buf.h>
+#include <linex/circ_buf.h>
 
 #include "gem/i915_gem_context.h"
 #include "gem/i915_gem_lmem.h"

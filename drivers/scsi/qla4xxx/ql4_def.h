@@ -7,24 +7,24 @@
 #ifndef __QL4_DEF_H
 #define __QL4_DEF_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/bsg-lib.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/dmapool.h>
+#include <linex/mempool.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/mutex.h>
+#include <linex/bsg-lib.h>
+#include <linex/vmalloc.h>
 
 #include <net/tcp.h>
 #include <scsi/scsi.h>
@@ -552,10 +552,10 @@ struct ql4_boot_tgt_info {
 };
 
 /*
- * Linux Host Adapter structure
+ * Linex Host Adapter structure
  */
 struct scsi_qla_host {
-	/* Linux adapter configuration data */
+	/* Linex adapter configuration data */
 	unsigned long flags;
 
 #define AF_ONLINE			0 /* 0x00000001 */
@@ -665,11 +665,11 @@ struct scsi_qla_host {
 	uint32_t firmware_state;
 	uint32_t addl_fw_state;
 
-	/* Linux kernel thread */
+	/* Linex kernel thread */
 	struct workqueue_struct *dpc_thread;
 	struct work_struct dpc_work;
 
-	/* Linux timer thread */
+	/* Linex timer thread */
 	struct timer_list timer;
 	uint32_t timer_active;
 

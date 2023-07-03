@@ -10,17 +10,17 @@
  * like  open(), close() and ioctl().
  */
 
-#include <linux/miscdevice.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/compat.h>
-#include <linux/highmem.h>
+#include <linex/miscdevice.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/compat.h>
+#include <linex/highmem.h>
 
 #include <uapi/misc/xilinx_sdfec.h>
 

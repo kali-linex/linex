@@ -6,10 +6,10 @@
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#ifndef LINUX_CEC_NOTIFIER_H
-#define LINUX_CEC_NOTIFIER_H
+#ifndef LINEX_CEC_NOTIFIER_H
+#define LINEX_CEC_NOTIFIER_H
 
-#include <linux/err.h>
+#include <linex/err.h>
 #include <media/cec.h>
 
 struct device;

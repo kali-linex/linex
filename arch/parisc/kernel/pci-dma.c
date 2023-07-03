@@ -18,21 +18,21 @@
 ** - ggg
 */
 
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
+#include <linex/init.h>
+#include <linex/gfp.h>
+#include <linex/mm.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
 
 #include <asm/cacheflush.h>
 #include <asm/dma.h>    /* for DMA_CHUNK_SIZE */
 #include <asm/io.h>
 #include <asm/page.h>	/* get_order */
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/tlbflush.h>	/* for purge_tlb_*() macros */
 
 static struct proc_dir_entry * proc_gsc_root __read_mostly = NULL;

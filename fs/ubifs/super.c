@@ -14,16 +14,16 @@
  * corresponding subsystems, but most of it is here.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/kthread.h>
+#include <linex/parser.h>
+#include <linex/seq_file.h>
+#include <linex/mount.h>
+#include <linex/math64.h>
+#include <linex/writeback.h>
 #include "ubifs.h"
 
 static int ubifs_default_version_set(const char *val, const struct kernel_param *kp)
@@ -291,7 +291,7 @@ static void ubifs_free_inode(struct inode *inode)
 }
 
 /*
- * Note, Linux write-back code calls this without 'i_mutex'.
+ * Note, Linex write-back code calls this without 'i_mutex'.
  */
 static int ubifs_write_inode(struct inode *inode, struct writeback_control *wbc)
 {

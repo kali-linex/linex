@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/clkdev.h>
 #include <asm/clock.h>
 
 /* SH7366 registers */

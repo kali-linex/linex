@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2014 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/spinlock.h>
+#include <linex/mempool.h>
 #include <scsi/scsi_tcq.h>
 
 #include "snic_io.h"

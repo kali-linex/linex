@@ -7,14 +7,14 @@
  * information is available in Documentation/core-api/genericirq.rst
  *
  */
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/maple_tree.h>
-#include <linux/irqdomain.h>
-#include <linux/sysfs.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/kernel_stat.h>
+#include <linex/maple_tree.h>
+#include <linex/irqdomain.h>
+#include <linex/sysfs.h>
 
 #include "internals.h"
 

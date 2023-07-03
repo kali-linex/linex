@@ -3,9 +3,9 @@
  *
  * Copyright (C) 2007 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/init.h>
 
 #include <asm/hypervisor.h>
 #include <asm/oplib.h>

@@ -7,7 +7,7 @@
 #include <sys/resource.h>
 #include <sys/capability.h>
 #include <sys/mman.h>
-#include <linux/mman.h>
+#include <linex/mman.h>
 #include <fcntl.h>
 #include <string.h>
 #include <sys/ipc.h>

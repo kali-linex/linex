@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-1.0+
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for Linex on s390.
  *
  *    Copyright IBM Corp. 2006, 2008
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -9,21 +9,21 @@
 #define KMSG_COMPONENT "hypfs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/time.h>
-#include <linux/sysfs.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/seq_file.h>
-#include <linux/uio.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/namei.h>
+#include <linex/vfs.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/time.h>
+#include <linex/sysfs.h>
+#include <linex/init.h>
+#include <linex/kobject.h>
+#include <linex/seq_file.h>
+#include <linex/uio.h>
 #include <asm/ebcdic.h>
 #include "hypfs.h"
 

@@ -5,16 +5,16 @@
  * Author: Fabian Vogt <fabian@ritter-vogt.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
-#include <linux/gpio/driver.h>
+#include <linex/gpio/driver.h>
 
 /*
  * Memory layout:

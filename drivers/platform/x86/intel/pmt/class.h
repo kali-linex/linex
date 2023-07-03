@@ -2,11 +2,11 @@
 #ifndef _INTEL_PMT_CLASS_H
 #define _INTEL_PMT_CLASS_H
 
-#include <linux/xarray.h>
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linex/xarray.h>
+#include <linex/types.h>
+#include <linex/bits.h>
+#include <linex/err.h>
+#include <linex/io.h>
 
 #include "../vsec.h"
 

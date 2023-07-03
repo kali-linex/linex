@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_TRAPS_H
 #define _ASM_X86_TRAPS_H
 
-#include <linux/context_tracking_state.h>
-#include <linux/kprobes.h>
+#include <linex/context_tracking_state.h>
+#include <linex/kprobes.h>
 
 #include <asm/debugreg.h>
 #include <asm/idtentry.h>

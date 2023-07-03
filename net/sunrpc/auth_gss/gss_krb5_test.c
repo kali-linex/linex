@@ -9,11 +9,11 @@
 #include <kunit/test.h>
 #include <kunit/visibility.h>
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <crypto/hash.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/gss_krb5.h>
+#include <linex/sunrpc/xdr.h>
+#include <linex/sunrpc/gss_krb5.h>
 
 #include "gss_krb5_internal.h"
 

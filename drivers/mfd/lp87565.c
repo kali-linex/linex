@@ -5,14 +5,14 @@
  * Author: Keerthy <j-keerthy@ti.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <linex/mfd/lp87565.h>
 
 static const struct regmap_config lp87565_regmap_config = {
 	.reg_bits = 8,

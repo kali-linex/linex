@@ -8,8 +8,8 @@
 #define IDT_ALIGN	(8 * (1 + HAS_KERNEL_IBT))
 
 #ifndef __ASSEMBLY__
-#include <linux/entry-common.h>
-#include <linux/hardirq.h>
+#include <linex/entry-common.h>
+#include <linex/hardirq.h>
 
 #include <asm/irq_stack.h>
 

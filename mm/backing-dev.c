@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/blkdev.h>
-#include <linux/wait.h>
-#include <linux/rbtree.h>
-#include <linux/kthread.h>
-#include <linux/backing-dev.h>
-#include <linux/blk-cgroup.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/writeback.h>
-#include <linux/device.h>
+#include <linex/blkdev.h>
+#include <linex/wait.h>
+#include <linex/rbtree.h>
+#include <linex/kthread.h>
+#include <linex/backing-dev.h>
+#include <linex/blk-cgroup.h>
+#include <linex/freezer.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/mm.h>
+#include <linex/sched/mm.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/writeback.h>
+#include <linex/device.h>
 #include <trace/events/writeback.h>
 
 struct backing_dev_info noop_backing_dev_info;
@@ -37,8 +37,8 @@ struct workqueue_struct *bdi_wq;
 #define K(x) ((x) << (PAGE_SHIFT - 10))
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 
 static struct dentry *bdi_debug_root;
 
@@ -499,7 +499,7 @@ static void wb_exit(struct bdi_writeback *wb)
 
 #ifdef CONFIG_CGROUP_WRITEBACK
 
-#include <linux/memcontrol.h>
+#include <linex/memcontrol.h>
 
 /*
  * cgwb_lock protects bdi->cgwb_tree, blkcg->cgwb_list, offline_cgwbs and

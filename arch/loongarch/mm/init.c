@@ -2,28 +2,28 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
-#include <linux/hugetlb.h>
-#include <linux/mmzone.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/pagemap.h>
+#include <linex/memblock.h>
+#include <linex/memremap.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/highmem.h>
+#include <linex/swap.h>
+#include <linex/proc_fs.h>
+#include <linex/pfn.h>
+#include <linex/hardirq.h>
+#include <linex/gfp.h>
+#include <linex/hugetlb.h>
+#include <linex/mmzone.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/bootinfo.h>

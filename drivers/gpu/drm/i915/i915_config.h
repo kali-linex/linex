@@ -6,8 +6,8 @@
 #ifndef __I915_CONFIG_H__
 #define __I915_CONFIG_H__
 
-#include <linux/types.h>
-#include <linux/limits.h>
+#include <linex/types.h>
+#include <linex/limits.h>
 
 struct drm_i915_private;
 

@@ -3,10 +3,10 @@
  * Copyright (C) 2017 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/thermal.h>
 
 #define PVTMON_CONTROL0					0x00
 #define PVTMON_CONTROL0_SEL_MASK			0x0000000e

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -63,35 +63,35 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/kmod.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/capability.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/stat.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
+#include <linex/inet.h>
+#include <linex/igmp.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/protocol.h>
@@ -105,7 +105,7 @@
 #include <net/udp.h>
 #include <net/udplite.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/raw.h>
 #include <net/icmp.h>
@@ -115,7 +115,7 @@
 #include <net/net_namespace.h>
 #include <net/secure_seq.h>
 #ifdef CONFIG_IP_MROUTE
-#include <linux/mroute.h>
+#include <linex/mroute.h>
 #endif
 #include <net/l3mdev.h>
 #include <net/compat.h>
@@ -1764,7 +1764,7 @@ static __net_init int ipv4_mib_init_net(struct net *net)
 		u64_stats_init(&af_inet_stats->syncp);
 	}
 
-	net->mib.net_statistics = alloc_percpu(struct linux_mib);
+	net->mib.net_statistics = alloc_percpu(struct linex_mib);
 	if (!net->mib.net_statistics)
 		goto err_net_mib;
 	net->mib.udp_statistics = alloc_percpu(struct udp_mib);

@@ -11,10 +11,10 @@
 #if !defined(_CROS_EC_SENSORHUB_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _CROS_EC_SENSORHUB_TRACE_H_
 
-#include <linux/types.h>
-#include <linux/platform_data/cros_ec_sensorhub.h>
+#include <linex/types.h>
+#include <linex/platform_data/cros_ec_sensorhub.h>
 
-#include <linux/tracepoint.h>
+#include <linex/tracepoint.h>
 
 TRACE_EVENT(cros_ec_sensorhub_timestamp,
 	    TP_PROTO(u32 ec_sample_timestamp, u32 ec_fifo_timestamp, s64 fifo_timestamp,

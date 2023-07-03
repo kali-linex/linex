@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/debugfs.h>
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/pgtable.h>
+#include <linex/debugfs.h>
+#include <linex/efi.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/pgtable.h>
 
 static int ptdump_show(struct seq_file *m, void *v)
 {
@@ -71,5 +71,5 @@ static void __exit pt_dump_debug_exit(void)
 
 module_init(pt_dump_debug_init);
 module_exit(pt_dump_debug_exit);
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@linex.intel.com>");
 MODULE_DESCRIPTION("Kernel debugging helper that dumps pagetables");

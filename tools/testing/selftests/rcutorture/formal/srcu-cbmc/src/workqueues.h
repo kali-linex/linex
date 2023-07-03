@@ -8,7 +8,7 @@
 #include "bug_on.h"
 #include "int_typedefs.h"
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* Stub workqueue implementation. */
 

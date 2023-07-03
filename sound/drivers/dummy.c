@@ -4,16 +4,16 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/hrtimer.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/hrtimer.h>
+#include <linex/math64.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

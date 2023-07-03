@@ -6,31 +6,31 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bottom_half.h>
-#include <linux/bug.h>
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/prctl.h>
-#include <linux/preempt.h>
-#include <linux/ptrace.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/swab.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/bottom_half.h>
+#include <linex/bug.h>
+#include <linex/cache.h>
+#include <linex/compat.h>
+#include <linex/compiler.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/ctype.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/irqflags.h>
+#include <linex/init.h>
+#include <linex/percpu.h>
+#include <linex/prctl.h>
+#include <linex/preempt.h>
+#include <linex/ptrace.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task_stack.h>
+#include <linex/signal.h>
+#include <linex/slab.h>
+#include <linex/stddef.h>
+#include <linex/sysctl.h>
+#include <linex/swab.h>
 
 #include <asm/esr.h>
 #include <asm/exception.h>

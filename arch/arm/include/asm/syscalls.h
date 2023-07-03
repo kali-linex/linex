@@ -2,8 +2,8 @@
 #ifndef __ASM_SYSCALLS_H
 #define __ASM_SYSCALLS_H
 
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linex/linkage.h>
+#include <linex/types.h>
 
 struct pt_regs;
 asmlinkage int sys_sigreturn(struct pt_regs *regs);

@@ -26,13 +26,13 @@
  *          Jerome Glisse
  */
 
-#include <linux/console.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/vgaarb.h>
+#include <linex/console.h>
+#include <linex/efi.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/vgaarb.h>
 
 #include <drm/drm_cache.h>
 #include <drm/drm_crtc_helper.h>

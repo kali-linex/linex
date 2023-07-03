@@ -4,17 +4,17 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/export.h>
+#include <linex/stddef.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/export.h>
 
 #include <asm/oplib.h>
 #include <asm/io.h>
 #include <asm/auxio.h>
-#include <asm/string.h>		/* memset(), Linux has no bzero() */
+#include <asm/string.h>		/* memset(), Linex has no bzero() */
 #include <asm/cpu_type.h>
 
 #include "kernel.h"
@@ -30,7 +30,7 @@ static DEFINE_SPINLOCK(auxio_lock);
 void __init auxio_probe(void)
 {
 	phandle node, auxio_nd;
-	struct linux_prom_registers auxregs[1];
+	struct linex_prom_registers auxregs[1];
 	struct resource r;
 
 	switch (sparc_cpu_model) {
@@ -111,7 +111,7 @@ volatile u8 __iomem *auxio_power_register = NULL;
 
 void __init auxio_power_probe(void)
 {
-	struct linux_prom_registers regs;
+	struct linex_prom_registers regs;
 	phandle node;
 	struct resource r;
 

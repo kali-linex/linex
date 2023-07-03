@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/dmi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hid.h>
+#include <linex/types.h>
+#include <linex/dmi.h>
+#include <linex/mod_devicetable.h>
+#include <linex/hid.h>
 
 #include "i2c-hid.h"
 #include "../hid-ids.h"

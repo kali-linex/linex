@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/virtio.h>
+#include <linex/virtio_config.h>
+#include <linex/input.h>
+#include <linex/slab.h>
 
-#include <uapi/linux/virtio_ids.h>
-#include <uapi/linux/virtio_input.h>
-#include <linux/input/mt.h>
+#include <uapi/linex/virtio_ids.h>
+#include <uapi/linex/virtio_input.h>
+#include <linex/input/mt.h>
 
 struct virtio_input {
 	struct virtio_device       *vdev;

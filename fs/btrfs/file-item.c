@@ -3,11 +3,11 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/sched/mm.h>
+#include <linex/bio.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/highmem.h>
+#include <linex/sched/mm.h>
 #include <crypto/hash.h>
 #include "messages.h"
 #include "misc.h"

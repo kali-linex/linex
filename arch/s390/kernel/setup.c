@@ -16,41 +16,41 @@
 #define KMSG_COMPONENT "setup"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/random.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/kernel_stat.h>
-#include <linux/dma-map-ops.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/pfn.h>
-#include <linux/ctype.h>
-#include <linux/reboot.h>
-#include <linux/topology.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/memory.h>
-#include <linux/compat.h>
-#include <linux/start_kernel.h>
-#include <linux/hugetlb.h>
-#include <linux/kmemleak.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/cpu.h>
+#include <linex/kernel.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/random.h>
+#include <linex/user.h>
+#include <linex/tty.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/initrd.h>
+#include <linex/root_dev.h>
+#include <linex/console.h>
+#include <linex/kernel_stat.h>
+#include <linex/dma-map-ops.h>
+#include <linex/device.h>
+#include <linex/notifier.h>
+#include <linex/pfn.h>
+#include <linex/ctype.h>
+#include <linex/reboot.h>
+#include <linex/topology.h>
+#include <linex/kexec.h>
+#include <linex/crash_dump.h>
+#include <linex/memory.h>
+#include <linex/compat.h>
+#include <linex/start_kernel.h>
+#include <linex/hugetlb.h>
+#include <linex/kmemleak.h>
 
 #include <asm/archrandom.h>
 #include <asm/boot_data.h>
@@ -849,7 +849,7 @@ static void __init setup_task_size(void)
 static void __init setup_control_program_code(void)
 {
 	union diag318_info diag318_info = {
-		.cpnc = CPNC_LINUX,
+		.cpnc = CPNC_LINEX,
 		.cpvc = 0,
 	};
 
@@ -871,9 +871,9 @@ static void __init log_component_list(void)
 	if (!early_ipl_comp_list_addr)
 		return;
 	if (ipl_block.hdr.flags & IPL_PL_FLAG_SIPL)
-		pr_info("Linux is running with Secure-IPL enabled\n");
+		pr_info("Linex is running with Secure-IPL enabled\n");
 	else
-		pr_info("Linux is running with Secure-IPL disabled\n");
+		pr_info("Linex is running with Secure-IPL disabled\n");
 	ptr = (void *) early_ipl_comp_list_addr;
 	end = (void *) ptr + early_ipl_comp_list_size;
 	pr_info("The IPL report contains the following components:\n");
@@ -903,14 +903,14 @@ void __init setup_arch(char **cmdline_p)
          * print what head.S has found out about the machine
          */
 	if (MACHINE_IS_VM)
-		pr_info("Linux is running as a z/VM "
+		pr_info("Linex is running as a z/VM "
 			"guest operating system in 64-bit mode\n");
 	else if (MACHINE_IS_KVM)
-		pr_info("Linux is running under KVM in 64-bit mode\n");
+		pr_info("Linex is running under KVM in 64-bit mode\n");
 	else if (MACHINE_IS_LPAR)
-		pr_info("Linux is running natively in 64-bit mode\n");
+		pr_info("Linex is running natively in 64-bit mode\n");
 	else
-		pr_info("Linux is running as a guest in 64-bit mode\n");
+		pr_info("Linex is running as a guest in 64-bit mode\n");
 
 	log_component_list();
 

@@ -10,14 +10,14 @@
  *  Copyright (C) 2006  Paul Mundt
  *  Copyright (C) 2006  Jamie Lenehan
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/io.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/io.h>
+#include <linex/serial_sci.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_intc.h>
+#include <linex/usb/ohci_pdriver.h>
 #include <asm/rtc.h>
 #include <asm/platform_early.h>
 #include <cpu/serial.h>

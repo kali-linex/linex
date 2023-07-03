@@ -8,14 +8,14 @@
  *
  * SuperH SH4-202 MicroDev board support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/ioport.h>
 #include <video/s1d13xxxfb.h>
 #include <mach/microdev.h>
 #include <asm/io.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 static struct resource smc91x_resources[] = {
 	[0] = {
@@ -24,8 +24,8 @@ static struct resource smc91x_resources[] = {
 		.flags		= IORESOURCE_MEM,
 	},
 	[1] = {
-		.start		= MICRODEV_LINUX_IRQ_ETHERNET,
-		.end		= MICRODEV_LINUX_IRQ_ETHERNET,
+		.start		= MICRODEV_LINEX_IRQ_ETHERNET,
+		.end		= MICRODEV_LINEX_IRQ_ETHERNET,
 		.flags		= IORESOURCE_IRQ,
 	},
 };

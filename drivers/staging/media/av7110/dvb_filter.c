@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/string.h>
 #include "dvb_filter.h"
 
 static u32 freq[4] = {480, 441, 320, 0};

@@ -5,8 +5,8 @@ static const char *__doc__ =
 "XDP redirect tool, using bpf_redirect helper\n"
 "Usage: xdp_redirect <IFINDEX|IFNAME>_IN <IFINDEX|IFNAME>_OUT\n";
 
-#include <linux/bpf.h>
-#include <linux/if_link.h>
+#include <linex/bpf.h>
+#include <linex/if_link.h>
 #include <assert.h>
 #include <errno.h>
 #include <signal.h>

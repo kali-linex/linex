@@ -10,15 +10,15 @@
 #define KMSG_COMPONENT "pkey"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kallsyms.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/cpufeature.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/kallsyms.h>
+#include <linex/debugfs.h>
+#include <linex/random.h>
+#include <linex/cpufeature.h>
 #include <asm/zcrypt.h>
 #include <asm/cpacf.h>
 #include <asm/pkey.h>

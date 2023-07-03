@@ -8,12 +8,12 @@
  * Copyright (C) 2016 Parav Pandit <pandit.parav@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/cgroup.h>
-#include <linux/parser.h>
-#include <linux/cgroup_rdma.h>
+#include <linex/bitops.h>
+#include <linex/slab.h>
+#include <linex/seq_file.h>
+#include <linex/cgroup.h>
+#include <linex/parser.h>
+#include <linex/cgroup_rdma.h>
 
 #define RDMACG_MAX_STR "max"
 

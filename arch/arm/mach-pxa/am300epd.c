@@ -16,22 +16,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/gpio.h>
 
 #include "gumstix.h"
 #include "mfp-pxa25x.h"
 #include "irqs.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linex/platform_data/video-pxafb.h>
 
 #include "generic.h"
 

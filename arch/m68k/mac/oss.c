@@ -15,12 +15,12 @@
  *		  since we now have a functional IOP manager.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/irq.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>

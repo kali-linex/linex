@@ -2,7 +2,7 @@
 /*
  * OpenRISC prom.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -13,10 +13,10 @@
  * interpreting the device tree.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/memblock.h>
+#include <linex/of_fdt.h>
 
 #include <asm/page.h>
 

@@ -3,14 +3,14 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@linex.intel.com>
 //
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/dmi.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 #include <sound/hda_codec.h>
 #include <sound/hda_register.h>
 #include <sound/intel-nhlt.h>

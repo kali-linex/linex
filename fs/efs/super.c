@@ -7,17 +7,17 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/exportfs.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/blkdev.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/exportfs.h>
+#include <linex/slab.h>
+#include <linex/buffer_head.h>
+#include <linex/vfs.h>
+#include <linex/blkdev.h>
 
 #include "efs.h"
-#include <linux/efs_vh.h>
-#include <linux/efs_fs_sb.h>
+#include <linex/efs_vh.h>
+#include <linex/efs_fs_sb.h>
 
 static int efs_statfs(struct dentry *dentry, struct kstatfs *buf);
 static int efs_fill_super(struct super_block *s, void *d, int silent);
@@ -58,8 +58,8 @@ static struct pt_types sgi_pt_types[] = {
 	{0x0A,		"SGI xfs"},
 	{0x0B,		"SGI xfslog"},
 	{0x0C,		"SGI xlv"},
-	{0x82,		"Linux swap"},
-	{0x83,		"Linux native"},
+	{0x82,		"Linex swap"},
+	{0x83,		"Linex native"},
 	{0,		NULL}
 };
 

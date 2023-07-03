@@ -15,14 +15,14 @@
  /* treated slightly differently for reconnection purposes since we never     */
  /* want to reuse a stale file handle and only the caller knows the file info */
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/vfs.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/uaccess.h>
-#include <linux/uuid.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <linex/fs.h>
+#include <linex/kernel.h>
+#include <linex/vfs.h>
+#include <linex/task_io_accounting_ops.h>
+#include <linex/uaccess.h>
+#include <linex/uuid.h>
+#include <linex/pagemap.h>
+#include <linex/xattr.h>
 #include "cifsglob.h"
 #include "cifsacl.h"
 #include "cifsproto.h"

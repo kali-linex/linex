@@ -33,10 +33,10 @@
 #ifndef _GVT_H_
 #define _GVT_H_
 
-#include <uapi/linux/pci_regs.h>
-#include <linux/kvm_host.h>
-#include <linux/vfio.h>
-#include <linux/mdev.h>
+#include <uapi/linex/pci_regs.h>
+#include <linex/kvm_host.h>
+#include <linex/vfio.h>
+#include <linex/mdev.h>
 
 #include "i915_drv.h"
 #include "intel_gvt.h"

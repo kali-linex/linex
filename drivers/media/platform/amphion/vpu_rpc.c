@@ -3,17 +3,17 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/svc/misc.h>
+#include <linex/init.h>
+#include <linex/interconnect.h>
+#include <linex/ioctl.h>
+#include <linex/list.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/firmware/imx/ipc.h>
+#include <linex/firmware/imx/svc/misc.h>
 #include "vpu.h"
 #include "vpu_rpc.h"
 #include "vpu_imx8q.h"

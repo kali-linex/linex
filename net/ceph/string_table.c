@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ceph/string_table.h>
+#include <linex/slab.h>
+#include <linex/gfp.h>
+#include <linex/string.h>
+#include <linex/spinlock.h>
+#include <linex/ceph/string_table.h>
 
 static DEFINE_SPINLOCK(string_tree_lock);
 static struct rb_root string_tree = RB_ROOT;

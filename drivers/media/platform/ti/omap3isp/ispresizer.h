@@ -14,8 +14,8 @@
 #ifndef OMAP3_ISP_RESIZER_H
 #define OMAP3_ISP_RESIZER_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 /*
  * Constants for filter coefficients count

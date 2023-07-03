@@ -4,13 +4,13 @@
  * Author: Andrew-CT Chen <andrew-ct.chen@mediatek.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/io.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/io.h>
+#include <linex/nvmem-provider.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 struct mtk_efuse_pdata {
 	bool uses_post_processing;

@@ -2,15 +2,15 @@
 /*
  *  Driver for the Integrant ITD1000 "Zero-IF Tuner IC for Direct Broadcast Satellite"
  *
- *  Copyright (c) 2007-8 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (c) 2007-8 Patrick Boettcher <pb@linextv.org>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/delay.h>
+#include <linex/dvb/frontend.h>
+#include <linex/i2c.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 
@@ -391,6 +391,6 @@ struct dvb_frontend *itd1000_attach(struct dvb_frontend *fe, struct i2c_adapter 
 }
 EXPORT_SYMBOL(itd1000_attach);
 
-MODULE_AUTHOR("Patrick Boettcher <pb@linuxtv.org>");
+MODULE_AUTHOR("Patrick Boettcher <pb@linextv.org>");
 MODULE_DESCRIPTION("Integrant ITD1000 driver");
 MODULE_LICENSE("GPL");

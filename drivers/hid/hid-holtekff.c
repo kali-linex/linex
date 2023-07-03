@@ -11,10 +11,10 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/hid.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include "hid-ids.h"
 

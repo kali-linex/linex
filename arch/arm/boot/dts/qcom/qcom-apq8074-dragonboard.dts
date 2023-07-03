@@ -32,13 +32,13 @@
 
 		button-volup {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8941_gpios 5 GPIO_ACTIVE_LOW>;
 		};
 
 		button-general {
 			label = "General";
-			linux,code = <KEY_PROG1>;
+			linex,code = <KEY_PROG1>;
 			gpios = <&pm8941_gpios 23 GPIO_ACTIVE_LOW>;
 		};
 	};

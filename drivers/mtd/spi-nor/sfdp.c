@@ -4,10 +4,10 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/mtd/spi-nor.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linex/bitfield.h>
+#include <linex/mtd/spi-nor.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
 
 #include "core.h"
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/of.h>
+#include <linex/of.h>
 #include <asm/cacheflush.h>
 
 #ifdef CONFIG_SMP

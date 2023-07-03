@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serdev.h>
-#include <linux/string.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/serdev.h>
+#include <linex/string.h>
 
 #include "x86-android-tablets.h"
 /* For gpiochip_get_desc() which is EXPORT_SYMBOL_GPL() */

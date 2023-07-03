@@ -4,15 +4,15 @@
  *
  * Copyright 1997, Theodore Ts'o
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/tty.h>
+#include <linex/seq_file.h>
+#include <linex/bitops.h>
 #include "internal.h"
 
 /*

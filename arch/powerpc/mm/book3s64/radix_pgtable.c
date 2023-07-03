@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) "radix-mmu: " fmt
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/string_helpers.h>
-#include <linux/memory.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/sched/mm.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/string_helpers.h>
+#include <linex/memory.h>
 
 #include <asm/pgalloc.h>
 #include <asm/mmu_context.h>
@@ -1059,7 +1059,7 @@ void radix__ptep_set_access_flags(struct vm_area_struct *vma, pte_t *ptep,
 	 * flushed before the new PTE is installed.
 	 *
 	 * This only needs to be done for radix, because hash translation does
-	 * flush when updating the linux pte (and we don't support NMMU
+	 * flush when updating the linex pte (and we don't support NMMU
 	 * accelerators on HPT on POWER9 anyway XXX: do we?).
 	 *
 	 * POWER10 (and P9P) NMMU does behave as per ISA.

@@ -17,7 +17,7 @@ KBUILD_DEFCONFIG := multi_defconfig
 ifdef cross_compiling
 	ifeq ($(CROSS_COMPILE),)
 		CROSS_COMPILE := $(call cc-cross-prefix, \
-			m68k-linux-gnu- m68k-linux- m68k-unknown-linux-gnu-)
+			m68k-linex-gnu- m68k-linex- m68k-unknown-linex-gnu-)
 	endif
 endif
 
@@ -66,15 +66,15 @@ KBUILD_CFLAGS += -pipe -ffreestanding
 ifdef CONFIG_MMU
 KBUILD_CFLAGS += -ffixed-a2
 else
-# we can use a m68k-linux-gcc toolchain with these in place
-KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uClinux\"
-KBUILD_CPPFLAGS += -D__uClinux__
+# we can use a m68k-linex-gcc toolchain with these in place
+KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uClinex\"
+KBUILD_CPPFLAGS += -D__uClinex__
 endif
 
 KBUILD_LDFLAGS := -m m68kelf
 
 ifdef CONFIG_SUN3
-LDFLAGS_vmlinux = -N
+LDFLAGS_vmlinex = -N
 endif
 
 CHECKFLAGS += -D__mc68000__
@@ -91,44 +91,44 @@ libs-y				+= arch/m68k/lib/
 
 all:	zImage
 
-lilo:	vmlinux
-	if [ -f $(INSTALL_PATH)/vmlinux ]; then mv -f $(INSTALL_PATH)/vmlinux $(INSTALL_PATH)/vmlinux.old; fi
+lilo:	vmlinex
+	if [ -f $(INSTALL_PATH)/vmlinex ]; then mv -f $(INSTALL_PATH)/vmlinex $(INSTALL_PATH)/vmlinex.old; fi
 	if [ -f $(INSTALL_PATH)/System.map ]; then mv -f $(INSTALL_PATH)/System.map $(INSTALL_PATH)/System.old; fi
-	cat vmlinux > $(INSTALL_PATH)/vmlinux
+	cat vmlinex > $(INSTALL_PATH)/vmlinex
 	cp System.map $(INSTALL_PATH)/System.map
 	if [ -x /sbin/lilo ]; then /sbin/lilo; else /etc/lilo/install; fi
 
-zImage compressed: vmlinux.gz
+zImage compressed: vmlinex.gz
 
-vmlinux.gz: vmlinux
-
-ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KGZIP) -9c vmlinux.tmp >vmlinux.gz
-	rm vmlinux.tmp
-else
-	$(KGZIP) -9c vmlinux >vmlinux.gz
-endif
-
-bzImage: vmlinux.bz2
-
-vmlinux.bz2: vmlinux
+vmlinex.gz: vmlinex
 
 ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KBZIP2) -1c vmlinux.tmp >vmlinux.bz2
-	rm vmlinux.tmp
+	cp vmlinex vmlinex.tmp
+	$(STRIP) vmlinex.tmp
+	$(KGZIP) -9c vmlinex.tmp >vmlinex.gz
+	rm vmlinex.tmp
 else
-	$(KBZIP2) -1c vmlinux >vmlinux.bz2
+	$(KGZIP) -9c vmlinex >vmlinex.gz
 endif
 
-CLEAN_FILES += vmlinux.gz vmlinux.bz2
+bzImage: vmlinex.bz2
+
+vmlinex.bz2: vmlinex
+
+ifndef CONFIG_KGDB
+	cp vmlinex vmlinex.tmp
+	$(STRIP) vmlinex.tmp
+	$(KBZIP2) -1c vmlinex.tmp >vmlinex.bz2
+	rm vmlinex.tmp
+else
+	$(KBZIP2) -1c vmlinex >vmlinex.bz2
+endif
+
+CLEAN_FILES += vmlinex.gz vmlinex.bz2
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/m68k/kernel/syscalls all
 
-install: KBUILD_IMAGE := vmlinux.gz
+install: KBUILD_IMAGE := vmlinex.gz
 install:
 	$(call cmd,install)

@@ -7,19 +7,19 @@
  * Copyright 2017	Intel Deutschland GmbH
  * Copyright (C) 2018-2023 Intel Corporation
  */
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/ieee80211.h>
+#include <linex/export.h>
+#include <linex/bitops.h>
+#include <linex/etherdevice.h>
+#include <linex/slab.h>
+#include <linex/ieee80211.h>
 #include <net/cfg80211.h>
 #include <net/ip.h>
 #include <net/dsfield.h>
-#include <linux/if_vlan.h>
-#include <linux/mpls.h>
-#include <linux/gcd.h>
-#include <linux/bitfield.h>
-#include <linux/nospec.h>
+#include <linex/if_vlan.h>
+#include <linex/mpls.h>
+#include <linex/gcd.h>
+#include <linex/bitfield.h>
+#include <linex/nospec.h>
 #include "core.h"
 #include "rdev-ops.h"
 

@@ -9,13 +9,13 @@
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  */
 
 #ifndef __T7XX_MHCCIF_H__
 #define __T7XX_MHCCIF_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "t7xx_pci.h"
 #include "t7xx_reg.h"

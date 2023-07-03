@@ -10,8 +10,8 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
 
 #include <asm/kvm_asm.h>
 #include <asm/kvm_mmu.h>

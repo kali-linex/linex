@@ -5,11 +5,11 @@
  * Copyright 2011 Wolfson Microelectronics plc
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/gpio.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

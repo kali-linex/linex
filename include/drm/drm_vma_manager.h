@@ -24,10 +24,10 @@
  */
 
 #include <drm/drm_mm.h>
-#include <linux/mm.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/mm.h>
+#include <linex/rbtree.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 /* We make up offsets for buffer objects so we can recognize them at
  * mmap time. pgoff in mmap is an unsigned long, so we need to make sure

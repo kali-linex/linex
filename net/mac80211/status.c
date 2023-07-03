@@ -8,8 +8,8 @@
  * Copyright 2021-2023  Intel Corporation
  */
 
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <linex/export.h>
+#include <linex/etherdevice.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"

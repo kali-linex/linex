@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/string_helpers.h>
+#include <linex/string_helpers.h>
 
 #include <drm/drm_print.h>
 #include <drm/i915_pciids.h>

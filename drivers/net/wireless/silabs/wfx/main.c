@@ -10,14 +10,14 @@
  * Copyright (c) 2006, Michael Wu <flamingice@sourmilk.net>
  * Copyright (c) 2004-2006 Jean-Baptiste Note <jbnote@gmail.com>, et al.
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/spi/spi.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/gpio/consumer.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/spi/spi.h>
+#include <linex/etherdevice.h>
+#include <linex/firmware.h>
 
 #include "main.h"
 #include "wfx.h"

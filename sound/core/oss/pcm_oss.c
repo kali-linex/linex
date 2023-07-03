@@ -11,22 +11,22 @@
 #define OSS_DEBUG
 #endif
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/string.h>
-#include <linux/compat.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/time.h>
+#include <linex/vmalloc.h>
+#include <linex/module.h>
+#include <linex/math64.h>
+#include <linex/string.h>
+#include <linex/compat.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include "pcm_plugin.h"
 #include <sound/info.h>
-#include <linux/soundcard.h>
+#include <linex/soundcard.h>
 #include <sound/initval.h>
 #include <sound/mixer_oss.h>
 
@@ -1220,7 +1220,7 @@ static int snd_pcm_oss_capture_position_fixup(struct snd_pcm_substream *substrea
 		runtime = substream->runtime;
 		if (*delay <= (snd_pcm_sframes_t)runtime->buffer_size)
 			break;
-		/* in case of overrun, skip whole periods like OSS/Linux driver does */
+		/* in case of overrun, skip whole periods like OSS/Linex driver does */
 		/* until avail(delay) <= buffer_size */
 		frames = (*delay - runtime->buffer_size) + runtime->period_size - 1;
 		frames /= runtime->period_size;

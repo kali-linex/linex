@@ -5,21 +5,21 @@
  * Author: Lee Jones <lee.jones@linaro.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
+#include <linex/debugfs.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mailbox_client.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/uaccess.h>
+#include <linex/sched/signal.h>
 
 #define MBOX_MAX_SIG_LEN	8
 #define MBOX_MAX_MSG_LEN	128

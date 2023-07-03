@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/swp_emulate.c
+ *  linex/arch/arm/kernel/swp_emulate.c
  *
  *  Copyright (C) 2009 ARM Limited
  *  __user_* functions adapted from include/asm/uaccess.h
@@ -15,19 +15,19 @@
  *	   Rn  = address
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/syscalls.h>
-#include <linux/perf_event.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/syscalls.h>
+#include <linex/perf_event.h>
 
 #include <asm/opcodes.h>
 #include <asm/system_info.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /*
  * Error-checking SWP macros implemented using ldrex{b}/strex{b}

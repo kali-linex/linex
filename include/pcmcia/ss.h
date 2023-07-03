@@ -9,15 +9,15 @@
  * (C) 1999             David A. Hinds
  */
 
-#ifndef _LINUX_SS_H
-#define _LINUX_SS_H
+#ifndef _LINEX_SS_H
+#define _LINEX_SS_H
 
-#include <linux/device.h>
-#include <linux/sched.h>	/* task_struct, completion */
-#include <linux/mutex.h>
+#include <linex/device.h>
+#include <linex/sched.h>	/* task_struct, completion */
+#include <linex/mutex.h>
 
 #ifdef CONFIG_CARDBUS
-#include <linux/pci.h>
+#include <linex/pci.h>
 #endif
 
 /* Definitions for card status flags for GetStatus */
@@ -260,4 +260,4 @@ extern int pcmcia_register_socket(struct pcmcia_socket *socket);
 extern void pcmcia_unregister_socket(struct pcmcia_socket *socket);
 
 
-#endif /* _LINUX_SS_H */
+#endif /* _LINEX_SS_H */

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * tree.c: Basic device tree traversal/scanning for the Linux
+ * tree.c: Basic device tree traversal/scanning for the Linex
  *         prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/ctype.h>
+#include <linex/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -233,7 +233,7 @@ phandle prom_finddevice(char *name)
 	char *s = name, *d;
 	phandle node = prom_root_node, node2;
 	unsigned int which_io, phys_addr;
-	struct linux_prom_registers reg[PROMREG_MAX];
+	struct linex_prom_registers reg[PROMREG_MAX];
 
 	while (*s++) {
 		if (!*s) return node; /* path '.../' is legal */

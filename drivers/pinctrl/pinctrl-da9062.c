@@ -11,16 +11,16 @@
  *
  * Copyright (C) 2019 Pengutronix, Marco Felsch <kernel@pengutronix.de>
  */
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linex/bits.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
 
-#include <linux/gpio/driver.h>
+#include <linex/gpio/driver.h>
 
-#include <linux/mfd/da9062/core.h>
-#include <linux/mfd/da9062/registers.h>
+#include <linex/mfd/da9062/core.h>
+#include <linex/mfd/da9062/registers.h>
 
 /*
  * We need this get the gpio_desc from a <gpio_chip,offset> tuple to decide if

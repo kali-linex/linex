@@ -5,10 +5,10 @@
 #if !defined(__RDEV_OPS_TRACE) || defined(TRACE_HEADER_MULTI_READ)
 #define __RDEV_OPS_TRACE
 
-#include <linux/tracepoint.h>
+#include <linex/tracepoint.h>
 
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/etherdevice.h>
 #include <net/cfg80211.h>
 #include "core.h"
 

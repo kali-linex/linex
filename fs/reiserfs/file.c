@@ -2,17 +2,17 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
+#include <linex/time.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/uaccess.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/quotaops.h>
+#include <linex/uaccess.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/writeback.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
+#include <linex/quotaops.h>
 
 /*
  * We pack the tails of files on file close, not at the time they are written.

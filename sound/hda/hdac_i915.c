@@ -3,9 +3,9 @@
  *  hdac_i915.c - routines for sync between HD-A core and i915 display driver
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 #include <sound/core.h>
 #include <sound/hdaudio.h>
 #include <sound/hda_i915.h>

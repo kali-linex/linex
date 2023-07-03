@@ -8,13 +8,13 @@
  * that made this driver possible.
  */
 
-#include <linux/memstick.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linex/memstick.h>
+#include <linex/idr.h>
+#include <linex/fs.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
 
 #define DRIVER_NAME "memstick"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Linex filesystem encryption layer
  * In-kernel key management code.  Includes functions to parse and
  * write authentication token-related packets with the underlying
  * file.
@@ -13,12 +13,12 @@
 
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/key.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/key.h>
+#include <linex/random.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
 #include "ecryptfs_kernel.h"
 
 /*

@@ -5,14 +5,14 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  *	      Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/completion.h>
 
 #include <asm/ccwdev.h>
 #include <asm/idals.h>

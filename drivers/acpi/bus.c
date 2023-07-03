@@ -7,30 +7,30 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/regulator/machine.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/sched.h>
+#include <linex/pm.h>
+#include <linex/device.h>
+#include <linex/proc_fs.h>
+#include <linex/acpi.h>
+#include <linex/slab.h>
+#include <linex/regulator/machine.h>
+#include <linex/workqueue.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
 #ifdef CONFIG_X86
 #include <asm/mpspec.h>
-#include <linux/dmi.h>
+#include <linex/dmi.h>
 #endif
-#include <linux/acpi_viot.h>
-#include <linux/pci.h>
+#include <linex/acpi_viot.h>
+#include <linex/pci.h>
 #include <acpi/apei.h>
-#include <linux/suspend.h>
-#include <linux/prmt.h>
+#include <linex/suspend.h>
+#include <linex/prmt.h>
 
 #include "internal.h"
 

@@ -24,9 +24,9 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_modeset_helper_vtables.h>

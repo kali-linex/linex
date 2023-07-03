@@ -9,10 +9,10 @@
  *      v3.2 - Added sysfs support
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/usb/input.h>
 
 MODULE_AUTHOR("Edouard TISSERANT <edouard.tisserant@wanadoo.fr>");
 MODULE_DESCRIPTION("USB Acecad Flair tablet driver");

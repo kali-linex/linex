@@ -4,17 +4,17 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/pm_qos.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
+#include <linex/compat.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/file.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/time.h>
+#include <linex/pm_qos.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/vmalloc.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/info.h>
@@ -22,8 +22,8 @@
 #include <sound/pcm_params.h>
 #include <sound/timer.h>
 #include <sound/minors.h>
-#include <linux/uio.h>
-#include <linux/delay.h>
+#include <linex/uio.h>
+#include <linex/delay.h>
 
 #include "pcm_local.h"
 

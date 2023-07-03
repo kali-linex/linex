@@ -35,7 +35,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/tipc_config.h>
+#include <linex/tipc_config.h>
 #include "socket.h"
 #include "msg.h"
 #include "bcast.h"

@@ -7,12 +7,12 @@
  * Author: Marc Zyngier <maz@kernel.org>
  *
  * Most of the information used in this driver was provided by the
- * Asahi Linux project. The rest was experimentally discovered.
+ * Asahi Linex project. The rest was experimentally discovered.
  */
 
-#include <linux/of.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/platform_device.h>
+#include <linex/of.h>
+#include <linex/perf/arm_pmu.h>
+#include <linex/platform_device.h>
 
 #include <asm/apple_m1_pmu.h>
 #include <asm/irq_regs.h>

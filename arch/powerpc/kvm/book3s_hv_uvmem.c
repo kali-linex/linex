@@ -3,7 +3,7 @@
  * Secure pages management: Migration of pages between normal and secure
  * memory of KVM guests.
  *
- * Copyright 2018 Bharata B Rao, IBM Corp. <bharata@linux.ibm.com>
+ * Copyright 2018 Bharata B Rao, IBM Corp. <bharata@linex.ibm.com>
  */
 
 /*
@@ -86,12 +86,12 @@
  * page-sizes, we need to break this assumption.
  */
 
-#include <linux/pagemap.h>
-#include <linux/migrate.h>
-#include <linux/kvm_host.h>
-#include <linux/ksm.h>
-#include <linux/of.h>
-#include <linux/memremap.h>
+#include <linex/pagemap.h>
+#include <linex/migrate.h>
+#include <linex/kvm_host.h>
+#include <linex/ksm.h>
+#include <linex/of.h>
+#include <linex/memremap.h>
 #include <asm/ultravisor.h>
 #include <asm/mman.h>
 #include <asm/kvm_ppc.h>

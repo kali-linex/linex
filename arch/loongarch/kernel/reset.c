@@ -2,15 +2,15 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/console.h>
+#include <linex/kernel.h>
+#include <linex/acpi.h>
+#include <linex/efi.h>
+#include <linex/export.h>
+#include <linex/pm.h>
+#include <linex/types.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
+#include <linex/console.h>
 
 #include <acpi/reboot.h>
 #include <asm/idle.h>

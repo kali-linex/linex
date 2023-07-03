@@ -9,14 +9,14 @@
 
 #define pr_fmt(fmt)	"tegra voltage-coupler: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/reboot.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/suspend.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/reboot.h>
+#include <linex/regulator/coupler.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/suspend.h>
 
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/pmc.h>

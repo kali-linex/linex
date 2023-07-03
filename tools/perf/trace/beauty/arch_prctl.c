@@ -6,7 +6,7 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "trace/beauty/generated/x86_arch_prctl_code_array.c"
 

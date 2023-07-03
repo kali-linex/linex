@@ -3,15 +3,15 @@
  * Copyright (c) 2022 MediaTek Inc.
  * Copyright (c) 2022 BayLibre, SAS
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/units.h>
-#include <linux/nvmem-consumer.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/phy/phy.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
+#include <linex/units.h>
+#include <linex/nvmem-consumer.h>
 
 #include "phy-mtk-io.h"
 #include "phy-mtk-hdmi.h"

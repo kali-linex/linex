@@ -3,17 +3,17 @@
  * GPIO driver for the ACCES PCI-IDIO-16
  * Copyright (C) 2017 William Breathitt Gray
  */
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irqdesc.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/irqdesc.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "gpio-idio-16.h"
 

@@ -5,13 +5,13 @@
  * Author: Arun R Murthy <arun.murthy@stericsson.com>
  * Datasheet: https://web.archive.org/web/20130614115108/http://www.stericsson.com/developers/CD00291561_UM1031_AB8500_user_manual-rev5_CTDS_public.pdf
  */
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pwm.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/module.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/pwm.h>
+#include <linex/mfd/abx500.h>
+#include <linex/mfd/abx500/ab8500.h>
+#include <linex/module.h>
 
 /*
  * PWM Out generators

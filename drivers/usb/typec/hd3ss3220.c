@@ -5,16 +5,16 @@
  * Copyright (C) 2019 Renesas Electronics Corp.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/usb/role.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/usb/typec.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/usb/role.h>
+#include <linex/irqreturn.h>
+#include <linex/interrupt.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/usb/typec.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
 
 #define HD3SS3220_REG_CN_STAT_CTRL	0x09
 #define HD3SS3220_REG_GEN_CTRL		0x0A

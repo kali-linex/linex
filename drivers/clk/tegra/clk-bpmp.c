@@ -3,10 +3,10 @@
  * Copyright (C) 2016-2022 NVIDIA Corporation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/seq_buf.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/seq_buf.h>
+#include <linex/slab.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

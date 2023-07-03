@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
 
 #include "ipu3.h"
 #include "ipu3-dmamap.h"

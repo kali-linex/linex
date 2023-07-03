@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE Linex Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -9,8 +9,8 @@
 #ifndef __ASM_KVM_BOOK3S_H__
 #define __ASM_KVM_BOOK3S_H__
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
+#include <linex/types.h>
+#include <linex/kvm_host.h>
 #include <asm/kvm_book3s_asm.h>
 
 struct kvmppc_bat {

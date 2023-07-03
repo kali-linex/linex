@@ -4,13 +4,13 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>

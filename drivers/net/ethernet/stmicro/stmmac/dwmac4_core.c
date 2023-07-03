@@ -10,10 +10,10 @@
  * Author: Alexandre Torgue <alexandre.torgue@st.com>
  */
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
+#include <linex/crc32.h>
+#include <linex/slab.h>
+#include <linex/ethtool.h>
+#include <linex/io.h>
 #include "stmmac.h"
 #include "stmmac_pcs.h"
 #include "dwmac4.h"

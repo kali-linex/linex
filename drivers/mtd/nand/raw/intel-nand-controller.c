@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2020 Intel Corporation. */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/nand.h>
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/units.h>
 #include <asm/unaligned.h>
 
 #define EBU_CLC			0x000

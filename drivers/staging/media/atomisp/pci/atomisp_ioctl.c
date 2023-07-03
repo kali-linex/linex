@@ -18,8 +18,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

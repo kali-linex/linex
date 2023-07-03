@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2020 Marvell International Ltd. All rights reserved */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/string.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/string.h>
 
 #include "prestera_dsa.h"
 

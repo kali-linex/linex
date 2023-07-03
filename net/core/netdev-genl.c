@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/rtnetlink.h>
+#include <linex/netdevice.h>
+#include <linex/notifier.h>
+#include <linex/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

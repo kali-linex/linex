@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
 
-#include <linux/gpio.h>
+#include <linex/gpio.h>
 
 #include "gpiolib.h"
 

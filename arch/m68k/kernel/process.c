@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/kernel/process.c
+ *  linex/arch/m68k/kernel/process.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
@@ -11,28 +11,28 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/rcupdate.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/elfcore.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/smp.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/reboot.h>
+#include <linex/init_task.h>
+#include <linex/mqueue.h>
+#include <linex/rcupdate.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
+#include <linex/elfcore.h>
 
 #include <asm/traps.h>
 #include <asm/machdep.h>

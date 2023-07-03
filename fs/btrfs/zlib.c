@@ -7,17 +7,17 @@
  * Created by David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/zlib.h>
-#include <linux/zutil.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/refcount.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/zlib.h>
+#include <linex/zutil.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/sched.h>
+#include <linex/pagemap.h>
+#include <linex/bio.h>
+#include <linex/refcount.h>
 #include "compression.h"
 
 /* workspace buffer size for s390 zlib hardware support */

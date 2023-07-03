@@ -7,8 +7,8 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/sched.h>
-#include <linux/jiffies.h>
+#include <linex/sched.h>
+#include <linex/jiffies.h>
 #include "queue.h"
 #include "cw1200.h"
 #include "debug.h"

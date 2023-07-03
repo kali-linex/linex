@@ -5,14 +5,14 @@
  * Copyright (c) 2016 Andrew Worsley amworsley@gmail.com
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/delay.h>
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 
 #define W1_EEPROM_DS2805       0x0D
 

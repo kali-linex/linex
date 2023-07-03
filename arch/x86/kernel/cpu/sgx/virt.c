@@ -5,13 +5,13 @@
  * Copyright(c) 2021 Intel Corporation.
  */
 
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/xarray.h>
 #include <asm/sgx.h>
 #include <uapi/asm/sgx.h>
 

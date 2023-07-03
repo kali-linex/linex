@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/netdevice.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/tracepoint.h>
+#include <linex/netdevice.h>
+#include <linex/percpu.h>
+#include <linex/printk.h>
+#include <linex/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM batadv

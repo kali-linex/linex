@@ -3,9 +3,9 @@
  * Based on arch/arm/mm/extable.c
  */
 
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
+#include <linex/bitfield.h>
+#include <linex/extable.h>
+#include <linex/uaccess.h>
 
 #include <asm/asm-extable.h>
 #include <asm/ptrace.h>

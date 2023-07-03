@@ -25,12 +25,12 @@
 #ifndef __AMDGPU_SMI_H__
 #define __AMDGPU_SMI_H__
 
-#include <linux/idr.h>
-#include <linux/kfifo.h>
-#include <linux/rbtree.h>
+#include <linex/idr.h>
+#include <linex/kfifo.h>
+#include <linex/rbtree.h>
 #include <drm/gpu_scheduler.h>
 #include <drm/drm_file.h>
-#include <linux/sched/mm.h>
+#include <linex/sched/mm.h>
 
 #include "amdgpu_sync.h"
 #include "amdgpu_ring.h"

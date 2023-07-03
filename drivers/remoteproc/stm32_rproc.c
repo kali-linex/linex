@@ -5,22 +5,22 @@
  *          Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/arm-smccc.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/mailbox_client.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regmap.h>
+#include <linex/remoteproc.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "remoteproc_internal.h"
 

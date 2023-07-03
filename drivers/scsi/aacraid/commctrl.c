@@ -4,7 +4,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for Linex.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -16,19 +16,19 @@
  * Abstract: Contains all routines for control of the AFA comm layer
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/delay.h> /* ssleep prototype */
-#include <linux/kthread.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/completion.h>
+#include <linex/dma-mapping.h>
+#include <linex/blkdev.h>
+#include <linex/compat.h>
+#include <linex/delay.h> /* ssleep prototype */
+#include <linex/kthread.h>
+#include <linex/uaccess.h>
 #include <scsi/scsi_host.h>
 
 #include "aacraid.h"
@@ -443,7 +443,7 @@ static int close_getadapter_fib(struct aac_dev * dev, void __user *arg)
  *	@arg: ioctl arguments
  *
  *	This routine returns the driver version.
- *	Under Linux, there have been no version incompatibilities, so this is
+ *	Under Linex, there have been no version incompatibilities, so this is
  *	simple!
  */
 

@@ -6,17 +6,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_data/x86/clk-pmc-atom.h>
-#include <linux/platform_data/x86/pmc_atom.h>
-#include <linux/platform_data/x86/simatic-ipc.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/platform_data/x86/clk-pmc-atom.h>
+#include <linex/platform_data/x86/pmc_atom.h>
+#include <linex/platform_data/x86/simatic-ipc.h>
+#include <linex/platform_device.h>
+#include <linex/pci.h>
+#include <linex/seq_file.h>
 
 struct pmc_bit_map {
 	const char *name;
@@ -522,7 +522,7 @@ static int __init pmc_atom_init(void)
 device_initcall(pmc_atom_init);
 
 /*
-MODULE_AUTHOR("Aubrey Li <aubrey.li@linux.intel.com>");
+MODULE_AUTHOR("Aubrey Li <aubrey.li@linex.intel.com>");
 MODULE_DESCRIPTION("Intel Atom SoC Power Management Controller Interface");
 MODULE_LICENSE("GPL v2");
 */

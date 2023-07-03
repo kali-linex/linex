@@ -10,18 +10,18 @@
 
 /****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/reboot.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/root_dev.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/cfi.h>
+#include <linex/reboot.h>
+#include <linex/err.h>
+#include <linex/kdev_t.h>
+#include <linex/root_dev.h>
 #include <asm/io.h>
 
 /****************************************************************************/

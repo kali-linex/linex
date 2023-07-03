@@ -4,9 +4,9 @@
 #include <asm/frame.h>
 #include <asm/unwind_hints.h>
 
-#include <linux/linkage.h>
-#include <linux/bits.h>
-#include <linux/errno.h>
+#include <linex/linkage.h>
+#include <linex/bits.h>
+#include <linex/errno.h>
 
 #include "../../virt/vmx/tdx/tdxcall.S"
 

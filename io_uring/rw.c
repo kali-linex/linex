@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/blk-mq.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fsnotify.h>
-#include <linux/poll.h>
-#include <linux/nospec.h>
-#include <linux/compat.h>
-#include <linux/io_uring.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/blk-mq.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/fsnotify.h>
+#include <linex/poll.h>
+#include <linex/nospec.h>
+#include <linex/compat.h>
+#include <linex/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/linex/io_uring.h>
 
 #include "io_uring.h"
 #include "opdef.h"

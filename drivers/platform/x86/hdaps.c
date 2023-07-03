@@ -16,16 +16,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/timer.h>
+#include <linex/dmi.h>
+#include <linex/jiffies.h>
+#include <linex/io.h>
 
 #define HDAPS_LOW_PORT		0x1600	/* first port used by hdaps */
 #define HDAPS_NR_PORTS		0x30	/* number of ports: 0x1600 - 0x162f */

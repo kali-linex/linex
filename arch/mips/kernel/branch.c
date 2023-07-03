@@ -6,10 +6,10 @@
  * Copyright (C) 1996, 97, 2000, 2001 by Ralf Baechle
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/export.h>
 #include <asm/branch.h>
 #include <asm/cpu.h>
 #include <asm/cpu-features.h>
@@ -18,7 +18,7 @@
 #include <asm/inst.h>
 #include <asm/mips-r2-to-r6-emul.h>
 #include <asm/ptrace.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "probes-common.h"
 

@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/mmc/host/sdhci-s3c.c
+/* linex/drivers/mmc/host/sdhci-s3c.c
  *
  * Copyright 2008 Openmoko Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinex.simtec.co.uk/
  *
  * SDHCI (HSMMC) support for Samsung SoC
  */
 
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mmc-sdhci-s3c.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/mmc-sdhci-s3c.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
 
-#include <linux/mmc/host.h>
+#include <linex/mmc/host.h>
 
 #include "sdhci.h"
 

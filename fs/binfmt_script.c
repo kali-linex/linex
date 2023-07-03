@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/binfmt_script.c
+ *  linex/fs/binfmt_script.c
  *
  *  Copyright (C) 1996  Martin von Löwis
  *  original #!-checking implemented by tytso.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/binfmts.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/binfmts.h>
+#include <linex/init.h>
+#include <linex/file.h>
+#include <linex/err.h>
+#include <linex/fs.h>
 
 static inline bool spacetab(char c) { return c == ' ' || c == '\t'; }
 static inline const char *next_non_spacetab(const char *first, const char *last)
@@ -31,7 +31,7 @@ static inline const char *next_terminator(const char *first, const char *last)
 	return NULL;
 }
 
-static int load_script(struct linux_binprm *bprm)
+static int load_script(struct linex_binprm *bprm)
 {
 	const char *i_name, *i_sep, *i_arg, *i_end, *buf_end;
 	struct file *file;
@@ -137,7 +137,7 @@ static int load_script(struct linux_binprm *bprm)
 	return 0;
 }
 
-static struct linux_binfmt script_format = {
+static struct linex_binfmt script_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_script,
 };

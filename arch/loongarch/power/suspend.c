@@ -5,9 +5,9 @@
  * Author: Huacai Chen <chenhuacai@loongson.cn>
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/acpi.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
+#include <linex/acpi.h>
+#include <linex/pm.h>
+#include <linex/suspend.h>
 
 #include <asm/loongarch.h>
 #include <asm/loongson.h>

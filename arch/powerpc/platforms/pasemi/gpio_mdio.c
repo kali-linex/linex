@@ -9,18 +9,18 @@
  * Based on drivers/net/fs_enet/mii-bitbang.c.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/phy.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/phy.h>
+#include <linex/of_address.h>
+#include <linex/of_mdio.h>
+#include <linex/of_platform.h>
 
 #define DELAY 1
 

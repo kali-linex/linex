@@ -7,15 +7,15 @@
  */
 
 /*
- *  Linux VFS extended attribute operations.
+ *  Linex VFS extended attribute operations.
  */
 
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/hashtable.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/xattr.h>
+#include <linex/hashtable.h>
 
 #define SYSTEM_ORANGEFS_KEY "system.pvfs2."
 #define SYSTEM_ORANGEFS_KEY_LEN 13

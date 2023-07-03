@@ -11,13 +11,13 @@
 // Design and use-case input from Jonas Bonn <jonas@southpole.se> and
 // Neil Brown <neilb@suse.de>
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/leds.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/leds.h>
 #include "../leds.h"
 
 struct transient_trig_data {

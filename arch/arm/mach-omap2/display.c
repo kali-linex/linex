@@ -7,21 +7,21 @@
  *	Sumit Semwal
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
-#include <linux/platform_data/omapdss.h>
+#include <linex/platform_data/omapdss.h>
 #include "omap_hwmod.h"
 #include "omap_device.h"
 #include "common.h"

@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/mlx5/qp.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/driver.h>
+#include <linex/debugfs.h>
+#include <linex/mlx5/qp.h>
+#include <linex/mlx5/cq.h>
+#include <linex/mlx5/driver.h>
 #include "mlx5_core.h"
 #include "lib/eq.h"
 

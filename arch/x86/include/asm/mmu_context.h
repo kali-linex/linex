@@ -3,9 +3,9 @@
 #define _ASM_X86_MMU_CONTEXT_H
 
 #include <asm/desc.h>
-#include <linux/atomic.h>
-#include <linux/mm_types.h>
-#include <linux/pkeys.h>
+#include <linex/atomic.h>
+#include <linex/mm_types.h>
+#include <linex/pkeys.h>
 
 #include <trace/events/tlb.h>
 

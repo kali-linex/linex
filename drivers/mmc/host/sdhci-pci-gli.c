@@ -7,13 +7,13 @@
  * Version: v0.9.0 (2019-08-08)
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/pci.h>
-#include <linux/mmc/mmc.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/iopoll.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/pci.h>
+#include <linex/mmc/mmc.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/iopoll.h>
 #include "sdhci.h"
 #include "sdhci-cqhci.h"
 #include "sdhci-pci.h"

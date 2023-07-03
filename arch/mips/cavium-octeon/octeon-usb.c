@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_platform.h>
 
 /*
  * USB Control Register

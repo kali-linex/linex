@@ -30,9 +30,9 @@
  * [5] - D/A 1 range (same choices)
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/delay.h>
 
 #define DT2801_TIMEOUT 1000
 

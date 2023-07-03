@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/oom_kill.c
+ *  linex/mm/oom_kill.c
  * 
  *  Copyright (C)  1998,2000  Rik van Riel
  *	Thanks go out to Claus Fischer for some serious inspiration and
@@ -18,32 +18,32 @@
  *  kernel subsystems and hints as to where to find out what things do.
  */
 
-#include <linux/oom.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
-#include <linux/sched/debug.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/timex.h>
-#include <linux/jiffies.h>
-#include <linux/cpuset.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/memcontrol.h>
-#include <linux/mempolicy.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/freezer.h>
-#include <linux/ftrace.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/mmu_notifier.h>
+#include <linex/oom.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/sched/task.h>
+#include <linex/sched/debug.h>
+#include <linex/swap.h>
+#include <linex/syscalls.h>
+#include <linex/timex.h>
+#include <linex/jiffies.h>
+#include <linex/cpuset.h>
+#include <linex/export.h>
+#include <linex/notifier.h>
+#include <linex/memcontrol.h>
+#include <linex/mempolicy.h>
+#include <linex/security.h>
+#include <linex/ptrace.h>
+#include <linex/freezer.h>
+#include <linex/ftrace.h>
+#include <linex/ratelimit.h>
+#include <linex/kthread.h>
+#include <linex/init.h>
+#include <linex/mmu_notifier.h>
 
 #include <asm/tlb.h>
 #include "internal.h"

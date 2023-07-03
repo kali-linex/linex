@@ -3,18 +3,18 @@
  * Copyright 2008 Cisco Systems, Inc.  All rights reserved.
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/if_ether.h>
+#include <linex/module.h>
+#include <linex/mempool.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/skbuff.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/if_ether.h>
 #include <scsi/fc/fc_fip.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

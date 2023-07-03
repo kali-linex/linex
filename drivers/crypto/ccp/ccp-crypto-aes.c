@@ -7,11 +7,11 @@
  * Author: Tom Lendacky <thomas.lendacky@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/scatterlist.h>
+#include <linex/crypto.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/ctr.h>

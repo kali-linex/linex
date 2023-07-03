@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <subcmd/parse-options.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/perf_event.h>
-#include <linux/time64.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/perf_event.h>
+#include <linex/time64.h>
 #include <sys/syscall.h>
 #include <sys/ioctl.h>
 #include <sys/time.h>

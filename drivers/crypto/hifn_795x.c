@@ -4,21 +4,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/ktime.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mod_devicetable.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
+#include <linex/dma-mapping.h>
+#include <linex/scatterlist.h>
+#include <linex/highmem.h>
+#include <linex/crypto.h>
+#include <linex/hw_random.h>
+#include <linex/ktime.h>
 
 #include <crypto/algapi.h>
 #include <crypto/internal/des.h>

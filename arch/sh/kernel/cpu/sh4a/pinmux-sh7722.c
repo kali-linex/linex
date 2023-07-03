@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
+#include <linex/bug.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
 #include <cpu/pfc.h>
 
 static struct resource sh7722_pfc_resources[] = {

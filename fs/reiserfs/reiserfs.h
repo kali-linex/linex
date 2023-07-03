@@ -4,17 +4,17 @@
  * licensing and copyright details
  */
 
-#include <linux/reiserfs_fs.h>
+#include <linex/reiserfs_fs.h>
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bug.h>
-#include <linux/workqueue.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/bug.h>
+#include <linex/workqueue.h>
 #include <asm/unaligned.h>
-#include <linux/bitops.h>
-#include <linux/proc_fs.h>
-#include <linux/buffer_head.h>
+#include <linex/bitops.h>
+#include <linex/proc_fs.h>
+#include <linex/buffer_head.h>
 
 /* the 32 bit compat definitions with int argument */
 #define REISERFS_IOC32_UNPACK		_IOW(0xCD, 1, int)

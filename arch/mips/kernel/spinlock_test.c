@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/hrtimer.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
+#include <linex/init.h>
+#include <linex/kthread.h>
+#include <linex/hrtimer.h>
+#include <linex/fs.h>
+#include <linex/debugfs.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
 #include <asm/debug.h>
 
 static int ss_get(void *data, u64 *val)

@@ -36,16 +36,16 @@
  * InfiniPath 7322 chip
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_smi.h>
 #ifdef CONFIG_INFINIBAND_QIB_DCA
-#include <linux/dca.h>
+#include <linex/dca.h>
 #endif
 
 #include "qib.h"

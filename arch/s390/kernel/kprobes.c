@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) "kprobes: " fmt
 
-#include <linux/moduleloader.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/stop_machine.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/ftrace.h>
+#include <linex/moduleloader.h>
+#include <linex/kprobes.h>
+#include <linex/ptrace.h>
+#include <linex/preempt.h>
+#include <linex/stop_machine.h>
+#include <linex/kdebug.h>
+#include <linex/uaccess.h>
+#include <linex/extable.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/hardirq.h>
+#include <linex/ftrace.h>
 #include <asm/set_memory.h>
 #include <asm/sections.h>
 #include <asm/dis.h>

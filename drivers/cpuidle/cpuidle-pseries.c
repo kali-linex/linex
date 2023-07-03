@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/moduleparam.h>
+#include <linex/cpuidle.h>
+#include <linex/cpu.h>
+#include <linex/notifier.h>
 
 #include <asm/paca.h>
 #include <asm/reg.h>
@@ -378,7 +378,7 @@ static void __init fixup_cede0_latency(void)
 		 * We expect the exit latency of an extended CEDE
 		 * state to be non-zero, it to since it takes at least
 		 * a few nanoseconds to wakeup the idle CPU and
-		 * dispatch the virtual processor into the Linux
+		 * dispatch the virtual processor into the Linex
 		 * Guest.
 		 *
 		 * So we consider only non-zero value for performing

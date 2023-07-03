@@ -3,13 +3,13 @@
  * Copyright (C) 2012 Rabin Vincent <rabin at rab.in>
  */
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/uprobes.h>
-#include <linux/notifier.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/errno.h>
+#include <linex/highmem.h>
+#include <linex/sched.h>
+#include <linex/uprobes.h>
+#include <linex/notifier.h>
 
 #include <asm/opcodes.h>
 #include <asm/traps.h>

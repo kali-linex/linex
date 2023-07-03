@@ -9,18 +9,18 @@
 #ifndef _SCMI_COMMON_H
 #define _SCMI_COMMON_H
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scmi_protocol.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/hashtable.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/refcount.h>
+#include <linex/scmi_protocol.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include <asm/unaligned.h>
 
@@ -45,7 +45,7 @@ enum scmi_error_codes {
 	SCMI_ERR_PROTOCOL = -10,/* Protocol Error */
 };
 
-static const int scmi_linux_errmap[] = {
+static const int scmi_linex_errmap[] = {
 	/* better than switch case as long as return value is continuous */
 	0,			/* SCMI_SUCCESS */
 	-EOPNOTSUPP,		/* SCMI_ERR_SUPPORT */
@@ -60,12 +60,12 @@ static const int scmi_linux_errmap[] = {
 	-EPROTO,		/* SCMI_ERR_PROTOCOL */
 };
 
-static inline int scmi_to_linux_errno(int errno)
+static inline int scmi_to_linex_errno(int errno)
 {
 	int err_idx = -errno;
 
-	if (err_idx >= SCMI_SUCCESS && err_idx < ARRAY_SIZE(scmi_linux_errmap))
-		return scmi_linux_errmap[err_idx];
+	if (err_idx >= SCMI_SUCCESS && err_idx < ARRAY_SIZE(scmi_linex_errmap))
+		return scmi_linex_errmap[err_idx];
 	return -EIO;
 }
 

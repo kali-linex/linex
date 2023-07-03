@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// linux/sound/bcm/bcm63xx-i2s-whistler.c
+// linex/sound/bcm/bcm63xx-i2s-whistler.c
 // BCM63xx whistler i2s driver
 // Copyright (c) 2020 Broadcom Corporation
 // Author: Kevin-Ke Li <kevin-ke.li@broadcom.com>
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bcm63xx-i2s.h"

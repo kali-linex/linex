@@ -47,7 +47,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Debugging Tool Linux driver
+ * PCIe NTB Debugging Tool Linex driver
  */
 
 /*
@@ -176,17 +176,17 @@
  * root@peer# head -c 7 $DBG_DIR/peer0/peer_mw0
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/dma-mapping.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
-#include <linux/ntb.h>
+#include <linex/ntb.h>
 
 #define DRIVER_NAME		"ntb_tool"
 #define DRIVER_VERSION		"2.0"

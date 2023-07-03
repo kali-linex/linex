@@ -7,11 +7,11 @@
 #ifndef _ATMCLIP_H
 #define _ATMCLIP_H
 
-#include <linux/netdevice.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmarp.h>
-#include <linux/spinlock.h>
+#include <linex/netdevice.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/atmarp.h>
+#include <linex/spinlock.h>
 #include <net/neighbour.h>
 
 

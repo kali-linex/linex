@@ -5,8 +5,8 @@
  * Copyright (C) 2012  Renesas Solutions Corp.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
 
 #include <cpu/pfc.h>
 

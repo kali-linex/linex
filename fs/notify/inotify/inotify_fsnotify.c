@@ -13,16 +13,16 @@
  * inotify was largely rewriten to make use of the fsnotify infrastructure
  */
 
-#include <linux/dcache.h> /* d_unlinked */
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/inotify.h>
-#include <linux/path.h> /* struct path */
-#include <linux/slab.h> /* kmem_* */
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/sched/mm.h>
+#include <linex/dcache.h> /* d_unlinked */
+#include <linex/fs.h> /* struct inode */
+#include <linex/fsnotify_backend.h>
+#include <linex/inotify.h>
+#include <linex/path.h> /* struct path */
+#include <linex/slab.h> /* kmem_* */
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/sched/user.h>
+#include <linex/sched/mm.h>
 
 #include "inotify.h"
 

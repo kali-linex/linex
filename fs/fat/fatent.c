@@ -3,9 +3,9 @@
  * Copyright (C) 2004, OGAWA Hirofumi
  */
 
-#include <linux/blkdev.h>
-#include <linux/sched/signal.h>
-#include <linux/backing-dev-defs.h>
+#include <linex/blkdev.h>
+#include <linex/sched/signal.h>
+#include <linex/backing-dev-defs.h>
 #include "fat.h"
 
 struct fatent_operations {

@@ -12,27 +12,27 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fsi.h>
-#include <linux/fsi-sbefifo.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/fsi.h>
+#include <linex/fsi-sbefifo.h>
+#include <linex/kernel.h>
+#include <linex/cdev.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/delay.h>
+#include <linex/uio.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
 
-#include <uapi/linux/fsi.h>
+#include <uapi/linex/fsi.h>
 
 /*
  * The SBEFIFO is a pipe-like FSI device for communicating with
@@ -253,7 +253,7 @@ int sbefifo_parse_status(struct device *dev, u16 cmd, __be32 *response,
 
 	/*
 	 * Primary status don't have the top bit set, so can't be confused with
-	 * Linux negative error codes, so return the status word whole.
+	 * Linex negative error codes, so return the status word whole.
 	 */
 	return s1;
 }
@@ -1138,7 +1138,7 @@ module_init(sbefifo_init);
 module_exit(sbefifo_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Brad Bishop <bradleyb@fuzziesquirrel.com>");
-MODULE_AUTHOR("Eddie James <eajames@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@linex.vnet.ibm.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_AUTHOR("Benjamin Herrenschmidt <benh@kernel.crashing.org>");
-MODULE_DESCRIPTION("Linux device interface to the POWER Self Boot Engine");
+MODULE_DESCRIPTION("Linex device interface to the POWER Self Boot Engine");

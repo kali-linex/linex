@@ -10,8 +10,8 @@
 #ifndef __DRIVERS_INTERCONNECT_IMX_H
 #define __DRIVERS_INTERCONNECT_IMX_H
 
-#include <linux/interconnect-provider.h>
-#include <linux/kernel.h>
+#include <linex/interconnect-provider.h>
+#include <linex/kernel.h>
 
 #define IMX_ICC_MAX_LINKS	4
 

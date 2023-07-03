@@ -3,8 +3,8 @@
  *  Copyright (C) 2016 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 #include <sound/ac97/codec.h>
 #include <sound/ac97/compat.h>
 #include <sound/ac97/controller.h>

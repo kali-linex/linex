@@ -6,7 +6,7 @@
 #ifndef __IVPU_HW_MTL_REG_H__
 #define __IVPU_HW_MTL_REG_H__
 
-#include <linux/bits.h>
+#include <linex/bits.h>
 
 #define MTL_BUTTRESS_INTERRUPT_TYPE					0x00000000u
 

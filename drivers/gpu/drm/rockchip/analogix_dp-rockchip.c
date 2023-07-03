@@ -8,13 +8,13 @@
  *         Jeff Chen <jeff.chen@rock-chips.com>
  */
 
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
+#include <linex/component.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/clk.h>
 
 #include <video/of_videomode.h>
 #include <video/videomode.h>

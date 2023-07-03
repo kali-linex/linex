@@ -5,16 +5,16 @@
  * SDW Intel ACPI scan helpers
  */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/fwnode.h>
-#include <linux/module.h>
-#include <linux/soundwire/sdw_intel.h>
-#include <linux/string.h>
+#include <linex/acpi.h>
+#include <linex/bits.h>
+#include <linex/bitfield.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/fwnode.h>
+#include <linex/module.h>
+#include <linex/soundwire/sdw_intel.h>
+#include <linex/string.h>
 
 #define SDW_LINK_TYPE		4 /* from Intel ACPI documentation */
 #define SDW_MAX_LINKS		4

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  *
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
@@ -18,9 +18,9 @@
  *  variants.
  */
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/init.h>
+#include <linex/linkage.h>
+#include <linex/threads.h>
+#include <linex/init.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -296,7 +296,7 @@ _GLOBAL(fsl_secondary_thread_init)
 	 * seemed like they'd be overkill.  We can't tell just by looking
 	 * at the old PIR value which state it's in, since the same value
 	 * could be valid for one thread out of reset and for a different
-	 * thread in Linux.
+	 * thread in Linex.
 	 */
 
 	mfspr	r3, SPRN_PIR
@@ -828,7 +828,7 @@ _GLOBAL(pmac_secondary_start)
  *   2. Segment table pointer (virtual address)
  * On entry the following are set:
  *   r1	       = stack pointer (real addr of temp stack)
- *   r24       = cpu# (in Linux terms)
+ *   r24       = cpu# (in Linex terms)
  *   r13       = paca virtual address
  *   SPRG_PACA = paca virtual address
  */

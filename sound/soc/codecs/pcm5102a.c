@@ -6,9 +6,9 @@
  *		Copyright 2013
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <sound/soc.h>
 

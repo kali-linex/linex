@@ -4,15 +4,15 @@
 #ifndef _I40E_OSDEP_H_
 #define _I40E_OSDEP_H_
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/tcp.h>
-#include <linux/pci.h>
-#include <linux/highuid.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
+#include <linex/if_vlan.h>
+#include <linex/tcp.h>
+#include <linex/pci.h>
+#include <linex/highuid.h>
 
 /* get readq/writeq support for 32 bit kernels, use the low-first version */
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
 
 /* File to be the magic between shared code and
  * actual OS primitives

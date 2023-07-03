@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
 
 #include "mthca_dev.h"
 #include "mthca_cmd.h"

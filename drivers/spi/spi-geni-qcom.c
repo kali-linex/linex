@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The Linex foundation. All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/qcom-gpi-dma.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/soc/qcom/geni-se.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/dma/qcom-gpi-dma.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/pm_runtime.h>
+#include <linex/soc/qcom/geni-se.h>
+#include <linex/spi/spi.h>
+#include <linex/spinlock.h>
 
 /* SPI SE specific registers and respective register fields */
 #define SE_SPI_CPHA		0x224

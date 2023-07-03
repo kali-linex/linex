@@ -5,8 +5,8 @@
  * Copyright (C) 2020-2021 NVIDIA CORPORATION & AFFILIATES
  */
 
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
 
 #include "mlxbf_gige.h"
 #include "mlxbf_gige_regs.h"

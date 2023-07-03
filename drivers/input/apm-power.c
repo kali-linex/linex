@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/apm-emulation.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/tty.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/apm-emulation.h>
 
 static void system_power_event(unsigned int keycode)
 {

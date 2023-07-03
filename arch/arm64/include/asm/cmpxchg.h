@@ -7,8 +7,8 @@
 #ifndef __ASM_CMPXCHG_H
 #define __ASM_CMPXCHG_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
+#include <linex/build_bug.h>
+#include <linex/compiler.h>
 
 #include <asm/barrier.h>
 #include <asm/lse.h>

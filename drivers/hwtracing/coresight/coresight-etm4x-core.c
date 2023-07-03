@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/pm_wakeup.h>
-#include <linux/amba/bus.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/smp.h>
+#include <linex/sysfs.h>
+#include <linex/stat.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
+#include <linex/cpu_pm.h>
+#include <linex/coresight.h>
+#include <linex/coresight-pmu.h>
+#include <linex/pm_wakeup.h>
+#include <linex/amba/bus.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
+#include <linex/perf_event.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/property.h>
 
 #include <asm/barrier.h>
 #include <asm/sections.h>

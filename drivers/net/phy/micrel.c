@@ -19,20 +19,20 @@
  *			 ksz9477, lan8804
  */
 
-#include <linux/bitfield.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/micrel_phy.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_clock.h>
-#include <linux/ptp_classify.h>
-#include <linux/net_tstamp.h>
-#include <linux/gpio/consumer.h>
+#include <linex/bitfield.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/micrel_phy.h>
+#include <linex/of.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/ptp_clock.h>
+#include <linex/ptp_classify.h>
+#include <linex/net_tstamp.h>
+#include <linex/gpio/consumer.h>
 
 /* Operation Mode Strap Override */
 #define MII_KSZPHY_OMSO				0x16

@@ -7,14 +7,14 @@
  * Copyright (C) 2007 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/serio.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
 
 #define TAOS_BUFFER_SIZE	63
 

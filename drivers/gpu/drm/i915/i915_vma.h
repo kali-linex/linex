@@ -25,8 +25,8 @@
 #ifndef __I915_VMA_H__
 #define __I915_VMA_H__
 
-#include <linux/io-mapping.h>
-#include <linux/rbtree.h>
+#include <linex/io-mapping.h>
+#include <linex/rbtree.h>
 
 #include <drm/drm_mm.h>
 

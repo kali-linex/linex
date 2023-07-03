@@ -3,12 +3,12 @@
 // Copyright (c) 2019 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/module.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
 

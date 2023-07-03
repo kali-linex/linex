@@ -5,10 +5,10 @@
  * 	Copyright (c) 2007 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/module.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 #include <net/rtnetlink.h>

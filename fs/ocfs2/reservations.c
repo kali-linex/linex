@@ -14,11 +14,11 @@
  * The rest is copyright (C) 2010 Novell.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/highmem.h>
+#include <linex/bitops.h>
+#include <linex/list.h>
 
 #include <cluster/masklog.h>
 

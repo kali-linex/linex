@@ -9,35 +9,35 @@
  * originally based on code by:
  * Copyright (C) 1998,1999 Christian Theiss <mistert@rz.fh-augsburg.de>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linextv.org
  */
 
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/timer.h>
+#include <linex/poll.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/i2c.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/interrupt.h>
+#include <linex/string.h>
+#include <linex/pci.h>
+#include <linex/vmalloc.h>
+#include <linex/firmware.h>
+#include <linex/crc32.h>
+#include <linex/i2c.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
 
-#include <linux/dvb/frontend.h>
+#include <linex/dvb/frontend.h>
 
 #include <media/dvb_frontend.h>
 
@@ -1507,7 +1507,7 @@ static int get_firmware(struct av7110* av7110)
 		if (ret == -ENOENT) {
 			printk(KERN_ERR "dvb-ttpci: could not load firmware, file not found: dvb-ttpci-01.fw\n");
 			printk(KERN_ERR "dvb-ttpci: usually this should be in /usr/lib/hotplug/firmware or /lib/firmware\n");
-			printk(KERN_ERR "dvb-ttpci: and can be downloaded from https://linuxtv.org/download/dvb/firmware/\n");
+			printk(KERN_ERR "dvb-ttpci: and can be downloaded from https://linextv.org/download/dvb/firmware/\n");
 		} else
 			printk(KERN_ERR "dvb-ttpci: cannot request firmware (error %i)\n",
 			       ret);
@@ -2289,7 +2289,7 @@ static int frontend_init(struct av7110 *av7110)
 /* Budgetpatch note:
  * Original hardware design by Roberto Deza:
  * There is a DVB_Wiki at
- * https://linuxtv.org
+ * https://linextv.org
  *
  * New software triggering design by Emard that works on
  * original Roberto Deza's hardware:

@@ -23,10 +23,10 @@
 #include "string2.h"
 #include "symbol.h"
 #include "util/rlimit.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 #include <subcmd/exec-cmd.h>
-#include <linux/zalloc.h>
+#include <linex/zalloc.h>
 
 #include "builtin-test-list.h"
 
@@ -38,7 +38,7 @@ struct test_suite *__weak arch_tests[] = {
 };
 
 static struct test_suite *generic_tests[] = {
-	&suite__vmlinux_matches_kallsyms,
+	&suite__vmlinex_matches_kallsyms,
 #ifdef HAVE_LIBTRACEEVENT
 	&suite__openat_syscall_event,
 	&suite__openat_syscall_event_on_all_cpus,
@@ -543,7 +543,7 @@ int cmd_test(int argc, const char **argv)
 
 	symbol_conf.priv_size = sizeof(int);
 	symbol_conf.sort_by_name = true;
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmlinex_path = true;
 
 	if (symbol__init(NULL) < 0)
 		return -1;

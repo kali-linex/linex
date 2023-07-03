@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/fsl/mc.h>
+#include <linex/io.h>
+#include <linex/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

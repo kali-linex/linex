@@ -25,8 +25,8 @@
  *	Yogesh Mohan Marimuthu <yogesh.mohan.marimuthu@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string_helpers.h>
+#include <linex/kernel.h>
+#include <linex/string_helpers.h>
 
 #include "i915_drv.h"
 #include "intel_de.h"

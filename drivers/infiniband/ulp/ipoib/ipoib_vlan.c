@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/sched/signal.h>
+#include <linex/sched/signal.h>
 
-#include <linux/init.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "ipoib.h"
 

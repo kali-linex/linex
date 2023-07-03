@@ -3,9 +3,9 @@
  * Copyright (C) 2011 Richard Weinberger <richrd@nod.at>
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/console.h>
+#include <linex/init.h>
 #include <os.h>
 
 static void early_console_write(struct console *con, const char *s, unsigned int n)

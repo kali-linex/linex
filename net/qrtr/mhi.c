@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/mhi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/mhi.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 
 #include "qrtr.h"

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013, 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, 2018, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/rational.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
-#include <linux/minmax.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/bug.h>
+#include <linex/export.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/rational.h>
+#include <linex/regmap.h>
+#include <linex/math64.h>
+#include <linex/minmax.h>
+#include <linex/slab.h>
 
 #include <asm/div64.h>
 

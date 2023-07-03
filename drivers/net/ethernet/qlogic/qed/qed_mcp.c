@@ -4,15 +4,15 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/etherdevice.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/etherdevice.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_dcbx.h"

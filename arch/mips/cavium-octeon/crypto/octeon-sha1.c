@@ -10,15 +10,15 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@linexbe.org>
  */
 
-#include <linux/mm.h>
+#include <linex/mm.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

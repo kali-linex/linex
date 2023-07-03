@@ -3,18 +3,18 @@
  * Copyright 2017 IBM Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/log2.h>
-#include <linux/mfd/syscon.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
+#include <linex/clk.h>
+#include <linex/log2.h>
+#include <linex/mfd/syscon.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/poll.h>
+#include <linex/regmap.h>
 
-#include <linux/aspeed-lpc-ctrl.h>
+#include <linex/aspeed-lpc-ctrl.h>
 
 #define DEVICE_NAME	"aspeed-lpc-ctrl"
 

@@ -6,20 +6,20 @@
  *          Huacai Chen, chenhc@lemote.com
  *          Xiaofu Meng, Shuangshuang Zhang
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/highmem.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/mmzone.h>
+#include <linex/export.h>
+#include <linex/nodemask.h>
+#include <linex/swap.h>
+#include <linex/memblock.h>
+#include <linex/pfn.h>
+#include <linex/highmem.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/sections.h>
-#include <linux/irq.h>
+#include <linex/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/mc146818-time.h>
 #include <asm/time.h>

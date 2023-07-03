@@ -8,38 +8,38 @@
  *  Improving global KVA allocator, Uladzislau Rezki, Sony, May 2019
  */
 
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/set_memory.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/rbtree.h>
-#include <linux/xarray.h>
-#include <linux/io.h>
-#include <linux/rcupdate.h>
-#include <linux/pfn.h>
-#include <linux/kmemleak.h>
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/memcontrol.h>
-#include <linux/llist.h>
-#include <linux/uio.h>
-#include <linux/bitops.h>
-#include <linux/rbtree_augmented.h>
-#include <linux/overflow.h>
-#include <linux/pgtable.h>
-#include <linux/hugetlb.h>
-#include <linux/sched/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/highmem.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/set_memory.h>
+#include <linex/debugobjects.h>
+#include <linex/kallsyms.h>
+#include <linex/list.h>
+#include <linex/notifier.h>
+#include <linex/rbtree.h>
+#include <linex/xarray.h>
+#include <linex/io.h>
+#include <linex/rcupdate.h>
+#include <linex/pfn.h>
+#include <linex/kmemleak.h>
+#include <linex/atomic.h>
+#include <linex/compiler.h>
+#include <linex/memcontrol.h>
+#include <linex/llist.h>
+#include <linex/uio.h>
+#include <linex/bitops.h>
+#include <linex/rbtree_augmented.h>
+#include <linex/overflow.h>
+#include <linex/pgtable.h>
+#include <linex/hugetlb.h>
+#include <linex/sched/mm.h>
 #include <asm/tlbflush.h>
 #include <asm/shmparam.h>
 
@@ -1309,7 +1309,7 @@ find_vmap_lowest_match(struct rb_root *root, unsigned long size,
 }
 
 #if DEBUG_AUGMENT_LOWEST_MATCH_CHECK
-#include <linux/random.h>
+#include <linex/random.h>
 
 static struct vmap_area *
 find_vmap_lowest_linear_match(struct list_head *head, unsigned long size,

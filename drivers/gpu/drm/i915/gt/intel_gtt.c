@@ -3,10 +3,10 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/slab.h> /* fault-inject.h is not standalone! */
+#include <linex/slab.h> /* fault-inject.h is not standalone! */
 
-#include <linux/fault-inject.h>
-#include <linux/sched/mm.h>
+#include <linex/fault-inject.h>
+#include <linex/sched/mm.h>
 
 #include <drm/drm_cache.h>
 

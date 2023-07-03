@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -9,16 +9,16 @@
 #ifndef _BR_PRIVATE_H
 #define _BR_PRIVATE_H
 
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/netpoll.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/netdevice.h>
+#include <linex/if_bridge.h>
+#include <linex/netpoll.h>
+#include <linex/u64_stats_sync.h>
 #include <net/route.h>
 #include <net/ip6_fib.h>
 #include <net/pkt_cls.h>
-#include <linux/if_vlan.h>
-#include <linux/rhashtable.h>
-#include <linux/refcount.h>
+#include <linex/if_vlan.h>
+#include <linex/rhashtable.h>
+#include <linex/refcount.h>
 
 #define BR_HASH_BITS 8
 #define BR_HASH_SIZE (1 << BR_HASH_BITS)

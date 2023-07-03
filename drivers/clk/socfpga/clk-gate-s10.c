@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2017, Intel Corporation
  */
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 #include "stratix10-clk.h"
 #include "clk.h"
 

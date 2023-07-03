@@ -4,29 +4,29 @@
 #ifndef _IAVF_H_
 #define _IAVF_H_
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/socket.h>
-#include <linux/jiffies.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/interrupt.h>
+#include <linex/ethtool.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/tcp.h>
+#include <linex/sctp.h>
+#include <linex/ipv6.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/timer.h>
+#include <linex/workqueue.h>
+#include <linex/wait.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
+#include <linex/skbuff.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/socket.h>
+#include <linex/jiffies.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
@@ -35,11 +35,11 @@
 #include <net/tc_act/tc_mirred.h>
 
 #include "iavf_type.h"
-#include <linux/avf/virtchnl.h>
+#include <linex/avf/virtchnl.h>
 #include "iavf_txrx.h"
 #include "iavf_fdir.h"
 #include "iavf_adv_rss.h"
-#include <linux/bitmap.h>
+#include <linex/bitmap.h>
 
 #define DEFAULT_DEBUG_LEVEL_SHIFT 3
 #define PFX "iavf: "

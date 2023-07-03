@@ -5,19 +5,19 @@
  * Copyright 31 August 2008 James Bottomley
  * Copyright (C) 2013, Intel Corporation
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/limits.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
+#include <linex/math64.h>
+#include <linex/export.h>
+#include <linex/ctype.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/limits.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/string_helpers.h>
 
 /**
  * string_get_size - get the size in the specified units

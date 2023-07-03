@@ -43,9 +43,9 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/bitmap.h>
 
 #include "pvrdma.h"
 

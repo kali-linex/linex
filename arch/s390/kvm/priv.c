@@ -8,11 +8,11 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linex/kvm.h>
+#include <linex/gfp.h>
+#include <linex/errno.h>
+#include <linex/mm_types.h>
+#include <linex/pgtable.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/facility.h>
@@ -842,7 +842,7 @@ static void handle_stsi_3_2_2(struct kvm_vcpu *vcpu, struct sysinfo_3_2_2 *mem)
 	mem->vm[0].caf = 1000;
 	memcpy(mem->vm[0].name, "KVMguest", 8);
 	ASCEBC(mem->vm[0].name, 8);
-	memcpy(mem->vm[0].cpi, "KVM/Linux       ", 16);
+	memcpy(mem->vm[0].cpi, "KVM/Linex       ", 16);
 	ASCEBC(mem->vm[0].cpi, 16);
 }
 

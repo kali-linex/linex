@@ -30,16 +30,16 @@
  * SOFTWARE.
  */
 
-#include <linux/highmem.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eq.h>
-#include <linux/debugfs.h>
+#include <linex/highmem.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/random.h>
+#include <linex/mlx5/driver.h>
+#include <linex/mlx5/eq.h>
+#include <linex/debugfs.h>
 
 #include "mlx5_core.h"
 #include "lib/eq.h"

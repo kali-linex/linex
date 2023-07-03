@@ -14,16 +14,16 @@
  * Lesly A M <x0080970@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/power/smartreflex.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/power/smartreflex.h>
 
 #define DRIVER_NAME	"smartreflex"
 #define SMARTREFLEX_NAME_LEN	32

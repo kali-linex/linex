@@ -11,27 +11,27 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/inetdevice.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy/phy.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/inetdevice.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mbus.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/phy/phy.h>
+#include <linex/phy.h>
+#include <linex/phylink.h>
+#include <linex/platform_device.h>
+#include <linex/skbuff.h>
 #include <net/hwbm.h>
 #include "mvneta_bm.h"
 #include <net/ip.h>
@@ -39,7 +39,7 @@
 #include <net/tso.h>
 #include <net/page_pool.h>
 #include <net/pkt_sched.h>
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 
 /* Registers */
 #define MVNETA_RXQ_CONFIG_REG(q)                (0x1400 + ((q) << 2))
@@ -2617,7 +2617,7 @@ err_drop_frame:
 		if (err) {
 			struct mvneta_pcpu_stats *stats;
 
-			netdev_err(dev, "Linux processing - Can't refill\n");
+			netdev_err(dev, "Linex processing - Can't refill\n");
 
 			stats = this_cpu_ptr(pp->stats);
 			u64_stats_update_begin(&stats->syncp);
@@ -2642,7 +2642,7 @@ err_drop_frame:
 		rcvd_pkts++;
 		rcvd_bytes += rx_bytes;
 
-		/* Linux processing */
+		/* Linex processing */
 		skb_reserve(skb, MVNETA_MH_SIZE + NET_SKB_PAD);
 		skb_put(skb, rx_bytes);
 

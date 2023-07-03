@@ -4,7 +4,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 #include <drm/drm_bridge_connector.h>
 #include <drm/drm_edid.h>
 

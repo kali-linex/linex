@@ -6,16 +6,16 @@
  *	Dave Gerlach
  */
 
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sram.h>
-#include <linux/ti-emif-sram.h>
+#include <linex/err.h>
+#include <linex/genalloc.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/sram.h>
+#include <linex/ti-emif-sram.h>
 
 #include "emif.h"
 

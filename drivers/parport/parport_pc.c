@@ -9,7 +9,7 @@
  *
  * based on work by Grant Guenther <grant@torque.net> and Phil Blundell.
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <linex@arm.uk.linex.org>
  * DMA support - Bert De Jonghe <bert@sophis.be>
  * Many ECP bugs fixed.  Fred Barnes & Jamie Lokier, 1999
  * More PCI support now conditional on CONFIG_PCI, 03/2001, Paul G.
@@ -43,28 +43,28 @@
  * but rather will start at port->base_hi.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/platform_device.h>
-#include <linux/sysctl.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/pci.h>
+#include <linex/pnp.h>
+#include <linex/platform_device.h>
+#include <linex/sysctl.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 #include <asm/dma.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/via.h>
+#include <linex/parport.h>
+#include <linex/parport_pc.h>
+#include <linex/via.h>
 #include <asm/parport.h>
 
 #define PARPORT_PC_MAX_PORTS PARPORT_MAX

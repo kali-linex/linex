@@ -11,10 +11,10 @@
  * Copyright (C) 1999 Asit Mallick <asit.k.mallick@intel.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
  */
-#ifndef _TOOLS_LINUX_ASM_IA64_BARRIER_H
-#define _TOOLS_LINUX_ASM_IA64_BARRIER_H
+#ifndef _TOOLS_LINEX_ASM_IA64_BARRIER_H
+#define _TOOLS_LINEX_ASM_IA64_BARRIER_H
 
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 /*
  * Macros to force memory ordering.  In these descriptions, "previous"
@@ -56,4 +56,4 @@ do {						\
 	___p1;					\
 })
 
-#endif /* _TOOLS_LINUX_ASM_IA64_BARRIER_H */
+#endif /* _TOOLS_LINEX_ASM_IA64_BARRIER_H */

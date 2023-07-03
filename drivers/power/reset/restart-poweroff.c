@@ -7,12 +7,12 @@
  *
  * Copyright (C) 2012 Andrew Lunn
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/of_platform.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
 
 static void restart_poweroff_do_poweroff(void)
 {

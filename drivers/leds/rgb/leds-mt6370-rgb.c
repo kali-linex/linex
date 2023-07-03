@@ -7,19 +7,19 @@
  *   Alice Chen <alice_chen@richtek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/linear_range.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/led-class-multicolor.h>
+#include <linex/linear_range.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/util_macros.h>
 
 #include <asm/unaligned.h>
 

@@ -5,13 +5,13 @@
  * Copyright (C) 2023 Renesas Electronics Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/count_zeros.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
+#include <linex/clk.h>
+#include <linex/count_zeros.h>
+#include <linex/interrupt.h>
+#include <linex/iopoll.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/spi/spi.h>
 
 /* Registers */
 #define CSI_MODE		0x00	/* CSI mode control */
@@ -612,7 +612,7 @@ static int rzv2m_csi_probe(struct platform_device *pdev)
 
 	/*
 	 * The reset also affects other HW that is not under the control
-	 * of Linux. Therefore, all we can do is make sure the reset is
+	 * of Linex. Therefore, all we can do is make sure the reset is
 	 * deasserted.
 	 */
 	reset_control_deassert(rstc);

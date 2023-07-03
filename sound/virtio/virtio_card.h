@@ -6,10 +6,10 @@
 #ifndef VIRTIO_SND_CARD_H
 #define VIRTIO_SND_CARD_H
 
-#include <linux/slab.h>
-#include <linux/virtio.h>
+#include <linex/slab.h>
+#include <linex/virtio.h>
 #include <sound/core.h>
-#include <uapi/linux/virtio_snd.h>
+#include <uapi/linex/virtio_snd.h>
 
 #include "virtio_ctl_msg.h"
 #include "virtio_pcm.h"

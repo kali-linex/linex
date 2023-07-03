@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext2/inode.c
+ *  linex/fs/ext2/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linex/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -23,19 +23,19 @@
  *  Assorted race fixes, rewrite of ext2_get_block() by Al Viro, 2000
  */
 
-#include <linux/time.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/dax.h>
-#include <linux/blkdev.h>
-#include <linux/quotaops.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/fiemap.h>
-#include <linux/iomap.h>
-#include <linux/namei.h>
-#include <linux/uio.h>
+#include <linex/time.h>
+#include <linex/highuid.h>
+#include <linex/pagemap.h>
+#include <linex/dax.h>
+#include <linex/blkdev.h>
+#include <linex/quotaops.h>
+#include <linex/writeback.h>
+#include <linex/buffer_head.h>
+#include <linex/mpage.h>
+#include <linex/fiemap.h>
+#include <linex/iomap.h>
+#include <linex/namei.h>
+#include <linex/uio.h>
 #include "ext2.h"
 #include "acl.h"
 #include "xattr.h"

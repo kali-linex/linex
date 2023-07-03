@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_PGTABLE_DEFS_H
 #define _ASM_X86_PGTABLE_DEFS_H
 
-#include <linux/const.h>
-#include <linux/mem_encrypt.h>
+#include <linex/const.h>
+#include <linex/mem_encrypt.h>
 
 #include <asm/page_types.h>
 
@@ -249,7 +249,7 @@ enum page_cache_mode {
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* Extracts the PFN from a (pte|pmd|pud|pgd)val_t of a 4KB page */
 #define PTE_PFN_MASK		((pteval_t)PHYSICAL_PAGE_MASK)

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Driver for the Solos PCI ADSL2+ card, designed to support Linux by
+ * Driver for the Solos PCI ADSL2+ card, designed to support Linex by
  *  Traverse Technologies -- https://www.traverse.com.au/
  *  Xrio Limited          -- http://www.xrio.com/
  *
@@ -15,23 +15,23 @@
 #define DEBUG
 #define VERBOSE_DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/skbuff.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/swab.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/atm.h>
+#include <linex/atmdev.h>
+#include <linex/skbuff.h>
+#include <linex/sysfs.h>
+#include <linex/device.h>
+#include <linex/kobject.h>
+#include <linex/firmware.h>
+#include <linex/ctype.h>
+#include <linex/swab.h>
+#include <linex/slab.h>
 
 #define VERSION "1.04"
 #define DRIVER_VERSION 0x01

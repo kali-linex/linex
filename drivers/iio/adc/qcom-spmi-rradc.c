@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2017, 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2017, 2019, The Linex Foundation. All rights reserved.
  * Copyright (c) 2022 Linaro Limited.
  *  Author: Caleb Connolly <caleb.connolly@linaro.org>
  *
  * This driver is for the Round Robin ADC found in the pmi8998 and pm660 PMICs.
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/spmi.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/spmi.h>
+#include <linex/types.h>
+#include <linex/units.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/types.h>
 
 #include <soc/qcom/qcom-spmi-pmic.h>
 

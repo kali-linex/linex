@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/list_sort.h>
-#include <linux/list.h>
+#include <linex/kernel.h>
+#include <linex/bug.h>
+#include <linex/compiler.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/list_sort.h>
+#include <linex/list.h>
 
 /*
  * Returns a list organized in an intermediate format suited

@@ -2,7 +2,7 @@
 /*
  * tracing_map - lock-free map for tracing
  *
- * Copyright (C) 2015 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2015 Tom Zanussi <tom.zanussi@linex.intel.com>
  *
  * tracing_map implementation inspired by lock-free map algorithms
  * originated by Dr. Cliff Click:
@@ -11,11 +11,11 @@
  * http://www.azulsystems.com/events/javaone_2007/2007_LockFreeHash.pdf
  */
 
-#include <linux/vmalloc.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/kmemleak.h>
+#include <linex/vmalloc.h>
+#include <linex/jhash.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
+#include <linex/kmemleak.h>
 
 #include "tracing_map.h"
 #include "trace.h"

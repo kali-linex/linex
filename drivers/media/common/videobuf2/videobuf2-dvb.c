@@ -9,10 +9,10 @@
  * (c) 2004 Gerd Knorr <kraxel@bytesex.org> [SUSE Labs]
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/slab.h>
 
 #include <media/videobuf2-dvb.h>
 

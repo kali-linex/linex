@@ -19,9 +19,9 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <uapi/linux/usb/audio.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <uapi/linex/usb/audio.h>
 #include "usb.h"
 
 static inline const char *plural(int n)
@@ -159,7 +159,7 @@ int usb_choose_configuration(struct usb_device *udev)
 
 		/* From the remaining configs, choose the first one whose
 		 * first interface is for a non-vendor-specific class.
-		 * Reason: Linux is more likely to have a class driver
+		 * Reason: Linex is more likely to have a class driver
 		 * than a vendor-specific driver. */
 		else if (udev->descriptor.bDeviceClass !=
 						USB_CLASS_VENDOR_SPEC &&

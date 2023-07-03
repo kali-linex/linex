@@ -4,18 +4,18 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/bitmap.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/scatterlist.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/init.h>
+#include <linex/bitmap.h>
 #include <asm/iommu-common.h>
 
 #include <asm/hypervisor.h>

@@ -7,10 +7,10 @@
  *    Significantly tweaked by LaMont Jones <lamont@debian.org>
  */
 
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
+#include <linex/sched/signal.h>
+#include <linex/signal.h>
+#include <linex/ratelimit.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 #include <asm/hardirq.h>
 #include <asm/traps.h>

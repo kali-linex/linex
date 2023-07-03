@@ -3,12 +3,12 @@
  * comedi/range.c
  * comedi routines for voltage ranges
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/uaccess.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/uaccess.h>
+#include <linex/comedi/comedidev.h>
 #include "comedi_internal.h"
 
 const struct comedi_lrange range_bipolar10 = { 1, {BIP_RANGE(10)} };

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/usb/phy_companion.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/phy/phy.h>
-#include <linux/of_platform.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/io.h>
+#include <linex/usb/phy_companion.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/phy/phy.h>
+#include <linex/of_platform.h>
 
-#include <linux/mfd/syscon.h>
+#include <linex/mfd/syscon.h>
 
 /*
  * TRM has two sets of USB_CTRL registers.. The correct register bits

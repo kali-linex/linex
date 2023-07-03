@@ -5,13 +5,13 @@
  * This code is based on drivers/gpu/drm/mxsfb/mxsfb*
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/media-bus-format.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/media-bus-format.h>
+#include <linex/pm_runtime.h>
+#include <linex/spinlock.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -3,27 +3,27 @@
  *  Kernel timekeeping code and accessor functions. Based on code from
  *  timer.c, moved in commit 8524070b7982.
  */
-#include <linux/timekeeper_internal.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/clock.h>
-#include <linux/syscore_ops.h>
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/tick.h>
-#include <linux/stop_machine.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/compiler.h>
-#include <linux/audit.h>
-#include <linux/random.h>
+#include <linex/timekeeper_internal.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/percpu.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/nmi.h>
+#include <linex/sched.h>
+#include <linex/sched/loadavg.h>
+#include <linex/sched/clock.h>
+#include <linex/syscore_ops.h>
+#include <linex/clocksource.h>
+#include <linex/jiffies.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/tick.h>
+#include <linex/stop_machine.h>
+#include <linex/pvclock_gtod.h>
+#include <linex/compiler.h>
+#include <linex/audit.h>
+#include <linex/random.h>
 
 #include "tick-internal.h"
 #include "ntp_internal.h"

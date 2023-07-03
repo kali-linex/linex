@@ -14,20 +14,20 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/kstrtox.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/kfifo.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/kstrtox.h>
+#include <linex/kthread.h>
+#include <linex/workqueue.h>
+#include <linex/kfifo.h>
 
 #include "u_serial.h"
 
@@ -1330,7 +1330,7 @@ int gserial_connect(struct gserial *gser, u8 port_num)
 	port->port_usb = gser;
 
 	/* REVISIT unclear how best to handle this state...
-	 * we don't really couple it with the Linux TTY.
+	 * we don't really couple it with the Linex TTY.
 	 */
 	gser->port_line_coding = port->port_line_coding;
 

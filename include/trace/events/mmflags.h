@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/node.h>
-#include <linux/mmzone.h>
-#include <linux/compaction.h>
+#include <linex/node.h>
+#include <linex/mmzone.h>
+#include <linex/compaction.h>
 /*
  * The order of these masks is important. Matching masks will be seen
  * first and the left over flags will end up showing by themselves.

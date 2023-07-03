@@ -1,5 +1,5 @@
-/*-*- linux-c -*-
- *  linux/drivers/video/i810_main.h -- Intel 810 Non-discrete Video Timings 
+/*-*- linex-c -*-
+ *  linex/drivers/video/i810_main.h -- Intel 810 Non-discrete Video Timings 
  *                                     (VESA GTF)
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
@@ -10,7 +10,7 @@
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "i810_regs.h"
 #include "i810.h"

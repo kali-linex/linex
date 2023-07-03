@@ -12,10 +12,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/jffs2.h>
-#include <linux/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/jffs2.h>
+#include <linex/errno.h>
 #include "compr.h"
 
 

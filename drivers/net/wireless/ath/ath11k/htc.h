@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The Linex Foundation. All rights reserved.
  */
 
 #ifndef ATH11K_HTC_H
 #define ATH11K_HTC_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/bug.h>
+#include <linex/skbuff.h>
+#include <linex/timer.h>
 
 struct ath11k_base;
 

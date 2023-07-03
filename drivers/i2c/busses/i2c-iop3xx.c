@@ -26,16 +26,16 @@
  *	fix: driver refuses to address self.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/platform_device.h>
+#include <linex/i2c.h>
+#include <linex/io.h>
+#include <linex/gpio/consumer.h>
 
 #include "i2c-iop3xx.h"
 

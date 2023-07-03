@@ -6,8 +6,8 @@
 #ifndef TKIP_H
 #define TKIP_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linex/types.h>
+#include <linex/crypto.h>
 #include "key.h"
 
 int ieee80211_tkip_encrypt_data(struct arc4_ctx *ctx,

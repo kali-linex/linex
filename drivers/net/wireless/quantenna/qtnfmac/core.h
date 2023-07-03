@@ -4,23 +4,23 @@
 #ifndef _QTN_FMAC_CORE_H_
 #define _QTN_FMAC_CORE_H_
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/ip.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/etherdevice.h>
 #include <net/sock.h>
 #include <net/lib80211.h>
 #include <net/cfg80211.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linex/vmalloc.h>
+#include <linex/firmware.h>
+#include <linex/ctype.h>
+#include <linex/workqueue.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
 
 #include "qlink.h"
 #include "trans.h"

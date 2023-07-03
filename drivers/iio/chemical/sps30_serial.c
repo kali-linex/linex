@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2021 Tomasz Duszynski <tomasz.duszynski@octakon.com>
  */
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/iio/iio.h>
-#include <linux/minmax.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/serdev.h>
-#include <linux/types.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/iio/iio.h>
+#include <linex/minmax.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/serdev.h>
+#include <linex/types.h>
 
 #include "sps30.h"
 

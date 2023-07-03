@@ -12,19 +12,19 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/cper.h>
-#include <linux/nmi.h>
-#include <linux/hardirq.h>
-#include <linux/pstore.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h> /* kvfree() */
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/acpi.h>
+#include <linex/uaccess.h>
+#include <linex/cper.h>
+#include <linex/nmi.h>
+#include <linex/hardirq.h>
+#include <linex/pstore.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h> /* kvfree() */
 #include <acpi/apei.h>
 
 #include "apei-internal.h"

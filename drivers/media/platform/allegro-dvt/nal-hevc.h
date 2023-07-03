@@ -8,11 +8,11 @@
 #ifndef __NAL_HEVC_H__
 #define __NAL_HEVC_H__
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/v4l2-controls.h>
-#include <linux/videodev2.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/v4l2-controls.h>
+#include <linex/videodev2.h>
 
 struct nal_hevc_profile_tier_level {
 	unsigned int general_profile_space;

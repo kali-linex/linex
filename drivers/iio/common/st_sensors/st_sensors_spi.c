@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/iio/iio.h>
+#include <linex/property.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
 
-#include <linux/iio/common/st_sensors_spi.h>
+#include <linex/iio/common/st_sensors_spi.h>
 
 #define ST_SENSORS_SPI_MULTIREAD	0xc0
 

@@ -5,8 +5,8 @@
  *  Copyright (C) 2005 Duncan Sands, Roman Kagan (rkagan % mail ! ru)
  ******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>		/* for eth_random_addr() */
+#include <linex/module.h>
+#include <linex/etherdevice.h>		/* for eth_random_addr() */
 
 #include "usbatm.h"
 

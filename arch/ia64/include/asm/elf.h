@@ -29,8 +29,8 @@
 #define CORE_DUMP_USE_REGSET
 
 /* Least-significant four bits of ELF header's e_flags are OS-specific.  The bits are
-   interpreted as follows by Linux: */
-#define EF_IA_64_LINUX_EXECUTABLE_STACK	0x1	/* is stack (& heap) executable by default? */
+   interpreted as follows by Linex: */
+#define EF_IA_64_LINEX_EXECUTABLE_STACK	0x1	/* is stack (& heap) executable by default? */
 
 #define ELF_EXEC_PAGESIZE	PAGE_SIZE
 
@@ -201,7 +201,7 @@ extern void ia64_elf_core_copy_regs (struct pt_regs *src, elf_gregset_t dst);
 #define ELF_PLATFORM	NULL
 
 #define elf_read_implies_exec(ex, executable_stack)					\
-	((executable_stack!=EXSTACK_DISABLE_X) && ((ex).e_flags & EF_IA_64_LINUX_EXECUTABLE_STACK) != 0)
+	((executable_stack!=EXSTACK_DISABLE_X) && ((ex).e_flags & EF_IA_64_LINEX_EXECUTABLE_STACK) != 0)
 
 struct task_struct;
 

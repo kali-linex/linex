@@ -5,7 +5,7 @@
  * Copyright (C) 2009 Oracle.  All rights reserved.
  */
 
-#include <linux/sort.h>
+#include <linex/sort.h>
 #include <cluster/masklog.h>
 #include "ocfs2.h"
 #include "inode.h"
@@ -26,18 +26,18 @@
 #include "ocfs2_trace.h"
 #include "file.h"
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/swap.h>
-#include <linux/security.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/posix_acl.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
+#include <linex/writeback.h>
+#include <linex/pagevec.h>
+#include <linex/swap.h>
+#include <linex/security.h>
+#include <linex/fsnotify.h>
+#include <linex/quotaops.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/posix_acl.h>
 
 struct ocfs2_cow_context {
 	struct inode *inode;

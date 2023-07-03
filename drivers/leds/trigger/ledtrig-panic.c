@@ -5,11 +5,11 @@
  * Copyright 2016 Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/leds.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/notifier.h>
+#include <linex/panic_notifier.h>
+#include <linex/leds.h>
 #include "../leds.h"
 
 static struct led_trigger *trigger;

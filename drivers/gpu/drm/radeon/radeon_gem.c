@@ -26,8 +26,8 @@
  *          Jerome Glisse
  */
 
-#include <linux/iosys-map.h>
-#include <linux/pci.h>
+#include <linex/iosys-map.h>
+#include <linex/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

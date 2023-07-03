@@ -4,8 +4,8 @@
 #ifndef __MLX5_RSC_DUMP_H
 #define __MLX5_RSC_DUMP_H
 
-#include <linux/mlx5/rsc_dump.h>
-#include <linux/mlx5/driver.h>
+#include <linex/mlx5/rsc_dump.h>
+#include <linex/mlx5/driver.h>
 #include "mlx5_core.h"
 
 #define MLX5_RSC_DUMP_ALL 0xFFFF

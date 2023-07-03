@@ -5,20 +5,20 @@
  * (C) 2011 DENX Software Engineering, Anatolij Gustschin <agust@denx.de>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/nvmem-provider.h>
-#include <linux/eeprom_93xx46.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/nvmem-provider.h>
+#include <linex/eeprom_93xx46.h>
 
 #define OP_START	0x4
 #define OP_WRITE	(OP_START | 0x1)

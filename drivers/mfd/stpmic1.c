@@ -2,16 +2,16 @@
 // Copyright (C) STMicroelectronics 2018
 // Author: Pascal Paillet <p.paillet@st.com>
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/stpmic1.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/stpmic1.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/regmap.h>
 
 #include <dt-bindings/mfd/st,stpmic1.h>
 

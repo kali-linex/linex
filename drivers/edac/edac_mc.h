@@ -1,13 +1,13 @@
 /*
  * Defines, structures, APIs for edac_mc module
  *
- * (C) 2007 Linux Networx (http://lnxi.com)
+ * (C) 2007 Linex Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/linex-ecc/
  *
  * NMI handling support added by
  *     Dave Peterson <dsp@llnl.gov> <dave_peterson@pobox.com>
@@ -22,20 +22,20 @@
 #ifndef _EDAC_MC_H_
 #define _EDAC_MC_H_
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/nmi.h>
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/edac.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/pci.h>
+#include <linex/time.h>
+#include <linex/nmi.h>
+#include <linex/rcupdate.h>
+#include <linex/completion.h>
+#include <linex/kobject.h>
+#include <linex/platform_device.h>
+#include <linex/workqueue.h>
+#include <linex/edac.h>
 
 #if PAGE_SHIFT < 20
 #define PAGES_TO_MiB(pages)	((pages) >> (20 - PAGE_SHIFT))

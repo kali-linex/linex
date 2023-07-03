@@ -13,19 +13,19 @@
  *   1.2: PowerPC (big endian) support.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/ioport.h>
+#include <linex/major.h>
+#include <linex/blkdev.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/ctype.h>
+#include <linex/dma-mapping.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

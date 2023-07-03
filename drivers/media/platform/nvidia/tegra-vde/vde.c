@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/dma-buf.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/clk.h>
+#include <linex/dma-buf.h>
+#include <linex/genalloc.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/pmc.h>

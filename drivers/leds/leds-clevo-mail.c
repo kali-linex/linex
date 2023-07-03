@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/leds.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/leds.h>
 
-#include <linux/io.h>
-#include <linux/dmi.h>
+#include <linex/io.h>
+#include <linex/dmi.h>
 
-#include <linux/i8042.h>
+#include <linex/i8042.h>
 
 #define CLEVO_MAIL_LED_OFF		0x0084
 #define CLEVO_MAIL_LED_BLINK_1HZ	0x008A

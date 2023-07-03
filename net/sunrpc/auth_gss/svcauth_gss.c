@@ -38,18 +38,18 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/user_namespace.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/user_namespace.h>
 
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/gss_krb5.h>
+#include <linex/sunrpc/auth_gss.h>
+#include <linex/sunrpc/gss_err.h>
+#include <linex/sunrpc/svcauth.h>
+#include <linex/sunrpc/svcauth_gss.h>
+#include <linex/sunrpc/cache.h>
+#include <linex/sunrpc/gss_krb5.h>
 
 #include <trace/events/rpcgss.h>
 
@@ -1947,7 +1947,7 @@ bad_wrap:
  *    %-EINVAL: encoding error
  *
  * XXX: These return values do not match the return values documented
- *      for the auth_ops ->release method in linux/sunrpc/svcauth.h.
+ *      for the auth_ops ->release method in linex/sunrpc/svcauth.h.
  */
 static int
 svcauth_gss_release(struct svc_rqst *rqstp)

@@ -16,22 +16,22 @@
 #define UDC_MOD_DESCRIPTION		"Synopsys USB Device Controller"
 #define UDC_DRIVER_VERSION_STRING	"01.00.0206"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/dmapool.h>
-#include <linux/prefetch.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/ioctl.h>
+#include <linex/fs.h>
+#include <linex/dmapool.h>
+#include <linex/prefetch.h>
+#include <linex/moduleparam.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 #include "amd5536udc.h"
@@ -2965,7 +2965,7 @@ __acquires(dev->lock)
 	return ret_val;
 }
 
-/* Interrupt Service Routine, see Linux Kernel Doc for parameters */
+/* Interrupt Service Routine, see Linex Kernel Doc for parameters */
 irqreturn_t udc_irq(int irq, void *pdev)
 {
 	struct udc *dev = pdev;

@@ -13,15 +13,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/iversion.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/sched.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/iversion.h>
 #include "internal.h"
 #include "afs_fs.h"
 
@@ -411,7 +411,7 @@ static int afs_iget5_set(struct inode *inode, void *opaque)
 	vnode->volume		= as->volume;
 	vnode->fid		= vp->fid;
 
-	/* YFS supports 96-bit vnode IDs, but Linux only supports
+	/* YFS supports 96-bit vnode IDs, but Linex only supports
 	 * 64-bit inode numbers.
 	 */
 	inode->i_ino		= vnode->fid.vnode;

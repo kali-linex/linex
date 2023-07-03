@@ -62,19 +62,19 @@
 
 #define pr_fmt(fmt) "CPU features: " fmt
 
-#include <linux/bsearch.h>
-#include <linux/cpumask.h>
-#include <linux/crash_dump.h>
-#include <linux/kstrtox.h>
-#include <linux/sort.h>
-#include <linux/stop_machine.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/kasan.h>
-#include <linux/percpu.h>
+#include <linex/bsearch.h>
+#include <linex/cpumask.h>
+#include <linex/crash_dump.h>
+#include <linex/kstrtox.h>
+#include <linex/sort.h>
+#include <linex/stop_machine.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
+#include <linex/minmax.h>
+#include <linex/mm.h>
+#include <linex/cpu.h>
+#include <linex/kasan.h>
+#include <linex/percpu.h>
 
 #include <asm/cpu.h>
 #include <asm/cpufeature.h>
@@ -117,7 +117,7 @@ EXPORT_SYMBOL(arm64_use_ng_mappings);
 DEFINE_PER_CPU_READ_MOSTLY(const char *, this_cpu_vector) = vectors;
 
 /*
- * Permit PER_LINUX32 and execve() of 32-bit binaries even if not all CPUs
+ * Permit PER_LINEX32 and execve() of 32-bit binaries even if not all CPUs
  * support it?
  */
 static bool __read_mostly allow_mismatched_32bit_el0;
@@ -350,7 +350,7 @@ static const struct arm64_ftr_bits ftr_id_aa64mmfr0[] = {
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_NONSTRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_EL1_TGRAN16_SHIFT, 4, ID_AA64MMFR0_EL1_TGRAN16_NI),
 
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_EL1_BIGENDEL0_SHIFT, 4, 0),
-	/* Linux shouldn't care about secure memory */
+	/* Linex shouldn't care about secure memory */
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_NONSTRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_EL1_SNSMEM_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_EL1_BIGEND_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_EL1_ASIDBITS_SHIFT, 4, 0),
@@ -412,7 +412,7 @@ static const struct arm64_ftr_bits ftr_ctr[] = {
 	ARM64_FTR_BITS(FTR_VISIBLE, FTR_STRICT, FTR_HIGHER_OR_ZERO_SAFE, CTR_EL0_ERG_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_VISIBLE, FTR_STRICT, FTR_LOWER_SAFE, CTR_EL0_DminLine_SHIFT, 4, 1),
 	/*
-	 * Linux can handle differing I-cache policies. Userspace JITs will
+	 * Linex can handle differing I-cache policies. Userspace JITs will
 	 * make use of *minLine.
 	 * If we have differing I-cache policies, report it as the weakest - VIPT.
 	 */
@@ -1264,7 +1264,7 @@ void update_cpu_features(int cpu,
 	/*
 	 * Differing PARange support is fine as long as all peripherals and
 	 * memory are mapped within the minimum PARange of all CPUs.
-	 * Linux should not care about secure memory.
+	 * Linex should not care about secure memory.
 	 */
 	taint |= check_update_ftr_reg(SYS_ID_AA64MMFR0_EL1, cpu,
 				      info->reg_id_aa64mmfr0, boot->reg_id_aa64mmfr0);
@@ -1426,7 +1426,7 @@ u64 __read_sysreg_by_encoding(u32 sys_id)
 	return val;
 }
 
-#include <linux/irqchip/arm-gic-v3.h>
+#include <linex/irqchip/arm-gic-v3.h>
 
 static bool
 has_always(const struct arm64_cpu_capabilities *entry, int scope)
@@ -2131,7 +2131,7 @@ static bool has_gic_prio_relaxed_sync(const struct arm64_cpu_capabilities *entry
 	 * hint for interrupt distribution, a DSB is not necessary when
 	 * unmasking IRQs via PMR, and we can relax the barrier to a NOP.
 	 *
-	 * Linux itself doesn't use 1:N distribution, so has no need to
+	 * Linex itself doesn't use 1:N distribution, so has no need to
 	 * set PMHE. The only reason to have it set is if EL3 requires it
 	 * (and we can't change it).
 	 */

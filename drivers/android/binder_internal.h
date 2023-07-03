@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_BINDER_INTERNAL_H
-#define _LINUX_BINDER_INTERNAL_H
+#ifndef _LINEX_BINDER_INTERNAL_H
+#define _LINEX_BINDER_INTERNAL_H
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/uidgid.h>
-#include <uapi/linux/android/binderfs.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/mutex.h>
+#include <linex/refcount.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
+#include <linex/uidgid.h>
+#include <uapi/linex/android/binderfs.h>
 #include "binder_alloc.h"
 
 struct binder_context {
@@ -559,4 +559,4 @@ struct binder_object {
 	};
 };
 
-#endif /* _LINUX_BINDER_INTERNAL_H */
+#endif /* _LINEX_BINDER_INTERNAL_H */

@@ -10,8 +10,8 @@
 #ifndef _NILFS_SUFILE_H
 #define _NILFS_SUFILE_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <linex/fs.h>
+#include <linex/buffer_head.h>
 #include "mdt.h"
 
 

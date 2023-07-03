@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/etherdevice.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/etherdevice.h>
 #include "mt76.h"
 
 int mt76_get_of_eeprom(struct mt76_dev *dev, void *eep, int offset, int len)

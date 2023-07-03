@@ -6,8 +6,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/stringify.h>
+#include <linex/types.h>
+#include <linex/stringify.h>
 
 #define JUMP_LABEL_NOP_SIZE 6
 

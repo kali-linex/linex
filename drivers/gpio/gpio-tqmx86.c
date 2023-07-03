@@ -6,17 +6,17 @@
  *   Vadim V.Vlasov <vvlasov@dev.rtsoft.ru>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #define TQMX86_NGPIO	8
 #define TQMX86_NGPO	4	/* 0-3 - output */

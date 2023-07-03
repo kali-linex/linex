@@ -8,17 +8,17 @@
  * based on previously existing rtc class drivers
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kstrtox.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/spi/spi.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/kstrtox.h>
+#include <linex/regmap.h>
 
 /* Register map */
 /* control section */
@@ -824,7 +824,7 @@ static struct i2c_driver rv3029_driver = {
 		.name = "rv3029",
 		.of_match_table = of_match_ptr(rv3029_of_match),
 	},
-	.probe		= rv3029_i2c_probe,
+	.probe_new	= rv3029_i2c_probe,
 	.id_table	= rv3029_id,
 };
 

@@ -28,9 +28,9 @@
 #ifndef KGD_KFD_INTERFACE_H_INCLUDED
 #define KGD_KFD_INTERFACE_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/bitmap.h>
-#include <linux/dma-fence.h>
+#include <linex/types.h>
+#include <linex/bitmap.h>
+#include <linex/dma-fence.h>
 
 struct pci_dev;
 struct amdgpu_device;

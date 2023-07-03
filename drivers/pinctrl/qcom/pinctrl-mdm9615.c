@@ -5,10 +5,10 @@
  * Author : Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "pinctrl-msm.h"
 

@@ -5,10 +5,10 @@
  * Zhu Yixin <yzhu@maxlinear.com>
  * Rahul Tanwar <rtanwar@maxlinear.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 #include <dt-bindings/clock/intel,lgm-clk.h>
 #include "clk-cgu.h"
 

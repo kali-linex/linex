@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #define KBUILD_MODNAME "foo"
 
-#include "vmlinux.h"
+#include "vmlinex.h"
 #include "xdp_sample.bpf.h"
 #include "xdp_sample_shared.h"
 

@@ -11,11 +11,11 @@
 
 /*
  * This exposes a device side "USB gadget" API, driven by requests to a
- * Linux-USB host controller driver.  USB traffic is simulated; there's
+ * Linex-USB host controller driver.  USB traffic is simulated; there's
  * no need for USB hardware.  Use this with two other drivers:
  *
  *  - Gadget driver, responding to requests (device);
- *  - Host-side device driver, as already familiar in Linux.
+ *  - Host-side device driver, as already familiar in Linex.
  *
  * Having this all in one kernel can help some stages of development,
  * bypassing some hardware (and driver) issues.  UML could help too.
@@ -23,24 +23,24 @@
  * Note: The emulation does not include isochronous transfers!
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/scatterlist.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/usb.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/hcd.h>
+#include <linex/scatterlist.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 

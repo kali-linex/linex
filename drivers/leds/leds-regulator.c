@@ -7,14 +7,14 @@
  * Inspired by leds-wm8350 driver.
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/leds-regulator.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/leds.h>
+#include <linex/leds-regulator.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
 
 #define to_regulator_led(led_cdev) \
 	container_of(led_cdev, struct regulator_led, cdev)

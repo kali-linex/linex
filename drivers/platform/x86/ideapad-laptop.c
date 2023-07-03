@@ -8,28 +8,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/i8042.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_profile.h>
-#include <linux/rfkill.h>
-#include <linux/seq_file.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/wmi.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/dmi.h>
+#include <linex/fb.h>
+#include <linex/i8042.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/input/sparse-keymap.h>
+#include <linex/kernel.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/platform_profile.h>
+#include <linex/rfkill.h>
+#include <linex/seq_file.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
+#include <linex/wmi.h>
 #include "ideapad-laptop.h"
 
 #include <acpi/video.h>
@@ -1436,7 +1436,7 @@ static void ideapad_acpi_notify(acpi_handle handle, u32 event, void *data)
 			 * tent/stand/tablet mode. The EC relies on getting
 			 * angle info from 2 accelerometers through a special
 			 * windows service calling a DSM on the DUAL250E ACPI-
-			 * device. Linux does not do this, making the laptop/
+			 * device. Linex does not do this, making the laptop/
 			 * tent/stand/tablet mode info unreliable, so we simply
 			 * ignore these events.
 			 */

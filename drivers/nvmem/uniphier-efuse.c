@@ -5,12 +5,12 @@
  * Copyright (C) 2017 Socionext Inc.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/nvmem-provider.h>
+#include <linex/platform_device.h>
 
 struct uniphier_efuse_priv {
 	void __iomem *base;

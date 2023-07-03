@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/time.h>
+#include <linex/time.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include "pcm_plugin.h"

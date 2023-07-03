@@ -3,12 +3,12 @@
  * Copyright (C) STRATO AG 2012.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/math64.h>
+#include <linex/sched.h>
+#include <linex/bio.h>
+#include <linex/slab.h>
+#include <linex/blkdev.h>
+#include <linex/kthread.h>
+#include <linex/math64.h>
 #include "misc.h"
 #include "ctree.h"
 #include "extent_map.h"

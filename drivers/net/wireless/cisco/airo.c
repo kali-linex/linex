@@ -13,41 +13,41 @@
     code in the Developer's manual was granted for this driver by
     Aironet.  Major code contributions were received from Javier Achirica
     <achirica@users.sourceforge.net> and Jean Tourrilhes <jt@hpl.hp.com>.
-    Code was also integrated from the Cisco Aironet driver for Linux.
+    Code was also integrated from the Cisco Aironet driver for Linex.
     Support for MPI350 cards was added by Fabrice Bellet
     <fabrice@bellet.info>.
 
 ======================================================================*/
 
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linex/err.h>
+#include <linex/init.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/bitops.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
+#include <linex/sched.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/in.h>
+#include <linex/bitops.h>
+#include <linex/scatterlist.h>
+#include <linex/crypto.h>
+#include <linex/io.h>
 #include <asm/unaligned.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/uaccess.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
 
 #include <crypto/aes.h>
 #include <crypto/skcipher.h>
@@ -91,12 +91,12 @@ static struct pci_driver airo_driver = {
 #endif /* CONFIG_PCI */
 
 /* Include Wireless Extension definition and check version - Jean II */
-#include <linux/wireless.h>
+#include <linex/wireless.h>
 #define WIRELESS_SPY		/* enable iwspy support */
 
 #define CISCO_EXT		/* enable Cisco extensions */
 #ifdef CISCO_EXT
-#include <linux/delay.h>
+#include <linex/delay.h>
 #endif
 
 /* Hack to do some power saving */
@@ -1183,7 +1183,7 @@ struct airo_info {
 #define FLAG_UPDATE_MULTI 5
 #define FLAG_UPDATE_UNI 6
 #define FLAG_802_11	7
-#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linux/if.h */
+#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linex/if.h */
 #define FLAG_PENDING_XMIT 9
 #define FLAG_PENDING_XMIT11 10
 #define FLAG_MPI	11

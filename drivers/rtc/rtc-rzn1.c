@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Renesas RZ/N1 Real Time Clock interface for Linux
+ * Renesas RZ/N1 Real Time Clock interface for Linex
  *
  * Copyright:
  * - 2014 Renesas Electronics Europe Limited
@@ -11,14 +11,14 @@
  * - Miquel Raynal <miquel.raynal@bootlin.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtc.h>
+#include <linex/bcd.h>
+#include <linex/init.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/rtc.h>
 
 #define RZN1_RTC_CTL0 0x00
 #define   RZN1_RTC_CTL0_SLSB_SUBU 0

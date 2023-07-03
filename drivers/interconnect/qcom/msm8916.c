@@ -4,14 +4,14 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/of_device.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/interconnect-provider.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/of_device.h>
 
 #include <dt-bindings/interconnect/qcom,msm8916.h>
 

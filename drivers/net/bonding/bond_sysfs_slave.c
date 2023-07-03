@@ -4,9 +4,9 @@
  *      Copyright (c) 2014 Scott Feldman <sfeldma@cumulusnetworks.com>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linex/capability.h>
+#include <linex/kernel.h>
+#include <linex/netdevice.h>
 
 #include <net/bonding.h>
 

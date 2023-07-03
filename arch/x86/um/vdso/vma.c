@@ -3,12 +3,12 @@
  * Copyright (C) 2011 Richard Weinberger <richrd@nod.at>
  */
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
 #include <asm/page.h>
 #include <asm/elf.h>
-#include <linux/init.h>
+#include <linex/init.h>
 
 static unsigned int __read_mostly vdso_enabled = 1;
 unsigned long um_vdso_addr;
@@ -50,7 +50,7 @@ oom:
 }
 subsys_initcall(init_vdso);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linex_binprm *bprm, int uses_interp)
 {
 	int err;
 	struct mm_struct *mm = current->mm;

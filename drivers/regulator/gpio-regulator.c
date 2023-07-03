@@ -18,17 +18,17 @@
  * systems with no controllable regulators.
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/gpio-regulator.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/gpio-regulator.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/of.h>
 
 struct gpio_regulator_data {
 	struct regulator_desc desc;

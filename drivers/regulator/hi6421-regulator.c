@@ -9,17 +9,17 @@
 //
 // Author: Guodong Xu <guodong.xu@linaro.org>
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/hi6421-pmic.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/mfd/hi6421-pmic.h>
 
 /*
  * struct hi6421_regulator_pdata - Hi6421 regulator data of platform device

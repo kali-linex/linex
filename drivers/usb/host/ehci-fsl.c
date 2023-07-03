@@ -10,20 +10,20 @@
  * Anton Vorontsov <avorontsov@ru.mvista.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/usb.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/pm.h>
+#include <linex/err.h>
+#include <linex/usb.h>
+#include <linex/usb/ehci_def.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/otg.h>
+#include <linex/platform_device.h>
+#include <linex/fsl_devices.h>
+#include <linex/of_platform.h>
+#include <linex/io.h>
 
 #include "ehci.h"
 #include "ehci-fsl.h"
@@ -233,7 +233,7 @@ static int ehci_fsl_setup_phy(struct usb_hcd *hcd,
 	case FSL_USB2_PHY_UTMI:
 		/* Presence of this node "has_fsl_erratum_a006918"
 		 * in device-tree is used to stop USB controller
-		 * initialization in Linux
+		 * initialization in Linex
 		 */
 		if (pdata->has_fsl_erratum_a006918) {
 			dev_warn(dev, "USB PHY clock invalid\n");

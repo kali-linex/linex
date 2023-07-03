@@ -37,25 +37,25 @@
 
 		button1 {
 			label = "s14";
-			linux,code = <KEY_1>;
+			linex,code = <KEY_1>;
 			gpios = <&expander_in0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		button2 {
 			label = "s6";
-			linux,code = <KEY_2>;
+			linex,code = <KEY_2>;
 			gpios = <&expander_in0 1 GPIO_ACTIVE_LOW>;
 		};
 
 		button3 {
 			label = "s7";
-			linux,code = <KEY_3>;
+			linex,code = <KEY_3>;
 			gpios = <&expander_in0 2 GPIO_ACTIVE_LOW>;
 		};
 
 		power-button {
 			label = "POWER";
-			linux,code = <KEY_POWER>;
+			linex,code = <KEY_POWER>;
 			gpios = <&gpio1 3 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -68,13 +68,13 @@
 		led1 {
 			label = "led1";
 			gpios = <&expander_out1 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linex,default-trigger = "default-on";
 		};
 
 		led2 {
 			label = "led2";
 			gpios = <&expander_out1 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 		};
 	};
 
@@ -129,11 +129,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma {
+		linex,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0x6000000>;
-			linux,cma-default;
+			linex,cma-default;
 		};
 	};
 
@@ -343,7 +343,7 @@
 	/* fsl,dte-mode; */
 	/* pinctrl-0 = <&pinctrl_uart6dte>; */
 	uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	linex,rs485-enabled-at-boot-time;
 	rs485-rts-active-low;
 	rs485-rx-during-tx;
 	status = "okay";

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/pnode.c
+ *  linex/fs/pnode.c
  *
  * (C) Copyright IBM Corporation 2005.
- *	Author : Ram Pai (linuxram@us.ibm.com)
+ *	Author : Ram Pai (linexram@us.ibm.com)
  */
-#include <linux/mnt_namespace.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
-#include <linux/nsproxy.h>
-#include <uapi/linux/mount.h>
+#include <linex/mnt_namespace.h>
+#include <linex/mount.h>
+#include <linex/fs.h>
+#include <linex/nsproxy.h>
+#include <uapi/linex/mount.h>
 #include "internal.h"
 #include "pnode.h"
 

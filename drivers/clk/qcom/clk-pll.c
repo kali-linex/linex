@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/bug.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/clk-provider.h>
+#include <linex/regmap.h>
 
 #include <asm/div64.h>
 

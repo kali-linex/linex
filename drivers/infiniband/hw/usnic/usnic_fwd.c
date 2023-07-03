@@ -30,8 +30,8 @@
  * SOFTWARE.
  *
  */
-#include <linux/netdevice.h>
-#include <linux/pci.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
 
 #include "enic_api.h"
 #include "usnic_common_pkt_hdr.h"

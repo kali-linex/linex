@@ -1,5 +1,5 @@
 /*
- * arch/m68k/atari/ataints.c -- Atari Linux interrupt handling code
+ * arch/m68k/atari/ataints.c -- Atari Linex interrupt handling code
  *
  * 5/2/94 Roman Hodek:
  *  Added support for TT interrupts; setup for TT SCU (may someone has
@@ -35,13 +35,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/module.h>
+#include <linex/irq.h>
 
 #include <asm/traps.h>
 

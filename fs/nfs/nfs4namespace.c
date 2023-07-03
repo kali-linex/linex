@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/nfs4namespace.c
+ * linex/fs/nfs/nfs4namespace.c
  *
  * Copyright (C) 2005 Trond Myklebust <Trond.Myklebust@netapp.com>
  * - Modified by David Howells <dhowells@redhat.com>
@@ -8,18 +8,18 @@
  * NFSv4 namespace
  */
 
-#include <linux/module.h>
-#include <linux/dcache.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
+#include <linex/module.h>
+#include <linex/dcache.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_mount.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/vfs.h>
+#include <linex/inet.h>
 #include "internal.h"
 #include "nfs4_fs.h"
 #include "nfs.h"

@@ -18,14 +18,14 @@
 #include "s5p_mfc_opr.h"
 #include "s5p_mfc_opr_v5.h"
 #include <asm/cacheflush.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/firmware.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
 
 #define OFFSETA(x)		(((x) - dev->dma_base[BANK_L_CTX]) >> MFC_OFFSET_SHIFT)
 #define OFFSETB(x)		(((x) - dev->dma_base[BANK_R_CTX]) >> MFC_OFFSET_SHIFT)

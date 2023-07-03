@@ -4,8 +4,8 @@
  * Copyright (c) 2022 Ventana Micro Systems Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/kvm_host.h>
+#include <linex/bitops.h>
+#include <linex/kvm_host.h>
 
 #define INSN_OPCODE_MASK	0x007c
 #define INSN_OPCODE_SHIFT	2

@@ -1,42 +1,42 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swap.c
+ *  linex/mm/swap.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
 /*
  * This file contains the default values for the operation of the
- * Linux VM subsystem. Fine-tuning documentation can be found in
+ * Linex VM subsystem. Fine-tuning documentation can be found in
  * Documentation/admin-guide/sysctl/vm.rst.
  * Started 18.12.91
  * Swap aging added 23.2.95, Stephen Tweedie.
  * Buffermem limits added 12.3.98, Rik van Riel.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm_inline.h>
-#include <linux/percpu_counter.h>
-#include <linux/memremap.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/backing-dev.h>
-#include <linux/memcontrol.h>
-#include <linux/gfp.h>
-#include <linux/uio.h>
-#include <linux/hugetlb.h>
-#include <linux/page_idle.h>
-#include <linux/local_lock.h>
-#include <linux/buffer_head.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/kernel_stat.h>
+#include <linex/swap.h>
+#include <linex/mman.h>
+#include <linex/pagemap.h>
+#include <linex/pagevec.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/mm_inline.h>
+#include <linex/percpu_counter.h>
+#include <linex/memremap.h>
+#include <linex/percpu.h>
+#include <linex/cpu.h>
+#include <linex/notifier.h>
+#include <linex/backing-dev.h>
+#include <linex/memcontrol.h>
+#include <linex/gfp.h>
+#include <linex/uio.h>
+#include <linex/hugetlb.h>
+#include <linex/page_idle.h>
+#include <linex/local_lock.h>
+#include <linex/buffer_head.h>
 
 #include "internal.h"
 

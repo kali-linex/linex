@@ -17,10 +17,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/v4l2-dv-timings.h>
 
 #include <media/v4l2-dv-timings.h>
 #include <media/v4l2-async.h>

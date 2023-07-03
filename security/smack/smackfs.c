@@ -6,25 +6,25 @@
  * 	Casey Schaufler <casey@schaufler-ca.com>
  * 	Ahmed S. Darwish <darwish.07@gmail.com>
  *
- * Special thanks to the authors of selinuxfs.
+ * Special thanks to the authors of selinexfs.
  *
  *	Karl MacMillan <kmacmillan@tresys.com>
  *	James Morris <jmorris@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/vmalloc.h>
+#include <linex/security.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <net/net_namespace.h>
 #include <net/cipso_ipv4.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/audit.h>
-#include <linux/magic.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
+#include <linex/seq_file.h>
+#include <linex/ctype.h>
+#include <linex/audit.h>
+#include <linex/magic.h>
+#include <linex/mount.h>
+#include <linex/fs_context.h>
 #include "smack.h"
 
 #define BEBITS	(sizeof(__be32) * 8)

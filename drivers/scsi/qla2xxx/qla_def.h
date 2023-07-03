@@ -6,24 +6,24 @@
 #ifndef __QLA_DEF_H
 #define __QLA_DEF_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/btree.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/dmapool.h>
+#include <linex/mempool.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/workqueue.h>
+#include <linex/firmware.h>
+#include <linex/mutex.h>
+#include <linex/btree.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -394,7 +394,7 @@ struct qla_buf_dsc {
  * SCSI Request Block
  */
 struct srb_cmd {
-	struct scsi_cmnd *cmd;		/* Linux SCSI command pkt */
+	struct scsi_cmnd *cmd;		/* Linex SCSI command pkt */
 	uint32_t request_sense_length;
 	uint32_t fw_sense_length;
 	uint8_t *request_sense_ptr;

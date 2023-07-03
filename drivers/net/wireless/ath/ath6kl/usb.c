@@ -15,8 +15,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linex/module.h>
+#include <linex/usb.h>
 
 #include "debug.h"
 #include "core.h"

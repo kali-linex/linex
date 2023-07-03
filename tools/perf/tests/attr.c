@@ -24,8 +24,8 @@
 #include <inttypes.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
 #include <sys/param.h>
 #include <sys/types.h>
 #include <sys/stat.h>

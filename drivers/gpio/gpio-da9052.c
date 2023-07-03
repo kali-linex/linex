@@ -6,16 +6,16 @@
  *
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
-#include <linux/fs.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linex/fs.h>
+#include <linex/gpio/driver.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/syscalls.h>
+#include <linex/uaccess.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/pdata.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linex/mfd/da9052/da9052.h>
+#include <linex/mfd/da9052/pdata.h>
+#include <linex/mfd/da9052/reg.h>
 
 #define DA9052_INPUT				1
 #define DA9052_OUTPUT_OPENDRAIN		2

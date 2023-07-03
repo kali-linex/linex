@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core
+ * Linex I2C core
  *
  * Copyright (C) 1995-99 Simon G. Vogl
  *   With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>
@@ -13,34 +13,34 @@
 #define pr_fmt(fmt) "i2c-core: " fmt
 
 #include <dt-bindings/i2c/i2c.h>
-#include <linux/acpi.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/property.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/clk/clk-conf.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/i2c-smbus.h>
+#include <linex/idr.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irqflags.h>
+#include <linex/jump_label.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/devinfo.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/property.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
 
 #include "i2c-core.h"
 

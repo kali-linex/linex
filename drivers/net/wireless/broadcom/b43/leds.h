@@ -7,9 +7,9 @@ struct b43_wldev;
 
 #ifdef CONFIG_B43_LEDS
 
-#include <linux/types.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <linex/types.h>
+#include <linex/leds.h>
+#include <linex/workqueue.h>
 
 
 #define B43_LED_MAX_NAME_LEN	31

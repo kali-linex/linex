@@ -5,16 +5,16 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/ctype.h>
+#include <linex/sysctl.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/debugfs.h>
 #include "ctcm_dbug.h"
 
 /*

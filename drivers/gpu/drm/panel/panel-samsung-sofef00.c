@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Caleb Connolly <caleb@connolly.tech>
- * Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Generated with linex-mdss-dsi-panel-driver-generator from vendor device tree:
+ * Copyright (c) 2020, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/backlight.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/backlight.h>
 
 #include <video/mipi_display.h>
 

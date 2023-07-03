@@ -3,13 +3,13 @@
  *  Author: Alexander Shiyan <shc_work@mail.ru>, 2016
  */
 
-#include <linux/io.h>
-#include <linux/of_fdt.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/sizes.h>
+#include <linex/io.h>
+#include <linex/of_fdt.h>
+#include <linex/platform_device.h>
+#include <linex/random.h>
+#include <linex/sizes.h>
 
-#include <linux/mfd/syscon/clps711x.h>
+#include <linex/mfd/syscon/clps711x.h>
 
 #include <asm/system_info.h>
 #include <asm/system_misc.h>

@@ -7,15 +7,15 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/suspend.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 struct pmc_regs {
 	__be32 devdisr;

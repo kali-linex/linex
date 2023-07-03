@@ -5,9 +5,9 @@
  *  Copyright (C) 2016 Intel Corp
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/uuid.h>
 #include "../common/sst-dsp.h"
 #include "../common/sst-dsp-priv.h"
 #include "skl.h"

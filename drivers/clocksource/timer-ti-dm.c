@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/arch/arm/plat-omap/dmtimer.c
+ * linex/arch/arm/plat-omap/dmtimer.c
  *
  * OMAP Dual-Mode Timers
  *
@@ -18,18 +18,18 @@
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu_pm.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/cpu_pm.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/pm_runtime.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/dmtimer-omap.h>
 
 #include <clocksource/timer-ti-dm.h>
 
@@ -380,7 +380,7 @@ static int omap_dm_timer_reset(struct dmtimer *timer)
 /*
  * Functions exposed to PWM and remoteproc drivers via platform_data.
  * Do not use these in the driver, these will get deprecated and will
- * will be replaced by Linux generic framework functions such as
+ * will be replaced by Linex generic framework functions such as
  * chained interrupts and clock framework.
  */
 static struct dmtimer *to_dmtimer(struct omap_dm_timer *cookie)
@@ -665,7 +665,7 @@ static int omap_dm_timer_get_irq(struct omap_dm_timer *cookie)
 }
 
 #if defined(CONFIG_ARCH_OMAP1)
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/soc/ti/omap1-io.h>
 
 static struct clk *omap_dm_timer_get_fclk(struct omap_dm_timer *cookie)
 {

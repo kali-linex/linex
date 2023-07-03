@@ -5,11 +5,11 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
 
 #include <media/cec.h>
 

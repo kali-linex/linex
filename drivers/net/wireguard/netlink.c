@@ -10,9 +10,9 @@
 #include "queueing.h"
 #include "messages.h"
 
-#include <uapi/linux/wireguard.h>
+#include <uapi/linex/wireguard.h>
 
-#include <linux/if.h>
+#include <linex/if.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 #include <crypto/algapi.h>

@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/trace_events.h>
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <linex/trace_events.h>
+#include <linex/version.h>
+#include <linex/module.h>
+#include <linex/sched.h>
 
 /*
  * Must include the event header that the custom event will attach to,

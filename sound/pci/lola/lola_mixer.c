@@ -5,10 +5,10 @@
  *  Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*******************************************************************************
     AudioScience HPI driver
-    Common Linux HPI ioctl and module probe/remove functions
+    Common Linex HPI ioctl and module probe/remove functions
 
     Copyright (C) 1997-2014  AudioScience Inc. <support@audioscience.com>
 
@@ -17,16 +17,16 @@
 #include "hpioctl.h"
 #include "hpicmn.h"
 
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/stringify.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/nospec.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/moduleparam.h>
+#include <linex/uaccess.h>
+#include <linex/pci.h>
+#include <linex/stringify.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/nospec.h>
 
 #ifdef MODULE_FIRMWARE
 MODULE_FIRMWARE("asihpi/dsp5000.bin");
@@ -92,7 +92,7 @@ int asihpi_hpi_release(struct file *file)
 
 long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 {
-	struct hpi_ioctl_linux __user *phpi_ioctl_data;
+	struct hpi_ioctl_linex __user *phpi_ioctl_data;
 	void __user *puhm;
 	void __user *puhr;
 	union hpi_message_buffer_v1 *hm;
@@ -102,7 +102,7 @@ long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 	u32 uncopied_bytes;
 	int err = 0;
 
-	if (cmd != HPI_IOCTL_LINUX)
+	if (cmd != HPI_IOCTL_LINEX)
 		return -EINVAL;
 
 	hm = kmalloc(sizeof(*hm), GFP_KERNEL);
@@ -112,7 +112,7 @@ long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 		goto out;
 	}
 
-	phpi_ioctl_data = (struct hpi_ioctl_linux __user *)arg;
+	phpi_ioctl_data = (struct hpi_ioctl_linex __user *)arg;
 
 	/* Read the message and response pointers from user space.  */
 	if (get_user(puhm, &phpi_ioctl_data->phm)

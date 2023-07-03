@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/crc32.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/mtd/mtd.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/sched.h>
+#include <linex/time.h>
+#include <linex/crc32.h>
+#include <linex/jffs2.h>
+#include <linex/xattr.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/mtd/mtd.h>
 #include "nodelist.h"
 
 static size_t jffs2_acl_size(int count)

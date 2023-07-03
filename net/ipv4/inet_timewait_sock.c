@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,9 +9,9 @@
  *		From code orinally in TCP
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <net/inet_hashtables.h>
 #include <net/inet_timewait_sock.h>
 #include <net/ip.h>
@@ -251,7 +251,7 @@ void __inet_twsk_schedule(struct inet_timewait_sock *tw, int timeo, bool rearm)
 	 * time to detect the loss is about RTO*(2^N - 1) with exponential
 	 * backoff). Normal timewait length is calculated so, that we
 	 * waited at least for one retransmitted FIN (maximal RTO is 120sec).
-	 * [ BTW Linux. following BSD, violates this requirement waiting
+	 * [ BTW Linex. following BSD, violates this requirement waiting
 	 *   only for 60sec, we should wait at least for 240 secs.
 	 *   Well, 240 consumes too much of resources 8)
 	 * ]
@@ -268,8 +268,8 @@ void __inet_twsk_schedule(struct inet_timewait_sock *tw, int timeo, bool rearm)
 	if (!rearm) {
 		bool kill = timeo <= 4*HZ;
 
-		__NET_INC_STATS(twsk_net(tw), kill ? LINUX_MIB_TIMEWAITKILLED :
-						     LINUX_MIB_TIMEWAITED);
+		__NET_INC_STATS(twsk_net(tw), kill ? LINEX_MIB_TIMEWAITKILLED :
+						     LINEX_MIB_TIMEWAITED);
 		BUG_ON(mod_timer(&tw->tw_timer, jiffies + timeo));
 		refcount_inc(&tw->tw_dr->tw_refcount);
 	} else {

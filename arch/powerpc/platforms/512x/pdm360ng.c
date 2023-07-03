@@ -7,11 +7,11 @@
  * PDM360NG board setup
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_fdt.h>
+#include <linex/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/ipic.h>
@@ -20,10 +20,10 @@
 
 #if defined(CONFIG_TOUCHSCREEN_ADS7846) || \
     defined(CONFIG_TOUCHSCREEN_ADS7846_MODULE)
-#include <linux/interrupt.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/spi.h>
-#include <linux/notifier.h>
+#include <linex/interrupt.h>
+#include <linex/spi/ads7846.h>
+#include <linex/spi/spi.h>
+#include <linex/notifier.h>
 
 static void *pdm360ng_gpio_base;
 

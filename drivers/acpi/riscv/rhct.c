@@ -7,7 +7,7 @@
 
 #define pr_fmt(fmt)     "ACPI: RHCT: " fmt
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 
 static struct acpi_table_header *acpi_get_rhct(void)
 {

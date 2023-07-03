@@ -1,20 +1,20 @@
 /* License: GPL */
 
-#include <linux/filter.h>
-#include <linux/mutex.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
+#include <linex/filter.h>
+#include <linex/mutex.h>
+#include <linex/socket.h>
+#include <linex/skbuff.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
-#include <linux/module.h>
+#include <linex/module.h>
 #include <net/sock.h>
-#include <linux/kernel.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/nospec.h>
-#include <linux/cookie.h>
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <linex/kernel.h>
+#include <linex/tcp.h>
+#include <linex/workqueue.h>
+#include <linex/nospec.h>
+#include <linex/cookie.h>
+#include <linex/inet_diag.h>
+#include <linex/sock_diag.h>
 
 static const struct sock_diag_handler *sock_diag_handlers[AF_MAX];
 static int (*inet_rcv_compat)(struct sk_buff *skb, struct nlmsghdr *nlh);

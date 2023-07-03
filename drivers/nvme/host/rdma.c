@@ -4,25 +4,25 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #include <rdma/mr_pool.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-integrity.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/nvme.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/atomic.h>
+#include <linex/blk-mq.h>
+#include <linex/blk-integrity.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/scatterlist.h>
+#include <linex/nvme.h>
 #include <asm/unaligned.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
-#include <linux/nvme-rdma.h>
+#include <linex/nvme-rdma.h>
 
 #include "nvme.h"
 #include "fabrics.h"

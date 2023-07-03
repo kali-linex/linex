@@ -6,12 +6,12 @@
 #ifndef __SOC_TEGRA_BPMP_H
 #define __SOC_TEGRA_BPMP_H
 
-#include <linux/iosys-map.h>
-#include <linux/mailbox_client.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/semaphore.h>
-#include <linux/types.h>
+#include <linex/iosys-map.h>
+#include <linex/mailbox_client.h>
+#include <linex/pm_domain.h>
+#include <linex/reset-controller.h>
+#include <linex/semaphore.h>
+#include <linex/types.h>
 
 #include <soc/tegra/bpmp-abi.h>
 

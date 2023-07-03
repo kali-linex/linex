@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/slab.c
+ * linex/mm/slab.c
  * Written by Mark Hemment, 1996/97.
  * (markhe@nextd.demon.co.uk)
  *
@@ -87,37 +87,37 @@
  *	All object allocations for a node occur from node specific slab lists.
  */
 
-#include	<linux/slab.h>
-#include	<linux/mm.h>
-#include	<linux/poison.h>
-#include	<linux/swap.h>
-#include	<linux/cache.h>
-#include	<linux/interrupt.h>
-#include	<linux/init.h>
-#include	<linux/compiler.h>
-#include	<linux/cpuset.h>
-#include	<linux/proc_fs.h>
-#include	<linux/seq_file.h>
-#include	<linux/notifier.h>
-#include	<linux/kallsyms.h>
-#include	<linux/kfence.h>
-#include	<linux/cpu.h>
-#include	<linux/sysctl.h>
-#include	<linux/module.h>
-#include	<linux/rcupdate.h>
-#include	<linux/string.h>
-#include	<linux/uaccess.h>
-#include	<linux/nodemask.h>
-#include	<linux/kmemleak.h>
-#include	<linux/mempolicy.h>
-#include	<linux/mutex.h>
-#include	<linux/fault-inject.h>
-#include	<linux/rtmutex.h>
-#include	<linux/reciprocal_div.h>
-#include	<linux/debugobjects.h>
-#include	<linux/memory.h>
-#include	<linux/prefetch.h>
-#include	<linux/sched/task_stack.h>
+#include	<linex/slab.h>
+#include	<linex/mm.h>
+#include	<linex/poison.h>
+#include	<linex/swap.h>
+#include	<linex/cache.h>
+#include	<linex/interrupt.h>
+#include	<linex/init.h>
+#include	<linex/compiler.h>
+#include	<linex/cpuset.h>
+#include	<linex/proc_fs.h>
+#include	<linex/seq_file.h>
+#include	<linex/notifier.h>
+#include	<linex/kallsyms.h>
+#include	<linex/kfence.h>
+#include	<linex/cpu.h>
+#include	<linex/sysctl.h>
+#include	<linex/module.h>
+#include	<linex/rcupdate.h>
+#include	<linex/string.h>
+#include	<linex/uaccess.h>
+#include	<linex/nodemask.h>
+#include	<linex/kmemleak.h>
+#include	<linex/mempolicy.h>
+#include	<linex/mutex.h>
+#include	<linex/fault-inject.h>
+#include	<linex/rtmutex.h>
+#include	<linex/reciprocal_div.h>
+#include	<linex/debugobjects.h>
+#include	<linex/memory.h>
+#include	<linex/prefetch.h>
+#include	<linex/sched/task_stack.h>
 
 #include	<net/sock.h>
 

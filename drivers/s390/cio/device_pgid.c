@@ -8,13 +8,13 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/io.h>
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
 

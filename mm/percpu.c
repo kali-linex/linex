@@ -2,7 +2,7 @@
 /*
  * mm/percpu.c - percpu memory allocator
  *
- * Copyright (C) 2009		SUSE Linux Products GmbH
+ * Copyright (C) 2009		SUSE Linex Products GmbH
  * Copyright (C) 2009		Tejun Heo <tj@kernel.org>
  *
  * Copyright (C) 2017		Facebook Inc.
@@ -68,25 +68,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/kmemleak.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/memcontrol.h>
+#include <linex/bitmap.h>
+#include <linex/cpumask.h>
+#include <linex/memblock.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/log2.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/percpu.h>
+#include <linex/pfn.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/kmemleak.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/memcontrol.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sections.h>

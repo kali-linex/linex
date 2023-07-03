@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c)  2018 Intel Corporation */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
 
 #include "igc_mac.h"
 #include "igc_hw.h"

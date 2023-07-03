@@ -5,15 +5,15 @@
  *  Author: Eric Biederman <ebiederm@xmision.com>
  */
 
-#include <linux/module.h>
-#include <linux/ipc.h>
-#include <linux/nsproxy.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/ipc_namespace.h>
-#include <linux/msg.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/ipc.h>
+#include <linex/nsproxy.h>
+#include <linex/sysctl.h>
+#include <linex/uaccess.h>
+#include <linex/capability.h>
+#include <linex/ipc_namespace.h>
+#include <linex/msg.h>
+#include <linex/slab.h>
 #include "util.h"
 
 static int proc_ipc_dointvec_minmax_orphans(struct ctl_table *table, int write,

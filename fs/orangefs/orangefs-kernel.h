@@ -6,52 +6,52 @@
  */
 
 /*
- *  The ORANGEFS Linux kernel support allows ORANGEFS volumes to be mounted and
- *  accessed through the Linux VFS (i.e. using standard I/O system calls).
+ *  The ORANGEFS Linex kernel support allows ORANGEFS volumes to be mounted and
+ *  accessed through the Linex VFS (i.e. using standard I/O system calls).
  *  This support is only needed on clients that wish to mount the file system.
  *
  */
 
 /*
- *  Declarations and macros for the ORANGEFS Linux kernel support.
+ *  Declarations and macros for the ORANGEFS Linex kernel support.
  */
 
 #ifndef __ORANGEFSKERNEL_H
 #define __ORANGEFSKERNEL_H
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/statfs.h>
-#include <linux/backing-dev.h>
-#include <linux/device.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/statfs.h>
+#include <linex/backing-dev.h>
+#include <linex/device.h>
+#include <linex/mpage.h>
+#include <linex/namei.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
 
-#include <linux/aio.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/uio.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/dcache.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/hashtable.h>
+#include <linex/aio.h>
+#include <linex/posix_acl.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/compat.h>
+#include <linex/mount.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
+#include <linex/uio.h>
+#include <linex/sched/signal.h>
+#include <linex/mm.h>
+#include <linex/wait.h>
+#include <linex/dcache.h>
+#include <linex/pagemap.h>
+#include <linex/poll.h>
+#include <linex/rwsem.h>
+#include <linex/xattr.h>
+#include <linex/exportfs.h>
+#include <linex/hashtable.h>
 
 #include <asm/unaligned.h>
 

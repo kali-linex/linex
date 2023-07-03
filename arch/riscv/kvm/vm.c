@@ -6,11 +6,11 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/kvm_host.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/kvm_host.h>
 
 const struct _kvm_stats_desc kvm_vm_stats_desc[] = {
 	KVM_GENERIC_VM_STATS()

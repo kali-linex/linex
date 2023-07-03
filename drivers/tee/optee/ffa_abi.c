@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/arm_ffa.h>
-#include <linux/errno.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
+#include <linex/arm_ffa.h>
+#include <linex/errno.h>
+#include <linex/scatterlist.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/tee_drv.h>
+#include <linex/types.h>
 #include "optee_private.h"
 #include "optee_ffa.h"
 #include "optee_rpc_cmd.h"

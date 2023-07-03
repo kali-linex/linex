@@ -6,14 +6,14 @@
 //
 // Author: David Rhodes	<david.rhodes@cirrus.com>
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/spi/spi.h>
 
 #include "cs35l41.h"
 

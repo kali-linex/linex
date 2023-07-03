@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_UNWIND_H
 #define _ASM_X86_UNWIND_H
 
-#include <linux/sched.h>
-#include <linux/ftrace.h>
-#include <linux/rethook.h>
+#include <linex/sched.h>
+#include <linex/ftrace.h>
+#include <linex/rethook.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
 

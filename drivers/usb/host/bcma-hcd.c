@@ -18,17 +18,17 @@
  * Derived from the USBcore related parts of Broadcom-SB
  * Copyright 2005-2011 Broadcom Corporation
  */
-#include <linux/bcma/bcma.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linex/bcma/bcma.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/of_platform.h>
+#include <linex/usb/ehci_pdriver.h>
+#include <linex/usb/ohci_pdriver.h>
 
 MODULE_AUTHOR("Hauke Mehrtens");
 MODULE_DESCRIPTION("Common USB driver for BCMA Bus");

@@ -2,7 +2,7 @@
 /*
     Conexant cx24120/cx24118 - DVBS/S2 Satellite demod/tuner driver
 
-    Copyright (C) 2008 Patrick Boettcher <pb@linuxtv.org>
+    Copyright (C) 2008 Patrick Boettcher <pb@linextv.org>
     Copyright (C) 2009 Sergey Tyurin <forum.free-x.de>
     Updated 2012 by Jannis Achstetter <jannis_achstetter@web.de>
     Copyright (C) 2015 Jemma Denson <jdenson@gmail.com>
@@ -15,12 +15,12 @@
 
 */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/firmware.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/firmware.h>
 #include <media/dvb_frontend.h>
 #include "cx24120.h"
 

@@ -3,12 +3,12 @@
  * Copyright 2018 Noralf Trønnes
  */
 
-#include <linux/iosys-map.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/iosys-map.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #include <drm/drm_client.h>
 #include <drm/drm_debugfs.h>

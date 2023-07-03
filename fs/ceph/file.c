@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
-#include <linux/ceph/striper.h>
+#include <linex/ceph/ceph_debug.h>
+#include <linex/ceph/striper.h>
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/iversion.h>
-#include <linux/ktime.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/writeback.h>
+#include <linex/falloc.h>
+#include <linex/iversion.h>
+#include <linex/ktime.h>
 
 #include "super.h"
 #include "mds_client.h"

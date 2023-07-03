@@ -2,7 +2,7 @@
 # This file is included by the global makefile so that you can add your own
 # architecture-specific flags and dependencies.
 #
-# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
 # Licensed under the GPL
 #
 
@@ -19,7 +19,7 @@ endif
 
 ARCH_DIR := arch/um
 OS := $(shell uname -s)
-# We require bash because the vmlinux link and loader script cpp use bash
+# We require bash because the vmlinex link and loader script cpp use bash
 # features.
 SHELL := /bin/bash
 
@@ -98,18 +98,18 @@ KERNEL_DEFINES = $(strip -Derrno=kernel_errno -Dsigprocmask=kernel_sigprocmask \
 			 -Dmktime=kernel_mktime $(ARCH_KERNEL_DEFINES))
 KBUILD_CFLAGS += $(KERNEL_DEFINES)
 
-PHONY += linux
+PHONY += linex
 
-all: linux
+all: linex
 
-linux: vmlinux
+linex: vmlinex
 	@echo '  LINK $@'
 	$(Q)ln -f $< $@
 
 define archhelp
-  echo '* linux		- Binary kernel image (./linux) - for backward'
+  echo '* linex		- Binary kernel image (./linex) - for backward'
   echo '		   compatibility only, this creates a hard link to the'
-  echo '		   real kernel binary, the "vmlinux" binary you'
+  echo '		   real kernel binary, the "vmlinex" binary you'
   echo '		   find in the kernel root.'
 endef
 
@@ -143,12 +143,12 @@ endif
 
 LD_FLAGS_CMDLINE = $(foreach opt,$(KBUILD_LDFLAGS) $(LDFLAGS_EXECSTACK),-Wl,$(opt))
 
-# Used by link-vmlinux.sh which has special support for um link
-export CFLAGS_vmlinux := $(LINK-y) $(LINK_WRAPS) $(LD_FLAGS_CMDLINE) $(CC_FLAGS_LTO)
+# Used by link-vmlinex.sh which has special support for um link
+export CFLAGS_vmlinex := $(LINK-y) $(LINK_WRAPS) $(LD_FLAGS_CMDLINE) $(CC_FLAGS_LTO)
 
 # When cleaning we don't include .config, so we don't include
 # TT or skas makefiles and don't clean skas_ptregs.h.
-CLEAN_FILES += linux x.i gmon.out
+CLEAN_FILES += linex x.i gmon.out
 MRPROPER_FILES += $(HOST_DIR)/include/generated
 
 archclean:

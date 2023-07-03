@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018-2020, The Linex Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/component.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/pm_runtime.h>
+#include <linex/component.h>
 #include <sound/tlv.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
+#include <linex/of_gpio.h>
+#include <linex/of.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
-#include <linux/regulator/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include "wcd-clsh-v2.h"
 #include "wcd-mbhc-v2.h"

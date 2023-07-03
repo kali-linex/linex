@@ -5,18 +5,18 @@
  * Copyright 2010 Steven King <sfking@fdwdc.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/spi/spi.h>
+#include <linex/pm_runtime.h>
 
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

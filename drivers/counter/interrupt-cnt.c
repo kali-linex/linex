@@ -3,14 +3,14 @@
  * Copyright (c) 2021 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
  */
 
-#include <linux/counter.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/counter.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
 #define INTERRUPT_CNT_NAME "interrupt-cnt"
 

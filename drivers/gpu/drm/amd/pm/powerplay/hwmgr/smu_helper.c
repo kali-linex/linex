@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/reboot.h>
+#include <linex/pci.h>
+#include <linex/reboot.h>
 
 #include "hwmgr.h"
 #include "pp_debug.h"

@@ -10,13 +10,13 @@
  *	Ben Dooks <ben@simtec.co.uk>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/altera.h>
-#include <linux/spi/spi.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spi/altera.h>
+#include <linex/spi/spi.h>
+#include <linex/io.h>
+#include <linex/of.h>
 
 #define DRV_NAME "spi_altera"
 

@@ -3,9 +3,9 @@
  *
  * Copyright (C) 1996 Mike Shaver (shaver@zeroknowledge.com)
  */
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
+#include <linex/mm.h>
+#include <linex/sysctl.h>
+#include <linex/init.h>
 #include <net/ax25.h>
 #include <net/netrom.h>
 

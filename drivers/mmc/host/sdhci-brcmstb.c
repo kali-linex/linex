@@ -5,12 +5,12 @@
  * Copyright (C) 2015 Broadcom Corporation
  */
 
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/mmc/host.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
 
 #include "sdhci-cqhci.h"
 #include "sdhci-pltfm.h"

@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2011-12 Wolfram Sang, Pengutronix
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/stmp3xxx_rtc_wdt.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
+#include <linex/stmp3xxx_rtc_wdt.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
 
 #define WDOG_TICK_RATE 1000 /* 1 kHz clock */
 #define STMP3XXX_DEFAULT_TIMEOUT 19

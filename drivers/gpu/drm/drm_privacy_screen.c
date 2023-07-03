@@ -6,12 +6,12 @@
  * Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <drm/drm_privacy_screen_machine.h>
 #include <drm/drm_privacy_screen_consumer.h>
 #include <drm/drm_privacy_screen_driver.h>

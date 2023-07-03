@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/super.c
+ *  linex/fs/ext4/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linex/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,37 +17,37 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/random.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/crc16.h>
-#include <linux/dax.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
-#include <linux/unicode.h>
-#include <linux/part_stat.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/time.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/backing-dev.h>
+#include <linex/parser.h>
+#include <linex/buffer_head.h>
+#include <linex/exportfs.h>
+#include <linex/vfs.h>
+#include <linex/random.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/quotaops.h>
+#include <linex/seq_file.h>
+#include <linex/ctype.h>
+#include <linex/log2.h>
+#include <linex/crc16.h>
+#include <linex/dax.h>
+#include <linex/uaccess.h>
+#include <linex/iversion.h>
+#include <linex/unicode.h>
+#include <linex/part_stat.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/fsnotify.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
 
 #include "ext4.h"
 #include "ext4_extents.h"	/* Needed for trace points definition */

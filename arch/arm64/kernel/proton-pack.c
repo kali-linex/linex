@@ -17,13 +17,13 @@
  * Authors: Will Deacon <will@kernel.org> and Marc Zyngier <maz@kernel.org>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/bpf.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched/task_stack.h>
+#include <linex/arm-smccc.h>
+#include <linex/bpf.h>
+#include <linex/cpu.h>
+#include <linex/device.h>
+#include <linex/nospec.h>
+#include <linex/prctl.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/insn.h>

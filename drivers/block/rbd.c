@@ -1,6 +1,6 @@
 
 /*
-   rbd.c -- Export ceph rados objects as a Linux block device
+   rbd.c -- Export ceph rados objects as a Linex block device
 
 
    based on drivers/block/osdblk.c:
@@ -28,24 +28,24 @@
 
  */
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/cls_lock_client.h>
-#include <linux/ceph/striper.h>
-#include <linux/ceph/decode.h>
-#include <linux/fs_parser.h>
-#include <linux/bsearch.h>
+#include <linex/ceph/libceph.h>
+#include <linex/ceph/osd_client.h>
+#include <linex/ceph/mon_client.h>
+#include <linex/ceph/cls_lock_client.h>
+#include <linex/ceph/striper.h>
+#include <linex/ceph/decode.h>
+#include <linex/fs_parser.h>
+#include <linex/bsearch.h>
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/blk-mq.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/blk-mq.h>
+#include <linex/fs.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/workqueue.h>
 
 #include "rbd_types.h"
 

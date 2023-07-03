@@ -7,15 +7,15 @@
  * Gregory CLEMENT <gregory.clement@free-electrons.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/mvebu-pmsu.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/of_address.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/delay.h>
+#include <linex/mvebu-pmsu.h>
 #include <asm/smp_plat.h>
 
 #define SYS_CTRL_CLK_DIVIDER_CTRL_OFFSET               0x0

@@ -25,10 +25,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/stat.h>
+#include <linex/sysfs.h>
 
 #include "gt/intel_gt_regs.h"
 #include "gt/intel_rc6.h"

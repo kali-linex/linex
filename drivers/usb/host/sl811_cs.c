@@ -11,20 +11,20 @@
  *  Last update: 2005-05-12
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/usb/sl811.h>
+#include <linex/usb/sl811.h>
 
 MODULE_AUTHOR("Botond Botyanszki");
 MODULE_DESCRIPTION("REX-CFU1U PCMCIA driver for 2.6");

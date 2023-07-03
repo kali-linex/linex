@@ -10,33 +10,33 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
+#include <linex/cdev.h>
+#include <linex/compat.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/idr.h>
+#include <linex/iommu.h>
 #ifdef CONFIG_HAVE_KVM
-#include <linux/kvm_host.h>
+#include <linex/kvm_host.h>
 #endif
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/pm_runtime.h>
-#include <linux/interval_tree.h>
-#include <linux/iova_bitmap.h>
-#include <linux/iommufd.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/rwsem.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/stat.h>
+#include <linex/string.h>
+#include <linex/uaccess.h>
+#include <linex/vfio.h>
+#include <linex/wait.h>
+#include <linex/sched/signal.h>
+#include <linex/pm_runtime.h>
+#include <linex/interval_tree.h>
+#include <linex/iova_bitmap.h>
+#include <linex/iommufd.h>
 #include "vfio.h"
 
 #define DRIVER_VERSION	"0.3"

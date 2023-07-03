@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linex.intel.com>
 //
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/firmware.h>
+#include <linex/workqueue.h>
 #include <sound/tlv.h>
 #include <uapi/sound/sof/tokens.h>
 #include "sof-priv.h"

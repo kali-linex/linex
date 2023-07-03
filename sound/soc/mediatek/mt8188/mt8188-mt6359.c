@@ -6,11 +6,11 @@
  * Author: Trevor Wu <trevor.wu@mediatek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

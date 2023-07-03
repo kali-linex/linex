@@ -20,11 +20,11 @@
  * must be negotiated with the underlying OS.
  */
 
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/pci.h>
+#include <linex/uaccess.h>
+#include <linex/vfio.h>
+#include <linex/slab.h>
 
 #include "vfio_pci_priv.h"
 

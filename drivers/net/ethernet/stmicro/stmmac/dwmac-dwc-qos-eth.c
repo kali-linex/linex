@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Synopsys DWC Ethernet Quality-of-Service v4.10a linux driver
+ * Synopsys DWC Ethernet Quality-of-Service v4.10a linex driver
  *
  * Copyright (C) 2016 Joao Pinto <jpinto@synopsys.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/stmmac.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/ethtool.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/ioport.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_net.h>
+#include <linex/mfd/syscon.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/stmmac.h>
 
 #include "stmmac_platform.h"
 #include "dwmac4.h"

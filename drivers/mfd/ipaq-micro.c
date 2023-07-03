@@ -11,20 +11,20 @@
  * Author : Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ipaq-micro.h>
-#include <linux/string.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/ipaq-micro.h>
+#include <linex/string.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/list.h>
 
 #include <mach/hardware.h>
 

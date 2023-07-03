@@ -6,15 +6,15 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/completion.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
+#include <linex/kernel.h>
+#include <linex/cpuidle.h>
+#include <linex/sysfs.h>
+#include <linex/slab.h>
+#include <linex/cpu.h>
+#include <linex/completion.h>
+#include <linex/capability.h>
+#include <linex/device.h>
+#include <linex/kobject.h>
 
 #include "cpuidle.h"
 

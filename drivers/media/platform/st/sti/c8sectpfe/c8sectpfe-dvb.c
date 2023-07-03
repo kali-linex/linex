@@ -7,10 +7,10 @@
  *  Author Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
 
 #include <dt-bindings/media/c8sectpfe.h>
 

@@ -4,16 +4,16 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/dma-fence.h>
-#include <linux/dma-fence-chain.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
+#include <linex/delay.h>
+#include <linex/dma-fence.h>
+#include <linex/dma-fence-chain.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/random.h>
 
 #include "selftest.h"
 

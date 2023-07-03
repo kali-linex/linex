@@ -2,8 +2,8 @@
 #ifndef _CRYPTO_CAST6_H
 #define _CRYPTO_CAST6_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linex/types.h>
+#include <linex/crypto.h>
 #include <crypto/cast_common.h>
 
 #define CAST6_BLOCK_SIZE 16

@@ -6,31 +6,31 @@
  * Copyright 2004-2007 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/console.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/dma/ipu-dma.h>
-#include <linux/backlight.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/console.h>
+#include <linex/clk.h>
+#include <linex/mutex.h>
+#include <linex/dma/ipu-dma.h>
+#include <linex/backlight.h>
 
-#include <linux/dma/imx-dma.h>
-#include <linux/platform_data/video-mx3fb.h>
+#include <linex/dma/imx-dma.h>
+#include <linex/platform_data/video-mx3fb.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define MX3FB_NAME		"mx3_sdc_fb"
 

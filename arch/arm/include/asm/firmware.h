@@ -8,7 +8,7 @@
 #ifndef __ASM_ARM_FIRMWARE_H
 #define __ASM_ARM_FIRMWARE_H
 
-#include <linux/bug.h>
+#include <linex/bug.h>
 
 /*
  * struct firmware_ops

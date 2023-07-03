@@ -5,16 +5,16 @@
  * Copyright 2005-2013 Solarflare Communications Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/pci.h>
+#include <linex/tcp.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <net/ipv6.h>
-#include <linux/if_ether.h>
-#include <linux/highmem.h>
-#include <linux/cache.h>
+#include <linex/if_ether.h>
+#include <linex/highmem.h>
+#include <linex/cache.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "io.h"

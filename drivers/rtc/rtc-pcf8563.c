@@ -4,21 +4,21 @@
  * Copyright 2005-06 Tower Technologies
  *
  * Author: Alessandro Zummo <a.zummo@towertech.it>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linex.org/
  *
  * based on the other drivers in this same directory.
  *
  * https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf
  */
 
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/err.h>
+#include <linex/clk-provider.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/err.h>
 
 #define PCF8563_REG_ST1		0x00 /* status */
 #define PCF8563_REG_ST2		0x01
@@ -612,7 +612,7 @@ static struct i2c_driver pcf8563_driver = {
 		.name	= "rtc-pcf8563",
 		.of_match_table = of_match_ptr(pcf8563_of_match),
 	},
-	.probe		= pcf8563_probe,
+	.probe_new	= pcf8563_probe,
 	.id_table	= pcf8563_id,
 };
 

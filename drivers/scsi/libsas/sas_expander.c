@@ -8,9 +8,9 @@
  * This file is licensed under GPLv2.
  */
 
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <linex/scatterlist.h>
+#include <linex/blkdev.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 #include "sas_internal.h"

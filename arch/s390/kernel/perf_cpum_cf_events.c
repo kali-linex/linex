@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/perf_event.h>
+#include <linex/slab.h>
+#include <linex/perf_event.h>
 #include <asm/cpu_mf.h>
 
 

@@ -5,15 +5,15 @@
  * Copyright (c) 2009 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/lcd.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/gpio/consumer.h>
+#include <linex/lcd.h>
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
 
 struct lms283gf05_state {
 	struct spi_device	*spi;

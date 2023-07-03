@@ -5,10 +5,10 @@
  * generic videomode description
  */
 
-#ifndef __LINUX_VIDEOMODE_H
-#define __LINUX_VIDEOMODE_H
+#ifndef __LINEX_VIDEOMODE_H
+#define __LINEX_VIDEOMODE_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <video/display_timing.h>
 
 /*

@@ -10,20 +10,20 @@
 
 #define pr_fmt(fmt) "acpi/hmat: " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/list_sort.h>
-#include <linux/memregion.h>
-#include <linux/memory.h>
-#include <linux/mutex.h>
-#include <linux/node.h>
-#include <linux/sysfs.h>
-#include <linux/dax.h>
+#include <linex/acpi.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/platform_device.h>
+#include <linex/list_sort.h>
+#include <linex/memregion.h>
+#include <linex/memory.h>
+#include <linex/mutex.h>
+#include <linex/node.h>
+#include <linex/sysfs.h>
+#include <linex/dax.h>
 
 static u8 hmat_revision;
 static int hmat_disable __initdata;

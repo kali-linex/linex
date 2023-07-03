@@ -6,15 +6,15 @@
  * Author(s): Amelie Delaunay <amelie.delaunay@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/role.h>
-#include <linux/usb/typec.h>
+#include <linex/bitfield.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/consumer.h>
+#include <linex/usb/role.h>
+#include <linex/usb/typec.h>
 
 #define STUSB160X_ALERT_STATUS			0x0B /* RC */
 #define STUSB160X_ALERT_STATUS_MASK_CTRL	0x0C /* RW */

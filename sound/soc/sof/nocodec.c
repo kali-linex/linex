@@ -5,10 +5,10 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linex.intel.com>
 //
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/sof.h>
 #include "sof-audio.h"
 #include "sof-priv.h"

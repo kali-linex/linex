@@ -6,19 +6,19 @@
  * Copyright (C) 2004 Intel Corporation <matthew.e.tolentino@intel.com>
  */
 
-#include <linux/capability.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/ucs2_string.h>
+#include <linex/capability.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/smp.h>
+#include <linex/efi.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/ctype.h>
+#include <linex/ucs2_string.h>
 
 #include "internal.h"
 
@@ -181,7 +181,7 @@ static const struct variable_validate variable_validate[] = {
 	{ EFI_GLOBAL_VARIABLE_GUID, "OsIndications", NULL },
 	{ EFI_GLOBAL_VARIABLE_GUID, "PlatformLang", validate_ascii_string },
 	{ EFI_GLOBAL_VARIABLE_GUID, "Timeout", validate_uint16 },
-	{ LINUX_EFI_CRASH_GUID, "*", NULL },
+	{ LINEX_EFI_CRASH_GUID, "*", NULL },
 	{ NULL_GUID, "", NULL },
 };
 

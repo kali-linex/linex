@@ -8,7 +8,7 @@
 
 #include <acpi/acpi.h>
 
-/* Headers not included by include/acpi/platform/aclinux.h */
+/* Headers not included by include/acpi/platform/aclinex.h */
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +18,7 @@
 #include <fcntl.h>
 #include <assert.h>
 #include <sys/select.h>
-#include "../../../../../include/linux/circ_buf.h"
+#include "../../../../../include/linex/circ_buf.h"
 
 #define ACPI_AML_FILE		"/sys/kernel/debug/acpi/acpidbg"
 #define ACPI_AML_SEC_TICK	1

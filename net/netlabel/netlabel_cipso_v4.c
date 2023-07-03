@@ -13,18 +13,18 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/string.h>
+#include <linex/skbuff.h>
+#include <linex/audit.h>
+#include <linex/slab.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include "netlabel_user.h"
 #include "netlabel_cipso_v4.h"

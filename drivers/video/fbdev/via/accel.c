@@ -4,7 +4,7 @@
  * Copyright 2001-2008 S3 Graphics, Inc. All Rights Reserved.
 
  */
-#include <linux/via-core.h>
+#include <linex/via-core.h>
 #include "global.h"
 
 /*

@@ -13,15 +13,15 @@
 #define pr_fmt(fmt)     "DMAR: " fmt
 #define dev_fmt(fmt)    pr_fmt(fmt)
 
-#include <linux/crash_dump.h>
-#include <linux/dma-direct.h>
-#include <linux/dmi.h>
-#include <linux/memory.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
-#include <linux/tboot.h>
+#include <linex/crash_dump.h>
+#include <linex/dma-direct.h>
+#include <linex/dmi.h>
+#include <linex/memory.h>
+#include <linex/pci.h>
+#include <linex/pci-ats.h>
+#include <linex/spinlock.h>
+#include <linex/syscore_ops.h>
+#include <linex/tboot.h>
 
 #include "iommu.h"
 #include "../dma-iommu.h"

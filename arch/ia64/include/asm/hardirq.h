@@ -15,8 +15,8 @@
 
 #define local_softirq_pending_ref	ia64_cpu_info.softirq_pending
 
-#include <linux/threads.h>
-#include <linux/irq.h>
+#include <linex/threads.h>
+#include <linex/irq.h>
 
 #include <asm/processor.h>
 

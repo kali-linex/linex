@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/pgtable.h>
 
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/semaphore.h>
-#include <linux/thread_info.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/cpuhotplug.h>
+#include <linex/string.h>
+#include <linex/bitops.h>
+#include <linex/smp.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/semaphore.h>
+#include <linex/thread_info.h>
+#include <linex/init.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
+#include <linex/cpuhotplug.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr.h>
@@ -31,7 +31,7 @@
 #include <asm/thermal.h>
 
 #ifdef CONFIG_X86_64
-#include <linux/topology.h>
+#include <linex/topology.h>
 #endif
 
 #include "cpu.h"

@@ -4,8 +4,8 @@
 #ifndef _GDM_LTE_H_
 #define _GDM_LTE_H_
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
+#include <linex/netdevice.h>
+#include <linex/types.h>
 
 #include "gdm_endian.h"
 

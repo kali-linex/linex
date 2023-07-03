@@ -33,8 +33,8 @@
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_placement.h>
 
-#include <linux/sync_file.h>
-#include <linux/hashtable.h>
+#include <linex/sync_file.h>
+#include <linex/hashtable.h>
 
 /*
  * Helper macro to get dx_ctx_node if available otherwise print an error

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/mfp-pxa2xx.c
+ *  linex/arch/arm/mach-pxa/mfp-pxa2xx.c
  *
  *  PXA2xx pin mux configuration support
  *
@@ -9,14 +9,14 @@
  *  on PXA3xx,  what's more important, the low power pin state and
  *  wakeup detection are also supported by the same framework.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/soc/pxa/cpu.h>
+#include <linex/gpio.h>
+#include <linex/gpio-pxa.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/syscore_ops.h>
+#include <linex/soc/pxa/cpu.h>
 
 #include "pxa2xx-regs.h"
 #include "mfp-pxa2xx.h"

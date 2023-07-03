@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slimbus.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/slimbus.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_registers.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bus.h"

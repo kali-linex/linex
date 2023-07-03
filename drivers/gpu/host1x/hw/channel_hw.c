@@ -5,9 +5,9 @@
  * Copyright (c) 2010-2013, NVIDIA Corporation.
  */
 
-#include <linux/host1x.h>
-#include <linux/iommu.h>
-#include <linux/slab.h>
+#include <linex/host1x.h>
+#include <linex/iommu.h>
+#include <linex/slab.h>
 
 #include <trace/events/host1x.h>
 

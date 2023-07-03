@@ -3,18 +3,18 @@
  *
  * Copyright (c) 2011 Jonathan Cameron
  */
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linex/err.h>
+#include <linex/export.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/iio-opaque.h>
 #include "iio_core.h"
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/consumer.h>
+#include <linex/iio/machine.h>
+#include <linex/iio/driver.h>
+#include <linex/iio/consumer.h>
 
 struct iio_map_internal {
 	struct iio_dev *indio_dev;

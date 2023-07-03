@@ -11,9 +11,9 @@
 #include "hal.h"
 #include "errors.h"
 #include "reg.h"
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
 
 /*
  * Size factor for isochronous DBR buffer.

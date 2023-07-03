@@ -4,11 +4,11 @@
   * Copyright 2016 HUAWEI TECHNOLOGIES CO., LTD.
   */
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/module.h>
 
-#include <uapi/linux/virtio_crypto.h>
+#include <uapi/linex/virtio_crypto.h>
 #include "virtio_crypto_common.h"
 
 static LIST_HEAD(virtio_crypto_table);

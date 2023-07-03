@@ -13,10 +13,10 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/poly1305.h>
 #include <crypto/internal/simd.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/jump_label.h>
-#include <linux/module.h>
+#include <linex/cpufeature.h>
+#include <linex/crypto.h>
+#include <linex/jump_label.h>
+#include <linex/module.h>
 
 void poly1305_init_arm(void *state, const u8 *key);
 void poly1305_blocks_arm(void *state, const u8 *src, u32 len, u32 hibit);

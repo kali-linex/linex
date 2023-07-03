@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
 
 #include "mt76x0.h"
 #include "mcu.h"

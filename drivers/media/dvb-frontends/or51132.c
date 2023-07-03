@@ -19,12 +19,12 @@
 #define OR51132_VSB_FIRMWARE "dvb-fe-or51132-vsb.fw"
 #define OR51132_QAM_FIRMWARE "dvb-fe-or51132-qam.fw"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 #include <asm/byteorder.h>
 
 #include <media/dvb_math.h>

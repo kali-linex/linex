@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/attr.c
+ *  linex/fs/attr.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  changes by Thomas Schoebel-Theuer
  */
 
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
-#include <linux/capability.h>
-#include <linux/fsnotify.h>
-#include <linux/fcntl.h>
-#include <linux/filelock.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/ima.h>
+#include <linex/export.h>
+#include <linex/time.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/sched/signal.h>
+#include <linex/capability.h>
+#include <linex/fsnotify.h>
+#include <linex/fcntl.h>
+#include <linex/filelock.h>
+#include <linex/security.h>
+#include <linex/evm.h>
+#include <linex/ima.h>
 
 #include "internal.h"
 

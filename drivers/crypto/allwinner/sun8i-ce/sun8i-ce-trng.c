@@ -10,9 +10,9 @@
  * You could find a link for the datasheet in Documentation/arch/arm/sunxi.rst
  */
 #include "sun8i-ce.h"
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/hw_random.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_runtime.h>
+#include <linex/hw_random.h>
 /*
  * Note that according to the algorithm ID, 2 versions of the TRNG exists,
  * The first present in H3/H5/R40/A64 and the second present in H6.

@@ -4,11 +4,11 @@
 #define __SKEL_INTERNAL_H
 
 #ifdef __KERNEL__
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/bpf.h>
+#include <linex/fdtable.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/slab.h>
+#include <linex/bpf.h>
 #else
 #include <unistd.h>
 #include <sys/syscall.h>

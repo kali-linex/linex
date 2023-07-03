@@ -10,24 +10,24 @@
  */
 
 /*
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@linexcare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to Linexcare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/stat.h>
+#include <linex/mm.h>
+#include <linex/blkdev.h>
+#include <linex/ioport.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
 #include <asm/page.h>
 #include <asm/irq.h>

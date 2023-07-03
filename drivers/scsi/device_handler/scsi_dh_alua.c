@@ -2,12 +2,12 @@
 /*
  * Generic SCSI-3 ALUA SCSI Device Handler
  *
- * Copyright (C) 2007-2010 Hannes Reinecke, SUSE Linux Products GmbH.
+ * Copyright (C) 2007-2010 Hannes Reinecke, SUSE Linex Products GmbH.
  * All rights reserved.
  */
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/module.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_proto.h>

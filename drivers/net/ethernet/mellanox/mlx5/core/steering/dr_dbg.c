@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 // Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/version.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/seq_file.h>
+#include <linex/version.h>
 #include "dr_types.h"
 
 #define DR_DBG_PTR_TO_ID(p) ((u64)(uintptr_t)(p) & 0xFFFFFFFFULL)
@@ -638,8 +638,8 @@ dr_dump_domain(struct seq_file *file, struct mlx5dr_domain *dmn)
 		   domain_id, dmn->type, dmn->info.caps.gvmi,
 		   dmn->info.supp_sw_steering,
 		   /* package version */
-		   LINUX_VERSION_MAJOR, LINUX_VERSION_PATCHLEVEL,
-		   LINUX_VERSION_SUBLEVEL,
+		   LINEX_VERSION_MAJOR, LINEX_VERSION_PATCHLEVEL,
+		   LINEX_VERSION_SUBLEVEL,
 		   pci_name(dmn->mdev->pdev),
 		   0, /* domain flags */
 		   dmn->num_buddies[DR_ICM_TYPE_STE],

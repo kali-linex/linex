@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * xfi linux driver.
+ * xfi linex driver.
  *
  * Copyright (C) 2008, Creative Technology Ltd. All Rights Reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/moduleparam.h>
+#include <linex/pci_ids.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "ctatc.h"

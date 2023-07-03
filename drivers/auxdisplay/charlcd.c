@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Character LCD driver for Linux
+ * Character LCD driver for Linex
  *
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/ctype.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
 
 #include <generated/utsrelease.h>
 
@@ -549,7 +549,7 @@ static void charlcd_puts(struct charlcd *lcd, const char *s)
 #ifdef CONFIG_PANEL_BOOT_MESSAGE
 #define LCD_INIT_TEXT CONFIG_PANEL_BOOT_MESSAGE
 #else
-#define LCD_INIT_TEXT "Linux-" UTS_RELEASE "\n"
+#define LCD_INIT_TEXT "Linex-" UTS_RELEASE "\n"
 #endif
 
 #ifdef CONFIG_CHARLCD_BL_ON

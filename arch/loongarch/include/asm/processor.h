@@ -5,9 +5,9 @@
 #ifndef _ASM_PROCESSOR_H
 #define _ASM_PROCESSOR_H
 
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/sizes.h>
+#include <linex/atomic.h>
+#include <linex/cpumask.h>
+#include <linex/sizes.h>
 
 #include <asm/cpu.h>
 #include <asm/cpu-info.h>

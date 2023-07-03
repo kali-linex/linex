@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_POWERPC_PERF_HV_24X7_H_
-#define LINUX_POWERPC_PERF_HV_24X7_H_
+#ifndef LINEX_POWERPC_PERF_HV_24X7_H_
+#define LINEX_POWERPC_PERF_HV_24X7_H_
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 enum hv_perf_domains {
 #define DOMAIN(n, v, x, c) HV_PERF_DOMAIN_##n = v,

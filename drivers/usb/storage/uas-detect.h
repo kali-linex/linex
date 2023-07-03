@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
 #include "usb.h"
 
 static int uas_is_interface(struct usb_host_interface *intf)

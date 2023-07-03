@@ -6,21 +6,21 @@
  *	Tero Kristo <t-kristo@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_clock.h>
+#include <linex/pm_domain.h>
+#include <linex/reset-controller.h>
+#include <linex/delay.h>
 
-#include <linux/platform_data/ti-prm.h>
+#include <linex/platform_data/ti-prm.h>
 
 enum omap_prm_domain_mode {
 	OMAP_PRMD_OFF,

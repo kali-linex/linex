@@ -6,34 +6,34 @@
  * (C) Copyright 2010-2012 IBM Corp.
  *
  * Authors: Nicholas A. Bellinger <nab@daterainc.com>
- *          Stefan Hajnoczi <stefanha@linux.vnet.ibm.com>
+ *          Stefan Hajnoczi <stefanha@linex.vnet.ibm.com>
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
+#include <linex/utsname.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/kthread.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/configfs.h>
+#include <linex/ctype.h>
+#include <linex/compat.h>
+#include <linex/eventfd.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
+#include <linex/miscdevice.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
-#include <linux/vhost.h>
-#include <linux/virtio_scsi.h>
-#include <linux/llist.h>
-#include <linux/bitmap.h>
+#include <linex/vhost.h>
+#include <linex/virtio_scsi.h>
+#include <linex/llist.h>
+#include <linex/bitmap.h>
 
 #include "vhost.h"
 
@@ -68,7 +68,7 @@ struct vhost_scsi_cmd {
 	enum dma_data_direction tvc_data_direction;
 	/* Expected data transfer length from virtio-scsi header */
 	u32 tvc_exp_data_len;
-	/* The Tag from include/linux/virtio_scsi.h:struct virtio_scsi_cmd_req */
+	/* The Tag from include/linex/virtio_scsi.h:struct virtio_scsi_cmd_req */
 	u64 tvc_tag;
 	/* The number of scatterlists associated with this cmd */
 	u32 tvc_sgl_count;

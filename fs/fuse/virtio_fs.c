@@ -4,19 +4,19 @@
  * Copyright (C) 2018 Red Hat, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/dax.h>
-#include <linux/pci.h>
-#include <linux/pfn_t.h>
-#include <linux/memremap.h>
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_fs.h>
-#include <linux/delay.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/highmem.h>
-#include <linux/uio.h>
+#include <linex/fs.h>
+#include <linex/dax.h>
+#include <linex/pci.h>
+#include <linex/pfn_t.h>
+#include <linex/memremap.h>
+#include <linex/module.h>
+#include <linex/virtio.h>
+#include <linex/virtio_fs.h>
+#include <linex/delay.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/highmem.h>
+#include <linex/uio.h>
 #include "fuse_i.h"
 
 /* Used to help calculate the FUSE connection's max_pages limit for a request's

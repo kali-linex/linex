@@ -27,16 +27,16 @@
  *  	- parse available sample rates again when clock sources changed
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
+#include <linex/bitops.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/log2.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/audio-v2.h>
+#include <linex/usb/audio-v3.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

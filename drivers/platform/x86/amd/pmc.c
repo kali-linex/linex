@@ -11,22 +11,22 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/amd_nb.h>
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/serio.h>
-#include <linux/suspend.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linex/acpi.h>
+#include <linex/bitfield.h>
+#include <linex/bits.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/limits.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
+#include <linex/serio.h>
+#include <linex/suspend.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
 
 /* SMU communication registers */
 #define AMD_PMC_REGISTER_MESSAGE	0x538

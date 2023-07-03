@@ -18,9 +18,9 @@
 	
 #include <asm/assembly.h>
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
 
 	.level	1.1
 

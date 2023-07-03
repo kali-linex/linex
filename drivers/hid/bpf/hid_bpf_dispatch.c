@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- *  HID-BPF support for Linux
+ *  HID-BPF support for Linex
  *
  *  Copyright (c) 2022 Benjamin Tissoires
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/bitops.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
-#include <linux/hid.h>
-#include <linux/hid_bpf.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/btf.h>
+#include <linex/btf_ids.h>
+#include <linex/filter.h>
+#include <linex/hid.h>
+#include <linex/hid_bpf.h>
+#include <linex/init.h>
+#include <linex/kfifo.h>
+#include <linex/minmax.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
 #include "hid_bpf_dispatch.h"
 #include "entrypoints/entrypoints.lskel.h"
 

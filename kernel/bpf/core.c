@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * Linex Socket Filter - Kernel level socket filtering
  *
  * Based on the design of the Berkeley Packet Filter. The new
  * internal format has been designed by PLUMgrid:
@@ -17,26 +17,26 @@
  * Kris Katterjohn - Added many additional checks in bpf_check_classic()
  */
 
-#include <uapi/linux/btf.h>
-#include <linux/filter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/moduleloader.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/objtool.h>
-#include <linux/rbtree_latch.h>
-#include <linux/kallsyms.h>
-#include <linux/rcupdate.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/log2.h>
-#include <linux/bpf_verifier.h>
-#include <linux/nodemask.h>
-#include <linux/nospec.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/memcontrol.h>
+#include <uapi/linex/btf.h>
+#include <linex/filter.h>
+#include <linex/skbuff.h>
+#include <linex/vmalloc.h>
+#include <linex/random.h>
+#include <linex/moduleloader.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/objtool.h>
+#include <linex/rbtree_latch.h>
+#include <linex/kallsyms.h>
+#include <linex/rcupdate.h>
+#include <linex/perf_event.h>
+#include <linex/extable.h>
+#include <linex/log2.h>
+#include <linex/bpf_verifier.h>
+#include <linex/nodemask.h>
+#include <linex/nospec.h>
+#include <linex/bpf_mem_alloc.h>
+#include <linex/memcontrol.h>
 
 #include <asm/barrier.h>
 #include <asm/unaligned.h>
@@ -2787,7 +2787,7 @@ EXPORT_SYMBOL(bpf_stats_enabled_key);
 
 /* All definitions of tracepoints related to BPF. */
 #define CREATE_TRACE_POINTS
-#include <linux/bpf_trace.h>
+#include <linex/bpf_trace.h>
 
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_exception);
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_bulk_tx);

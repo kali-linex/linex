@@ -8,12 +8,12 @@
  * Copyright (C) 2009 Michael Buesch <m@bues.ch>
  */
 
-#include <linux/kernel.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/slab.h>
-#include <linux/ssb/ssb.h>
+#include <linex/kernel.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/slab.h>
+#include <linex/ssb/ssb.h>
 
 #include "sdio.h"
 #include "b43.h"

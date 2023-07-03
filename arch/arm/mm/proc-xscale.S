@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-xscale.S
+ *  linex/arch/arm/mm/proc-xscale.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	November 2000
@@ -17,9 +17,9 @@
  *	Nicolas Pitre <nico@fluxnic.net>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

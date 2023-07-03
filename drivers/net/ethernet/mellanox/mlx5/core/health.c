@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/hardirq.h>
-#include <linux/mlx5/driver.h>
-#include <linux/kern_levels.h>
+#include <linex/kernel.h>
+#include <linex/random.h>
+#include <linex/vmalloc.h>
+#include <linex/hardirq.h>
+#include <linex/mlx5/driver.h>
+#include <linex/kern_levels.h>
 #include "mlx5_core.h"
 #include "lib/eq.h"
 #include "lib/mlx5.h"

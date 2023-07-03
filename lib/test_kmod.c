@@ -14,17 +14,17 @@
  * tools/testing/selftests/kmod/kmod.sh --help
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/printk.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/printk.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/vmalloc.h>
+#include <linex/slab.h>
+#include <linex/device.h>
 
 #define TEST_START_NUM_THREADS	50
 #define TEST_START_DRIVER	"test_module"

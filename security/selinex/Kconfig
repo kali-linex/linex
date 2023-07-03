@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config SECURITY_SELINEX
+	bool "NSA SELinex Support"
+	depends on SECURITY_NETWORK && AUDIT && NET && INET
+	select NETWORK_SECMARK
+	default n
+	help
+	  This selects NSA Security-Enhanced Linex (SELinex).
+	  You will also need a policy configuration and a labeled filesystem.
+	  If you are unsure how to answer this question, answer N.
+
+config SECURITY_SELINEX_BOOTPARAM
+	bool "NSA SELinex boot parameter"
+	depends on SECURITY_SELINEX
+	default n
+	help
+	  This option adds a kernel parameter 'selinex', which allows SELinex
+	  to be disabled at boot.  If this option is selected, SELinex
+	  functionality can be disabled with selinex=0 on the kernel
+	  command line.  The purpose of this option is to allow a single
+	  kernel image to be distributed with SELinex built in, but not
+	  necessarily enabled.
+
+	  If you are unsure how to answer this question, answer N.
+
+config SECURITY_SELINEX_DEVELOP
+	bool "NSA SELinex Development Support"
+	depends on SECURITY_SELINEX
+	default y
+	help
+	  This enables the development support option of NSA SELinex,
+	  which is useful for experimenting with SELinex and developing
+	  policies.  If unsure, say Y.  With this option enabled, the
+	  kernel will start in permissive mode (log everything, deny nothing)
+	  unless you specify enforcing=1 on the kernel command line.  You
+	  can interactively toggle the kernel between enforcing mode and
+	  permissive mode (if permitted by the policy) via
+	  /sys/fs/selinex/enforce.
+
+config SECURITY_SELINEX_AVC_STATS
+	bool "NSA SELinex AVC Statistics"
+	depends on SECURITY_SELINEX
+	default y
+	help
+	  This option collects access vector cache statistics to
+	  /sys/fs/selinex/avc/cache_stats, which may be monitored via
+	  tools such as avcstat.
+
+config SECURITY_SELINEX_SIDTAB_HASH_BITS
+	int "NSA SELinex sidtab hashtable size"
+	depends on SECURITY_SELINEX
+	range 8 13
+	default 9
+	help
+	  This option sets the number of buckets used in the sidtab hashtable
+	  to 2^SECURITY_SELINEX_SIDTAB_HASH_BITS buckets. The number of hash
+	  collisions may be viewed at /sys/fs/selinex/ss/sidtab_hash_stats. If
+	  chain lengths are high (e.g. > 20) then selecting a higher value here
+	  will ensure that lookups times are short and stable.
+
+config SECURITY_SELINEX_SID2STR_CACHE_SIZE
+	int "NSA SELinex SID to context string translation cache size"
+	depends on SECURITY_SELINEX
+	default 256
+	help
+	  This option defines the size of the internal SID -> context string
+	  cache, which improves the performance of context to string
+	  conversion.  Setting this option to 0 disables the cache completely.
+
+	  If unsure, keep the default value.

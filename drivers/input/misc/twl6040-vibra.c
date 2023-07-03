@@ -11,15 +11,15 @@
  *				Felipe Balbi <felipe.balbi@nokia.com>
  *				Jari Vanhala <ext-javi.vanhala@nokia.com>
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/workqueue.h>
+#include <linex/input.h>
+#include <linex/mfd/twl6040.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/regulator/consumer.h>
 
 #define EFFECT_DIR_180_DEG	0x8000
 

@@ -8,7 +8,7 @@
  * Copyright (C) 2000-2001 Deep Blue Solutions Ltd
  *
  * Contributors to the old driver include:
- * Russell King <linux@armlinux.org.uk>
+ * Russell King <linex@armlinex.org.uk>
  * David A. Rusling <david.rusling@linaro.org> (uHAL, ARM Firmware suite)
  * Rob Herring <robh@kernel.org>
  * Liviu Dudau <Liviu.Dudau@arm.com>
@@ -16,21 +16,21 @@
  * Arnd Bergmann <arnd@arndb.de>
  * Bjorn Helgaas <bhelgaas@google.com>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_pci.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/clk.h>
 
 #include "../pci.h"
 

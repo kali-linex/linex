@@ -3,33 +3,33 @@
  * Driver for Broadcom MPI3 Storage Controllers
  *
  * Copyright (C) 2017-2023 Broadcom Inc.
- *  (mailto: mpi3mr-linuxdrv.pdl@broadcom.com)
+ *  (mailto: mpi3mr-linexdrv.pdl@broadcom.com)
  *
  */
 
 #ifndef MPI3MR_H_INCLUDED
 #define MPI3MR_H_INCLUDED
 
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/delay.h>
-#include <linux/dmapool.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/utsname.h>
-#include <linux/workqueue.h>
+#include <linex/blkdev.h>
+#include <linex/blk-mq.h>
+#include <linex/blk-mq-pci.h>
+#include <linex/delay.h>
+#include <linex/dmapool.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/utsname.h>
+#include <linex/workqueue.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -60,7 +60,7 @@ extern atomic64_t event_counter;
 
 #define MPI3MR_DRIVER_NAME	"mpi3mr"
 #define MPI3MR_DRIVER_LICENSE	"GPL"
-#define MPI3MR_DRIVER_AUTHOR	"Broadcom Inc. <mpi3mr-linuxdrv.pdl@broadcom.com>"
+#define MPI3MR_DRIVER_AUTHOR	"Broadcom Inc. <mpi3mr-linexdrv.pdl@broadcom.com>"
 #define MPI3MR_DRIVER_DESC	"MPI3 Storage Controller Device Driver"
 
 #define MPI3MR_NAME_LENGTH	32

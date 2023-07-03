@@ -18,12 +18,12 @@
  *   CPU3: virtual adapter 4, channel 4
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
 
 extern struct i2c_adapter *nforce2_smbus;
 

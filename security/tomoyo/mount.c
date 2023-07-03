@@ -5,8 +5,8 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/slab.h>
-#include <uapi/linux/mount.h>
+#include <linex/slab.h>
+#include <uapi/linex/mount.h>
 #include "common.h"
 
 /* String table for special mount operations. */

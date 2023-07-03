@@ -11,17 +11,17 @@
  * their supports.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/uuid.h>
-#include <linux/vdpa.h>
-#include <linux/nospec.h>
-#include <linux/vhost.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/cdev.h>
+#include <linex/device.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/uuid.h>
+#include <linex/vdpa.h>
+#include <linex/nospec.h>
+#include <linex/vhost.h>
 
 #include "vhost.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/mm/init.c
+ *  linex/arch/sparc/mm/init.c
  *
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1995 Eddie C. Dost (ecd@skynet.be)
@@ -8,24 +8,24 @@
  *  Copyright (C) 2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/poison.h>
-#include <linux/gfp.h>
+#include <linex/module.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/initrd.h>
+#include <linex/init.h>
+#include <linex/highmem.h>
+#include <linex/memblock.h>
+#include <linex/pagemap.h>
+#include <linex/poison.h>
+#include <linex/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/page.h>
@@ -254,7 +254,7 @@ void __init mem_init(void)
 		       PKMAP_BASE,
 		       (unsigned long)PKMAP_BASE+LAST_PKMAP*PAGE_SIZE,
 		       FIXADDR_START);
-		prom_printf("Please mail sparclinux@vger.kernel.org.\n");
+		prom_printf("Please mail sparclinex@vger.kernel.org.\n");
 		prom_halt();
 	}
 

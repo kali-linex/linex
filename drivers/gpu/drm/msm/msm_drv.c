@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2018, 2020-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, 2020-2021 The Linex Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/fault-inject.h>
-#include <linux/kthread.h>
-#include <linux/of_address.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/sched/types.h>
+#include <linex/dma-mapping.h>
+#include <linex/fault-inject.h>
+#include <linex/kthread.h>
+#include <linex/of_address.h>
+#include <linex/sched/mm.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/sched/types.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_bridge.h>

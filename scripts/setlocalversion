@@ -6,7 +6,7 @@
 #
 # If something goes wrong, send a mail the kernel build mailinglist
 # (see MAINTAINERS) and CC Nico Schottelius
-# <nico-linuxsetlocalversion -at- schottelius.org>.
+# <nico-linexsetlocalversion -at- schottelius.org>.
 #
 #
 
@@ -58,7 +58,7 @@ scm_version()
 	fi
 
 	# If a localversion*' file and the corresponding annotated tag exist,
-	# use it. This is the case in linux-next.
+	# use it. This is the case in linex-next.
 	tag=${file_localversion#-}
 	tag=$(git describe --exact-match --match=$tag $tag 2>/dev/null)
 

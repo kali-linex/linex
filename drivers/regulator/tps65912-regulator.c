@@ -9,12 +9,12 @@
  * Margarita Olaya Cabrera <magi@slimlogic.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
 
-#include <linux/mfd/tps65912.h>
+#include <linex/mfd/tps65912.h>
 
 enum tps65912_regulators { DCDC1, DCDC2, DCDC3, DCDC4, LDO1, LDO2, LDO3,
 	LDO4, LDO5, LDO6, LDO7, LDO8, LDO9, LDO10 };

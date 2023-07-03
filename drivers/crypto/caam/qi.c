@@ -7,14 +7,14 @@
  * Copyright 2016-2017, 2019-2020 NXP
  */
 
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/cpumask.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include <soc/fsl/qman.h>
 
 #include "debugfs.h"
@@ -775,6 +775,6 @@ int caam_qi_init(struct platform_device *caam_pdev)
 	if (err)
 		return err;
 
-	dev_info(qidev, "Linux CAAM Queue I/F driver initialised\n");
+	dev_info(qidev, "Linex CAAM Queue I/F driver initialised\n");
 	return 0;
 }

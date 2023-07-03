@@ -9,15 +9,15 @@
  * Some parts of this driver are derived from the original dw_dmac.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/clk.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/of.h>
+#include <linex/acpi.h>
 
 #include "internal.h"
 

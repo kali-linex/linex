@@ -14,13 +14,13 @@
  * 2001/08/13	Correct size of extended floats (float_fsz) from 16 to 10 bytes.
  * 2001/01/17	Add support emulation of unaligned kernel accesses.
  */
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/tty.h>
-#include <linux/extable.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/tty.h>
+#include <linex/extable.h>
+#include <linex/ratelimit.h>
+#include <linex/uaccess.h>
 
 #include <asm/intrinsics.h>
 #include <asm/processor.h>

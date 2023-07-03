@@ -5,10 +5,10 @@
  *  sof_sdw_hdmi - Helpers to handle HDMI from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include <sound/jack.h>

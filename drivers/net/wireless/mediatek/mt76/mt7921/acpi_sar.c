@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2022 MediaTek Inc. */
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 #include "mt7921.h"
 
 static int

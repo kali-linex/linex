@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The Linex Foundation. All rights reserved.
  * Copyright (c) 2020, Linaro Limited
  */
 
 #include <dt-bindings/dma/qcom-gpi.h>
-#include <linux/bitfield.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/dma/qcom-gpi-dma.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/module.h>
+#include <linex/of_dma.h>
+#include <linex/platform_device.h>
+#include <linex/dma/qcom-gpi-dma.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
 #include "../dmaengine.h"
 #include "../virt-dma.h"
 

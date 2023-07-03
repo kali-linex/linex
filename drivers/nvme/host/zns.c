@@ -3,8 +3,8 @@
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/blkdev.h>
-#include <linux/vmalloc.h>
+#include <linex/blkdev.h>
+#include <linex/vmalloc.h>
 #include "nvme.h"
 
 int nvme_revalidate_zones(struct nvme_ns *ns)

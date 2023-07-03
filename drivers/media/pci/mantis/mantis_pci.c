@@ -6,21 +6,21 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
 #include <asm/io.h>
 #include <asm/page.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/pci.h>
+#include <linex/kmod.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/pci.h>
 
 #include <asm/irq.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

@@ -5,9 +5,9 @@
  * Copyright 2020 Google LLC
  */
 
-#include <linux/blk-crypto.h>
-#include <linux/blk-crypto-profile.h>
-#include <linux/mmc/host.h>
+#include <linex/blk-crypto.h>
+#include <linex/blk-crypto-profile.h>
+#include <linex/mmc/host.h>
 
 #include "cqhci-crypto.h"
 

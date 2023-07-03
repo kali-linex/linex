@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #define KBUILD_MODNAME "foo"
 #include <string.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linex/in.h>
+#include <linex/if_ether.h>
+#include <linex/if_packet.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

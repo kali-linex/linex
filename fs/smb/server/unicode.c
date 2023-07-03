@@ -6,8 +6,8 @@
  *   Modified by Steve French (sfrench@us.ibm.com)
  *   Modified by Namjae Jeon (linkinjeon@kernel.org)
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 #include "glob.h"
 #include "unicode.h"
@@ -131,7 +131,7 @@ cp_convert:
  * null terminator).
  *
  * Note that some windows versions actually send multiword UTF-16 characters
- * instead of straight UTF16-2. The linux nls routines however aren't able to
+ * instead of straight UTF16-2. The linex nls routines however aren't able to
  * deal with those characters properly. In the event that we get some of
  * those characters, they won't be translated properly.
  *

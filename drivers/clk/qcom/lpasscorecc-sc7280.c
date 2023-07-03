@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_clock.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 
 #include <dt-bindings/clock/qcom,lpasscorecc-sc7280.h>
 

@@ -6,39 +6,39 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/circ_buf.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/phylink.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/ptp_classify.h>
-#include <linux/reset.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/crc32.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/circ_buf.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/phylink.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
+#include <linex/tcp.h>
+#include <linex/iopoll.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_runtime.h>
+#include <linex/ptp_classify.h>
+#include <linex/reset.h>
+#include <linex/firmware/xlnx-zynqmp.h>
 #include "macb.h"
 
 /* This structure is only used for MACB on SiFive FU540 devices */
@@ -4103,7 +4103,7 @@ static int macb_init(struct platform_device *pdev)
 #endif
 		}
 
-		/* get irq: here we use the linux queue index, not the hardware
+		/* get irq: here we use the linex queue index, not the hardware
 		 * queue index. the queue irq definitions in the device tree
 		 * must remove the optional gaps that could exist in the
 		 * hardware queue mask.

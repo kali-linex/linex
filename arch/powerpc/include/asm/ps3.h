@@ -9,8 +9,8 @@
 #if !defined(_ASM_POWERPC_PS3_H)
 #define _ASM_POWERPC_PS3_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linex/types.h>
+#include <linex/device.h>
 #include <asm/cell-pmu.h>
 
 union ps3_firmware_version {

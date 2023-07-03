@@ -26,13 +26,13 @@
 		led-wlan {
 			label = "bcm53xx:blue:wlan";
 			gpios = <&chipcommon 10 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-off";
+			linex,default-trigger = "default-off";
 		};
 
 		led-system {
 			label = "bcm53xx:green:system";
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linex,default-trigger = "timer";
 		};
 	};
 
@@ -41,7 +41,7 @@
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linex,code = <KEY_RESTART>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 	};

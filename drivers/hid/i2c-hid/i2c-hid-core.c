@@ -5,7 +5,7 @@
  * Copyright (c) 2012 Ecole Nationale de l'Aviation Civile, France
  * Copyright (c) 2012 Red Hat, Inc
  *
- * This code is partly based on "USB HID support for Linux":
+ * This code is partly based on "USB HID support for Linex":
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -18,24 +18,24 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/irq.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/pm.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/device.h>
+#include <linex/wait.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/list.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/hid.h>
+#include <linex/mutex.h>
 #include <asm/unaligned.h>
 
 #include "../hid-ids.h"

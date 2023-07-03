@@ -7,8 +7,8 @@
 #ifndef _NFSD_STATS_H
 #define _NFSD_STATS_H
 
-#include <uapi/linux/nfsd/stats.h>
-#include <linux/percpu_counter.h>
+#include <uapi/linex/nfsd/stats.h>
+#include <linex/percpu_counter.h>
 
 
 enum {

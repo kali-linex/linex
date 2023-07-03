@@ -15,14 +15,14 @@
  * Copyright (C) 2022 Joaquín I. Aramendía <samsagax@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/processor.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/processor.h>
 
 /* Handle ACPI lock mechanism */
 static u32 oxp_mutex;

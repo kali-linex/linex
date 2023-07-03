@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Western Digital Corporation
 
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/bitfield.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/bitfield.h>
 #include <asm/unaligned.h>
 
 #include <ufs/ufs.h>

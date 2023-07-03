@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/*      cops.h: LocalTalk driver for Linux.
+/*      cops.h: LocalTalk driver for Linex.
  *
  *      Authors:
  *      - Jay Schulist <jschlst@samba.org>
  */
 
-#ifndef __LINUX_COPSLTALK_H
-#define __LINUX_COPSLTALK_H
+#ifndef __LINEX_COPSLTALK_H
+#define __LINEX_COPSLTALK_H
 
 #ifdef __KERNEL__
 

@@ -3,20 +3,20 @@
  * Copyright (c) 2015 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/filter.h>
+#include <linex/bpf.h>
 
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_bpf.h>
+#include <linex/tc_act/tc_bpf.h>
 #include <net/tc_act/tc_bpf.h>
 #include <net/tc_wrapper.h>
 

@@ -8,8 +8,8 @@
  * Pasha Tatashin <pasha.tatashin@soleen.com>
  */
 
-#include <linux/kexec.h>
-#include <linux/linkage.h>
+#include <linex/kexec.h>
+#include <linex/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/kexec.h>

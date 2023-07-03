@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*    Signal support for 32-bit kernel builds
  *
- *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2006 Kyle McMartin <kyle at parisc-linux.org>
+ *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linex.org>
+ *    Copyright (C) 2006 Kyle McMartin <kyle at parisc-linex.org>
  *
  *    Code was mostly borrowed from kernel/signal.c.
  *    See kernel/signal.c for additional Copyrights.
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/unistd.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/syscalls.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "signal32.h"
 
@@ -43,7 +43,7 @@ restore_sigcontext32(struct compat_sigcontext __user *sc, struct compat_regfile 
 	
 	/* When loading 32-bit values into 64-bit registers make
 	   sure to clear the upper 32-bits */
-	DBG(2,"restore_sigcontext32: PER_LINUX32 process\n");
+	DBG(2,"restore_sigcontext32: PER_LINEX32 process\n");
 	DBG(2,"restore_sigcontext32: sc = 0x%p, rf = 0x%p, regs = 0x%p\n", sc, rf, regs);
 	DBG(2,"restore_sigcontext32: compat_sigcontext is %#lx bytes\n", sizeof(*sc));
 	for(regn=0; regn < 32; regn++){

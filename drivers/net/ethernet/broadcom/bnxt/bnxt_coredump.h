@@ -10,9 +10,9 @@
 #ifndef BNXT_COREDUMP_H
 #define BNXT_COREDUMP_H
 
-#include <linux/utsname.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
+#include <linex/utsname.h>
+#include <linex/time.h>
+#include <linex/rtc.h>
 
 struct bnxt_coredump_segment_hdr {
 	__u8 signature[4];

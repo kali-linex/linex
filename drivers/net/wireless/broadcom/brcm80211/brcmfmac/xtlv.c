@@ -5,9 +5,9 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/math.h>
-#include <linux/string.h>
-#include <linux/bug.h>
+#include <linex/math.h>
+#include <linex/string.h>
+#include <linex/bug.h>
 
 #include "xtlv.h"
 

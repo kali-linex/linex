@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/stddef.h>
-#include <linux/kbuild.h>
+#include <linex/stddef.h>
+#include <linex/kbuild.h>
 #include "pm.h"
 
 int main(void)

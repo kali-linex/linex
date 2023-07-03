@@ -4,10 +4,10 @@
  *
  * Copyright (c) 2017 Microsemi Corporation
  */
-#include <linux/dsa/ocelot.h>
-#include <linux/if_bridge.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
+#include <linex/dsa/ocelot.h>
+#include <linex/if_bridge.h>
+#include <linex/iopoll.h>
+#include <linex/phy/phy.h>
 #include <net/pkt_sched.h>
 #include <soc/mscc/ocelot_hsio.h>
 #include <soc/mscc/ocelot_vcap.h>

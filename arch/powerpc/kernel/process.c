@@ -7,37 +7,37 @@
  *  Paul Mackerras (paulus@cs.anu.edu.au)
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linexppc.org)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/mqueue.h>
-#include <linux/hardirq.h>
-#include <linux/utsname.h>
-#include <linux/ftrace.h>
-#include <linux/kernel_stat.h>
-#include <linux/personality.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/uaccess.h>
-#include <linux/pkeys.h>
-#include <linux/seq_buf.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/ptrace.h>
+#include <linex/slab.h>
+#include <linex/user.h>
+#include <linex/elf.h>
+#include <linex/prctl.h>
+#include <linex/init_task.h>
+#include <linex/export.h>
+#include <linex/kallsyms.h>
+#include <linex/mqueue.h>
+#include <linex/hardirq.h>
+#include <linex/utsname.h>
+#include <linex/ftrace.h>
+#include <linex/kernel_stat.h>
+#include <linex/personality.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/uaccess.h>
+#include <linex/pkeys.h>
+#include <linex/seq_buf.h>
 
 #include <asm/interrupt.h>
 #include <asm/io.h>
@@ -62,8 +62,8 @@
 #include <asm/stacktrace.h>
 #include <asm/hw_breakpoint.h>
 
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
+#include <linex/kprobes.h>
+#include <linex/kdebug.h>
 
 /* Transactional Memory debug */
 #ifdef TM_DEBUG_SW

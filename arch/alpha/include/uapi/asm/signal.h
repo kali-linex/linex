@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 #ifndef _UAPI_ASMAXP_SIGNAL_H
 #define _UAPI_ASMAXP_SIGNAL_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;
@@ -17,7 +17,7 @@ typedef unsigned long sigset_t;
 
 
 /*
- * Linux/AXP has different signal numbers that Linux/i386: I'm trying
+ * Linex/AXP has different signal numbers that Linex/i386: I'm trying
  * to make it OSF/1 binary compatible, at least for normal binaries.
  */
 #define SIGHUP		 1

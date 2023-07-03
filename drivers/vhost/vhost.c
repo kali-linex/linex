@@ -10,26 +10,26 @@
  * Generic code for virtio server in host kernel.
  */
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/vhost_task.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/nospec.h>
-#include <linux/kcov.h>
+#include <linex/eventfd.h>
+#include <linex/vhost.h>
+#include <linex/uio.h>
+#include <linex/mm.h>
+#include <linex/miscdevice.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/file.h>
+#include <linex/highmem.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/sort.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/vhost_task.h>
+#include <linex/interval_tree_generic.h>
+#include <linex/nospec.h>
+#include <linex/kcov.h>
 
 #include "vhost.h"
 

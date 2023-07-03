@@ -7,10 +7,10 @@
  * Authors: Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/extcon.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linex/extcon.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
 
 #include "debug.h"
 #include "core.h"

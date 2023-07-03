@@ -5,19 +5,19 @@
  * Copyright (C) 2010 Wolfgang Grandegger <wg@denx.de>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/machine.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/leds.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/platform_data/i2c-gpio.h>
+#include <linex/gpio/machine.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/reboot.h>

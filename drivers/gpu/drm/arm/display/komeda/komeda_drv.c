@@ -4,12 +4,12 @@
  * Author: James.Qian.Wang <james.qian.wang@arm.com>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/component.h>
-#include <linux/pm_runtime.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/component.h>
+#include <linex/pm_runtime.h>
 #include <drm/drm_fbdev_generic.h>
 #include <drm/drm_module.h>
 #include <drm/drm_of.h>

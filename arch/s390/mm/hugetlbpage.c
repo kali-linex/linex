@@ -10,11 +10,11 @@
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
 #include <asm/pgalloc.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/security.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/mman.h>
+#include <linex/sched/mm.h>
+#include <linex/security.h>
 
 /*
  * If the bit selected by single-bit bitmask "a" is set within "x", move

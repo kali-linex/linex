@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/ns_common.h>
-#include <linux/fs_pin.h>
+#include <linex/mount.h>
+#include <linex/seq_file.h>
+#include <linex/poll.h>
+#include <linex/ns_common.h>
+#include <linex/fs_pin.h>
 
 struct mnt_namespace {
 	struct ns_common	ns;

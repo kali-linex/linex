@@ -10,11 +10,11 @@
  *  Copyright (c) 2018 Hanno Zulla <kontakt@hanno.de>
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/hid.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/leds.h>
+#include <linex/hid.h>
 
 #include "hid-ids.h"
 

@@ -9,19 +9,19 @@
  *
  * TODO: magnetometer, hardware FIFO
  */
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/delay.h>
+#include <linex/irq.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/buffer.h>
+#include <linex/iio/sysfs.h>
+#include <linex/iio/trigger.h>
 
 #include "bmi160.h"
 

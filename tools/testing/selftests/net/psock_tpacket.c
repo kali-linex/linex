@@ -28,8 +28,8 @@
 #include <sys/stat.h>
 #include <sys/socket.h>
 #include <sys/mman.h>
-#include <linux/if_packet.h>
-#include <linux/filter.h>
+#include <linex/if_packet.h>
+#include <linex/filter.h>
 #include <ctype.h>
 #include <fcntl.h>
 #include <unistd.h>

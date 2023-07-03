@@ -7,17 +7,17 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/iio/iio.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/regmap.h>
 #include <asm/unaligned.h>
-#include <linux/iio/common/st_sensors.h>
+#include <linex/iio/common/st_sensors.h>
 
 #include "st_sensors_core.h"
 

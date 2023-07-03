@@ -5,24 +5,24 @@
  * Copyright (c) 2008 Applied Micro Circuits Corporation.
  * All rights reserved. James Hsiao <jhsiao@amcc.com>
  *
- * This file implements AMCC crypto offload Linux device driver for use with
- * Linux CryptoAPI.
+ * This file implements AMCC crypto offload Linex device driver for use with
+ * Linex CryptoAPI.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock_types.h>
+#include <linex/random.h>
+#include <linex/scatterlist.h>
+#include <linex/crypto.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 #include <asm/cacheflush.h>
@@ -1480,7 +1480,7 @@ static int crypto4xx_probe(struct platform_device *ofdev)
 	/* need to setup pdr, rdr, gdr and sdr before this */
 	crypto4xx_hw_init(core_dev->dev);
 
-	/* Register security algorithms with Linux CryptoAPI */
+	/* Register security algorithms with Linex CryptoAPI */
 	rc = crypto4xx_register_alg(core_dev->dev, crypto4xx_alg,
 			       ARRAY_SIZE(crypto4xx_alg));
 	if (rc)
@@ -1518,7 +1518,7 @@ static int crypto4xx_remove(struct platform_device *ofdev)
 	irq_dispose_mapping(core_dev->irq);
 
 	tasklet_kill(&core_dev->tasklet);
-	/* Un-register with Linux CryptoAPI */
+	/* Un-register with Linex CryptoAPI */
 	crypto4xx_unregister_alg(core_dev->dev);
 	mutex_destroy(&core_dev->rng_lock);
 	/* Free all allocated memory */

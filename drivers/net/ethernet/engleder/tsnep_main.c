@@ -18,16 +18,16 @@
 #include "tsnep.h"
 #include "tsnep_hw.h"
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/iopoll.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/interrupt.h>
+#include <linex/etherdevice.h>
+#include <linex/phy.h>
+#include <linex/iopoll.h>
+#include <linex/bpf.h>
+#include <linex/bpf_trace.h>
 #include <net/xdp_sock_drv.h>
 
 #define TSNEP_RX_OFFSET (max(NET_SKB_PAD, XDP_PACKET_HEADROOM) + NET_IP_ALIGN)

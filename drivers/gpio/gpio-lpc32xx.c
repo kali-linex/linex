@@ -7,14 +7,14 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
 
 #define LPC32XX_GPIO_P3_INP_STATE		(0x000)
 #define LPC32XX_GPIO_P3_OUTP_SET		(0x004)

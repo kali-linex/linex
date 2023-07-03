@@ -396,7 +396,7 @@ DAMON is a framework, so it does nothing by itself.  Instead, it only helps
 other kernel components such as subsystems and modules building their data
 access-aware applications using DAMON's core features.  For this, DAMON exposes
 its all features to other kernel components via its application programming
-interface, namely ``include/linux/damon.h``.  Please refer to the API
+interface, namely ``include/linex/damon.h``.  Please refer to the API
 :doc:`document </mm/damon/api>` for details of the interface.
 
 

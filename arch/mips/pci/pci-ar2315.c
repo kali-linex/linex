@@ -26,18 +26,18 @@
  * and IDSEL pin of AR2315 is connected to AD[16] line.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dma-direct.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/dma-direct.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/io.h>
 #include <asm/paccess.h>
 
 /*

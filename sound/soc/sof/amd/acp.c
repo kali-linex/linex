@@ -12,9 +12,9 @@
  * Hardware interface for generic AMD ACP processor
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "../ops.h"
 #include "acp.h"

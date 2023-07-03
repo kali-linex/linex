@@ -21,35 +21,35 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/timer.h>
+#include <linex/sched.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
+#include <linex/signal.h>
+#include <linex/string.h>
+#include <linex/proc_fs.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
+#include <linex/ip.h>
+#include <linex/if_arp.h>
+#include <linex/tcp.h>
+#include <linex/skbuff.h>
+#include <linex/ctype.h>
+#include <linex/netdevice.h>
 #include <net/dst.h>
 
-#include <linux/io.h>		/* instead of <asm/io.h> ok ? */
+#include <linex/io.h>		/* instead of <asm/io.h> ok ? */
 #include <asm/ccwdev.h>
 #include <asm/ccwgroup.h>
-#include <linux/bitops.h>	/* instead of <asm/bitops.h> ok ? */
-#include <linux/uaccess.h>	/* instead of <asm/uaccess.h> ok ? */
-#include <linux/wait.h>
-#include <linux/moduleparam.h>
+#include <linex/bitops.h>	/* instead of <asm/bitops.h> ok ? */
+#include <linex/uaccess.h>	/* instead of <asm/uaccess.h> ok ? */
+#include <linex/wait.h>
+#include <linex/moduleparam.h>
 #include <asm/idals.h>
 
 #include "ctcm_main.h"

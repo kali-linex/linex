@@ -8,12 +8,12 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
+#include <linex/pnp.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
 
 static const struct pnp_device_id pnp_dev_table[] = {
 	/* General ID for reserving resources */

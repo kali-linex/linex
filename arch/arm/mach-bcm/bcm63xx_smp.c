@@ -5,12 +5,12 @@
  * Copyright (C) 2015, Broadcom Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_scu.h>

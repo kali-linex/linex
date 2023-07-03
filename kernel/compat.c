@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/compat.c
+ *  linex/kernel/compat.c
  *
  *  Kernel compatibililty routines for e.g. 32 bit syscall support
  *  on 64 bit kernels.
@@ -8,23 +8,23 @@
  *  Copyright (C) 2002-2003 Stephen Rothwell, IBM Corporation
  */
 
-#include <linux/linkage.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/signal.h>
-#include <linux/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/migrate.h>
-#include <linux/posix-timers.h>
-#include <linux/times.h>
-#include <linux/ptrace.h>
-#include <linux/gfp.h>
+#include <linex/linkage.h>
+#include <linex/compat.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/signal.h>
+#include <linex/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
+#include <linex/syscalls.h>
+#include <linex/unistd.h>
+#include <linex/security.h>
+#include <linex/export.h>
+#include <linex/migrate.h>
+#include <linex/posix-timers.h>
+#include <linex/times.h>
+#include <linex/ptrace.h>
+#include <linex/gfp.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #ifdef __ARCH_WANT_SYS_SIGPROCMASK
 

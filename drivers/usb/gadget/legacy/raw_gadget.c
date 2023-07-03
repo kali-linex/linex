@@ -7,26 +7,26 @@
  * Author: Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linex/compiler.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/idr.h>
+#include <linex/kref.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/semaphore.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/wait.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/gadget.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/ch11.h>
+#include <linex/usb/gadget.h>
 
-#include <uapi/linux/usb/raw_gadget.h>
+#include <uapi/linex/usb/raw_gadget.h>
 
 #define	DRIVER_DESC "USB Raw Gadget"
 #define DRIVER_NAME "raw-gadget"

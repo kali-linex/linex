@@ -5,9 +5,9 @@
  * (c) 2014 Jeff Layton <jlayton@primarydata.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
+#include <linex/debugfs.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/sunrpc/clnt.h>
 
 #include "netns.h"
 #include "fail.h"

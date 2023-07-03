@@ -7,11 +7,11 @@
  * Copyright (c) 2011-2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pinctrl/pinctrl.h>
+#include <linex/pinctrl/pinmux.h>
 
 #include "pinctrl-tegra.h"
 

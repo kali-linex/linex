@@ -12,19 +12,19 @@
 #undef DEBUG
 #undef DEBUG_DMA
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/scatterlist.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/blkdev.h>
+#include <linex/ata.h>
+#include <linex/libata.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
+#include <linex/scatterlist.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/gfp.h>
+#include <linex/pci.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

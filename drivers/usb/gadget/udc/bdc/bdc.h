@@ -7,19 +7,19 @@
  * Author: Ashwini Pahuja
  */
 
-#ifndef	__LINUX_BDC_H__
-#define	__LINUX_BDC_H__
+#ifndef	__LINEX_BDC_H__
+#define	__LINEX_BDC_H__
 
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/kernel.h>
+#include <linex/usb.h>
+#include <linex/device.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
+#include <linex/dma-mapping.h>
+#include <linex/mm.h>
+#include <linex/debugfs.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 #include <asm/unaligned.h>
 
 #define BRCM_BDC_NAME "bdc"
@@ -486,4 +486,4 @@ void bdc_xsf_ep0_setup_recv(struct bdc *bdc, struct bdc_sr *sreport);
 void bdc_xsf_ep0_data_start(struct bdc *bdc, struct bdc_sr *sreport);
 void bdc_xsf_ep0_status_start(struct bdc *bdc, struct bdc_sr *sreport);
 
-#endif /* __LINUX_BDC_H__ */
+#endif /* __LINEX_BDC_H__ */

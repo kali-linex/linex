@@ -6,32 +6,32 @@
 
 #define pr_fmt(fmt)    "iommu: " fmt
 
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bits.h>
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/host1x_context_bus.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/fsl/mc.h>
-#include <linux/module.h>
-#include <linux/cc_platform.h>
-#include <linux/cdx/cdx_bus.h>
+#include <linex/amba/bus.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/bits.h>
+#include <linex/bug.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/host1x_context_bus.h>
+#include <linex/iommu.h>
+#include <linex/idr.h>
+#include <linex/err.h>
+#include <linex/pci.h>
+#include <linex/pci-ats.h>
+#include <linex/bitops.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/fsl/mc.h>
+#include <linex/module.h>
+#include <linex/cc_platform.h>
+#include <linex/cdx/cdx_bus.h>
 #include <trace/events/iommu.h>
-#include <linux/sched/mm.h>
-#include <linux/msi.h>
+#include <linex/sched/mm.h>
+#include <linex/msi.h>
 
 #include "dma-iommu.h"
 

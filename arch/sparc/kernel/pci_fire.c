@@ -3,15 +3,15 @@
  *
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/numa.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/msi.h>
+#include <linex/export.h>
+#include <linex/irq.h>
+#include <linex/of_device.h>
+#include <linex/numa.h>
 
 #include <asm/prom.h>
 #include <asm/irq.h>
@@ -413,7 +413,7 @@ static void pci_fire_hw_init(struct pci_pbm_info *pbm)
 static int pci_fire_pbm_init(struct pci_pbm_info *pbm,
 			     struct platform_device *op, u32 portid)
 {
-	const struct linux_prom64_registers *regs;
+	const struct linex_prom64_registers *regs;
 	struct device_node *dp = op->dev.of_node;
 	int err;
 

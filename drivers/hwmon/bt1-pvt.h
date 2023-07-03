@@ -7,12 +7,12 @@
 #ifndef __HWMON_BT1_PVT_H__
 #define __HWMON_BT1_PVT_H__
 
-#include <linux/completion.h>
-#include <linux/hwmon.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/seqlock.h>
+#include <linex/completion.h>
+#include <linex/hwmon.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/mutex.h>
+#include <linex/seqlock.h>
 
 /* Baikal-T1 PVT registers and their bitfields */
 #define PVT_CTRL			0x00

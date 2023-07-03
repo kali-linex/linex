@@ -23,11 +23,11 @@
  * address, so this driver is destructive if loaded for the wrong EEPROM chip.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
 
 /* The MAX6875 can only read/write 16 bytes at a time */
 #define SLICE_SIZE			16

@@ -9,10 +9,10 @@
 
 #include <crypto/algapi.h>
 #include <crypto/sm4.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

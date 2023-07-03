@@ -5,31 +5,31 @@
  * Inspired by original driver by Frank Becker, David Brownell, and others.
  * Copyright (C) 2008 Robert Jarzmik
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/byteorder/generic.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/clk.h>
+#include <linex/irq.h>
+#include <linex/gpio.h>
+#include <linex/gpio/consumer.h>
+#include <linex/slab.h>
+#include <linex/prefetch.h>
+#include <linex/byteorder/generic.h>
+#include <linex/platform_data/pxa2xx_udc.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/phy.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/phy.h>
 
 #include "pxa27x_udc.h"
 
@@ -83,9 +83,9 @@ static void handle_ep(struct pxa_ep *ep);
  */
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
 
 static int state_dbg_show(struct seq_file *s, void *p)
 {

@@ -35,7 +35,7 @@
 
 #ifdef CONFIG_MLX5_FPGA
 
-#include <linux/mlx5/eq.h>
+#include <linex/mlx5/eq.h>
 
 #include "mlx5_core.h"
 #include "lib/eq.h"

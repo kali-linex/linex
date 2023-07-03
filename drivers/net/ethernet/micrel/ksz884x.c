@@ -8,24 +8,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/mii.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/micrel_phy.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/pci.h>
+#include <linex/proc_fs.h>
+#include <linex/mii.h>
+#include <linex/platform_device.h>
+#include <linex/ethtool.h>
+#include <linex/etherdevice.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/if_vlan.h>
+#include <linex/crc32.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/micrel_phy.h>
 
 
 /* DMA Registers */
@@ -4924,7 +4924,7 @@ static irqreturn_t netdev_intr(int irq, void *dev_id)
 }
 
 /*
- * Linux network device functions
+ * Linex network device functions
  */
 
 
@@ -6345,7 +6345,7 @@ static void dev_monitor(struct timer_list *t)
 }
 
 /*
- * Linux network device interface functions
+ * Linex network device interface functions
  */
 
 /* Driver exported variables */

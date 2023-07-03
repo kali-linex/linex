@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "hdcp.h"
 

@@ -5,11 +5,11 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linex/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/bio.h>
 
 #define DM_MSG_PREFIX "zero"
 

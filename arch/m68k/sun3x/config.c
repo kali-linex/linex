@@ -7,11 +7,11 @@
  * based on code from Oliver Jowett <oliver@jowett.manawatu.gen.nz>
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/seq_file.h>
+#include <linex/console.h>
+#include <linex/init.h>
 
 #include <asm/machdep.h>
 #include <asm/irq.h>

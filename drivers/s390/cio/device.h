@@ -3,11 +3,11 @@
 #define S390_DEVICE_H
 
 #include <asm/ccwdev.h>
-#include <linux/atomic.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/notifier.h>
-#include <linux/kernel_stat.h>
+#include <linex/atomic.h>
+#include <linex/timer.h>
+#include <linex/wait.h>
+#include <linex/notifier.h>
+#include <linex/kernel_stat.h>
 #include "io_sch.h"
 
 /*

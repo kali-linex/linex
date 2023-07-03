@@ -2,16 +2,16 @@
 //
 // imx50 pinctrl driver based on imx pinmux core
 //
-// Copyright (C) 2013 Greg Ungerer <gerg@uclinux.org>
+// Copyright (C) 2013 Greg Ungerer <gerg@uclinex.org>
 // Copyright (C) 2012 Freescale Semiconductor, Inc.
 // Copyright (C) 2012 Linaro, Inc.
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pinctrl/pinctrl.h>
 
 #include "pinctrl-imx.h"
 

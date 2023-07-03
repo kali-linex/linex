@@ -16,12 +16,12 @@
 #ifndef __INTEL_GTT_H__
 #define __INTEL_GTT_H__
 
-#include <linux/io-mapping.h>
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/pagevec.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
+#include <linex/io-mapping.h>
+#include <linex/kref.h>
+#include <linex/mm.h>
+#include <linex/pagevec.h>
+#include <linex/scatterlist.h>
+#include <linex/workqueue.h>
 
 #include <drm/drm_mm.h>
 

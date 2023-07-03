@@ -8,12 +8,12 @@
 #ifndef _CRYPTO_SKCIPHER_H
 #define _CRYPTO_SKCIPHER_H
 
-#include <linux/atomic.h>
-#include <linux/container_of.h>
-#include <linux/crypto.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/atomic.h>
+#include <linex/container_of.h>
+#include <linex/crypto.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 struct scatterlist;
 

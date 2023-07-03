@@ -7,9 +7,9 @@
  * Copyright (c) 2004 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pci.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/pci.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

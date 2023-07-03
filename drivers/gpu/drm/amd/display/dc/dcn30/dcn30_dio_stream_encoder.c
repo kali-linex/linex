@@ -30,7 +30,7 @@
 #include "hw_shared.h"
 #include "dc.h"
 #include "core_types.h"
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 
 #define DC_LOGGER \

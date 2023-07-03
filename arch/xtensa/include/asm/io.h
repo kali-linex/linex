@@ -14,10 +14,10 @@
 #include <asm/byteorder.h>
 #include <asm/page.h>
 #include <asm/vectors.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #define IOADDR(x)		(XCHAL_KIO_BYPASS_VADDR + (x))
 #define IO_SPACE_LIMIT ~0

@@ -1,6 +1,6 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <linex/kvm_host.h>
 
 #include "irq.h"
 #include "mmu.h"
@@ -10,24 +10,24 @@
 #include "cpuid.h"
 #include "pmu.h"
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/amd-iommu.h>
-#include <linux/sched.h>
-#include <linux/trace_events.h>
-#include <linux/slab.h>
-#include <linux/hashtable.h>
-#include <linux/objtool.h>
-#include <linux/psp-sev.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/rwsem.h>
-#include <linux/cc_platform.h>
-#include <linux/smp.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/kernel.h>
+#include <linex/vmalloc.h>
+#include <linex/highmem.h>
+#include <linex/amd-iommu.h>
+#include <linex/sched.h>
+#include <linex/trace_events.h>
+#include <linex/slab.h>
+#include <linex/hashtable.h>
+#include <linex/objtool.h>
+#include <linex/psp-sev.h>
+#include <linex/file.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/rwsem.h>
+#include <linex/cc_platform.h>
+#include <linex/smp.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>

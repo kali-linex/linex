@@ -5,14 +5,14 @@
  * Copyright (c) 2017 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/slab.h>
 
 #define CHTDC_TI_SIRQ_REG	0x3
 #define SIRQ_PWRBTN_REL		BIT(0)

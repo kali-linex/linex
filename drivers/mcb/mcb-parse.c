@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/mcb.h>
+#include <linex/types.h>
+#include <linex/ioport.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/mcb.h>
 
 #include "mcb-internal.h"
 

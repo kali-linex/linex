@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-* linux/arch/arm/mach-omap1/board-sx1.c
+* linex/arch/arm/mach-omap1/board-sx1.c
 *
 * Modified from board-generic.c
 *
@@ -11,23 +11,23 @@
 * Maintainters : Vladimir Ananiev (aka Vovan888), Sergge
 *		oslik.ru
 */
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/omap-dma.h>
+#include <linex/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
+#include <linex/notifier.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/types.h>
+#include <linex/i2c.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/omapfb.h>
+#include <linex/platform_data/keypad-omap.h>
+#include <linex/omap-dma.h>
 #include "tc.h"
 
 #include <asm/mach-types.h>

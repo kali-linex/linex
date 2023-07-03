@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2022-2023 Intel Corporation
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

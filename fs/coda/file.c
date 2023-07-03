@@ -2,32 +2,32 @@
 /*
  * File operations for Coda.
  * Original version: (C) 1996 Peter Braam 
- * Rewritten for Linux 2.1: (C) 1997 Carnegie Mellon University
+ * Rewritten for Linex 2.1: (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon encourages users of this code to contribute improvements
  * to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
-#include <linux/splice.h>
+#include <linex/refcount.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/time.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/stat.h>
+#include <linex/cred.h>
+#include <linex/errno.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/uio.h>
+#include <linex/splice.h>
 
-#include <linux/coda.h>
+#include <linex/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 #include "coda_int.h"
 
 struct coda_vm_ops {

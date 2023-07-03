@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include <system_global.h>
 #include "isp.h"

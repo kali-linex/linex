@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
 
 unsigned long shm_align_mask = PAGE_SIZE - 1;	/* Sane caches */
 EXPORT_SYMBOL(shm_align_mask);

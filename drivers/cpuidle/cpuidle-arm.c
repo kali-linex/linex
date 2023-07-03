@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "CPUidle arm: " fmt
 
-#include <linux/cpu_cooling.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/cpu_cooling.h>
+#include <linex/cpuidle.h>
+#include <linex/cpumask.h>
+#include <linex/cpu_pm.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #include <asm/cpuidle.h>
 

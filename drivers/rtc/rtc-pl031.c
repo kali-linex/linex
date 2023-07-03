@@ -11,16 +11,16 @@
  * Author: Mian Yousaf Kaukab <mian.yousaf.kaukab@stericsson.com>
  * Copyright 2010 (c) ST-Ericsson AB
  */
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/amba/bus.h>
+#include <linex/io.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
+#include <linex/pm_wakeirq.h>
+#include <linex/slab.h>
 
 /*
  * Register definitions

@@ -2,20 +2,20 @@
 /*
  * Architecture specific OF callbacks.
  */
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/libfdt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/of_pci.h>
-#include <linux/initrd.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/of_irq.h>
+#include <linex/libfdt.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/of_pci.h>
+#include <linex/initrd.h>
 
 #include <asm/irqdomain.h>
 #include <asm/hpet.h>

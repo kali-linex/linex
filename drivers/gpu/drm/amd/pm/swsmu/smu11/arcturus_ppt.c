@@ -23,7 +23,7 @@
 
 #define SWSMU_CODE_LAYER_L2
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include "amdgpu.h"
 #include "amdgpu_dpm.h"
 #include "amdgpu_smu.h"
@@ -42,8 +42,8 @@
 #include "thm/thm_11_0_2_offset.h"
 #include "thm/thm_11_0_2_sh_mask.h"
 #include "amdgpu_xgmi.h"
-#include <linux/i2c.h>
-#include <linux/pci.h>
+#include <linex/i2c.h>
+#include <linex/pci.h>
 #include "amdgpu_ras.h"
 #include "smu_cmn.h"
 

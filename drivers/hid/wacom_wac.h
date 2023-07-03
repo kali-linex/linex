@@ -3,9 +3,9 @@
 #ifndef WACOM_WAC_H
 #define WACOM_WAC_H
 
-#include <linux/types.h>
-#include <linux/hid.h>
-#include <linux/kfifo.h>
+#include <linex/types.h>
+#include <linex/hid.h>
+#include <linex/kfifo.h>
 
 /* maximum packet length for USB/BT devices */
 #define WACOM_PKGLEN_MAX	361

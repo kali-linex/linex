@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * inftlcore.c -- Linux driver for Inverse Flash Translation Layer (INFTL)
+ * inftlcore.c -- Linex driver for Inverse Flash Translation Layer (INFTL)
  *
  * Copyright © 2002, Greg Ungerer (gerg@snapgear.com)
  *
@@ -9,19 +9,19 @@
  * Copyright © 1999 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/hdreg.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nftl.h>
-#include <linux/mtd/inftl.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/kmod.h>
+#include <linex/hdreg.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/nftl.h>
+#include <linex/mtd/inftl.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/uaccess.h>
 #include <asm/errno.h>
 #include <asm/io.h>
 

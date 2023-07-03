@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  *  (C) 2003  Bruno Ducrot
- *  (C) 2004  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  (C) 2004  Dominik Brodowski <linex@dominikbrodowski.de>
  *
  * Based on code found in
- * linux/include/asm-i386/ist.h and linux/arch/i386/kernel/setup.c
+ * linex/include/asm-i386/ist.h and linex/arch/i386/kernel/setup.c
  * and originally developed by Andy Grover <andrew.grover@intel.com>
  */
 

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/macmodes.c -- Standard MacOS video modes
+ *  linex/drivers/video/macmodes.c -- Standard MacOS video modes
  *
  *	Copyright (C) 1998 Geert Uytterhoeven
  *
@@ -15,10 +15,10 @@
  *  more details.
  */
 
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/string.h>
+#include <linex/module.h>
 
 #include "macmodes.h"
 

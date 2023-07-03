@@ -4,17 +4,17 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/workqueue.h>
-#include <linux/can.h>
-#include <linux/can/can-ml.h>
-#include <linux/can/dev.h>
-#include <linux/can/skb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/workqueue.h>
+#include <linex/can.h>
+#include <linex/can/can-ml.h>
+#include <linex/can/dev.h>
+#include <linex/can/skb.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
 
 static void can_update_state_error_stats(struct net_device *dev,
 					 enum can_state new_state)

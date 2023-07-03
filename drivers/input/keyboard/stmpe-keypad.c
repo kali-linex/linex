@@ -5,14 +5,14 @@
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/mfd/stmpe.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/input/matrix_keypad.h>
+#include <linex/mfd/stmpe.h>
 
 /* These are at the same addresses in all STMPE variants */
 #define STMPE_KPC_COL			0x60

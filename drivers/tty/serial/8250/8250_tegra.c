@@ -5,15 +5,15 @@
  *  Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/reset.h>
+#include <linex/slab.h>
 
 #include "8250.h"
 

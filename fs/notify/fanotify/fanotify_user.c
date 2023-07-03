@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fanotify.h>
-#include <linux/fcntl.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
-#include <linux/memcontrol.h>
-#include <linux/statfs.h>
-#include <linux/exportfs.h>
+#include <linex/fanotify.h>
+#include <linex/fcntl.h>
+#include <linex/fdtable.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/anon_inodes.h>
+#include <linex/fsnotify_backend.h>
+#include <linex/init.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/poll.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/compat.h>
+#include <linex/sched/signal.h>
+#include <linex/memcontrol.h>
+#include <linex/statfs.h>
+#include <linex/exportfs.h>
 
 #include <asm/ioctls.h>
 
@@ -54,7 +54,7 @@ static int fanotify_max_queued_events __read_mostly;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static long ft_zero = 0;
 static long ft_int_max = INT_MAX;

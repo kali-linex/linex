@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/types.h>
+#include <linex/ioport.h>
 
 #include <asm/hwtest.h>
 #include <asm/irq.h>

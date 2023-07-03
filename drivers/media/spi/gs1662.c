@@ -6,22 +6,22 @@
  * Author: Charles-Antoine Couret <charles-antoine.couret@nexvision.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/spi/spi.h>
+#include <linex/platform_device.h>
+#include <linex/ctype.h>
+#include <linex/err.h>
+#include <linex/device.h>
+#include <linex/module.h>
 
-#include <linux/videodev2.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-dv-timings.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linex/v4l2-dv-timings.h>
 
 #define REG_STATUS			0x04
 #define REG_FORCE_FMT			0x06

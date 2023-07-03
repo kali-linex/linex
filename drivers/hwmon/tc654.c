@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * tc654.c - Linux kernel modules for fan speed controller
+ * tc654.c - Linex kernel modules for fan speed controller
  *
  * Copyright (C) 2016 Allied Telesis Labs NZ
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
-#include <linux/util_macros.h>
+#include <linex/bitops.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/thermal.h>
+#include <linex/util_macros.h>
 
 enum tc654_regs {
 	TC654_REG_RPM1 = 0x00,	/* RPM Output 1 */

@@ -5,11 +5,11 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tc_ematch/tc_em_cmp.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/tc_ematch/tc_em_cmp.h>
 #include <asm/unaligned.h>
 #include <net/pkt_cls.h>
 

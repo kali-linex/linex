@@ -4,8 +4,8 @@
  * Author: Edward-JW Yang <edward-jw.yang@mediatek.com>
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
 
 #include "clk-mtk.h"
 #include "clk-pllfh.h"

@@ -7,9 +7,9 @@
  * Copyright (C) 2009 ST Microelectronics
  * Viresh Kumar <vireshk@kernel.org>
  */
-#include <linux/io.h>
-#include <linux/amba/sp810.h>
-#include <linux/reboot.h>
+#include <linex/io.h>
+#include <linex/amba/sp810.h>
+#include <linex/reboot.h>
 #include <asm/system_misc.h>
 #include "spear.h"
 #include "generic.h"

@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * ntfs.h - Defines for NTFS Linux kernel driver.
+ * ntfs.h - Defines for NTFS Linex kernel driver.
  *
  * Copyright (c) 2001-2014 Anton Altaparmakov and Tuxera Inc.
  * Copyright (C) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_H
-#define _LINUX_NTFS_H
+#ifndef _LINEX_NTFS_H
+#define _LINEX_NTFS_H
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/nls.h>
-#include <linux/smp.h>
-#include <linux/pagemap.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/compiler.h>
+#include <linex/fs.h>
+#include <linex/nls.h>
+#include <linex/smp.h>
+#include <linex/pagemap.h>
 
 #include "types.h"
 #include "volume.h"
@@ -147,4 +147,4 @@ static inline int ntfs_ffs(int x)
 	return r;
 }
 
-#endif /* _LINUX_NTFS_H */
+#endif /* _LINEX_NTFS_H */

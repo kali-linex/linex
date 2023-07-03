@@ -11,10 +11,10 @@
  *   Intel Broadwell I2S Machine driver supporting RT5677 codec
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/acpi.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/acpi.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

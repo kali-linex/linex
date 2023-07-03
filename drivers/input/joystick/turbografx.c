@@ -7,16 +7,16 @@
  */
 
 /*
- * TurboGraFX parallel port interface driver for Linux.
+ * TurboGraFX parallel port interface driver for Linex.
  */
 
-#include <linux/kernel.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/parport.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("TurboGraFX parallel port interface driver");

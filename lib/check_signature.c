@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/io.h>
-#include <linux/export.h>
+#include <linex/io.h>
+#include <linex/export.h>
 
 /**
  *	check_signature		-	find BIOS signatures

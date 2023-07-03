@@ -12,17 +12,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/kthread.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/wait.h>
+#include <linex/pci.h>
+#include <linex/pci_hotplug.h>
+#include <linex/kthread.h>
 #include "cpqphp.h"
 
 static u32 configure_new_device(struct controller *ctrl, struct pci_func *func,
@@ -1559,9 +1559,9 @@ static u32 board_added(struct pci_func *func, struct controller *ctrl)
 		func->switch_save = 0x10;
 		func->is_a_board = 0x01;
 
-		/* next, we will instantiate the linux pci_dev structures (with
+		/* next, we will instantiate the linex pci_dev structures (with
 		 * appropriate driver notification, if already present) */
-		dbg("%s: configure linux pci_dev structure\n", __func__);
+		dbg("%s: configure linex pci_dev structure\n", __func__);
 		index = 0;
 		do {
 			new_slot = cpqhp_slot_find(ctrl->bus, func->device, index++);

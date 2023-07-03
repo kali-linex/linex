@@ -5,11 +5,11 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/spi/spi.h>
 
 #include "adxl372.h"
 

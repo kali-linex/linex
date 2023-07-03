@@ -5,10 +5,10 @@
  * Copyright (C) 2016 Aleksei Mamlin <mamlinav@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/i2c.h>
+#include <linex/iio/iio.h>
 
 #define DMARD06_DRV_NAME		"dmard06"
 

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Ported from IRIX to Linux by Kanoj Sarcar, 06/08/00.
+ * Ported from IRIX to Linex by Kanoj Sarcar, 06/08/00.
  * Copyright 2000 - 2001 Silicon Graphics, Inc.
  * Copyright 2000 - 2001 Kanoj Sarcar (kanoj@sgi.com)
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/kernel.h>
-#include <linux/nodemask.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/mmzone.h>
+#include <linex/kernel.h>
+#include <linex/nodemask.h>
+#include <linex/string.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>

@@ -4,7 +4,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Linex390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  * EMC Symmetrix ioctl Copyright EMC Corporation, 2008
  * Author.........: Nigel Hislop <hislop_nigel@emc.com>
@@ -12,22 +12,22 @@
 
 #define KMSG_COMPONENT "dasd-eckd"
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>	/* HDIO_GETGEO			    */
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/compat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/hdreg.h>	/* HDIO_GETGEO			    */
+#include <linex/bio.h>
+#include <linex/module.h>
+#include <linex/compat.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
 
 #include <asm/css_chars.h>
 #include <asm/debug.h>
 #include <asm/idals.h>
 #include <asm/ebcdic.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cio.h>
 #include <asm/ccwdev.h>
 #include <asm/itcw.h>
@@ -2446,7 +2446,7 @@ raw:
 		   blk_per_trk * (block->bp_block >> 9)) >> 1),
 		 ((blk_per_trk * block->bp_block) >> 10),
 		 private->uses_cdl ?
-		 "compatible disk layout" : "linux disk layout");
+		 "compatible disk layout" : "linex disk layout");
 
 	return 0;
 }

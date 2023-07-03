@@ -3,13 +3,13 @@
  * Copyright (C) 2005-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
-#include <linux/slab.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/miscdevice.h>
+#include <linex/poll.h>
+#include <linex/dlm.h>
+#include <linex/dlm_plock.h>
+#include <linex/slab.h>
 
 #include "dlm_internal.h"
 #include "lockspace.h"

@@ -41,28 +41,28 @@
 #ifndef __ISCSI_ISER_H__
 #define __ISCSI_ISER_H__
 
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/printk.h>
+#include <linex/types.h>
+#include <linex/net.h>
+#include <linex/printk.h>
 #include <scsi/libiscsi.h>
 #include <scsi/scsi_transport_iscsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/iser.h>
 
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/mempool.h>
-#include <linux/uio.h>
+#include <linex/interrupt.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/mutex.h>
+#include <linex/mempool.h>
+#include <linex/uio.h>
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/in6.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>

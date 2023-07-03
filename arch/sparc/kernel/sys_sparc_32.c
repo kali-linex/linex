@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc/kernel/sys_sparc.c
+/* linex/arch/sparc/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the Linex/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/ipc.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/debug.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/sem.h>
+#include <linex/msg.h>
+#include <linex/shm.h>
+#include <linex/stat.h>
+#include <linex/syscalls.h>
+#include <linex/mman.h>
+#include <linex/utsname.h>
+#include <linex/smp.h>
+#include <linex/ipc.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 
 #include "systbls.h"
@@ -96,7 +96,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* Linex version of mmap */
 
 SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
 	unsigned long, prot, unsigned long, flags, unsigned long, fd,

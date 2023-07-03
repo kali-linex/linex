@@ -9,8 +9,8 @@
 #ifndef __SCLP_H__
 #define __SCLP_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <linex/types.h>
+#include <linex/list.h>
 #include <asm/asm-extable.h>
 #include <asm/sclp.h>
 #include <asm/ebcdic.h>

@@ -6,8 +6,8 @@
 #if !defined(__HFI1_TRACE_RC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __HFI1_TRACE_RC_H
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linex/tracepoint.h>
+#include <linex/trace_seq.h>
 
 #include "hfi.h"
 

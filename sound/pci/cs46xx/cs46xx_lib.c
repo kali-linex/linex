@@ -31,19 +31,19 @@
  *           Benny <benny@hostmobility.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/pm.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/mutex.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/vmalloc.h>
+#include <linex/io.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -3533,7 +3533,7 @@ static void amp_voyetra_4294(struct snd_cs46xx *chip, int change)
  *	whenever we need to beat on the chip.
  *
  *	The original idea and code for this hack comes from David Kaiser at
- *	Linuxcare. Perhaps one day Crystal will document their chips well
+ *	Linexcare. Perhaps one day Crystal will document their chips well
  *	enough to make them useful.
  */
  

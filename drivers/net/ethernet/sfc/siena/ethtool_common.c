@@ -7,8 +7,8 @@
  * under the terms of the GNU General Public License version 2 as published
  * by the Free Software Foundation, incorporated herein by reference.
  */
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
 #include "net_driver.h"
 #include "mcdi.h"
 #include "nic.h"

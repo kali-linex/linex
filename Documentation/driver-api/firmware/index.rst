@@ -1,5 +1,5 @@
 ==================
-Linux Firmware API
+Linex Firmware API
 ==================
 
 .. toctree::

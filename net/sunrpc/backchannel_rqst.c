@@ -7,11 +7,11 @@
 
 ******************************************************************************/
 
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/export.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <linex/tcp.h>
+#include <linex/slab.h>
+#include <linex/sunrpc/xprt.h>
+#include <linex/export.h>
+#include <linex/sunrpc/bc_xprt.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 #define RPCDBG_FACILITY	RPCDBG_TRANS

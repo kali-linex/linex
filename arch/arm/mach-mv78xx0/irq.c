@@ -4,10 +4,10 @@
  *
  * MV78xx0 IRQ handling.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/gpio.h>
+#include <linex/kernel.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 #include <asm/exception.h>
 #include <plat/orion-gpio.h>
 #include <plat/irq.h>

@@ -464,9 +464,9 @@ patternProperties:
               The IQS7222B does not feature channel-specific timeouts; the time-
               out specified for any one channel applies to all channels.
 
-          linux,code: true
+          linex,code: true
 
-          linux,input-type:
+          linex,input-type:
             enum: [1, 5]
             default: 1
             description:
@@ -554,7 +554,7 @@ patternProperties:
           channels instead of their corresponding touch states. Note the slider
           cannot report granular coordinates during a state of proximity.
 
-      linux,axis:
+      linex,axis:
         $ref: /schemas/types.yaml#/definitions/uint32
         description:
           Specifies the absolute axis to which coordinates are mapped. Specify
@@ -569,7 +569,7 @@ patternProperties:
           the slider.
 
         properties:
-          linux,code: true
+          linex,code: true
 
           azoteq,gesture-max-ms:
             multipleOf: 16
@@ -860,7 +860,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_MUTE>;
+                                    linex,code = <KEY_MUTE>;
                             };
                     };
 
@@ -873,7 +873,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_VOLUMEDOWN>;
+                                    linex,code = <KEY_VOLUMEDOWN>;
                             };
                     };
 
@@ -886,7 +886,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_VOLUMEUP>;
+                                    linex,code = <KEY_VOLUMEUP>;
                             };
                     };
 
@@ -899,7 +899,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_POWER>;
+                                    linex,code = <KEY_POWER>;
                             };
                     };
 
@@ -909,8 +909,8 @@ examples:
                             azoteq,ati-base = <112>;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
-                                    linux,input-type = <EV_SW>;
+                                    linex,code = <SW_LID>;
+                                    linex,input-type = <EV_SW>;
                             };
                     };
 
@@ -929,19 +929,19 @@ examples:
                             azoteq,bottom-beta = <3>;
 
                             event-tap {
-                                    linux,code = <KEY_PLAYPAUSE>;
+                                    linex,code = <KEY_PLAYPAUSE>;
                                     azoteq,gesture-max-ms = <400>;
                                     azoteq,gesture-min-ms = <32>;
                             };
 
                             event-flick-pos {
-                                    linux,code = <KEY_NEXTSONG>;
+                                    linex,code = <KEY_NEXTSONG>;
                                     azoteq,gesture-max-ms = <800>;
                                     azoteq,gesture-dist = <800>;
                             };
 
                             event-flick-neg {
-                                    linux,code = <KEY_PREVIOUSSONG>;
+                                    linex,code = <KEY_PREVIOUSSONG>;
                             };
                     };
             };

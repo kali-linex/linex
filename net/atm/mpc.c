@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/init.h>
+#include <linex/bitops.h>
+#include <linex/capability.h>
+#include <linex/seq_file.h>
 
 /* We are an ethernet device */
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linex/if_ether.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
 #include <net/sock.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/uaccess.h>
 #include <asm/byteorder.h>
 #include <net/checksum.h>   /* for ip_fast_csum() */
 #include <net/arp.h>
 #include <net/dst.h>
-#include <linux/proc_fs.h>
+#include <linex/proc_fs.h>
 
 /* And atm device */
-#include <linux/atmdev.h>
-#include <linux/atmlec.h>
-#include <linux/atmmpc.h>
+#include <linex/atmdev.h>
+#include <linex/atmlec.h>
+#include <linex/atmmpc.h>
 /* Modular too */
-#include <linux/module.h>
+#include <linex/module.h>
 
 #include "lec.h"
 #include "mpc.h"

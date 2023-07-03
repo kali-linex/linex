@@ -12,32 +12,32 @@
  * Copyright (C) 2000, 2001, 2012 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2014, Imagination Technologies Ltd.
  */
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/context_tracking.h>
-#include <linux/cpu_pm.h>
-#include <linux/kexec.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/extable.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/memblock.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/notifier.h>
-#include <linux/kdb.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/compiler.h>
+#include <linex/context_tracking.h>
+#include <linex/cpu_pm.h>
+#include <linex/kexec.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/extable.h>
+#include <linex/mm.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/debug.h>
+#include <linex/smp.h>
+#include <linex/spinlock.h>
+#include <linex/kallsyms.h>
+#include <linex/memblock.h>
+#include <linex/interrupt.h>
+#include <linex/ptrace.h>
+#include <linex/kgdb.h>
+#include <linex/kdebug.h>
+#include <linex/kprobes.h>
+#include <linex/notifier.h>
+#include <linex/kdb.h>
+#include <linex/irq.h>
+#include <linex/perf_event.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
@@ -62,7 +62,7 @@
 #include <asm/siginfo.h>
 #include <asm/tlbdebug.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/watch.h>
 #include <asm/mmu_context.h>
 #include <asm/types.h>

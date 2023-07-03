@@ -6,8 +6,8 @@
 
 /* This file included from pcm_native.c */
 
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <linex/compat.h>
+#include <linex/slab.h>
 
 static int snd_pcm_ioctl_delay_compat(struct snd_pcm_substream *substream,
 				      s32 __user *src)

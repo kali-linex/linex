@@ -6,22 +6,22 @@
  * Copyright (C) 2009-2012 Cavium, Inc
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/capability.h>
-#include <linux/net_tstamp.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/if_vlan.h>
-#include <linux/of_mdio.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/phy.h>
-#include <linux/io.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/etherdevice.h>
+#include <linex/capability.h>
+#include <linex/net_tstamp.h>
+#include <linex/interrupt.h>
+#include <linex/netdevice.h>
+#include <linex/spinlock.h>
+#include <linex/if_vlan.h>
+#include <linex/of_mdio.h>
+#include <linex/module.h>
+#include <linex/of_net.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/phy.h>
+#include <linex/io.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-mixx-defs.h>

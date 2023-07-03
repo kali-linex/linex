@@ -35,27 +35,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/quota.h>
-#include <linux/dqblk_xfs.h>
-#include <linux/lockref.h>
-#include <linux/list_lru.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/bit_spinlock.h>
-#include <linux/jhash.h>
-#include <linux/vmalloc.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/buffer_head.h>
+#include <linex/sort.h>
+#include <linex/fs.h>
+#include <linex/bio.h>
+#include <linex/gfs2_ondisk.h>
+#include <linex/kthread.h>
+#include <linex/freezer.h>
+#include <linex/quota.h>
+#include <linex/dqblk_xfs.h>
+#include <linex/lockref.h>
+#include <linex/list_lru.h>
+#include <linex/rcupdate.h>
+#include <linex/rculist_bl.h>
+#include <linex/bit_spinlock.h>
+#include <linex/jhash.h>
+#include <linex/vmalloc.h>
 
 #include "gfs2.h"
 #include "incore.h"

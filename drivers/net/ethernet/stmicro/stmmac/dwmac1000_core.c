@@ -12,9 +12,9 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
+#include <linex/crc32.h>
+#include <linex/slab.h>
+#include <linex/ethtool.h>
 #include <asm/io.h>
 #include "stmmac.h"
 #include "stmmac_pcs.h"

@@ -5,8 +5,8 @@
  * Copyright (C) 2019 Pengutronix, Philipp Zabel
  */
 
-#include <linux/kernel.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/videodev2.h>
 
 #include "coda.h"
 

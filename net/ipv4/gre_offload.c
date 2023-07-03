@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPV4 GSO/GRO offload support
- *	Linux INET implementation
+ *	Linex INET implementation
  *
  *	GRE GSO support
  */
 
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
 #include <net/protocol.h>
 #include <net/gre.h>
 #include <net/gro.h>

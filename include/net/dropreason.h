@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-#ifndef _LINUX_DROPREASON_H
-#define _LINUX_DROPREASON_H
+#ifndef _LINEX_DROPREASON_H
+#define _LINEX_DROPREASON_H
 #include <net/dropreason-core.h>
 
 /**

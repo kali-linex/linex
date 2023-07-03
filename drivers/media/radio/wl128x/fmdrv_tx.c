@@ -6,7 +6,7 @@
  *  Copyright (C) 2011 Texas Instruments
  */
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 #include "fmdrv.h"
 #include "fmdrv_common.h"
 #include "fmdrv_tx.h"

@@ -3,8 +3,8 @@
 
 #ifndef __HCLGE_COMM_TQP_STATS_H
 #define __HCLGE_COMM_TQP_STATS_H
-#include <linux/types.h>
-#include <linux/etherdevice.h>
+#include <linex/types.h>
+#include <linex/etherdevice.h>
 #include "hnae3.h"
 
 /* each tqp has TX & RX two queues */

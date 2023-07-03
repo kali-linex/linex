@@ -5,14 +5,14 @@
 // Copyright (c) 2020 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/sched.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

@@ -665,7 +665,7 @@ llvm.*::
 		Cmdline template. Below lines show its default value. Environment
 		variable is used to pass options.
 		"$CLANG_EXEC -D__KERNEL__ -D__NR_CPUS__=$NR_CPUS "\
-		"-DLINUX_VERSION_CODE=$LINUX_VERSION_CODE "	\
+		"-DLINEX_VERSION_CODE=$LINEX_VERSION_CODE "	\
 		"$CLANG_OPTIONS $PERF_BPF_INC_OPTIONS $KERNEL_INC_OPTIONS " \
 		"-Wno-unused-value -Wno-pointer-sign "		\
 		"-working-directory $WORKING_DIR "		\

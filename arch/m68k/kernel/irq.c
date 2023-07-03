@@ -8,13 +8,13 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/seq_file.h>
 #include <asm/traps.h>
 
 asmlinkage void do_IRQ(int irq, struct pt_regs *regs)

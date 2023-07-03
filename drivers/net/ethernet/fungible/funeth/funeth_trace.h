@@ -6,7 +6,7 @@
 #if !defined(_TRACE_FUNETH_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FUNETH_H
 
-#include <linux/tracepoint.h>
+#include <linex/tracepoint.h>
 
 #include "funeth_txrx.h"
 

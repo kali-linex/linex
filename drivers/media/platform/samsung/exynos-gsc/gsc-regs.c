@@ -6,8 +6,8 @@
  * Samsung EXYNOS5 SoC series G-Scaler driver
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linex/io.h>
+#include <linex/delay.h>
 
 #include "gsc-core.h"
 

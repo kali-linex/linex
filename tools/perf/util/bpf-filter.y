@@ -5,8 +5,8 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
+#include <linex/compiler.h>
+#include <linex/list.h>
 #include "bpf-filter.h"
 
 static void perf_bpf_filter_error(struct list_head *expr __maybe_unused,

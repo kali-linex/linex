@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (C) 2014-2018 Broadcom */
 
-#include <linux/circ_buf.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/string_helpers.h>
+#include <linex/circ_buf.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/string_helpers.h>
 
 #include <drm/drm_debugfs.h>
 

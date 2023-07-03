@@ -9,10 +9,10 @@
 #define _SURFACE_AGGREGATOR_SSH_MSGB_H
 
 #include <asm/unaligned.h>
-#include <linux/types.h>
+#include <linex/types.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/serial_hub.h>
 
 /**
  * struct msgbuf - Buffer struct to construct SSH messages.

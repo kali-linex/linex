@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- *  linux/net/sunrpc/gss_krb5_mech.c
+ *  linex/net/sunrpc/gss_krb5_mech.c
  *
  *  Copyright (c) 2001-2008 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -11,14 +11,14 @@
 
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/sunrpc/auth.h>
+#include <linex/sunrpc/gss_krb5.h>
+#include <linex/sunrpc/xdr.h>
 #include <kunit/visibility.h>
 
 #include "auth_gss_internal.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <inttypes.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
 #include "tests.h"
 #include "map.h"
 #include "maps.h"

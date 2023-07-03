@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/tick.h>
-#include <linux/percpu-defs.h>
+#include <linex/types.h>
+#include <linex/tick.h>
+#include <linex/percpu-defs.h>
 
 #include <xen/xen.h>
 #include <xen/interface/xen.h>

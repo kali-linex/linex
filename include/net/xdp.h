@@ -3,12 +3,12 @@
  *
  * Copyright (c) 2017 Jesper Dangaard Brouer, Red Hat Inc.
  */
-#ifndef __LINUX_NET_XDP_H__
-#define __LINUX_NET_XDP_H__
+#ifndef __LINEX_NET_XDP_H__
+#define __LINEX_NET_XDP_H__
 
-#include <linux/skbuff.h> /* skb_shared_info */
-#include <uapi/linux/netdev.h>
-#include <linux/bitfield.h>
+#include <linex/skbuff.h> /* skb_shared_info */
+#include <uapi/linex/netdev.h>
+#include <linex/bitfield.h>
 
 /**
  * DOC: XDP RX-queue information
@@ -474,4 +474,4 @@ static inline void xdp_clear_features_flag(struct net_device *dev)
 	xdp_set_features_flag(dev, 0);
 }
 
-#endif /* __LINUX_NET_XDP_H__ */
+#endif /* __LINEX_NET_XDP_H__ */

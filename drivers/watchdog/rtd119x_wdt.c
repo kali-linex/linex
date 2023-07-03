@@ -6,13 +6,13 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
 
 #define RTD119X_TCWCR		0x0
 #define RTD119X_TCWTR		0x4

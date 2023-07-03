@@ -3,9 +3,9 @@
  * Copyright (C) 2022 Linaro Ltd.
  */
 
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #include "icc-common.h"
 

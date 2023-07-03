@@ -7,11 +7,11 @@
  * Copyright (C) 2011  Magnus Damm
  */
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/smp.h>
 #include <asm/io.h>
 #include <asm/cputype.h>
 #include "common.h"

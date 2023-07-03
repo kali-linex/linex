@@ -12,10 +12,10 @@
 #ifndef _HYPERV_NET_H
 #define _HYPERV_NET_H
 
-#include <linux/list.h>
-#include <linux/hyperv.h>
-#include <linux/rndis.h>
-#include <linux/jhash.h>
+#include <linex/list.h>
+#include <linex/hyperv.h>
+#include <linex/rndis.h>
+#include <linex/jhash.h>
 
 /* RSS related */
 #define OID_GEN_RECEIVE_SCALE_CAPABILITIES 0x00010203  /* query only */

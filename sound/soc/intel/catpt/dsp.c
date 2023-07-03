@@ -5,11 +5,11 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/devcoredump.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/pxa2xx_ssp.h>
+#include <linex/devcoredump.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
+#include <linex/pxa2xx_ssp.h>
 #include "core.h"
 #include "messages.h"
 #include "registers.h"

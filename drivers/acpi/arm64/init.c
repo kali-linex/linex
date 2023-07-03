@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 #include "init.h"
 
 void __init acpi_arm_init(void)

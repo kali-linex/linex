@@ -9,9 +9,9 @@
 #ifndef RNBD_SRV_H
 #define RNBD_SRV_H
 
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
+#include <linex/types.h>
+#include <linex/idr.h>
+#include <linex/kref.h>
 
 #include <rtrs.h>
 #include "rnbd-proto.h"

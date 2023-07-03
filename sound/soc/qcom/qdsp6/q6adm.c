@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The Linex Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/wait.h>
+#include <linex/device.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/kref.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/soc/qcom/apr.h>
+#include <linex/wait.h>
 #include <sound/asound.h>
 #include "q6adm.h"
 #include "q6afe.h"

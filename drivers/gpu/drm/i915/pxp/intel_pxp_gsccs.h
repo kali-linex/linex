@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_GSCCS_H__
 #define __INTEL_PXP_GSCCS_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct intel_pxp;
 

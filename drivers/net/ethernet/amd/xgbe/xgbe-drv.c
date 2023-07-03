@@ -114,15 +114,15 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/if_ether.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/tcp.h>
+#include <linex/if_vlan.h>
+#include <linex/interrupt.h>
+#include <linex/clk.h>
+#include <linex/if_ether.h>
+#include <linex/net_tstamp.h>
+#include <linex/phy.h>
 #include <net/vxlan.h>
 
 #include "xgbe.h"

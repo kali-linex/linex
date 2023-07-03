@@ -14,15 +14,15 @@
  *    --
  */
 
-#include <linux/pci.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
-#include <linux/nospec.h>
+#include <linex/pci.h>
+#include <linex/capability.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/moduleparam.h>
+#include <linex/nospec.h>
 
 #include <sound/core.h>
 #include <sound/tlv.h>

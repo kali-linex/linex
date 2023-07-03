@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
+#include <linex/skbuff.h>
+#include <linex/workqueue.h>
 
 int batadv_v_elp_iface_enable(struct batadv_hard_iface *hard_iface);
 void batadv_v_elp_iface_disable(struct batadv_hard_iface *hard_iface);

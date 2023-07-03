@@ -11,13 +11,13 @@
  * Copyright 2008 Atmel
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/atmel-ssc.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/atmel-ssc.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

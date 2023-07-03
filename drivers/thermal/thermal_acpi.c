@@ -6,8 +6,8 @@
  * Library routines for populating a generic thermal trip point structure
  * with data obtained by evaluating a specific object in the ACPI Namespace.
  */
-#include <linux/acpi.h>
-#include <linux/units.h>
+#include <linex/acpi.h>
+#include <linex/units.h>
 
 #include "thermal_core.h"
 

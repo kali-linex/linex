@@ -1,10 +1,10 @@
 /*
  * Created: Fri Jan 19 10:48:35 2001 by faith@acm.org
  *
- * Copyright 2001 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2001 VA Linex Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author Rickard E. (Rik) Faith <faith@valinux.com>
+ * Author Rickard E. (Rik) Faith <faith@valinex.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -26,14 +26,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
+#include <linex/debugfs.h>
+#include <linex/fs.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mount.h>
+#include <linex/pseudo_fs.h>
+#include <linex/slab.h>
+#include <linex/srcu.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_cache.h>

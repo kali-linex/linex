@@ -3,17 +3,17 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
 #include <asm/byteorder.h>
-#include <linux/swap.h>
-#include <linux/mpage.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
+#include <linex/swap.h>
+#include <linex/mpage.h>
+#include <linex/quotaops.h>
+#include <linex/blkdev.h>
+#include <linex/uio.h>
+#include <linex/mm.h>
 
 #include <cluster/masklog.h>
 

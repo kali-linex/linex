@@ -5,17 +5,17 @@
  * copyright Jamal Hadi Salim (2016)
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/module.h>
+#include <linex/init.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <uapi/linux/tc_act/tc_ife.h>
+#include <uapi/linex/tc_act/tc_ife.h>
 #include <net/tc_act/tc_ife.h>
 
 static int skbtcindex_encode(struct sk_buff *skb, void *skbdata,

@@ -6,12 +6,12 @@
  * Author: Sergei Shtylyov <sergei.shtylyov@cogentembedded.com>
  */
 
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <linex/extcon-provider.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/platform_device.h>
 
 struct max3355_data {
 	struct extcon_dev *edev;

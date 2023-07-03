@@ -4,34 +4,34 @@
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  * Copyright (C) Terry Dawson VK2KTJ (terry@animats.net)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
 #include <net/arp.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
+#include <linex/uaccess.h>
+#include <linex/fcntl.h>
+#include <linex/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/notifier.h>
+#include <linex/init.h>
 #include <net/rose.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linex/seq_file.h>
+#include <linex/export.h>
 
 static unsigned int rose_neigh_no = 1;
 

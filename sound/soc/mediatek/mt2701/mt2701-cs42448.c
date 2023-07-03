@@ -7,12 +7,12 @@
  *	   Garlic Tseng <garlic.tseng@mediatek.com>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include <sound/soc.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/of_gpio.h>
+#include <linex/delay.h>
+#include <linex/gpio.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/of_gpio.h>
 
 #include "mt2701-afe-common.h"
 

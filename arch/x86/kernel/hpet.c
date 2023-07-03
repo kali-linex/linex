@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/hpet.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/hpet.h>
+#include <linex/cpu.h>
+#include <linex/irq.h>
 
 #include <asm/irq_remapping.h>
 #include <asm/hpet.h>
@@ -1210,8 +1210,8 @@ void hpet_disable(void)
  * For (3), we use interrupts at 64 Hz, or the user specified periodic frequency,
  * if it's higher.
  */
-#include <linux/mc146818rtc.h>
-#include <linux/rtc.h>
+#include <linex/mc146818rtc.h>
+#include <linex/rtc.h>
 
 #define DEFAULT_RTC_INT_FREQ	64
 #define DEFAULT_RTC_SHIFT	6

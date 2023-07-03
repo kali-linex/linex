@@ -9,19 +9,19 @@
  *          Scott Ling <sl@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/irqreturn.h>
+#include <linex/init.h>
+#include <linex/spi/spi.h>
+#include <linex/firmware.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/gpio.h>
+#include <linex/regulator/consumer.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
 
 #include <sound/soc.h>
 #include <sound/wm0010.h>

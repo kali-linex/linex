@@ -5,13 +5,13 @@
  * Author: Christian Gmeiner <christian.gmeiner@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/input.h>
+#include <linex/of.h>
+#include <linex/i2c.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
 
 #define AR1021_TOUCH_PKG_SIZE	5
 

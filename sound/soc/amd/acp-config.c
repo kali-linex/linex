@@ -10,11 +10,11 @@
 
 /* ACP machine configuration module */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/acpi.h>
+#include <linex/bits.h>
+#include <linex/dmi.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "../sof/amd/acp.h"
 #include "mach-config.h"

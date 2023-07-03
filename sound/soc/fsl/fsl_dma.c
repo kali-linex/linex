@@ -10,18 +10,18 @@
 // the DMA controller on Freescale 83xx, 85xx, and 86xx SOCs. In ALSA terms,
 // the PCM driver is what handles the DMA buffer.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/gfp.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

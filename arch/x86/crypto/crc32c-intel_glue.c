@@ -8,13 +8,13 @@
  * Volume 2A: Instruction Set Reference, A-M
  *
  * Copyright (C) 2008 Intel Corporation
- * Authors: Austin Zhang <austin_zhang@linux.intel.com>
+ * Authors: Austin Zhang <austin_zhang@linex.intel.com>
  *          Kent Liu <kent.liu@intel.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 

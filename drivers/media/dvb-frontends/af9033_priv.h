@@ -11,9 +11,9 @@
 
 #include <media/dvb_frontend.h>
 #include "af9033.h"
-#include <linux/math64.h>
-#include <linux/regmap.h>
-#include <linux/kernel.h>
+#include <linex/math64.h>
+#include <linex/regmap.h>
+#include <linex/kernel.h>
 #include <media/dvb_math.h>
 
 struct reg_val {

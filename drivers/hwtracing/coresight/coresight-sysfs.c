@@ -4,8 +4,8 @@
  * Author: Mike Leach <mike.leach@linaro.org>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
 
 #include "coresight-priv.h"
 

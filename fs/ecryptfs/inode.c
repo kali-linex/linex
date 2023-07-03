@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Linex filesystem encryption layer
  *
  * Copyright (C) 1997-2004 Erez Zadok
  * Copyright (C) 2001-2004 Stony Brook University
@@ -9,18 +9,18 @@
  *              Michael C. Thompsion <mcthomps@us.ibm.com>
  */
 
-#include <linux/file.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/fs_stack.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/fileattr.h>
+#include <linex/file.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/dcache.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/fs_stack.h>
+#include <linex/slab.h>
+#include <linex/xattr.h>
+#include <linex/posix_acl.h>
+#include <linex/posix_acl_xattr.h>
+#include <linex/fileattr.h>
 #include <asm/unaligned.h>
 #include "ecryptfs_kernel.h"
 

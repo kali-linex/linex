@@ -2,17 +2,17 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/dmi.h>
-#include <linux/ctype.h>
-#include <linux/pm_qos.h>
-#include <linux/nvmem-consumer.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/of.h>
+#include <linex/property.h>
+#include <linex/dmi.h>
+#include <linex/ctype.h>
+#include <linex/pm_qos.h>
+#include <linex/nvmem-consumer.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

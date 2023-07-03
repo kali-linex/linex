@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/pagelist.c
+ * linex/fs/nfs/pagelist.c
  *
  * A set of helper functions for managing NFS read and write requests.
  * The main purpose of these routines is to provide support for the
@@ -10,18 +10,18 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/nfs_mount.h>
-#include <linux/export.h>
-#include <linux/filelock.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/sched.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/nfs.h>
+#include <linex/nfs3.h>
+#include <linex/nfs4.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_page.h>
+#include <linex/nfs_mount.h>
+#include <linex/export.h>
+#include <linex/filelock.h>
 
 #include "internal.h"
 #include "pnfs.h"

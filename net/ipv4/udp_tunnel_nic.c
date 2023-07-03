@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2020 Facebook Inc.
 
-#include <linux/ethtool_netlink.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 #include <net/udp_tunnel.h>
 #include <net/vxlan.h>
 

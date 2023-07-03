@@ -13,14 +13,14 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
 
 #define REG_LDO_SET		0x0
 #define LDO_ILIM_MASK		1	/* 0 = 400-800, 1 = 900-1500 */

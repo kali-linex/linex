@@ -4,20 +4,20 @@
    (C) 2000 Red Hat.
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
 
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/gen_probe.h>
+#include <linex/mtd/xip.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/cfi.h>
+#include <linex/mtd/gen_probe.h>
 
 //#define DEBUG_CFI
 

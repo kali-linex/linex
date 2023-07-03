@@ -8,13 +8,13 @@
 #ifndef _NET_INETPEER_H
 #define _NET_INETPEER_H
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/rtnetlink.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/spinlock.h>
+#include <linex/rtnetlink.h>
 #include <net/ipv6.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 /* IPv4 address key for cache lookups */
 struct ipv4_addr_key {

@@ -11,11 +11,11 @@
  *             initialization and cleanup functions
  */
 
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/ima.h>
+#include <linex/init.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/ima.h>
 #include <generated/utsrelease.h>
 
 #include "ima.h"

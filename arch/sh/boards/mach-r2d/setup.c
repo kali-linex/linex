@@ -5,18 +5,18 @@
  * Copyright (C) 2002 - 2006 Atom Create Engineering Co., Ltd.
  * Copyright (C) 2004 - 2007 Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/ata_platform.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
-#include <linux/pm.h>
-#include <linux/fb.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/ata_platform.h>
+#include <linex/sm501.h>
+#include <linex/sm501-regs.h>
+#include <linex/pm.h>
+#include <linex/fb.h>
+#include <linex/spi/spi.h>
+#include <linex/spi/spi_bitbang.h>
 #include <asm/machvec.h>
 #include <mach/r2d.h>
 #include <asm/io.h>
@@ -233,7 +233,7 @@ static struct platform_device *rts7751r2d_devices[] __initdata = {
 
 /*
  * The CF is connected with a 16-bit bus where 8-bit operations are
- * unsupported. The linux ata driver is however using 8-bit operations, so
+ * unsupported. The linex ata driver is however using 8-bit operations, so
  * insert a trapped io filter to convert 8-bit operations into 16-bit.
  */
 static struct trapped_io cf_trapped_io = {

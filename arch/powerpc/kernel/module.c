@@ -4,16 +4,16 @@
     Copyright (C) 2008 Freescale Semiconductor, Inc.
 
 */
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/bug.h>
+#include <linex/elf.h>
+#include <linex/moduleloader.h>
+#include <linex/err.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/bug.h>
 #include <asm/module.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/firmware.h>
-#include <linux/sort.h>
+#include <linex/sort.h>
 #include <asm/setup.h>
 #include <asm/sections.h>
 

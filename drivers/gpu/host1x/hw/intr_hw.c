@@ -6,9 +6,9 @@
  * Copyright (c) 2010-2013, NVIDIA Corporation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 
 #include "../intr.h"
 #include "../dev.h"

@@ -6,18 +6,18 @@
 //
 // Hardware interface for audio DSP on i.MX8ULP
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/firmware/imx/dsp.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/svc/misc.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
+#include <linex/arm-smccc.h>
+#include <linex/clk.h>
+#include <linex/firmware.h>
+#include <linex/firmware/imx/dsp.h>
+#include <linex/firmware/imx/ipc.h>
+#include <linex/firmware/imx/svc/misc.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/of_reserved_mem.h>
 
 #include <sound/sof.h>
 #include <sound/sof/xtensa.h>

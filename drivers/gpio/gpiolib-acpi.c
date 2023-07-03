@@ -3,22 +3,22 @@
  * ACPI helpers for GPIO API
  *
  * Copyright (C) 2012, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@linex.intel.com>
+ *          Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/mutex.h>
+#include <linex/pinctrl/pinctrl.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
 
 #include "gpiolib.h"
 #include "gpiolib-acpi.h"
@@ -53,7 +53,7 @@ struct acpi_gpiolib_dmi_quirk {
  * @handle:	  handle of ACPI method to execute when the IRQ triggers
  * @handler:	  handler function to pass to request_irq() when requesting the IRQ
  * @pin:	  GPIO pin number on the struct gpio_chip
- * @irq:	  Linux IRQ number for the event, for request_irq() / free_irq()
+ * @irq:	  Linex IRQ number for the event, for request_irq() / free_irq()
  * @irqflags:	  flags to pass to request_irq() when requesting the IRQ
  * @irq_is_wake:  If the ACPI flags indicate the IRQ is a wakeup source
  * @irq_requested:True if request_irq() has been done
@@ -101,7 +101,7 @@ struct acpi_gpio_chip {
  * @triggering: triggering type as provided by ACPI
  * @wake_capable: wake capability as provided by ACPI
  * @debounce: debounce timeout as provided by ACPI
- * @quirks: Linux specific quirks as provided by struct acpi_gpio_mapping
+ * @quirks: Linex specific quirks as provided by struct acpi_gpio_mapping
  */
 struct acpi_gpio_info {
 	struct acpi_device *adev;
@@ -136,7 +136,7 @@ static int acpi_gpiochip_find(struct gpio_chip *gc, void *data)
  * @path:	ACPI GPIO controller full path name, (e.g. "\\_SB.GPO1")
  * @pin:	ACPI GPIO pin number (0-based, controller-relative)
  *
- * Return: GPIO descriptor to use with Linux generic GPIO API, or ERR_PTR
+ * Return: GPIO descriptor to use with Linex generic GPIO API, or ERR_PTR
  * error value. Specifically returns %-EPROBE_DEFER if the referenced GPIO
  * controller does not have GPIO chip registered at the moment. This is to
  * support probe deferral.
@@ -875,7 +875,7 @@ static int acpi_gpio_property_lookup(struct fwnode_handle *fwnode,
  * @info: info pointer to fill in (optional)
  *
  * Function goes through ACPI resources for @adev and based on @index looks
- * up a GpioIo/GpioInt resource, translates it to the Linux GPIO descriptor,
+ * up a GpioIo/GpioInt resource, translates it to the Linex GPIO descriptor,
  * and returns it. @index matches GpioIo/GpioInt resources only so if there
  * are total %3 GPIO resources, the index goes from %0 to %2.
  *
@@ -1027,14 +1027,14 @@ struct gpio_desc *acpi_find_gpio(struct fwnode_handle *fwnode,
 }
 
 /**
- * acpi_dev_gpio_irq_wake_get_by() - Find GpioInt and translate it to Linux IRQ number
+ * acpi_dev_gpio_irq_wake_get_by() - Find GpioInt and translate it to Linex IRQ number
  * @adev: pointer to a ACPI device to get IRQ from
  * @name: optional name of GpioInt resource
  * @index: index of GpioInt resource (starting from %0)
  * @wake_capable: Set to true if the IRQ is wake capable
  *
  * If the device has one or more GpioInt resources, this function can be
- * used to translate from the GPIO offset in the resource to the Linux IRQ
+ * used to translate from the GPIO offset in the resource to the Linex IRQ
  * number.
  *
  * The function is idempotent, though each time it runs it will configure GPIO
@@ -1046,7 +1046,7 @@ struct gpio_desc *acpi_find_gpio(struct fwnode_handle *fwnode,
  * The GPIO is considered wake capable if the GpioInt resource specifies
  * SharedAndWake or ExclusiveAndWake.
  *
- * Return: Linux IRQ number (> %0) on success, negative errno on failure.
+ * Return: Linex IRQ number (> %0) on success, negative errno on failure.
  */
 int acpi_dev_gpio_irq_wake_get_by(struct acpi_device *adev, const char *name, int index,
 				  bool *wake_capable)

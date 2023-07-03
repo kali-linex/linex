@@ -5,13 +5,13 @@
 //
 // ONKEY driver for MAXIM 77650/77651 charger/power-supply.
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/max77650.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/mfd/max77650.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #define MAX77650_ONKEY_MODE_MASK	BIT(3)
 #define MAX77650_ONKEY_MODE_PUSH	0x00
@@ -61,7 +61,7 @@ static int max77650_onkey_probe(struct platform_device *pdev)
 	if (!onkey)
 		return -ENOMEM;
 
-	error = device_property_read_u32(dev, "linux,code", &onkey->code);
+	error = device_property_read_u32(dev, "linex,code", &onkey->code);
 	if (error)
 		onkey->code = KEY_POWER;
 

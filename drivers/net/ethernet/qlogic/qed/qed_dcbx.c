@@ -4,14 +4,14 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/dcbnl.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/bitops.h>
+#include <linex/dcbnl.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_dcbx.h"
@@ -20,7 +20,7 @@
 #include "qed_sriov.h"
 #include "qed_rdma.h"
 #ifdef CONFIG_DCB
-#include <linux/qed/qed_eth_if.h>
+#include <linex/qed/qed_eth_if.h>
 #endif
 
 #define QED_DCBX_MAX_MIB_READ_TRY       (100)

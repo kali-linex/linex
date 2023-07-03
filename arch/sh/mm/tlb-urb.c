@@ -9,8 +9,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linex/mm.h>
+#include <linex/io.h>
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>
 

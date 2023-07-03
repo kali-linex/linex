@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linex.intel}.com)
  */
 
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
 #include <net_kern.h>
 #include "pcap_user.h"
 

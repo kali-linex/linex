@@ -27,35 +27,35 @@
  *             "A Kernel Model for Precision Timekeeping" by Dave Mills
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cputime.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
-#include <linux/security.h>
-#include <linux/percpu.h>
-#include <linux/rtc.h>
-#include <linux/jiffies.h>
-#include <linux/posix-timers.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/irq_work.h>
-#include <linux/of_clk.h>
-#include <linux/suspend.h>
-#include <linux/processor.h>
-#include <linux/mc146818rtc.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/clock.h>
+#include <linex/sched/cputime.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/timex.h>
+#include <linex/kernel_stat.h>
+#include <linex/time.h>
+#include <linex/init.h>
+#include <linex/profile.h>
+#include <linex/cpu.h>
+#include <linex/security.h>
+#include <linex/percpu.h>
+#include <linex/rtc.h>
+#include <linex/jiffies.h>
+#include <linex/posix-timers.h>
+#include <linex/irq.h>
+#include <linex/delay.h>
+#include <linex/irq_work.h>
+#include <linex/of_clk.h>
+#include <linex/suspend.h>
+#include <linex/processor.h>
+#include <linex/mc146818rtc.h>
+#include <linex/platform_device.h>
 
 #include <asm/trace.h>
 #include <asm/interrupt.h>
@@ -63,7 +63,7 @@
 #include <asm/nvram.h>
 #include <asm/cache.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/time.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
@@ -74,8 +74,8 @@
 
 /* powerpc clocksource/clockevent code */
 
-#include <linux/clockchips.h>
-#include <linux/timekeeper_internal.h>
+#include <linex/clockchips.h>
+#include <linex/timekeeper_internal.h>
 
 static u64 timebase_read(struct clocksource *);
 static struct clocksource clocksource_timebase = {

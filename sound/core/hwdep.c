@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
+#include <linex/major.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/sched/signal.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/minors.h>

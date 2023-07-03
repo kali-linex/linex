@@ -5,15 +5,15 @@
  *
  * Copyright (C) 1997, 1998, 2001, 03, 05, 06 by Ralf Baechle
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/rtc/ds1286.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/panic_notifier.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/rtc/ds1286.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/panic_notifier.h>
+#include <linex/pm.h>
+#include <linex/timer.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

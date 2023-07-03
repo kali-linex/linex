@@ -7,9 +7,9 @@
  * Copyright (C) 2017 Hans P. Moller <hmoller@uc.cl>
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/usb.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

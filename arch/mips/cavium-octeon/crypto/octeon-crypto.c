@@ -7,9 +7,9 @@
  */
 
 #include <asm/cop2.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/sched/task_stack.h>
+#include <linex/export.h>
+#include <linex/interrupt.h>
+#include <linex/sched/task_stack.h>
 
 #include "octeon-crypto.h"
 

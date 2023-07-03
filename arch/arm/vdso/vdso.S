@@ -7,9 +7,9 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
+#include <linex/const.h>
 #include <asm/page.h>
 
 	.globl vdso_start, vdso_end

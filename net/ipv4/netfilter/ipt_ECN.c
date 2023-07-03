@@ -4,17 +4,17 @@
  * (C) 2002 by Harald Welte <laforge@netfilter.org>
 */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <linex/in.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
 #include <net/ip.h>
-#include <linux/tcp.h>
+#include <linex/tcp.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv4/ipt_ECN.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv4/ipt_ECN.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

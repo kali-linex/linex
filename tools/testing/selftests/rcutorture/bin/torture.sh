@@ -548,7 +548,7 @@ fi
 tdir="`cat $T/successes $T/failures | head -1 | awk '{ print $NF }' | sed -e 's,/[^/]\+/*$,,'`"
 if test -n "$tdir" && test $compress_concurrency -gt 0
 then
-	# KASAN vmlinux files can approach 1GB in size, so compress them.
+	# KASAN vmlinex files can approach 1GB in size, so compress them.
 	echo Looking for K[AC]SAN files to compress: `date` > "$tdir/log-xz" 2>&1
 	find "$tdir" -type d -name '*-k[ac]san' -print > $T/xz-todo-all
 	find "$tdir" -type f -name 're-run' -print | sed -e 's,/re-run,,' |
@@ -560,14 +560,14 @@ then
 	then
 		for i in `cat $T/xz-todo`
 		do
-			find $i -name 'vmlinux*' -print
+			find $i -name 'vmlinex*' -print
 		done | wc -l | awk '{ print $1 }' > $T/xz-todo-count
 		n2compress="`cat $T/xz-todo-count`"
 		echo Size before compressing $n2compress files: `du -sh $tdir | awk '{ print $1 }'` `date` 2>&1 | tee -a "$tdir/log-xz" | tee -a $T/log
 		for i in `cat $T/xz-todo`
 		do
-			echo Compressing vmlinux files in ${i}: `date` >> "$tdir/log-xz" 2>&1
-			for j in $i/*/vmlinux
+			echo Compressing vmlinex files in ${i}: `date` >> "$tdir/log-xz" 2>&1
+			for j in $i/*/vmlinex
 			do
 				xz "$j" >> "$tdir/log-xz" 2>&1 &
 				ncompresses=$((ncompresses+1))
@@ -588,14 +588,14 @@ then
 		if test -s $T/xz-todo-copy
 		then
 			# The trick here is that we need corresponding
-			# vmlinux files from corresponding scenarios.
-			echo Linking vmlinux.xz files to re-use scenarios `date` | tee -a "$tdir/log-xz" | tee -a $T/log
+			# vmlinex files from corresponding scenarios.
+			echo Linking vmlinex.xz files to re-use scenarios `date` | tee -a "$tdir/log-xz" | tee -a $T/log
 			dirstash="`pwd`"
 			for i in `cat $T/xz-todo-copy`
 			do
 				cd $i
-				find . -name vmlinux -print > $T/xz-todo-copy-vmlinux
-				for v in `cat $T/xz-todo-copy-vmlinux`
+				find . -name vmlinex -print > $T/xz-todo-copy-vmlinex
+				for v in `cat $T/xz-todo-copy-vmlinex`
 				do
 					rm -f "$v"
 					cp -l `cat $i/re-run`/"$i/$v".xz "`dirname "$v"`"

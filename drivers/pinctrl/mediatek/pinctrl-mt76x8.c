@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
 #include "pinctrl-mtmips.h"
 
 #define MT76X8_GPIO_MODE_MASK		0x3

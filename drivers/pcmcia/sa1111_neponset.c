@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/drivers/pcmcia/sa1100_neponset.c
+ * linex/drivers/pcmcia/sa1100_neponset.c
  *
  * Neponset PCMCIA specific routines
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/init.h>
 
 #include <asm/mach-types.h>
 

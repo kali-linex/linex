@@ -4,12 +4,12 @@
  *
  *	Copyright (c) 2008 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/mutex.h>
+#include <linex/skbuff.h>
+#include <linex/etherdevice.h>
+#include <linex/llc.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 #include <net/stp.h>

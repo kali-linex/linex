@@ -17,11 +17,11 @@
 #include "dm-verity-fec.h"
 #include "dm-verity-verify-sig.h"
 #include "dm-audit.h"
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/jump_label.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/scatterlist.h>
+#include <linex/string.h>
+#include <linex/jump_label.h>
 
 #define DM_MSG_PREFIX			"verity"
 

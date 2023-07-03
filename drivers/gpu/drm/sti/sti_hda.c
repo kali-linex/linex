@@ -4,13 +4,13 @@
  * Author: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/seq_file.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

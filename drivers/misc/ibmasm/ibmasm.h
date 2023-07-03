@@ -8,19 +8,19 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/time64.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/kref.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/time64.h>
 
 /* Driver identification */
 #define DRIVER_NAME	"ibmasm"

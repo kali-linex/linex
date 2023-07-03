@@ -24,9 +24,9 @@
 #ifndef __DRM_PANEL_H__
 #define __DRM_PANEL_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/list.h>
 
 struct backlight_device;
 struct dentry;

@@ -13,7 +13,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@linex.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -24,17 +24,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For EXPORT_SYMBOL/module stuff/... */
-#include <linux/types.h>	/* For standard types */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/reboot.h>	/* For restart handler */
-#include <linux/watchdog.h>	/* For watchdog specific items */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/idr.h>		/* For ida_* macros */
-#include <linux/err.h>		/* For IS_ERR macros */
-#include <linux/of.h>		/* For of_get_timeout_sec */
-#include <linux/suspend.h>
+#include <linex/module.h>	/* For EXPORT_SYMBOL/module stuff/... */
+#include <linex/types.h>	/* For standard types */
+#include <linex/errno.h>	/* For the -ENODEV/... values */
+#include <linex/kernel.h>	/* For printk/panic/... */
+#include <linex/reboot.h>	/* For restart handler */
+#include <linex/watchdog.h>	/* For watchdog specific items */
+#include <linex/init.h>		/* For __init/__exit/... */
+#include <linex/idr.h>		/* For ida_* macros */
+#include <linex/err.h>		/* For IS_ERR macros */
+#include <linex/of.h>		/* For of_get_timeout_sec */
+#include <linex/suspend.h>
 
 #include "watchdog_core.h"	/* For watchdog_dev_register/... */
 

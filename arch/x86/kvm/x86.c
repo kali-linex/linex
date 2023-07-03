@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * derived from drivers/kvm/kvm_main.c
  *
@@ -17,7 +17,7 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <linex/kvm_host.h>
 #include "irq.h"
 #include "ioapic.h"
 #include "mmu.h"
@@ -33,34 +33,34 @@
 #include "xen.h"
 #include "smm.h"
 
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/kvm.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/mman.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/cpufreq.h>
-#include <linux/user-return-notifier.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
-#include <linux/hash.h>
-#include <linux/pci.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/isolation.h>
-#include <linux/mem_encrypt.h>
-#include <linux/entry-kvm.h>
-#include <linux/suspend.h>
-#include <linux/smp.h>
+#include <linex/clocksource.h>
+#include <linex/interrupt.h>
+#include <linex/kvm.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
+#include <linex/moduleparam.h>
+#include <linex/mman.h>
+#include <linex/highmem.h>
+#include <linex/iommu.h>
+#include <linex/cpufreq.h>
+#include <linex/user-return-notifier.h>
+#include <linex/srcu.h>
+#include <linex/slab.h>
+#include <linex/perf_event.h>
+#include <linex/uaccess.h>
+#include <linex/hash.h>
+#include <linex/pci.h>
+#include <linex/timekeeper_internal.h>
+#include <linex/pvclock_gtod.h>
+#include <linex/kvm_irqfd.h>
+#include <linex/irqbypass.h>
+#include <linex/sched/stat.h>
+#include <linex/sched/isolation.h>
+#include <linex/mem_encrypt.h>
+#include <linex/entry-kvm.h>
+#include <linex/suspend.h>
+#include <linex/smp.h>
 
 #include <trace/events/ipi.h>
 #include <trace/events/kvm.h>
@@ -70,7 +70,7 @@
 #include <asm/desc.h>
 #include <asm/mce.h>
 #include <asm/pkru.h>
-#include <linux/kernel_stat.h>
+#include <linex/kernel_stat.h>
 #include <asm/fpu/api.h>
 #include <asm/fpu/xcr.h>
 #include <asm/fpu/xstate.h>
@@ -3348,7 +3348,7 @@ static int set_msr_mce(struct kvm_vcpu *vcpu, struct msr_data *msr_info)
 
 		/*
 		 * Only 0 or all 1s can be written to IA32_MCi_CTL, all other
-		 * values are architecturally undefined.  But, some Linux
+		 * values are architecturally undefined.  But, some Linex
 		 * kernels clear bit 10 in bank 4 to workaround a BIOS/GART TLB
 		 * issue on AMD K8s, allow bit 10 to be clear when setting all
 		 * other bits in order to avoid an uncaught #GP in the guest.

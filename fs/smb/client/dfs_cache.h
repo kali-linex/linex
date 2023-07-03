@@ -8,9 +8,9 @@
 #ifndef _CIFS_DFS_CACHE_H
 #define _CIFS_DFS_CACHE_H
 
-#include <linux/nls.h>
-#include <linux/list.h>
-#include <linux/uuid.h>
+#include <linex/nls.h>
+#include <linex/list.h>
+#include <linex/uuid.h>
 #include "cifsglob.h"
 
 extern struct workqueue_struct *dfscache_wq;

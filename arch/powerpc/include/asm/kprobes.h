@@ -16,10 +16,10 @@
  * 2004-Nov	Modified for PPC64 by Ananth N Mavinakayanahalli
  *		<ananth@in.ibm.com>
  */
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/percpu.h>
+#include <linex/module.h>
 #include <asm/probes.h>
 #include <asm/code-patching.h>
 

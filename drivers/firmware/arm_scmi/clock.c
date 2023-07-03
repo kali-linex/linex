@@ -5,9 +5,9 @@
  * Copyright (C) 2018-2022 ARM Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/limits.h>
-#include <linux/sort.h>
+#include <linex/module.h>
+#include <linex/limits.h>
+#include <linex/sort.h>
 
 #include "protocols.h"
 #include "notify.h"

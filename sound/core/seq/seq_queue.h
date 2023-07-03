@@ -10,9 +10,9 @@
 #include "seq_prioq.h"
 #include "seq_timer.h"
 #include "seq_lock.h"
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/bitops.h>
 
 #define SEQ_QUEUE_NO_OWNER (-1)
 

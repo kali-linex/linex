@@ -6,10 +6,10 @@
 
 #ifndef CAIF_DEVICE_H_
 #define CAIF_DEVICE_H_
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/caif/caif_socket.h>
+#include <linex/kernel.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/caif/caif_socket.h>
 #include <net/caif/caif_device.h>
 
 /**

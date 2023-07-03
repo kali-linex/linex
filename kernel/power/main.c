@@ -6,17 +6,17 @@
  * Copyright (c) 2003 Open Source Development Lab
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/pm-trace.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/pm_runtime.h>
+#include <linex/acpi.h>
+#include <linex/export.h>
+#include <linex/kobject.h>
+#include <linex/string.h>
+#include <linex/pm-trace.h>
+#include <linex/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/suspend.h>
+#include <linex/syscalls.h>
+#include <linex/pm_runtime.h>
 
 #include "power.h"
 

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2018, The Linex Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-resv.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/sort.h>
-#include <linux/of_platform.h>
-#include <linux/rpmsg.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-mapping.h>
+#include <linex/dma-resv.h>
+#include <linex/idr.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of.h>
+#include <linex/sort.h>
+#include <linex/of_platform.h>
+#include <linex/rpmsg.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/firmware/qcom/qcom_scm.h>
 #include <uapi/misc/fastrpc.h>
-#include <linux/of_reserved_mem.h>
+#include <linex/of_reserved_mem.h>
 
 #define ADSP_DOMAIN_ID (0)
 #define MDSP_DOMAIN_ID (1)

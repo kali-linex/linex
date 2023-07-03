@@ -5,14 +5,14 @@
 #if !defined(_TRACE_SUNRPC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SUNRPC_H
 
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/svc.h>
+#include <linex/sunrpc/xprtsock.h>
+#include <linex/sunrpc/svc_xprt.h>
 #include <net/tcp_states.h>
-#include <linux/net.h>
-#include <linux/tracepoint.h>
+#include <linex/net.h>
+#include <linex/tracepoint.h>
 
 #include <trace/misc/sunrpc.h>
 
@@ -1668,7 +1668,7 @@ DECLARE_EVENT_CLASS(svc_xdr_buf_class,
 DEFINE_SVCXDRBUF_EVENT(sendto);
 
 /*
- * from include/linux/sunrpc/svc.h
+ * from include/linex/sunrpc/svc.h
  */
 #define SVC_RQST_FLAG_LIST						\
 	svc_rqst_flag(SECURE)						\

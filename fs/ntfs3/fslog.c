@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/blkdev.h>
+#include <linex/fs.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 
 #include "debug.h"
 #include "ntfs.h"

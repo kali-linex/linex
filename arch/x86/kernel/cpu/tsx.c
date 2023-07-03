@@ -5,10 +5,10 @@
  * Copyright (C) 2019-2021 Intel Corporation
  *
  * Author:
- *	Pawan Gupta <pawan.kumar.gupta@linux.intel.com>
+ *	Pawan Gupta <pawan.kumar.gupta@linex.intel.com>
  */
 
-#include <linux/cpufeature.h>
+#include <linex/cpufeature.h>
 
 #include <asm/cmdline.h>
 #include <asm/cpu.h>

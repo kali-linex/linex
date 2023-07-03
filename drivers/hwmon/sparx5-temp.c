@@ -4,14 +4,14 @@
  * Copyright (C) 2020 Lars Povlsen <lars.povlsen@microchip.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #define TEMP_CTRL		0
 #define TEMP_CFG		4

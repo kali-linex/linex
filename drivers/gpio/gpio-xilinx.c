@@ -5,20 +5,20 @@
  * Copyright 2008 - 2013 Xilinx, Inc.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/errno.h>
+#include <linex/gpio/driver.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 
 /* Register Offset Definitions */
 #define XGPIO_DATA_OFFSET   (0x0)	/* Data register  */

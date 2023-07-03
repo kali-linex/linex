@@ -2,7 +2,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on Linex
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on Linex
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   Permission to use, copy, modify and distribute this software and its
@@ -53,29 +53,29 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/pci.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/bitmap.h>
+#include <linex/slab.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/sonet.h>
+#include <linex/atmdev.h>
+#include <linex/atm.h>
+#include <linex/sonet.h>
 
 #undef USE_SCATTERGATHER
 #undef USE_CHECKSUM_HW			/* still confused about this */
@@ -83,7 +83,7 @@
 
 #include "he.h"
 #include "suni.h"
-#include <linux/atm_he.h>
+#include <linex/atm_he.h>
 
 #define hprintk(fmt,args...)	printk(KERN_ERR DEV_LABEL "%d: " fmt, he_dev->number , ##args)
 
@@ -1505,7 +1505,7 @@ static int he_start(struct atm_dev *dev)
 	he_dev->total_bw = 0;
 
 
-	/* atm linux initialization */
+	/* atm linex initialization */
 
 	he_dev->atm_dev->ci_range.vpi_bits = he_dev->vpibits;
 	he_dev->atm_dev->ci_range.vci_bits = he_dev->vcibits;

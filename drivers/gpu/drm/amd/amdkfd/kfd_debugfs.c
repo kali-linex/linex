@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
 
 #include "kfd_priv.h"
 

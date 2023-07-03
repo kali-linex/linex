@@ -8,18 +8,18 @@
 #ifndef _EXT4_MBALLOC_H
 #define _EXT4_MBALLOC_H
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
-#include <linux/module.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/quotaops.h>
+#include <linex/buffer_head.h>
+#include <linex/module.h>
+#include <linex/swap.h>
+#include <linex/proc_fs.h>
+#include <linex/pagemap.h>
+#include <linex/seq_file.h>
+#include <linex/blkdev.h>
+#include <linex/mutex.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 

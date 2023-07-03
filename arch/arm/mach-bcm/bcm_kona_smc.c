@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2013 Broadcom Corporation
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
 
 #include <asm/cacheflush.h>
-#include <linux/of_address.h>
+#include <linex/of_address.h>
 
 #include "bcm_kona_smc.h"
 

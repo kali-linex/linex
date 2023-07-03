@@ -2,31 +2,31 @@
 /*
  * Slab allocator functions that are independent of the allocator strategy
  *
- * (C) 2012 Christoph Lameter <cl@linux.com>
+ * (C) 2012 Christoph Lameter <cl@linex.com>
  */
-#include <linux/slab.h>
+#include <linex/slab.h>
 
-#include <linux/mm.h>
-#include <linux/poison.h>
-#include <linux/interrupt.h>
-#include <linux/memory.h>
-#include <linux/cache.h>
-#include <linux/compiler.h>
-#include <linux/kfence.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/dma-mapping.h>
-#include <linux/swiotlb.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/kasan.h>
+#include <linex/mm.h>
+#include <linex/poison.h>
+#include <linex/interrupt.h>
+#include <linex/memory.h>
+#include <linex/cache.h>
+#include <linex/compiler.h>
+#include <linex/kfence.h>
+#include <linex/module.h>
+#include <linex/cpu.h>
+#include <linex/uaccess.h>
+#include <linex/seq_file.h>
+#include <linex/dma-mapping.h>
+#include <linex/swiotlb.h>
+#include <linex/proc_fs.h>
+#include <linex/debugfs.h>
+#include <linex/kasan.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>
-#include <linux/memcontrol.h>
-#include <linux/stackdepot.h>
+#include <linex/memcontrol.h>
+#include <linex/stackdepot.h>
 
 #include "internal.h"
 #include "slab.h"

@@ -5,9 +5,9 @@
  * Copyright (C) 2015 Softing Industrial Automation GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/phy.h>
 
 #define UPD60620_PHY_ID    0xb8242824
 

@@ -1,5 +1,5 @@
 /*
- * An implementation of key value pair (KVP) functionality for Linux.
+ * An implementation of key value pair (KVP) functionality for Linex.
  *
  *
  * Copyright (C) 2010, Novell, Inc.
@@ -31,7 +31,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <arpa/inet.h>
-#include <linux/hyperv.h>
+#include <linex/hyperv.h>
 #include <ifaddrs.h>
 #include <netdb.h>
 #include <syslog.h>

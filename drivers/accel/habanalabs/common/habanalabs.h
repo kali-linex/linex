@@ -13,21 +13,21 @@
 #include "../include/hw_ip/mmu/mmu_general.h"
 #include <uapi/drm/habanalabs_accel.h>
 
-#include <linux/cdev.h>
-#include <linux/iopoll.h>
-#include <linux/irqreturn.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/hashtable.h>
-#include <linux/debugfs.h>
-#include <linux/rwsem.h>
-#include <linux/eventfd.h>
-#include <linux/bitfield.h>
-#include <linux/genalloc.h>
-#include <linux/sched/signal.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/coresight.h>
-#include <linux/dma-buf.h>
+#include <linex/cdev.h>
+#include <linex/iopoll.h>
+#include <linex/irqreturn.h>
+#include <linex/dma-direction.h>
+#include <linex/scatterlist.h>
+#include <linex/hashtable.h>
+#include <linex/debugfs.h>
+#include <linex/rwsem.h>
+#include <linex/eventfd.h>
+#include <linex/bitfield.h>
+#include <linex/genalloc.h>
+#include <linex/sched/signal.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/coresight.h>
+#include <linex/dma-buf.h>
 
 #include "security.h"
 
@@ -309,18 +309,18 @@ enum hl_pci_match_mode {
  * enum hl_fw_component - F/W components to read version through registers.
  * @FW_COMP_BOOT_FIT: boot fit.
  * @FW_COMP_PREBOOT: preboot.
- * @FW_COMP_LINUX: linux.
+ * @FW_COMP_LINEX: linex.
  */
 enum hl_fw_component {
 	FW_COMP_BOOT_FIT,
 	FW_COMP_PREBOOT,
-	FW_COMP_LINUX,
+	FW_COMP_LINEX,
 };
 
 /**
  * enum hl_fw_types - F/W types present in the system
  * @FW_TYPE_NONE: no FW component indication
- * @FW_TYPE_LINUX: Linux image for device CPU
+ * @FW_TYPE_LINEX: Linex image for device CPU
  * @FW_TYPE_BOOT_CPU: Boot image for device CPU
  * @FW_TYPE_PREBOOT_CPU: Indicates pre-loaded CPUs are present in the system
  *                       (preboot, ppboot etc...)
@@ -328,11 +328,11 @@ enum hl_fw_component {
  */
 enum hl_fw_types {
 	FW_TYPE_NONE = 0x0,
-	FW_TYPE_LINUX = 0x1,
+	FW_TYPE_LINEX = 0x1,
 	FW_TYPE_BOOT_CPU = 0x2,
 	FW_TYPE_PREBOOT_CPU = 0x4,
 	FW_TYPE_ALL_TYPES =
-		(FW_TYPE_LINUX | FW_TYPE_BOOT_CPU | FW_TYPE_PREBOOT_CPU)
+		(FW_TYPE_LINEX | FW_TYPE_BOOT_CPU | FW_TYPE_PREBOOT_CPU)
 };
 
 /**
@@ -1234,7 +1234,7 @@ struct hl_cs_parser;
 
 /**
  * enum hl_pm_mng_profile - power management profile.
- * @PM_AUTO: internal clock is set by the Linux driver.
+ * @PM_AUTO: internal clock is set by the Linex driver.
  * @PM_MANUAL: internal clock is set by the user.
  * @PM_LAST: last power management type.
  */
@@ -1398,7 +1398,7 @@ struct fw_image_props {
  * @static_loader: specific structure for static load
  * @pre_fw_load_props: parameter for pre FW load
  * @boot_fit_img: boot fit image properties
- * @linux_img: linux image properties
+ * @linex_img: linex image properties
  * @cpu_timeout: CPU response timeout in usec
  * @boot_fit_timeout: Boot fit load timeout in usec
  * @skip_bmc: should BMC be skipped
@@ -1414,7 +1414,7 @@ struct fw_load_mgr {
 	};
 	struct pre_fw_load_props pre_fw_load;
 	struct fw_image_props boot_fit_img;
-	struct fw_image_props linux_img;
+	struct fw_image_props linex_img;
 	u32 cpu_timeout;
 	u32 boot_fit_timeout;
 	u8 skip_bmc;
@@ -3280,7 +3280,7 @@ struct hl_reset_info {
  * @device_cpu_is_halted: Flag to indicate whether the device CPU was already
  *                        halted. We can't halt it again because the COMMS
  *                        protocol will throw an error. Relevant only for
- *                        cases where Linux was not loaded to device CPU
+ *                        cases where Linex was not loaded to device CPU
  * @supports_wait_for_multi_cs: true if wait for multi CS is supported
  * @is_compute_ctx_active: Whether there is an active compute context executing.
  * @compute_ctx_in_release: true if the current compute context is being released.
@@ -3843,8 +3843,8 @@ int get_used_pll_index(struct hl_device *hdev, u32 input_pll_index,
 int hl_fw_cpucp_pll_info_get(struct hl_device *hdev, u32 pll_index,
 		u16 *pll_freq_arr);
 int hl_fw_cpucp_power_get(struct hl_device *hdev, u64 *power);
-void hl_fw_ask_hard_reset_without_linux(struct hl_device *hdev);
-void hl_fw_ask_halt_machine_without_linux(struct hl_device *hdev);
+void hl_fw_ask_hard_reset_without_linex(struct hl_device *hdev);
+void hl_fw_ask_halt_machine_without_linex(struct hl_device *hdev);
 int hl_fw_init_cpu(struct hl_device *hdev);
 int hl_fw_wait_preboot_ready(struct hl_device *hdev);
 int hl_fw_read_preboot_status(struct hl_device *hdev);

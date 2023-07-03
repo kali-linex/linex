@@ -15,19 +15,19 @@
  *
  * 16 MiB of framebuffer memory is assumed to be available.
  */
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/suspend.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/cs5535.h>
+#include <linex/aperture.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/delay.h>
+#include <linex/fb.h>
+#include <linex/console.h>
+#include <linex/suspend.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/cs5535.h>
 
 #include <asm/olpc.h>
 

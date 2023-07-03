@@ -13,11 +13,11 @@
 
 #define pr_fmt(fmt) "kprobes: " fmt
 
-#include <linux/kprobes.h>
-#include <linux/preempt.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <linex/kprobes.h>
+#include <linex/preempt.h>
+#include <linex/uaccess.h>
+#include <linex/kdebug.h>
+#include <linex/slab.h>
 
 #include <asm/ptrace.h>
 #include <asm/branch.h>

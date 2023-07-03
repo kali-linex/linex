@@ -8,38 +8,38 @@
  * Authors:
  * Linus Walleij <linus.walleij@linaro.org>
  * Tobias Waldvogel <tobias.waldvogel@gmail.com> (OpenWRT)
- * Michał Mirosław <mirq-linux@rere.qmqm.pl>
+ * Michał Mirosław <mirq-linex@rere.qmqm.pl>
  * Paulius Zaleckas <paulius.zaleckas@gmail.com>
  * Giuseppe De Robertis <Giuseppe.DeRobertis@ba.infn.it>
  * Gary Chen & Ch Hsu Storlink Semiconductor
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/phy.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/tcp.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/cache.h>
+#include <linex/interrupt.h>
+#include <linex/reset.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/etherdevice.h>
+#include <linex/if_vlan.h>
+#include <linex/skbuff.h>
+#include <linex/phy.h>
+#include <linex/crc32.h>
+#include <linex/ethtool.h>
+#include <linex/tcp.h>
+#include <linex/u64_stats_sync.h>
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
 
 #include "gemini.h"
 

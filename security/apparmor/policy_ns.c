@@ -11,10 +11,10 @@
  * to be loaded for tasks within the namespace.
  */
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include "include/apparmor.h"
 #include "include/cred.h"

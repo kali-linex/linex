@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/kernel/setup.c
+ *  linex/arch/m68k/kernel/setup.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
@@ -9,24 +9,24 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/initrd.h>
-#include <linux/random.h>
+#include <linex/kernel.h>
+#include <linex/cpu.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fs.h>
+#include <linex/console.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/module.h>
+#include <linex/nvram.h>
+#include <linex/initrd.h>
+#include <linex/random.h>
 
 #include <asm/bootinfo.h>
 #include <asm/byteorder.h>
@@ -510,7 +510,7 @@ void __init arch_cpu_finalize_init(void)
 #if defined(CONFIG_FPU) && !defined(CONFIG_M68KFPU_EMU)
 	if (m68k_fputype == 0) {
 		pr_emerg("*** YOU DO NOT HAVE A FLOATING POINT UNIT, "
-			"WHICH IS REQUIRED BY LINUX/M68K ***\n");
+			"WHICH IS REQUIRED BY LINEX/M68K ***\n");
 		pr_emerg("Upgrade your hardware or join the FPU "
 			"emulation project\n");
 		panic("no FPU");

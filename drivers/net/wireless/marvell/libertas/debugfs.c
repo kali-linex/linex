@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/dcache.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/dcache.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/hardirq.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 
 #include "decl.h"
 #include "cmd.h"

@@ -12,9 +12,9 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/preempt.h>
+#include <linex/init.h>
 
 #include <asm/delay.h>
 #include <asm/special_insns.h>    /* for mfctl() */

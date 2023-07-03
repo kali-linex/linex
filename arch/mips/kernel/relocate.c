@@ -14,15 +14,15 @@
 #include <asm/sections.h>
 #include <asm/setup.h>
 #include <asm/timex.h>
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/panic_notifier.h>
-#include <linux/sched/task.h>
-#include <linux/start_kernel.h>
-#include <linux/string.h>
-#include <linux/printk.h>
+#include <linex/elf.h>
+#include <linex/kernel.h>
+#include <linex/libfdt.h>
+#include <linex/of_fdt.h>
+#include <linex/panic_notifier.h>
+#include <linex/sched/task.h>
+#include <linex/start_kernel.h>
+#include <linex/string.h>
+#include <linex/printk.h>
 
 #define RELOCATED(x) ((void *)((long)x + offset))
 
@@ -172,7 +172,7 @@ static int __init do_relocations(void *kbase_old, void *kbase_new, long offset)
 }
 
 /*
- * The exception table is filled in by the relocs tool after vmlinux is linked.
+ * The exception table is filled in by the relocs tool after vmlinex is linked.
  * It must be relocated separately since there will not be any relocation
  * information for it filled in by the linker.
  */
@@ -218,7 +218,7 @@ static inline __init unsigned long get_random_boot(void)
 	unsigned long hash = 0;
 
 	/* Attempt to create a simple but unpredictable starting entropy. */
-	hash = rotate_xor(hash, linux_banner, strlen(linux_banner));
+	hash = rotate_xor(hash, linex_banner, strlen(linex_banner));
 
 	/* Add in any runtime entropy we can get */
 	hash = rotate_xor(hash, &entropy, sizeof(entropy));

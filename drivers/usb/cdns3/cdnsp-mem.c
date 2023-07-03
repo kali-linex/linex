@@ -6,14 +6,14 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on Linex XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmapool.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 
 #include "cdnsp-gadget.h"
 #include "cdnsp-trace.h"

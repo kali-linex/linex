@@ -9,19 +9,19 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/thermal.h>
-#include <linux/fixp-arith.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/notifier.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/power_supply.h>
+#include <linex/property.h>
+#include <linex/thermal.h>
+#include <linex/fixp-arith.h>
 #include "power_supply.h"
 #include "samsung-sdi-battery.h"
 

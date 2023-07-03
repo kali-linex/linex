@@ -2,14 +2,14 @@
 #include <stddef.h>
 #include <string.h>
 #include <netinet/in.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/tcp.h>
+#include <linex/bpf.h>
+#include <linex/if_ether.h>
+#include <linex/if_packet.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/tcp.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 #include "bpf_tcp_helpers.h"
@@ -19,7 +19,7 @@ struct tcpbpf_globals global = {};
 
 /**
  * SOL_TCP is defined in <netinet/tcp.h> while
- * TCP_SAVED_SYN is defined in already included <linux/tcp.h>
+ * TCP_SAVED_SYN is defined in already included <linex/tcp.h>
  */
 #ifndef SOL_TCP
 #define SOL_TCP 6

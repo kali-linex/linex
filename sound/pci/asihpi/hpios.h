@@ -5,28 +5,28 @@
     Copyright (C) 1997-2011  AudioScience Inc. <support@audioscience.com>
 
 
-HPI Operating System Specific macros for Linux Kernel driver
+HPI Operating System Specific macros for Linex Kernel driver
 
 (C) Copyright AudioScience Inc. 1997-2003
 ******************************************************************************/
 #ifndef _HPIOS_H_
 #define _HPIOS_H_
 
-#undef HPI_OS_LINUX_KERNEL
-#define HPI_OS_LINUX_KERNEL
+#undef HPI_OS_LINEX_KERNEL
+#define HPI_OS_LINEX_KERNEL
 
 #define HPI_OS_DEFINED
 #define HPI_BUILD_KERNEL_MODE
 
-#include <linux/io.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <linex/io.h>
+#include <linex/ioctl.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/mutex.h>
 
 #define HPI_NO_OS_FILE_OPS
 
@@ -61,7 +61,7 @@ static inline u16 hpios_locked_mem_valid(struct consistent_dma_area
 	return locked_mem_handle->size != 0;
 }
 
-struct hpi_ioctl_linux {
+struct hpi_ioctl_linex {
 	void __user *phm;
 	void __user *phr;
 };
@@ -69,7 +69,7 @@ struct hpi_ioctl_linux {
 /* Conflict?: H is already used by a number of drivers hid, bluetooth hci,
    and some sound drivers sb16, hdsp, emu10k. AFAIK 0xFC is unused command
 */
-#define HPI_IOCTL_LINUX _IOWR('H', 0xFC, struct hpi_ioctl_linux)
+#define HPI_IOCTL_LINEX _IOWR('H', 0xFC, struct hpi_ioctl_linex)
 
 #define HPI_DEBUG_FLAG_ERROR   KERN_ERR
 #define HPI_DEBUG_FLAG_WARNING KERN_WARNING
@@ -78,7 +78,7 @@ struct hpi_ioctl_linux {
 #define HPI_DEBUG_FLAG_DEBUG   KERN_DEBUG
 #define HPI_DEBUG_FLAG_VERBOSE KERN_DEBUG	/* kernel has no verbose */
 
-#include <linux/spinlock.h>
+#include <linex/spinlock.h>
 
 #define HPI_LOCKING
 

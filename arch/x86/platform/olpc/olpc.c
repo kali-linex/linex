@@ -6,17 +6,17 @@
  * Copyright © 2007-2008  Andres Salomon <dilinger@debian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/mutex.h>
-#include <linux/olpc-ec.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/string.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/syscore_ops.h>
+#include <linex/mutex.h>
+#include <linex/olpc-ec.h>
 
 #include <asm/geode.h>
 #include <asm/setup.h>

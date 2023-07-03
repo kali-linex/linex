@@ -8,12 +8,12 @@
  *
  * This code is based on the uncore PMUs like arm-cci and arm-ccn.
  */
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/bug.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
 
 #include <asm/cputype.h>
 #include <asm/local64.h>

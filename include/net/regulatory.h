@@ -20,9 +20,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rcupdate.h>
+#include <linex/ieee80211.h>
+#include <linex/nl80211.h>
+#include <linex/rcupdate.h>
 
 /**
  * enum environment_cap - Environment parsed from country IE

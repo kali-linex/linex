@@ -5,12 +5,12 @@
  * Copyright (c) 2012-2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 #include "bus.h"
 #include "ishtp-dev.h"
 #include "client.h"

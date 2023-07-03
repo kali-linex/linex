@@ -7,8 +7,8 @@
 
 #define pr_fmt(fmt) "v4l2-ctrls: " fmt
 
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

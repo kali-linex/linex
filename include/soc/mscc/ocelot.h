@@ -5,10 +5,10 @@
 #ifndef _SOC_MSCC_OCELOT_H
 #define _SOC_MSCC_OCELOT_H
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/if_vlan.h>
-#include <linux/regmap.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/net_tstamp.h>
+#include <linex/if_vlan.h>
+#include <linex/regmap.h>
 #include <net/dsa.h>
 
 struct tc_mqprio_qopt_offload;
@@ -49,7 +49,7 @@ struct tc_mqprio_qopt_offload;
  *   is indexed with the ingress port (plus 80). These PGIDs answer the
  *   question "is port i allowed to forward traffic to port j?" If yes, then
  *   BIT(j) of PGID 80+i will be found set. The third PGID lookup can be used
- *   to enforce the L2 forwarding matrix imposed by e.g. a Linux bridge.
+ *   to enforce the L2 forwarding matrix imposed by e.g. a Linex bridge.
  */
 
 /* Reserve some destination PGIDs at the end of the range:

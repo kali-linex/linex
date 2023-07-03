@@ -5,28 +5,28 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/atomic.h>
+#include <linex/completion.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/kref.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/mutex.h>
+#include <linex/rculist.h>
+#include <linex/rbtree.h>
+#include <linex/rwsem.h>
+#include <linex/serdev.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/srcu.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/serial_hub.h>
 
 #include "controller.h"
 #include "ssh_msgb.h"
@@ -99,7 +99,7 @@ static u16 ssh_rqid_next(struct ssh_rqid_counter *c)
 
 /* -- Event notifier/callbacks. --------------------------------------------- */
 /*
- * The notifier system is based on linux/notifier.h, specifically the SRCU
+ * The notifier system is based on linex/notifier.h, specifically the SRCU
  * implementation. The difference to that is, that some bits of the notifier
  * call return value can be tracked across multiple calls. This is done so
  * that handling of events can be tracked and a warning can be issued in case

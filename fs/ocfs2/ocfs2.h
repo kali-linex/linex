@@ -10,17 +10,17 @@
 #ifndef OCFS2_H
 #define OCFS2_H
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/rbtree.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/lockdep.h>
-#include <linux/jbd2.h>
+#include <linex/spinlock.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/list.h>
+#include <linex/llist.h>
+#include <linex/rbtree.h>
+#include <linex/workqueue.h>
+#include <linex/kref.h>
+#include <linex/mutex.h>
+#include <linex/lockdep.h>
+#include <linex/jbd2.h>
 
 /* For union ocfs2_dlm_lksb */
 #include "stackglue.h"

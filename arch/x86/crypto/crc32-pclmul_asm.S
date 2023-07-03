@@ -15,7 +15,7 @@
  *	      Alexander Boyko <Alexander_Boyko@xyratex.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 
 .section .rodata

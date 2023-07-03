@@ -15,9 +15,9 @@
 #include "smt.h"
 #include "tsc.h"
 #include <api/fs/fs.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/zalloc.h>
 #include <ctype.h>
 #include <math.h>
 #include "pmu.h"

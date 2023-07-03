@@ -3,12 +3,12 @@
  * VGIC MMIO handling functions
  */
 
-#include <linux/bitops.h>
-#include <linux/bsearch.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <linex/bitops.h>
+#include <linex/bsearch.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kvm.h>
+#include <linex/kvm_host.h>
 #include <kvm/iodev.h>
 #include <kvm/arm_arch_timer.h>
 #include <kvm/arm_vgic.h>

@@ -3,9 +3,9 @@
  * Copyright (C) 2020 Invensense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <linex/kernel.h>
+#include <linex/regmap.h>
+#include <linex/math64.h>
 
 #include "inv_icm42600.h"
 #include "inv_icm42600_timestamp.h"

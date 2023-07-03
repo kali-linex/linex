@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/vfat/namei.c
+ *  linex/fs/vfat/namei.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
@@ -16,12 +16,12 @@
  *				OGAWA Hirofumi <hirofumi@mail.parknet.co.jp>
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/kernel.h>
-#include <linux/iversion.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/slab.h>
+#include <linex/namei.h>
+#include <linex/kernel.h>
+#include <linex/iversion.h>
 #include "fat.h"
 
 static inline unsigned long vfat_d_version(struct dentry *dentry)

@@ -3,18 +3,18 @@
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  *  Copyright (c) 2010, Code Aurora Forum. All rights reserved.
- *  Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2014 The Linex Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/firmware/qcom/qcom_scm.h>
 
 #include <asm/smp_plat.h>
 

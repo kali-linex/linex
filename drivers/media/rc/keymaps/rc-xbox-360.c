@@ -3,7 +3,7 @@
 // Copyright (c) 2021 Bastien Nocera <hadess@hadess.net>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linex/module.h>
 
 /*
  * Manual for remote available at:

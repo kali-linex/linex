@@ -13,13 +13,13 @@
 /*
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <linex/device.h>
+#include <linex/hid.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/sched.h>
+#include <linex/usb.h>
+#include <linex/wait.h>
 
 #include "usbhid/usbhid.h"
 #include "hid-ids.h"

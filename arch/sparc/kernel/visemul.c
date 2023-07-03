@@ -3,15 +3,15 @@
  *
  * Copyright (C) 2006 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/thread_info.h>
-#include <linux/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/thread_info.h>
+#include <linex/perf_event.h>
 
 #include <asm/ptrace.h>
 #include <asm/pstate.h>
 #include <asm/fpumacro.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/cacheflush.h>
 
 /* OPF field of various VIS instructions.  */

@@ -6,13 +6,13 @@
  * Copyright:	(C) 2012-2013  Linaro Limited
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/of_address.h>
-#include <linux/vexpress.h>
-#include <linux/arm-cci.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/errno.h>
+#include <linex/of_address.h>
+#include <linex/vexpress.h>
+#include <linex/arm-cci.h>
 
 #include <asm/mcpm.h>
 #include <asm/proc-fns.h>

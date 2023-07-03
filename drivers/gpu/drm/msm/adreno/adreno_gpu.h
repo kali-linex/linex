@@ -3,14 +3,14 @@
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  *
- * Copyright (c) 2014,2017, 2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014,2017, 2019 The Linex Foundation. All rights reserved.
  */
 
 #ifndef __ADRENO_GPU_H__
 #define __ADRENO_GPU_H__
 
-#include <linux/firmware.h>
-#include <linux/iopoll.h>
+#include <linex/firmware.h>
+#include <linex/iopoll.h>
 
 #include "msm_gpu.h"
 
@@ -88,9 +88,9 @@ struct adreno_gpu {
 
 	/*
 	 * Are we loading fw from legacy path?  Prior to addition
-	 * of gpu firmware to linux-firmware, the fw files were
+	 * of gpu firmware to linex-firmware, the fw files were
 	 * placed in toplevel firmware directory, following qcom's
-	 * android kernel.  But linux-firmware preferred they be
+	 * android kernel.  But linex-firmware preferred they be
 	 * placed in a 'qcom' subdirectory.
 	 *
 	 * For backwards compatibility, we try first to load from

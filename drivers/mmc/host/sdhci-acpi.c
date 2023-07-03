@@ -5,33 +5,33 @@
  * Copyright (c) 2012, Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/compiler.h>
-#include <linux/stddef.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/acpi.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
+#include <linex/bitfield.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/dma-mapping.h>
+#include <linex/compiler.h>
+#include <linex/stddef.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/acpi.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/pm.h>
+#include <linex/mmc/slot-gpio.h>
 
 #ifdef CONFIG_X86
-#include <linux/platform_data/x86/soc.h>
+#include <linex/platform_data/x86/soc.h>
 #include <asm/iosf_mbi.h>
 #endif
 

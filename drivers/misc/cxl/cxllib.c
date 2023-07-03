@@ -3,8 +3,8 @@
  * Copyright 2017 IBM Corp.
  */
 
-#include <linux/hugetlb.h>
-#include <linux/sched/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/sched/mm.h>
 #include <asm/opal-api.h>
 #include <asm/pnv-pci.h>
 #include <misc/cxllib.h>

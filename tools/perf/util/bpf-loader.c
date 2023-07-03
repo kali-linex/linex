@@ -6,14 +6,14 @@
  * Copyright (C) 2015 Huawei Inc.
  */
 
-#include <linux/bpf.h>
+#include <linex/bpf.h>
 #include <bpf/libbpf.h>
 #include <bpf/bpf.h>
-#include <linux/filter.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/filter.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 #include <errno.h>
 #include <stdlib.h>
 #include "debug.h"

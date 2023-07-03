@@ -9,17 +9,17 @@
  *		Catalin(ux aka Dino) BOIE <catab at umbrella dot ro>
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/reciprocal_div.h>
-#include <linux/rbtree.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/vmalloc.h>
+#include <linex/rtnetlink.h>
+#include <linex/reciprocal_div.h>
+#include <linex/rbtree.h>
 
 #include <net/gso.h>
 #include <net/netlink.h>
@@ -31,7 +31,7 @@
 /*	Network Emulation Queuing algorithm.
 	====================================
 
-	Sources: [1] Mark Carson, Darrin Santay, "NIST Net - A Linux-based
+	Sources: [1] Mark Carson, Darrin Santay, "NIST Net - A Linex-based
 		 Network Emulation Tool
 		 [2] Luigi Rizzo, DummyNet for FreeBSD
 
@@ -59,7 +59,7 @@
 	[1] NetemCLG Home http://netgroup.uniroma2.it/NetemCLG
 	[2] S. Salsano, F. Ludovici, A. Ordine, "Definition of a general
 	and intuitive loss model for packet networks and its implementation
-	in the Netem module in the Linux kernel", available in [1]
+	in the Netem module in the Linex kernel", available in [1]
 
 	Authors: Stefano Salsano <stefano.salsano at uniroma2.it
 		 Fabio Ludovici <fabio.ludovici at yahoo.it>

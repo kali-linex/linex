@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2020, Maxim Integrated
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/sdw.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/of.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linex/of.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_type.h>
+#include <linex/soundwire/sdw_registers.h>
 #include "max98373.h"
 #include "max98373-sdw.h"
 

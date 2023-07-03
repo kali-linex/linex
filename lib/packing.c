@@ -2,12 +2,12 @@
 /* Copyright 2016-2018 NXP
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#include <linux/packing.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/bitrev.h>
+#include <linex/packing.h>
+#include <linex/module.h>
+#include <linex/bitops.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/bitrev.h>
 
 static int get_le_offset(int offset)
 {

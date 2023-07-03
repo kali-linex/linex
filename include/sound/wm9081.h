@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm9081.h -- Platform data for WM9081
+ * linex/sound/wm9081.h -- Platform data for WM9081
  *
  * Copyright 2009 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM_9081_H
-#define __LINUX_SND_WM_9081_H
+#ifndef __LINEX_SND_WM_9081_H
+#define __LINEX_SND_WM_9081_H
 
 struct wm9081_retune_mobile_setting {
 	const char *name;

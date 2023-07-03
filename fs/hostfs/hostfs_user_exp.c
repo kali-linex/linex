@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <linex/module.h>
 #include "hostfs.h"
 
 EXPORT_SYMBOL_GPL(stat_file);

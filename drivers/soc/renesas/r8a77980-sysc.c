@@ -6,8 +6,8 @@
  * Copyright (C) 2018 Cogent Embedded, Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
+#include <linex/bits.h>
+#include <linex/kernel.h>
 
 #include <dt-bindings/power/r8a77980-sysc.h>
 

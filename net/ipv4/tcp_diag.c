@@ -5,12 +5,12 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/sock_diag.h>
-#include <linux/inet_diag.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/sock_diag.h>
+#include <linex/inet_diag.h>
 
-#include <linux/tcp.h>
+#include <linex/tcp.h>
 
 #include <net/netlink.h>
 #include <net/tcp.h>

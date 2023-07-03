@@ -17,19 +17,19 @@
  *  Copyright (C) 2014 Hans Verkuil <hverkuil@xs4all.nl>
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/sound.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/kmod.h>
+#include <linex/sound.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/dma-mapping.h>
+#include <linex/pci_ids.h>
+#include <linex/pm.h>
 
 #include <media/v4l2-dev.h>
 #include "tw68.h"

@@ -6,14 +6,14 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/seq_file.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/seq_file.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_debugfs.h>

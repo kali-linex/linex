@@ -6,27 +6,27 @@
 # for more details.
 #
 
-UIMAGE_LOADADDR = $(shell $(NM) vmlinux | awk '$$NF == "_stext" {print $$1}')
-UIMAGE_ENTRYADDR = $(shell $(NM) vmlinux | awk '$$NF == "_start" {print $$1}')
+UIMAGE_LOADADDR = $(shell $(NM) vmlinex | awk '$$NF == "_stext" {print $$1}')
+UIMAGE_ENTRYADDR = $(shell $(NM) vmlinex | awk '$$NF == "_start" {print $$1}')
 UIMAGE_COMPRESSION = gzip
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
+OBJCOPYFLAGS_vmlinex.bin := -O binary
 
-targets += vmlinux.bin vmlinux.gz vmImage
+targets += vmlinex.bin vmlinex.gz vmImage
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinex.bin: vmlinex FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinex.gz: $(obj)/vmlinex.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmImage: $(obj)/vmlinux.gz FORCE
+$(obj)/vmImage: $(obj)/vmlinex.gz FORCE
 	$(call if_changed,uimage)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/zImage: $(obj)/compressed/vmlinux FORCE
+$(obj)/zImage: $(obj)/compressed/vmlinex FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: $(obj)/vmlinux.gz FORCE
+$(obj)/compressed/vmlinex: $(obj)/vmlinex.gz FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@

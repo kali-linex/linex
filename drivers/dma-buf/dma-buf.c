@@ -11,25 +11,25 @@
  * refining of this idea.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-fence.h>
-#include <linux/dma-fence-unwrap.h>
-#include <linux/anon_inodes.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/sync_file.h>
-#include <linux/poll.h>
-#include <linux/dma-resv.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-fence.h>
+#include <linex/dma-fence-unwrap.h>
+#include <linex/anon_inodes.h>
+#include <linex/export.h>
+#include <linex/debugfs.h>
+#include <linex/module.h>
+#include <linex/seq_file.h>
+#include <linex/sync_file.h>
+#include <linex/poll.h>
+#include <linex/dma-resv.h>
+#include <linex/mm.h>
+#include <linex/mount.h>
+#include <linex/pseudo_fs.h>
 
-#include <uapi/linux/dma-buf.h>
-#include <uapi/linux/magic.h>
+#include <uapi/linex/dma-buf.h>
+#include <uapi/linex/magic.h>
 
 #include "dma-buf-sysfs-stats.h"
 

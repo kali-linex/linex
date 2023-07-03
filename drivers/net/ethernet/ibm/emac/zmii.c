@@ -16,10 +16,10 @@
  *      Armin Kuster <akuster@mvista.com>
  * 	Copyright 2001 MontaVista Softare Inc.
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/of_address.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/ethtool.h>
+#include <linex/of_address.h>
 #include <asm/io.h>
 
 #include "emac.h"

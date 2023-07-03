@@ -3,15 +3,15 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/arm-smccc.h>
-#include <linux/of.h>
-#include <linux/clk.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
+#include <linex/platform_device.h>
+#include <linex/arm-smccc.h>
+#include <linex/of.h>
+#include <linex/clk.h>
 
 #define REV_B1				0x21
 

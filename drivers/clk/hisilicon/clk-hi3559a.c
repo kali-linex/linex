@@ -7,11 +7,11 @@
  * Author: Dongjiu Geng <gengdongjiu@huawei.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <dt-bindings/clock/hi3559av100-clock.h>
 

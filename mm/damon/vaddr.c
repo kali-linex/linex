@@ -8,12 +8,12 @@
 #define pr_fmt(fmt) "damon-va: " fmt
 
 #include <asm-generic/mman-common.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/pagewalk.h>
-#include <linux/sched/mm.h>
+#include <linex/highmem.h>
+#include <linex/hugetlb.h>
+#include <linex/mmu_notifier.h>
+#include <linex/page_idle.h>
+#include <linex/pagewalk.h>
+#include <linex/sched/mm.h>
 
 #include "ops-common.h"
 

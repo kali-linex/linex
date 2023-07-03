@@ -41,14 +41,14 @@
  * way that is expected by existing tools.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/semaphore.h>
+#include <linex/cpufreq.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/semaphore.h>
 
 /* Max number of arguments AVS calls take */
 #define AVS_MAX_CMD_ARGS	4

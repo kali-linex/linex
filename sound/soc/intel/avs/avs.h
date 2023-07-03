@@ -3,16 +3,16 @@
  * Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
  *
  * Authors: Cezary Rojewski <cezary.rojewski@intel.com>
- *          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+ *          Amadeusz Slawinski <amadeuszx.slawinski@linex.intel.com>
  */
 
 #ifndef __SOUND_SOC_INTEL_AVS_H
 #define __SOUND_SOC_INTEL_AVS_H
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kfifo.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/kfifo.h>
 #include <sound/hda_codec.h>
 #include <sound/hda_register.h>
 #include <sound/soc-component.h>
@@ -218,7 +218,7 @@ struct avs_ipc {
  * IPC handlers may return positive value (firmware error code) what denotes
  * successful HOST <-> DSP communication yet failure to process specific request.
  *
- * Below macro converts returned value to linux kernel error code.
+ * Below macro converts returned value to linex kernel error code.
  * All IPC callers MUST use it as soon as firmware error code is consumed.
  */
 #define AVS_IPC_RET(ret) \

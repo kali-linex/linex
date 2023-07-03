@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/inet.h>
-#include <linux/tcp.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/inet.h>
+#include <linex/tcp.h>
+#include <linex/netfilter_ipv4.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_ftp.h>
+#include <linex/netfilter/nf_conntrack_ftp.h>
 
 #define NAT_HELPER_NAME "ftp"
 

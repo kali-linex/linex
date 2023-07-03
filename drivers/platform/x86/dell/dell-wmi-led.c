@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/acpi.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 MODULE_AUTHOR("Louis Davis/Jim Dailey");
 MODULE_DESCRIPTION("Dell LED Control Driver");

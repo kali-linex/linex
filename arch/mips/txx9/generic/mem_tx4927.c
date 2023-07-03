@@ -27,9 +27,9 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/io.h>
 #include <asm/txx9/tx4927.h>
 
 static unsigned int __init tx4927_process_sdccr(u64 __iomem *addr)

@@ -3,10 +3,10 @@
  * Copyright 2017 Broadcom
  */
 
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/err.h>
+#include <linex/clk-provider.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 
 #include <dt-bindings/clock/bcm-sr.h>
 #include "clk-iproc.h"

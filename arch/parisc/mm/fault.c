@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
-#include <linux/perf_event.h>
+#include <linex/mm.h>
+#include <linex/ptrace.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/interrupt.h>
+#include <linex/extable.h>
+#include <linex/uaccess.h>
+#include <linex/hugetlb.h>
+#include <linex/perf_event.h>
 
 #include <asm/traps.h>
 

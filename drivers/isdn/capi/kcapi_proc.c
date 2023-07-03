@@ -11,10 +11,10 @@
 
 
 #include "kcapi.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
+#include <linex/export.h>
 
 static char *state2str(unsigned short state)
 {

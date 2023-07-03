@@ -6,7 +6,7 @@
 #ifndef __VCAP_API_PRIVATE__
 #define __VCAP_API_PRIVATE__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "vcap_api.h"
 #include "vcap_api_client.h"

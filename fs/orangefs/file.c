@@ -7,15 +7,15 @@
  */
 
 /*
- *  Linux VFS file operations.
+ *  Linex VFS file operations.
  */
 
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/pagemap.h>
+#include <linex/fs.h>
+#include <linex/filelock.h>
+#include <linex/pagemap.h>
 
 static int flush_racache(struct inode *inode)
 {

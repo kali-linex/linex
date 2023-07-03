@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Linux network driver for QLogic BR-series Converged Network Adapter.
+ * Linex network driver for QLogic BR-series Converged Network Adapter.
  */
 /*
  * Copyright (c) 2005-2014 Brocade Communications Systems, Inc.
@@ -11,13 +11,13 @@
 #ifndef __BNAD_H__
 #define __BNAD_H__
 
-#include <linux/rtnetlink.h>
-#include <linux/workqueue.h>
-#include <linux/ipv6.h>
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/if_vlan.h>
+#include <linex/rtnetlink.h>
+#include <linex/workqueue.h>
+#include <linex/ipv6.h>
+#include <linex/etherdevice.h>
+#include <linex/mutex.h>
+#include <linex/firmware.h>
+#include <linex/if_vlan.h>
 
 /* Fix for IA64 */
 #include <asm/checksum.h>

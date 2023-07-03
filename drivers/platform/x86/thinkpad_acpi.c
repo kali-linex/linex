@@ -34,41 +34,41 @@
  *			    thanks to Chris Wright <chrisw@osdl.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/freezer.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvram.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/platform_profile.h>
-#include <linux/power_supply.h>
-#include <linux/proc_fs.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/fb.h>
+#include <linex/freezer.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/kthread.h>
+#include <linex/leds.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nvram.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/platform_profile.h>
+#include <linex/power_supply.h>
+#include <linex/proc_fs.h>
+#include <linex/rfkill.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/string_helpers.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
 
 #include <acpi/battery.h>
 #include <acpi/video.h>
@@ -1489,7 +1489,7 @@ static DRIVER_ATTR_RW(uwb_emulstate);
  *    1. Stable BIOS, listed because the unknown amount of
  *       bugs and bad ACPI behaviour on older versions
  *
- *    2. BIOS or EC fw with known bugs that trigger on Linux
+ *    2. BIOS or EC fw with known bugs that trigger on Linex
  *
  *    3. BIOS with known reduced functionality in older versions
  *
@@ -3157,7 +3157,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    ware may react very differently if you change them to
 	 *    something else;
 	 *
-	 * 2. You must be subscribed to the linux-thinkpad and
+	 * 2. You must be subscribed to the linex-thinkpad and
 	 *    ibm-acpi-devel mailing lists, and you should read the
 	 *    list archives since 2007 if you want to change the
 	 *    keymaps.  This requirement exists so that you will
@@ -3166,7 +3166,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    listening to any bug reports;
 	 *
 	 * 3. Do not send thinkpad-acpi specific patches directly to
-	 *    for merging, *ever*.  Send them to the linux-acpi
+	 *    for merging, *ever*.  Send them to the linex-acpi
 	 *    mailinglist for comments.  Merging is to be done only
 	 *    through acpi-test and the ACPI maintainer.
 	 *

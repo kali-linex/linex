@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/export.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/export.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

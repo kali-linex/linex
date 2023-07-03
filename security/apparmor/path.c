@@ -8,14 +8,14 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/magic.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nsproxy.h>
-#include <linux/path.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs_struct.h>
+#include <linex/magic.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/nsproxy.h>
+#include <linex/path.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/fs_struct.h>
 
 #include "include/apparmor.h"
 #include "include/path.h"

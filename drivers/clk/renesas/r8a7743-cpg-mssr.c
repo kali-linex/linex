@@ -5,11 +5,11 @@
  * Copyright (C) 2016 Cogent Embedded Inc.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linex/device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a7743-cpg-mssr.h>
 

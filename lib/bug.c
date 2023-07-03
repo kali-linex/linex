@@ -40,14 +40,14 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
-#include <linux/ftrace.h>
-#include <linux/context_tracking.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/bug.h>
+#include <linex/sched.h>
+#include <linex/rculist.h>
+#include <linex/ftrace.h>
+#include <linex/context_tracking.h>
 
 extern struct bug_entry __start___bug_table[], __stop___bug_table[];
 

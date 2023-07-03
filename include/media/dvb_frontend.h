@@ -32,18 +32,18 @@
 #ifndef _DVB_FRONTEND_H_
 #define _DVB_FRONTEND_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ioctl.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/ioctl.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
 
-#include <linux/dvb/frontend.h>
+#include <linex/dvb/frontend.h>
 
 #include <media/dvbdev.h>
 

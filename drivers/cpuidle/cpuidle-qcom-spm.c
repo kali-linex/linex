@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The Linex Foundation. All rights reserved.
  * Copyright (c) 2014,2015, Linaro Ltd.
  *
  * SAW power controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/cpuidle.h>
+#include <linex/cpu_pm.h>
+#include <linex/firmware/qcom/qcom_scm.h>
 #include <soc/qcom/spm.h>
 
 #include <asm/proc-fns.h>

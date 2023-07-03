@@ -4,7 +4,7 @@
  * Copyright:   (C) 2012-2013  Linaro Limited
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 
 ENTRY(dcscb_power_up_setup)

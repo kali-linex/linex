@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015,2019 The Linex Foundation. All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/arm-smccc.h>
-#include <linux/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/firmware/qcom/qcom_scm.h>
+#include <linex/arm-smccc.h>
+#include <linex/dma-mapping.h>
 
 #include "qcom_scm.h"
 

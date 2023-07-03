@@ -3,28 +3,28 @@
  * arch/sparc64/mm/fault.c: Page fault handlers for the 64-bit Sparc.
  *
  * Copyright (C) 1996, 2008 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linex.cz)
  */
 
 #include <asm/head.h>
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/extable.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/interrupt.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/percpu.h>
-#include <linux/context_tracking.h>
-#include <linux/uaccess.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/ptrace.h>
+#include <linex/mman.h>
+#include <linex/signal.h>
+#include <linex/mm.h>
+#include <linex/extable.h>
+#include <linex/init.h>
+#include <linex/perf_event.h>
+#include <linex/interrupt.h>
+#include <linex/kprobes.h>
+#include <linex/kdebug.h>
+#include <linex/percpu.h>
+#include <linex/context_tracking.h>
+#include <linex/uaccess.h>
 
 #include <asm/page.h>
 #include <asm/openprom.h>

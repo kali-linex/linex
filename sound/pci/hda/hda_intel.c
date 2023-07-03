@@ -20,23 +20,23 @@
  *  2004.12.01	Major rewrite by tiwai, merged the work of pshou
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/clocksource.h>
-#include <linux/time.h>
-#include <linux/completion.h>
-#include <linux/acpi.h>
-#include <linux/pgtable.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/dma-mapping.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/pci.h>
+#include <linex/mutex.h>
+#include <linex/io.h>
+#include <linex/pm_runtime.h>
+#include <linex/clocksource.h>
+#include <linex/time.h>
+#include <linex/completion.h>
+#include <linex/acpi.h>
+#include <linex/pgtable.h>
 
 #ifdef CONFIG_X86
 /* for snoop control */
@@ -48,10 +48,10 @@
 #include <sound/hdaudio.h>
 #include <sound/hda_i915.h>
 #include <sound/intel-dsp-config.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/apple-gmux.h>
-#include <linux/firmware.h>
+#include <linex/vgaarb.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/apple-gmux.h>
+#include <linex/firmware.h>
 #include <sound/hda_codec.h>
 #include "hda_controller.h"
 #include "hda_intel.h"

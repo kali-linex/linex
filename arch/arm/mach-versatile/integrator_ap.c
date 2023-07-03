@@ -2,19 +2,19 @@
 /*
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/syscore_ops.h>
+#include <linex/amba/bus.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/uaccess.h>
+#include <linex/termios.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

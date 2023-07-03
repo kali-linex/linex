@@ -11,7 +11,7 @@
  * Poussa, Anand Sawant, Santosh Shilimkar, Richard Woodruff
  *
  * These headers and macros are used to define OMAP on-chip module
- * data and their integration with other OMAP modules and Linux.
+ * data and their integration with other OMAP modules and Linex.
  * Copious documentation and references can also be found in the
  * omap_hwmod code, in arch/arm/mach-omap2/omap_hwmod.c (as of this
  * writing).
@@ -20,16 +20,16 @@
  * - add interconnect error log structures
  * - init_conn_id_bit (CONNID_BIT_VECTOR)
  * - implement default hwmod SMS/SDRC flags?
- * - move Linux-specific data ("non-ROM data") out
+ * - move Linex-specific data ("non-ROM data") out
  */
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/ioport.h>
+#include <linex/spinlock.h>
 
 struct omap_device;
 

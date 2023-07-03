@@ -5,14 +5,14 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/freezer.h>
-#include <linux/sched/signal.h>
-#include <linux/wait_bit.h>
-#include <linux/fiemap.h>
+#include <linex/fs.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/freezer.h>
+#include <linex/sched/signal.h>
+#include <linex/wait_bit.h>
+#include <linex/fiemap.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -299,7 +299,7 @@ cifs_unix_basic_to_fattr(struct cifs_fattr *fattr, FILE_UNIX_BASIC_INFO *info,
 		break;
 	}
 
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
+	fattr->cf_uid = cifs_sb->ctx->linex_uid;
 	if (!(cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_UID)) {
 		u64 id = le64_to_cpu(info->Uid);
 		if (id < ((uid_t)-1)) {
@@ -309,7 +309,7 @@ cifs_unix_basic_to_fattr(struct cifs_fattr *fattr, FILE_UNIX_BASIC_INFO *info,
 		}
 	}
 	
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_gid = cifs_sb->ctx->linex_gid;
 	if (!(cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_GID)) {
 		u64 id = le64_to_cpu(info->Gid);
 		if (id < ((gid_t)-1)) {
@@ -338,8 +338,8 @@ cifs_create_dfs_fattr(struct cifs_fattr *fattr, struct super_block *sb)
 
 	memset(fattr, 0, sizeof(*fattr));
 	fattr->cf_mode = S_IFDIR | S_IXUGO | S_IRWXU;
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->linex_uid;
+	fattr->cf_gid = cifs_sb->ctx->linex_gid;
 	ktime_get_coarse_real_ts64(&fattr->cf_mtime);
 	fattr->cf_atime = fattr->cf_ctime = fattr->cf_mtime;
 	fattr->cf_nlink = 2;
@@ -774,8 +774,8 @@ static void cifs_open_info_to_fattr(struct cifs_fattr *fattr, struct cifs_open_i
 		data->symlink_target = NULL;
 	}
 
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->linex_uid;
+	fattr->cf_gid = cifs_sb->ctx->linex_gid;
 }
 
 static int
@@ -1418,8 +1418,8 @@ iget_no_retry:
 		set_nlink(inode, 2);
 		inode->i_op = &cifs_ipc_inode_ops;
 		inode->i_fop = &simple_dir_operations;
-		inode->i_uid = cifs_sb->ctx->linux_uid;
-		inode->i_gid = cifs_sb->ctx->linux_gid;
+		inode->i_uid = cifs_sb->ctx->linex_uid;
+		inode->i_gid = cifs_sb->ctx->linex_gid;
 		spin_unlock(&inode->i_lock);
 	} else if (rc) {
 		iget_failed(inode);

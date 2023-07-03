@@ -2,13 +2,13 @@
 #ifndef __PERF_DSO
 #define __PERF_DSO
 
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <linex/refcount.h>
+#include <linex/types.h>
+#include <linex/rbtree.h>
 #include <sys/types.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <linux/bitops.h>
+#include <linex/bitops.h>
 #include "build-id.h"
 #include "mutex.h"
 
@@ -22,8 +22,8 @@ struct perf_env;
 enum dso_binary_type {
 	DSO_BINARY_TYPE__KALLSYMS = 0,
 	DSO_BINARY_TYPE__GUEST_KALLSYMS,
-	DSO_BINARY_TYPE__VMLINUX,
-	DSO_BINARY_TYPE__GUEST_VMLINUX,
+	DSO_BINARY_TYPE__VMLINEX,
+	DSO_BINARY_TYPE__GUEST_VMLINEX,
 	DSO_BINARY_TYPE__JAVA_JIT,
 	DSO_BINARY_TYPE__DEBUGLINK,
 	DSO_BINARY_TYPE__BUILD_ID_CACHE,
@@ -379,10 +379,10 @@ void dso__reset_find_symbol_cache(struct dso *dso);
 size_t dso__fprintf_symbols_by_name(struct dso *dso, FILE *fp);
 size_t dso__fprintf(struct dso *dso, FILE *fp);
 
-static inline bool dso__is_vmlinux(const struct dso *dso)
+static inline bool dso__is_vmlinex(const struct dso *dso)
 {
-	return dso->binary_type == DSO_BINARY_TYPE__VMLINUX ||
-	       dso->binary_type == DSO_BINARY_TYPE__GUEST_VMLINUX;
+	return dso->binary_type == DSO_BINARY_TYPE__VMLINEX ||
+	       dso->binary_type == DSO_BINARY_TYPE__GUEST_VMLINEX;
 }
 
 static inline bool dso__is_kcore(const struct dso *dso)

@@ -21,14 +21,14 @@
  * Driver supports read only as the writes are done in the Factory.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/timer.h>
+#include <linex/bitops.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/timer.h>
 
 #define JZ_EFUCTRL		(0x0)	/* Control Register */
 #define JZ_EFUCFG		(0x4)	/* Configure Register*/

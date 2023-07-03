@@ -3,21 +3,21 @@
  * Tty port functions
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/serdev.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/serial.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/wait.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/serdev.h>
 #include "tty.h"
 
 static int tty_port_default_receive_buf(struct tty_port *port,

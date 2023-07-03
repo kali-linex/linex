@@ -22,23 +22,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/miscdevice.h>	/* For struct miscdevice */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/notifier.h>	/* For notifier support */
-#include <linux/reboot.h>	/* For reboot_notifier stuff */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/usb.h>		/* For USB functions */
-#include <linux/slab.h>		/* For kmalloc, ... */
-#include <linux/mutex.h>	/* For mutex locking */
-#include <linux/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <linex/module.h>	/* For module specific items */
+#include <linex/moduleparam.h>	/* For new moduleparam's */
+#include <linex/types.h>	/* For standard types (like size_t) */
+#include <linex/errno.h>	/* For the -ENODEV/... values */
+#include <linex/kernel.h>	/* For printk/panic/... */
+#include <linex/delay.h>	/* For mdelay function */
+#include <linex/miscdevice.h>	/* For struct miscdevice */
+#include <linex/watchdog.h>	/* For the watchdog specific items */
+#include <linex/notifier.h>	/* For notifier support */
+#include <linex/reboot.h>	/* For reboot_notifier stuff */
+#include <linex/init.h>		/* For __init/__exit/... */
+#include <linex/fs.h>		/* For file operations */
+#include <linex/usb.h>		/* For USB functions */
+#include <linex/slab.h>		/* For kmalloc, ... */
+#include <linex/mutex.h>	/* For mutex locking */
+#include <linex/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
+#include <linex/uaccess.h>	/* For copy_to_user/put_user/... */
 
 
 /* Module and Version Information */

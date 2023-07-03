@@ -15,13 +15,13 @@
  *  Copyright (c) Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

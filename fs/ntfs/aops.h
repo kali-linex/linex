@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * aops.h - Defines for NTFS kernel address space operations and page cache
- *	    handling.  Part of the Linux-NTFS project.
+ *	    handling.  Part of the Linex-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_AOPS_H
-#define _LINUX_NTFS_AOPS_H
+#ifndef _LINEX_NTFS_AOPS_H
+#define _LINEX_NTFS_AOPS_H
 
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/fs.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
+#include <linex/fs.h>
 
 #include "inode.h"
 
@@ -85,4 +85,4 @@ extern void mark_ntfs_record_dirty(struct page *page, const unsigned int ofs);
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_AOPS_H */
+#endif /* _LINEX_NTFS_AOPS_H */

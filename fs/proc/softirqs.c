@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/kernel_stat.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include "internal.h"
 
 /*

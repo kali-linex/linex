@@ -5,8 +5,8 @@
 #ifndef __ASM_MMU_H
 #define __ASM_MMU_H
 
-#include <linux/atomic.h>
-#include <linux/spinlock.h>
+#include <linex/atomic.h>
+#include <linex/spinlock.h>
 
 typedef struct {
 	u64 asid[NR_CPUS];

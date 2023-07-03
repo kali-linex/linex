@@ -17,8 +17,8 @@
 #ifndef CLK_ROCKCHIP_CLK_H
 #define CLK_ROCKCHIP_CLK_H
 
-#include <linux/io.h>
-#include <linux/clk-provider.h>
+#include <linex/io.h>
+#include <linex/clk-provider.h>
 
 struct clk;
 

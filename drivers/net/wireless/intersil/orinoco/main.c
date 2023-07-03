@@ -8,7 +8,7 @@
  * and	David Gibson <hermes AT gibson.dropbear.id.au>
  *
  * (C) Copyright David Gibson, IBM Corporation 2001-2003.
- * Copyright (C) 2000 David Gibson, Linuxcare Australia.
+ * Copyright (C) 2000 David Gibson, Linexcare Australia.
  *	With some help from :
  * Copyright (C) 2001 Jean Tourrilhes, HP Labs
  * Copyright (C) 2001 Benjamin Herrenschmidt
@@ -76,18 +76,18 @@
 
 #define DRIVER_NAME "orinoco"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/suspend.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/suspend.h>
+#include <linex/if_arp.h>
+#include <linex/wireless.h>
+#include <linex/ieee80211.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 
@@ -2136,7 +2136,7 @@ static const struct net_device_ops orinoco_netdev_ops = {
  *  card - card specific structure for use by the card driver
  *         (airport, orinoco_cs)
  *  priv - orinoco private data
- *  device - generic linux device structure
+ *  device - generic linex device structure
  *
  *  +---------+    +---------+
  *  |  wiphy  |    | netdev  |

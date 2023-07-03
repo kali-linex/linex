@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/kernel/pj4-cp0.c
+ * linex/arch/arm/kernel/pj4-cp0.c
  *
  * PJ4 iWMMXt coprocessor context switching and handling
  *
  * Copyright (c) 2010 Marvell International Inc.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/io.h>
 #include <asm/thread_notify.h>
 #include <asm/cputype.h>
 

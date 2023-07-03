@@ -9,10 +9,10 @@
  * Author: Gražvydas Ignotas <notasas@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_modes.h>

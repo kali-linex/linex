@@ -18,11 +18,11 @@
  * Bultje <rbultje@ronald.bitfreak.net>
  */
 
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/usb.h>
+#include <linex/firmware.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 static const struct usb_device_id id_table[] = {
 	{USB_DEVICE(0x05ac, 0x8300)},

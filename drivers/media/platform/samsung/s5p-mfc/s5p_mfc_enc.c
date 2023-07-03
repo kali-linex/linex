@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/media/platform/samsung/s5p-mfc/s5p_mfc_enc.c
+ * linex/drivers/media/platform/samsung/s5p-mfc/s5p_mfc_enc.c
  *
  * Copyright (c) 2010-2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -9,15 +9,15 @@
  * Kamil Debski		<k.debski@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/videodev2.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-event.h>
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 #include <media/v4l2-ctrls.h>
 #include <media/videobuf2-v4l2.h>
 #include "s5p_mfc_common.h"

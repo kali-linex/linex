@@ -4,19 +4,19 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Linex390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2001
  *
  */
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/ctype.h>
-#include <linux/init.h>
+#include <linex/ctype.h>
+#include <linex/init.h>
 
 #include <asm/debug.h>
 #include <asm/ebcdic.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /* This is ugly... */
 #define PRINTK_HEADER "dasd_erp:"

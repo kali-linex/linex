@@ -6,19 +6,19 @@
 //                         Cirrus Logic International Semiconductor Ltd.
 //
 
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/gcd.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/tlv.h>
 
-#include <linux/irqchip/irq-madera.h>
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/registers.h>
-#include <linux/mfd/madera/pdata.h>
+#include <linex/irqchip/irq-madera.h>
+#include <linex/mfd/madera/core.h>
+#include <linex/mfd/madera/registers.h>
+#include <linex/mfd/madera/pdata.h>
 #include <sound/madera-pdata.h>
 
 #include <dt-bindings/sound/madera.h>

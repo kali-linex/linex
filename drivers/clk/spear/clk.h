@@ -9,9 +9,9 @@
 #ifndef __SPEAR_CLK_H
 #define __SPEAR_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <linex/clk-provider.h>
+#include <linex/spinlock_types.h>
+#include <linex/types.h>
 
 /* Auxiliary Synth clk */
 /* Default masks */

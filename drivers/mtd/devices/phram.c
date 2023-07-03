@@ -18,18 +18,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/mtd/mtd.h>
 #include <asm/div64.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
+#include <linex/platform_device.h>
+#include <linex/of_address.h>
+#include <linex/of.h>
 
 struct phram_mtd_list {
 	struct mtd_info mtd;

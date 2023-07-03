@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/fs.h>
+#include <linex/seq_file.h>
+#include <linex/kallsyms.h>
+#include <linex/module.h>
+#include <linex/ftrace.h>
+#include <linex/fs.h>
 
 #include "trace_output.h"
 

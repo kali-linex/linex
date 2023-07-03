@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-  A FORE Systems 200E-series driver for ATM on Linux.
+  A FORE Systems 200E-series driver for ATM on Linex.
   Christophe Lizzi (lizzi@cnam.fr), October 1999-March 2003.
 
   Based on the PCA-200E driver from Uwe Dannowski (Uwe.Dannowski@inf.tu-dresden.de).
@@ -11,32 +11,32 @@
 */
 
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/capability.h>
+#include <linex/interrupt.h>
+#include <linex/bitops.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/atmdev.h>
+#include <linex/sonet.h>
+#include <linex/dma-mapping.h>
+#include <linex/delay.h>
+#include <linex/firmware.h>
+#include <linex/pgtable.h>
 #include <asm/io.h>
 #include <asm/string.h>
 #include <asm/page.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 
 #ifdef CONFIG_SBUS
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
 #include <asm/idprom.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -736,7 +736,7 @@ static int __init fore200e_sba_prom_read(struct fore200e *fore200e, struct prom_
 static int fore200e_sba_proc_read(struct fore200e *fore200e, char *page)
 {
 	struct platform_device *op = to_platform_device(fore200e->dev);
-	const struct linux_prom_registers *regs;
+	const struct linex_prom_registers *regs;
 
 	regs = of_get_property(op->dev.of_node, "reg", NULL);
 

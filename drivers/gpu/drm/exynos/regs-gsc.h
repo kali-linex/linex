@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* linux/drivers/gpu/drm/exynos/regs-gsc.h
+/* linex/drivers/gpu/drm/exynos/regs-gsc.h
  *
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

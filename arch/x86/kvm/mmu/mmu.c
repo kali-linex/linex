@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -28,24 +28,24 @@
 #include "cpuid.h"
 #include "spte.h"
 
-#include <linux/kvm_host.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/hugetlb.h>
-#include <linux/compiler.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/hash.h>
-#include <linux/kern_levels.h>
-#include <linux/kstrtox.h>
-#include <linux/kthread.h>
+#include <linex/kvm_host.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/moduleparam.h>
+#include <linex/export.h>
+#include <linex/swap.h>
+#include <linex/hugetlb.h>
+#include <linex/compiler.h>
+#include <linex/srcu.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/uaccess.h>
+#include <linex/hash.h>
+#include <linex/kern_levels.h>
+#include <linex/kstrtox.h>
+#include <linex/kthread.h>
 
 #include <asm/page.h>
 #include <asm/memtype.h>
@@ -5635,7 +5635,7 @@ static bool detect_write_misaligned(struct kvm_mmu_page *sp, gpa_t gpa,
 
 	/*
 	 * Sometimes, the OS only writes the last one bytes to update status
-	 * bits, for example, in linux, andb instruction is used in clear_bit().
+	 * bits, for example, in linex, andb instruction is used in clear_bit().
 	 */
 	if (!(offset & (pte_size - 1)) && bytes == 1)
 		return false;

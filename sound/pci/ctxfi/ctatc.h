@@ -14,10 +14,10 @@
 #ifndef CTATC_H
 #define CTATC_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/timer.h>
 #include <sound/core.h>
 
 #include "ctvmem.h"

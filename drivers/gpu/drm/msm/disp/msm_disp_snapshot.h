@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The Linex Foundation. All rights reserved.
  */
 
 #ifndef MSM_DISP_SNAPSHOT_H_
@@ -11,19 +11,19 @@
 #include "../../../drm_crtc_internal.h"
 #include <drm/drm_print.h>
 #include <drm/drm_atomic.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
-#include <linux/uaccess.h>
-#include <linux/dma-buf.h>
-#include <linux/slab.h>
-#include <linux/list_sort.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/kthread.h>
-#include <linux/devcoredump.h>
+#include <linex/debugfs.h>
+#include <linex/list.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/ktime.h>
+#include <linex/uaccess.h>
+#include <linex/dma-buf.h>
+#include <linex/slab.h>
+#include <linex/list_sort.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/kthread.h>
+#include <linex/devcoredump.h>
 #include "msm_kms.h"
 
 #define MSM_DISP_SNAPSHOT_MAX_BLKS		10

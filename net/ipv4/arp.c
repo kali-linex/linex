@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* linux/net/ipv4/arp.c
+/* linex/net/ipv4/arp.c
  *
  * Copyright (C) 1994 by Florian  La Roche
  *
@@ -71,32 +71,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/capability.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/errno.h>
+#include <linex/in.h>
+#include <linex/mm.h>
+#include <linex/inet.h>
+#include <linex/inetdevice.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/fddidevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/stat.h>
+#include <linex/init.h>
+#include <linex/net.h>
+#include <linex/rcupdate.h>
+#include <linex/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
 #include <net/net_namespace.h>
@@ -112,9 +112,9 @@
 #include <net/dst_metadata.h>
 #include <net/ip_tunnels.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
-#include <linux/netfilter_arp.h>
+#include <linex/netfilter_arp.h>
 
 /*
  *	Interface to generic neighbour cache.
@@ -460,7 +460,7 @@ static int arp_filter(__be32 sip, __be32 tip, struct net_device *dev)
 	if (IS_ERR(rt))
 		return 1;
 	if (rt->dst.dev != dev) {
-		__NET_INC_STATS(net, LINUX_MIB_ARPFILTER);
+		__NET_INC_STATS(net, LINEX_MIB_ARPFILTER);
 		flag = 1;
 	}
 	ip_rt_put(rt);

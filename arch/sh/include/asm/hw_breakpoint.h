@@ -6,8 +6,8 @@
 
 #define __ARCH_HW_BREAKPOINT_H
 
-#include <linux/kdebug.h>
-#include <linux/types.h>
+#include <linex/kdebug.h>
+#include <linex/types.h>
 
 struct arch_hw_breakpoint {
 	unsigned long	address;

@@ -3,26 +3,26 @@
  * AXP20x PMIC USB power supply status driver
  *
  * Copyright (C) 2015 Hans de Goede <hdegoede@redhat.com>
- * Copyright (C) 2014 Bruno Prémont <bonbons@linux-vserver.org>
+ * Copyright (C) 2014 Bruno Prémont <bonbons@linex-vserver.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/devm-helpers.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/workqueue.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/devm-helpers.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/axp20x.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm.h>
+#include <linex/power_supply.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/iio/consumer.h>
+#include <linex/workqueue.h>
 
 #define DRVNAME "axp20x-usb-power-supply"
 

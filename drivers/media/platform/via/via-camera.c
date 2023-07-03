@@ -6,15 +6,15 @@
  *
  * This work was supported by the One Laptop Per Child project
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -22,11 +22,11 @@
 #include <media/v4l2-image-sizes.h>
 #include <media/i2c/ov7670.h>
 #include <media/videobuf2-dma-sg.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_qos.h>
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/pm_qos.h>
+#include <linex/via-core.h>
+#include <linex/via_i2c.h>
 
 #ifdef CONFIG_X86
 #include <asm/olpc.h>

@@ -7,11 +7,11 @@
 #ifndef __CLK_BT1_CCU_DIV_H__
 #define __CLK_BT1_CCU_DIV_H__
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/bits.h>
-#include <linux/of.h>
+#include <linex/clk-provider.h>
+#include <linex/spinlock.h>
+#include <linex/regmap.h>
+#include <linex/bits.h>
+#include <linex/of.h>
 
 /*
  * CCU Divider private clock IDs

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/smp.c
+ *	linex/arch/alpha/kernel/smp.c
  *
  *      2001-07-09 Phil Ezolt (Phillip.Ezolt@compaq.com)
  *            Renamed modified smp_call_function to smp_call_function_on_cpu()
@@ -11,28 +11,28 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/module.h>
+#include <linex/sched/mm.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/threads.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/spinlock.h>
+#include <linex/irq.h>
+#include <linex/cache.h>
+#include <linex/profile.h>
+#include <linex/bitops.h>
+#include <linex/cpu.h>
 
 #include <asm/hwrpb.h>
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

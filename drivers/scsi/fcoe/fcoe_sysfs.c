@@ -5,11 +5,11 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/ctype.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/etherdevice.h>
+#include <linex/ctype.h>
 
 #include <scsi/fcoe_sysfs.h>
 #include <scsi/libfcoe.h>

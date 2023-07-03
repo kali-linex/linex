@@ -17,27 +17,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/net.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/if_arp.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/lapb.h>
-#include <linux/init.h>
+#include <linex/uaccess.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/notifier.h>
+#include <linex/stat.h>
+#include <linex/module.h>
+#include <linex/lapb.h>
+#include <linex/init.h>
 
 #include <net/x25device.h>
 

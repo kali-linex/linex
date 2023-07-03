@@ -7,16 +7,16 @@
  * Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/sort.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/leds.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/export.h>
+#include <linex/sort.h>
+#include <linex/delay.h>
+#include <linex/ctype.h>
+#include <linex/string.h>
+#include <linex/bitops.h>
+#include <linex/module.h>
+#include <linex/leds.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/tlv.h>

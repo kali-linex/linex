@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/blkpg.h>
-#include <linux/hdreg.h>
-#include <linux/backing-dev.h>
-#include <linux/fs.h>
-#include <linux/blktrace_api.h>
-#include <linux/pr.h>
-#include <linux/uaccess.h>
+#include <linex/capability.h>
+#include <linex/compat.h>
+#include <linex/blkdev.h>
+#include <linex/export.h>
+#include <linex/gfp.h>
+#include <linex/blkpg.h>
+#include <linex/hdreg.h>
+#include <linex/backing-dev.h>
+#include <linex/fs.h>
+#include <linex/blktrace_api.h>
+#include <linex/pr.h>
+#include <linex/uaccess.h>
 #include "blk.h"
 
 static int blkpg_do_ioctl(struct block_device *bdev,

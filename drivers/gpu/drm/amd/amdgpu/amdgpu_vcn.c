@@ -24,11 +24,11 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/debugfs.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/dmi.h>
+#include <linex/pci.h>
+#include <linex/debugfs.h>
 #include <drm/drm_drv.h>
 
 #include "amdgpu.h"

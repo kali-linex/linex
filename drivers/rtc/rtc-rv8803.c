@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/log2.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
+#include <linex/bcd.h>
+#include <linex/bitops.h>
+#include <linex/bitfield.h>
+#include <linex/log2.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/rtc.h>
 
 #define RV8803_I2C_TRY_COUNT		4
 
@@ -739,7 +739,7 @@ static struct i2c_driver rv8803_driver = {
 		.name = "rtc-rv8803",
 		.of_match_table = of_match_ptr(rv8803_of_match),
 	},
-	.probe		= rv8803_probe,
+	.probe_new	= rv8803_probe,
 	.id_table	= rv8803_id,
 };
 module_i2c_driver(rv8803_driver);

@@ -149,7 +149,7 @@ replicas continue to be exactly same.
 3) Setting mount states
 -----------------------
 
-	The mount command (util-linux package) can be used to set mount
+	The mount command (util-linex package) can be used to set mount
 	states::
 
 	    mount --make-shared mountpoint
@@ -994,6 +994,6 @@ replicas continue to be exactly same.
 
 ------------------------------------------------------------------------
 
-version 0.1  (created the initial document, Ram Pai linuxram@us.ibm.com)
+version 0.1  (created the initial document, Ram Pai linexram@us.ibm.com)
 
 version 0.2  (Incorporated comments from Al Viro)

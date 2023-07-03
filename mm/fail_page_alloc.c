@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fault-inject.h>
-#include <linux/mm.h>
+#include <linex/fault-inject.h>
+#include <linex/mm.h>
 
 static struct {
 	struct fault_attr attr;

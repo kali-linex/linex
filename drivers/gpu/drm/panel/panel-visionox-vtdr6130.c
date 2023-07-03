@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2023, Linaro Limited
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
 #include <drm/display/drm_dsc.h>
 #include <drm/drm_mipi_dsi.h>

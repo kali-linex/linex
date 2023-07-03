@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/usb.h>
-#include <linux/usb/musb.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/usb.h>
+#include <linex/usb/musb.h>
 
 #include "soc.h"
 #include "control.h"

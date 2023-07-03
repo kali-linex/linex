@@ -7,9 +7,9 @@
  *          Michael Thayer <michael.thayer@oracle.com,
  *          Hans de Goede <hdegoede@redhat.com>
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vt_kern.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/vt_kern.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

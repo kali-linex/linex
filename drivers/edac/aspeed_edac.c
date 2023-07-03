@@ -3,15 +3,15 @@
  * Copyright 2018, 2019 Cisco Systems
  */
 
-#include <linux/edac.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
+#include <linex/edac.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/stop_machine.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/regmap.h>
 #include "edac_module.h"
 
 

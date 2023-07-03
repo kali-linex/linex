@@ -4,12 +4,12 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linex/arm-smccc.h>
+#include <linex/firmware/imx/sci.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
 
 #define IMX_SC_TIMER_FUNC_GET_RTC_SEC1970	9
 #define IMX_SC_TIMER_FUNC_SET_RTC_ALARM		8

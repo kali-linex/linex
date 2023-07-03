@@ -5,8 +5,8 @@
 #ifndef _LBS_TYPES_H_
 #define _LBS_TYPES_H_
 
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
+#include <linex/if_ether.h>
+#include <linex/ieee80211.h>
 #include <asm/byteorder.h>
 
 struct ieee_ie_header {

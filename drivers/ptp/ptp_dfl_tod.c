@@ -5,15 +5,15 @@
  * Copyright (C) 2023 Intel Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dfl.h>
-#include <linux/gcd.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/spinlock.h>
-#include <linux/units.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/dfl.h>
+#include <linex/gcd.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/spinlock.h>
+#include <linex/units.h>
 
 #define FME_FEATURE_ID_TOD		0x22
 

@@ -2,15 +2,15 @@
 /*
  * ip30-irq.c: Highlevel interrupt handling for IP30 architecture.
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
-#include <linux/tick.h>
-#include <linux/types.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/percpu.h>
+#include <linex/spinlock.h>
+#include <linex/tick.h>
+#include <linex/types.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/sgi/heart.h>

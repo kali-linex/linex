@@ -23,7 +23,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "ath5k.h"
 #include "reg.h"

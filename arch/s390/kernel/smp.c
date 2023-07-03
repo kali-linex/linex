@@ -18,24 +18,24 @@
 #define KMSG_COMPONENT "cpu"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/kernel_stat.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/irq_work.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/crash_dump.h>
-#include <linux/kprobes.h>
+#include <linex/workqueue.h>
+#include <linex/memblock.h>
+#include <linex/export.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/spinlock.h>
+#include <linex/kernel_stat.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/irqflags.h>
+#include <linex/irq_work.h>
+#include <linex/cpu.h>
+#include <linex/slab.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/crash_dump.h>
+#include <linex/kprobes.h>
 #include <asm/asm-offsets.h>
 #include <asm/diag.h>
 #include <asm/switch_to.h>

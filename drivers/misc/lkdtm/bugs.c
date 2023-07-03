@@ -6,12 +6,12 @@
  * test source files.
  */
 #include "lkdtm.h"
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linex/list.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/task_stack.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
 
 #if IS_ENABLED(CONFIG_X86_32) && !IS_ENABLED(CONFIG_UML)
 #include <asm/desc.h>

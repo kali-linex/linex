@@ -7,16 +7,16 @@
  *
  * This file is based on sha256_ssse3_glue.c:
  *   Copyright (C) 2013 Intel Corporation
- *   Author: Tim Chen <tim.c.chen@linux.intel.com>
+ *   Author: Tim Chen <tim.c.chen@linex.intel.com>
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/types.h>
+#include <linex/string.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
 #include <asm/simd.h>

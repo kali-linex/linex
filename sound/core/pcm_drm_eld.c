@@ -2,9 +2,9 @@
 /*
  *  PCM DRM helpers
  */
-#include <linux/bitfield.h>
-#include <linux/export.h>
-#include <linux/hdmi.h>
+#include <linex/bitfield.h>
+#include <linex/export.h>
+#include <linex/hdmi.h>
 #include <drm/drm_edid.h>
 #include <sound/pcm.h>
 #include <sound/pcm_drm_eld.h>

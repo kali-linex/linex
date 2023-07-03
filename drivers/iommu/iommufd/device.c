@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#include <linux/iommufd.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
+#include <linex/iommufd.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
 
 #include "io_pagetable.h"
 #include "iommufd_private.h"

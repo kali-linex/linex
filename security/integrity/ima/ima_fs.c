@@ -12,15 +12,15 @@
  *	current measurement list and IMA statistics
  */
 
-#include <linux/fcntl.h>
-#include <linux/kernel_read_file.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/parser.h>
-#include <linux/vmalloc.h>
+#include <linex/fcntl.h>
+#include <linex/kernel_read_file.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/seq_file.h>
+#include <linex/rculist.h>
+#include <linex/rcupdate.h>
+#include <linex/parser.h>
+#include <linex/vmalloc.h>
 
 #include "ima.h"
 

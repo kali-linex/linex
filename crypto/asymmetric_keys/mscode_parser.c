@@ -6,10 +6,10 @@
  */
 
 #define pr_fmt(fmt) "MSCODE: "fmt
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/oid_registry.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/oid_registry.h>
 #include <crypto/pkcs7.h>
 #include "verify_pefile.h"
 #include "mscode.asn1.h"

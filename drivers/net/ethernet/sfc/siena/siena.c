@@ -5,12 +5,12 @@
  * Copyright 2006-2013 Solarflare Communications Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/random.h>
 #include "net_driver.h"
 #include "bitfield.h"
 #include "efx.h"

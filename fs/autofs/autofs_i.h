@@ -6,25 +6,25 @@
 
 /* Internal header file for autofs */
 
-#include <linux/auto_fs.h>
-#include <linux/auto_dev-ioctl.h>
+#include <linex/auto_fs.h>
+#include <linex/auto_dev-ioctl.h>
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/file.h>
-#include <linux/magic.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/string.h>
+#include <linex/wait.h>
+#include <linex/sched.h>
+#include <linex/sched/signal.h>
+#include <linex/mount.h>
+#include <linex/namei.h>
+#include <linex/uaccess.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/list.h>
+#include <linex/completion.h>
+#include <linex/file.h>
+#include <linex/magic.h>
 
 /* This is the range of ioctl() numbers we claim as ours */
 #define AUTOFS_IOC_FIRST     AUTOFS_IOC_READY

@@ -8,13 +8,13 @@
  *           Marc Dietrich <marvin24@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/err.h>
+#include <linex/power_supply.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/delay.h>
 
 #include "nvec.h"
 

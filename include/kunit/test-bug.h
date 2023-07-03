@@ -11,8 +11,8 @@
 
 #if IS_ENABLED(CONFIG_KUNIT)
 
-#include <linux/jump_label.h> /* For static branch */
-#include <linux/sched.h>
+#include <linex/jump_label.h> /* For static branch */
+#include <linex/sched.h>
 
 /* Static key if KUnit is running any tests. */
 DECLARE_STATIC_KEY_FALSE(kunit_running);

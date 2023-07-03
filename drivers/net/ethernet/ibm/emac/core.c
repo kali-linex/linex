@@ -19,32 +19,32 @@
  * 	Johnnie Peters <jpeters@mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/types.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/crc32.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/bitops.h>
+#include <linex/workqueue.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_net.h>
+#include <linex/of_mdio.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 

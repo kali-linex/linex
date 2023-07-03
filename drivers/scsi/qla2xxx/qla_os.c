@@ -5,18 +5,18 @@
  */
 #include "qla_def.h"
 
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/refcount.h>
-#include <linux/crash_dump.h>
-#include <linux/trace_events.h>
-#include <linux/trace.h>
+#include <linex/moduleparam.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/mutex.h>
+#include <linex/kobject.h>
+#include <linex/slab.h>
+#include <linex/blk-mq-pci.h>
+#include <linex/refcount.h>
+#include <linex/crash_dump.h>
+#include <linex/trace_events.h>
+#include <linex/trace.h>
 
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsicam.h>
@@ -1234,7 +1234,7 @@ qla2x00_wait_for_chip_reset(scsi_qla_host_t *vha)
 *    The abort function will abort the specified command.
 *
 * Input:
-*    cmd = Linux SCSI command packet to be aborted.
+*    cmd = Linex SCSI command packet to be aborted.
 *
 * Returns:
 *    Either SUCCESS or FAILED.
@@ -1585,7 +1585,7 @@ eh_reset_failed:
 *    commands.
 *
 * Input:
-*    cmd = Linux SCSI command packet of the command that cause the
+*    cmd = Linex SCSI command packet of the command that cause the
 *          bus reset.
 *
 * Returns:
@@ -1652,7 +1652,7 @@ eh_bus_reset_done:
 *    The reset function will reset the Adapter.
 *
 * Input:
-*      cmd = Linux SCSI command packet of the command that cause the
+*      cmd = Linex SCSI command packet of the command that cause the
 *            adapter reset.
 *
 * Returns:

@@ -4,12 +4,12 @@
  *
  *  Copyright (C) 2006   James Smart, Emulex Corporation
  */
-#include <linux/time.h>
-#include <linux/jiffies.h>
-#include <linux/security.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/time.h>
+#include <linex/jiffies.h>
+#include <linex/security.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 

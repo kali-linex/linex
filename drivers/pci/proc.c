@@ -5,15 +5,15 @@
  * Copyright (c) 1997--1999 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/capability.h>
+#include <linex/uaccess.h>
+#include <linex/security.h>
 #include <asm/byteorder.h>
 #include "pci.h"
 

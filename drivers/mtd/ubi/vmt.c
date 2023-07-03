@@ -10,10 +10,10 @@
  * resizing.
  */
 
-#include <linux/err.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/err.h>
+#include <linex/math64.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include "ubi.h"
 
 static int self_check_volumes(struct ubi_device *ubi);

@@ -6,12 +6,12 @@
  *
  *  MMC power sequence management
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
-#include <linux/mmc/host.h>
+#include <linex/mmc/host.h>
 
 #include "pwrseq.h"
 

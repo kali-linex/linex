@@ -7,18 +7,18 @@
  * Author: Dan Murphy <dmurphy@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/gpio.h>
+#include <linex/of_gpio.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

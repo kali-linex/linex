@@ -6,7 +6,7 @@
 #ifndef __SKL_WATERMARK_H__
 #define __SKL_WATERMARK_H__
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "intel_display_limits.h"
 #include "intel_global_state.h"

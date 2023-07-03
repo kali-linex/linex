@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/linkage.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pgtable.h>
+#include <linex/linkage.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/timex.h>
+#include <linex/random.h>
+#include <linex/init.h>
+#include <linex/kernel_stat.h>
+#include <linex/syscore_ops.h>
+#include <linex/bitops.h>
+#include <linex/acpi.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/pgtable.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/timer.h>
 #include <asm/hw_irq.h>
 #include <asm/desc.h>
@@ -215,7 +215,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in Linex this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

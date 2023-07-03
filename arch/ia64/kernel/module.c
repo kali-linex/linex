@@ -27,12 +27,12 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/elf.h>
+#include <linex/moduleloader.h>
+#include <linex/string.h>
+#include <linex/vmalloc.h>
 
 #include <asm/patch.h>
 #include <asm/unaligned.h>
@@ -769,8 +769,8 @@ do_reloc (struct module *mod, uint8_t r_type, Elf64_Sym *sym, uint64_t addend,
 	      case RF_INSN60:	ok = apply_imm60(mod, location, (int64_t) val / 16); break;
 	      case RF_32LSB:	put_unaligned(val, (uint32_t *) location); break;
 	      case RF_64LSB:	put_unaligned(val, (uint64_t *) location); break;
-	      case RF_32MSB:	/* ia64 Linux is little-endian... */
-	      case RF_64MSB:	/* ia64 Linux is little-endian... */
+	      case RF_32MSB:	/* ia64 Linex is little-endian... */
+	      case RF_64MSB:	/* ia64 Linex is little-endian... */
 	      case RF_INSN14:	/* must be within-module, i.e., resolved by "ld -r" */
 	      case RF_INSN21M:	/* must be within-module, i.e., resolved by "ld -r" */
 	      case RF_INSN21F:	/* must be within-module, i.e., resolved by "ld -r" */

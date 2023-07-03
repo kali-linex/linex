@@ -12,8 +12,8 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 
-#include <linux/dma-buf.h>
-#include <linux/dma-heap.h>
+#include <linex/dma-buf.h>
+#include <linex/dma-heap.h>
 #include <drm/drm.h>
 
 #define DEVPATH "/dev/dma_heap"

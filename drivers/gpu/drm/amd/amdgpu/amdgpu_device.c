@@ -25,17 +25,17 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include <linux/power_supply.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
-#include <linux/devcoredump.h>
+#include <linex/power_supply.h>
+#include <linex/kthread.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/slab.h>
+#include <linex/iommu.h>
+#include <linex/pci.h>
+#include <linex/devcoredump.h>
 #include <generated/utsrelease.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/apple-gmux.h>
+#include <linex/pci-p2pdma.h>
+#include <linex/apple-gmux.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>
@@ -43,9 +43,9 @@
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/amdgpu_drm.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/efi.h>
+#include <linex/vgaarb.h>
+#include <linex/vga_switcheroo.h>
+#include <linex/efi.h>
 #include "amdgpu.h"
 #include "amdgpu_trace.h"
 #include "amdgpu_i2c.h"
@@ -63,7 +63,7 @@
 #include "soc15.h"
 #include "nv.h"
 #include "bif/bif_4_1_d.h"
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include "amdgpu_vf_error.h"
 
 #include "amdgpu_amdkfd.h"
@@ -75,9 +75,9 @@
 #include "amdgpu_fru_eeprom.h"
 #include "amdgpu_reset.h"
 
-#include <linux/suspend.h>
+#include <linex/suspend.h>
 #include <drm/task_barrier.h>
-#include <linux/pm_runtime.h>
+#include <linex/pm_runtime.h>
 
 #include <drm/drm_drv.h>
 

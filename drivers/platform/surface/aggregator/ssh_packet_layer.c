@@ -6,22 +6,22 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/error-injection.h>
-#include <linux/jiffies.h>
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/kthread.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/error-injection.h>
+#include <linex/jiffies.h>
+#include <linex/kfifo.h>
+#include <linex/kref.h>
+#include <linex/kthread.h>
+#include <linex/ktime.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/lockdep.h>
+#include <linex/serdev.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linex/surface_aggregator/serial_hub.h>
 
 #include "ssh_msgb.h"
 #include "ssh_packet_layer.h"

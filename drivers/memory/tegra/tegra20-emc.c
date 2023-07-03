@@ -5,25 +5,25 @@
  * Author: Dmitry Osipenko <digetx@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/debugfs.h>
-#include <linux/devfreq.h>
-#include <linux/err.h>
-#include <linux/interconnect-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/types.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/clk/tegra.h>
+#include <linex/debugfs.h>
+#include <linex/devfreq.h>
+#include <linex/err.h>
+#include <linex/interconnect-provider.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/pm_opp.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
+#include <linex/types.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

@@ -3,19 +3,19 @@
  * S390 kdump implementation
  *
  * Copyright IBM Corp. 2011
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@linex.vnet.ibm.com>
  */
 
-#include <linux/crash_dump.h>
+#include <linex/crash_dump.h>
 #include <asm/lowcore.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/elf.h>
-#include <linux/uio.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/gfp.h>
+#include <linex/slab.h>
+#include <linex/memblock.h>
+#include <linex/elf.h>
+#include <linex/uio.h>
 #include <asm/asm-offsets.h>
 #include <asm/os_info.h>
 #include <asm/elf.h>
@@ -238,7 +238,7 @@ int remap_oldmem_pfn_range(struct vm_area_struct *vma, unsigned long from,
 
 static const char *nt_name(Elf64_Word type)
 {
-	const char *name = "LINUX";
+	const char *name = "LINEX";
 
 	if (type == NT_PRPSINFO || type == NT_PRSTATUS || type == NT_PRFPREG)
 		name = KEXEC_CORE_NOTE_NAME;
@@ -360,7 +360,7 @@ static void *nt_prpsinfo(void *ptr)
 
 	memset(&prpsinfo, 0, sizeof(prpsinfo));
 	prpsinfo.pr_sname = 'R';
-	strcpy(prpsinfo.pr_fname, "vmlinux");
+	strcpy(prpsinfo.pr_fname, "vmlinex");
 	return nt_init(ptr, NT_PRPSINFO, &prpsinfo, sizeof(prpsinfo));
 }
 

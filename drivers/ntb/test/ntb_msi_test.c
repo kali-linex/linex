@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0 OR BSD-3-Clause)
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/ntb.h>
-#include <linux/pci.h>
-#include <linux/radix-tree.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/ntb.h>
+#include <linex/pci.h>
+#include <linex/radix-tree.h>
+#include <linex/workqueue.h>
 
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_VERSION("0.1");

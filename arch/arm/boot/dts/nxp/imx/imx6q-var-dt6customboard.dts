@@ -10,7 +10,7 @@
 
 #include "imx6q.dtsi"
 #include "imx6qdl-var-dart.dtsi"
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linex-event-codes.h>
 
 / {
 	model = "Variscite DART-MX6 Carrier-board";
@@ -30,27 +30,27 @@
 
 		key-back {
 			gpios = <&gpio4 26 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BACK>;
+			linex,code = <KEY_BACK>;
 			label = "Key Back";
-			linux,input-type = <1>;
+			linex,input-type = <1>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};
 
 		key-home {
 			gpios = <&gpio5 11 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			linex,code = <KEY_HOME>;
 			label = "Key Home";
-			linux,input-type = <1>;
+			linex,input-type = <1>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};
 
 		key-menu {
 			gpios = <&gpio4 25 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_MENU>;
+			linex,code = <KEY_MENU>;
 			label = "Key Menu";
-			linux,input-type = <1>;
+			linex,input-type = <1>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};
@@ -61,12 +61,12 @@
 
 		led1 {
 			gpios = <&gpio4 27 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 		};
 
 		led2 {
 			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linex,default-trigger = "default-on";
 		};
 	};
 

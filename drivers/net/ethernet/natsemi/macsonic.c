@@ -32,26 +32,26 @@
  *          on centris.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/nubus.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitrev.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/fcntl.h>
+#include <linex/gfp.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/in.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/nubus.h>
+#include <linex/errno.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/bitrev.h>
+#include <linex/slab.h>
+#include <linex/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/hwtest.h>

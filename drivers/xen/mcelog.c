@@ -10,7 +10,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Linex kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,17 +34,17 @@
 
 #define pr_fmt(fmt) "xen_mcelog: " fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
+#include <linex/uaccess.h>
+#include <linex/capability.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
 
 #include <xen/interface/xen.h>
 #include <xen/events.h>

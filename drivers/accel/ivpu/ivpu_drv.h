@@ -12,8 +12,8 @@
 #include <drm/drm_mm.h>
 #include <drm/drm_print.h>
 
-#include <linux/pci.h>
-#include <linux/xarray.h>
+#include <linex/pci.h>
+#include <linex/xarray.h>
 #include <uapi/drm/ivpu_accel.h>
 
 #include "ivpu_mmu_context.h"

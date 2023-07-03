@@ -9,8 +9,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include <linux/types.h>
-#include <linux/spi/spidev.h>
+#include <linex/types.h>
+#include <linex/spi/spidev.h>
 
 
 static int verbose;

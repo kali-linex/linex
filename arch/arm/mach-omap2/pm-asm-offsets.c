@@ -5,9 +5,9 @@
  * Copyright (C) 2017-2018 Texas Instruments Inc.
  */
 
-#include <linux/kbuild.h>
-#include <linux/platform_data/pm33xx.h>
-#include <linux/ti-emif-sram.h>
+#include <linex/kbuild.h>
+#include <linex/platform_data/pm33xx.h>
+#include <linex/ti-emif-sram.h>
 
 int main(void)
 {

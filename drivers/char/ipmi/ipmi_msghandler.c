@@ -14,28 +14,28 @@
 #define pr_fmt(fmt) "IPMI message handler: " fmt
 #define dev_fmt(fmt) pr_fmt(fmt)
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/panic_notifier.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/uuid.h>
-#include <linux/nospec.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/panic_notifier.h>
+#include <linex/poll.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/ipmi.h>
+#include <linex/ipmi_smi.h>
+#include <linex/notifier.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/rcupdate.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/workqueue.h>
+#include <linex/uuid.h>
+#include <linex/nospec.h>
+#include <linex/vmalloc.h>
+#include <linex/delay.h>
 
 #define IPMI_DRIVER_VERSION "39.2"
 

@@ -2,7 +2,7 @@
  *
  *  GPLv2, Copyright(c) 2017 Jesper Dangaard Brouer, Red Hat, Inc.
  */
-#include "vmlinux.h"
+#include "vmlinex.h"
 #include "xdp_sample.bpf.h"
 #include "xdp_sample_shared.h"
 #include "hash_func01.h"

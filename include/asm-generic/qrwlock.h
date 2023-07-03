@@ -13,7 +13,7 @@
 #ifndef __ASM_GENERIC_QRWLOCK_H
 #define __ASM_GENERIC_QRWLOCK_H
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>
 

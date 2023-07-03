@@ -4,29 +4,29 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/bug.h>
-#include <linux/cpu_pm.h>
-#include <linux/entry-kvm.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/kvm.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/sched/stat.h>
-#include <linux/psci.h>
+#include <linex/bug.h>
+#include <linex/cpu_pm.h>
+#include <linex/entry-kvm.h>
+#include <linex/errno.h>
+#include <linex/err.h>
+#include <linex/kvm_host.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/fs.h>
+#include <linex/mman.h>
+#include <linex/sched.h>
+#include <linex/kvm.h>
+#include <linex/kvm_irqfd.h>
+#include <linex/irqbypass.h>
+#include <linex/sched/stat.h>
+#include <linex/psci.h>
 #include <trace/events/kvm.h>
 
 #define CREATE_TRACE_POINTS
 #include "trace_arm.h"
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/mman.h>
 #include <asm/tlbflush.h>

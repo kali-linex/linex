@@ -14,9 +14,9 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/percpu.h>
-#include <linux/threads.h>
-#include <linux/types.h>
+#include <linex/percpu.h>
+#include <linex/threads.h>
+#include <linex/types.h>
 #include <asm/ptrace.h>
 
 #define IA64_MCA_RENDEZ_TIMEOUT		(20 * 1000)	/* value in milliseconds - 20 seconds */

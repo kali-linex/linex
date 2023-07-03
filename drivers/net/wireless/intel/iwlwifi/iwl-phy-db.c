@@ -3,9 +3,9 @@
  * Copyright (C) 2005-2014, 2020-2021 Intel Corporation
  * Copyright (C) 2016 Intel Deutschland GmbH
  */
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/export.h>
 
 #include "iwl-drv.h"
 #include "iwl-phy-db.h"

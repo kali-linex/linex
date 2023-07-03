@@ -16,20 +16,20 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c-dev.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/cdev.h>
+#include <linex/compat.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/i2c-dev.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/notifier.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
 /*
  * An i2c_dev represents an i2c_adapter ... an I2C or SMBus master, not a

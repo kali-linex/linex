@@ -3,7 +3,7 @@
  * comedi/drivers/dt2814.c
  * Hardware driver for Data Translation DT2814
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -25,10 +25,10 @@
  * addition, the clock does not seem to be very accurate.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/delay.h>
 
 #define DT2814_CSR 0
 #define DT2814_DATA 1

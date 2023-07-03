@@ -7,21 +7,21 @@
 #include "fragmentation.h"
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/byteorder/generic.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/if_ether.h>
-#include <linux/jiffies.h>
-#include <linux/lockdep.h>
-#include <linux/minmax.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linex/atomic.h>
+#include <linex/byteorder/generic.h>
+#include <linex/errno.h>
+#include <linex/etherdevice.h>
+#include <linex/gfp.h>
+#include <linex/if_ether.h>
+#include <linex/jiffies.h>
+#include <linex/lockdep.h>
+#include <linex/minmax.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <uapi/linex/batadv_packet.h>
 
 #include "hard-interface.h"
 #include "originator.h"

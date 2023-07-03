@@ -7,18 +7,18 @@
  *  Copyright (C) 2015 Ondrej Zary
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/isa.h>
+#include <linex/pnp.h>
+#include <linex/slab.h>
+#include <linex/io.h>
 #include <asm/dma.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

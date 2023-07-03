@@ -4,19 +4,19 @@
  *	together in the faint hope we can take the out in five years time.
  */
 
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/prctl.h>
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/syscalls.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/prctl.h>
+#include <linex/capability.h>
+#include <linex/init.h>
+#include <linex/highuid.h>
+#include <linex/security.h>
+#include <linex/cred.h>
+#include <linex/syscalls.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "uid16.h"
 

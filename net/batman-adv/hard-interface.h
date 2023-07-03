@@ -9,13 +9,13 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/kref.h>
+#include <linex/netdevice.h>
+#include <linex/notifier.h>
+#include <linex/rcupdate.h>
+#include <linex/stddef.h>
+#include <linex/types.h>
 
 /**
  * enum batadv_hard_if_state - State of a hard interface

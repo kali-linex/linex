@@ -2,17 +2,17 @@
 /*
  *  mm/pgtable-generic.c
  *
- *  Generic pgtable methods declared in linux/pgtable.h
+ *  Generic pgtable methods declared in linex/pgtable.h
  *
  *  Copyright (C) 2010  Linus Torvalds
  */
 
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
-#include <linux/pgtable.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mm_inline.h>
+#include <linex/pagemap.h>
+#include <linex/hugetlb.h>
+#include <linex/pgtable.h>
+#include <linex/swap.h>
+#include <linex/swapops.h>
+#include <linex/mm_inline.h>
 #include <asm/tlb.h>
 
 /*

@@ -7,8 +7,8 @@
 #ifndef __FSL_PAMU_H
 #define __FSL_PAMU_H
 
-#include <linux/iommu.h>
-#include <linux/pci.h>
+#include <linex/iommu.h>
+#include <linex/pci.h>
 
 #include <asm/fsl_pamu_stash.h>
 

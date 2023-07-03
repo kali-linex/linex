@@ -11,25 +11,25 @@
  * but are mostly correct. Before you modify the code could you read the SDL
  * diagrams as the code is not obvious and probably very easy to break.
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/timer.h>
+#include <linex/string.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <linex/uaccess.h>
+#include <linex/fcntl.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
 
 /*
  *	State machine for state 1, Awaiting Connection State.

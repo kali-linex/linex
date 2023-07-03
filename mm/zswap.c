@@ -8,33 +8,33 @@
  * the swap device and, in the case where decompressing from RAM is faster
  * than reading from the swap device, can also improve workload performance.
  *
- * Copyright (C) 2012  Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Copyright (C) 2012  Seth Jennings <sjenning@linex.vnet.ibm.com>
 */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/frontswap.h>
-#include <linux/rbtree.h>
-#include <linux/swap.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/mempool.h>
-#include <linux/zpool.h>
+#include <linex/module.h>
+#include <linex/cpu.h>
+#include <linex/highmem.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
+#include <linex/frontswap.h>
+#include <linex/rbtree.h>
+#include <linex/swap.h>
+#include <linex/crypto.h>
+#include <linex/scatterlist.h>
+#include <linex/mempool.h>
+#include <linex/zpool.h>
 #include <crypto/acompress.h>
 
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
-#include <linux/swapops.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/workqueue.h>
+#include <linex/mm_types.h>
+#include <linex/page-flags.h>
+#include <linex/swapops.h>
+#include <linex/writeback.h>
+#include <linex/pagemap.h>
+#include <linex/workqueue.h>
 
 #include "swap.h"
 #include "internal.h"
@@ -1547,7 +1547,7 @@ static const struct frontswap_ops zswap_frontswap_ops = {
 * debugfs functions
 **********************************/
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linex/debugfs.h>
 
 static struct dentry *zswap_debugfs_root;
 

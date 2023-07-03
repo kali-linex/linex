@@ -5,14 +5,14 @@
  * (C) 2002, 2003 Marc Zyngier <maz@wild-wind.fr.eu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/eisa.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
 #include <asm/io.h>
 
 #define SLOT_ADDRESS(r,n) (r->bus_base_addr + (0x1000 * n))

@@ -9,9 +9,9 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/bpf.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
+#include <linex/bpf.h>
+#include <linex/compiler.h>
+#include <linex/kernel.h>
 
 #include <bpf/hashmap.h>
 #include <bpf/libbpf.h>

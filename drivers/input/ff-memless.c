@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/fixp-arith.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/jiffies.h>
+#include <linex/fixp-arith.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Anssi Hannula <anssi.hannula@gmail.com>");

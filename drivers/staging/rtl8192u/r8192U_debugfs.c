@@ -2,8 +2,8 @@
 /****************************************************************************
  *   -----------------------------DEGUGFS STUFF-------------------------
  ****************************************************************************/
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
 #include "r8192U.h"
 
 #define KBUILD_MODNAME "r8192u_usb"

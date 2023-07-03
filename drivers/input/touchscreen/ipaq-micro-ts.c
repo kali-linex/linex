@@ -8,16 +8,16 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/ipaq-micro.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pm.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/mfd/ipaq-micro.h>
 
 struct touchscreen_data {
 	struct input_dev *input;

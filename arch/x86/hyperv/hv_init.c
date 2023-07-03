@@ -7,10 +7,10 @@
  * Author : K. Y. Srinivasan <kys@microsoft.com>
  */
 
-#include <linux/efi.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/io.h>
+#include <linex/efi.h>
+#include <linex/types.h>
+#include <linex/bitfield.h>
+#include <linex/io.h>
 #include <asm/apic.h>
 #include <asm/desc.h>
 #include <asm/sev.h>
@@ -18,17 +18,17 @@
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>
 #include <asm/idtentry.h>
-#include <linux/kexec.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/cpuhotplug.h>
-#include <linux/syscore_ops.h>
+#include <linex/kexec.h>
+#include <linex/version.h>
+#include <linex/vmalloc.h>
+#include <linex/mm.h>
+#include <linex/hyperv.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/cpuhotplug.h>
+#include <linex/syscore_ops.h>
 #include <clocksource/hyperv_timer.h>
-#include <linux/highmem.h>
+#include <linex/highmem.h>
 
 int hyperv_init_cpuhp;
 u64 hv_current_partition_id = ~0ull;
@@ -426,7 +426,7 @@ void __init hyperv_init(void)
 	 * 1. Register the guest ID
 	 * 2. Enable the hypercall and register the hypercall page
 	 */
-	guest_id = hv_generate_guest_id(LINUX_VERSION_CODE);
+	guest_id = hv_generate_guest_id(LINEX_VERSION_CODE);
 	wrmsrl(HV_X64_MSR_GUEST_OS_ID, guest_id);
 
 	/* Hyper-V requires to write guest os id via ghcb in SNP IVM. */

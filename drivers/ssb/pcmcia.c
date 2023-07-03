@@ -10,10 +10,10 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
+#include <linex/ssb/ssb.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/etherdevice.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

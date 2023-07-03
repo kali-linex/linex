@@ -3,27 +3,27 @@
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/major.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/mutex.h>
+#include <linex/backing-dev.h>
+#include <linex/compat.h>
+#include <linex/mount.h>
+#include <linex/blkpg.h>
+#include <linex/magic.h>
+#include <linex/major.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/map.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "mtdcore.h"
 

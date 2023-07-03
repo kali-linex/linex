@@ -84,10 +84,10 @@ config EFI_PCDP
 	help
 	  If your firmware supplies the PCDP table, and you want to
 	  automatically use the primary console device it describes
-	  as the Linux console, say Y here.
+	  as the Linex console, say Y here.
 
 	  If your firmware supplies the HCDP table, and you want to
-	  use the first serial port it describes as the Linux console,
+	  use the first serial port it describes as the Linex console,
 	  say Y here.  If your EFI ConOut path contains only a UART
 	  device, it will become the console automatically.  Otherwise,
 	  you must specify the "console=hcdp" kernel boot argument.
@@ -199,7 +199,7 @@ config INTEL_STRATIX10_RSU
 	  risk of corrupting the bitstream storage and bricking the system.
 
 	  Enable RSU support if you are using an Intel SoC FPGA with the RSU
-	  feature enabled and you want Linux user space control.
+	  feature enabled and you want Linex user space control.
 
 	  Say Y here if you want Intel RSU support.
 
@@ -208,7 +208,7 @@ config MTK_ADSP_IPC
 	depends on MTK_ADSP_MBOX
 	help
 	  Say yes here to add support for the MediaTek ADSP IPC
-	  between host AP (Linux) and the firmware running on ADSP.
+	  between host AP (Linex) and the firmware running on ADSP.
 	  ADSP exists on some mtk processors.
 	  Client might use shared memory to exchange information with ADSP.
 
@@ -284,7 +284,7 @@ config TRUSTED_FOUNDATIONS
 
 	  This option allows the kernel to invoke the secure monitor whenever
 	  required on devices using Trusted Foundations. See the functions and
-	  comments in linux/firmware/trusted_foundations.h or the device tree
+	  comments in linex/firmware/trusted_foundations.h or the device tree
 	  bindings for "tlm,trusted-foundations" for details on how to use it.
 
 	  Choose N if you don't know what this is about.

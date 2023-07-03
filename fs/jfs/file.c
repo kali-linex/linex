@@ -4,10 +4,10 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/posix_acl.h>
-#include <linux/quotaops.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/posix_acl.h>
+#include <linex/quotaops.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_dmap.h"

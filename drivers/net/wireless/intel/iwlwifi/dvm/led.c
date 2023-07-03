@@ -6,13 +6,13 @@
  *****************************************************************************/
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 #include <asm/unaligned.h>
 #include "iwl-io.h"
 #include "iwl-trans.h"

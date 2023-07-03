@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- * handle saa7134 IR remotes via linux kernel input layer.
+ * handle saa7134 IR remotes via linex kernel input layer.
  */
 
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
 
 #define MODULE_NAME "saa7134"
 

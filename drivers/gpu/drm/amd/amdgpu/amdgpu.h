@@ -42,14 +42,14 @@
 
 #include "amdgpu_ctx.h"
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/rbtree.h>
-#include <linux/hashtable.h>
-#include <linux/dma-fence.h>
-#include <linux/pci.h>
+#include <linex/atomic.h>
+#include <linex/wait.h>
+#include <linex/list.h>
+#include <linex/kref.h>
+#include <linex/rbtree.h>
+#include <linex/hashtable.h>
+#include <linex/dma-fence.h>
+#include <linex/pci.h>
 
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_placement.h>

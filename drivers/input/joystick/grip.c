@@ -4,15 +4,15 @@
  */
 
 /*
- * Gravis/Kensington GrIP protocol joystick and gamepad driver for Linux
+ * Gravis/Kensington GrIP protocol joystick and gamepad driver for Linex
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/input.h>
+#include <linex/jiffies.h>
 
 #define DRIVER_DESC	"Gravis GrIP protocol joystick driver"
 

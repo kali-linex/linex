@@ -70,42 +70,42 @@ def get_kernel_root_path() -> str:
 		sys.exit(1)
 	return parts[0]
 
-def config_tests(linux: kunit_kernel.LinuxSourceTree,
+def config_tests(linex: kunit_kernel.LinexSourceTree,
 		 request: KunitConfigRequest) -> KunitResult:
 	stdout.print_with_timestamp('Configuring KUnit Kernel ...')
 
 	config_start = time.time()
-	success = linux.build_reconfig(request.build_dir, request.make_options)
+	success = linex.build_reconfig(request.build_dir, request.make_options)
 	config_end = time.time()
 	status = KunitStatus.SUCCESS if success else KunitStatus.CONFIG_FAILURE
 	return KunitResult(status, config_end - config_start)
 
-def build_tests(linux: kunit_kernel.LinuxSourceTree,
+def build_tests(linex: kunit_kernel.LinexSourceTree,
 		request: KunitBuildRequest) -> KunitResult:
 	stdout.print_with_timestamp('Building KUnit Kernel ...')
 
 	build_start = time.time()
-	success = linux.build_kernel(request.jobs,
+	success = linex.build_kernel(request.jobs,
 				     request.build_dir,
 				     request.make_options)
 	build_end = time.time()
 	status = KunitStatus.SUCCESS if success else KunitStatus.BUILD_FAILURE
 	return KunitResult(status, build_end - build_start)
 
-def config_and_build_tests(linux: kunit_kernel.LinuxSourceTree,
+def config_and_build_tests(linex: kunit_kernel.LinexSourceTree,
 			   request: KunitBuildRequest) -> KunitResult:
-	config_result = config_tests(linux, request)
+	config_result = config_tests(linex, request)
 	if config_result.status != KunitStatus.SUCCESS:
 		return config_result
 
-	return build_tests(linux, request)
+	return build_tests(linex, request)
 
-def _list_tests(linux: kunit_kernel.LinuxSourceTree, request: KunitExecRequest) -> List[str]:
+def _list_tests(linex: kunit_kernel.LinexSourceTree, request: KunitExecRequest) -> List[str]:
 	args = ['kunit.action=list']
 	if request.kernel_args:
 		args.extend(request.kernel_args)
 
-	output = linux.run_kernel(args=args,
+	output = linex.run_kernel(args=args,
 			   timeout=request.timeout,
 			   filter_glob=request.filter_glob,
 			   build_dir=request.build_dir)
@@ -130,10 +130,10 @@ def _suites_from_test_list(tests: List[str]) -> List[str]:
 
 
 
-def exec_tests(linux: kunit_kernel.LinuxSourceTree, request: KunitExecRequest) -> KunitResult:
+def exec_tests(linex: kunit_kernel.LinexSourceTree, request: KunitExecRequest) -> KunitResult:
 	filter_globs = [request.filter_glob]
 	if request.run_isolated:
-		tests = _list_tests(linux, request)
+		tests = _list_tests(linex, request)
 		if request.run_isolated == 'test':
 			filter_globs = tests
 		elif request.run_isolated == 'suite':
@@ -143,7 +143,7 @@ def exec_tests(linux: kunit_kernel.LinuxSourceTree, request: KunitExecRequest) -
 				test_glob = request.filter_glob.split('.', maxsplit=2)[1]
 				filter_globs = [g + '.'+ test_glob for g in filter_globs]
 
-	metadata = kunit_json.Metadata(arch=linux.arch(), build_dir=request.build_dir, def_config='kunit_defconfig')
+	metadata = kunit_json.Metadata(arch=linex.arch(), build_dir=request.build_dir, def_config='kunit_defconfig')
 
 	test_counts = kunit_parser.TestCounts()
 	exec_time = 0.0
@@ -151,7 +151,7 @@ def exec_tests(linux: kunit_kernel.LinuxSourceTree, request: KunitExecRequest) -
 		stdout.print_with_timestamp('Starting KUnit Kernel ({}/{})...'.format(i+1, len(filter_globs)))
 
 		test_start = time.time()
-		run_result = linux.run_kernel(
+		run_result = linex.run_kernel(
 			args=request.kernel_args,
 			timeout=request.timeout,
 			filter_glob=filter_glob,
@@ -169,7 +169,7 @@ def exec_tests(linux: kunit_kernel.LinuxSourceTree, request: KunitExecRequest) -
 	if len(filter_globs) == 1 and test_counts.crashed > 0:
 		bd = request.build_dir
 		print('The kernel seems to have crashed; you can decode the stack traces with:')
-		print('$ scripts/decode_stacktrace.sh {}/vmlinux {} < {} | tee {}/decoded.log | {} parse'.format(
+		print('$ scripts/decode_stacktrace.sh {}/vmlinex {} < {} | tee {}/decoded.log | {} parse'.format(
 				bd, bd, kunit_kernel.get_outfile_path(bd), bd, sys.argv[0]))
 
 	kunit_status = _map_to_overall_status(test_counts.get_status())
@@ -221,19 +221,19 @@ def parse_tests(request: KunitParseRequest, metadata: kunit_json.Metadata, input
 
 	return KunitResult(KunitStatus.SUCCESS, parse_time), test
 
-def run_tests(linux: kunit_kernel.LinuxSourceTree,
+def run_tests(linex: kunit_kernel.LinexSourceTree,
 	      request: KunitRequest) -> KunitResult:
 	run_start = time.time()
 
-	config_result = config_tests(linux, request)
+	config_result = config_tests(linex, request)
 	if config_result.status != KunitStatus.SUCCESS:
 		return config_result
 
-	build_result = build_tests(linux, request)
+	build_result = build_tests(linex, request)
 	if build_result.status != KunitStatus.SUCCESS:
 		return build_result
 
-	exec_result = exec_tests(linux, request)
+	exec_result = exec_tests(linex, request)
 
 	run_end = time.time()
 
@@ -303,9 +303,9 @@ def add_common_opts(parser: argparse.ArgumentParser) -> None:
 			    help=('Sets make\'s CROSS_COMPILE variable; it should '
 				  'be set to a toolchain path prefix (the prefix '
 				  'of gcc and other tools in your toolchain, for '
-				  'example `sparc64-linux-gnu-` if you have the '
+				  'example `sparc64-linex-gnu-` if you have the '
 				  'sparc toolchain installed on your system, or '
-				  '`$HOME/toolchains/microblaze/gcc-9.2.0-nolibc/microblaze-linux/bin/microblaze-linux-` '
+				  '`$HOME/toolchains/microblaze/gcc-9.2.0-nolibc/microblaze-linex/bin/microblaze-linex-` '
 				  'if you have downloaded the microblaze toolchain '
 				  'from the 0-day website to a directory in your '
 				  'home directory called `toolchains`).'),
@@ -363,8 +363,8 @@ def add_parse_opts(parser: argparse.ArgumentParser) -> None:
 			    type=str, const='stdout', default=None, metavar='FILE')
 
 
-def tree_from_args(cli_args: argparse.Namespace) -> kunit_kernel.LinuxSourceTree:
-	"""Returns a LinuxSourceTree based on the user's arguments."""
+def tree_from_args(cli_args: argparse.Namespace) -> kunit_kernel.LinexSourceTree:
+	"""Returns a LinexSourceTree based on the user's arguments."""
 	# Allow users to specify multiple arguments in one string, e.g. '-smp 8'
 	qemu_args: List[str] = []
 	if cli_args.qemu_args:
@@ -377,7 +377,7 @@ def tree_from_args(cli_args: argparse.Namespace) -> kunit_kernel.LinuxSourceTree
 		# --kunitconfig options to have differing options.
 		kunitconfigs = [kunit_kernel.ALL_TESTS_CONFIG_PATH] + kunitconfigs
 
-	return kunit_kernel.LinuxSourceTree(cli_args.build_dir,
+	return kunit_kernel.LinexSourceTree(cli_args.build_dir,
 			kunitconfig_paths=kunitconfigs,
 			kconfig_add=cli_args.kconfig_add,
 			arch=cli_args.arch,
@@ -390,7 +390,7 @@ def run_handler(cli_args: argparse.Namespace) -> None:
 	if not os.path.exists(cli_args.build_dir):
 		os.mkdir(cli_args.build_dir)
 
-	linux = tree_from_args(cli_args)
+	linex = tree_from_args(cli_args)
 	request = KunitRequest(build_dir=cli_args.build_dir,
 					make_options=cli_args.make_options,
 					jobs=cli_args.jobs,
@@ -400,7 +400,7 @@ def run_handler(cli_args: argparse.Namespace) -> None:
 					filter_glob=cli_args.filter_glob,
 					kernel_args=cli_args.kernel_args,
 					run_isolated=cli_args.run_isolated)
-	result = run_tests(linux, request)
+	result = run_tests(linex, request)
 	if result.status != KunitStatus.SUCCESS:
 		sys.exit(1)
 
@@ -410,10 +410,10 @@ def config_handler(cli_args: argparse.Namespace) -> None:
 			not os.path.exists(cli_args.build_dir)):
 		os.mkdir(cli_args.build_dir)
 
-	linux = tree_from_args(cli_args)
+	linex = tree_from_args(cli_args)
 	request = KunitConfigRequest(build_dir=cli_args.build_dir,
 						make_options=cli_args.make_options)
-	result = config_tests(linux, request)
+	result = config_tests(linex, request)
 	stdout.print_with_timestamp((
 		'Elapsed time: %.3fs\n') % (
 			result.elapsed_time))
@@ -422,11 +422,11 @@ def config_handler(cli_args: argparse.Namespace) -> None:
 
 
 def build_handler(cli_args: argparse.Namespace) -> None:
-	linux = tree_from_args(cli_args)
+	linex = tree_from_args(cli_args)
 	request = KunitBuildRequest(build_dir=cli_args.build_dir,
 					make_options=cli_args.make_options,
 					jobs=cli_args.jobs)
-	result = config_and_build_tests(linux, request)
+	result = config_and_build_tests(linex, request)
 	stdout.print_with_timestamp((
 		'Elapsed time: %.3fs\n') % (
 			result.elapsed_time))
@@ -435,7 +435,7 @@ def build_handler(cli_args: argparse.Namespace) -> None:
 
 
 def exec_handler(cli_args: argparse.Namespace) -> None:
-	linux = tree_from_args(cli_args)
+	linex = tree_from_args(cli_args)
 	exec_request = KunitExecRequest(raw_output=cli_args.raw_output,
 					build_dir=cli_args.build_dir,
 					json=cli_args.json,
@@ -443,7 +443,7 @@ def exec_handler(cli_args: argparse.Namespace) -> None:
 					filter_glob=cli_args.filter_glob,
 					kernel_args=cli_args.kernel_args,
 					run_isolated=cli_args.run_isolated)
-	result = exec_tests(linux, exec_request)
+	result = exec_tests(linex, exec_request)
 	stdout.print_with_timestamp((
 		'Elapsed time: %.3fs\n') % (result.elapsed_time))
 	if result.status != KunitStatus.SUCCESS:

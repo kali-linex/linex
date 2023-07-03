@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_ruffian.c
+ *	linex/arch/alpha/kernel/sys_ruffian.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -9,14 +9,14 @@
  * Code supporting the RUFFIAN.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/pci.h>
+#include <linex/ioport.h>
+#include <linex/timex.h>
+#include <linex/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

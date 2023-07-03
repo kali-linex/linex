@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2000-2018, VMware, Inc. All Rights Reserved.
  *
- * This is VMware physical memory management driver for Linux. The driver
+ * This is VMware physical memory management driver for Linex. The driver
  * acts like a "balloon" that can be inflated to reclaim physical pages by
  * reserving them in the guest and invalidating them in the monitor,
  * freeing up the underlying machine pages so they can be allocated to
@@ -16,22 +16,22 @@
 //#define DEBUG
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/balloon_compaction.h>
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
+#include <linex/types.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/sched.h>
+#include <linex/module.h>
+#include <linex/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/seq_file.h>
+#include <linex/rwsem.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/balloon_compaction.h>
+#include <linex/vmw_vmci_defs.h>
+#include <linex/vmw_vmci_api.h>
 #include <asm/hypervisor.h>
 
 MODULE_AUTHOR("VMware, Inc.");
@@ -59,7 +59,7 @@ MODULE_PARM_DESC(vmwballoon_shrinker_enable,
  */
 #define VMW_BALLOON_HV_PORT		0x5670
 #define VMW_BALLOON_HV_MAGIC		0x456c6d6f
-#define VMW_BALLOON_GUEST_ID		1	/* Linux */
+#define VMW_BALLOON_GUEST_ID		1	/* Linex */
 
 enum vmwballoon_capabilities {
 	/*

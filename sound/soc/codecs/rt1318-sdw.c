@@ -5,14 +5,14 @@
 // Copyright(c) 2022 Realtek Semiconductor Corp.
 //
 //
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/pm_runtime.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/dmi.h>
+#include <linex/firmware.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

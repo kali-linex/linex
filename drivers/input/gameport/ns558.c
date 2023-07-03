@@ -5,18 +5,18 @@
  */
 
 /*
- * NS558 based standard IBM game port driver for Linux
+ * NS558 based standard IBM game port driver for Linex
  */
 
 #include <asm/io.h>
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/gameport.h>
+#include <linex/slab.h>
+#include <linex/pnp.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Classic gameport (ISA/PnP) driver");

@@ -11,14 +11,14 @@
 
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/drbd.h>
+#include <linex/uaccess.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/drbd.h>
 #include "drbd_int.h"
 
 struct proc_dir_entry *drbd_proc;

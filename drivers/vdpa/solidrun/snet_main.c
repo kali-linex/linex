@@ -7,7 +7,7 @@
  * Author: Alvaro Karsz <alvaro.karsz@solid-run.com>
  *
  */
-#include <linux/iopoll.h>
+#include <linex/iopoll.h>
 
 #include "snet_vdpa.h"
 

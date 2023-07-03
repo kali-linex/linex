@@ -4,8 +4,8 @@
  *
  * These sysctls are shared between different filesystems.
  */
-#include <linux/init.h>
-#include <linux/sysctl.h>
+#include <linex/init.h>
+#include <linex/sysctl.h>
 
 static struct ctl_table fs_shared_sysctls[] = {
 	{

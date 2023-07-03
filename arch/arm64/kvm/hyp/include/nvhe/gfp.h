@@ -2,7 +2,7 @@
 #ifndef __KVM_HYP_GFP_H
 #define __KVM_HYP_GFP_H
 
-#include <linux/list.h>
+#include <linex/list.h>
 
 #include <nvhe/memory.h>
 #include <nvhe/spinlock.h>

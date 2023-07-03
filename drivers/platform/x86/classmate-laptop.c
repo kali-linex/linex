@@ -4,14 +4,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/rfkill.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/acpi.h>
+#include <linex/backlight.h>
+#include <linex/input.h>
+#include <linex/rfkill.h>
 
 MODULE_LICENSE("GPL");
 

@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2021 Intel Corporation, Inc.
  */
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/uio_driver.h>
+#include <linex/dfl.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/uio_driver.h>
 
 #define DRIVER_NAME "uio_dfl"
 

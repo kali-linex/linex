@@ -10,12 +10,12 @@
 #ifndef SURFACE_HID_CORE_H
 #define SURFACE_HID_CORE_H
 
-#include <linux/hid.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <linex/hid.h>
+#include <linex/pm.h>
+#include <linex/types.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linex/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/device.h>
 
 enum surface_hid_descriptor_entry {
 	SURFACE_HID_DESC_HID    = 0,

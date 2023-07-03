@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
 
 #include "mthca_dev.h"
 #include "mthca_cmd.h"

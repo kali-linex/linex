@@ -7,11 +7,11 @@
 #ifndef PCI_IMPL_H
 #define PCI_IMPL_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of_device.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/pci.h>
+#include <linex/msi.h>
+#include <linex/of_device.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/iommu.h>

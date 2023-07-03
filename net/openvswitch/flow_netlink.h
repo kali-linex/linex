@@ -7,16 +7,16 @@
 #ifndef FLOW_NETLINK_H
 #define FLOW_NETLINK_H 1
 
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/if_ether.h>
-#include <linux/in6.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
+#include <linex/kernel.h>
+#include <linex/netlink.h>
+#include <linex/openvswitch.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/rcupdate.h>
+#include <linex/if_ether.h>
+#include <linex/in6.h>
+#include <linex/jiffies.h>
+#include <linex/time.h>
 
 #include <net/inet_ecn.h>
 #include <net/ip_tunnels.h>

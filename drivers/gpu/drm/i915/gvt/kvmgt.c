@@ -33,19 +33,19 @@
  *    Zhi Wang <zhi.a.wang@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/mdev.h>
-#include <linux/debugfs.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/kthread.h>
+#include <linex/sched/mm.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/rbtree.h>
+#include <linex/spinlock.h>
+#include <linex/eventfd.h>
+#include <linex/mdev.h>
+#include <linex/debugfs.h>
 
-#include <linux/nospec.h>
+#include <linex/nospec.h>
 
 #include <drm/drm_edid.h>
 

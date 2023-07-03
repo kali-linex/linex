@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/array.c
+ *  linex/fs/proc/array.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *  based on ideas by Darren Senn
@@ -53,45 +53,45 @@
  *			 :  base.c too.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/time_namespace.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/tty.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/signal.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/times.h>
-#include <linux/cpuset.h>
-#include <linux/rcupdate.h>
-#include <linux/delayacct.h>
-#include <linux/seq_file.h>
-#include <linux/pid_namespace.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/string_helpers.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/kthread.h>
-#include <linux/mmu_context.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/time_namespace.h>
+#include <linex/kernel.h>
+#include <linex/kernel_stat.h>
+#include <linex/tty.h>
+#include <linex/string.h>
+#include <linex/mman.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/numa_balancing.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/task.h>
+#include <linex/sched/cputime.h>
+#include <linex/proc_fs.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/mm.h>
+#include <linex/hugetlb.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/smp.h>
+#include <linex/signal.h>
+#include <linex/highmem.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/times.h>
+#include <linex/cpuset.h>
+#include <linex/rcupdate.h>
+#include <linex/delayacct.h>
+#include <linex/seq_file.h>
+#include <linex/pid_namespace.h>
+#include <linex/prctl.h>
+#include <linex/ptrace.h>
+#include <linex/string_helpers.h>
+#include <linex/user_namespace.h>
+#include <linex/fs_struct.h>
+#include <linex/kthread.h>
+#include <linex/mmu_context.h>
 
 #include <asm/processor.h>
 #include "internal.h"
@@ -604,7 +604,7 @@ static int do_task_stat(struct seq_file *m, struct pid_namespace *ns,
 	seq_put_decimal_ull(m, " ", esp);
 	seq_put_decimal_ull(m, " ", eip);
 	/* The signal information here is obsolete.
-	 * It must be decimal for Linux 2.0 compatibility.
+	 * It must be decimal for Linex 2.0 compatibility.
 	 * Use /proc/#/status for real-time signals.
 	 */
 	seq_put_decimal_ull(m, " ", task->pending.signal.sig[0] & 0x7fffffffUL);

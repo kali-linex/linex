@@ -6,17 +6,17 @@
  * Copyright (C) 2019 Michael Shych <mshych@mellanox.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/platform_data/mlxreg.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/watchdog.h>
 
 #define MLXREG_WDT_CLOCK_SCALE		1000
 #define MLXREG_WDT_MAX_TIMEOUT_TYPE1	32

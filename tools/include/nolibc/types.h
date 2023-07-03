@@ -8,8 +8,8 @@
 #define _NOLIBC_TYPES_H
 
 #include "std.h"
-#include <linux/time.h>
-#include <linux/stat.h>
+#include <linex/time.h>
+#include <linex/stat.h>
 
 
 /* Only the generic macros and types may be defined here. The arch-specific
@@ -18,7 +18,7 @@
  */
 
 /* stat flags (WARNING, octal here). We need to check for an existing
- * definition because linux/stat.h may omit to define those if it finds
+ * definition because linex/stat.h may omit to define those if it finds
  * that any glibc header was already included.
  */
 #if !defined(S_IFMT)
@@ -156,7 +156,7 @@ struct pollfd {
 };
 
 /* for getdents64() */
-struct linux_dirent64 {
+struct linex_dirent64 {
 	uint64_t       d_ino;
 	int64_t        d_off;
 	unsigned short d_reclen;

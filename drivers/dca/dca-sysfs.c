@@ -3,15 +3,15 @@
  * Copyright(c) 2007 - 2009 Intel Corporation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/dca.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/kdev_t.h>
+#include <linex/err.h>
+#include <linex/dca.h>
+#include <linex/gfp.h>
+#include <linex/export.h>
 
 static struct class *dca_class;
 static struct idr dca_idr;

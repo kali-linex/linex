@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2017 Pengutronix, Juergen Borleis <jbe@pengutronix.de>
  */
-#include <linux/dsa/lan9303.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/dsa/lan9303.h>
+#include <linex/etherdevice.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 
 #include "tag.h"
 

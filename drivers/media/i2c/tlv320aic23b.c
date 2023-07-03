@@ -10,13 +10,13 @@
  * Copyright (C) 2005 Hans Verkuil <hverkuil@xs4all.nl>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/ioctl.h>
+#include <linex/uaccess.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 

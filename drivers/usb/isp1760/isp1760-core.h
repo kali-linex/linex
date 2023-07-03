@@ -15,8 +15,8 @@
 #ifndef _ISP1760_CORE_H_
 #define _ISP1760_CORE_H_
 
-#include <linux/ioport.h>
-#include <linux/regmap.h>
+#include <linex/ioport.h>
+#include <linex/regmap.h>
 
 #include "isp1760-hcd.h"
 #include "isp1760-udc.h"

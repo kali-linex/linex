@@ -7,16 +7,16 @@
  * Copyright (C) 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/sched/signal.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/highmem.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/debugfs.h>
+#include <linex/sched/signal.h>
 
 #include "../cluster/heartbeat.h"
 #include "../cluster/nodemanager.h"

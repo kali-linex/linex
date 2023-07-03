@@ -10,8 +10,8 @@
 #ifndef _NILFS_MDT_H
 #define _NILFS_MDT_H
 
-#include <linux/buffer_head.h>
-#include <linux/blockgroup_lock.h>
+#include <linex/buffer_head.h>
+#include <linex/blockgroup_lock.h>
 #include "nilfs.h"
 #include "page.h"
 

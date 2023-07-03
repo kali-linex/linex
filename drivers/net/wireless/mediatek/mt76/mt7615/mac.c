@@ -7,9 +7,9 @@
  *         Lorenzo Bianconi <lorenzo@kernel.org>
  */
 
-#include <linux/devcoredump.h>
-#include <linux/etherdevice.h>
-#include <linux/timekeeping.h>
+#include <linex/devcoredump.h>
+#include <linex/etherdevice.h>
+#include <linex/timekeeping.h>
 #include "mt7615.h"
 #include "../trace.h"
 #include "../dma.h"

@@ -5,10 +5,10 @@
  *  Copyright (C) 2013 Atmel,
  *                2016 Andras Szemzo <szemzo.andras@gmail.com>
  */
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/system_misc.h>

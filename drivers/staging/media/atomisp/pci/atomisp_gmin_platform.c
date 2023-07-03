@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/dmi.h>
+#include <linex/efi.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
 #include <media/v4l2-subdev.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include "../../include/linux/atomisp_platform.h"
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio.h>
+#include <linex/platform_device.h>
+#include "../../include/linex/atomisp_platform.h"
+#include "../../include/linex/atomisp_gmin_platform.h"
 
 #define MAX_SUBDEVS 8
 
@@ -1463,7 +1463,7 @@ MODULE_LICENSE("GPL");
  * The below helper functions don't really belong here and should eventually be
  * moved to some place under drivers/media/v4l2-core.
  */
-#include <linux/platform_data/x86/soc.h>
+#include <linex/platform_data/x86/soc.h>
 
 /*
  * 79234640-9e10-4fea-a5c1-b5aa8b19756f

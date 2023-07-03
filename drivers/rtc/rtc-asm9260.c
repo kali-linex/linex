@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright (C) 2016 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2016 Oleksij Rempel <linex@rempel-privat.de>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linex/clk.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
 
 /* Miscellaneous registers */
 /* Interrupt Location Register */
@@ -334,6 +334,6 @@ static struct platform_driver asm9260_rtc_driver = {
 
 module_platform_driver(asm9260_rtc_driver);
 
-MODULE_AUTHOR("Oleksij Rempel <linux@rempel-privat.de>");
+MODULE_AUTHOR("Oleksij Rempel <linex@rempel-privat.de>");
 MODULE_DESCRIPTION("Alphascale asm9260 SoC Realtime Clock Driver (RTC)");
 MODULE_LICENSE("GPL");

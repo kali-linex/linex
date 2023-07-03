@@ -14,12 +14,12 @@
  * and waking up the secondary CPUs
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mbus.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/mbus.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include "common.h"

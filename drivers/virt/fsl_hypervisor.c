@@ -22,28 +22,28 @@
  *    shuts down.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/reboot.h>
+#include <linex/uaccess.h>
+#include <linex/notifier.h>
+#include <linex/interrupt.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/fsl_hcalls.h>
 
-#include <linux/fsl_hypervisor.h>
+#include <linex/fsl_hypervisor.h>
 
 static BLOCKING_NOTIFIER_HEAD(failover_subscribers);
 

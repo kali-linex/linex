@@ -6,9 +6,9 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
+#include <linex/i2c.h>
+#include <linex/rtc.h>
+#include <linex/module.h>
 
 /* Registers */
 
@@ -149,7 +149,7 @@ static struct i2c_driver ds1672_driver = {
 		   .name = "rtc-ds1672",
 		   .of_match_table = of_match_ptr(ds1672_of_match),
 	},
-	.probe = ds1672_probe,
+	.probe_new = ds1672_probe,
 	.id_table = ds1672_id,
 };
 

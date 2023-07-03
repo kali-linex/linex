@@ -4,7 +4,7 @@
 #ifndef __HCLGE_DEBUGFS_H
 #define __HCLGE_DEBUGFS_H
 
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 #include "hclge_cmd.h"
 
 #define HCLGE_DBG_MNG_TBL_MAX	   64

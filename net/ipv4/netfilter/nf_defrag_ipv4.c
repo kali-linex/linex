@@ -3,17 +3,17 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linex/types.h>
+#include <linex/ip.h>
+#include <linex/netfilter.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
 #include <net/netns/generic.h>
 #include <net/route.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/netfilter_bridge.h>
+#include <linex/netfilter_ipv4.h>
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>

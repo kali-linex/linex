@@ -5,14 +5,14 @@
  * Copyright 2009 Analog Devices Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/adp5520.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/platform_device.h>
+#include <linex/fb.h>
+#include <linex/backlight.h>
+#include <linex/mfd/adp5520.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 struct adp5520_bl {
 	struct device *master;

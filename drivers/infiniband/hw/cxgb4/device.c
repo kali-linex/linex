@@ -29,11 +29,11 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/debugfs.h>
+#include <linex/vmalloc.h>
+#include <linex/math64.h>
 
 #include <rdma/ib_verbs.h>
 

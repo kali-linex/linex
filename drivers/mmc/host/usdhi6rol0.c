@@ -4,28 +4,28 @@
  * Author: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/virtio.h>
-#include <linux/workqueue.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/highmem.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/log2.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/sd.h>
+#include <linex/mmc/sdio.h>
+#include <linex/module.h>
+#include <linex/pagemap.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/scatterlist.h>
+#include <linex/string.h>
+#include <linex/time.h>
+#include <linex/virtio.h>
+#include <linex/workqueue.h>
 
 #define USDHI6_SD_CMD		0x0000
 #define USDHI6_SD_PORT_SEL	0x0004

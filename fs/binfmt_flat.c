@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /****************************************************************************/
 /*
- *  linux/fs/binfmt_flat.c
+ *  linex/fs/binfmt_flat.c
  *
  *	Copyright (C) 2000-2003 David McCullough <davidm@snapgear.com>
  *	Copyright (C) 2002 Greg Ungerer <gerg@snapgear.com>
@@ -9,34 +9,34 @@
  *	Copyright (C) 2000, 2001 Lineo, by David McCullough <davidm@lineo.com>
  *  based heavily on:
  *
- *  linux/fs/binfmt_aout.c:
+ *  linex/fs/binfmt_aout.c:
  *      Copyright (C) 1991, 1992, 1996  Linus Torvalds
- *  linux/fs/binfmt_flat.c for 2.0 kernel
+ *  linex/fs/binfmt_flat.c for 2.0 kernel
  *	    Copyright (C) 1998  Kenneth Albanowski <kjahds@kjahds.com>
  *	JAN/99 -- coded full program relocation (gerg@snapgear.com)
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/flat.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/mman.h>
+#include <linex/errno.h>
+#include <linex/signal.h>
+#include <linex/string.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/slab.h>
+#include <linex/binfmts.h>
+#include <linex/personality.h>
+#include <linex/init.h>
+#include <linex/flat.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
@@ -88,9 +88,9 @@ struct lib_info {
 	} lib_list[MAX_SHARED_LIBS];
 };
 
-static int load_flat_binary(struct linux_binprm *);
+static int load_flat_binary(struct linex_binprm *);
 
-static struct linux_binfmt flat_format = {
+static struct linex_binfmt flat_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_flat_binary,
 };
@@ -103,7 +103,7 @@ static struct linux_binfmt flat_format = {
  * addresses on the "stack", recording the new stack pointer value.
  */
 
-static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start)
+static int create_flat_tables(struct linex_binprm *bprm, unsigned long arg_start)
 {
 	char __user *p;
 	unsigned long __user *sp;
@@ -164,7 +164,7 @@ static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start
 
 #ifdef CONFIG_BINFMT_ZFLAT
 
-#include <linux/zlib.h>
+#include <linex/zlib.h>
 
 #define LBUFSIZE	4000
 
@@ -177,7 +177,7 @@ static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start
 #define ENCRYPTED    0x20 /* bit 5 set: file is encrypted */
 #define RESERVED     0xC0 /* bit 6,7:   reserved */
 
-static int decompress_exec(struct linux_binprm *bprm, loff_t fpos, char *dst,
+static int decompress_exec(struct linex_binprm *bprm, loff_t fpos, char *dst,
 		long len, int fd)
 {
 	unsigned char *buf;
@@ -401,7 +401,7 @@ static inline u32 __user *skip_got_header(u32 __user *rp)
 	return rp;
 }
 
-static int load_flat_file(struct linux_binprm *bprm,
+static int load_flat_file(struct linex_binprm *bprm,
 		struct lib_info *libinfo, unsigned long *extra_stack)
 {
 	struct flat_hdr *hdr;
@@ -509,7 +509,7 @@ static int load_flat_file(struct linux_binprm *bprm,
 		goto err;
 
 	/* OK, This is the point of no return */
-	set_personality(PER_LINUX_32BIT);
+	set_personality(PER_LINEX_32BIT);
 	setup_new_exec(bprm);
 
 	/*
@@ -850,7 +850,7 @@ err:
  * libraries.  There is no binary dependent code anywhere else.
  */
 
-static int load_flat_binary(struct linux_binprm *bprm)
+static int load_flat_binary(struct linex_binprm *bprm)
 {
 	struct lib_info libinfo;
 	struct pt_regs *regs = current_pt_regs();

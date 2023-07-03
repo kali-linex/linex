@@ -15,13 +15,13 @@
 #include "hpioctl.h"
 #include "hpicmn.h"
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/slab.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

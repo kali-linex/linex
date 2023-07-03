@@ -3,17 +3,17 @@
  * HID Sensors Driver
  * Copyright (c) 2012, Intel Corporation.
  */
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/hid-sensor-hub.h>
-#include <linux/workqueue.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/sysfs.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/hid-sensor-hub.h>
+#include <linex/workqueue.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/trigger.h>
+#include <linex/iio/triggered_buffer.h>
+#include <linex/iio/trigger_consumer.h>
+#include <linex/iio/sysfs.h>
 #include "hid-sensor-trigger.h"
 
 static ssize_t _hid_sensor_set_report_latency(struct device *dev,

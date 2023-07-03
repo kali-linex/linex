@@ -5,10 +5,10 @@
  * Copyright (C) 2012 Texas Instruments
  * Paul Walmsley
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/clk.h>
+#include <linex/io.h>
 
 #include "soc.h"
 #include "common.h"

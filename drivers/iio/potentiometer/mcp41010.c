@@ -16,15 +16,15 @@
  * mcp42100	2	256		100
  */
 
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linex/cache.h>
+#include <linex/err.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/types.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/property.h>
+#include <linex/spi/spi.h>
 
 #define MCP41010_MAX_WIPERS	2
 #define MCP41010_WRITE		BIT(4)

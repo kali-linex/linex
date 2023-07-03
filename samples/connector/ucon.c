@@ -11,8 +11,8 @@
 #include <sys/socket.h>
 #include <sys/poll.h>
 
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linex/netlink.h>
+#include <linex/rtnetlink.h>
 
 #include <arpa/inet.h>
 
@@ -25,7 +25,7 @@
 #include <time.h>
 #include <getopt.h>
 
-#include <linux/connector.h>
+#include <linex/connector.h>
 
 #define DEBUG
 #define NETLINK_CONNECTOR 	11

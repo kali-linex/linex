@@ -2,20 +2,20 @@
 /*
  * Multiplex several virtual IPIs over a single HW IPI.
  *
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi Linex Contributors
  * Copyright (c) 2022 Ventana Micro Systems Inc.
  */
 
 #define pr_fmt(fmt) "ipi-mux: " fmt
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/jump_label.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
+#include <linex/cpu.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/jump_label.h>
+#include <linex/percpu.h>
+#include <linex/smp.h>
 
 struct ipi_mux_cpu {
 	atomic_t			enable;

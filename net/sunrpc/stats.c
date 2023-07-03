@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/stats.c
+ * linex/net/sunrpc/stats.c
  *
  * procfs-based user access to generic RPC statistics. The stats files
  * reside in /proc/net/rpc.
@@ -13,17 +13,17 @@
  * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/rcupdate.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/svcsock.h>
+#include <linex/sunrpc/metrics.h>
+#include <linex/rcupdate.h>
 
 #include <trace/events/sunrpc.h>
 

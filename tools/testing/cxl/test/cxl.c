@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright(c) 2021 Intel Corporation. All rights reserved.
 
-#include <linux/platform_device.h>
-#include <linux/genalloc.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
+#include <linex/platform_device.h>
+#include <linex/genalloc.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/acpi.h>
+#include <linex/pci.h>
+#include <linex/mm.h>
 #include <cxlmem.h>
 
 #include "../watermark.h"

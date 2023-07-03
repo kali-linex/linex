@@ -6,7 +6,7 @@
 #ifndef __MDIO_OPEN_ALLIANCE__
 #define __MDIO_OPEN_ALLIANCE__
 
-#include <linux/mdio.h>
+#include <linex/mdio.h>
 
 /* NOTE: all OATC14 registers are located in MDIO_MMD_VEND2 */
 

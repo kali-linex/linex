@@ -7,14 +7,14 @@
  */
 
 #define pr_fmt(fmt)	"(stc): " fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
 
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
+#include <linex/seq_file.h>
+#include <linex/skbuff.h>
 
-#include <linux/ti_wilink_st.h>
+#include <linex/ti_wilink_st.h>
 
 extern void st_kim_recv(void *, const unsigned char *, long);
 void st_int_recv(void *, const unsigned char *, long);

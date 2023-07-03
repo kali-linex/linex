@@ -7,12 +7,12 @@
 //
 //
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linex/device.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_type.h>
+#include <linex/soundwire/sdw_registers.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -272,5 +272,5 @@ static struct sdw_driver sdw_mockup_sdw_driver = {
 module_sdw_driver(sdw_mockup_sdw_driver);
 
 MODULE_DESCRIPTION("ASoC SDW mockup codec driver");
-MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>");
+MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@linex.intel.com>");
 MODULE_LICENSE("GPL");

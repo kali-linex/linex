@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -14,21 +14,21 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/highmem.h>
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mm.h>
-#include <linux/objtool.h>
-#include <linux/sched.h>
-#include <linux/sched/smt.h>
-#include <linux/slab.h>
-#include <linux/tboot.h>
-#include <linux/trace_events.h>
-#include <linux/entry-kvm.h>
+#include <linex/highmem.h>
+#include <linex/hrtimer.h>
+#include <linex/kernel.h>
+#include <linex/kvm_host.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mm.h>
+#include <linex/objtool.h>
+#include <linex/sched.h>
+#include <linex/sched/smt.h>
+#include <linex/slab.h>
+#include <linex/tboot.h>
+#include <linex/trace_events.h>
+#include <linex/entry-kvm.h>
 
 #include <asm/apic.h>
 #include <asm/asm.h>
@@ -1436,7 +1436,7 @@ void vmx_vcpu_load_vmcs(struct kvm_vcpu *vcpu, int cpu,
 		kvm_make_request(KVM_REQ_TLB_FLUSH, vcpu);
 
 		/*
-		 * Linux uses per-cpu TSS and GDT, so set these when switching
+		 * Linex uses per-cpu TSS and GDT, so set these when switching
 		 * processors.  See 22.2.4.
 		 */
 		vmcs_writel(HOST_TR_BASE,

@@ -10,19 +10,19 @@
  * ARM PCI Host generic driver.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/msi.h>
+#include <linex/of_address.h>
+#include <linex/of_pci.h>
+#include <linex/of_platform.h>
+#include <linex/of_irq.h>
+#include <linex/pci.h>
+#include <linex/pci-ecam.h>
+#include <linex/platform_device.h>
 
 #include "../pci.h"
 

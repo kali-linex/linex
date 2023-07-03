@@ -9,9 +9,9 @@
 #ifndef I2C_AMD_PCI_MP2_H
 #define I2C_AMD_PCI_MP2_H
 
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linex/i2c.h>
+#include <linex/pci.h>
+#include <linex/pm_runtime.h>
 
 #define PCI_DEVICE_ID_AMD_MP2	0x15E6
 

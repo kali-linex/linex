@@ -4,17 +4,17 @@
  * Copyright (c) 2014 Hisilicon Limited.
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
-#include <linux/of_address.h>
-#include <linux/phy.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/etherdevice.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/ktime.h>
+#include <linex/of_address.h>
+#include <linex/phy.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 #define SC_PPE_RESET_DREQ		0x026C
 

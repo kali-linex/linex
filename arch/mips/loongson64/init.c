@@ -4,11 +4,11 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/irqchip.h>
-#include <linux/logic_pio.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/irqchip.h>
+#include <linex/logic_pio.h>
+#include <linex/memblock.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 #include <asm/bootinfo.h>
 #include <asm/traps.h>
 #include <asm/smp-ops.h>

@@ -4,8 +4,8 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
 
 #include "clk-regmap.h"
 #include "vid-pll-div.h"

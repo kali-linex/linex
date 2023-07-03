@@ -1,5 +1,5 @@
 =====================
-Linux ABI description
+Linex ABI description
 =====================
 
 .. toctree::

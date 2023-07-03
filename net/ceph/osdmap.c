@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ceph/ceph_debug.h>
+#include <linex/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osdmap.h>
-#include <linux/ceph/decode.h>
-#include <linux/crush/hash.h>
-#include <linux/crush/mapper.h>
+#include <linex/ceph/libceph.h>
+#include <linex/ceph/osdmap.h>
+#include <linex/ceph/decode.h>
+#include <linex/crush/hash.h>
+#include <linex/crush/mapper.h>
 
 static __printf(2, 3)
 void osdmap_info(const struct ceph_osdmap *map, const char *fmt, ...)

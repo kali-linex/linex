@@ -5,21 +5,21 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com
  * Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  *
- * A lot of code borrowed from the Linux xHCI driver.
+ * A lot of code borrowed from the Linex xHCI driver.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/usb/phy.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/usb/of.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/usb/phy.h>
+#include <linex/slab.h>
+#include <linex/acpi.h>
+#include <linex/usb/of.h>
+#include <linex/reset.h>
 
 #include "xhci.h"
 #include "xhci-plat.h"

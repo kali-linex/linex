@@ -4,15 +4,15 @@
  * The term "Broadcom" refers to Broadcom Limited and/or its subsidiaries.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * linex-drivers@broadcom.com
  */
 
 #ifndef BEISCSI_H
 #define BEISCSI_H
 
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/irq_poll.h>
+#include <linex/pci.h>
+#include <linex/if_vlan.h>
+#include <linex/irq_poll.h>
 #define FW_VER_LEN	32
 #define MCC_Q_LEN	128
 #define MCC_CQ_LEN	256

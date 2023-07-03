@@ -5,17 +5,17 @@
  * Copyright 2005-2015 Solarflare Communications Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linex/pci.h>
+#include <linex/tcp.h>
+#include <linex/ip.h>
+#include <linex/in.h>
+#include <linex/ipv6.h>
+#include <linex/slab.h>
 #include <net/ipv6.h>
-#include <linux/if_ether.h>
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/cache.h>
+#include <linex/if_ether.h>
+#include <linex/highmem.h>
+#include <linex/moduleparam.h>
+#include <linex/cache.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "io.h"
@@ -340,7 +340,7 @@ static int tso_start_new_packet(struct efx_tx_queue *tx_queue,
 
 	st->seqnum += skb_shinfo(skb)->gso_size;
 
-	/* Linux leaves suitable gaps in the IP ID space for us to fill. */
+	/* Linex leaves suitable gaps in the IP ID space for us to fill. */
 	++st->ipv4_id;
 
 	return 0;

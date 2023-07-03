@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Wu Hao <hao.wu@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linex.intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
  *   Tim Whisonant <tim.whisonant@intel.com>
@@ -14,10 +14,10 @@
  *   Henry Mitchel <henry.mitchel@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/fpga-dfl.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/fpga-dfl.h>
 
 #include "dfl-afu.h"
 

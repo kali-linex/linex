@@ -9,13 +9,13 @@
 #ifndef CXD2820R_PRIV_H
 #define CXD2820R_PRIV_H
 
-#include <linux/dvb/version.h>
+#include <linex/dvb/version.h>
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>
 #include "cxd2820r.h"
-#include <linux/gpio/driver.h> /* For gpio_chip */
-#include <linux/math64.h>
-#include <linux/regmap.h>
+#include <linex/gpio/driver.h> /* For gpio_chip */
+#include <linex/math64.h>
+#include <linex/regmap.h>
 
 struct reg_val_mask {
 	u32 reg;

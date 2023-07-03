@@ -6,9 +6,9 @@
 #ifndef __MOCK_ENGINE_H__
 #define __MOCK_ENGINE_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/timer.h>
 
 #include "gt/intel_engine.h"
 

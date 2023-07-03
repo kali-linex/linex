@@ -6,18 +6,18 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
-#include <linux/random.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/dmaengine.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/pci_ids.h>
+#include <linex/random.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
-#include <linux/pci_regs.h>
+#include <linex/pci-epc.h>
+#include <linex/pci-epf.h>
+#include <linex/pci_regs.h>
 
 #define IRQ_TYPE_LEGACY			0
 #define IRQ_TYPE_MSI			1

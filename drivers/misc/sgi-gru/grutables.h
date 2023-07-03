@@ -129,13 +129,13 @@
  *
  */
 
-#include <linux/refcount.h>
-#include <linux/rmap.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/mmu_notifier.h>
-#include <linux/mm_types.h>
+#include <linex/refcount.h>
+#include <linex/rmap.h>
+#include <linex/interrupt.h>
+#include <linex/mutex.h>
+#include <linex/wait.h>
+#include <linex/mmu_notifier.h>
+#include <linex/mm_types.h>
 #include "gru.h"
 #include "grulib.h"
 #include "gruhandles.h"

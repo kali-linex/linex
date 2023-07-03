@@ -3,8 +3,8 @@
  * Driver for Solarflare network controllers and boards
  * Copyright 2010-2012 Solarflare Communications Inc.
  */
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linex/pci.h>
+#include <linex/module.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "efx_channels.h"

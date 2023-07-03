@@ -5,9 +5,9 @@
  *	Copyright (c) 2002, 2003, 2013  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/types.h>
 
 #include <asm/dec/ioasic.h>
 #include <asm/dec/ioasic_addrs.h>

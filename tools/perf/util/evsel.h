@@ -2,11 +2,11 @@
 #ifndef __PERF_EVSEL_H
 #define __PERF_EVSEL_H 1
 
-#include <linux/list.h>
+#include <linex/list.h>
 #include <stdbool.h>
 #include <sys/types.h>
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <linex/perf_event.h>
+#include <linex/types.h>
 #include <internal/evsel.h>
 #include <perf/evsel.h>
 #include "symbol_conf.h"
@@ -236,7 +236,7 @@ void free_config_terms(struct list_head *config_terms);
 struct evsel *evsel__newtp_idx(const char *sys, const char *name, int idx);
 
 /*
- * Returns pointer with encoded error via <linux/err.h> interface.
+ * Returns pointer with encoded error via <linex/err.h> interface.
  */
 static inline struct evsel *evsel__newtp(const char *sys, const char *name)
 {

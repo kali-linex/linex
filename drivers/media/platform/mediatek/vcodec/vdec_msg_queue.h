@@ -7,9 +7,9 @@
 #ifndef _VDEC_MSG_QUEUE_H_
 #define _VDEC_MSG_QUEUE_H_
 
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/slab.h>
 #include <media/videobuf2-v4l2.h>
 
 #include "mtk_vcodec_util.h"

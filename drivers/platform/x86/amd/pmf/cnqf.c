@@ -8,7 +8,7 @@
  * Author: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  */
 
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 #include "pmf.h"
 
 static struct cnqf_config config_store;

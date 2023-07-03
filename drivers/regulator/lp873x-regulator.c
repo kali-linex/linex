@@ -5,11 +5,11 @@
  * Copyright (C) 2016 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
-#include <linux/mfd/lp873x.h>
+#include <linex/mfd/lp873x.h>
 
 #define LP873X_REGULATOR(_name, _id, _of, _ops, _n, _vr, _vm, _er, _em, \
 			 _delay, _lr, _cr)				\

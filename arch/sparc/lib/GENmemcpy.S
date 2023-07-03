@@ -5,7 +5,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #define GLOBAL_SPARE	%g7
 #else
 #define GLOBAL_SPARE	%g5

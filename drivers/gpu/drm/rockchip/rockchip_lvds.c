@@ -6,16 +6,16 @@
  *      Sandy Huang <hjc@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_graph.h>
-#include <linux/phy/phy.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/component.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_graph.h>
+#include <linex/phy/phy.h>
+#include <linex/pinctrl/devinfo.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_atomic_helper.h>

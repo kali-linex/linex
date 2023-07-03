@@ -3,17 +3,17 @@
  * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/amba/bus.h>
-#include <linux/bitfield.h>
-#include <linux/coresight.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/amba/bus.h>
+#include <linex/bitfield.h>
+#include <linex/coresight.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "coresight-priv.h"
 #include "coresight-tpda.h"

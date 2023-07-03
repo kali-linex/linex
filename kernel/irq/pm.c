@@ -5,11 +5,11 @@
  * This file contains power management functions related to interrupts.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/suspend.h>
+#include <linex/syscore_ops.h>
 
 #include "internals.h"
 

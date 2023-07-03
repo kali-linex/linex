@@ -13,9 +13,9 @@
 #ifndef U_UVC_H
 #define U_UVC_H
 
-#include <linux/mutex.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/video.h>
+#include <linex/mutex.h>
+#include <linex/usb/composite.h>
+#include <linex/usb/video.h>
 
 #define fi_to_f_uvc_opts(f)	container_of(f, struct f_uvc_opts, func_inst)
 

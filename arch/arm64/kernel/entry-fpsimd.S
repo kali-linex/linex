@@ -6,7 +6,7 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/fpsimdmacros.h>

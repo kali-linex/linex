@@ -8,9 +8,9 @@
  * taking a CPU offline, resetting it, or otherwise.  Real platforms must
  * NOT copy this code.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/smp.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cp15.h>

@@ -7,15 +7,15 @@
  * Author: Moritz Fischer <moritz.fischer@ettus.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/reset-controller.h>
+#include <linex/regmap.h>
+#include <linex/types.h>
 
 struct zynq_reset_data {
 	struct regmap *slcr;

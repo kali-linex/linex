@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include <linux/kernel.h>
-#include <linux/mman.h>
+#include <linex/kernel.h>
+#include <linex/mman.h>
 #include <sys/mman.h>
 #include <sys/shm.h>
 #include <sys/syscall.h>

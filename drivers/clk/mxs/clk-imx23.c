@@ -3,14 +3,14 @@
  * Copyright 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk/mxs.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/clk/mxs.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 #include "clk.h"
 
 static void __iomem *clkctrl;

@@ -6,9 +6,9 @@
  * Author: Johannes Thumshirn <johannes.thumshirn@men.de>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mcb.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/mcb.h>
 
 #include "mcb-internal.h"
 

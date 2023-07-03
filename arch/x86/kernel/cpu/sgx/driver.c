@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*  Copyright(c) 2016-20 Intel Corporation. */
 
-#include <linux/acpi.h>
-#include <linux/miscdevice.h>
-#include <linux/mman.h>
-#include <linux/security.h>
-#include <linux/suspend.h>
+#include <linex/acpi.h>
+#include <linex/miscdevice.h>
+#include <linex/mman.h>
+#include <linex/security.h>
+#include <linex/suspend.h>
 #include <asm/traps.h>
 #include "driver.h"
 #include "encl.h"

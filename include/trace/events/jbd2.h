@@ -5,8 +5,8 @@
 #if !defined(_TRACE_JBD2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_JBD2_H
 
-#include <linux/jbd2.h>
-#include <linux/tracepoint.h>
+#include <linex/jbd2.h>
+#include <linex/tracepoint.h>
 
 struct transaction_chp_stats_s;
 struct transaction_run_stats_s;

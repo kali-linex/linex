@@ -8,10 +8,10 @@
 #ifndef __SOUND_SOC_SST_DSP_PRIV_H
 #define __SOUND_SOC_SST_DSP_PRIV_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/firmware.h>
 
 #include "../skylake/skl-sst-dsp.h"
 

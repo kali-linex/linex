@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/mmu_notifier.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/mm_inline.h>
-#include <linux/kthread.h>
-#include <linux/khugepaged.h>
-#include <linux/freezer.h>
-#include <linux/mman.h>
-#include <linux/hashtable.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/page_idle.h>
-#include <linux/page_table_check.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/coredump.h>
+#include <linex/mmu_notifier.h>
+#include <linex/rmap.h>
+#include <linex/swap.h>
+#include <linex/mm_inline.h>
+#include <linex/kthread.h>
+#include <linex/khugepaged.h>
+#include <linex/freezer.h>
+#include <linex/mman.h>
+#include <linex/hashtable.h>
+#include <linex/userfaultfd_k.h>
+#include <linex/page_idle.h>
+#include <linex/page_table_check.h>
+#include <linex/swapops.h>
+#include <linex/shmem_fs.h>
 
 #include <asm/tlb.h>
 #include <asm/pgalloc.h>

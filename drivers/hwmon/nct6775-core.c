@@ -3,7 +3,7 @@
  * nct6775 - Driver for the hardware monitoring functionality of
  *	       Nuvoton NCT677x Super-I/O chips
  *
- * Copyright (C) 2012  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2012  Guenter Roeck <linex@roeck-us.net>
  *
  * Derived from w83627ehf driver
  * Copyright (C) 2005-2012  Jean Delvare <jdelvare@suse.de>
@@ -41,17 +41,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/nospec.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/jiffies.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/err.h>
+#include <linex/mutex.h>
+#include <linex/bitops.h>
+#include <linex/nospec.h>
+#include <linex/regmap.h>
 #include "lm75.h"
 #include "nct6775.h"
 
@@ -4252,6 +4252,6 @@ int nct6775_probe(struct device *dev, struct nct6775_data *data,
 }
 EXPORT_SYMBOL_GPL(nct6775_probe);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linex@roeck-us.net>");
 MODULE_DESCRIPTION("Core driver for NCT6775F and compatible chips");
 MODULE_LICENSE("GPL");

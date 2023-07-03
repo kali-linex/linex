@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/crc-ccitt.h>
-#include <linux/netdevice.h>
+#include <linex/stddef.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/crc-ccitt.h>
+#include <linex/netdevice.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfpkt.h>
 #include <net/caif/cffrml.h>

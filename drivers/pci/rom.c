@@ -5,10 +5,10 @@
  * (C) Copyright 2004 Jon Smirl <jonsmirl@yahoo.com>
  * (C) Copyright 2004 Silicon Graphics, Inc. Jesse Barnes <jbarnes@sgi.com>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 
 #include "pci.h"
 

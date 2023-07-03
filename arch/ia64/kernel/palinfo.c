@@ -19,23 +19,23 @@
  * 03/24/2004	Ashok Raj	updated to work with CPU Hotplug
  * 10/26/2006   Russ Anderson	updated processor features to rev 2.2 spec
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/efi.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/efi.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
 
 #include <asm/pal.h>
 #include <asm/sal.h>
 #include <asm/page.h>
 #include <asm/processor.h>
-#include <linux/smp.h>
+#include <linex/smp.h>
 
 MODULE_AUTHOR("Stephane Eranian <eranian@hpl.hp.com>");
 MODULE_DESCRIPTION("/proc interface to IA-64 PAL");

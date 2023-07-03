@@ -21,8 +21,8 @@
  *
  *
  */
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
+#include <linex/debugfs.h>
+#include <linex/pm_runtime.h>
 
 #include "amdgpu.h"
 #include "amdgpu_rap.h"
@@ -34,7 +34,7 @@
  * echo opcode > <debugfs_dir>/dri/xxx/rap_test
  *
  * opcode:
- * currently, only 2 is supported by Linux host driver,
+ * currently, only 2 is supported by Linex host driver,
  * opcode 2 stands for TA_CMD_RAP__VALIDATE_L0, used to
  * trigger L0 policy validation, you can refer more detail
  * from header file ta_rap_if.h

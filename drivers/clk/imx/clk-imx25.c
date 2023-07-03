@@ -3,16 +3,16 @@
  * Copyright (C) 2009 by Sascha Hauer, Pengutronix
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/clkdev.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 #include "clk.h"
 

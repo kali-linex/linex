@@ -7,16 +7,16 @@
  * Author: Lee Jones <lee.jones@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pwm.h>
-#include <linux/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/pwm.h>
+#include <linex/gpio/consumer.h>
 
 struct pwm_continuous_reg_data {
 	unsigned int min_uV_dutycycle;

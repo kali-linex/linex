@@ -5,9 +5,9 @@
  * Copyright (c) 2003-2016, Intel Corporation.
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linex/export.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
 #include "ishtp-dev.h"
 #include "hbm.h"
 #include "client.h"

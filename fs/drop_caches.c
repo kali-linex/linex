@@ -3,13 +3,13 @@
  * Implement the manual drop-all-pagecache function
  */
 
-#include <linux/pagemap.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/sysctl.h>
-#include <linux/gfp.h>
+#include <linex/pagemap.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/writeback.h>
+#include <linex/sysctl.h>
+#include <linex/gfp.h>
 #include "internal.h"
 
 /* A global variable is a bit ugly, but it keeps the code simple */

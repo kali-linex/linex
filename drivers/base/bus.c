@@ -6,19 +6,19 @@
  * Copyright (c) 2002-3 Open Source Development Labs
  * Copyright (c) 2007 Greg Kroah-Hartman <gregkh@suse.de>
  * Copyright (c) 2007 Novell Inc.
- * Copyright (c) 2023 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2023 Greg Kroah-Hartman <gregkh@linexfoundation.org>
  */
 
-#include <linux/async.h>
-#include <linux/device/bus.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linex/async.h>
+#include <linex/device/bus.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/mutex.h>
+#include <linex/sysfs.h>
 #include "base.h"
 #include "power/power.h"
 

@@ -28,24 +28,24 @@
 /* Enable this to have a lot of debug printouts */
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/ioport.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/sched.h>
+#include <linex/serial.h>
+#include <linex/interrupt.h>
+#include <linex/kmod.h>
+#include <linex/init.h>
+#include <linex/kfifo.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
 #include <asm/byteorder.h>
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 /* Default debug printout level */
 #define NOZOMI_DEBUG_LEVEL 0x00

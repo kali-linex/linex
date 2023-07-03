@@ -27,24 +27,24 @@
  * MPCBL0010 ATCA computer.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>	/* printk() */
-#include <linux/fs.h>		/* everything... */
-#include <linux/errno.h>	/* error codes */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>	/* printk() */
+#include <linex/fs.h>		/* everything... */
+#include <linex/errno.h>	/* error codes */
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/timer.h>
+#include <linex/sysfs.h>
+#include <linex/device.h>
+#include <linex/miscdevice.h>
+#include <linex/platform_device.h>
 #include <asm/io.h>		/* inb/outb */
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 MODULE_AUTHOR("Sebastien Bouchard <sebastien.bouchard@ca.kontron.com>");
 MODULE_LICENSE("GPL");

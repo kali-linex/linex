@@ -6,7 +6,7 @@
 #ifndef SELFTEST_KVM_VGIC_H
 #define SELFTEST_KVM_VGIC_H
 
-#include <linux/kvm.h>
+#include <linex/kvm.h>
 
 #include "kvm_util.h"
 

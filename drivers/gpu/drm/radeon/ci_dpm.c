@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
+#include <linex/seq_file.h>
 
 #include "atom.h"
 #include "ci_dpm.h"

@@ -6,11 +6,11 @@
  * Copyright 2012 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/efi-bgrt.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/sysfs.h>
+#include <linex/efi-bgrt.h>
 
 static void *bgrt_image;
 static struct kobject *bgrt_kobj;

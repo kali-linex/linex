@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_IRQ_STACK_H
 #define _ASM_X86_IRQ_STACK_H
 
-#include <linux/ptrace.h>
-#include <linux/objtool.h>
+#include <linex/ptrace.h>
+#include <linex/objtool.h>
 
 #include <asm/processor.h>
 

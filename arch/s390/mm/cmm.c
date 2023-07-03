@@ -7,19 +7,19 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/string_helpers.h>
-#include <linux/sysctl.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
-#include <linux/oom.h>
-#include <linux/uaccess.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/gfp.h>
+#include <linex/sched.h>
+#include <linex/string_helpers.h>
+#include <linex/sysctl.h>
+#include <linex/swap.h>
+#include <linex/kthread.h>
+#include <linex/oom.h>
+#include <linex/uaccess.h>
 
 #include <asm/diag.h>
 

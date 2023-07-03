@@ -2,13 +2,13 @@
 
 #define pr_fmt(fmt) "PCI: " fmt
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/pci-acpi.h>
+#include <linex/pci.h>
+#include <linex/acpi.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/dmi.h>
+#include <linex/slab.h>
+#include <linex/pci-acpi.h>
 #include <asm/numa.h>
 #include <asm/pci_x86.h>
 
@@ -247,7 +247,7 @@ void __init pci_acpi_crs_quirks(void)
 	pr_info("%s E820 reservations for host bridge windows\n",
 	        pci_use_e820 ? "Using" : "Ignoring");
 	if (pci_probe & (PCI_NO_E820 | PCI_USE_E820))
-		pr_info("Please notify linux-pci@vger.kernel.org so future kernels can do this automatically\n");
+		pr_info("Please notify linex-pci@vger.kernel.org so future kernels can do this automatically\n");
 }
 
 #ifdef	CONFIG_PCI_MMCONFIG

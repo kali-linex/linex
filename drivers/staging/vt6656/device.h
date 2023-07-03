@@ -14,24 +14,24 @@
 #ifndef __DEVICE_H__
 #define __DEVICE_H__
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/suspend.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
+#include <linex/bits.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/firmware.h>
+#include <linex/suspend.h>
+#include <linex/if_arp.h>
+#include <linex/wireless.h>
+#include <linex/timer.h>
+#include <linex/usb.h>
+#include <linex/crc32.h>
 #include <net/mac80211.h>
 
 #ifdef SIOCETHTOOL
 #define DEVICE_ETHTOOL_IOCTL_SUPPORT
-#include <linux/ethtool.h>
+#include <linex/ethtool.h>
 #else
 #undef DEVICE_ETHTOOL_IOCTL_SUPPORT
 #endif

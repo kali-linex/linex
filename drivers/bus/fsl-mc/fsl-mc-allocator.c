@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/fsl/mc.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

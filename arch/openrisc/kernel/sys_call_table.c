@@ -2,7 +2,7 @@
 /*
  * OpenRISC sys_call_table.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Linex architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -10,9 +10,9 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <linex/syscalls.h>
+#include <linex/signal.h>
+#include <linex/unistd.h>
 
 #include <asm/syscalls.h>
 

@@ -6,15 +6,15 @@
  * with rt5660 codec
  */
 
-#include <linux/acpi.h>
+#include <linex/acpi.h>
 #include <sound/core.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/gfp.h>
 #include <sound/jack.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

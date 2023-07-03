@@ -10,19 +10,19 @@
 #ifndef __MTU3_H__
 #define __MTU3_H__
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/extcon.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/dmapool.h>
+#include <linex/extcon.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/phy/phy.h>
+#include <linex/regulator/consumer.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/usb/role.h>
 
 struct mtu3;
 struct mtu3_ep;

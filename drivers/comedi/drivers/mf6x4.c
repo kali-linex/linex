@@ -3,7 +3,7 @@
  *  comedi/drivers/mf6x4.c
  *  Driver for Humusoft MF634 and MF624 Data acquisition cards
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - Linex Control and Measurement Device Interface
  *  Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -16,9 +16,9 @@
  * Configuration Options: none
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/comedi/comedi_pci.h>
 
 /* Registers present in BAR0 memory region */
 #define MF624_GPIOC_REG		0x54

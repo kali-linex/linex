@@ -3,14 +3,14 @@
  * Copyright 2020 NXP
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/serial_core.h>
+#include <linex/serial.h>
+#include <linex/delay.h>
+#include <linex/of.h>
+#include <linex/io.h>
 
 #define URTX0 0x40 /* Transmitter Register */
 #define UTS_TXFULL (1<<4) /* TxFIFO full */

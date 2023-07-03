@@ -2,7 +2,7 @@
 /*
  *	Advantech Single Board Computer WDT driver
  *
- *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linux.org.pl>
+ *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linex.org.pl>
  *
  *	Based on acquirewdt.c which is based on wdt.c.
  *	Original copyright messages:
@@ -26,17 +26,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/miscdevice.h>
+#include <linex/watchdog.h>
+#include <linex/fs.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 
 #define DRV_NAME "advantechwdt"
@@ -334,5 +334,5 @@ module_init(advwdt_init);
 module_exit(advwdt_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Marek Michalkiewicz <marekm@linux.org.pl>");
+MODULE_AUTHOR("Marek Michalkiewicz <marekm@linex.org.pl>");
 MODULE_DESCRIPTION("Advantech Single Board Computer WDT driver");

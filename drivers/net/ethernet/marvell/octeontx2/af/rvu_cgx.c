@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "rvu.h"
 #include "cgx.h"

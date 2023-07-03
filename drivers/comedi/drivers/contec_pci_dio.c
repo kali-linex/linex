@@ -2,7 +2,7 @@
 /*
  * comedi/drivers/contec_pci_dio.c
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -17,8 +17,8 @@
  * Configuration Options: not applicable, uses comedi PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <linex/module.h>
+#include <linex/comedi/comedi_pci.h>
 
 /*
  * Register map

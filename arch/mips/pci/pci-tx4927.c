@@ -1,19 +1,19 @@
 /*
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on linex/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright 2001, 2003-2005 MontaVista Software Inc.
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linex-mips.org)
  * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/pci.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/tx4927.h>
 

@@ -1,7 +1,7 @@
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/kmsan-checks.h>
+#include <linex/string.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/kmsan-checks.h>
 
 #define movs(type,to,from) \
 	asm volatile("movs" type:"=&D" (to), "=&S" (from):"0" (to), "1" (from):"memory")

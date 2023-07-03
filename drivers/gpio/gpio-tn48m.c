@@ -7,13 +7,13 @@
  * Author: Robert Marko <robert.marko@sartura.hr>
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/regmap.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/regmap.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 enum tn48m_gpio_type {
 	TN48M_GP0 = 1,

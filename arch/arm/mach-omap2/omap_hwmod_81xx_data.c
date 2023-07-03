@@ -6,9 +6,9 @@
  * Copyright (C) 2013 SKTB SKiT, http://www.skitlab.ru/
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
-#include <linux/platform_data/hsmmc-omap.h>
+#include <linex/platform_data/hsmmc-omap.h>
 
 #include "omap_hwmod_common_data.h"
 #include "cm81xx.h"

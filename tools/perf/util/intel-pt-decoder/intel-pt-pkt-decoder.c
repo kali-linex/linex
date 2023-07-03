@@ -8,7 +8,7 @@
 #include <string.h>
 #include <endian.h>
 #include <byteswap.h>
-#include <linux/compiler.h>
+#include <linex/compiler.h>
 
 #include "intel-pt-pkt-decoder.h"
 

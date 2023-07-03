@@ -15,15 +15,15 @@
  *	    Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/of.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linex/clk-provider.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
+#include <linex/reset.h>
+#include <linex/of.h>
+#include <linex/firmware/xlnx-zynqmp.h>
 
 #include "cqhci.h"
 #include "sdhci-cqhci.h"

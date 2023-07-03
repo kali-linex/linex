@@ -9,42 +9,42 @@
  *
  * (part of code stolen from loop.c)
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
-#include <linux/writeback.h>
-#include <linux/completion.h>
-#include <linux/highmem.h>
-#include <linux/sysfs.h>
-#include <linux/miscdevice.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
-#include <linux/ioprio.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/cdev.h>
-#include <linux/io_uring.h>
-#include <linux/blk-mq.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/sched.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/file.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/major.h>
+#include <linex/wait.h>
+#include <linex/blkdev.h>
+#include <linex/init.h>
+#include <linex/swap.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/mutex.h>
+#include <linex/writeback.h>
+#include <linex/completion.h>
+#include <linex/highmem.h>
+#include <linex/sysfs.h>
+#include <linex/miscdevice.h>
+#include <linex/falloc.h>
+#include <linex/uio.h>
+#include <linex/ioprio.h>
+#include <linex/sched/mm.h>
+#include <linex/uaccess.h>
+#include <linex/cdev.h>
+#include <linex/io_uring.h>
+#include <linex/blk-mq.h>
+#include <linex/delay.h>
+#include <linex/mm.h>
 #include <asm/page.h>
-#include <linux/task_work.h>
-#include <linux/namei.h>
-#include <linux/kref.h>
-#include <uapi/linux/ublk_cmd.h>
+#include <linex/task_work.h>
+#include <linex/namei.h>
+#include <linex/kref.h>
+#include <uapi/linex/ublk_cmd.h>
 
 #define UBLK_MINORS		(1U << MINORBITS)
 

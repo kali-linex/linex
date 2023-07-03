@@ -2,7 +2,7 @@
 #ifndef __QRTR_H_
 #define __QRTR_H_
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct sk_buff;
 

@@ -8,8 +8,8 @@
  *		 Denis Joseph Barrow (djbarrow@de.ibm.com,barrow_dj@yahoo.com),
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/asm-extable.h>
 #include <asm/alternative-asm.h>
 #include <asm/processor.h>

@@ -3,7 +3,7 @@
  * Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
  *
  * Authors: Cezary Rojewski <cezary.rojewski@intel.com>
- *          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+ *          Amadeusz Slawinski <amadeuszx.slawinski@linex.intel.com>
  */
 
 #ifndef __SOUND_SOC_INTEL_AVS_REGS_H

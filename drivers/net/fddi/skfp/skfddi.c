@@ -9,7 +9,7 @@
  * The information in this file is provided "AS IS" without warranty.
  *
  * Abstract:
- *   A Linux device driver supporting the SysKonnect FDDI PCI controller
+ *   A Linex device driver supporting the SysKonnect FDDI PCI controller
  *   familie.
  *
  * Maintainers:
@@ -19,7 +19,7 @@
  *   DM    David S. Miller
  *
  * Address all question to:
- *   linux@syskonnect.de
+ *   linex@syskonnect.de
  *
  * The technical manual for the adapters is available from SysKonnect's
  * web pages: www.syskonnect.com
@@ -69,27 +69,27 @@ static const char * const boot_msg =
 
 /* Include files */
 
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <linex/capability.h>
+#include <linex/compat.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/fddidevice.h>
+#include <linex/skbuff.h>
+#include <linex/bitops.h>
+#include <linex/gfp.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include	"h/types.h"
-#undef ADDR			// undo Linux definition
+#undef ADDR			// undo Linex definition
 #include	"h/skfbi.h"
 #include	"h/fddi.h"
 #include	"h/smc.h"
@@ -1052,7 +1052,7 @@ static netdev_tx_t skfp_send_pkt(struct sk_buff *skb,
 	 * Verify that incoming transmit request is OK
 	 *
 	 * Note: The packet size check is consistent with other
-	 *               Linux device drivers, although the correct packet
+	 *               Linex device drivers, although the correct packet
 	 *               size should be verified before calling the
 	 *               transmit routine.
 	 */

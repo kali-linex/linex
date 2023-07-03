@@ -6,9 +6,9 @@
  * Support functions for the HUB ASIC - mostly PIO mapping related.
  */
 
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/mmzone.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
+#include <linex/mmzone.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/arch.h>
 #include <asm/sn/agent.h>

@@ -1,6 +1,6 @@
 /*
  * ppp_mppe.c - interface MPPE to the PPP code.
- * This version is for use with Linux kernel 2.6.14+
+ * This version is for use with Linex kernel 2.6.14+
  *
  * By Frank Cusack <fcusack@fcusack.com>.
  * Copyright (c) 2002,2003,2004 Google, Inc.
@@ -34,7 +34,7 @@
  *      08/12/05 - Matt Domsch <Matt_Domsch@dell.com>
  *                 Only need extra skb padding on transmit, not receive.
  *      06/18/04 - Matt Domsch <Matt_Domsch@dell.com>, Oleg Makarenko <mole@quadra.ru>
- *                 Use Linux kernel 2.6 arc4 and sha1 routines rather than
+ *                 Use Linex kernel 2.6 arc4 and sha1 routines rather than
  *                 providing our own.
  *      2/15/04 - TS: added #include <version.h> and testing for Kernel
  *                    version before using
@@ -44,18 +44,18 @@
 
 #include <crypto/arc4.h>
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-comp.h>
-#include <linux/scatterlist.h>
+#include <linex/err.h>
+#include <linex/fips.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/ppp_defs.h>
+#include <linex/ppp-comp.h>
+#include <linex/scatterlist.h>
 #include <asm/unaligned.h>
 
 #include "ppp_mppe.h"

@@ -4,19 +4,19 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/mxs.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/micrel_phy.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/sys_soc.h>
+#include <linex/clk.h>
+#include <linex/clk/mxs.h>
+#include <linex/clkdev.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/init.h>
+#include <linex/reboot.h>
+#include <linex/micrel_phy.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/sys_soc.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>

@@ -3,18 +3,18 @@
  * Copyright STMicroelectronics, 2007.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/amba/bus.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/irq.h>
+#include <linex/dma-mapping.h>
+#include <linex/of_irq.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

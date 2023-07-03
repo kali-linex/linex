@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * DS1286 Real Time Clock interface for Linux
+ * DS1286 Real Time Clock interface for Linex
  *
  * Copyright (C) 1998, 1999, 2000 Ralf Baechle
  * Copyright (C) 2008 Thomas Bogendoerfer
@@ -8,13 +8,13 @@
  * Based on code written by Paul Gortmaker.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/rtc/ds1286.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/rtc.h>
+#include <linex/platform_device.h>
+#include <linex/bcd.h>
+#include <linex/rtc/ds1286.h>
+#include <linex/io.h>
+#include <linex/slab.h>
 
 struct ds1286_priv {
 	struct rtc_device *rtc;

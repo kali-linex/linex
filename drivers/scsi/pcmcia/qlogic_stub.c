@@ -31,16 +31,16 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/ioport.h>
 #include <asm/io.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
+#include <linex/major.h>
+#include <linex/blkdev.h>
+#include <linex/interrupt.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -6,8 +6,8 @@
  *          Dave Airlie
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

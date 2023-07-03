@@ -6,9 +6,9 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/mISDNif.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linex/mISDNif.h>
+#include <linex/slab.h>
+#include <linex/export.h>
 #include "core.h"
 
 static u_int	*debug;

@@ -2,21 +2,21 @@
 /*
  * Sample in-kernel QMI client driver
  *
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The Linex Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/qrtr.h>
-#include <linux/net.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/qrtr.h>
+#include <linex/net.h>
+#include <linex/completion.h>
+#include <linex/idr.h>
+#include <linex/string.h>
 #include <net/sock.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linex/soc/qcom/qmi.h>
 
 #define PING_REQ1_TLV_TYPE		0x1
 #define PING_RESP1_TLV_TYPE		0x2

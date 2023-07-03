@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/cuda.h>
-#include <linux/of.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/bitops.h>
+#include <linex/ptrace.h>
+#include <linex/adb.h>
+#include <linex/pmu.h>
+#include <linex/cuda.h>
+#include <linex/of.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
 #include <asm/page.h>

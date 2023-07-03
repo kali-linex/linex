@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
+#include <linex/vmalloc.h>
 
 #include "octep_config.h"
 #include "octep_main.h"

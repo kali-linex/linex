@@ -9,35 +9,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/thread_info.h>
+#include <linex/thread_info.h>
 #include <asm/current.h>
-#include <linux/falloc.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/backing-dev.h>
-#include <linux/hugetlb.h>
-#include <linux/pagevec.h>
-#include <linux/fs_parser.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/dnotify.h>
-#include <linux/statfs.h>
-#include <linux/security.h>
-#include <linux/magic.h>
-#include <linux/migrate.h>
-#include <linux/uio.h>
+#include <linex/falloc.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/file.h>
+#include <linex/kernel.h>
+#include <linex/writeback.h>
+#include <linex/pagemap.h>
+#include <linex/highmem.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/capability.h>
+#include <linex/ctype.h>
+#include <linex/backing-dev.h>
+#include <linex/hugetlb.h>
+#include <linex/pagevec.h>
+#include <linex/fs_parser.h>
+#include <linex/mman.h>
+#include <linex/slab.h>
+#include <linex/dnotify.h>
+#include <linex/statfs.h>
+#include <linex/security.h>
+#include <linex/magic.h>
+#include <linex/migrate.h>
+#include <linex/uio.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <linex/uaccess.h>
+#include <linex/sched/mm.h>
 
 static const struct address_space_operations hugetlbfs_aops;
 const struct file_operations hugetlbfs_file_operations;

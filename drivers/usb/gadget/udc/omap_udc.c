@@ -11,40 +11,40 @@
 #undef	DEBUG
 #undef	VERBOSE
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/ioport.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/list.h>
+#include <linex/interrupt.h>
+#include <linex/proc_fs.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
+#include <linex/dma-mapping.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/prefetch.h>
+#include <linex/io.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 #include <asm/mach-types.h>
 
-#include <linux/omap-dma.h>
-#include <linux/platform_data/usb-omap1.h>
+#include <linex/omap-dma.h>
+#include <linex/platform_data/usb-omap1.h>
 
-#include <linux/soc/ti/omap1-usb.h>
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <linex/soc/ti/omap1-usb.h>
+#include <linex/soc/ti/omap1-soc.h>
+#include <linex/soc/ti/omap1-io.h>
 
 #include "omap_udc.h"
 
@@ -2130,7 +2130,7 @@ static int omap_udc_stop(struct usb_gadget *g)
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <linex/seq_file.h>
 
 static const char proc_filename[] = "driver/udc";
 

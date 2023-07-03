@@ -10,9 +10,9 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/module.h>
 #include <scsi/scsi_cmnd.h>
 
 #include "ufshcd-priv.h"

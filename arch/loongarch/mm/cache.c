@@ -3,18 +3,18 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  *
  * Derived from MIPS:
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linex-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/cacheinfo.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
+#include <linex/cacheinfo.h>
+#include <linex/export.h>
+#include <linex/fs.h>
+#include <linex/highmem.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/syscalls.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cacheflush.h>

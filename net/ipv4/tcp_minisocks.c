@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -111,7 +111,7 @@ tcp_timewait_state_process(struct inet_timewait_sock *tw, struct sk_buff *skb,
 				   tcptw->tw_rcv_nxt,
 				   tcptw->tw_rcv_nxt + tcptw->tw_rcv_wnd))
 			return tcp_timewait_check_oow_rate_limit(
-				tw, skb, LINUX_MIB_TCPACKSKIPPEDFINWAIT2);
+				tw, skb, LINEX_MIB_TCPACKSKIPPEDFINWAIT2);
 
 		if (th->rst)
 			goto kill;
@@ -220,7 +220,7 @@ kill:
 	}
 
 	if (paws_reject)
-		__NET_INC_STATS(twsk_net(tw), LINUX_MIB_PAWSESTABREJECTED);
+		__NET_INC_STATS(twsk_net(tw), LINEX_MIB_PAWSESTABREJECTED);
 
 	if (!th->rst) {
 		/* In this case we must reset the TIMEWAIT timer.
@@ -233,7 +233,7 @@ kill:
 			inet_twsk_reschedule(tw, TCP_TIMEWAIT_LEN);
 
 		return tcp_timewait_check_oow_rate_limit(
-			tw, skb, LINUX_MIB_TCPACKSKIPPEDTIMEWAIT);
+			tw, skb, LINEX_MIB_TCPACKSKIPPEDTIMEWAIT);
 	}
 	inet_twsk_put(tw);
 	return TCP_TW_SUCCESS;
@@ -341,7 +341,7 @@ void tcp_time_wait(struct sock *sk, int state, int timeo)
 		 * socket up.  We've got bigger problems than
 		 * non-graceful socket closings.
 		 */
-		NET_INC_STATS(net, LINUX_MIB_TCPTIMEWAITOVERFLOW);
+		NET_INC_STATS(net, LINEX_MIB_TCPTIMEWAITOVERFLOW);
 	}
 
 	tcp_update_metrics(sk);
@@ -659,7 +659,7 @@ struct sock *tcp_check_req(struct sock *sk, struct sk_buff *skb,
 		 * the idea of fast retransmit in recovery.
 		 */
 		if (!tcp_oow_rate_limited(sock_net(sk), skb,
-					  LINUX_MIB_TCPACKSKIPPEDSYNRECV,
+					  LINEX_MIB_TCPACKSKIPPEDSYNRECV,
 					  &tcp_rsk(req)->last_oow_ack_time) &&
 
 		    !inet_rtx_syn_ack(sk, req)) {
@@ -748,11 +748,11 @@ struct sock *tcp_check_req(struct sock *sk, struct sk_buff *skb,
 		/* Out of window: send ACK and drop. */
 		if (!(flg & TCP_FLAG_RST) &&
 		    !tcp_oow_rate_limited(sock_net(sk), skb,
-					  LINUX_MIB_TCPACKSKIPPEDSYNRECV,
+					  LINEX_MIB_TCPACKSKIPPEDSYNRECV,
 					  &tcp_rsk(req)->last_oow_ack_time))
 			req->rsk_ops->send_ack(sk, skb, req);
 		if (paws_reject)
-			NET_INC_STATS(sock_net(sk), LINUX_MIB_PAWSESTABREJECTED);
+			NET_INC_STATS(sock_net(sk), LINEX_MIB_PAWSESTABREJECTED);
 		return NULL;
 	}
 
@@ -794,7 +794,7 @@ struct sock *tcp_check_req(struct sock *sk, struct sk_buff *skb,
 	if (req->num_timeout < inet_csk(sk)->icsk_accept_queue.rskq_defer_accept &&
 	    TCP_SKB_CB(skb)->end_seq == tcp_rsk(req)->rcv_isn + 1) {
 		inet_rsk(req)->acked = 1;
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPDEFERACCEPTDROP);
+		__NET_INC_STATS(sock_net(sk), LINEX_MIB_TCPDEFERACCEPTDROP);
 		return NULL;
 	}
 
@@ -822,7 +822,7 @@ struct sock *tcp_check_req(struct sock *sk, struct sk_buff *skb,
 
 listen_overflow:
 	if (sk != req->rsk_listener)
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMIGRATEREQFAILURE);
+		__NET_INC_STATS(sock_net(sk), LINEX_MIB_TCPMIGRATEREQFAILURE);
 
 	if (!READ_ONCE(sock_net(sk)->ipv4.sysctl_tcp_abort_on_overflow)) {
 		inet_rsk(req)->acked = 1;
@@ -845,7 +845,7 @@ embryonic_reset:
 		bool unlinked = inet_csk_reqsk_queue_drop(sk, req);
 
 		if (unlinked)
-			__NET_INC_STATS(sock_net(sk), LINUX_MIB_EMBRYONICRSTS);
+			__NET_INC_STATS(sock_net(sk), LINEX_MIB_EMBRYONICRSTS);
 		*req_stolen = !unlinked;
 	}
 	return NULL;

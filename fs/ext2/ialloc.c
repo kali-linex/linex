@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext2/ialloc.c
+ *  linex/fs/ext2/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -13,11 +13,11 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/quotaops.h>
-#include <linux/sched.h>
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/random.h>
+#include <linex/quotaops.h>
+#include <linex/sched.h>
+#include <linex/backing-dev.h>
+#include <linex/buffer_head.h>
+#include <linex/random.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

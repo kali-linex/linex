@@ -4,7 +4,7 @@
 
 %{
 #include <stdlib.h>
-#include <linux/bitops.h>
+#include <linex/bitops.h>
 #include "pmu.h"
 #include "pmu-bison.h"
 

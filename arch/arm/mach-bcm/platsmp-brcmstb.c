@@ -5,17 +5,17 @@
  * Copyright (C) 2013-2014 Broadcom Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/printk.h>
-#include <linux/regmap.h>
-#include <linux/smp.h>
-#include <linux/mfd/syscon.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/printk.h>
+#include <linex/regmap.h>
+#include <linex/smp.h>
+#include <linex/mfd/syscon.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

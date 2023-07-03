@@ -10,8 +10,8 @@
  */
 #ifndef _MICROCHIP_ISC_H_
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/platform_device.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

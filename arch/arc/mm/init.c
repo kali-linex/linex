@@ -3,16 +3,16 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
 #ifdef CONFIG_BLK_DEV_INITRD
-#include <linux/initrd.h>
+#include <linex/initrd.h>
 #endif
-#include <linux/of_fdt.h>
-#include <linux/swap.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
+#include <linex/of_fdt.h>
+#include <linex/swap.h>
+#include <linex/module.h>
+#include <linex/highmem.h>
 #include <asm/page.h>
 #include <asm/sections.h>
 #include <asm/arcregs.h>
@@ -21,7 +21,7 @@ pgd_t swapper_pg_dir[PTRS_PER_PGD] __aligned(PAGE_SIZE);
 char empty_zero_page[PAGE_SIZE] __aligned(PAGE_SIZE);
 EXPORT_SYMBOL(empty_zero_page);
 
-static const unsigned long low_mem_start = CONFIG_LINUX_RAM_BASE;
+static const unsigned long low_mem_start = CONFIG_LINEX_RAM_BASE;
 static unsigned long low_mem_sz;
 
 #ifdef CONFIG_HIGHMEM
@@ -55,7 +55,7 @@ void __init early_init_dt_add_memory_arch(u64 base, u64 size)
 
 	if (!low_mem_sz) {
 		if (base != low_mem_start)
-			panic("CONFIG_LINUX_RAM_BASE != DT memory { }");
+			panic("CONFIG_LINEX_RAM_BASE != DT memory { }");
 
 		low_mem_sz = size;
 		in_use = 1;
@@ -87,7 +87,7 @@ void __init setup_arch_memory(void)
 	setup_initial_init_mm(_text, _etext, _edata, _end);
 
 	/* first page of system - kernel .vector starts here */
-	min_low_pfn = virt_to_pfn(CONFIG_LINUX_RAM_BASE);
+	min_low_pfn = virt_to_pfn(CONFIG_LINEX_RAM_BASE);
 
 	/* Last usable page of low mem */
 	max_low_pfn = max_pfn = PFN_DOWN(low_mem_start + low_mem_sz);
@@ -105,8 +105,8 @@ void __init setup_arch_memory(void)
 	 * the crash
 	 */
 
-	memblock_reserve(CONFIG_LINUX_LINK_BASE,
-			 __pa(_end) - CONFIG_LINUX_LINK_BASE);
+	memblock_reserve(CONFIG_LINEX_LINK_BASE,
+			 __pa(_end) - CONFIG_LINEX_LINK_BASE);
 
 #ifdef CONFIG_BLK_DEV_INITRD
 	if (phys_initrd_size) {

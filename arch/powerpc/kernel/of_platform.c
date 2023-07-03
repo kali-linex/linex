@@ -7,16 +7,16 @@
 
 #undef DEBUG
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/atomic.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pci.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/atomic.h>
 
 #include <asm/errno.h>
 #include <asm/topology.h>

@@ -10,11 +10,11 @@
  * Modified by Eric Biggers, 2019 for v2 policy support.
  */
 
-#include <linux/fs_context.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/mount.h>
+#include <linex/fs_context.h>
+#include <linex/random.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/mount.h>
 #include "fscrypt_private.h"
 
 /**

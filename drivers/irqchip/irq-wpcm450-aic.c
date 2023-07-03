@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2021 Jonathan Neuschäfer
 
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/printk.h>
+#include <linex/irqchip.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/printk.h>
 
 #include <asm/exception.h>
 

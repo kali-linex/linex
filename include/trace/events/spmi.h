@@ -5,8 +5,8 @@
 #if !defined(_TRACE_SPMI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SPMI_H
 
-#include <linux/spmi.h>
-#include <linux/tracepoint.h>
+#include <linex/spmi.h>
+#include <linex/tracepoint.h>
 
 /*
  * drivers/spmi/spmi.c

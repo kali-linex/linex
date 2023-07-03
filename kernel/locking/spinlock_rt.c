@@ -18,8 +18,8 @@
  *   The RT substitutions explicitly disable migration and take
  *   rcu_read_lock() across the lock held section.
  */
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
 
 #define RT_MUTEX_BUILD_SPINLOCKS
 #include "rtmutex.c"

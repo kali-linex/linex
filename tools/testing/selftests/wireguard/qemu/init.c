@@ -23,8 +23,8 @@
 #include <sys/sendfile.h>
 #include <sys/sysmacros.h>
 #include <sys/random.h>
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linex/random.h>
+#include <linex/version.h>
 
 __attribute__((noreturn)) static void poweroff(void)
 {

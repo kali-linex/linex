@@ -11,10 +11,10 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <linex/pci.h>
+#include <linex/firmware.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

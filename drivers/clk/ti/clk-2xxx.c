@@ -6,10 +6,10 @@
  *     Tero Kristo (t-kristo@ti.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/clk/ti.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/clk.h>
+#include <linex/clk/ti.h>
 
 #include "clock.h"
 

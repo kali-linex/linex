@@ -5,29 +5,29 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#ifndef _LINUX_F2FS_H
-#define _LINUX_F2FS_H
+#ifndef _LINEX_F2FS_H
+#define _LINEX_F2FS_H
 
-#include <linux/uio.h>
-#include <linux/types.h>
-#include <linux/page-flags.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/magic.h>
-#include <linux/kobject.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/sched/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/quotaops.h>
-#include <linux/part_stat.h>
+#include <linex/uio.h>
+#include <linex/types.h>
+#include <linex/page-flags.h>
+#include <linex/buffer_head.h>
+#include <linex/slab.h>
+#include <linex/crc32.h>
+#include <linex/magic.h>
+#include <linex/kobject.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/sched/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/bio.h>
+#include <linex/blkdev.h>
+#include <linex/quotaops.h>
+#include <linex/part_stat.h>
 #include <crypto/hash.h>
 
-#include <linux/fscrypt.h>
-#include <linux/fsverity.h>
+#include <linex/fscrypt.h>
+#include <linex/fsverity.h>
 
 struct pagevec;
 
@@ -4550,4 +4550,4 @@ static inline bool f2fs_is_readonly(struct f2fs_sb_info *sbi)
 #define EFSBADCRC	EBADMSG		/* Bad CRC detected */
 #define EFSCORRUPTED	EUCLEAN		/* Filesystem is corrupted */
 
-#endif /* _LINUX_F2FS_H */
+#endif /* _LINEX_F2FS_H */

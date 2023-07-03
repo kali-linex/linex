@@ -7,10 +7,10 @@
 
 #include <crypto/algapi.h>
 #include <crypto/twofish.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
 
 #include "twofish.h"
 #include "ecb_cbc_helpers.h"

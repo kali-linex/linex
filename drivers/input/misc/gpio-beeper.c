@@ -5,12 +5,12 @@
  * Copyright (C) 2013-2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/workqueue.h>
+#include <linex/platform_device.h>
 
 #define BEEPER_MODNAME		"gpio-beeper"
 

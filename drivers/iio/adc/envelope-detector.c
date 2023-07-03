@@ -26,21 +26,21 @@
  *            '-------'
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/mutex.h>
+#include <linex/iio/consumer.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/platform_device.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
 
 struct envelope {
 	spinlock_t comp_lock; /* protects comp */

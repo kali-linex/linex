@@ -1,6 +1,6 @@
-#include <linux/ptrace.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
+#include <linex/ptrace.h>
+#include <linex/version.h>
+#include <uapi/linex/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 struct {
@@ -66,4 +66,4 @@ int bpf_prog2(struct pt_regs *ctx)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = LINEX_VERSION_CODE;

@@ -9,16 +9,16 @@
  * are to this RFC.
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/netfilter.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/sctp.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linex/types.h>
+#include <linex/timer.h>
+#include <linex/netfilter.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/sctp.h>
+#include <linex/string.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
 #include <net/sctp/checksum.h>
 
 #include <net/netfilter/nf_log.h>
@@ -527,8 +527,8 @@ static bool sctp_can_early_drop(const struct nf_conn *ct)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_conntrack.h>
 
 static int sctp_to_nlattr(struct sk_buff *skb, struct nlattr *nla,
 			  struct nf_conn *ct, bool destroy)
@@ -608,8 +608,8 @@ static int nlattr_to_sctp(struct nlattr *cda[], struct nf_conn *ct)
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_cttimeout.h>
 
 static int sctp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

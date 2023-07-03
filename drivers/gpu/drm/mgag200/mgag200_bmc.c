@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/delay.h>
+#include <linex/delay.h>
 
 #include "mgag200_drv.h"
 

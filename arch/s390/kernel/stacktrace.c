@@ -5,7 +5,7 @@
  *  Copyright IBM Corp. 2006
  */
 
-#include <linux/stacktrace.h>
+#include <linex/stacktrace.h>
 #include <asm/stacktrace.h>
 #include <asm/unwind.h>
 #include <asm/kprobes.h>

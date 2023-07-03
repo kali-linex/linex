@@ -4,12 +4,12 @@
 #ifndef _QTN_FMAC_PCIE_H_
 #define _QTN_FMAC_PCIE_H_
 
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/skbuff.h>
+#include <linex/workqueue.h>
+#include <linex/interrupt.h>
 
 #include "shm_ipc.h"
 #include "bus.h"

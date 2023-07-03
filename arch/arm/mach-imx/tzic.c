@@ -3,14 +3,14 @@
  * Copyright (C)2004-2010 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/irqdomain.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include <asm/mach/irq.h>
 #include <asm/exception.h>

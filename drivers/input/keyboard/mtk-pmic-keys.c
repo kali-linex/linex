@@ -5,20 +5,20 @@
  * Author: Chen Zhong <chen.zhong@mediatek.com>
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6331/registers.h>
-#include <linux/mfd/mt6357/registers.h>
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6397/registers.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/mt6323/registers.h>
+#include <linex/mfd/mt6331/registers.h>
+#include <linex/mfd/mt6357/registers.h>
+#include <linex/mfd/mt6358/registers.h>
+#include <linex/mfd/mt6397/core.h>
+#include <linex/mfd/mt6397/registers.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
 
 #define MTK_PMIC_RST_DU_MASK	GENMASK(9, 8)
 #define MTK_PMIC_PWRKEY_RST	BIT(6)
@@ -364,10 +364,10 @@ static int mtk_pmic_keys_probe(struct platform_device *pdev)
 		}
 
 		error = of_property_read_u32(child,
-			"linux,keycodes", &keys->keys[index].keycode);
+			"linex,keycodes", &keys->keys[index].keycode);
 		if (error) {
 			dev_err(keys->dev,
-				"failed to read key:%d linux,keycode property: %d\n",
+				"failed to read key:%d linex,keycode property: %d\n",
 				index, error);
 			of_node_put(child);
 			return error;

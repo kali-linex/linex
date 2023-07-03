@@ -7,8 +7,8 @@
  * MPC837x RDB board specific routines
  */
 
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <linex/pci.h>
+#include <linex/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/ipic.h>

@@ -9,8 +9,8 @@
  * unreliable. The resistance listed here was obtained by simply measuring
  * the BTI resistance with a multimeter on the battery.
  */
-#include <linux/module.h>
-#include <linux/power_supply.h>
+#include <linex/module.h>
+#include <linex/power_supply.h>
 #include "samsung-sdi-battery.h"
 
 struct samsung_sdi_battery {

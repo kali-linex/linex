@@ -7,18 +7,18 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
-#include <linux/security.h>
-#include <linux/mnt_namespace.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
+#include <linex/module.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/fs.h>
+#include <linex/mount.h>
+#include <linex/nsproxy.h>
+#include <linex/slab.h>
+#include <linex/magic.h>
+#include <linex/security.h>
+#include <linex/mnt_namespace.h>
+#include <linex/pid_namespace.h>
+#include <linex/user_namespace.h>
 #include <net/net_namespace.h>
 #include <asm/sections.h>
 #include "mount.h"

@@ -6,9 +6,9 @@
 
 #if IS_ENABLED(CONFIG_RETPOLINE)
 
-#include <linux/cpufeature.h>
-#include <linux/static_key.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/cpufeature.h>
+#include <linex/static_key.h>
+#include <linex/indirect_call_wrapper.h>
 
 #define TC_INDIRECT_SCOPE
 

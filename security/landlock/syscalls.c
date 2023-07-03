@@ -7,24 +7,24 @@
  */
 
 #include <asm/current.h>
-#include <linux/anon_inodes.h>
-#include <linux/build_bug.h>
-#include <linux/capability.h>
-#include <linux/compiler_types.h>
-#include <linux/dcache.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/limits.h>
-#include <linux/mount.h>
-#include <linux/path.h>
-#include <linux/sched.h>
-#include <linux/security.h>
-#include <linux/stddef.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/landlock.h>
+#include <linex/anon_inodes.h>
+#include <linex/build_bug.h>
+#include <linex/capability.h>
+#include <linex/compiler_types.h>
+#include <linex/dcache.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/limits.h>
+#include <linex/mount.h>
+#include <linex/path.h>
+#include <linex/sched.h>
+#include <linex/security.h>
+#include <linex/stddef.h>
+#include <linex/syscalls.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <uapi/linex/landlock.h>
 
 #include "cred.h"
 #include "fs.h"

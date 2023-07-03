@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Bytedance */
 
-#include <vmlinux.h>
+#include <vmlinex.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_helpers.h>
 

@@ -2,7 +2,7 @@
 /*
  * Old U-boot compatibility for Acadia
  *
- * Author: Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Author: Josh Boyer <jwboyer@linex.vnet.ibm.com>
  *
  * Copyright 2008 IBM Corporation
  */

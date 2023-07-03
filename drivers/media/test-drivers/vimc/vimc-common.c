@@ -5,8 +5,8 @@
  * Copyright (C) 2015-2017 Helen Koike <helen.fornazier@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linex/init.h>
+#include <linex/module.h>
 
 #include "vimc-common.h"
 

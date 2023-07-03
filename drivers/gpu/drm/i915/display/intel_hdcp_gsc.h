@@ -6,8 +6,8 @@
 #ifndef __INTEL_HDCP_GSC_H__
 #define __INTEL_HDCP_GSC_H__
 
-#include <linux/err.h>
-#include <linux/types.h>
+#include <linex/err.h>
+#include <linex/types.h>
 
 struct drm_i915_private;
 

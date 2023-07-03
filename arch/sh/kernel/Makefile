@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux/SuperH kernel.
+# Makefile for the Linex/SuperH kernel.
 #
 
-extra-y	:= vmlinux.lds
+extra-y	:= vmlinex.lds
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

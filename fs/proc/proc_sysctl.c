@@ -2,21 +2,21 @@
 /*
  * /proc/sys support
  */
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/printk.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/module.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/mount.h>
-#include <linux/kmemleak.h>
+#include <linex/init.h>
+#include <linex/sysctl.h>
+#include <linex/poll.h>
+#include <linex/proc_fs.h>
+#include <linex/printk.h>
+#include <linex/security.h>
+#include <linex/sched.h>
+#include <linex/cred.h>
+#include <linex/namei.h>
+#include <linex/mm.h>
+#include <linex/uio.h>
+#include <linex/module.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/mount.h>
+#include <linex/kmemleak.h>
 #include "internal.h"
 
 #define list_for_each_table_entry(entry, table) \

@@ -6,13 +6,13 @@
  * Author: Hemanth V <hemanthv@ti.com>
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/cma3000.h>
-#include <linux/module.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/input/cma3000.h>
+#include <linex/module.h>
 
 #include "cma3000_d0x.h"
 

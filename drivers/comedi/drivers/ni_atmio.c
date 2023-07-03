@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI AT-MIO E series cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -71,11 +71,11 @@
  * - deal with at-mio-16de-10 revision D to N changes, etc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/isapnp.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/comedi/comedidev.h>
+#include <linex/isapnp.h>
+#include <linex/comedi/comedi_8255.h>
 
 #include "ni_stc.h"
 

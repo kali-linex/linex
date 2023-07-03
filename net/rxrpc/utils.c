@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/udp.h>
 #include "ar-internal.h"
 
 /*

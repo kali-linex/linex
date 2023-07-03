@@ -3,8 +3,8 @@
  *  compress_core.c - compress offload core
  *
  *  Copyright (C) 2011 Intel Corporation
- *  Authors:	Vinod Koul <vinod.koul@linux.intel.com>
- *		Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+ *  Authors:	Vinod Koul <vinod.koul@linex.intel.com>
+ *		Pierre-Louis Bossart <pierre-louis.bossart@linex.intel.com>
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -12,20 +12,20 @@
 #define FORMAT(fmt) "%s: %d: " fmt, __func__, __LINE__
 #define pr_fmt(fmt) KBUILD_MODNAME ": " FORMAT(fmt)
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/math64.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/compat.h>
+#include <linex/file.h>
+#include <linex/fs.h>
+#include <linex/list.h>
+#include <linex/math64.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
+#include <linex/module.h>
+#include <linex/compat.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/info.h>
@@ -1201,5 +1201,5 @@ int snd_compress_new(struct snd_card *card, int device,
 EXPORT_SYMBOL_GPL(snd_compress_new);
 
 MODULE_DESCRIPTION("ALSA Compressed offload framework");
-MODULE_AUTHOR("Vinod Koul <vinod.koul@linux.intel.com>");
+MODULE_AUTHOR("Vinod Koul <vinod.koul@linex.intel.com>");
 MODULE_LICENSE("GPL v2");

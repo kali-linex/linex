@@ -10,10 +10,10 @@
 #include <crypto/algapi.h>
 #include <crypto/arc4.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
 
 static int crypto_arc4_setkey(struct crypto_skcipher *tfm, const u8 *in_key,
 			      unsigned int key_len)

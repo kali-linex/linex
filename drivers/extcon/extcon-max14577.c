@@ -6,15 +6,15 @@
 // Chanwoo Choi <cw00.choi@samsung.com>
 // Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/devm-helpers.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max14577.h>
-#include <linux/mfd/max14577-private.h>
-#include <linux/extcon-provider.h>
+#include <linex/devm-helpers.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/max14577.h>
+#include <linex/mfd/max14577-private.h>
+#include <linex/extcon-provider.h>
 
 #define	DELAY_MS_DEFAULT		17000		/* unit: millisecond */
 

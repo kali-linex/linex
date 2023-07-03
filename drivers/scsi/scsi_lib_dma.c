@@ -3,10 +3,10 @@
  * SCSI library functions depending on DMA
  */
 
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <linex/blkdev.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

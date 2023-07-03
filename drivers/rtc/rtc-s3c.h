@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2003 Simtec Electronics <linux@simtec.co.uk>
- *		      http://www.simtec.co.uk/products/SWLINUX/
+ * Copyright (c) 2003 Simtec Electronics <linex@simtec.co.uk>
+ *		      http://www.simtec.co.uk/products/SWLINEX/
  *
  * S3C2410 Internal RTC register definition
 */

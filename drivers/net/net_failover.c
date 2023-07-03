@@ -14,17 +14,17 @@
  * this driver provides active-backup functionality similar to those drivers.
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/netpoll.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/netpoll.h>
+#include <linex/rtnetlink.h>
+#include <linex/if_vlan.h>
+#include <linex/pci.h>
 #include <net/sch_generic.h>
-#include <uapi/linux/if_arp.h>
+#include <uapi/linex/if_arp.h>
 #include <net/net_failover.h>
 
 static bool net_failover_xmit_ready(struct net_device *dev)

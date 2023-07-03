@@ -31,12 +31,12 @@
  *  "The futexes are also cursed."
  *  "But they come in a choice of three flavours!"
  */
-#include <linux/compat.h>
-#include <linux/jhash.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/fault-inject.h>
-#include <linux/slab.h>
+#include <linex/compat.h>
+#include <linex/jhash.h>
+#include <linex/pagemap.h>
+#include <linex/memblock.h>
+#include <linex/fault-inject.h>
+#include <linex/slab.h>
 
 #include "futex.h"
 #include "../locking/rtmutex_common.h"

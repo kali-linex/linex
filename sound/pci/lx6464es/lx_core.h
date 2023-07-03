@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- *
+/* -*- linex-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  * low-level interface
@@ -10,7 +10,7 @@
 #ifndef LX_CORE_H
 #define LX_CORE_H
 
-#include <linux/interrupt.h>
+#include <linex/interrupt.h>
 
 #include "lx_defs.h"
 

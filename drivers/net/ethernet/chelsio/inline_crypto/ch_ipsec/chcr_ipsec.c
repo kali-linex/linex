@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T6 Crypto driver for Linux.
+ * This file is part of the Chelsio T6 Crypto driver for Linex.
  *
  * Copyright (c) 2003-2017 Chelsio Communications, Inc. All rights reserved.
  *
@@ -37,15 +37,15 @@
 
 #define pr_fmt(fmt) "ch_ipsec: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/highmem.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/crypto.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/highmem.h>
+#include <linex/if_vlan.h>
+#include <linex/ip.h>
+#include <linex/netdevice.h>
 #include <net/esp.h>
 #include <net/xfrm.h>
 #include <crypto/aes.h>

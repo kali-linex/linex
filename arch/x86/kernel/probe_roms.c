@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/mmzone.h>
-#include <linux/ioport.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/edd.h>
-#include <linux/dmi.h>
-#include <linux/pfn.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/uaccess.h>
+#include <linex/mmzone.h>
+#include <linex/ioport.h>
+#include <linex/seq_file.h>
+#include <linex/console.h>
+#include <linex/init.h>
+#include <linex/edd.h>
+#include <linex/dmi.h>
+#include <linex/pfn.h>
+#include <linex/pci.h>
+#include <linex/export.h>
 
 #include <asm/probe_roms.h>
 #include <asm/pci-direct.h>

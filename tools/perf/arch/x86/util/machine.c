@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linex/types.h>
+#include <linex/string.h>
 #include <limits.h>
 #include <stdlib.h>
 
@@ -8,7 +8,7 @@
 #include "../../../util/machine.h"
 #include "../../../util/map.h"
 #include "../../../util/symbol.h"
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 
 #include <symbol/kallsyms.h>
 

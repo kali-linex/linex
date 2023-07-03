@@ -5,19 +5,19 @@
  * Author: Iyappan Subramanian <isubramanian@apm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/if_vlan.h>
-#include <linux/io.h>
-#include <linux/mdio/mdio-xgene.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/prefetch.h>
+#include <linex/acpi.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/efi.h>
+#include <linex/if_vlan.h>
+#include <linex/io.h>
+#include <linex/mdio/mdio-xgene.h>
+#include <linex/module.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_platform.h>
+#include <linex/phy.h>
+#include <linex/prefetch.h>
 #include <net/ip.h>
 
 static bool xgene_mdio_status;

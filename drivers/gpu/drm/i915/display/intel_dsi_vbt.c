@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <linex/gpio/consumer.h>
+#include <linex/gpio/machine.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pinctrl/machine.h>
+#include <linex/slab.h>
+#include <linex/string_helpers.h>
 
 #include <asm/unaligned.h>
 

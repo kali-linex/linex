@@ -9,13 +9,13 @@
 #include "fman.h"
 #include "mac.h"
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/pcs-lynx.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phy/phy.h>
-#include <linux/of_mdio.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/pcs-lynx.h>
+#include <linex/phy.h>
+#include <linex/phy_fixed.h>
+#include <linex/phy/phy.h>
+#include <linex/of_mdio.h>
 
 /* Num of additional exact match MAC adr regs */
 #define MEMAC_NUM_OF_PADDRS 7

@@ -7,32 +7,32 @@
  * Copyright © 2006      Red Hat UK Limited 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/proc_fs.h>
-#include <linux/idr.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/leds.h>
-#include <linux/debugfs.h>
-#include <linux/nvmem-provider.h>
-#include <linux/root_dev.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/ptrace.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/timer.h>
+#include <linex/major.h>
+#include <linex/fs.h>
+#include <linex/err.h>
+#include <linex/ioctl.h>
+#include <linex/init.h>
+#include <linex/of.h>
+#include <linex/proc_fs.h>
+#include <linex/idr.h>
+#include <linex/backing-dev.h>
+#include <linex/gfp.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/reboot.h>
+#include <linex/leds.h>
+#include <linex/debugfs.h>
+#include <linex/nvmem-provider.h>
+#include <linex/root_dev.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
 
 #include "mtdcore.h"
 
@@ -738,7 +738,7 @@ int add_mtd_device(struct mtd_info *mtd)
 
 	mutex_unlock(&mtd_table_mutex);
 
-	if (of_property_read_bool(mtd_get_of_node(mtd), "linux,rootfs")) {
+	if (of_property_read_bool(mtd_get_of_node(mtd), "linex,rootfs")) {
 		if (IS_BUILTIN(CONFIG_MTD)) {
 			pr_info("mtd: setting mtd%d (%s) as root device\n", mtd->index, mtd->name);
 			ROOT_DEV = MKDEV(MTD_BLOCK_MAJOR, mtd->index);

@@ -3,11 +3,11 @@
  * abstraction of the spi interface of HopeRf rf69 radio module
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <linex@wolf-entwicklungen.de>
  */
 
-#include <linux/types.h>
-#include <linux/spi/spi.h>
+#include <linex/types.h>
+#include <linex/spi/spi.h>
 
 #include "rf69.h"
 #include "rf69_registers.h"

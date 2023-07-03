@@ -6,17 +6,17 @@
  *
  * Core file which registers crypto algorithms supported by the hardware.
  */
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linex/clk.h>
+#include <linex/crypto.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/dma-mapping.h>
+#include <linex/dma-mapping.h>
 
 #include "amlogic-gxl.h"
 

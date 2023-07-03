@@ -2,8 +2,8 @@
 /* Copyright(c) 2018-2019  Realtek Corporation
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linex/module.h>
+#include <linex/usb.h>
 #include "main.h"
 #include "rtw8822b.h"
 #include "usb.h"

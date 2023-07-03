@@ -7,11 +7,11 @@
  * Author: Jeremy Kerr <jk@ozlabs.org>
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 #include <asm/smp.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
+#include <linex/uaccess.h>
+#include <linex/debugfs.h>
 #include <asm/firmware.h>
 #include <asm/dtl.h>
 #include <asm/lppaca.h>

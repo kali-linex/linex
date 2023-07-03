@@ -49,7 +49,7 @@
 
 		button-user {
 			label = "User-PA13";
-			linux,code = <BTN_1>;
+			linex,code = <BTN_1>;
 			gpios = <&gpioa 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 		};
 	};
@@ -61,7 +61,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};

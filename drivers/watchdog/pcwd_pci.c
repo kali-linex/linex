@@ -18,7 +18,7 @@
 
 /*
  *	A bells and whistles driver is available from:
- *	http://www.kernel.org/pub/linux/kernel/people/wim/pcwd/pcwd_pci/
+ *	http://www.kernel.org/pub/linex/kernel/people/wim/pcwd/pcwd_pci/
  *
  *	More info available at
  *	http://www.berkprod.com/ or http://www.pcwatchdog.com/
@@ -30,23 +30,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/miscdevice.h>	/* For struct miscdevice */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/notifier.h>	/* For notifier support */
-#include <linux/reboot.h>	/* For reboot_notifier stuff */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/pci.h>		/* For pci functions */
-#include <linux/ioport.h>	/* For io-port access */
-#include <linux/spinlock.h>	/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
-#include <linux/io.h>		/* For inb/outb/... */
+#include <linex/module.h>	/* For module specific items */
+#include <linex/moduleparam.h>	/* For new moduleparam's */
+#include <linex/types.h>	/* For standard types (like size_t) */
+#include <linex/errno.h>	/* For the -ENODEV/... values */
+#include <linex/kernel.h>	/* For printk/panic/... */
+#include <linex/delay.h>	/* For mdelay function */
+#include <linex/miscdevice.h>	/* For struct miscdevice */
+#include <linex/watchdog.h>	/* For the watchdog specific items */
+#include <linex/notifier.h>	/* For notifier support */
+#include <linex/reboot.h>	/* For reboot_notifier stuff */
+#include <linex/init.h>		/* For __init/__exit/... */
+#include <linex/fs.h>		/* For file operations */
+#include <linex/pci.h>		/* For pci functions */
+#include <linex/ioport.h>	/* For io-port access */
+#include <linex/spinlock.h>	/* For spin_lock/spin_unlock/... */
+#include <linex/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <linex/io.h>		/* For inb/outb/... */
 
 /* Module and version information */
 #define WATCHDOG_VERSION "1.03"

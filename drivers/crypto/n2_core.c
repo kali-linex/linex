@@ -6,23 +6,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/cpumask.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/crypto.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/cpumask.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/crypto.h>
 #include <crypto/md5.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
 #include <crypto/aes.h>
 #include <crypto/internal/des.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
 
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>
@@ -1497,7 +1497,7 @@ static void n2_unregister_algs(void)
 /* To map CWQ queues to interrupt sources, the hypervisor API provides
  * a devino.  This isn't very useful to us because all of the
  * interrupts listed in the device_node have been translated to
- * Linux virtual IRQ cookie numbers.
+ * Linex virtual IRQ cookie numbers.
  *
  * So we have to back-translate, going through the 'intr' and 'ino'
  * property tables of the n2cp MDESC node, matching it with the OF

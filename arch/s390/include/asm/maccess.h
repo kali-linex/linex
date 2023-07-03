@@ -2,7 +2,7 @@
 #ifndef __ASM_S390_MACCESS_H
 #define __ASM_S390_MACCESS_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct iov_iter;
 

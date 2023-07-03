@@ -8,15 +8,15 @@
  */
 
 #include <soc/fsl/qe/qmc.h>
-#include <linux/dma-mapping.h>
-#include <linux/hdlc.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/dma-mapping.h>
+#include <linex/hdlc.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 #include <soc/fsl/cpm.h>
 #include <sysdev/fsl_soc.h>
 #include "tsa.h"

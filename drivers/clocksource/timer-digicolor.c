@@ -23,16 +23,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqreturn.h>
+#include <linex/sched/clock.h>
+#include <linex/sched_clock.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 
 enum {
 	TIMER_A,

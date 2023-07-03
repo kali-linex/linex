@@ -5,19 +5,19 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/in6.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/iversion.h>
-#include <linux/xarray.h>
-#include <linux/fscache.h>
-#include <linux/netfs.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/nfs_fs.h>
+#include <linex/nfs_fs_sb.h>
+#include <linex/in6.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/iversion.h>
+#include <linex/xarray.h>
+#include <linex/fscache.h>
+#include <linex/netfs.h>
 
 #include "internal.h"
 #include "iostat.h"

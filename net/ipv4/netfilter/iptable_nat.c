@@ -4,11 +4,11 @@
  * (C) 2011 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/ip.h>
+#include <linex/module.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/ip.h>
 #include <net/ip.h>
 
 #include <net/netfilter/nf_nat.h>

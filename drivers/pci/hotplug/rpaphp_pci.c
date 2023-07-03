@@ -8,9 +8,9 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <linex/of.h>
+#include <linex/pci.h>
+#include <linex/string.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/rtas.h>

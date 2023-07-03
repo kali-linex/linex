@@ -13,9 +13,9 @@
  *   Copyright (C) 2008 Nokia Corporation and/or its subsidiary(-ies).
  */
 
-#include <linux/export.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
+#include <linex/export.h>
+#include <linex/firmware.h>
+#include <linex/etherdevice.h>
 #include <asm/div64.h>
 
 #include <net/mac80211.h>

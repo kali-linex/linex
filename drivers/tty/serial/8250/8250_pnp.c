@@ -6,16 +6,16 @@
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  *
- *  Ported to the Linux PnP Layer - (C) Adam Belay.
+ *  Ported to the Linex PnP Layer - (C) Adam Belay.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/serial_core.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pnp.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/property.h>
+#include <linex/serial_core.h>
+#include <linex/bitops.h>
 
 #include <asm/byteorder.h>
 

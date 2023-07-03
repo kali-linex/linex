@@ -3,11 +3,11 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#ifndef _LINUX_XSK_QUEUE_H
-#define _LINUX_XSK_QUEUE_H
+#ifndef _LINEX_XSK_QUEUE_H
+#define _LINEX_XSK_QUEUE_H
 
-#include <linux/types.h>
-#include <linux/if_xdp.h>
+#include <linex/types.h>
+#include <linex/if_xdp.h>
 #include <net/xdp_sock.h>
 #include <net/xsk_buff_pool.h>
 
@@ -422,4 +422,4 @@ static inline u64 xskq_nb_queue_empty_descs(struct xsk_queue *q)
 struct xsk_queue *xskq_create(u32 nentries, bool umem_queue);
 void xskq_destroy(struct xsk_queue *q_ops);
 
-#endif /* _LINUX_XSK_QUEUE_H */
+#endif /* _LINEX_XSK_QUEUE_H */

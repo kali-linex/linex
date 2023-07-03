@@ -8,8 +8,8 @@
  *  for more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/string.h>
 
 #include <asm/unaligned.h>
 

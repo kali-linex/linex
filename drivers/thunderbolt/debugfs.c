@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2020, Intel Corporation
  * Authors: Gil Fine <gil.fine@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/pm_runtime.h>
+#include <linex/uaccess.h>
 
 #include "tb.h"
 #include "sb_regs.h"

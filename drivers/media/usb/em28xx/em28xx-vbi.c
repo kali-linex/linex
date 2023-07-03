@@ -8,11 +8,11 @@
 
 #include "em28xx.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/hardirq.h>
+#include <linex/init.h>
+#include <linex/usb.h>
 
 #include "em28xx-v4l.h"
 

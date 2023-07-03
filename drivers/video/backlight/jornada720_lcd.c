@@ -5,13 +5,13 @@
  * Copyright (C) 2006-2009 Kristoffer Ericson <kristoffer.ericson@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <linex/device.h>
+#include <linex/fb.h>
+#include <linex/kernel.h>
+#include <linex/lcd.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
 
 #include <mach/jornada720.h>
 #include <mach/hardware.h>

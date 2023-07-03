@@ -8,9 +8,9 @@
  * Copyright (C) 2021-2023 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
+#include <linex/gpio/machine.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
 
 #include "shared-psy-info.h"
 #include "x86-android-tablets.h"

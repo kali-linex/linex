@@ -6,7 +6,7 @@
  * public domain.
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <asm/unaligned.h>
 #include <crypto/internal/poly1305.h>
 

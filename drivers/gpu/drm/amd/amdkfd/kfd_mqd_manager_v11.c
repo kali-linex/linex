@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include "kfd_priv.h"
 #include "kfd_mqd_manager.h"
 #include "v11_structs.h"

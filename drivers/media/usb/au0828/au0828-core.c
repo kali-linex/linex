@@ -2,17 +2,17 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linextv.org>
  */
 
 #include "au0828.h"
 #include "au8522.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-common.h>
-#include <linux/mutex.h>
+#include <linex/mutex.h>
 
 /* Due to enum tuner_pad_index */
 #include <media/tuner.h>
@@ -843,6 +843,6 @@ module_init(au0828_init);
 module_exit(au0828_exit);
 
 MODULE_DESCRIPTION("Driver for Auvitek AU0828 based products");
-MODULE_AUTHOR("Steven Toth <stoth@linuxtv.org>");
+MODULE_AUTHOR("Steven Toth <stoth@linextv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.3");

@@ -4,12 +4,12 @@
  * Copyright (c) 2010-2012 Broadcom. All rights reserved.
  */
 
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/miscdevice.h>
+#include <linex/cdev.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/compat.h>
+#include <linex/miscdevice.h>
 
 #include "vchiq_core.h"
 #include "vchiq_ioctl.h"

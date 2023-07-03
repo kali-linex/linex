@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/lib/copypage-xscale.S
+ *  linex/arch/arm/lib/copypage-xscale.S
  *
  *  Copyright (C) 1995-2005 Russell King
  *
@@ -10,10 +10,10 @@
  * will be cached in the mini data cache.  This prevents us thrashing
  * the main data cache on page faults.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/highmem.h>
+#include <linex/pagemap.h>
 
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>

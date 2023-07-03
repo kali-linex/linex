@@ -15,23 +15,23 @@
  *		Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/memblock.h>
-#include <linux/dma-mapping.h>
-#include <linux/fs_uart_pd.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/gpio/consumer.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/console.h>
+#include <linex/sysrq.h>
+#include <linex/device.h>
+#include <linex/memblock.h>
+#include <linex/dma-mapping.h>
+#include <linex/fs_uart_pd.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/gpio/consumer.h>
+#include <linex/clk.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -39,8 +39,8 @@
 #include <asm/fs_pd.h>
 #include <asm/udbg.h>
 
-#include <linux/serial_core.h>
-#include <linux/kernel.h>
+#include <linex/serial_core.h>
+#include <linex/kernel.h>
 
 #include "cpm_uart.h"
 

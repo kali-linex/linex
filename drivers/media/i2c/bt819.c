@@ -9,19 +9,19 @@
  * Copyright (C) 2000 Serguei Miridonov <mirsev@cicese.mx>
  *
  * Changes by Ronald Bultje <rbultje@ronald.bitfreak.net>
- *    - moved over to linux>=2.4.x i2c protocol (9/9/2002)
+ *    - moved over to linex>=2.4.x i2c protocol (9/9/2002)
  *
  * This code was modify/ported from the saa7111 driver written
  * by Dave Perks.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/ioctl.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/videodev2.h>
+#include <linex/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/i2c/bt819.h>

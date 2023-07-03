@@ -14,7 +14,7 @@
 #include <string.h>
 #ifndef _NOLIBC_STDIO_H
 /* standard libcs need more includes */
-#include <linux/reboot.h>
+#include <linex/reboot.h>
 #include <sys/io.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
@@ -473,7 +473,7 @@ static int test_getpagesize(void)
 	c = (x == 4096);
 #elif defined(__aarch64__)
 	/*
-	 * Linux aarch64 supports three values of page size: 4K, 16K, and 64K
+	 * Linex aarch64 supports three values of page size: 4K, 16K, and 64K
 	 * which are selected at kernel compilation time.
 	 */
 	c = (x == 4096 || x == (16 * 1024) || x == (64 * 1024));
@@ -1045,7 +1045,7 @@ int main(int argc, char **argv, char **envp)
 		 */
 		printf("Leaving init with final status: %d\n", !!ret);
 		if (ret == 0)
-			reboot(LINUX_REBOOT_CMD_POWER_OFF);
+			reboot(LINEX_REBOOT_CMD_POWER_OFF);
 #if defined(__x86_64__)
 		/* QEMU started with "-device isa-debug-exit -no-reboot" will
 		 * exit with status code 2N+1 when N is written to 0x501. We

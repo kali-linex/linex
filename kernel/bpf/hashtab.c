@@ -2,19 +2,19 @@
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  * Copyright (c) 2016 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/jhash.h>
-#include <linux/filter.h>
-#include <linux/rculist_nulls.h>
-#include <linux/random.h>
-#include <uapi/linux/btf.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/btf_ids.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/jhash.h>
+#include <linex/filter.h>
+#include <linex/rculist_nulls.h>
+#include <linex/random.h>
+#include <uapi/linex/btf.h>
+#include <linex/rcupdate_trace.h>
+#include <linex/btf_ids.h>
 #include "percpu_freelist.h"
 #include "bpf_lru_list.h"
 #include "map_in_map.h"
-#include <linux/bpf_mem_alloc.h>
+#include <linex/bpf_mem_alloc.h>
 
 #define HTAB_CREATE_FLAG_MASK						\
 	(BPF_F_NO_PREALLOC | BPF_F_NO_COMMON_LRU | BPF_F_NUMA_NODE |	\

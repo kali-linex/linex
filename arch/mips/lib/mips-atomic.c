@@ -10,10 +10,10 @@
  */
 #include <asm/irqflags.h>
 #include <asm/hazards.h>
-#include <linux/compiler.h>
-#include <linux/preempt.h>
-#include <linux/export.h>
-#include <linux/stringify.h>
+#include <linex/compiler.h>
+#include <linex/preempt.h>
+#include <linex/export.h>
+#include <linex/stringify.h>
 
 #if !defined(CONFIG_CPU_HAS_DIEI)
 

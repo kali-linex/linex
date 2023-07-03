@@ -5,30 +5,30 @@
 
 #define pr_fmt(fmt) "### dt-test ### " fmt
 
-#include <linux/memblock.h>
-#include <linux/clk.h>
-#include <linux/dma-direct.h> /* to test phys_to_dma/dma_to_phys */
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/hashtable.h>
-#include <linux/libfdt.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
+#include <linex/memblock.h>
+#include <linex/clk.h>
+#include <linex/dma-direct.h> /* to test phys_to_dma/dma_to_phys */
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/hashtable.h>
+#include <linex/libfdt.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_fdt.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/kernel.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/gpio/driver.h>
+#include <linex/i2c.h>
+#include <linex/i2c-mux.h>
+#include <linex/gpio/driver.h>
 
-#include <linux/bitops.h>
+#include <linex/bitops.h>
 
 #include "of_private.h"
 

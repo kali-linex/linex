@@ -11,13 +11,13 @@
  *
  * Copyright 2007 Wolfson Microelectronics PLC.
  * Author: Graeme Gregory
- *         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ *         graeme.gregory@wolfsonmicro.com or linex@wolfsonmicro.com
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/of.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

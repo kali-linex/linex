@@ -2,13 +2,13 @@
 #ifndef _MM_PAGE_REPORTING_H
 #define _MM_PAGE_REPORTING_H
 
-#include <linux/mmzone.h>
-#include <linux/pageblock-flags.h>
-#include <linux/page-isolation.h>
-#include <linux/jump_label.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
-#include <linux/scatterlist.h>
+#include <linex/mmzone.h>
+#include <linex/pageblock-flags.h>
+#include <linex/page-isolation.h>
+#include <linex/jump_label.h>
+#include <linex/slab.h>
+#include <linex/pgtable.h>
+#include <linex/scatterlist.h>
 
 #ifdef CONFIG_PAGE_REPORTING
 DECLARE_STATIC_KEY_FALSE(page_reporting_enabled);

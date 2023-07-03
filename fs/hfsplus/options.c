@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/options.c
+ *  linex/fs/hfsplus/options.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,14 +9,14 @@
  * Option parsing
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/nls.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/string.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/parser.h>
+#include <linex/nls.h>
+#include <linex/mount.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 #include "hfsplus_fs.h"
 
 enum {

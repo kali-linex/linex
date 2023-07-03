@@ -10,13 +10,13 @@
  * interrupts...)
  */
 
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
-#include <linux/cpumask.h>
+#include <linex/kernel.h>
+#include <linex/irqflags.h>
+#include <linex/cpumask.h>
 
 #include <asm/time.h>
 #include <asm/timex.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/barrier.h>
 
 #include <asm/spr.h>

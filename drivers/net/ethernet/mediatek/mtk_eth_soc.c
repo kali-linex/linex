@@ -6,23 +6,23 @@
  *   Copyright (C) 2013-2016 Michael Lee <igvtee@gmail.com>
  */
 
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/if_vlan.h>
-#include <linux/reset.h>
-#include <linux/tcp.h>
-#include <linux/interrupt.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/phylink.h>
-#include <linux/pcs/pcs-mtk-lynxi.h>
-#include <linux/jhash.h>
-#include <linux/bitfield.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/of_address.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/clk.h>
+#include <linex/pm_runtime.h>
+#include <linex/if_vlan.h>
+#include <linex/reset.h>
+#include <linex/tcp.h>
+#include <linex/interrupt.h>
+#include <linex/pinctrl/devinfo.h>
+#include <linex/phylink.h>
+#include <linex/pcs/pcs-mtk-lynxi.h>
+#include <linex/jhash.h>
+#include <linex/bitfield.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 

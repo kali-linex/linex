@@ -14,17 +14,17 @@
  * (C) Texas Instruments.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/v4l2-mediabus.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/sort.h>
+#include <linex/v4l2-mediabus.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

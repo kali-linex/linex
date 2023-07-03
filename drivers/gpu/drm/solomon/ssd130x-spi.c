@@ -5,8 +5,8 @@
  * Copyright 2022 Red Hat Inc.
  * Authors: Javier Martinez Canillas <javierm@redhat.com>
  */
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linex/spi/spi.h>
+#include <linex/module.h>
 
 #include "ssd130x.h"
 

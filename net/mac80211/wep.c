@@ -5,16 +5,16 @@
  * Copyright 2003, Instant802 Networks, Inc.
  */
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/random.h>
-#include <linux/compiler.h>
-#include <linux/crc32.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linex/netdevice.h>
+#include <linex/types.h>
+#include <linex/random.h>
+#include <linex/compiler.h>
+#include <linex/crc32.h>
+#include <linex/crypto.h>
+#include <linex/err.h>
+#include <linex/mm.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 #include <net/mac80211.h>

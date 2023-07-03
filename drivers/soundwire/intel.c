@@ -5,16 +5,16 @@
  * Soundwire Intel Master Driver
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linex/acpi.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/io.h>
 #include <sound/pcm_params.h>
-#include <linux/pm_runtime.h>
+#include <linex/pm_runtime.h>
 #include <sound/soc.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_intel.h>
 #include "cadence_master.h"
 #include "bus.h"
 #include "intel.h"

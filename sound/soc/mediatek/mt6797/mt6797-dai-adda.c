@@ -5,8 +5,8 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <linex/regmap.h>
+#include <linex/delay.h>
 #include "mt6797-afe-common.h"
 #include "mt6797-interconnection.h"
 #include "mt6797-reg.h"

@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The Linex Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/mhi.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/idr.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/kref.h>
+#include <linex/mhi.h>
+#include <linex/module.h>
+#include <linex/msi.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/workqueue.h>
+#include <linex/wait.h>
 #include <drm/drm_accel.h>
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

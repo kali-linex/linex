@@ -7,13 +7,13 @@
 #ifndef _VIRTIO_CRYPTO_COMMON_H
 #define _VIRTIO_CRYPTO_COMMON_H
 
-#include <linux/virtio.h>
-#include <linux/crypto.h>
-#include <linux/spinlock.h>
+#include <linex/virtio.h>
+#include <linex/crypto.h>
+#include <linex/spinlock.h>
 #include <crypto/aead.h>
 #include <crypto/aes.h>
 #include <crypto/engine.h>
-#include <uapi/linux/virtio_crypto.h>
+#include <uapi/linex/virtio_crypto.h>
 
 
 /* Internal representation of a data virtqueue */

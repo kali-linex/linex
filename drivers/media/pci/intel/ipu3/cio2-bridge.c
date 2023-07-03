@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Dan Scally <djrscally@gmail.com> */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/property.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/i2c.h>
+#include <linex/pci.h>
+#include <linex/property.h>
 #include <media/v4l2-fwnode.h>
 
 #include "cio2-bridge.h"

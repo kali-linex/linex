@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/memregion.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
+#include <linex/memregion.h>
+#include <linex/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
 #include <cxlmem.h>
 #include <cxlpci.h>
 #include <cxl.h>

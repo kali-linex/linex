@@ -7,8 +7,8 @@
 #ifndef BTRFS_BIO_H
 #define BTRFS_BIO_H
 
-#include <linux/bio.h>
-#include <linux/workqueue.h>
+#include <linex/bio.h>
+#include <linex/workqueue.h>
 #include "tree-checker.h"
 
 struct btrfs_bio;

@@ -5,13 +5,13 @@
  * Copyright (C) 2022 ARM Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/math.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/powercap.h>
-#include <linux/scmi_protocol.h>
+#include <linex/device.h>
+#include <linex/math.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/powercap.h>
+#include <linex/scmi_protocol.h>
 
 #define to_scmi_powercap_zone(z)		\
 	container_of(z, struct scmi_powercap_zone, zone)

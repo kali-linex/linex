@@ -6,7 +6,7 @@
  * Copyright (c) 2010, ST-Ericsson
  */
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 
 #include "data_tx.h"
 #include "wfx.h"
@@ -363,7 +363,7 @@ static int wfx_tx_inner(struct wfx_vif *wvif, struct ieee80211_sta *sta, struct 
 	req->packet_id |= queue_id << 28;
 
 	req->fc_offset = offset;
-	/* Queue index are inverted between firmware and Linux */
+	/* Queue index are inverted between firmware and Linex */
 	req->queue_id = 3 - queue_id;
 	req->peer_sta_id = wfx_tx_get_link_id(wvif, sta, hdr);
 	req->retry_policy_index = wfx_tx_get_retry_policy_id(wvif, tx_info);

@@ -10,8 +10,8 @@
 
 #if !defined(_TRACE_SOF_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SOF_H
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <linex/tracepoint.h>
+#include <linex/types.h>
 #include <sound/sof/stream.h>
 #include "../../../sound/soc/sof/sof-audio.h"
 

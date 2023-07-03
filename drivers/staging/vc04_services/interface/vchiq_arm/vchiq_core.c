@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /* Copyright (c) 2010-2012 Broadcom. All rights reserved. */
 
-#include <linux/types.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/signal.h>
+#include <linex/types.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
+#include <linex/bitops.h>
+#include <linex/kthread.h>
+#include <linex/wait.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/kref.h>
+#include <linex/rcupdate.h>
+#include <linex/sched/signal.h>
 
 #include "vchiq_arm.h"
 #include "vchiq_core.h"

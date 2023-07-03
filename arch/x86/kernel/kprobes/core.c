@@ -26,30 +26,30 @@
  *		<arjan@infradead.org> and Jim Keniston <jkenisto@us.ibm.com>
  *		unified x86 kprobes code.
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/preempt.h>
-#include <linux/sched/debug.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/kallsyms.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/objtool.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
-#include <linux/set_memory.h>
+#include <linex/kprobes.h>
+#include <linex/ptrace.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/hardirq.h>
+#include <linex/preempt.h>
+#include <linex/sched/debug.h>
+#include <linex/perf_event.h>
+#include <linex/extable.h>
+#include <linex/kdebug.h>
+#include <linex/kallsyms.h>
+#include <linex/kgdb.h>
+#include <linex/ftrace.h>
+#include <linex/kasan.h>
+#include <linex/moduleloader.h>
+#include <linex/objtool.h>
+#include <linex/vmalloc.h>
+#include <linex/pgtable.h>
+#include <linex/set_memory.h>
 
 #include <asm/text-patching.h>
 #include <asm/cacheflush.h>
 #include <asm/desc.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/insn.h>
 #include <asm/debugreg.h>

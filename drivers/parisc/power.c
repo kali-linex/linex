@@ -1,5 +1,5 @@
 /*
- * linux/drivers/parisc/power.c
+ * linex/drivers/parisc/power.c
  * HP PARISC soft power switch support driver
  *
  * Copyright (c) 2001-2007 Helge Deller <deller@gmx.de>
@@ -34,14 +34,14 @@
  *  runtime through the "/proc/sys/kernel/power" procfs entry.
  */ 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/pm.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/panic_notifier.h>
+#include <linex/reboot.h>
+#include <linex/sched/signal.h>
+#include <linex/kthread.h>
+#include <linex/pm.h>
 
 #include <asm/pdc.h>
 #include <asm/io.h>

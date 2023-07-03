@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/callback_proc.c
+ * linex/fs/nfs/callback_proc.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback procedures
  */
 
-#include <linux/errno.h>
-#include <linux/math.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
+#include <linex/errno.h>
+#include <linex/math.h>
+#include <linex/nfs4.h>
+#include <linex/nfs_fs.h>
+#include <linex/slab.h>
+#include <linex/rcupdate.h>
+#include <linex/types.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/fiemap.h>
-#include <linux/fs.h>
-#include <linux/minmax.h>
-#include <linux/vmalloc.h>
+#include <linex/fiemap.h>
+#include <linex/fs.h>
+#include <linex/minmax.h>
+#include <linex/vmalloc.h>
 
 #include "debug.h"
 #include "ntfs.h"

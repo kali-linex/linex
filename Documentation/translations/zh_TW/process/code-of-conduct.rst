@@ -3,7 +3,7 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :ref:`Documentation/process/code-of-conduct.rst <code_of_conduct>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linex.alibaba.com>
              Hu Haowen <src.res@email.cn>
 
 .. _tw_code_of_conduct:
@@ -72,5 +72,5 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html 獲取。
 解釋
 ====
 
-有關Linux內核社區如何解釋此文檔，請參閱 :ref:`tw_code_of_conduct_interpretation`
+有關Linex內核社區如何解釋此文檔，請參閱 :ref:`tw_code_of_conduct_interpretation`
 

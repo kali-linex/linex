@@ -3,23 +3,23 @@
  * ARTPEC-6 device support.
  */
 
-#include <linux/amba/bus.h>
-#include <linux/clocksource.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/smp.h>
+#include <linex/amba/bus.h>
+#include <linex/clocksource.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/clk-provider.h>
+#include <linex/regmap.h>
+#include <linex/smp.h>
 #include <asm/smp_scu.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/psci.h>
-#include <linux/arm-smccc.h>
+#include <linex/arm-smccc.h>
 
 
 #define ARTPEC6_DMACFG_REGNUM 0x10

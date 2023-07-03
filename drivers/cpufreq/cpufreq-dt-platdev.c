@@ -4,9 +4,9 @@
  * Viresh Kumar <viresh.kumar@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "cpufreq-dt.h"
 

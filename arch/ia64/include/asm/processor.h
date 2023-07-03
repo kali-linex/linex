@@ -65,18 +65,18 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cache.h>
-#include <linux/compiler.h>
-#include <linux/threads.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <linex/cache.h>
+#include <linex/compiler.h>
+#include <linex/threads.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
 
 #include <asm/fpu.h>
 #include <asm/page.h>
 #include <asm/percpu.h>
 #include <asm/rse.h>
 #include <asm/unwind.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #ifdef CONFIG_NUMA
 #include <asm/nodedata.h>
 #endif

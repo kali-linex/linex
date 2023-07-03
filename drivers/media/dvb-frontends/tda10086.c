@@ -7,12 +7,12 @@
 
    */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/jiffies.h>
+#include <linex/string.h>
+#include <linex/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "tda10086.h"

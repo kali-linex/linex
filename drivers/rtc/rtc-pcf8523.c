@@ -3,14 +3,14 @@
  * Copyright (C) 2012 Avionic Design GmbH
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/bcd.h>
+#include <linex/bitfield.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
+#include <linex/of.h>
+#include <linex/pm_wakeirq.h>
 
 #define PCF8523_REG_CONTROL1 0x00
 #define PCF8523_CONTROL1_CAP_SEL BIT(7)
@@ -488,7 +488,7 @@ static struct i2c_driver pcf8523_driver = {
 		.name = "rtc-pcf8523",
 		.of_match_table = pcf8523_of_match,
 	},
-	.probe = pcf8523_probe,
+	.probe_new = pcf8523_probe,
 	.id_table = pcf8523_id,
 };
 module_i2c_driver(pcf8523_driver);

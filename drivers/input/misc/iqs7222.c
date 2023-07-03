@@ -5,20 +5,20 @@
  * Copyright (C) 2022 Jeff LaBundy <jeff@labundy.com>
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gpio/consumer.h>
+#include <linex/i2c.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/property.h>
+#include <linex/slab.h>
 #include <asm/unaligned.h>
 
 #define IQS7222_PROD_NUM			0x00
@@ -1770,7 +1770,7 @@ static int iqs7222_parse_event(struct iqs7222_private *iqs7222,
 	if (error)
 		return error;
 
-	error = fwnode_property_read_u32(event_node, "linux,code", event_code);
+	error = fwnode_property_read_u32(event_node, "linex,code", event_code);
 	if (error == -EINVAL) {
 		return 0;
 	} else if (error) {
@@ -1784,7 +1784,7 @@ static int iqs7222_parse_event(struct iqs7222_private *iqs7222,
 		return 0;
 	}
 
-	error = fwnode_property_read_u32(event_node, "linux,input-type",
+	error = fwnode_property_read_u32(event_node, "linex,input-type",
 					 event_type);
 	if (error == -EINVAL) {
 		*event_type = EV_KEY;
@@ -2171,7 +2171,7 @@ static int iqs7222_parse_sldr(struct iqs7222_private *iqs7222,
 		return error;
 	}
 
-	error = fwnode_property_read_u32(sldr_node, "linux,axis", &val);
+	error = fwnode_property_read_u32(sldr_node, "linex,axis", &val);
 	if (!error) {
 		u16 sldr_max = sldr_setup[3] - 1;
 

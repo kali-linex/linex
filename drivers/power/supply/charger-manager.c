@@ -12,19 +12,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/power/charger-manager.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
-#include <linux/of.h>
-#include <linux/thermal.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/irq.h>
+#include <linex/interrupt.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/platform_device.h>
+#include <linex/power/charger-manager.h>
+#include <linex/regulator/consumer.h>
+#include <linex/sysfs.h>
+#include <linex/of.h>
+#include <linex/thermal.h>
 
 static struct {
 	const char *name;

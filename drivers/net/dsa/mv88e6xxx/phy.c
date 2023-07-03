@@ -7,8 +7,8 @@
  * Copyright (c) 2017 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/mdio.h>
-#include <linux/module.h>
+#include <linex/mdio.h>
+#include <linex/module.h>
 
 #include "chip.h"
 #include "phy.h"

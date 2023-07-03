@@ -4,15 +4,15 @@
  * Copyright (C) 2000-2005 by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/workqueue.h>
+#include <linex/mii.h>
+#include <linex/usb.h>
+#include <linex/usb/usbnet.h>
 
 
 /*
@@ -41,7 +41,7 @@
  * this protocol.  That includes both smart peripherals and quite a lot
  * of "host-to-host" USB cables (which embed two devices back-to-back).
  *
- * Note that although Linux may use many of those host-to-host links
+ * Note that although Linex may use many of those host-to-host links
  * with this "cdc_subset" framing, that doesn't mean there may not be a
  * better approach.  Handling the "other end unplugs/replugs" scenario
  * well tends to require chip-specific vendor requests.  Also, Windows
@@ -49,7 +49,7 @@
  * framing to be used rather than this "cdc_subset" model.
  */
 
-#if defined(CONFIG_USB_EPSON2888) || defined(CONFIG_USB_ARMLINUX)
+#if defined(CONFIG_USB_EPSON2888) || defined(CONFIG_USB_ARMLINEX)
 /* PDA style devices are always connected if present */
 static int always_connected (struct usbnet *dev)
 {
@@ -148,7 +148,7 @@ static const struct driver_info	belkin_info = {
  *
  * EPSON USB clients
  *
- * This is the same idea as Linux PDAs (below) except the firmware in the
+ * This is the same idea as Linex PDAs (below) except the firmware in the
  * device might not be Tux-powered.  Epson provides reference firmware that
  * implements this interface.  Product developers can reuse or modify that
  * code, such as by using their own product and vendor codes.
@@ -182,17 +182,17 @@ static const struct driver_info kc2190_info = {
 #endif /* CONFIG_USB_KC2190 */
 
 
-#ifdef	CONFIG_USB_ARMLINUX
+#ifdef	CONFIG_USB_ARMLINEX
 #define	HAVE_HARDWARE
 
 /*-------------------------------------------------------------------------
  *
  * Intel's SA-1100 chip integrates basic USB support, and is used
  * in PDAs like some iPaqs, the Yopy, some Zaurus models, and more.
- * When they run Linux, arch/arm/mach-sa1100/usb-eth.c may be used to
+ * When they run Linex, arch/arm/mach-sa1100/usb-eth.c may be used to
  * network using minimal USB framing data.
  *
- * This describes the driver currently in standard ARM Linux kernels.
+ * This describes the driver currently in standard ARM Linex kernels.
  * The Zaurus uses a different driver (see later).
  *
  * PXA25x and PXA210 use XScale cores (ARM v5TE) with better USB support
@@ -202,8 +202,8 @@ static const struct driver_info kc2190_info = {
  *
  *-------------------------------------------------------------------------*/
 
-static const struct driver_info	linuxdev_info = {
-	.description =	"Linux Device",
+static const struct driver_info	linexdev_info = {
+	.description =	"Linex Device",
 	.check_connect = always_connected,
 	.flags = FLAG_POINTTOPOINT,
 };
@@ -220,7 +220,7 @@ static const struct driver_info	blob_info = {
 	.flags = FLAG_POINTTOPOINT,
 };
 
-#endif	/* CONFIG_USB_ARMLINUX */
+#endif	/* CONFIG_USB_ARMLINEX */
 
 
 /*-------------------------------------------------------------------------*/
@@ -284,27 +284,27 @@ static const struct usb_device_id	products [] = {
 },
 #endif
 
-#ifdef	CONFIG_USB_ARMLINUX
+#ifdef	CONFIG_USB_ARMLINEX
 /*
- * SA-1100 using standard ARM Linux kernels, or compatible.
- * Often used when talking to Linux PDAs (iPaq, Yopy, etc).
+ * SA-1100 using standard ARM Linex kernels, or compatible.
+ * Often used when talking to Linex PDAs (iPaq, Yopy, etc).
  * The sa-1100 "usb-eth" driver handles the basic framing.
  *
  * PXA25x or PXA210 ...  these use a "usb-eth" driver much like
  * the sa1100 one, but hardware uses different endpoint numbers.
  *
- * Or the Linux "Ethernet" gadget on hardware that can't talk
+ * Or the Linex "Ethernet" gadget on hardware that can't talk
  * CDC Ethernet (e.g., no altsettings), in either of two modes:
  *  - acting just like the old "usb-eth" firmware, though
  *    the implementation is different
  *  - supporting RNDIS as the first/default configuration for
- *    MS-Windows interop; Linux needs to use the other config
+ *    MS-Windows interop; Linex needs to use the other config
  */
 {
 	// 1183 = 0x049F, both used as hex values?
 	// Compaq "Itsy" vendor/product id
 	USB_DEVICE (0x049F, 0x505A),	// usb-eth, or compatible
-	.driver_info =	(unsigned long) &linuxdev_info,
+	.driver_info =	(unsigned long) &linexdev_info,
 }, {
 	USB_DEVICE (0x0E7E, 0x1001),	// G.Mate "Yopy"
 	.driver_info =	(unsigned long) &yopy_info,
@@ -315,11 +315,11 @@ static const struct usb_device_id	products [] = {
 	USB_DEVICE (0x1286, 0x8001),    // "blob" bootloader
 	.driver_info =  (unsigned long) &blob_info,
 }, {
-	// Linux Ethernet/RNDIS gadget, mostly on PXA, second config
+	// Linex Ethernet/RNDIS gadget, mostly on PXA, second config
 	// e.g. Gumstix, current OpenZaurus, ... or anything else
 	// that just enables this gadget option.
 	USB_DEVICE (0x0525, 0xa4a2),
-	.driver_info =	(unsigned long) &linuxdev_info,
+	.driver_info =	(unsigned long) &linexdev_info,
 },
 #endif
 

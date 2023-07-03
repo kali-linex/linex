@@ -7,9 +7,9 @@
 #ifndef __AR7_H__
 #define __AR7_H__
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/errno.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/errno.h>
 
 #include <asm/addrspace.h>
 

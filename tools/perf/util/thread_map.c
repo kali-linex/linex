@@ -12,8 +12,8 @@
 #include "strlist.h"
 #include <string.h>
 #include <api/fs/fs.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linex/string.h>
+#include <linex/zalloc.h>
 #include "asm/bug.h"
 #include "thread_map.h"
 #include "debug.h"

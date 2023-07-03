@@ -3,23 +3,23 @@
  * Copyright (C) 2014-2021 Broadcom
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/panic_notifier.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/sysfs.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/pm.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/panic_notifier.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/sysfs.h>
+#include <linex/io.h>
+#include <linex/string.h>
+#include <linex/device.h>
+#include <linex/list.h>
+#include <linex/of.h>
+#include <linex/bitops.h>
+#include <linex/pm.h>
+#include <linex/kernel.h>
+#include <linex/kdebug.h>
+#include <linex/notifier.h>
 
 #ifdef CONFIG_MIPS
 #include <asm/traps.h>

@@ -2,8 +2,8 @@
 #ifndef __SPARC_IO_H
 #define __SPARC_IO_H
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>  /* struct resource */
+#include <linex/kernel.h>
+#include <linex/ioport.h>  /* struct resource */
 
 #define IO_SPACE_LIMIT 0xffffffff
 

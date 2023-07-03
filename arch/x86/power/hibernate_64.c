@@ -7,12 +7,12 @@
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
 
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/suspend.h>
-#include <linux/scatterlist.h>
-#include <linux/kdebug.h>
-#include <linux/pgtable.h>
+#include <linex/gfp.h>
+#include <linex/smp.h>
+#include <linex/suspend.h>
+#include <linex/scatterlist.h>
+#include <linex/kdebug.h>
+#include <linex/pgtable.h>
 
 #include <crypto/hash.h>
 

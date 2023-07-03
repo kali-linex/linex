@@ -8,10 +8,10 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/mtd/lpc32xx_mlc.h>
-#include <linux/mtd/lpc32xx_slc.h>
-#include <linux/of_platform.h>
+#include <linex/amba/pl08x.h>
+#include <linex/mtd/lpc32xx_mlc.h>
+#include <linex/mtd/lpc32xx_slc.h>
+#include <linex/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include "common.h"

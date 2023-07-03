@@ -9,17 +9,17 @@
  *	   Jaehoon Chung <jh80.chung@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of_device.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
+#include <linex/regulator/consumer.h>
+#include <linex/module.h>
 
 #include "pcie-designware.h"
 

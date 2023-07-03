@@ -28,20 +28,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/fs.h>
-#include <linux/semaphore.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/miscdevice.h>
+#include <linex/watchdog.h>
+#include <linex/ioport.h>
+#include <linex/spinlock.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/pnp.h>
+#include <linex/fs.h>
+#include <linex/semaphore.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 #define SC1200_MODULE_VER	"build 20020303"
 #define SC1200_MODULE_NAME	"sc1200wdt"

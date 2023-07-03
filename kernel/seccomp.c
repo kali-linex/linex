@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/kernel/seccomp.c
+ * linex/kernel/seccomp.c
  *
  * Copyright 2004-2005  Andrea Arcangeli <andrea@cpushare.com>
  *
@@ -11,23 +11,23 @@
  *
  * Mode 1 uses a fixed list of allowed system calls.
  * Mode 2 allows user-defined system call filters in the form
- *        of Berkeley Packet Filters/Linux Socket Filters.
+ *        of Berkeley Packet Filters/Linex Socket Filters.
  */
 #define pr_fmt(fmt) "seccomp: " fmt
 
-#include <linux/refcount.h>
-#include <linux/audit.h>
-#include <linux/compat.h>
-#include <linux/coredump.h>
-#include <linux/kmemleak.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seccomp.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/sysctl.h>
+#include <linex/refcount.h>
+#include <linex/audit.h>
+#include <linex/compat.h>
+#include <linex/coredump.h>
+#include <linex/kmemleak.h>
+#include <linex/nospec.h>
+#include <linex/prctl.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/seccomp.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/sysctl.h>
 
 /* Not exposed in headers: strictly internal use only. */
 #define SECCOMP_MODE_DEAD	(SECCOMP_MODE_FILTER + 1)
@@ -37,14 +37,14 @@
 #endif
 
 #ifdef CONFIG_SECCOMP_FILTER
-#include <linux/file.h>
-#include <linux/filter.h>
-#include <linux/pid.h>
-#include <linux/ptrace.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/anon_inodes.h>
-#include <linux/lockdep.h>
+#include <linex/file.h>
+#include <linex/filter.h>
+#include <linex/pid.h>
+#include <linex/ptrace.h>
+#include <linex/capability.h>
+#include <linex/uaccess.h>
+#include <linex/anon_inodes.h>
+#include <linex/lockdep.h>
 
 /*
  * When SECCOMP_IOCTL_NOTIF_ID_VALID was first introduced, it had the

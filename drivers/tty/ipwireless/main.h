@@ -19,8 +19,8 @@
 #ifndef _IPWIRELESS_CS_H_
 #define _IPWIRELESS_CS_H_
 
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linex/sched.h>
+#include <linex/types.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/netdevice.h>
-#include <linux/dynamic_debug.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
+#include <linex/netdevice.h>
+#include <linex/dynamic_debug.h>
+#include <linex/etherdevice.h>
+#include <linex/list.h>
 
 #include "ionic.h"
 #include "ionic_lif.h"

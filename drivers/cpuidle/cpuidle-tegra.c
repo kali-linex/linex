@@ -14,17 +14,17 @@
 
 #define pr_fmt(fmt)	"tegra-cpuidle: " fmt
 
-#include <linux/atomic.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linex/atomic.h>
+#include <linex/cpuidle.h>
+#include <linex/cpumask.h>
+#include <linex/cpu_pm.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
 
-#include <linux/clk/tegra.h>
-#include <linux/firmware/trusted_foundations.h>
+#include <linex/clk/tegra.h>
+#include <linex/firmware/trusted_foundations.h>
 
 #include <soc/tegra/cpuidle.h>
 #include <soc/tegra/flowctrl.h>

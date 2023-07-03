@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/cacheflush.h>
-#include <linux/dma-direction.h>
-#include <linux/gfp.h>
-#include <linux/kmsan.h>
-#include <linux/mm.h>
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
+#include <linex/cacheflush.h>
+#include <linex/dma-direction.h>
+#include <linex/gfp.h>
+#include <linex/kmsan.h>
+#include <linex/mm.h>
+#include <linex/mm_types.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
 
 #include "../internal.h"
 #include "../slab.h"

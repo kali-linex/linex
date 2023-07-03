@@ -3,9 +3,9 @@
  * Copyright 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/slab.h>
 #include "clk.h"
 
 /**

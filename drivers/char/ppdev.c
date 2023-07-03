@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/char/ppdev.c
+ * linex/drivers/char/ppdev.c
  *
  * This is the code behind /dev/parport* -- it allows a user-space
  * application to use the parport subsystem.
@@ -52,20 +52,20 @@
  * Added GETFLAGS/SETFLAGS ioctls, Fred Barnes, 04/2001
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/device.h>
-#include <linux/ioctl.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/ppdev.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/device.h>
+#include <linex/ioctl.h>
+#include <linex/parport.h>
+#include <linex/ctype.h>
+#include <linex/poll.h>
+#include <linex/slab.h>
+#include <linex/major.h>
+#include <linex/ppdev.h>
+#include <linex/mutex.h>
+#include <linex/uaccess.h>
+#include <linex/compat.h>
 
 #define PP_VERSION "ppdev: user-space parallel port driver"
 #define CHRDEV "ppdev"

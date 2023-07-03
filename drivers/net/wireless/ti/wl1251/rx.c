@@ -6,8 +6,8 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
+#include <linex/skbuff.h>
+#include <linex/gfp.h>
 #include <net/mac80211.h>
 
 #include "wl1251.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/netdev.h>
-#include <linux/if_link.h>
+#include <uapi/linex/bpf.h>
+#include <uapi/linex/netdev.h>
+#include <linex/if_link.h>
 #include <signal.h>
 #include <argp.h>
 #include <net/if.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/drivers/char/mem.c
+ *  linex/drivers/char/mem.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,30 +9,30 @@
  *  Shared /dev/zero mmapping support, Feb 2000, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/capability.h>
-#include <linux/ptrace.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/backing-dev.h>
-#include <linux/shmem_fs.h>
-#include <linux/splice.h>
-#include <linux/pfn.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
+#include <linex/mm.h>
+#include <linex/miscdevice.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/mman.h>
+#include <linex/random.h>
+#include <linex/init.h>
+#include <linex/tty.h>
+#include <linex/capability.h>
+#include <linex/ptrace.h>
+#include <linex/device.h>
+#include <linex/highmem.h>
+#include <linex/backing-dev.h>
+#include <linex/shmem_fs.h>
+#include <linex/splice.h>
+#include <linex/pfn.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/uio.h>
+#include <linex/uaccess.h>
+#include <linex/security.h>
 
 #ifdef CONFIG_IA64
-# include <linux/efi.h>
+# include <linex/efi.h>
 #endif
 
 #define DEVMEM_MINOR	1

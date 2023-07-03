@@ -7,13 +7,13 @@
  *	Copyright (c) Adrian McMenamin, 2008 - 2009
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/maple.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/timer.h>
+#include <linex/maple.h>
 
 MODULE_AUTHOR("Adrian McMenamin <adrian@mcmen.demon.co.uk>");
 MODULE_DESCRIPTION("SEGA Dreamcast mouse driver");

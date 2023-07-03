@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2006  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/serial.h>
+#include <linex/serial_sci.h>
+#include <linex/uio_driver.h>
+#include <linex/sh_timer.h>
+#include <linex/sh_intc.h>
 #include <asm/clock.h>
 #include <asm/platform_early.h>
 

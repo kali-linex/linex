@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/lockdep.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/memory.h>
-#include <linux/memory-tiers.h>
+#include <linex/slab.h>
+#include <linex/lockdep.h>
+#include <linex/sysfs.h>
+#include <linex/kobject.h>
+#include <linex/memory.h>
+#include <linex/memory-tiers.h>
 
 #include "internal.h"
 

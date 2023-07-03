@@ -5,10 +5,10 @@
  * Copyright (C) 2018-2019 Microchip Technology Inc.
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linex/i2c.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
 
 #include "ksz_common.h"
 

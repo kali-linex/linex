@@ -2,8 +2,8 @@
 /* Copyright 2015 Freescale Semiconductor Inc.
  * Copyright 2018-2019 NXP
  */
-#include <linux/module.h>
-#include <linux/debugfs.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
 #include "dpaa2-eth.h"
 #include "dpaa2-eth-debugfs.h"
 

@@ -9,10 +9,10 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linex/crypto.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
 #include <crypto/algapi.h>
 
 #include "camellia.h"

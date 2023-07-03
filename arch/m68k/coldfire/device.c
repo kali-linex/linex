@@ -1,28 +1,28 @@
 /*
  * device.c  -- common ColdFire SoC device support
  *
- * (C) Copyright 2011, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2011, Greg Ungerer <gerg@uclinex.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/fec.h>
-#include <linux/dmaengine.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/spi/spi.h>
+#include <linex/gpio.h>
+#include <linex/fec.h>
+#include <linex/dmaengine.h>
 #include <asm/traps.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/mcfuart.h>
 #include <asm/mcfqspi.h>
-#include <linux/platform_data/edma.h>
-#include <linux/platform_data/dma-mcf-edma.h>
-#include <linux/platform_data/mmc-esdhc-mcf.h>
+#include <linex/platform_data/edma.h>
+#include <linex/platform_data/dma-mcf-edma.h>
+#include <linex/platform_data/mmc-esdhc-mcf.h>
 
 /*
  *	All current ColdFire parts contain from 2, 3, 4 or 10 UARTS.
@@ -583,7 +583,7 @@ static struct platform_device mcf_esdhc = {
 
 #ifdef MCFFLEXCAN_SIZE
 
-#include <linux/can/platform/flexcan.h>
+#include <linex/can/platform/flexcan.h>
 
 static struct flexcan_platform_data mcf5441x_flexcan_info = {
 	.clk_src = 1,

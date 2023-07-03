@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #include "rx.h"
 #include "en/xdp.h"
 #include <net/xdp_sock_drv.h>
-#include <linux/filter.h>
+#include <linex/filter.h>
 
 /* RX data path */
 

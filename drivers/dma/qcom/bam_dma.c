@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The Linex Foundation. All rights reserved.
  */
 /*
  * QCOM BAM DMA engine driver
@@ -23,24 +23,24 @@
  * indication of where the hardware is currently working.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
-#include <linux/circ_buf.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/pm_runtime.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/dma-mapping.h>
+#include <linex/scatterlist.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/of_dma.h>
+#include <linex/circ_buf.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/pm_runtime.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/virtio.h>
-#include <linux/spinlock.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_anchor.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/of.h>
-#include <uapi/linux/virtio_ids.h>
+#include <linex/virtio.h>
+#include <linex/spinlock.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_anchor.h>
+#include <linex/module.h>
+#include <linex/idr.h>
+#include <linex/of.h>
+#include <uapi/linex/virtio_ids.h>
 
 /* Unique numbering for virtio devices. */
 static DEFINE_IDA(virtio_index_ida);

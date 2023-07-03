@@ -9,16 +9,16 @@
 #include <regex.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/zalloc.h>
+#include <linex/compiler.h>
+#include <linex/list.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/string.h>
+#include <linex/stringify.h>
+#include <linex/zalloc.h>
 #include <sys/stat.h>
 #include <sys/utsname.h>
-#include <linux/time64.h>
+#include <linex/time64.h>
 #include <dirent.h>
 #ifdef HAVE_LIBBPF_SUPPORT
 #include <bpf/libbpf.h>
@@ -54,7 +54,7 @@
 #include "bpf-utils.h"
 #include "clockid.h"
 
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 #include <internal/lib.h>
 
 #ifdef HAVE_LIBTRACEEVENT

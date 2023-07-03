@@ -22,15 +22,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pnp.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pnp.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
 #include <media/rc-core.h>
-#include <linux/pci_ids.h>
+#include <linex/pci_ids.h>
 
 #include "nuvoton-cir.h"
 

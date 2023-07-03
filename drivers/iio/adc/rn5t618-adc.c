@@ -5,20 +5,20 @@
  * Copyright (C) 2019 Andreas Kemnade
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mfd/rn5t618.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/mfd/rn5t618.h>
+#include <linex/platform_device.h>
+#include <linex/completion.h>
+#include <linex/regmap.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/driver.h>
+#include <linex/iio/machine.h>
+#include <linex/slab.h>
 
 #define RN5T618_ADC_CONVERSION_TIMEOUT   (msecs_to_jiffies(500))
 #define RN5T618_REFERENCE_VOLT 2500

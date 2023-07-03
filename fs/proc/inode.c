@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/inode.c
+ *  linex/fs/proc/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/cache.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/pid_namespace.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/completion.h>
-#include <linux/poll.h>
-#include <linux/printk.h>
-#include <linux/file.h>
-#include <linux/limits.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/bug.h>
+#include <linex/cache.h>
+#include <linex/time.h>
+#include <linex/proc_fs.h>
+#include <linex/kernel.h>
+#include <linex/pid_namespace.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/completion.h>
+#include <linex/poll.h>
+#include <linex/printk.h>
+#include <linex/file.h>
+#include <linex/limits.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/sysctl.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/mount.h>
+#include <linex/bug.h>
 
 #include "internal.h"
 

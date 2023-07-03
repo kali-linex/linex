@@ -9,31 +9,31 @@
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/mc146818rtc.h>
-#include <linux/delay.h>
-#include <linux/profile.h>
-#include <linux/bcd.h>
-#include <linux/jiffies.h>
-#include <linux/cpufreq.h>
-#include <linux/percpu.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/kernel_stat.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/platform_device.h>
-#include <linux/ftrace.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/param.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/time.h>
+#include <linex/timex.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/mc146818rtc.h>
+#include <linex/delay.h>
+#include <linex/profile.h>
+#include <linex/bcd.h>
+#include <linex/jiffies.h>
+#include <linex/cpufreq.h>
+#include <linex/percpu.h>
+#include <linex/rtc/m48t59.h>
+#include <linex/kernel_stat.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/platform_device.h>
+#include <linex/ftrace.h>
 
 #include <asm/oplib.h>
 #include <asm/timer.h>
@@ -44,7 +44,7 @@
 #include <asm/smp.h>
 #include <asm/sections.h>
 #include <asm/cpudata.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/irq_regs.h>
 #include <asm/cacheflush.h>
 

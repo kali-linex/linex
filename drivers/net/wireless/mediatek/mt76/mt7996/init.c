@@ -3,8 +3,8 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/thermal.h>
+#include <linex/etherdevice.h>
+#include <linex/thermal.h>
 #include "mt7996.h"
 #include "mac.h"
 #include "mcu.h"

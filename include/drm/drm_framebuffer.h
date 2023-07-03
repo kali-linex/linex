@@ -23,9 +23,9 @@
 #ifndef __DRM_FRAMEBUFFER_H__
 #define __DRM_FRAMEBUFFER_H__
 
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <linex/ctype.h>
+#include <linex/list.h>
+#include <linex/sched.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_mode_object.h>

@@ -5,9 +5,9 @@
  * Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
  */
 
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/cdx/cdx_bus.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/cdx/cdx_bus.h>
 
 #include "cdx_controller.h"
 #include "../cdx.h"

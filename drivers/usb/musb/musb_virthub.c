@@ -7,12 +7,12 @@
  * Copyright (C) 2006-2007 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
+#include <linex/time.h>
+#include <linex/timer.h>
 
 #include <asm/unaligned.h>
 

@@ -11,11 +11,11 @@
  * Generic PCI interface for ACP device
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/module.h>
 
 #include "amd.h"
 #include "../mach-config.h"

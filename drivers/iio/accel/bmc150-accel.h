@@ -2,11 +2,11 @@
 #ifndef _BMC150_ACCEL_H_
 #define _BMC150_ACCEL_H_
 
-#include <linux/atomic.h>
-#include <linux/iio/iio.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/iio/iio.h>
+#include <linex/mutex.h>
+#include <linex/regulator/consumer.h>
+#include <linex/workqueue.h>
 
 struct regmap;
 struct i2c_client;

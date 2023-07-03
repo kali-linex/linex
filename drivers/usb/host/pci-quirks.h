@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_PCI_QUIRKS_H
-#define __LINUX_USB_PCI_QUIRKS_H
+#ifndef __LINEX_USB_PCI_QUIRKS_H
+#define __LINEX_USB_PCI_QUIRKS_H
 
 #ifdef CONFIG_USB_PCI
 void uhci_reset_hc(struct pci_dev *pdev, unsigned long base);
@@ -31,4 +31,4 @@ static inline bool usb_amd_pt_check_port(struct device *device, int port)
 }
 #endif  /* CONFIG_USB_PCI */
 
-#endif  /*  __LINUX_USB_PCI_QUIRKS_H  */
+#endif  /*  __LINEX_USB_PCI_QUIRKS_H  */

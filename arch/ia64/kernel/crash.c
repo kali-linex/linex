@@ -9,16 +9,16 @@
  * Copyright (C) 2005 Intel Corp	Zou Nan hai <nanhai.zou@intel.com>
  *
  */
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/crash_dump.h>
-#include <linux/memblock.h>
-#include <linux/kexec.h>
-#include <linux/elfcore.h>
-#include <linux/reboot.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/kdebug.h>
+#include <linex/smp.h>
+#include <linex/delay.h>
+#include <linex/crash_dump.h>
+#include <linex/memblock.h>
+#include <linex/kexec.h>
+#include <linex/elfcore.h>
+#include <linex/reboot.h>
+#include <linex/sysctl.h>
+#include <linex/init.h>
+#include <linex/kdebug.h>
 
 #include <asm/mca.h>
 

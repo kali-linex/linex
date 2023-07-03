@@ -10,27 +10,27 @@
  *   Copyright (C) 2000-2005 Netfilter Core Team <coreteam@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/audit.h>
-#include <linux/user_namespace.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/socket.h>
+#include <linex/net.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/string.h>
+#include <linex/vmalloc.h>
+#include <linex/mutex.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/audit.h>
+#include <linex/user_namespace.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_arp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_arp/arp_tables.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_arp.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv6/ip6_tables.h>
+#include <linex/netfilter_arp/arp_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

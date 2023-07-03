@@ -38,26 +38,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/kmod.h>
-#include <linux/rfkill.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
-#include <linux/usb/cdc.h>
+#include <linex/sched/signal.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/netdevice.h>
+#include <linex/module.h>
+#include <linex/ethtool.h>
+#include <linex/usb.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/tty_flip.h>
+#include <linex/kmod.h>
+#include <linex/rfkill.h>
+#include <linex/ip.h>
+#include <linex/uaccess.h>
+#include <linex/usb/cdc.h>
 #include <net/arp.h>
 #include <asm/byteorder.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
+#include <linex/serial_core.h>
+#include <linex/serial.h>
 
 
 #define MOD_AUTHOR			"Option Wireless"

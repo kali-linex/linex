@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Hauppauge HD PVR USB driver - video 4 linux 2 interface
+ * Hauppauge HD PVR USB driver - video 4 linex 2 interface
  *
  * Copyright (C) 2008      Janne Grunau (j@jannau.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
+#include <linex/mutex.h>
+#include <linex/workqueue.h>
 
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linex/videodev2.h>
+#include <linex/v4l2-dv-timings.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-dv-timings.h>
@@ -369,7 +369,7 @@ static int hdpvr_stop_streaming(struct hdpvr_device *dev)
 
 /*=======================================================================*/
 /*
- * video 4 linux 2 file operations
+ * video 4 linex 2 file operations
  */
 
 static int hdpvr_open(struct file *file)

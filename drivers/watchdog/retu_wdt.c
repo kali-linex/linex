@@ -8,15 +8,15 @@
  * Rewritten by Aaro Koskinen.
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/retu.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
+#include <linex/devm-helpers.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mfd/retu.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
 
 /* Watchdog timer values in seconds */
 #define RETU_WDT_MAX_TIMER	63

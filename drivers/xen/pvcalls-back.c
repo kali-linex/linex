@@ -3,13 +3,13 @@
  * (c) 2017 Stefano Stabellini <stefano@aporeto.com>
  */
 
-#include <linux/inet.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/wait.h>
+#include <linex/inet.h>
+#include <linex/kthread.h>
+#include <linex/list.h>
+#include <linex/radix-tree.h>
+#include <linex/module.h>
+#include <linex/semaphore.h>
+#include <linex/wait.h>
 #include <net/sock.h>
 #include <net/inet_common.h>
 #include <net/inet_connection_sock.h>

@@ -14,9 +14,9 @@
 #ifndef _SNMP_H
 #define _SNMP_H
 
-#include <linux/cache.h>
-#include <linux/snmp.h>
-#include <linux/smp.h>
+#include <linex/cache.h>
+#include <linex/snmp.h>
+#include <linex/smp.h>
 
 /*
  * Mibs are stored in array of unsigned long.
@@ -44,7 +44,7 @@ struct snmp_mib {
 /*
  * We use unsigned longs for most mibs but u64 for ipstats.
  */
-#include <linux/u64_stats_sync.h>
+#include <linex/u64_stats_sync.h>
 
 /* IPstats */
 #define IPSTATS_MIB_MAX	__IPSTATS_MIB_MAX
@@ -99,22 +99,22 @@ struct udp_mib {
 	unsigned long	mibs[UDP_MIB_MAX];
 };
 
-/* Linux */
-#define LINUX_MIB_MAX	__LINUX_MIB_MAX
-struct linux_mib {
-	unsigned long	mibs[LINUX_MIB_MAX];
+/* Linex */
+#define LINEX_MIB_MAX	__LINEX_MIB_MAX
+struct linex_mib {
+	unsigned long	mibs[LINEX_MIB_MAX];
 };
 
-/* Linux Xfrm */
-#define LINUX_MIB_XFRMMAX	__LINUX_MIB_XFRMMAX
-struct linux_xfrm_mib {
-	unsigned long	mibs[LINUX_MIB_XFRMMAX];
+/* Linex Xfrm */
+#define LINEX_MIB_XFRMMAX	__LINEX_MIB_XFRMMAX
+struct linex_xfrm_mib {
+	unsigned long	mibs[LINEX_MIB_XFRMMAX];
 };
 
-/* Linux TLS */
-#define LINUX_MIB_TLSMAX	__LINUX_MIB_TLSMAX
-struct linux_tls_mib {
-	unsigned long	mibs[LINUX_MIB_TLSMAX];
+/* Linex TLS */
+#define LINEX_MIB_TLSMAX	__LINEX_MIB_TLSMAX
+struct linex_tls_mib {
+	unsigned long	mibs[LINEX_MIB_TLSMAX];
 };
 
 #define DEFINE_SNMP_STAT(type, name)	\

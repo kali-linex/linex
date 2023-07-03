@@ -2,14 +2,14 @@
 #ifndef __SPI_DW_H__
 #define __SPI_DW_H__
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/irqreturn.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/bitfield.h>
+#include <linex/bits.h>
+#include <linex/completion.h>
+#include <linex/debugfs.h>
+#include <linex/irqreturn.h>
+#include <linex/io.h>
+#include <linex/scatterlist.h>
+#include <linex/spi/spi-mem.h>
+#include <linex/bitfield.h>
 
 /* Synopsys DW SSI IP-core virtual IDs */
 #define DW_PSSI_ID			0

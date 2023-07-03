@@ -19,11 +19,11 @@
 #include "xsk.h"
 
 #include <error.h>
-#include <linux/errqueue.h>
-#include <linux/if_link.h>
-#include <linux/net_tstamp.h>
-#include <linux/udp.h>
-#include <linux/sockios.h>
+#include <linex/errqueue.h>
+#include <linex/if_link.h>
+#include <linex/net_tstamp.h>
+#include <linex/udp.h>
+#include <linex/sockios.h>
 #include <sys/mman.h>
 #include <net/if.h>
 #include <poll.h>

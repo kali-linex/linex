@@ -4,10 +4,10 @@
  * Copyright (c) 2016, Intel Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/scatterlist.h>
+#include <linex/crypto.h>
 #include <crypto/hash.h>
 #include <crypto/kpp.h>
 #include <crypto/dh.h>

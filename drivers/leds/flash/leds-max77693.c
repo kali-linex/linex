@@ -8,15 +8,15 @@
  *		 Andrzej Hajda <a.hajda@samsung.com>
  */
 
-#include <linux/led-class-flash.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/led-class-flash.h>
+#include <linex/mfd/max77693.h>
+#include <linex/mfd/max77693-common.h>
+#include <linex/mfd/max77693-private.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 #include <media/v4l2-flash-led-class.h>
 
 #define MODE_OFF		0

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies. */
 
 #ifndef __MLX5_EN_PTP_H__
@@ -7,7 +7,7 @@
 #include "en.h"
 #include "en_stats.h"
 #include "en/txrx.h"
-#include <linux/ptp_classify.h>
+#include <linex/ptp_classify.h>
 
 #define MLX5E_PTP_CHANNEL_IX 0
 

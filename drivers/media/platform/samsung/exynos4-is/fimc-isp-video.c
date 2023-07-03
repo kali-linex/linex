@@ -11,17 +11,17 @@
  * Younghwan Joo <yhwan.joo@samsung.com>.
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/printk.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linex/bitops.h>
+#include <linex/device.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/printk.h>
+#include <linex/pm_runtime.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

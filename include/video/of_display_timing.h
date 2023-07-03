@@ -5,10 +5,10 @@
  * display timings of helpers
  */
 
-#ifndef __LINUX_OF_DISPLAY_TIMING_H
-#define __LINUX_OF_DISPLAY_TIMING_H
+#ifndef __LINEX_OF_DISPLAY_TIMING_H
+#define __LINEX_OF_DISPLAY_TIMING_H
 
-#include <linux/errno.h>
+#include <linex/errno.h>
 
 struct device_node;
 struct display_timing;

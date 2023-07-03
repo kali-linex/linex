@@ -2,11 +2,11 @@
 #ifndef __ASPEED_HACE_H__
 #define __ASPEED_HACE_H__
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/dma-mapping.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/fips.h>
+#include <linex/dma-mapping.h>
 #include <crypto/aes.h>
 #include <crypto/des.h>
 #include <crypto/scatterwalk.h>

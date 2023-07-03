@@ -24,29 +24,29 @@
 		key-volume-down {
 			label = "volume_down";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEDOWN>;
 		};
 
 		key-camera-snapshot {
 			label = "camera_snapshot";
 			gpios = <&pm8941_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA>;
+			linex,input-type = <1>;
+			linex,code = <KEY_CAMERA>;
 		};
 
 		key-camera-focus {
 			label = "camera_focus";
 			gpios = <&pm8941_gpios 4 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA_FOCUS>;
+			linex,input-type = <1>;
+			linex,code = <KEY_CAMERA_FOCUS>;
 		};
 
 		key-volume-up {
 			label = "volume_up";
 			gpios = <&pm8941_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linex,input-type = <1>;
+			linex,code = <KEY_VOLUMEUP>;
 		};
 	};
 

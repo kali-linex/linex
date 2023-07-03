@@ -6,19 +6,19 @@
  * Used by Master driver
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/debugfs.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/pm_runtime.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/soundwire/sdw.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/workqueue.h>
+#include <linex/workqueue.h>
 #include "bus.h"
 #include "cadence_master.h"
 

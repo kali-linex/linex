@@ -5,26 +5,26 @@
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
-#include <linux/dma-map-ops.h>
-#include <linux/dmar.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/bitops.h>
-#include <linux/kexec.h>
-#include <linux/swiotlb.h>
+#include <linex/dma-map-ops.h>
+#include <linex/dmar.h>
+#include <linex/efi.h>
+#include <linex/elf.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/sched/signal.h>
+#include <linex/mmzone.h>
+#include <linex/module.h>
+#include <linex/personality.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/swap.h>
+#include <linex/proc_fs.h>
+#include <linex/bitops.h>
+#include <linex/kexec.h>
+#include <linex/swiotlb.h>
 
 #include <asm/dma.h>
 #include <asm/efi.h>
@@ -35,7 +35,7 @@
 #include <asm/sal.h>
 #include <asm/sections.h>
 #include <asm/tlb.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/mca.h>
 

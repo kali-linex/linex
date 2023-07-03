@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle firewalling core
- *	Linux ethernet bridge
+ *	Linex ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -10,15 +10,15 @@
  *	Lennert dedicates this file to Kerstin Wurdinger.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/in_route.h>
-#include <linux/inetdevice.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/in_route.h>
+#include <linex/inetdevice.h>
 #include <net/route.h>
 
 #include "br_private.h"
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
 
 static void fake_update_pmtu(struct dst_entry *dst, struct sock *sk,

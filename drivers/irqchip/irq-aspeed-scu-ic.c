@@ -3,17 +3,17 @@
  * Aspeed AST24XX, AST25XX, and AST26XX SCU Interrupt Controller
  * Copyright 2019 IBM Corporation
  *
- * Eddie James <eajames@linux.ibm.com>
+ * Eddie James <eajames@linex.ibm.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_irq.h>
+#include <linex/regmap.h>
 
 #define ASPEED_SCU_IC_REG		0x018
 #define ASPEED_SCU_IC_SHIFT		0

@@ -2,23 +2,23 @@
 /*
  *    Architecture-specific kernel symbols
  *
- *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linex.org>
  *    Copyright (C) 2001 Dave Kennedy
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linux.org>
- *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linux.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-linex.org>
+ *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linex.org>
+ *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linex.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linex.org>
+ *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linex.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/syscalls.h>
 
-#include <linux/string.h>
+#include <linex/string.h>
 EXPORT_SYMBOL(memset);
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 EXPORT_SYMBOL(__xchg8);
 EXPORT_SYMBOL(__xchg32);
 EXPORT_SYMBOL(__cmpxchg_u32);
@@ -30,7 +30,7 @@ EXPORT_SYMBOL(__atomic_hash);
 EXPORT_SYMBOL(__xchg64);
 #endif
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 EXPORT_SYMBOL(lclear_user);
 
 #ifndef CONFIG_64BIT

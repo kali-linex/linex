@@ -3,12 +3,12 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/audio.h>
+#include <linex/usb/audio-v2.h>
+#include <linex/usb/audio-v3.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

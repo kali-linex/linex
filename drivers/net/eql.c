@@ -113,22 +113,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/compat.h>
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/netdevice.h>
+#include <linex/compat.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/netdevice.h>
 #include <net/net_namespace.h>
 
-#include <linux/if.h>
-#include <linux/if_arp.h>
-#include <linux/if_eql.h>
-#include <linux/pkt_sched.h>
+#include <linex/if.h>
+#include <linex/if_arp.h>
+#include <linex/if_eql.h>
+#include <linex/pkt_sched.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 static int eql_open(struct net_device *dev);
 static int eql_close(struct net_device *dev);

@@ -19,19 +19,19 @@
 #ifndef __A1040_H__
 #define __A1040_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/i2c.h>
+#include <linex/delay.h>
+#include <linex/videodev2.h>
+#include <linex/spinlock.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/v4l2-mediabus.h>
+#include <linex/v4l2-mediabus.h>
 #include <media/media-entity.h>
-#include "../include/linux/atomisp_platform.h"
-#include "../include/linux/atomisp.h"
+#include "../include/linex/atomisp_platform.h"
+#include "../include/linex/atomisp.h"
 
 #define V4L2_IDENT_MT9M114 8245
 

@@ -18,51 +18,51 @@
  * 				   mandatory if CONFIG_NET=y these days
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/bpf.h>
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/filter.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/jhash.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/audit.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/if_arp.h>
-#include <linux/rhashtable.h>
+#include <linex/bpf.h>
+#include <linex/capability.h>
+#include <linex/kernel.h>
+#include <linex/filter.h>
+#include <linex/init.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/socket.h>
+#include <linex/un.h>
+#include <linex/fcntl.h>
+#include <linex/termios.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/notifier.h>
+#include <linex/security.h>
+#include <linex/jhash.h>
+#include <linex/jiffies.h>
+#include <linex/random.h>
+#include <linex/bitops.h>
+#include <linex/mm.h>
+#include <linex/types.h>
+#include <linex/audit.h>
+#include <linex/mutex.h>
+#include <linex/vmalloc.h>
+#include <linex/if_arp.h>
+#include <linex/rhashtable.h>
 #include <asm/cacheflush.h>
-#include <linux/hash.h>
-#include <linux/genetlink.h>
-#include <linux/net_namespace.h>
-#include <linux/nospec.h>
-#include <linux/btf_ids.h>
+#include <linex/hash.h>
+#include <linex/genetlink.h>
+#include <linex/net_namespace.h>
+#include <linex/nospec.h>
+#include <linex/btf_ids.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
@@ -102,7 +102,7 @@ static const char *const nlk_cb_mutex_key_strings[MAX_LINKS + 1] = {
 	"nlk_cb_mutex-SOCK_DIAG",
 	"nlk_cb_mutex-NFLOG",
 	"nlk_cb_mutex-XFRM",
-	"nlk_cb_mutex-SELINUX",
+	"nlk_cb_mutex-SELINEX",
 	"nlk_cb_mutex-ISCSI",
 	"nlk_cb_mutex-AUDIT",
 	"nlk_cb_mutex-FIB_LOOKUP",

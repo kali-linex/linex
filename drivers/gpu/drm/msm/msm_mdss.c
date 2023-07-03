@@ -1,17 +1,17 @@
 /*
  * SPDX-License-Identifier: GPL-2.0
- * Copyright (c) 2018, The Linux Foundation
+ * Copyright (c) 2018, The Linex Foundation
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interconnect.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdesc.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/interconnect.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqdesc.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
 #include "msm_drv.h"
 #include "msm_kms.h"

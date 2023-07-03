@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2009 Magnus Damm
  */
-#include <linux/sys.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <linex/sys.h>
+#include <linex/errno.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>
 

@@ -4,11 +4,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
-#include <linux/reboot.h>
-#include <linux/percpu.h>
+#include <linex/compiler.h>
+#include <linex/linkage.h>
+#include <linex/irqflags.h>
+#include <linex/reboot.h>
+#include <linex/percpu.h>
 
 extern void cpu_init(void);
 

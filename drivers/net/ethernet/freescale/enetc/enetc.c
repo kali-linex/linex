@@ -2,11 +2,11 @@
 /* Copyright 2017-2019 NXP */
 
 #include "enetc.h"
-#include <linux/bpf_trace.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/vmalloc.h>
-#include <linux/ptp_classify.h>
+#include <linex/bpf_trace.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/vmalloc.h>
+#include <linex/ptp_classify.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_sched.h>
 #include <net/tso.h>

@@ -10,14 +10,14 @@
  */
 #include <asm/unaligned.h>
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <linex/ethtool.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linex/can.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
 
 #include "pcan_usb_core.h"
 

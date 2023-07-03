@@ -1,5 +1,5 @@
 /*
-   3w-sas.c -- LSI 3ware SAS/SATA-RAID Controller device driver for Linux.
+   3w-sas.c -- LSI 3ware SAS/SATA-RAID Controller device driver for Linex.
 
    Written By: Adam Radford <aradford@gmail.com>
 
@@ -50,21 +50,21 @@
    3.26.02.000 - Initial driver release.
 */
 
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/moduleparam.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/time.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>
@@ -81,7 +81,7 @@ extern struct timezone sys_tz;
 
 /* Module parameters */
 MODULE_AUTHOR ("LSI");
-MODULE_DESCRIPTION ("LSI 3ware SAS/SATA-RAID Linux Driver");
+MODULE_DESCRIPTION ("LSI 3ware SAS/SATA-RAID Linex Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(TW_DRIVER_VERSION);
 
@@ -1841,7 +1841,7 @@ static struct pci_driver twl_driver = {
 /* This function is called on driver initialization */
 static int __init twl_init(void)
 {
-	printk(KERN_INFO "LSI 3ware SAS/SATA-RAID Controller device driver for Linux v%s.\n", TW_DRIVER_VERSION);
+	printk(KERN_INFO "LSI 3ware SAS/SATA-RAID Controller device driver for Linex v%s.\n", TW_DRIVER_VERSION);
 
 	return pci_register_driver(&twl_driver);
 } /* End twl_init() */

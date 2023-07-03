@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The Linex Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slimbus.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/soc/qcom/qmi.h>
-#include <linux/soc/qcom/pdr.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/slimbus.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
+#include <linex/mutex.h>
+#include <linex/notifier.h>
+#include <linex/remoteproc/qcom_rproc.h>
+#include <linex/of.h>
+#include <linex/io.h>
+#include <linex/soc/qcom/qmi.h>
+#include <linex/soc/qcom/pdr.h>
 #include <net/sock.h>
 #include "slimbus.h"
 

@@ -26,15 +26,15 @@
  * - anything else?
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <linex/crc32.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/mii.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
+#include <linex/usb/usbnet.h>
 
 /* requests */
 #define MCS7830_RD_BMREQ	(USB_DIR_IN  | USB_TYPE_VENDOR | \

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/list_bl.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/mbcache.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/list_bl.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/workqueue.h>
+#include <linex/mbcache.h>
 
 /*
  * Mbcache is a simple key-value store. Keys need not be unique, however

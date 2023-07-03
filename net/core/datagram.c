@@ -34,27 +34,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/uaccess.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/poll.h>
+#include <linex/highmem.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/pagemap.h>
+#include <linex/uio.h>
+#include <linex/indirect_call_wrapper.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linex/skbuff.h>
 
 #include <net/checksum.h>
 #include <net/sock.h>

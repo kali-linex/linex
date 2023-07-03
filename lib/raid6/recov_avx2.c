@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (C) 2012 Intel Corporation
- * Author: Jim Kukunas <james.t.kukunas@linux.intel.com>
+ * Author: Jim Kukunas <james.t.kukunas@linex.intel.com>
  */
 
-#include <linux/raid/pq.h>
+#include <linex/raid/pq.h>
 #include "x86.h"
 
 static int raid6_has_avx2(void)

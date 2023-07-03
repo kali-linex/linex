@@ -37,8 +37,8 @@
 	"                        cgroup_inet_sock_release }"
 
 static unsigned int query_flags;
-static struct btf *btf_vmlinux;
-static __u32 btf_vmlinux_id;
+static struct btf *btf_vmlinex;
+static __u32 btf_vmlinex_id;
 
 static enum bpf_attach_type parse_attach_type(const char *str)
 {
@@ -67,7 +67,7 @@ static enum bpf_attach_type parse_attach_type(const char *str)
 	return __MAX_BPF_ATTACH_TYPE;
 }
 
-static void guess_vmlinux_btf_id(__u32 attach_btf_obj_id)
+static void guess_vmlinex_btf_id(__u32 attach_btf_obj_id)
 {
 	struct bpf_btf_info btf_info = {};
 	__u32 btf_len = sizeof(btf_info);
@@ -86,8 +86,8 @@ static void guess_vmlinux_btf_id(__u32 attach_btf_obj_id)
 	if (err)
 		goto out;
 
-	if (btf_info.kernel_btf && strncmp(name, "vmlinux", sizeof(name)) == 0)
-		btf_vmlinux_id = btf_info.id;
+	if (btf_info.kernel_btf && strncmp(name, "vmlinex", sizeof(name)) == 0)
+		btf_vmlinex_id = btf_info.id;
 
 out:
 	close(fd);
@@ -115,16 +115,16 @@ static int show_bpf_prog(int id, enum bpf_attach_type attach_type,
 
 	attach_type_str = libbpf_bpf_attach_type_str(attach_type);
 
-	if (btf_vmlinux) {
-		if (!btf_vmlinux_id)
-			guess_vmlinux_btf_id(info.attach_btf_obj_id);
+	if (btf_vmlinex) {
+		if (!btf_vmlinex_id)
+			guess_vmlinex_btf_id(info.attach_btf_obj_id);
 
-		if (btf_vmlinux_id == info.attach_btf_obj_id &&
-		    info.attach_btf_id < btf__type_cnt(btf_vmlinux)) {
+		if (btf_vmlinex_id == info.attach_btf_obj_id &&
+		    info.attach_btf_id < btf__type_cnt(btf_vmlinex)) {
 			const struct btf_type *t =
-				btf__type_by_id(btf_vmlinux, info.attach_btf_id);
+				btf__type_by_id(btf_vmlinex, info.attach_btf_id);
 			attach_btf_name =
-				btf__name_by_offset(btf_vmlinux, t->name_off);
+				btf__name_by_offset(btf_vmlinex, t->name_off);
 		}
 	}
 
@@ -335,7 +335,7 @@ static int do_show(int argc, char **argv)
 		printf("%-8s %-15s %-15s %-15s\n", "ID", "AttachType",
 		       "AttachFlags", "Name");
 
-	btf_vmlinux = libbpf_find_kernel_btf();
+	btf_vmlinex = libbpf_find_kernel_btf();
 	for (type = 0; type < __MAX_BPF_ATTACH_TYPE; type++) {
 		/*
 		 * Not all attach types may be supported, so it's expected,
@@ -399,7 +399,7 @@ static int do_show_tree_fn(const char *fpath, const struct stat *sb,
 		printf("%s\n", fpath);
 	}
 
-	btf_vmlinux = libbpf_find_kernel_btf();
+	btf_vmlinex = libbpf_find_kernel_btf();
 	for (type = 0; type < __MAX_BPF_ATTACH_TYPE; type++)
 		show_bpf_progs(cgroup_fd, type, ftw->level);
 

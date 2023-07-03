@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/kernel/acct.c
+ *  linex/kernel/acct.c
  *
- *  BSD Process Accounting for Linux
+ *  BSD Process Accounting for Linex
  *
  *  Author: Marco van Wieringen <mvw@planets.elm.net>
  *
@@ -44,24 +44,24 @@
  * a struct file opened for write. Fixed. 2/6/2000, AV.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/acct.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/vfs.h>
-#include <linux/jiffies.h>
-#include <linux/times.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
-#include <linux/uaccess.h>
-#include <linux/sched/cputime.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
+#include <linex/acct.h>
+#include <linex/capability.h>
+#include <linex/file.h>
+#include <linex/tty.h>
+#include <linex/security.h>
+#include <linex/vfs.h>
+#include <linex/jiffies.h>
+#include <linex/times.h>
+#include <linex/syscalls.h>
+#include <linex/mount.h>
+#include <linex/uaccess.h>
+#include <linex/sched/cputime.h>
 
 #include <asm/div64.h>
-#include <linux/pid_namespace.h>
-#include <linux/fs_pin.h>
+#include <linex/pid_namespace.h>
+#include <linex/fs_pin.h>
 
 /*
  * These constants control the amount of freespace that suspend and

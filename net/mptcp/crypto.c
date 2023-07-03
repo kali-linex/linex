@@ -20,7 +20,7 @@
  *       Brandon Heller <brandonh@stanford.edu>
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #include <crypto/sha2.h>
 #include <asm/unaligned.h>
 

@@ -8,8 +8,8 @@
 
 #include <asm/types.h>
 #include <asm/ppc-opcode.h>
-#include <linux/string.h>
-#include <linux/kallsyms.h>
+#include <linex/string.h>
+#include <linex/kallsyms.h>
 #include <asm/asm-compat.h>
 #include <asm/inst.h>
 

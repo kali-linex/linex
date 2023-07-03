@@ -11,9 +11,9 @@
 #include "habanalabs.h"
 #include "../include/hw_ip/pci/pci_general.h"
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/habanalabs.h>

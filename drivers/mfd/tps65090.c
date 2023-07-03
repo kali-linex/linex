@@ -7,18 +7,18 @@
  * Author: Venu Byravarasu <vbyravarasu@nvidia.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65090.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/err.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/tps65090.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/err.h>
 
 #define NUM_INT_REG 2
 

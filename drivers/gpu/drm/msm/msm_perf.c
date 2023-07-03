@@ -14,8 +14,8 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_file.h>
 

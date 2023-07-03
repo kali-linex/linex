@@ -8,8 +8,8 @@
  * Paul Walmsley, Jouni Högander
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 
 #include "soc.h"
 #include "powerdomain.h"

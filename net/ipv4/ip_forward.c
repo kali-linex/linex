@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -20,23 +20,23 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/skbuff.h>
+#include <linex/ip.h>
+#include <linex/icmp.h>
+#include <linex/netdevice.h>
+#include <linex/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/netfilter_ipv4.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/netfilter_ipv4.h>
 #include <net/checksum.h>
-#include <linux/route.h>
+#include <linex/route.h>
 #include <net/route.h>
 #include <net/xfrm.h>
 

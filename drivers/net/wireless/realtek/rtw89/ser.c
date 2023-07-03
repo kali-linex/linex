@@ -2,7 +2,7 @@
 /* Copyright(c) 2019-2020  Realtek Corporation
  */
 
-#include <linux/devcoredump.h>
+#include <linex/devcoredump.h>
 
 #include "cam.h"
 #include "chan.h"

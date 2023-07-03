@@ -38,12 +38,12 @@
  *
  * Currently, this driver only supports Gen3 SATA mode with external clock.
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/phy/phy.h>
-#include <linux/clk.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/phy/phy.h>
+#include <linex/clk.h>
 
 /* Max 2 lanes per a PHY unit */
 #define MAX_LANE			2

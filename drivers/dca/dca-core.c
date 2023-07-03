@@ -7,12 +7,12 @@
  * This driver supports an interface for DCA clients and providers to meet.
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/dca.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/kernel.h>
+#include <linex/notifier.h>
+#include <linex/device.h>
+#include <linex/dca.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #define DCA_VERSION "1.12.1"
 

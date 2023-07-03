@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. */
 
-#include <linux/firmware.h>
+#include <linex/firmware.h>
 #include <asm/cpu.h>
 #include <asm/microcode_intel.h>
 

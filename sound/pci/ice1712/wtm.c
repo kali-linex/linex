@@ -11,12 +11,12 @@
 
 
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
 #include <sound/core.h>
 #include <sound/tlv.h>
-#include <linux/slab.h>
+#include <linex/slab.h>
 
 #include "ice1712.h"
 #include "envy24ht.h"

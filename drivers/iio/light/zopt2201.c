@@ -10,14 +10,14 @@
  * TODO: interrupt support, ALS/UVB raw mode
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
+#include <linex/err.h>
+#include <linex/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #include <asm/unaligned.h>
 

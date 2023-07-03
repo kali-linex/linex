@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/pstore.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/version.h>
+#include <linex/pstore.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/compiler.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 
 #include "internal.h"
 #include "ram_internal.h"
@@ -801,7 +801,7 @@ static int ramoops_probe(struct platform_device *pdev)
 				: 1;
 	err = ramoops_init_przs("ftrace", dev, cxt, &cxt->fprzs, &paddr,
 				cxt->ftrace_size, -1,
-				&cxt->max_ftrace_cnt, LINUX_VERSION_CODE,
+				&cxt->max_ftrace_cnt, LINEX_VERSION_CODE,
 				(cxt->flags & RAMOOPS_FLAG_FTRACE_PER_CPU)
 					? PRZ_FLAG_NO_LOCK : 0);
 	if (err)

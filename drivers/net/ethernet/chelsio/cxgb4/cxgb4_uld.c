@@ -35,15 +35,15 @@
  *  Written by: Hariprasad Shenai (hariprasad@chelsio.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/debugfs.h>
+#include <linex/export.h>
+#include <linex/list.h>
+#include <linex/skbuff.h>
+#include <linex/pci.h>
 
 #include "cxgb4.h"
 #include "cxgb4_uld.h"

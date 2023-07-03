@@ -8,7 +8,7 @@
  * kind, whether express or implied.
  *
  * Leveraged code from the OMAP2 camera driver
- * Video-for-Linux (Version 2) camera capture driver for
+ * Video-for-Linex (Version 2) camera capture driver for
  * the OMAP24xx camera controller.
  *
  * Author: Andy Lowe (source@mvista.com)
@@ -29,16 +29,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/videodev2.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/sched.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/irq.h>
+#include <linex/videodev2.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
@@ -52,7 +52,7 @@
 #include "omap_vout_vrfb.h"
 
 MODULE_AUTHOR("Texas Instruments");
-MODULE_DESCRIPTION("OMAP Video for Linux Video out driver");
+MODULE_DESCRIPTION("OMAP Video for Linex Video out driver");
 MODULE_LICENSE("GPL");
 
 /* Driver Configuration macros */
@@ -1504,7 +1504,7 @@ static int __init omap_vout_create_video_devices(struct platform_device *pdev)
 		vfd = vout->vfd;
 		if (video_register_device(vfd, VFL_TYPE_VIDEO, -1) < 0) {
 			dev_err(&pdev->dev,
-				": Could not register Video for Linux device\n");
+				": Could not register Video for Linex device\n");
 			vfd->minor = -1;
 			ret = -ENODEV;
 			goto error2;

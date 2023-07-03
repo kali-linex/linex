@@ -8,7 +8,7 @@
    presence of the norm instruction makes it easier to operate on whole
    words branch-free.  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 
 ENTRY_CFI(strchr)
 	extb_s	r1,r1

@@ -9,11 +9,11 @@
  * based on previously existing rtc class drivers
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/bcd.h>
+#include <linex/rtc.h>
+#include <linex/delay.h>
 
 /*
  * register indices
@@ -224,7 +224,7 @@ static struct i2c_driver max6900_driver = {
 	.driver = {
 		   .name = "rtc-max6900",
 		   },
-	.probe = max6900_probe,
+	.probe_new = max6900_probe,
 	.id_table = max6900_id,
 };
 

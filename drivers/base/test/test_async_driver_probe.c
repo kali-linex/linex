@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/numa.h>
-#include <linux/nodemask.h>
-#include <linux/topology.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/hrtimer.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/time.h>
+#include <linex/numa.h>
+#include <linex/nodemask.h>
+#include <linex/topology.h>
 
 #define TEST_PROBE_DELAY	(5 * 1000)	/* 5 sec */
 #define TEST_PROBE_THRESHOLD	(TEST_PROBE_DELAY / 2)

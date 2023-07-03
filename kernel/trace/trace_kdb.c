@@ -9,10 +9,10 @@
  * Copyright (C) 2008 Ingo Molnar <mingo@redhat.com>
  *
  */
-#include <linux/init.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/ftrace.h>
+#include <linex/init.h>
+#include <linex/kgdb.h>
+#include <linex/kdb.h>
+#include <linex/ftrace.h>
 
 #include "trace.h"
 #include "trace_output.h"

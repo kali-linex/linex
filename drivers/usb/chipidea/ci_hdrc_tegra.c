@@ -3,18 +3,18 @@
  * Copyright (c) 2016, NVIDIA Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 
-#include <linux/usb.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/of.h>
-#include <linux/usb/phy.h>
+#include <linex/usb.h>
+#include <linex/usb/chipidea.h>
+#include <linex/usb/hcd.h>
+#include <linex/usb/of.h>
+#include <linex/usb/phy.h>
 
 #include <soc/tegra/common.h>
 

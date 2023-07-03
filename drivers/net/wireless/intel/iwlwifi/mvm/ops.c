@@ -4,9 +4,9 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
+#include <linex/module.h>
+#include <linex/rtnetlink.h>
+#include <linex/vmalloc.h>
 #include <net/mac80211.h>
 
 #include "fw/notif-wait.h"
@@ -31,7 +31,7 @@
 #include "fw/uefi.h"
 #include "time-sync.h"
 
-#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for Linux"
+#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for Linex"
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(IWLWIFI);

@@ -6,14 +6,14 @@
  * Copyright (C) Huawei Futurewei Technologies.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/page-flags.h>
-#include <linux/reboot.h>
-#include <linux/set_memory.h>
-#include <linux/smp.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/kexec.h>
+#include <linex/page-flags.h>
+#include <linex/reboot.h>
+#include <linex/set_memory.h>
+#include <linex/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu_ops.h>
@@ -174,7 +174,7 @@ int machine_kexec_post_load(struct kimage *kimage)
 /**
  * machine_kexec - Do the kexec reboot.
  *
- * Called from the core kexec code for a sys_reboot with LINUX_REBOOT_CMD_KEXEC.
+ * Called from the core kexec code for a sys_reboot with LINEX_REBOOT_CMD_KEXEC.
  */
 void machine_kexec(struct kimage *kimage)
 {

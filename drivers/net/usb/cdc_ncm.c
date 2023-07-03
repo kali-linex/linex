@@ -38,21 +38,21 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ctype.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/kstrtox.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/hrtimer.h>
-#include <linux/atomic.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/cdc_ncm.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/ctype.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/kstrtox.h>
+#include <linex/workqueue.h>
+#include <linex/mii.h>
+#include <linex/crc32.h>
+#include <linex/usb.h>
+#include <linex/hrtimer.h>
+#include <linex/atomic.h>
+#include <linex/usb/usbnet.h>
+#include <linex/usb/cdc.h>
+#include <linex/usb/cdc_ncm.h>
 
 #if IS_ENABLED(CONFIG_USB_NET_CDC_MBIM)
 static bool prefer_mbim = true;

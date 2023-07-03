@@ -5,25 +5,25 @@
  * Allegro DVT video encoder driver
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/gcd.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/xlnx-vcu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linex/bits.h>
+#include <linex/clk.h>
+#include <linex/firmware.h>
+#include <linex/gcd.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/xlnx-vcu.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

@@ -8,30 +8,30 @@
  *	Steffen Klassert <steffen.klassert@secunet.com>
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_link.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <linex/module.h>
+#include <linex/capability.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/sockios.h>
+#include <linex/icmp.h>
+#include <linex/if.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/net.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_link.h>
+#include <linex/if_arp.h>
+#include <linex/icmpv6.h>
+#include <linex/init.h>
+#include <linex/route.h>
+#include <linex/rtnetlink.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/slab.h>
+#include <linex/hash.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linex/uaccess.h>
+#include <linex/atomic.h>
 
 #include <net/gso.h>
 #include <net/icmp.h>
@@ -44,7 +44,7 @@
 #include <net/net_namespace.h>
 #include <net/dst_metadata.h>
 #include <net/netns/generic.h>
-#include <linux/etherdevice.h>
+#include <linex/etherdevice.h>
 
 static int xfrmi_dev_init(struct net_device *dev);
 static void xfrmi_dev_setup(struct net_device *dev);
@@ -395,7 +395,7 @@ static int xfrmi_rcv_cb(struct sk_buff *skb, int err)
 			inner_mode = xfrm_ip2inner_mode(x, XFRM_MODE_SKB_CB(skb)->protocol);
 			if (inner_mode == NULL) {
 				XFRM_INC_STATS(dev_net(skb->dev),
-					       LINUX_MIB_XFRMINSTATEMODEERROR);
+					       LINEX_MIB_XFRMINSTATEMODEERROR);
 				return -EINVAL;
 			}
 		}

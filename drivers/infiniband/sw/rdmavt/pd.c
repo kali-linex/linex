@@ -3,7 +3,7 @@
  * Copyright(c) 2016 Intel Corporation.
  */
 
-#include <linux/slab.h>
+#include <linex/slab.h>
 #include "pd.h"
 
 /**

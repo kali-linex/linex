@@ -18,8 +18,8 @@
 #include <sys/mman.h>
 #include <sys/ioctl.h>
 #include <sys/vfs.h>
-#include <linux/magic.h>
-#include <linux/memfd.h>
+#include <linex/magic.h>
+#include <linex/memfd.h>
 
 #include "local_config.h"
 #ifdef LOCAL_CONFIG_HAVE_LIBURING

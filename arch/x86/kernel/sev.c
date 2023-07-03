@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt)	"SEV: " fmt
 
-#include <linux/sched/debug.h>	/* For show_regs() */
-#include <linux/percpu-defs.h>
-#include <linux/cc_platform.h>
-#include <linux/printk.h>
-#include <linux/mm_types.h>
-#include <linux/set_memory.h>
-#include <linux/memblock.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
-#include <linux/efi.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/psp-sev.h>
-#include <uapi/linux/sev-guest.h>
+#include <linex/sched/debug.h>	/* For show_regs() */
+#include <linex/percpu-defs.h>
+#include <linex/cc_platform.h>
+#include <linex/printk.h>
+#include <linex/mm_types.h>
+#include <linex/set_memory.h>
+#include <linex/memblock.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/cpumask.h>
+#include <linex/efi.h>
+#include <linex/platform_device.h>
+#include <linex/io.h>
+#include <linex/psp-sev.h>
+#include <uapi/linex/sev-guest.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/stacktrace.h>
@@ -709,7 +709,7 @@ static void early_set_pages_state(unsigned long vaddr, unsigned long paddr,
 	return;
 
 e_term:
-	sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+	sev_es_terminate(SEV_TERM_SET_LINEX, GHCB_TERM_PSC);
 }
 
 void __init early_snp_set_memory_private(unsigned long vaddr, unsigned long paddr,
@@ -820,7 +820,7 @@ static unsigned long __set_pages_state(struct snp_psc_desc *data, unsigned long 
 
 	/* Invoke the hypervisor to perform the page state changes */
 	if (!ghcb || vmgexit_psc(ghcb, data))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+		sev_es_terminate(SEV_TERM_SET_LINEX, GHCB_TERM_PSC);
 
 	if (sev_cfg.ghcbs_initialized)
 		__sev_put_ghcb(&state);
@@ -2017,7 +2017,7 @@ fail:
  *   - via boot_params
  *
  * - when booted directly by firmware/bootloader (e.g. CONFIG_PVH):
- *   - via a setup_data entry, as defined by the Linux Boot Protocol
+ *   - via a setup_data entry, as defined by the Linex Boot Protocol
  *
  * Scan for the blob in that order.
  */

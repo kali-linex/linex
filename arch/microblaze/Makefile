@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 KBUILD_DEFCONFIG := mmu_defconfig
 
-UTS_SYSNAME = -DUTS_SYSNAME=\"Linux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"Linex\"
 
 # What CPU version are we building for, and crack it open
 # as major.minor.rev
@@ -57,31 +57,31 @@ DTB:=$(subst simpleImage.,,$(filter simpleImage.%, $(MAKECMDGOALS)))
 
 export DTB
 
-all: linux.bin
+all: linex.bin
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/microblaze/kernel/syscalls all
 
-PHONY += linux.bin linux.bin.gz linux.bin.ub
-linux.bin.ub linux.bin.gz: linux.bin
-linux.bin: vmlinux
-linux.bin linux.bin.gz linux.bin.ub:
+PHONY += linex.bin linex.bin.gz linex.bin.ub
+linex.bin.ub linex.bin.gz: linex.bin
+linex.bin: vmlinex
+linex.bin linex.bin.gz linex.bin.ub:
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 	@echo 'Kernel: $(boot)/$@ is ready' ' (#'$(or $(KBUILD_BUILD_VERSION),`cat .version`)')'
 
 PHONY += simpleImage.$(DTB)
-simpleImage.$(DTB): vmlinux
+simpleImage.$(DTB): vmlinex
 	$(Q)$(MAKE) $(build)=$(boot) $(addprefix $(boot)/$@., ub unstrip strip)
 	@echo 'Kernel: $(boot)/$@ is ready' ' (#'$(or $(KBUILD_BUILD_VERSION),`cat .version`)')'
 
 define archhelp
-  echo '* linux.bin    - Create raw binary'
-  echo '  linux.bin.gz - Create compressed raw binary'
-  echo '  linux.bin.ub - Create U-Boot wrapped raw binary'
+  echo '* linex.bin    - Create raw binary'
+  echo '  linex.bin.gz - Create compressed raw binary'
+  echo '  linex.bin.ub - Create U-Boot wrapped raw binary'
   echo '  simpleImage.<dt> - Create the following images with <dt>.dtb linked in'
   echo '                    simpleImage.<dt>        : raw image'
   echo '                    simpleImage.<dt>.ub     : raw image with U-Boot header'
-  echo '                    simpleImage.<dt>.unstrip: ELF (identical to vmlinux)'
+  echo '                    simpleImage.<dt>.unstrip: ELF (identical to vmlinex)'
   echo '                    simpleImage.<dt>.strip  : stripped ELF'
   echo '  Targets with <dt> embed a device tree blob inside the image'
   echo '  These targets support board with firmware that does not'

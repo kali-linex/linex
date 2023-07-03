@@ -12,10 +12,10 @@
 
 #define pr_fmt(fmt) "EVM: "fmt
 
-#include <linux/export.h>
-#include <linux/crypto.h>
-#include <linux/xattr.h>
-#include <linux/evm.h>
+#include <linex/export.h>
+#include <linex/crypto.h>
+#include <linex/xattr.h>
+#include <linex/evm.h>
 #include <keys/encrypted-type.h>
 #include <crypto/hash.h>
 #include <crypto/hash_info.h>

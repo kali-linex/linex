@@ -9,27 +9,27 @@
  *  1997-11-28  Modified for POSIX.1b signals by Richard Henderson
  */
 
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
+#include <linex/compat.h>
+#include <linex/sched.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/signal.h>
+#include <linex/errno.h>
+#include <linex/wait.h>
+#include <linex/ptrace.h>
+#include <linex/unistd.h>
+#include <linex/stddef.h>
+#include <linex/tty.h>
+#include <linex/personality.h>
+#include <linex/binfmts.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/lowcore.h>
 #include <asm/switch_to.h>
 #include <asm/vdso.h>
-#include "compat_linux.h"
+#include "compat_linex.h"
 #include "compat_ptrace.h"
 #include "entry.h"
 

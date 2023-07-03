@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2011 Rafael J. Wysocki <rjw@sisk.pl>, Renesas Electronics Corp.
  */
-#include <linux/kernel.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_qos.h>
-#include <linux/hrtimer.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/ktime.h>
+#include <linex/kernel.h>
+#include <linex/pm_domain.h>
+#include <linex/pm_qos.h>
+#include <linex/hrtimer.h>
+#include <linex/cpuidle.h>
+#include <linex/cpumask.h>
+#include <linex/ktime.h>
 
 static int dev_update_qos_constraint(struct device *dev, void *data)
 {

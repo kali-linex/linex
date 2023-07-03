@@ -58,7 +58,7 @@
 
 		key-volume-up {
 			label = "volume_up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&pm6350_gpios 2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -471,7 +471,7 @@
 };
 
 &pm6350_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

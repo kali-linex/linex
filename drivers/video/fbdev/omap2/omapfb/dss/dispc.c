@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dispc.c
+ * linex/drivers/video/omap2/dss/dispc.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,24 +11,24 @@
 
 #define DSS_SUBSYS_NAME "DISPC"
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/hardirq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/component.h>
+#include <linex/kernel.h>
+#include <linex/dma-mapping.h>
+#include <linex/vmalloc.h>
+#include <linex/export.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/jiffies.h>
+#include <linex/seq_file.h>
+#include <linex/delay.h>
+#include <linex/workqueue.h>
+#include <linex/hardirq.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/sizes.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/component.h>
 
 #include <video/omapfb_dss.h>
 

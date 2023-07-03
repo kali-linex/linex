@@ -9,18 +9,18 @@
  * The initial developer of the original code is Zhiyong Cai
  * <caizhiyong@huawei.com>
  */
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/sizes.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
+#include <linex/of.h>
+#include <linex/mtd/mtd.h>
+#include <linex/sizes.h>
+#include <linex/clk.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/dma-mapping.h>
+#include <linex/platform_device.h>
+#include <linex/mtd/partitions.h>
 
 #define HINFC504_MAX_CHIP                               (4)
 #define HINFC504_W_LATCH                                (5)

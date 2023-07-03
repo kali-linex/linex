@@ -9,13 +9,13 @@
  * See Documentation/networking/gen_stats.rst
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/socket.h>
-#include <linux/rtnetlink.h>
-#include <linux/gen_stats.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/socket.h>
+#include <linex/rtnetlink.h>
+#include <linex/gen_stats.h>
 #include <net/netlink.h>
 #include <net/gen_stats.h>
 #include <net/sch_generic.h>

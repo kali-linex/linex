@@ -7,8 +7,8 @@
  * Copyright (C) 2015 Huawei Futurewei Technologies.
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <linex/linkage.h>
+#include <linex/cfi_types.h>
 #include <asm/assembler.h>
 #include <asm/sysreg.h>
 #include <asm/virt.h>

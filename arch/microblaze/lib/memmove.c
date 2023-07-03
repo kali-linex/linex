@@ -24,11 +24,11 @@
  * not any responsibility to update it.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/stddef.h>
+#include <linex/compiler.h>
+#include <linex/string.h>
 
 #ifdef CONFIG_OPT_LIB_FUNCTION
 void *memmove(void *v_dst, const void *v_src, __kernel_size_t c)

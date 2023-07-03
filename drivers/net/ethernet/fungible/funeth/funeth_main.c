@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 
-#include <linux/bpf.h>
-#include <linux/crash_dump.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/filter.h>
-#include <linux/idr.h>
-#include <linux/if_vlan.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/rtnetlink.h>
-#include <linux/inetdevice.h>
+#include <linex/bpf.h>
+#include <linex/crash_dump.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/filter.h>
+#include <linex/idr.h>
+#include <linex/if_vlan.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/rtnetlink.h>
+#include <linex/inetdevice.h>
 
 #include "funeth.h"
 #include "funeth_devlink.h"

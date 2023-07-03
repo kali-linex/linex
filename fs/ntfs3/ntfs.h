@@ -7,15 +7,15 @@
  */
 
 // clang-format off
-#ifndef _LINUX_NTFS3_NTFS_H
-#define _LINUX_NTFS3_NTFS_H
+#ifndef _LINEX_NTFS3_NTFS_H
+#define _LINEX_NTFS3_NTFS_H
 
-#include <linux/blkdev.h>
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linex/blkdev.h>
+#include <linex/build_bug.h>
+#include <linex/kernel.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/types.h>
 
 #include "debug.h"
 
@@ -1217,5 +1217,5 @@ struct SID {
 };
 static_assert(offsetof(struct SID, SubAuthority) == 8);
 
-#endif /* _LINUX_NTFS3_NTFS_H */
+#endif /* _LINEX_NTFS3_NTFS_H */
 // clang-format on

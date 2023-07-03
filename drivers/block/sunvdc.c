@@ -4,19 +4,19 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/blk-mq.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/blk-mq.h>
+#include <linex/hdreg.h>
+#include <linex/cdrom.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/scatterlist.h>
 
 #include <asm/vio.h>
 #include <asm/ldc.h>

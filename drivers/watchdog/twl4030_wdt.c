@@ -5,14 +5,14 @@
  * Written by Timo Kokkonen <timo.t.kokkonen at nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/watchdog.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/twl.h>
 
 #define TWL4030_WATCHDOG_CFG_REG_OFFS	0x3
 

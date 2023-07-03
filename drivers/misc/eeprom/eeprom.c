@@ -7,13 +7,13 @@
  * Copyright (C) 2004 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/capability.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/capability.h>
+#include <linex/jiffies.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x50, 0x51, 0x52, 0x53, 0x54,

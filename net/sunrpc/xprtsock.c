@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/net/sunrpc/xprtsock.c
+ * linex/net/sunrpc/xprtsock.c
  *
  * Client-side transport implementation for sockets.
  *
  * TCP callback races fixes (C) 1998 Red Hat
  * TCP send fixes (C) 1998 Red Hat
  * TCP NFS related read + write fixes
- *  (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linux.ie>
+ *  (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linex.ie>
  *
  * Rewrite of larges part of the code in order to stabilize TCP stuff.
  * Fix behaviour when socket buffer is full.
@@ -19,28 +19,28 @@
  *   <gilles.quillard@bull.net>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/pagemap.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/un.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/file.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/capability.h>
+#include <linex/pagemap.h>
+#include <linex/errno.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/net.h>
+#include <linex/mm.h>
+#include <linex/un.h>
+#include <linex/udp.h>
+#include <linex/tcp.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/addr.h>
+#include <linex/sunrpc/sched.h>
+#include <linex/sunrpc/svcsock.h>
+#include <linex/sunrpc/xprtsock.h>
+#include <linex/file.h>
 #ifdef CONFIG_SUNRPC_BACKCHANNEL
-#include <linux/sunrpc/bc_xprt.h>
+#include <linex/sunrpc/bc_xprt.h>
 #endif
 
 #include <net/sock.h>
@@ -50,10 +50,10 @@
 #include <net/tls.h>
 #include <net/handshake.h>
 
-#include <linux/bvec.h>
-#include <linux/highmem.h>
-#include <linux/uio.h>
-#include <linux/sched/mm.h>
+#include <linex/bvec.h>
+#include <linex/highmem.h>
+#include <linex/uio.h>
+#include <linex/sched/mm.h>
 
 #include <trace/events/sock.h>
 #include <trace/events/sunrpc.h>

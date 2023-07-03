@@ -7,19 +7,19 @@
  * Chen-Yu Tsai <wens@csie.org>
  */
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/ac100.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
+#include <linex/bcd.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/ac100.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
+#include <linex/types.h>
 
 /* Control register */
 #define AC100_RTC_CTRL_24HOUR	BIT(0)

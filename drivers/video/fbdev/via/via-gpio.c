@@ -5,12 +5,12 @@
  * Copyright 2009 Jonathan Corbet <corbet@lwn.net>
  */
 
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
-#include <linux/via-core.h>
-#include <linux/export.h>
+#include <linex/spinlock.h>
+#include <linex/gpio/driver.h>
+#include <linex/gpio/machine.h>
+#include <linex/platform_device.h>
+#include <linex/via-core.h>
+#include <linex/export.h>
 #include "via-gpio.h"
 
 /*

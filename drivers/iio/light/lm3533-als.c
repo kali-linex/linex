@@ -7,20 +7,20 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/atomic.h>
+#include <linex/fs.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/iio/events.h>
+#include <linex/iio/iio.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/mfd/core.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 
-#include <linux/mfd/lm3533.h>
+#include <linex/mfd/lm3533.h>
 
 
 #define LM3533_ALS_RESISTOR_MIN			1

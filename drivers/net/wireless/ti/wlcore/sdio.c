@@ -7,20 +7,20 @@
  * Contact: Luciano Coelho <luciano.coelho@nokia.com>
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/printk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linex/irq.h>
+#include <linex/module.h>
+#include <linex/vmalloc.h>
+#include <linex/platform_device.h>
+#include <linex/mmc/sdio.h>
+#include <linex/mmc/sdio_func.h>
+#include <linex/mmc/sdio_ids.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/host.h>
+#include <linex/gpio.h>
+#include <linex/pm_runtime.h>
+#include <linex/printk.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
 
 #include "wlcore.h"
 #include "wl12xx_80211.h"

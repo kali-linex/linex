@@ -4,10 +4,10 @@
  * Phillip Lougher <phillip@squashfs.org.uk>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/local_lock.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/percpu.h>
+#include <linex/local_lock.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

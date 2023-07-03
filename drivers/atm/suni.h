@@ -8,9 +8,9 @@
 #ifndef DRIVER_ATM_SUNI_H
 #define DRIVER_ATM_SUNI_H
 
-#include <linux/atmdev.h>
-#include <linux/atmioc.h>
-#include <linux/sonet.h>
+#include <linex/atmdev.h>
+#include <linex/atmioc.h>
+#include <linex/sonet.h>
 
 /* SUNI registers */
 

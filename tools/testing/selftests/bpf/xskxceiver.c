@@ -3,7 +3,7 @@
 
 /*
  * Some functions in this program are taken from
- * Linux kernel samples/bpf/xdpsock* and modified
+ * Linex kernel samples/bpf/xdpsock* and modified
  * for use.
  *
  * See test_xsk.sh for detailed information on test topology
@@ -74,9 +74,9 @@
 #include <errno.h>
 #include <getopt.h>
 #include <asm/barrier.h>
-#include <linux/if_link.h>
-#include <linux/if_ether.h>
-#include <linux/mman.h>
+#include <linex/if_link.h>
+#include <linex/if_ether.h>
+#include <linex/mman.h>
 #include <arpa/inet.h>
 #include <net/if.h>
 #include <locale.h>
@@ -98,7 +98,7 @@
 #include "xsk.h"
 #include "xskxceiver.h"
 #include <bpf/bpf.h>
-#include <linux/filter.h>
+#include <linex/filter.h>
 #include "../kselftest.h"
 #include "xsk_xdp_metadata.h"
 

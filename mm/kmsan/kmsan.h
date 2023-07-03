@@ -11,13 +11,13 @@
 #define __MM_KMSAN_KMSAN_H
 
 #include <asm/pgtable_64_types.h>
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/stackdepot.h>
-#include <linux/stacktrace.h>
-#include <linux/nmi.h>
-#include <linux/mm.h>
-#include <linux/printk.h>
+#include <linex/irqflags.h>
+#include <linex/sched.h>
+#include <linex/stackdepot.h>
+#include <linex/stacktrace.h>
+#include <linex/nmi.h>
+#include <linex/mm.h>
+#include <linex/printk.h>
 
 #define KMSAN_ALLOCA_MAGIC_ORIGIN 0xabcd0100
 #define KMSAN_CHAIN_MAGIC_ORIGIN 0xabcd0200

@@ -15,7 +15,7 @@
 import sys
 import drgn
 from drgn import NULL, Object
-from drgn.helpers.linux import *
+from drgn.helpers.linex import *
 
 def get_rdp0(prog):
 	try:

@@ -8,14 +8,14 @@
  *      Dave Young <dyoung@redhat.com>
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linex/kobject.h>
+#include <linex/string.h>
+#include <linex/sysfs.h>
+#include <linex/init.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/io.h>
 
 #include <asm/setup.h>
 

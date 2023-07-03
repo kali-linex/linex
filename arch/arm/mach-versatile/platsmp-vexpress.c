@@ -3,12 +3,12 @@
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/vexpress.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/smp.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/vexpress.h>
 
 #include <asm/mcpm.h>
 #include <asm/smp_scu.h>

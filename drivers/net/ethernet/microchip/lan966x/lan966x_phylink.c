@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/module.h>
-#include <linux/phylink.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/phy/phy.h>
+#include <linex/module.h>
+#include <linex/phylink.h>
+#include <linex/device.h>
+#include <linex/netdevice.h>
+#include <linex/phy/phy.h>
 
 #include "lan966x_main.h"
 

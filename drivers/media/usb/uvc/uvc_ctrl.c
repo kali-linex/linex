@@ -7,19 +7,19 @@
  */
 
 #include <asm/barrier.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/uvc.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <linex/bitops.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/usb.h>
+#include <linex/usb/uvc.h>
+#include <linex/videodev2.h>
+#include <linex/vmalloc.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/atomic.h>
 #include <media/v4l2-ctrls.h>
 
 #include "uvcvideo.h"

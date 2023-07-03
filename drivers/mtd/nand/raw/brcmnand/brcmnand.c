@@ -3,32 +3,32 @@
  * Copyright © 2010-2015 Broadcom Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/brcmnand.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/static_key.h>
-#include <linux/list.h>
-#include <linux/log2.h>
+#include <linex/clk.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/platform_data/brcmnand.h>
+#include <linex/err.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/ioport.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/mm.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/rawnand.h>
+#include <linex/mtd/partitions.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/static_key.h>
+#include <linex/list.h>
+#include <linex/log2.h>
 
 #include "brcmnand.h"
 

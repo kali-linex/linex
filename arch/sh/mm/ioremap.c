@@ -12,12 +12,12 @@
  * Public License. See the file "COPYING" in the main directory of this
  * archive for more details.
  */
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linex/vmalloc.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/pci.h>
+#include <linex/io.h>
 #include <asm/io_trapped.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>

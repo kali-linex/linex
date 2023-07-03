@@ -11,10 +11,10 @@
 
  */
 
-#include <linux/slab.h>
-#include <linux/crc32c.h>
-#include <linux/drbd.h>
-#include <linux/drbd_limits.h>
+#include <linex/slab.h>
+#include <linex/crc32c.h>
+#include <linex/drbd.h>
+#include <linex/drbd_limits.h>
 #include "drbd_int.h"
 
 

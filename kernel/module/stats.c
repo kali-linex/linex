@@ -5,15 +5,15 @@
  * Copyright (C) 2023 Luis Chamberlain <mcgrof@kernel.org>
  */
 
-#include <linux/module.h>
-#include <uapi/linux/module.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
-#include <linux/math.h>
+#include <linex/module.h>
+#include <uapi/linex/module.h>
+#include <linex/string.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/debugfs.h>
+#include <linex/rculist.h>
+#include <linex/math.h>
 
 #include "internal.h"
 

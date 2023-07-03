@@ -10,7 +10,7 @@
 #ifndef _RTL_PS_H
 #define _RTL_PS_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct net_device;
 

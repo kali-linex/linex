@@ -5,16 +5,16 @@
  * Copyright (C) 2008 Paul Mundt
  * Copyright (C) 2008 Peter Griffin <pgriffin@mpc-data.co.uk>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/map.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/partitions.h>
+#include <linex/mtd/physmap.h>
+#include <linex/mtd/map.h>
+#include <linex/regulator/fixed.h>
+#include <linex/regulator/machine.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

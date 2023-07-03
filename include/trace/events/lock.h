@@ -5,8 +5,8 @@
 #if !defined(_TRACE_LOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_LOCK_H
 
-#include <linux/sched.h>
-#include <linux/tracepoint.h>
+#include <linex/sched.h>
+#include <linex/tracepoint.h>
 
 /* flags for lock:contention_begin */
 #define LCB_F_SPIN	(1U << 0)
@@ -19,7 +19,7 @@
 
 #ifdef CONFIG_LOCKDEP
 
-#include <linux/lockdep.h>
+#include <linex/lockdep.h>
 
 TRACE_EVENT(lock_acquire,
 

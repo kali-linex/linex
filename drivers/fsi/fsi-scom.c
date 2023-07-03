@@ -5,16 +5,16 @@
  * Copyright (C) IBM Corporation 2016
  */
 
-#include <linux/fsi.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linex/fsi.h>
+#include <linex/module.h>
+#include <linex/cdev.h>
+#include <linex/delay.h>
+#include <linex/fs.h>
+#include <linex/uaccess.h>
+#include <linex/slab.h>
+#include <linex/list.h>
 
-#include <uapi/linux/fsi.h>
+#include <uapi/linex/fsi.h>
 
 #define FSI_ENGID_SCOM		0x5
 

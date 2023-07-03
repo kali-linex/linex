@@ -8,29 +8,29 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/suspend.h>
+#include <linex/err.h>
+#include <linex/bug.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/log2.h>
+#include <linex/io.h>
+#include <linex/gpio/driver.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/mutex.h>
+#include <linex/acpi.h>
+#include <linex/seq_file.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/bitops.h>
+#include <linex/pinctrl/pinconf.h>
+#include <linex/pinctrl/pinconf-generic.h>
+#include <linex/pinctrl/pinmux.h>
+#include <linex/suspend.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

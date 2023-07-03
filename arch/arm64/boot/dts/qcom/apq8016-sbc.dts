@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The Linex Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -76,7 +76,7 @@
 	};
 
 	usb_id: usb-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linex,extcon-usb-gpio";
 		id-gpio = <&tlmm 121 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb_id_default>;
@@ -102,7 +102,7 @@
 
 		button {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linex,code = <KEY_VOLUMEUP>;
 			gpios = <&tlmm 107 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -120,7 +120,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&tlmm 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linex,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
@@ -129,7 +129,7 @@
 			function = LED_FUNCTION_DISK_ACTIVITY;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&tlmm 120 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linex,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
@@ -138,7 +138,7 @@
 			function = LED_FUNCTION_DISK_ACTIVITY;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pm8916_gpios 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linex,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
@@ -146,7 +146,7 @@
 			label = "apq8016-sbc:green:user4";
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pm8916_gpios 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			linex,default-trigger = "none";
 			panic-indicator;
 			default-state = "off";
 		};
@@ -156,7 +156,7 @@
 			function = LED_FUNCTION_WLAN;
 			color = <LED_COLOR_ID_YELLOW>;
 			gpios = <&pm8916_mpps 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linex,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
@@ -165,7 +165,7 @@
 			function = LED_FUNCTION_BLUETOOTH;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&pm8916_mpps 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			linex,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 	};
@@ -336,7 +336,7 @@
 
 &pm8916_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linex,code = <KEY_VOLUMEDOWN>;
 };
 
 &pm8916_rpm_regulators {

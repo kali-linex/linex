@@ -8,14 +8,14 @@
  *  Copyright (c) 2014 Huacai Chen <chenhc@lemote.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/err.h>
+#include <linex/gpio/driver.h>
+#include <linex/platform_device.h>
+#include <linex/bitops.h>
 #include <asm/types.h>
 #include <loongson.h>
 

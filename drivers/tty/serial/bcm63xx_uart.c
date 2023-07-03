@@ -10,21 +10,21 @@
  * my board.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/clk.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sysrq.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_bcm63xx.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/console.h>
+#include <linex/clk.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/sysrq.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/serial_bcm63xx.h>
+#include <linex/io.h>
+#include <linex/of.h>
 
 #define BCM63XX_NR_UARTS	2
 

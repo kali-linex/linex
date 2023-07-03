@@ -7,13 +7,13 @@
  * Andrzej Hajda <a.hajda@samsung.com>
  */
 
-#include <linux/sizes.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linex/sizes.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/media.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
 
 #include "s5c73m3.h"
 

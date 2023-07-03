@@ -5,13 +5,13 @@
  * Copyright (c) 2021 Aleksandr Mezin
  */
 
-#include <linux/hid.h>
-#include <linux/hwmon.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linex/hid.h>
+#include <linex/hwmon.h>
+#include <linex/math.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>

@@ -7,11 +7,11 @@
  * This file contains the needed initializations to support sysenter.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/mm_types.h>
-#include <linux/elf.h>
+#include <linex/init.h>
+#include <linex/smp.h>
+#include <linex/kernel.h>
+#include <linex/mm_types.h>
+#include <linex/elf.h>
 
 #include <asm/processor.h>
 #include <asm/vdso.h>
@@ -55,7 +55,7 @@ __setup_param("vdso=", vdso_setup, vdso32_setup, 0);
 
 #ifdef CONFIG_SYSCTL
 /* Register vsyscall32 into the ABI table */
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 
 static struct ctl_table abi_table2[] = {
 	{

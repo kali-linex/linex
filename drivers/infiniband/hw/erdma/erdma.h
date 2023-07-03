@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause */
 
-/* Authors: Cheng Xu <chengyou@linux.alibaba.com> */
-/*          Kai Shen <kaishen@linux.alibaba.com> */
+/* Authors: Cheng Xu <chengyou@linex.alibaba.com> */
+/*          Kai Shen <kaishen@linex.alibaba.com> */
 /* Copyright (c) 2020-2022, Alibaba Group. */
 
 #ifndef __ERDMA_H__
 #define __ERDMA_H__
 
-#include <linux/bitfield.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/xarray.h>
+#include <linex/bitfield.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/xarray.h>
 #include <rdma/ib_verbs.h>
 
 #include "erdma_hw.h"

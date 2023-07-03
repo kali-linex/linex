@@ -3,9 +3,9 @@
  * Copyright 2006, Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/leds.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
+#include <linex/leds.h>
 #include "ieee80211_i.h"
 
 #define MAC80211_BLINK_DELAY 50 /* ms */

@@ -7,13 +7,13 @@
  *  Copyright 2017 Google, Inc.
  */
 
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <linex/irq.h>
+#include <linex/irqchip.h>
+#include <linex/irqchip/chained_irq.h>
+#include <linex/irqdomain.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/io.h>
 
 
 #define ASPEED_I2C_IC_NUM_BUS 14

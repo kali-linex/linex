@@ -5,22 +5,22 @@
  * Copyright (C) 2018 Arcx Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/delay.h>
+#include <linex/idr.h>
+#include <linex/mutex.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regmap.h>
 
-/* move to <linux/anybuss-controller.h> when taking this out of staging */
+/* move to <linex/anybuss-controller.h> when taking this out of staging */
 #include "anybuss-controller.h"
 
 #define CPLD_STATUS1		0x80

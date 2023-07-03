@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/locks.c
+ *  linex/fs/locks.c
  *
  * We implement four types of file locks: BSD locks, posix locks, open
  * file description locks, and leases.  For details about BSD locks,
@@ -49,26 +49,26 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/filelock.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/rcupdate.h>
-#include <linux/pid_namespace.h>
-#include <linux/hashtable.h>
-#include <linux/percpu.h>
-#include <linux/sysctl.h>
+#include <linex/capability.h>
+#include <linex/file.h>
+#include <linex/fdtable.h>
+#include <linex/filelock.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/security.h>
+#include <linex/slab.h>
+#include <linex/syscalls.h>
+#include <linex/time.h>
+#include <linex/rcupdate.h>
+#include <linex/pid_namespace.h>
+#include <linex/hashtable.h>
+#include <linex/percpu.h>
+#include <linex/sysctl.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/filelock.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define IS_POSIX(fl)	(fl->fl_flags & FL_POSIX)
 #define IS_FLOCK(fl)	(fl->fl_flags & FL_FLOCK)
@@ -2672,8 +2672,8 @@ bool vfs_inode_has_locks(struct inode *inode)
 EXPORT_SYMBOL_GPL(vfs_inode_has_locks);
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 
 struct locks_iterator {
 	int	li_cpu;

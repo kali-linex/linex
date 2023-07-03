@@ -9,17 +9,17 @@
  * the Nomadik 8815 and Ux500 platforms.
  */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linex/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/module.h>
 
-#include <linux/platform_data/keypad-nomadik-ske.h>
+#include <linex/platform_data/keypad-nomadik-ske.h>
 
 /* SKE_CR bits */
 #define SKE_KPMLT	(0x1 << 6)

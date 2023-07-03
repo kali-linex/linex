@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The Linex Foundation. All rights reserved.
  * Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/elf.h>
+#include <linex/elf.h>
 
 #include "qmi.h"
 #include "core.h"
 #include "debug.h"
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
-#include <linux/firmware.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/ioport.h>
+#include <linex/firmware.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
 
 #define SLEEP_CLOCK_SELECT_INTERNAL_BIT	0x02
 #define HOST_CSTATE_BIT			0x04

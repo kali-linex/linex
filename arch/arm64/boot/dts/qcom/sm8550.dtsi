@@ -561,7 +561,7 @@
 
 		/* uefi region can be reused by apps */
 
-		/* Linux kernel image is loaded at 0xa8000000 */
+		/* Linex kernel image is loaded at 0xa8000000 */
 
 		rmtfs_mem: rmtfs-region@d4a80000 {
 			compatible = "qcom,rmtfs-mem";
@@ -1677,7 +1677,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <0>;
+			linex,pci-domain = <0>;
 			num-lanes = <2>;
 
 			interrupts = <GIC_SPI 141 IRQ_TYPE_LEVEL_HIGH>;
@@ -1768,7 +1768,7 @@
 
 			dma-coherent;
 
-			linux,pci-domain = <1>;
+			linex,pci-domain = <1>;
 			num-lanes = <2>;
 
 			interrupts = <GIC_SPI 307 IRQ_TYPE_LEVEL_HIGH>;

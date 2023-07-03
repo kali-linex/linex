@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/mfd/rave-sp.h>
+#include <linex/module.h>
+#include <linex/nvmem-consumer.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/watchdog.h>
 
 enum {
 	RAVE_SP_RESET_BYTE = 1,

@@ -10,11 +10,11 @@
  * Copyright (c) 2021 Google
  */
 
-#include <linux/idr.h>
-#include <linux/mctp.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <linex/idr.h>
+#include <linex/mctp.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/skbuff.h>
 
 #include <net/mctp.h>
 #include <net/mctpdevice.h>

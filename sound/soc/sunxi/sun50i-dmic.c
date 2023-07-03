@@ -4,13 +4,13 @@
 //
 // Copyright 2021 Ban Tao <fengzheng923@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/of_device.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

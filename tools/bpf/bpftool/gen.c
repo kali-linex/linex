@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
+#include <linex/err.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
@@ -2022,7 +2022,7 @@ btfgen_find_cands(const struct btf *local_btf, const struct btf *targ_btf, __u32
 	if (!cands)
 		return NULL;
 
-	err = bpf_core_add_cands(&local_cand, local_essent_len, targ_btf, "vmlinux", 1, cands);
+	err = bpf_core_add_cands(&local_cand, local_essent_len, targ_btf, "vmlinex", 1, cands);
 	if (err)
 		goto err_out;
 

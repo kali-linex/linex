@@ -6,9 +6,9 @@
  * Author: Matti Aaltonen <matti.j.aaltonen@nokia.com>
  */
 
-#include <linux/mfd/wl1273-core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/mfd/wl1273-core.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 
 #define DRIVER_DESC "WL1273 FM Radio Core"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * PPP synchronous tty channel driver for Linux.
+ * PPP synchronous tty channel driver for Linex.
  *
  * This is a ppp channel driver that can be used with tty device drivers
  * that are frame oriented, such as synchronous HDLC devices.
@@ -28,23 +28,23 @@
  * ==FILEVERSION 20040616==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/tty.h>
+#include <linex/netdevice.h>
+#include <linex/poll.h>
+#include <linex/ppp_defs.h>
+#include <linex/ppp-ioctl.h>
+#include <linex/ppp_channel.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/refcount.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #define PPP_VERSION	"2.4.2"
 

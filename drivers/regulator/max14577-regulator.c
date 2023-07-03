@@ -5,12 +5,12 @@
 // Copyright (C) 2013,2014 Samsung Electronics
 // Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/max14577.h>
-#include <linux/mfd/max14577-private.h>
-#include <linux/regulator/of_regulator.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/mfd/max14577.h>
+#include <linex/mfd/max14577-private.h>
+#include <linex/regulator/of_regulator.h>
 
 static int max14577_reg_is_enabled(struct regulator_dev *rdev)
 {

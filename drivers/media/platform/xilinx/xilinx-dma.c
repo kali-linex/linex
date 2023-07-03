@@ -9,12 +9,12 @@
  *           Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/dma/xilinx_dma.h>
-#include <linux/lcm.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/dma/xilinx_dma.h>
+#include <linex/lcm.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>

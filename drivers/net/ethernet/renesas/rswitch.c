@@ -4,23 +4,23 @@
  * Copyright (C) 2022 Renesas Electronics Corporation
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/dma-mapping.h>
+#include <linex/err.h>
+#include <linex/etherdevice.h>
+#include <linex/iopoll.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/net_tstamp.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_mdio.h>
+#include <linex/of_net.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_runtime.h>
+#include <linex/rtnetlink.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include "rswitch.h"
 

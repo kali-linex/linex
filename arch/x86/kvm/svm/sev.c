@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Linex
  *
  * AMD SVM-SEV support
  *
@@ -8,17 +8,17 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_types.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/psp.h>
-#include <linux/psp-sev.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/misc_cgroup.h>
-#include <linux/processor.h>
-#include <linux/trace_events.h>
+#include <linex/kvm_types.h>
+#include <linex/kvm_host.h>
+#include <linex/kernel.h>
+#include <linex/highmem.h>
+#include <linex/psp.h>
+#include <linex/psp-sev.h>
+#include <linex/pagemap.h>
+#include <linex/swap.h>
+#include <linex/misc_cgroup.h>
+#include <linex/processor.h>
+#include <linex/trace_events.h>
 
 #include <asm/pkru.h>
 #include <asm/trapnr.h>
@@ -38,7 +38,7 @@
  * module.
  *
  * We will not have MISC_CG_RES_SEV and MISC_CG_RES_SEV_ES entries in the enum
- * misc_res_type {} defined in linux/misc_cgroup.h.
+ * misc_res_type {} defined in linex/misc_cgroup.h.
  *
  * Below macros allow compilation to succeed.
  */

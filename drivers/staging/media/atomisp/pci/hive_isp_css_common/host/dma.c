@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #include "dma.h"
 

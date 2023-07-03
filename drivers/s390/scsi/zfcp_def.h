@@ -12,17 +12,17 @@
 
 /*************************** INCLUDES *****************************************/
 
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/syscalls.h>
-#include <linux/scatterlist.h>
-#include <linux/ioctl.h>
+#include <linex/init.h>
+#include <linex/moduleparam.h>
+#include <linex/major.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/timer.h>
+#include <linex/slab.h>
+#include <linex/mempool.h>
+#include <linex/syscalls.h>
+#include <linex/scatterlist.h>
+#include <linex/ioctl.h>
 #include <scsi/fc/fc_fs.h>
 #include <scsi/fc/fc_gs.h>
 #include <scsi/scsi.h>

@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005 Anders Blomdell <anders.blomdell@control.lth.se>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  */
 
 /*
@@ -29,12 +29,12 @@
  *      says P1).
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/comedi/comedi_usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/errno.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
+#include <linex/comedi/comedi_usb.h>
 
 #define DT9812_DIAGS_BOARD_INFO_ADDR	0xFBFF
 #define DT9812_MAX_WRITE_CMD_PIPE_SIZE	32

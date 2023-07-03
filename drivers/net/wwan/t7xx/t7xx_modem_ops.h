@@ -7,7 +7,7 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
@@ -18,9 +18,9 @@
 #ifndef __T7XX_MODEM_OPS_H__
 #define __T7XX_MODEM_OPS_H__
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
 #include "t7xx_hif_cldma.h"
 #include "t7xx_pci.h"

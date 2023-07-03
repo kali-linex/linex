@@ -5,30 +5,30 @@
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk> and 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Rewritten for Linux 2.1.  Peter Braam <braam@cs.cmu.edu>
+ * Rewritten for Linex 2.1.  Peter Braam <braam@cs.cmu.edu>
  * Copyright (C) Carnegie Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/file.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pid_namespace.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/stat.h>
+#include <linex/errno.h>
+#include <linex/unistd.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/file.h>
+#include <linex/vfs.h>
+#include <linex/slab.h>
+#include <linex/pid_namespace.h>
+#include <linex/uaccess.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
 
-#include <linux/coda.h>
+#include <linex/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linex.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

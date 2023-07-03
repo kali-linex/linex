@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2020, Linaro Limited
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/apr.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/soc/qcom/apr.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
 #include <sound/pcm.h>

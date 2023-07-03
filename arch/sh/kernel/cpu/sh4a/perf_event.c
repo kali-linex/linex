@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2009, 2010  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/perf_event.h>
 #include <asm/processor.h>
 
 #define PPC_CCBR(idx)	(0xff200800 + (sizeof(u32) * idx))

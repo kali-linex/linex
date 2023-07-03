@@ -6,9 +6,9 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/of_address.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/of_address.h>
 #include <asm/dcr.h>
 
 #ifdef CONFIG_PPC_DCR_MMIO

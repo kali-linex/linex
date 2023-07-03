@@ -7,15 +7,15 @@
  * Based on ds2780_battery drivers
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/param.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/idr.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/param.h>
+#include <linex/pm.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/idr.h>
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 #include "../../w1/slaves/w1_ds2781.h"
 
 /* Current unit measurement in uA for a 1 milli-ohm sense resistor */

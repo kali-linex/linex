@@ -8,9 +8,9 @@
  *         Chun-Chia Chiu <chun-chia.chiu@mediatek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/regmap.h>
 #include "mt8188-afe-clk.h"
 #include "mt8188-afe-common.h"
 #include "mt8188-reg.h"

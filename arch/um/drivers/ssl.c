@@ -3,13 +3,13 @@
  * Copyright (C) 2000, 2002 Jeff Dike (jdike@karaya.com)
  */
 
-#include <linux/fs.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <linex/fs.h>
+#include <linex/tty.h>
+#include <linex/tty_driver.h>
+#include <linex/major.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/console.h>
 #include <asm/termbits.h>
 #include <asm/irq.h>
 #include "chan.h"

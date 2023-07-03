@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  This file was based upon code in Powertweak Linux (http://powertweak.sf.net)
+ *  This file was based upon code in Powertweak Linex (http://powertweak.sf.net)
  *  (C) 2000-2003  Dave Jones, Arjan van de Ven, Janne Pänkälä,
  *                 Dominik Brodowski.
  *
@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/cpufreq.h>
+#include <linex/ioport.h>
+#include <linex/timex.h>
+#include <linex/io.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/msr.h>
@@ -303,7 +303,7 @@ static void __exit powernow_k6_exit(void)
 
 
 MODULE_AUTHOR("Arjan van de Ven, Dave Jones, "
-		"Dominik Brodowski <linux@brodo.de>");
+		"Dominik Brodowski <linex@brodo.de>");
 MODULE_DESCRIPTION("PowerNow! driver for AMD K6-2+ / K6-3+ processors.");
 MODULE_LICENSE("GPL");
 

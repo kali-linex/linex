@@ -16,15 +16,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/retu.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/input.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mfd/retu.h>
+#include <linex/interrupt.h>
+#include <linex/platform_device.h>
 
 #define RETU_STATUS_PWRONX (1 << 5)
 

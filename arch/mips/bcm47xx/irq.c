@@ -24,9 +24,9 @@
 
 #include "bcm47xx_private.h"
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
 #include <asm/setup.h>
 #include <asm/irq_cpu.h>
 #include <bcm47xx.h>

@@ -9,25 +9,25 @@
  * Copyright (C) 2009 Texas Instruments.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/sys_soc.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/phy.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/pm_runtime.h>
+#include <linex/davinci_emac.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_mdio.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/mdio-bitbang.h>
+#include <linex/sys_soc.h>
 
 /*
  * This timeout definition is a worst-case ultra defensive measure against

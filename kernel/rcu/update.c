@@ -7,7 +7,7 @@
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@linex.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  * Papers:
  * http://www.rdrop.com/users/paulmck/paper/rclockpdcsproof.pdf
@@ -17,32 +17,32 @@
  *		http://lse.sourceforge.net/locking/rcupdate.html
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/tick.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched/isolation.h>
-#include <linux/kprobes.h>
-#include <linux/slab.h>
-#include <linux/irq_work.h>
-#include <linux/rcupdate_trace.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/spinlock.h>
+#include <linex/smp.h>
+#include <linex/interrupt.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/atomic.h>
+#include <linex/bitops.h>
+#include <linex/percpu.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/mutex.h>
+#include <linex/export.h>
+#include <linex/hardirq.h>
+#include <linex/delay.h>
+#include <linex/moduleparam.h>
+#include <linex/kthread.h>
+#include <linex/tick.h>
+#include <linex/rcupdate_wait.h>
+#include <linex/sched/isolation.h>
+#include <linex/kprobes.h>
+#include <linex/slab.h>
+#include <linex/irq_work.h>
+#include <linex/rcupdate_trace.h>
 
 #define CREATE_TRACE_POINTS
 

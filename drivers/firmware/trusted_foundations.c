@@ -5,11 +5,11 @@
  * Copyright (c) 2013, NVIDIA Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/of.h>
 
-#include <linux/firmware/trusted_foundations.h>
+#include <linex/firmware/trusted_foundations.h>
 
 #include <asm/firmware.h>
 #include <asm/hardware/cache-l2x0.h>

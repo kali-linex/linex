@@ -6,18 +6,18 @@
  * Author : K. Y. Srinivasan <ksrinivasan@novell.com>
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/i8253.h>
-#include <linux/random.h>
+#include <linex/types.h>
+#include <linex/time.h>
+#include <linex/clocksource.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/hardirq.h>
+#include <linex/efi.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/kexec.h>
+#include <linex/i8253.h>
+#include <linex/random.h>
 #include <asm/processor.h>
 #include <asm/hypervisor.h>
 #include <asm/hyperv-tlfs.h>
@@ -33,9 +33,9 @@
 #include <clocksource/hyperv_timer.h>
 #include <asm/numa.h>
 
-/* Is Linux running as the root partition? */
+/* Is Linex running as the root partition? */
 bool hv_root_partition;
-/* Is Linux running on nested Microsoft Hypervisor */
+/* Is Linex running on nested Microsoft Hypervisor */
 bool hv_nested;
 struct ms_hyperv_info ms_hyperv;
 
@@ -349,7 +349,7 @@ static void __init ms_hyperv_init_platform(void)
 	 * Check CPU management privilege.
 	 *
 	 * To mirror what Windows does we should extract CPU management
-	 * features and use the ReservedIdentityBit to detect if Linux is the
+	 * features and use the ReservedIdentityBit to detect if Linex is the
 	 * root partition. But that requires negotiating CPU management
 	 * interface (a process to be finalized). For now, use the privilege
 	 * flag as the indicator for running as root.

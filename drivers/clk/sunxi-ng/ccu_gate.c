@@ -4,8 +4,8 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linex/clk-provider.h>
+#include <linex/io.h>
 
 #include "ccu_gate.h"
 

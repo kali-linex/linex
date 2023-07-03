@@ -9,12 +9,12 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/genalloc.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/suspend.h>
+#include <linex/bitops.h>
+#include <linex/genalloc.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/of_platform.h>
+#include <linex/suspend.h>
 #include <asm/suspend.h>
 #include <asm/fncpy.h>
 #include "core.h"

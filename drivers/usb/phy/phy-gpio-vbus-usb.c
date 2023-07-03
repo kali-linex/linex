@@ -5,19 +5,19 @@
  * Copyright (c) 2008 Philipp Zabel <philipp.zabel@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/usb.h>
+#include <linex/workqueue.h>
 
-#include <linux/regulator/consumer.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <linex/usb/gadget.h>
+#include <linex/usb/otg.h>
 
 
 /*

@@ -5,11 +5,11 @@
  * and format the required data.
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/kbuild.h>
+#include <linex/types.h>
+#include <linex/stddef.h>
+#include <linex/sched.h>
+#include <linex/ptrace.h>
+#include <linex/kbuild.h>
 #include <asm/io.h>
 
 void foo(void)

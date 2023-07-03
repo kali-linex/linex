@@ -9,8 +9,8 @@
 #ifndef __VSP1_VIDEO_H__
 #define __VSP1_VIDEO_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
 
 #include <media/videobuf2-v4l2.h>
 

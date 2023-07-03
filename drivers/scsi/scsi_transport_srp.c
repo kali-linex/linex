@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2007 FUJITA Tomonori <tomof@acm.org>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

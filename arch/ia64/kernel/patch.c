@@ -5,8 +5,8 @@
  * Copyright (C) 2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linex/init.h>
+#include <linex/string.h>
 
 #include <asm/patch.h>
 #include <asm/processor.h>

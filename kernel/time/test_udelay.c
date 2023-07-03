@@ -10,11 +10,11 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/delay.h>
+#include <linex/ktime.h>
+#include <linex/module.h>
+#include <linex/uaccess.h>
 
 #define DEFAULT_ITERATIONS 100
 

@@ -19,22 +19,22 @@
  * shutdown for not being used.
  */
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/delay.h>
+#include <linex/completion.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/thermal.h>
+#include <linex/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/mfd/sun4i-gpadc.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/driver.h>
+#include <linex/iio/machine.h>
+#include <linex/mfd/sun4i-gpadc.h>
 
 static unsigned int sun4i_gpadc_chan_select(unsigned int chan)
 {

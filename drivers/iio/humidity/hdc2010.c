@@ -10,13 +10,13 @@
  * Datasheet: https://www.ti.com/product/HDC2080/datasheet
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/bitops.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define HDC2010_REG_TEMP_LOW			0x00
 #define HDC2010_REG_TEMP_HIGH			0x01

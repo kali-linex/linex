@@ -7,12 +7,12 @@
  * Copyright (C) 2008 Paul Mundt
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/i2c.h>
+#include <linex/rtc.h>
+#include <linex/bcd.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 
 /*
  * Ricoh has a family of I2C based RTCs, which differ only slightly from
@@ -921,7 +921,7 @@ static struct i2c_driver rs5c372_driver = {
 		.name	= "rtc-rs5c372",
 		.of_match_table = of_match_ptr(rs5c372_of_match),
 	},
-	.probe		= rs5c372_probe,
+	.probe_new	= rs5c372_probe,
 	.remove		= rs5c372_remove,
 	.id_table	= rs5c372_id,
 };
@@ -931,6 +931,6 @@ module_i2c_driver(rs5c372_driver);
 MODULE_AUTHOR(
 		"Pavel Mironchik <pmironchik@optifacio.net>, "
 		"Alessandro Zummo <a.zummo@towertech.it>, "
-		"Paul Mundt <lethal@linux-sh.org>");
+		"Paul Mundt <lethal@linex-sh.org>");
 MODULE_DESCRIPTION("Ricoh RS5C372 RTC driver");
 MODULE_LICENSE("GPL");

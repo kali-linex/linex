@@ -7,9 +7,9 @@
  * Copyright (c) 2003 by Karsten Wiese <annabellesgarden@yahoo.de>
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linex/interrupt.h>
+#include <linex/slab.h>
+#include <linex/usb.h>
 #include <sound/core.h>
 #include <sound/memalloc.h>
 #include <sound/pcm.h>

@@ -5,13 +5,13 @@
  * Copyright 2018 Google LLC.
  */
 
-#include <linux/ktime.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linex/ktime.h>
+#include <linex/math64.h>
+#include <linex/module.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
 
 #define DRV_NAME "cros-usbpd-logger"
 

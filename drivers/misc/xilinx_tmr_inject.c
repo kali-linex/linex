@@ -10,9 +10,9 @@
  */
 
 #include <asm/xilinx_mb_manager.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/fault-inject.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/fault-inject.h>
 
 /* TMR Inject Register offsets */
 #define XTMR_INJECT_CR_OFFSET		0x0

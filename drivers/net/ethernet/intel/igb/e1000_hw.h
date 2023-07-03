@@ -4,10 +4,10 @@
 #ifndef _E1000_IGB_HW_H_
 #define _E1000_IGB_HW_H_
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/netdevice.h>
 
 #include "e1000_regs.h"
 #include "e1000_defines.h"

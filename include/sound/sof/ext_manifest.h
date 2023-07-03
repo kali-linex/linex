@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH Linex-syscall-note) OR BSD-3-Clause) */
 /*
  * This file is provided under a dual BSD/GPLv2 license.  When using or
  * redistributing this file, you may do so under either license.
@@ -16,9 +16,9 @@
 #ifndef __SOF_FIRMWARE_EXT_MANIFEST_H__
 #define __SOF_FIRMWARE_EXT_MANIFEST_H__
 
-#include <linux/bits.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linex/bits.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
 #include <sound/sof/info.h>
 
 /* In ASCII `XMan` */

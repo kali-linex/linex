@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
+#include <linex/fs.h>
+#include <linex/fs_context.h>
+#include <linex/mount.h>
+#include <linex/pagemap.h>
+#include <linex/init.h>
+#include <linex/namei.h>
 
 #include "qib.h"
 

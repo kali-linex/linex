@@ -7,17 +7,17 @@
  * Copyright (C) 2008 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/power_supply.h>
+#include <linex/wm97xx.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/gpio/consumer.h>
+#include <linex/irq.h>
+#include <linex/slab.h>
 
 static struct work_struct bat_work;
 static struct gpio_desc *charge_gpiod;

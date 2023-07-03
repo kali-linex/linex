@@ -6,7 +6,7 @@
  * Paul Walmsley
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 #include "omap_hwmod.h"
 #include "omap_hwmod_common_data.h"

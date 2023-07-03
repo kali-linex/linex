@@ -3,14 +3,14 @@
  * Copyright (C) 2018 Socionext Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/clk.h>
+#include <linex/console.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/serial_core.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
 #define USIO_NAME		"mlb-usio-uart"
 #define USIO_UART_DEV_NAME	"ttyUSI"

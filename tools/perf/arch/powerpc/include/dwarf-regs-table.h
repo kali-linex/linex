@@ -4,8 +4,8 @@
 
 /*
  * Reference:
- * http://refspecs.linuxfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
- * http://refspecs.linux-foundation.org/elf/elfspec_ppc.pdf
+ * http://refspecs.linexfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
+ * http://refspecs.linex-foundation.org/elf/elfspec_ppc.pdf
  */
 #define REG_DWARFNUM_NAME(reg, idx)	[idx] = "%" #reg
 

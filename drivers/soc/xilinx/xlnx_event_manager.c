@@ -7,17 +7,17 @@
  *  Abhyuday Godhasara <abhyuday.godhasara@xilinx.com>
  */
 
-#include <linux/cpuhotplug.h>
-#include <linux/firmware/xlnx-event-manager.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/hashtable.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linex/cpuhotplug.h>
+#include <linex/firmware/xlnx-event-manager.h>
+#include <linex/firmware/xlnx-zynqmp.h>
+#include <linex/hashtable.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/irqdomain.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
 
 static DEFINE_PER_CPU_READ_MOSTLY(int, cpu_number1);
 
@@ -559,7 +559,7 @@ static int xlnx_event_init_sgi(struct platform_device *pdev)
 	/*
 	 * IRQ related structures are used for the following:
 	 * for each SGI interrupt ensure its mapped by GIC IRQ domain
-	 * and that each corresponding linux IRQ for the HW IRQ has
+	 * and that each corresponding linex IRQ for the HW IRQ has
 	 * a handler for when receiving an interrupt from the remote
 	 * processor.
 	 */

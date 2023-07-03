@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2021, Linaro Limited
  *
- * Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
- *   Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Generated with linex-mdss-dsi-panel-driver-generator from vendor device tree:
+ *   Copyright (c) 2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_modes.h>

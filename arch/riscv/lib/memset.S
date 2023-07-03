@@ -4,7 +4,7 @@
  */
 
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/asm.h>
 
 /* void *memset(void *, int, size_t) */

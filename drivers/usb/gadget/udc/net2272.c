@@ -6,26 +6,26 @@
  * Copyright (C) 2006-2011 Analog Devices, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/prefetch.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/timer.h>
+#include <linex/usb.h>
+#include <linex/usb/ch9.h>
+#include <linex/usb/gadget.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>

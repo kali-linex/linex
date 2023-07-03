@@ -10,9 +10,9 @@
 #ifndef __AA_LIB_H
 #define __AA_LIB_H
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/lsm_hooks.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/lsm_hooks.h>
 
 #include "match.h"
 

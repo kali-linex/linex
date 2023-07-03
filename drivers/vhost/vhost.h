@@ -2,18 +2,18 @@
 #ifndef _VHOST_H
 #define _VHOST_H
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/atomic.h>
-#include <linux/vhost_iotlb.h>
-#include <linux/irqbypass.h>
+#include <linex/eventfd.h>
+#include <linex/vhost.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/poll.h>
+#include <linex/file.h>
+#include <linex/uio.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_ring.h>
+#include <linex/atomic.h>
+#include <linex/vhost_iotlb.h>
+#include <linex/irqbypass.h>
 
 struct vhost_work;
 struct vhost_task;

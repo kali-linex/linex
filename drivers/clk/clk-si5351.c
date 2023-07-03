@@ -12,20 +12,20 @@
  *     https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/application-notes/AN619.pdf
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/rational.h>
-#include <linux/i2c.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/si5351.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/rational.h>
+#include <linex/i2c.h>
+#include <linex/of_platform.h>
+#include <linex/platform_data/si5351.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/string.h>
 #include <asm/div64.h>
 
 #include "clk-si5351.h"

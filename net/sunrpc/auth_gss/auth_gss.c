@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * linux/net/sunrpc/auth_gss/auth_gss.c
+ * linex/net/sunrpc/auth_gss/auth_gss.c
  *
  * RPCSEC_GSS client authentication.
  *
@@ -11,23 +11,23 @@
  *  Andy Adamson   <andros@umich.edu>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/uaccess.h>
-#include <linux/hashtable.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/pagemap.h>
+#include <linex/sunrpc/clnt.h>
+#include <linex/sunrpc/auth.h>
+#include <linex/sunrpc/auth_gss.h>
+#include <linex/sunrpc/gss_krb5.h>
+#include <linex/sunrpc/svcauth_gss.h>
+#include <linex/sunrpc/gss_err.h>
+#include <linex/workqueue.h>
+#include <linex/sunrpc/rpc_pipe_fs.h>
+#include <linex/sunrpc/gss_api.h>
+#include <linex/uaccess.h>
+#include <linex/hashtable.h>
 
 #include "auth_gss_internal.h"
 #include "../netns.h"

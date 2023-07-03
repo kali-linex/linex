@@ -8,22 +8,22 @@
  * Please address comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/proc_fs.h>
-#include <linux/rbtree.h>
-#include <linux/reboot.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/debugfs.h>
+#include <linex/delay.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/pci.h>
+#include <linex/iommu.h>
+#include <linex/proc_fs.h>
+#include <linex/rbtree.h>
+#include <linex/reboot.h>
+#include <linex/seq_file.h>
+#include <linex/spinlock.h>
+#include <linex/export.h>
+#include <linex/of.h>
+#include <linex/debugfs.h>
 
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>
 #include <asm/io.h>

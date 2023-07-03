@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/fsync.c
+ *  linex/fs/ext4/fsync.c
  *
  *  Copyright (C) 1993  Stephen Tweedie (sct@redhat.com)
  *  from
@@ -8,7 +8,7 @@
  *                      Laboratoire MASI - Institut Blaise Pascal
  *                      Universite Pierre et Marie Curie (Paris VI)
  *  from
- *  linux/fs/minix/truncate.c   Copyright (C) 1991, 1992  Linus Torvalds
+ *  linex/fs/minix/truncate.c   Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext4fs fsync primitive
  *
@@ -23,12 +23,12 @@
  * we can depend on generic_block_fdatasync() to sync the data blocks.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
+#include <linex/time.h>
+#include <linex/fs.h>
+#include <linex/sched.h>
+#include <linex/writeback.h>
+#include <linex/blkdev.h>
+#include <linex/buffer_head.h>
 
 #include "ext4.h"
 #include "ext4_jbd2.h"

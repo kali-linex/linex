@@ -11,9 +11,9 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linex/device.h>
+#include <linex/mm.h>
+#include <linex/module.h>
 
 #include "isp.h"
 #include "ispreg.h"

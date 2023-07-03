@@ -10,8 +10,8 @@
 #ifndef OMAP4_ISS_CSI2_H
 #define OMAP4_ISS_CSI2_H
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linex/types.h>
+#include <linex/videodev2.h>
 
 #include "iss_video.h"
 

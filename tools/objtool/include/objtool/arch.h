@@ -7,7 +7,7 @@
 #define _ARCH_H
 
 #include <stdbool.h>
-#include <linux/list.h>
+#include <linex/list.h>
 #include <objtool/objtool.h>
 #include <objtool/cfi.h>
 

@@ -4,26 +4,26 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/workqueue.h>
+#include <linex/dma-mapping.h>
+#include <linex/if_vlan.h>
+#include <linex/kernel.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
+#include <linex/stddef.h>
+#include <linex/workqueue.h>
 #include <net/ipv6.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/etherdevice.h>
+#include <linex/io.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/qed/qed_ll2_if.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_dev_api.h"

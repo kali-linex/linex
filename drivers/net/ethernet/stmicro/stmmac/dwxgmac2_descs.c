@@ -4,7 +4,7 @@
  * stmmac XGMAC support.
  */
 
-#include <linux/stmmac.h>
+#include <linex/stmmac.h>
 #include "common.h"
 #include "dwxgmac2.h"
 

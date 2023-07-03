@@ -16,28 +16,28 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/panic_notifier.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
-#include <linux/remoteproc.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/elf.h>
-#include <linux/crc32.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/panic_notifier.h>
+#include <linex/slab.h>
+#include <linex/mutex.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/string.h>
+#include <linex/debugfs.h>
+#include <linex/rculist.h>
+#include <linex/remoteproc.h>
+#include <linex/iommu.h>
+#include <linex/idr.h>
+#include <linex/elf.h>
+#include <linex/crc32.h>
+#include <linex/of_reserved_mem.h>
+#include <linex/virtio_ids.h>
+#include <linex/virtio_ring.h>
 #include <asm/byteorder.h>
-#include <linux/platform_device.h>
+#include <linex/platform_device.h>
 
 #include "remoteproc_internal.h"
 
@@ -2716,7 +2716,7 @@ static int rproc_panic_handler(struct notifier_block *nb, unsigned long event,
 	 * Delay for the longest requested duration before returning. This can
 	 * be used by the remoteproc drivers to give the remote processor time
 	 * to perform any requested operations (such as flush caches), when
-	 * it's not possible to signal the Linux side due to the panic.
+	 * it's not possible to signal the Linex side due to the panic.
 	 */
 	mdelay(longest);
 

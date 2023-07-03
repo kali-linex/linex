@@ -2,16 +2,16 @@
 /*
  * Emulate a local clock event device via a pseudo clock device.
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/clockchips.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/module.h>
+#include <linex/cpu.h>
+#include <linex/err.h>
+#include <linex/hrtimer.h>
+#include <linex/interrupt.h>
+#include <linex/percpu.h>
+#include <linex/profile.h>
+#include <linex/clockchips.h>
+#include <linex/sched.h>
+#include <linex/smp.h>
+#include <linex/module.h>
 
 #include "tick-internal.h"
 

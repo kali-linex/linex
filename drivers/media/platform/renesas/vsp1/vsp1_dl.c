@@ -7,12 +7,12 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/gfp.h>
+#include <linex/refcount.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
 
 #include "vsp1.h"
 #include "vsp1_dl.h"

@@ -13,9 +13,9 @@
 #ifdef CONFIG_KPROBES
 
 #include <asm-generic/kprobes.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/notifier.h>
+#include <linex/types.h>
+#include <linex/ptrace.h>
+#include <linex/notifier.h>
 
 #define PARISC_KPROBES_BREAK_INSN	0x3ff801f
 #define PARISC_KPROBES_BREAK_INSN2	0x3ff801e

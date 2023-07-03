@@ -4,22 +4,22 @@
  * Copyright (C) 2004-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/completion.h>
+#include <linex/buffer_head.h>
+#include <linex/pagemap.h>
+#include <linex/pagevec.h>
+#include <linex/mpage.h>
+#include <linex/fs.h>
+#include <linex/writeback.h>
+#include <linex/swap.h>
+#include <linex/gfs2_ondisk.h>
+#include <linex/backing-dev.h>
+#include <linex/uio.h>
 #include <trace/events/writeback.h>
-#include <linux/sched/signal.h>
+#include <linex/sched/signal.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -404,7 +404,7 @@ static int gfs2_jdata_writepages(struct address_space *mapping,
 }
 
 /**
- * stuffed_readpage - Fill in a Linux page with stuffed file data
+ * stuffed_readpage - Fill in a Linex page with stuffed file data
  * @ip: the inode
  * @page: the page
  *
@@ -672,7 +672,7 @@ out:
 /**
  * gfs2_release_folio - free the metadata associated with a folio
  * @folio: the folio that's being released
- * @gfp_mask: passed from Linux VFS, ignored by us
+ * @gfp_mask: passed from Linex VFS, ignored by us
  *
  * Calls try_to_free_buffers() to free the buffers and put the folio if the
  * buffers can be released.

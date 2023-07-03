@@ -4,17 +4,17 @@
  *
  * This software has been sponsored by Vyatta Inc. <http://www.vyatta.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/capability.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/netlink.h>
+#include <linex/rculist.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/list.h>
+#include <linex/errno.h>
+#include <linex/capability.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 
@@ -22,9 +22,9 @@
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
-#include <linux/netfilter/nfnetlink_cthelper.h>
+#include <linex/netfilter/nfnetlink.h>
+#include <linex/netfilter/nfnetlink_conntrack.h>
+#include <linex/netfilter/nfnetlink_cthelper.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");

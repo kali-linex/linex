@@ -8,20 +8,20 @@
 
 #define pr_fmt(fmt) "opal-prd: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/poll.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/miscdevice.h>
+#include <linex/fs.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/poll.h>
+#include <linex/mm.h>
+#include <linex/slab.h>
 #include <asm/opal-prd.h>
 #include <asm/opal.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 
 /*

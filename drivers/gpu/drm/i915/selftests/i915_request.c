@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/pm_qos.h>
-#include <linux/sort.h>
+#include <linex/prime_numbers.h>
+#include <linex/pm_qos.h>
+#include <linex/sort.h>
 
 #include "gem/i915_gem_internal.h"
 #include "gem/i915_gem_pm.h"

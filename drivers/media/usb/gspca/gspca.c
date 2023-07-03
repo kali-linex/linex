@@ -12,18 +12,18 @@
 
 #define GSPCA_VERSION	"2.14.0"
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/vmalloc.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/string.h>
+#include <linex/pagemap.h>
+#include <linex/io.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
+#include <linex/uaccess.h>
+#include <linex/ktime.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fh.h>
@@ -32,8 +32,8 @@
 #include "gspca.h"
 
 #if IS_ENABLED(CONFIG_INPUT)
-#include <linux/input.h>
-#include <linux/usb/input.h>
+#include <linex/input.h>
+#include <linex/usb/input.h>
 #endif
 
 /* global values */

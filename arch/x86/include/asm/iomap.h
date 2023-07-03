@@ -6,10 +6,10 @@
  * Copyright © 2008 Ingo Molnar
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
+#include <linex/uaccess.h>
+#include <linex/highmem.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 

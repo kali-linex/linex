@@ -10,17 +10,17 @@
  * Based on the original driver written by Stuart Menefy.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
+#include <linex/rtc.h>
 
 #include <dt-bindings/mfd/st-lpc.h>
 
@@ -228,13 +228,17 @@ static int st_rtc_probe(struct platform_device *pdev)
 	enable_irq_wake(rtc->irq);
 	disable_irq(rtc->irq);
 
-	rtc->clk = devm_clk_get_enabled(&pdev->dev, NULL);
-	if (IS_ERR(rtc->clk))
-		return dev_err_probe(&pdev->dev, PTR_ERR(rtc->clk),
-				     "Unable to request clock\n");
+	rtc->clk = clk_get(&pdev->dev, NULL);
+	if (IS_ERR(rtc->clk)) {
+		dev_err(&pdev->dev, "Unable to request clock\n");
+		return PTR_ERR(rtc->clk);
+	}
+
+	clk_prepare_enable(rtc->clk);
 
 	rtc->clkrate = clk_get_rate(rtc->clk);
 	if (!rtc->clkrate) {
+		clk_disable_unprepare(rtc->clk);
 		dev_err(&pdev->dev, "Unable to fetch clock rate\n");
 		return -EINVAL;
 	}
@@ -248,8 +252,10 @@ static int st_rtc_probe(struct platform_device *pdev)
 	do_div(rtc->rtc_dev->range_max, rtc->clkrate);
 
 	ret = devm_rtc_register_device(rtc->rtc_dev);
-	if (ret)
+	if (ret) {
+		clk_disable_unprepare(rtc->clk);
 		return ret;
+	}
 
 	return 0;
 }

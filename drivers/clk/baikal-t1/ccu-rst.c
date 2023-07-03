@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) "bt1-ccu-rst: " fmt
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/printk.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/printk.h>
+#include <linex/regmap.h>
+#include <linex/reset-controller.h>
+#include <linex/slab.h>
 
 #include <dt-bindings/reset/bt1-ccu.h>
 
@@ -85,7 +85,7 @@ static const struct ccu_rst_info axi_rst_info[] = {
  * sefl-deasserted reset control, which can be activated via the corresponding
  * clock divider register. DDR and PCIe sub-domains can be reset with directly
  * controlled reset signals. Resetting the DDR controller though won't end up
- * well while the Linux kernel is working.
+ * well while the Linex kernel is working.
  */
 static const struct ccu_rst_info sys_rst_info[] = {
 	[CCU_SYS_SATA_REF_RST] = CCU_RST_TRIG(CCU_SYS_SATA_REF_BASE, 1),

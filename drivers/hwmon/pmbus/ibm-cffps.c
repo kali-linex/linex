@@ -3,18 +3,18 @@
  * Copyright 2017 IBM Corp.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pmbus.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/fs.h>
+#include <linex/i2c.h>
+#include <linex/jiffies.h>
+#include <linex/leds.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_device.h>
+#include <linex/pmbus.h>
 
 #include "pmbus.h"
 
@@ -108,7 +108,7 @@ static ssize_t ibm_cffps_debugfs_read_input_history(struct file *file, char __us
 
 		/*
 		 * Use a raw i2c transfer, since we need more bytes
-		 * than Linux I2C supports through smbus xfr (only 32).
+		 * than Linex I2C supports through smbus xfr (only 32).
 		 */
 		rc = i2c_transfer(psu->client->adapter, msg, 2);
 		pmbus_unlock(psu->client);

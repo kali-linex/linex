@@ -4,19 +4,19 @@
  * Copyright (C) 2016 John Muir <john@jmuir.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/hwmon-sysfs.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/jiffies.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
 
 #define	DRIVER_NAME "tmp108"
 

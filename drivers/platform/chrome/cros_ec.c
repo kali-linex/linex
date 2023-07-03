@@ -9,13 +9,13 @@
  * battery charging and regulator control, firmware update.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_data/cros_ec_commands.h>
+#include <linex/platform_data/cros_ec_proto.h>
+#include <linex/slab.h>
+#include <linex/suspend.h>
 
 #include "cros_ec.h"
 

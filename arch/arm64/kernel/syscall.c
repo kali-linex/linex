@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/compiler.h>
-#include <linux/context_tracking.h>
-#include <linux/errno.h>
-#include <linux/nospec.h>
-#include <linux/ptrace.h>
-#include <linux/randomize_kstack.h>
-#include <linux/syscalls.h>
+#include <linex/compiler.h>
+#include <linex/context_tracking.h>
+#include <linex/errno.h>
+#include <linex/nospec.h>
+#include <linex/ptrace.h>
+#include <linex/randomize_kstack.h>
+#include <linex/syscalls.h>
 
 #include <asm/daifflags.h>
 #include <asm/debug-monitors.h>

@@ -7,8 +7,8 @@
  * cec ftn file for Samsung TVOUT driver
  */
 
-#include <linux/io.h>
-#include <linux/device.h>
+#include <linex/io.h>
+#include <linex/device.h>
 
 #include "exynos_hdmi_cec.h"
 #include "regs-cec.h"

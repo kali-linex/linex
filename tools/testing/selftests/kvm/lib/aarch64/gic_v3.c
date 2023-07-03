@@ -3,7 +3,7 @@
  * ARM Generic Interrupt Controller (GIC) v3 support
  */
 
-#include <linux/sizes.h>
+#include <linex/sizes.h>
 
 #include "kvm_util.h"
 #include "processor.h"

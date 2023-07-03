@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2015-2017, 2019-2021 Linaro Limited
  */
-#include <linux/anon_inodes.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
-#include <linux/highmem.h>
+#include <linex/anon_inodes.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/tee_drv.h>
+#include <linex/uaccess.h>
+#include <linex/uio.h>
+#include <linex/highmem.h>
 #include "tee_private.h"
 
 static void shm_put_kernel_pages(struct page **pages, size_t page_count)

@@ -4,16 +4,16 @@
 // Copyright (C) 2022 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linex/acpi.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/module.h>
+#include <linex/mod_devicetable.h>
+#include <linex/of_irq.h>
+#include <linex/pm_runtime.h>
+#include <linex/soundwire/sdw.h>
+#include <linex/soundwire/sdw_registers.h>
+#include <linex/soundwire/sdw_type.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/sdw.h>

@@ -6,12 +6,12 @@
  *  Copyright (C) 2000 Russell King
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/highmem.h>
+#include <linex/dma-direct.h>
+#include <linex/dma-map-ops.h>
 
 #include <asm/tlbflush.h>
 #include <asm/dma.h>

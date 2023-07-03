@@ -8,7 +8,7 @@
 #ifndef _FC_MS_H_
 #define	_FC_MS_H_
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /*
  * Fibre Channel Services - Management Service (MS)

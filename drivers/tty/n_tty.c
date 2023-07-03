@@ -8,7 +8,7 @@
  * anyway...)
  *
  * Note that the open routine for N_TTY is guaranteed never to return
- * an error.  This is because Linux will fall back to setting a line
+ * an error.  This is because Linex will fall back to setting a line
  * to N_TTY if it can not switch to any other line discipline.
  *
  * Written by Theodore Ts'o, Copyright 1994.
@@ -28,25 +28,25 @@
  *		EAGAIN
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/jiffies.h>
-#include <linux/math.h>
-#include <linux/poll.h>
-#include <linux/ratelimit.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linex/bitmap.h>
+#include <linex/bitops.h>
+#include <linex/ctype.h>
+#include <linex/errno.h>
+#include <linex/export.h>
+#include <linex/fcntl.h>
+#include <linex/file.h>
+#include <linex/jiffies.h>
+#include <linex/math.h>
+#include <linex/poll.h>
+#include <linex/ratelimit.h>
+#include <linex/sched.h>
+#include <linex/signal.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/tty.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/vmalloc.h>
 
 #include "tty.h"
 
@@ -411,7 +411,7 @@ static inline int is_continuation(unsigned char c, struct tty_struct *tty)
  * special characters like TAB, CR, LF, etc.), doing OPOST processing and
  * putting the results in the tty driver's write buffer.
  *
- * Note that Linux currently ignores TABDLY, CRDLY, VTDLY, FFDLY and NLDLY.
+ * Note that Linex currently ignores TABDLY, CRDLY, VTDLY, FFDLY and NLDLY.
  * They simply aren't relevant in the world today. If you ever need them, add
  * them here.
  *

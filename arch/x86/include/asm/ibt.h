@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_IBT_H
 #define _ASM_X86_IBT_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /*
  * The rules for enabling IBT are:

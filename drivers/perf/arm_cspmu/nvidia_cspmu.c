@@ -6,7 +6,7 @@
 
 /* Support for NVIDIA specific attributes. */
 
-#include <linux/topology.h>
+#include <linex/topology.h>
 
 #include "nvidia_cspmu.h"
 

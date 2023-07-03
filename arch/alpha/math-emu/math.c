@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
 #include <asm/ptrace.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 #include "sfp-util.h"
 #include <math-emu/soft-fp.h>

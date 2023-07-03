@@ -5,14 +5,14 @@
  * Copyright 2002 SYSGO Real-Time Solutions GmbH
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <linex/mtd/mtd.h>
+#include <linex/mtd/map.h>
+#include <linex/mtd/partitions.h>
 
 #define WINDOW_ADDR0 0x00000000      /* physical properties of flash */
 #define WINDOW_SIZE0 0x00800000

@@ -7,8 +7,8 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <linex/elf.h>
+#include <linex/uaccess.h>
 
 typedef struct fdesc func_desc_t;
 

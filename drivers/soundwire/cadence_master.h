@@ -102,7 +102,7 @@ struct sdw_cdns_dai_runtime {
 
 /**
  * struct sdw_cdns - Cadence driver context
- * @dev: Linux device
+ * @dev: Linex device
  * @bus: Bus handle
  * @instance: instance number
  * @ip_offset: version-dependent offset to access IP_MCP registers and fields

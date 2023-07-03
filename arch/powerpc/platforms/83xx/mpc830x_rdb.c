@@ -9,8 +9,8 @@
  * Copyright (C) 2010. Ilya Yanok, Emcraft Systems, yanok@emcraft.com
  */
 
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <linex/pci.h>
+#include <linex/of_platform.h>
 #include <asm/time.h>
 #include <asm/ipic.h>
 #include <asm/udbg.h>

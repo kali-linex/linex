@@ -8,22 +8,22 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/statfs.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/exportfs.h>
-#include <linux/posix_acl.h>
-#include <linux/pid_namespace.h>
-#include <uapi/linux/magic.h>
+#include <linex/pagemap.h>
+#include <linex/slab.h>
+#include <linex/file.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/fs_context.h>
+#include <linex/fs_parser.h>
+#include <linex/statfs.h>
+#include <linex/random.h>
+#include <linex/sched.h>
+#include <linex/exportfs.h>
+#include <linex/posix_acl.h>
+#include <linex/pid_namespace.h>
+#include <uapi/linex/magic.h>
 
 MODULE_AUTHOR("Miklos Szeredi <miklos@szeredi.hu>");
 MODULE_DESCRIPTION("Filesystem in Userspace");

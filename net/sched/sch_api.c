@@ -11,20 +11,20 @@
  * Jamal Hadi Salim <hadi@nortelnetworks.com>: 990601: ingress support
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
-#include <linux/hashtable.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/kmod.h>
+#include <linex/list.h>
+#include <linex/hrtimer.h>
+#include <linex/slab.h>
+#include <linex/hashtable.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

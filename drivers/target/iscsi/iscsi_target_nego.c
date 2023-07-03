@@ -4,14 +4,14 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linex-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linex/ctype.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
 #include <net/sock.h>
 #include <trace/events/sock.h>
 #include <scsi/iscsi_proto.h>

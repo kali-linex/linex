@@ -5,9 +5,9 @@
  * Copyright (c) 2010 Alexander Sverdlin <subaparts@yandex.ru>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linex/module.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include "cs4271.h"
 

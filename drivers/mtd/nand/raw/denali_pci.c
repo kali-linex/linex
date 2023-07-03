@@ -4,11 +4,11 @@
  * Copyright © 2009-2010, Intel Corporation and its suppliers.
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
 
 #include "denali.h"
 

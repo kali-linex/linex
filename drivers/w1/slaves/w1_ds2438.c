@@ -5,13 +5,13 @@
  * Copyright (c) 2017 Mariusz Bialonczyk <manio@skyboo.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/delay.h>
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 
 #define W1_FAMILY_DS2438		0x26
 

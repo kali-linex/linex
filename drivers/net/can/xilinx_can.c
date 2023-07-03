@@ -9,27 +9,27 @@
  * This driver is developed for Axi CAN IP and for Zynq CANPS Controller.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/errno.h>
+#include <linex/ethtool.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/can/dev.h>
+#include <linex/can/error.h>
+#include <linex/phy/phy.h>
+#include <linex/pm_runtime.h>
 
 #define DRIVER_NAME	"xilinx_can"
 

@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt)	"OF: " fmt
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/amba/bus.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
 
 const struct of_device_id of_default_bus_match_table[] = {
 	{ .compatible = "simple-bus", },
@@ -158,7 +158,7 @@ EXPORT_SYMBOL(of_device_alloc);
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
  * @platform_data: pointer to populate platform_data pointer with
- * @parent: Linux device model parent device.
+ * @parent: Linex device model parent device.
  *
  * Return: Pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -202,7 +202,7 @@ err_clear_flag:
  * of_platform_device_create - Alloc, initialize and register an of_device
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
- * @parent: Linux device model parent device.
+ * @parent: Linex device model parent device.
  *
  * Return: Pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -283,7 +283,7 @@ static struct amba_device *of_amba_device_create(struct device_node *node,
 #endif /* CONFIG_ARM_AMBA */
 
 /*
- * of_dev_lookup() - Given a device node, lookup the preferred Linux name
+ * of_dev_lookup() - Given a device node, lookup the preferred Linex name
  */
 static const struct of_dev_auxdata *of_dev_lookup(const struct of_dev_auxdata *lookup,
 				 struct device_node *np)
@@ -525,7 +525,7 @@ static int __init of_platform_default_populate_init(void)
 		int ret;
 
 		/* Check if we have a MacOS display without a node spec */
-		if (of_property_present(of_chosen, "linux,bootx-noscreen")) {
+		if (of_property_present(of_chosen, "linex,bootx-noscreen")) {
 			/*
 			 * The old code tried to work out which node was the MacOS
 			 * display based on the address. I'm dropping that since the
@@ -549,8 +549,8 @@ static int __init of_platform_default_populate_init(void)
 		 * ignore errors for the rest.
 		 */
 		for_each_node_by_type(node, "display") {
-			if (!of_get_property(node, "linux,opened", NULL) ||
-			    !of_get_property(node, "linux,boot-display", NULL))
+			if (!of_get_property(node, "linex,opened", NULL) ||
+			    !of_get_property(node, "linex,boot-display", NULL))
 				continue;
 			dev = of_platform_device_create(node, "of-display.0", NULL);
 			of_node_put(node);
@@ -564,7 +564,7 @@ static int __init of_platform_default_populate_init(void)
 			char buf[14];
 			const char *of_display_format = "of-display.%d";
 
-			if (!of_get_property(node, "linux,opened", NULL) || node == boot_display)
+			if (!of_get_property(node, "linex,opened", NULL) || node == boot_display)
 				continue;
 			ret = snprintf(buf, sizeof(buf), of_display_format, display_number++);
 			if (ret < sizeof(buf))

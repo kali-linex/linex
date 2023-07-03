@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
 
 #include "mt7603.h"
 

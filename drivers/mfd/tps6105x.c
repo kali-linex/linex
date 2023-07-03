@@ -12,16 +12,16 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6105x.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/i2c.h>
+#include <linex/regmap.h>
+#include <linex/gpio.h>
+#include <linex/spinlock.h>
+#include <linex/slab.h>
+#include <linex/err.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/tps6105x.h>
 
 static struct regmap_config tps6105x_regmap_config = {
 	.reg_bits = 8,

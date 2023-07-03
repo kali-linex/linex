@@ -3,18 +3,18 @@
 // Copyright (c) 2015 MediaTek Inc.
 // Author: Henry Chen <henryc.chen@mediatek.com>
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/mt6311.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/gpio.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/regmap.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/regulator/of_regulator.h>
+#include <linex/regulator/mt6311.h>
+#include <linex/slab.h>
 #include "mt6311-regulator.h"
 
 static const struct regmap_config mt6311_regmap_config = {

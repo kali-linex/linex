@@ -3,19 +3,19 @@
  * Copyright (C) 2021-2022 Intel Corporation
  */
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/rcupdate.h>
-#include <linux/debugfs.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linex/etherdevice.h>
+#include <linex/netdevice.h>
+#include <linex/ieee80211.h>
+#include <linex/rtnetlink.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/mei_cl_bus.h>
+#include <linex/rcupdate.h>
+#include <linex/debugfs.h>
+#include <linex/skbuff.h>
+#include <linex/wait.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
 
 #include <net/cfg80211.h>
 

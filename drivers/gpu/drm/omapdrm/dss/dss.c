@@ -9,30 +9,30 @@
 
 #define DSS_SUBSYS_NAME "DSS"
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gfp.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <linex/debugfs.h>
+#include <linex/dma-mapping.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/export.h>
+#include <linex/err.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/clk.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/platform_device.h>
+#include <linex/pm_runtime.h>
+#include <linex/gfp.h>
+#include <linex/sizes.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_graph.h>
+#include <linex/regulator/consumer.h>
+#include <linex/suspend.h>
+#include <linex/component.h>
+#include <linex/sys_soc.h>
 
 #include "omapdss.h"
 #include "dss.h"

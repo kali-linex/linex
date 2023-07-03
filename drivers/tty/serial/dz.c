@@ -20,34 +20,34 @@
  Qua Jun 27 15:02:26 BRT 2001
  * [27-JUN-2001] Arnaldo Carvalho de Melo <acme@conectiva.com.br> - cleanups
  *
- * Parts (C) 1999 David Airlie, airlied@linux.ie
+ * Parts (C) 1999 David Airlie, airlied@linex.ie
  * [07-SEP-99] Bugfixes
  *
- * [06-Jan-2002] Russell King <rmk@arm.linux.org.uk>
+ * [06-Jan-2002] Russell King <rmk@arm.linex.org.uk>
  * Converted to new serial core
  */
 
 #undef DEBUG_DZ
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linex/bitops.h>
+#include <linex/compiler.h>
+#include <linex/console.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/kernel.h>
+#include <linex/major.h>
+#include <linex/module.h>
+#include <linex/serial.h>
+#include <linex/serial_core.h>
+#include <linex/sysrq.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
 
-#include <linux/atomic.h>
-#include <linux/io.h>
+#include <linex/atomic.h>
+#include <linex/io.h>
 #include <asm/bootinfo.h>
 
 #include <asm/dec/interrupts.h>

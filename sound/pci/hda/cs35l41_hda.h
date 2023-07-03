@@ -10,14 +10,14 @@
 #ifndef __CS35L41_HDA_H__
 #define __CS35L41_HDA_H__
 
-#include <linux/efi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/device.h>
+#include <linex/efi.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/device.h>
 #include <sound/cs35l41.h>
 
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <linex/firmware/cirrus/cs_dsp.h>
+#include <linex/firmware/cirrus/wmfw.h>
 
 struct cs35l41_amp_cal_data {
 	u32 calTarget[2];

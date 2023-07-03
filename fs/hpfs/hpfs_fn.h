@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/fs/hpfs/hpfs_fn.h
+ *  linex/fs/hpfs/hpfs_fn.h
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
@@ -15,12 +15,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/blkdev.h>
+#include <linex/mutex.h>
+#include <linex/pagemap.h>
+#include <linex/buffer_head.h>
+#include <linex/slab.h>
+#include <linex/sched/signal.h>
+#include <linex/blkdev.h>
 #include <asm/unaligned.h>
 
 #include "hpfs.h"

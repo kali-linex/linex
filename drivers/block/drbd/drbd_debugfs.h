@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
 
 #include "drbd_int.h"
 

@@ -6,22 +6,22 @@
  * Copyright (c) 2008, John W. Linville <linville@tuxdriver.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/if_ether.h>
+#include <linex/if_arp.h>
 #include <asm/string.h>
-#include <linux/wireless.h>
+#include <linex/wireless.h>
 
-#include <linux/ieee80211.h>
+#include <linex/ieee80211.h>
 
-#include <linux/crypto.h>
+#include <linex/crypto.h>
 #include <crypto/aead.h>
 
 #include <net/lib80211.h>

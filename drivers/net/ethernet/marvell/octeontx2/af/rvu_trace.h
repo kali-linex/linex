@@ -11,9 +11,9 @@
 #if !defined(__RVU_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __RVU_TRACE_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
-#include <linux/pci.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
+#include <linex/pci.h>
 
 #include "mbox.h"
 

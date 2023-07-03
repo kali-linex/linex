@@ -5,14 +5,14 @@
  * Driver for NI Ettus Research USRP E3x0 Button Driver
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/input.h>
+#include <linex/interrupt.h>
+#include <linex/of.h>
+#include <linex/slab.h>
 
 static irqreturn_t e3x0_button_release_handler(int irq, void *data)
 {

@@ -6,11 +6,11 @@
  * Authors:
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@linex.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@linex.intel.com>
  *  Chandrashekar Devegowda <chandrashekar.devegowda@intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  */
@@ -18,15 +18,15 @@
 #ifndef __T7XX_PORT_H__
 #define __T7XX_PORT_H__
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/wwan.h>
+#include <linex/bits.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/sched.h>
+#include <linex/skbuff.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/wait.h>
+#include <linex/wwan.h>
 
 #include "t7xx_hif_cldma.h"
 #include "t7xx_pci.h"

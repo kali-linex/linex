@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	60xx Single Board Computer Watchdog Timer driver for Linux 2.2.x
+ *	60xx Single Board Computer Watchdog Timer driver for Linex 2.2.x
  *
  *	Based on acquirewdt.c by Alan Cox.
  *
@@ -34,7 +34,7 @@
  *                            added extra printk's for startup problems
  *                            added MODULE_AUTHOR and MODULE_DESCRIPTION info
  *
- *  This WDT driver is different from the other Linux WDT
+ *  This WDT driver is different from the other Linex WDT
  *  drivers in the following ways:
  *  *)  The driver will ping the watchdog by itself, because this
  *      particular WDT has a very short timeout (one second) and it
@@ -44,20 +44,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/types.h>
+#include <linex/timer.h>
+#include <linex/jiffies.h>
+#include <linex/miscdevice.h>
+#include <linex/watchdog.h>
+#include <linex/fs.h>
+#include <linex/ioport.h>
+#include <linex/notifier.h>
+#include <linex/reboot.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 
 #define OUR_NAME "sbc60xxwdt"

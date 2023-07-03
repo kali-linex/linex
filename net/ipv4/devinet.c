@@ -22,37 +22,37 @@
  */
 
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/if_addr.h>
-#include <linux/if_ether.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <linex/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/capability.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/in.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/if_addr.h>
+#include <linex/if_ether.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/notifier.h>
+#include <linex/inetdevice.h>
+#include <linex/igmp.h>
+#include <linex/slab.h>
+#include <linex/hash.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
-#include <linux/kmod.h>
-#include <linux/netconf.h>
+#include <linex/kmod.h>
+#include <linex/netconf.h>
 
 #include <net/arp.h>
 #include <net/ip.h>

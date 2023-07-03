@@ -7,14 +7,14 @@
  * Copyright (c) 2019 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/platform_data/i2c-ocores.h>
-#include <linux/platform_device.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/i2c.h>
+#include <linex/io.h>
+#include <linex/mfd/core.h>
+#include <linex/module.h>
+#include <linex/platform_data/i2c-ocores.h>
+#include <linex/platform_device.h>
 
 #define TQMX86_IOBASE	0x180
 #define TQMX86_IOSIZE	0x20

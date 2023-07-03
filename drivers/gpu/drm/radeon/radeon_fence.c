@@ -29,13 +29,13 @@
  *    Dave Airlie
  */
 
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/kref.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linex/atomic.h>
+#include <linex/firmware.h>
+#include <linex/kref.h>
+#include <linex/sched/signal.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

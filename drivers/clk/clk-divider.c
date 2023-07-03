@@ -7,14 +7,14 @@
  * Adjustable divider clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/log2.h>
+#include <linex/clk-provider.h>
+#include <linex/device.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/string.h>
+#include <linex/log2.h>
 
 /*
  * DOC: basic adjustable divider clock that cannot gate

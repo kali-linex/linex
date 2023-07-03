@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/host.c
+ *  linex/drivers/mmc/core/host.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright (C) 2007-2008 Pierre Ossman
@@ -9,20 +9,20 @@
  *  MMC host class device management
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pagemap.h>
-#include <linux/pm_wakeup.h>
-#include <linux/export.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/idr.h>
+#include <linex/of.h>
+#include <linex/of_gpio.h>
+#include <linex/pagemap.h>
+#include <linex/pm_wakeup.h>
+#include <linex/export.h>
+#include <linex/leds.h>
+#include <linex/slab.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include "core.h"
 #include "crypto.h"

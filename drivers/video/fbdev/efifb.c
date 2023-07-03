@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/screen_info.h>
-#include <linux/pm_runtime.h>
+#include <linex/aperture.h>
+#include <linex/kernel.h>
+#include <linex/efi.h>
+#include <linex/efi-bgrt.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/printk.h>
+#include <linex/screen_info.h>
+#include <linex/pm_runtime.h>
 #include <video/vga.h>
 #include <asm/efi.h>
 #include <drm/drm_utils.h> /* For drm_get_panel_orientation_quirk */

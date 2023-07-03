@@ -29,8 +29,8 @@
  * different sets of cpus trace into different independent sinks.
  */
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linex/bitops.h>
+#include <linex/types.h>
 
 
 /* architecturally we have 128 IDs some of which are reserved */

@@ -9,16 +9,16 @@
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/i2c.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/videodev2.h>
+#include <linex/module.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/atomic.h>
+#include <linex/i2c.h>
+#include <linex/device.h>
+#include <linex/gpio.h>
+#include <linex/videodev2.h>
 
-#include <linux/mfd/si476x-core.h>
+#include <linex/mfd/si476x-core.h>
 
 #include <asm/unaligned.h>
 

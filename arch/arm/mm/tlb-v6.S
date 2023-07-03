@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlb-v6.S
+ *  linex/arch/arm/mm/tlb-v6.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
  *  ARM architecture version 6 TLB handling functions.
  *  These assume a split I/D TLB.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/assembler.h>
 #include <asm/page.h>

@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linex/clk-provider.h>
+#include <linex/bcd.h>
+#include <linex/bitfield.h>
+#include <linex/bitops.h>
+#include <linex/i2c.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/log2.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/regmap.h>
+#include <linex/rtc.h>
 
 #define RV3028_SEC			0x00
 #define RV3028_MIN			0x01
@@ -994,20 +994,13 @@ static const __maybe_unused struct of_device_id rv3028_of_match[] = {
 };
 MODULE_DEVICE_TABLE(of, rv3028_of_match);
 
-static const struct i2c_device_id rv3028_id_table[] = {
-	{ .name = "rv3028", },
-	{ }
-};
-MODULE_DEVICE_TABLE(i2c, rv3028_id_table);
-
 static struct i2c_driver rv3028_driver = {
 	.driver = {
 		.name = "rtc-rv3028",
 		.acpi_match_table = rv3028_i2c_acpi_match,
 		.of_match_table = of_match_ptr(rv3028_of_match),
 	},
-	.id_table	= rv3028_id_table,
-	.probe		= rv3028_probe,
+	.probe_new	= rv3028_probe,
 };
 module_i2c_driver(rv3028_driver);
 

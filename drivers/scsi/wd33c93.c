@@ -6,7 +6,7 @@
  */
 
 /*
- * Drew Eckhardt's excellent 'Generic NCR5380' sources from Linux-PC
+ * Drew Eckhardt's excellent 'Generic NCR5380' sources from Linex-PC
  * provided much of the inspiration and some of the code for this
  * driver. Everything I know about Amiga DMA was gleaned from careful
  * reading of Hamish Mcdonald's original wd33c93 driver; in fact, I
@@ -67,13 +67,13 @@
  *  peter fuerst <post@pfrst.de>  February 2007
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/blkdev.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -98,7 +98,7 @@ MODULE_LICENSE("GPL");
  * 'setup_strings' is a single string used to pass operating parameters and
  * settings from the kernel/module command-line to the driver. 'setup_args[]'
  * is an array of strings that define the compile-time default values for
- * these settings. If Linux boots with an amiboot or insmod command-line,
+ * these settings. If Linex boots with an amiboot or insmod command-line,
  * those settings are combined with 'setup_args[]'. Note that amiboot
  * command-lines are prefixed with "wd33c93=" while insmod uses a
  * "setup_strings=" prefix. The driver recognizes the following keywords

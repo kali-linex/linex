@@ -7,26 +7,26 @@
  * Copyrignt (C) 2006 Michael Ellerman, IBM Corp
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsg_dump.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/sysrq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/sched/signal.h>
+#include <linex/smp.h>
+#include <linex/mm.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
+#include <linex/kallsyms.h>
+#include <linex/kmsg_dump.h>
+#include <linex/cpumask.h>
+#include <linex/export.h>
+#include <linex/sysrq.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/bug.h>
+#include <linex/nmi.h>
+#include <linex/ctype.h>
+#include <linex/highmem.h>
+#include <linex/security.h>
+#include <linex/debugfs.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>
@@ -1880,7 +1880,7 @@ static void excprint(struct pt_regs *fp)
 	if (trap == INTERRUPT_PROGRAM)
 		print_bug_trap(fp);
 
-	printf(linux_banner);
+	printf(linex_banner);
 }
 
 static void prregs(struct pt_regs *fp)

@@ -5,12 +5,12 @@
 #ifndef __NET_NET_NAMESPACE_H
 #define __NET_NET_NAMESPACE_H
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
-#include <linux/uidgid.h>
+#include <linex/atomic.h>
+#include <linex/refcount.h>
+#include <linex/workqueue.h>
+#include <linex/list.h>
+#include <linex/sysctl.h>
+#include <linex/uidgid.h>
 
 #include <net/flow.h>
 #include <net/netns/core.h>
@@ -38,10 +38,10 @@
 #include <net/netns/bpf.h>
 #include <net/netns/mctp.h>
 #include <net/net_trackers.h>
-#include <linux/ns_common.h>
-#include <linux/idr.h>
-#include <linux/skbuff.h>
-#include <linux/notifier.h>
+#include <linex/ns_common.h>
+#include <linex/idr.h>
+#include <linex/skbuff.h>
+#include <linex/notifier.h>
 
 struct user_namespace;
 struct proc_dir_entry;
@@ -190,7 +190,7 @@ struct net {
 #endif
 } __randomize_layout;
 
-#include <linux/seq_file_net.h>
+#include <linex/seq_file_net.h>
 
 /* Init's network namespace */
 extern struct net init_net;
@@ -206,8 +206,8 @@ void net_ns_barrier(void);
 struct ns_common *get_net_ns(struct ns_common *ns);
 struct net *get_net_ns_by_fd(int fd);
 #else /* CONFIG_NET_NS */
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
+#include <linex/sched.h>
+#include <linex/nsproxy.h>
 static inline struct net *copy_net_ns(unsigned long flags,
 	struct user_namespace *user_ns, struct net *old_net)
 {

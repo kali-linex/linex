@@ -10,25 +10,25 @@
  *
  * Derived from the x86 and Alpha versions.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/resume_user_mode.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/mm.h>
+#include <linex/errno.h>
+#include <linex/ptrace.h>
+#include <linex/user.h>
+#include <linex/security.h>
+#include <linex/audit.h>
+#include <linex/signal.h>
+#include <linex/regset.h>
+#include <linex/elf.h>
+#include <linex/resume_user_mode.h>
 
 #include <asm/processor.h>
 #include <asm/ptrace_offsets.h>
 #include <asm/rse.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/unwind.h>
 
 #include "entry.h"

@@ -4,18 +4,18 @@
  *
  *  ISA DMA primitives
  *  Taken from various sources, including:
- *   linux/include/asm/dma.h: Defines for using and allocating dma channels.
+ *   linex/include/asm/dma.h: Defines for using and allocating dma channels.
  *     Written by Hennus Bergman, 1992.
  *     High DMA channel support & info by Hannu Savolainen and John Boyd,
  *     Nov. 1992.
  *   arch/arm/kernel/dma-ebsa285.c
  *   Copyright (C) 1998 Phil Blundell
  */
-#include <linux/dma-map-ops.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <linex/dma-map-ops.h>
+#include <linex/ioport.h>
+#include <linex/init.h>
+#include <linex/dma-mapping.h>
+#include <linex/io.h>
 
 #include <asm/dma.h>
 #include <asm/mach/dma.h>

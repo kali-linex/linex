@@ -27,12 +27,12 @@
 #include "mmu.h"
 #include "xen.h"
 
-#include <linux/cpu.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/sched/cputime.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
+#include <linex/cpu.h>
+#include <linex/kvm_host.h>
+#include <linex/highmem.h>
+#include <linex/sched/cputime.h>
+#include <linex/spinlock.h>
+#include <linex/eventfd.h>
 
 #include <asm/apicdef.h>
 #include <asm/mshyperv.h>
@@ -2739,7 +2739,7 @@ int kvm_get_hv_cpuid(struct kvm_vcpu *vcpu, struct kvm_cpuid2 *cpuid,
 
 		switch (ent->function) {
 		case HYPERV_CPUID_VENDOR_AND_MAX_FUNCTIONS:
-			memcpy(signature, "Linux KVM Hv", 12);
+			memcpy(signature, "Linex KVM Hv", 12);
 
 			ent->eax = HYPERV_CPUID_SYNDBG_PLATFORM_CAPABILITIES;
 			ent->ebx = signature[0];
@@ -2835,7 +2835,7 @@ int kvm_get_hv_cpuid(struct kvm_vcpu *vcpu, struct kvm_cpuid2 *cpuid,
 			break;
 
 		case HYPERV_CPUID_SYNDBG_VENDOR_AND_MAX_FUNCTIONS:
-			memcpy(signature, "Linux KVM Hv", 12);
+			memcpy(signature, "Linex KVM Hv", 12);
 
 			ent->eax = 0;
 			ent->ebx = signature[0];

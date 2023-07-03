@@ -2,7 +2,7 @@
 /*
  * ip_vs_proto.c: transport protocol load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linexvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  * Changes:
@@ -11,17 +11,17 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/gfp.h>
+#include <linex/in.h>
+#include <linex/ip.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
 #include <net/udp.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
+#include <linex/stat.h>
+#include <linex/proc_fs.h>
 
 #include <net/ip_vs.h>
 

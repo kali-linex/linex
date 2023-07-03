@@ -9,15 +9,15 @@
  *  Rajan Vaja <rajan.vaja@xilinx.com>
  */
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <linex/err.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/slab.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linex/firmware/xlnx-zynqmp.h>
 
 #define ZYNQMP_NUM_DOMAINS		(100)
 

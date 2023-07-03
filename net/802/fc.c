@@ -6,23 +6,23 @@
  *		v 1.0 03/22/99
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fcdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linex/uaccess.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/fcdevice.h>
+#include <linex/skbuff.h>
+#include <linex/errno.h>
+#include <linex/timer.h>
+#include <linex/net.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
+#include <linex/export.h>
 #include <net/arp.h>
 
 /*

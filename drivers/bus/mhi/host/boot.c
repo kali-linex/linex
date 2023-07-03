@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The Linex Foundation. All rights reserved.
  *
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/dma-direction.h>
+#include <linex/dma-mapping.h>
+#include <linex/firmware.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/mhi.h>
+#include <linex/module.h>
+#include <linex/random.h>
+#include <linex/slab.h>
+#include <linex/wait.h>
 #include "internal.h"
 
 /* Setup RDDM vector table for RDDM transfer and program RXVEC */

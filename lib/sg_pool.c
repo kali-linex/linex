@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/scatterlist.h>
+#include <linex/mempool.h>
+#include <linex/slab.h>
 
 #define SG_MEMPOOL_NR		ARRAY_SIZE(sg_pools)
 #define SG_MEMPOOL_SIZE		2

@@ -5,9 +5,9 @@
 #ifndef _REG_H_
 #define _REG_H_
 
-#include <linux/types.h>
-#include <linux/log2.h>
-#include <linux/bug.h>
+#include <linex/types.h>
+#include <linex/log2.h>
+#include <linex/bug.h>
 
 /**
  * struct reg - A register descriptor

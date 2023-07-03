@@ -7,14 +7,14 @@
  * Copyright (C) 2018, Aidilab Srl.
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/acpi.h>
+#include <linex/delay.h>
+#include <linex/dmi.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 
 /* CEC Framework */
 #include <media/cec-notifier.h>

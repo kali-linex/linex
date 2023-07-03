@@ -3,13 +3,13 @@
  *  Copyright (c) 2013
  *  Minchan Kim <minchan@kernel.org>
  */
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/bio.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/cpumask.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/bio.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/cpumask.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

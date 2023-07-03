@@ -9,18 +9,18 @@
  * for more details.
  *
  */
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/threads.h>
+#include <linex/init.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/fs.h>
+#include <linex/pagemap.h>
+#include <linex/threads.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

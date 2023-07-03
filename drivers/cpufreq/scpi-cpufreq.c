@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_opp.h>
-#include <linux/scpi_protocol.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linex/clk.h>
+#include <linex/cpu.h>
+#include <linex/cpufreq.h>
+#include <linex/cpumask.h>
+#include <linex/export.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
+#include <linex/pm_opp.h>
+#include <linex/scpi_protocol.h>
+#include <linex/slab.h>
+#include <linex/types.h>
 
 struct scpi_data {
 	struct clk *clk;

@@ -6,9 +6,9 @@
  * Copyright (C) 2012 Jonas Gorski <jonas.gorski@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/platform_device.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_hsspi.h>

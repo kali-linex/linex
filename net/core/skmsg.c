@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2017 - 2018 Covalent IO, Inc. http://covalent.io */
 
-#include <linux/skmsg.h>
-#include <linux/skbuff.h>
-#include <linux/scatterlist.h>
+#include <linex/skmsg.h>
+#include <linex/skbuff.h>
+#include <linex/scatterlist.h>
 
 #include <net/sock.h>
 #include <net/tcp.h>

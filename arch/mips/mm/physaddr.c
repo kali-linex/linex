@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bug.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/mmdebug.h>
-#include <linux/mm.h>
+#include <linex/bug.h>
+#include <linex/export.h>
+#include <linex/types.h>
+#include <linex/mmdebug.h>
+#include <linex/mm.h>
 
 #include <asm/addrspace.h>
 #include <asm/sections.h>

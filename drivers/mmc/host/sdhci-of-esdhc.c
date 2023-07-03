@@ -10,19 +10,19 @@
  *	    Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/sys_soc.h>
-#include <linux/clk.h>
-#include <linux/ktime.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/sys_soc.h>
+#include <linex/clk.h>
+#include <linex/ktime.h>
+#include <linex/dma-mapping.h>
+#include <linex/iopoll.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
 

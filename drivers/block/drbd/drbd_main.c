@@ -16,32 +16,32 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/drbd.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/jiffies.h>
+#include <linex/drbd.h>
+#include <linex/uaccess.h>
 #include <asm/types.h>
 #include <net/sock.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/signal.h>
+#include <linex/ctype.h>
+#include <linex/mutex.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/proc_fs.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/memcontrol.h>
+#include <linex/mm_inline.h>
+#include <linex/slab.h>
+#include <linex/random.h>
+#include <linex/reboot.h>
+#include <linex/notifier.h>
+#include <linex/kthread.h>
+#include <linex/workqueue.h>
+#include <linex/unistd.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/signal.h>
 
-#include <linux/drbd_limits.h>
+#include <linex/drbd_limits.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h" /* only for _req_mod in tl_release and tl_clear */
@@ -63,7 +63,7 @@ MODULE_PARM_DESC(minor_count, "Approximate number of drbd devices ("
 		 __stringify(DRBD_MINOR_COUNT_MIN) "-" __stringify(DRBD_MINOR_COUNT_MAX) ")");
 MODULE_ALIAS_BLOCKDEV_MAJOR(DRBD_MAJOR);
 
-#include <linux/moduleparam.h>
+#include <linex/moduleparam.h>
 /* thanks to these macros, if compiled into the kernel (not-module),
  * these become boot parameters (e.g., drbd.minor_count) */
 

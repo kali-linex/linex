@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_unseal.c
+ *  linex/net/sunrpc/gss_krb5_unseal.c
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/gssapi/krb5/k5unseal.c
  *
@@ -58,10 +58,10 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/crypto.h>
+#include <linex/types.h>
+#include <linex/jiffies.h>
+#include <linex/sunrpc/gss_krb5.h>
+#include <linex/crypto.h>
 
 #include "gss_krb5_internal.h"
 

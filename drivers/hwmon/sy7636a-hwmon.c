@@ -8,15 +8,15 @@
  *          Alistair Francis <alistair@alistair23.me>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/machine.h>
+#include <linex/err.h>
+#include <linex/hwmon.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/regulator/machine.h>
 
-#include <linux/mfd/sy7636a.h>
+#include <linex/mfd/sy7636a.h>
 
 static int sy7636a_read(struct device *dev, enum hwmon_sensor_types type,
 			u32 attr, int channel, long *temp)

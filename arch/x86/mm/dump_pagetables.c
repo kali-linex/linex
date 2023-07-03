@@ -5,18 +5,18 @@
  *
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linex.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/kasan.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/ptdump.h>
+#include <linex/debugfs.h>
+#include <linex/kasan.h>
+#include <linex/mm.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/seq_file.h>
+#include <linex/highmem.h>
+#include <linex/pci.h>
+#include <linex/ptdump.h>
 
 #include <asm/e820/types.h>
 

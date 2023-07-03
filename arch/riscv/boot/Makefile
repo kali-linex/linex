@@ -27,19 +27,19 @@ ifeq ($(CONFIG_XIP_KERNEL),y)
 quiet_cmd_mkxip = $(quiet_cmd_objcopy)
 cmd_mkxip = $(cmd_objcopy)
 
-$(obj)/xipImage: vmlinux FORCE
+$(obj)/xipImage: vmlinex FORCE
 	$(call if_changed,mkxip)
 	@$(kecho) '  Physical Address of xipImage: $(CONFIG_XIP_PHYS_ADDR)'
 
 endif
 
 ifdef CONFIG_RELOCATABLE
-vmlinux.relocs: vmlinux
-	@ (! [ -f vmlinux.relocs ] && echo "vmlinux.relocs can't be found, please remove vmlinux and try again") || true
+vmlinex.relocs: vmlinex
+	@ (! [ -f vmlinex.relocs ] && echo "vmlinex.relocs can't be found, please remove vmlinex and try again") || true
 
-$(obj)/Image: vmlinux.relocs FORCE
+$(obj)/Image: vmlinex.relocs FORCE
 else
-$(obj)/Image: vmlinux FORCE
+$(obj)/Image: vmlinex FORCE
 endif
 	$(call if_changed,objcopy)
 

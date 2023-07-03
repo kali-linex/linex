@@ -2,19 +2,19 @@
 /*
  * (C) 2007 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/gen_stats.h>
-#include <linux/jhash.h>
-#include <linux/rtnetlink.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/skbuff.h>
+#include <linex/gen_stats.h>
+#include <linex/jhash.h>
+#include <linex/rtnetlink.h>
+#include <linex/random.h>
+#include <linex/slab.h>
 #include <net/gen_stats.h>
 #include <net/netlink.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_RATEEST.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter/xt_RATEEST.h>
 #include <net/netfilter/xt_rateest.h>
 
 #define RATEEST_HSIZE	16

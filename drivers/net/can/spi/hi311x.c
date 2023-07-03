@@ -3,7 +3,7 @@
  *
  * Copyright(C) Timesys Corporation 2016
  *
- * Based on Microchip 251x CAN Controller (mcp251x) Linux kernel driver
+ * Based on Microchip 251x CAN Controller (mcp251x) Linex kernel driver
  * Copyright 2009 Christian Pellegrin EVOL S.r.l.
  * Copyright 2007 Raymarine UK, Ltd. All Rights Reserved.
  * Copyright 2006 Arcom Control Systems Ltd.
@@ -14,26 +14,26 @@
  * Copyright 2007
  */
 
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <linex/can/core.h>
+#include <linex/can/dev.h>
+#include <linex/clk.h>
+#include <linex/completion.h>
+#include <linex/delay.h>
+#include <linex/device.h>
+#include <linex/ethtool.h>
+#include <linex/freezer.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/regulator/consumer.h>
+#include <linex/slab.h>
+#include <linex/spi/spi.h>
+#include <linex/uaccess.h>
 
 #define HI3110_MASTER_RESET 0x56
 #define HI3110_READ_CTRL0 0xD2

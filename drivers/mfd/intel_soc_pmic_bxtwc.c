@@ -5,16 +5,16 @@
  * Copyright (C) 2015-2017, 2022 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/mfd/intel_soc_pmic_bxtwc.h>
-#include <linux/module.h>
+#include <linex/acpi.h>
+#include <linex/bits.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/mfd/core.h>
+#include <linex/mfd/intel_soc_pmic.h>
+#include <linex/mfd/intel_soc_pmic_bxtwc.h>
+#include <linex/module.h>
 
 #include <asm/intel_scu_ipc.h>
 

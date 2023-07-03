@@ -2,16 +2,16 @@
 /*
  * arc_hostlink.c: Pseudo-driver for Metaware provided "hostlink" facility
  *
- * Allows Linux userland access to host in absence of any peripherals.
+ * Allows Linex userland access to host in absence of any peripherals.
  *
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/fs.h>		/* file_operations */
-#include <linux/miscdevice.h>
-#include <linux/mm.h>		/* VM_IO */
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linex/fs.h>		/* file_operations */
+#include <linex/miscdevice.h>
+#include <linex/mm.h>		/* VM_IO */
+#include <linex/module.h>
+#include <linex/uaccess.h>
 
 static unsigned char __HOSTLINK__[4 * PAGE_SIZE] __aligned(PAGE_SIZE);
 

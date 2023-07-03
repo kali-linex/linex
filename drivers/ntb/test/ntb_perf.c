@@ -42,7 +42,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Perf Linux driver
+ * PCIe NTB Perf Linex driver
  */
 
 /*
@@ -67,22 +67,22 @@
  * root@self# cat $DBG_DIR/run
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/ntb.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/wait.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/pci.h>
+#include <linex/ktime.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/sizes.h>
+#include <linex/workqueue.h>
+#include <linex/debugfs.h>
+#include <linex/random.h>
+#include <linex/ntb.h>
 
 #define DRIVER_NAME		"ntb_perf"
 #define DRIVER_VERSION		"2.0"

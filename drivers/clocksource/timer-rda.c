@@ -11,8 +11,8 @@
  * used for clockevents and HWTIMER is used for clocksource.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
 
 #include "timer-of.h"
 

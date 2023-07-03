@@ -6,10 +6,10 @@
 
 #include "clk-kona.h"
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/clk-provider.h>
 
 /*
  * "Policies" affect the frequencies of bus clocks provided by a

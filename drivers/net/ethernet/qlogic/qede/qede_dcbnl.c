@@ -4,9 +4,9 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
 #include <net/dcbnl.h>
 #include "qede.h"
 

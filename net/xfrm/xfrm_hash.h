@@ -2,9 +2,9 @@
 #ifndef _XFRM_HASH_H
 #define _XFRM_HASH_H
 
-#include <linux/xfrm.h>
-#include <linux/socket.h>
-#include <linux/jhash.h>
+#include <linex/xfrm.h>
+#include <linex/socket.h>
+#include <linex/jhash.h>
 
 static inline unsigned int __xfrm4_addr_hash(const xfrm_address_t *addr)
 {

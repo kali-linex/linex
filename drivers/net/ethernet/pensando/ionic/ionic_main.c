@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/printk.h>
-#include <linux/dynamic_debug.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/utsname.h>
+#include <linex/printk.h>
+#include <linex/dynamic_debug.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/utsname.h>
 #include <generated/utsrelease.h>
-#include <linux/ctype.h>
+#include <linex/ctype.h>
 
 #include "ionic.h"
 #include "ionic_bus.h"
@@ -553,7 +553,7 @@ int ionic_identify(struct ionic *ionic)
 
 	memset(ident, 0, sizeof(*ident));
 
-	ident->drv.os_type = cpu_to_le32(IONIC_OS_TYPE_LINUX);
+	ident->drv.os_type = cpu_to_le32(IONIC_OS_TYPE_LINEX);
 	strncpy(ident->drv.driver_ver_str, UTS_RELEASE,
 		sizeof(ident->drv.driver_ver_str) - 1);
 

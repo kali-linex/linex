@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/crc64.h>
-#include <linux/module.h>
+#include <linex/crc64.h>
+#include <linex/module.h>
 #include <crypto/internal/hash.h>
 #include <asm/unaligned.h>
 

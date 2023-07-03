@@ -9,11 +9,11 @@
  * Copyright (C) 2012 Marvell
  * Chao Xie <xiechao.mail@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
 
 #include <dt-bindings/clock/marvell,pxa1928.h>
 

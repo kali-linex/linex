@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Linux network driver for QLogic BR-series Converged Network Adapter.
+ * Linex network driver for QLogic BR-series Converged Network Adapter.
  */
 /*
  * Copyright (c) 2006-2014 Brocade Communications Systems, Inc.
@@ -12,16 +12,16 @@
 #ifndef __CNA_H__
 #define __CNA_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/bitops.h>
+#include <linex/timer.h>
+#include <linex/interrupt.h>
+#include <linex/if_vlan.h>
+#include <linex/if_ether.h>
 
 #define bfa_sm_fault(__event)    do {                            \
 	pr_err("SM Assertion failure: %s: %d: event = %d\n",	\

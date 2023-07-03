@@ -15,23 +15,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/platform_device.h>
+#include <linex/types.h>
+#include <linex/watchdog.h>
+#include <linex/clk.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/uaccess.h>
 
 #define DRIVER_NAME	"ath79-wdt"
 

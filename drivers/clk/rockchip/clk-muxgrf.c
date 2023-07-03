@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/regmap.h>
+#include <linex/clk.h>
+#include <linex/clk-provider.h>
 #include "clk.h"
 
 struct rockchip_muxgrf_clock {

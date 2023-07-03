@@ -6,11 +6,11 @@
  * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
  *
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
+#include <linex/auxiliary_bus.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/reset-controller.h>
 #include <dt-bindings/clock/microchip,mpfs-clock.h>
 #include <soc/microchip/mpfs.h>
 

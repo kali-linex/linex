@@ -5,10 +5,10 @@
  * Copyright (C) 2010 Broadcom Corporation.
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/sched/signal.h>
+#include <linex/pci.h>
+#include <linex/delay.h>
+#include <linex/export.h>
+#include <linex/sched/signal.h>
 #include <asm/unaligned.h>
 #include "pci.h"
 

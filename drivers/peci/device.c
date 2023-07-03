@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2018-2021 Intel Corporation
 
-#include <linux/bitfield.h>
-#include <linux/peci.h>
-#include <linux/peci-cpu.h>
-#include <linux/slab.h>
+#include <linex/bitfield.h>
+#include <linex/peci.h>
+#include <linex/peci-cpu.h>
+#include <linex/slab.h>
 
 #include "internal.h"
 

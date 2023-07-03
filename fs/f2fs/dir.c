@@ -6,10 +6,10 @@
  *             http://www.samsung.com/
  */
 #include <asm/unaligned.h>
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/sched/signal.h>
-#include <linux/unicode.h>
+#include <linex/fs.h>
+#include <linex/f2fs_fs.h>
+#include <linex/sched/signal.h>
+#include <linex/unicode.h>
 #include "f2fs.h"
 #include "node.h"
 #include "acl.h"

@@ -9,19 +9,19 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/dma-direct.h>
-#include <linux/swiotlb.h>
-#include <linux/mem_encrypt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_anchor.h>
-#include <linux/cc_platform.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/dma-direct.h>
+#include <linex/swiotlb.h>
+#include <linex/mem_encrypt.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/virtio_config.h>
+#include <linex/virtio_anchor.h>
+#include <linex/cc_platform.h>
 
 #include <asm/tlbflush.h>
 #include <asm/fixmap.h>

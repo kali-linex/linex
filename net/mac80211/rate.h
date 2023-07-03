@@ -9,9 +9,9 @@
 #ifndef IEEE80211_RATE_H
 #define IEEE80211_RATE_H
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "sta_info.h"

@@ -6,27 +6,27 @@
 // Author: Argus Lin <argus.lin@mediatek.com>
 //
 
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/input.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
-#include <linux/sched/clock.h>
-#include <linux/workqueue.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <linex/of_gpio.h>
+#include <linex/of.h>
+#include <linex/of_irq.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/input.h>
+#include <linex/kthread.h>
+#include <linex/io.h>
+#include <linex/sched/clock.h>
+#include <linex/workqueue.h>
+#include <linex/timer.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/init.h>
+#include <linex/irqdomain.h>
+#include <linex/irq.h>
+#include <linex/regmap.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
-#include <linux/mfd/mt6397/core.h>
+#include <linex/mfd/mt6397/core.h>
 
 #include "mt6359-accdet.h"
 #include "mt6359.h"

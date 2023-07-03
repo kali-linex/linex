@@ -6,12 +6,12 @@
  * Author: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/psci.h>
+#include <linex/acpi.h>
+#include <linex/cpuidle.h>
+#include <linex/cpu_pm.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/psci.h>
 
 #ifdef CONFIG_ACPI_PROCESSOR_IDLE
 

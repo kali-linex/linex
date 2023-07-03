@@ -6,15 +6,15 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/ptrace.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/sched.h>
+#include <linex/interrupt.h>
+#include <linex/list.h>
+#include <linex/ptrace.h>
+#include <linex/wait.h>
+#include <linex/mm.h>
+#include <linex/io.h>
+#include <linex/mutex.h>
+#include <linex/device.h>
+#include <linex/sched.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

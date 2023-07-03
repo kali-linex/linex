@@ -6,33 +6,33 @@
  * Copyright (C) 2001 PPC64 Team, IBM Corp
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/seq_file.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/utsname.h>
-#include <linux/tty.h>
-#include <linux/root_dev.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/unistd.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/lockdep.h>
-#include <linux/memory.h>
-#include <linux/nmi.h>
-#include <linux/pgtable.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linex/export.h>
+#include <linex/string.h>
+#include <linex/sched.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/reboot.h>
+#include <linex/delay.h>
+#include <linex/initrd.h>
+#include <linex/seq_file.h>
+#include <linex/ioport.h>
+#include <linex/console.h>
+#include <linex/utsname.h>
+#include <linex/tty.h>
+#include <linex/root_dev.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/unistd.h>
+#include <linex/serial.h>
+#include <linex/serial_8250.h>
+#include <linex/memblock.h>
+#include <linex/pci.h>
+#include <linex/lockdep.h>
+#include <linex/memory.h>
+#include <linex/nmi.h>
+#include <linex/pgtable.h>
+#include <linex/of.h>
+#include <linex/of_fdt.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/kvm_guest.h>
@@ -293,7 +293,7 @@ static void cpu_ready_for_interrupts(void)
 
 	/*
 	 * Set HFSCR:TM based on CPU features:
-	 * In the special case of TM no suspend (P9N DD2.1), Linux is
+	 * In the special case of TM no suspend (P9N DD2.1), Linex is
 	 * told TM is off via the dt-ftrs but told to (partially) use
 	 * it via OPAL_REINIT_CPUS_TM_SUSPEND_DISABLED. So HFSCR[TM]
 	 * will be off from dt-ftrs but we need to turn it on for the
@@ -506,7 +506,7 @@ static bool use_spinloop(void)
 	 * When book3e boots from kexec, the ePAPR spin table does
 	 * not get used.
 	 */
-	return of_property_read_bool(of_chosen, "linux,booted-from-kexec");
+	return of_property_read_bool(of_chosen, "linex,booted-from-kexec");
 }
 
 void smp_release_cpus(void)

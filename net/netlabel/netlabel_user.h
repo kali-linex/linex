@@ -16,10 +16,10 @@
 #ifndef _NETLABEL_USER_H
 #define _NETLABEL_USER_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/capability.h>
-#include <linux/audit.h>
+#include <linex/types.h>
+#include <linex/skbuff.h>
+#include <linex/capability.h>
+#include <linex/audit.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/netlabel.h>

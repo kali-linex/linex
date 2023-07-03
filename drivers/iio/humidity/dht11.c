@@ -5,26 +5,26 @@
  * Copyright (c) Harald Geyer <harald@ccbib.org>
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/timekeeping.h>
+#include <linex/err.h>
+#include <linex/interrupt.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/printk.h>
+#include <linex/slab.h>
+#include <linex/sysfs.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/wait.h>
+#include <linex/bitops.h>
+#include <linex/completion.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/timekeeping.h>
 
-#include <linux/iio/iio.h>
+#include <linex/iio/iio.h>
 
 #define DRIVER_NAME	"dht11"
 

@@ -7,22 +7,22 @@
  * Copyright:	Jamal Hadi Salim (2002-13)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_ipt.h>
+#include <linex/tc_act/tc_ipt.h>
 #include <net/tc_act/tc_ipt.h>
 #include <net/tc_wrapper.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <linex/netfilter_ipv4/ip_tables.h>
 
 
 static struct tc_action_ops act_ipt_ops;

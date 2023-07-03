@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/memory.h>
-#include <linux/static_call.h>
+#include <linex/memory.h>
+#include <linex/static_call.h>
 
 #include <asm/code-patching.h>
 

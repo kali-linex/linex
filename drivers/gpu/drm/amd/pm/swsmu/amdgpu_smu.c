@@ -22,8 +22,8 @@
 
 #define SWSMU_CODE_LAYER_L1
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
+#include <linex/firmware.h>
+#include <linex/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_smu.h"

@@ -6,20 +6,20 @@
  *
  *  Copyright (C) 2017 Sudip Mukherjee, All Rights Reserved.
  */
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/property.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/8250_pci.h>
-#include <linux/delay.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/property.h>
+#include <linex/serial_core.h>
+#include <linex/serial_reg.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/tty.h>
+#include <linex/8250_pci.h>
+#include <linex/delay.h>
 
 #include <asm/byteorder.h>
 

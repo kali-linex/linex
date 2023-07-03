@@ -5,12 +5,12 @@
  * Copyright (C) 2022 Advanced Micro Devices, Inc.
  */
 
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linex/edac.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
 
 #include "edac_module.h"
 

@@ -116,12 +116,12 @@
  *   Copyright (c) 2002 - 2004 Karsten Wiese
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/usb.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

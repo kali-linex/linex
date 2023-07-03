@@ -10,14 +10,14 @@
 
 #undef DEBUG
 
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/mount.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <linex/fs.h>
+#include <linex/fsnotify.h>
+#include <linex/mount.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/err.h>
 
-#include <linux/configfs.h>
+#include <linex/configfs.h>
 #include "configfs_internal.h"
 
 /*

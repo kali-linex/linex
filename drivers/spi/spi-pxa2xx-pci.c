@@ -5,15 +5,15 @@
  *
  * Copyright (C) 2016, 2021 Intel Corporation
  */
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linex/clk-provider.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
 
-#include <linux/spi/pxa2xx_spi.h>
+#include <linex/spi/pxa2xx_spi.h>
 
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-dw.h>
+#include <linex/dmaengine.h>
+#include <linex/platform_data/dma-dw.h>
 
 #define PCI_DEVICE_ID_INTEL_QUARK_X1000		0x0935
 #define PCI_DEVICE_ID_INTEL_BYT			0x0f0e

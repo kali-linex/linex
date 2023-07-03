@@ -10,15 +10,15 @@
  *  Derived from drivers/gpio/pca953x.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/max732x.h>
-#include <linux/of.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/string.h>
+#include <linex/gpio/driver.h>
+#include <linex/interrupt.h>
+#include <linex/i2c.h>
+#include <linex/platform_data/max732x.h>
+#include <linex/of.h>
 
 
 /*

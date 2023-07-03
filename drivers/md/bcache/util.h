@@ -3,15 +3,15 @@
 #ifndef _BCACHE_UTIL_H
 #define _BCACHE_UTIL_H
 
-#include <linux/blkdev.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/clock.h>
-#include <linux/llist.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/crc64.h>
+#include <linex/blkdev.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/sched/clock.h>
+#include <linex/llist.h>
+#include <linex/ratelimit.h>
+#include <linex/vmalloc.h>
+#include <linex/workqueue.h>
+#include <linex/crc64.h>
 
 #include "closure.h"
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // error-inject.c: Function-level error injection table
-#include <linux/error-injection.h>
-#include <linux/debugfs.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linex/error-injection.h>
+#include <linex/debugfs.h>
+#include <linex/kallsyms.h>
+#include <linex/kprobes.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/list.h>
+#include <linex/slab.h>
 #include <asm/sections.h>
 
 /* Whitelist of symbols that can be overridden for error injection. */

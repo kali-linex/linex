@@ -5,8 +5,8 @@
 #ifndef _ASM_TIME_H
 #define _ASM_TIME_H
 
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
 #include <asm/loongarch.h>
 
 extern u64 cpu_clock_freq;

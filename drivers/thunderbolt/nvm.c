@@ -3,12 +3,12 @@
  * NVM helpers
  *
  * Copyright (C) 2020, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linex.intel.com>
  */
 
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linex/idr.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
 
 #include "tb.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Roccat Ryos driver for Linux
+ * Roccat Ryos driver for Linex
  *
  * Copyright (c) 2013 Stefan Achatz <erazor_de@users.sourceforge.net>
  */
@@ -8,13 +8,13 @@
 /*
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hid-roccat.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/input.h>
+#include <linex/hid.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/hid-roccat.h>
 #include "hid-ids.h"
 #include "hid-roccat-common.h"
 

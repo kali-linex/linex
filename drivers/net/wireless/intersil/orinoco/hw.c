@@ -2,11 +2,11 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/if_arp.h>
-#include <linux/ieee80211.h>
-#include <linux/wireless.h>
+#include <linex/kernel.h>
+#include <linex/device.h>
+#include <linex/if_arp.h>
+#include <linex/ieee80211.h>
+#include <linex/wireless.h>
 #include <net/cfg80211.h>
 #include "hermes.h"
 #include "hermes_rid.h"

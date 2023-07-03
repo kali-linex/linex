@@ -5,9 +5,9 @@
  * Copyright (c) 2017 Red Hat, Inc. -- Jiri Benc <jbenc@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/skbuff.h>
 #include <net/gso.h>
 #include <net/nsh.h>
 #include <net/tun_proto.h>

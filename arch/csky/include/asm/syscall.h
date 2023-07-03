@@ -3,10 +3,10 @@
 #ifndef __ASM_SYSCALL_H
 #define __ASM_SYSCALL_H
 
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <linex/sched.h>
+#include <linex/err.h>
 #include <abi/regdef.h>
-#include <uapi/linux/audit.h>
+#include <uapi/linex/audit.h>
 
 extern void *sys_call_table[];
 

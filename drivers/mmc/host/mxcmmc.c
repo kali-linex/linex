@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
+ *  linex/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
  *
  *  This is a driver for the SDHC controller found in Freescale MX2/MX3
  *  SoCs. It is basically the same hardware as found on MX1 (imxmmc.c).
@@ -13,33 +13,33 @@
  *  derived from pxamci.c by Russell King
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/ioport.h>
+#include <linex/platform_device.h>
+#include <linex/highmem.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/blkdev.h>
+#include <linex/dma-mapping.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/card.h>
+#include <linex/delay.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/regulator/consumer.h>
+#include <linex/dmaengine.h>
+#include <linex/types.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_dma.h>
+#include <linex/mmc/slot-gpio.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
-#include <linux/platform_data/mmc-mxcmmc.h>
+#include <linex/platform_data/mmc-mxcmmc.h>
 
-#include <linux/dma/imx-dma.h>
+#include <linex/dma/imx-dma.h>
 
 #define DRIVER_NAME "mxc-mmc"
 #define MXCMCI_TIMEOUT_MS 10000

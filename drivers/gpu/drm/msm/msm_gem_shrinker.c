@@ -4,8 +4,8 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/sched/mm.h>
 
 #include "msm_drv.h"
 #include "msm_gem.h"

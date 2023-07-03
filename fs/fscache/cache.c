@@ -6,8 +6,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linex/export.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 static LIST_HEAD(fscache_caches);

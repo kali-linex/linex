@@ -2,7 +2,7 @@
 #ifndef _SPARC_FB_H_
 #define _SPARC_FB_H_
 
-#include <linux/io.h>
+#include <linex/io.h>
 
 struct fb_info;
 struct file;

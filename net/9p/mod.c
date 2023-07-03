@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/moduleparam.h>
+#include <linex/module.h>
+#include <linex/kmod.h>
+#include <linex/errno.h>
+#include <linex/sched.h>
+#include <linex/moduleparam.h>
 #include <net/9p/9p.h>
-#include <linux/fs.h>
-#include <linux/parser.h>
+#include <linex/fs.h>
+#include <linex/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linex/list.h>
+#include <linex/spinlock.h>
 
 #ifdef CONFIG_NET_9P_DEBUG
 unsigned int p9_debug_level;	/* feature-rific global debug level  */

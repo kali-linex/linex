@@ -19,22 +19,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/smp.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/security.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/fcntl.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/smp.h>
+#include <linex/major.h>
+#include <linex/fs.h>
+#include <linex/device.h>
+#include <linex/cpu.h>
+#include <linex/notifier.h>
+#include <linex/uaccess.h>
+#include <linex/gfp.h>
+#include <linex/security.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr.h>
@@ -101,7 +101,7 @@ static int filter_write(u32 reg)
 
 	pr_warn("Write to unrecognized MSR 0x%x by %s (pid: %d).\n",
 	        reg, current->comm, current->pid);
-	pr_warn("See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.\n");
+	pr_warn("See https://git.kernel.org/pub/scm/linex/kernel/git/tip/tip.git/about for details.\n");
 
 	return 0;
 }

@@ -7,10 +7,10 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <limits.h>
-#include <linux/const.h>
-#include <linux/if_ether.h>
-#include <linux/ioam6.h>
-#include <linux/ipv6.h>
+#include <linex/const.h>
+#include <linex/if_ether.h>
+#include <linex/ioam6.h>
+#include <linex/ipv6.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>

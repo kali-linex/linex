@@ -3,14 +3,14 @@
  * Functions related to interrupt-poll handling in the block layer. This
  * is similar to NAPI for network devices.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/irq_poll.h>
-#include <linux/delay.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/bio.h>
+#include <linex/interrupt.h>
+#include <linex/cpu.h>
+#include <linex/irq_poll.h>
+#include <linex/delay.h>
 
 static unsigned int irq_poll_budget __read_mostly = 256;
 

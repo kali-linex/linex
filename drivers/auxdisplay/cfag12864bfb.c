@@ -9,14 +9,14 @@
  *        Date: 2006-10-31
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/cfag12864b.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/fb.h>
+#include <linex/mm.h>
+#include <linex/platform_device.h>
+#include <linex/cfag12864b.h>
 
 #define CFAG12864BFB_NAME "cfag12864bfb"
 

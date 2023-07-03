@@ -5,10 +5,10 @@
  * All rights reserved.
  */
 
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <linex/netdevice.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/if_vlan.h>
 #include <net/checksum.h>
 #include "netxen_nic.h"
 #include "netxen_nic_hw.h"
@@ -1098,7 +1098,7 @@ netxen_validate_firmware(struct netxen_adapter *adapter)
 
 	file_fw_ver = NETXEN_DECODE_VERSION(val);
 
-	if ((_major(file_fw_ver) > _NETXEN_NIC_LINUX_MAJOR) ||
+	if ((_major(file_fw_ver) > _NETXEN_NIC_LINEX_MAJOR) ||
 	    (file_fw_ver < min_ver)) {
 		dev_err(&pdev->dev,
 				"%s: firmware version %d.%d.%d unsupported\n",

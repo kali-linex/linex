@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_arp/arp_tables.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/netfilter/x_tables.h>
+#include <linex/netfilter_arp/arp_tables.h>
+#include <linex/slab.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("David S. Miller <davem@redhat.com>");

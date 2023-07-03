@@ -5,11 +5,11 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#ifndef LINUX_CEC_PIN_PRIV_H
-#define LINUX_CEC_PIN_PRIV_H
+#ifndef LINEX_CEC_PIN_PRIV_H
+#define LINEX_CEC_PIN_PRIV_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
 #include <media/cec-pin.h>
 
 #define call_pin_op(pin, op, arg...)					\

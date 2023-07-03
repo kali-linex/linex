@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2016 Broadcom
 
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/reboot.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/reboot.h>
 
 #define RSTMGR_REG_WR_ACCESS_OFFSET	0
 #define RSTMGR_REG_CHIP_SOFT_RST_OFFSET	4

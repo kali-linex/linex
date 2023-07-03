@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/goldfish.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/clocksource.h>
+#include <linex/clockchips.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/goldfish.h>
 #include <clocksource/timer-goldfish.h>
 
 struct goldfish_timer {

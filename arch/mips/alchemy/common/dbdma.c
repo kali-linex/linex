@@ -30,14 +30,14 @@
  *
  */
 
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
+#include <linex/dma-map-ops.h> /* for dma_default_coherent */
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/interrupt.h>
+#include <linex/export.h>
+#include <linex/syscore_ops.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>
 

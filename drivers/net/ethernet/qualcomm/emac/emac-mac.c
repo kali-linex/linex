@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2016, The Linex Foundation. All rights reserved.
  */
 
 /* Qualcomm Technologies, Inc. EMAC Ethernet Controller MAC layer support
  */
 
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/jiffies.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <linex/tcp.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/crc32.h>
+#include <linex/if_vlan.h>
+#include <linex/jiffies.h>
+#include <linex/phy.h>
+#include <linex/of.h>
 #include <net/ip6_checksum.h>
 #include "emac.h"
 #include "emac-sgmii.h"

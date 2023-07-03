@@ -10,13 +10,13 @@
 
         中文版維護者： 賈威威  Harry Wei <harryxiyou@gmail.com>
         中文版翻譯者： 賈威威  Harry Wei <harryxiyou@gmail.com>
-                       時奎亮  Alex Shi <alex.shi@linux.alibaba.com>
+                       時奎亮  Alex Shi <alex.shi@linex.alibaba.com>
         中文版校譯者： Yinglin Luan <synmyth@gmail.com>
         	       Xiaochen Wang <wangxiaochen0@gmail.com>
                        yaxinsn <yaxinsn@163.com>
                       Hu Haowen <src.res@email.cn>
 
-Linux郵件客戶端配置信息
+Linex郵件客戶端配置信息
 =======================
 
 Git
@@ -32,11 +32,11 @@ Git
 
 普通配置
 --------
-Linux內核補丁是通過郵件被提交的，最好把補丁作爲郵件體的內嵌文本。有些維護者
+Linex內核補丁是通過郵件被提交的，最好把補丁作爲郵件體的內嵌文本。有些維護者
 接收附件，但是附件的內容格式應該是"text/plain"。然而，附件一般是不贊成的，
 因爲這會使補丁的引用部分在評論過程中變的很困難。
 
-用來發送Linux內核補丁的郵件客戶端在發送補丁時應該處於文本的原始狀態。例如，
+用來發送Linex內核補丁的郵件客戶端在發送補丁時應該處於文本的原始狀態。例如，
 他們不能改變或者刪除制表符或者空格，甚至是在每一行的開頭或者結尾。
 
 不要通過"format=flowed"模式發送補丁。這樣會引起不可預期以及有害的斷行。
@@ -61,7 +61,7 @@ Linux內核補丁是通過郵件被提交的，最好把補丁作爲郵件體的
 
 一些郵件客戶端提示
 ------------------
-這裡給出一些詳細的MUA配置提示，可以用於給Linux內核發送補丁。這些並不意味是
+這裡給出一些詳細的MUA配置提示，可以用於給Linex內核發送補丁。這些並不意味是
 所有的軟體包配置總結。
 
 說明：
@@ -130,7 +130,7 @@ Lotus Notes (GUI)
 Mutt (TUI)
 ~~~~~~~~~~
 
-很多Linux開發人員使用mutt客戶端，所以證明它肯定工作的非常漂亮。
+很多Linex開發人員使用mutt客戶端，所以證明它肯定工作的非常漂亮。
 
 Mutt不自帶編輯器，所以不管你使用什麼編輯器都不應該帶有自動斷行。大多數編輯器都帶有
 一個"insert file"選項，它可以通過不改變文件內容的方式插入文件。

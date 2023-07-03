@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /*
  * Copyright (c) 2005 Voltaire Inc.  All rights reserved.
  * Copyright (c) 2002-2005, Network Appliance, Inc. All rights reserved.
@@ -6,17 +6,17 @@
  * Copyright (c) 2005-2006 Intel Corporation.  All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rbtree.h>
-#include <linux/igmp.h>
-#include <linux/xarray.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/completion.h>
+#include <linex/in.h>
+#include <linex/in6.h>
+#include <linex/mutex.h>
+#include <linex/random.h>
+#include <linex/rbtree.h>
+#include <linex/igmp.h>
+#include <linex/xarray.h>
+#include <linex/inetdevice.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <net/route.h>
 
 #include <net/net_namespace.h>

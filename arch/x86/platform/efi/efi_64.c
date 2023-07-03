@@ -6,7 +6,7 @@
  * Copyright (C) 2005-2008 Intel Co.
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@linux.intel.com>
+ *	Chandramouli Narayanan <mouli@linex.intel.com>
  *	Huang Ying <ying.huang@intel.com>
  *
  * Code to convert EFI to E820 map has been implemented in elilo bootloader
@@ -18,23 +18,23 @@
 
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/mc146818rtc.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
-#include <linux/cc_platform.h>
-#include <linux/sched/task.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/mm.h>
+#include <linex/types.h>
+#include <linex/spinlock.h>
+#include <linex/memblock.h>
+#include <linex/ioport.h>
+#include <linex/mc146818rtc.h>
+#include <linex/efi.h>
+#include <linex/export.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
+#include <linex/reboot.h>
+#include <linex/slab.h>
+#include <linex/ucs2_string.h>
+#include <linex/cc_platform.h>
+#include <linex/sched/task.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

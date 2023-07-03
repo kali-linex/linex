@@ -14,11 +14,11 @@
 #define DRIVER_NAME "airport"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/of_device.h>
 #include <asm/pmac_feature.h>
 
 #include "orinoco.h"

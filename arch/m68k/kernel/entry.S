@@ -1,6 +1,6 @@
 /* -*- mode: asm -*-
  *
- *  linux/arch/m68k/kernel/entry.S
+ *  linex/arch/m68k/kernel/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -8,7 +8,7 @@
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  *
- * Linux/m68k support by Hamish Macdonald
+ * Linex/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  *
@@ -33,7 +33,7 @@
  *		 for 68040
  */
 
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/errno.h>
 #include <asm/setup.h>
 #include <asm/traps.h>

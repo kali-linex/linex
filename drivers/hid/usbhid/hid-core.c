@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  USB HID support for Linux
+ *  USB HID support for Linex
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -12,27 +12,27 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
-#include <linux/input.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
+#include <linex/input.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
+#include <linex/string.h>
 
-#include <linux/usb.h>
+#include <linex/usb.h>
 
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hid-debug.h>
-#include <linux/hidraw.h>
+#include <linex/hid.h>
+#include <linex/hiddev.h>
+#include <linex/hid-debug.h>
+#include <linex/hidraw.h>
 #include "usbhid.h"
 
 /*

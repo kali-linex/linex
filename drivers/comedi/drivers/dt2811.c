@@ -2,7 +2,7 @@
 /*
  * Comedi driver for Data Translation DT2811
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) David A. Schleef <ds@schleef.org>
  */
 
@@ -37,10 +37,10 @@
  *     values and physical units.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedidev.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/delay.h>
+#include <linex/comedi/comedidev.h>
 
 /*
  * Register I/O map

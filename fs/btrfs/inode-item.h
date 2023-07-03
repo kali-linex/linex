@@ -3,7 +3,7 @@
 #ifndef BTRFS_INODE_ITEM_H
 #define BTRFS_INODE_ITEM_H
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 struct btrfs_trans_handle;
 struct btrfs_root;

@@ -4,12 +4,12 @@
  *
  * Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/of.h>
+#include <linex/init.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
 
 #include <asm/prom.h>
 

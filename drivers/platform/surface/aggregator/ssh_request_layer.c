@@ -6,19 +6,19 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/error-injection.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/atomic.h>
+#include <linex/completion.h>
+#include <linex/error-injection.h>
+#include <linex/ktime.h>
+#include <linex/limits.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
-#include <linux/surface_aggregator/controller.h>
+#include <linex/surface_aggregator/serial_hub.h>
+#include <linex/surface_aggregator/controller.h>
 
 #include "ssh_packet_layer.h"
 #include "ssh_request_layer.h"

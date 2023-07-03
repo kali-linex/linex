@@ -31,17 +31,17 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
 #include <net/net_namespace.h>
-#include <linux/security.h>
-#include <linux/notifier.h>
-#include <linux/hashtable.h>
+#include <linex/security.h>
+#include <linex/notifier.h>
+#include <linex/hashtable.h>
 #include <rdma/rdma_netlink.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>

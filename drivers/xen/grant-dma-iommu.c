@@ -7,9 +7,9 @@
  * Copyright (C) 2022 EPAM Systems Inc.
  */
 
-#include <linux/iommu.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/iommu.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 struct grant_dma_iommu_device {
 	struct device *dev;

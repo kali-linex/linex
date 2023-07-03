@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2012 Broadcom Corporation
  */
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linex/slab.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/rtnetlink.h>
 #include <net/cfg80211.h>
 
 #include <brcmu_wifi.h>

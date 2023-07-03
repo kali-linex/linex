@@ -5,19 +5,19 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/intel_tcc.h>
-#include <linux/err.h>
-#include <linux/param.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/thermal.h>
-#include <linux/debugfs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/intel_tcc.h>
+#include <linex/err.h>
+#include <linex/param.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/cpu.h>
+#include <linex/smp.h>
+#include <linex/slab.h>
+#include <linex/pm.h>
+#include <linex/thermal.h>
+#include <linex/debugfs.h>
 
 #include <asm/cpu_device_id.h>
 
@@ -534,5 +534,5 @@ module_exit(pkg_temp_thermal_exit)
 
 MODULE_IMPORT_NS(INTEL_TCC);
 MODULE_DESCRIPTION("X86 PKG TEMP Thermal Driver");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linex.intel.com>");
 MODULE_LICENSE("GPL v2");

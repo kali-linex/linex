@@ -6,22 +6,22 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/rtc.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/fb.h>
+#include <linex/module.h>
+#include <linex/mm.h>
+#include <linex/console.h>
+#include <linex/errno.h>
+#include <linex/string.h>
+#include <linex/memblock.h>
+#include <linex/seq_file.h>
+#include <linex/init.h>
+#include <linex/initrd.h>
+#include <linex/root_dev.h>
+#include <linex/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -31,7 +31,7 @@
 /*
  * parse_uboot_commandline
  *
- * Copies u-boot commandline arguments and store them in the proper linux
+ * Copies u-boot commandline arguments and store them in the proper linex
  * variables.
  *
  * Assumes:
@@ -54,7 +54,7 @@
  *	unmodified. U-boot places them near the end of external SDRAM.
  *
  * Argument(s):
- *	commandp = the linux commandline arg container to fill.
+ *	commandp = the linex commandline arg container to fill.
  *	size     = the sizeof commandp.
  *
  * Returns:

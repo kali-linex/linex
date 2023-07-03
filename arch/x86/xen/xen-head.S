@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_XEN
 
-#include <linux/elfnote.h>
-#include <linux/init.h>
+#include <linex/elfnote.h>
+#include <linex/init.h>
 
 #include <asm/boot.h>
 #include <asm/asm.h>
@@ -87,7 +87,7 @@ SYM_CODE_END(xen_cpu_bringup_again)
 #endif
 #endif
 
-	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "linux")
+	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "linex")
 	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_VERSION,  .asciz "2.6")
 	ELFNOTE(Xen, XEN_ELFNOTE_XEN_VERSION,    .asciz "xen-3.0")
 #ifdef CONFIG_X86_32
@@ -106,7 +106,7 @@ SYM_CODE_END(xen_cpu_bringup_again)
 	ELFNOTE(Xen, XEN_ELFNOTE_SUPPORTED_FEATURES,
 		.long (1 << XENFEAT_writable_page_tables) |       \
 		      (1 << XENFEAT_dom0) |                       \
-		      (1 << XENFEAT_linux_rsdp_unrestricted))
+		      (1 << XENFEAT_linex_rsdp_unrestricted))
 	ELFNOTE(Xen, XEN_ELFNOTE_PAE_MODE,       .asciz "yes")
 	ELFNOTE(Xen, XEN_ELFNOTE_LOADER,         .asciz "generic")
 	ELFNOTE(Xen, XEN_ELFNOTE_L1_MFN_VALID,

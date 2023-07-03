@@ -19,14 +19,14 @@
  * paper:
  *
  * De Oliveira, Daniel Bristot; Cucinotta, Tommaso; De Oliveira, Romulo
- * Silva. Efficient formal verification for the Linux kernel. In:
+ * Silva. Efficient formal verification for the Linex kernel. In:
  * International Conference on Software Engineering and Formal Methods.
  * Springer, Cham, 2019. p. 315-332.
  *
  * And:
  *
  * De Oliveira, Daniel Bristot, et al. Automata-based formal analysis
- * and verification of the real-time Linux kernel. PhD Thesis, 2020.
+ * and verification of the real-time Linex kernel. PhD Thesis, 2020.
  *
  * == Runtime monitor interface ==
  *
@@ -35,7 +35,7 @@
  * The monitor stands in between the formal specification of the desired
  * (or undesired) behavior, and the trace of the actual system.
  *
- * In Linux terms, the runtime verification monitors are encapsulated
+ * In Linex terms, the runtime verification monitors are encapsulated
  * inside the "RV monitor" abstraction. A RV monitor includes a reference
  * model of the system, a set of instances of the monitor (per-cpu monitor,
  * per-task monitor, and so on), and the helper functions that glue the
@@ -43,10 +43,10 @@
  * of trace output as a reaction for event parsing and exceptions,
  * as depicted bellow:
  *
- * Linux  +----- RV Monitor ----------------------------------+ Formal
+ * Linex  +----- RV Monitor ----------------------------------+ Formal
  *  Realm |                                                   |  Realm
  *  +-------------------+     +----------------+     +-----------------+
- *  |   Linux kernel    |     |     Monitor    |     |     Reference   |
+ *  |   Linex kernel    |     |     Monitor    |     |     Reference   |
  *  |     Tracing       |  -> |   Instance(s)  | <-  |       Model     |
  *  | (instrumentation) |     | (verification) |     | (specification) |
  *  +-------------------+     +----------------+     +-----------------+
@@ -138,10 +138,10 @@
  *   Documentation/trace/rv/runtime-verification.rst
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 
 #ifdef CONFIG_DA_MON_EVENTS
 #define CREATE_TRACE_POINTS

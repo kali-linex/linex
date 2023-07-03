@@ -7,18 +7,18 @@
  */
 /*
  * Author:
- *	YOSHIFUJI Hideaki @ USAGI/WIDE Project <yoshfuji@linux-ipv6.org>
+ *	YOSHIFUJI Hideaki @ USAGI/WIDE Project <yoshfuji@linex-ipv6.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/rcupdate.h>
+#include <linex/in6.h>
+#include <linex/slab.h>
 #include <net/addrconf.h>
-#include <linux/if_addrlabel.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linex/if_addrlabel.h>
+#include <linex/netlink.h>
+#include <linex/rtnetlink.h>
 
 #if 0
 #define ADDRLABEL(x...) printk(x)

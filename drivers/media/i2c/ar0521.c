@@ -5,9 +5,9 @@
  * Written by Krzysztof Hałasa
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <linex/clk.h>
+#include <linex/delay.h>
+#include <linex/pm_runtime.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fwnode.h>

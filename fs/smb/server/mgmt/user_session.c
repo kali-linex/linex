@@ -3,10 +3,10 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/xarray.h>
+#include <linex/list.h>
+#include <linex/slab.h>
+#include <linex/rwsem.h>
+#include <linex/xarray.h>
 
 #include "ksmbd_ida.h"
 #include "user_session.h"

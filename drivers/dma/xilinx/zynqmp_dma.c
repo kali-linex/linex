@@ -5,18 +5,18 @@
  * Copyright (C) 2016 Xilinx, Inc. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pm_runtime.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_dma.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/io-64-nonatomic-lo-hi.h>
+#include <linex/pm_runtime.h>
 
 #include "../dmaengine.h"
 

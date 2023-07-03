@@ -7,26 +7,26 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_platform.h>
-#include <linux/hsi/hsi.h>
-#include <linux/idr.h>
+#include <linex/compiler.h>
+#include <linex/err.h>
+#include <linex/ioport.h>
+#include <linex/io.h>
+#include <linex/clk.h>
+#include <linex/device.h>
+#include <linex/platform_device.h>
+#include <linex/dma-mapping.h>
+#include <linex/dmaengine.h>
+#include <linex/delay.h>
+#include <linex/seq_file.h>
+#include <linex/scatterlist.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/debugfs.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/of_platform.h>
+#include <linex/hsi/hsi.h>
+#include <linex/idr.h>
 
 #include "omap_ssi_regs.h"
 #include "omap_ssi.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext4/xattr.c
+ * linex/fs/ext4/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  *
@@ -51,12 +51,12 @@
  * by the buffer lock.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/mbcache.h>
-#include <linux/quotaops.h>
-#include <linux/iversion.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/mbcache.h>
+#include <linex/quotaops.h>
+#include <linex/iversion.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "xattr.h"

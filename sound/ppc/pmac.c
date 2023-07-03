@@ -7,16 +7,16 @@
  */
 
 
-#include <linux/io.h>
+#include <linex/io.h>
 #include <asm/irq.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
 #include <sound/core.h>
 #include "pmac.h"
 #include <sound/pcm_params.h>

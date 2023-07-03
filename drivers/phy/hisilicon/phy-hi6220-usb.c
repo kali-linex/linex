@@ -4,11 +4,11 @@
  * Copyright (c) 2015 HiSilicon Limited.
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/phy/phy.h>
+#include <linex/regmap.h>
 
 #define SC_PERIPH_CTRL4			0x00c
 

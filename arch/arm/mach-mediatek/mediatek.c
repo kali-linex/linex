@@ -5,12 +5,12 @@
  * Copyright (c) 2014 MundoReader S.L.
  * Author: Matthias Brugger <matthias.bgg@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/io.h>
 #include <asm/mach/arch.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
+#include <linex/of.h>
+#include <linex/of_clk.h>
+#include <linex/clocksource.h>
 
 
 #define GPT6_CON_MT65xx 0x10008060

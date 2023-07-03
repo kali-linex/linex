@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The Linex Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
 #include <asm/byteorder.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
+#include <linex/completion.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/dma-mapping.h>
+#include <linex/kref.h>
+#include <linex/list.h>
+#include <linex/mhi.h>
+#include <linex/mm.h>
+#include <linex/moduleparam.h>
+#include <linex/mutex.h>
+#include <linex/pci.h>
+#include <linex/scatterlist.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
+#include <linex/wait.h>
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>
 #include <uapi/drm/qaic_accel.h>

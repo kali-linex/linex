@@ -2,9 +2,9 @@
 #ifndef __NET_SCHED_PIE_H
 #define __NET_SCHED_PIE_H
 
-#include <linux/ktime.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linex/ktime.h>
+#include <linex/skbuff.h>
+#include <linex/types.h>
 #include <net/inet_ecn.h>
 #include <net/pkt_sched.h>
 

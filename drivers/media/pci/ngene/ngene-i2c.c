@@ -11,19 +11,19 @@
  */
 
 /* FIXME - some of these can probably be removed */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/io.h>
 #include <asm/div64.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/timer.h>
-#include <linux/byteorder/generic.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
+#include <linex/timer.h>
+#include <linex/byteorder/generic.h>
+#include <linex/firmware.h>
+#include <linex/vmalloc.h>
 
 #include "ngene.h"
 

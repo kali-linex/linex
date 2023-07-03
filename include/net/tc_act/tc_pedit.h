@@ -3,8 +3,8 @@
 #define __NET_TC_PED_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_pedit.h>
-#include <linux/types.h>
+#include <linex/tc_act/tc_pedit.h>
+#include <linex/types.h>
 
 struct tcf_pedit_key_ex {
 	enum pedit_header_type htype;

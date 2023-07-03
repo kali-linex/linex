@@ -6,12 +6,12 @@
  *                    <angelogioacchino.delregno@somainline.org>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linex/backlight.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
 #include <video/mipi_display.h>
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_modes.h>

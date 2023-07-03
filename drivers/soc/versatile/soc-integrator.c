@@ -4,14 +4,14 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
+#include <linex/platform_device.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
+#include <linex/of.h>
 
 #define INTEGRATOR_HDR_ID_OFFSET	0x00
 

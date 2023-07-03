@@ -4,17 +4,17 @@
  *
  * Copyright (C) 2015 Intel Corporation
  *
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linex.intel.com>
  */
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phy/ulpi_phy.h>
-#include <linux/power_supply.h>
-#include <linux/workqueue.h>
+#include <linex/module.h>
+#include <linex/bitfield.h>
+#include <linex/delay.h>
+#include <linex/ulpi/driver.h>
+#include <linex/ulpi/regs.h>
+#include <linex/gpio/consumer.h>
+#include <linex/phy/ulpi_phy.h>
+#include <linex/power_supply.h>
+#include <linex/workqueue.h>
 
 #define TUSB1211_POWER_CONTROL				0x3d
 #define TUSB1211_POWER_CONTROL_SET			0x3e
@@ -430,7 +430,7 @@ static void tusb1210_probe_charger_detect(struct tusb1210 *tusb)
 	struct device *dev = &tusb->ulpi->dev;
 	int ret;
 
-	if (!device_property_read_bool(dev->parent, "linux,phy_charger_detect"))
+	if (!device_property_read_bool(dev->parent, "linex,phy_charger_detect"))
 		return;
 
 	if (tusb->ulpi->id.product != 0x1508) {

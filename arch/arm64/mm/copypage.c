@@ -6,8 +6,8 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/mm.h>
+#include <linex/bitops.h>
+#include <linex/mm.h>
 
 #include <asm/page.h>
 #include <asm/cacheflush.h>

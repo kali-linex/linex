@@ -6,9 +6,9 @@
  *	Tiffany Lin <tiffany.lin@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
 
 #include "venc_drv_base.h"
 #include "venc_drv_if.h"

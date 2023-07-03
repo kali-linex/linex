@@ -3,10 +3,10 @@
  * Lattice FPGA sysCONFIG interface functions independent of port type.
  */
 
-#include <linux/delay.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
+#include <linex/delay.h>
+#include <linex/fpga/fpga-mgr.h>
+#include <linex/gpio/consumer.h>
+#include <linex/iopoll.h>
 
 #include "lattice-sysconfig.h"
 

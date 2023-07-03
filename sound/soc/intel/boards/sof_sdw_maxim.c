@@ -4,8 +4,8 @@
 // sof_sdw_maxim - Helpers to handle maxim codecs
 // codec devices from generic machine driver
 
-#include <linux/device.h>
-#include <linux/errno.h>
+#include <linex/device.h>
+#include <linex/errno.h>
 #include <sound/control.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

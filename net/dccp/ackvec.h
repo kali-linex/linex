@@ -9,10 +9,10 @@
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@mandriva.com>
  */
 
-#include <linux/dccp.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linex/dccp.h>
+#include <linex/compiler.h>
+#include <linex/list.h>
+#include <linex/types.h>
 
 /*
  * Ack Vector buffer space is static, in multiples of %DCCP_SINGLE_OPT_MAXLEN,

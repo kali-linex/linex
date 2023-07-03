@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *  Linux for S/390 Lan Channel Station Network Driver
+ *  Linex for S/390 Lan Channel Station Network Driver
  *
  *  Copyright IBM Corp. 1999, 2009
  *  Author(s): Original Code written by
@@ -13,24 +13,24 @@
 #define KMSG_COMPONENT		"lcs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/igmp.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/if.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/fddidevice.h>
+#include <linex/inetdevice.h>
+#include <linex/in.h>
+#include <linex/igmp.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/slab.h>
 #include <net/arp.h>
 #include <net/ip.h>
 
 #include <asm/debug.h>
 #include <asm/idals.h>
 #include <asm/timex.h>
-#include <linux/device.h>
+#include <linex/device.h>
 #include <asm/ccwgroup.h>
 
 #include "lcs.h"

@@ -7,11 +7,11 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linex/kernel.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/slab.h>
+#include <linex/io.h>
 
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>

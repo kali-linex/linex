@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/errno.h>
-#include <linux/iopoll.h>
-#include <linux/mutex.h>
+#include <linex/bitfield.h>
+#include <linex/errno.h>
+#include <linex/iopoll.h>
+#include <linex/mutex.h>
 
 #include "platform-access.h"
 

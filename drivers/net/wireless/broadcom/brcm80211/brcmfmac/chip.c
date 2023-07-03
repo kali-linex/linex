@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2014 Broadcom Corporation
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_regs.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/list.h>
+#include <linex/ssb/ssb_regs.h>
+#include <linex/bcma/bcma.h>
+#include <linex/bcma/bcma_regs.h>
 
 #include <defs.h>
 #include <soc.h>

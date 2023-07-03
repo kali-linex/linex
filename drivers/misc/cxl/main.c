@@ -3,20 +3,20 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/sched/task.h>
+#include <linex/spinlock.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/mutex.h>
+#include <linex/init.h>
+#include <linex/list.h>
+#include <linex/mm.h>
+#include <linex/of.h>
+#include <linex/slab.h>
+#include <linex/idr.h>
+#include <linex/pci.h>
+#include <linex/platform_device.h>
+#include <linex/sched/task.h>
 
 #include <asm/cputable.h>
 #include <asm/mmu.h>

@@ -4,10 +4,10 @@
  * Copyright 2007-2011 Solarflare Communications Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/delay.h>
+#include <linex/rtnetlink.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 #include "efx.h"
 #include "mdio_10g.h"
 #include "nic.h"

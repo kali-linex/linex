@@ -6,7 +6,7 @@
  */
 
 #include <stddef.h>
-#include <linux/stringify.h>
+#include <linex/stringify.h>
 #include <dwarf-regs.h>
 
 struct pt_regs_dwarfnum {

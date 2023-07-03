@@ -7,15 +7,15 @@
  */
 
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/kmsan-checks.h>
-#include <linux/serio.h>
-#include <linux/i8042.h>
-#include <linux/libps2.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/input.h>
+#include <linex/kmsan-checks.h>
+#include <linex/serio.h>
+#include <linex/i8042.h>
+#include <linex/libps2.h>
 
 #define DRIVER_DESC	"PS/2 driver library"
 

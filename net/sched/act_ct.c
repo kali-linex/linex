@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB
 /* -
  * net/sched/act_ct.c  Connection Tracking action
  *
@@ -7,22 +7,22 @@
  *            Marcelo Ricardo Leitner <marcelo.leitner@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_cls.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/rhashtable.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
+#include <linex/pkt_cls.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/rhashtable.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 #include <net/act_api.h>
 #include <net/ip.h>
 #include <net/ipv6_frag.h>
-#include <uapi/linux/tc_act/tc_ct.h>
+#include <uapi/linex/tc_act/tc_ct.h>
 #include <net/tc_act/tc_ct.h>
 #include <net/tc_wrapper.h>
 
@@ -35,7 +35,7 @@
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #include <net/netfilter/nf_conntrack_act_ct.h>
 #include <net/netfilter/nf_conntrack_seqadj.h>
-#include <uapi/linux/netfilter/nf_nat.h>
+#include <uapi/linex/netfilter/nf_nat.h>
 
 static struct workqueue_struct *act_ct_wq;
 static struct rhashtable zones_ht;

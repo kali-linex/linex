@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/pgtable.h>
+#include <linex/pgtable.h>
 #include <asm/abs_lowcore.h>
 
 unsigned long __bootdata_preserved(__abs_lowcore);

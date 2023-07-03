@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/kernel/softirq.c
+ *	linex/kernel/softirq.c
  *
  *	Copyright (C) 1992 Linus Torvalds
  *
@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/local_lock.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/rcupdate.h>
-#include <linux/ftrace.h>
-#include <linux/smp.h>
-#include <linux/smpboot.h>
-#include <linux/tick.h>
-#include <linux/irq.h>
-#include <linux/wait_bit.h>
+#include <linex/export.h>
+#include <linex/kernel_stat.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/local_lock.h>
+#include <linex/mm.h>
+#include <linex/notifier.h>
+#include <linex/percpu.h>
+#include <linex/cpu.h>
+#include <linex/freezer.h>
+#include <linex/kthread.h>
+#include <linex/rcupdate.h>
+#include <linex/ftrace.h>
+#include <linex/smp.h>
+#include <linex/smpboot.h>
+#include <linex/tick.h>
+#include <linex/irq.h>
+#include <linex/wait_bit.h>
 
 #include <asm/softirq_stack.h>
 

@@ -8,11 +8,11 @@
  * Copyright 2007 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linex/stddef.h>
+#include <linex/kernel.h>
+#include <linex/interrupt.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
 
 #include <asm/mpic.h>
 #include <asm/i8259.h>

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/module.h>
+#include <linex/err.h>
 
-#include <linux/usb/composite.h>
+#include <linex/usb/composite.h>
 
 static LIST_HEAD(func_list);
 static DEFINE_MUTEX(func_lock);

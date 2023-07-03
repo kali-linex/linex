@@ -10,10 +10,10 @@
  *          Remi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/phonet.h>
-#include <linux/slab.h>
+#include <linex/kernel.h>
+#include <linex/netlink.h>
+#include <linex/phonet.h>
+#include <linex/slab.h>
 #include <net/sock.h>
 #include <net/phonet/pn_dev.h>
 

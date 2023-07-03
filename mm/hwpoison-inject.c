@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Inject a hwpoison memory failure on a arbitrary pfn */
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
+#include <linex/module.h>
+#include <linex/debugfs.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/pagemap.h>
+#include <linex/hugetlb.h>
 #include "internal.h"
 
 static struct dentry *hwpoison_dir;

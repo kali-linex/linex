@@ -15,10 +15,10 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/kernfs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/cpu.h>
+#include <linex/kernfs.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 #include "internal.h"
 
 /*

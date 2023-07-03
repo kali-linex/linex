@@ -7,9 +7,9 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/debugfs.h>
+#include <linex/pci.h>
+#include <linex/iommu.h>
+#include <linex/debugfs.h>
 
 struct dentry *iommu_debugfs_dir;
 EXPORT_SYMBOL_GPL(iommu_debugfs_dir);

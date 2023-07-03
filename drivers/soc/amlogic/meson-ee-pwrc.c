@@ -4,17 +4,17 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/reset-controller.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/pm_domain.h>
+#include <linex/bitfield.h>
+#include <linex/regmap.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of_device.h>
+#include <linex/reset-controller.h>
+#include <linex/reset.h>
+#include <linex/clk.h>
+#include <linex/module.h>
 #include <dt-bindings/power/meson8-power.h>
 #include <dt-bindings/power/meson-axg-power.h>
 #include <dt-bindings/power/meson-g12a-power.h>

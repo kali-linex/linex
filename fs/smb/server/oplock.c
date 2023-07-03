@@ -4,7 +4,7 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/moduleparam.h>
+#include <linex/moduleparam.h>
 
 #include "glob.h"
 #include "oplock.h"

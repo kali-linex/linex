@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/lcd.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/gpio/consumer.h>
+#include <linex/lcd.h>
+#include <linex/slab.h>
+#include <linex/regulator/consumer.h>
+#include <linex/spi/spi.h>
 
 struct l4f00242t03_priv {
 	struct spi_device	*spi;

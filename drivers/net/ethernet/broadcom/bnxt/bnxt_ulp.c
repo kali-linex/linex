@@ -7,19 +7,19 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
+#include <linex/kernel.h>
+#include <linex/errno.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/netdevice.h>
+#include <linex/rtnetlink.h>
+#include <linex/bitops.h>
+#include <linex/irq.h>
 #include <asm/byteorder.h>
-#include <linux/bitmap.h>
-#include <linux/auxiliary_bus.h>
+#include <linex/bitmap.h>
+#include <linex/auxiliary_bus.h>
 
 #include "bnxt_hsi.h"
 #include "bnxt.h"

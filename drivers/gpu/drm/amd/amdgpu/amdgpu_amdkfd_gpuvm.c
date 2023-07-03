@@ -20,11 +20,11 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include <linux/dma-buf.h>
-#include <linux/list.h>
-#include <linux/pagemap.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
+#include <linex/dma-buf.h>
+#include <linex/list.h>
+#include <linex/pagemap.h>
+#include <linex/sched/mm.h>
+#include <linex/sched/task.h>
 #include <drm/ttm/ttm_tt.h>
 
 #include "amdgpu_object.h"
@@ -33,7 +33,7 @@
 #include "amdgpu_hmm.h"
 #include "amdgpu_amdkfd.h"
 #include "amdgpu_dma_buf.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linex/kfd_ioctl.h>
 #include "amdgpu_xgmi.h"
 #include "kfd_priv.h"
 #include "kfd_smi_events.h"

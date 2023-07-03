@@ -35,7 +35,7 @@ config MODULE_SIG_KEY_TYPE_ECDSA
 	 using a strong hash like sha256 or sha384 for hashing modules.
 
 	 Note: Remove all ECDSA signing keys, e.g. certs/signing_key.pem,
-	 when falling back to building Linux 5.14 and older kernels.
+	 when falling back to building Linex 5.14 and older kernels.
 
 endchoice
 

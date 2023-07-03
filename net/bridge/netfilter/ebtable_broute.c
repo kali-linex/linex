@@ -12,9 +12,9 @@
  *  other ebtables table. See net/bridge/br_input.c.
  */
 
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/module.h>
-#include <linux/if_bridge.h>
+#include <linex/netfilter_bridge/ebtables.h>
+#include <linex/module.h>
+#include <linex/if_bridge.h>
 
 #include "../br_private.h"
 

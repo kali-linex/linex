@@ -6,22 +6,22 @@
  *
  * This code is GPL.
  */
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
+#include <linex/kernel.h>
+#include <linex/netfilter.h>
 #include <net/protocol.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
+#include <linex/init.h>
+#include <linex/skbuff.h>
+#include <linex/wait.h>
+#include <linex/module.h>
+#include <linex/interrupt.h>
+#include <linex/if.h>
+#include <linex/netdevice.h>
+#include <linex/netfilter_ipv6.h>
+#include <linex/inetdevice.h>
+#include <linex/proc_fs.h>
+#include <linex/mutex.h>
+#include <linex/mm.h>
+#include <linex/rcupdate.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/sock.h>

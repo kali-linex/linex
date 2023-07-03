@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  tsl2550.c - Linux kernel modules for ambient light sensor
+ *  tsl2550.c - Linex kernel modules for ambient light sensor
  *
- *  Copyright (C) 2007 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (C) 2007 Rodolfo Giometti <giometti@linex.it>
  *  Copyright (C) 2007 Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/i2c.h>
+#include <linex/mutex.h>
 
 #define TSL2550_DRV_NAME	"tsl2550"
 #define DRIVER_VERSION		"1.2"
@@ -444,7 +444,7 @@ static struct i2c_driver tsl2550_driver = {
 
 module_i2c_driver(tsl2550_driver);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linex.it>");
 MODULE_DESCRIPTION("TSL2550 ambient light sensor driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRIVER_VERSION);

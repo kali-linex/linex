@@ -8,23 +8,23 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/acpi.h>
-#include <linux/arch_topology.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/mm.h>
+#include <linex/acpi.h>
+#include <linex/arch_topology.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/sched.h>
+#include <linex/kernel_stat.h>
+#include <linex/notifier.h>
+#include <linex/cpu.h>
+#include <linex/percpu.h>
+#include <linex/delay.h>
+#include <linex/err.h>
+#include <linex/irq.h>
+#include <linex/of.h>
+#include <linex/sched/task_stack.h>
+#include <linex/sched/mm.h>
 #include <asm/cpu_ops.h>
 #include <asm/irq.h>
 #include <asm/mmu_context.h>

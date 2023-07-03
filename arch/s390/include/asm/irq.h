@@ -27,10 +27,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/cache.h>
-#include <linux/types.h>
+#include <linex/hardirq.h>
+#include <linex/percpu.h>
+#include <linex/cache.h>
+#include <linex/types.h>
 
 enum interruption_class {
 	IRQEXT_CLK,

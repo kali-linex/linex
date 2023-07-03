@@ -7,11 +7,11 @@
  * Copyright IBM Corp. 2015
  */
 
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/node.h>
+#include <linex/kernel.h>
+#include <linex/mmzone.h>
+#include <linex/cpumask.h>
+#include <linex/memblock.h>
+#include <linex/node.h>
 #include <asm/numa.h>
 
 struct pglist_data *node_data[MAX_NUMNODES];

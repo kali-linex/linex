@@ -31,11 +31,11 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/spinlock.h>
+#include <linex/gpio/driver.h>
+#include <linex/slab.h>
 
 /* Steal the hardware definitions from the bttv driver. */
 #include "../media/pci/bt8xx/bt848.h"

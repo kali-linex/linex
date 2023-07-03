@@ -9,13 +9,13 @@
  * Copyright (C) 2020-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linex/kernel.h>
+#include <linex/limits.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
 
-#include <linux/surface_aggregator/device.h>
+#include <linex/surface_aggregator/device.h>
 
 
 /* -- SSAM generic subsystem hub driver framework. -------------------------- */

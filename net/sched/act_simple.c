@@ -5,18 +5,18 @@
  * Authors:	Jamal Hadi Salim (2005-8)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/skbuff.h>
+#include <linex/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 #include <net/tc_wrapper.h>
 
-#include <linux/tc_act/tc_defact.h>
+#include <linex/tc_act/tc_defact.h>
 #include <net/tc_act/tc_defact.h>
 
 static struct tc_action_ops act_simp_ops;

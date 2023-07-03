@@ -6,12 +6,12 @@
  *
  * Authors: Waiman Long <waiman.long@hp.com>
  */
-#include <linux/smp.h>
-#include <linux/bug.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
+#include <linex/smp.h>
+#include <linex/bug.h>
+#include <linex/cpumask.h>
+#include <linex/percpu.h>
+#include <linex/hardirq.h>
+#include <linex/spinlock.h>
 #include <trace/events/lock.h>
 
 /**

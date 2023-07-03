@@ -4,15 +4,15 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <linex/mutex.h>
+#include <linex/module.h>
+#include <linex/device.h>
+#include <linex/idr.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <linex/fieldbus_dev.h> when taking this out of staging */
 #include "fieldbus_dev.h"
 
 /* Maximum number of fieldbus devices */

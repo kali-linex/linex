@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * ipr.c -- driver for IBM Power Linux RAID adapters
+ * ipr.c -- driver for IBM Power Linex RAID adapters
  *
  * Written By: Brian King <brking@us.ibm.com>, IBM Corporation
  *
@@ -40,27 +40,27 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/hdreg.h>
-#include <linux/reboot.h>
-#include <linux/stringify.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/ioport.h>
+#include <linex/delay.h>
+#include <linex/pci.h>
+#include <linex/wait.h>
+#include <linex/spinlock.h>
+#include <linex/sched.h>
+#include <linex/interrupt.h>
+#include <linex/blkdev.h>
+#include <linex/firmware.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/hdreg.h>
+#include <linex/reboot.h>
+#include <linex/stringify.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/processor.h>
@@ -3090,7 +3090,7 @@ static void ipr_get_ioa_dump(struct ipr_ioa_cfg *ioa_cfg, struct ipr_dump *dump)
 	driver_dump->hdr.num_entries = 1;
 	driver_dump->hdr.first_entry_offset = sizeof(struct ipr_dump_header);
 	driver_dump->hdr.status = IPR_DUMP_STATUS_SUCCESS;
-	driver_dump->hdr.os = IPR_DUMP_OS_LINUX;
+	driver_dump->hdr.os = IPR_DUMP_OS_LINEX;
 	driver_dump->hdr.driver_name = IPR_DUMP_DRIVER_NAME;
 
 	ipr_dump_version_data(ioa_cfg, driver_dump);

@@ -17,11 +17,11 @@
 /*
  * Sets up all exception vectors
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
+#include <linex/sched.h>
+#include <linex/kernel.h>
+#include <linex/linkage.h>
+#include <linex/init.h>
+#include <linex/kallsyms.h>
 
 #include <asm/setup.h>
 #include <asm/fpu.h>

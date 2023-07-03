@@ -7,12 +7,12 @@
  *   Wei WANG <wei_wang@realsil.com.cn>
  */
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/memstick.h>
-#include <linux/rtsx_pci.h>
+#include <linex/module.h>
+#include <linex/highmem.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/memstick.h>
+#include <linex/rtsx_pci.h>
 #include <asm/unaligned.h>
 
 struct realtek_pci_ms {

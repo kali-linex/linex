@@ -8,20 +8,20 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/dmar.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/mutex.h>
+#include <linex/pm.h>
+#include <linex/pm_runtime.h>
+#include <linex/pci.h>
+#include <linex/pci-acpi.h>
+#include <linex/dmar.h>
+#include <linex/acpi.h>
+#include <linex/slab.h>
+#include <linex/dmi.h>
+#include <linex/platform_data/x86/apple.h>
 #include "internal.h"
 
 #define ACPI_PCI_ROOT_CLASS		"pci_bridge"
@@ -462,12 +462,12 @@ static u32 calculate_support(void)
  * there is no existing _OSC for memory hotplug support. The reason is that
  * ACPI memory hotplug requires the OS to acknowledge / coordinate with
  * memory plug events via a scan handler. On the CXL side the equivalent
- * would be if Linux supported the Mechanical Retention Lock [1], or
+ * would be if Linex supported the Mechanical Retention Lock [1], or
  * otherwise had some coordination for the driver of a PCI device
  * undergoing hotplug to be consulted on whether the hotplug should
  * proceed or not.
  *
- * The concern is that if Linux says no to supporting CXL hotplug then
+ * The concern is that if Linex says no to supporting CXL hotplug then
  * the BIOS may say no to giving the OS hotplug control of any other PCIe
  * device. So the question here is not whether hotplug is enabled, it's
  * whether it is handled natively by the at all OS, and if

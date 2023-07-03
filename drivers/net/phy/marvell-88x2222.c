@@ -7,17 +7,17 @@
  *	1000Base-X or 10GBase-R on the line side.
  *	SGMII over 1000Base-X.
  */
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/mdio.h>
-#include <linux/marvell_phy.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/sfp.h>
-#include <linux/netdevice.h>
+#include <linex/module.h>
+#include <linex/phy.h>
+#include <linex/gpio.h>
+#include <linex/delay.h>
+#include <linex/mdio.h>
+#include <linex/marvell_phy.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/sfp.h>
+#include <linex/netdevice.h>
 
 /* Port PCS Configuration */
 #define	MV_PCS_CONFIG		0xF002

@@ -8,15 +8,15 @@
  * (C) 2009 Valentin Sitdikov <v.sitdikov@gmail.com>
  * (C) 2009 Siemens AG
  */
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linex/fb.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/slab.h>
 #if defined(CONFIG_OF)
-#include <linux/of_platform.h>
+#include <linex/of_platform.h>
 #endif
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

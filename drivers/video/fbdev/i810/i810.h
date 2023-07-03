@@ -1,5 +1,5 @@
-/*-*- linux-c -*-
- *  linux/drivers/video/i810.h -- Intel 810 General Definitions/Declarations
+/*-*- linex-c -*-
+ *  linex/drivers/video/i810.h -- Intel 810 General Definitions/Declarations
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved      
@@ -13,11 +13,11 @@
 #ifndef __I810_H__
 #define __I810_H__
 
-#include <linux/list.h>
-#include <linux/agp_backend.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linex/list.h>
+#include <linex/agp_backend.h>
+#include <linex/fb.h>
+#include <linex/i2c.h>
+#include <linex/i2c-algo-bit.h>
 #include <video/vga.h>
 
 /* Fence */

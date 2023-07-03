@@ -4,16 +4,16 @@
  *
  * Copyright (c) 2018 Cavium, Inc.
  */
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linex/bcd.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/nvmem-provider.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
 
 /* register offsets */
 #define ISL12026_REG_PWR	0x14
@@ -490,7 +490,7 @@ static struct i2c_driver isl12026_driver = {
 		.name	= "rtc-isl12026",
 		.of_match_table = isl12026_dt_match,
 	},
-	.probe		= isl12026_probe_new,
+	.probe_new	= isl12026_probe_new,
 	.remove		= isl12026_remove,
 };
 

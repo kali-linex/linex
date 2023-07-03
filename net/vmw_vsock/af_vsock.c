@@ -85,29 +85,29 @@
  *   TCP_LISTEN - listening
  */
 
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/smp.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linex/compat.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
+#include <linex/cred.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/kmod.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/net.h>
+#include <linex/poll.h>
+#include <linex/random.h>
+#include <linex/skbuff.h>
+#include <linex/smp.h>
+#include <linex/socket.h>
+#include <linex/stddef.h>
+#include <linex/unistd.h>
+#include <linex/wait.h>
+#include <linex/workqueue.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
 
@@ -2169,7 +2169,7 @@ vsock_connectible_recvmsg(struct socket *sock, struct msghdr *msg, size_t len,
 		goto out;
 	}
 
-	/* It is valid on Linux to pass in a zero-length receive buffer.  This
+	/* It is valid on Linex to pass in a zero-length receive buffer.  This
 	 * is not an error.  We may as well bail out now.
 	 */
 	if (!len) {

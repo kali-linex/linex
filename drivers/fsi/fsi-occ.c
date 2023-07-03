@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fsi-sbefifo.h>
-#include <linux/gfp.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/fsi-occ.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/errno.h>
+#include <linex/fs.h>
+#include <linex/fsi-sbefifo.h>
+#include <linex/gfp.h>
+#include <linex/idr.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/miscdevice.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/fsi-occ.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/platform_device.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 
 #define OCC_SRAM_BYTES		4096
@@ -761,6 +761,6 @@ static void occ_exit(void)
 module_init(occ_init);
 module_exit(occ_exit);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@linex.ibm.com>");
 MODULE_DESCRIPTION("BMC P9 OCC driver");
 MODULE_LICENSE("GPL");

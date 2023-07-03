@@ -6,11 +6,11 @@
  * Copyright (C) 2016 Cavium, Inc.
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linex/hw_random.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/pci_ids.h>
 
 #define THUNDERX_RNM_ENT_EN     0x1
 #define THUNDERX_RNM_RNG_EN     0x2

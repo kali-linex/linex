@@ -4,9 +4,9 @@
  *
  * Dove IRQ handling.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linex/init.h>
+#include <linex/irq.h>
+#include <linex/io.h>
 #include <asm/exception.h>
 
 #include <plat/irq.h>

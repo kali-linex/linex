@@ -14,27 +14,27 @@
  * ----------------------------
  */
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/param.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
+#include <linex/kernel.h>
+#include <linex/wait.h>
+#include <linex/mutex.h>
+#include <linex/device.h>
+#include <linex/cdev.h>
+#include <linex/init.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/moduleparam.h>
+#include <linex/interrupt.h>
+#include <linex/param.h>
+#include <linex/fs.h>
+#include <linex/types.h>
+#include <linex/uaccess.h>
+#include <linex/jiffies.h>
+#include <linex/miscdevice.h>
 
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
 
 /* ----------------------------
  *       driver parameters

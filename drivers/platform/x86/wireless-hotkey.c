@@ -6,12 +6,12 @@
  *  Copyright (C) 2021 Advanced Micro Devices
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/input.h>
+#include <linex/platform_device.h>
+#include <linex/acpi.h>
 #include <acpi/acpi_bus.h>
 
 MODULE_LICENSE("GPL");

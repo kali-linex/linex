@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH Linex-syscall-note */
 /*
 ** asm/bootinfo-vme.h -- VME-specific boot information definitions
 */
@@ -7,7 +7,7 @@
 #define _UAPI_ASM_M68K_BOOTINFO_VME_H
 
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 
     /*

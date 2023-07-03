@@ -9,10 +9,10 @@
 #ifndef __NET_CFG802154_H
 #define __NET_CFG802154_H
 
-#include <linux/ieee802154.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/bug.h>
+#include <linex/ieee802154.h>
+#include <linex/netdevice.h>
+#include <linex/spinlock.h>
+#include <linex/bug.h>
 
 #include <net/nl802154.h>
 

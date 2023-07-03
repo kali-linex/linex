@@ -4,9 +4,9 @@
 #ifndef _WX_TYPE_H_
 #define _WX_TYPE_H_
 
-#include <linux/bitfield.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <linex/bitfield.h>
+#include <linex/netdevice.h>
+#include <linex/if_vlan.h>
 #include <net/ip.h>
 
 #define WX_NCSI_SUP                             0x8000

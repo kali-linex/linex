@@ -4,12 +4,12 @@
  * Copyright 2008 Ian Kent <raven@themaw.net>
  */
 
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/compat.h>
-#include <linux/fdtable.h>
-#include <linux/magic.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/miscdevice.h>
+#include <linex/compat.h>
+#include <linex/fdtable.h>
+#include <linex/magic.h>
+#include <linex/nospec.h>
 
 #include "autofs_i.h"
 

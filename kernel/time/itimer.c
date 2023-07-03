@@ -5,18 +5,18 @@
 
 /* These are all the functions necessary to implement itimers */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/cputime.h>
-#include <linux/posix-timers.h>
-#include <linux/hrtimer.h>
+#include <linex/mm.h>
+#include <linex/interrupt.h>
+#include <linex/syscalls.h>
+#include <linex/time.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/cputime.h>
+#include <linex/posix-timers.h>
+#include <linex/hrtimer.h>
 #include <trace/events/timer.h>
-#include <linux/compat.h>
+#include <linex/compat.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 
 /**
  * itimer_get_remtime - get remaining time for the timer
@@ -249,7 +249,7 @@ again:
 	return 0;
 }
 
-#ifdef CONFIG_SECURITY_SELINUX
+#ifdef CONFIG_SECURITY_SELINEX
 void clear_itimer(void)
 {
 	struct itimerspec64 v = {};

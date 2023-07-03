@@ -5,12 +5,12 @@
 // Copyright (C) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/regmap.h>
+#include <linex/spi/spi.h>
+#include <linex/types.h>
 
 #include "cs35l56.h"
 

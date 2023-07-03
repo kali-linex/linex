@@ -25,9 +25,9 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/slab.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_crtc.h>

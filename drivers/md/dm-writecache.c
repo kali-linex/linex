@@ -5,17 +5,17 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/kthread.h>
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/dax.h>
-#include <linux/pfn_t.h>
-#include <linux/libnvdimm.h>
-#include <linux/delay.h>
+#include <linex/device-mapper.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/vmalloc.h>
+#include <linex/kthread.h>
+#include <linex/dm-io.h>
+#include <linex/dm-kcopyd.h>
+#include <linex/dax.h>
+#include <linex/pfn_t.h>
+#include <linex/libnvdimm.h>
+#include <linex/delay.h>
 #include "dm-io-tracker.h"
 
 #define DM_MSG_PREFIX "writecache"

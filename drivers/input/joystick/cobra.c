@@ -4,15 +4,15 @@
  */
 
 /*
- * Creative Labs Blaster GamePad Cobra driver for Linux
+ * Creative Labs Blaster GamePad Cobra driver for Linex
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/gameport.h>
+#include <linex/input.h>
+#include <linex/jiffies.h>
 
 #define DRIVER_DESC	"Creative Labs Blaster GamePad Cobra driver"
 

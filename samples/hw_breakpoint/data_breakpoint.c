@@ -11,15 +11,15 @@
  *
  * Copyright (C) IBM Corporation, 2009
  *
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@linex.vnet.ibm.com>
  */
-#include <linux/module.h>	/* Needed by all modules */
-#include <linux/kernel.h>	/* Needed for KERN_INFO */
-#include <linux/init.h>		/* Needed for the macros */
-#include <linux/kallsyms.h>
+#include <linex/module.h>	/* Needed by all modules */
+#include <linex/kernel.h>	/* Needed for KERN_INFO */
+#include <linex/init.h>		/* Needed for the macros */
+#include <linex/kallsyms.h>
 
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
+#include <linex/perf_event.h>
+#include <linex/hw_breakpoint.h>
 
 struct perf_event * __percpu *sample_hbp;
 

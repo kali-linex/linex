@@ -6,19 +6,19 @@
  *  Authors:	Andrey V. Savochkin <saw@msu.ru>
  */
 
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
+#include <linex/cache.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/interrupt.h>
+#include <linex/spinlock.h>
+#include <linex/random.h>
+#include <linex/timer.h>
+#include <linex/time.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/net.h>
+#include <linex/workqueue.h>
 #include <net/ip.h>
 #include <net/inetpeer.h>
 #include <net/secure_seq.h>

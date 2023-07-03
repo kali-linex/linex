@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  HID support for Linux
+ *  HID support for Linex
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -13,13 +13,13 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/kernel.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
-#include <linux/hid.h>
+#include <linex/hid.h>
 
 static struct hid_driver hid_generic;
 

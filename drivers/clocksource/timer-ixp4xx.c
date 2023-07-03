@@ -8,17 +8,17 @@
  * Copyright 2003-2004 (C) MontaVista, Software, Inc.
  * Copyright (C) Deepak Saxena <dsaxena@plexity.net>
  */
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/clockchips.h>
+#include <linex/clocksource.h>
+#include <linex/sched_clock.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/delay.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/platform_device.h>
 
 /*
  * Constants to make it easy to access Timer Control/Status registers

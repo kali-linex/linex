@@ -5,14 +5,14 @@
  * Copyright (c) 2009 Daniel Ribeiro <drwyrm@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/ezx-pcap.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/err.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/driver.h>
+#include <linex/regulator/machine.h>
+#include <linex/mfd/ezx-pcap.h>
 
 static const unsigned int V1_table[] = {
 	2775000, 1275000, 1600000, 1725000, 1825000, 1925000, 2075000, 2275000,

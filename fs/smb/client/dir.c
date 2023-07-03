@@ -7,12 +7,12 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/file.h>
+#include <linex/fs.h>
+#include <linex/stat.h>
+#include <linex/slab.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/file.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -172,7 +172,7 @@ check_name(struct dentry *direntry, struct cifs_tcon *tcon)
 }
 
 
-/* Inode operations in similar order to how they appear in Linux file fs.h */
+/* Inode operations in similar order to how they appear in Linex file fs.h */
 
 static int cifs_do_create(struct inode *inode, struct dentry *direntry, unsigned int xid,
 			  struct tcon_link *tlink, unsigned int oflags, umode_t mode, __u32 *oplock,

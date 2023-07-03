@@ -16,23 +16,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/processor.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <linex/bitmap.h>
+#include <linex/debugfs.h>
+#include <linex/device.h>
+#include <linex/export.h>
+#include <linex/idr.h>
+#include <linex/io.h>
+#include <linex/io-64-nonatomic-hi-lo.h>
+#include <linex/kernel.h>
+#include <linex/ktime.h>
+#include <linex/hashtable.h>
+#include <linex/list.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/processor.h>
+#include <linex/refcount.h>
+#include <linex/slab.h>
 
 #include "common.h"
 #include "notify.h"
@@ -1223,7 +1223,7 @@ static int do_xfer(const struct scmi_protocol_handle *ph,
 
 	ret = scmi_wait_for_message_response(cinfo, xfer);
 	if (!ret && xfer->hdr.status)
-		ret = scmi_to_linux_errno(xfer->hdr.status);
+		ret = scmi_to_linex_errno(xfer->hdr.status);
 
 	if (info->desc->ops->mark_txdone)
 		info->desc->ops->mark_txdone(cinfo, ret, xfer);
@@ -1291,7 +1291,7 @@ static int do_xfer_with_response(const struct scmi_protocol_handle *ph,
 				(void *)_RET_IP_);
 			ret = -ETIMEDOUT;
 		} else if (xfer->hdr.status) {
-			ret = scmi_to_linux_errno(xfer->hdr.status);
+			ret = scmi_to_linex_errno(xfer->hdr.status);
 		}
 	}
 

@@ -7,9 +7,9 @@
 #ifndef OTX2_QOS_H
 #define OTX2_QOS_H
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/rhashtable.h>
+#include <linex/types.h>
+#include <linex/netdevice.h>
+#include <linex/rhashtable.h>
 
 #define OTX2_QOS_MAX_LVL		4
 #define OTX2_QOS_MAX_PRIO		7

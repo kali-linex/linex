@@ -7,11 +7,11 @@
  * Copyright 2015 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/bitfield.h>
-#include <linux/phy.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/bitfield.h>
+#include <linex/phy.h>
 
 #include "aquantia.h"
 

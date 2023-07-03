@@ -5,14 +5,14 @@
  */
 
 #include <irq.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/kexec.h>
+#include <linex/init.h>
+#include <linex/cpu.h>
+#include <linex/sched.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
+#include <linex/smp.h>
+#include <linex/cpufreq.h>
+#include <linex/kexec.h>
 #include <asm/processor.h>
 #include <asm/smp.h>
 #include <asm/time.h>

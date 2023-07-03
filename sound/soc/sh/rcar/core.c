@@ -90,7 +90,7 @@
  *
  */
 
-#include <linux/pm_runtime.h>
+#include <linex/pm_runtime.h>
 #include "rsnd.h"
 
 #define RSND_RATES SNDRV_PCM_RATE_8000_192000
@@ -448,7 +448,7 @@ u32 rsnd_get_busif_shift(struct rsnd_dai_stream *io, struct rsnd_mod *mod)
 	 * This is needed for 24bit data
 	 * We need to shift 8bit
 	 *
-	 * Linux 24bit data is located as 0x00******
+	 * Linex 24bit data is located as 0x00******
 	 * HW    24bit data is located as 0x******00
 	 *
 	 */

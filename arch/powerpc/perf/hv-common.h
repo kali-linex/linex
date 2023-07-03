@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_POWERPC_PERF_HV_COMMON_H_
-#define LINUX_POWERPC_PERF_HV_COMMON_H_
+#ifndef LINEX_POWERPC_PERF_HV_COMMON_H_
+#define LINEX_POWERPC_PERF_HV_COMMON_H_
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <linex/perf_event.h>
+#include <linex/types.h>
 
 struct hv_perf_caps {
 	u16 version;

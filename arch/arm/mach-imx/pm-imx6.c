@@ -4,20 +4,20 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/clk/imx.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/genalloc.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/suspend.h>
+#include <linex/clk/imx.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/irq.h>
+#include <linex/genalloc.h>
+#include <linex/irqchip/arm-gic.h>
+#include <linex/mfd/syscon.h>
+#include <linex/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/of_platform.h>
+#include <linex/regmap.h>
+#include <linex/suspend.h>
 #include <asm/cacheflush.h>
 #include <asm/fncpy.h>
 #include <asm/proc-fns.h>

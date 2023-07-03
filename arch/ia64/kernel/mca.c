@@ -70,25 +70,25 @@
  * 2007-04-27 Russ Anderson <rja@sgi.com>
  *	      Support multiple cpus going through OS_MCA in the same event.
  */
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/workqueue.h>
-#include <linux/cpumask.h>
-#include <linux/kdebug.h>
-#include <linux/cpu.h>
-#include <linux/gfp.h>
+#include <linex/jiffies.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/interrupt.h>
+#include <linex/irq.h>
+#include <linex/memblock.h>
+#include <linex/acpi.h>
+#include <linex/timer.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/smp.h>
+#include <linex/workqueue.h>
+#include <linex/cpumask.h>
+#include <linex/kdebug.h>
+#include <linex/cpu.h>
+#include <linex/gfp.h>
 
 #include <asm/delay.h>
 #include <asm/efi.h>

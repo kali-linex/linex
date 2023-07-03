@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2020, Intel Corporation
  *
- * Authors: Alexander Antonov <alexander.antonov@linux.intel.com>
+ * Authors: Alexander Antonov <alexander.antonov@linex.intel.com>
  */
 
 #include <api/fs/fs.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linex/kernel.h>
+#include <linex/err.h>
+#include <linex/zalloc.h>
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>

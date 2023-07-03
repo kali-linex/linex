@@ -3,12 +3,12 @@
  * Copyright (C) 2020 Unisoc Inc.
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
+#include <linex/component.h>
+#include <linex/dma-mapping.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of_graph.h>
+#include <linex/of_platform.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/irq_work.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/hypervisor.h>
-#include <linux/sched/clock.h>
-#include <linux/nmi.h>
-#include <linux/sched/debug.h>
-#include <linux/jump_label.h>
+#include <linex/irq_work.h>
+#include <linex/rcupdate.h>
+#include <linex/rculist.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/percpu.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/gfp.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/sched.h>
+#include <linex/sched/idle.h>
+#include <linex/hypervisor.h>
+#include <linex/sched/clock.h>
+#include <linex/nmi.h>
+#include <linex/sched/debug.h>
+#include <linex/jump_label.h>
 
 #include <trace/events/ipi.h>
 #define CREATE_TRACE_POINTS

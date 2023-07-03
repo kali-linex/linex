@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* mvme147.c  : the  Linux/mvme147/lance ethernet driver
+/* mvme147.c  : the  Linex/mvme147/lance ethernet driver
  *
  * Copyright (C) 05/1998 Peter Maydell <pmaydell@chiark.greenend.org.uk>
  * Based on the Sun Lance driver and the NetBSD HP Lance driver
  * Uses the generic 7990.c LANCE code.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/interrupt.h>
+#include <linex/ioport.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/errno.h>
+#include <linex/gfp.h>
+#include <linex/pgtable.h>
 /* Used for the temporal inet entries and routing */
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linex/socket.h>
+#include <linex/route.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/mvme147hw.h>

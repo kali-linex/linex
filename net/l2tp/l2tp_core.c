@@ -16,33 +16,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/string.h>
+#include <linex/list.h>
+#include <linex/rculist.h>
+#include <linex/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/spinlock.h>
+#include <linex/kthread.h>
+#include <linex/sched.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/l2tp.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/file.h>
-#include <linux/nsproxy.h>
+#include <linex/netdevice.h>
+#include <linex/net.h>
+#include <linex/inetdevice.h>
+#include <linex/skbuff.h>
+#include <linex/init.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/udp.h>
+#include <linex/l2tp.h>
+#include <linex/hash.h>
+#include <linex/sort.h>
+#include <linex/file.h>
+#include <linex/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/dst.h>
@@ -58,7 +58,7 @@
 #include <net/ip6_checksum.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <linex/atomic.h>
 
 #include "l2tp_core.h"
 #include "trace.h"

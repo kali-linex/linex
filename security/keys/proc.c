@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/fs.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
 #include <asm/errno.h>
 #include "internal.h"
 

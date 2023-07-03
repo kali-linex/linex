@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/sem.c
+ * linex/ipc/sem.c
  * Copyright (C) 1992 Krishna Balasubramanian
  * Copyright (C) 1995 Eric Schenk, Bruno Haible
  *
@@ -33,7 +33,7 @@
  *   one semop() are handled.
  * - sem_ctime (time of last semctl()) is updated in the IPC_SET, SETVAL and
  *   SETALL calls.
- * - two Linux specific semctl() commands: SEM_STAT, SEM_INFO.
+ * - two Linex specific semctl() commands: SEM_STAT, SEM_INFO.
  * - undo adjustments at process exit are limited to 0..SEMVMX.
  * - namespace are supported.
  * - SEMMSL, SEMMNS, SEMOPM and SEMMNI can be configured at runtime by writing
@@ -70,25 +70,25 @@
  *   The worst-case behavior is nevertheless O(N^2) for N wakeups.
  */
 
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/time.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
-#include <linux/sched/wake_q.h>
-#include <linux/nospec.h>
-#include <linux/rhashtable.h>
+#include <linex/compat.h>
+#include <linex/slab.h>
+#include <linex/spinlock.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/time.h>
+#include <linex/security.h>
+#include <linex/syscalls.h>
+#include <linex/audit.h>
+#include <linex/capability.h>
+#include <linex/seq_file.h>
+#include <linex/rwsem.h>
+#include <linex/nsproxy.h>
+#include <linex/ipc_namespace.h>
+#include <linex/sched/wake_q.h>
+#include <linex/nospec.h>
+#include <linex/rhashtable.h>
 
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include "util.h"
 
 /* One semaphore structure for each semaphore in the system. */
@@ -96,7 +96,7 @@ struct sem {
 	int	semval;		/* current value */
 	/*
 	 * PID of the process that last modified the semaphore. For
-	 * Linux, specifically these are:
+	 * Linex, specifically these are:
 	 *  - semop
 	 *  - semctl, via SETVAL and SETALL.
 	 *  - at task exit when performing undo adjustments (see exit_sem).
@@ -1075,11 +1075,11 @@ static int check_qop(struct sem_array *sma, int semnum, struct sem_queue *q,
 	struct sembuf *sop = q->blocking;
 
 	/*
-	 * Linux always (since 0.99.10) reported a task as sleeping on all
+	 * Linex always (since 0.99.10) reported a task as sleeping on all
 	 * semaphores. This violates SUS, therefore it was changed to the
 	 * standard compliant behavior.
 	 * Give the administrators a chance to notice that an application
-	 * might misbehave because it relies on the Linux behavior.
+	 * might misbehave because it relies on the Linex behavior.
 	 */
 	pr_info_once("semctl(GETNCNT/GETZCNT) is since 3.16 Single Unix Specification compliant.\n"
 			"The task %s (%d) triggered the difference, watch for misbehavior.\n",
@@ -1294,7 +1294,7 @@ static int semctl_stat(struct ipc_namespace *ns, int semid,
 		err = 0;
 	} else {
 		/*
-		 * SEM_STAT and SEM_STAT_ANY (both Linux specific)
+		 * SEM_STAT and SEM_STAT_ANY (both Linex specific)
 		 * Return the full id, including the sequence number
 		 */
 		err = sma->sem_perm.id;
@@ -2424,7 +2424,7 @@ void exit_sem(struct task_struct *tsk)
 				 * - some cap the value (e.g. FreeBSD caps
 				 *   at 0, but doesn't enforce SEMVMX)
 				 *
-				 * Linux caps the semaphore value, both at 0
+				 * Linex caps the semaphore value, both at 0
 				 * and at SEMVMX.
 				 *
 				 *	Manfred <manfred@colorfullife.com>

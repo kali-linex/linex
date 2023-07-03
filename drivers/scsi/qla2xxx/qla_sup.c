@@ -5,10 +5,10 @@
  */
 #include "qla_def.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <linex/delay.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/uaccess.h>
 
 /*
  * NVRAM support routines

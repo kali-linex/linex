@@ -14,14 +14,14 @@
 #define	FEC_H
 /****************************************************************************/
 
-#include <linux/clocksource.h>
-#include <linux/net_tstamp.h>
-#include <linux/pm_qos.h>
-#include <linux/bpf.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
+#include <linex/clocksource.h>
+#include <linex/net_tstamp.h>
+#include <linex/pm_qos.h>
+#include <linex/bpf.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/timecounter.h>
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/firmware/imx/sci.h>
+#include <linex/firmware/imx/sci.h>
 
 #if defined(CONFIG_M523x) || defined(CONFIG_M527x) || defined(CONFIG_M528x) || \
     defined(CONFIG_M520x) || defined(CONFIG_M532x) || defined(CONFIG_ARM) || \

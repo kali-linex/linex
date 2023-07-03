@@ -5,10 +5,10 @@
  * Copyright (C) 2015-2017 Helen Koike <helen.fornazier@gmail.com>
  */
 
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/v4l2-mediabus.h>
+#include <linex/moduleparam.h>
+#include <linex/string.h>
+#include <linex/vmalloc.h>
+#include <linex/v4l2-mediabus.h>
 #include <media/v4l2-rect.h>
 #include <media/v4l2-subdev.h>
 

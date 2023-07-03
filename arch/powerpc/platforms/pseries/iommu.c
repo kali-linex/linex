@@ -10,21 +10,21 @@
  * Dynamic DMA mapping support, pSeries-specific parts, both SMP and LPAR.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/crash_dump.h>
-#include <linux/memory.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/iommu.h>
-#include <linux/rculist.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/mm.h>
+#include <linex/memblock.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/crash_dump.h>
+#include <linex/memory.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
+#include <linex/iommu.h>
+#include <linex/rculist.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -395,8 +395,8 @@ static LIST_HEAD(dma_win_list);
 static DEFINE_SPINLOCK(dma_win_list_lock);
 /* protects initializing window twice for same device */
 static DEFINE_MUTEX(dma_win_init_mutex);
-#define DIRECT64_PROPNAME "linux,direct64-ddr-window-info"
-#define DMA64_PROPNAME "linux,dma64-ddr-window-info"
+#define DIRECT64_PROPNAME "linex,direct64-ddr-window-info"
+#define DMA64_PROPNAME "linex,dma64-ddr-window-info"
 
 static int tce_clearrange_multi_pSeriesLP(unsigned long start_pfn,
 					unsigned long num_pfn, const void *arg)
@@ -556,8 +556,8 @@ static void iommu_table_setparms(struct pci_controller *phb,
 	}
 
 	node = phb->dn;
-	basep = of_get_property(node, "linux,tce-base", NULL);
-	sizep = of_get_property(node, "linux,tce-size", NULL);
+	basep = of_get_property(node, "linex,tce-base", NULL);
+	sizep = of_get_property(node, "linex,tce-size", NULL);
 	if (basep == NULL || sizep == NULL) {
 		printk(KERN_ERR "PCI_DMA: iommu_table_setparms: %pOF has "
 				"missing tce entries !\n", dn);
@@ -1683,7 +1683,7 @@ static struct notifier_block iommu_reconfig_nb = {
 /* These are called very early. */
 void __init iommu_init_early_pSeries(void)
 {
-	if (of_chosen && of_get_property(of_chosen, "linux,iommu-off", NULL))
+	if (of_chosen && of_get_property(of_chosen, "linex,iommu-off", NULL))
 		return;
 
 	if (firmware_has_feature(FW_FEATURE_LPAR)) {

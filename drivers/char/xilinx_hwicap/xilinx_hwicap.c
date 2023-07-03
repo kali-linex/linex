@@ -71,29 +71,29 @@
  * currently programmed in the FPGA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/sysctl.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/ioport.h>
+#include <linex/interrupt.h>
+#include <linex/fcntl.h>
+#include <linex/init.h>
+#include <linex/poll.h>
+#include <linex/proc_fs.h>
+#include <linex/mutex.h>
+#include <linex/sysctl.h>
+#include <linex/fs.h>
+#include <linex/cdev.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/io.h>
+#include <linex/uaccess.h>
 
 #ifdef CONFIG_OF
 /* For open firmware. */
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
 #endif
 
 #include "xilinx_hwicap.h"

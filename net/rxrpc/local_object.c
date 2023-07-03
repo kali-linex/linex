@@ -7,13 +7,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/hashtable.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/skbuff.h>
+#include <linex/slab.h>
+#include <linex/udp.h>
+#include <linex/ip.h>
+#include <linex/hashtable.h>
 #include <net/sock.h>
 #include <net/udp.h>
 #include <net/udp_tunnel.h>

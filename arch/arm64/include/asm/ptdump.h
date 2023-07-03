@@ -7,8 +7,8 @@
 
 #ifdef CONFIG_PTDUMP_CORE
 
-#include <linux/mm_types.h>
-#include <linux/seq_file.h>
+#include <linex/mm_types.h>
+#include <linex/seq_file.h>
 
 struct addr_marker {
 	unsigned long start_address;

@@ -19,16 +19,16 @@
  * the "wakeup" GPIO is not given, power management will be disabled.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pm_runtime.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/delay.h>
+#include <linex/jiffies.h>
+#include <linex/gpio/consumer.h>
+#include <linex/pm_runtime.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 #define MLX90614_OP_RAM		0x00
 #define MLX90614_OP_EEPROM	0x20

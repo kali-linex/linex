@@ -17,11 +17,11 @@
  * Copyright (c) 2022 Google
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/if_arp.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/i2c.h>
+#include <linex/i2c-mux.h>
+#include <linex/if_arp.h>
 #include <net/mctp.h>
 #include <net/mctpdevice.h>
 

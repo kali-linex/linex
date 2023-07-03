@@ -5,12 +5,12 @@
  *
  * Extracted from xt_TEE.c
  */
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/route.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
+#include <linex/ip.h>
+#include <linex/module.h>
+#include <linex/percpu.h>
+#include <linex/route.h>
+#include <linex/skbuff.h>
+#include <linex/netfilter.h>
 #include <net/checksum.h>
 #include <net/icmp.h>
 #include <net/ip.h>

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/fs.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/socket.h>
+#include <linex/net.h>
+#include <linex/fs.h>
 #include <net/af_unix.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/io_uring.h>
+#include <linex/init.h>
+#include <linex/io_uring.h>
 
 #include "scm.h"
 

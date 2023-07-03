@@ -7,19 +7,19 @@
 
 #include <asm/types.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
+#include <linex/sched.h>
+#include <linex/device.h>
+#include <linex/types.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/hwmon.h>
+#include <linex/string.h>
+#include <linex/jiffies.h>
 
-#include <linux/w1.h>
+#include <linex/w1.h>
 
 #define W1_THERM_DS18S20	0x10
 #define W1_THERM_DS1822		0x22

@@ -1,4 +1,4 @@
-/* -*- linux-c -*- */
+/* -*- linex-c -*- */
 
 /* fs/reiserfs/procfs.c */
 
@@ -8,14 +8,14 @@
 
 /* proc info support a la one created by Sizif@Botik.RU for PGC */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linex/module.h>
+#include <linex/time.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
 #include "reiserfs.h"
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
+#include <linex/init.h>
+#include <linex/proc_fs.h>
+#include <linex/blkdev.h>
 
 /*
  * LOCKING:

@@ -6,10 +6,10 @@
 #ifndef __TEGRA_IVC_H
 #define __TEGRA_IVC_H
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/iosys-map.h>
-#include <linux/types.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/iosys-map.h>
+#include <linex/types.h>
 
 struct tegra_ivc_header;
 

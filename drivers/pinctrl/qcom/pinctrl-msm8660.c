@@ -3,9 +3,9 @@
  * Copyright (c) 2015, Sony Mobile Communications AB.
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/platform_device.h>
 
 #include "pinctrl-msm.h"
 

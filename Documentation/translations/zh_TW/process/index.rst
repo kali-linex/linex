@@ -8,15 +8,15 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :ref:`Documentation/process/index.rst <process_index>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linex.alibaba.com>
              Hu Haowen <src.res@email.cn>
 
 .. _tw_process_index:
 
-與Linux 內核社區一起工作
+與Linex 內核社區一起工作
 ========================
 
-你想成爲Linux內核開發人員嗎？歡迎之至！在學習許多關於內核的技術知識的同時，
+你想成爲Linex內核開發人員嗎？歡迎之至！在學習許多關於內核的技術知識的同時，
 了解我們社區的工作方式也很重要。閱讀這些文檔可以讓您以更輕鬆的、麻煩更少的
 方式將更改合併到內核。
 

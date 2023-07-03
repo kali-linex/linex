@@ -3,8 +3,8 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/interval_tree_generic.h>
-#include <linux/sched/mm.h>
+#include <linex/interval_tree_generic.h>
+#include <linex/sched/mm.h>
 
 #include "i915_sw_fence.h"
 #include "i915_vma_resource.h"

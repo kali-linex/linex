@@ -9,12 +9,12 @@
 #ifndef RNBD_PROTO_H
 #define RNBD_PROTO_H
 
-#include <linux/types.h>
-#include <linux/blk-mq.h>
-#include <linux/limits.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linex/types.h>
+#include <linex/blk-mq.h>
+#include <linex/limits.h>
+#include <linex/inet.h>
+#include <linex/in.h>
+#include <linex/in6.h>
 #include <rdma/ib.h>
 
 #define RNBD_PROTO_VER_MAJOR 2

@@ -19,12 +19,12 @@
 #include <drm/drm_managed.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linex/bitops.h>
+#include <linex/dma-mapping.h>
+#include <linex/of_platform.h>
+#include <linex/scatterlist.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
 
 #include <media/vsp1.h>
 

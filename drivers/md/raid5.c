@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * raid5.c : Multiple Devices driver for Linux
+ * raid5.c : Multiple Devices driver for Linex
  *	   Copyright (C) 1996, 1997 Ingo Molnar, Miguel de Icaza, Gadi Oxman
  *	   Copyright (C) 1999, 2000 Ingo Molnar
  *	   Copyright (C) 2002, 2003 H. Peter Anvin
@@ -35,21 +35,21 @@
  * miss any bits.
  */
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/module.h>
-#include <linux/async.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/nodemask.h>
+#include <linex/blkdev.h>
+#include <linex/delay.h>
+#include <linex/kthread.h>
+#include <linex/raid/pq.h>
+#include <linex/async_tx.h>
+#include <linex/module.h>
+#include <linex/async.h>
+#include <linex/seq_file.h>
+#include <linex/cpu.h>
+#include <linex/slab.h>
+#include <linex/ratelimit.h>
+#include <linex/nodemask.h>
 
 #include <trace/events/block.h>
-#include <linux/list_sort.h>
+#include <linex/list_sort.h>
 
 #include "md.h"
 #include "raid5.h"

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/cgroup.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
-#include <linux/uidgid.h>
-#include <linux/filter.h>
-#include <linux/ctype.h>
-#include <linux/jiffies.h>
-#include <linux/pid_namespace.h>
-#include <linux/poison.h>
-#include <linux/proc_ns.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_mem_alloc.h>
+#include <linex/bpf.h>
+#include <linex/btf.h>
+#include <linex/bpf-cgroup.h>
+#include <linex/cgroup.h>
+#include <linex/rcupdate.h>
+#include <linex/random.h>
+#include <linex/smp.h>
+#include <linex/topology.h>
+#include <linex/ktime.h>
+#include <linex/sched.h>
+#include <linex/uidgid.h>
+#include <linex/filter.h>
+#include <linex/ctype.h>
+#include <linex/jiffies.h>
+#include <linex/pid_namespace.h>
+#include <linex/poison.h>
+#include <linex/proc_ns.h>
+#include <linex/sched/task.h>
+#include <linex/security.h>
+#include <linex/btf_ids.h>
+#include <linex/bpf_mem_alloc.h>
 
 #include "../../lib/kstrtox.h"
 
@@ -1884,7 +1884,7 @@ void bpf_rb_root_free(const struct btf_field *field, void *rb_root,
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmlinex BTF");
 
 __bpf_kfunc void *bpf_obj_new_impl(u64 local_type_id__k, void *meta__ign)
 {
@@ -1930,7 +1930,7 @@ __bpf_kfunc void *bpf_refcount_acquire_impl(void *p__refcounted_kptr, void *meta
 	struct bpf_refcount *ref;
 
 	/* Could just cast directly to refcount_t *, but need some code using
-	 * bpf_refcount type so that it is emitted in vmlinux BTF
+	 * bpf_refcount type so that it is emitted in vmlinex BTF
 	 */
 	ref = (struct bpf_refcount *)(p__refcounted_kptr + meta->record->refcount_off);
 	if (!refcount_inc_not_zero((refcount_t *)ref))

@@ -5,18 +5,18 @@
  * Copyright (C) 2015, Intel Corporation. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/list.h>
+#include <linex/wait.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/device.h>
+#include <linex/slab.h>
+#include <linex/workqueue.h>
+#include <linex/sched.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
 #include <sound/asound.h>
 
 #include "sst-dsp.h"

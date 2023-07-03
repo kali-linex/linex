@@ -13,8 +13,8 @@
 #if !defined(__MTU3_TRACE_H__) || defined(TRACE_HEADER_MULTI_READ)
 #define __MTU3_TRACE_H__
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linex/types.h>
+#include <linex/tracepoint.h>
 
 #include "mtu3.h"
 

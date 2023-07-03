@@ -7,12 +7,12 @@
 #ifndef __HDMI_CONNECTOR_H__
 #define __HDMI_CONNECTOR_H__
 
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hdmi.h>
+#include <linex/i2c.h>
+#include <linex/clk.h>
+#include <linex/platform_device.h>
+#include <linex/regulator/consumer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/hdmi.h>
 
 #include <drm/drm_bridge.h>
 

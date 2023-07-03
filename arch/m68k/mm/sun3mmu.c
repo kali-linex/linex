@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/mm/sun3mmu.c
+ * linex/arch/m68k/mm/sun3mmu.c
  *
  * Implementations of mm routines specific to the sun3 MMU.
  *
@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linex/signal.h>
+#include <linex/sched.h>
+#include <linex/mm.h>
+#include <linex/swap.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/types.h>
+#include <linex/init.h>
+#include <linex/memblock.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/page.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

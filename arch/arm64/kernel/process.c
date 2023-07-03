@@ -6,41 +6,41 @@
  * Copyright (C) 1996-2000 Russell King - Converted to ARM.
  * Copyright (C) 2012 ARM Ltd.
  */
-#include <linux/compat.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/personality.h>
-#include <linux/notifier.h>
+#include <linex/compat.h>
+#include <linex/efi.h>
+#include <linex/elf.h>
+#include <linex/export.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/kernel.h>
+#include <linex/mman.h>
+#include <linex/mm.h>
+#include <linex/nospec.h>
+#include <linex/stddef.h>
+#include <linex/sysctl.h>
+#include <linex/unistd.h>
+#include <linex/user.h>
+#include <linex/delay.h>
+#include <linex/reboot.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/cpu.h>
+#include <linex/elfcore.h>
+#include <linex/pm.h>
+#include <linex/tick.h>
+#include <linex/utsname.h>
+#include <linex/uaccess.h>
+#include <linex/random.h>
+#include <linex/hw_breakpoint.h>
+#include <linex/personality.h>
+#include <linex/notifier.h>
 #include <trace/events/power.h>
-#include <linux/percpu.h>
-#include <linux/thread_info.h>
-#include <linux/prctl.h>
-#include <linux/stacktrace.h>
+#include <linex/percpu.h>
+#include <linex/thread_info.h>
+#include <linex/prctl.h>
+#include <linex/stacktrace.h>
 
 #include <asm/alternative.h>
 #include <asm/compat.h>
@@ -57,7 +57,7 @@
 #include <asm/system_misc.h>
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <linex/stackprotector.h>
 unsigned long __stack_chk_guard __ro_after_init;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

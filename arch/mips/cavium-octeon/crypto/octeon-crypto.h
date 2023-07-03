@@ -9,10 +9,10 @@
  * Aaro Koskinen <aaro.koskinen@iki.fi>.
  *
  */
-#ifndef __LINUX_OCTEON_CRYPTO_H
-#define __LINUX_OCTEON_CRYPTO_H
+#ifndef __LINEX_OCTEON_CRYPTO_H
+#define __LINEX_OCTEON_CRYPTO_H
 
-#include <linux/sched.h>
+#include <linex/sched.h>
 #include <asm/mipsregs.h>
 
 #define OCTEON_CR_OPCODE_PRIORITY 300
@@ -221,4 +221,4 @@ do {							\
 	: [rt] "d" (value));				\
 } while (0)
 
-#endif /* __LINUX_OCTEON_CRYPTO_H */
+#endif /* __LINEX_OCTEON_CRYPTO_H */

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
+#include <linex/moduleparam.h>
+#include <linex/vmalloc.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

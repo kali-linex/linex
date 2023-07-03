@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2009 Manuel Gebele <forensixs@gmx.de>, Germany
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -27,15 +27,15 @@
  *  - pwm
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
-#include <linux/comedi/comedi_usb.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/errno.h>
+#include <linex/input.h>
+#include <linex/slab.h>
+#include <linex/poll.h>
+#include <linex/uaccess.h>
+#include <linex/comedi/comedi_usb.h>
 
 enum {
 	DEVICE_VMK8055,

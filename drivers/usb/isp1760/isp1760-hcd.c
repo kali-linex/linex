@@ -14,19 +14,19 @@
  * Copyright 2021 Linaro, Rui Miguel Silva <rui.silva@linaro.org>
  *
  */
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
+#include <linex/gpio/consumer.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/slab.h>
+#include <linex/list.h>
+#include <linex/usb.h>
+#include <linex/usb/hcd.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/mm.h>
+#include <linex/timer.h>
 #include <asm/unaligned.h>
 #include <asm/cacheflush.h>
 

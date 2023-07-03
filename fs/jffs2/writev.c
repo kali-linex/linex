@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
+#include <linex/kernel.h>
+#include <linex/mtd/mtd.h>
 #include "nodelist.h"
 
 int jffs2_flash_direct_writev(struct jffs2_sb_info *c, const struct kvec *vecs,

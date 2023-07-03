@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR Linex-OpenIB */
 /* Copyright (c) 2021, Mellanox Technologies inc. All rights reserved. */
 
 #ifndef __MLX5_EN_RQT_H__
 #define __MLX5_EN_RQT_H__
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 
 #define MLX5E_INDIR_RQT_SIZE (1 << 8)
 

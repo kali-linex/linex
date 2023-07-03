@@ -7,22 +7,22 @@
  * Author: Robert Love <rlove@google.com>
  */
 
-#include <linux/hrtimer.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/err.h>
+#include <linex/hrtimer.h>
+#include <linex/delay.h>
+#include <linex/io.h>
+#include <linex/ioport.h>
+#include <linex/irq.h>
+#include <linex/init.h>
+#include <linex/console.h>
+#include <linex/tty.h>
+#include <linex/tty_flip.h>
+#include <linex/serial_core.h>
+#include <linex/serial.h>
+#include <linex/slab.h>
+#include <linex/clk.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/err.h>
 
 /*
  * UART Register offsets

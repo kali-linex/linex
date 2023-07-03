@@ -5,8 +5,8 @@
  * License as published by the Free Software Foundation.
  */
 
-#include <linux/bpf.h>
-#include <linux/version.h>
+#include <linex/bpf.h>
+#include <linex/version.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("cgroup/dev")

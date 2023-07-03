@@ -5,8 +5,8 @@
  * Copyright (C) 2014  STMicroelectronics SAS. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/nfc.h>
+#include <linex/module.h>
+#include <linex/nfc.h>
 #include <net/nfc/hci.h>
 
 #include "st21nfca.h"

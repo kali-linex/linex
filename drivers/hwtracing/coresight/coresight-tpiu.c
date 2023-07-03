@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The Linex Foundation. All rights reserved.
  *
  * Description: CoreSight Trace Port Interface Unit driver
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
+#include <linex/atomic.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/slab.h>
+#include <linex/pm_runtime.h>
+#include <linex/coresight.h>
+#include <linex/amba/bus.h>
+#include <linex/clk.h>
 
 #include "coresight-priv.h"
 

@@ -2,7 +2,7 @@
 
 #define _GNU_SOURCE
 #include <errno.h>
-#include <linux/types.h>
+#include <linex/types.h>
 #include <poll.h>
 #include <signal.h>
 #include <stdbool.h>

@@ -23,15 +23,15 @@
  *  at once.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/usb.h>
+#include <linex/module.h>
+#include <linex/firmware.h>
+#include <linex/kernel.h>
+#include <linex/mutex.h>
+#include <linex/slab.h>
+#include <linex/videodev2.h>
+#include <linex/mm.h>
+#include <linex/vmalloc.h>
+#include <linex/usb.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
 #include <media/v4l2-common.h>
@@ -510,7 +510,7 @@ static void s2255_fwchunk_complete(struct urb *urb)
 	}
 #define CHUNK_SIZE 512
 	/* all USB transfers must be done with continuous kernel memory.
-	   can't allocate more than 128k in current linux kernel, so
+	   can't allocate more than 128k in current linex kernel, so
 	   upload the firmware in chunks
 	 */
 	if (data->fw_loaded < data->fw_size) {
@@ -1592,7 +1592,7 @@ static int s2255_probe_v4l(struct s2255_dev *dev)
 	ret = v4l2_device_register(&dev->interface->dev, &dev->v4l2_dev);
 	if (ret)
 		return ret;
-	/* initialize all video 4 linux */
+	/* initialize all video 4 linex */
 	/* register 4 video devices */
 	for (i = 0; i < MAX_CHANNELS; i++) {
 		vc = &dev->vc[i];
@@ -2372,7 +2372,7 @@ static struct usb_driver s2255_driver = {
 
 module_usb_driver(s2255_driver);
 
-MODULE_DESCRIPTION("Sensoray 2255 Video for Linux driver");
+MODULE_DESCRIPTION("Sensoray 2255 Video for Linex driver");
 MODULE_AUTHOR("Dean Anderson (Sensoray Company Inc.)");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(S2255_VERSION);

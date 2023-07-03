@@ -178,16 +178,16 @@
 
 #define pr_fmt(fmt) "bcache: %s() " fmt, __func__
 
-#include <linux/bio.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
+#include <linex/bio.h>
+#include <linex/kobject.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/rbtree.h>
+#include <linex/rwsem.h>
+#include <linex/refcount.h>
+#include <linex/types.h>
+#include <linex/workqueue.h>
+#include <linex/kthread.h>
 
 #include "bcache_ondisk.h"
 #include "bset.h"

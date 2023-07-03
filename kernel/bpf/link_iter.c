@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2022 Red Hat, Inc. */
-#include <linux/bpf.h>
-#include <linux/fs.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/btf_ids.h>
+#include <linex/bpf.h>
+#include <linex/fs.h>
+#include <linex/filter.h>
+#include <linex/kernel.h>
+#include <linex/btf_ids.h>
 
 struct bpf_iter_seq_link_info {
 	u32 link_id;

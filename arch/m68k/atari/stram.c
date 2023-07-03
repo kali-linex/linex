@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/kdev_t.h>
+#include <linex/major.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/vmalloc.h>
+#include <linex/pagemap.h>
+#include <linex/memblock.h>
+#include <linex/mount.h>
+#include <linex/blkdev.h>
+#include <linex/module.h>
+#include <linex/ioport.h>
 
 #include <asm/setup.h>
 #include <asm/machdep.h>

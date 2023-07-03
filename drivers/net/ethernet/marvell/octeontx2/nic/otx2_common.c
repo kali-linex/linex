@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
 #include <net/tso.h>
-#include <linux/bitfield.h>
+#include <linex/bitfield.h>
 
 #include "otx2_reg.h"
 #include "otx2_common.h"

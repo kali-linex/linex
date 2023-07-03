@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*  linux/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
+/*  linex/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -8,28 +8,28 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/bitfield.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/debugfs.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linex/bitfield.h>
+#include <linex/string.h>
+#include <linex/delay.h>
+#include <linex/highmem.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/dma-mapping.h>
+#include <linex/slab.h>
+#include <linex/device.h>
+#include <linex/scatterlist.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/gpio.h>
+#include <linex/pm_runtime.h>
+#include <linex/pm_qos.h>
+#include <linex/debugfs.h>
+#include <linex/acpi.h>
+#include <linex/dmi.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linex/mmc/host.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
 
 #ifdef CONFIG_X86
 #include <asm/iosf_mbi.h>

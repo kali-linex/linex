@@ -12,23 +12,23 @@
  *
  ****************************************************************************/
 
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linex/kstrtox.h>
+#include <linex/module.h>
+#include <linex/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
-#include <linux/spinlock.h>
+#include <linex/utsname.h>
+#include <linex/init.h>
+#include <linex/fs.h>
+#include <linex/namei.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/delay.h>
+#include <linex/unistd.h>
+#include <linex/string.h>
+#include <linex/parser.h>
+#include <linex/syscalls.h>
+#include <linex/configfs.h>
+#include <linex/spinlock.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>
@@ -1612,7 +1612,7 @@ static ssize_t target_wwn_vpd_unit_serial_store(struct config_item *item,
 	unsigned char buf[INQUIRY_VPD_SERIAL_LEN] = { };
 
 	/*
-	 * If Linux/SCSI subsystem_api_t plugin got a VPD Unit Serial
+	 * If Linex/SCSI subsystem_api_t plugin got a VPD Unit Serial
 	 * from the struct scsi_device level firmware, do not allow
 	 * VPD Unit Serial to be emulated.
 	 *
@@ -3752,7 +3752,7 @@ static void __exit target_core_exit_configfs(void)
 }
 
 MODULE_DESCRIPTION("Target_Core_Mod/ConfigFS");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@Linex-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(target_core_init_configfs);

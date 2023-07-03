@@ -25,9 +25,9 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  */
 
-#include <linux/list_sort.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <linex/list_sort.h>
+#include <linex/pci.h>
+#include <linex/uaccess.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

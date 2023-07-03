@@ -6,13 +6,13 @@
  *      Copyright (c) 1999-2001  Paul Davis
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <linex/delay.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/module.h>
+#include <linex/io.h>
+#include <linex/nospec.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -21,7 +21,7 @@ insertion and removal require support for CPU hotplug.
 Such advances require CPUs available to a kernel to be removed either for
 provisioning reasons, or for RAS purposes to keep an offending CPU off
 system execution path. Hence the need for CPU hotplug support in the
-Linux kernel.
+Linex kernel.
 
 A more novel use of CPU-hotplug support is its use today in suspend resume
 support for SMP. Dual-core and HT support makes even a laptop run SMP kernels
@@ -354,7 +354,7 @@ There are two ways to allocate a CPU hotplug state:
   callbacks during a CPU online operation. During a CPU offline operation
   the driver teardown callbacks have to be invoked before the core teardown
   callback. The statically allocated states are described by constants in
-  the cpuhp_state enum which can be found in include/linux/cpuhotplug.h.
+  the cpuhp_state enum which can be found in include/linex/cpuhotplug.h.
 
   Insert the state into the enum at the proper place so the ordering
   requirements are fulfilled. The state constant has to be used for state
@@ -744,4 +744,4 @@ can process the event further.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/linux/cpuhotplug.h
+.. kernel-doc:: include/linex/cpuhotplug.h

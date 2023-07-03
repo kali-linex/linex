@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/wait.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/qcom_smd.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/mailbox_client.h>
+#include <linex/mfd/syscon.h>
+#include <linex/module.h>
+#include <linex/of_irq.h>
+#include <linex/of_platform.h>
+#include <linex/platform_device.h>
+#include <linex/regmap.h>
+#include <linex/sched.h>
+#include <linex/sizes.h>
+#include <linex/slab.h>
+#include <linex/soc/qcom/smem.h>
+#include <linex/wait.h>
+#include <linex/rpmsg.h>
+#include <linex/rpmsg/qcom_smd.h>
 
 #include "rpmsg_internal.h"
 

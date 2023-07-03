@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014 Oleksij Rempel <linux@rempel-privat.de>.
+ * Copyright (c) 2014 Oleksij Rempel <linex@rempel-privat.de>.
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linex/clk.h>
+#include <linex/clkdev.h>
+#include <linex/err.h>
+#include <linex/io.h>
+#include <linex/clk-provider.h>
+#include <linex/spinlock.h>
+#include <linex/of.h>
+#include <linex/of_address.h>
 #include <dt-bindings/clock/alphascale,asm9260.h>
 
 #define HW_AHBCLKCTRL0		0x0020

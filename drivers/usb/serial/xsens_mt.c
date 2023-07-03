@@ -5,12 +5,12 @@
  * Copyright (C) 2013 Xsens <info@xsens.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
+#include <linex/kernel.h>
+#include <linex/tty.h>
+#include <linex/module.h>
+#include <linex/usb.h>
+#include <linex/usb/serial.h>
+#include <linex/uaccess.h>
 
 #define XSENS_VID 0x2639
 

@@ -10,8 +10,8 @@
 
 #include "ssb_private.h"
 
-#include <linux/bcm47xx_nvram.h>
-#include <linux/ssb/ssb.h>
+#include <linex/bcm47xx_nvram.h>
+#include <linex/ssb/ssb.h>
 
 static u8 ssb_host_soc_read8(struct ssb_device *dev, u16 offset)
 {

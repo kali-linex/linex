@@ -2,12 +2,12 @@
 /*
  * multiorder.c: Multi-order radix tree entry testing
  * Copyright (c) 2016 Intel Corporation
- * Author: Ross Zwisler <ross.zwisler@linux.intel.com>
+ * Author: Ross Zwisler <ross.zwisler@linex.intel.com>
  * Author: Matthew Wilcox <matthew.r.wilcox@intel.com>
  */
-#include <linux/radix-tree.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <linex/radix-tree.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
 #include <pthread.h>
 
 #include "test.h"

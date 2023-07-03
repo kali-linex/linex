@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2022 Joel Selvaraj <jo@jsfamily.in>
- * Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Generated with linex-mdss-dsi-panel-driver-generator from vendor device tree:
+ * Copyright (c) 2013, The Linex Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linex/delay.h>
+#include <linex/gpio/consumer.h>
+#include <linex/regulator/consumer.h>
+#include <linex/module.h>
+#include <linex/of.h>
 
 #include <video/mipi_display.h>
 

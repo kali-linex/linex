@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include <linux/perf_event.h>
-#include <linux/bpf.h>
+#include <linex/perf_event.h>
+#include <linex/bpf.h>
 #include <signal.h>
 #include <errno.h>
 #include <sys/resource.h>

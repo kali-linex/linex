@@ -11,9 +11,9 @@
 #ifndef _VDUSE_IOVA_DOMAIN_H
 #define _VDUSE_IOVA_DOMAIN_H
 
-#include <linux/iova.h>
-#include <linux/dma-mapping.h>
-#include <linux/vhost_iotlb.h>
+#include <linex/iova.h>
+#include <linex/dma-mapping.h>
+#include <linex/vhost_iotlb.h>
 
 #define IOVA_START_PFN 1
 

@@ -12,10 +12,10 @@
 #ifndef __XILINX_VIP_DMA_H__
 #define __XILINX_VIP_DMA_H__
 
-#include <linux/dmaengine.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/videodev2.h>
+#include <linex/dmaengine.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-dev.h>

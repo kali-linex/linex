@@ -2,11 +2,11 @@
 #ifndef __PERF_MAPS_H
 #define __PERF_MAPS_H
 
-#include <linux/refcount.h>
-#include <linux/rbtree.h>
+#include <linex/refcount.h>
+#include <linex/rbtree.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <linux/types.h>
+#include <linex/types.h>
 #include "rwsem.h"
 #include <internal/rc_check.h>
 

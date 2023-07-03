@@ -49,20 +49,20 @@
  *      v0.011: Converted the PMAD to the driver model. macro
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/if_ether.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <linex/crc32.h>
+#include <linex/delay.h>
+#include <linex/errno.h>
+#include <linex/if_ether.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/spinlock.h>
+#include <linex/stddef.h>
+#include <linex/string.h>
+#include <linex/tc.h>
+#include <linex/types.h>
 
 #include <asm/addrspace.h>
 
@@ -74,9 +74,9 @@
 #include <asm/dec/system.h>
 
 static const char version[] =
-"declance.c: v0.011 by Linux MIPS DECstation task force\n";
+"declance.c: v0.011 by Linex MIPS DECstation task force\n";
 
-MODULE_AUTHOR("Linux MIPS DECstation task force");
+MODULE_AUTHOR("Linex MIPS DECstation task force");
 MODULE_DESCRIPTION("DEC LANCE (DECstation onboard, PMAD-xx) driver");
 MODULE_LICENSE("GPL");
 

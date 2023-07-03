@@ -6,19 +6,19 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/sysctl.h>
-#include <linux/miscdevice.h>
-#include <linux/netfs.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/sched.h>
+#include <linex/completion.h>
+#include <linex/slab.h>
+#include <linex/fs.h>
+#include <linex/file.h>
+#include <linex/namei.h>
+#include <linex/mount.h>
+#include <linex/statfs.h>
+#include <linex/sysctl.h>
+#include <linex/miscdevice.h>
+#include <linex/netfs.h>
 #include <trace/events/netfs.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"

@@ -3,12 +3,12 @@
  * GPIO library for the ACCES IDIO-16 family
  * Copyright (C) 2022 William Breathitt Gray
  */
-#include <linux/bitmap.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linex/bitmap.h>
+#include <linex/export.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/spinlock.h>
+#include <linex/types.h>
 
 #include "gpio-idio-16.h"
 

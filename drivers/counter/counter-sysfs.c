@@ -3,19 +3,19 @@
  * Generic Counter sysfs interface
  * Copyright (C) 2020 William Breathitt Gray
  */
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/kstrtox.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linex/counter.h>
+#include <linex/device.h>
+#include <linex/err.h>
+#include <linex/gfp.h>
+#include <linex/kernel.h>
+#include <linex/kfifo.h>
+#include <linex/kstrtox.h>
+#include <linex/list.h>
+#include <linex/mutex.h>
+#include <linex/spinlock.h>
+#include <linex/string.h>
+#include <linex/sysfs.h>
+#include <linex/types.h>
 
 #include "counter-sysfs.h"
 

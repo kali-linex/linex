@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -22,19 +22,19 @@
  *		Maciej W. Rozycki	:	IPv6 support
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
+#include <linex/mm.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/inet.h>
+#include <linex/netdevice.h>
+#include <linex/fddidevice.h>
+#include <linex/if_ether.h>
+#include <linex/skbuff.h>
+#include <linex/errno.h>
 #include <net/arp.h>
 #include <net/sock.h>
 

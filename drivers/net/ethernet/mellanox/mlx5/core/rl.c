@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/mlx5/driver.h>
+#include <linex/kernel.h>
+#include <linex/mlx5/driver.h>
 #include "mlx5_core.h"
 
 /* Scheduling element fw management */

@@ -7,13 +7,13 @@
  *
  * Copyright (C) 2012-2017 Cavium Inc.
  */
-#include <linux/dma-mapping.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linex/dma-mapping.h>
+#include <linex/gpio/consumer.h>
+#include <linex/interrupt.h>
+#include <linex/mmc/mmc.h>
+#include <linex/mmc/slot-gpio.h>
+#include <linex/module.h>
+#include <linex/of_platform.h>
 #include <asm/octeon/octeon.h>
 #include "cavium.h"
 

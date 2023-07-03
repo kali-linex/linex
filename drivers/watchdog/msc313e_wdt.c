@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linex/clk.h>
+#include <linex/io.h>
+#include <linex/mod_devicetable.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/watchdog.h>
 
 #define REG_WDT_CLR			0x0
 #define REG_WDT_MAX_PRD_L		0x10

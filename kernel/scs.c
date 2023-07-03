@@ -5,12 +5,12 @@
  * Copyright (C) 2019 Google LLC
  */
 
-#include <linux/cpuhotplug.h>
-#include <linux/kasan.h>
-#include <linux/mm.h>
-#include <linux/scs.h>
-#include <linux/vmalloc.h>
-#include <linux/vmstat.h>
+#include <linex/cpuhotplug.h>
+#include <linex/kasan.h>
+#include <linex/mm.h>
+#include <linex/scs.h>
+#include <linex/vmalloc.h>
+#include <linex/vmstat.h>
 
 #ifdef CONFIG_DYNAMIC_SCS
 DEFINE_STATIC_KEY_FALSE(dynamic_scs_enabled);

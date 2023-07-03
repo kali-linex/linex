@@ -7,16 +7,16 @@
  *  Jan Kotas <jank@cadence.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/rtc.h>
-#include <linux/clk.h>
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/pm_wakeirq.h>
+#include <linex/module.h>
+#include <linex/platform_device.h>
+#include <linex/of.h>
+#include <linex/io.h>
+#include <linex/rtc.h>
+#include <linex/clk.h>
+#include <linex/bcd.h>
+#include <linex/bitfield.h>
+#include <linex/interrupt.h>
+#include <linex/pm_wakeirq.h>
 
 /* Registers */
 #define CDNS_RTC_CTLR		0x00

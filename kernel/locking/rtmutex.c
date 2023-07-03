@@ -16,13 +16,13 @@
  *
  *  See Documentation/locking/rt-mutex-design.rst for details.
  */
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/wake_q.h>
-#include <linux/ww_mutex.h>
+#include <linex/sched.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/deadline.h>
+#include <linex/sched/signal.h>
+#include <linex/sched/rt.h>
+#include <linex/sched/wake_q.h>
+#include <linex/ww_mutex.h>
 
 #include <trace/events/lock.h>
 

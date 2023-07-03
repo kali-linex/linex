@@ -5,8 +5,8 @@
  *  All Rights Reserved
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linex/init.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

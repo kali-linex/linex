@@ -5,9 +5,9 @@
  *    Copyright IBM Corp. 2012
  */
 
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/cacheinfo.h>
+#include <linex/seq_file.h>
+#include <linex/cpu.h>
+#include <linex/cacheinfo.h>
 #include <asm/facility.h>
 
 enum {

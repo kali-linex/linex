@@ -7,13 +7,13 @@
  * (c) 2006 Benjamin Herrenschmidt <benh@kernel.crashing.org>, IBM Corp.
  */
 
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/pgtable.h>
+#include <linex/percpu.h>
+#include <linex/types.h>
+#include <linex/export.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
+#include <linex/of_platform.h>
+#include <linex/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/ptrace.h>

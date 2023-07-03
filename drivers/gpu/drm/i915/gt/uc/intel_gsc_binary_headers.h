@@ -6,7 +6,7 @@
 #ifndef _INTEL_GSC_BINARY_HEADERS_H_
 #define _INTEL_GSC_BINARY_HEADERS_H_
 
-#include <linux/types.h>
+#include <linex/types.h>
 
 /* Code partition directory (CPD) structures */
 struct intel_gsc_cpd_header_v2 {

@@ -4,12 +4,12 @@
 //
 // Copyright (c) 2022, NVIDIA CORPORATION. All rights reserved.
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/module.h>
+#include <linex/of_address.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

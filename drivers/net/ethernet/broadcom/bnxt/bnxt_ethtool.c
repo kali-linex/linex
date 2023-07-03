@@ -8,21 +8,21 @@
  * the Free Software Foundation.
  */
 
-#include <linux/ctype.h>
-#include <linux/stringify.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/linkmode.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/utsname.h>
-#include <linux/time.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/timecounter.h>
+#include <linex/ctype.h>
+#include <linex/stringify.h>
+#include <linex/ethtool.h>
+#include <linex/ethtool_netlink.h>
+#include <linex/linkmode.h>
+#include <linex/interrupt.h>
+#include <linex/pci.h>
+#include <linex/etherdevice.h>
+#include <linex/crc32.h>
+#include <linex/firmware.h>
+#include <linex/utsname.h>
+#include <linex/time.h>
+#include <linex/ptp_clock_kernel.h>
+#include <linex/net_tstamp.h>
+#include <linex/timecounter.h>
 #include <net/netlink.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"

@@ -10,12 +10,12 @@
  */
 
 #include <sound/opl3.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
+#include <linex/io.h>
+#include <linex/delay.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/ioport.h>
 #include <sound/minors.h>
 #include "opl3_voice.h"
 

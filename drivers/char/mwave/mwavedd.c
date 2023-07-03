@@ -46,20 +46,20 @@
 *	First release to the public
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/miscdevice.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/serial_8250.h>
-#include <linux/nospec.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/fs.h>
+#include <linex/init.h>
+#include <linex/major.h>
+#include <linex/miscdevice.h>
+#include <linex/device.h>
+#include <linex/serial.h>
+#include <linex/sched.h>
+#include <linex/spinlock.h>
+#include <linex/mutex.h>
+#include <linex/delay.h>
+#include <linex/serial_8250.h>
+#include <linex/nospec.h>
 #include "smapi.h"
 #include "mwavedd.h"
 #include "3780i.h"

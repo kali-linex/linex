@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The Linex Foundation. All rights reserved.
  *
  * Description: CoreSight Program Flow Trace driver
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/amba/bus.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/clk.h>
-#include <linux/perf_event.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/init.h>
+#include <linex/types.h>
+#include <linex/device.h>
+#include <linex/io.h>
+#include <linex/err.h>
+#include <linex/fs.h>
+#include <linex/slab.h>
+#include <linex/delay.h>
+#include <linex/smp.h>
+#include <linex/sysfs.h>
+#include <linex/stat.h>
+#include <linex/pm_runtime.h>
+#include <linex/cpu.h>
+#include <linex/of.h>
+#include <linex/coresight.h>
+#include <linex/coresight-pmu.h>
+#include <linex/amba/bus.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
+#include <linex/clk.h>
+#include <linex/perf_event.h>
 #include <asm/sections.h>
 
 #include "coresight-etm.h"

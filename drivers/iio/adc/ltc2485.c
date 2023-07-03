@@ -7,12 +7,12 @@
  * Datasheet: http://cds.linear.com/docs/en/datasheet/2485fd.pdf
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <linex/delay.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linex/iio/iio.h>
+#include <linex/iio/sysfs.h>
 
 /* Power-on configuration: rejects both 50/60Hz, operates at 1x speed */
 #define LTC2485_CONFIG_DEFAULT		0

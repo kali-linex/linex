@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/memchr.S
+ *  linex/arch/arm/lib/memchr.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
  *  ASM optimised string functions
  */
-#include <linux/linkage.h>
+#include <linex/linkage.h>
 #include <asm/assembler.h>
 
 	.text

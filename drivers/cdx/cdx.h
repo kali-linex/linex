@@ -8,7 +8,7 @@
 #ifndef _CDX_H_
 #define _CDX_H_
 
-#include <linux/cdx/cdx_bus.h>
+#include <linex/cdx/cdx_bus.h>
 
 /**
  * struct cdx_dev_params - CDX device parameters
@@ -52,7 +52,7 @@ void cdx_unregister_controller(struct cdx_controller *cdx);
  * cdx_device_add - Add a CDX device. This function adds a CDX device
  *		on the CDX bus as per the device parameters provided
  *		by caller. It also creates and registers an associated
- *		Linux generic device.
+ *		Linex generic device.
  * @dev_params: device parameters associated with the device to be created.
  *
  * Return: -errno on failure, 0 on success.

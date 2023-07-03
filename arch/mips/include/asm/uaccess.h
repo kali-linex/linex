@@ -11,8 +11,8 @@
 #ifndef _ASM_UACCESS_H
 #define _ASM_UACCESS_H
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linex/kernel.h>
+#include <linex/string.h>
 #include <asm/asm-eva.h>
 #include <asm/extable.h>
 

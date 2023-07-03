@@ -4,12 +4,12 @@
 //
 // Copyright (C) 2017 Finn Thain
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/nubus.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linex/device.h>
+#include <linex/dma-mapping.h>
+#include <linex/list.h>
+#include <linex/nubus.h>
+#include <linex/seq_file.h>
+#include <linex/slab.h>
 
 #define to_nubus_board(d)       container_of(d, struct nubus_board, dev)
 #define to_nubus_driver(d)      container_of(d, struct nubus_driver, driver)

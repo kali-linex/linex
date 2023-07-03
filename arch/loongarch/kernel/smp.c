@@ -8,20 +8,20 @@
  * Copyright (C) 2000, 2001 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2003 Broadcom Corporation
  */
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
-#include <linux/time.h>
-#include <linux/tracepoint.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
+#include <linex/acpi.h>
+#include <linex/cpu.h>
+#include <linex/cpumask.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/seq_file.h>
+#include <linex/smp.h>
+#include <linex/threads.h>
+#include <linex/export.h>
+#include <linex/syscore_ops.h>
+#include <linex/time.h>
+#include <linex/tracepoint.h>
+#include <linex/sched/hotplug.h>
+#include <linex/sched/task_stack.h>
 
 #include <asm/cpu.h>
 #include <asm/idle.h>

@@ -12,15 +12,15 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
   */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/math64.h>
-#include <linux/log2.h>
-#include <linux/dynamic_debug.h>
-#include <linux/kernel.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/bitops.h>
+#include <linex/math64.h>
+#include <linex/log2.h>
+#include <linex/dynamic_debug.h>
+#include <linex/kernel.h>
 
 #include <media/dvb_math.h>
 #include <media/dvb_frontend.h>

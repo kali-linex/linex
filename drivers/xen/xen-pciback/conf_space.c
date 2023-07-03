@@ -12,9 +12,9 @@
 
 #define dev_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <linex/kernel.h>
+#include <linex/moduleparam.h>
+#include <linex/pci.h>
 #include "pciback.h"
 #include "conf_space.h"
 #include "conf_space_quirks.h"

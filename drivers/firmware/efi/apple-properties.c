@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) "apple-properties: " fmt
 
-#include <linux/memblock.h>
-#include <linux/efi.h>
-#include <linux/io.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
+#include <linex/memblock.h>
+#include <linex/efi.h>
+#include <linex/io.h>
+#include <linex/platform_data/x86/apple.h>
+#include <linex/property.h>
+#include <linex/slab.h>
+#include <linex/ucs2_string.h>
 #include <asm/setup.h>
 
 static bool dump_properties __initdata;

@@ -7,10 +7,10 @@
 #ifndef _GVE_H_
 #define _GVE_H_
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/u64_stats_sync.h>
+#include <linex/dma-mapping.h>
+#include <linex/netdevice.h>
+#include <linex/pci.h>
+#include <linex/u64_stats_sync.h>
 
 #include "gve_desc.h"
 #include "gve_desc_dqo.h"

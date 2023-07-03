@@ -6,13 +6,13 @@
  * Based on clk-programmable & clk-peripheral drivers by Boris BREZILLON.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linex/bitfield.h>
+#include <linex/clk-provider.h>
+#include <linex/clkdev.h>
+#include <linex/clk/at91_pmc.h>
+#include <linex/of.h>
+#include <linex/mfd/syscon.h>
+#include <linex/regmap.h>
 
 #include "pmc.h"
 

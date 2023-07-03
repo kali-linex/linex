@@ -5,10 +5,10 @@
 #if !defined(_TRACE_MMC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MMC_H
 
-#include <linux/blkdev.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/tracepoint.h>
+#include <linex/blkdev.h>
+#include <linex/mmc/core.h>
+#include <linex/mmc/host.h>
+#include <linex/tracepoint.h>
 
 TRACE_EVENT(mmc_request_start,
 

@@ -3,21 +3,21 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/rational.h>
-#include <linux/time64.h>
+#include <linex/init.h>
+#include <linex/interconnect.h>
+#include <linex/ioctl.h>
+#include <linex/list.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
+#include <linex/of_address.h>
+#include <linex/platform_device.h>
+#include <linex/delay.h>
+#include <linex/rational.h>
+#include <linex/time64.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>
-#include <linux/videodev2.h>
+#include <linex/videodev2.h>
 #include "vpu.h"
 #include "vpu_rpc.h"
 #include "vpu_defs.h"

@@ -10,13 +10,13 @@
  *  Rajan Vaja <rajanv@xilinx.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linex/compiler.h>
+#include <linex/module.h>
+#include <linex/slab.h>
+#include <linex/debugfs.h>
+#include <linex/uaccess.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linex/firmware/xlnx-zynqmp.h>
 #include "zynqmp-debug.h"
 
 #define PM_API_NAME_LEN			50

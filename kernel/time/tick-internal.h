@@ -2,8 +2,8 @@
 /*
  * tick internal variable and functions used by low/high res code
  */
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
+#include <linex/hrtimer.h>
+#include <linex/tick.h>
 
 #include "timekeeping.h"
 #include "tick-sched.h"

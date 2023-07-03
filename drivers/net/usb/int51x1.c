@@ -12,15 +12,15 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/netdevice.h>
+#include <linex/etherdevice.h>
+#include <linex/ethtool.h>
+#include <linex/slab.h>
+#include <linex/mii.h>
+#include <linex/usb.h>
+#include <linex/usb/usbnet.h>
 
 #define INT51X1_VENDOR_ID	0x09e1
 #define INT51X1_PRODUCT_ID	0x5121

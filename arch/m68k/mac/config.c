@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/mac/config.c
+ *  linex/arch/m68k/mac/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -7,29 +7,29 @@
  */
 
 /*
- * Miscellaneous linux stuff
+ * Miscellaneous linex stuff
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
+#include <linex/errno.h>
+#include <linex/module.h>
+#include <linex/reboot.h>
+#include <linex/types.h>
+#include <linex/mm.h>
+#include <linex/tty.h>
+#include <linex/console.h>
+#include <linex/interrupt.h>
 /* keyb */
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <linex/random.h>
+#include <linex/delay.h>
 /* keyb */
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/rtc.h>
+#include <linex/init.h>
+#include <linex/vt_kern.h>
+#include <linex/platform_device.h>
+#include <linex/ata_platform.h>
+#include <linex/adb.h>
+#include <linex/cuda.h>
+#include <linex/pmu.h>
+#include <linex/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>

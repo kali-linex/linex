@@ -4,12 +4,12 @@
  * Copyright (c) 2013, Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/nfc.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/ctype.h>
+#include <linex/debugfs.h>
+#include <linex/nfc.h>
 #include <net/nfc/nfc.h>
 #include <net/nfc/digital.h>
 

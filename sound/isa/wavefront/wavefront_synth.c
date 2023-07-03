@@ -17,17 +17,17 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linex/io.h>
+#include <linex/interrupt.h>
+#include <linex/init.h>
+#include <linex/delay.h>
+#include <linex/time.h>
+#include <linex/wait.h>
+#include <linex/sched/signal.h>
+#include <linex/firmware.h>
+#include <linex/moduleparam.h>
+#include <linex/slab.h>
+#include <linex/module.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 #include <sound/initval.h>

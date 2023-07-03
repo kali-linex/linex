@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2009 David Brownell
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/genalloc.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/io.h>
+#include <linex/genalloc.h>
 
 #include "common.h"
 #include "sram.h"

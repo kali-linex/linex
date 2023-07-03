@@ -6,9 +6,9 @@
  * Author: Frieder Schrempf <frieder.schrempf@kontron.de>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mtd/spinand.h>
+#include <linex/device.h>
+#include <linex/kernel.h>
+#include <linex/mtd/spinand.h>
 
 /* Kioxia is new name of Toshiba memory. */
 #define SPINAND_MFR_TOSHIBA		0x98

@@ -10,7 +10,7 @@
 #define _TUNER_H
 #ifdef __KERNEL__
 
-#include <linux/videodev2.h>
+#include <linex/videodev2.h>
 #include <media/v4l2-mc.h>
 
 #define ADDR_UNSET (255)

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Moxa C101 synchronous serial card driver for Linux
+ * Moxa C101 synchronous serial card driver for Linex
  *
  * Copyright (C) 2000-2003 Krzysztof Halasa <khc@pm.waw.pl>
  *
- * For information see <https://www.kernel.org/pub/linux/utils/net/hdlc/>
+ * For information see <https://www.kernel.org/pub/linex/utils/net/hdlc/>
  *
  * Sources of information:
  *    Hitachi HD64570 SCA User's Manual
@@ -13,17 +13,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/delay.h>
+#include <linex/module.h>
+#include <linex/kernel.h>
+#include <linex/capability.h>
+#include <linex/slab.h>
+#include <linex/types.h>
+#include <linex/string.h>
+#include <linex/errno.h>
+#include <linex/init.h>
+#include <linex/netdevice.h>
+#include <linex/hdlc.h>
+#include <linex/delay.h>
 #include <asm/io.h>
 
 #include "hd64570.h"

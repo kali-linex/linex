@@ -22,8 +22,8 @@
    feature. This needs to exactly match what is in libv4l! */
 #define SE401_QUANT_FACT 8
 
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linex/input.h>
+#include <linex/slab.h>
 #include "gspca.h"
 #include "se401.h"
 

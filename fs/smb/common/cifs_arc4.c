@@ -7,7 +7,7 @@
  * Jon Oberheide <jon@oberheide.org>
  */
 
-#include <linux/module.h>
+#include <linex/module.h>
 #include "arc4.h"
 
 MODULE_LICENSE("GPL");

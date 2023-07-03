@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the LINEX
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -33,32 +33,32 @@
  *		David S. Miller	:	New socket lookup architecture.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <linex/types.h>
+#include <linex/atomic.h>
 #include <asm/byteorder.h>
 #include <asm/current.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/sockios.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/mroute.h>
-#include <linux/netdevice.h>
-#include <linux/in_route.h>
-#include <linux/route.h>
-#include <linux/skbuff.h>
-#include <linux/igmp.h>
+#include <linex/stddef.h>
+#include <linex/slab.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/export.h>
+#include <linex/spinlock.h>
+#include <linex/sockios.h>
+#include <linex/socket.h>
+#include <linex/in.h>
+#include <linex/mroute.h>
+#include <linex/netdevice.h>
+#include <linex/in_route.h>
+#include <linex/route.h>
+#include <linex/skbuff.h>
+#include <linex/igmp.h>
 #include <net/net_namespace.h>
 #include <net/dst.h>
 #include <net/sock.h>
-#include <linux/ip.h>
-#include <linux/net.h>
+#include <linex/ip.h>
+#include <linex/net.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/udp.h>
@@ -68,13 +68,13 @@
 #include <net/inet_common.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
-#include <linux/rtnetlink.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
-#include <linux/uio.h>
+#include <linex/rtnetlink.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/netfilter.h>
+#include <linex/netfilter_ipv4.h>
+#include <linex/compat.h>
+#include <linex/uio.h>
 
 struct raw_frag_vec {
 	struct msghdr *msg;
@@ -564,7 +564,7 @@ static int raw_sendmsg(struct sock *sk, struct msghdr *msg, size_t len)
 
 	if (ipc.opt) {
 		err = -EINVAL;
-		/* Linux does not mangle headers on raw sockets,
+		/* Linex does not mangle headers on raw sockets,
 		 * so that IP options + IP_HDRINCL is non-sense.
 		 */
 		if (hdrincl)

@@ -11,8 +11,8 @@
  * modeled after.
  */
 
-#include <linux/spinlock.h>
-#include <linux/ioctl.h>
+#include <linex/spinlock.h>
+#include <linex/ioctl.h>
 
 /* platform driver name to register */
 #define NVT_DRIVER_NAME "nuvoton-cir"

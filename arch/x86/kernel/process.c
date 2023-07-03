@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/prctl.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/random.h>
-#include <linux/user-return-notifier.h>
-#include <linux/dmi.h>
-#include <linux/utsname.h>
-#include <linux/stackprotector.h>
-#include <linux/cpuidle.h>
-#include <linux/acpi.h>
-#include <linux/elf-randomize.h>
-#include <linux/static_call.h>
+#include <linex/errno.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/smp.h>
+#include <linex/cpu.h>
+#include <linex/prctl.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/sched/idle.h>
+#include <linex/sched/debug.h>
+#include <linex/sched/task.h>
+#include <linex/sched/task_stack.h>
+#include <linex/init.h>
+#include <linex/export.h>
+#include <linex/pm.h>
+#include <linex/tick.h>
+#include <linex/random.h>
+#include <linex/user-return-notifier.h>
+#include <linex/dmi.h>
+#include <linex/utsname.h>
+#include <linex/stackprotector.h>
+#include <linex/cpuidle.h>
+#include <linex/acpi.h>
+#include <linex/elf-randomize.h>
+#include <linex/static_call.h>
 #include <trace/events/power.h>
-#include <linux/hw_breakpoint.h>
+#include <linex/hw_breakpoint.h>
 #include <asm/cpu.h>
 #include <asm/apic.h>
-#include <linux/uaccess.h>
+#include <linex/uaccess.h>
 #include <asm/mwait.h>
 #include <asm/fpu/api.h>
 #include <asm/fpu/sched.h>
@@ -54,7 +54,7 @@
 #include "process.h"
 
 /*
- * per-CPU TSS segments. Threads are completely 'soft' on Linux,
+ * per-CPU TSS segments. Threads are completely 'soft' on Linex,
  * no more per-task TSS's. The TSS size is kept cacheline-aligned
  * so they are allowed to end up in the .data..cacheline_aligned
  * section. Since TSS's are completely CPU-local, we want them

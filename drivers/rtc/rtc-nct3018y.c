@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2022 Nuvoton Technology Corporation
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linex/bcd.h>
+#include <linex/clk-provider.h>
+#include <linex/err.h>
+#include <linex/i2c.h>
+#include <linex/module.h>
+#include <linex/of.h>
+#include <linex/rtc.h>
+#include <linex/slab.h>
 
 #define NCT3018Y_REG_SC		0x00 /* seconds */
 #define NCT3018Y_REG_SCA	0x01 /* alarm */
@@ -540,7 +540,7 @@ static struct i2c_driver nct3018y_driver = {
 		.name	= "rtc-nct3018y",
 		.of_match_table = of_match_ptr(nct3018y_of_match),
 	},
-	.probe		= nct3018y_probe,
+	.probe_new	= nct3018y_probe,
 	.id_table	= nct3018y_id,
 };
 

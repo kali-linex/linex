@@ -7,9 +7,9 @@
  *  Sören Brinkmann <soren.brinkmann@xilinx.com>
  */
 
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
+#include <linex/io.h>
+#include <linex/of_address.h>
+#include <linex/of_device.h>
 #include "common.h"
 
 /* register offsets */

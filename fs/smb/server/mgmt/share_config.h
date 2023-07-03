@@ -6,10 +6,10 @@
 #ifndef __SHARE_CONFIG_MANAGEMENT_H__
 #define __SHARE_CONFIG_MANAGEMENT_H__
 
-#include <linux/workqueue.h>
-#include <linux/hashtable.h>
-#include <linux/path.h>
-#include <linux/unicode.h>
+#include <linex/workqueue.h>
+#include <linex/hashtable.h>
+#include <linex/path.h>
+#include <linex/unicode.h>
 
 struct ksmbd_share_config {
 	char			*name;

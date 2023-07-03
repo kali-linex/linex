@@ -7,15 +7,15 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
+#include <linex/kernel.h>
+#include <linex/init.h>
+#include <linex/slab.h>
+#include <linex/sched.h>
+#include <linex/semaphore.h>
+#include <linex/spinlock.h>
+#include <linex/wait.h>
+#include <linex/gfp.h>
+#include <linex/of.h>
 #include <asm/machdep.h>
 #include <asm/opal.h>
 

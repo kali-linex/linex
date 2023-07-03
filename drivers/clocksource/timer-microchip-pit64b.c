@@ -7,14 +7,14 @@
  * Author: Claudiu Beznea <claudiu.beznea@microchip.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <linex/clk.h>
+#include <linex/clockchips.h>
+#include <linex/delay.h>
+#include <linex/interrupt.h>
+#include <linex/of_address.h>
+#include <linex/of_irq.h>
+#include <linex/sched_clock.h>
+#include <linex/slab.h>
 
 #define MCHP_PIT64B_CR			0x00	/* Control Register */
 #define MCHP_PIT64B_CR_START		BIT(0)

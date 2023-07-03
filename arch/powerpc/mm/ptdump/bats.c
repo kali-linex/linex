@@ -6,8 +6,8 @@
  * This dumps the content of BATS
  */
 
-#include <linux/pgtable.h>
-#include <linux/debugfs.h>
+#include <linex/pgtable.h>
+#include <linex/debugfs.h>
 #include <asm/cpu_has_feature.h>
 
 #include "ptdump.h"

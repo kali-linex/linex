@@ -4,7 +4,7 @@
  * Computer Boards PCIM-DDA06-16 Comedi driver
  * Author: Calin Culianu <calin@ajvar.org>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Linex Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -66,9 +66,9 @@
  * -Calin Culianu <calin@ajvar.org>
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8255.h>
+#include <linex/module.h>
+#include <linex/comedi/comedi_pci.h>
+#include <linex/comedi/comedi_8255.h>
 
 /* device ids of the cards we support -- currently only 1 card supported */
 #define PCI_ID_PCIM_DDA06_16		0x0053

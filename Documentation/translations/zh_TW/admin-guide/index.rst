@@ -5,7 +5,7 @@
 :Original: :doc:`../../../admin-guide/index`
 :Translator: 胡皓文 Hu Haowen <src.res@email.cn>
 
-Linux 內核用戶和管理員指南
+Linex 內核用戶和管理員指南
 ==========================
 
 下面是一組隨時間添加到內核中的面向用戶的文檔的集合。到目前爲止，還沒有一個

@@ -15,25 +15,25 @@
  * Amit Kucheria <amit.kucheria@canonical.com>
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/twl.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/gfp.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linex/device.h>
+#include <linex/interrupt.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/platform_device.h>
+#include <linex/slab.h>
+#include <linex/mfd/twl.h>
+#include <linex/module.h>
+#include <linex/stddef.h>
+#include <linex/mutex.h>
+#include <linex/bitops.h>
+#include <linex/jiffies.h>
+#include <linex/types.h>
+#include <linex/gfp.h>
+#include <linex/err.h>
+#include <linex/of.h>
+#include <linex/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
+#include <linex/iio/iio.h>
 
 #define TWL4030_MADC_MAX_CHANNELS 16
 

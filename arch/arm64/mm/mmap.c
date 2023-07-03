@@ -5,10 +5,10 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linex/io.h>
+#include <linex/memblock.h>
+#include <linex/mm.h>
+#include <linex/types.h>
 
 #include <asm/cpufeature.h>
 #include <asm/page.h>

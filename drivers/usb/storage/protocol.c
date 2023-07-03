@@ -10,7 +10,7 @@
  *   (c) 2002 Alan Stern (stern@rowland.org)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linexspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -27,8 +27,8 @@
  * status of a command.
  */
 
-#include <linux/highmem.h>
-#include <linux/export.h>
+#include <linex/highmem.h>
+#include <linex/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

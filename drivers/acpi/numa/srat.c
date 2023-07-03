@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/numa.h>
-#include <linux/nodemask.h>
-#include <linux/topology.h>
+#include <linex/module.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/types.h>
+#include <linex/errno.h>
+#include <linex/acpi.h>
+#include <linex/memblock.h>
+#include <linex/numa.h>
+#include <linex/nodemask.h>
+#include <linex/topology.h>
 
 static nodemask_t nodes_found_map = NODE_MASK_NONE;
 

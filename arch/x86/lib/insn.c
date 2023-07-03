@@ -5,9 +5,9 @@
  * Copyright (C) IBM Corporation, 2002, 2004, 2009
  */
 
-#include <linux/kernel.h>
+#include <linex/kernel.h>
 #ifdef __KERNEL__
-#include <linux/string.h>
+#include <linex/string.h>
 #else
 #include <string.h>
 #endif
@@ -15,8 +15,8 @@
 #include <asm/insn.h> /* __ignore_sync_check__ */
 #include <asm/unaligned.h> /* __ignore_sync_check__ */
 
-#include <linux/errno.h>
-#include <linux/kconfig.h>
+#include <linex/errno.h>
+#include <linex/kconfig.h>
 
 #include <asm/emulate_prefix.h> /* __ignore_sync_check__ */
 

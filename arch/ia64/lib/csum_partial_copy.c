@@ -5,12 +5,12 @@
  * Copyright (C) 1999, 2003-2004 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
  *
- * Most of the code has been imported from Linux/Alpha
+ * Most of the code has been imported from Linex/Alpha
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linex/module.h>
+#include <linex/types.h>
+#include <linex/string.h>
 
 #include <net/checksum.h>
 

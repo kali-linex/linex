@@ -6,8 +6,8 @@
  * Copyright (C) 2018-2019 Renesas Electronics Corporation
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
+#include <linex/bits.h>
+#include <linex/kernel.h>
 
 #include <dt-bindings/power/r8a7796-sysc.h>
 

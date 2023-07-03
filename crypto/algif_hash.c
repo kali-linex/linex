@@ -9,11 +9,11 @@
 
 #include <crypto/hash.h>
 #include <crypto/if_alg.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/net.h>
+#include <linex/init.h>
+#include <linex/kernel.h>
+#include <linex/mm.h>
+#include <linex/module.h>
+#include <linex/net.h>
 #include <net/sock.h>
 
 struct hash_ctx {

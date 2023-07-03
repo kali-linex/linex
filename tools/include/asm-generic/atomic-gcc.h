@@ -2,15 +2,15 @@
 #ifndef __TOOLS_ASM_GENERIC_ATOMIC_H
 #define __TOOLS_ASM_GENERIC_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <linex/compiler.h>
+#include <linex/types.h>
+#include <linex/bitops.h>
 
 /*
  * Atomic operations that C can't guarantee us.  Useful for
  * resource counting etc..
  *
- * Excerpts obtained from the Linux kernel sources.
+ * Excerpts obtained from the Linex kernel sources.
  */
 
 #define ATOMIC_INIT(i)	{ (i) }

@@ -2,14 +2,14 @@
 /* Copyright (c) 2018 Facebook */
 
 #include <stdlib.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/bpf.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linex/in.h>
+#include <linex/ip.h>
+#include <linex/ipv6.h>
+#include <linex/tcp.h>
+#include <linex/udp.h>
+#include <linex/bpf.h>
+#include <linex/types.h>
+#include <linex/if_ether.h>
 
 #include <bpf/bpf_endian.h>
 #include <bpf/bpf_helpers.h>

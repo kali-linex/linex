@@ -7,9 +7,9 @@
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 //
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linex/input.h>
+#include <linex/module.h>
+#include <linex/of_device.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

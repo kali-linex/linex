@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * CPU Microcode Update Driver for Linux
+ * CPU Microcode Update Driver for Linex
  *
  * Copyright (C) 2000-2006 Tigran Aivazian <aivazian.tigran@gmail.com>
  *	      2006	Shaohua Li <shaohua.li@intel.com>
  *	      2013-2016	Borislav Petkov <bp@alien8.de>
  *
- * X86 CPU microcode early update for Linux:
+ * X86 CPU microcode early update for Linex:
  *
  *	Copyright (C) 2012 Fenghua Yu <fenghua.yu@intel.com>
  *			   H Peter Anvin" <hpa@zytor.com>
@@ -17,19 +17,19 @@
 
 #define pr_fmt(fmt) "microcode: " fmt
 
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/syscore_ops.h>
-#include <linux/miscdevice.h>
-#include <linux/capability.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linex/platform_device.h>
+#include <linex/stop_machine.h>
+#include <linex/syscore_ops.h>
+#include <linex/miscdevice.h>
+#include <linex/capability.h>
+#include <linex/firmware.h>
+#include <linex/kernel.h>
+#include <linex/delay.h>
+#include <linex/mutex.h>
+#include <linex/cpu.h>
+#include <linex/nmi.h>
+#include <linex/fs.h>
+#include <linex/mm.h>
 
 #include <asm/microcode_intel.h>
 #include <asm/cpu_device_id.h>

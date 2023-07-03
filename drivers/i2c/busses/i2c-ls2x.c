@@ -10,20 +10,20 @@
  * Rewritten for mainline by Binbin Zhou <zhoubinbin@loongson.cn>
  */
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/units.h>
+#include <linex/bits.h>
+#include <linex/completion.h>
+#include <linex/device.h>
+#include <linex/iopoll.h>
+#include <linex/i2c.h>
+#include <linex/init.h>
+#include <linex/interrupt.h>
+#include <linex/io.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/property.h>
+#include <linex/units.h>
 
 /* I2C Registers */
 #define I2C_LS2X_PRER		0x0 /* Freq Division Register(16 bits) */

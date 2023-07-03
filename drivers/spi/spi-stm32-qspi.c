@@ -3,25 +3,25 @@
  * Copyright (C) STMicroelectronics 2018 - All Rights Reserved
  * Author: Ludovic Barre <ludovic.barre@st.com> for STMicroelectronics.
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/spi/spi-mem.h>
+#include <linex/bitfield.h>
+#include <linex/clk.h>
+#include <linex/dmaengine.h>
+#include <linex/dma-mapping.h>
+#include <linex/errno.h>
+#include <linex/io.h>
+#include <linex/iopoll.h>
+#include <linex/interrupt.h>
+#include <linex/module.h>
+#include <linex/mutex.h>
+#include <linex/of.h>
+#include <linex/of_device.h>
+#include <linex/of_gpio.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/platform_device.h>
+#include <linex/reset.h>
+#include <linex/sizes.h>
+#include <linex/spi/spi-mem.h>
 
 #define QSPI_CR			0x00
 #define CR_EN			BIT(0)

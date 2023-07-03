@@ -488,9 +488,9 @@ patternProperties:
               Specifies the hysteresis for the event (touch and deep-touch
               events only).
 
-          linux,code: true
+          linex,code: true
 
-          linux,input-type:
+          linex,input-type:
             enum: [1, 5]
             description:
               Specifies whether the event is to be interpreted as a key (1) or
@@ -653,7 +653,7 @@ patternProperties:
         description:
           Specifies the raw count filter strength during low-power mode.
 
-      linux,keycodes:
+      linex,keycodes:
         minItems: 1
         maxItems: 6
         description: |
@@ -722,10 +722,10 @@ patternProperties:
         additionalProperties: false
 
     dependencies:
-      azoteq,gesture-swipe: ["linux,keycodes"]
-      azoteq,timeout-tap-ms: ["linux,keycodes"]
-      azoteq,timeout-swipe-ms: ["linux,keycodes"]
-      azoteq,thresh-swipe: ["linux,keycodes"]
+      azoteq,gesture-swipe: ["linex,keycodes"]
+      azoteq,timeout-tap-ms: ["linex,keycodes"]
+      azoteq,timeout-swipe-ms: ["linex,keycodes"]
+      azoteq,thresh-swipe: ["linex,keycodes"]
 
     additionalProperties: false
 
@@ -772,7 +772,7 @@ examples:
                                                <5>, <6>, <7>;
 
                             event-prox {
-                                    linux,code = <KEY_POWER>;
+                                    linex,code = <KEY_POWER>;
                             };
                     };
 
@@ -788,7 +788,7 @@ examples:
                             azoteq,proj-bias = <1>;
                             azoteq,sense-freq = <2>;
 
-                            linux,keycodes = <KEY_VOLUMEUP>,
+                            linex,keycodes = <KEY_VOLUMEUP>,
                                              <KEY_VOLUMEDOWN>,
                                              <KEY_NEXTSONG>,
                                              <KEY_PREVIOUSSONG>,
@@ -869,7 +869,7 @@ examples:
                             azoteq,meas-cap-decrease;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
+                                    linex,code = <SW_LID>;
                             };
                     };
             };

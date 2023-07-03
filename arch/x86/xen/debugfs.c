@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linex/init.h>
+#include <linex/debugfs.h>
+#include <linex/slab.h>
 
 #include "debugfs.h"
 

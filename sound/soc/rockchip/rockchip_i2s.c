@@ -7,16 +7,16 @@
  * Author: Jianqun <jay.xu@rock-chips.com>
  */
 
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <linex/module.h>
+#include <linex/mfd/syscon.h>
+#include <linex/delay.h>
+#include <linex/of_gpio.h>
+#include <linex/of_device.h>
+#include <linex/clk.h>
+#include <linex/pinctrl/consumer.h>
+#include <linex/pm_runtime.h>
+#include <linex/regmap.h>
+#include <linex/spinlock.h>
 #include <sound/pcm_params.h>
 #include <sound/dmaengine_pcm.h>
 

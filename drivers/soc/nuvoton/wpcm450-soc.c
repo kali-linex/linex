@@ -5,11 +5,11 @@
  * Copyright (C) 2022 Jonathan Neuschäfer
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linex/mfd/syscon.h>
+#include <linex/of.h>
+#include <linex/regmap.h>
+#include <linex/slab.h>
+#include <linex/sys_soc.h>
 
 #define GCR_PDID	0
 #define PDID_CHIP(x)	((x) & 0x00ffffff)

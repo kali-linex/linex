@@ -5,29 +5,29 @@
  * Copyright (c) 2016 Tom Herbert <tom@herbertland.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/file.h>
-#include <linux/filter.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/syscalls.h>
-#include <linux/sched/signal.h>
+#include <linex/bpf.h>
+#include <linex/errno.h>
+#include <linex/errqueue.h>
+#include <linex/file.h>
+#include <linex/filter.h>
+#include <linex/in.h>
+#include <linex/kernel.h>
+#include <linex/module.h>
+#include <linex/net.h>
+#include <linex/netdevice.h>
+#include <linex/poll.h>
+#include <linex/rculist.h>
+#include <linex/skbuff.h>
+#include <linex/socket.h>
+#include <linex/uaccess.h>
+#include <linex/workqueue.h>
+#include <linex/syscalls.h>
+#include <linex/sched/signal.h>
 
 #include <net/kcm.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>
-#include <uapi/linux/kcm.h>
+#include <uapi/linex/kcm.h>
 #include <trace/events/sock.h>
 
 unsigned int kcm_net_id;

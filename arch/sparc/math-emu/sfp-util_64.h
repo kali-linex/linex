@@ -2,14 +2,14 @@
 /*
  * arch/sparc64/math-emu/sfp-util.h
  *
- * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linex.cz)
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linex/kernel.h>
+#include <linex/sched.h>
+#include <linex/types.h>
 #include <asm/byteorder.h>
 
 #define add_ssaaaa(sh, sl, ah, al, bh, bl) 	\

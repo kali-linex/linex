@@ -3,11 +3,11 @@
 #ifndef _DRIVERS_FIRMWARE_EFI_EFISTUB_H
 #define _DRIVERS_FIRMWARE_EFI_EFISTUB_H
 
-#include <linux/compiler.h>
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/kern_levels.h>
-#include <linux/types.h>
+#include <linex/compiler.h>
+#include <linex/efi.h>
+#include <linex/kernel.h>
+#include <linex/kern_levels.h>
+#include <linex/types.h>
 #include <asm/efi.h>
 
 /*
@@ -1022,7 +1022,7 @@ static inline efi_status_t efi_load_dtb(efi_loaded_image_t *image,
 efi_status_t efi_load_initrd(efi_loaded_image_t *image,
 			     unsigned long soft_limit,
 			     unsigned long hard_limit,
-			     const struct linux_efi_initrd **out);
+			     const struct linex_efi_initrd **out);
 /*
  * This function handles the architcture specific differences between arm and
  * arm64 regarding where the kernel image must be loaded and any memory that

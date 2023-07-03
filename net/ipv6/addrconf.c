@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 Address [auto]configuration
- *	Linux INET6 implementation
+ *	Linex INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -36,32 +36,32 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/if_arcnet.h>
-#include <linux/if_infiniband.h>
-#include <linux/route.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linex/errno.h>
+#include <linex/types.h>
+#include <linex/kernel.h>
+#include <linex/sched/signal.h>
+#include <linex/socket.h>
+#include <linex/sockios.h>
+#include <linex/net.h>
+#include <linex/inet.h>
+#include <linex/in6.h>
+#include <linex/netdevice.h>
+#include <linex/if_addr.h>
+#include <linex/if_arp.h>
+#include <linex/if_arcnet.h>
+#include <linex/if_infiniband.h>
+#include <linex/route.h>
+#include <linex/inetdevice.h>
+#include <linex/init.h>
+#include <linex/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linex/sysctl.h>
 #endif
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/string.h>
-#include <linux/hash.h>
+#include <linex/capability.h>
+#include <linex/delay.h>
+#include <linex/notifier.h>
+#include <linex/string.h>
+#include <linex/hash.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>
@@ -79,17 +79,17 @@
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/l3mdev.h>
-#include <linux/if_tunnel.h>
-#include <linux/rtnetlink.h>
-#include <linux/netconf.h>
-#include <linux/random.h>
-#include <linux/uaccess.h>
+#include <linex/if_tunnel.h>
+#include <linex/rtnetlink.h>
+#include <linex/netconf.h>
+#include <linex/random.h>
+#include <linex/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
-#include <linux/ioam6.h>
+#include <linex/proc_fs.h>
+#include <linex/seq_file.h>
+#include <linex/export.h>
+#include <linex/ioam6.h>
 
 #define	INFINITY_LIFE_TIME	0xFFFFFFFF
 

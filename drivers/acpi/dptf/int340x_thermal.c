@@ -6,8 +6,8 @@
  * Authors: Zhang Rui <rui.zhang@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
+#include <linex/acpi.h>
+#include <linex/module.h>
 
 #include "../internal.h"
 

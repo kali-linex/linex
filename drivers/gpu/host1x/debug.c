@@ -6,12 +6,12 @@
  * Copyright (C) 2011-2013 NVIDIA Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linex/debugfs.h>
+#include <linex/pm_runtime.h>
+#include <linex/seq_file.h>
+#include <linex/uaccess.h>
 
-#include <linux/io.h>
+#include <linex/io.h>
 
 #include "dev.h"
 #include "debug.h"

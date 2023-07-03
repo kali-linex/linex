@@ -3,8 +3,8 @@
  * Copyright (C) 2022 Ventana Micro Systems Inc.
  */
 
-#include <linux/export.h>
-#include <linux/libnvdimm.h>
+#include <linex/export.h>
+#include <linex/libnvdimm.h>
 
 #include <asm/cacheflush.h>
 

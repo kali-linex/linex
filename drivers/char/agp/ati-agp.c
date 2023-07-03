@@ -2,13 +2,13 @@
  * ATi AGPGART routines.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/agp_backend.h>
+#include <linex/types.h>
+#include <linex/module.h>
+#include <linex/pci.h>
+#include <linex/init.h>
+#include <linex/string.h>
+#include <linex/slab.h>
+#include <linex/agp_backend.h>
 #include <asm/agp.h>
 #include <asm/set_memory.h>
 #include "agp.h"

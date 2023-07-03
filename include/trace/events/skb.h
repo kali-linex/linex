@@ -5,9 +5,9 @@
 #if !defined(_TRACE_SKB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SKB_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
+#include <linex/skbuff.h>
+#include <linex/netdevice.h>
+#include <linex/tracepoint.h>
 
 #undef FN
 #define FN(reason)	TRACE_DEFINE_ENUM(SKB_DROP_REASON_##reason);
